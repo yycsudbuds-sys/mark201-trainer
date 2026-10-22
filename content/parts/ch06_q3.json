@@ -62,7 +62,7 @@
     "type": "mc",
     "angle": "identify",
     "difficulty": 2,
-    "stem": "Bow River Bank's marketing team writes up 'Kayla, the Planner': 29, works in HR in Calgary, is saving for a condo, reads personal-finance blogs and values security. The write-up includes a photo and a personal quote. What has the team created?",
+    "stem": "Bow River Bank's marketing team writes a one-page profile of a fictional customer named Kayla: 29, works in HR in Calgary, is saving for a condo, reads personal-finance blogs and values security. The write-up includes a photo and a personal quote and is meant to stand for the bank's typical customer. What has the team created?",
     "options": [
       "A market-product grid",
       "A positioning statement",
@@ -598,7 +598,7 @@
       "Selling it in discount bins at dollar stores"
     ],
     "answer": 3,
-    "explanation": "For positioning to succeed, all marketing mix efforts must support it. Discount-bin distribution contradicts a premium image, while the other choices reinforce it.",
+    "explanation": "For positioning to succeed, all marketing mix efforts must support it. Discount-bin distribution contradicts a premium image, while clinical test results, premium packaging and an above-market price all reinforce it.",
     "source": "generated"
   },
   {
@@ -655,7 +655,7 @@
       "cognitive positioning."
     ],
     "answer": 0,
-    "explanation": "Head-to-head positioning means competing directly with competitors on similar product attributes in the same target market; here, speed and duration of relief for the same parents. 'Lateral', 'consumer' and 'cognitive' positioning are not course terms.",
+    "explanation": "Head-to-head positioning means competing directly with competitors on similar product attributes in the same target market; here, speed and duration of relief for the same parents. 'Differentiation' is tempting, but differentiation positioning avoids rivals by seeking a smaller, less-competitive niche, whereas Advil attacks Tylenol directly. 'Lateral', 'consumer' and 'cognitive' positioning are not course terms.",
     "source": "official"
   },
   {

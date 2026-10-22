@@ -320,7 +320,7 @@
    "Inexposure is caused by the sender's encoding; inattention by the receiver's decoding"
   ],
   "answer": 2,
-  "explanation": "With selective inexposure the message never reaches the person because they avoid it (ad blockers, ad-free plans); with selective inattention it reaches them but they don't pay attention. The first option reverses the two, which is exactly the trap.",
+  "explanation": "With selective inexposure the message never reaches the person because they avoid it (ad blockers, ad-free plans); with selective inattention it reaches them but they don't pay attention. Defining inexposure as tuning out and inattention as avoiding reverses the two, which is exactly the trap.",
   "source": "generated"
  },
  {
@@ -425,12 +425,12 @@
   "stem": "How does integrated marketing communications (IMC) differ from marketing communications in general?",
   "options": [
    "Marketing communications informs, persuades, and reminds; IMC coordinates all of those activities to deliver one consistent message",
-   "Marketing communications uses only advertising; IMC adds personal selling to the mix",
-   "IMC targets only intermediaries, while marketing communications targets only consumers",
-   "IMC is the regulatory code that governs all marketing communications in Canada"
+   "Marketing communications uses only advertising and publicity; IMC adds personal selling and sales promotion to the mix",
+   "IMC targets only intermediaries such as retailers, while marketing communications targets only end consumers",
+   "IMC is the regulatory code that governs all marketing communications and advertising claims in Canada"
   ],
   "answer": 0,
-  "explanation": "Marketing communications is the broad means of informing, persuading, and reminding; IMC is the concept of coordinating all promotional activities so they provide a consistent message. IMC audiences can be consumers, intermediaries, or both, so the third option is wrong.",
+  "explanation": "Marketing communications is the broad means of informing, persuading, and reminding; IMC is the concept of coordinating all promotional activities so they provide a consistent message. IMC audiences can be consumers, intermediaries, or both, so saying IMC targets only intermediaries is wrong.",
   "source": "generated"
  },
  {
@@ -541,7 +541,7 @@
    "Deciding how much weight to give advertising versus personal selling versus sales promotion"
   ],
   "answer": 3,
-  "explanation": "Balance is about the proportions of each promotional element in the mix. Matching slogans, colours, and service scripts are all about providing a consistent message across elements, which is the second IMC issue.",
+  "explanation": "Balance is about the proportions of each promotional element in the mix. Matching slogans, colours, and service scripts are all about providing a consistent message across elements, which is the other IMC issue (consistency).",
   "source": "generated"
  },
  {
@@ -625,13 +625,13 @@
   "difficulty": 3,
   "stem": "Why do most marketers combine several promotional elements instead of relying on just one?",
   "options": [
-   "The Competition Bureau requires every campaign to use at least two elements",
+   "The Competition Bureau requires every Canadian campaign to use at least two different promotional elements",
    "Each element has distinct strengths and weaknesses, so combining them balances reach, cost, credibility, and feedback",
-   "Mass elements cannot legally carry a brand message without customized support",
-   "Customized elements always cost less per contact than mass elements"
+   "Mass elements cannot legally carry a brand message unless customized elements support them at the same time",
+   "Customized elements always cost less per contact than mass elements, so adding them lowers total spending"
   ],
   "answer": 1,
-  "explanation": "Advertising gives reach and control but little feedback, personal selling gives feedback but costs a lot per contact, and publicity gives credibility but little control, so a balanced mix offsets weaknesses. Customized elements actually cost MORE per contact, which is why the last option is wrong.",
+  "explanation": "Advertising gives reach and control but little feedback, personal selling gives feedback but costs a lot per contact, and publicity gives credibility but little control, so a balanced mix offsets weaknesses. Customized elements actually cost MORE per contact, so the claim that they always cost less is wrong.",
   "source": "generated"
  },
  {
@@ -679,9 +679,9 @@
   "difficulty": 2,
   "stem": "What best distinguishes advertising from publicity?",
   "options": [
-   "Advertising is two-way and personal; publicity is one-way and non-personal",
-   "Advertising is a short-term inducement; publicity builds long-term relationships",
-   "Advertising can be used only in the introduction stage; publicity can be used in any stage",
+   "Advertising is two-way, personal communication; publicity is one-way, non-personal communication",
+   "Advertising is a short-term inducement of value; publicity builds long-term relationships with stakeholders",
+   "Advertising can be used only in the introduction stage; publicity can be used in any stage of the life cycle",
    "Advertising is paid by an identified sponsor who controls the message; publicity is indirectly paid and largely uncontrolled"
   ],
   "answer": 3,

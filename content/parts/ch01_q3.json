@@ -14,7 +14,7 @@
       "Customer relationship management aimed at policyholders"
     ],
     "answer": 0,
-    "explanation": "Prairie Sky is spearheading a community program, the first CSR type on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
+    "explanation": "Prairie Sky is spearheading a community program, CSR type 1 on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
     "source": "generated"
   },
   {
@@ -32,7 +32,7 @@
       "Sponsorship of or involvement in fundraising for charitable organizations"
     ],
     "answer": 3,
-    "explanation": "Raising and matching money for a charity is the second CSR type: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
+    "explanation": "Raising and matching money for a charity is CSR type 2: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
     "source": "generated"
   },
   {
@@ -50,7 +50,7 @@
       "Sponsorship and/or spearheading of community programs"
     ],
     "answer": 1,
-    "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is the third CSR type: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
+    "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is CSR type 3: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
     "source": "generated"
   },
   {
@@ -269,7 +269,7 @@
       "Experience management targets customers' internal response to every aspect of the firm; CRM targets long-term relationships via value and satisfaction"
     ],
     "answer": 3,
-    "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. The second option swaps the definitions; in practice the two support each other.",
+    "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. Saying experience management builds relationships through value while CRM manages feelings at each touchpoint swaps the definitions; in practice the two support each other.",
     "source": "generated"
   },
   {
@@ -307,7 +307,7 @@
       "A bank redesigns its app, branch greetings and follow-up calls after customers report feeling ignored"
     ],
     "answer": 2,
-    "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The other three options manage customers' internal response across the organization's touchpoints, which is customer experience management.",
+    "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The airline, hotel and bank examples all manage customers' internal response across the organization's touchpoints, which is customer experience management.",
     "source": "generated"
   },
   {

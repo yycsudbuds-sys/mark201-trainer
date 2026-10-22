@@ -50,7 +50,7 @@
    "It reaches a mass audience with one identical message"
   ],
   "answer": 2,
-  "explanation": "Personal selling is customized and two-way, so the seller gets immediate feedback and can persuade by tailoring the message. Its weakness is the opposite of the first option: it has an extremely high cost per contact.",
+  "explanation": "Personal selling is customized and two-way, so the seller gets immediate feedback and can persuade by tailoring the message. It does not have the lowest cost per contact; its main weakness is an extremely high cost per contact.",
   "source": "generated"
  },
  {
@@ -68,7 +68,7 @@
    "Personal selling is a mass element that reaches large audiences; direct marketing is a customized element"
   ],
   "answer": 0,
-  "explanation": "Both tailor messages, but personal selling is interactive in real time, while direct marketing (mail, catalogues, email, telemarketing) reaches targeted individuals and asks them to respond. Personal selling is customized, not mass, so the last option is wrong.",
+  "explanation": "Both tailor messages, but personal selling is interactive in real time, while direct marketing (mail, catalogues, email, telemarketing) reaches targeted individuals and asks them to respond. Personal selling is customized, not a mass element, so the statement calling it mass is wrong.",
   "source": "generated"
  },
  {
@@ -160,7 +160,7 @@
    "Consumer promotions are used only in the decline stage; trade promotions are used only in the introduction stage"
   ],
   "answer": 2,
-  "explanation": "Figure 12-2 places trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) in the push column aimed at the channel, and consumer promotion in the pull column aimed at consumers. The first option simply reverses the two audiences.",
+  "explanation": "Figure 12-2 places trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) in the push column aimed at the channel, and consumer promotion in the pull column aimed at consumers. Saying consumer promotions (allowances) target retailers and trade promotions (coupons) target shoppers simply reverses the two audiences.",
   "source": "generated"
  },
  {
@@ -414,7 +414,7 @@
    "Event marketing is used only in the decline stage to clear stock; sponsorship is used only during the introduction stage"
   ],
   "answer": 0,
-  "explanation": "Event marketing puts the brand at the centre of an experience (often one the brand creates, like a pop-up), while sponsorship buys association with an event or property someone else owns. Both are pull tools aimed at consumers in Figure 12-2, so the third option is wrong.",
+  "explanation": "Event marketing puts the brand at the centre of an experience (often one the brand creates, like a pop-up), while sponsorship buys association with an event or property someone else owns. Both are pull tools aimed at consumers in Figure 12-2, so saying event marketing targets channel members is wrong.",
   "source": "generated"
  },
  {
@@ -612,7 +612,7 @@
    "Loyalty is the final stage of the funnel and comes after advocacy, once customers stop recommending"
   ],
   "answer": 0,
-  "explanation": "Ongoing positive experiences lead to repeat purchases (loyalty), often encouraged by CRM programs; loyal customers who are rewarded with additional experiences then recommend the product (advocacy). The third option swaps the two definitions.",
+  "explanation": "Ongoing positive experiences lead to repeat purchases (loyalty), often encouraged by CRM programs; loyal customers who are rewarded with additional experiences then recommend the product (advocacy). Calling loyalty 'recommending to friends' and advocacy 'buying again and again' swaps the two definitions.",
   "source": "generated"
  },
  {
@@ -684,7 +684,7 @@
    "Build a direct relationship with customers"
   ],
   "answer": 1,
-  "explanation": "Incentives and training for retailers and their sales staff are a push strategy: communication aimed at the distribution channel to gain support through listings, sales, merchandising, feature pricing, and inclusion in flyers. The first option describes a pull strategy, which targets consumers.",
+  "explanation": "Incentives and training for retailers and their sales staff are a push strategy: communication aimed at the distribution channel to gain support through listings, sales, merchandising, feature pricing, and inclusion in flyers. Focusing on ultimate consumers to build awareness, trial, and demand describes a pull strategy, which targets consumers rather than the channel.",
   "source": "official"
  },
  {

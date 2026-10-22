@@ -741,7 +741,7 @@
    "explain": "Channel members are independent businesses with their own goals, so friction is natural. Conflict is vertical when it runs up and down the channel: a producer arguing with its wholesaler over price, squeezing retailers' margins, or bypassing them (disintermediation). It is horizontal when it is between members at the same level, such as two dealers of the same brand fighting over territory.",
    "example": "Tez energy drinks arguing with a major wholesaler over price (vertical); two Edmonton dealers of the same truck brand poaching each other's customers (horizontal).",
    "contrast": "Vertical = different levels; horizontal = same level. Disintermediation is a specific cause of vertical conflict (bypassing a member), not a synonym for channel conflict in general.",
-   "trap": "Check the LEVELS of the two parties named in the stem. Producer vs wholesaler or retailer = vertical, whatever the topic (price, territory, margins). Retailer vs retailer of the same brand = horizontal. 'Selective conflict' and 'disintegration' are not real terms.",
+   "trap": "Check the LEVELS of the two parties named in the stem. Producer vs wholesaler or retailer = vertical, whatever the topic (price, territory, margins), and a producer bypassing a member to sell direct is disintermediation (vertical). One course nuance: the slides list a retailer competing with the maker's own online store under dual distribution as a horizontal-conflict example, because both outlets compete at the retail level. Retailer vs retailer of the same brand = horizontal. 'Selective conflict' and 'disintegration' are not real terms.",
    "mnemonic": "Vertical = up and down the ladder; Horizontal = across the same rung.",
    "figure": null
   },
@@ -1267,15 +1267,15 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "Glacier Gear, an Edmonton maker of ski goggles, can ship every online order overnight from its own warehouse with a personal follow-up call, or sell through regional sporting goods stores that hold stock. The first option delights customers but costs far more per unit. Which instructor concept is Glacier Gear wrestling with?",
+   "stem": "Glacier Gear, an Edmonton maker of ski goggles, can ship every online order overnight from its own warehouse with a personal follow-up call, or sell through regional sporting goods stores that hold stock. The overnight option delights customers but costs far more per unit. Which instructor concept is Glacier Gear wrestling with?",
    "options": [
     "The choice between forward and backward integration",
     "The difference between vertical and horizontal conflict",
-    "The choice between marketplace and marketspace",
+    "The choice between selective and exclusive distribution",
     "The trade-off between cost and level of service"
    ],
    "answer": 3,
-   "explanation": "Higher service (overnight shipping, personal follow-up) comes at a higher cost, which is the instructor's core channel trade-off. Integration would mean owning another channel stage, which Glacier Gear is not considering.",
+   "explanation": "Higher service (overnight shipping, personal follow-up) comes at a higher cost, which is the instructor's core channel trade-off. Integration would mean owning another channel stage, and selective vs exclusive concerns how many outlets per area, neither of which is the dilemma described.",
    "source": "generated"
   },
   {
@@ -1437,7 +1437,7 @@
     "8 without; 16 with"
    ],
    "answer": 1,
-   "explanation": "No intermediary: producers x buyers = 4 x 4 = 16. One intermediary: producers + buyers = 4 + 4 = 8. Counting only one side (4) or multiplying in both cases are the common errors.",
+   "explanation": "No intermediary: producers x buyers = 4 x 4 = 16. One intermediary: producers + buyers = 4 + 4 = 8. Answering 4 with the intermediary counts only one side, and 8 without / 16 with reverses the two formulas.",
    "source": "generated"
   },
   {
@@ -2764,7 +2764,7 @@
     "retailer-sponsored cooperative"
    ],
    "answer": 3,
-   "explanation": "Independent retailers banding together to run their own wholesale operation form a retailer-sponsored cooperative (Home Hardware is the chapter's example). It is a contractual VMS, not corporate, because each store remains independently owned.",
+   "explanation": "Independent retailers banding together to run their own wholesale operation form a retailer-sponsored cooperative (Home Hardware is the chapter's example). It is a contractual VMS, not corporate, because each store remains independently owned. Although all the owners are retailers, they jointly run the wholesale stage that supplies them, so this is a vertical (contractual) arrangement, not a horizontal marketing system of unrelated firms.",
    "source": "generated"
   },
   {
@@ -2956,7 +2956,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "Fresh Catch, a Nova Scotia exporter of live lobster, uses the shortest possible channel to get its product to restaurants. Which factor most directly drives this choice?",
+   "stem": "Fresh Catch, a Nova Scotia exporter of live lobster, uses the shortest possible channel so its lobsters reach restaurants alive, before they can die and spoil. Which factor most directly drives this choice?",
    "options": [
     "Unit value, a product factor",
     "Order size, a market factor",
@@ -3504,7 +3504,7 @@
     "Vertical conflict involves only agents; horizontal conflict involves only wholesalers"
    ],
    "answer": 0,
-   "explanation": "Vertical = up and down the channel (e.g., manufacturer vs wholesaler or retailer); horizontal = side by side (e.g., two retailers of the same brand). The first distractor reverses the two definitions.",
+   "explanation": "Vertical = up and down the channel (e.g., manufacturer vs wholesaler or retailer); horizontal = side by side (e.g., two retailers of the same brand). Saying vertical conflict is between competitors and horizontal conflict is between a manufacturer and its retailers reverses the two definitions.",
    "source": "generated"
   },
   {
@@ -3553,12 +3553,12 @@
    "stem": "Lakeshore Mattress has always sold through furniture retailers. It now launches a website that ships mattresses straight to consumers at lower prices, and its retailers protest. What is the specific term for what Lakeshore is doing?",
    "options": [
     "Disintermediation",
-    "Horizontal conflict",
+    "Backward integration",
     "Strategic channel alliance",
     "Selective distribution"
    ],
    "answer": 0,
-   "explanation": "Disintermediation occurs when a channel member bypasses another member and sells directly. It sparks conflict between levels (manufacturer vs retailers), so it is not horizontal conflict, which occurs between members at the same level.",
+   "explanation": "Disintermediation occurs when a channel member bypasses another member and sells or buys directly, which is what Lakeshore does by selling around its retailers. It is not backward integration, which would mean Lakeshore acquiring an upstream supplier such as a foam maker; disintermediation involves no ownership.",
    "source": "generated"
   },
   {
@@ -3670,7 +3670,7 @@
     "The two terms are interchangeable, since both describe moving goods from producers to consumers"
    ],
    "answer": 2,
-   "explanation": "Logistics is the movement-of-goods piece; SCM integrates information and logistics across suppliers, the producer and the marketing channel. The first distractor reverses their scope.",
+   "explanation": "Logistics is the movement-of-goods piece; SCM integrates information and logistics across suppliers, the producer and the marketing channel. Assigning raw-material suppliers to logistics while confining SCM to one warehouse reverses their scope: SCM is the broader, cross-firm concept.",
    "source": "generated"
   },
   {

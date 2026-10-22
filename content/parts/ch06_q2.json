@@ -28,7 +28,7 @@
     "difficulty": 2,
     "stem": "Which of the following is NOT one of the five criteria for SELECTING target segments?",
     "options": [
-      "Market size",
+      "Compatibility with the organization's objectives and resources",
       "Similarity of needs of buyers within a segment",
       "Competitive position",
       "Cost of reaching the segment"
@@ -48,11 +48,11 @@
     "options": [
       "Expected growth",
       "Market size",
-      "Competitive position",
+      "Simplicity and cost of assigning potential buyers to segments",
       "Compatibility with the organization's objectives and resources"
     ],
     "answer": 3,
-    "explanation": "Missing skills, missing staff and a poor fit with the mission all point to 'compatibility with the organization's objectives and resources'. Size and growth actually favour this segment.",
+    "explanation": "Missing skills, missing staff and a poor fit with the mission all point to 'compatibility with the organization's objectives and resources'. Size and growth actually favour this segment, and 'simplicity and cost of assigning potential buyers to segments' is a criterion for forming segments, not for selecting them.",
     "source": "generated"
   },
   {
@@ -82,7 +82,7 @@
     "type": "mc",
     "angle": "identify",
     "difficulty": 3,
-    "stem": "A Yellowknife wilderness outfitter's most promising segment is wealthy European adventure travellers. Reaching them, however, would require costly overseas trade shows and foreign-language advertising that would eat up most of its budget. Which criterion for selecting a target segment is the main obstacle?",
+    "stem": "A Yellowknife wilderness outfitter's most promising segment is wealthy European adventure travellers. Getting its message in front of them, however, would require costly overseas trade shows and foreign-language advertising that would eat up most of its budget. Which criterion for selecting a target segment is the main obstacle?",
     "options": [
       "Cost of reaching the segment",
       "Market size",
@@ -105,12 +105,12 @@
     "stem": "Which criterion appears on the list for FORMING segments but NOT on the list for SELECTING target segments?",
     "options": [
       "Difference of needs of buyers among segments",
-      "Market size",
+      "Compatibility with the organization's objectives and resources",
       "Expected growth",
       "Cost of reaching the segment"
     ],
     "answer": 0,
-    "explanation": "Difference of needs among segments is a forming criterion. Market size, expected growth and cost of reaching the segment are all selecting criteria.",
+    "explanation": "Difference of needs among segments is a forming criterion. Compatibility with the organization's objectives and resources, expected growth and cost of reaching the segment are all selecting criteria.",
     "source": "generated"
   },
   {
@@ -170,7 +170,7 @@
       "Behaviouristic"
     ],
     "answer": 1,
-    "explanation": "Demographic variables (age, gender, income, education, occupation, family life cycle and so on) are basic census-type information. Geographic answers 'where does the market live and work?', and behaviouristic answers 'how does it use the product?'",
+    "explanation": "Demographic variables (age, gender, income, education, occupation, family life cycle and so on) are basic census-type information. Geographic variables answer where the market lives and works, and behaviouristic variables answer how it uses the product.",
     "source": "generated"
   },
   {

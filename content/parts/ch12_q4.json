@@ -14,7 +14,7 @@
    "Flighting runs at the same level every week; pulse runs only once a year"
   ],
   "answer": 1,
-  "explanation": "In flighting, advertising stops completely between flights; in pulse, there is always a base level of activity, with spikes at key times. The first option swaps the two definitions.",
+  "explanation": "In flighting, advertising stops completely between flights; in pulse, there is always a base level of activity, with spikes at key times. Describing flighting as a continuous base with bursts and pulse as on-and-off periods swaps the two definitions.",
   "source": "generated"
  },
  {
@@ -88,7 +88,7 @@
    "a pretest and a posttest"
   ],
   "answer": 3,
-  "explanation": "Pretests evaluate promotional elements before they run (choosing between ad versions); posttests evaluate them after (measuring recall). The first option reverses the order.",
+  "explanation": "Pretests evaluate promotional elements before they run (choosing between ad versions); posttests evaluate them after (measuring recall). Calling the panel test a posttest and the recall survey a pretest reverses the order.",
   "source": "generated"
  },
  {
@@ -101,9 +101,9 @@
   "stem": "Halo Fitness tracks click-through rates, conversion rates, and engagement rates on its campaign posts to judge how well the campaign is working. These measures are examples of:",
   "options": [
    "digital engagement metrics used in program evaluation",
-   "customer touch points",
-   "barriers to effective communication",
-   "results sought by a push strategy"
+   "customer touch points mapped when identifying the audience",
+   "barriers to effective communication with the audience",
+   "results sought by a push strategy aimed at retailers"
   ],
   "answer": 0,
   "explanation": "Click-throughs, conversions, and engagement rates are digital metrics used in step 6 to evaluate the program. Push results are trade outcomes such as listings and displays, not consumer engagement measures.",
@@ -198,7 +198,7 @@
    "Because inbound is funded by trade allowances that retailers pay manufacturers for featured placement"
   ],
   "answer": 0,
-  "explanation": "Inbound requires excellent content and visibility in the right places; when people who are already interested come to you, spending isn't wasted on broad outbound reach. It still requires investment in content, so the second option is wrong.",
+  "explanation": "Inbound requires excellent content and visibility in the right places; when people who are already interested come to you, spending isn't wasted on broad outbound reach. It still requires investment in content (writing, video, search optimization), so the claim that inbound needs no investment is wrong.",
   "source": "generated"
  },
  {
@@ -518,9 +518,9 @@
   "difficulty": 3,
   "stem": "Which campaign uses storytelling rather than conventional feature-based advertising?",
   "options": [
-   "A lotion ad that lists its seven active ingredients and SPF rating",
-   "A banner ad that reads 'Now 30% more moisturizing'",
-   "A flyer offering 20% off all body care this weekend",
+   "A lotion ad that lists its seven active ingredients, its SPF rating, and its dermatologist approval",
+   "A banner ad that reads 'Now 30% more moisturizing than our original formula' beside the bottle",
+   "A flyer offering 20% off all body care products this weekend only at every store location",
    "A video following a real woman's journey to self-confidence, inviting viewers to rethink beauty"
   ],
   "answer": 3,
@@ -608,10 +608,10 @@
   "difficulty": 2,
   "stem": "Which of the following is NOT one of the areas that make up the marketing communications industry?",
   "options": [
-   "Advertisers (clients)",
-   "Measurement companies",
+   "Advertisers (clients) who pay for campaigns",
+   "Measurement companies that track audiences",
    "Distribution intermediaries such as wholesalers",
-   "Regulators"
+   "Regulators such as ASC and the CRTC"
   ],
   "answer": 2,
   "explanation": "The industry consists of advertisers, agencies, media, suppliers, regulators, and measurement companies. Wholesalers are marketing channel intermediaries that move products, not part of the communications industry.",
@@ -722,7 +722,7 @@
    "ASC handles only mobile marketing complaints; the Competition Bureau handles only misleading claims in print advertising"
   ],
   "answer": 0,
-  "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law against misleading advertising and deceptive marketing. The second option swaps their roles.",
+  "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law against misleading advertising and deceptive marketing. Saying ASC enforces the Competition Act while the Competition Bureau administers the Code swaps their roles.",
   "source": "generated"
  }
 ]

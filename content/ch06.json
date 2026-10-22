@@ -369,7 +369,7 @@
    "example": "A toothpaste brand offers whitening, cavity-protection and sensitivity versions, which is segmentation by benefits sought.",
    "contrast": "Behaviouristic = product use and interaction. Psychographic = personality, values and lifestyle in general. 'Buys only our brand' (loyalty status) is behaviouristic, even though it sounds like an attitude.",
    "trap": "Benefits sought, user status, loyalty, occasion and usage rate are all behaviouristic. 'Ex-user / first-time user' is user status, not loyalty. 'Valentine's Day buyers' is purchase occasion.",
-   "mnemonic": "BULLO: Benefits, Usage rate, user status, Loyalty, Occasion.",
+   "mnemonic": "B-U-U-L-O: Benefits sought, Usage rate, User status, Loyalty status, Occasion.",
    "figure": null
   },
   {
@@ -949,7 +949,7 @@
    "type": "mc",
    "angle": "why",
    "difficulty": 1,
-   "stem": "According to the course slides, what does market segmentation ultimately lead to?",
+   "stem": "According to the course, what does market segmentation ultimately lead to?",
    "options": [
     "Mass marketing",
     "Repositioning",
@@ -1589,7 +1589,7 @@
    "difficulty": 2,
    "stem": "Which of the following is NOT one of the five criteria for SELECTING target segments?",
    "options": [
-    "Market size",
+    "Compatibility with the organization's objectives and resources",
     "Similarity of needs of buyers within a segment",
     "Competitive position",
     "Cost of reaching the segment"
@@ -1609,11 +1609,11 @@
    "options": [
     "Expected growth",
     "Market size",
-    "Competitive position",
+    "Simplicity and cost of assigning potential buyers to segments",
     "Compatibility with the organization's objectives and resources"
    ],
    "answer": 3,
-   "explanation": "Missing skills, missing staff and a poor fit with the mission all point to 'compatibility with the organization's objectives and resources'. Size and growth actually favour this segment.",
+   "explanation": "Missing skills, missing staff and a poor fit with the mission all point to 'compatibility with the organization's objectives and resources'. Size and growth actually favour this segment, and 'simplicity and cost of assigning potential buyers to segments' is a criterion for forming segments, not for selecting them.",
    "source": "generated"
   },
   {
@@ -1643,7 +1643,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 3,
-   "stem": "A Yellowknife wilderness outfitter's most promising segment is wealthy European adventure travellers. Reaching them, however, would require costly overseas trade shows and foreign-language advertising that would eat up most of its budget. Which criterion for selecting a target segment is the main obstacle?",
+   "stem": "A Yellowknife wilderness outfitter's most promising segment is wealthy European adventure travellers. Getting its message in front of them, however, would require costly overseas trade shows and foreign-language advertising that would eat up most of its budget. Which criterion for selecting a target segment is the main obstacle?",
    "options": [
     "Cost of reaching the segment",
     "Market size",
@@ -1666,12 +1666,12 @@
    "stem": "Which criterion appears on the list for FORMING segments but NOT on the list for SELECTING target segments?",
    "options": [
     "Difference of needs of buyers among segments",
-    "Market size",
+    "Compatibility with the organization's objectives and resources",
     "Expected growth",
     "Cost of reaching the segment"
    ],
    "answer": 0,
-   "explanation": "Difference of needs among segments is a forming criterion. Market size, expected growth and cost of reaching the segment are all selecting criteria.",
+   "explanation": "Difference of needs among segments is a forming criterion. Compatibility with the organization's objectives and resources, expected growth and cost of reaching the segment are all selecting criteria.",
    "source": "generated"
   },
   {
@@ -1731,7 +1731,7 @@
     "Behaviouristic"
    ],
    "answer": 1,
-   "explanation": "Demographic variables (age, gender, income, education, occupation, family life cycle and so on) are basic census-type information. Geographic answers 'where does the market live and work?', and behaviouristic answers 'how does it use the product?'",
+   "explanation": "Demographic variables (age, gender, income, education, occupation, family life cycle and so on) are basic census-type information. Geographic variables answer where the market lives and works, and behaviouristic variables answer how it uses the product.",
    "source": "generated"
   },
   {
@@ -2384,7 +2384,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "Bow River Bank's marketing team writes up 'Kayla, the Planner': 29, works in HR in Calgary, is saving for a condo, reads personal-finance blogs and values security. The write-up includes a photo and a personal quote. What has the team created?",
+   "stem": "Bow River Bank's marketing team writes a one-page profile of a fictional customer named Kayla: 29, works in HR in Calgary, is saving for a condo, reads personal-finance blogs and values security. The write-up includes a photo and a personal quote and is meant to stand for the bank's typical customer. What has the team created?",
    "options": [
     "A market-product grid",
     "A positioning statement",
@@ -2920,7 +2920,7 @@
     "Selling it in discount bins at dollar stores"
    ],
    "answer": 3,
-   "explanation": "For positioning to succeed, all marketing mix efforts must support it. Discount-bin distribution contradicts a premium image, while the other choices reinforce it.",
+   "explanation": "For positioning to succeed, all marketing mix efforts must support it. Discount-bin distribution contradicts a premium image, while clinical test results, premium packaging and an above-market price all reinforce it.",
    "source": "generated"
   },
   {
@@ -2977,7 +2977,7 @@
     "cognitive positioning."
    ],
    "answer": 0,
-   "explanation": "Head-to-head positioning means competing directly with competitors on similar product attributes in the same target market; here, speed and duration of relief for the same parents. 'Lateral', 'consumer' and 'cognitive' positioning are not course terms.",
+   "explanation": "Head-to-head positioning means competing directly with competitors on similar product attributes in the same target market; here, speed and duration of relief for the same parents. 'Differentiation' is tempting, but differentiation positioning avoids rivals by seeking a smaller, less-competitive niche, whereas Advil attacks Tylenol directly. 'Lateral', 'consumer' and 'cognitive' positioning are not course terms.",
    "source": "official"
   },
   {
@@ -3259,7 +3259,7 @@
     "Both are steps within the six-step process for segmenting a market"
    ],
    "answer": 2,
-   "explanation": "The perceptual map is a display tool; repositioning is a strategy that changes the place a product occupies in consumers' minds, which can show up as a move on the map. That is why 'perceptual mapping' is the wrong answer in the Grape-Nuts question.",
+   "explanation": "The perceptual map is a display tool; repositioning is a strategy that changes the place a product occupies in consumers' minds, which can show up as a move on the map. That is why a campaign like Post Grape-Nuts' new-uses push is repositioning, not 'perceptual mapping'.",
    "source": "generated"
   },
   {
@@ -3348,7 +3348,7 @@
    "difficulty": 2,
    "stem": "Which of the following is NOT an example of repositioning?",
    "options": [
-    "A baking-soda brand promotes its product as a fridge deodorizer to expand use beyond baking",
+    "A budget hotel chain upgrades its rooms and image so travellers now see it as a stylish mid-priced choice",
     "A dated department store refreshes its image to attract younger shoppers",
     "A start-up launches its first-ever product and creates its initial brand image",
     "A breakfast cereal is promoted as an all-day snack"

@@ -1191,7 +1191,7 @@
     "Inexposure is caused by the sender's encoding; inattention by the receiver's decoding"
    ],
    "answer": 2,
-   "explanation": "With selective inexposure the message never reaches the person because they avoid it (ad blockers, ad-free plans); with selective inattention it reaches them but they don't pay attention. The first option reverses the two, which is exactly the trap.",
+   "explanation": "With selective inexposure the message never reaches the person because they avoid it (ad blockers, ad-free plans); with selective inattention it reaches them but they don't pay attention. Defining inexposure as tuning out and inattention as avoiding reverses the two, which is exactly the trap.",
    "source": "generated"
   },
   {
@@ -1296,12 +1296,12 @@
    "stem": "How does integrated marketing communications (IMC) differ from marketing communications in general?",
    "options": [
     "Marketing communications informs, persuades, and reminds; IMC coordinates all of those activities to deliver one consistent message",
-    "Marketing communications uses only advertising; IMC adds personal selling to the mix",
-    "IMC targets only intermediaries, while marketing communications targets only consumers",
-    "IMC is the regulatory code that governs all marketing communications in Canada"
+    "Marketing communications uses only advertising and publicity; IMC adds personal selling and sales promotion to the mix",
+    "IMC targets only intermediaries such as retailers, while marketing communications targets only end consumers",
+    "IMC is the regulatory code that governs all marketing communications and advertising claims in Canada"
    ],
    "answer": 0,
-   "explanation": "Marketing communications is the broad means of informing, persuading, and reminding; IMC is the concept of coordinating all promotional activities so they provide a consistent message. IMC audiences can be consumers, intermediaries, or both, so the third option is wrong.",
+   "explanation": "Marketing communications is the broad means of informing, persuading, and reminding; IMC is the concept of coordinating all promotional activities so they provide a consistent message. IMC audiences can be consumers, intermediaries, or both, so saying IMC targets only intermediaries is wrong.",
    "source": "generated"
   },
   {
@@ -1412,7 +1412,7 @@
     "Deciding how much weight to give advertising versus personal selling versus sales promotion"
    ],
    "answer": 3,
-   "explanation": "Balance is about the proportions of each promotional element in the mix. Matching slogans, colours, and service scripts are all about providing a consistent message across elements, which is the second IMC issue.",
+   "explanation": "Balance is about the proportions of each promotional element in the mix. Matching slogans, colours, and service scripts are all about providing a consistent message across elements, which is the other IMC issue (consistency).",
    "source": "generated"
   },
   {
@@ -1496,13 +1496,13 @@
    "difficulty": 3,
    "stem": "Why do most marketers combine several promotional elements instead of relying on just one?",
    "options": [
-    "The Competition Bureau requires every campaign to use at least two elements",
+    "The Competition Bureau requires every Canadian campaign to use at least two different promotional elements",
     "Each element has distinct strengths and weaknesses, so combining them balances reach, cost, credibility, and feedback",
-    "Mass elements cannot legally carry a brand message without customized support",
-    "Customized elements always cost less per contact than mass elements"
+    "Mass elements cannot legally carry a brand message unless customized elements support them at the same time",
+    "Customized elements always cost less per contact than mass elements, so adding them lowers total spending"
    ],
    "answer": 1,
-   "explanation": "Advertising gives reach and control but little feedback, personal selling gives feedback but costs a lot per contact, and publicity gives credibility but little control, so a balanced mix offsets weaknesses. Customized elements actually cost MORE per contact, which is why the last option is wrong.",
+   "explanation": "Advertising gives reach and control but little feedback, personal selling gives feedback but costs a lot per contact, and publicity gives credibility but little control, so a balanced mix offsets weaknesses. Customized elements actually cost MORE per contact, so the claim that they always cost less is wrong.",
    "source": "generated"
   },
   {
@@ -1550,9 +1550,9 @@
    "difficulty": 2,
    "stem": "What best distinguishes advertising from publicity?",
    "options": [
-    "Advertising is two-way and personal; publicity is one-way and non-personal",
-    "Advertising is a short-term inducement; publicity builds long-term relationships",
-    "Advertising can be used only in the introduction stage; publicity can be used in any stage",
+    "Advertising is two-way, personal communication; publicity is one-way, non-personal communication",
+    "Advertising is a short-term inducement of value; publicity builds long-term relationships with stakeholders",
+    "Advertising can be used only in the introduction stage; publicity can be used in any stage of the life cycle",
     "Advertising is paid by an identified sponsor who controls the message; publicity is indirectly paid and largely uncontrolled"
    ],
    "answer": 3,
@@ -1646,7 +1646,7 @@
     "It reaches a mass audience with one identical message"
    ],
    "answer": 2,
-   "explanation": "Personal selling is customized and two-way, so the seller gets immediate feedback and can persuade by tailoring the message. Its weakness is the opposite of the first option: it has an extremely high cost per contact.",
+   "explanation": "Personal selling is customized and two-way, so the seller gets immediate feedback and can persuade by tailoring the message. It does not have the lowest cost per contact; its main weakness is an extremely high cost per contact.",
    "source": "generated"
   },
   {
@@ -1664,7 +1664,7 @@
     "Personal selling is a mass element that reaches large audiences; direct marketing is a customized element"
    ],
    "answer": 0,
-   "explanation": "Both tailor messages, but personal selling is interactive in real time, while direct marketing (mail, catalogues, email, telemarketing) reaches targeted individuals and asks them to respond. Personal selling is customized, not mass, so the last option is wrong.",
+   "explanation": "Both tailor messages, but personal selling is interactive in real time, while direct marketing (mail, catalogues, email, telemarketing) reaches targeted individuals and asks them to respond. Personal selling is customized, not a mass element, so the statement calling it mass is wrong.",
    "source": "generated"
   },
   {
@@ -1756,7 +1756,7 @@
     "Consumer promotions are used only in the decline stage; trade promotions are used only in the introduction stage"
    ],
    "answer": 2,
-   "explanation": "Figure 12-2 places trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) in the push column aimed at the channel, and consumer promotion in the pull column aimed at consumers. The first option simply reverses the two audiences.",
+   "explanation": "Figure 12-2 places trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) in the push column aimed at the channel, and consumer promotion in the pull column aimed at consumers. Saying consumer promotions (allowances) target retailers and trade promotions (coupons) target shoppers simply reverses the two audiences.",
    "source": "generated"
   },
   {
@@ -2010,7 +2010,7 @@
     "Event marketing is used only in the decline stage to clear stock; sponsorship is used only during the introduction stage"
    ],
    "answer": 0,
-   "explanation": "Event marketing puts the brand at the centre of an experience (often one the brand creates, like a pop-up), while sponsorship buys association with an event or property someone else owns. Both are pull tools aimed at consumers in Figure 12-2, so the third option is wrong.",
+   "explanation": "Event marketing puts the brand at the centre of an experience (often one the brand creates, like a pop-up), while sponsorship buys association with an event or property someone else owns. Both are pull tools aimed at consumers in Figure 12-2, so saying event marketing targets channel members is wrong.",
    "source": "generated"
   },
   {
@@ -2208,7 +2208,7 @@
     "Loyalty is the final stage of the funnel and comes after advocacy, once customers stop recommending"
    ],
    "answer": 0,
-   "explanation": "Ongoing positive experiences lead to repeat purchases (loyalty), often encouraged by CRM programs; loyal customers who are rewarded with additional experiences then recommend the product (advocacy). The third option swaps the two definitions.",
+   "explanation": "Ongoing positive experiences lead to repeat purchases (loyalty), often encouraged by CRM programs; loyal customers who are rewarded with additional experiences then recommend the product (advocacy). Calling loyalty 'recommending to friends' and advocacy 'buying again and again' swaps the two definitions.",
    "source": "generated"
   },
   {
@@ -2280,7 +2280,7 @@
     "Build a direct relationship with customers"
    ],
    "answer": 1,
-   "explanation": "Incentives and training for retailers and their sales staff are a push strategy: communication aimed at the distribution channel to gain support through listings, sales, merchandising, feature pricing, and inclusion in flyers. The first option describes a pull strategy, which targets consumers.",
+   "explanation": "Incentives and training for retailers and their sales staff are a push strategy: communication aimed at the distribution channel to gain support through listings, sales, merchandising, feature pricing, and inclusion in flyers. Focusing on ultimate consumers to build awareness, trial, and demand describes a pull strategy, which targets consumers rather than the channel.",
    "source": "official"
   },
   {
@@ -2334,7 +2334,7 @@
     "Push and pull are two names for the same strategy"
    ],
    "answer": 1,
-   "explanation": "Figure 12-2 shows push aimed at the channel (distributors, wholesalers, retailers) and pull aimed at consumers, media, and the public. The first option reverses them, which is the most common trap.",
+   "explanation": "Figure 12-2 shows push aimed at the channel (distributors, wholesalers, retailers) and pull aimed at consumers, media, and the public. Saying push focuses on consumers and pull on the channel reverses them, which is the most common trap.",
    "source": "generated"
   },
   {
@@ -2388,7 +2388,7 @@
     "A firm can use only one strategy per PLC stage, so it must alternate between push and pull each year"
    ],
    "answer": 0,
-   "explanation": "Pull creates consumer demand and push secures distribution and in-store support; each is weaker without the other. The tools differ (trade promotions vs advertising and consumer promotion), so the third option is wrong.",
+   "explanation": "Pull creates consumer demand and push secures distribution and in-store support; each is weaker without the other. The tools differ (trade promotions vs advertising and consumer promotion), so the claim that push and pull use exactly the same tools is wrong.",
    "source": "generated"
   },
   {
@@ -2518,7 +2518,7 @@
     "Step 5 (schedule and run) and step 6 (evaluate)"
    ],
    "answer": 2,
-   "explanation": "Customer touch points are considered when identifying the target audience (step 2), and the product life cycle is considered when designing the promotional program (step 4). The second option reverses the pairing.",
+   "explanation": "Customer touch points are considered when identifying the target audience (step 2), and the product life cycle is considered when designing the promotional program (step 4). Pairing touch points with step 4 and the PLC with step 2 reverses them.",
    "source": "generated"
   },
   {
@@ -2556,7 +2556,7 @@
     "A: scheduling and running the IMC elements; B: designing the promotional program"
    ],
    "answer": 3,
-   "explanation": "Timing decisions (continuous vs flighting, which weeks) belong to step 5, scheduling and running; choosing which tools carry the message belongs to step 4, designing the program. The first option swaps the two.",
+   "explanation": "Timing decisions (continuous vs flighting, which weeks) belong to step 5, scheduling and running; choosing which tools carry the message belongs to step 4, designing the program. Labelling A as designing the program and B as scheduling swaps the two.",
    "source": "generated"
   },
   {
@@ -2592,7 +2592,7 @@
     "Both are behavioural objectives"
    ],
    "answer": 2,
-   "explanation": "Attitudes are a communication objective (laying the foundation for relationships); repeat purchase is an action-oriented behavioural objective. The first option reverses them.",
+   "explanation": "Attitudes are a communication objective (laying the foundation for relationships); repeat purchase is an action-oriented behavioural objective. Calling attitudes behavioural and repeat purchases communication reverses them.",
    "source": "generated"
   },
   {
@@ -2994,7 +2994,7 @@
     "Growth: contests; introduction: rebates"
    ],
    "answer": 2,
-   "explanation": "Free samples help new buyers try a product in introduction; discounts, coupons, and events help keep existing buyers in maturity. The first option reverses the two stages.",
+   "explanation": "Free samples help new buyers try a product in introduction; discounts, coupons, and events help keep existing buyers in maturity. Pairing discounts and coupons with introduction and free samples with maturity reverses the two stages.",
    "source": "generated"
   },
   {
@@ -3068,7 +3068,7 @@
     "Flighting runs at the same level every week; pulse runs only once a year"
    ],
    "answer": 1,
-   "explanation": "In flighting, advertising stops completely between flights; in pulse, there is always a base level of activity, with spikes at key times. The first option swaps the two definitions.",
+   "explanation": "In flighting, advertising stops completely between flights; in pulse, there is always a base level of activity, with spikes at key times. Describing flighting as a continuous base with bursts and pulse as on-and-off periods swaps the two definitions.",
    "source": "generated"
   },
   {
@@ -3142,7 +3142,7 @@
     "a pretest and a posttest"
    ],
    "answer": 3,
-   "explanation": "Pretests evaluate promotional elements before they run (choosing between ad versions); posttests evaluate them after (measuring recall). The first option reverses the order.",
+   "explanation": "Pretests evaluate promotional elements before they run (choosing between ad versions); posttests evaluate them after (measuring recall). Calling the panel test a posttest and the recall survey a pretest reverses the order.",
    "source": "generated"
   },
   {
@@ -3155,9 +3155,9 @@
    "stem": "Halo Fitness tracks click-through rates, conversion rates, and engagement rates on its campaign posts to judge how well the campaign is working. These measures are examples of:",
    "options": [
     "digital engagement metrics used in program evaluation",
-    "customer touch points",
-    "barriers to effective communication",
-    "results sought by a push strategy"
+    "customer touch points mapped when identifying the audience",
+    "barriers to effective communication with the audience",
+    "results sought by a push strategy aimed at retailers"
    ],
    "answer": 0,
    "explanation": "Click-throughs, conversions, and engagement rates are digital metrics used in step 6 to evaluate the program. Push results are trade outcomes such as listings and displays, not consumer engagement measures.",
@@ -3252,7 +3252,7 @@
     "Because inbound is funded by trade allowances that retailers pay manufacturers for featured placement"
    ],
    "answer": 0,
-   "explanation": "Inbound requires excellent content and visibility in the right places; when people who are already interested come to you, spending isn't wasted on broad outbound reach. It still requires investment in content, so the second option is wrong.",
+   "explanation": "Inbound requires excellent content and visibility in the right places; when people who are already interested come to you, spending isn't wasted on broad outbound reach. It still requires investment in content (writing, video, search optimization), so the claim that inbound needs no investment is wrong.",
    "source": "generated"
   },
   {
@@ -3572,9 +3572,9 @@
    "difficulty": 3,
    "stem": "Which campaign uses storytelling rather than conventional feature-based advertising?",
    "options": [
-    "A lotion ad that lists its seven active ingredients and SPF rating",
-    "A banner ad that reads 'Now 30% more moisturizing'",
-    "A flyer offering 20% off all body care this weekend",
+    "A lotion ad that lists its seven active ingredients, its SPF rating, and its dermatologist approval",
+    "A banner ad that reads 'Now 30% more moisturizing than our original formula' beside the bottle",
+    "A flyer offering 20% off all body care products this weekend only at every store location",
     "A video following a real woman's journey to self-confidence, inviting viewers to rethink beauty"
    ],
    "answer": 3,
@@ -3662,10 +3662,10 @@
    "difficulty": 2,
    "stem": "Which of the following is NOT one of the areas that make up the marketing communications industry?",
    "options": [
-    "Advertisers (clients)",
-    "Measurement companies",
+    "Advertisers (clients) who pay for campaigns",
+    "Measurement companies that track audiences",
     "Distribution intermediaries such as wholesalers",
-    "Regulators"
+    "Regulators such as ASC and the CRTC"
    ],
    "answer": 2,
    "explanation": "The industry consists of advertisers, agencies, media, suppliers, regulators, and measurement companies. Wholesalers are marketing channel intermediaries that move products, not part of the communications industry.",
@@ -3776,7 +3776,7 @@
     "ASC handles only mobile marketing complaints; the Competition Bureau handles only misleading claims in print advertising"
    ],
    "answer": 0,
-   "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law against misleading advertising and deceptive marketing. The second option swaps their roles.",
+   "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law against misleading advertising and deceptive marketing. Saying ASC enforces the Competition Act while the Competition Bureau administers the Code swaps their roles.",
    "source": "generated"
   },
   {
@@ -3880,13 +3880,13 @@
    "difficulty": 3,
    "stem": "Internal marketing and a push strategy can both involve training and incentives. What distinguishes them?",
    "options": [
-    "Internal marketing targets channel members; push targets the firm's own employees",
+    "Internal marketing targets channel members such as retailers; push targets the firm's own employees and managers",
     "Internal marketing targets the firm's own employees; push targets channel members such as retailers and wholesalers",
-    "Internal marketing is used only in decline; push only in introduction",
-    "Internal marketing is a form of earned media; push is a form of owned media"
+    "Internal marketing is used only in the decline stage; push is used only in the introduction stage of the PLC",
+    "Internal marketing is a form of earned media; push is a form of owned media that the firm controls"
    ],
    "answer": 1,
-   "explanation": "The audience decides it: internal marketing is aimed inside the organization at its own people, while push is aimed at intermediaries and their sales staff. The first option reverses the two audiences.",
+   "explanation": "The audience decides it: internal marketing is aimed inside the organization at its own people, while push is aimed at intermediaries and their sales staff. Saying internal marketing targets channel members and push targets employees reverses the two audiences.",
    "source": "generated"
   },
   {

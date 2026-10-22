@@ -194,7 +194,7 @@
    "Vertical conflict involves only agents; horizontal conflict involves only wholesalers"
   ],
   "answer": 0,
-  "explanation": "Vertical = up and down the channel (e.g., manufacturer vs wholesaler or retailer); horizontal = side by side (e.g., two retailers of the same brand). The first distractor reverses the two definitions.",
+  "explanation": "Vertical = up and down the channel (e.g., manufacturer vs wholesaler or retailer); horizontal = side by side (e.g., two retailers of the same brand). Saying vertical conflict is between competitors and horizontal conflict is between a manufacturer and its retailers reverses the two definitions.",
   "source": "generated"
  },
  {
@@ -243,12 +243,12 @@
   "stem": "Lakeshore Mattress has always sold through furniture retailers. It now launches a website that ships mattresses straight to consumers at lower prices, and its retailers protest. What is the specific term for what Lakeshore is doing?",
   "options": [
    "Disintermediation",
-   "Horizontal conflict",
+   "Backward integration",
    "Strategic channel alliance",
    "Selective distribution"
   ],
   "answer": 0,
-  "explanation": "Disintermediation occurs when a channel member bypasses another member and sells directly. It sparks conflict between levels (manufacturer vs retailers), so it is not horizontal conflict, which occurs between members at the same level.",
+  "explanation": "Disintermediation occurs when a channel member bypasses another member and sells or buys directly, which is what Lakeshore does by selling around its retailers. It is not backward integration, which would mean Lakeshore acquiring an upstream supplier such as a foam maker; disintermediation involves no ownership.",
   "source": "generated"
  },
  {
@@ -360,7 +360,7 @@
    "The two terms are interchangeable, since both describe moving goods from producers to consumers"
   ],
   "answer": 2,
-  "explanation": "Logistics is the movement-of-goods piece; SCM integrates information and logistics across suppliers, the producer and the marketing channel. The first distractor reverses their scope.",
+  "explanation": "Logistics is the movement-of-goods piece; SCM integrates information and logistics across suppliers, the producer and the marketing channel. Assigning raw-material suppliers to logistics while confining SCM to one warehouse reverses their scope: SCM is the broader, cross-firm concept.",
   "source": "generated"
  },
  {

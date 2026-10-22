@@ -911,7 +911,7 @@
     "There is no way for the dealer and the students to communicate with each other"
    ],
    "answer": 2,
-   "explanation": "The second requirement is a desire AND ability to be satisfied; the students have the desire but not the ability to pay $90,000. Communication is clearly present because the dealer's ads reach them daily, and there is a truck to exchange.",
+   "explanation": "One of the four requirements is a desire AND ability to be satisfied; the students have the desire but not the ability to pay $90,000. Communication is clearly present because the dealer's ads reach them daily, and there is a truck to exchange.",
    "source": "generated"
   },
   {
@@ -1108,7 +1108,7 @@
     "A market is the segment a firm chooses to pursue; a target market is everyone who could possibly buy the product"
    ],
    "answer": 1,
-   "explanation": "The market is the full pool of people with desire and ability; the target market is the part of it the firm deliberately aims its marketing program at. The second option reverses the terms, and target markets include both existing and potential customers.",
+   "explanation": "The market is the full pool of people with desire and ability; the target market is the part of it the firm deliberately aims its marketing program at. Calling the market the chosen segment and the target market everyone who could buy reverses the terms, and target markets include both existing and potential customers.",
    "source": "generated"
   },
   {
@@ -1306,7 +1306,7 @@
     "Customer value refers only to low price; a value proposition refers only to product quality"
    ],
    "answer": 0,
-   "explanation": "Customer value is defined by benefits 'received by targeted buyers', while a value proposition is the unique combination of benefits a brand 'promises to deliver'. The second option simply reverses the two terms.",
+   "explanation": "Customer value is defined by benefits 'received by targeted buyers', while a value proposition is the unique combination of benefits a brand 'promises to deliver'. Calling customer value the advertised promise and the value proposition what buyers actually experience simply reverses the two terms.",
    "source": "generated"
   },
   {
@@ -1855,7 +1855,7 @@
     "The process is the 4 Ps of the mix; the concept is the five uncontrollable environmental forces"
    ],
    "answer": 1,
-   "explanation": "The marketing process is a sequence of steps; the marketing concept is the guiding idea behind it. The second option simply swaps the two definitions, and both apply to for-profit and non-profit organizations.",
+   "explanation": "The marketing process is a sequence of steps; the marketing concept is the guiding idea behind it. Calling the process a philosophy and the concept a three-step sequence simply swaps the two definitions, and both apply to for-profit and non-profit organizations.",
    "source": "generated"
   },
   {
@@ -2128,7 +2128,7 @@
     "Market orientation focuses on society's well-being; the marketing concept largely ignores customers"
    ],
    "answer": 2,
-   "explanation": "The marketing concept is the idea (satisfy consumer needs while achieving organizational goals); firms that work hard at implementing it achieve a market orientation by collecting, sharing and using information. The second option reverses them.",
+   "explanation": "The marketing concept is the idea (satisfy consumer needs while achieving organizational goals); firms that work hard at implementing it achieve a market orientation by collecting, sharing and using information. Calling market orientation the underlying idea and the marketing concept its implementation reverses the two.",
    "source": "generated"
   },
   {
@@ -2182,7 +2182,7 @@
     "Customer relationship management aimed at policyholders"
    ],
    "answer": 0,
-   "explanation": "Prairie Sky is spearheading a community program, the first CSR type on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
+   "explanation": "Prairie Sky is spearheading a community program, CSR type 1 on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
    "source": "generated"
   },
   {
@@ -2200,7 +2200,7 @@
     "Sponsorship of or involvement in fundraising for charitable organizations"
    ],
    "answer": 3,
-   "explanation": "Raising and matching money for a charity is the second CSR type: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
+   "explanation": "Raising and matching money for a charity is CSR type 2: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
    "source": "generated"
   },
   {
@@ -2218,7 +2218,7 @@
     "Sponsorship and/or spearheading of community programs"
    ],
    "answer": 1,
-   "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is the third CSR type: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
+   "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is CSR type 3: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
    "source": "generated"
   },
   {
@@ -2437,7 +2437,7 @@
     "Experience management targets customers' internal response to every aspect of the firm; CRM targets long-term relationships via value and satisfaction"
    ],
    "answer": 3,
-   "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. The second option swaps the definitions; in practice the two support each other.",
+   "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. Saying experience management builds relationships through value while CRM manages feelings at each touchpoint swaps the definitions; in practice the two support each other.",
    "source": "generated"
   },
   {
@@ -2475,7 +2475,7 @@
     "A bank redesigns its app, branch greetings and follow-up calls after customers report feeling ignored"
    ],
    "answer": 2,
-   "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The other three options manage customers' internal response across the organization's touchpoints, which is customer experience management.",
+   "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The airline, hotel and bank examples all manage customers' internal response across the organization's touchpoints, which is customer experience management.",
    "source": "generated"
   },
   {

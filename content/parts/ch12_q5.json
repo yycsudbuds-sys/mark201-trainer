@@ -100,13 +100,13 @@
   "difficulty": 3,
   "stem": "Internal marketing and a push strategy can both involve training and incentives. What distinguishes them?",
   "options": [
-   "Internal marketing targets channel members; push targets the firm's own employees",
+   "Internal marketing targets channel members such as retailers; push targets the firm's own employees and managers",
    "Internal marketing targets the firm's own employees; push targets channel members such as retailers and wholesalers",
-   "Internal marketing is used only in decline; push only in introduction",
-   "Internal marketing is a form of earned media; push is a form of owned media"
+   "Internal marketing is used only in the decline stage; push is used only in the introduction stage of the PLC",
+   "Internal marketing is a form of earned media; push is a form of owned media that the firm controls"
   ],
   "answer": 1,
-  "explanation": "The audience decides it: internal marketing is aimed inside the organization at its own people, while push is aimed at intermediaries and their sales staff. The first option reverses the two audiences.",
+  "explanation": "The audience decides it: internal marketing is aimed inside the organization at its own people, while push is aimed at intermediaries and their sales staff. Saying internal marketing targets channel members and push targets employees reverses the two audiences.",
   "source": "generated"
  },
  {

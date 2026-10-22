@@ -134,15 +134,15 @@
   "type": "mc",
   "angle": "identify",
   "difficulty": 2,
-  "stem": "Glacier Gear, an Edmonton maker of ski goggles, can ship every online order overnight from its own warehouse with a personal follow-up call, or sell through regional sporting goods stores that hold stock. The first option delights customers but costs far more per unit. Which instructor concept is Glacier Gear wrestling with?",
+  "stem": "Glacier Gear, an Edmonton maker of ski goggles, can ship every online order overnight from its own warehouse with a personal follow-up call, or sell through regional sporting goods stores that hold stock. The overnight option delights customers but costs far more per unit. Which instructor concept is Glacier Gear wrestling with?",
   "options": [
    "The choice between forward and backward integration",
    "The difference between vertical and horizontal conflict",
-   "The choice between marketplace and marketspace",
+   "The choice between selective and exclusive distribution",
    "The trade-off between cost and level of service"
   ],
   "answer": 3,
-  "explanation": "Higher service (overnight shipping, personal follow-up) comes at a higher cost, which is the instructor's core channel trade-off. Integration would mean owning another channel stage, which Glacier Gear is not considering.",
+  "explanation": "Higher service (overnight shipping, personal follow-up) comes at a higher cost, which is the instructor's core channel trade-off. Integration would mean owning another channel stage, and selective vs exclusive concerns how many outlets per area, neither of which is the dilemma described.",
   "source": "generated"
  },
  {
@@ -304,7 +304,7 @@
    "8 without; 16 with"
   ],
   "answer": 1,
-  "explanation": "No intermediary: producers x buyers = 4 x 4 = 16. One intermediary: producers + buyers = 4 + 4 = 8. Counting only one side (4) or multiplying in both cases are the common errors.",
+  "explanation": "No intermediary: producers x buyers = 4 x 4 = 16. One intermediary: producers + buyers = 4 + 4 = 8. Answering 4 with the intermediary counts only one side, and 8 without / 16 with reverses the two formulas.",
   "source": "generated"
  },
  {

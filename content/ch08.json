@@ -1642,7 +1642,7 @@
    "type": "mc",
    "angle": "contrast",
    "difficulty": 3,
-   "stem": "Both the introduction and decline stages can show few competitors and modest marketing activity. Which pair of cues tells them apart?",
+   "stem": "Both the introduction and decline stages can show relatively few competitors and minimal profits. Which pair of cues tells them apart?",
    "options": [
     "Introduction: few competitors exist; decline: some competitors are leaving",
     "Introduction: limited distribution; decline: full distribution",
@@ -2696,7 +2696,7 @@
    "type": "mc",
    "angle": "not",
    "difficulty": 3,
-   "stem": "Which of the following is NOT an example of repositioning?",
+   "stem": "Repositioning is one of the four strategies for extending a mature product's life cycle. Which of the following moves by a mature brand is NOT a repositioning move?",
    "options": [
     "A budget hotel chain upgrades its rooms and raises its rates",
     "A cereal maker shrinks box contents but keeps the same price",
@@ -2866,7 +2866,7 @@
     "fashion product"
    ],
    "answer": 1,
-   "explanation": "Wearable technology is Figure 8-5's example of a continuous innovation: it changes the consumer's normal routine without requiring totally new learning. It is more than minor (which requires no change at all) but less than radical (which requires new consumption patterns).",
+   "explanation": "Wearable technology is Figure 8-5's example of a continuous innovation: it changes the consumer's normal routine without requiring totally new learning. It is more than minor (which requires no new learning) but less than radical (which requires new learning and consumption patterns).",
    "source": "generated"
   },
   {
@@ -3074,7 +3074,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 3,
-   "stem": "A new meal-replacement shake is affordable and as nutritious as a regular lunch, but many Canadians resist it because drinking lunch from a bottle feels at odds with cultural values around shared meals and makes them look like they don't eat properly. Which barrier is this?",
+   "stem": "A new meal-replacement shake is affordable and as nutritious as a regular lunch, but many Canadians resist it because drinking lunch from a bottle clashes with their cultural traditions around sit-down, shared meals. Which barrier is this?",
    "options": [
     "Psychological barrier",
     "Value barrier",
@@ -3082,7 +3082,7 @@
     "Risk barrier"
    ],
    "answer": 0,
-   "explanation": "Resistance rooted in cultural differences and image concerns is a psychological barrier. It is not a value barrier: the shake is affordable and nutritious, so the issue isn't a lack of incentive but how it fits people's culture and self-image.",
+   "explanation": "Resistance rooted in cultural differences or image concerns is a psychological barrier. It is not a value barrier: the shake is affordable and nutritious, so the issue isn't a lack of incentive but how it fits people's cultural traditions. Nor is it a risk barrier, since nobody fears physical harm or financial loss.",
    "source": "generated"
   },
   {
@@ -3092,7 +3092,7 @@
    "type": "mc",
    "angle": "contrast",
    "difficulty": 3,
-   "stem": "Office workers agree that a new stand-up desk works well and fits easily into their workday, but they see no real advantage over their current desks, so they don't bother switching. Which barrier is this, rather than a usage barrier?",
+   "stem": "Office workers agree that a new stand-up desk works well and fits easily into their workday, but they see no real advantage over their current desks, so they don't bother switching. Which barrier to adoption is at work?",
    "options": [
     "Usage barrier: the product is incompatible with existing habits",
     "Value barrier: the product offers no incentive to change",
