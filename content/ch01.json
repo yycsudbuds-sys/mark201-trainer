@@ -1,0 +1,3058 @@
+{
+ "chapter": 1,
+ "title": "Understanding Marketing",
+ "topics": [
+  {
+   "id": "t01-1",
+   "order": 1,
+   "title": "What marketing is and how exchange works",
+   "summary": "Marketing is not just ads or selling. It is the process of discovering what people need and planning goods, services or ideas that satisfy those needs while meeting the organization's goals. At its heart is exchange: a trade that leaves both sides better off and that needs four conditions to happen. Marketers cannot create needs, but they do shape wants.",
+   "concepts": [
+    "c01-marketing-definition",
+    "c01-exchange",
+    "c01-needs-wants"
+   ]
+  },
+  {
+   "id": "t01-2",
+   "order": 2,
+   "title": "Choosing customers and promising value",
+   "summary": "Not everyone is a potential buyer: a market is people with both the desire and the ability to buy. Because funds are limited, firms pick target markets to focus on. They then compete by delivering customer value and by stating a value proposition that sets their brand apart.",
+   "concepts": [
+    "c01-market",
+    "c01-target-market",
+    "c01-customer-value",
+    "c01-value-proposition"
+   ]
+  },
+  {
+   "id": "t01-3",
+   "order": 3,
+   "title": "The 4 Ps, the environment and the marketing process",
+   "summary": "Marketers control four tools (product, price, place and promotion) but work inside five environmental forces they cannot control. They combine the 4 Ps into a marketing program, which is step 2 of the three-step marketing process: identify consumer needs, manage the marketing mix, realize profits (or objectives).",
+   "concepts": [
+    "c01-marketing-mix",
+    "c01-environmental-forces",
+    "c01-marketing-program",
+    "c01-marketing-process"
+   ]
+  },
+  {
+   "id": "t01-4",
+   "order": 4,
+   "title": "Business philosophies and customer relationships",
+   "summary": "Businesses moved from a production focus, to a sales focus, to the marketing concept, and now to relationship and societal marketing. This topic covers the marketing concept and how firms put it into practice (market orientation), the societal marketing concept and CSR, and how firms build long-term relationships (CRM) and manage the customer experience.",
+   "concepts": [
+    "c01-business-philosophies",
+    "c01-marketing-concept",
+    "c01-market-orientation",
+    "c01-societal-csr",
+    "c01-crm",
+    "c01-customer-experience"
+   ]
+  },
+  {
+   "id": "t01-5",
+   "order": 5,
+   "title": "Who buys, what marketing creates, and where it is heading",
+   "summary": "Buyers are either ultimate consumers (household use) or organizational buyers (business use or resale). Marketing creates value called utility, and it can be studied for a whole nation (macromarketing) or one organization (micromarketing). The chapter closes with seven evolving practices, ethics and the CMA Code, and the point that everyone markets and marketing touches every career.",
+   "concepts": [
+    "c01-consumers-org-buyers",
+    "c01-utility",
+    "c01-macro-micro",
+    "c01-evolving-practices",
+    "c01-ethics",
+    "c01-who-markets"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c01-marketing-definition",
+   "topic": "t01-1",
+   "term": "Marketing (definitions)",
+   "definition": "Textbook: the process of planning goods, services or ideas to meet consumer needs and organizational objectives, including the conception of products and their pricing, promotion and distribution. CMA: a set of business practices designed to plan for and present an organization's products or services in ways that build effective customer relationships.",
+   "explain": "Marketing is much more than ads or selling: it starts with understanding what customers need and ends with offerings that satisfy those needs while meeting the organization's goals. The Chartered Institute of Marketing (UK) calls it the management process responsible for identifying, anticipating and satisfying customer requirements profitably; the AMA-style definition stresses creating, communicating, delivering and exchanging offerings that benefit the organization, its stakeholders and society. Effective marketing requires intimate knowledge of consumers and the marketplace, not just common sense, and most of it is invisible to the average consumer.",
+   "example": "When Lululemon faced flat sales, four CEOs in five years, planned layoffs of 1,100 people and skeptical customers, the marketer's job was not simply to buy more ads but to make key decisions (go back to basics, stress key positive attributes, leverage brand equity, change the operating model) to stop the decline.",
+   "contrast": "Advertising and personal selling are only parts of promotion, and promotion is only one of the 4 Ps. Marketing covers the whole process: researching needs, conceiving the product, pricing it, distributing it and communicating about it.",
+   "trap": "Distractors such as 'good common sense', 'selling unwanted things' or 'advertising' describe the popular misconception. Match source to wording: 'build effective customer relationships' = CMA; 'identifying, anticipating and satisfying customer requirements profitably' = Chartered Institute of Marketing (UK); 'creating, communicating, delivering and exchanging offerings ... society at large' = AMA/textbook style.",
+   "mnemonic": "CMA = Canada = Customer relationships. CIM = Identify, antICIpate, satisfy - profitably.",
+   "figure": {
+    "type": "table",
+    "title": "Three definitions of marketing",
+    "head": [
+     "Source",
+     "Key wording"
+    ],
+    "rows": [
+     [
+      "Canadian Marketing Association (CMA)",
+      "A set of business practices designed to plan for and present an organization's products or services in ways that build effective customer relationships"
+     ],
+     [
+      "Chartered Institute of Marketing (UK)",
+      "The management process responsible for identifying, anticipating and satisfying customer requirements profitably"
+     ],
+     [
+      "Textbook / AMA style",
+      "The activity for creating, communicating, delivering and exchanging offerings that benefit the organization, its stakeholders and society at large"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c01-exchange",
+   "topic": "t01-1",
+   "term": "Exchange and the four requirements for marketing",
+   "definition": "Exchange is the trade of things of value between a buyer and a seller so that each is better off after the trade. Marketing can occur only when there are (1) two or more parties with unsatisfied needs, (2) a desire and ability on their part to be satisfied, (3) a way for the parties to communicate, and (4) something to exchange.",
+   "explain": "Exchange is the heart of marketing: each side gives up something it values less to get something it values more. Money is NOT required; time, effort, blood, a vote or a good feeling can all be things of value. If any one of the four requirements is missing (for example, no way to communicate, or the buyer lacks the ability to pay), no marketing exchange can happen.",
+   "example": "After seeing a Canadian Red Cross ad, Amanda donates a pint of blood and goes home feeling she did a good deed. Blood was exchanged for a feeling of satisfaction, and the Red Cross gained blood to serve society, so this is a marketing exchange.",
+   "contrast": "An exchange leaves BOTH parties better off; a one-sided transfer does not. The 'desire and ability' requirement mirrors the definition of a market (people with both the desire and the ability to buy a specific product).",
+   "trap": "Answers like 'no, because no money changed hands' or 'no, because the Red Cross is a non-profit' are wrong. In 'which is NOT a requirement' questions, watch for fakes such as money as the medium of exchange, a written contract, a profit motive or a physical store.",
+   "mnemonic": "2-D-C-S: Two parties, Desire and ability, Communication, Something to exchange.",
+   "figure": {
+    "type": "list",
+    "title": "Four factors required for marketing to occur",
+    "items": [
+     "Two or more parties (individuals or organizations) with unsatisfied needs",
+     "A desire and ability on their part to be satisfied",
+     "A way for the parties to communicate",
+     "Something to exchange"
+    ]
+   }
+  },
+  {
+   "id": "c01-needs-wants",
+   "topic": "t01-1",
+   "term": "Needs vs wants",
+   "definition": "A need occurs when a person feels deprived of basic necessities such as food, water, clothing and shelter. A want is a need that is shaped by a person's knowledge, culture and personality.",
+   "explain": "A need is the basic deprivation (thirst); a want is the learned preference for a specific item that satisfies that need (a particular drink brand). Marketers do not create needs, but they do try to shape wants. That is why the answer to 'Who's in charge, the consumer or the marketer?' is both: consumers' needs come first, while marketing influences which products they want.",
+   "example": "A Tim Hortons ad on a cold Edmonton morning taps the need for warmth and food, and shapes the want for a steeped tea and a breakfast sandwich in particular.",
+   "contrast": "Need = generic deprivation of a basic necessity (hunger, thirst, shelter). Want = a specific product or brand preference shaped by knowledge, culture and personality. 'Preferences' is not the course term for either blank in the classic question.",
+   "trap": "In the official fill-in-the-blank, the ad 'appeals to consumers' NEEDS for liquid and attempts to shape consumers' WANTS for the advertised product' - the order is needs; wants. Any option claiming marketers 'create needs' is false.",
+   "mnemonic": "Need = Necessity. Want = Which brand.",
+   "figure": null
+  },
+  {
+   "id": "c01-market",
+   "topic": "t01-2",
+   "term": "Market",
+   "definition": "A market is people with both the desire and the ability to buy a specific product.",
+   "explain": "Desire alone is not enough: someone who wants a product but cannot afford it is not part of the market, and neither is someone who could afford it but has no interest. Desire plus ability defines the market; marketers then choose which part of it to focus on (the target market).",
+   "example": "Many Winnipeg teenagers would love a $90,000 electric pickup but cannot pay for it, so they are not in its market. Established tradespeople who want an electric pickup and can afford one are.",
+   "contrast": "Market = everyone with the desire AND ability to buy a product. Target market = the specific segment(s) of that market the firm chooses to direct its marketing program toward. Mass market = treating everyone as one undifferentiated group.",
+   "trap": "Watch for 'people who want the product' (missing ability) or 'people who can afford it' (missing desire). Both halves must be present. Not being targeted does not remove someone from the market.",
+   "mnemonic": "Market = Motivation (desire) + Means (ability).",
+   "figure": null
+  },
+  {
+   "id": "c01-target-market",
+   "topic": "t01-2",
+   "term": "Target market",
+   "definition": "One or more specific groups (segments) of existing and potential consumers toward which an organization directs its marketing program.",
+   "explain": "With limited funds, a firm gets more from channelling resources to the specific groups most interested in purchasing than from trying to reach everyone. The target market then drives every marketing mix decision: product features, price level, where it is sold and how it is promoted.",
+   "example": "Sound and Cinema, which turns ordinary basements into home theatres, advertises only in publications mailed to homeowners in subdivisions where the least expensive home costs $275,000.",
+   "contrast": "The target market is chosen from the market (people with desire and ability). A mass-market approach aims one offer at everyone, the opposite of targeting. The target market is the WHO; the marketing mix is WHAT the firm does for them.",
+   "trap": "Fake distractors from the official question: 'tangent market', 'market aggregation', 'promotional market'. Cue words: 'directs its marketing program/efforts toward', 'specific group', 'segment'. The definition includes existing AND potential consumers, and it can be more than one group.",
+   "mnemonic": "Limited funds? Don't spray - aim.",
+   "figure": null
+  },
+  {
+   "id": "c01-customer-value",
+   "topic": "t01-2",
+   "term": "Customer value",
+   "definition": "The unique combination of benefits received by targeted buyers that includes quality, price, convenience, on-time delivery, and both before-sale and after-sale service.",
+   "explain": "Customer value is what buyers actually receive. Firms usually win by standing out on one route - the best price, the best product or the best service - while staying acceptable on the others. Consistently delivering value is what builds loyal customers.",
+   "example": "Costco competes mainly on best price, Canada Goose on best product, and a Calgary bike shop that offers expert fitting before the sale and free lifetime tune-ups after it competes on best service.",
+   "contrast": "Customer value = benefits RECEIVED by targeted buyers. Value proposition = benefits a brand PROMISES to deliver. Customer satisfaction = how well the experience met expectations (an outcome, not the bundle of benefits).",
+   "trap": "The official definition lists quality, price, convenience, on-time delivery, and before- and after-sale service; distractors are customer satisfaction, target marketing and benefit segmentation. 'Received' points to customer value; 'promises' points to value proposition.",
+   "mnemonic": "Q-P-C-D-S: Quality, Price, Convenience, Delivery on time, Service before and after.",
+   "figure": {
+    "type": "list",
+    "title": "Benefits in customer value (delivered via best price, best product or best service)",
+    "items": [
+     "Quality",
+     "Price",
+     "Convenience",
+     "On-time delivery",
+     "Before-sale and after-sale service"
+    ]
+   }
+  },
+  {
+   "id": "c01-value-proposition",
+   "topic": "t01-2",
+   "term": "Value proposition",
+   "definition": "The unique combination of benefits that a brand promises to deliver to consumers; it differentiates the brand from competing brands.",
+   "explain": "A value proposition answers 'Why should our target customer buy from us instead of a rival?' It is a promise made in advance, and it should appeal to the target market. The slides show a pizza promoting its Ancient Grains crust and MEC's Buyer's Guide stressing product quality as examples.",
+   "example": "Prairie Brew, an invented Edmonton coffee roaster, promises 'beans roasted within 48 hours of arriving at your door' - a benefit its supermarket rivals cannot match.",
+   "contrast": "Value proposition = the brand's PROMISE that differentiates it. Customer value = the benefits buyers actually RECEIVE. Marketing mix = the controllable tools (4 Ps) used to keep the promise.",
+   "trap": "Cue words 'promises to deliver' and 'differentiates the brand' point to value proposition; 'received by targeted buyers' plus the quality/price/convenience list points to customer value. A question pairing an ad promise with later survey results is testing exactly this order.",
+   "mnemonic": "Proposition = Promise.",
+   "figure": null
+  },
+  {
+   "id": "c01-marketing-mix",
+   "topic": "t01-3",
+   "term": "Marketing mix (4 Ps)",
+   "definition": "The controllable factors - product, price, promotion and place - that a marketing manager can use to solve a marketing problem; they must be consistently coordinated and appeal to the target market.",
+   "explain": "Product is a good, service or idea to satisfy consumers' needs; price is what is exchanged for the product; promotion is a means of communication between seller and buyer; place is a means of getting the product to the consumer. The four elements are controllable and must work together: a premium product with a bargain price and discount-store distribution sends mixed signals.",
+   "example": "A new Edmonton lentil-chip brand: product = high-protein chips; price = $4.99 a bag; place = Loblaws and Shoppers Drug Mart; promotion = in-store sampling and Instagram ads.",
+   "contrast": "The 4 Ps are CONTROLLABLE; environmental forces (social, economic, technological, competitive, regulatory) are UNCONTROLLABLE. Advertising and selling are only part of promotion, which is one P of four.",
+   "trap": "Place means getting the product to consumers (distribution), not just a store address. Price is 'what is exchanged', which need not be money (time, trade-ins, volunteer hours). Any factor involving the economy, competitors, laws, technology or social trends is an environmental force, not a P.",
+   "mnemonic": "The 4 Ps are in your Pocket (controllable); the environment is the weather (uncontrollable).",
+   "figure": {
+    "type": "table",
+    "title": "The 4 Ps",
+    "head": [
+     "Element",
+     "Meaning"
+    ],
+    "rows": [
+     [
+      "Product",
+      "A good, service or idea to satisfy consumers' needs"
+     ],
+     [
+      "Price",
+      "What is exchanged for the product"
+     ],
+     [
+      "Promotion",
+      "A means of communication between the seller and the buyer"
+     ],
+     [
+      "Place",
+      "A means of getting the product to the consumer"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c01-environmental-forces",
+   "topic": "t01-3",
+   "term": "Environmental forces",
+   "definition": "The uncontrollable factors - social, economic, technological, competitive and regulatory forces - that affect a marketing decision.",
+   "explain": "Marketers cannot change these forces, but they must monitor them and adapt the 4 Ps. In the 'role of marketing' figure, the marketing department works alongside R&D, manufacturing, finance, HR, IT and senior management, and links the organization to customers (relationships), suppliers (partnerships), other organizations (alliances) and owners/shareholders, all surrounded by these five forces.",
+   "example": "Growing interest in sustainability (social), a recession (economic), the rise of smartphone shopping (technological), a rival opening next door (competitive) and a new federal privacy rule (regulatory).",
+   "contrast": "Environmental forces sit outside the firm's control; the 4 Ps sit inside it. A firm's response to a force (cutting prices during a recession) is a marketing mix decision, while the recession itself is the environmental force.",
+   "trap": "There are exactly five: social, economic, technological, competitive, regulatory. Distractors like 'promotional', 'pricing' or 'distribution' forces are 4 Ps in disguise. Competitors are uncontrollable even though they are in your industry.",
+   "mnemonic": "SECTR - read it as 'SECToR': Social, Economic, Competitive, Technological, Regulatory.",
+   "figure": {
+    "type": "list",
+    "title": "Five environmental forces (uncontrollable)",
+    "items": [
+     "Social",
+     "Economic",
+     "Technological",
+     "Competitive",
+     "Regulatory"
+    ]
+   }
+  },
+  {
+   "id": "c01-marketing-program",
+   "topic": "t01-3",
+   "term": "Marketing program",
+   "definition": "A plan that integrates the marketing mix to provide a good, service or idea to prospective buyers.",
+   "explain": "Once consumer needs have been discovered, marketing's next task is to translate that information into products that satisfy them. The marketing program is the plan that does this by combining the right product, price, promotion and place for the target market; it is the heart of step 2 of the marketing process.",
+   "example": "After research shows Regina shift workers want healthy late-night food, a caterer designs a program: $12 grain bowls (product, price) sold from a food truck near hospitals overnight (place) and promoted in a nurses' union newsletter (promotion).",
+   "contrast": "Marketing mix = the four controllable ingredients. Marketing program = the integrated plan (recipe) that combines them for prospective buyers. Marketing process = the three-step sequence (identify needs, manage the mix, realize profits) in which the program is created in step 2.",
+   "trap": "Official question: 'After discovering consumers' needs, marketing's next task is to...' - answer: translate information about consumer needs into products that satisfy them, NOT determine demographics, design prototypes or write a target-market mission statement.",
+   "mnemonic": "Mix = ingredients; Program = recipe.",
+   "figure": null
+  },
+  {
+   "id": "c01-marketing-process",
+   "topic": "t01-3",
+   "term": "The marketing process (Figure 1-2)",
+   "definition": "A process that focuses on consumer needs: (1) identify consumer needs, (2) manage the marketing mix to meet consumer needs, and (3) realize profits for the company (or objectives for non-profit organizations).",
+   "explain": "Step 1 discovers needs by researching potential consumers; step 2 satisfies those needs by designing a marketing program with the right product, price, promotion and place; step 3 is the payoff - profit for a business or other objectives for a non-profit. Information about needs flows from the market (potential consumers) to the organization, and products, services and ideas flow back to the market.",
+   "example": "A Calgary meal-kit start-up surveys busy parents (step 1), launches 20-minute kits at $11 a serving sold online and promoted on Instagram (step 2), and becomes profitable in year two (step 3).",
+   "contrast": "The process is the overall three-step sequence; the marketing program is the plan built in step 2; the marketing concept is the philosophy behind it (satisfy needs while achieving organizational goals).",
+   "trap": "The process STARTS with consumer needs, never with the product or with promotion. For a non-profit, step 3 is realizing objectives, not profit. Information flows from consumers to the organization; offerings flow from the organization to consumers.",
+   "mnemonic": "Discover - Satisfy - Realize.",
+   "figure": {
+    "type": "list",
+    "title": "The marketing process (Figure 1-2)",
+    "items": [
+     "1. Identify consumer needs (discover needs by researching consumers)",
+     "2. Manage the marketing mix to meet consumer needs (design a marketing program: product, price, promotion, place)",
+     "3. Realize profits for the company (or objectives for non-profit organizations)"
+    ]
+   }
+  },
+  {
+   "id": "c01-business-philosophies",
+   "topic": "t01-4",
+   "term": "Evolution of business philosophies",
+   "definition": "The progression of organizational orientations over time: production orientation, then sales orientation, then marketing orientation (the marketing concept), then relationship marketing / societal marketing orientation.",
+   "explain": "In the production era demand exceeded supply, so firms focused on producing goods efficiently. As competition grew, the sales orientation focused on selling and promotion to move output. The marketing orientation then put consumer needs first, and today's relationship/societal orientation adds long-term customer relationships and responsibility to society.",
+   "example": "A furniture maker that once sold whatever it built (production), then hired aggressive salespeople to clear its warehouse (sales), then surveyed customers before designing (marketing), and now offers lifetime repairs and sustainably sourced wood (relationship/societal).",
+   "contrast": "The sales orientation starts with products the firm has already made and pushes them; the marketing orientation starts with what customers need. The relationship/societal orientation goes further by stressing long-term relationships and society's well-being.",
+   "trap": "Order questions: production always comes first and relationship/societal last. Cues: 'demand exceeded supply' or 'efficiency' = production; 'aggressive selling to move inventory' = sales; 'find out what customers want first' = marketing; 'long-term relationships and social responsibility' = relationship/societal.",
+   "mnemonic": "Please Sell My Relationship: Production, Sales, Marketing, Relationship/Societal.",
+   "figure": {
+    "type": "table",
+    "title": "Evolution of business philosophies",
+    "head": [
+     "Orientation",
+     "Focus",
+     "Conditions"
+    ],
+    "rows": [
+     [
+      "Production",
+      "Producing goods efficiently",
+      "Early 1900s; demand exceeded supply"
+     ],
+     [
+      "Sales",
+      "Selling and promotion to move output",
+      "Roughly 1930s-1950s; competition grew"
+     ],
+     [
+      "Marketing (marketing concept)",
+      "Discovering and satisfying consumer needs",
+      "1950s-60s onward"
+     ],
+     [
+      "Relationship / societal marketing",
+      "Long-term customer relationships plus society's well-being",
+      "Today"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c01-marketing-concept",
+   "topic": "t01-4",
+   "term": "Marketing concept",
+   "definition": "The idea that an organization should strive to satisfy the needs of consumers while also trying to achieve the organization's goals.",
+   "explain": "The marketing concept has two halves: satisfy consumers AND meet organizational goals such as profit. It is a guiding philosophy that starts with customers' needs. Firms that put great effort into implementing the marketing concept are said to have a market orientation.",
+   "example": "A Halifax brewery develops a low-alcohol line because customers asked for it, but launches it only after confirming it will meet the brewery's margin targets.",
+   "contrast": "Marketing concept = the idea (satisfy needs + achieve organizational goals). Market orientation = the practical implementation (collect, share and use customer and competitor information). Societal marketing concept = satisfy needs in a way that also provides for society's well-being.",
+   "trap": "An option that drops either half ('satisfy consumers at any cost' or 'maximize profit') is not the marketing concept. 'Society's well-being' signals the societal marketing concept; 'collecting and sharing information across departments' signals market orientation.",
+   "mnemonic": "Happy customers + company goals met = marketing concept.",
+   "figure": null
+  },
+  {
+   "id": "c01-market-orientation",
+   "topic": "t01-4",
+   "term": "Market orientation",
+   "definition": "An organization that focuses its efforts on (1) continuously collecting information about customers' needs and competitors' capabilities, (2) sharing this information across departments, and (3) using the information to create customer value.",
+   "explain": "Market orientation is the marketing concept put into practice. Its three parts always appear together on exams: collect (about customers AND competitors), share (across departments, not just within marketing) and use (to create customer value).",
+   "example": "An invented pharmacy chain, Northway, reviews loyalty-card data and competitors' promotions every week, shares the dashboard with buying, store operations and finance, and uses it to redesign its in-store health clinics.",
+   "contrast": "Market orientation is about information flowing through the whole firm to create value; the marketing concept is the underlying idea; macromarketing is a nation's aggregate flow of goods; the societal marketing concept adds society's well-being.",
+   "trap": "Official distractors: societal marketing concept, macromarketing, nonprofit orientation, consumerism. Cue: 'continuously collecting information about customers' needs AND competitors' capabilities, sharing it across departments'. Keeping information inside marketing breaks the definition.",
+   "mnemonic": "Collect - Share - Use.",
+   "figure": {
+    "type": "list",
+    "title": "Three components of a market orientation",
+    "items": [
+     "Continuously collect information about customers' needs and competitors' capabilities",
+     "Share the information across departments",
+     "Use the information to create customer value"
+    ]
+   }
+  },
+  {
+   "id": "c01-societal-csr",
+   "topic": "t01-4",
+   "term": "Societal marketing concept and CSR",
+   "definition": "Societal marketing concept: the view that organizations should satisfy the needs of consumers in a way that also provides for society's well-being. Corporate social responsibility (CSR): the idea that organizations are part of a larger society and are accountable to that society for their actions.",
+   "explain": "The societal marketing concept extends the marketing concept by adding society as a third beneficiary. CSR is the accountability idea behind it, and the slides list three types of CSR initiatives: (1) sponsoring and/or spearheading community programs, (2) sponsoring and/or getting involved in fundraising for charitable organizations, and (3) a business philosophy that implements socially responsible business practices.",
+   "example": "A Calgary grocer sponsors a youth soccer league (community program), runs a checkout campaign for the food bank (charitable fundraising), and switches to compostable packaging across all stores (socially responsible business philosophy).",
+   "contrast": "Marketing concept = consumers + organizational goals. Societal marketing concept = consumers + organizational goals + society's well-being. CSR = the organization's accountability to society and the initiatives that express it. Ethics = moral principles guiding individual or group decisions.",
+   "trap": "Classify CSR scenarios carefully: running or sponsoring a local program = type 1; raising money for a charity = type 2; changing how the whole business operates (sourcing, packaging, wages, emissions) = type 3. Loyalty programs are CRM, not CSR. 'Society's well-being' = societal marketing concept.",
+   "mnemonic": "CSR's 3 Cs: Community programs, Charity fundraising, Company-wide philosophy.",
+   "figure": {
+    "type": "list",
+    "title": "Three types of CSR initiatives",
+    "items": [
+     "Sponsorship and/or spearheading of community programs",
+     "Sponsorship and/or involvement in fundraising initiatives for charitable organizations",
+     "A business philosophy that implements socially responsible business practices"
+    ]
+   }
+  },
+  {
+   "id": "c01-crm",
+   "topic": "t01-4",
+   "term": "Customer relationship management (CRM) and relationship marketing",
+   "definition": "CRM: the process of building and developing long-term relationships with customers by delivering customer value and satisfaction. Relationship marketing: linking the organization to its individual customers, employees, suppliers and other partners for their mutual long-term benefit.",
+   "explain": "Instead of chasing one-off sales, CRM aims to keep customers for years by consistently delivering value and satisfaction; exceptional ongoing service is a classic CRM tactic. Relationship marketing is broader in who it links: not just customers but also employees, suppliers and other partners, all for mutual long-term benefit.",
+   "example": "A Saskatoon accounting-software firm assigns each small-business client a dedicated advisor, tracks their needs, and offers free quarterly check-ins to keep them for years.",
+   "contrast": "CRM = long-term relationships with CUSTOMERS through value and satisfaction. Relationship marketing = links with customers, employees, suppliers and partners. Customer experience management = customers' internal response to every aspect of the organization. A transactional focus seeks only the single sale.",
+   "trap": "Official question: vendors providing 'exceptional, ongoing service to their business customers' hope to benefit from CRM, not the societal marketing concept or 'customer orientation'. Cue words: long-term, ongoing, loyalty, retain. If employees, suppliers and partners are named too, think relationship marketing.",
+   "mnemonic": "CRM = Customers Retained for the long run.",
+   "figure": null
+  },
+  {
+   "id": "c01-customer-experience",
+   "topic": "t01-4",
+   "term": "Customer experience management",
+   "definition": "Managing the internal response that customers have to all aspects of an organization and its offering.",
+   "explain": "Customers form impressions at every touchpoint: website, store, packaging, staff, call centre, delivery and returns. Customer experience management deliberately designs and monitors all of them so the customer's overall internal response is positive and consistent. A great experience supports loyalty, so it works hand in hand with CRM.",
+   "example": "An Edmonton furniture retailer maps every touchpoint - app, showroom greeting, delivery-crew manners, follow-up email - and redesigns the delivery-window process after learning customers felt anxious waiting.",
+   "contrast": "Customer experience management = customers' internal response to ALL aspects of the organization and offering. CRM = building long-term relationships by delivering value and satisfaction. Experiential marketing = a promotional practice that creates hands-on brand experiences such as pop-ups.",
+   "trap": "Cue words: 'internal response', 'every touchpoint', 'all aspects of the organization'. Do not confuse it with experiential marketing just because both contain 'experience'. If the stem stresses keeping customers long-term through value and satisfaction, the answer is CRM.",
+   "mnemonic": "Experience = how it FEELS at every touchpoint.",
+   "figure": null
+  },
+  {
+   "id": "c01-consumers-org-buyers",
+   "topic": "t01-5",
+   "term": "Ultimate consumers vs organizational buyers",
+   "definition": "Ultimate consumers are the people who use the goods and services purchased for a household. Organizational buyers are manufacturers, wholesalers, retailers and government agencies that buy goods and services for their own use or for resale.",
+   "explain": "The same product can be bought by either type of buyer; what decides the category is the PURPOSE of the purchase. Buying for personal or household use makes you an ultimate consumer; buying to run an organization or to resell makes you an organizational buyer.",
+   "example": "A parent buying milk at Sobeys for the family is an ultimate consumer; a store owner buying hand-painted slate signs to sell in her store is an organizational buyer.",
+   "contrast": "Ultimate consumer = household use. Organizational buyer = organizational use or resale. A professional buying something for a personal hobby is still an ultimate consumer, whatever their job title.",
+   "trap": "Distractors give buyers job titles (programmer, botanist, dentist, baseball player) to tempt you, but they are buying for household use. Look for 'to resell', 'for the store', 'for the clinic' or a government agency.",
+   "mnemonic": "Who uses it? Home = ultimate consumer; organization or resale = organizational buyer.",
+   "figure": null
+  },
+  {
+   "id": "c01-utility",
+   "topic": "t01-5",
+   "term": "Utility",
+   "definition": "The benefits or customer value received by users of the product. The four types are form, place, time and possession utility.",
+   "explain": "Form utility is the production of the good or service itself; place utility is having the offering available where consumers need it; time utility is having it available when they need it; possession utility is getting the product to consumers so they can use it, for example by offering credit or financing. Marketing creates place, time and possession utility and influences form utility.",
+   "example": "A bakery turning flour into croissants (form), a coffee kiosk beside airport gates (place), a 24-hour pharmacy (time) and a furniture store's interest-free financing (possession).",
+   "contrast": "Place = WHERE; time = WHEN; possession = being able to acquire and use it (credit, payment options); form = making the product itself. Marketing creates place, time and possession directly but only influences form, which production creates.",
+   "trap": "Questions often ask which utility marketing does NOT create directly: form. Do not confuse place (location/availability) with possession (ability to acquire and use, e.g., financing). 'Open 24/7' or 'available at 3 a.m.' = time.",
+   "mnemonic": "Form-Place-Time-Possession = What, Where, When, Whose.",
+   "figure": {
+    "type": "table",
+    "title": "Four types of utility",
+    "head": [
+     "Utility",
+     "Meaning",
+     "Marketing's role"
+    ],
+    "rows": [
+     [
+      "Form",
+      "Production of the good or service",
+      "Influences it"
+     ],
+     [
+      "Place",
+      "Having the offering available where consumers need it",
+      "Creates it"
+     ],
+     [
+      "Time",
+      "Having the offering available when consumers need it",
+      "Creates it"
+     ],
+     [
+      "Possession",
+      "Getting the product to consumers so they can use it (e.g., credit, delivery)",
+      "Creates it"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c01-macro-micro",
+   "topic": "t01-5",
+   "term": "Macromarketing vs micromarketing",
+   "definition": "Macromarketing is the aggregate flow of a nation's goods and services to benefit society. Micromarketing is how an individual organization directs its marketing activities and allocates its resources to benefit its customers.",
+   "explain": "The two terms differ in level of analysis. Macromarketing looks at the whole system - how all the goods and services in a country flow to consumers and benefit society. Micromarketing looks inside one firm or non-profit: its target markets, marketing mix and resource choices.",
+   "example": "A study of how Canada's entire food distribution system moves produce from farms to every province is macromarketing; Maple Leaf Foods deciding how to split its ad budget among its brands is micromarketing.",
+   "contrast": "Macro = nation, society, aggregate flow. Micro = one organization, its customers, its resources. Neither refers to company size: a giant firm's own national plan is still micromarketing.",
+   "trap": "Do not equate 'macro' with 'big company' or 'national advertising'. Cue words: 'aggregate', 'nation's', 'benefit society' = macro; 'an individual organization', 'allocates its resources' = micro.",
+   "mnemonic": "Macro = the whole Map; Micro = My company.",
+   "figure": null
+  },
+  {
+   "id": "c01-evolving-practices",
+   "topic": "t01-5",
+   "term": "New and evolving marketing practices",
+   "definition": "Seven evolving areas highlighted in the chapter: (1) digital marketing, including content, mobile and social media marketing; (2) augmented reality; (3) experiential marketing; (4) influencer marketing; (5) partnership marketing; (6) metrics and analytics; and (7) new marketing regulations and ethical considerations.",
+   "explain": "Marketing keeps changing with technology and society. Digital tools let brands publish content and reach people on phones and social platforms; augmented reality overlays digital images on the real world; experiential marketing lets consumers interact directly with a brand; influencer marketing uses trusted personalities; partnership marketing forms formal associations between brands; metrics and analytics measure results; and new regulations and ethics shape what is acceptable.",
+   "example": "An Ottawa paint brand lets shoppers preview colours on their own walls through a phone app (augmented reality), pays a home-reno creator for videos (influencer marketing), and tracks which video drives the most app downloads (metrics and analytics).",
+   "contrast": "Content, mobile and social media marketing are sub-types INSIDE digital marketing, not separate items in the list of seven. Experiential = consumers interact with the brand hands-on; influencer = a personality promotes it; partnership = two brands formally associate.",
+   "trap": "'Which is NOT one of the new and evolving practices?' Distractors are old philosophies such as production or sales orientation or mass marketing. The seventh item is new regulations AND ethical considerations.",
+   "mnemonic": "D-A-E-I-P-M-R: 'Digital Apps Excite Influencers; Partners Measure Rules.'",
+   "figure": {
+    "type": "list",
+    "title": "Seven new and evolving marketing practices",
+    "items": [
+     "Digital marketing (content marketing, mobile marketing, social media marketing)",
+     "Augmented reality",
+     "Experiential marketing",
+     "Influencer marketing",
+     "Partnership marketing",
+     "Metrics and analytics",
+     "New marketing regulations and ethical considerations"
+    ]
+   }
+  },
+  {
+   "id": "c01-ethics",
+   "topic": "t01-5",
+   "term": "Ethics and the CMA Code",
+   "definition": "Ethics are the moral principles and values that govern the actions and decisions of an individual or group. In Canada, the Canadian Marketing Association publishes the Canadian Marketing Code of Ethics and Standards.",
+   "explain": "Many companies, industries and professional associations publish guidelines and codes of ethics so that members know what conduct is expected even where the law is silent. 'New marketing regulations and ethical considerations' is one of the seven evolving practices, reflecting issues such as privacy, data use and honest advertising.",
+   "example": "A Calgary agency that follows the CMA Code refuses a client's request to hide automatic-renewal fees in fine print, even though the client argues no specific law forbids it.",
+   "contrast": "Ethics = moral principles about what is right. Laws/regulations = government rules about what is legal (a regulatory environmental force). CSR = the organization's accountability to society as a whole. An action can be legal yet unethical.",
+   "trap": "Codes of ethics come from companies, industries AND professional associations, not only government. 'Any legal practice is ethical' is false. The Canadian code comes from the CMA (Canadian Marketing Association), not the UK's Chartered Institute of Marketing.",
+   "mnemonic": "Legal is the floor; ethical is the standard.",
+   "figure": null
+  },
+  {
+   "id": "c01-who-markets",
+   "topic": "t01-5",
+   "term": "Who markets, and marketing's reach (careers)",
+   "definition": "Every organization markets - for-profit firms, non-profits and governments, as well as individuals, places and causes - and what is marketed can be goods, services or ideas. Marketing affects all individuals, all organizations, all industries and all countries.",
+   "explain": "Any organization that needs people to engage in exchanges with it, or simply to think or behave in a certain way, is marketing - the Canadian Red Cross seeking blood donors and the Ministry of Transportation promoting road safety are examples. Because marketing touches everyone, understanding it makes us better customers, more informed citizens and better career planners.",
+   "example": "The City of Calgary's campaign urging residents to put food scraps in their green carts markets an idea, even though nothing is sold.",
+   "contrast": "Marketing is not limited to large companies with national ad budgets, or to physical goods: services (a dental clinic), ideas (don't drive distracted), people (a candidate) and places (a tourist town) are marketed too.",
+   "trap": "Options like 'only those that can afford national advertising', 'exclusively Fortune 1000 companies' or 'very large nonprofits' are wrong: every organization markets. A government campaign is still one organization's marketing, not macromarketing.",
+   "mnemonic": "Everyone markets everything: goods, services, ideas.",
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a01-01",
+   "type": "order",
+   "concept": "c01-marketing-process",
+   "title": "Order the marketing process",
+   "prompt": "Put the three steps of the marketing process (Figure 1-2) in the correct order.",
+   "items": [
+    "Identify consumer needs",
+    "Manage the marketing mix to meet consumer needs",
+    "Realize profits for the company (or objectives for a non-profit)"
+   ],
+   "explanation": "The process focuses on consumer needs: first discover them through research, then satisfy them with a marketing program combining the right product, price, promotion and place, and finally realize profits (or, for non-profits, other objectives)."
+  },
+  {
+   "id": "a01-02",
+   "type": "order",
+   "concept": "c01-business-philosophies",
+   "title": "Order the business philosophies",
+   "prompt": "Put the business philosophies in the order in which they evolved, from earliest to today.",
+   "items": [
+    "Production orientation",
+    "Sales orientation",
+    "Marketing orientation (marketing concept)",
+    "Relationship / societal marketing orientation"
+   ],
+   "explanation": "Production came first (demand exceeded supply, so efficiency mattered most); growing competition led to the sales orientation (push output); the marketing orientation then put consumer needs first; today firms add long-term relationships and society's well-being."
+  },
+  {
+   "id": "a01-03",
+   "type": "sort",
+   "concept": "c01-environmental-forces",
+   "title": "Controllable or uncontrollable?",
+   "prompt": "Drag each factor into the correct bucket: a controllable marketing mix decision or an uncontrollable environmental force.",
+   "buckets": [
+    "Controllable: marketing mix (4 Ps)",
+    "Uncontrollable: environmental force"
+   ],
+   "items": [
+    {
+     "text": "Setting a 20% back-to-school discount",
+     "bucket": 0
+    },
+    {
+     "text": "A recession cutting household spending",
+     "bucket": 1
+    },
+    {
+     "text": "Choosing to sell through Canadian Tire stores",
+     "bucket": 0
+    },
+    {
+     "text": "A new federal privacy law on customer data",
+     "bucket": 1
+    },
+    {
+     "text": "Launching an Instagram ad campaign",
+     "bucket": 0
+    },
+    {
+     "text": "A rival opening a store across the street",
+     "bucket": 1
+    },
+    {
+     "text": "Adding a gluten-free version of a snack",
+     "bucket": 0
+    },
+    {
+     "text": "Rapid growth in smartphone shopping",
+     "bucket": 1
+    },
+    {
+     "text": "Growing consumer concern about sustainability",
+     "bucket": 1
+    },
+    {
+     "text": "Accepting trade-ins as part payment",
+     "bucket": 0
+    }
+   ],
+   "explanation": "The 4 Ps (product, price, place, promotion) are decisions the marketer controls - including accepting trade-ins, which is a price decision. The economy, laws, competitors, technology and social trends are the five environmental forces: marketers cannot control them, only monitor them and respond with the 4 Ps."
+  },
+  {
+   "id": "a01-04",
+   "type": "match",
+   "concept": "c01-utility",
+   "title": "Match the utility",
+   "prompt": "Match each type of utility with its example.",
+   "pairs": [
+    {
+     "left": "Form utility",
+     "right": "A bakery turns flour and butter into fresh croissants"
+    },
+    {
+     "left": "Place utility",
+     "right": "A coffee kiosk right beside the airport departure gates"
+    },
+    {
+     "left": "Time utility",
+     "right": "A pharmacy that stays open 24 hours a day"
+    },
+    {
+     "left": "Possession utility",
+     "right": "A furniture store offering 24 months of interest-free financing"
+    }
+   ],
+   "explanation": "Form = producing the good itself (marketing only influences it); place = available where needed; time = available when needed; possession = helping consumers acquire and use it, for example through credit. Marketing directly creates place, time and possession utility."
+  },
+  {
+   "id": "a01-05",
+   "type": "sort",
+   "concept": "c01-societal-csr",
+   "title": "Classify the CSR initiative",
+   "prompt": "Sort each initiative into the type of corporate social responsibility (CSR) initiative it represents.",
+   "buckets": [
+    "Community programs",
+    "Charitable fundraising",
+    "Socially responsible business philosophy"
+   ],
+   "items": [
+    {
+     "text": "An insurer runs free swimming lessons for inner-city kids",
+     "bucket": 0
+    },
+    {
+     "text": "A grocer organizes and sponsors a neighbourhood clean-up day",
+     "bucket": 0
+    },
+    {
+     "text": "A coffee chain sponsors a youth soccer league",
+     "bucket": 0
+    },
+    {
+     "text": "A hardware chain matches checkout donations to a cancer charity",
+     "bucket": 1
+    },
+    {
+     "text": "Bank staff run a charity walk for a children's hospital foundation",
+     "bucket": 1
+    },
+    {
+     "text": "A retailer gives 1% of sales to a food bank's fundraising drive",
+     "bucket": 1
+    },
+    {
+     "text": "An apparel maker pays all its suppliers a living wage",
+     "bucket": 2
+    },
+    {
+     "text": "A brewery switches every product to recyclable packaging",
+     "bucket": 2
+    },
+    {
+     "text": "A tech firm ties executive bonuses to emissions cuts",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Type 1 sponsors or spearheads community programs; type 2 sponsors or joins fundraising for charitable organizations; type 3 builds social responsibility into how the whole business operates (sourcing, packaging, pay, emissions)."
+  },
+  {
+   "id": "a01-06",
+   "type": "match",
+   "concept": "c01-evolving-practices",
+   "title": "Match the evolving practice",
+   "prompt": "Match each of the seven new and evolving marketing practices with its example.",
+   "pairs": [
+    {
+     "left": "Digital marketing",
+     "right": "How-to blog videos, app notifications and social media posts"
+    },
+    {
+     "left": "Augmented reality",
+     "right": "A phone app that places a life-sized 3D sofa in your real living room"
+    },
+    {
+     "left": "Experiential marketing",
+     "right": "A festival pop-up where visitors test jackets in a -20°C cold room"
+    },
+    {
+     "left": "Influencer marketing",
+     "right": "Paying a fitness creator with 400,000 followers to feature a water bottle"
+    },
+    {
+     "left": "Partnership marketing",
+     "right": "A coffee chain and a bookseller co-brand cafés inside bookstores"
+    },
+    {
+     "left": "Metrics and analytics",
+     "right": "Tracking which ad platform actually drives sales"
+    },
+    {
+     "left": "Regulations and ethical considerations",
+     "right": "Following the CMA Canadian Marketing Code of Ethics and Standards"
+    }
+   ],
+   "explanation": "These are the seven new and evolving practices from Chapter 1. Content, mobile and social media marketing are grouped under digital marketing, and the seventh item covers both new regulations and ethical considerations."
+  }
+ ],
+ "questions": [
+  {
+   "id": "q01-001",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "Effective marketing requires:",
+   "options": [
+    "good common sense",
+    "all departments within an organization to work together",
+    "intimate knowledge and understanding of consumers and the marketplace",
+    "selling unwanted things",
+    "taking the customer's money"
+   ],
+   "answer": 2,
+   "explanation": "The chapter stresses that effective marketing requires intimate knowledge and understanding of consumers and the marketplace, which goes well beyond common sense. Departments working together helps (it is part of a market orientation), but it is not the stated requirement, and 'common sense' is exactly the misconception the chapter corrects.",
+   "source": "official"
+  },
+  {
+   "id": "q01-002",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "fill",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The Chartered Institute of Marketing (UK) defines marketing as 'the management process responsible for identifying, anticipating and satisfying customer requirements _____.'",
+   "options": [
+    "efficiently",
+    "profitably",
+    "through relationships",
+    "ethically"
+   ],
+   "answer": 1,
+   "explanation": "The CIM definition ends with 'profitably': marketing must identify, anticipate and satisfy customer requirements while making money for the organization. Relationships belong to the Canadian Marketing Association definition (practices that 'build effective customer relationships'), not the CIM one.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-003",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Which pairing of a marketing definition and its source is correct?",
+   "options": [
+    "Chartered Institute of Marketing (UK): 'the management process responsible for identifying, anticipating and satisfying customer requirements profitably'",
+    "Canadian Marketing Association: 'the management process responsible for identifying, anticipating and satisfying customer requirements profitably'",
+    "Chartered Institute of Marketing (UK): 'a set of business practices ... in ways that build effective customer relationships'",
+    "Canadian Marketing Association: 'the aggregate flow of a nation's goods and services to benefit society'"
+   ],
+   "answer": 0,
+   "explanation": "The CIM (UK) defines marketing as the management process responsible for identifying, anticipating and satisfying customer requirements profitably. The CMA definition is the one about business practices that 'build effective customer relationships', and 'aggregate flow of a nation's goods and services' defines macromarketing, not marketing.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-004",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "The new marketing manager at Northridge Outfitters, a Calgary jacket maker, tells the CEO: 'My job isn't just running ads. I research what hikers need, help shape the jackets, set prices, choose where they're sold and decide how we talk about them.' Which view of marketing is the manager describing?",
+   "options": [
+    "The popular view: a set of persuasive advertising and selling techniques used to move existing inventory",
+    "Corporate social responsibility: sponsoring community programs and fundraising for charitable organizations",
+    "Macromarketing: the aggregate flow of a nation's goods and services to benefit society as a whole",
+    "The textbook view: planning offerings and their pricing, promotion and distribution to meet needs and objectives"
+   ],
+   "answer": 3,
+   "explanation": "The manager covers the full textbook definition: discovering needs, then conceiving the product and its price, promotion and distribution to meet consumer needs and organizational objectives. The 'ads and selling' view is the misconception the chapter corrects; promotion is only one of the four Ps.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-005",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about marketing is NOT consistent with Chapter 1?",
+   "options": [
+    "Many marketing practices and theories are invisible to the average consumer",
+    "Marketing aims to benefit the organization, its stakeholders and society",
+    "Effective marketing can be done well using common sense alone",
+    "Marketing is often confused with advertising or selling techniques"
+   ],
+   "answer": 2,
+   "explanation": "The chapter states that effective marketing requires intimate knowledge and understanding of consumers and the marketplace, so 'common sense alone' is wrong. The other statements all appear in the chapter: marketing is commonly mistaken for ads or selling, much of it is invisible to consumers, and the AMA-style definition stresses benefits to the organization, stakeholders and society.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-006",
+   "concept": "c01-marketing-definition",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "A well-known athletic-apparel brand has had four CEOs in five years, plans to lay off 1,100 people, and faces skeptical customers, changing preferences and unionization demands while sales stay flat. According to the intro lecture, what is the marketer's role?",
+   "options": [
+    "Increase the advertising budget, because marketing's job is mainly running ads and selling harder",
+    "Wait for environmental forces to improve, because marketers cannot influence performance",
+    "Leave the problem to finance and HR, since flat sales and layoffs are not marketing issues",
+    "Make key decisions to stop the decline, such as going back to basics and leveraging brand equity"
+   ],
+   "answer": 3,
+   "explanation": "In the Lululemon case, the marketer's role is to make key decisions to stop the business's declining performance: go back to basics, stress key positive attributes, leverage brand equity, or change the operating model. Simply buying more ads reflects the narrow 'marketing = advertising' misconception.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-007",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "The Canadian Red Cross created a series of advertisements encouraging viewers to donate blood. After viewing the advertisement, Amanda went to the local Red Cross office and donated a pint of blood. Afterwards, Amanda returned home feeling satisfied that she had performed a good deed. Was this a marketing exchange?",
+   "options": [
+    "No, because the Red Cross is a non-profit organization",
+    "Yes, because the Red Cross ran an advertisement",
+    "Yes, because the donated blood was exchanged for a feeling of satisfaction",
+    "No, because no money was exchanged",
+    "No, because the Red Cross did not provide Amanda with a product"
+   ],
+   "answer": 2,
+   "explanation": "Exchange is the trade of things of value between buyer and seller so that each is better off. Amanda gave blood and received a feeling of satisfaction; the Red Cross received blood to serve society, so an exchange occurred. Money is not required and non-profits market too, so the 'no money' and 'non-profit' options fail; running an ad alone does not make something an exchange.",
+   "source": "official"
+  },
+  {
+   "id": "q01-008",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The trade of things of value between a buyer and a seller so that each is better off after the trade is called:",
+   "options": [
+    "exchange",
+    "customer value",
+    "utility",
+    "a value proposition"
+   ],
+   "answer": 0,
+   "explanation": "That is the definition of exchange, the core of marketing. Utility is the benefit users get from a product and customer value is the bundle of benefits buyers receive; both can result from an exchange, but neither is the trade itself.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-009",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which of the following is NOT one of the four factors required for marketing to occur?",
+   "options": [
+    "Something to exchange",
+    "A way for the parties to communicate",
+    "Money to serve as the medium of exchange",
+    "Two or more parties with unsatisfied needs"
+   ],
+   "answer": 2,
+   "explanation": "The four factors are: two or more parties with unsatisfied needs, a desire and ability to be satisfied, a way to communicate, and something to exchange. Money is not required; 'something to exchange' can be time, effort, blood or even a vote.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-010",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Kestrel Kayaks, a small Kelowna builder, makes a touring kayak that many Prairie paddlers would gladly buy and can afford. But Kestrel has no website, no retailers and no advertising, so paddlers have never heard of it. Which requirement for marketing to occur is missing?",
+   "options": [
+    "Two or more parties with unsatisfied needs",
+    "A way for the parties to communicate",
+    "A desire and ability to be satisfied",
+    "Something to exchange"
+   ],
+   "answer": 1,
+   "explanation": "Both sides have needs, the paddlers have the desire and ability to buy, and there is a kayak and money to trade, but the parties cannot communicate, so no exchange can happen. 'Desire and ability' is present because the paddlers want the kayak and can afford it.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-011",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "A group of Grade 10 students in Red Deer fall in love with a $90,000 electric pickup at an auto show. The dealer is eager to sell, its ads reach the students daily, and the truck is in stock. Why will a marketing exchange still not occur?",
+   "options": [
+    "Only one of the two parties in the situation has an unsatisfied need",
+    "The dealer has nothing of value to offer the students in exchange",
+    "They lack the ability to pay, so the 'desire and ability' requirement fails",
+    "There is no way for the dealer and the students to communicate with each other"
+   ],
+   "answer": 2,
+   "explanation": "The second requirement is a desire AND ability to be satisfied; the students have the desire but not the ability to pay $90,000. Communication is clearly present because the dealer's ads reach them daily, and there is a truck to exchange.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-012",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "tf",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "The second requirement for marketing to occur ('a desire and ability to be satisfied') mirrors the definition of a market, which also requires people to have both the desire and the ability to buy.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 0,
+   "explanation": "True. A market is people with both the desire and the ability to buy a specific product, and the second requirement for marketing is a desire and ability on the parties' part to be satisfied. Desire without ability (or ability without desire) fails both tests.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-013",
+   "concept": "c01-exchange",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 3,
+   "stem": "Which situation would NOT result in a marketing exchange?",
+   "options": [
+    "A volunteer gives up a Saturday at a food bank and leaves feeling proud of helping out",
+    "A Yukon carver's bowls are wanted by collectors who can afford them, but they have no way to reach him",
+    "A student trades two hours of calculus tutoring for a classmate's used marketing textbook",
+    "Residents vote for a city council candidate who promises to build the new park they want"
+   ],
+   "answer": 1,
+   "explanation": "The carver's situation lacks a way for the parties to communicate, one of the four requirements, so no exchange can happen. The other three are genuine marketing exchanges even though no money changes hands: tutoring for a book, time for a feeling of pride, and a vote for a promised park.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-014",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 1,
+   "stem": "A television advertisement shows several teenagers searching through the refrigerator for something to quench their thirst. The refrigerator offers the youngsters many alternatives - soft drinks, fruit drinks, sport drinks and bottles of Sunny Delight drink. The ad, which shows the teens happily selecting Sunny Delight over all the other product offerings, appeals to the consumers' _____ for liquid and attempts to shape consumers' _____ for the advertised product.",
+   "options": [
+    "wants; needs",
+    "wants; preferences",
+    "preferences; needs",
+    "needs; wants",
+    "needs; preferences"
+   ],
+   "answer": 3,
+   "explanation": "A need is felt deprivation of a basic necessity such as liquid (thirst); a want is a need shaped by knowledge, culture and personality into a preference for a specific item (Sunny Delight). The ad appeals to the need and shapes the want. 'Wants; needs' reverses them, and marketers do not create needs.",
+   "source": "official"
+  },
+  {
+   "id": "q01-015",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "In marketing terms, a want is best described as:",
+   "options": [
+    "a need that is shaped by a person's knowledge, culture and personality",
+    "a feeling of deprivation of basic necessities such as food, water and shelter",
+    "the unique combination of benefits a brand promises to deliver",
+    "the desire and the ability to buy a specific product"
+   ],
+   "answer": 0,
+   "explanation": "A want is a need shaped by knowledge, culture and personality into a preference for a specific item. Feeling deprived of basic necessities is the definition of a need, the most tempting distractor; desire plus ability describes a market.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-016",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A Montreal agency's creative brief says: 'Our campaign will make Canadians NEED our client's new premium sparkling water.' Using Chapter 1's terms, how should the brief be corrected?",
+   "options": [
+    "The campaign can create both needs and wants, provided its methods are ethical",
+    "The campaign should create a market for the product, which is the same as creating a need",
+    "The campaign can create a need, but only if it is aimed at a specific target market",
+    "The campaign can shape consumers' want for the brand; the underlying need (thirst) already exists"
+   ],
+   "answer": 3,
+   "explanation": "Marketers do not create needs; a need is felt deprivation of a basic necessity such as liquid, which exists before any ad. What marketing can do is shape the want, the learned preference for a specific product. Targeting or ethics do not change this rule.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-017",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "On a scorching Calgary Stampede afternoon, Rahim is badly thirsty. He walks past a free water fountain and lines up to buy a $7 Okanagan peach lemonade he saw on Instagram. Which element of this situation is a WANT?",
+   "options": [
+    "His preference for that specific peach lemonade",
+    "The Instagram post that promoted the lemonade",
+    "The $7 price charged for the lemonade",
+    "The thirst he feels in the afternoon heat"
+   ],
+   "answer": 0,
+   "explanation": "Rahim's thirst is the need; his learned preference for a specific product (that peach lemonade rather than free water) is the want. The price and the Instagram post are marketing mix elements (price and promotion), not needs or wants.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-018",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "The instructor asks: 'Who's in charge - the consumer or the marketer?' Which answer best reflects Chapter 1?",
+   "options": [
+    "The consumer: marketers only react and have no influence on what people want",
+    "Neither: environmental forces alone decide what consumers will buy",
+    "The marketer: marketing creates the needs that consumers then try to satisfy",
+    "Both: consumers' needs come first, but marketers shape their wants for specific products"
+   ],
+   "answer": 3,
+   "explanation": "The chapter's answer is both. Marketing starts by discovering consumer needs, which marketers cannot create, but it then shapes wants by influencing which products people prefer. 'The marketer creates needs' is the classic wrong belief.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-019",
+   "concept": "c01-needs-wants",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "Clearbrook Springs, a Winnipeg bottled-water start-up, knows that everyone needs water. It wants to grow sales of its own brand. Based on the need-want distinction, where should it focus its marketing effort?",
+   "options": [
+    "Treating all Canadians as one group, since everyone shares the need for water",
+    "Avoiding promotion, since the need for water already exists naturally",
+    "Shaping consumers' wants so they prefer Clearbrook as the way to satisfy thirst",
+    "Creating a brand-new need for hydration that consumers did not have before"
+   ],
+   "answer": 2,
+   "explanation": "Because the need (thirst) already exists and cannot be created by marketers, the brand's job is to shape the want: make Clearbrook the specific product people prefer. 'Creating a need' is impossible by the chapter's logic, and skipping promotion or targeting everyone wastes the chance to influence wants.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-020",
+   "concept": "c01-market",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "People with both the desire and the ability to buy a specific product make up a:",
+   "options": [
+    "target market",
+    "market",
+    "market segment",
+    "mass market"
+   ],
+   "answer": 1,
+   "explanation": "A market is defined by two conditions: desire and ability to buy a specific product. A target market is narrower - the specific group(s) of that market the firm chooses to direct its marketing program toward.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-021",
+   "concept": "c01-market",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Prairie Peaks Adventures sells $2,400 guided heli-skiing trips. Which group belongs to the MARKET for these trips?",
+   "options": [
+    "Wealthy retirees who have no interest in skiing of any kind",
+    "Everyone who lives within driving distance of the Rockies",
+    "Experienced skiers who want a heli-skiing trip and can afford $2,400",
+    "University students who dream of heli-skiing but cannot afford it"
+   ],
+   "answer": 2,
+   "explanation": "Only the experienced skiers have both the desire and the ability to buy. The students have desire without ability and the retirees have ability without desire, so neither group is part of the market.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-022",
+   "concept": "c01-market",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "Which statement correctly distinguishes a market from a target market?",
+   "options": [
+    "A market includes only a firm's existing customers; a target market includes only its potential customers",
+    "A market is everyone with the desire and ability to buy; a target market is the segment(s) the firm chooses to aim its program at",
+    "A market and a target market become the same thing once a product has been launched and promoted",
+    "A market is the segment a firm chooses to pursue; a target market is everyone who could possibly buy the product"
+   ],
+   "answer": 1,
+   "explanation": "The market is the full pool of people with desire and ability; the target market is the part of it the firm deliberately aims its marketing program at. The second option reverses the terms, and target markets include both existing and potential customers.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-023",
+   "concept": "c01-market",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 3,
+   "stem": "Thousands of young followers 'like' a Montreal jeweller's $8,000 watches on Instagram, yet very few ever buy one. Using the chapter's definition, why are most of these followers NOT part of the jeweller's market?",
+   "options": [
+    "They have the desire but lack the ability to buy the product",
+    "They have the ability but lack the desire to buy the product",
+    "They have not yet been selected as the jeweller's target market",
+    "They are organizational buyers rather than ultimate consumers"
+   ],
+   "answer": 0,
+   "explanation": "A market requires both desire and ability to buy. The likes show desire, but most young followers cannot afford an $8,000 watch. Not being chosen as a target market does not remove anyone from the market; the target market is a subset chosen afterward.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-024",
+   "concept": "c01-market",
+   "also": [],
+   "type": "tf",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "A person who could easily afford a product but has no interest in buying it is still part of that product's market.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 1,
+   "explanation": "False. Corrected: a market consists of people with BOTH the desire and the ability to buy a specific product, so someone with ability but no desire is not part of the market.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-025",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 1,
+   "stem": "Sound and Cinema is a company that will turn an ordinary basement into a home theatre. It advertises in publications that are mailed to homeowners in subdivisions in which the least expensive home costs $275,000. These homeowners are the _____ for Sound and Cinema.",
+   "options": [
+    "mass market",
+    "tangent market",
+    "market aggregation",
+    "target market",
+    "promotional market"
+   ],
+   "answer": 3,
+   "explanation": "A target market is one or more specific groups of existing and potential consumers toward which an organization directs its marketing program. Sound and Cinema deliberately aims its ads at affluent homeowners rather than everyone, which is the opposite of a mass-market approach.",
+   "source": "official"
+  },
+  {
+   "id": "q01-026",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 3,
+   "stem": "Brookside Golf Club in Edmonton aims its new junior-league campaign at two groups: members' children and nearby families who have never golfed but attended its free summer clinic. A manager objects that people who have never bought from Brookside cannot be part of a target market. Is the manager right?",
+   "options": [
+    "Yes - potential consumers can belong to the market but never to a target market",
+    "Yes - a target market includes only existing customers who have already purchased",
+    "No - a target market automatically includes everyone in Edmonton who can afford golf",
+    "No - a target market includes both existing and potential consumers the program is aimed at"
+   ],
+   "answer": 3,
+   "explanation": "The definition of a target market explicitly covers existing AND potential consumers toward which the organization directs its marketing program, so the clinic families qualify. A target market is still a specific chosen group, not everyone with the ability to buy.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-027",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "Why does the chapter recommend that a firm with limited funds focus on a target market instead of trying to appeal to everyone?",
+   "options": [
+    "Choosing a target market removes the need to design a marketing mix",
+    "Targeting everyone always produces higher customer value per dollar spent",
+    "A target market includes only existing customers, who are cheaper to reach",
+    "Resources go further when focused on the groups most interested in buying"
+   ],
+   "answer": 3,
+   "explanation": "The slide's rationale: with limited funds, it is better to channel resources to the specific groups most interested in purchasing than to target everyone. A target market still needs a tailored marketing mix, and it includes potential as well as existing customers.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-028",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "FreshFit Meals, an Edmonton start-up, has a $15,000 launch budget for its high-protein meal-prep service. Research shows that downtown gym members aged 20 to 35 are by far the most interested buyers. What should FreshFit do?",
+   "options": [
+    "Spread the budget evenly across every Edmonton household",
+    "Direct its marketing program at downtown gym members aged 20 to 35",
+    "Skip research and promote to whoever responds to TV ads",
+    "Wait until it can afford a national campaign before marketing"
+   ],
+   "answer": 1,
+   "explanation": "With limited funds, FreshFit should channel its resources toward the group most interested in buying, which is exactly what selecting a target market means. Spreading $15,000 across every household is a mass-market approach that dilutes the budget.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-029",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about target markets is NOT correct?",
+   "options": [
+    "A target market can include both existing and potential customers",
+    "An organization may direct its program at more than one segment",
+    "A target market must include every person who is able to buy the product",
+    "The marketing mix should be designed to appeal to the target market"
+   ],
+   "answer": 2,
+   "explanation": "A target market is a chosen subset - one or more specific groups - not everyone able to buy. The definition explicitly includes existing and potential consumers and allows 'one or more' segments, and the 4 Ps must appeal to it.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-030",
+   "concept": "c01-target-market",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Glacier Gear sells winter boots across Canada. Plan A: one generic ad sent to all Canadians. Plan B: separate programs for urban commuters in Toronto and backcountry hunters in northern Alberta. Which statement is correct?",
+   "options": [
+    "Plan B uses target markets; Plan A treats everyone as one mass market",
+    "Both plans use target markets because both reach existing customers",
+    "Neither plan uses target markets because both sell the same boots",
+    "Plan A uses a target market; Plan B treats everyone as one mass market"
+   ],
+   "answer": 0,
+   "explanation": "Plan B directs distinct marketing programs at specific groups, which is targeting. Plan A aims one message at everyone, the mass-market approach. Reaching existing customers does not make something targeting; choosing specific groups does.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-031",
+   "concept": "c01-customer-value",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The unique combination of benefits received by targeted buyers that include quality, price, convenience, on-time delivery, and both before-sale and after-sale service is called:",
+   "options": [
+    "target marketing",
+    "benefit segmentation",
+    "customer value",
+    "customer satisfaction",
+    "product dissonance"
+   ],
+   "answer": 2,
+   "explanation": "This is the textbook definition of customer value: the benefits targeted buyers receive, including quality, price, convenience, on-time delivery and before- and after-sale service. Customer satisfaction is a related outcome (how well expectations were met), not the bundle of benefits itself.",
+   "source": "official"
+  },
+  {
+   "id": "q01-032",
+   "concept": "c01-customer-value",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Rocky Ridge Hardware in Cochrane cannot match big-box prices, so it offers free same-day delivery, expert project advice before you buy, and free tool repairs after you buy. Which of the three ways to deliver customer value is Rocky Ridge emphasizing?",
+   "options": [
+    "Best product",
+    "Best promotion",
+    "Best service",
+    "Best price"
+   ],
+   "answer": 2,
+   "explanation": "Firms typically deliver customer value through the best price, the best product or the best service. Rocky Ridge explicitly gives up on price and competes on before-sale and after-sale service. 'Best promotion' is not one of the three routes.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-033",
+   "concept": "c01-customer-value",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "Which statement best distinguishes customer value from a value proposition?",
+   "options": [
+    "Customer value is the benefits buyers actually receive; a value proposition is the benefits a brand promises to deliver",
+    "Customer value applies to non-profits; a value proposition applies only to for-profit firms",
+    "Customer value is a promise made in advertising; a value proposition is what buyers actually experience",
+    "Customer value refers only to low price; a value proposition refers only to product quality"
+   ],
+   "answer": 0,
+   "explanation": "Customer value is defined by benefits 'received by targeted buyers', while a value proposition is the unique combination of benefits a brand 'promises to deliver'. The second option simply reverses the two terms.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-034",
+   "concept": "c01-customer-value",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which of the following is NOT part of the textbook definition of customer value?",
+   "options": [
+    "Before-sale and after-sale service",
+    "Market share",
+    "Convenience",
+    "On-time delivery"
+   ],
+   "answer": 1,
+   "explanation": "Customer value includes quality, price, convenience, on-time delivery, and before- and after-sale service. Market share measures the firm's performance; it is not a benefit that buyers receive.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-035",
+   "concept": "c01-customer-value",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "Two Calgary grocers sell identical products at identical prices. Grocer A also offers 30-minute curbside pickup and no-questions-asked returns. Why does Grocer A likely deliver greater customer value?",
+   "options": [
+    "Customer value depends only on price, so Grocer A must secretly be charging less overall",
+    "Customer value depends on how much a firm spends on advertising its value promise",
+    "Customer value is the same as satisfaction, which depends only on the product itself",
+    "Customer value includes benefits like convenience and after-sale service, not just price and quality"
+   ],
+   "answer": 3,
+   "explanation": "Because customer value is a unique combination of benefits that includes convenience and after-sale service, Grocer A adds value even with equal prices and products. Advertising spending is not part of the definition; an advertised promise is a value proposition, not value received.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-036",
+   "concept": "c01-value-proposition",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The unique combination of benefits that a brand promises to deliver to consumers, setting it apart from competing brands, is its:",
+   "options": [
+    "customer value",
+    "marketing program",
+    "value proposition",
+    "target market"
+   ],
+   "answer": 2,
+   "explanation": "A value proposition is the brand's promise of a unique combination of benefits, and it differentiates the brand. Customer value is the benefits buyers actually receive, so 'promises' is the cue that separates the two.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-037",
+   "concept": "c01-value-proposition",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Okanagan Crust's box says: 'Ancient-grain crust, stone-baked, ready in nine minutes - the only frozen pizza that tastes like your favourite pizzeria.' In chapter terms, what is this statement communicating?",
+   "options": [
+    "Its market orientation",
+    "Its value proposition",
+    "Its customer relationship management",
+    "Its target market"
+   ],
+   "answer": 1,
+   "explanation": "The statement promises a unique combination of benefits (ancient-grain crust, pizzeria taste, nine-minute convenience) that differentiates the brand - a value proposition, much like the slide's Ancient Grains Crust pizza example. It does not describe who the customers are (target market).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-038",
+   "concept": "c01-value-proposition",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Brightline Telecom's ads promise 'No contracts, no surprise fees, 24/7 human support.' Six months later, a survey shows customers really did get reliable service, fair bills and fast help. The ad and the survey results illustrate, respectively:",
+   "options": [
+    "value proposition; customer value",
+    "target market; marketing mix",
+    "customer value; value proposition",
+    "marketing concept; market orientation"
+   ],
+   "answer": 0,
+   "explanation": "The ad is a promise of benefits that differentiates the brand (value proposition); the survey measures the benefits customers actually received (customer value). Reversing the order is the classic trap.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-039",
+   "concept": "c01-value-proposition",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "A new Halifax coffee roaster discovers that shoppers cannot tell its beans apart from three competitors' beans. What should it develop to fix this problem?",
+   "options": [
+    "A production orientation focused on roasting more beans more cheaply",
+    "A macromarketing plan for Canada's national coffee supply chain",
+    "A larger market that includes people unable to afford specialty coffee",
+    "A clear value proposition promising a unique combination of benefits"
+   ],
+   "answer": 3,
+   "explanation": "A value proposition differentiates a brand by promising a unique combination of benefits, which is exactly what the roaster lacks. People who cannot afford the product are not part of the market by definition, and a production focus ignores the differentiation problem.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-040",
+   "concept": "c01-value-proposition",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about a value proposition is NOT accurate?",
+   "options": [
+    "It should appeal to the brand's target market",
+    "It describes the benefits customers already received",
+    "It promises a unique combination of benefits",
+    "It helps differentiate a brand from competing brands"
+   ],
+   "answer": 1,
+   "explanation": "A value proposition is a promise of benefits; benefits actually received after purchase describe customer value. Differentiation and appeal to the target market are exactly what a value proposition is for.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-041",
+   "concept": "c01-marketing-mix",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "In the marketing mix, which element is defined as 'a means of communication between the seller and the buyer'?",
+   "options": [
+    "Promotion",
+    "Price",
+    "Product",
+    "Place"
+   ],
+   "answer": 0,
+   "explanation": "Promotion is the means of communication between seller and buyer. Place is the means of getting the product to the consumer, price is what is exchanged for the product, and product is the good, service or idea that satisfies needs.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-042",
+   "concept": "c01-marketing-mix",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Maple Grove Cider decides to sell its new craft cider only at its own farm shop and in select independent liquor stores, rather than in every grocery chain. Which marketing mix decision is this?",
+   "options": [
+    "Product",
+    "Promotion",
+    "Price",
+    "Place"
+   ],
+   "answer": 3,
+   "explanation": "Place is the means of getting the product to the consumer, so choosing which outlets carry the cider is a place decision. Promotion would be how the cidery communicates with buyers, such as ads or tastings.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-043",
+   "concept": "c01-marketing-mix",
+   "also": [
+    "c01-environmental-forces"
+   ],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "Which of the following is a controllable marketing mix decision rather than an environmental force?",
+   "options": [
+    "A rival opening a store across the street",
+    "A recession that reduces household spending",
+    "Cutting a streaming subscription price from $15 to $12 per month",
+    "A new federal law limiting food advertising to children"
+   ],
+   "answer": 2,
+   "explanation": "Price is one of the 4 Ps, which marketers control. A recession (economic), a new law (regulatory) and a rival's new store (competitive) are environmental forces, which the firm cannot control and can only respond to.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-044",
+   "concept": "c01-marketing-mix",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 3,
+   "stem": "A sporting-goods marketing manager lists decisions under her control. Which item does NOT belong on her list of marketing mix decisions?",
+   "options": [
+    "How quickly smartphone adoption grows among her customers",
+    "Whether to accept trade-in gear as part payment for new bikes",
+    "Whether to bundle free ski tuning with every pair of skis sold",
+    "Which delivery partners will get products to online buyers"
+   ],
+   "answer": 0,
+   "explanation": "Smartphone adoption is a technological environmental force the manager cannot control. Accepting trade-ins is a price decision (price is what is exchanged for the product), choosing delivery partners is place, and bundling ski tuning is part of the product offering - all controllable 4 P decisions.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-045",
+   "concept": "c01-marketing-mix",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "Lumen Skincare launches a premium $95 serum in luxury packaging but sells it in dollar stores and promotes it with 'Cheapest in town!' flyers. Sales are poor. Which marketing mix principle did Lumen violate?",
+   "options": [
+    "The 4 Ps are uncontrollable, so marketers can only monitor them",
+    "Promotion matters more than the other three Ps combined",
+    "Price should always be set below competitors' prices",
+    "The 4 Ps must be consistently coordinated and appeal to the target market"
+   ],
+   "answer": 3,
+   "explanation": "The slides stress that the 4 Ps must be consistently coordinated and appeal to the target market. A premium product and price clash with discount distribution and bargain promotion. The 4 Ps are controllable; 'uncontrollable' describes environmental forces.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-046",
+   "concept": "c01-marketing-mix",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 3,
+   "stem": "A Vancouver food bank's gift shop gives a reusable tote bag to anyone who contributes 30 minutes of volunteer time at its warehouse. In marketing mix terms, the 30 minutes of volunteer time is the:",
+   "options": [
+    "product",
+    "promotion",
+    "price",
+    "place"
+   ],
+   "answer": 2,
+   "explanation": "Price is defined as what is exchanged for the product, and it need not be money - here it is time and effort. The tote is the product; the volunteer time is not a means of communication (promotion) or of getting the product to the consumer (place).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-047",
+   "concept": "c01-environmental-forces",
+   "also": [],
+   "type": "fill",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "Social, economic, technological, competitive and regulatory factors are the _____ that affect marketing decisions.",
+   "options": [
+    "business philosophies",
+    "environmental forces",
+    "marketing mix elements",
+    "value propositions"
+   ],
+   "answer": 1,
+   "explanation": "These five are the environmental forces: uncontrollable factors outside the marketer's direct control. The marketing mix elements (the 4 Ps) are the controllable factors marketers use to respond to them.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-048",
+   "concept": "c01-environmental-forces",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Bookings at Sunridge RV Rentals in Calgary dropped sharply after fuel prices and interest rates jumped and Canadians cut back on discretionary travel. Which environmental force is most directly at work?",
+   "options": [
+    "Economic",
+    "Regulatory",
+    "Technological",
+    "Social"
+   ],
+   "answer": 0,
+   "explanation": "Rising fuel costs, higher interest rates and reduced discretionary spending are economic conditions. A social force would involve changing values or lifestyles, and a regulatory force would involve new laws or rules.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-049",
+   "concept": "c01-environmental-forces",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "More Canadians are cutting back on meat for health and environmental reasons, so a Calgary burger chain adds plant-based patties to its menu. Which environmental force prompted the change?",
+   "options": [
+    "Competitive",
+    "Social",
+    "Economic",
+    "Regulatory"
+   ],
+   "answer": 1,
+   "explanation": "Shifting consumer values and lifestyles (health and environmental concerns) are social forces. Nothing in the stem mentions rivals' actions (competitive), prices or incomes (economic), or new rules (regulatory).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-050",
+   "concept": "c01-environmental-forces",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which of the following is NOT one of the five environmental forces?",
+   "options": [
+    "Competitive",
+    "Technological",
+    "Regulatory",
+    "Promotional"
+   ],
+   "answer": 3,
+   "explanation": "The five environmental forces are social, economic, technological, competitive and regulatory. Promotion is one of the controllable 4 Ps, so a 'promotional force' is a marketing mix element in disguise.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-051",
+   "concept": "c01-environmental-forces",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A new Health Canada rule bans certain health claims on supplement labels. In response, Vitality Labs redesigns its packaging and launches a new ad campaign. Which statement is correct?",
+   "options": [
+    "The rule is a competitive force because rival firms must also comply with it",
+    "The rule is a marketing mix decision; the redesign is an uncontrollable environmental force",
+    "The rule is a regulatory force; the packaging and ad changes are marketing mix decisions",
+    "The rule and the redesign are both marketing mix decisions controlled by the firm"
+   ],
+   "answer": 2,
+   "explanation": "Government rules are regulatory forces the firm cannot control; its responses (packaging, part of the product, and ads, part of promotion) are controllable marketing mix decisions. That rivals face the same rule does not make it a competitive force.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-052",
+   "concept": "c01-environmental-forces",
+   "also": [
+    "c01-marketing-definition"
+   ],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 2,
+   "stem": "In the textbook figure showing the role of marketing in an organization, which statement is accurate?",
+   "options": [
+    "Marketing operates apart from R&D, finance and manufacturing so that it can concentrate fully on advertising",
+    "Marketing works with other departments and links the firm to customers, suppliers, partners and owners",
+    "Environmental forces sit inside the marketing department and are directly controlled by the marketing manager",
+    "Marketing links the organization only to its customers; suppliers and shareholders are not part of the picture"
+   ],
+   "answer": 1,
+   "explanation": "The figure shows the marketing department among R&D, manufacturing, finance, HR, IT and senior management, linking the organization to alliances, suppliers, customers and shareholders/owners, all surrounded by the uncontrollable environmental forces. Those forces sit outside the organization and cannot be controlled.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-053",
+   "concept": "c01-marketing-program",
+   "also": [
+    "c01-marketing-process"
+   ],
+   "type": "mc",
+   "angle": "order",
+   "difficulty": 2,
+   "stem": "After discovering consumers' needs, marketing's next task is to:",
+   "options": [
+    "create a target market mission statement",
+    "determine consumer demographics",
+    "translate information about consumer needs into products that satisfy them",
+    "design product prototypes",
+    "develop a value strategy"
+   ],
+   "answer": 2,
+   "explanation": "Once needs are discovered (step 1 of the marketing process), marketing must translate that information into offerings that satisfy them, which is done through a marketing program: a plan that integrates the marketing mix to provide a good, service or idea to prospective buyers. Designing prototypes is a narrower R&D task, and demographics are part of discovering needs, not the next step.",
+   "source": "official"
+  },
+  {
+   "id": "q01-054",
+   "concept": "c01-marketing-program",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "A plan that integrates the marketing mix to provide a good, service or idea to prospective buyers is a:",
+   "options": [
+    "marketing process",
+    "marketing concept",
+    "market orientation",
+    "marketing program"
+   ],
+   "answer": 3,
+   "explanation": "That is the definition of a marketing program. The marketing process is the broader three-step sequence (identify needs, manage the mix, realize profits), and the marketing concept is a philosophy, not a plan.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-055",
+   "concept": "c01-marketing-program",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "After learning that Regina shift workers want healthy late-night food, Harvest Bowl creates a $12 grain-bowl line, sells it from a food truck parked near hospitals from 10 p.m. to 3 a.m., and promotes it in a nurses' union newsletter. Together, these coordinated decisions form Harvest Bowl's:",
+   "options": [
+    "marketing program",
+    "market orientation",
+    "target market",
+    "value proposition"
+   ],
+   "answer": 0,
+   "explanation": "Integrating product, price, place and promotion into one plan for prospective buyers is a marketing program. The shift workers are the target market the program is aimed at, not the program itself.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-056",
+   "concept": "c01-marketing-program",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "Which statement correctly distinguishes the marketing mix from a marketing program?",
+   "options": [
+    "The mix applies only to physical goods; the program applies to services and ideas",
+    "The mix covers the uncontrollable forces; the program covers the controllable ones",
+    "The mix is the four controllable elements; the program is the plan that integrates them",
+    "The mix is the integrated plan; the program is the list of four controllable elements"
+   ],
+   "answer": 2,
+   "explanation": "The marketing mix is the set of ingredients (product, price, promotion, place); the marketing program is the recipe that integrates them into a coherent plan. Uncontrollable factors are environmental forces, not part of the mix.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-057",
+   "concept": "c01-marketing-program",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which activity is NOT part of designing a marketing program?",
+   "options": [
+    "Deciding how to communicate with buyers",
+    "Measuring Canada's aggregate flow of goods",
+    "Choosing a price for the new offering",
+    "Deciding how to get the offering to buyers"
+   ],
+   "answer": 1,
+   "explanation": "A marketing program integrates the 4 Ps for one organization's prospective buyers, so pricing, distribution and communication all belong. The aggregate flow of a nation's goods and services is macromarketing, which is outside any single firm's program.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-058",
+   "concept": "c01-marketing-process",
+   "also": [],
+   "type": "mc",
+   "angle": "order",
+   "difficulty": 1,
+   "stem": "What is the FIRST step in the marketing process shown in Figure 1-2?",
+   "options": [
+    "Promote the product to as many people as possible",
+    "Manage the marketing mix to meet consumer needs",
+    "Realize profits for the company",
+    "Identify consumer needs"
+   ],
+   "answer": 3,
+   "explanation": "The marketing process begins by identifying (discovering) consumer needs through research. Managing the marketing mix is step 2 and realizing profits is step 3; the process never starts with promotion.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-059",
+   "concept": "c01-marketing-process",
+   "also": [],
+   "type": "mc",
+   "angle": "order",
+   "difficulty": 3,
+   "stem": "A Calgary non-profit has researched what newcomers to Canada need and has launched free language workshops at public libraries, promoted through settlement agencies. In the marketing process, what comes next for this organization?",
+   "options": [
+    "Realize objectives, such as newcomers served",
+    "Identify consumer needs for the first time",
+    "Realize profits that it can pay out to owners",
+    "Manage the marketing mix to meet newcomers' needs"
+   ],
+   "answer": 0,
+   "explanation": "Step 1 (identify needs) and step 2 (manage the mix) are done, so step 3 follows; for a non-profit, step 3 is realizing objectives rather than profits. Paying profits to owners does not fit a non-profit.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-060",
+   "concept": "c01-marketing-process",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "After focus groups in Yellowknife and Edmonton revealed what tea drinkers dislike about current brands, Tundra Tea Co. is now choosing a $6 price, a recyclable tin, listings at Sobeys and an Instagram launch campaign. Which step of the marketing process is Tundra in?",
+   "options": [
+    "Realizing profits for the company",
+    "Building long-term relationships through CRM",
+    "Managing the marketing mix to meet consumer needs",
+    "Identifying consumer needs"
+   ],
+   "answer": 2,
+   "explanation": "Needs have already been identified (step 1), and Tundra is now setting product, price, place and promotion, which is step 2: managing the marketing mix to meet consumer needs. Profits (step 3) come only after the program reaches the market.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-061",
+   "concept": "c01-marketing-process",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about the marketing process in Figure 1-2 is NOT correct?",
+   "options": [
+    "The process begins by building a product and then searching for buyers",
+    "For a non-profit, the final step is realizing objectives rather than profits",
+    "Information about consumer needs flows from the market to the organization",
+    "Products, services and ideas flow from the organization to the market"
+   ],
+   "answer": 0,
+   "explanation": "The marketing process is 'a process that focuses on consumer needs': it begins by identifying needs, not by building a product first (that is production-era thinking). The other three statements describe Figure 1-2 accurately.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-062",
+   "concept": "c01-marketing-process",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "Why does the chapter describe the marketing process as 'a process that focuses on consumer needs'?",
+   "options": [
+    "It ends with consumer needs only after the firm has maximized its production output",
+    "It replaces profit with consumer needs as the organization's one and only goal",
+    "It treats consumer needs as an uncontrollable environmental force to be monitored",
+    "It begins by discovering needs, then designs the mix to satisfy them before profits follow"
+   ],
+   "answer": 3,
+   "explanation": "Needs drive the whole sequence: they are identified first, the marketing mix is managed to satisfy them, and profits (or objectives) result. The process does not drop profit - realizing profits is its third step.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-063",
+   "concept": "c01-marketing-process",
+   "also": [
+    "c01-marketing-concept"
+   ],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A student writes: 'The marketing process and the marketing concept are the same thing.' Which correction is best?",
+   "options": [
+    "The process applies only to non-profit groups; the concept applies only to for-profit firms",
+    "The process is three steps: needs, mix, profits; the concept is satisfying needs while meeting goals",
+    "The process is a philosophy about serving customers; the concept is a three-step sequence of actions",
+    "The process is the 4 Ps of the mix; the concept is the five uncontrollable environmental forces"
+   ],
+   "answer": 1,
+   "explanation": "The marketing process is a sequence of steps; the marketing concept is the guiding idea behind it. The second option simply swaps the two definitions, and both apply to for-profit and non-profit organizations.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-064",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "order",
+   "difficulty": 1,
+   "stem": "Which sequence correctly shows the evolution of business philosophies?",
+   "options": [
+    "Production → marketing → sales → relationship/societal",
+    "Marketing → production → sales → relationship/societal",
+    "Production → sales → marketing → relationship/societal",
+    "Sales → production → marketing → relationship/societal"
+   ],
+   "answer": 2,
+   "explanation": "Firms first focused on efficient production (demand exceeded supply), then on selling their output as competition grew, then on consumer needs (marketing orientation), and today on long-term relationships and society's well-being.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-065",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "In 1912, a Montreal stove manufacturer could sell every stove it built because demand far exceeded supply, so its managers focused on making stoves as efficiently as possible. Which orientation did the firm have?",
+   "options": [
+    "Societal marketing orientation",
+    "Marketing orientation",
+    "Sales orientation",
+    "Production orientation"
+   ],
+   "answer": 3,
+   "explanation": "A production orientation focuses on producing goods efficiently and fits the early-1900s condition of demand exceeding supply. A sales orientation emerged later, once competition grew and firms had to push their output.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-066",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Facing new competitors and warehouses full of unsold vacuum cleaners, Hartwell Appliances hires a large door-to-door sales force and pays big commissions to push its existing models. Which orientation does this reflect?",
+   "options": [
+    "Relationship marketing orientation",
+    "Sales orientation",
+    "Production orientation",
+    "Marketing orientation"
+   ],
+   "answer": 1,
+   "explanation": "Pushing products the firm has already made through aggressive selling and promotion is the sales orientation. A marketing orientation would start by finding out what customers need before deciding what to make.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-067",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "What most clearly separates the marketing orientation from the sales orientation?",
+   "options": [
+    "Marketing emerged when demand exceeded supply; sales emerged once competition grew",
+    "Marketing stresses long-term relationships and society; sales stresses consumer needs",
+    "Marketing begins with consumer needs; sales begins with the products the firm has already made",
+    "Marketing relies on promotion; sales relies mainly on efficient production"
+   ],
+   "answer": 2,
+   "explanation": "The key difference is the starting point: the marketing orientation starts by discovering consumer needs, while the sales orientation pushes output the firm has already produced. 'Demand exceeded supply' describes the production era, and long-term relationships plus society describe today's relationship/societal orientation.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-068",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "According to the evolution of business philosophies, why did many firms shift from a production orientation to a sales orientation?",
+   "options": [
+    "Competition grew, so firms had to push their output to sell it",
+    "Consumers began demanding socially responsible business practices",
+    "Firms started sharing customer and competitor data across departments",
+    "Governments began banning efficient mass-production methods"
+   ],
+   "answer": 0,
+   "explanation": "The production era worked because demand exceeded supply; as competition grew, firms needed selling and promotion to move what they produced. Demand for social responsibility belongs to today's societal era, and sharing data across departments describes a market orientation.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-069",
+   "concept": "c01-business-philosophies",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 3,
+   "stem": "Ridgeline Credit Union in Calgary now measures success by how many members stay for ten years or more, and it publicly reports on its community investments and environmentally responsible lending. Which stage in the evolution of business philosophies does this reflect?",
+   "options": [
+    "Production orientation",
+    "Sales orientation",
+    "Relationship/societal orientation",
+    "Marketing orientation"
+   ],
+   "answer": 2,
+   "explanation": "Long-term relationships (members staying a decade) plus attention to society's well-being (community investment, responsible lending) mark today's relationship/societal orientation. The plain marketing orientation focuses on satisfying consumer needs without that added long-term relationship and societal emphasis.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-070",
+   "concept": "c01-marketing-concept",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The idea that an organization should strive to satisfy the needs of consumers while also trying to achieve the organization's goals is the:",
+   "options": [
+    "marketing concept",
+    "sales orientation",
+    "societal marketing concept",
+    "market orientation"
+   ],
+   "answer": 0,
+   "explanation": "This two-part idea (satisfy consumers + achieve organizational goals) is the marketing concept. The societal marketing concept adds a third element, society's well-being, and market orientation is the practical implementation of the marketing concept.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-071",
+   "concept": "c01-marketing-concept",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "At Boreal Bikes in Thunder Bay, managers launch only models that customer research shows riders want, and only if the model can also meet the company's 25% margin target. Which idea guides Boreal?",
+   "options": [
+    "Macromarketing",
+    "The marketing concept",
+    "Customer experience management",
+    "The production orientation"
+   ],
+   "answer": 1,
+   "explanation": "Boreal balances both halves of the marketing concept: satisfying consumer needs (research-based models) and achieving organizational goals (the margin target). A production orientation would focus on making bikes efficiently regardless of what riders want.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-072",
+   "concept": "c01-marketing-concept",
+   "also": [
+    "c01-societal-csr"
+   ],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "How does the societal marketing concept differ from the marketing concept?",
+   "options": [
+    "It focuses on pushing the firm's existing output through aggressive promotion",
+    "It drops the goal of satisfying consumer needs in favour of serving society",
+    "It requires collecting competitor information and sharing it across departments",
+    "It adds that needs be satisfied in a way that also provides for society's well-being"
+   ],
+   "answer": 3,
+   "explanation": "The societal marketing concept keeps the marketing concept's goal of satisfying consumers but adds society's well-being. It does not abandon consumers; aggressive selling is the sales orientation, and sharing information across departments is market orientation.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-073",
+   "concept": "c01-marketing-concept",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 3,
+   "stem": "A company claims to follow the marketing concept. Which practice is NOT consistent with that claim?",
+   "options": [
+    "Making whatever is cheapest to produce, then pushing it with heavy discounts",
+    "Rejecting a popular product idea that could never meet its profit goals",
+    "Researching customer needs before developing any new products",
+    "Updating its offering whenever customer needs change over time"
+   ],
+   "answer": 0,
+   "explanation": "Making whatever is cheapest and then pushing it ignores consumer needs (production and sales thinking). Rejecting an idea that cannot meet profit goals IS consistent with the marketing concept, because the concept includes achieving the organization's goals, not satisfying customers at any cost.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-074",
+   "concept": "c01-marketing-concept",
+   "also": [
+    "c01-market-orientation"
+   ],
+   "type": "tf",
+   "angle": "why",
+   "difficulty": 1,
+   "stem": "Firms that put great effort into implementing the marketing concept are said to have a market orientation.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 0,
+   "explanation": "True. Market orientation is the marketing concept put into practice: continuously collecting information about customers' needs and competitors' capabilities, sharing it across departments, and using it to create customer value.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-075",
+   "concept": "c01-market-orientation",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "An organization that focuses its efforts on continuously collecting information about customers' needs and competitors' capabilities, sharing this information across departments, and using the information to create customer values is said to:",
+   "options": [
+    "stress the societal marketing concept",
+    "have a focus on macromarketing",
+    "have a nonprofit orientation",
+    "have a market orientation",
+    "be utilizing consumerism"
+   ],
+   "answer": 3,
+   "explanation": "Collecting customer and competitor information, sharing it across departments and using it to create customer value is the definition of market orientation, the result of implementing the marketing concept. The societal marketing concept would add society's well-being, and macromarketing concerns a nation's aggregate flow of goods.",
+   "source": "official"
+  },
+  {
+   "id": "q01-076",
+   "concept": "c01-market-orientation",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Every Monday, Tidewater Grocers' analytics team compiles loyalty-card data on shoppers' changing needs and a report on competitors' new services, sends both to the buying, store-operations and finance teams, and each team uses them to improve what customers get. Tidewater displays:",
+   "options": [
+    "macromarketing",
+    "the societal marketing concept",
+    "a sales orientation",
+    "a market orientation"
+   ],
+   "answer": 3,
+   "explanation": "All three components of market orientation are present: continuous collection of customer and competitor information, sharing across departments, and use of the information to create customer value. Nothing in the stem mentions society's well-being.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-077",
+   "concept": "c01-market-orientation",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which of the following is NOT a component of a market orientation?",
+   "options": [
+    "Collecting information about competitors' capabilities",
+    "Keeping customer information inside the marketing department",
+    "Continuously collecting information about customers' needs",
+    "Using the gathered information to create customer value"
+   ],
+   "answer": 1,
+   "explanation": "A market orientation requires SHARING information across departments, not keeping it within marketing. Collecting customer and competitor information and using it to create value are the other components.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-078",
+   "concept": "c01-market-orientation",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Which statement best distinguishes market orientation from the marketing concept?",
+   "options": [
+    "Market orientation is the underlying idea; the marketing concept is how a firm puts it into practice",
+    "Market orientation is a production-era philosophy; the marketing concept is the philosophy used today",
+    "Market orientation is the practical implementation (collect, share, use information); the marketing concept is the idea",
+    "Market orientation focuses on society's well-being; the marketing concept largely ignores customers"
+   ],
+   "answer": 2,
+   "explanation": "The marketing concept is the idea (satisfy consumer needs while achieving organizational goals); firms that work hard at implementing it achieve a market orientation by collecting, sharing and using information. The second option reverses them.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-079",
+   "concept": "c01-market-orientation",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 3,
+   "stem": "Cedar & Pine Furniture's marketing team surveys customers, but the design and production teams never see the results, and nobody tracks what competitors offer. What should the firm do to become market oriented?",
+   "options": [
+    "Sponsor a community program to adopt the societal marketing concept",
+    "Add competitor research and share all findings across departments so each can create customer value",
+    "Switch to a sales orientation to move existing inventory faster",
+    "Have the marketing team run customer surveys more often and keep the results in marketing"
+   ],
+   "answer": 1,
+   "explanation": "Market orientation has three parts: continuously collect information on customers' needs AND competitors' capabilities, share it across departments, and use it to create customer value. Cedar & Pine already collects customer data, so more surveys kept inside marketing miss both gaps: competitor information and cross-department sharing.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-080",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The idea that organizations are part of a larger society and are accountable to that society for their actions is called:",
+   "options": [
+    "customer relationship management",
+    "the marketing concept",
+    "corporate social responsibility",
+    "macromarketing"
+   ],
+   "answer": 2,
+   "explanation": "That is the definition of corporate social responsibility (CSR). Macromarketing is also society-level, but it describes the aggregate flow of a nation's goods and services, not an organization's accountability for its actions.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-081",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Every summer, Prairie Sky Insurance designs and runs a free swimming-lessons program for children in Regina's inner-city neighbourhoods. Which type of CSR initiative is this?",
+   "options": [
+    "Sponsorship and/or spearheading of community programs",
+    "Sponsorship of or involvement in fundraising for charitable organizations",
+    "A business philosophy that implements socially responsible practices",
+    "Customer relationship management aimed at policyholders"
+   ],
+   "answer": 0,
+   "explanation": "Prairie Sky is spearheading a community program, the first CSR type on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-082",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "During April, Harbourfront Hardware in Halifax asks shoppers to donate at checkout to the Canadian Cancer Society and matches every dollar raised. Which type of CSR initiative is this?",
+   "options": [
+    "Sponsorship and/or spearheading of community programs",
+    "Experiential marketing at the point of sale",
+    "A business philosophy that implements socially responsible practices",
+    "Sponsorship of or involvement in fundraising for charitable organizations"
+   ],
+   "answer": 3,
+   "explanation": "Raising and matching money for a charity is the second CSR type: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-083",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 3,
+   "stem": "Polaris Apparel overhauls how it operates: it pays all suppliers a living wage, switches every product line to recycled fabric, and ties executive bonuses to emissions cuts. Which type of CSR initiative is this?",
+   "options": [
+    "Partnership marketing with sustainable brands",
+    "A business philosophy that implements socially responsible practices",
+    "Sponsorship of or involvement in fundraising for charitable organizations",
+    "Sponsorship and/or spearheading of community programs"
+   ],
+   "answer": 1,
+   "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is the third CSR type: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-084",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which of the following is NOT one of the three types of CSR initiatives listed in the chapter?",
+   "options": [
+    "Sponsoring or spearheading community programs",
+    "Sponsoring or taking part in fundraising for charities",
+    "Running a points program that rewards repeat customers",
+    "Adopting a business philosophy of socially responsible practices"
+   ],
+   "answer": 2,
+   "explanation": "The three CSR types are community programs, charitable fundraising, and a socially responsible business philosophy. A points program rewarding repeat customers is a customer relationship (loyalty) tactic, not a CSR initiative.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-085",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "Glenbow Beverages wants to move from the marketing concept to the societal marketing concept. Which change would best accomplish this?",
+   "options": [
+    "Cutting sugar and using recyclable bottles while still meeting tastes and profit goals",
+    "Sharing competitor data across all departments every week to create customer value",
+    "Speeding up production lines to lower the cost of making each bottle",
+    "Hiring more salespeople to push existing inventory into more stores"
+   ],
+   "answer": 0,
+   "explanation": "The societal marketing concept satisfies consumer needs (and organizational goals) in a way that also provides for society's well-being, which healthier drinks and recyclable packaging do. Faster production is production thinking, pushing inventory is sales thinking, and sharing competitor data is market orientation.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-086",
+   "concept": "c01-societal-csr",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 3,
+   "stem": "Nordic Outfitters' CEO says: 'We design only what customers say they need, priced so we still hit our profit target, but we will not use a cheaper fabric that pollutes local rivers, even though customers would never notice.' The final part of her statement goes beyond the marketing concept to reflect the:",
+   "options": [
+    "market orientation",
+    "sales orientation",
+    "customer relationship management",
+    "societal marketing concept"
+   ],
+   "answer": 3,
+   "explanation": "Satisfying customers while meeting profit goals is the marketing concept; refusing a cheaper input to protect society's well-being, even when customers would not notice, adds the societal dimension. Market orientation is about collecting, sharing and using customer and competitor information, which the statement does not describe.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-087",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Rajan's Wealth Software and Yi Capital Group, two top vendors of financial management software, have recently launched their own online trading exchange aimed at increasing the ease with which their customers can finance their new products and ideas. Both of these organizations provide exceptional, ongoing service to their business customers. These two organizations hope to benefit from:",
+   "options": [
+    "customer relationship management",
+    "societal marketing concept",
+    "customer orientation",
+    "product valuation",
+    "none of the above"
+   ],
+   "answer": 0,
+   "explanation": "CRM is the process of building and developing long-term relationships with customers by delivering customer value and satisfaction, and exceptional, ongoing service to business customers aims at exactly that. The societal marketing concept would require a focus on society's well-being, which the stem never mentions.",
+   "source": "official"
+  },
+  {
+   "id": "q01-088",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The process of building and developing long-term relationships with customers by delivering customer value and satisfaction is called:",
+   "options": [
+    "the marketing concept",
+    "market orientation",
+    "customer experience management",
+    "customer relationship management"
+   ],
+   "answer": 3,
+   "explanation": "This is the definition of CRM. Customer experience management concerns the customer's internal response to all aspects of the organization; the cue words here are 'long-term relationships' delivered through 'value and satisfaction'.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-089",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Linking an organization to its individual customers, employees, suppliers and other partners for their mutual long-term benefit is the definition of:",
+   "options": [
+    "customer relationship management",
+    "relationship marketing",
+    "partnership marketing",
+    "macromarketing"
+   ],
+   "answer": 1,
+   "explanation": "Relationship marketing links the organization not only to customers but also to employees, suppliers and other partners. CRM focuses on long-term relationships with customers specifically, so the mention of employees and suppliers is the cue. Partnership marketing is a formal association between brands.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-090",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Northwind Auto in Edmonton records each customer's service history, sends personalized maintenance reminders, and gives free winter-tire swaps to clients who have stayed five years or more. Northwind is practising:",
+   "options": [
+    "customer relationship management",
+    "macromarketing",
+    "the production orientation",
+    "experiential marketing"
+   ],
+   "answer": 0,
+   "explanation": "Tracking individual customers and rewarding long-time clients builds long-term relationships by delivering value and satisfaction, which is CRM. Experiential marketing would involve creating hands-on brand experiences, not ongoing relationship building.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-091",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "Why do firms invest in customer relationship management rather than focusing only on individual sales?",
+   "options": [
+    "To replace the 4 Ps of the marketing mix with a single, cheaper promotional tool",
+    "To control environmental forces such as the state of the economy and competitors",
+    "To keep customers returning long-term by delivering value and satisfaction",
+    "To lower production costs by making manufacturing more efficient and automated"
+   ],
+   "answer": 2,
+   "explanation": "CRM's purpose is long-term relationships built on delivering customer value and satisfaction, so customers keep coming back. Environmental forces cannot be controlled by any marketing tool, and CRM works alongside the marketing mix rather than replacing it.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-092",
+   "concept": "c01-crm",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which practice is NOT consistent with customer relationship management?",
+   "options": [
+    "Tracking each customer's preferences to personalize future offers",
+    "Using high-pressure tactics to maximize one-time sales, ignoring repeat business",
+    "Providing exceptional ongoing service to existing business clients",
+    "Rewarding long-time customers with loyalty perks and early access"
+   ],
+   "answer": 1,
+   "explanation": "CRM is about long-term relationships, so one-off, high-pressure selling that ignores repeat business contradicts it. Ongoing service, personalization and loyalty rewards all build long-term relationships through value and satisfaction.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-093",
+   "concept": "c01-customer-experience",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 2,
+   "stem": "Managing the internal response that customers have to all aspects of an organization and its offering is called:",
+   "options": [
+    "customer experience management",
+    "customer value",
+    "experiential marketing",
+    "customer relationship management"
+   ],
+   "answer": 0,
+   "explanation": "This is customer experience management; its cue words are 'internal response' and 'all aspects of an organization'. Experiential marketing is a promotional practice that creates hands-on brand experiences, and CRM is about long-term relationships built on value and satisfaction.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-094",
+   "concept": "c01-customer-experience",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Aurora Hotels hires a team to map every guest touchpoint - the booking app, check-in, room scent, staff greetings and checkout emails - and redesigns any point where guests say they felt frustrated or ignored. Which practice is this?",
+   "options": [
+    "Experiential marketing",
+    "Macromarketing",
+    "Customer experience management",
+    "Partnership marketing"
+   ],
+   "answer": 2,
+   "explanation": "Managing guests' internal response across all aspects of the organization is customer experience management. Experiential marketing, the tempting look-alike, means creating hands-on brand events for consumers, not redesigning every service touchpoint.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-095",
+   "concept": "c01-customer-experience",
+   "also": [
+    "c01-crm"
+   ],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Which statement best distinguishes customer experience management from customer relationship management (CRM)?",
+   "options": [
+    "Experience management applies only to organizational buyers; CRM applies only to ultimate consumers buying for households",
+    "Experience management is a production-era practice; CRM is a sales-era practice used to push inventory",
+    "Experience management builds long-term relationships through delivering value; CRM manages customers' feelings at each touchpoint",
+    "Experience management targets customers' internal response to every aspect of the firm; CRM targets long-term relationships via value and satisfaction"
+   ],
+   "answer": 3,
+   "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. The second option swaps the definitions; in practice the two support each other.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-096",
+   "concept": "c01-customer-experience",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about customer experience management is NOT correct?",
+   "options": [
+    "It covers all aspects of the organization and its offering",
+    "It focuses only on the product itself, ignoring websites, staff and service",
+    "A positive experience can support long-term customer relationships",
+    "It concerns customers' internal response to the organization"
+   ],
+   "answer": 1,
+   "explanation": "Customer experience management covers ALL aspects of the organization and its offering - the website, staff, service and the product - so 'only the product' is wrong. A good experience supports the long-term relationships CRM aims for.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-097",
+   "concept": "c01-customer-experience",
+   "also": [
+    "c01-evolving-practices"
+   ],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A student confuses customer experience management with experiential marketing. Which example is experiential marketing rather than customer experience management?",
+   "options": [
+    "An airline studies how travellers feel at each step from booking to baggage claim",
+    "A hotel retrains staff and updates its website so guests feel welcome at every touchpoint",
+    "A chip brand sets up a pop-up 'flavour lab' at a Toronto festival where visitors create and taste their own seasonings",
+    "A bank redesigns its app, branch greetings and follow-up calls after customers report feeling ignored"
+   ],
+   "answer": 2,
+   "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The other three options manage customers' internal response across the organization's touchpoints, which is customer experience management.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-098",
+   "concept": "c01-consumers-org-buyers",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 1,
+   "stem": "Which of the following is the best example of an organizational buyer?",
+   "options": [
+    "A mother buying milk for her young son",
+    "A computer programmer buying the latest game for his PlayStation",
+    "A store owner buying hand-painted slate signs to sell in her store",
+    "A botanist buying a rose bush for his home garden",
+    "A baseball player buying a t-ball set for his daughter"
+   ],
+   "answer": 2,
+   "explanation": "Organizational buyers are manufacturers, wholesalers, retailers and government agencies that buy for their own use or for resale. The store owner is buying signs to resell; every other buyer is purchasing for personal or household use, which makes them ultimate consumers regardless of their occupation.",
+   "source": "official"
+  },
+  {
+   "id": "q01-099",
+   "concept": "c01-consumers-org-buyers",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Priya, a dentist in Lethbridge, buys a laptop. In which situation is she acting as an organizational buyer?",
+   "options": [
+    "She buys it for her clinic's front desk",
+    "She buys it as a birthday gift for her sister",
+    "She buys it to stream movies in her living room",
+    "She buys it for her teenage son's homework"
+   ],
+   "answer": 0,
+   "explanation": "What matters is the purpose of the purchase. Buying for the clinic's own use makes Priya an organizational buyer; the other purchases are for personal or household use, so she would be an ultimate consumer even though she is a professional.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-100",
+   "concept": "c01-consumers-org-buyers",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 2,
+   "stem": "The same 24-pack of bottled water is bought by a Calgary family for a camping trip and by a convenience-store owner to sell from her cooler. What determines which buyer is the ultimate consumer?",
+   "options": [
+    "The size of the order: small versus bulk quantities",
+    "The price paid: full retail versus a discounted price",
+    "The type of product: consumer goods versus industrial goods",
+    "The purpose of the purchase: household use versus resale"
+   ],
+   "answer": 3,
+   "explanation": "Ultimate consumers buy for household use; organizational buyers buy for their own organizational use or for resale. The product here is identical, so the only thing that separates the two buyers is the purpose of the purchase.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-101",
+   "concept": "c01-consumers-org-buyers",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which of the following is NOT an organizational buyer?",
+   "options": [
+    "A dentist buying a gaming console for his den",
+    "A Canadian Tire dealer buying barbecues to resell",
+    "Alberta Health Services buying hospital beds",
+    "A Regina bakery buying flour to make bread"
+   ],
+   "answer": 0,
+   "explanation": "The dentist is buying for household use, so he is an ultimate consumer despite his professional job - the classic job-title trap. A government agency buying for its own use, a manufacturer (bakery) buying inputs, and a retailer buying for resale are all organizational buyers.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-102",
+   "concept": "c01-consumers-org-buyers",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 3,
+   "stem": "A provincial ministry buys 500 snow shovels to sell at cost to seniors through community centres. How should the ministry be classified, and why?",
+   "options": [
+    "Not a buyer at all, because no profit is made on the resale",
+    "Ultimate consumer, because the shovels will end up being used in seniors' households",
+    "Ultimate consumer, because government agencies are not businesses",
+    "Organizational buyer, because a government agency is buying for resale rather than household use"
+   ],
+   "answer": 3,
+   "explanation": "Organizational buyers include government agencies that buy for their own use or for resale. The ministry is reselling (even at cost), so it is an organizational buyer; the seniors who later buy the shovels for home use are the ultimate consumers.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-103",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The benefits or customer value received by users of a product is called:",
+   "options": [
+    "exchange",
+    "a value proposition",
+    "utility",
+    "customer satisfaction"
+   ],
+   "answer": 2,
+   "explanation": "Utility is the benefit or customer value users receive from a product, and it comes in four types: form, place, time and possession. A value proposition is a promised set of benefits, not the benefit actually received through use.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-104",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Sunrise Coffee opens a kiosk beyond security in the Edmonton International Airport so departing travellers can get coffee right beside their gates. Which utility does this create most directly?",
+   "options": [
+    "Possession utility",
+    "Place utility",
+    "Time utility",
+    "Form utility"
+   ],
+   "answer": 1,
+   "explanation": "Place utility means having the offering available where consumers need it - here, right at the gates. Time utility would be about when it is available (for example, opening early for 5 a.m. flights).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-105",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 1,
+   "stem": "Northgate Pharmacy stays open 24 hours a day so customers can fill urgent prescriptions at 3 a.m. Which utility does this primarily provide?",
+   "options": [
+    "Possession utility",
+    "Place utility",
+    "Time utility",
+    "Form utility"
+   ],
+   "answer": 2,
+   "explanation": "Being available WHEN consumers need the product is time utility. Place utility is about WHERE it is available, which the 24-hour schedule does not change.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-106",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Harmon Furniture in Winnipeg lets shoppers take a $3,000 sofa home today with 24 months of interest-free financing. Which utility does the financing offer create?",
+   "options": [
+    "Possession utility",
+    "Time utility",
+    "Place utility",
+    "Form utility"
+   ],
+   "answer": 0,
+   "explanation": "Possession utility is getting the product to consumers so they can own and use it, and offering credit or financing is the textbook example. Place utility concerns where the sofa is available, which the financing does not change.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-107",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which type of utility does marketing NOT create directly, but only influences?",
+   "options": [
+    "Place utility",
+    "Form utility",
+    "Possession utility",
+    "Time utility"
+   ],
+   "answer": 1,
+   "explanation": "Form utility comes from producing the good or service, so production creates it; marketing influences it by identifying what consumers want. Marketing directly creates place, time and possession utility.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-108",
+   "concept": "c01-utility",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 3,
+   "stem": "Golden Wheat Bakery turns flour, eggs and butter into fresh croissants every morning. Which utility does this create, and what is marketing's role in it?",
+   "options": [
+    "Possession utility; marketing creates it directly by offering customers credit",
+    "Place utility; marketing creates it directly by choosing store locations",
+    "Form utility; marketing creates it directly through its promotion",
+    "Form utility; marketing influences it through insight into what consumers want"
+   ],
+   "answer": 3,
+   "explanation": "Turning raw materials into a product is form utility, created by production. Marketing's role is to influence form utility by feeding consumer insights into product design, not to create it directly; promotion does not make the croissant.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-109",
+   "concept": "c01-macro-micro",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "How an individual organization directs its marketing activities and allocates its resources to benefit its customers is called:",
+   "options": [
+    "micromarketing",
+    "market orientation",
+    "a value proposition",
+    "macromarketing"
+   ],
+   "answer": 0,
+   "explanation": "This is micromarketing: the marketing of one organization. Macromarketing looks at the aggregate flow of a whole nation's goods and services to benefit society.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-110",
+   "concept": "c01-macro-micro",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "A University of Alberta economist studies how efficiently Canada's entire food system moves products from farms to consumers in every province, and whether that system benefits society. This is a study of:",
+   "options": [
+    "micromarketing",
+    "macromarketing",
+    "relationship marketing",
+    "market orientation"
+   ],
+   "answer": 1,
+   "explanation": "Examining the aggregate flow of a nation's goods to benefit society is macromarketing. Micromarketing would focus on how a single organization directs its own marketing activities.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-111",
+   "concept": "c01-macro-micro",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "Loblaw, one of Canada's largest retailers, decides how to divide its national advertising budget among its store banners. Which term best applies?",
+   "options": [
+    "Neither, because budget decisions are financial rather than marketing activities",
+    "Macromarketing, because the company is very large and advertises nationally",
+    "Macromarketing, because the decision affects consumers across the whole nation",
+    "Micromarketing, because it is one organization allocating its marketing resources"
+   ],
+   "answer": 3,
+   "explanation": "Micromarketing is about how an individual organization directs its marketing and allocates its resources, regardless of company size. Macromarketing is the aggregate flow of a nation's goods and services, not one large firm's national campaign.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-112",
+   "concept": "c01-macro-micro",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about macromarketing is NOT correct?",
+   "options": [
+    "It focuses on benefits to society as a whole",
+    "It concerns the aggregate flow of a nation's goods and services",
+    "It refers to marketing done by very large companies with national budgets",
+    "It looks at the overall system rather than a single organization"
+   ],
+   "answer": 2,
+   "explanation": "Macromarketing is about the aggregate flow of a nation's goods and services to benefit society - a system-level view. Company size has nothing to do with it; even a giant firm's own plans are micromarketing.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-113",
+   "concept": "c01-macro-micro",
+   "also": [],
+   "type": "fill",
+   "angle": "define",
+   "difficulty": 2,
+   "stem": "The aggregate flow of a nation's goods and services to benefit society is called _____.",
+   "options": [
+    "the societal marketing concept",
+    "macromarketing",
+    "corporate social responsibility",
+    "micromarketing"
+   ],
+   "answer": 1,
+   "explanation": "Macromarketing is the society-wide, aggregate flow of a nation's goods and services. The societal marketing concept and CSR also mention society, but they describe how an individual organization should behave, not the national flow of goods.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-114",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which of the following is NOT one of the seven new and evolving marketing practices identified in Chapter 1?",
+   "options": [
+    "Production orientation",
+    "Partnership marketing",
+    "Metrics and analytics",
+    "Augmented reality"
+   ],
+   "answer": 0,
+   "explanation": "The seven practices are digital marketing (content, mobile, social media), augmented reality, experiential marketing, influencer marketing, partnership marketing, metrics and analytics, and new regulations and ethical considerations. Production orientation is the earliest business philosophy, not a new practice.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-115",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 1,
+   "stem": "A Montreal furniture retailer's app lets shoppers point their phone at an empty corner of the living room and see a life-sized 3D sofa placed there. Which evolving practice is this?",
+   "options": [
+    "Partnership marketing",
+    "Influencer marketing",
+    "Experiential marketing",
+    "Augmented reality"
+   ],
+   "answer": 3,
+   "explanation": "Overlaying digital images onto the real-world view through a phone is augmented reality. Experiential marketing involves hands-on, real-world brand experiences such as events or pop-ups.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-116",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Glacier Water pays a Calgary fitness creator with 400,000 TikTok followers to post videos featuring its bottles in her daily workout routine. Which evolving practice is this?",
+   "options": [
+    "Metrics and analytics",
+    "Experiential marketing",
+    "Influencer marketing",
+    "Partnership marketing"
+   ],
+   "answer": 2,
+   "explanation": "Paying a personality with a large, trusting following to promote a brand is influencer marketing. Partnership marketing is a formal association between two brands, not a paid endorsement by an individual creator.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-117",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "A Canadian coffee chain and a national bookseller form a formal association: co-branded cafés inside the bookstores and a shared loyalty reward. Which evolving practice is this?",
+   "options": [
+    "Partnership marketing",
+    "Influencer marketing",
+    "Experiential marketing",
+    "Augmented reality"
+   ],
+   "answer": 0,
+   "explanation": "Partnership marketing is the creation of formal associations between brands that contribute to each other's success, such as co-branded locations and shared rewards. Influencer marketing would rely on an individual personality's endorsement.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-118",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A student lists the seven new and evolving practices as: content marketing, mobile marketing, social media marketing, augmented reality, experiential marketing, influencer marketing and partnership marketing. What is wrong with this list?",
+   "options": [
+    "Partnership marketing belongs to the relationship era of business philosophy, not to evolving practices",
+    "Content, mobile and social media belong under digital marketing, and metrics/analytics and regulations/ethics are missing",
+    "Influencer marketing and partnership marketing are really the same practice and should be combined",
+    "Augmented reality is just a form of experiential marketing and should not be listed as a separate item"
+   ],
+   "answer": 1,
+   "explanation": "The chapter groups content, mobile and social media marketing as parts of item 1, digital marketing. The full list of seven also includes metrics and analytics and new marketing regulations and ethical considerations, which the student left out.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-119",
+   "concept": "c01-evolving-practices",
+   "also": [],
+   "type": "mc",
+   "angle": "apply",
+   "difficulty": 2,
+   "stem": "Brightwater Cosmetics runs ads on three platforms but cannot tell which one actually drives sales. Which evolving marketing practice would most directly solve this problem?",
+   "options": [
+    "Experiential marketing",
+    "Augmented reality",
+    "Metrics and analytics",
+    "Partnership marketing"
+   ],
+   "answer": 2,
+   "explanation": "Metrics and analytics measure marketing results, letting Brightwater compare which platform drives sales. The other practices are ways of reaching or engaging customers, not ways of measuring performance.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-120",
+   "concept": "c01-ethics",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The moral principles and values that govern the actions and decisions of an individual or group are called:",
+   "options": [
+    "the societal marketing concept",
+    "corporate social responsibility",
+    "laws",
+    "ethics"
+   ],
+   "answer": 3,
+   "explanation": "That is the definition of ethics. Laws are rules enforced by government; CSR is the idea that organizations are accountable to society, which is broader than the moral principles guiding individual decisions.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-121",
+   "concept": "c01-ethics",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 2,
+   "stem": "Leaders at a Calgary marketing agency refuse a client's request to bury automatic-renewal fees in tiny print, saying it conflicts with the CMA Code even though no specific law clearly forbids it. Their decision is driven mainly by:",
+   "options": [
+    "a regulatory force",
+    "macromarketing",
+    "customer experience management",
+    "ethical principles"
+   ],
+   "answer": 3,
+   "explanation": "The agency is acting on moral principles and a code of ethics, not on a legal requirement, so ethics is the driver. A regulatory force would be a law or government rule, and the stem says no law clearly forbids the practice.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-122",
+   "concept": "c01-ethics",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 2,
+   "stem": "Which statement about codes of ethics in marketing is NOT accurate, according to the chapter?",
+   "options": [
+    "Only government agencies issue codes of ethics for marketers",
+    "The CMA publishes a Canadian Marketing Code of Ethics and Standards",
+    "Many industries and professional associations have codes of ethics",
+    "Many companies have their own guidelines and codes of ethics"
+   ],
+   "answer": 0,
+   "explanation": "The slides note that many companies, industries and professional associations have guidelines and codes of ethics, including the CMA's Canadian Marketing Code of Ethics and Standards. Codes are not limited to government agencies.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-123",
+   "concept": "c01-ethics",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A Winnipeg supplement company's new ad is technically legal, but it implies results that the company's own studies do not support. Which statement best applies?",
+   "options": [
+    "The ad is a CSR initiative, because any form of advertising has some effect on society",
+    "The ad may be legal yet unethical; codes of ethics like the CMA Code guide conduct beyond the law",
+    "The ad is a regulatory environmental force, which the company itself cannot control",
+    "Because the ad is legal, it is automatically ethical, so no code of ethics applies"
+   ],
+   "answer": 1,
+   "explanation": "Laws set the legal minimum, while ethics are the moral principles governing what an individual or group believes is right, so an ad can satisfy the law and still mislead. That gap is why companies, industries and associations such as the CMA publish codes of ethics. The firm's own ad is a controllable decision, not an environmental force.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-124",
+   "concept": "c01-ethics",
+   "also": [],
+   "type": "tf",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "The Canadian Marketing Code of Ethics and Standards is published by the Chartered Institute of Marketing.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 1,
+   "explanation": "False. Corrected: the Canadian Marketing Code of Ethics and Standards is published by the Canadian Marketing Association (CMA). The Chartered Institute of Marketing is the UK body whose definition of marketing appears on the slides.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-125",
+   "concept": "c01-who-markets",
+   "also": [],
+   "type": "mc",
+   "angle": "define",
+   "difficulty": 1,
+   "stem": "What kinds of organizations engage in marketing?",
+   "options": [
+    "only those that can afford national advertising",
+    "very large and established nonprofit organizations",
+    "exclusively Fortune 1000 companies",
+    "every organization markets",
+    "virtually no organizations"
+   ],
+   "answer": 3,
+   "explanation": "Every organization markets, because each needs people to engage in exchanges with it or to think or behave in a certain way - including non-profits like the Canadian Red Cross and government agencies like the Ministry of Transportation. Marketing is not limited to big advertisers or large companies.",
+   "source": "official"
+  },
+  {
+   "id": "q01-126",
+   "concept": "c01-who-markets",
+   "also": [],
+   "type": "mc",
+   "angle": "identify",
+   "difficulty": 3,
+   "stem": "Alberta's transportation ministry runs radio and billboard ads urging drivers to put their phones away while driving. Nothing is sold. Which statement best describes this campaign?",
+   "options": [
+    "It is macromarketing, because a government is doing it",
+    "It is not marketing, because no product or money is exchanged",
+    "It is marketing an idea, showing that government agencies market too",
+    "It is not marketing, because only for-profit firms can market"
+   ],
+   "answer": 2,
+   "explanation": "Ideas can be marketed, and governments market when they try to get people to think or behave in a certain way, like the chapter's Ministry of Transportation example. A government running a campaign is still one organization's marketing, not macromarketing (the aggregate flow of a nation's goods and services).",
+   "source": "generated"
+  },
+  {
+   "id": "q01-127",
+   "concept": "c01-who-markets",
+   "also": [],
+   "type": "mc",
+   "angle": "not",
+   "difficulty": 1,
+   "stem": "Which statement about who markets is NOT correct?",
+   "options": [
+    "Non-profits such as the Canadian Red Cross engage in marketing",
+    "Services, such as dental care, can be marketed",
+    "Marketing applies only to physical goods sold for profit",
+    "Ideas, such as road safety, can be marketed"
+   ],
+   "answer": 2,
+   "explanation": "Everyone markets: goods, services and ideas, for-profit and non-profit. Limiting marketing to physical goods sold for profit contradicts the chapter's 'Who markets? Everyone' slide.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-128",
+   "concept": "c01-who-markets",
+   "also": [],
+   "type": "mc",
+   "angle": "why",
+   "difficulty": 2,
+   "stem": "According to Chapter 1, why is understanding marketing valuable even for students who will never work in a marketing department?",
+   "options": [
+    "Because marketing affects everyone, knowing it makes us better customers, citizens and career planners",
+    "Marketing is mainly common sense, so a marketing course offers an easy and useful credit",
+    "Marketing affects only consumer-goods firms, which employ most business graduates in Canada",
+    "Marketing knowledge is legally required to obtain every Canadian business licence"
+   ],
+   "answer": 0,
+   "explanation": "The career slide states that marketing affects all individuals, organizations, industries and countries, and that knowing it makes us better customers, more informed citizens and better career planners. 'Common sense' is the misconception the chapter rejects.",
+   "source": "generated"
+  },
+  {
+   "id": "q01-129",
+   "concept": "c01-who-markets",
+   "also": [],
+   "type": "mc",
+   "angle": "contrast",
+   "difficulty": 3,
+   "stem": "A Calgary food bank seeking donors, a city councillor seeking re-election and the Town of Banff promoting winter tourism all run campaigns. Which statement is most accurate?",
+   "options": [
+    "Only Banff is marketing, because tourism is a service that visitors pay money for",
+    "All three are marketing, since organizations, individuals and places can all be marketed",
+    "Only the food bank is marketing, because charities are the only non-business exception",
+    "None of them is marketing, because none of them sells a physical product for profit"
+   ],
+   "answer": 1,
+   "explanation": "Everyone markets: non-profits, individuals and places as well as firms, and the offering can be a good, service, idea, person or place. Requiring a physical product or a profit motive reflects the narrow view of marketing the chapter corrects.",
+   "source": "generated"
+  }
+ ]
+}

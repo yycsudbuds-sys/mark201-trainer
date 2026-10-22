@@ -1,0 +1,721 @@
+[
+ {
+  "id": "q07-041",
+  "concept": "c07-unsought",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "AirPure, an Edmonton start-up, has invented a radically new home device that consumers have never heard of. Which marketing approach best fits the product's current classification?",
+  "options": [
+   "Aggressive promotion and personal selling to create awareness and desire",
+   "Selective distribution with messages comparing its price to competitors",
+   "Mass distribution through convenience stores with minimal advertising",
+   "Exclusive distribution and premium pricing for very brand-loyal buyers"
+  ],
+  "answer": 0,
+  "explanation": "Radical new products are unsought because consumers don't yet know about them, so marketers must use aggressive promotion and personal selling. Exclusive distribution for loyal buyers fits specialty products, which require an existing strong preference that AirPure doesn't have yet.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-042",
+  "concept": "c07-unsought",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What best distinguishes unsought products from convenience products?",
+  "options": [
+   "Unsought products are always cheaper than convenience products",
+   "Unsought products are business products; convenience products are consumer products",
+   "Unsought products are unknown or not initially wanted; convenience products are wanted and bought routinely with little effort",
+   "Convenience products need aggressive personal selling; unsought products rely on mass advertising alone"
+  ],
+  "answer": 2,
+  "explanation": "Both are consumer products; the difference is awareness and desire. Convenience goods are routinely wanted and need only mass advertising and wide availability, while unsought goods need aggressive promotion and personal selling because demand doesn't exist yet.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-043",
+  "concept": "c07-unsought",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why do unsought products such as life insurance typically require personal selling?",
+  "options": [
+   "Consumers are very brand loyal and need a salesperson to locate their preferred brand",
+   "Their demand is derived from demand for other consumer products",
+   "They are purchased so frequently that self-service cannot handle the volume",
+   "Consumers don't initially want them, so a salesperson must build awareness and persuade them of the need"
+  ],
+  "answer": 3,
+  "explanation": "Because consumers either don't know about unsought products or don't initially want them, marketers must create the need through aggressive promotion and personal selling. Very brand-loyal buyers describe specialty products, and derived demand applies to business products.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-044",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Polar Ridge, a Lethbridge furniture maker, buys rough lumber that it cuts and finishes into dining tables. For Polar Ridge, the lumber is:",
+  "options": [
+   "Accessory equipment (support good)",
+   "A raw material (production good)",
+   "A supply (support good)",
+   "A component part (production good)"
+  ],
+  "answer": 1,
+  "explanation": "Raw materials such as grain and lumber are production goods that become part of the final product. Component parts are already-manufactured items assembled into the product (engines, microchips), and supplies and accessory equipment never become part of the product.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-045",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a boat builder classify the outboard engines it buys as production goods rather than support goods?",
+  "options": [
+   "Because the engines become part of the final product the builder sells",
+   "Because the engines are used up during the production process",
+   "Because the engines are major, long-term investments like buildings",
+   "Because demand for the engines is unrelated to consumer demand for boats"
+  ],
+  "answer": 0,
+  "explanation": "Production goods (raw materials and component parts) become part of the final product; engines installed in boats are component parts. Buildings and fixed equipment describe installations, and items used up in operations describe supplies - both support goods.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-046",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Rocky Mountain Motors builds pickup trucks in Alberta. Which purchase is a SUPPORT good rather than a production good?",
+  "options": [
+   "Tires mounted on every finished truck",
+   "Steel used to form the truck bodies",
+   "Laptops and printers for the accounting department",
+   "Engines installed in each truck"
+  ],
+  "answer": 2,
+  "explanation": "Support goods assist production but don't become part of the product; office equipment is accessory equipment. Engines and tires are component parts and steel is a raw material - all production goods that end up in the truck.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-047",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which group lists the four types of support goods?",
+  "options": [
+   "Raw materials, component parts, accessory equipment and services",
+   "Convenience, shopping, specialty and unsought products",
+   "Raw materials, component parts, installations and supplies",
+   "Installations, accessory equipment, supplies and services"
+  ],
+  "answer": 3,
+  "explanation": "Support goods are installations, accessory equipment, supplies and services. Raw materials and component parts are production goods, and convenience/shopping/specialty/unsought are consumer product classes.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-048",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "A Calgary craft brewery makes and sells beer. Which of its purchases is NOT a production good?",
+  "options": [
+   "Hops",
+   "A new brewhouse building with fixed brewing tanks",
+   "Brewer's yeast",
+   "Malted barley"
+  ],
+  "answer": 1,
+  "explanation": "The building and fixed tanks are an installation - a support good that assists production. Barley, hops and yeast become part of the beer, so they are raw materials, which are production goods.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-049",
+  "concept": "c07-business-products",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Which pairing of purchase and support-good category is correct for a Halifax accounting firm?",
+  "options": [
+   "Desktop computers for every accountant - installations",
+   "A new office building the firm constructs - accessory equipment",
+   "An outside IT repair contract - supplies",
+   "Printer paper and paper clips - supplies"
+  ],
+  "answer": 3,
+  "explanation": "Supplies are consumables such as stationery, paper clips and brooms. A building is an installation, computers and other office equipment are accessory equipment, and repair or maintenance contracts are services.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-050",
+  "concept": "c07-derived-demand",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "If consumer demand for Ford cars (a consumer product) increases, the company may increase its demand for paint-spraying equipment (a business good). This illustrates _____.",
+  "options": [
+   "unit demand",
+   "contrived demand",
+   "derived demand",
+   "primary demand",
+   "secondary demand"
+  ],
+  "answer": 2,
+  "explanation": "Derived demand means demand for business products is derived from demand for the consumer products they help produce: more car buyers means Ford needs more paint-spraying equipment. None of the other options describes business demand driven by consumer purchases.",
+  "source": "official"
+ },
+ {
+  "id": "q07-051",
+  "concept": "c07-derived-demand",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After Canadians began buying far more oat-based milk, Prairie Oat Mills in Saskatchewan saw orders from beverage makers for its processed oats double. This is an example of:",
+  "options": [
+   "Brand equity",
+   "Brand loyalty",
+   "Derived demand",
+   "Primary demand"
+  ],
+  "answer": 2,
+  "explanation": "The mill sells a business product, and its demand rose because consumer demand for oat milk rose - derived demand. Primary demand is demand for a product category as a whole rather than a specific brand; it doesn't describe a supplier's business sales rising because consumers bought more of the final product.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-052",
+  "concept": "c07-derived-demand",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Derived demand means that the demand for business products depends on the demand for the consumer products they help make.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Business buyers purchase inputs and equipment because consumers want the final products; when consumer demand changes, demand for those business products follows.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-053",
+  "concept": "c07-derived-demand",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Kodiak Fasteners sells specialty bolts to Canadian RV manufacturers. Economists forecast a sharp drop in consumer RV purchases next year. What should Kodiak expect and do?",
+  "options": [
+   "Expect orders to rise, because manufacturers stockpile parts when consumer demand falls",
+   "Expect orders to fall, since its demand is derived from RV demand, and plan production and marketing accordingly",
+   "Expect no change, because business buyers' demand is independent of consumer demand",
+   "Reclassify its bolts as supplies so its sales are no longer tied to RV demand"
+  ],
+  "answer": 1,
+  "explanation": "Demand for business products is derived from consumer demand, so fewer RV sales means fewer bolts ordered. Business demand is not independent of consumers, and relabelling the product's category doesn't change what drives its demand.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-054",
+  "concept": "c07-derived-demand",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about derived demand is NOT correct?",
+  "options": [
+   "It describes how consumer demand for a product rises after it receives positive reviews",
+   "It applies to business products such as raw materials, component parts and equipment",
+   "B2B marketers watch consumer markets because their own sales depend on them",
+   "A drop in consumer demand for cars can reduce demand for paint-spraying equipment"
+  ],
+  "answer": 0,
+  "explanation": "Derived demand is business demand flowing from consumer demand - not consumer demand rising after good reviews (that's word of mouth). The other three statements accurately describe derived demand.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-055",
+  "concept": "c07-product-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "The Build a Bear Workshop in West Edmonton Mall sells custom made Teddy bears designed to be given as gifts for almost every occasion imaginable. For the Build a Bear Workshop, Teddy bears are an example of a:",
+  "options": [
+   "product class",
+   "product mix",
+   "product line",
+   "marketing mix",
+   "product category"
+  ],
+  "answer": 2,
+  "explanation": "A product line is a group of closely related products that satisfy a class of needs - here, gift-giving. The product mix would be ALL of Build-a-Bear's lines, and the marketing mix is the 4 Ps (product, price, place, promotion), not a group of products.",
+  "source": "official"
+ },
+ {
+  "id": "q07-056",
+  "concept": "c07-product-line",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A specific product with a unique brand, size or price, identified by its own stock keeping unit (SKU), is called a:",
+  "options": [
+   "Product class",
+   "Product mix",
+   "Product line",
+   "Product item"
+  ],
+  "answer": 3,
+  "explanation": "A product item is one specific version of a product with a unique brand, size or price, and the SKU is its unique identifier. A product line is a group of closely related items, and the product mix is all of a company's lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-057",
+  "concept": "c07-product-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Maplewood Kitchen offers its pasta-sauce line in 14 variations - different flavours, jar sizes and organic versions. The number of items within this one line describes the line's:",
+  "options": [
+   "Brand equity",
+   "Depth",
+   "Width",
+   "Product mix"
+  ],
+  "answer": 1,
+  "explanation": "Line depth is the number of product items within a line - here, 14 variations of pasta sauce. Width (breadth) counts how many different lines a company offers, which is a property of the product mix, not of a single line.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-058",
+  "concept": "c07-product-line",
+  "also": [
+   "c07-product-mix"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Glacier Outfitters has three product lines: jackets, footwear and backpacks. It adds six new colours to its existing jacket line. What has changed?",
+  "options": [
+   "The product mix has become wider because more items were added",
+   "The width of the product mix has increased from three to nine",
+   "The jacket line has become deeper, while the width of the product mix is unchanged",
+   "The company has created a fourth product line"
+  ],
+  "answer": 2,
+  "explanation": "Adding variations within an existing line increases that line's depth (and the total number of items), while width - the number of different lines - stays at three. Only adding a new line, such as tents, would widen the mix.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-059",
+  "concept": "c07-product-line",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Lakeshore Foods wants to serve more of its frozen-pizza customers' needs without entering a new product category. Which move deepens its product line?",
+  "options": [
+   "Add gluten-free, family-size and spicy versions of its frozen pizzas",
+   "Drop two pizza varieties to simplify its offering",
+   "Launch a new line of frozen desserts",
+   "License its brand name to a cookware manufacturer"
+  ],
+  "answer": 0,
+  "explanation": "Deepening a line means adding items within the existing line, such as new versions of frozen pizza. Launching frozen desserts would add a new line and widen the product mix, licensing is a branding strategy, and dropping varieties makes the line shallower.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-060",
+  "concept": "c07-product-line",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 3,
+  "stem": "Line depth is the number of product items within a line, whereas the total number of items is referred to as product line _____.",
+  "options": [
+   "length",
+   "width",
+   "mix",
+   "breadth"
+  ],
+  "answer": 0,
+  "explanation": "Per the course definitions, depth = number of items within a line and length = the total number of items. Width and breadth both mean the number of different lines in the product mix, not a count of items.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-061",
+  "concept": "c07-product-mix",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "All of the product lines offered by a company make up its _____.",
+  "options": [
+   "product line",
+   "product class",
+   "marketing mix",
+   "product mix"
+  ],
+  "answer": 3,
+  "explanation": "The product mix is all the product lines a company offers, measured by its width (breadth). The marketing mix is the 4 Ps, and a product line is just one group of closely related products within the mix.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-062",
+  "concept": "c07-product-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Procter & Gamble sells Pampers (baby care), Tide and Bounce (fabric and home care), and Head & Shoulders and Old Spice (beauty, health and grooming). Counting how many different lines P&G offers measures its product mix:",
+  "options": [
+   "Equity",
+   "Length",
+   "Width",
+   "Depth"
+  ],
+  "answer": 2,
+  "explanation": "Product mix width (breadth) is the number of different product lines a company offers. Depth is the number of items within a single line, and length is the total number of items - neither counts lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-063",
+  "concept": "c07-product-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Northern Pantry Foods sells 4 cereals, 6 soups and 3 sauces, each group forming its own product line. It is about to launch a new line of 5 frozen pizzas. After the launch, what is the width of its product mix?",
+  "options": [
+   "5 items",
+   "4 lines",
+   "18 items",
+   "3 lines"
+  ],
+  "answer": 1,
+  "explanation": "Width = number of different product lines. Before the launch there are 3 lines (cereals, soups, sauces); adding frozen pizzas makes 3 + 1 = 4. The figure 18 (4 + 6 + 3 + 5) counts items, not lines, so it is not width.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-064",
+  "concept": "c07-product-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A student writes: 'Tim Hortons' product mix is its product, price, place and promotion.' What is wrong with this statement?",
+  "options": [
+   "That describes brand equity; the product mix is the value a brand name adds",
+   "Nothing is wrong, because the product mix and the marketing mix are the same concept",
+   "That describes a product line; the product mix is the number of items within one line",
+   "That describes the marketing mix; the product mix is all the product lines a company offers"
+  ],
+  "answer": 3,
+  "explanation": "The 4 Ps are the marketing mix. The product mix is the full set of product lines a company offers (for Tim Hortons, lines such as hot beverages, cold beverages, baked goods and lunch items). The number of items within one line is depth, not the mix.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-065",
+  "concept": "c07-product-mix",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Adding a new scent of Old Spice deodorant widens Procter & Gamble's product mix.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. A new scent is another item within an existing line, so it deepens that line. The product mix becomes wider only when the company adds a new product line.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-066",
+  "concept": "c07-brand",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A name, phrase, symbol or design, or a combination of these, uniquely given by a company to a product to distinguish it from the competition is a:",
+  "options": [
+   "Brand personality",
+   "Brand",
+   "Trademark",
+   "Product line"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of a brand, which needs to be developed and nurtured by marketing activity. A trademark is the LEGAL protection of a brand name or mark - not the brand itself - and brand personality is the set of human traits linked to a brand.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-067",
+  "concept": "c07-brand",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Customers recognize both the spoken name 'Aurora Air' and the airline's symbol of three green northern-lights waves. The three-wave symbol is the airline's:",
+  "options": [
+   "Brand mark (logo)",
+   "Brand name",
+   "Brand personality",
+   "Copyright"
+  ],
+  "answer": 0,
+  "explanation": "The brand mark or logo is the part of a brand that cannot be spoken, such as a symbol or design. 'Aurora Air' is the brand name because it can be spoken.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-068",
+  "concept": "c07-brand",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which of the following is a brand NAME rather than a brand mark?",
+  "options": [
+   "Apple's bitten-apple silhouette",
+   "The Nike swoosh",
+   "'7-Eleven'",
+   "A beaver symbol on a clothing label"
+  ],
+  "answer": 2,
+  "explanation": "A brand name is the part of a brand that can be spoken, including words, letters and numbers - so '7-Eleven' is a name. The swoosh, the beaver symbol and the apple silhouette are designs that can't be spoken, which makes them brand marks.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-069",
+  "concept": "c07-brand",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Once a company has created a brand name and logo, the brand will hold its strength on its own without further marketing activity.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. A brand needs to be developed and nurtured by marketing activity on an ongoing basis; because brands are assets, marketers must keep investing to maintain their value.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-070",
+  "concept": "c07-brand",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about brands is NOT accurate?",
+  "options": [
+   "A brand must be developed and nurtured by marketing activity",
+   "A brand can combine a name and a symbol",
+   "Only for-profit companies can have brands",
+   "A brand distinguishes a product from competitors' products"
+  ],
+  "answer": 2,
+  "explanation": "Non-profits brand themselves too - MADD is one of the course examples. The other statements match the definition: a name, phrase, symbol or design (or a combination) that distinguishes a product and must be nurtured by marketing.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-071",
+  "concept": "c07-brand-image",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "In class, students complete the sentence 'Tim Hortons is ____.' Most write 'Canadian', 'hockey' or 'Roll Up To Win'. These responses reveal Tim Hortons':",
+  "options": [
+   "Brand equity",
+   "Brand loyalty",
+   "Brand mark",
+   "Brand associations (brand image)"
+  ],
+  "answer": 3,
+  "explanation": "Brand associations are the thoughts and feelings linked to a brand in memory, and together they form the brand image. Brand equity is the added value those associations help create - a result, not the associations themselves.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-072",
+  "concept": "c07-brand-image",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The thoughts, feelings and perceptions consumers link to a brand in memory are called:",
+  "options": [
+   "Brand advocates",
+   "Brand associations",
+   "Brand marks",
+   "Brand extensions"
+  ],
+  "answer": 1,
+  "explanation": "Brand associations - together, the brand image - are what comes to mind when consumers think of the brand. A brand advocate is a person who recommends the brand, and a brand mark is the unspoken symbol.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-073",
+  "concept": "c07-brand-image",
+  "also": [
+   "c07-brand"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "According to the course, what most fundamentally makes a brand different from a product?",
+  "options": [
+   "Its substance - authenticity - and the key associations people hold about it",
+   "Its physical features, such as size, colour and materials",
+   "Its registration with the Canadian Intellectual Property Office",
+   "Its price, since branded items always cost more than products"
+  ],
+  "answer": 0,
+  "explanation": "The course stresses that the difference between brand and product is substance (authenticity) and the brand's key associations. Physical features belong to the product itself (the actual layer), and registration is a trademark, which protects a brand but doesn't define it.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-074",
+  "concept": "c07-brand-image",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Endy, an online mattress company, finds many shoppers doubt that a mattress shipped in a box can be comfortable. Using the idea that brands provide an 'educational' opportunity, Endy should:",
+  "options": [
+   "Teach shoppers why they should care - explaining how the mattress is made and why it performs - to reshape perceptions",
+   "License its name to a furniture retailer to escape the negative perceptions",
+   "Stop advertising and let the mattress's features speak for themselves",
+   "Cut its price below every competitor so that perceptions no longer matter"
+  ],
+  "answer": 0,
+  "explanation": "Brands provide an 'educational' opportunity: teach people why they should care, because perceptions are important to brand relationships. Ignoring perceptions, competing on price alone, or handing the name to a licensee doesn't build the relationship.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-075",
+  "concept": "c07-brand-image",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Marketers need to understand a brand's key associations because consumer perceptions shape their relationships with the brand, even when those perceptions differ from the product's technical facts.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Perceptions are important to brand relationships, so marketers study a brand's key associations (for example, how H&M, Gap and Zara are each seen) and use marketing to educate people about why they should care.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-076",
+  "concept": "c07-legal-protection",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ is/are used to legally protect the written word, a sound recording, or a form of communication from being copied by another.",
+  "options": [
+   "Trademarks",
+   "Brand loyalty",
+   "Copyrights",
+   "Brand personality",
+   "All of the above"
+  ],
+  "answer": 2,
+  "explanation": "Copyrights protect original written works, sound recordings and forms of communication (music, literature, performances) from being copied; per the course material, protection lasts the creator's lifetime plus 50 years. Trademarks protect brand names and marks, while brand loyalty and brand personality are marketing outcomes, not legal protections.",
+  "source": "official"
+ },
+ {
+  "id": "q07-077",
+  "concept": "c07-legal-protection",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Bow River Brewing registers its brand name and grizzly-bear logo with the Canadian Intellectual Property Office so competitors cannot use them. The brewery is obtaining a:",
+  "options": [
+   "Copyright",
+   "Trademark",
+   "Brand licence",
+   "Patent"
+  ],
+  "answer": 1,
+  "explanation": "A trademark gives the owner the exclusive legal right to use a brand name or brand mark; in Canada it is registered with CIPO for 10 years and is renewable. Copyright protects creative works such as songs or text, and a patent protects inventions.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-078",
+  "concept": "c07-legal-protection",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "According to the course material, how long does copyright protection last in Canada?",
+  "options": [
+   "The creator's lifetime plus 70 years",
+   "10 years, renewable",
+   "20 years from the date of filing",
+   "The creator's lifetime plus 50 years"
+  ],
+  "answer": 3,
+  "explanation": "The course material and test bank state lifetime plus 50 years, so that is the exam answer. (Canadian law moved to life plus 70 years effective December 30, 2022, but the course has not adopted that figure.) '10 years, renewable' is the trademark registration period.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-079",
+  "concept": "c07-legal-protection",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Kestrel Labs in Calgary invents a new battery-cooling mechanism, writes a training manual about it, and names the product 'CoolCell'. Which match of asset to legal protection is correct?",
+  "options": [
+   "Mechanism - trademark; manual - copyright; name - patent",
+   "Mechanism - patent; manual - trademark; name - copyright",
+   "Mechanism - patent; manual - copyright; name - trademark",
+   "Mechanism - copyright; manual - patent; name - trademark"
+  ],
+  "answer": 2,
+  "explanation": "Patents protect inventions, copyright protects original written works, and trademarks protect brand names and marks. Each wrong option swaps at least one protection onto the wrong kind of asset.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-080",
+  "concept": "c07-legal-protection",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following would NOT be protected by copyright?",
+  "options": [
+   "A song written for a radio commercial",
+   "A novel by a Canadian author",
+   "A sound recording of a live comedy performance",
+   "A company's brand name"
+  ],
+  "answer": 3,
+  "explanation": "A brand name is protected by a trademark, which gives the exclusive right to use a brand name or mark. Songs, written works, sound recordings and performances are exactly what copyright protects.",
+  "source": "generated"
+ }
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "id": "q06-121",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why might a small firm with a genuinely unique product feature choose differentiation positioning instead of head-to-head positioning?",
+    "options": [
+      "It requires the firm to match the market leader's attributes exactly and then win on price in the same market",
+      "Head-to-head positioning is permitted only for products that have already reached the decline stage",
+      "It guarantees the firm the largest possible share of the total market within its first year",
+      "It avoids direct battles with larger rivals by placing the brand in a smaller, less-competitive niche that values its unique attributes"
+    ],
+    "answer": 3,
+    "explanation": "Differentiation positioning means seeking a less-competitive, smaller niche by stressing unique attributes, which suits a small firm that can't win a direct fight. Matching the leader's attributes in the same market describes head-to-head positioning.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-122",
+    "concept": "c06-positioning-statement",
+    "also": [
+      "c06-usp"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "A formalized statement that identifies the image a branded product represents in the market and what sets it apart from the competition is a:",
+    "options": [
+      "unique selling proposition",
+      "positioning statement",
+      "persona",
+      "perceptual map"
+    ],
+    "answer": 1,
+    "explanation": "That is a positioning statement. A USP is the single competitive advantage a brand may build its positioning on; the positioning statement is the full sentence naming target, need, brand, category and benefits.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-123",
+    "concept": "c06-positioning-statement",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Complete the course's positioning statement template: 'For (target market) who desire (target market need), (brand) is the _____ that offers (product benefits).'",
+    "options": [
+      "(competitor's name)",
+      "(price point)",
+      "(distribution channel)",
+      "(product category)"
+    ],
+    "answer": 3,
+    "explanation": "The template is: For (target market) who desire (target market need), (brand) is the (product category) that offers (product benefits). Competitors, price points and channels are not slots in the template.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-124",
+    "concept": "c06-positioning-statement",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Which of the following follows the course's positioning statement format?",
+    "options": [
+      "For busy parents who desire quick dinners, FreshFork is the meal kit that offers pre-chopped ingredients",
+      "FreshFork: quick, healthy dinners made easy for busy Calgary families every night!",
+      "FreshFork aims to increase its market share in Calgary by 10 percent by the end of next year",
+      "FreshFork earns 80 percent of its sales from the 20 percent of customers who order weekly"
+    ],
+    "answer": 0,
+    "explanation": "Only the 'For busy parents who desire quick dinners...' sentence fills every slot of the template: target market, need ('who desire'), brand, product category and benefits. The others are a slogan, a sales objective and an 80/20 observation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-125",
+    "concept": "c06-positioning-statement",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "Arbor Tea's draft positioning statement reads: 'For health-conscious professionals, Arbor is the tea brand that offers organic, antioxidant-rich blends.' Which element of the course template is missing?",
+    "options": [
+      "The target market",
+      "The product category",
+      "The product benefits",
+      "The target market need"
+    ],
+    "answer": 3,
+    "explanation": "The draft names the target (health-conscious professionals), the brand (Arbor), the category (tea brand) and the benefits (organic, antioxidant-rich blends), but it skips the 'who desire (need)' clause.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-126",
+    "concept": "c06-positioning-statement",
+    "also": [
+      "c06-usp"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "How does a positioning statement differ from a unique selling proposition (USP)?",
+    "options": [
+      "A positioning statement names the target, need, brand, category and benefits; a USP is the one advantage it may rest on",
+      "A USP names the target, need, category and benefits, while a positioning statement is one single advantage",
+      "A positioning statement plots brands on two axes, while a USP lists market segments against products",
+      "A USP is used only during segmentation, while a positioning statement is used only during targeting"
+    ],
+    "answer": 0,
+    "explanation": "The positioning statement is the full template sentence; the USP is one distinctive advantage that may appear inside it as the product benefit. The reversed version is the trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-127",
+    "concept": "c06-perceptual-map",
+    "also": [
+      "c06-head-to-head-vs-differentiation"
+    ],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "A perceptual map shows how various drinks are seen in the minds of adult consumers. On its vertical axis (more nutritious at the top, less nutritious at the bottom), coffee sits above sugared soft drinks, while skinny lattes and fruit-flavoured drinks sit above coffee. Suppose a coffee producer wants to increase sales. Its advertising agency recommends that it run ads showing that coffee is healthier than one or more competitive drinks shown on the map. In the ads, coffee should be compared with:",
+    "options": [
+      "skinny lattes.",
+      "fruit-flavoured drinks.",
+      "sugared soft drinks.",
+      "fruit-flavoured drinks and sugared soft drinks.",
+      "both sugared soft drinks and skinny lattes."
+    ],
+    "answer": 2,
+    "explanation": "The coffee producer should compare itself only with drinks that are lower than coffee on the vertical nutrition axis, which consumers see as less nutritious. The only such drink is sugared soft drinks; skinny lattes and fruit-flavoured drinks are perceived as more nutritious than coffee, so claiming to beat them would not be believed.",
+    "source": "official"
+  },
+  {
+    "id": "q06-128",
+    "concept": "c06-perceptual-map",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "A means of displaying or graphing, in two dimensions, the location of products or brands in the minds of consumers is a:",
+    "options": [
+      "market-product grid",
+      "positioning statement",
+      "perceptual map",
+      "persona"
+    ],
+    "answer": 2,
+    "explanation": "That is a perceptual map. A market-product grid relates segments to products with estimated market sizes; it doesn't show consumer perceptions.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-129",
+    "concept": "c06-perceptual-map",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Huron Hotels surveys travellers about six hotel brands and plots each brand on a chart with 'price' on one axis and 'perceived luxury' on the other. It then spots an empty area for an affordable-but-luxurious hotel. What tool did Huron use?",
+    "options": [
+      "A perceptual map",
+      "A market-product grid",
+      "A segmentation analytics cluster",
+      "A positioning statement"
+    ],
+    "answer": 0,
+    "explanation": "Plotting brands on two dimensions based on consumer perceptions is a perceptual map, and spotting empty spaces is one of its main uses. A market-product grid shows segments and products, not perceived brand positions.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-130",
+    "concept": "c06-perceptual-map",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "What is a primary reason marketers use perceptual maps?",
+    "options": [
+      "To calculate the market size of each segment-product combination",
+      "To see how consumers perceive competing brands and to find positioning gaps",
+      "To assign each customer to a segment at the lowest possible cost",
+      "To estimate how the firm's sales split between heavy and light users"
+    ],
+    "answer": 1,
+    "explanation": "Perceptual maps show where brands sit in consumers' minds relative to rivals, revealing close competitors, open gaps and possible moves. Estimating market size for each segment-product cell is the job of a market-product grid.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-131",
+    "concept": "c06-perceptual-map",
+    "also": [
+      "c06-repositioning"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Students often confuse perceptual maps with repositioning. Which statement is accurate?",
+    "options": [
+      "Repositioning is the display tool, while the perceptual map is the strategy that changes a brand's image",
+      "A perceptual map shows sales by segment, while repositioning shows changes in a product's price",
+      "A perceptual map shows where brands sit in consumers' minds; repositioning is the strategy of changing that place",
+      "Both are steps within the six-step process for segmenting a market"
+    ],
+    "answer": 2,
+    "explanation": "The perceptual map is a display tool; repositioning is a strategy that changes the place a product occupies in consumers' minds, which can show up as a move on the map. That is why 'perceptual mapping' is the wrong answer in the Grape-Nuts question.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-132",
+    "concept": "c06-repositioning",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Post Grape-Nuts cereal has been marketed since early in the 20th century. Its market share has been steadily declining as consumers began associating it with something their grandfather ate. Post recently launched a campaign which invited consumers to try the crunchy cereal on top of their yogurt, their salad, or their bowl of soup as a delicious addition. This is an example of a _____ strategy.",
+    "options": [
+      "perceptual mapping",
+      "product positioning",
+      "product differentiation",
+      "repositioning",
+      "psychographics"
+    ],
+    "answer": 3,
+    "explanation": "Repositioning changes the place an existing product occupies in consumers' minds; here, from an old-fashioned breakfast cereal to an all-day topping. 'Product positioning' is tempting, but the brand already had a position and Post is changing it.",
+    "source": "official"
+  },
+  {
+    "id": "q06-133",
+    "concept": "c06-repositioning",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Changing the place a product occupies in consumers' minds relative to competitive products, to more accurately meet consumer needs, is called:",
+    "options": [
+      "product positioning",
+      "perceptual mapping",
+      "repositioning",
+      "product differentiation"
+    ],
+    "answer": 2,
+    "explanation": "That is repositioning. Product positioning establishes a product's place in the first place; repositioning changes a place that already exists.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-134",
+    "concept": "c06-repositioning",
+    "also": [
+      "c06-product-positioning"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "What separates repositioning from product positioning?",
+    "options": [
+      "Repositioning is done before launch, while positioning is done only after sales decline",
+      "Repositioning applies only to services, while positioning applies only to goods",
+      "Positioning changes a product's price, while repositioning changes only its packaging",
+      "Positioning establishes a brand's place in consumers' minds; repositioning changes a place it already holds"
+    ],
+    "answer": 3,
+    "explanation": "Repositioning assumes an existing position that no longer fits consumer needs. The timing in the 'before launch' option is reversed: a brand-new product gets positioned, and an established one gets repositioned.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-135",
+    "concept": "c06-repositioning",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Ridgeline Games was long seen as a maker of dusty family board games that only grandparents bought. It launched strategy-heavy games, streamer partnerships and sleek packaging, and young adults now see it as a cool brand for game nights. This is:",
+    "options": [
+      "niche marketing",
+      "mass customization",
+      "head-to-head positioning",
+      "repositioning"
+    ],
+    "answer": 3,
+    "explanation": "Changing an established, dated image so the brand occupies a new place in consumers' minds is repositioning. It isn't head-to-head positioning, because the stem describes no direct comparison with a rival on similar attributes.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-136",
+    "concept": "c06-repositioning",
+    "also": [
+      "c06-product-positioning"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT an example of repositioning?",
+    "options": [
+      "A baking-soda brand promotes its product as a fridge deodorizer to expand use beyond baking",
+      "A dated department store refreshes its image to attract younger shoppers",
+      "A start-up launches its first-ever product and creates its initial brand image",
+      "A breakfast cereal is promoted as an all-day snack"
+    ],
+    "answer": 2,
+    "explanation": "A brand-new product's first image is positioning, not repositioning, because there is no existing place to change. The other examples change how an existing product is seen or used.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-137",
+    "concept": "c06-pop-pod",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Every major grocery chain in Canada, including Harvest Basket, offers fresh produce, an in-store bakery, free parking and a loyalty card. For Harvest Basket, these features are best described as:",
+    "options": [
+      "points-of-difference",
+      "points-of-parity",
+      "a unique selling proposition",
+      "differentiation positioning"
+    ],
+    "answer": 1,
+    "explanation": "Associations shared with other brands are points-of-parity: the basics needed to compete in the category, as in the course's Sobeys example. They can't be points-of-difference, because shoppers can find them to the same extent at rival chains.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-138",
+    "concept": "c06-pop-pod",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Attributes or benefits that consumers strongly associate with a brand, positively evaluate, and believe they could not find to the same extent with a competitive brand are:",
+    "options": [
+      "points-of-difference",
+      "points-of-parity",
+      "product attributes",
+      "market segments"
+    ],
+    "answer": 0,
+    "explanation": "That is the definition of points-of-difference (PODs). Points-of-parity are associations that may be shared with other brands.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-139",
+    "concept": "c06-pop-pod",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Coffee drinkers strongly associate Northern Grind with its signature maple-cinnamon latte and its community hockey sponsorships, rate both very positively, and say no other chain offers anything quite like them. These associations are best described as:",
+    "options": [
+      "points-of-parity",
+      "head-to-head positioning",
+      "product differentiation",
+      "points-of-difference"
+    ],
+    "answer": 3,
+    "explanation": "Strong association, positive evaluation and a belief that rivals can't match it are the three marks of a point-of-difference, as in the course's Tim Hortons example. Points-of-parity are shared with competitors.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-140",
+    "concept": "c06-pop-pod",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Customers of Glacier Cafe really like its free Wi-Fi, but every nearby competitor offers equally fast free Wi-Fi. Why is the Wi-Fi a point-of-parity rather than a point-of-difference for Glacier?",
+    "options": [
+      "Because customers evaluate the free Wi-Fi negatively overall",
+      "Because although valued, it is available to the same extent at competing brands",
+      "Because Wi-Fi is a price factor rather than a product attribute",
+      "Because points-of-difference must always relate to the brand's price"
+    ],
+    "answer": 1,
+    "explanation": "A POD must be strongly associated with the brand, positively evaluated AND not available to the same extent from rivals. The Wi-Fi is liked, but it fails the uniqueness test, so it is a POP.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-141",
+    "concept": "c06-pop-pod",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Why does a brand need both points-of-parity and points-of-difference?",
+    "options": [
+      "POPs show it meets the category basics (ticket to play); PODs give a reason to choose it over rivals (reason to win)",
+      "POPs make the brand unique, while PODs show it is similar to brands consumers already know",
+      "POPs are needed only by service brands, while PODs are needed only by brands of physical goods",
+      "Only PODs matter for positioning; POPs are features consumers simply ignore when choosing"
+    ],
+    "answer": 0,
+    "explanation": "Without POPs, consumers may not see the brand as a real option in the category; without PODs, they have no reason to prefer it. The reversed version (POPs = unique) is the trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-142",
+    "concept": "c06-usp",
+    "also": [
+      "c06-pop-pod"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "When a firm bases its positioning on one single, distinctive competitive advantage, that advantage is called its:",
+    "options": [
+      "point-of-parity",
+      "positioning statement",
+      "unique selling proposition (USP)",
+      "market segment"
+    ],
+    "answer": 2,
+    "explanation": "Choosing one competitive advantage as the basis for positioning means building on a unique selling proposition; the alternative is positioning on multiple differences. A point-of-parity is shared with rivals, so it can't serve as a USP.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-143",
+    "concept": "c06-usp",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Swift Pizza repeats one message on every ad, menu and box: 'Hot at your door in 20 minutes or it's free.' It does not promote taste, price or variety. Swift is basing its positioning on:",
+    "options": [
+      "points-of-parity",
+      "a unique selling proposition",
+      "multiple differences",
+      "mass customization"
+    ],
+    "answer": 1,
+    "explanation": "Building positioning around one distinctive benefit and communicating it consistently is a USP strategy. A multiple-differences strategy would promote several advantages at once.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-144",
+    "concept": "c06-usp",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "When choosing a competitive advantage on which to base positioning, how does a USP approach differ from a multiple-differences approach?",
+    "options": [
+      "A USP approach promotes several shared benefits, while a multiple-differences approach promotes just one",
+      "A USP is always based on price, while multiple differences are always based on image",
+      "A USP is used for segmentation, while multiple differences are used for targeting",
+      "A USP approach promotes one distinctive advantage; a multiple-differences approach promotes several ways the brand differs"
+    ],
+    "answer": 3,
+    "explanation": "The course frames the choice as one unique selling proposition versus multiple differences. Both are positioning decisions, and neither is limited to price or image.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-145",
+    "concept": "c06-usp",
+    "also": [
+      "c06-pop-pod"
+    ],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "Slumber North Mattress's research shows that the one advantage consumers truly value, and that rivals cannot match, is a patented cooling layer. If it wants a single, clear basis for its positioning, what should it do?",
+    "options": [
+      "Make the cooling layer its USP and communicate it consistently",
+      "Promote that it offers the same features as every competitor",
+      "Reposition as a discount brand and compete mainly on price",
+      "Abandon positioning and switch to an undifferentiated mass-market approach"
+    ],
+    "answer": 0,
+    "explanation": "A valued advantage that rivals can't match is ideal as a USP, and positions are maintained through consistent communication. Promoting shared features only stresses points-of-parity, which give no reason to choose the brand.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-146",
+    "concept": "c06-usp",
+    "also": [
+      "c06-pop-pod"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following would NOT make a good unique selling proposition?",
+    "options": [
+      "A distinctive benefit that customers value highly",
+      "An advantage that competitors cannot easily match",
+      "A benefit that every competitor offers equally well",
+      "A single, clear reason to choose the brand"
+    ],
+    "answer": 2,
+    "explanation": "A benefit every competitor offers equally well is a point-of-parity; it gives no reason to choose one brand over another. A good USP is distinctive, valued and hard to copy.",
+    "source": "generated"
+  }
+]

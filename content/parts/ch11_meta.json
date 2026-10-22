@@ -1,0 +1,1058 @@
+{
+ "chapter": 11,
+ "title": "Retailing and Wholesaling",
+ "topics": [
+  {
+   "id": "t11-1",
+   "order": 1,
+   "title": "Retailing and how retail outlets are classified",
+   "summary": "Retailing is every activity that gets goods and services to ultimate consumers for their own use, and it creates time, place, form and possession utility. Stores can be classified three separate ways: by who owns them (independent, corporate chain, contractual system), by how much service they give (self, limited, full), and by their merchandise line (deep and narrow vs broad). Exam questions love to mix these three schemes up.",
+   "concepts": [
+    "c11-retailing",
+    "c11-retail-utilities",
+    "c11-independent-chain",
+    "c11-contractual-system",
+    "c11-level-of-service",
+    "c11-depth-of-line",
+    "c11-breadth-of-line",
+    "c11-scrambled-merchandising"
+   ]
+  },
+  {
+   "id": "t11-2",
+   "order": 2,
+   "title": "Retailer marketing decisions: target market and positioning",
+   "summary": "A retailer makes a long list of marketing decisions, and selecting a target market comes first. Next it decides how it wants to be perceived (retail positioning), which can be mapped on the retail positioning matrix of breadth of line versus value added. Shopper marketing studies how people behave as shoppers across every channel, starting from the moment they first think about buying.",
+   "concepts": [
+    "c11-retailer-decisions",
+    "c11-retail-positioning",
+    "c11-positioning-matrix",
+    "c11-shopper-marketing"
+   ]
+  },
+  {
+   "id": "t11-3",
+   "order": 3,
+   "title": "The retailing mix",
+   "summary": "The retailing mix is the set of tools a retailer controls, arranged in four quadrants around the target market: products and services, retail pricing, physical location, and communications. Inside those quadrants sit the merchandise mix (breadth and depth), store atmosphere, markups, markdowns, shrinkage, off-price formats and the different kinds of shopping locations. Category management is how many retailers run each product category like its own business.",
+   "concepts": [
+    "c11-retailing-mix",
+    "c11-merchandise-mix",
+    "c11-category-management",
+    "c11-store-atmosphere",
+    "c11-retail-pricing",
+    "c11-off-price-retailing",
+    "c11-retail-location"
+   ]
+  },
+  {
+   "id": "t11-4",
+   "order": 4,
+   "title": "Non-store, online and multichannel retailing",
+   "summary": "A lot of retailing happens outside stores: vending machines, catalogues, TV shopping, online stores, telemarketing and direct selling. Consumers shop online for six reasons (the six Cs), and scenario questions test whether you can tell them apart. Multichannel retailers combine stores with non-store formats and serve cross-channel shoppers who showroom or webroom.",
+   "concepts": [
+    "c11-non-store-retailing",
+    "c11-online-six-cs",
+    "c11-multichannel-retailing"
+   ]
+  },
+  {
+   "id": "t11-5",
+   "order": 5,
+   "title": "The changing retail landscape",
+   "summary": "Face-to-face retail is not dead, but omnichannel shopping, technology and a squeezed middle market are reshaping it, and the 2025 Retail Council of Canada / Adyen survey adds hard numbers to memorize. Two classic theories explain retail change: the wheel of retailing (low-price entrants trade up and get replaced) and the retail life cycle (formats grow and then decline).",
+   "concepts": [
+    "c11-modern-retail-environment",
+    "c11-wheel-of-retailing",
+    "c11-retail-life-cycle"
+   ]
+  },
+  {
+   "id": "t11-6",
+   "order": 6,
+   "title": "Wholesaling",
+   "summary": "Wholesaling is selling to buyers who will resell or use the goods in a business. The must-memorize figure splits wholesalers into merchant wholesalers (who take title; full-service and limited-service types), agents and brokers (no title; commission), and manufacturer's branches and offices (owned by the producer). Wholesalers earn their place by performing nine functions, from bulk breaking to management counselling.",
+   "concepts": [
+    "c11-wholesaling",
+    "c11-merchant-wholesalers",
+    "c11-limited-service-wholesalers",
+    "c11-agents-brokers",
+    "c11-manufacturer-branches",
+    "c11-wholesaler-functions"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c11-retailing",
+   "topic": "t11-1",
+   "term": "Retailing",
+   "definition": "All activities involved in selling, renting, and providing goods and services to ultimate consumers for personal, family, or household use.",
+   "explain": "Retailing is the final step in the channel, where products reach the person who will actually use them. The test is WHO buys and WHY: an ultimate consumer buying for personal, family or household use. Renting (tools, tuxedos) and providing services (haircuts, car washes) count too, not just selling goods. The instructor also stresses that shopping is not only a way to acquire necessities but also a social activity and sometimes an adventure.",
+   "example": "Sport Chek selling a hockey stick to a parent, or a Calgary tuxedo shop renting a suit to a wedding guest, are both retailing.",
+   "contrast": "Wholesaling sells to buyers who purchase for resale or business use. The same box of printer paper is retailing when a family buys it for home and wholesaling when a law firm buys it for its office. Order size and whether the item is sold or rented do not matter; the buyer's purpose does.",
+   "trap": "Cue words 'ultimate consumers' and 'personal, family, or household use' = retailing; 'resale or business use' = wholesaling. Do not be fooled by renting or services: they are still retailing. Official distractors: manufacturing, wholesaling, facilitating.",
+   "mnemonic": "Retail = rent, sell or serve to the REAL end user.",
+   "figure": null
+  },
+  {
+   "id": "c11-retail-utilities",
+   "topic": "t11-1",
+   "term": "Value of retailing: time, place, form and possession utility",
+   "definition": "Retailers create value by providing time utility (products available when consumers want them), place utility (where they want them), form utility (producing or altering products to suit consumers) and possession utility (making it easier to take ownership or use of products).",
+   "explain": "Utility is the value a retailer adds beyond the product itself. Each utility answers a different question: WHEN can I get it (time), WHERE can I get it (place), is it in the SHAPE I need (form), and can I actually OWN or use it (possession). One store usually creates several utilities, so exam questions isolate one practice and ask which utility it creates.",
+   "example": "Shoppers Drug Mart's late hours (time), a Tim Hortons in nearly every neighbourhood (place), a tailor hemming new pants (form), and no-payment-for-12-months furniture financing (possession).",
+   "contrast": "Time is about hours and availability; place is about location and access. Form changes the product itself (alterations, assembly), while possession only eases ownership (credit, layaway) without changing the product.",
+   "trap": "'Open 24 hours / holiday hours' = time; 'convenient locations / near home' = place; 'alterations, assembly, mixing paint' = form; 'credit, financing, layaway' = possession. A common trick is offering place utility as the answer for an hours scenario.",
+   "mnemonic": "When, Where, What shape, Whose: time, place, form, possession.",
+   "figure": {
+    "type": "table",
+    "title": "Utilities created by retailing",
+    "head": [
+     "Utility",
+     "What the retailer provides",
+     "Typical practice"
+    ],
+    "rows": [
+     [
+      "Time",
+      "Products available WHEN consumers want them",
+      "Long or 24-hour store hours, holiday hours"
+     ],
+     [
+      "Place",
+      "Products available WHERE consumers want them",
+      "Convenient locations, stores in every neighbourhood"
+     ],
+     [
+      "Form",
+      "Producing or altering products to suit the consumer",
+      "Alterations, assembly, custom fitting"
+     ],
+     [
+      "Possession",
+      "Making it easier to take ownership or use",
+      "Credit, financing, layaway"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-independent-chain",
+   "topic": "t11-1",
+   "term": "Independent retailers and corporate chains (form of ownership)",
+   "definition": "An independent retailer is owned by an individual and usually operates one store; it is the most common form of retail ownership. A corporate chain is multiple outlets under common ownership, which allows centralized buying and greater bargaining power.",
+   "explain": "Form of ownership is the first of three ways to classify outlets (the others are level of service and merchandise line). Independents are flexible and personal but lack buying clout. Corporate chains make decisions centrally and buy in huge volumes, so they can negotiate better terms from suppliers. The third ownership form, the contractual system, sits between the two.",
+   "example": "A family-owned bike shop in Canmore is an independent retailer; Loblaws and Canadian Tire's corporate-owned stores are corporate chains.",
+   "contrast": "A contractual system can look exactly like a chain (one banner, shared ads), but its stores are independently OWNED and cooperate by agreement. Corporate chain = one owner of many outlets; independent = one owner, usually one store.",
+   "trap": "'Multiple outlets under common ownership', 'centralized buying', 'bargaining power' = corporate chain. 'Independently owned stores banding together' = contractual system, even if they share a banner. Do not assume the corporate chain is the most common form; the independent is.",
+   "mnemonic": "One owner, one store = independent; one owner, many stores = chain; many owners acting as one = contractual.",
+   "figure": null
+  },
+  {
+   "id": "c11-contractual-system",
+   "topic": "t11-1",
+   "term": "Contractual systems (co-ops, voluntary chains, franchises)",
+   "definition": "A contractual system is a group of independently owned stores that band together to act like a chain. The three types are retailer-sponsored cooperatives, wholesaler-sponsored voluntary chains, and franchises.",
+   "explain": "Contractual systems let independents get chain-like advantages, such as concentrated buying power and coordinated promotion and pricing, while keeping their own ownership. To tell the three types apart, ask who organized the group: the retailers themselves (co-op), a wholesaler (voluntary chain), or a franchisor licensing its name and operating system in exchange for a fee plus royalties (franchise).",
+   "example": "Home Hardware dealers own their stores but jointly run the co-op that buys for them; IGA grocers are organized by a wholesaler; Tim Hortons and McDonald's franchisees pay fees and royalties to use the brand and system.",
+   "contrast": "A corporate chain has common ownership of all outlets; a contractual system has many separate owners. Within contractual systems: retailer-sponsored co-op = retailers' initiative; voluntary chain = wholesaler's initiative; franchise = franchisor grants name and system for fees and royalties.",
+   "trap": "Cue words 'independent members', 'concentrate buying power', 'collaborative promotion and pricing' = contractual system (official Bright @ Night question). Distractors include corporate chain, manufacturer's agent and joint venture. If a wholesaler organizes it, it is a voluntary chain, not a co-op.",
+   "mnemonic": "Co-op = retailers' idea; Voluntary = wholesaler's idea; Franchise = franchisor's name for a fee.",
+   "figure": {
+    "type": "table",
+    "title": "Types of contractual systems",
+    "head": [
+     "Type",
+     "Who organizes it",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Retailer-sponsored cooperative",
+      "Independent retailers band together and jointly run a buying/wholesale operation",
+      "Home Hardware"
+     ],
+     [
+      "Wholesaler-sponsored voluntary chain",
+      "A wholesaler links independent retailers that buy from it under a common banner",
+      "IGA"
+     ],
+     [
+      "Franchise",
+      "Franchisor provides name and operating system; franchisee pays a fee plus royalties",
+      "Tim Hortons, McDonald's"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-level-of-service",
+   "topic": "t11-1",
+   "term": "Level of service (self, limited, full)",
+   "definition": "Retail outlets can be classified by the degree of service provided: self-service (customers perform most functions), limited-service (some services such as credit and merchandise returns) and full-service (many services and personalized assistance).",
+   "explain": "Service level is a separate classification scheme from ownership and merchandise line. In the retailing mix, retailers also choose their services mix: prepurchase services (help before the sale, such as information and demonstrations), postpurchase services (after the sale, such as delivery, returns and repairs) and ancillary services (extras such as experiences and dining). More service usually means higher costs and prices, so the level must fit the target market.",
+   "example": "Self: Costco, a pay-at-the-pump gas station, online stores. Limited: Walmart and many department stores. Full: Holt Renfrew with personal shoppers. Ancillary: West Edmonton Mall's water park.",
+   "contrast": "Self-service means almost no help; limited-service adds a few services such as credit and returns; full-service offers trained salespeople, personalized help and many services. A boutique with salespeople is limited-service, not self-service, before it upgrades to full service.",
+   "trap": "Official Kyra question: trained salespeople + personalized experience + a database of customer preferences = moving from LIMITED to FULL service. Distractors 'from self-service to full service' and 'full service at self-service prices' are traps. Do not mix service level with merchandise line (category killer) or ownership terms.",
+   "mnemonic": "Self = you do it; Limited = credit and returns; Full = they do it for you.",
+   "figure": {
+    "type": "table",
+    "title": "Levels of service",
+    "head": [
+     "Level",
+     "What the customer gets",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Self-service",
+      "Customer performs most functions; few services",
+      "Warehouse clubs, gas stations, online stores"
+     ],
+     [
+      "Limited-service",
+      "Some services, such as credit and merchandise returns",
+      "Walmart, many department stores"
+     ],
+     [
+      "Full-service",
+      "Many services and personalized assistance",
+      "Specialty stores, luxury department stores (Holt Renfrew)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-depth-of-line",
+   "topic": "t11-1",
+   "term": "Depth of line: specialty outlets and category killers",
+   "definition": "Stores classified by depth of line carry a large assortment within a narrow range of product lines. Specialty outlets (single-line stores) offer a deep assortment in one line; category killers are specialty discount outlets that focus on one product category, offer a deep assortment and sell at very low prices.",
+   "explain": "Depth means how many items are carried within a line. Both specialty outlets and category killers are deep and narrow; what separates them is price and scale. A specialty outlet competes on expertise and selection, often at regular or premium prices, while a category killer is a big-box discounter that tries to dominate (kill) its category.",
+   "example": "Specialty outlets: Lululemon, Foot Locker. Category killers: Best Buy, Staples, Home Depot.",
+   "contrast": "Depth-of-line stores are the opposite of breadth-of-line stores (department stores, hypermarkets) that carry many lines. Category killer vs specialty outlet = low prices and big-box scale vs regular prices. Category killer (a store format) is also different from category management (an internal management practice).",
+   "trap": "'Very low prices + huge selection in ONE category' = category killer. 'Narrow line, deep assortment, expert service' with no discount cue = specialty outlet. 'Power centre' is a LOCATION full of category killers, not the store itself.",
+   "mnemonic": "Deep and narrow: specialty = boutique; category killer = big box that kills the category on price.",
+   "figure": null
+  },
+  {
+   "id": "c11-breadth-of-line",
+   "topic": "t11-1",
+   "term": "Breadth of line: general merchandise stores, department stores and hypermarkets",
+   "definition": "Stores classified by breadth of line carry a wide range of different product lines. General merchandise stores such as department stores carry many lines; a hypermarket (supercentre) is a very large store combining general merchandise with a full grocery line.",
+   "explain": "Breadth means the number of different product lines. Department stores organize many lines (clothing, cosmetics, housewares, furniture) into departments. Hypermarkets and supercentres take breadth to the extreme by putting a full supermarket and a general merchandise store under one huge roof.",
+   "example": "Department stores such as Hudson's Bay; supercentres such as Walmart Supercentre and the Real Canadian Superstore.",
+   "contrast": "Breadth (many lines) vs depth (many items within a line). A hypermarket is a store FORMAT designed around groceries plus general merchandise, whereas scrambled merchandising is a STRATEGY any store can use by adding unrelated lines. A power centre is a location, not a store.",
+   "trap": "'Many different product lines under one roof' = breadth/general merchandise. 'Combines a full grocery line with general merchandise in a very large store' = hypermarket/supercentre. Watch for the reversed breadth/depth definition as a distractor.",
+   "mnemonic": "Breadth = how WIDE the store is; depth = how DEEP each aisle goes.",
+   "figure": null
+  },
+  {
+   "id": "c11-scrambled-merchandising",
+   "topic": "t11-1",
+   "term": "Scrambled merchandising and intertype competition",
+   "definition": "Scrambled merchandising is offering several unrelated product lines in a single store. It creates intertype competition: competition between very dissimilar types of retail outlets.",
+   "explain": "When a drugstore starts selling groceries or a tire retailer sells food, the store is scrambling its merchandise to capture more of each shopper's spending. The side effect is that very different kinds of stores now chase the same customers, which is intertype competition. Think of scrambled merchandising as the cause and intertype competition as the result.",
+   "example": "Shoppers Drug Mart selling milk and frozen dinners; Canadian Tire selling food; Walmart competing with Loblaws for grocery shoppers.",
+   "contrast": "Scrambled merchandising = the store's assortment strategy (adding unrelated lines). Intertype competition = the rivalry between dissimilar outlet types that results. Two rival supermarkets competing is NOT intertype competition (same type). A hypermarket is a store format, not the act of scrambling.",
+   "trap": "'Unrelated product lines in one store' = scrambled merchandising. 'Very different types of retailers competing for the same shoppers' = intertype competition. Distractors include category management, assortment building (a wholesaler function) and the wheel of retailing.",
+   "mnemonic": "Scramble the shelves, and different store types collide.",
+   "figure": null
+  },
+  {
+   "id": "c11-retailer-decisions",
+   "topic": "t11-2",
+   "term": "Retailer marketing decisions",
+   "definition": "The marketing decisions a retailer makes: target market, channels, product assortment, procurement, prices, services, store atmosphere, store activities and experiences, communications, and location. Selecting a target market is the FIRST item.",
+   "explain": "Every other retail decision depends on who the store is trying to serve, so target market selection comes first and retail positioning follows. The remaining decisions are largely organized into the four quadrants of the retailing mix. Procurement, a term students often skip, means how and from whom the retailer buys its merchandise.",
+   "example": "A new Edmonton outdoor store first decides it serves serious backcountry hikers, then chooses a deep assortment, premium prices, expert staff and a location near trailhead traffic.",
+   "contrast": "The decision list is broader than the retailing mix: target market selection and positioning come first, and the retailing mix (products and services, pricing, location, communications) is then built around that target market.",
+   "trap": "If a question asks what comes FIRST, the answer is selecting a target market, not location or pricing. Wholesaler functions such as bulk breaking or risk bearing are NOT on the retailer decision list.",
+   "mnemonic": "Target first, then everything else.",
+   "figure": {
+    "type": "list",
+    "title": "Retailer marketing decisions",
+    "items": [
+     "Target market (selected FIRST)",
+     "Channels",
+     "Product assortment",
+     "Procurement",
+     "Prices",
+     "Services",
+     "Store atmosphere",
+     "Store activities and experiences",
+     "Communications",
+     "Location"
+    ]
+   }
+  },
+  {
+   "id": "c11-retail-positioning",
+   "topic": "t11-2",
+   "term": "Retail positioning",
+   "definition": "How a retailer wants to be perceived by consumers relative to competitors. Like marketers of packaged goods, retailers position themselves to differentiate from competitors.",
+   "explain": "Once a retailer chooses its target market, it must decide what it stands for in shoppers' minds: luxury, value, Canadian pride, expertise. Every retailing-mix decision should reinforce that position. Stocking merchandise that contradicts the position confuses and drives away loyal customers.",
+   "example": "Canadian Tire positioning itself around buying Canadian; the official Raphael & Sons case, where a high-end clothier lost loyal customers by adding cheap, low-quality suits.",
+   "contrast": "Retail positioning is about the retailer's image versus rivals. Shopper marketing is about understanding how consumers behave as shoppers across channels. Target market selection is WHO you serve; positioning is how you want THEM to see you.",
+   "trap": "A high-end retailer adding low-quality, low-priced goods = wrong retail positioning (official question). Distractors: cross-channel shopping, location, shopper marketing. In a downturn, the course's answer is to keep quality consistent: loyal customers may buy slightly less, but they are not looking for cheaper products.",
+   "mnemonic": "Position = the picture of your store in the shopper's head.",
+   "figure": null
+  },
+  {
+   "id": "c11-positioning-matrix",
+   "topic": "t11-2",
+   "term": "Retail positioning matrix",
+   "definition": "A framework that positions retailers on two dimensions: breadth of product line (narrow to broad) and value added (low to high), where value added includes elements such as location, product reliability, prestige and service.",
+   "explain": "The matrix produces four quadrants. Broad line with high value added describes department stores; broad line with low value added describes mass merchandisers and warehouse clubs; narrow line with high value added describes luxury specialists; narrow line with low value added describes discount specialty stores. Retailers use it to see where they stand and which direction to move.",
+   "example": "Holt Renfrew or Hudson's Bay (broad/high), Walmart or Costco (broad/low), Tiffany (narrow/high), Payless ShoeSource-style stores (narrow/low).",
+   "contrast": "The axes are breadth of product line and value added, NOT price and quality, and NOT depth of line or level of service. Service is one element of value added, while breadth is the other axis entirely.",
+   "trap": "Read the scenario twice: count the product lines (one = narrow, many = broad), then look for prestige, location, reliability and service cues (high vs low value added). A question may list breadth of line as a 'value added' element; it is not.",
+   "mnemonic": "Two questions: how many lines? how much extra value?",
+   "figure": {
+    "type": "table",
+    "title": "Retail positioning matrix quadrants",
+    "head": [
+     "Quadrant",
+     "Breadth of line",
+     "Value added",
+     "Course examples"
+    ],
+    "rows": [
+     [
+      "Broad line / high value added",
+      "Broad",
+      "High",
+      "Department stores such as Holt Renfrew, Hudson's Bay"
+     ],
+     [
+      "Broad line / low value added",
+      "Broad",
+      "Low",
+      "Walmart, Costco"
+     ],
+     [
+      "Narrow line / high value added",
+      "Narrow",
+      "High",
+      "Luxury specialists such as Tiffany"
+     ],
+     [
+      "Narrow line / low value added",
+      "Narrow",
+      "Low",
+      "Payless ShoeSource, Dollarama-style discount stores"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-shopper-marketing",
+   "topic": "t11-2",
+   "term": "Shopper marketing",
+   "definition": "A discipline designed to understand how consumers behave as shoppers in different channels and formats. It extends outside the store to the time and place a consumer first thinks about purchasing, and is by necessity multichannel.",
+   "explain": "Shopper marketing follows the shopper's journey from the first thought of buying (seeing a social post, reading a flyer) to the shelf. Because that journey crosses many touchpoints, it uses traditional media, new media, direct marketing, loyalty programs, trade promotion and in-store tools together.",
+   "example": "A spice company tracks when and where customers first think about buying spices and coordinates digital ads, loyalty offers and shelf displays (official Graham's Spice question).",
+   "contrast": "Shopper marketing studies shopper behaviour across channels; retail positioning is the retailer's desired image; category management gives one manager profit responsibility for a product category; multichannel retailing is about the retailer's own selling channels.",
+   "trap": "Cue words 'traditional media, new media, direct marketing, loyalty, trade promotion' and 'when and where customers first think about purchasing' = shopper marketing. It is NOT limited to in-store activity. Distractors: understanding consumers, retail positioning, purchase matrix.",
+   "mnemonic": "Shopper marketing starts at the first thought, not the front door.",
+   "figure": null
+  },
+  {
+   "id": "c11-retailing-mix",
+   "topic": "t11-3",
+   "term": "Retailing mix (four quadrants)",
+   "definition": "The strategic components a retailer manages to satisfy its target market: the products and services mix, the retail pricing mix, the physical location mix and the communications mix, arranged around the target market and consumers and surrounded by information.",
+   "explain": "The retailing mix is the retailer's version of the marketing mix. Each quadrant has specific elements that exam questions ask you to place, for example shrinkage in pricing, number of stores in location, guarantees in products and services, and database marketing in communications. The communications mix exists to communicate the retailer's unique benefits through integrated, multiple channels, as in the Indigo example.",
+   "example": "Indigo coordinates its stores, website, email, loyalty program and social media so every channel communicates the same benefits.",
+   "contrast": "The retailing mix (four quadrants) is narrower than the full list of retailer marketing decisions, which starts with target market selection. Catalogues appear in the communications quadrant even though catalogues are also a non-store retailing format.",
+   "trap": "Quadrant placement traps: shrinkage and 'image, quality and value' are PRICING; logistics, size and layout, format and number of stores are LOCATION; guarantees and exchanges, sales assistance and product-service trade-offs are PRODUCTS AND SERVICES; displays and signage, catalogues, website and database marketing are COMMUNICATIONS.",
+   "mnemonic": "P-P-L-C around the customer: Products, Pricing, Location, Communications.",
+   "figure": {
+    "type": "table",
+    "title": "The retailing mix",
+    "head": [
+     "Quadrant",
+     "Elements in the course figure"
+    ],
+    "rows": [
+     [
+      "Products and services mix",
+      "Variety and assortment; sales functions and assistance; customer service; guarantees and exchanges; product-service trade-offs"
+     ],
+     [
+      "Retail pricing mix",
+      "Image, quality and value; markups; markdowns; shrinkage"
+     ],
+     [
+      "Physical location mix",
+      "Store location; logistics; size and layout; format; number of stores"
+     ],
+     [
+      "Communications mix",
+      "Personal selling; advertising; displays and signage; public relations; catalogues; telephone sales and follow-up; website; direct marketing; database marketing"
+     ],
+     [
+      "Centre and surround",
+      "Target market and consumers at the centre; information surrounds the mix"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-merchandise-mix",
+   "topic": "t11-3",
+   "term": "Merchandise mix (breadth and depth)",
+   "definition": "How many different types of products a store carries and in what assortment. Breadth is the number of different product lines carried; depth is the number of items within each product line.",
+   "explain": "The merchandise mix sits in the products and services quadrant. A store carrying shoes, appliances, CDs and men's clothing has a breadth of four lines; carrying 60 shoe styles and sizes is depth in the shoe line. Retailers adjust breadth and depth to match their target market and positioning.",
+   "example": "A sporting goods store adding a new camping line increases breadth; adding 40 new fishing lures to its fishing line increases depth.",
+   "contrast": "Merchandise mix (which products and how much assortment) differs from store atmosphere (how the store looks, sounds and smells) and level of service (how much help customers get), although all three are part of the products and services mix.",
+   "trap": "Official definition: 'how many different products a store carries, and in what assortment'. The distractor 'and how they are displayed' is wrong, because display is atmosphere. Do not reverse breadth (lines) and depth (items per line).",
+   "mnemonic": "Breadth = how many aisles of different lines; depth = how many choices in each aisle.",
+   "figure": null
+  },
+  {
+   "id": "c11-category-management",
+   "topic": "t11-3",
+   "term": "Category management",
+   "definition": "Assigning a manager responsibility for the profitability of a product category (for example, shoes) and managing that category as a strategic business unit; it aligns the assortment with the target market.",
+   "explain": "Instead of buying and pricing items one at a time, the retailer gives a category manager ownership of a whole category: which brands to carry, shelf space, pricing and promotion, and the category's profit. This keeps each category focused on what the target market wants and makes performance accountable.",
+   "example": "At a grocery chain, one manager runs the entire snack category, choosing brands, shelf space and promotions and answering for its profit.",
+   "contrast": "Category management is an internal management practice; a category killer is a type of discount store. Shopper marketing studies shopper behaviour across channels; category management organizes the assortment and profit of a product category.",
+   "trap": "The word 'category' tempts students toward category killer. Look for cues such as 'manager responsible for the profitability of a category' and 'strategic business unit'. Category management is NOT one of the nine wholesaler functions.",
+   "mnemonic": "Category management = a CEO for each category.",
+   "figure": null
+  },
+  {
+   "id": "c11-store-atmosphere",
+   "topic": "t11-3",
+   "term": "Store atmosphere (atmospherics)",
+   "definition": "The overall impression a store conveys, created by atmospherics such as layout, colours, lighting, music and scent; it shapes the retail image.",
+   "explain": "Store atmosphere is part of the products and services mix. It works on shoppers' senses to signal what kind of store this is (calm and upscale, fast and bargain-focused, playful and social) and should reinforce the retailer's positioning.",
+   "example": "A home décor store using warm lighting, soft acoustic music and a subtle cedar scent to feel calm and upscale.",
+   "contrast": "Atmosphere is how the store FEELS; merchandise mix is WHAT it carries; level of service is HOW MUCH HELP customers get. Changing layout and lighting without changing products or staff changes only the atmosphere.",
+   "trap": "Sensory cues (music, lighting, scent, colour, layout) = store atmosphere. Markups and markdowns are pricing, not atmosphere. The official merchandise-mix distractor about 'how products are displayed' is really an atmosphere idea.",
+   "mnemonic": "Atmosphere = what you see, hear and smell.",
+   "figure": null
+  },
+  {
+   "id": "c11-retail-pricing",
+   "topic": "t11-3",
+   "term": "Retail pricing: markup, markdown and shrinkage",
+   "definition": "Markup is the difference between the retailer's cost and its selling price, usually expressed by retailers as a percentage of selling price. A markdown is a reduction in the original selling price to move slow-selling merchandise. Shrinkage is inventory lost to theft, breakage and paperwork errors.",
+   "explain": "The retail pricing mix covers image, quality and value, markups, markdowns and shrinkage. Price signals the store's image, so it must fit the positioning. Markups must be high enough to cover expected markdowns and shrinkage, which is why shrinkage is treated as a pricing issue.",
+   "example": "A jacket bought for $60 and sold for $75 has a $15 markup, which is 20% of the selling price. Cutting last season's snowboards by 40% is a markdown.",
+   "contrast": "A markdown is a temporary cut on a retailer's own slow stock; off-price retailing is an ongoing business model of selling brand names below regular prices by buying excess inventory. Shrinkage is the retail term for these inventory losses; risk bearing is the WHOLESALER function of absorbing ownership risk.",
+   "trap": "Markup on price = (price - cost) / price; markup on cost = (price - cost) / cost. For markdown percentages, divide by the ORIGINAL price. Shoplifting, breakage and paperwork errors = shrinkage, and it sits in the PRICING quadrant.",
+   "mnemonic": "Markup goes up, markdown goes down, shrinkage goes missing.",
+   "figure": null
+  },
+  {
+   "id": "c11-off-price-retailing",
+   "topic": "t11-3",
+   "term": "Off-price retailing",
+   "definition": "Selling brand-name merchandise at lower than regular prices, made possible largely by buying manufacturers' excess inventory. Types include warehouse clubs, outlet stores, single-price (extreme-value) stores and off-price chains.",
+   "explain": "Off-price retailers do not just run sales; their whole model is built on buying cheaply (overruns, cancelled orders, end-of-season goods) and passing the savings on. Each type has a distinctive cue: membership and bulk for warehouse clubs, a manufacturer's own excess stock for outlet stores, fixed low price points for single-price stores, and treasure-hunt brand-name fashion for off-price chains.",
+   "example": "Costco (warehouse club), factory outlet stores, Dollarama (single-price / extreme value), Winners (off-price chain).",
+   "contrast": "Off-price retailing vs markdown: a markdown is a one-time cut on a store's own slow stock. Off-price vs a hypermarket: a hypermarket combines groceries and general merchandise without a membership or excess-inventory model.",
+   "trap": "'Membership fee + bulk' = warehouse club; 'manufacturer sells its own excess or discontinued stock' = outlet store; 'one or a few fixed low price points' = single-price/extreme value; 'brand-name excess inventory bought from manufacturers, sold below department-store prices' = off-price chain. A full-service department store is not off-price.",
+   "mnemonic": "Off-price = brand names, off the regular price, from excess inventory.",
+   "figure": {
+    "type": "table",
+    "title": "Off-price retailers",
+    "head": [
+     "Type",
+     "How it works",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Warehouse club",
+      "No-frills warehouse stores selling food and general merchandise in bulk to members who pay a fee",
+      "Costco"
+     ],
+     [
+      "Outlet store",
+      "Stores (often manufacturer-owned) selling a brand's excess or discontinued stock at reduced prices",
+      "Factory outlet stores"
+     ],
+     [
+      "Single-price / extreme-value store",
+      "Small no-frills stores selling at one or a few low price points",
+      "Dollarama"
+     ],
+     [
+      "Off-price chain",
+      "Buys brand-name apparel and home goods from manufacturers' excess inventory and sells below regular prices",
+      "Winners"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-retail-location",
+   "topic": "t11-3",
+   "term": "Physical location: shopping areas, number of stores, non-store",
+   "definition": "Physical location decisions cover where to locate (central business district, regional shopping centre, community shopping centre, strip location, power centre or lifestyle centre), how many stores to operate, and whether to use non-store locations such as mail or online.",
+   "explain": "Each location type has a signature: downtown for the central business district; 50-150 stores with department-store anchors for a regional centre; one primary store plus 20-40 smaller stores for a community centre; a cluster of stores on a busy street for a strip; several national big-box anchors or category killers in a huge strip for a power centre; and an open-air, upscale village of shops, dining and entertainment for a lifestyle centre.",
+   "example": "A downtown Calgary bookstore (central business district); a giant open-air strip of big-box anchors on the edge of Edmonton (power centre); a neighbourhood row of a dry cleaner, pizza place and pharmacy (strip location).",
+   "contrast": "Power centre vs regional centre: big-box national anchors or category killers in a strip vs 50-150 stores anchored by department stores. Community centre vs strip: one primary anchor plus 20-40 stores vs a simple cluster of neighbourhood stores. Lifestyle centre vs power centre: both open-air, but lifestyle is upscale and leisure-oriented.",
+   "trap": "Count the stores and identify the anchor. 'Downtown/office towers' = CBD; '50-150 stores, department-store anchors' = regional; 'one primary store + 20-40 smaller' = community; 'busy street cluster' = strip; 'several big-box national anchors' = power centre; 'open-air upscale with dining and entertainment' = lifestyle centre. Markdowns are pricing, not location.",
+   "mnemonic": "C-R-C-S-P-L: City core, Regional giant, Community anchor, Strip street, Power boxes, Lifestyle village.",
+   "figure": {
+    "type": "table",
+    "title": "Retail location types",
+    "head": [
+     "Location type",
+     "Description"
+    ],
+    "rows": [
+     [
+      "Central business district",
+      "The downtown area of a city, with heavy foot traffic from office workers"
+     ],
+     [
+      "Regional shopping centre",
+      "50-150 stores anchored by department stores, drawing from a wide area"
+     ],
+     [
+      "Community shopping centre",
+      "One primary store plus 20-40 smaller stores serving nearby neighbourhoods"
+     ],
+     [
+      "Strip location",
+      "A cluster of stores along a busy street serving everyday neighbourhood needs"
+     ],
+     [
+      "Power centre",
+      "A huge shopping strip with several national anchor stores, often category killers"
+     ],
+     [
+      "Lifestyle centre",
+      "An open-air, upscale centre mixing specialty shops, dining and entertainment"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-non-store-retailing",
+   "topic": "t11-4",
+   "term": "Non-store retailing and click-and-mortar",
+   "definition": "Retailing that occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, television home shopping, online retailing, telemarketing and direct selling. Bricks-and-mortar stores that also engage in non-store retailing become click-and-mortar retailers.",
+   "explain": "Non-store forms range from very low involvement (a vending machine with no staff) to very high personal involvement (a consultant hosting an in-home party). Many traditional retailers now combine stores with non-store channels, which makes them click-and-mortar.",
+   "example": "Avon and Tupperware (direct selling through in-home parties), snack machines in hospitals (automatic vending), shopping channels (TV home shopping), a decades-old bookstore chain adding an app (click-and-mortar).",
+   "contrast": "Direct selling = face-to-face (door-to-door, home parties); telemarketing = by phone; direct mail and catalogues = printed offers; TV home shopping = televised products ordered by phone or online; automatic vending = machines. A strip location is a store-based location, not non-store retailing.",
+   "trap": "Official question: the TRUE statement is 'activities of varying levels of customer and retailer involvement, outside the store environment'. It is NOT limited to small mobile activities like food carts, NOT about weather, and NOT 'specifically automated or electronic' (direct selling and telemarketing are non-store but involve people).",
+   "mnemonic": "Non-store = Vending, Mail, TV, Online, Phone, Person (direct selling).",
+   "figure": {
+    "type": "list",
+    "title": "Forms of non-store retailing",
+    "items": [
+     "Automatic vending",
+     "Direct mail and catalogues",
+     "Television home shopping",
+     "Online retailing",
+     "Telemarketing",
+     "Direct selling (door-to-door, in-home parties: Avon, Tupperware)",
+     "Bricks-and-mortar stores that add non-store channels = click-and-mortar"
+    ]
+   }
+  },
+  {
+   "id": "c11-online-six-cs",
+   "topic": "t11-4",
+   "term": "Online retailing and the six Cs",
+   "definition": "Online retailing lets consumers search, evaluate (compare) and purchase. Consumers shop online for six reasons: convenience, choice, communication, customization, cost and control.",
+   "explain": "Each C answers a different 'why online?' Convenience is shopping any time, anywhere; choice is a broad selection plus assistance; communication is two-way interaction through email, chat, reviews and social media; customization is tailoring the product to the individual; cost is lower prices and easy comparison; control is empowered consumers deciding at their own pace and on their own terms. Reviews create smarter, more informed and more demanding consumers, and influencers' opinions matter.",
+   "example": "Dell letting shoppers choose their computer's components (customization); a shopper researching cameras for weeks and deciding without a salesperson (control).",
+   "contrast": "Control vs convenience: control is about who runs the decision (the empowered consumer, at their own pace); convenience is about when and where. Customization vs choice: customization changes the product for you; choice is picking from a bigger existing range. Communication vs control: communication is exchanging messages; control is deciding for yourself.",
+   "trap": "Scenario cues: '3 a.m. / from home / no store open' = convenience; '40 styles no local store carries' = choice; 'chatted with a rep / emailed a question' = communication; 'chose the components / designed my own' = customization; 'lowest price / saved $40' = cost; 'researched at my own pace, decided on my own terms' = control (official: empowered consumers).",
+   "mnemonic": "When/where = convenience; how many = choice; talk = communication; made for me = customization; money = cost; my pace = control.",
+   "figure": {
+    "type": "table",
+    "title": "Six Cs of online shopping",
+    "head": [
+     "C",
+     "Meaning",
+     "Scenario cue"
+    ],
+    "rows": [
+     [
+      "Convenience",
+      "Shop 24/7 from anywhere, no travel or store hours",
+      "Middle of the night, from home"
+     ],
+     [
+      "Choice",
+      "Broad selection plus assistance in finding products",
+      "More styles and sizes than any local store"
+     ],
+     [
+      "Communication",
+      "Two-way interaction: email, live chat, reviews, social media",
+      "Chatted with a rep, asked a question"
+     ],
+     [
+      "Customization",
+      "Product or experience tailored to the individual",
+      "Chose the components, designed my own"
+     ],
+     [
+      "Cost",
+      "Lower prices and easy price comparison",
+      "Lowest price, saved money"
+     ],
+     [
+      "Control",
+      "Empowered consumers search, evaluate and decide on their own time and terms",
+      "Own pace, decided without a salesperson"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-multichannel-retailing",
+   "topic": "t11-4",
+   "term": "Multichannel retailers and cross-channel shoppers",
+   "definition": "Multichannel retailers use and integrate a combination of traditional store and non-store formats, such as stores, catalogues and online retailing. Cross-channel shoppers research in one channel and buy in another: showrooming (examine in store, buy online) and webrooming (research online, buy in store).",
+   "explain": "Using several channels lets retailers offer a broader spectrum of benefits and experiences and gain synergy from sharing information among channel operations. For example, a store can take an order for an out-of-stock item through the catalogue. Retailers must also design channels to win back cross-channel shoppers rather than lose them to rivals.",
+   "example": "A shopper tries on ski boots at a Banff shop, then orders them online (showrooming); another reads blender reviews online, then buys in store that afternoon (webrooming).",
+   "contrast": "Showrooming and webrooming run in opposite directions. Multichannel retailing is about the retailer's integrated channels; shopper marketing is about understanding shopper behaviour; click-and-mortar describes a store-based retailer that has added non-store channels.",
+   "trap": "Official Jimmy's question: ordering an out-of-stock item through the catalogue = synergy of sharing information among channel operations. Distractors include 'the Internet is a relationship-building medium' and 'reduces the size of its target markets'. Do not reverse showrooming and webrooming.",
+   "mnemonic": "SHOWroom = the store is the showroom, buy online; WEBroom = the web is the research room, buy in store.",
+   "figure": null
+  },
+  {
+   "id": "c11-modern-retail-environment",
+   "topic": "t11-5",
+   "term": "Modern retail environment and retail trends",
+   "definition": "Today's retail environment: face-to-face (F2F) retail is not dead (instant gratification, convenience, experience, savings); omnichannel and social media purchasing are growing; middle-market retailers are declining; technology and retail optimization (e.g., Shopify) matter; and consumers dislike long lines, poor customer service and stock-outs.",
+   "explain": "The 2025 Retail Council of Canada / Adyen survey adds facts to memorize: mobile banking is part of the shift; nearly two-thirds of online shoppers reach checkout and then leave to compare shipping costs and prices on other sites (a cart-abandonment threat); only 9% use a digital wallet, while most use debit or credit cards; and retailers can improve online shopping with experiential or interactive tools such as Instagram storefronts, QR codes and GPS.",
+   "example": "A small Edmonton boutique uses Shopify to sync inventory across its store, website and Instagram shop, so customers can buy from a post and pick up in store.",
+   "contrast": "The decline of middle-market retailers is a market squeeze on mid-priced chains, not the wheel of retailing (which describes one entrant trading up over time). The 9% figure is digital-wallet use; nearly two-thirds is the checkout-abandonment figure, so do not swap them.",
+   "trap": "Number traps: two-thirds (abandon at checkout to compare shipping and prices) vs 9% (digital wallet). A statement that most shoppers pay with digital wallets is false. Reasons F2F survives: instant gratification, convenience, experience, savings.",
+   "mnemonic": "Two-thirds bail at checkout; 9% tap a wallet.",
+   "figure": {
+    "type": "list",
+    "title": "Modern retail environment and 2025 RCC / Adyen survey facts",
+    "items": [
+     "F2F not dead yet: instant gratification, convenience, experience, savings",
+     "Omnichannel and social media purchasing",
+     "Decline of middle-market retailers",
+     "Role of technology; retail optimization (e.g., Shopify)",
+     "Consumers dislike long lines, poor customer service, stock-outs",
+     "Survey: mobile banking is part of the shift",
+     "Survey: nearly two-thirds of online shoppers reach checkout, then leave to compare shipping costs and prices (cart-abandonment threat)",
+     "Survey: 9% use a digital wallet; most use debit or credit cards",
+     "Improve online retailing with experiential or interactive tools: Instagram storefronts (online social shopping), QR codes, GPS"
+    ]
+   }
+  },
+  {
+   "id": "c11-wheel-of-retailing",
+   "topic": "t11-5",
+   "term": "Wheel of retailing",
+   "definition": "A concept that describes how new forms of retail outlets enter the market as low-status, low-margin, low-price outlets, then gradually add services and raise their prices and status, leaving room for new low-price entrants.",
+   "explain": "The wheel keeps turning: today's discounter becomes tomorrow's full-service, higher-priced retailer, which opens the bottom of the market to the next wave of discounters. It explains why no low-price position stays empty for long.",
+   "example": "McDonald's began as a cheap walk-up burger stand, then added seating, drive-thrus, salads and premium coffee, and raised prices, leaving room for new low-price food options.",
+   "contrast": "Wheel of retailing = the trade-up dynamic in price, status and service. Retail life cycle = stages of growth and decline (early growth, accelerated development, maturity, decline). Intertype competition is rivalry between dissimilar store types.",
+   "trap": "Cue words 'started cheap, added services, raised prices, undercut by new discounters' = wheel. 'Grew, peaked, declined' = retail life cycle. In ordering questions, trading up comes BEFORE new low-price entrants appear.",
+   "mnemonic": "The wheel turns upward, and a new discounter climbs on at the bottom.",
+   "figure": null
+  },
+  {
+   "id": "c11-retail-life-cycle",
+   "topic": "t11-5",
+   "term": "Retail life cycle",
+   "definition": "The process of growth and decline that retail outlets, like products, experience. The stages are early growth, accelerated development, maturity and decline.",
+   "explain": "Retail formats rise and fall much like products: market share and profit climb through early growth and accelerated development, level off in maturity, and fall in decline. Retailers must adapt or be replaced as their format ages.",
+   "example": "Video-rental chains spread rapidly, peaked, then declined and closed as streaming arrived.",
+   "contrast": "Retail life cycle (growth and decline stages) vs wheel of retailing (low-price entrants trade up and are replaced). Its stages differ from the product life cycle's introduction, growth, maturity and decline.",
+   "trap": "Order trap: early growth, accelerated development, maturity, decline. 'Introduction' is a product life cycle stage, not a retail life cycle stage.",
+   "mnemonic": "Early, Accelerated, Mature, Decline: 'Every Album Must Drop.'",
+   "figure": {
+    "type": "list",
+    "title": "Retail life cycle stages",
+    "items": [
+     "1. Early growth",
+     "2. Accelerated development",
+     "3. Maturity",
+     "4. Decline"
+    ]
+   }
+  },
+  {
+   "id": "c11-wholesaling",
+   "topic": "t11-6",
+   "term": "Wholesaling and the types of wholesalers",
+   "definition": "Wholesaling includes all the activities in selling goods or services to those who buy for resale or business use. Wholesalers fall into three main categories: merchant wholesalers, agents and brokers, and manufacturer's branches and offices.",
+   "explain": "Wholesaling is defined by the buyer's purpose, not the order size or the product. The course figure (memorize it) splits wholesalers by ownership and title: merchant wholesalers are independent and take title; agents and brokers are independent but do not take title; manufacturer's branches and offices are owned by the producer.",
+   "example": "An office-supply distributor selling copy paper to hospitals for their operations is wholesaling; a food distributor selling to restaurants is wholesaling.",
+   "contrast": "Retailing sells to ultimate consumers for personal, family or household use; wholesaling sells for resale or business use. A business that is the final user (a dental clinic buying gloves) is still a wholesale customer.",
+   "trap": "Do not let 'final user' fool you: business use = wholesaling. Retailer-sponsored cooperatives are contractual RETAIL systems, not one of the three wholesaler categories.",
+   "mnemonic": "Wholesale = for Resale or for the Business.",
+   "figure": {
+    "type": "list",
+    "title": "Types of wholesalers (course figure)",
+    "items": [
+     "Merchant wholesalers (independently owned; TAKE TITLE)",
+     "Full-service merchant wholesalers: general merchandise wholesalers; specialty merchandise wholesalers",
+     "Limited-service merchant wholesalers: rack jobbers; cash and carry wholesalers; drop shippers; truck jobbers",
+     "Agents and brokers (do NOT take title; earn commissions): manufacturers' agents; selling agents; brokers",
+     "Manufacturer's branches and offices (owned by the manufacturer): branch office (carries inventory); sales office (no inventory)"
+    ]
+   }
+  },
+  {
+   "id": "c11-merchant-wholesalers",
+   "topic": "t11-6",
+   "term": "Merchant wholesalers (full-service: general and specialty merchandise)",
+   "definition": "Merchant wholesalers are independently owned firms that take title to the merchandise they handle. Full-service merchant wholesalers provide a wide range of services and include general merchandise wholesalers (a broad range of products with little depth) and specialty merchandise wholesalers (a narrow range of products with a deep assortment).",
+   "explain": "Taking title means the wholesaler buys and owns the goods, so it also bears the risks of ownership. Full-service wholesalers offer services such as credit, delivery and sales support; limited-service merchant wholesalers (rack jobbers, cash and carry, drop shippers, truck jobbers) offer fewer.",
+   "example": "A distributor carrying hardware, cleaning supplies, small appliances and toys for small retailers (general merchandise); a seafood distributor with a very deep fish assortment for restaurants (specialty merchandise).",
+   "contrast": "Merchant wholesalers take title; agents and brokers do not. General merchandise = broad but shallow; specialty merchandise = narrow but deep. Full-service vs limited-service is about how many services are offered; both take title.",
+   "trap": "'Takes title / buys and owns' = merchant wholesaler. Breadth vs depth cues decide general vs specialty merchandise. A merchant wholesaler is independently owned, so 'owned by the manufacturer' points to branches and offices instead.",
+   "mnemonic": "Merchant = owns the merchandise.",
+   "figure": null
+  },
+  {
+   "id": "c11-limited-service-wholesalers",
+   "topic": "t11-6",
+   "term": "Limited-service merchant wholesalers",
+   "definition": "Merchant wholesalers that take title but offer fewer services: rack jobbers (furnish and stock display racks, own the inventory, bill only for items sold), cash and carry wholesalers (customers pay cash and provide their own transportation), drop shippers or desk jobbers (own the goods but never physically handle them; the producer ships directly to the customer) and truck jobbers (small warehouse; sell perishables for cash from the truck).",
+   "explain": "All four take title because they are merchant wholesalers. Each has one signature feature: racks and billing only for items sold (rack jobber), no credit and no delivery (cash and carry), title without physical handling (drop shipper), and perishables sold from the truck (truck jobber).",
+   "example": "Rack jobbers for magazines and hosiery; cash and carry for restaurant supplies; drop shippers for coal, lumber and chemicals; truck jobbers for bakery, dairy and meat.",
+   "contrast": "Drop shipper vs broker: both may never handle the goods, but the drop shipper TAKES TITLE and the broker does not. Rack jobber vs truck jobber: in-store racks billed on sales vs perishables sold for cash from a truck.",
+   "trap": "'Bills only for items sold' = rack jobber; 'no credit, no delivery, haul it yourself' = cash and carry; 'owns it but never touches it' = drop shipper; 'bread/milk sold for cash from the truck' = truck jobber. A selling agent is NOT a limited-service wholesaler.",
+   "mnemonic": "Racks, Cash, Drop, Truck: 'Really Cool Delivery Trucks.'",
+   "figure": {
+    "type": "table",
+    "title": "Limited-service merchant wholesalers (all take title)",
+    "head": [
+     "Type",
+     "Distinctive feature",
+     "Typical products"
+    ],
+    "rows": [
+     [
+      "Rack jobber",
+      "Furnishes and stocks racks in stores, owns the inventory, bills only for items sold",
+      "Hosiery, magazines"
+     ],
+     [
+      "Cash and carry wholesaler",
+      "Customers pay cash and furnish their own transportation; no credit or delivery",
+      "Supplies for small retailers and restaurants"
+     ],
+     [
+      "Drop shipper (desk jobber)",
+      "Owns the goods but never handles, stores or delivers them; producer ships directly",
+      "Coal, lumber, chemicals"
+     ],
+     [
+      "Truck jobber",
+      "Small warehouse; sells perishables for cash from the truck",
+      "Bakery, dairy, meat"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-agents-brokers",
+   "topic": "t11-6",
+   "term": "Agents and brokers (manufacturers' agents, selling agents, brokers)",
+   "definition": "Agents and brokers do not take title to merchandise and typically earn commissions. Manufacturers' agents work for several producers, carrying non-competitive lines in an exclusive territory; selling agents represent a single producer and are responsible for its entire marketing function; brokers bring buyers and sellers together to make sales, usually with no continuous relationship.",
+   "explain": "Because they never own the goods, agents and brokers earn commissions rather than resale margins. To tell them apart, count producers and scope: several producers with complementary lines in a territory (manufacturers' agent), one producer with the whole marketing job (selling agent), or one-off matchmaking between a buyer and a seller (broker).",
+   "example": "A rep selling cutlery, cookware and linens from different makers to Alberta kitchen stores (manufacturers' agent); a firm handling all marketing for a small winery (selling agent); a real estate, food or insurance broker.",
+   "contrast": "Agents and brokers vs merchant wholesalers: no title vs title. Manufacturers' agent vs selling agent: several producers and partial selling vs one producer and the entire marketing function. Broker vs drop shipper: neither handles goods, but only the drop shipper takes title.",
+   "trap": "'Several non-competing producers + exclusive territory' = manufacturers' agent; 'entire marketing function for one producer' = selling agent; 'brings buyers and sellers together, no ongoing relationship' = broker. Any option saying an agent or broker takes title is wrong.",
+   "mnemonic": "Agents and brokers never own; they only connect.",
+   "figure": {
+    "type": "table",
+    "title": "Agents and brokers (no title)",
+    "head": [
+     "Type",
+     "Represents",
+     "Role"
+    ],
+    "rows": [
+     [
+      "Manufacturers' agent",
+      "Several producers",
+      "Sells non-competitive, complementary lines in an exclusive territory"
+     ],
+     [
+      "Selling agent",
+      "One producer",
+      "Responsible for the producer's entire marketing function"
+     ],
+     [
+      "Broker",
+      "Buyer or seller, per transaction",
+      "Brings buyers and sellers together; usually no continuous relationship (real estate, food, insurance)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-manufacturer-branches",
+   "topic": "t11-6",
+   "term": "Manufacturer's branches and offices",
+   "definition": "Wholesaling operations owned by the manufacturer, a form of vertical integration in wholesaling. A branch office carries inventory and performs wholesaler functions; a sales office does not carry inventory and performs only a sales function.",
+   "explain": "Some producers prefer to control wholesaling themselves rather than rely on independent intermediaries. A branch office stocks and distributes the manufacturer's products like a wholesaler, while a sales office is a selling base whose products ship from elsewhere.",
+   "example": "An appliance maker's regional Winnipeg facility that stores and delivers inventory (branch office); a chipmaker's downtown office where salespeople take orders but hold no stock (sales office).",
+   "contrast": "Branch office = inventory; sales office = no inventory. Both are owned by the manufacturer, unlike merchant wholesalers (independent, take title) and agents and brokers (independent, no title).",
+   "trap": "'Owned by the manufacturer' rules out merchant wholesalers and agents. Then check for inventory: stocks goods = branch office; only sells = sales office.",
+   "mnemonic": "Branch holds the Boxes; Sales office only Sells.",
+   "figure": {
+    "type": "list",
+    "title": "Manufacturer's branches and offices",
+    "items": [
+     "Owned by the manufacturer (vertical integration in wholesaling)",
+     "Branch office: carries inventory and performs wholesaler functions",
+     "Sales office: no inventory; performs only a sales function"
+    ]
+   }
+  },
+  {
+   "id": "c11-wholesaler-functions",
+   "topic": "t11-6",
+   "term": "Wholesaler functions (nine)",
+   "definition": "The nine functions wholesalers perform: selling and promoting; buying and assortment building; bulk breaking; warehousing; transportation; financing; risk bearing; market information; and management services and counselling.",
+   "explain": "Wholesalers earn their place by doing these jobs more efficiently than producers or retailers could. Bulk breaking splits large lots into small ones; assortment building gathers a variety of products; financing extends credit; risk bearing absorbs ownership losses; market information passes along news about competitors, products and prices; management services and counselling helps retailers run their businesses (training, layout, systems).",
+   "example": "A grocery wholesaler buys pasta by the truckload and resells it to small grocers in cases of 12 (bulk breaking) and lets them pay in 60 days (financing).",
+   "contrast": "Bulk breaking (quantity) vs assortment building (variety). Financing (giving customers credit) vs risk bearing (absorbing losses from owning goods). Market information (reporting trends) vs management services and counselling (hands-on operational help).",
+   "trap": "Category management, shrinkage and procurement are RETAILER terms, not wholesaler functions. Scenario cues: 'truckload into cases' = bulk breaking; 'pay in 60 days' = financing; 'spoiled stock, wholesaler absorbs the loss' = risk bearing; 'helped redesign layout and train clerks' = management services and counselling.",
+   "mnemonic": "Sell, Buy, Break, Store, Move, Fund, Risk, Inform, Advise.",
+   "figure": {
+    "type": "list",
+    "title": "Nine wholesaler functions",
+    "items": [
+     "Selling and promoting",
+     "Buying and assortment building",
+     "Bulk breaking",
+     "Warehousing",
+     "Transportation",
+     "Financing",
+     "Risk bearing",
+     "Market information",
+     "Management services and counselling"
+    ]
+   }
+  }
+ ],
+ "activities": [
+  {
+   "id": "a11-01",
+   "type": "sort",
+   "concept": "c11-wholesaling",
+   "title": "Sort the wholesalers",
+   "prompt": "Drag each wholesaler type into its main category from the course figure.",
+   "buckets": [
+    "Merchant wholesalers (take title)",
+    "Agents and brokers (no title)",
+    "Manufacturer's branches and offices (manufacturer-owned)"
+   ],
+   "items": [
+    {
+     "text": "General merchandise wholesaler",
+     "bucket": 0
+    },
+    {
+     "text": "Specialty merchandise wholesaler",
+     "bucket": 0
+    },
+    {
+     "text": "Rack jobber",
+     "bucket": 0
+    },
+    {
+     "text": "Cash and carry wholesaler",
+     "bucket": 0
+    },
+    {
+     "text": "Drop shipper (desk jobber)",
+     "bucket": 0
+    },
+    {
+     "text": "Truck jobber",
+     "bucket": 0
+    },
+    {
+     "text": "Manufacturers' agent",
+     "bucket": 1
+    },
+    {
+     "text": "Selling agent",
+     "bucket": 1
+    },
+    {
+     "text": "Broker",
+     "bucket": 1
+    },
+    {
+     "text": "Branch office",
+     "bucket": 2
+    },
+    {
+     "text": "Sales office",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Merchant wholesalers are independent and take title: full-service (general and specialty merchandise) and limited-service (rack jobbers, cash and carry, drop shippers, truck jobbers). Agents and brokers never take title and earn commissions. Branch offices (with inventory) and sales offices (no inventory) are owned by the manufacturer."
+  },
+  {
+   "id": "a11-02",
+   "type": "sort",
+   "concept": "c11-online-six-cs",
+   "title": "Six Cs, part 1: convenience, choice or cost?",
+   "prompt": "Drag each online shopper's experience to the benefit it best illustrates.",
+   "buckets": [
+    "Convenience",
+    "Choice",
+    "Cost"
+   ],
+   "items": [
+    {
+     "text": "Orders groceries at 2 a.m. without leaving home",
+     "bucket": 0
+    },
+    {
+     "text": "Shops from a remote northern town with no mall nearby",
+     "bucket": 0
+    },
+    {
+     "text": "Finds 40 styles of size-15 boots that no local store carries",
+     "bucket": 1
+    },
+    {
+     "text": "Uses a size-finder tool to narrow down a huge online selection",
+     "bucket": 1
+    },
+    {
+     "text": "Uses a price-comparison site to find the cheapest TV",
+     "bucket": 2
+    },
+    {
+     "text": "Saves $30 because the online price beats the mall's",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Convenience is about WHEN and WHERE you can shop (any time, anywhere). Choice is the broad selection, plus assistance in finding products. Cost is lower prices and easy price comparison."
+  },
+  {
+   "id": "a11-03",
+   "type": "sort",
+   "concept": "c11-online-six-cs",
+   "title": "Six Cs, part 2: communication, customization or control?",
+   "prompt": "Drag each online shopper's experience to the benefit it best illustrates.",
+   "buckets": [
+    "Communication",
+    "Customization",
+    "Control"
+   ],
+   "items": [
+    {
+     "text": "Chats live with a company rep before ordering",
+     "bucket": 0
+    },
+    {
+     "text": "Emails a question and gets replies from the brand on social media",
+     "bucket": 0
+    },
+    {
+     "text": "Chooses the processor, memory and graphics card for a new laptop",
+     "bucket": 1
+    },
+    {
+     "text": "Designs custom sneakers with her own colours and initials",
+     "bucket": 1
+    },
+    {
+     "text": "Researches cameras for two weeks and decides at his own pace",
+     "bucket": 2
+    },
+    {
+     "text": "Evaluates options and decides on her own terms with no salesperson",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Communication is two-way interaction (chat, email, reviews, social media). Customization tailors the product itself to the buyer (the Dell example). Control describes empowered consumers who search, evaluate and decide on their own time and terms (the official camera example)."
+  },
+  {
+   "id": "a11-04",
+   "type": "match",
+   "concept": "c11-depth-of-line",
+   "title": "Match the retail format",
+   "prompt": "Match each retail format with its description.",
+   "pairs": [
+    {
+     "left": "Specialty outlet",
+     "right": "Deep assortment in one narrow line at regular prices (e.g., Lululemon)"
+    },
+    {
+     "left": "Category killer",
+     "right": "Deep assortment in one category at very low prices (e.g., Best Buy)"
+    },
+    {
+     "left": "Department store",
+     "right": "Many different product lines organized into departments"
+    },
+    {
+     "left": "Hypermarket / supercentre",
+     "right": "Very large store combining a full grocery line with general merchandise"
+    },
+    {
+     "left": "Scrambled merchandising",
+     "right": "A drugstore adding groceries and patio furniture (unrelated lines)"
+    },
+    {
+     "left": "Warehouse club",
+     "right": "Membership fee, bulk packages, no-frills warehouse (e.g., Costco)"
+    },
+    {
+     "left": "Off-price chain",
+     "right": "Brand names bought from manufacturers' excess inventory, sold below regular prices (e.g., Winners)"
+    },
+    {
+     "left": "Click-and-mortar retailer",
+     "right": "A bricks-and-mortar store that also sells through non-store channels such as online"
+    }
+   ],
+   "explanation": "Depth-of-line formats (specialty outlets, category killers) go deep in a narrow line, and category killers add discount prices. Breadth-of-line formats (department stores, hypermarkets) carry many lines. Scrambled merchandising adds unrelated lines to any store. Warehouse clubs and off-price chains are off-price formats, and click-and-mortar describes a store that adds non-store retailing."
+  },
+  {
+   "id": "a11-05",
+   "type": "match",
+   "concept": "c11-retail-location",
+   "title": "Match the store location",
+   "prompt": "Match each location type with its description.",
+   "pairs": [
+    {
+     "left": "Central business district",
+     "right": "Downtown area among office towers with heavy foot traffic"
+    },
+    {
+     "left": "Regional shopping centre",
+     "right": "50-150 stores anchored by department stores, drawing from a wide area"
+    },
+    {
+     "left": "Community shopping centre",
+     "right": "One primary store plus 20-40 smaller stores"
+    },
+    {
+     "left": "Strip location",
+     "right": "A cluster of neighbourhood stores along a busy street"
+    },
+    {
+     "left": "Power centre",
+     "right": "A huge strip anchored by several national big-box stores or category killers"
+    },
+    {
+     "left": "Lifestyle centre",
+     "right": "An open-air, upscale village of shops, restaurants and entertainment"
+    }
+   ],
+   "explanation": "Count stores and identify anchors: department-store anchors with 50-150 stores = regional; one primary store with 20-40 others = community; several big-box national anchors = power centre. Downtown = central business district; a simple street cluster = strip; open-air upscale with leisure = lifestyle centre."
+  }
+ ]
+}

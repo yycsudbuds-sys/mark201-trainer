@@ -1,0 +1,726 @@
+[
+ {
+  "id": "q07-081",
+  "concept": "c07-brand-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "If we consider brands to be assets, then it is critical that marketers:",
+  "options": [
+   "Sell them whenever possible.",
+   "Invest money to maintain their value.",
+   "Build new ones regularly.",
+   "Balance them against liabilities."
+  ],
+  "answer": 1,
+  "explanation": "Because brands are assets, they lose value without upkeep, so marketers must invest money to maintain their value - which is why brands like those on Interbrand's ranking keep spending on quality and marketing. Selling them or constantly building new ones throws away value already built, and balancing against liabilities is an accounting idea, not a marketing action.",
+  "source": "official"
+ },
+ {
+  "id": "q07-082",
+  "concept": "c07-brand-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The added value a brand name gives to a product beyond its functional benefits is called:",
+  "options": [
+   "Brand loyalty",
+   "Brand licensing",
+   "Brand equity",
+   "Brand personality"
+  ],
+  "answer": 2,
+  "explanation": "Brand equity is the added value a brand name brings beyond functional benefits, giving a competitive advantage and allowing higher prices. Brand loyalty is an individual's favourable attitude and repeat purchase - a source of equity, not the equity itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-083",
+  "concept": "c07-brand-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Shoppers at a Calgary outlet will pay $95 for a Roots hoodie but only $40 for an unbranded hoodie made in the same factory from the same fabric. The $55 difference reflects:",
+  "options": [
+   "Brand loyalty",
+   "Brand equity",
+   "Co-branding",
+   "Brand licensing"
+  ],
+  "answer": 1,
+  "explanation": "Brand equity is the added value a brand name brings beyond functional benefits, which allows a higher price. Loyalty (an individual's repeat purchase and favourable attitude) can contribute to equity, but the price premium itself is the equity.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-084",
+  "concept": "c07-brand-equity",
+  "also": [
+   "c07-brand-loyalty"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes brand equity from brand loyalty?",
+  "options": [
+   "Equity is the added value a brand name brings to a product; loyalty is a consumer's favourable attitude and repeat purchase over time",
+   "Equity is a consumer's repeated purchase of a brand; loyalty is the legal value of a registered trademark",
+   "Equity applies only to services; loyalty applies only to physical goods",
+   "Equity is the set of human traits linked to a brand; loyalty is the number of brands a firm owns"
+  ],
+  "answer": 0,
+  "explanation": "Brand equity is the value the brand name adds (a property of the brand); brand loyalty is a favourable attitude toward and consistent purchase of a brand over time (a behaviour of consumers). Human traits describe brand personality, and legal value relates to trademarks.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-085",
+  "concept": "c07-brand-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does strong brand equity matter to a company?",
+  "options": [
+   "It guarantees that no new competitors will enter the market",
+   "It legally prevents other firms from copying the product's design",
+   "It provides a competitive advantage and allows the company to charge higher prices",
+   "It removes the need for any further marketing investment in the brand"
+  ],
+  "answer": 2,
+  "explanation": "Brand equity creates competitive advantage and price premiums. It does not remove the need for investment - brands are assets that must be maintained - and legal protection comes from trademarks and patents, not from equity.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-086",
+  "concept": "c07-brand-personality",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A set of human characteristics associated with a brand name is called brand _____.",
+  "options": [
+   "licensing",
+   "personality",
+   "equity",
+   "loyalty"
+  ],
+  "answer": 1,
+  "explanation": "Brand personality is the set of human characteristics linked to a brand (rugged, sincere, sophisticated). Equity is the added value of the name, loyalty is a consumer's attitude and repeat purchase, and licensing is renting the name to another firm.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-087",
+  "concept": "c07-brand-personality",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Trailhead Gear's ads feature a weathered, adventurous character who laughs at bad weather, and the company describes its brand as 'rugged, honest and outdoorsy.' Trailhead is building its:",
+  "options": [
+   "Brand personality",
+   "Brand licensing",
+   "Brand equity",
+   "Brand loyalty"
+  ],
+  "answer": 0,
+  "explanation": "Describing a brand in human terms - rugged, honest, outdoorsy - is building brand personality. Equity and loyalty may follow from a strong personality, but the human traits themselves are the personality.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-088",
+  "concept": "c07-brand-personality",
+  "also": [
+   "c07-brand-image"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Survey respondents describe Velvet & Co. cosmetics as 'sophisticated, glamorous and confident' and say they think of 'Paris' and 'luxury department stores' when they hear the name. Which statement is most accurate?",
+  "options": [
+   "The responses describe the consumers' own personalities, so they say nothing about the brand",
+   "All of the responses are brand equity, because they describe the brand's financial value",
+   "'Paris' and 'luxury department stores' are brand personality traits because they are associations",
+   "'Sophisticated, glamorous and confident' are brand personality traits, which form part of the broader brand image"
+  ],
+  "answer": 3,
+  "explanation": "Brand personality is the set of HUMAN characteristics linked to a brand, and it is one kind of brand association. 'Paris' and 'luxury department stores' are associations but not human traits, and equity is the added value those associations create.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-089",
+  "concept": "c07-brand-personality",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Lumen Bank wants young Canadians to feel an emotional connection to it, the way they would to a friend. Which tactic most directly builds brand personality?",
+  "options": [
+   "Add a new line of mortgage products to its product mix",
+   "Give the brand a consistent warm, witty, approachable voice across ads and social media",
+   "Lower account fees below those of the largest Canadian banks",
+   "Register the bank's name and logo as trademarks"
+  ],
+  "answer": 1,
+  "explanation": "Brand personality is built by associating the brand with human traits - tone of voice, characters, spokespeople - which helps consumers make emotional connections. Fee cuts (price), trademarks (legal protection) and new lines (product mix) don't give the brand human characteristics.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-090",
+  "concept": "c07-brand-personality",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT an example of a brand personality trait?",
+  "options": [
+   "Sincere",
+   "Rugged",
+   "Available in 2,000 stores",
+   "Sophisticated"
+  ],
+  "answer": 2,
+  "explanation": "Brand personality traits are human characteristics such as sincere, rugged or sophisticated. Being available in 2,000 stores describes distribution, not a human trait.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-091",
+  "concept": "c07-brand-loyalty",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A favourable attitude toward and consistent purchase of a single brand over time is:",
+  "options": [
+   "Brand loyalty",
+   "Brand equity",
+   "Brand advocacy",
+   "Brand awareness"
+  ],
+  "answer": 0,
+  "explanation": "Brand loyalty combines a favourable attitude with consistent purchase over time. Brand equity is the added value of the name, and advocacy means passing positive comments to others.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-092",
+  "concept": "c07-brand-loyalty",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "For 15 years, Denise in Moncton has bought only one brand of toothpaste. She feels it suits her family and never considers other brands, though she rarely talks about it with anyone. Denise demonstrates:",
+  "options": [
+   "Brand personality",
+   "Brand licensing",
+   "Brand advocacy",
+   "Brand loyalty"
+  ],
+  "answer": 3,
+  "explanation": "A favourable attitude plus consistent purchase over time is brand loyalty. Denise isn't a brand advocate because she doesn't pass along comments to other people.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-093",
+  "concept": "c07-brand-loyalty",
+  "also": [
+   "c07-brand-advocate"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which customer is showing brand loyalty but NOT acting as a brand advocate?",
+  "options": [
+   "Tara buys whichever yogurt brand happens to be on sale each week",
+   "Sana posts an enthusiastic review of a cafe she has visited only once",
+   "Omar tells everyone at work how much he loves his new Roots jacket",
+   "Ken buys only Lululemon running gear but never discusses it with friends or online"
+  ],
+  "answer": 3,
+  "explanation": "Loyalty is a favourable attitude plus consistent purchase over time; advocacy is passing positive comments to others. Ken buys consistently but tells no one, Sana and Omar are advocating, and Tara shows no loyalty at all.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-094",
+  "concept": "c07-brand-loyalty",
+  "also": [
+   "c07-brand-personality"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the course, why do marketers work to associate brands with specific personality traits?",
+  "options": [
+   "To help consumers make emotional connections with their brands, which builds loyalty",
+   "To make the core benefit tangible before purchase",
+   "To register those traits as trademarks with the government",
+   "To reduce the number of product lines they must manage"
+  ],
+  "answer": 0,
+  "explanation": "The course notes that marketers associate brands with personality traits and help consumers make emotional connections - the foundation of brand loyalty. Traits can't be registered as trademarks, and they have nothing to do with the number of lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-095",
+  "concept": "c07-brand-loyalty",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Hearth Coffee Roasters notices that many customers buy from it repeatedly only when it runs discounts, switching to rivals the rest of the time. What does this suggest about their brand loyalty?",
+  "options": [
+   "It is strong, because any repeat purchase demonstrates brand loyalty",
+   "It is weak, because true loyalty combines repeat purchase with a favourable attitude over time, not just deal-seeking",
+   "It is strong, because price-sensitive buyers are the most loyal customers",
+   "It is irrelevant, because coffee is always a specialty product"
+  ],
+  "answer": 1,
+  "explanation": "Brand loyalty requires a favourable attitude toward the brand and consistent purchase over time. Buying only on discount and switching otherwise shows price sensitivity, not loyalty - so Hearth should work on emotional connections, not just deals.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-096",
+  "concept": "c07-brand-advocate",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A _____ is a person who speaks well of a product by passing along comments to other people.",
+  "options": [
+   "brand preceptor",
+   "brand associate",
+   "personal brand",
+   "brand advocate"
+  ],
+  "answer": 3,
+  "explanation": "A brand advocate speaks well of a product and passes positive comments along to others through word of mouth, reviews and social posts. 'Brand associate' sounds similar but isn't the term, and 'brand preceptor' is not a marketing concept.",
+  "source": "official"
+ },
+ {
+  "id": "q07-097",
+  "concept": "c07-brand-advocate",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After a great trip, Jordan from Kelowna posts a five-star review of Okanagan Kayak Tours and convinces three friends to book their own tours. Jordan is acting as a:",
+  "options": [
+   "Brand personality",
+   "Brand licensee",
+   "Brand advocate",
+   "Brand associate"
+  ],
+  "answer": 2,
+  "explanation": "Speaking well of a product and passing positive comments to other people is what a brand advocate does. A licensee pays to use a brand name, and brand personality refers to the brand's human traits, not a customer.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-098",
+  "concept": "c07-brand-advocate",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What is the key difference between a brand advocate and a brand-loyal customer?",
+  "options": [
+   "An advocate passes along positive comments to others; a loyal customer consistently buys the brand but may tell no one",
+   "An advocate owns the brand's trademark; a loyal customer only buys the product",
+   "An advocate is always paid by the company; a loyal customer is never paid",
+   "An advocate always buys the brand more often than a loyal customer does"
+  ],
+  "answer": 0,
+  "explanation": "Advocacy is about talking - passing positive comments to others - while loyalty is about attitude and repeat purchase. Advocates are not defined by being paid or by how often they buy.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-099",
+  "concept": "c07-brand-advocate",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Prairie Pedal, a Saskatoon bike shop, has hundreds of satisfied repeat customers but almost no online reviews or referrals. Which goal should its next campaign pursue?",
+  "options": [
+   "Convert its bikes from shopping products into convenience products",
+   "Register its store name as a copyright to protect its reputation",
+   "Turn satisfied, loyal customers into brand advocates who pass positive comments to others",
+   "Widen its product mix by adding a line of coffee drinks"
+  ],
+  "answer": 2,
+  "explanation": "Prairie Pedal already has loyalty; what's missing is customers speaking well of it to others - brand advocacy. Changing the product class or the mix doesn't address word of mouth, and store names are protected by trademarks, not copyright.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-100",
+  "concept": "c07-brand-advocate",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why are brand advocates especially valuable to marketers?",
+  "options": [
+   "They remove the need for the brand to be nurtured by marketing activity",
+   "They create derived demand for the brand's business products",
+   "They guarantee that the brand's equity can never decline",
+   "Their positive comments reach other consumers from a fellow customer rather than from the company"
+  ],
+  "answer": 3,
+  "explanation": "Advocates spread positive word of mouth that comes from fellow consumers, which other buyers tend to find credible. They don't guarantee equity or replace the ongoing marketing a brand needs, and derived demand is a business-product concept.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-101",
+  "concept": "c07-experiential-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the course, the purpose of experiential branding is:",
+  "options": [
+   "To pair two manufacturers' brand names on one product",
+   "Not to sell you something, but to show how a brand can enrich a consumer's life",
+   "To list a product's features and price as clearly as possible",
+   "To rent the brand name to another firm in exchange for a royalty"
+  ],
+  "answer": 1,
+  "explanation": "Experiential branding aims not to sell you something but to show how a brand can enrich your life, and storytelling is essential. Renting the name is licensing, pairing two names is co-branding, and listing features is a traditional sales message.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-102",
+  "concept": "c07-experiential-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Lumi Outdoor opens a pop-up in Banff where visitors join free guided snowshoe walks and hear the founders' stories about growing up in the Rockies - and no one is asked to buy anything. This is an example of:",
+  "options": [
+   "Mixed branding",
+   "Brand licensing",
+   "Experiential branding",
+   "Co-branding"
+  ],
+  "answer": 2,
+  "explanation": "Showing how the brand fits into and enriches people's lives through an experience and storytelling, without a sales pitch, is experiential branding. Licensing, co-branding and mixed branding are branding strategies about who uses or owns a name.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-103",
+  "concept": "c07-experiential-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which campaign is the clearest example of experiential branding rather than a traditional sales pitch?",
+  "options": [
+   "A TV ad listing the shoe's weight, cushioning and price",
+   "A free weekly run club where participants experience how the brand fits an active, social lifestyle",
+   "A cashier asking every customer to add socks to their purchase",
+   "A flyer announcing 30% off all running shoes this weekend only"
+  ],
+  "answer": 1,
+  "explanation": "Experiential branding shows how the brand enriches life through experiences rather than pushing a sale. Discounts, feature-and-price ads and add-on requests are direct selling tactics.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-104",
+  "concept": "c07-experiential-branding",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Storytelling is essential to experiential branding because stories help consumers see how a brand can enrich their lives.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The course states that storytelling is essential to experiential branding, whose goal is not to sell something but to show how the brand can enrich the consumer's life.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-105",
+  "concept": "c07-experiential-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "A brand manager is planning an experiential branding campaign. Which element would NOT fit this approach?",
+  "options": [
+   "Activities that show how the brand enriches everyday life",
+   "An immersive event that lets visitors experience the brand first-hand",
+   "A founder's story that connects the brand to customers' values",
+   "A script focused on closing sales and maximizing units sold at each event"
+  ],
+  "answer": 3,
+  "explanation": "Experiential branding is explicitly not about selling you something; a hard-close sales script contradicts its purpose. Immersive experiences, storytelling and showing how the brand enriches life are its core elements.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-106",
+  "concept": "c07-brand-types",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Canadian Tire's Mastercraft tools are made for Canadian Tire by outside manufacturers but sold only under the Mastercraft name in its stores. Mastercraft is an example of a:",
+  "options": [
+   "Private-label brand",
+   "Co-brand",
+   "Generic brand",
+   "Manufacturer brand"
+  ],
+  "answer": 0,
+  "explanation": "A private-label (store) brand is owned by the retailer or wholesaler, even though another company manufactures it. Who makes the product doesn't matter - ownership of the name does - and a generic product would carry no brand name at all.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-107",
+  "concept": "c07-brand-types",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A brand owned by the producer of the product, such as Tide or Nike, is called a _____ brand.",
+  "options": [
+   "mixed",
+   "manufacturer (national)",
+   "generic",
+   "private-label"
+  ],
+  "answer": 1,
+  "explanation": "Manufacturer (also called national) brands are owned and marketed by the producer. Private-label brands are owned by retailers or wholesalers, generic products have no brand name, and mixed branding means selling under both the firm's own and a reseller's name.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-108",
+  "concept": "c07-brand-types",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What distinguishes a private-label brand from a generic product?",
+  "options": [
+   "There is no difference, because both terms describe store brands",
+   "A private-label product has no brand name; a generic product carries the retailer's brand",
+   "A private-label product is owned by the manufacturer; a generic product is owned by the retailer",
+   "A private-label product carries a brand name owned by a retailer or wholesaler; a generic product has no brand name"
+  ],
+  "answer": 3,
+  "explanation": "Private labels such as President's Choice and Kirkland are real brands owned by resellers, while generics are unbranded, plainly packaged and low priced. Manufacturer ownership describes national brands, not private labels.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-109",
+  "concept": "c07-brand-types",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Maritime Biscuit Co. sells crackers under its own Maritime label and also produces crackers that a national supermarket chain sells under the chain's store brand. Maritime Biscuit is using:",
+  "options": [
+   "Multibranding",
+   "Brand licensing",
+   "Mixed branding",
+   "Co-branding"
+  ],
+  "answer": 2,
+  "explanation": "Mixed branding means a firm markets products under its own name and under a reseller's private-label name. Multibranding would mean using several of Maritime's OWN brand names, and co-branding would put two manufacturers' names on a single package.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-110",
+  "concept": "c07-brand-types",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of a private-label brand?",
+  "options": [
+   "Tide laundry detergent",
+   "Motomaster at Canadian Tire",
+   "Kirkland Signature at Costco",
+   "President's Choice at Loblaws"
+  ],
+  "answer": 0,
+  "explanation": "Tide is owned and marketed by its producer, Procter & Gamble, so it is a manufacturer (national) brand. President's Choice, Kirkland Signature and Motomaster are owned by the retailers that sell them - private labels.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-111",
+  "concept": "c07-family-multibranding",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Samsung puts its name on its phones, televisions, refrigerators and washing machines. This is an example of:",
+  "options": [
+   "Multibranding",
+   "Co-branding",
+   "Mixed branding",
+   "Multiproduct (family) branding"
+  ],
+  "answer": 3,
+  "explanation": "Using one name for all of a company's products is multiproduct (family, umbrella or corporate) branding. Multibranding would give each product or segment a different name.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-112",
+  "concept": "c07-family-multibranding",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Procter & Gamble sells laundry detergent under three different names - Tide, Gain and Cheer - each aimed at a different segment. This strategy is:",
+  "options": [
+   "Brand extension",
+   "Multibranding",
+   "Multiproduct branding",
+   "Sub-branding"
+  ],
+  "answer": 1,
+  "explanation": "Multibranding gives each product or segment its own distinct brand name. Multiproduct branding would put one name on everything, and sub-branding would combine the P&G name with a new name.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-113",
+  "concept": "c07-family-multibranding",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly contrasts multiproduct branding and multibranding?",
+  "options": [
+   "Multiproduct branding uses one name for all products; multibranding uses a different name for each product or segment",
+   "Multiproduct branding sells under the firm's own and a reseller's names; multibranding uses no brand names",
+   "Multiproduct branding and multibranding are two names for the same strategy",
+   "Multiproduct branding puts two manufacturers' names on one product; multibranding uses one name for all products"
+  ],
+  "answer": 0,
+  "explanation": "Multiproduct (family) branding = one name across all products; multibranding = separate names for each product or segment. Two manufacturers' names on one product is co-branding, and own-plus-reseller names is mixed branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-114",
+  "concept": "c07-family-multibranding",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Stanley Black & Decker sells tools to homeowners under the Black & Decker name and to professional contractors under the DeWalt name. Why use multibranding here instead of one family brand?",
+  "options": [
+   "Multibranding lets the company collect royalties from its own divisions",
+   "Separate names are required because tools are classified as business products",
+   "Separate names let each brand target its own segment without one brand's image diluting the other's",
+   "Multibranding lets the company avoid investing in either brand"
+  ],
+  "answer": 2,
+  "explanation": "Multibranding gives each segment a brand built for it, so the professional image of DeWalt isn't blurred by the homeowner positioning of Black & Decker (and vice versa). Each brand still needs investment, nothing requires separate names, and royalties belong to licensing.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-115",
+  "concept": "c07-family-multibranding",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Multiproduct branding - also called family, umbrella or corporate branding - uses one name for all of a company's products, which makes brand extensions and sub-branding easier.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. With one name across all products (Samsung, Heinz), the company can extend that name into new product classes or combine it with new names (sub-brands).",
+  "source": "generated"
+ },
+ {
+  "id": "q07-116",
+  "concept": "c07-brand-extension",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Dove, long known for its beauty bar soap, launches Dove shampoo and conditioner. This is an example of:",
+  "options": [
+   "Sub-branding",
+   "Brand extension",
+   "Multibranding",
+   "Co-branding"
+  ],
+  "answer": 1,
+  "explanation": "A brand extension uses a current brand name to enter a new product class - soap to hair care. Sub-branding would pair the Dove name with a new brand name, which doesn't happen here.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-117",
+  "concept": "c07-brand-extension",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Gatorade introduces a lower-calorie drink called Gatorade G2, combining the parent brand name with a new name. This strategy is:",
+  "options": [
+   "Mixed branding",
+   "Co-branding",
+   "Sub-branding",
+   "Brand extension"
+  ],
+  "answer": 2,
+  "explanation": "Sub-branding combines a corporate or family brand name with a new brand name (Gatorade + G2, Porsche + Cayenne). A brand extension uses the existing name alone to enter a new product class, and co-branding requires two different manufacturers' names.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-118",
+  "concept": "c07-brand-extension",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Northern Glow Candles is considering three launches: (1) a lavender scent added to its existing candle line, (2) Northern Glow hand soap, and (3) a premium candle range called 'Northern Glow Ember'. Which label is correct?",
+  "options": [
+   "(2) is a brand extension, because the existing name enters a new product class",
+   "(1) is a brand extension, because a new item carries the existing name",
+   "(3) is a brand extension, because a new name is combined with the parent name",
+   "(2) is sub-branding, because the existing name appears on a new product"
+  ],
+  "answer": 0,
+  "explanation": "A brand extension takes the current name into a NEW product class (candles to hand soap). A new scent stays in the same class and simply deepens the line, and (3) pairs the family name with a new name, which is sub-branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-119",
+  "concept": "c07-brand-extension",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Using a current brand name to enter a completely new product class is called _____.",
+  "options": [
+   "multibranding",
+   "sub-branding",
+   "brand licensing",
+   "brand extension"
+  ],
+  "answer": 3,
+  "explanation": "That is the definition of a brand extension (Dove soap to Dove shampoo; Tide detergent to Tide stain remover). Sub-branding adds a new name to the parent name, multibranding uses separate names, and licensing lets another firm use the name for a fee.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-120",
+  "concept": "c07-brand-extension",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do firms that use multiproduct (family) branding find brand extensions attractive?",
+  "options": [
+   "Brand extensions let the firm sell its products under a reseller's private label",
+   "Brand extensions eliminate the risk that a weak new product could harm the brand",
+   "Consumers' existing knowledge of and trust in the brand name can carry over to the new product class",
+   "Brand extensions require a completely new brand name for each new product"
+  ],
+  "answer": 2,
+  "explanation": "A brand extension borrows an established name's reputation, which makes entering a new class easier. It doesn't eliminate risk - a weak extension can hurt the family name - selling under a reseller's label is mixed branding, and a new name for each product is multibranding.",
+  "source": "generated"
+ }
+]

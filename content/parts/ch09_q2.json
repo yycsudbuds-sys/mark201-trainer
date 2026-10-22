@@ -1,0 +1,614 @@
+[
+ {
+  "id": "q09-035",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which description fits monopolistic competition rather than pure competition?",
+  "options": [
+   "Thousands of canola growers sell an identical crop at the market price",
+   "Three airlines control most domestic routes and match each other's fares",
+   "One utility is the only electricity distributor in a city",
+   "Many independent coffee shops in Edmonton sell somewhat different drinks at a range of prices"
+  ],
+  "answer": 3,
+  "explanation": "Monopolistic competition = many sellers with differentiated products, so each has some pricing room. Pure competition (the canola growers) = many sellers with identical products, so the market sets the price. One seller is pure monopoly; a few sellers is oligopoly.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-036",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Summit Razors sells a low-priced razor handle and high-margin replacement blades. The pricing manager wants to raise the handle price by 40%. Which pricing constraint should most concern her?",
+  "options": [
+   "Pure competition: the market sets the handle price",
+   "Newness of the product: the handle is in the introduction stage",
+   "Cost of production sets a ceiling on the handle price",
+   "Single product vs product line: the handle price affects blade sales"
+  ],
+  "answer": 3,
+  "explanation": "When a firm sells a product line, pricing one item affects others - a pricier handle could reduce complementary blade sales. Costs set a floor, not a ceiling, and nothing in the scenario suggests a commodity market or a brand-new product.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-037",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a pricing constraint?",
+  "options": [
+   "Target return on investment",
+   "Demand for the product class, product and brand",
+   "Competitors' prices",
+   "Type of competitive market"
+  ],
+  "answer": 0,
+  "explanation": "Target return is a pricing OBJECTIVE (under profit), and target ROI pricing is a profit-oriented approach. Demand, competitors' prices and the type of competitive market are constraints - factors that limit the range of prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-038",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a _____, a single seller faces no close competitors and therefore has wide latitude in setting its price.",
+  "options": [
+   "pure monopoly",
+   "oligopoly",
+   "monopolistic competition",
+   "pure competition"
+  ],
+  "answer": 0,
+  "explanation": "A pure monopoly has one seller, giving it the most pricing latitude of the four market types. At the other extreme, pure competition has many sellers of identical products that must accept the market price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-039",
+  "concept": "c09-demand-estimation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A graph relating the quantity sold to the price, showing how many units will be sold at each price, is called a:",
+  "options": [
+   "demand curve",
+   "break-even chart",
+   "total cost curve",
+   "product life cycle curve"
+  ],
+  "answer": 0,
+  "explanation": "A demand curve relates quantity sold to price. A break-even chart plots total revenue against total cost to find the break-even point - it does not show how demand responds to price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-040",
+  "concept": "c09-demand-estimation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After a major employer in an Alberta city announces layoffs, local car dealers sell fewer vehicles at every price even though sticker prices have not changed. Which demand factor shifted demand?",
+  "options": [
+   "Consumer tastes",
+   "Availability of substitutes",
+   "Price of the product itself",
+   "Consumer income"
+  ],
+  "answer": 3,
+  "explanation": "Consumer income is a demand factor; when incomes fall, the whole demand curve shifts left (fewer units at every price). The product's own price is not a demand factor - a change in it moves buyers ALONG the curve, and prices did not change here.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-041",
+  "concept": "c09-demand-estimation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which event causes a movement ALONG Fizzco's demand curve rather than a shift of the curve?",
+  "options": [
+   "A health trend makes consumers prefer sparkling water to soda",
+   "A rival cola brand doubles its price",
+   "Consumer incomes rise across Canada",
+   "Fizzco cuts the price of its own soda from $2.00 to $1.50"
+  ],
+  "answer": 3,
+  "explanation": "A change in the product's OWN price moves buyers along the demand curve. Changes in demand factors - tastes, the price or availability of substitutes (the rival cola) and consumer income - shift the whole curve.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-042",
+  "concept": "c09-demand-estimation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Coastal Kayak Rentals forecasts next summer's demand by studying its weekly rentals over the past eight summers and projecting the pattern forward. Which forecasting method is this?",
+  "options": [
+   "Time-series analysis",
+   "Multiple regression",
+   "Qualitative forecasting",
+   "Break-even analysis"
+  ],
+  "answer": 0,
+  "explanation": "Time-series analysis projects future demand from the pattern of past sales over time. Multiple regression would relate sales to several explanatory variables (such as weather, tourism and price) rather than to time alone.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-043",
+  "concept": "c09-demand-estimation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the chapter, why does creating the correct price begin the forecasting process?",
+  "options": [
+   "With a price known, the firm can estimate demand - given its own and competitors' marketing efforts - and translate it into revenue",
+   "Once a price is set, demand no longer needs to be estimated",
+   "Forecasting is only needed to calculate fixed costs",
+   "Price determines the break-even point, which replaces the need for a forecast"
+  ],
+  "answer": 0,
+  "explanation": "With a price in hand, the firm estimates how much customers will buy, considering its marketing efforts and competitors' efforts, then translates that into estimated revenue. Break-even analysis still depends on these estimates; it does not replace them.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-044",
+  "concept": "c09-elasticity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Westcoast Ferries raises its fare by 10%, and the number of walk-on passengers falls by 4%. What is the price elasticity of demand, and is demand elastic or inelastic?",
+  "options": [
+   "2.5, elastic",
+   "2.5, inelastic",
+   "0.4, elastic",
+   "0.4, inelastic"
+  ],
+  "answer": 3,
+  "explanation": "Price elasticity = % change in quantity demanded / % change in price = 4% / 10% = 0.4. Because 0.4 is less than 1, demand is inelastic (quantity is not very responsive to price). 2.5 comes from dividing the wrong way (10 / 4).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-045",
+  "concept": "c09-elasticity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Glow Candle Co. sells 1,000 candles a month at $20. When it lowers the price to $18, monthly sales rise to 1,300 candles. What happens to total revenue, and what does that say about demand?",
+  "options": [
+   "It rises by $3,400; demand is elastic",
+   "It falls by $2,000; demand is inelastic",
+   "It rises by $6,000; demand is elastic",
+   "It stays at $20,000; demand is inelastic"
+  ],
+  "answer": 0,
+  "explanation": "Total revenue = P x Q. Before: $20 x 1,000 = $20,000. After: $18 x 1,300 = $23,400, an increase of $3,400. Quantity rose 30% while price fell 10% (elasticity = 3), so demand is elastic and the price cut raised total revenue.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-046",
+  "concept": "c09-elasticity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "When gasoline prices in Calgary jumped 15% last spring, the amount of fuel drivers bought barely changed, because most still had to drive to work. Demand for gasoline in this situation is best described as:",
+  "options": [
+   "elastic",
+   "backward-bending",
+   "price-sensitive",
+   "inelastic"
+  ],
+  "answer": 3,
+  "explanation": "Inelastic demand means quantity is not very responsive to price - typical of necessities with few substitutes, such as gasoline. Elastic (price-sensitive) demand would show a large drop in quantity; a backward-bending curve describes prestige goods.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-047",
+  "concept": "c09-elasticity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A tobacco company faces highly inelastic demand for its cigarette brand. If its goal is to increase total revenue, what should it do with price?",
+  "options": [
+   "Lower price, because quantity will rise enough to raise revenue",
+   "Raise price, because quantity will fall only slightly and revenue will rise",
+   "Keep price fixed, because elasticity does not affect revenue",
+   "Lower price to the break-even point"
+  ],
+  "answer": 1,
+  "explanation": "With inelastic demand, raising price increases total revenue because the percentage drop in quantity is smaller than the percentage rise in price. Lowering price works for ELASTIC demand, where the quantity gain outweighs the price cut.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-048",
+  "concept": "c09-elasticity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which product is most likely to have ELASTIC rather than inelastic demand?",
+  "options": [
+   "Insulin for people with diabetes",
+   "Home heating during a Winnipeg winter",
+   "One brand of potato chips with many close substitutes",
+   "Gasoline for commuters with no transit option"
+  ],
+  "answer": 2,
+  "explanation": "Demand is elastic when there are many substitutes or the product is a luxury - buyers easily switch chip brands if one raises its price. Insulin, winter heating and commuting fuel are necessities with few substitutes, so their demand is inelastic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-049",
+  "concept": "c09-revenue-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Banff Trail Tours sells 3,200 guided hikes at $85 each this season. What is its total revenue?",
+  "options": [
+   "$27,200",
+   "$255,000",
+   "$272,000",
+   "$289,000"
+  ],
+  "answer": 2,
+  "explanation": "Total revenue = unit price x quantity sold = $85 x 3,200 = $272,000. Revenue counts what comes in before any costs are subtracted; profit would require subtracting fixed and variable costs.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-050",
+  "concept": "c09-revenue-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Pie Co. sells 8,000 pies at $25 each. Its fixed costs are $60,000 and its unit variable cost is $12. Using the profit equation, what is its profit?",
+  "options": [
+   "$44,000",
+   "$104,000",
+   "$140,000",
+   "$200,000"
+  ],
+  "answer": 0,
+  "explanation": "Profit = (P x Q) - [FC + (UVC x Q)] = ($25 x 8,000) - [$60,000 + ($12 x 8,000)] = $200,000 - $156,000 = $44,000. $104,000 forgets the fixed costs and $140,000 forgets the variable costs.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-051",
+  "concept": "c09-revenue-profit",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The change in total revenue that results from selling one additional unit of a product is called _____.",
+  "options": [
+   "average revenue",
+   "marginal cost",
+   "unit variable cost",
+   "marginal revenue"
+  ],
+  "answer": 3,
+  "explanation": "Marginal revenue is the change in total revenue from selling one more unit. Marginal cost is the change in total COST from producing one more unit - the same 'one more unit' idea, but on the cost side.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-052",
+  "concept": "c09-revenue-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "The owner of Bean There Cafe divides last month's total revenue of $36,000 by the 9,000 drinks sold and gets $4.00. What has she calculated?",
+  "options": [
+   "Marginal revenue",
+   "Average revenue",
+   "Unit variable cost",
+   "Break-even point"
+  ],
+  "answer": 1,
+  "explanation": "Average revenue = total revenue / quantity sold, which equals the average price per unit ($36,000 / 9,000 = $4.00). Marginal revenue would be the extra revenue from selling just one more drink.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-053",
+  "concept": "c09-revenue-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly distinguishes total revenue from profit?",
+  "options": [
+   "Total revenue is price times quantity; profit is total revenue minus fixed and variable costs",
+   "Total revenue subtracts variable costs; profit subtracts only fixed costs",
+   "Total revenue and profit are equal at the break-even point",
+   "Profit is price times quantity; total revenue is profit plus fixed costs"
+  ],
+  "answer": 0,
+  "explanation": "TR = P x Q; Profit = TR - TC, where TC = fixed cost + variable cost. At the break-even point total revenue equals total COST (profit is zero) - not profit.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-054",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fresh Frame Studio pays $2,500 a month in rent and $4,000 a month in manager salaries, regardless of how many frames it makes. These are:",
+  "options": [
+   "variable costs",
+   "marginal costs",
+   "fixed costs",
+   "unit variable costs"
+  ],
+  "answer": 2,
+  "explanation": "Fixed costs, such as rent and salaries, stay the same regardless of the quantity produced. Variable costs (materials, per-unit labour) rise and fall directly with the number of frames made.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-055",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Lakeside Soap has fixed costs of $50,000 a year and a unit variable cost of $8. If it produces 5,000 bars, what is its total cost?",
+  "options": [
+   "$40,000",
+   "$50,000",
+   "$90,000",
+   "$400,000"
+  ],
+  "answer": 2,
+  "explanation": "Total cost = fixed cost + (unit variable cost x quantity) = $50,000 + ($8 x 5,000) = $50,000 + $40,000 = $90,000. $40,000 is only the variable cost and $50,000 only the fixed cost.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-056",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "For a Saskatoon furniture maker, which cost is VARIABLE rather than fixed?",
+  "options": [
+   "Lumber used in each table",
+   "Annual property insurance on the factory",
+   "The plant manager's salary",
+   "Monthly lease payments on the building"
+  ],
+  "answer": 0,
+  "explanation": "Variable costs change directly with quantity - every extra table uses more lumber. Insurance, salaries and lease payments are fixed: they do not change with the number of tables produced.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-057",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ is calculated by dividing total variable cost by the quantity produced.",
+  "options": [
+   "Marginal cost",
+   "Unit variable cost",
+   "Average revenue",
+   "Fixed cost"
+  ],
+  "answer": 1,
+  "explanation": "Unit variable cost = variable cost / quantity - the variable cost per unit. Marginal cost is the change in total cost from producing ONE more unit, a different measure.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-058",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about costs is NOT correct?",
+  "options": [
+   "Total cost equals fixed cost plus variable cost",
+   "Fixed costs rise as more units are produced",
+   "Variable costs change directly with the quantity produced",
+   "Unit variable cost equals variable cost divided by quantity"
+  ],
+  "answer": 1,
+  "explanation": "Fixed costs, by definition, do NOT change with the quantity produced - rent is the same at 10 units or 10,000. The other three statements correctly describe total cost, variable cost and unit variable cost.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-059",
+  "concept": "c09-cost-concepts",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Hearth & Grain Bakery's total cost for the day rises from $5,000.00 to $5,003.20 when it bakes one more loaf of sourdough. The $3.20 is best described as the loaf's:",
+  "options": [
+   "fixed cost",
+   "marginal cost",
+   "average revenue",
+   "marginal revenue"
+  ],
+  "answer": 1,
+  "explanation": "Marginal cost is the change in total cost that results from producing one more unit ($5,003.20 - $5,000.00 = $3.20). Marginal revenue is the matching idea on the revenue side - the change in total revenue from SELLING one more unit.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-060",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Gallery North, a picture-frame store, has fixed costs of $32,000. It sells each frame for $120, and its unit variable cost is $40. What is its break-even point in frames?",
+  "options": [
+   "200 frames",
+   "267 frames",
+   "400 frames",
+   "800 frames"
+  ],
+  "answer": 2,
+  "explanation": "BEP = FC / (P - UVC) = $32,000 / ($120 - $40) = $32,000 / $80 = 400 frames. 267 comes from dividing by the price alone, ignoring that each frame's $40 variable cost must be covered first.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-061",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Chinook Bottle Co. sells insulated water bottles for $25. Its unit variable cost is $10 and its annual fixed costs are $90,000. How many bottles must it sell to break even?",
+  "options": [
+   "3,600",
+   "6,000",
+   "9,000",
+   "2,571"
+  ],
+  "answer": 1,
+  "explanation": "BEP = $90,000 / ($25 - $10) = $90,000 / $15 = 6,000 bottles. 3,600 divides by price only and 9,000 divides by unit variable cost; the divisor must be the contribution per unit (P - UVC).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-062",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Ridge Rider sells snowshoes at $30 with a unit variable cost of $14 and fixed costs of $48,000. If it raises the price to $38 with costs unchanged, how does its break-even point change?",
+  "options": [
+   "It falls from 3,000 to 2,000 units",
+   "It rises from 2,000 to 3,000 units",
+   "It falls from 1,600 to 1,263 units",
+   "It stays at 3,000 units"
+  ],
+  "answer": 0,
+  "explanation": "Before: $48,000 / ($30 - $14) = 3,000 units. After: $48,000 / ($38 - $14) = 2,000 units. The higher price raises the contribution per unit from $16 to $24, so fewer units are needed to cover fixed costs. 1,600 and 1,263 wrongly divide by price alone.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-063",
+  "concept": "c09-break-even",
+  "also": [
+   "c09-revenue-profit"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Gallery North (fixed costs $32,000; price $120 per frame; unit variable cost $40) sells 600 frames this year. What is its profit?",
+  "options": [
+   "$16,000",
+   "$40,000",
+   "$48,000",
+   "$72,000"
+  ],
+  "answer": 0,
+  "explanation": "Profit = (P x Q) - [FC + (UVC x Q)] = ($120 x 600) - [$32,000 + ($40 x 600)] = $72,000 - $56,000 = $16,000. Equivalently, 200 frames beyond the 400-frame BEP x $80 contribution = $16,000. $48,000 forgets the fixed costs.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-064",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The owner of a new Edmonton bakery asks, 'How many loaves do I need to sell before I stop losing money?' Which technique answers this directly?",
+  "options": [
+   "Break-even analysis",
+   "Price elasticity analysis",
+   "Yield management",
+   "Time-series forecasting"
+  ],
+  "answer": 0,
+  "explanation": "Break-even analysis examines the relationship between total revenue and total cost to find the quantity at which TR = TC - where losses end and profit begins. Price elasticity tells how quantity responds to price, not how many units cover costs.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-065",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "If a firm's fixed costs rise while its price and unit variable cost stay the same, its break-even point rises, because more units are needed to cover the larger fixed cost.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. BEP = FC / (P - UVC); fixed cost is the numerator, so raising it raises the BEP while the contribution per unit stays the same. For example, $32,000 / $80 = 400 frames becomes $40,000 / $80 = 500 frames.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-066",
+  "concept": "c09-break-even",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which statement about a break-even chart is NOT correct?",
+  "options": [
+   "The total cost line begins at the level of fixed costs",
+   "The area between the lines to the right of the break-even point represents profit",
+   "At the break-even point, total revenue equals total cost",
+   "The total revenue line begins at the level of fixed costs"
+  ],
+  "answer": 3,
+  "explanation": "Total revenue starts at zero (no sales, no revenue); it is the total COST line that starts at the fixed-cost level, because fixed costs exist even at zero output. Profit lies beyond the BEP, where TR exceeds TC.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-067",
+  "concept": "c09-four-approaches",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Kestrel Cycles sets its new e-bike's price mainly by checking what rival brands charge and pricing just below them. Which group of pricing approaches is Kestrel using?",
+  "options": [
+   "Demand-oriented",
+   "Cost-oriented",
+   "Profit-oriented",
+   "Competition-oriented"
+  ],
+  "answer": 3,
+  "explanation": "Competition-oriented approaches focus on what competitors are doing rather than on demand, cost or profit; pricing just below rivals is below-market pricing. Demand-oriented approaches start from customers' tastes and preferences instead.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-068",
+  "concept": "c09-four-approaches",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a demand-oriented pricing approach?",
+  "options": [
+   "Bundle pricing",
+   "Odd-even pricing",
+   "Target return-on-sales pricing",
+   "Yield management pricing"
+  ],
+  "answer": 2,
+  "explanation": "Target return-on-sales pricing is PROFIT-oriented, along with target profit and target ROI. Bundle, odd-even and yield management are all demand-oriented, as are skimming, penetration, prestige and target pricing.",
+  "source": "generated"
+ }
+]

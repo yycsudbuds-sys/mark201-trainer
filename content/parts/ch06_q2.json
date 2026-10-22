@@ -1,0 +1,763 @@
+[
+  {
+    "id": "q06-041",
+    "concept": "c06-forming-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why must a proposed segment show 'potential for increased profit and ROI' before a firm builds a separate marketing program for it?",
+    "options": [
+      "Because only the single largest segment in any market can ever generate a profit",
+      "Because ROI determines which region of the country the segment's members must live in",
+      "Because segmenting only pays if a segment's extra revenue more than covers the extra cost of serving it",
+      "Because profit potential is the only criterion used later when choosing a brand's positioning"
+    ],
+    "answer": 2,
+    "explanation": "Separate programs cost money, so a segment is worth forming only if it adds more revenue than cost and improves ROI. Size alone doesn't guarantee this; a large segment can still be unprofitable if it is expensive to serve.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-042",
+    "concept": "c06-selecting-criteria",
+    "also": [
+      "c06-forming-criteria"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT one of the five criteria for SELECTING target segments?",
+    "options": [
+      "Market size",
+      "Similarity of needs of buyers within a segment",
+      "Competitive position",
+      "Cost of reaching the segment"
+    ],
+    "answer": 1,
+    "explanation": "Similarity of needs within a segment is a criterion for FORMING segments. The selecting criteria are market size, expected growth, competitive position, cost of reaching the segment, and compatibility with the organization's objectives and resources.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-043",
+    "concept": "c06-selecting-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Regina accounting-software firm finds a large, fast-growing segment of craft breweries. Serving them, however, would require on-site hardware installation, a service the firm has no staff or skills for and that does not fit its mission. Which selection criterion argues most strongly against targeting this segment?",
+    "options": [
+      "Expected growth",
+      "Market size",
+      "Competitive position",
+      "Compatibility with the organization's objectives and resources"
+    ],
+    "answer": 3,
+    "explanation": "Missing skills, missing staff and a poor fit with the mission all point to 'compatibility with the organization's objectives and resources'. Size and growth actually favour this segment.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-044",
+    "concept": "c06-selecting-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Two large, well-established rivals already dominate the premium dog-food segment in Ontario, and a newcomer has no advantage over them in price, quality or distribution. Which criterion for selecting a target segment is the newcomer's biggest concern?",
+    "options": [
+      "Cost of reaching the segment",
+      "Expected growth",
+      "Competitive position",
+      "Difference of needs among segments"
+    ],
+    "answer": 2,
+    "explanation": "Facing entrenched rivals with no edge is a competitive-position problem. 'Difference of needs among segments' is a forming criterion and says nothing about rivals.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-045",
+    "concept": "c06-selecting-criteria",
+    "also": [
+      "c06-forming-criteria"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A Yellowknife wilderness outfitter's most promising segment is wealthy European adventure travellers. Reaching them, however, would require costly overseas trade shows and foreign-language advertising that would eat up most of its budget. Which criterion for selecting a target segment is the main obstacle?",
+    "options": [
+      "Cost of reaching the segment",
+      "Market size",
+      "Simplicity and cost of assigning buyers to segments",
+      "Similarity of needs within the segment"
+    ],
+    "answer": 0,
+    "explanation": "Expensive trade shows and ads needed to get in front of the segment are a 'cost of reaching the segment' problem, which is a selecting criterion. 'Simplicity and cost of assigning buyers' is a forming criterion about identifying who belongs to a segment, not about the cost of communicating with them.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-046",
+    "concept": "c06-selecting-criteria",
+    "also": [
+      "c06-forming-criteria"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which criterion appears on the list for FORMING segments but NOT on the list for SELECTING target segments?",
+    "options": [
+      "Difference of needs of buyers among segments",
+      "Market size",
+      "Expected growth",
+      "Cost of reaching the segment"
+    ],
+    "answer": 0,
+    "explanation": "Difference of needs among segments is a forming criterion. Market size, expected growth and cost of reaching the segment are all selecting criteria.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-047",
+    "concept": "c06-selecting-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 1,
+    "stem": "A marketer is comparing two segments that are similar in size, competition and cost to reach. Segment A is growing 2 percent a year and Segment B is growing 15 percent a year. Which selection criterion favours Segment B?",
+    "options": [
+      "Market size",
+      "Competitive position",
+      "Expected growth",
+      "Feasibility of a marketing action"
+    ],
+    "answer": 2,
+    "explanation": "Faster growth means a bigger future market, which is the 'expected growth' criterion. Market size is equal here, and feasibility of a marketing action is a forming criterion.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-048",
+    "concept": "c06-consumer-variables",
+    "also": [
+      "c06-geographic",
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Universal Concerts is planning on bringing a series of concerts to Canada next year. In order for its concerts to be a success it needs to know that Western Canadians like country music and that a country music event in Eastern Canada is much more likely to have empty seats. This consumer behaviour requires Universal Concerts to segment its Canadian market according to:",
+    "options": [
+      "geographic and psychographic characteristics.",
+      "demographic characteristics.",
+      "lifestyle and demographic characteristics.",
+      "usage rate and demographic characteristics.",
+      "demographic and geographic characteristics."
+    ],
+    "answer": 0,
+    "explanation": "Music preference is an interest, which makes it psychographic, and East versus West is geographic. Nothing in the stem involves census-type data such as age or income, so every option that includes 'demographic' is wrong.",
+    "source": "official"
+  },
+  {
+    "id": "q06-049",
+    "concept": "c06-consumer-variables",
+    "also": [
+      "c06-demographic"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Which family of segmentation variables answers the question 'What is the basic census-type information on the target market as a whole?'",
+    "options": [
+      "Geographic",
+      "Demographic",
+      "Psychographic",
+      "Behaviouristic"
+    ],
+    "answer": 1,
+    "explanation": "Demographic variables (age, gender, income, education, occupation, family life cycle and so on) are basic census-type information. Geographic answers 'where does the market live and work?', and behaviouristic answers 'how does it use the product?'",
+    "source": "generated"
+  },
+  {
+    "id": "q06-050",
+    "concept": "c06-consumer-variables",
+    "also": [
+      "c06-business-segmentation"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT one of the four families of variables used to segment consumer markets?",
+    "options": [
+      "Psychographic",
+      "Behaviouristic",
+      "Geographic",
+      "Operating characteristics"
+    ],
+    "answer": 3,
+    "explanation": "Operating characteristics (technology, user status, capabilities) is a base for segmenting BUSINESS markets. The four consumer families are geographic, demographic, psychographic and behaviouristic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-051",
+    "concept": "c06-consumer-variables",
+    "also": [
+      "c06-usage-rate"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A reusable-cup brand describes its target as 'women aged 25-34 living in suburban Calgary who value sustainability and use a reusable cup at least five times a week.' Which variable families does this description use?",
+    "options": [
+      "Geographic, demographic, psychographic and behaviouristic",
+      "Demographic and geographic only",
+      "Demographic, psychographic and behaviouristic only",
+      "Geographic, psychographic and behaviouristic only"
+    ],
+    "answer": 0,
+    "explanation": "Women aged 25-34 = demographic; suburban Calgary = geographic; values sustainability = psychographic; uses a cup at least five times a week = usage rate, which is behaviouristic. All four families appear.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-052",
+    "concept": "c06-consumer-variables",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why do marketers often combine several variable families (for example, demographic plus psychographic) instead of relying on just one?",
+    "options": [
+      "Because using only one variable family is not permitted under Canadian privacy law",
+      "Because psychographic data is always cheaper and more accurate to collect than demographic or geographic data",
+      "Because people with the same census profile can differ in values and product use, so combining variables gives more homogeneous segments",
+      "Because combining several variable families guarantees that every resulting segment will be roughly the same size"
+    ],
+    "answer": 2,
+    "explanation": "Segments should be relatively homogeneous in needs and response. Two people with identical demographics may behave very differently, so layering psychographic or behaviouristic variables sharpens the segments, as in the concert example that combines geography with music taste.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-053",
+    "concept": "c06-geographic",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "Northern Hardware stocks far more snowblowers and block heaters in its Thunder Bay store than in its Victoria, BC, store because of the difference in winter weather. This is segmentation based on:",
+    "options": [
+      "geographic variables",
+      "demographic variables",
+      "psychographic variables",
+      "behaviouristic variables"
+    ],
+    "answer": 0,
+    "explanation": "Climate and region are geographic variables. Demographic variables would be things like age, income or family life cycle, none of which the stem mentions.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-054",
+    "concept": "c06-geographic",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Region, city size, urban/suburban/rural location and climate are all _____ segmentation variables.",
+    "options": [
+      "demographic",
+      "behaviouristic",
+      "geographic",
+      "psychographic"
+    ],
+    "answer": 2,
+    "explanation": "These variables describe where the target market lives and works, so they are geographic. City size can feel like a census statistic, but it describes a place rather than a person, so it is not demographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-055",
+    "concept": "c06-geographic",
+    "also": [
+      "c06-usage-rate"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "A transit-app company targets 'residents of large urban centres such as Toronto and Montreal' and, within that group, 'commuters who ride transit more than 10 times a week.' Which variable types are these, respectively?",
+    "options": [
+      "Demographic; psychographic",
+      "Geographic; demographic",
+      "Geographic; behaviouristic",
+      "Psychographic; behaviouristic"
+    ],
+    "answer": 2,
+    "explanation": "Large urban centres = city size and urban location, which are geographic. Riding more than 10 times a week = usage rate, a behaviouristic variable; it describes how they use the service, not who they are demographically.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-056",
+    "concept": "c06-geographic",
+    "also": [
+      "c06-demographic"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT a geographic segmentation variable?",
+    "options": [
+      "Climate",
+      "Family life cycle",
+      "City size",
+      "Urban, suburban or rural area"
+    ],
+    "answer": 1,
+    "explanation": "Family life cycle (single, young couple, family with children, empty nesters) is a demographic variable. Climate, city size and urban/suburban/rural location are geographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-057",
+    "concept": "c06-geographic",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "A Calgary ice-melt manufacturer with a limited distribution budget must decide which parts of Canada to supply first. Which segmentation variable should be its starting point?",
+    "options": [
+      "Personality (psychographic)",
+      "Education level (demographic)",
+      "Loyalty status (behaviouristic)",
+      "Climate and region (geographic)"
+    ],
+    "answer": 3,
+    "explanation": "Demand for ice melt depends on winter conditions, and the decision is about WHERE to distribute, which is a geographic question about climate and region. Personality and education have nothing to do with whether a place gets icy.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-058",
+    "concept": "c06-demographic",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Little Sprouts, an Edmonton daycare-supply company, aims its ads at households with children under five and annual household incomes over $90,000. This is segmentation by:",
+    "options": [
+      "psychographic variables",
+      "demographic variables",
+      "behaviouristic variables",
+      "geographic variables"
+    ],
+    "answer": 1,
+    "explanation": "Family life cycle (children under five) and income are demographic, census-type variables. Edmonton is mentioned only as the company's home base, not as the variable used to segment.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-059",
+    "concept": "c06-demographic",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT a demographic segmentation variable?",
+    "options": [
+      "Occupation",
+      "Generation",
+      "Household size",
+      "Lifestyle"
+    ],
+    "answer": 3,
+    "explanation": "Lifestyle (activities, interests, opinions) is psychographic. Occupation, generation and household size are basic census-type information, so they are demographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-060",
+    "concept": "c06-demographic",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A brand targets 'Gen Z university students' and, within that group, 'people who see themselves as adventurous risk-takers.' Which pair correctly classifies these two descriptions?",
+    "options": [
+      "Psychographic; demographic",
+      "Demographic; behaviouristic",
+      "Demographic; psychographic",
+      "Behaviouristic; psychographic"
+    ],
+    "answer": 2,
+    "explanation": "Generation and education level are demographic. Seeing oneself as an adventurous risk-taker is personality, which is psychographic; it isn't behaviouristic because it says nothing about how they use the product.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-061",
+    "concept": "c06-demographic",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The course describes demographic variables as the target market's:",
+    "options": [
+      "prevailing attitudes, values and interests",
+      "use of and interaction with the product",
+      "place of residence and work",
+      "basic census-type information"
+    ],
+    "answer": 3,
+    "explanation": "Demographic = basic census-type information such as age, gender, income and education. Attitudes and values are psychographic, product use is behaviouristic, and where people live and work is geographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-062",
+    "concept": "c06-demographic",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Two 40-year-old Calgary accountants with identical incomes and family situations buy very different vehicles: one a sporty convertible, the other a practical hybrid. Why can't demographic segmentation alone explain this?",
+    "options": [
+      "Demographic variables measure only usage rate, so they cannot explain which product a person chooses",
+      "Demographic data cannot legally be used in Canada to market vehicles to individual consumers",
+      "Demographics describe who people are statistically, not the personalities, values or lifestyles that psychographics capture",
+      "Demographic variables always predict purchases perfectly, so the survey data must be inaccurate"
+    ],
+    "answer": 2,
+    "explanation": "Demographics capture census-type facts; differences in values and personality (thrill-seeking versus practicality) are psychographic. Usage rate is a behaviouristic variable, not a demographic one.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-063",
+    "concept": "c06-psychographic",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Nike recently debuted Air Jordan XVII with a price tag of $200. The shoes arrived at shoe stores in a metallic silver briefcase instead of a shoebox. Nike is targeting a market it identifies as 'keepers,' people who buy the shoes, keep them under their bed and when friends come over, show them the shoes. Selling to the market segment called 'keepers' probably means that Nike is using which of the following types of customer characteristic variables to segment this market?",
+    "options": [
+      "demographics",
+      "psychographics",
+      "usage",
+      "benefits sought",
+      "behaviour"
+    ],
+    "answer": 1,
+    "explanation": "'Keepers' are defined by personality and lifestyle (collecting and showing off), which are psychographic variables. 'Usage' and 'behaviour' are tempting because the stem describes what people do, but keeping shoes unworn reflects personality, not how much or how they use the product.",
+    "source": "official"
+  },
+  {
+    "id": "q06-064",
+    "concept": "c06-psychographic",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Lifestyle, measured through consumers' activities, interests and opinions (AIO), together with personality and values, makes up which family of segmentation variables?",
+    "options": [
+      "Demographic",
+      "Behaviouristic",
+      "Geographic",
+      "Psychographic"
+    ],
+    "answer": 3,
+    "explanation": "Lifestyle (AIO), personality and values are psychographic variables. Behaviouristic variables cover product-related behaviour such as usage rate and benefits sought.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-065",
+    "concept": "c06-psychographic",
+    "also": [
+      "c06-behaviouristic"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A fitness club is building four segments. Which one is based on a PSYCHOGRAPHIC variable rather than a behaviouristic one?",
+    "options": [
+      "Members who visit the club five or more times a week",
+      "Former members who did not renew their membership last year",
+      "People who describe themselves as competitive achievers who love a challenge",
+      "People who sign up during the club's January New Year promotion"
+    ],
+    "answer": 2,
+    "explanation": "Seeing oneself as a competitive achiever is personality/lifestyle, which is psychographic. Visit frequency is usage rate, former members is user status, and January sign-ups is purchase occasion; all three are behaviouristic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-066",
+    "concept": "c06-psychographic",
+    "also": [
+      "c06-usage-rate"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following would NOT be classified as a psychographic variable?",
+    "options": [
+      "Personality",
+      "Usage rate",
+      "Values",
+      "Attitudes"
+    ],
+    "answer": 1,
+    "explanation": "Usage rate (heavy, medium, light and non-users) is behaviouristic. Personality, values and attitudes all describe the consumer's inner life, which is psychographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-067",
+    "concept": "c06-psychographic",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "Arctic Trail Outfitters wants to build its next campaign around psychographic segments. Which information should its research team collect?",
+    "options": [
+      "Customers' ages, incomes and education levels",
+      "How often customers buy and which benefits they seek",
+      "Customers' provinces, city sizes and climates",
+      "Customers' activities, interests, opinions and values"
+    ],
+    "answer": 3,
+    "explanation": "Psychographic segmentation uses lifestyle (activities, interests, opinions), personality and values. Ages and incomes are demographic, purchase frequency and benefits sought are behaviouristic, and provinces and climates are geographic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-068",
+    "concept": "c06-behaviouristic",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Brightsmile toothpaste offers one version for people who want whiter teeth, one for people who want cavity protection, and one for people with sensitive teeth who want pain relief. Brightsmile is segmenting on:",
+    "options": [
+      "personality",
+      "benefits sought",
+      "family life cycle",
+      "usage rate"
+    ],
+    "answer": 1,
+    "explanation": "Grouping buyers by what they want the product to do for them is segmentation by benefits sought, a behaviouristic variable. Usage rate would group them by how much toothpaste they use.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-069",
+    "concept": "c06-behaviouristic",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A telecom company creates different offers for three groups: people who have never had its service, first-time subscribers, and customers who cancelled last year. Which behaviouristic variable is it using?",
+    "options": [
+      "Loyalty status",
+      "User status",
+      "Usage rate",
+      "Benefits sought"
+    ],
+    "answer": 1,
+    "explanation": "Non-users, first-time users and ex-users are categories of user status. Loyalty status measures how committed current buyers are to the brand, and usage rate measures how much they use it.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-070",
+    "concept": "c06-behaviouristic",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The course describes behaviouristic variables as answering which question about a target market?",
+    "options": [
+      "Where does it live and work?",
+      "What is its basic census-type information?",
+      "What attitudes, values and interests does it share?",
+      "How does it use and interact with the product?"
+    ],
+    "answer": 3,
+    "explanation": "Behaviouristic = how the target market uses and interacts with the product (benefits sought, usage rate, user status, loyalty, occasion). The other questions describe geographic, demographic and psychographic variables.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-071",
+    "concept": "c06-behaviouristic",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "A coffee chain notices that some customers always buy its brand and nothing else, while others buy whichever brand is on sale. Segmenting customers on this difference uses which variable?",
+    "options": [
+      "Personality (psychographic)",
+      "Loyalty status (behaviouristic)",
+      "Income (demographic)",
+      "Values (psychographic)"
+    ],
+    "answer": 1,
+    "explanation": "How committed a buyer is to one brand is loyalty status, a behaviouristic variable. It can sound like an attitude, but it describes the customer's buying relationship with the product, not their general personality or values.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-072",
+    "concept": "c06-behaviouristic",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT a behaviouristic segmentation variable?",
+    "options": [
+      "Personality",
+      "Benefits sought",
+      "Purchase occasion",
+      "Loyalty status"
+    ],
+    "answer": 0,
+    "explanation": "Personality is psychographic. Benefits sought, purchase occasion, loyalty status, user status and usage rate are behaviouristic because they describe how people use and interact with the product.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-073",
+    "concept": "c06-usage-rate",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The concept suggesting that 80 percent of a firm's sales are obtained from 20 percent of its customers is the:",
+    "options": [
+      "80/20 rule",
+      "usage rate",
+      "loyalty status",
+      "market-product grid"
+    ],
+    "answer": 0,
+    "explanation": "That is the 80/20 rule. Usage rate is the related variable (quantity consumed or store visits during a period) used to find the heavy users who produce most of the sales.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-074",
+    "concept": "c06-usage-rate",
+    "also": [],
+    "type": "mc",
+    "angle": "calc",
+    "difficulty": 2,
+    "stem": "Lakeshore Pizza has 2,000 customers and annual sales of $500,000. If its sales follow the 80/20 rule exactly, about how much revenue comes from its 400 heaviest customers?",
+    "options": [
+      "$400,000",
+      "$100,000",
+      "$250,000",
+      "$80,000"
+    ],
+    "answer": 0,
+    "explanation": "400 / 2,000 = 20% of customers. Under the 80/20 rule, they produce 80% of sales: 0.80 x $500,000 = $400,000. The $100,000 figure is the 20% of sales that comes from the other 1,600 customers.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-075",
+    "concept": "c06-usage-rate",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "An Edmonton car wash learns that a small group of heavy users who wash their cars weekly generates most of its revenue. Following the logic of usage-rate segmentation and the 80/20 rule, what should it do?",
+    "options": [
+      "Create a frequency or loyalty program that rewards and retains the heavy users",
+      "Stop marketing to heavy users, since they will keep coming anyway",
+      "Shift all of its spending to non-users who live outside the city",
+      "Replace its usage data with census data on customers' ages and incomes"
+    ],
+    "answer": 0,
+    "explanation": "Because a small share of heavy users produces most of the sales, protecting and rewarding them with frequency or loyalty programs is the classic 80/20 response. Ignoring them risks losing the customers who matter most.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-076",
+    "concept": "c06-usage-rate",
+    "also": [
+      "c06-behaviouristic"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Montreal grocery chain sorts shoppers into heavy, medium, light and non-users of its in-store bakery, based on how many times they buy bakery items each month. This is segmentation by:",
+    "options": [
+      "benefits sought",
+      "lifestyle",
+      "usage rate",
+      "family life cycle"
+    ],
+    "answer": 2,
+    "explanation": "Usage rate is the quantity consumed or patronage during a specific period, usually classified as heavy, medium, light and non-users. Benefits sought would group shoppers by what they want from the bakery, not by how often they buy.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-077",
+    "concept": "c06-usage-rate",
+    "also": [
+      "c06-behaviouristic"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which statement correctly contrasts usage rate with loyalty status?",
+    "options": [
+      "Usage rate measures a buyer's commitment to one brand; loyalty status measures the quantity consumed in a period",
+      "Usage rate is how much or how often a product is used in a period; loyalty status is commitment to one brand",
+      "Both measure the number of store visits in a period, so the two variables are interchangeable",
+      "Usage rate is a psychographic variable, while loyalty status is a demographic variable"
+    ],
+    "answer": 1,
+    "explanation": "Usage rate = quantity or frequency in a period (heavy versus light users); loyalty status = commitment to a brand. A heavy user can still switch brands freely, and both variables are behaviouristic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-078",
+    "concept": "c06-business-segmentation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "An industrial-cleaning supplier uses one sales approach for clients whose head office buys for every location, and a different approach for clients where each branch does its own buying. This business-market segmentation is based on:",
+    "options": [
+      "operating characteristics",
+      "situational factors",
+      "personal characteristics",
+      "purchasing approaches"
+    ],
+    "answer": 3,
+    "explanation": "Centralized versus decentralized buying is a purchasing-approaches base. Operating characteristics describe the technology or capabilities a client has, not how it organizes its buying.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-079",
+    "concept": "c06-business-segmentation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Calgary pipe-fitting distributor creates a premium service for oil-field customers who need emergency parts delivered within hours, and it prices small rush orders differently from large planned orders. Which business segmentation base is this?",
+    "options": [
+      "Purchasing approaches",
+      "Demographics",
+      "Operating characteristics",
+      "Situational factors"
+    ],
+    "answer": 3,
+    "explanation": "Urgency, order size and specific application are situational factors. Purchasing approaches would focus on how the customer organizes its buying (centralized or decentralized, buying criteria), not on the urgency of a particular order.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-080",
+    "concept": "c06-business-segmentation",
+    "also": [
+      "c06-behaviouristic"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 2,
+    "stem": "In business markets, the technology a customer uses, whether it is a user or non-user of a product, and its capabilities all fall under which segmentation base?",
+    "options": [
+      "Operating characteristics",
+      "Personal characteristics",
+      "Situational factors",
+      "Purchasing approaches"
+    ],
+    "answer": 0,
+    "explanation": "Technology, user status and capabilities are operating characteristics. Note that user status is behaviouristic in consumer markets but sits under operating characteristics in business markets.",
+    "source": "generated"
+  }
+]

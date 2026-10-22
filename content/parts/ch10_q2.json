@@ -1,0 +1,731 @@
+[
+ {
+  "id": "q10-041",
+  "concept": "c10-direct-indirect",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A small Ontario jam maker that sells its jars through Amazon's online store is using a direct channel because the sale happens online.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Corrected statement: the jam maker is using an indirect channel because Amazon is an intermediary between it and the consumer. A channel is direct only when producer and consumer deal with each other with no intermediaries, online or offline.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-042",
+  "concept": "c10-direct-indirect",
+  "also": [
+   "c10-channel-choice-factors"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Peak Analytics makes complex, custom-configured laboratory instruments bought by a small number of hospitals and universities, each needing extensive technical consultation before purchase. Which channel approach fits best?",
+  "options": [
+   "An indirect channel through wholesalers and retailers",
+   "Intensive distribution through as many outlets as possible",
+   "A long channel with an agent, a wholesaler and a retailer",
+   "A direct channel using the company's own technical sales force"
+  ],
+  "answer": 3,
+  "explanation": "Technical complexity, high unit value and few buyers all point to a short, direct channel where the producer can provide expert information. Long indirect channels suit low-value, standardized products sold to many buyers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-043",
+  "concept": "c10-consumer-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Polar Pops, a small Winnipeg candy maker, wants its chocolate bars in thousands of convenience stores across Canada. According to the chapter, which consumer channel is most common for low-cost, low-unit-value items like this?",
+  "options": [
+   "Producer -> Consumer",
+   "Producer -> Retailer -> Consumer",
+   "Producer -> Wholesaler -> Retailer -> Consumer",
+   "Producer -> Industrial distributor -> Industrial user"
+  ],
+  "answer": 2,
+  "explanation": "Channel C (producer, wholesaler, retailer, consumer) is the most common for low-cost, low-unit-value items such as candy and magazines: the wholesaler breaks bulk and reaches many small stores economically. Producer -> Retailer -> Consumer works when a large retailer buys directly, which thousands of small convenience stores cannot do.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-044",
+  "concept": "c10-consumer-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Canadian Tire buys barbecues directly from the manufacturer in huge volumes and sells them to shoppers in its stores. Which consumer channel structure is this?",
+  "options": [
+   "Producer -> Retailer -> Consumer",
+   "Producer -> Consumer",
+   "Producer -> Wholesaler -> Retailer -> Consumer",
+   "Producer -> Agent -> Wholesaler -> Retailer -> Consumer"
+  ],
+  "answer": 0,
+  "explanation": "Channel B is used when a large retailer such as Walmart or Canadian Tire buys directly from the producer, so no wholesaler is needed. Channel C adds a wholesaler, typical for low-unit-value items sold through many small retailers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-045",
+  "concept": "c10-consumer-channels",
+  "also": [
+   "c10-intermediary-terms"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Sweet Prairie, a large candy maker, uses independent agents who earn commissions for connecting it with regional wholesalers; the wholesalers then supply retailers. Which channel is this, and what role does the agent play?",
+  "options": [
+   "Producer -> Wholesaler -> Retailer -> Consumer; 'agent' is just another name for the wholesaler",
+   "Producer -> Agent -> Wholesaler -> Retailer -> Consumer; the agent links producer and wholesalers, without title",
+   "Producer -> Retailer -> Consumer; the agent acts as the retailer selling to shoppers",
+   "Producer -> Agent -> Consumer; the agent takes title and sells directly to shoppers"
+  ],
+  "answer": 1,
+  "explanation": "Channel D adds an agent in front of the wholesaler; agents bring producers and wholesalers together (Mars candy is the chapter's example) and, unlike wholesalers, do not take title. An agent is not just another name for a wholesaler.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-046",
+  "concept": "c10-consumer-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which consumer channel example is NOT correctly matched with its structure?",
+  "options": [
+   "Mary Kay: Producer -> Consumer",
+   "Walmart buying from manufacturers: Producer -> Retailer -> Consumer",
+   "Dell selling computers on its own website: Producer -> Agent -> Wholesaler -> Retailer -> Consumer",
+   "Magazines sold in corner stores: Producer -> Wholesaler -> Retailer -> Consumer"
+  ],
+  "answer": 2,
+  "explanation": "Dell selling on its own site is the chapter's example of the direct channel A (Producer -> Consumer), not the longest channel D. The other three pairings match the chapter's figure.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-047",
+  "concept": "c10-consumer-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In consumer channel D, which member comes immediately after the producer?",
+  "options": [
+   "Wholesaler",
+   "Retailer",
+   "Industrial distributor",
+   "Agent"
+  ],
+  "answer": 3,
+  "explanation": "Channel D runs Producer -> Agent -> Wholesaler -> Retailer -> Consumer, so the agent comes right after the producer. Industrial distributors appear only in business (B2B) channels.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-048",
+  "concept": "c10-business-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Rockies Heavy Equipment buys loaders and excavators from a manufacturer, holds them in inventory, and sells and services them for construction firms in its region. In a business channel, Rockies is acting as a(n):",
+  "options": [
+   "industrial distributor",
+   "agent",
+   "retailer",
+   "broker"
+  ],
+  "answer": 0,
+  "explanation": "An industrial distributor performs functions similar to a wholesaler in business markets: taking title, holding inventory and reselling to industrial users (the chapter's Caterpillar example). Agents and brokers do not take title or possession, and retailers sell to consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-049",
+  "concept": "c10-business-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "In business channel D (Producer -> Agent -> Industrial distributor -> Industrial user), how do the agent and the industrial distributor differ?",
+  "options": [
+   "The agent takes title and holds the inventory; the industrial distributor only negotiates sales for a commission",
+   "Both take title to the goods, but only the agent extends credit to industrial users",
+   "The agent arranges sales without taking title or possession; the distributor takes title and holds inventory",
+   "The agent sells to final consumers; the industrial distributor sells mainly to retailers"
+  ],
+  "answer": 2,
+  "explanation": "Agents do not take title or physical possession of goods; they negotiate on the producer's behalf. The industrial distributor, like a wholesaler, buys, stocks and resells to industrial users. Neither sells to consumers in a B2B channel.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-050",
+  "concept": "c10-business-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Hartland Sensors, a small Ontario maker of industrial sensors, cannot afford its own sales force but wants to reach manufacturing plants across Canada. Sensors ship straight from its factory to each plant. Which business channel fits best?",
+  "options": [
+   "Producer -> Industrial user, using its own sales force",
+   "Producer -> Wholesaler -> Retailer -> Consumer",
+   "Producer -> Retailer -> Consumer",
+   "Producer -> Agent -> Industrial user"
+  ],
+  "answer": 3,
+  "explanation": "An agent can represent the producer and negotiate sales without the firm building a sales force, and because goods ship directly from the factory no distributor is needed to hold inventory. The direct option requires the sales force Hartland cannot afford, and the other two are consumer channels.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-051",
+  "concept": "c10-business-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT one of the business (B2B) channel structures described in the chapter?",
+  "options": [
+   "Producer -> Industrial user",
+   "Producer -> Industrial distributor -> Retailer -> Consumer",
+   "Producer -> Industrial distributor -> Industrial user",
+   "Producer -> Agent -> Industrial user"
+  ],
+  "answer": 1,
+  "explanation": "Business channels end with an industrial user, never a consumer, and never include a retailer. The other three are channels A, B and C of the B2B figure.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-052",
+  "concept": "c10-business-channels",
+  "also": [
+   "c10-channel-choice-factors"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a company like IBM sell large computing systems to major corporations through a direct channel rather than through distributors?",
+  "options": [
+   "Complex, expensive systems sold to a few large buyers justify a direct sales force with technical expertise",
+   "Business law requires producers of all industrial products to sell through direct channels",
+   "Industrial distributors are not permitted to stock or resell technology products",
+   "Direct channels always cost less than indirect channels, whatever the product or buyer"
+  ],
+  "answer": 0,
+  "explanation": "Business channels tend to be direct when products are technical and high in unit value and customers are few and large, because the producer's own sales force can supply the information buyers need. Nothing requires direct channels, and direct is not automatically cheaper.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-053",
+  "concept": "c10-electronic-direct-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Expedia lets travellers compare and book flights and hotels from many suppliers on its website. Expedia is an example of a(n):",
+  "options": [
+   "direct channel",
+   "corporate vertical marketing system",
+   "horizontal marketing system",
+   "electronic marketing channel"
+  ],
+  "answer": 3,
+  "explanation": "Electronic marketing channels use the Internet to make goods and services available. Expedia is an intermediary between travellers and the airlines and hotels, so it is not a direct channel from the producers' point of view.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-054",
+  "concept": "c10-electronic-direct-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northern Home Shopping, a TV channel, airs product demonstrations and viewers phone in their orders; no salesperson ever meets the buyer. This is an example of a:",
+  "options": [
+   "strategic channel alliance",
+   "dual distribution system",
+   "direct marketing channel",
+   "retailer-sponsored cooperative"
+  ],
+  "answer": 2,
+  "explanation": "Direct marketing channels let consumers buy by interacting with advertising media (catalogues, telemarketing, direct mail, TV home shopping, online) without a face-to-face meeting with a salesperson.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-055",
+  "concept": "c10-electronic-direct-channels",
+  "also": [
+   "c10-direct-indirect"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes a direct marketing channel from a direct channel?",
+  "options": [
+   "Direct marketing is buying via media (catalogue, TV, online) with no salesperson; a direct channel has no intermediaries",
+   "They are identical terms for a producer selling straight to consumers with no intermediaries involved",
+   "A direct marketing channel always includes a retailer, while a direct channel always includes a wholesaler",
+   "A direct channel uses only the Internet, while a direct marketing channel uses only telephone sales"
+  ],
+  "answer": 0,
+  "explanation": "The terms answer different questions: direct marketing is HOW the buyer purchases (through media, no salesperson); a direct channel is about WHO is in the channel (no intermediaries). A TV shopping network that sells many brands is a direct marketing channel but is still an intermediary.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-056",
+  "concept": "c10-electronic-direct-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the e-commerce trends highlighted in the course?",
+  "options": [
+   "Using AI for personalization, along with AR and VR",
+   "Moving away from free delivery to cut costs",
+   "Offering multiple payment options such as buy now, pay later",
+   "Social selling and voice activation"
+  ],
+  "answer": 1,
+  "explanation": "The trends slide lists fast, free delivery as a trend, the opposite of dropping it. AI, AR and VR, multiple payment options, social selling and voice activation are all on the list, along with CRM, hybrid commerce, data privacy and sustainability.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-057",
+  "concept": "c10-electronic-direct-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the course's e-commerce trends slide, which two product categories lead online sales?",
+  "options": [
+   "Fashion and electronics",
+   "Groceries and pharmaceuticals",
+   "Furniture and automotive parts",
+   "Books and music"
+  ],
+  "answer": 0,
+  "explanation": "The slide names fashion and electronics as the top e-commerce categories. The other pairs are plausible guesses but are not the categories the course identifies.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-058",
+  "concept": "c10-dual-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A firm that reaches buyers by using two or more different types of channels for the same basic product is using:",
+  "options": [
+   "a strategic channel alliance",
+   "dual distribution",
+   "omni-channel retailing",
+   "intensive distribution"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of dual distribution. A strategic channel alliance uses another firm's channel, and intensive distribution is about how many outlets carry the product, not how many channel types.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-059",
+  "concept": "c10-dual-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Peak Outerwear sells the same parkas through Sport Chek stores and through its own online store. Which channel arrangement is this?",
+  "options": [
+   "Strategic channel alliance",
+   "Backward integration",
+   "Exclusive distribution",
+   "Dual distribution"
+  ],
+  "answer": 3,
+  "explanation": "One firm, one basic product, two different channel types (an indirect retail channel and its own direct online channel) = dual distribution. It is not a strategic channel alliance, because Prairie Peak is not using another producer's distribution network.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-060",
+  "concept": "c10-dual-distribution",
+  "also": [
+   "c10-strategic-alliance"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is dual distribution rather than a strategic channel alliance?",
+  "options": [
+   "A small tea brand's products ride on a large cookie maker's delivery trucks to the cookie maker's grocery accounts",
+   "A regional airline's flights are sold through a larger airline's booking system",
+   "A cereal maker sells its granola through grocery chains and through its own subscription website",
+   "A snack brand uses a soft-drink company's vending-machine network to reach consumers"
+  ],
+  "answer": 2,
+  "explanation": "Dual distribution is one firm using two or more of its own channel types for the same product. In the other three, one firm's marketing channel is used to sell another firm's products, which is the definition of a strategic channel alliance.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-061",
+  "concept": "c10-dual-distribution",
+  "also": [
+   "c10-channel-conflict"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is a common risk of dual distribution?",
+  "options": [
+   "Losing the ability to reach more than one market segment",
+   "Being forced to give up ownership of the product",
+   "Eliminating the need for any intermediary functions",
+   "Channel conflict, since the channels may compete for the same customers"
+  ],
+  "answer": 3,
+  "explanation": "Using two channel types for the same product can pit them against each other, for example a retailer resenting the maker's own online store, which is a source of channel conflict. Dual distribution is used precisely to reach more segments, not fewer.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-062",
+  "concept": "c10-dual-distribution",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When a firm uses dual distribution, its website can play multiple roles, such as taking orders (a transactional role) and providing product information (a promotional role).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The chapter notes that websites can play multiple roles, transactional and promotional, when a firm uses them alongside its other channels.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-063",
+  "concept": "c10-strategic-alliance",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "An arrangement whereby one firm's marketing channel is used to sell another firm's products is called a:",
+  "options": [
+   "strategic channel alliance",
+   "dual distribution system",
+   "wholesaler-sponsored voluntary chain",
+   "corporate vertical marketing system"
+  ],
+  "answer": 0,
+  "explanation": "That is the definition of a strategic channel alliance (e.g., Starbucks coffee sold in Safeway). Dual distribution involves one firm using two or more of its own channel types.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-064",
+  "concept": "c10-strategic-alliance",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Nordic Chips, a Quebec snack maker, signs an agreement under which a national soft-drink company sells Nordic's chips through the soft-drink company's own vending-machine route network. This is a:",
+  "options": [
+   "dual distribution system",
+   "retailer-sponsored cooperative",
+   "strategic channel alliance",
+   "case of disintermediation"
+  ],
+  "answer": 2,
+  "explanation": "One firm's marketing channel (the soft-drink company's vending routes) is used to sell another firm's products. It is not disintermediation, because no channel member is being bypassed.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-065",
+  "concept": "c10-strategic-alliance",
+  "also": [
+   "c10-dual-distribution",
+   "c10-vms"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is best classified as a strategic channel alliance?",
+  "options": [
+   "A paint maker sells the same paint through national hardware chains and through its own online store",
+   "A B.C. kombucha maker's drinks ride on a national juice company's trucks and sales force to the juice company's stores",
+   "Two unrelated bakeries in Moncton share the cost of one delivery van and a joint market booth",
+   "A tire maker opens its own chain of tire and service centres in major cities across Canada"
+  ],
+  "answer": 1,
+  "explanation": "In an alliance, one firm's channel sells another firm's products. The paint maker is dual distribution, the bakeries pooling resources at the same level form a horizontal marketing system, and the tire maker owning outlets is forward integration.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-066",
+  "concept": "c10-strategic-alliance",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might a small brand enter a strategic channel alliance with a larger company?",
+  "options": [
+   "It gains legal ownership of the partner's retail stores and warehouses",
+   "It is guaranteed exclusive distribution in every market it enters",
+   "It eliminates all possibility of channel conflict with retailers",
+   "It gains established distribution that would be costly or slow to build itself"
+  ],
+  "answer": 3,
+  "explanation": "Using another firm's channel lets the smaller brand reach buyers quickly without building its own sales force and delivery network. Owning the partner's outlets would be integration (a corporate VMS), which an alliance does not involve.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-067",
+  "concept": "c10-strategic-alliance",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "In a strategic channel alliance, the firm whose products are being sold must own the partner's distribution channel.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Corrected statement: in a strategic channel alliance one firm's marketing channel is used to sell another firm's products, with no ownership required. Owning successive channel stages would be a corporate VMS.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-068",
+  "concept": "c10-multichannel-omni",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Omni-channel retailing is:",
+  "options": [
+   "another term for multichannel marketing.",
+   "the concept of a seamless shopping experience among all shopping channels.",
+   "a historical term describing retailing before technology revolutionized the shopping process.",
+   "when a retailer closes either its online or offline marketing channel to focus on the remaining channel."
+  ],
+  "answer": 1,
+  "explanation": "Omni-channel retailing creates a seamless experience among all available shopping channels: online, catalogue and in-store. It is not just another word for multichannel marketing, which blends channels so they reinforce each other; omni-channel goes further by making them feel like one experience.",
+  "source": "official"
+ },
+ {
+  "id": "q10-069",
+  "concept": "c10-multichannel-omni",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Huron Home, a home decor retailer, lets shoppers start a cart in its app, check live in-store stock, pick up at any store, return online orders in store and earn the same loyalty points everywhere, all as one continuous experience. This best illustrates:",
+  "options": [
+   "dual distribution",
+   "omni-channel retailing",
+   "a strategic channel alliance",
+   "selective distribution"
+  ],
+  "answer": 1,
+  "explanation": "A single, seamless experience across every shopping channel is omni-channel retailing. Dual distribution only requires two channel types for the same product; it says nothing about integrating them into one experience.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-070",
+  "concept": "c10-multichannel-omni",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario reflects multichannel marketing but NOT yet omni-channel retailing?",
+  "options": [
+   "A retailer's catalogue drives web visits and its website drives store traffic, but carts and returns stay separate by channel",
+   "A retailer's app, website and stores share one cart, one loyalty account and one live inventory system",
+   "A retailer closes all of its physical stores to focus only on selling through its website",
+   "A manufacturer sells its products through one exclusive dealer per city across the country"
+  ],
+  "answer": 0,
+  "explanation": "Multichannel marketing blends communication and delivery channels so they reinforce each other; omni-channel requires the customer to experience them seamlessly. Separate carts and returns mean the channels support each other but are not yet seamless.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-071",
+  "concept": "c10-multichannel-omni",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Maya tries on running shoes at a Toronto store, then orders them later on her phone. In multichannel terms, the store visit took place in the _____ and the phone order in the _____.",
+  "options": [
+   "marketspace; marketplace",
+   "supply chain; marketing channel",
+   "marketplace; marketspace",
+   "direct channel; indirect channel"
+  ],
+  "answer": 2,
+  "explanation": "The marketplace is the traditional face-to-face environment; the marketspace is the online, face-to-screen environment. Reversing them is the usual mistake: think of 'space' as in cyberspace.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-072",
+  "concept": "c10-multichannel-omni",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do firms practise multichannel marketing?",
+  "options": [
+   "To make each channel fully independent so that the channels compete for the same customers",
+   "To avoid all face-to-face contact with consumers by moving every sale to the marketspace",
+   "To cut the number of channels down to the single channel that is most profitable",
+   "To leverage each channel's strengths so the channels reinforce one another in building relationships"
+  ],
+  "answer": 3,
+  "explanation": "Multichannel marketing blends communication and delivery channels that are mutually reinforcing, leveraging what each does best. Letting channels compete for the same customers is the conflict that multichannel marketing tries to avoid.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-073",
+  "concept": "c10-global-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In the global channel of distribution (Figure 10-7), what comes immediately after the seller's international marketing headquarters?",
+  "options": [
+   "Channels within foreign nations",
+   "Channels between nations",
+   "Final consumer",
+   "The seller's domestic sales force"
+  ],
+  "answer": 1,
+  "explanation": "The sequence is Seller -> Seller's international marketing headquarters -> Channels between nations -> Channels within foreign nations -> Final consumer. The product must cross borders before it can be distributed inside the foreign market.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-074",
+  "concept": "c10-global-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which link in the global channel of distribution comes immediately before the final consumer?",
+  "options": [
+   "Channels between nations",
+   "Seller's international marketing headquarters",
+   "Channels within foreign nations",
+   "Seller"
+  ],
+  "answer": 2,
+  "explanation": "Channels within foreign nations (local wholesalers and retailers) deliver the product to the final consumer. Channels between nations come earlier, moving the product from the home country into the foreign market.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-075",
+  "concept": "c10-global-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the chapter, channel sophistication in a foreign market tends to increase as:",
+  "options": [
+   "the country's economic infrastructure develops",
+   "the distance from the seller's home country increases",
+   "the seller opens more international headquarters",
+   "the number of competing sellers declines"
+  ],
+  "answer": 0,
+  "explanation": "The chapter states that channel sophistication increases as a country's economic infrastructure develops, since developed economies have more specialized intermediaries. Distance and number of competitors are not the stated driver.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-076",
+  "concept": "c10-global-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Banff Botanicals ships its skincare products to a freight forwarder and export agent who move them from Canada into Japan. These firms belong to which link of the global channel?",
+  "options": [
+   "Channels within foreign nations",
+   "Seller's international marketing headquarters",
+   "Channels between nations",
+   "Final consumer"
+  ],
+  "answer": 2,
+  "explanation": "Firms that move products from the home country to the foreign country form the channels between nations. Channels within foreign nations handle distribution once the product is inside Japan.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-077",
+  "concept": "c10-global-channels",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Once Banff Botanicals' products reach Japan, a Tokyo wholesaler supplies them to department stores across the country. How does this wholesaler's role differ from the export agent's?",
+  "options": [
+   "The Tokyo wholesaler is part of channels within foreign nations; the export agent was part of channels between nations",
+   "Both are part of channels between nations, since both handle imported goods",
+   "The Tokyo wholesaler is the seller's international marketing headquarters",
+   "The export agent is part of channels within foreign nations; the wholesaler is between nations"
+  ],
+  "answer": 0,
+  "explanation": "Distribution inside the foreign market (wholesaler to department stores) is channels within foreign nations; moving goods across the border is channels between nations. The international marketing headquarters belongs to the seller, not to a foreign intermediary.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-078",
+  "concept": "c10-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Professionally managed and centrally coordinated marketing channels designed to achieve channel economies and maximum marketing impact are called:",
+  "options": [
+   "horizontal marketing systems",
+   "vertical marketing systems",
+   "strategic channel alliances",
+   "multichannel marketing systems"
+  ],
+  "answer": 1,
+  "explanation": "This is the definition of a vertical marketing system (VMS). A horizontal marketing system links firms at the same level instead of centrally coordinating the levels of a channel.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-079",
+  "concept": "c10-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What is the key difference between a vertical marketing system and a horizontal marketing system?",
+  "options": [
+   "A VMS always involves franchising; a horizontal system always involves ownership",
+   "A VMS is used only in business markets; a horizontal system only in consumer markets",
+   "A VMS links competitors at the same level; a horizontal system links suppliers and retailers",
+   "A VMS coordinates different channel levels; a horizontal system pools unrelated firms at the same level"
+  ],
+  "answer": 3,
+  "explanation": "'Vertical' means up and down the channel (producer, wholesaler, retailer); 'horizontal' means side by side at the same level. Franchising is only one form of contractual VMS, so 'always franchising' is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-080",
+  "concept": "c10-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Two unrelated Moncton businesses, a craft brewery and an artisan cheese maker, share the cost of a refrigerated delivery van and a joint booth at farmers' markets. This is best described as a:",
+  "options": [
+   "corporate vertical marketing system",
+   "horizontal marketing system",
+   "administered vertical marketing system",
+   "retailer-sponsored cooperative"
+  ],
+  "answer": 1,
+  "explanation": "Two or more unrelated companies at the same channel level (both are producers) pooling resources form a horizontal marketing system. A VMS would coordinate different levels, and a retailer-sponsored cooperative is formed by retailers, not producers.",
+  "source": "generated"
+ }
+]

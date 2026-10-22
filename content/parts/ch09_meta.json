@@ -1,0 +1,1030 @@
+{
+ "chapter": 9,
+ "title": "Pricing",
+ "topics": [
+  {
+   "id": "t09-1",
+   "order": 1,
+   "title": "Price, value and the 3 Cs",
+   "summary": "Price is whatever a buyer gives up - money or other considerations - to own or use a product, and the price equation shows how a list price becomes the final price. Price also signals quality and value, so it both earns revenue and teaches the firm about its market. Consumer psychology (reference prices, odd/even endings) and the 3 Cs - customers, costs and competition - frame every pricing decision.",
+   "concepts": [
+    "c09-price",
+    "c09-value-pricing",
+    "c09-price-importance",
+    "c09-consumer-psychology",
+    "c09-three-cs"
+   ]
+  },
+  {
+   "id": "t09-2",
+   "order": 2,
+   "title": "Pricing objectives and constraints",
+   "summary": "Before picking a number, a firm decides what price must accomplish (objectives such as profit, market share or survival) and recognizes what limits it (constraints such as demand, product newness, costs, the type of competitive market and competitors' prices). Objectives are goals; constraints are boundaries.",
+   "concepts": [
+    "c09-pricing-objectives",
+    "c09-pricing-constraints"
+   ]
+  },
+  {
+   "id": "t09-3",
+   "order": 3,
+   "title": "Demand, revenue, costs and break-even",
+   "summary": "A demand curve shows how many units sell at each price, and price elasticity tells you whether a price change will raise or lower total revenue. Costs are fixed or variable; combining revenue and cost gives the profit equation and the break-even point - the quantity where total revenue equals total cost. Expect calculation questions here.",
+   "concepts": [
+    "c09-demand-estimation",
+    "c09-elasticity",
+    "c09-revenue-profit",
+    "c09-cost-concepts",
+    "c09-break-even"
+   ]
+  },
+  {
+   "id": "t09-4",
+   "order": 4,
+   "title": "Step 1: the four approach buckets and demand-oriented pricing",
+   "summary": "Step 1 of setting a final price is choosing an approximate price level using one of four approach buckets: demand-, cost-, profit- or competition-oriented (Figure 9-2 - memorize it). Demand-oriented approaches start from what customers want and will pay: skimming, penetration, prestige, odd-even (covered with consumer psychology), target, bundle and yield management.",
+   "concepts": [
+    "c09-four-approaches",
+    "c09-skimming",
+    "c09-penetration",
+    "c09-prestige",
+    "c09-target-pricing",
+    "c09-bundle",
+    "c09-yield-management"
+   ]
+  },
+  {
+   "id": "t09-5",
+   "order": 5,
+   "title": "Step 1 continued: cost-, profit- and competition-oriented pricing",
+   "summary": "Cost-oriented approaches add a markup to cost (standard markup, cost-plus) - know markup on price vs on cost. Profit-oriented approaches solve the profit equation for the price that hits a dollar profit or a percentage return. Competition-oriented approaches benchmark against rivals (customary; above-, at- or below-market; loss leader). Cost-based and value-based pricing run in opposite sequences.",
+   "concepts": [
+    "c09-markup",
+    "c09-cost-plus",
+    "c09-target-profit",
+    "c09-target-return",
+    "c09-customary-market",
+    "c09-loss-leader",
+    "c09-cost-vs-value"
+   ]
+  },
+  {
+   "id": "t09-6",
+   "order": 6,
+   "title": "Steps 2-4 and the legal limits on pricing",
+   "summary": "After choosing an approximate level, the firm sets a list price (one-price or flexible-price policy), makes special adjustments (discounts, allowances, geographic adjustments) and then monitors and adjusts. All of it must respect Canada's Competition Act: no price fixing, illegal price discrimination, deceptive pricing or predatory pricing.",
+   "concepts": [
+    "c09-final-price-steps",
+    "c09-one-flexible",
+    "c09-discounts-allowances",
+    "c09-geographic",
+    "c09-legal"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c09-price",
+   "topic": "t09-1",
+   "term": "Price, barter and the price equation",
+   "definition": "Price is the money or other considerations, including other goods and services, exchanged for the ownership or use of a product. Final price = List price - Incentives and allowances + Extra fees; barter is exchanging goods or services for other goods or services instead of money.",
+   "explain": "Price is not just a sticker number - it is everything the buyer gives up, and it goes by many names (tuition, rent, fare, fee, interest, premium). The price equation turns a list price into what the buyer actually pays: subtract discounts and allowances such as a trade-in, then add extra fees such as financing charges. Barter is the oldest form of price: goods or services are swapped directly with no money changing hands.",
+   "example": "A Calgary property manager buys dishwashers listed at $800, gets a $200 discount and a $20 trade-in credit, and pays $30 for financing: $800 - ($200 + $20) + $30 = $610 per unit.",
+   "contrast": "Barter (goods or services for goods or services, no money) vs a trade-in allowance (the old item reduces a money price, but money still changes hands). In the price equation, incentives and allowances are SUBTRACTED and extra fees (financing, surcharges, late-payment penalties) are ADDED.",
+   "trap": "Calc questions bury the fee: students subtract the financing charge or forget to subtract the trade-in. Group all reductions in brackets, subtract once, then add the fees. 'Other considerations, including other goods and services' is the definition cue for price - not just money.",
+   "mnemonic": "List, Less, Plus: list price, less incentives, plus fees.",
+   "figure": {
+    "type": "list",
+    "title": "The price equation",
+    "items": [
+     "Final price = List price - Incentives and allowances + Extra fees",
+     "Subtract: discounts (quantity, seasonal, trade, cash), coupons, trade-in allowances",
+     "Add: financing charges, surcharges, penalties for late payment",
+     "Barter: goods or services exchanged for goods or services, with no money"
+    ]
+   }
+  },
+  {
+   "id": "c09-value-pricing",
+   "topic": "t09-1",
+   "term": "Value and value pricing",
+   "definition": "Value is the ratio of perceived benefits to price (Value = Perceived benefits / Price). Value pricing is increasing product or service benefits while maintaining or decreasing price.",
+   "explain": "Customers judge a price against what they get. Raise benefits or cut price and perceived value rises; raise price without adding benefits and value falls. For some products price also shapes perceived quality, so a very low price can lower perceived value (a cheap diamond seems fake).",
+   "example": "A Canadian coffee chain adds a free extra shot and a bigger cup while holding its latte at $4.50 - more benefits, same price, so value rises.",
+   "contrast": "Value pricing (more benefits, same or lower price) vs penetration pricing (a low INITIAL price on a new product to win the mass market) vs a plain discount (lower price, same benefits). Value pricing is about the benefits-to-price ratio, not just a low price.",
+   "trap": "Watch the formula direction: value = benefits / price, so a price INCREASE with unchanged benefits LOWERS value. In the diamond question (higher price = higher perceived quality), the blank is 'value' - not 'volume' or 'acceptable cost'.",
+   "mnemonic": "Value = Benefits over Price: raise the top or cut the bottom.",
+   "figure": null
+  },
+  {
+   "id": "c09-price-importance",
+   "topic": "t09-1",
+   "term": "Importance of price: dual role and the quality signal",
+   "definition": "Pricing has a dual purpose or role: (1) generating revenue and (2) learning about the marketplace - for example, the quality heuristic, where consumers use price to judge quality. The other three marketing-mix elements go a long way to create value; pricing is the attempt to capture that value.",
+   "explain": "Price is the only marketing-mix element that brings money in; product, place and promotion create value and cost money. Price also teaches the firm about its market: buyers often read a high price as a sign of high quality. Because pricing is the 'moment of truth' - where the focus of every transaction eventually comes to - a poor pricing strategy can make an otherwise reasonable marketing strategy financially ineffective.",
+   "example": "An Edmonton craft brewery raises its barrel-aged stout from $14 to $19 and sales climb - buyers took the higher price as a sign of a better beer (the quality heuristic).",
+   "contrast": "Price as a quality signal (a heuristic consumers use to judge quality) vs prestige pricing (a deliberate demand-oriented approach of keeping price high for status-conscious buyers). The heuristic is the consumer's shortcut; prestige pricing is a strategy that exploits it.",
+   "trap": "The two roles are generating revenue and learning about the marketplace - not 'creating value' (that is the other three Ps) and not 'covering costs' alone. 'Moment of truth' = pricing is where the transaction's focus ends up, not the first decision a firm makes.",
+   "mnemonic": "Price earns and learns.",
+   "figure": null
+  },
+  {
+   "id": "c09-consumer-psychology",
+   "topic": "t09-1",
+   "term": "Consumer psychology: reference prices and odd-even pricing",
+   "definition": "Reference prices are the prices consumers use to compare against a purchase price (a remembered, 'regular' or competitor price). Odd-even pricing sets prices a few dollars or cents under an even number ($499.99) to suggest a bargain, while even prices ($500) suggest quality; it is one of the demand-oriented approaches.",
+   "explain": "Pricing changes behaviour, so first ask what you want consumers to do. Buyers rarely judge a price in isolation - they compare it with a reference price, which is why 'Regular $80, now $59' works. Price endings matter too: odd endings read as a deal, round even numbers read as premium.",
+   "example": "A hardware chain tags a drill at $99.99 (odd = bargain feel) while a Banff luxury spa lists its signature treatment at an even $250 (quality feel).",
+   "contrast": "Odd-even pricing (small price endings that shape bargain vs quality perceptions) vs prestige pricing (the overall price LEVEL is set high so status-conscious buyers will buy; lowering it can reduce demand). A reference price is a comparison point in the buyer's mind, not a pricing approach.",
+   "trap": "Odd endings signal BARGAIN; even endings signal QUALITY - questions flip these. Odd-even sits in the DEMAND-oriented bucket, not the competition-oriented one, because it works on customer perceptions.",
+   "mnemonic": "Odd = 'oh, a deal'; Even = elegant.",
+   "figure": null
+  },
+  {
+   "id": "c09-three-cs",
+   "topic": "t09-1",
+   "term": "The 3 Cs of pricing",
+   "definition": "The three key considerations when studying pricing: (1) Customers, (2) Costs and (3) Competition. 'Your price' sits among your costs, competitors' prices and what customers want to pay.",
+   "explain": "Costs tell you the lowest price you can sustain in the long run; what customers are willing to pay tells you how high you can go; competitors' prices show where you sit relative to alternatives. A price built from only one C - say, cost plus a margin - can land above what customers will pay or far from the competition.",
+   "example": "A Calgary window-cleaning start-up checks its labour and supply cost per house, surveys homeowners on what they would pay, and compares two rivals' quotes before settling on $249 per home.",
+   "contrast": "The 3 Cs (customers, costs, competition - inputs to the price decision) vs the four approach buckets (demand-, cost-, profit-, competition-oriented - methods for choosing an approximate price level). The 3 Cs do NOT include channels, company or communication.",
+   "trap": "Distractors swap in 'channels', 'company' or 'communication' from other C-lists. It is Customers, Costs, Competition only.",
+   "mnemonic": "Customers' ceiling, Costs' floor, Competition in between.",
+   "figure": {
+    "type": "list",
+    "title": "The 3 Cs of pricing",
+    "items": [
+     "Customers - what the customer wants (is willing) to pay",
+     "Costs - your costs to produce and market the product",
+     "Competition - competitors' prices"
+    ]
+   }
+  },
+  {
+   "id": "c09-pricing-objectives",
+   "topic": "t09-2",
+   "term": "Pricing objectives",
+   "definition": "Pricing objectives specify the role of price in an organization's marketing and strategic plans: profit (managing for long-run profit, current profit or a target return), sales, market share, volume, survival and social responsibility.",
+   "explain": "Objectives answer 'what should our price achieve?' A firm chasing market share prices differently from one trying to survive a downturn or one pricing medicine affordably out of social responsibility. Market share is the ratio of a firm's sales revenue to total industry sales; volume objectives focus on units, for example keeping a plant running at capacity.",
+   "example": "During a slump, an Alberta RV dealer prices units just high enough to cover costs and keep the doors open - a survival objective.",
+   "contrast": "Objectives (goals price must achieve: profit, sales, market share, volume, survival, social responsibility) vs constraints (factors that LIMIT the range of prices: demand, newness, costs, competitive market, competitors' prices). Target return is a profit OBJECTIVE; target return-on-investment pricing is the matching profit-oriented APPROACH.",
+   "trap": "'Competitors' prices' and 'cost of producing' are constraints, not objectives. Market share is measured by revenue relative to total industry sales; volume is about units. Survival = covering costs to stay in business in the short run.",
+   "mnemonic": "Profit, Sales, Share, Volume, Survival, Social: 'People Sell Shares Very Slowly Sometimes'.",
+   "figure": {
+    "type": "list",
+    "title": "Pricing objectives",
+    "items": [
+     "Profit - managing for long-run profit, current profit or a target return",
+     "Sales - growth in dollar or unit sales",
+     "Market share - firm's sales revenue / total industry sales",
+     "Volume - unit volume, e.g., keeping production at capacity",
+     "Survival - covering costs to stay in business in the short run",
+     "Social responsibility - obligations to customers and society (e.g., affordable medicine)"
+    ]
+   }
+  },
+  {
+   "id": "c09-pricing-constraints",
+   "topic": "t09-2",
+   "term": "Pricing constraints (including the type of competitive market)",
+   "definition": "Pricing constraints are factors that limit the range of prices a firm may set: demand for the product class, product and brand; newness of the product (stage in the product life cycle); single product vs product line; cost of producing and marketing the product; cost of changing prices and the time period they apply; type of competitive market; and competitors' prices.",
+   "explain": "Constraints are the walls around your pricing room. A brand-new product faces few substitutes and can carry a higher price; a product in a line must be priced with its siblings in mind (cannibalization or complementary sales). In the long run costs set a FLOOR under price - a firm may price below full cost for a while, but not indefinitely. Market structure matters: a pure monopoly has wide pricing latitude, an oligopoly (few sellers) risks price wars, monopolistic competition (many sellers, differentiated products) allows a range of prices, and in pure competition (many sellers, identical products) the market sets the price.",
+   "example": "A Saskatchewan canola grower must accept the going market price (pure competition), while three national wireless carriers watch each other's every price move (oligopoly).",
+   "contrast": "Constraints limit price; objectives are what price should accomplish. Among market types: oligopoly = FEW sellers that react to each other; monopolistic competition = MANY sellers with DIFFERENTIATED products; pure competition = MANY sellers with IDENTICAL products; pure monopoly = ONE seller.",
+   "trap": "Costs set a FLOOR (not a ceiling) in the LONG run (not the short run). 'Few sellers' means oligopoly even if the products differ; 'many sellers with slight differences' means monopolistic competition.",
+   "mnemonic": "Costs are the floor; customers are the ceiling.",
+   "figure": {
+    "type": "table",
+    "title": "Type of competitive market as a pricing constraint",
+    "head": [
+     "Market type",
+     "Sellers",
+     "Product",
+     "Pricing latitude"
+    ],
+    "rows": [
+     [
+      "Pure monopoly",
+      "One",
+      "Unique, no close substitutes",
+      "Wide latitude"
+     ],
+     [
+      "Oligopoly",
+      "Few",
+      "Similar or differentiated",
+      "Limited - rivals react; price wars possible"
+     ],
+     [
+      "Monopolistic competition",
+      "Many",
+      "Differentiated",
+      "Some - a range of prices"
+     ],
+     [
+      "Pure competition",
+      "Many",
+      "Identical (commodity)",
+      "None - the market sets the price"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-demand-estimation",
+   "topic": "t09-3",
+   "term": "Demand curve, demand factors and forecasting",
+   "definition": "A demand curve is a graph relating the quantity sold to the price, showing the maximum number of units that will be sold at each price. Demand factors - consumer tastes, the price and availability of substitute products, and consumer income - shift the curve; forecasting methods (qualitative, regression, multiple regression, time-series) estimate demand and revenue at a chosen price.",
+   "explain": "A change in the product's own price moves buyers ALONG the demand curve; a change in a demand factor SHIFTS the whole curve. Creating the correct price begins the forecasting process: with a price known, estimate how much customers will buy given your marketing efforts and competitors' efforts, then translate that demand into estimated revenue. Accurate forecasts matter because every revenue, break-even and profit calculation rests on them.",
+   "example": "When layoffs cut household incomes in an Alberta city, demand for restaurant meals shifts left: fewer meals sell at every price even though menu prices have not changed.",
+   "contrast": "Movement along the curve (caused by a change in the product's OWN price) vs a shift of the curve (caused by tastes, substitutes' price or availability, or income). Forecasting: time-series projects past sales patterns over time; regression relates sales to one variable; multiple regression to several; qualitative methods rely on judgment and opinion.",
+   "trap": "The product's own price is NOT a demand factor - it causes movement along the curve. A rival's (substitute's) price IS a demand factor.",
+   "mnemonic": "Own price = slide along; Tastes, Substitutes, Income = shift.",
+   "figure": null
+  },
+  {
+   "id": "c09-elasticity",
+   "topic": "t09-3",
+   "term": "Price elasticity of demand",
+   "definition": "Price elasticity of demand is the percentage change in quantity demanded relative to a percentage change in price (% change in quantity demanded / % change in price). Demand is elastic (greater than 1) when quantity is very responsive to price and inelastic (less than 1) when it is not.",
+   "explain": "Elasticity predicts what a price change does to total revenue. With elastic demand (luxuries, many substitutes), a price cut raises quantity so much that total revenue rises, and a price increase lowers revenue. With inelastic demand (necessities, few substitutes - gasoline, cigarettes), a price increase barely dents quantity, so total revenue rises.",
+   "example": "If an airline cuts fares 10% and seats sold jump 25%, elasticity = 25% / 10% = 2.5 - elastic, so the fare cut increases total revenue.",
+   "contrast": "Elastic: cut price -> total revenue UP; raise price -> total revenue DOWN. Inelastic: raise price -> total revenue UP; cut price -> total revenue DOWN. Skimming relies on an inelastic segment; penetration relies on elastic demand.",
+   "trap": "Formula order: % change in QUANTITY on top, % change in PRICE on the bottom. Many substitutes = elastic; necessity with few substitutes = inelastic. Do not assume a price cut always raises revenue.",
+   "mnemonic": "Elastic stretches: a small price change, a big quantity change.",
+   "figure": {
+    "type": "table",
+    "title": "Elastic vs inelastic demand",
+    "head": [
+     "",
+     "Elastic (greater than 1)",
+     "Inelastic (less than 1)"
+    ],
+    "rows": [
+     [
+      "Quantity response",
+      "Very responsive to price",
+      "Not very responsive"
+     ],
+     [
+      "Typical products",
+      "Luxuries, many substitutes",
+      "Necessities, few substitutes (gasoline, cigarettes)"
+     ],
+     [
+      "Price cut",
+      "Total revenue rises",
+      "Total revenue falls"
+     ],
+     [
+      "Price increase",
+      "Total revenue falls",
+      "Total revenue rises"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-revenue-profit",
+   "topic": "t09-3",
+   "term": "Revenue concepts and the profit equation",
+   "definition": "Total revenue (TR) = unit price x quantity sold; average revenue = TR / quantity (equal to the unit price); marginal revenue = the change in TR from selling one more unit. Profit = Total revenue - Total cost = (P x Q) - [FC + (UVC x Q)].",
+   "explain": "Revenue is what comes in; profit is what is left after all costs. The profit equation is the engine behind break-even analysis and the profit-oriented approaches - plug in what you know and solve for the unknown (price, quantity or profit).",
+   "example": "A Red Deer bakery sells 8,000 pies at $25: TR = $200,000. With fixed costs of $60,000 and a $12 variable cost per pie, profit = $200,000 - ($60,000 + $96,000) = $44,000.",
+   "contrast": "Average revenue (TR divided by units sold = the price) vs marginal revenue (the extra revenue from ONE more unit). Revenue vs profit: revenue ignores costs; profit subtracts both fixed and variable costs.",
+   "trap": "Multiply unit variable cost by quantity before adding fixed cost. Average revenue equals price; marginal revenue is about the next unit. At break-even, TR equals total COST, not profit.",
+   "mnemonic": "Profit = P x Q minus (FC + UVC x Q).",
+   "figure": {
+    "type": "list",
+    "title": "Revenue and profit formulas",
+    "items": [
+     "Total revenue = P x Q",
+     "Average revenue = TR / Q (equals the unit price)",
+     "Marginal revenue = change in TR from selling one more unit",
+     "Profit = TR - TC = (P x Q) - [FC + (UVC x Q)]"
+    ]
+   }
+  },
+  {
+   "id": "c09-cost-concepts",
+   "topic": "t09-3",
+   "term": "Cost concepts: fixed, variable, total, unit variable and marginal cost",
+   "definition": "Total cost = fixed cost + variable cost. Fixed costs do not change with the quantity produced (rent, executive salaries, insurance); variable costs change directly with quantity (materials, direct labour per unit); unit variable cost = variable cost / quantity; marginal cost = the change in total cost from producing one more unit.",
+   "explain": "Whether a cost is fixed or variable depends on whether it moves with output. Rent is the same whether you make 10 frames or 1,000; glass and moulding for each frame rise with every unit. Separating the two is what makes break-even and target-profit calculations possible.",
+   "example": "A Winnipeg picture-frame shop pays $32,000 a year in rent and salaries (fixed) and $40 in materials and labour per frame (unit variable cost).",
+   "contrast": "Fixed cost (constant in total as volume changes) vs variable cost (rises in total with each unit). Unit variable cost (variable cost per unit) vs marginal cost (the added cost of the NEXT unit).",
+   "trap": "Salaries, rent and insurance are fixed; per-unit materials and packaging are variable. Total cost includes BOTH fixed and variable cost.",
+   "mnemonic": "Fixed = Frozen; Variable = Varies with volume.",
+   "figure": null
+  },
+  {
+   "id": "c09-break-even",
+   "topic": "t09-3",
+   "term": "Break-even analysis",
+   "definition": "Break-even analysis is a technique that examines the relationship between total revenue and total cost to determine profitability at various levels of output. Break-even point (quantity) = Fixed cost / (Unit price - Unit variable cost).",
+   "explain": "The break-even point (BEP) is the quantity at which total revenue equals total cost - no profit, no loss. Each unit sold contributes (price - unit variable cost) toward fixed costs; once fixed costs are covered, every further unit adds profit. On a break-even chart, the area between the lines beyond the BEP is profit; before it is loss.",
+   "example": "A frame store with $32,000 fixed cost, a $120 price and a $40 unit variable cost breaks even at 32,000 / (120 - 40) = 400 frames (Figure 9-8).",
+   "contrast": "Break-even (the quantity where TR = TC and profit = 0) vs target-profit pricing (solve the same profit equation for the PRICE that yields a chosen dollar profit). Raising price or cutting variable cost lowers the BEP; raising fixed cost raises it.",
+   "trap": "Divide fixed cost by the contribution per unit (price minus UVC), not by price alone. The answer is in UNITS; multiply by price to get break-even dollars.",
+   "mnemonic": "Fixed over (Price minus Variable).",
+   "figure": {
+    "type": "list",
+    "title": "Break-even essentials (Figure 9-8 logic)",
+    "items": [
+     "BEP (units) = FC / (P - UVC)",
+     "Total cost line = fixed cost + variable cost; it starts at the fixed-cost level",
+     "Total revenue line starts at zero",
+     "Beyond the BEP: profit; before the BEP: loss",
+     "Higher price or lower UVC -> lower BEP; higher FC -> higher BEP"
+    ]
+   }
+  },
+  {
+   "id": "c09-four-approaches",
+   "topic": "t09-4",
+   "term": "Four approaches for selecting an approximate price level (Figure 9-2)",
+   "definition": "Step 1 of setting a final price uses one of four groups of approaches: demand-oriented (skimming, penetration, prestige, odd-even, target, bundle, yield management), cost-oriented (standard markup, cost-plus), profit-oriented (target profit, target return on sales, target return on investment) and competition-oriented (customary; above-, at- or below-market; loss leader).",
+   "explain": "Each bucket starts from a different question. Demand-oriented: what are customers' tastes and preferences, and what will they pay? Cost-oriented: what does it cost, plus a markup? Profit-oriented: what price hits a specific dollar profit or a percentage of sales or investment (this depends on accurate demand estimates)? Competition-oriented: what are competitors doing?",
+   "example": "A Vancouver bike maker could price a new e-bike by skimming (demand), adding 40% to cost (cost), solving for $500,000 profit (profit) or pricing just under rivals (competition).",
+   "contrast": "Target pricing is DEMAND-oriented (start with what consumers will pay, work backward to cost), while target profit and target return are PROFIT-oriented. Prestige is demand-oriented; above-market is competition-oriented. Loss leader is competition-oriented, not demand-oriented.",
+   "trap": "The word 'target' appears in two buckets: target pricing (demand) vs target profit, target return on sales and target ROI (profit). Odd-even and bundle are demand-oriented. Expect 'which is NOT a ___-oriented approach' questions.",
+   "mnemonic": "Demand has 7, Cost has 2, Profit has 3, Competition has 3 (7-2-3-3).",
+   "figure": {
+    "type": "table",
+    "title": "Figure 9-2: Four approaches for selecting an approximate price level",
+    "head": [
+     "Demand-oriented",
+     "Cost-oriented",
+     "Profit-oriented",
+     "Competition-oriented"
+    ],
+    "rows": [
+     [
+      "Skimming",
+      "Standard markup",
+      "Target profit",
+      "Customary"
+     ],
+     [
+      "Penetration",
+      "Cost-plus",
+      "Target return on sales",
+      "Above-, at- or below-market"
+     ],
+     [
+      "Prestige",
+      "",
+      "Target return on investment",
+      "Loss leader"
+     ],
+     [
+      "Odd-even",
+      "",
+      "",
+      ""
+     ],
+     [
+      "Target",
+      "",
+      "",
+      ""
+     ],
+     [
+      "Bundle",
+      "",
+      "",
+      ""
+     ],
+     [
+      "Yield management",
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-skimming",
+   "topic": "t09-4",
+   "term": "Skimming pricing",
+   "definition": "Skimming pricing sets the highest initial price that customers really desiring the new product are willing to pay, often to recover research and development costs; the price is typically lowered later. It is a demand-oriented approach.",
+   "explain": "Skim the cream first: sell to price-insensitive buyers at a high launch price, then lower the price to reach the next segments. It works when (1) enough customers are price-insensitive - a segment with inelastic demand over a broad range of prices, (2) the high price signals quality, (3) competitors cannot enter quickly (patents, high R&D, complex technology) and (4) production costs do not fall much with volume, so a low price would gain little.",
+   "example": "A Waterloo tech firm launches a foldable phone at $2,400 to recover R&D, planning to cut the price once rivals catch up.",
+   "contrast": "Skimming (high INITIAL price on a NEW product, lowered over time; inelastic segment) vs penetration (low initial price; elastic demand; economies of scale) vs prestige (permanently high price for status; lowering it can reduce demand).",
+   "trap": "'Economies of scale are substantial' and 'market is price-sensitive' point to PENETRATION, not skimming. 'Recover R&D' and 'inelastic over a broad range of prices' signal skimming.",
+   "mnemonic": "Skim the cream, then lower the stream.",
+   "figure": {
+    "type": "list",
+    "title": "Conditions favouring skimming",
+    "items": [
+     "Enough customers are price-insensitive (inelastic demand over a broad range of prices)",
+     "A high initial price signals high quality",
+     "Competitors cannot enter quickly (patents, R&D, technology barriers)",
+     "Production costs do not fall much as volume rises",
+     "Goal: recover research and development costs early"
+    ]
+   }
+  },
+  {
+   "id": "c09-penetration",
+   "topic": "t09-4",
+   "term": "Penetration pricing",
+   "definition": "Penetration pricing sets a low initial price on a new product to appeal immediately to the mass market. It is a demand-oriented approach.",
+   "explain": "Instead of skimming the top, penetration grabs the whole market fast. It works when (1) many buyers are price-sensitive (elastic demand), (2) economies of scale and experience lower unit costs as volume grows and (3) a low price discourages competitors from entering. The instructor's example is the Nintendo Wii U.",
+   "example": "A new Canadian streaming service launches at $4.99 a month - well below established rivals - to sign up subscribers quickly and spread its content costs.",
+   "contrast": "Penetration (low INITIAL price on a NEW product to win the mass market) vs loss leader (an existing item priced below its customary price to pull traffic toward OTHER products) vs below-market pricing (ongoing positioning against competitors' market price).",
+   "trap": "'New product' + 'low introductory price' + 'mass market' = penetration. If the low price is on a staple used to bring shoppers into a store, it is a loss leader.",
+   "mnemonic": "Penetrate the mass market: price low, scale high.",
+   "figure": {
+    "type": "list",
+    "title": "Conditions favouring penetration",
+    "items": [
+     "Many segments of the market are price-sensitive (elastic demand)",
+     "Economies of scale and experience cut unit costs as volume grows",
+     "A low initial price discourages competitors from entering"
+    ]
+   }
+  },
+  {
+   "id": "c09-prestige",
+   "topic": "t09-4",
+   "term": "Prestige pricing",
+   "definition": "Prestige pricing sets a high price so that quality- or status-conscious consumers will be attracted to the product and buy it. It is a demand-oriented approach.",
+   "explain": "For prestige goods the demand curve bends backward over part of its range: lowering the price can actually reduce the quantity demanded because the product loses its status appeal. The high price is permanent and part of the product's identity, not a temporary launch tactic.",
+   "example": "A Montreal jeweller cut prices on its signature watches by 30% and sales fell - buyers stopped seeing them as exclusive.",
+   "contrast": "Prestige (permanently high price for status; backward-bending demand) vs skimming (high INITIAL price lowered over time) vs above-market pricing (competition-oriented: priced above competitors' market price, which serves as the benchmark).",
+   "trap": "Cue words: 'status-conscious', 'lowering the price reduced sales', 'demand curve bends backward'. A high price on a NEW product to recover R&D is skimming, not prestige.",
+   "mnemonic": "Prestige: drop the price, drop the appeal.",
+   "figure": null
+  },
+  {
+   "id": "c09-target-pricing",
+   "topic": "t09-4",
+   "term": "Target pricing",
+   "definition": "Target pricing is deliberately adjusting the composition and features of a product to achieve the target price to consumers: estimate the price consumers are willing to pay, then work backward to design and cost the product. It is a demand-oriented approach.",
+   "explain": "Target pricing flips the usual order. Rather than build a product and add up its costs, the firm starts with the price customers will accept, subtracts the margins it needs, and engineers the product (materials, features) to hit the resulting cost.",
+   "example": "A Quebec furniture maker learns students will pay $199 for a desk, then chooses materials and a flat-pack design so the desk costs $110 to make.",
+   "contrast": "Target pricing (demand-oriented: start from consumers' acceptable price and design backward) vs target profit pricing (profit-oriented: solve for the price that delivers a set dollar profit) vs target return pricing (profit as a % of sales or investment).",
+   "trap": "The word 'target' tempts students toward the profit-oriented bucket. If the stem starts with what consumers will pay and then adjusts features or costs, it is target pricing (demand-oriented).",
+   "mnemonic": "Target pricing: price first, product second.",
+   "figure": null
+  },
+  {
+   "id": "c09-bundle",
+   "topic": "t09-4",
+   "term": "Bundle pricing",
+   "definition": "Bundle pricing is the marketing of two or more products in a single package price. It is a demand-oriented approach.",
+   "explain": "Buyers see the bundle as a better deal than buying each item separately, and the seller moves more items per sale. Think value meals, internet-plus-TV packages and ski-and-hotel packages.",
+   "example": "A Calgary telecom sells home internet, TV and a mobile line together for $120 a month instead of $155 bought separately.",
+   "contrast": "Bundle pricing (several different products, ONE package price) vs yield management (different prices for the same capacity at different times) vs a quantity discount (a lower price for buying MORE of the same product).",
+   "trap": "Two or more DIFFERENT products for one price = bundle. A price break on a large order of the same product is a quantity discount, not bundle pricing.",
+   "mnemonic": "Bundle = many items, one tag.",
+   "figure": null
+  },
+  {
+   "id": "c09-yield-management",
+   "topic": "t09-4",
+   "term": "Yield management pricing",
+   "definition": "Yield management pricing is charging different prices to maximize revenue for a set amount of capacity at any given time. It is a demand-oriented approach.",
+   "explain": "When capacity is fixed and perishable - airline seats, hotel rooms, concert seats - an unsold unit is lost forever. Yield management raises prices when demand for the remaining capacity is high and lowers them when it is soft, so the firm earns the most from the capacity it has. The instructor's example is airline seats.",
+   "example": "A Banff hotel charges $189 for a room on a quiet November Tuesday and $549 for the same room on a ski-season Saturday.",
+   "contrast": "Yield management (prices vary with demand for a FIXED CAPACITY over time) vs a flexible-price policy based on the buyer (prices vary by individual BUYER or purchase situation, e.g., age or negotiation) vs bundle pricing (several products, one price).",
+   "trap": "Cue words: 'fixed number of seats or rooms', 'maximize revenue from capacity', 'price varies by date or time'. Different prices by age or by haggling is a flexible-price policy, not yield management.",
+   "mnemonic": "Yield: squeeze the most revenue from every seat.",
+   "figure": null
+  },
+  {
+   "id": "c09-markup",
+   "topic": "t09-5",
+   "term": "Standard markup pricing and markup on price vs on cost",
+   "definition": "Standard markup pricing is adding a fixed percentage to the cost of all items in a specific product class. Markup on selling price = (price - cost) / price; markup on cost = (price - cost) / cost. Wholesalers and retailers often express markup as a percentage of price; manufacturers often as a percentage of cost.",
+   "explain": "It is a cost-oriented approach: start with cost, add a standard percentage. The same dollar markup is a bigger percentage of cost than of price. In Figure 9-3, a $75 selling price (100%), $60 cost (80%) and $15 markup is 20% of price but 25% of cost. When markup is relative to price, price is always 100%.",
+   "example": "A Lethbridge hardware store adds a standard 40% markup on cost to every item in its paint department.",
+   "contrast": "Standard markup (the same % added to the cost of ALL items in a class; retailers and manufacturers) vs cost-plus (total unit cost of a specific job plus a specific amount or %, common in construction and government contracts). Markup on price (retailers) vs markup on cost (manufacturers).",
+   "trap": "Always check the base - % of price or % of cost? Conversions: markup on price = markup on cost / (1 + markup on cost); markup on cost = markup on price / (1 - markup on price). Price from cost and a markup on price: price = cost / (1 - markup %).",
+   "mnemonic": "Retailers mark up on Price; Makers mark up on Cost.",
+   "figure": {
+    "type": "table",
+    "title": "Figure 9-3: Same markup, two bases",
+    "head": [
+     "Item",
+     "Dollars",
+     "% of price",
+     "% of cost"
+    ],
+    "rows": [
+     [
+      "Selling price",
+      "$75",
+      "100%",
+      "125%"
+     ],
+     [
+      "Cost",
+      "$60",
+      "80%",
+      "100%"
+     ],
+     [
+      "Markup",
+      "$15",
+      "20%",
+      "25%"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-cost-plus",
+   "topic": "t09-5",
+   "term": "Cost-plus pricing",
+   "definition": "Cost-plus pricing involves summing the total unit cost of providing a product or service and adding a specific amount (or percentage) to the cost to arrive at a price. It is a cost-oriented approach common in construction, government contracts and services.",
+   "explain": "Cost-plus shows up where each job is different - a building, a custom system, a consulting project. The buyer agrees to cover the total cost of the job plus a fee or percentage, rather than paying a catalogue price.",
+   "example": "An Edmonton contractor builds a school gym for the province and bills its total project cost of $2.4 million plus a fixed fee of $180,000.",
+   "contrast": "Cost-plus (total unit cost of a specific job + a specific amount or %; contracts, construction, services) vs standard markup (a standard % added to the cost of all items in a product class; retailers, manufacturers). Both are cost-oriented; neither starts from demand.",
+   "trap": "If the stem involves a contract, a project, or 'cost plus a fixed fee', think cost-plus. If a retailer or manufacturer applies the same % across a whole product class, think standard markup.",
+   "mnemonic": "Cost-plus = contract plus fee.",
+   "figure": null
+  },
+  {
+   "id": "c09-target-profit",
+   "topic": "t09-5",
+   "term": "Target profit pricing",
+   "definition": "Target profit pricing sets an annual target of a specific dollar volume of profit and solves the profit equation for price: Profit = (P x Q) - [FC + (UVC x Q)]. It is a profit-oriented approach.",
+   "explain": "Pick the dollar profit you want and the volume you expect, then solve: P = (Target profit + FC + UVC x Q) / Q. Like all profit-oriented approaches, it depends on accurate estimates of demand - if the volume does not materialize, neither does the profit.",
+   "example": "Charlie Tuna: UVC $40, FC $410,000, target profit $42,000 on 21,000 packages. P = ($42,000 + $410,000 + $840,000) / 21,000 = $61.52.",
+   "contrast": "Target profit (a specific DOLLAR profit) vs target return on sales (profit as a % of SALES) vs target return on investment (profit as a % of INVESTMENT) vs target pricing (demand-oriented: start from consumers' acceptable price).",
+   "trap": "Multiply UVC by quantity, add fixed cost AND the target profit, then divide by quantity. A dollar figure ($42,000) = target profit; a percentage of sales or investment = target return.",
+   "mnemonic": "Dollar goal = target profit; percentage goal = target return.",
+   "figure": null
+  },
+  {
+   "id": "c09-target-return",
+   "topic": "t09-5",
+   "term": "Target return-on-sales and target return-on-investment pricing",
+   "definition": "Target return-on-sales pricing sets a price to achieve a profit that is a specified percentage of the sales volume (revenue). Target return-on-investment (ROI) pricing sets a price to achieve an annual target percentage return on investment. Both are profit-oriented approaches.",
+   "explain": "Both turn a percentage goal into a profit target, then use the profit equation. Return on sales: Profit = r x (P x Q), so the profit target grows with revenue. ROI: Profit = r x investment, a fixed dollar amount once the investment is known.",
+   "example": "A Halifax firm that invested $500,000 in a production line wants a 12% ROI, so it needs $60,000 profit; a grocery chain may aim for profit equal to a set percentage of its sales.",
+   "contrast": "Target return on sales (% of SALES revenue) vs target ROI (% of INVESTMENT) vs target profit (a specific DOLLAR amount). All three are profit-oriented; target pricing is demand-oriented.",
+   "trap": "Read the base of the percentage: 'of sales' vs 'of investment'. With return on sales, the profit target changes with price, so solve with algebra: P x Q - TC = r x P x Q. The investment itself is not a cost to add into this year's price.",
+   "mnemonic": "ROS = slice of Sales; ROI = slice of Investment.",
+   "figure": null
+  },
+  {
+   "id": "c09-customary-market",
+   "topic": "t09-5",
+   "term": "Customary pricing and above-, at- or below-market pricing",
+   "definition": "Customary pricing is a method of pricing based on tradition, a standardized channel of distribution or other competitive factors. Above-, at- or below-market pricing uses the 'market price' (what competitors charge) as a benchmark and deliberately prices above, at or below it. Both are competition-oriented approaches.",
+   "explain": "Competition-oriented approaches focus on what competitors are doing rather than on demand, cost or profit. Customary prices are hard to change (candy bars, vending items). Market-benchmark pricing positions a brand: luxury brands and the iPhone 17 above market, mainstream brands at market, discounters such as Walmart below market.",
+   "example": "A vending company keeps its chocolate bars at the traditional $2.00 (customary); a discount grocer sets everyday prices about 5% below the area's average supermarket prices (below-market).",
+   "contrast": "Below-market pricing (ongoing positioning relative to the market price) vs loss leader (a specific item priced below its customary price to draw traffic). Above-market (competition-oriented benchmark) vs prestige (demand-oriented status pricing).",
+   "trap": "If the stem says 'tradition' or 'what buyers have always paid' for a low-cost staple, think customary. If it says 'compared with competitors' prices' or 'market price as a benchmark', think above-, at- or below-market.",
+   "mnemonic": "The market price is the ruler: above it, at it or below it.",
+   "figure": null
+  },
+  {
+   "id": "c09-loss-leader",
+   "topic": "t09-5",
+   "term": "Loss-leader pricing",
+   "definition": "Loss-leader pricing is deliberately selling a product below its customary price to attract attention and store traffic, in the hope that shoppers will buy other products as well. It is a competition-oriented approach.",
+   "explain": "The goal is not to make money on the leader item but to bring people through the door. Grocers use milk and eggs; electronics retailers use Black Friday TVs. The profit comes from the other items shoppers add to the cart.",
+   "example": "A Calgary supermarket advertises a 4 L jug of milk at $2.99 - well below its usual $5.79 - knowing most shoppers will fill the rest of the cart at regular prices.",
+   "contrast": "Loss leader (an existing item below its customary price to drive traffic) vs penetration (a NEW product launched at a low price to win the mass market) vs predatory pricing (an illegal very low price meant to drive competitors out of business).",
+   "trap": "The cue is traffic for OTHER products. A low launch price on a new product is penetration; a below-cost price intended to eliminate a rival is predatory pricing.",
+   "mnemonic": "Lose on the leader, win on the basket.",
+   "figure": null
+  },
+  {
+   "id": "c09-cost-vs-value",
+   "topic": "t09-5",
+   "term": "Cost-based vs value-based pricing",
+   "definition": "Cost-based pricing follows the sequence Product -> Cost -> Price -> Value -> Customers; value-based pricing reverses it: Customers -> Value -> Price -> Cost -> Product (Nagle/Holden).",
+   "explain": "Cost-based pricing starts inside the firm: design a product, total its costs, set a price, then convince customers it is worth it. Value-based pricing starts with customers: learn what they value, set a price that captures that value, then determine the costs that can be incurred and design the product to fit. It matches the idea that pricing is the attempt to capture the value the rest of the mix creates.",
+   "example": "A Calgary software start-up interviews contractors, finds they would pay $60 a month to save five hours of paperwork, sets that price, then scopes the features it can build profitably at that price (value-based).",
+   "contrast": "Cost-based starts with the PRODUCT and ends with CUSTOMERS; value-based starts with CUSTOMERS and ends with the PRODUCT. Value-based pricing is close in spirit to target pricing; standard markup and cost-plus follow the cost-based logic.",
+   "trap": "Questions ask what comes first, last or immediately after a step. In value-based pricing, Price comes right after Value and right before Cost; in cost-based pricing, Price comes right after Cost and right before Value.",
+   "mnemonic": "Value-based reads cost-based backwards.",
+   "figure": {
+    "type": "table",
+    "title": "Two pricing sequences (Nagle/Holden)",
+    "head": [
+     "Step",
+     "Cost-based",
+     "Value-based"
+    ],
+    "rows": [
+     [
+      "1",
+      "Product",
+      "Customers"
+     ],
+     [
+      "2",
+      "Cost",
+      "Value"
+     ],
+     [
+      "3",
+      "Price",
+      "Price"
+     ],
+     [
+      "4",
+      "Value",
+      "Cost"
+     ],
+     [
+      "5",
+      "Customers",
+      "Product"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-final-price-steps",
+   "topic": "t09-6",
+   "term": "Four steps in setting a final price",
+   "definition": "Step 1: select an approximate price level (using one of the four approach buckets). Step 2: set the list or quoted price (one-price or flexible-price policy). Step 3: make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments). Step 4: monitor and adjust prices.",
+   "explain": "The approaches give a ballpark; the list price turns it into a quoted number and a policy; special adjustments tailor it to particular buyers and situations; monitoring keeps it right as costs, competitors and demand change. Pricing is never 'set and forget'.",
+   "example": "A Calgary bike shop prices a new e-bike near competitors' level (Step 1), lists it at a fixed $2,999 for everyone (Step 2), offers a $300 trade-in allowance (Step 3) and reviews the price after a rival's spring sale (Step 4).",
+   "contrast": "The four final-price steps (approximate level -> list price -> special adjustments -> monitor) vs the four approach buckets (demand, cost, profit, competition), which are only the tools used inside Step 1. Identifying objectives and constraints comes before these steps.",
+   "trap": "One-price vs flexible-price is decided in Step 2, not Step 3. Discounts, allowances and FOB or delivered pricing are Step 3. 'Monitor and adjust' is the last step.",
+   "mnemonic": "Approximate, List, Adjust, Monitor: 'A Little Adjustment Matters'.",
+   "figure": {
+    "type": "list",
+    "title": "Setting a final price",
+    "items": [
+     "Step 1: Select an approximate price level",
+     "Step 2: Set the list or quoted price (one-price vs flexible-price policy)",
+     "Step 3: Make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments)",
+     "Step 4: Monitor and adjust prices"
+    ]
+   }
+  },
+  {
+   "id": "c09-one-flexible",
+   "topic": "t09-6",
+   "term": "One-price vs flexible-price policy (and dynamic pricing)",
+   "definition": "A one-price policy sets one price for all buyers of a product or service. A flexible-price policy sets different prices for products and services depending on individual buyers and purchase situations; dynamic pricing - adjusting prices in real time based on demand (e.g., Uber surge pricing) - is a form of flexible pricing.",
+   "explain": "Choosing the price policy is part of Step 2 of setting a final price. One-price policies (no-haggle car brands, Walmart) build trust and simplify selling. Flexible pricing lets a car dealer negotiate, or a transit authority charge seniors, students and adults different fares. Dynamic pricing uses technology to change prices minute to minute as demand rises and falls.",
+   "example": "A city transit system charges different fares for youth, seniors and adults (flexible-price policy); a no-haggle car brand posts one sticker price that every buyer pays (one-price policy).",
+   "contrast": "Flexible-price policy (different prices for different BUYERS or situations; legal with consumers) vs price discrimination (different prices to COMPETING business buyers for like quantities, illegal when it lessens competition) vs yield management (prices vary with demand for a fixed capacity over time).",
+   "trap": "Different prices by age, employment, negotiation or real-time demand = flexible (dynamic) pricing - not penetration, bundle or one-price. 'Same price for everyone' = one-price policy.",
+   "mnemonic": "One price fits all; flexible fits each.",
+   "figure": null
+  },
+  {
+   "id": "c09-discounts-allowances",
+   "topic": "t09-6",
+   "term": "Discounts and allowances",
+   "definition": "Discounts are reductions from list price that a seller gives a buyer as a reward for some favourable activity: quantity (noncumulative or cumulative), seasonal, trade (functional) and cash discounts. Allowances are reductions from list price such as trade-in allowances (for turning in an old item) and promotional allowances (cash or goods given to resellers for advertising or promoting the product).",
+   "explain": "Each discount rewards a specific behaviour: buying more (quantity), buying or stocking earlier than demand requires (seasonal), performing marketing functions as a reseller (trade or functional, often quoted as a chain such as 30/10/5), or paying promptly (cash, e.g., 2/10 net 30). Noncumulative quantity discounts apply to a single order; cumulative ones add up purchases over a period and encourage loyalty. Promotional allowances must be offered proportionally to all competing resellers under the Competition Act.",
+   "example": "Molson Coors gives retailers a discount to stock up before Canada Day (seasonal); a supplier bills 2/10 net 30, so a $5,000 invoice paid in 8 days costs $4,900 (cash).",
+   "contrast": "Seasonal (buy or stock EARLIER than demand requires) vs quantity (buy MORE) vs trade or functional (resellers rewarded for performing channel functions) vs cash (PAY promptly). Trade-in allowance (an old item reduces the price) vs promotional allowance (a reseller is paid to advertise or promote).",
+   "trap": "'Before the season' = seasonal, not quantity or cash. 'Within 10 days' = cash. Chain trade discounts are applied one after another, not added (30/10/5 is not 45% off). Cumulative = over time; noncumulative = one order.",
+   "mnemonic": "More, Early, Function, Fast: quantity, seasonal, trade, cash.",
+   "figure": {
+    "type": "table",
+    "title": "Discounts and allowances",
+    "head": [
+     "Type",
+     "Rewards / what it is",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Quantity - noncumulative",
+      "A larger single order",
+      "10% off any order of 500+ cases"
+     ],
+     [
+      "Quantity - cumulative",
+      "Total purchases over a period (loyalty)",
+      "Bigger price break as annual volume grows"
+     ],
+     [
+      "Seasonal",
+      "Buying or stocking earlier than demand requires",
+      "Lawnmowers ordered in winter; beer before Canada Day"
+     ],
+     [
+      "Trade (functional)",
+      "Resellers performing marketing functions",
+      "30/10/5 off list"
+     ],
+     [
+      "Cash",
+      "Paying bills promptly",
+      "2/10 net 30"
+     ],
+     [
+      "Trade-in allowance",
+      "Turning in an old item",
+      "$20 credit for an old dishwasher"
+     ],
+     [
+      "Promotional allowance",
+      "Reseller advertises or promotes the product",
+      "Free cases for a feature display and flyer ad"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-geographic",
+   "topic": "t09-6",
+   "term": "Geographic adjustments: FOB origin and uniform delivered pricing",
+   "definition": "Geographic adjustments are made to list or quoted prices to reflect the transportation component. FOB origin pricing quotes a price 'free on board' a vehicle at the seller's location; title passes to the buyer at the point of loading and the buyer pays the freight. Uniform delivered pricing quotes a price that includes all transportation costs.",
+   "explain": "Who pays freight, and when ownership changes hands, is the core difference. Under FOB origin the seller covers loading, then the buyer owns the goods and pays shipping from that point, so distant buyers pay more. Under uniform delivered pricing the seller pays shipping and builds it into the quoted price; variations include single-zone (postage-stamp) pricing, multiple-zone pricing, FOB with freight-allowed (freight absorption) and basing-point pricing.",
+   "example": "A Red Deer fertilizer plant quotes 'FOB Red Deer' and the Manitoba buyer pays the trucking; a Toronto online retailer charges every Canadian customer the same delivered price (single-zone, a form of uniform delivered pricing).",
+   "contrast": "FOB origin (buyer pays freight; title passes at loading) vs uniform delivered (seller pays freight; the quoted price includes all transportation costs).",
+   "trap": "FOB origin: title passes at the point of LOADING, not on arrival. 'Price includes all transportation costs' describes uniform delivered pricing - a tempting wrong option in FOB questions.",
+   "mnemonic": "FOB origin: Freight On the Buyer.",
+   "figure": {
+    "type": "table",
+    "title": "Geographic adjustments",
+    "head": [
+     "Method",
+     "Who pays freight",
+     "Notes"
+    ],
+    "rows": [
+     [
+      "FOB origin",
+      "Buyer",
+      "Title passes at the point of loading at the seller's location"
+     ],
+     [
+      "Uniform delivered",
+      "Seller (built into price)",
+      "Quoted price includes all transportation costs"
+     ],
+     [
+      "Single-zone (postage stamp)",
+      "Seller",
+      "Uniform delivered variation: same delivered price everywhere"
+     ],
+     [
+      "Multiple-zone",
+      "Seller",
+      "Uniform delivered variation: one price per zone"
+     ],
+     [
+      "FOB with freight-allowed",
+      "Seller absorbs freight",
+      "Uniform delivered variation (freight absorption)"
+     ],
+     [
+      "Basing-point",
+      "Seller",
+      "Uniform delivered variation: freight charged from a basing point"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-legal",
+   "topic": "t09-6",
+   "term": "Legal and ethical pricing issues (Competition Act)",
+   "definition": "Canada's Competition Act, enforced by the Competition Bureau, restricts price fixing (competitors conspiring to set prices - horizontal, or vertical resale price maintenance), price discrimination (different prices to competing buyers for like quantities when it lessens competition), deceptive pricing (price offers that mislead, e.g., bait and switch, double ticketing) and predatory pricing (a very low price set to drive competitors out of business).",
+   "explain": "Price fixing is collusion: rivals agree on prices (horizontal), or a manufacturer forces resellers to charge a set price (vertical). Price discrimination is treating competing business buyers unequally for the same quantities. Deceptive pricing misleads consumers - bait and switch (advertise a bargain you do not intend to sell, then push a pricier item), bargains conditional on other purchases, misleading comparable-value or suggested-price comparisons, and double ticketing (the seller must charge the lower of two prices). Predatory pricing charges a very low price to injure or eliminate rivals, planning to raise prices later.",
+   "example": "Three Ontario bread makers secretly agree to raise loaf prices together (horizontal price fixing).",
+   "contrast": "Price fixing (competitors COLLUDE) vs price discrimination (one seller charges COMPETING buyers different prices) vs predatory pricing (a very low price to drive rivals OUT) vs deceptive pricing (MISLEADING consumers). Flexible pricing to final consumers is legal; discriminating among competing resellers can be illegal.",
+   "trap": "Bait and switch and double ticketing are DECEPTIVE pricing, not predatory. With double ticketing the item must be sold at the LOWER price. Vertical price fixing involves a manufacturer and its resellers, not two competitors.",
+   "mnemonic": "Fix (collude), Discriminate (unequal), Deceive (mislead), Prey (eliminate rivals).",
+   "figure": {
+    "type": "table",
+    "title": "Pricing practices restricted by the Competition Act",
+    "head": [
+     "Practice",
+     "What it is",
+     "Cue"
+    ],
+    "rows": [
+     [
+      "Price fixing - horizontal",
+      "Competitors conspire to set prices",
+      "Rival bakeries agree on bread prices"
+     ],
+     [
+      "Price fixing - vertical",
+      "Manufacturer controls resellers' prices (resale price maintenance)",
+      "Brand cuts off a store that discounts"
+     ],
+     [
+      "Price discrimination",
+      "Different prices to competing buyers for like quantities, lessening competition",
+      "Big chain pays less than independents for the same volume"
+     ],
+     [
+      "Deceptive pricing",
+      "Misleading price offers: bait and switch, conditional bargains, false comparisons, double ticketing",
+      "Advertised special is never really available"
+     ],
+     [
+      "Predatory pricing",
+      "Very low price to drive competitors out, then raise prices",
+      "Below-cost prices until the local rival closes"
+     ]
+    ]
+   }
+  }
+ ],
+ "activities": [
+  {
+   "id": "a09-01",
+   "type": "sort",
+   "concept": "c09-four-approaches",
+   "title": "Figure 9-2 sort (part 1)",
+   "prompt": "Drag each pricing approach into its Figure 9-2 bucket.",
+   "buckets": [
+    "Demand-oriented",
+    "Cost-oriented",
+    "Profit-oriented",
+    "Competition-oriented"
+   ],
+   "items": [
+    {
+     "text": "Skimming",
+     "bucket": 0
+    },
+    {
+     "text": "Prestige",
+     "bucket": 0
+    },
+    {
+     "text": "Bundle",
+     "bucket": 0
+    },
+    {
+     "text": "Yield management",
+     "bucket": 0
+    },
+    {
+     "text": "Standard markup",
+     "bucket": 1
+    },
+    {
+     "text": "Target profit",
+     "bucket": 2
+    },
+    {
+     "text": "Target return on investment",
+     "bucket": 2
+    },
+    {
+     "text": "Customary",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Demand-oriented approaches start from customer tastes and preferences (skimming, prestige, bundle, yield management). Standard markup adds a percentage to cost. Target profit and target ROI solve for price to hit a profit goal. Customary pricing follows tradition and competitive factors."
+  },
+  {
+   "id": "a09-02",
+   "type": "sort",
+   "concept": "c09-four-approaches",
+   "title": "Figure 9-2 sort (part 2)",
+   "prompt": "Drag each remaining pricing approach into its Figure 9-2 bucket.",
+   "buckets": [
+    "Demand-oriented",
+    "Cost-oriented",
+    "Profit-oriented",
+    "Competition-oriented"
+   ],
+   "items": [
+    {
+     "text": "Penetration",
+     "bucket": 0
+    },
+    {
+     "text": "Odd-even",
+     "bucket": 0
+    },
+    {
+     "text": "Target",
+     "bucket": 0
+    },
+    {
+     "text": "Cost-plus",
+     "bucket": 1
+    },
+    {
+     "text": "Target return on sales",
+     "bucket": 2
+    },
+    {
+     "text": "Above-, at- or below-market",
+     "bucket": 3
+    },
+    {
+     "text": "Loss leader",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Penetration, odd-even and target pricing all start from what customers will respond to or pay, so they are demand-oriented (note: target pricing is NOT profit-oriented). Cost-plus adds an amount to total unit cost. Target return on sales is profit-oriented. Market benchmarking and loss leaders focus on competitors. Together with part 1: Demand 7, Cost 2, Profit 3, Competition 3."
+  },
+  {
+   "id": "a09-03",
+   "type": "order",
+   "concept": "c09-final-price-steps",
+   "title": "Four steps to a final price",
+   "prompt": "Put the four steps in setting a final price in the correct order.",
+   "items": [
+    "Select an approximate price level",
+    "Set the list or quoted price",
+    "Make special adjustments to the list or quoted price",
+    "Monitor and adjust prices"
+   ],
+   "explanation": "First choose a ballpark using one of the four approach buckets, then set the list or quoted price (one-price or flexible-price policy), then make special adjustments (discounts, allowances, geographic adjustments), and finally monitor and adjust prices as conditions change."
+  },
+  {
+   "id": "a09-04",
+   "type": "match",
+   "concept": "c09-discounts-allowances",
+   "title": "Discounts and allowances in action",
+   "prompt": "Match each discount or allowance with the scenario it describes.",
+   "pairs": [
+    {
+     "left": "Noncumulative quantity discount",
+     "right": "10% off any single order of 500 or more cases of motor oil"
+    },
+    {
+     "left": "Cumulative quantity discount",
+     "right": "A cafe chain earns a bigger price break as its total bean purchases for the year grow"
+    },
+    {
+     "left": "Seasonal discount",
+     "right": "A garden centre pays less for patio furniture ordered in January"
+    },
+    {
+     "left": "Trade (functional) discount",
+     "right": "A wholesaler gets 30/10 off list for warehousing and selling to retailers"
+    },
+    {
+     "left": "Cash discount",
+     "right": "2% off an invoice paid within 10 days (2/10 net 30)"
+    },
+    {
+     "left": "Trade-in allowance",
+     "right": "$500 off a new snowblower for handing in the old one"
+    },
+    {
+     "left": "Promotional allowance",
+     "right": "Free cases of chips for a grocer that runs an end-of-aisle display and flyer ad"
+    }
+   ],
+   "explanation": "Each discount rewards a specific behaviour: one big order (noncumulative), loyalty over time (cumulative), buying early (seasonal), performing channel functions (trade), paying promptly (cash). Allowances reduce price for turning in an old item (trade-in) or for promoting the product (promotional)."
+  },
+  {
+   "id": "a09-05",
+   "type": "match",
+   "concept": "c09-legal",
+   "title": "Spot the pricing offence",
+   "prompt": "Match each practice restricted by the Competition Act with its example.",
+   "pairs": [
+    {
+     "left": "Horizontal price fixing",
+     "right": "Two rival gas stations in a small town agree to keep regular gas at the same price"
+    },
+    {
+     "left": "Vertical price fixing",
+     "right": "A blender maker stops supplying a retailer that sells below the maker's set price"
+    },
+    {
+     "left": "Price discrimination",
+     "right": "A supplier charges a big chain less than an independent store for the same quantity, hurting competition"
+    },
+    {
+     "left": "Bait and switch",
+     "right": "A $299 TV is advertised with no real stock, and staff steer shoppers to an $899 model"
+    },
+    {
+     "left": "Double ticketing",
+     "right": "An item carries two price stickers, so the store must sell it at the lower one"
+    },
+    {
+     "left": "Predatory pricing",
+     "right": "A chain prices far below cost near a new rival until it closes, then raises prices"
+    }
+   ],
+   "explanation": "Price fixing is collusion among competitors (horizontal) or a manufacturer controlling resellers' prices (vertical). Price discrimination treats competing buyers unequally. Bait and switch and double ticketing are deceptive pricing. Predatory pricing uses very low prices to drive rivals out."
+  },
+  {
+   "id": "a09-06",
+   "type": "order",
+   "concept": "c09-cost-vs-value",
+   "title": "Value-based pricing sequence",
+   "prompt": "Put the elements of VALUE-BASED pricing (Nagle/Holden) in the correct order.",
+   "items": [
+    "Customers",
+    "Value",
+    "Price",
+    "Cost",
+    "Product"
+   ],
+   "explanation": "Value-based pricing starts with customers, determines the value they perceive, sets a price that captures it, then works out the costs that can be incurred and the product to build. Cost-based pricing runs the exact reverse: Product, Cost, Price, Value, Customers."
+  }
+ ]
+}

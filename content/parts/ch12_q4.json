@@ -1,0 +1,728 @@
+[
+ {
+  "id": "q12-121",
+  "concept": "c12-scheduling",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the difference between flighting and pulse schedules?",
+  "options": [
+   "Flighting keeps a continuous base with periodic bursts; pulse alternates periods of activity with none",
+   "Flighting alternates periods of activity with periods of none; pulse keeps a continuous base with periodic bursts",
+   "Flighting is used for push strategies; pulse is used for pull strategies",
+   "Flighting runs at the same level every week; pulse runs only once a year"
+  ],
+  "answer": 1,
+  "explanation": "In flighting, advertising stops completely between flights; in pulse, there is always a base level of activity, with spikes at key times. The first option swaps the two definitions.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-122",
+  "concept": "c12-scheduling",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the marketing communications process, the promotional schedule describes:",
+  "options": [
+   "the percentage of last year's sales assigned to each promotional tool in the budget",
+   "the stages a customer moves through, from first awareness of the brand to advocacy",
+   "the order in which each promotional tool is introduced and the frequency and duration of its use",
+   "the regulatory approvals that ASC and the CRTC require before a campaign can run"
+  ],
+  "answer": 2,
+  "explanation": "The promotional schedule sets the order, frequency, and duration of each tool, as part of step 5, scheduling and running the IMC elements. The stages from awareness to advocacy describe the customer advocacy funnel.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-123",
+  "concept": "c12-scheduling",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Frostline Tire sells winter tires that Canadians buy almost entirely in October and November. Which scheduling approach fits best?",
+  "options": [
+   "Continuous",
+   "Flighting",
+   "Pulse",
+   "Percentage of sales"
+  ],
+  "answer": 1,
+  "explanation": "When demand is concentrated in a short season, flighting puts spending into that window and goes dark the rest of the year. Continuous scheduling would waste money advertising steadily when almost no one is buying.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-124",
+  "concept": "c12-evaluation",
+  "also": [
+   "c12-imc-steps"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Following the completion of a marketing campaign, a company reviews metrics such as sales data, customer feedback, and digital engagement to understand the effectiveness of the campaign and areas for improvement. This final step in the marketing communications process is:",
+  "options": [
+   "specifying the IMC objectives",
+   "evaluating the program and recommending changes",
+   "designing the promotional program",
+   "scheduling and running the IMC elements"
+  ],
+  "answer": 1,
+  "explanation": "Step 6, evaluating the program and recommending changes, compares results such as sales, feedback, and engagement with the objectives and identifies improvements. Specifying objectives is step 1, which sets the targets this evaluation measures against.",
+  "source": "official"
+ },
+ {
+  "id": "q12-125",
+  "concept": "c12-evaluation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Halcyon Tea shows two versions of a new commercial to a consumer panel to choose which one to air. After the campaign runs, it surveys viewers to measure recall. These two research activities are, respectively:",
+  "options": [
+   "a posttest and a pretest",
+   "a pretest and a pretest",
+   "a communication objective and a behavioural objective",
+   "a pretest and a posttest"
+  ],
+  "answer": 3,
+  "explanation": "Pretests evaluate promotional elements before they run (choosing between ad versions); posttests evaluate them after (measuring recall). The first option reverses the order.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-126",
+  "concept": "c12-evaluation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Halo Fitness tracks click-through rates, conversion rates, and engagement rates on its campaign posts to judge how well the campaign is working. These measures are examples of:",
+  "options": [
+   "digital engagement metrics used in program evaluation",
+   "customer touch points",
+   "barriers to effective communication",
+   "results sought by a push strategy"
+  ],
+  "answer": 0,
+  "explanation": "Click-throughs, conversions, and engagement rates are digital metrics used in step 6 to evaluate the program. Push results are trade outcomes such as listings and displays, not consumer engagement measures.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-127",
+  "concept": "c12-evaluation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which activity is NOT part of the 'evaluate the program and recommend changes' step?",
+  "options": [
+   "Comparing campaign sales results with the objectives",
+   "Running posttests to measure ad recall",
+   "Deciding which weeks the TV ads will air",
+   "Reviewing customer feedback and engagement rates"
+  ],
+  "answer": 2,
+  "explanation": "Deciding when ads air is scheduling (step 5). Comparing results with objectives, posttesting, and reviewing feedback and engagement all belong to evaluation (step 6).",
+  "source": "generated"
+ },
+ {
+  "id": "q12-128",
+  "concept": "c12-evaluation",
+  "also": [
+   "c12-objectives"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Prairie Cycle's posttest shows strong ad recall, meeting its communication objective, but trial purchases are far below its behavioural objective. What should the team recommend?",
+  "options": [
+   "Declare the campaign a success, because high ad recall shows the program fully worked",
+   "Cut nearly all promotion, since weak trial means the product must be in decline",
+   "Switch to the competitive-parity method so the budget simply matches rivals' spending",
+   "Revise the program, for example by adding trial-driving tools such as samples or a limited-time offer"
+  ],
+  "answer": 3,
+  "explanation": "Evaluation exists to recommend changes; awareness without action calls for tools that move people to trial, such as sales promotion. Declaring success ignores the unmet behavioural objective, and cutting promotion is a decline-stage response with no evidence of decline.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-129",
+  "concept": "c12-inbound-outbound",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Loft & Grain, a Halifax furniture maker, publishes room-design guides, ranks near the top of Google for 'small apartment storage ideas,' and posts how-to videos so buyers find it while searching. This is an example of:",
+  "options": [
+   "outbound communications",
+   "inbound communications",
+   "a push strategy",
+   "flighting"
+  ],
+  "answer": 1,
+  "explanation": "Inbound communications require excellent content and the ability to be seen in the right places, so customers come to the brand. Outbound would send messages out through ads, cold calls, or direct mail.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-130",
+  "concept": "c12-inbound-outbound",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Granite Roofing buys radio spots, cold-calls homeowners, and mails flyers to every house in a northwest Calgary neighbourhood. This approach is:",
+  "options": [
+   "inbound communications",
+   "earned media",
+   "outbound communications",
+   "storytelling"
+  ],
+  "answer": 2,
+  "explanation": "Advertising, cold calls, and direct mail sent out to audiences are traditional outbound communications. Inbound relies on content that customers find on their own.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-131",
+  "concept": "c12-inbound-outbound",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the course, why can inbound communications be considerably more cost-effective than outbound?",
+  "options": [
+   "Because interested consumers find the content themselves, so the firm isn't paying to push messages at audiences who may not care",
+   "Because inbound content never requires any investment in writing, video, design, or search optimization",
+   "Because the CRTC subsidizes Canadian content marketing that appears in search results and on social media",
+   "Because inbound is funded by trade allowances that retailers pay manufacturers for featured placement"
+  ],
+  "answer": 0,
+  "explanation": "Inbound requires excellent content and visibility in the right places; when people who are already interested come to you, spending isn't wasted on broad outbound reach. It still requires investment in content, so the second option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-132",
+  "concept": "c12-inbound-outbound",
+  "also": [
+   "c12-push-pull"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A soft-drink brand runs national TV commercials aimed at consumers to build demand. How is this best classified?",
+  "options": [
+   "Inbound communication supporting a push strategy",
+   "Inbound communication supporting a pull strategy",
+   "Outbound communication supporting a push strategy",
+   "Outbound communication supporting a pull strategy"
+  ],
+  "answer": 3,
+  "explanation": "TV advertising is traditional outbound communication, and because it targets consumers to create demand it supports a pull strategy. Inbound and pull are not synonyms: inbound describes customers finding the brand, while pull describes who the communication targets.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-133",
+  "concept": "c12-inbound-outbound",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of inbound communication?",
+  "options": [
+   "Search-optimized blog posts answering common customer questions",
+   "A telemarketing campaign calling numbers from a purchased list",
+   "A how-to YouTube series that people find through search",
+   "A free downloadable guide promoted through the brand's social profiles"
+  ],
+  "answer": 1,
+  "explanation": "Telemarketing sends messages out to people who didn't seek them, which is outbound. Search-optimized posts, findable tutorials, and downloadable guides all draw interested customers in.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-134",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A brand regularly updates its official blog and social media profiles with new content about its products and services. This approach to marketing primarily uses:",
+  "options": [
+   "Earned media",
+   "Owned media",
+   "Paid media",
+   "Organic media"
+  ],
+  "answer": 1,
+  "explanation": "Owned media refers to the channels a company controls, at least in part, typically its website, blog, and social media profiles. Earned media would be coverage or reviews created by others, such as journalists and customers.",
+  "source": "official"
+ },
+ {
+  "id": "q12-135",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Willow Bakery's sourdough has collected dozens of five-star Google and Yelp reviews written by customers. In the digital channels framework, these reviews are:",
+  "options": [
+   "paid media",
+   "owned media",
+   "earned media",
+   "outbound media"
+  ],
+  "answer": 2,
+  "explanation": "Review websites such as Yelp and Amazon reviews are earned media, generated by others rather than paid for or controlled by the bakery. Owned media would be Willow's own website or social pages.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-136",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Velo Coffee pays three Toronto lifestyle creators to post about its new cold brew, and separately sends a weekly promotional email to its subscriber list. Using the course's digital channels slide, how should both activities be classified?",
+  "options": [
+   "Influencer posts: earned; email: owned",
+   "Influencer posts: paid; email: paid",
+   "Influencer posts: paid; email: owned",
+   "Influencer posts: owned; email: earned"
+  ],
+  "answer": 1,
+  "explanation": "The Keller/Swaminathan slide lists both paid bloggers/influencers and e-mail marketing under paid media. The tempting answer calls email owned because the subscriber list belongs to the company, but the course classifies e-mail marketing as paid.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-137",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which set contains ONLY owned media?",
+  "options": [
+   "Company website, Yelp reviews, mobile app",
+   "Company Facebook page, Facebook ads, company website",
+   "Company website, company YouTube channel, mobile app",
+   "Mobile app, mobile in-app ads, company blog"
+  ],
+  "answer": 2,
+  "explanation": "Websites, company-owned social channels such as a YouTube channel, and mobile apps are owned media. Facebook ads and in-app ads are paid, and Yelp reviews are earned, which rules out the other sets.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-138",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT an example of paid media?",
+  "options": [
+   "Search advertising",
+   "Media coverage of a product launch",
+   "Display advertising",
+   "Mobile in-app advertising"
+  ],
+  "answer": 1,
+  "explanation": "Media coverage is earned media, because journalists choose to cover the brand. Search, display, and mobile in-app advertising all appear under paid media on the course slide.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-139",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Exposure generated by others (such as customer reviews, public relations, and media coverage) that the company neither buys nor controls is called:",
+  "options": [
+   "owned media",
+   "paid media",
+   "outbound media",
+   "earned media"
+  ],
+  "answer": 3,
+  "explanation": "Earned media comes from third parties such as customers and journalists. Owned media is controlled by the company (its website, social pages, apps), and paid media is bought.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-140",
+  "concept": "c12-paid-owned-earned",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A new Calgary kombucha brand has no budget for advertising but wants a channel it fully controls, where it can tell its story and take orders. What should it build first?",
+  "options": [
+   "A campaign of Google search ads",
+   "A set of paid influencer partnerships",
+   "A strategy for collecting Yelp reviews",
+   "Its own website and mobile-friendly online store"
+  ],
+  "answer": 3,
+  "explanation": "A company website is owned media: the firm controls it and doesn't have to buy ad space. Search ads and paid influencers are paid media, and reviews are earned media the brand can't control.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-141",
+  "concept": "c12-trends",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A Calgary radio station now streams its morning show live online and releases each segment as a podcast. Which trend in the changing communications landscape does this illustrate?",
+  "options": [
+   "Connected consumers",
+   "Evolving media",
+   "Internal marketing",
+   "Storytelling"
+  ],
+  "answer": 1,
+  "explanation": "The course's evolving media list includes radio stations streaming content and creating podcasts. Connected consumers refers to consumers' access to fast, affordable Internet services and devices, not to how media outlets change.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-142",
+  "concept": "c12-trends",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The trend in which affordable and fast Internet technology provides consumers with easy-to-use services and devices that facilitate marketing communications is called:",
+  "options": [
+   "evolving media",
+   "inbound communications",
+   "connected consumers",
+   "owned media"
+  ],
+  "answer": 2,
+  "explanation": "That is the course's definition of connected consumers. Evolving media describes changes in media outlets and formats, such as streaming-only content and digital boards.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-143",
+  "concept": "c12-trends",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT listed in the course as an example of evolving media?",
+  "options": [
+   "Content produced strictly for streaming",
+   "Out-of-home advertising being replaced with digital boards",
+   "News organizations moving content back to print-only editions",
+   "Digital advertising shifting to mobile"
+  ],
+  "answer": 2,
+  "explanation": "Every evolving-media example moves toward digital: streaming-only content, traditional media building online assets, news on YouTube and apps, radio streaming and podcasts, digital boards, and mobile ads. News organizations actually deliver content through YouTube channels and apps, not by returning to print only.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-144",
+  "concept": "c12-trends",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the course, why are traditional media outlets such as TV networks and newspapers creating their own online assets?",
+  "options": [
+   "To remain competitive and relevant as audiences shift online",
+   "To comply with CRTC rules that ban print and broadcast advertising",
+   "To reduce the number of connected consumers",
+   "To replace the need for measurement companies"
+  ],
+  "answer": 0,
+  "explanation": "The evolving media slide says traditional media are creating their own online assets to remain competitive and relevant. There is no rule banning print or broadcast; the shift is driven by audience behaviour.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-145",
+  "concept": "c12-trends",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which scenario illustrates connected consumers rather than evolving media?",
+  "options": [
+   "A TV network launches a new drama series produced strictly for streaming on its own app",
+   "A national newspaper starts delivering its daily stories through a YouTube channel and a news app",
+   "A downtown billboard owner replaces printed posters with a digital screen that rotates several ads",
+   "A shopper in a store uses her phone to compare prices, read reviews, and watch a product demo"
+  ],
+  "answer": 3,
+  "explanation": "Connected consumers is about consumers using affordable, fast Internet services and devices, like a smartphone in a store. The other three describe media outlets and formats changing, which is evolving media.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-146",
+  "concept": "c12-storytelling",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Instead of listing policy features, Northern Hearth Insurance releases a short film that follows a Fort McMurray family rebuilding their home after a wildfire, with their agent helping at every step. Northern Hearth is using:",
+  "options": [
+   "product placement",
+   "storytelling",
+   "publicity",
+   "sales promotion"
+  ],
+  "answer": 1,
+  "explanation": "Storytelling builds relationships by conveying events with images and words, engaging people through emotions and experiences. It isn't product placement, because this is the brand's own narrative, not a paid appearance in someone else's entertainment content.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-147",
+  "concept": "c12-storytelling",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the course, storytelling builds relationships by conveying events using _____ and words.",
+  "options": [
+   "statistics",
+   "prices",
+   "images",
+   "coupons"
+  ],
+  "answer": 2,
+  "explanation": "Storytelling conveys events using images and words, and stories engage people through emotions and experiences. Statistics and prices belong to feature-and-price messaging, which storytelling deliberately moves away from.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-148",
+  "concept": "c12-storytelling",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the course, why is storytelling an effective marketing communications approach?",
+  "options": [
+   "Stories pack in more technical specifications and product detail than any other message format",
+   "Stories engage people through their emotions and experiences, motivating them to act and to more readily accept an idea",
+   "Stories are exempt from the Canadian Code of Advertising Standards, so their claims face no review",
+   "Stories guarantee earned media coverage because journalists are expected to report on brand narratives"
+  ],
+  "answer": 1,
+  "explanation": "The course says stories engage people through emotions and experiences, which motivates them to act and to more readily accept a concept or idea. Storytelling is not exempt from advertising standards; ASC's Code applies to advertising generally.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-149",
+  "concept": "c12-storytelling",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which campaign uses storytelling rather than conventional feature-based advertising?",
+  "options": [
+   "A lotion ad that lists its seven active ingredients and SPF rating",
+   "A banner ad that reads 'Now 30% more moisturizing'",
+   "A flyer offering 20% off all body care this weekend",
+   "A video following a real woman's journey to self-confidence, inviting viewers to rethink beauty"
+  ],
+  "answer": 3,
+  "explanation": "A narrative about a real person's experience that engages emotions is storytelling, like the course's Dove example. Ingredient lists and claims are feature-based advertising, and a weekend discount is sales promotion.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-150",
+  "concept": "c12-storytelling",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Saskatoon animal shelter's flyers listing adoption fees and opening hours aren't increasing adoptions. Applying the course's view of storytelling, what should the shelter do?",
+  "options": [
+   "Share the story of one rescued dog's journey from intake to a new family, using photos and video",
+   "Add more statistics about shelter capacity and intake numbers to the existing flyer",
+   "Offer a coupon for half-price adoption fees to anyone who visits this month",
+   "Print twice as many flyers and distribute them more often around the city"
+  ],
+  "answer": 0,
+  "explanation": "Storytelling uses images and words to engage emotions and experiences, motivating action, and one dog's journey does that far better than facts. A fee coupon is sales promotion, which may spark short-term action but isn't storytelling.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-151",
+  "concept": "c12-industry-agencies",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Prairie Harvest Foods hires TrueNorth Collective to handle its market research, creative development, media planning and buying, and ad production. TrueNorth is a:",
+  "options": [
+   "creative boutique",
+   "full-service agency",
+   "in-house agency",
+   "measurement company"
+  ],
+  "answer": 1,
+  "explanation": "A full-service agency offers the complete range of services: research, creative, media, and production. A creative boutique is a limited-service agency that handles only the creative work.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-152",
+  "concept": "c12-industry-agencies",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Coastline Telecom set up its own internal department that writes, designs, and places all of its advertising instead of hiring an outside firm. This department is a(n):",
+  "options": [
+   "limited-service agency",
+   "full-service agency",
+   "media-buying service",
+   "in-house agency"
+  ],
+  "answer": 3,
+  "explanation": "An in-house agency is an advertising department within the advertiser's own company. A full-service agency is an outside firm offering all services to many clients.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-153",
+  "concept": "c12-industry-agencies",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the course, the areas of the marketing communications industry work together to form an industry that is:",
+  "options": [
+   "ethical, trustworthy, cohesive, and measurable",
+   "low-cost, fast, global, and unregulated",
+   "creative, entertaining, viral, and emotional",
+   "competitive, independent, self-funded, and confidential"
+  ],
+  "answer": 0,
+  "explanation": "The slide states that the industry's areas work together to form an industry that is ethical, trustworthy, cohesive, and measurable. Regulators and measurement companies are part of the industry precisely so it is not unregulated or unmeasured.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-154",
+  "concept": "c12-industry-agencies",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the areas that make up the marketing communications industry?",
+  "options": [
+   "Advertisers (clients)",
+   "Measurement companies",
+   "Distribution intermediaries such as wholesalers",
+   "Regulators"
+  ],
+  "answer": 2,
+  "explanation": "The industry consists of advertisers, agencies, media, suppliers, regulators, and measurement companies. Wholesalers are marketing channel intermediaries that move products, not part of the communications industry.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-155",
+  "concept": "c12-industry-agencies",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What distinguishes a full-service agency from a limited-service agency?",
+  "options": [
+   "A full-service agency is a department inside the advertiser's own company; a limited-service agency is an independent outside firm",
+   "A full-service agency offers research, creative, media, and production; a limited-service agency specializes in one area, such as creative or media buying",
+   "A full-service agency only plans and buys media; a limited-service agency only measures audiences and campaign results",
+   "A full-service agency regulates advertising content for the industry; a limited-service agency creates the ads themselves"
+  ],
+  "answer": 1,
+  "explanation": "Full-service agencies provide the whole package, while limited-service (specialty) agencies such as creative boutiques or media-buying services focus on one function. Working inside the advertiser's company describes an in-house agency.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-156",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A consumer thinks a TV ad for a skin cream exaggerates its results and files a complaint under the Canadian Code of Advertising Standards. Which body administers this code?",
+  "options": [
+   "Competition Bureau",
+   "Canadian Marketing Association (CMA)",
+   "Advertising Standards Canada (ASC)",
+   "CRTC"
+  ],
+  "answer": 2,
+  "explanation": "ASC is the advertising industry's self-regulatory body and administers the Canadian Code of Advertising Standards, including consumer complaints. The Competition Bureau enforces the federal Competition Act, a law rather than an industry code.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-157",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An Ontario electronics retailer advertises a TV as 'Regular $899, now $399' even though it never sold at $899. Which body enforces the federal law that prohibits this kind of misleading advertising?",
+  "options": [
+   "Competition Bureau",
+   "Advertising Standards Canada (ASC)",
+   "Mobile Marketing Association (MMA)",
+   "Canadian Marketing Association (CMA)"
+  ],
+  "answer": 0,
+  "explanation": "The Competition Bureau enforces the Competition Act, which prohibits misleading advertising and deceptive marketing practices such as inflated 'regular' prices. ASC handles ad complaints under the voluntary industry Code, not federal law.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-158",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A company wants to launch a new Canadian specialty TV channel and must obtain a broadcasting licence. Which body on the course's regulator list will it deal with?",
+  "options": [
+   "Canadian Wireless Telecommunications Association (CWTA)",
+   "Advertising Standards Canada (ASC)",
+   "Competition Bureau",
+   "CRTC"
+  ],
+  "answer": 3,
+  "explanation": "The Canadian Radio-television and Telecommunications Commission (CRTC) regulates broadcasting and telecommunications, and also enforces Canada's anti-spam legislation. The CWTA is an industry association for wireless companies, not the broadcasting regulator.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-159",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The Canadian Marketing Association (CMA) is best described as:",
+  "options": [
+   "the federal agency that enforces the Competition Act",
+   "the regulator that licenses broadcasters and enforces anti-spam rules",
+   "the national association of marketers, which sets a code of ethics and standards of practice",
+   "the self-regulatory body that administers the Canadian Code of Advertising Standards"
+  ],
+  "answer": 2,
+  "explanation": "The CMA is the marketing profession's association, known for its code of ethics and standards of practice. The self-regulatory body that administers the Code of Advertising Standards is ASC.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-160",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the key difference between Advertising Standards Canada (ASC) and the Competition Bureau?",
+  "options": [
+   "ASC is the industry's self-regulatory body administering the Code of Advertising Standards; the Competition Bureau is a federal agency enforcing the Competition Act",
+   "ASC enforces the federal Competition Act; the Competition Bureau administers the industry's Canadian Code of Advertising Standards",
+   "ASC regulates broadcasting licences and anti-spam rules; the Competition Bureau represents Canada's wireless carriers",
+   "ASC handles only mobile marketing complaints; the Competition Bureau handles only misleading claims in print advertising"
+  ],
+  "answer": 0,
+  "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law against misleading advertising and deceptive marketing. The second option swaps their roles.",
+  "source": "generated"
+ }
+]

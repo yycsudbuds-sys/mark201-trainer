@@ -1,0 +1,732 @@
+[
+ {
+  "id": "q11-041",
+  "concept": "c11-scrambled-merchandising",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does scrambled merchandising lead to intertype competition?",
+  "options": [
+   "It forces retailers to raise service levels and prices over time",
+   "Dissimilar types of outlets end up selling the same products to the same customers",
+   "It makes franchisees compete with corporate-owned stores",
+   "It lets manufacturers bypass retailers and sell direct"
+  ],
+  "answer": 1,
+  "explanation": "When a drugstore adds groceries or a discounter adds food, very different outlet types now carry overlapping products, so they compete; that is intertype competition. Raising service and prices over time describes the wheel of retailing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-042",
+  "concept": "c11-scrambled-merchandising",
+  "also": [
+   "c11-breadth-of-line"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A mid-sized hardware store in Red Deer adds snack foods, pet food and phone chargers near its tills. A classmate says the store has 'become a hypermarket.' Why is the classmate wrong?",
+  "options": [
+   "It is intertype competition, which only occurs between identical stores",
+   "It is a category killer, because it now covers more categories",
+   "It is a specialty outlet, because hardware is still its main line",
+   "Adding unrelated lines to an existing store is scrambled merchandising; a hypermarket is a very large format combining groceries and general merchandise"
+  ],
+  "answer": 3,
+  "explanation": "Scrambled merchandising is a strategy any store can use by adding unrelated lines. A hypermarket is a specific, very large store format built around groceries plus general merchandise. Intertype competition is between DISSIMILAR outlets, so that option is wrong on its own terms.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-043",
+  "concept": "c11-scrambled-merchandising",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Intertype competition is competition between retail outlets of the same type, such as two rival supermarket chains.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Intertype competition is competition between VERY DISSIMILAR types of retail outlets, such as a drugstore and a supermarket both selling groceries. It is usually caused by scrambled merchandising.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-044",
+  "concept": "c11-retailer-decisions",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "According to the course, which retailer marketing decision comes FIRST?",
+  "options": [
+   "Choosing store locations",
+   "Setting prices and markups",
+   "Designing the store atmosphere",
+   "Selecting a target market"
+  ],
+  "answer": 3,
+  "explanation": "The instructor flags selecting a target market as the FIRST item, followed by positioning. Location, pricing and atmosphere are all decisions that must be designed around the chosen customers, so they come later.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-045",
+  "concept": "c11-retailer-decisions",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT on the course's list of retailer marketing decisions?",
+  "options": [
+   "Bulk breaking",
+   "Procurement",
+   "Store activities and experiences",
+   "Product assortment"
+  ],
+  "answer": 0,
+  "explanation": "Bulk breaking is one of the nine WHOLESALER functions. The retailer decision list is target market, channels, product assortment, procurement, prices, services, store atmosphere, store activities and experiences, communications and location.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-046",
+  "concept": "c11-retailer-decisions",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must target market selection come before decisions about assortment, prices, atmosphere and location?",
+  "options": [
+   "Location must be fixed before a target market can be identified",
+   "Prices must be set first because they define the target market",
+   "Atmosphere decisions are made by wholesalers, not retailers",
+   "Every other retailing decision is designed to appeal to the chosen customers"
+  ],
+  "answer": 3,
+  "explanation": "A retailer cannot choose the right assortment, price level, atmosphere or location until it knows WHO it is serving, which is why target market selection is the first item. The other options reverse the logic: location and price follow from the target market, not the other way around.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-047",
+  "concept": "c11-retailer-decisions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Before opening, the owners of Kettle & Crumb, a café-bookshop, negotiate with publishers and coffee roasters about which titles and beans to buy, in what quantities and on what terms. Which retailer marketing decision does this reflect?",
+  "options": [
+   "Communications",
+   "Store atmosphere",
+   "Retail positioning",
+   "Procurement"
+  ],
+  "answer": 3,
+  "explanation": "Procurement is how the retailer sources and buys its merchandise: suppliers, quantities and terms. Retail positioning is how the store wants to be perceived, and communications is how it tells customers about its benefits.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-048",
+  "concept": "c11-retailer-decisions",
+  "also": [
+   "c11-retail-positioning"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A retail consultant tells a client: 'Before you touch assortment, prices or decor, decide exactly who you are serving and how you want them to see you compared with rivals.' Which decisions is the consultant telling the client to make first?",
+  "options": [
+   "Target market selection and retail positioning",
+   "Procurement and channels",
+   "Markups and markdowns",
+   "Store atmosphere and communications"
+  ],
+  "answer": 0,
+  "explanation": "Choosing who to serve (target market) and how to be perceived relative to competitors (retail positioning) come first. Markups, atmosphere and communications are retailing-mix tools that are tailored afterward.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-049",
+  "concept": "c11-retail-positioning",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Raphael & Sons is a high-end men's clothing retailer. In times of recession, the retailer began to carry lower-quality, low-priced suits. This made Raphael & Sons lose a significant number of its loyal customers. This is an example of wrong:",
+  "options": [
+   "cross-channel shopping",
+   "location",
+   "shopper marketing",
+   "retail positioning"
+  ],
+  "answer": 3,
+  "explanation": "Retail positioning is how a retailer wants to be perceived relative to competitors. Raphael & Sons' loyal customers expect high quality and calibre, so stocking cheap suits clashed with its high-end image. Shopper marketing is about understanding shopper behaviour across channels, which is not what went wrong here.",
+  "source": "official"
+ },
+ {
+  "id": "q11-050",
+  "concept": "c11-retail-positioning",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Canadian Tire features Canadian-made products and its long history in Canadian communities in its advertising, aiming to be seen as the store that 'buys Canadian.' This effort is best described as:",
+  "options": [
+   "shopper marketing",
+   "retail positioning",
+   "category management",
+   "scrambled merchandising"
+  ],
+  "answer": 1,
+  "explanation": "Shaping how the retailer is perceived relative to competitors, here as the Canadian choice, is retail positioning (the course's 'buy Canadian?' example). Shopper marketing studies how consumers behave as shoppers across channels and formats; it is not about the store's image.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-051",
+  "concept": "c11-retail-positioning",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Velour, an upscale Montreal boutique, is losing sales during an economic downturn. Based on the Raphael & Sons case, which response BEST protects its retail positioning?",
+  "options": [
+   "Add low-quality, low-priced lines to attract bargain hunters",
+   "Switch to self-service and cut prices deeply to match discounters",
+   "Move into a power centre next to category killers",
+   "Keep the quality and calibre of its merchandise, accepting that loyal customers may buy slightly less for a while"
+  ],
+  "answer": 3,
+  "explanation": "The official explanation notes that high-end customers may buy slightly less in a recession but are not looking for lower quality, so the retailer should stay consistent with its high-end position. Adding cheap lines is exactly the mistake that cost Raphael & Sons its loyal customers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-052",
+  "concept": "c11-retail-positioning",
+  "also": [
+   "c11-shopper-marketing"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly distinguishes retail positioning from shopper marketing?",
+  "options": [
+   "Retail positioning studies how consumers behave as shoppers; shopper marketing is how a retailer wants to be perceived",
+   "Retail positioning is how a retailer wants to be perceived relative to competitors; shopper marketing studies how consumers behave as shoppers across channels and formats",
+   "Both refer to choosing between downtown and suburban locations",
+   "Retail positioning applies only to non-store retailers"
+  ],
+  "answer": 1,
+  "explanation": "Positioning is about the retailer's desired image versus rivals; shopper marketing is a multichannel discipline for understanding shopper behaviour from the moment a purchase is first considered. The reversed option swaps the two definitions, and neither concept is a location decision.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-053",
+  "concept": "c11-retail-positioning",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Just as marketers of packaged goods position their products, retailers position themselves to differentiate from competitors in the minds of consumers.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Retail positioning is how a retailer wants to be perceived relative to competitors; the official Raphael & Sons explanation makes this exact comparison to packaged-goods marketers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-054",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The retail positioning matrix positions retailers on which two dimensions?",
+  "options": [
+   "Breadth of product line and value added",
+   "Price and quality",
+   "Depth of line and level of service",
+   "Location and number of stores"
+  ],
+  "answer": 0,
+  "explanation": "The matrix crosses breadth of product line (narrow vs broad) with value added (low vs high: location, product reliability, prestige, service). 'Price and quality' is the trap answer; price is not one of the axes.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-055",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Laurier & Co. is a department store that carries many product lines, features prestigious brands in elegant locations and is known for attentive service. On the retail positioning matrix, it sits in the:",
+  "options": [
+   "broad line, high value added quadrant",
+   "broad line, low value added quadrant",
+   "narrow line, high value added quadrant",
+   "narrow line, low value added quadrant"
+  ],
+  "answer": 0,
+  "explanation": "Many product lines = broad line; prestige, elegant locations and service = high value added, the quadrant of department stores like Holt Renfrew and Hudson's Bay. Narrow line/high value added would be a single-line luxury specialist such as Tiffany.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-056",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "ValuMax sells groceries, clothing, toys and hardware in no-frills stores with minimal service, competing mainly on low prices. On the retail positioning matrix, ValuMax sits in the:",
+  "options": [
+   "broad line, high value added quadrant",
+   "narrow line, high value added quadrant",
+   "broad line, low value added quadrant",
+   "narrow line, low value added quadrant"
+  ],
+  "answer": 2,
+  "explanation": "Many lines = broad; minimal service and no-frills stores = low value added, the Walmart/Costco quadrant. It is not narrow line/low value added, because ValuMax carries many different lines rather than one.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-057",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Aurora Jewellers sells only fine jewellery from prestigious downtown locations, offering expert advice, lifetime cleaning and elegant presentation. On the retail positioning matrix, Aurora sits in the:",
+  "options": [
+   "narrow line, high value added quadrant",
+   "broad line, high value added quadrant",
+   "broad line, low value added quadrant",
+   "narrow line, low value added quadrant"
+  ],
+  "answer": 0,
+  "explanation": "One product line (jewellery) = narrow; prestige, location and service = high value added, the Tiffany quadrant. Broad line/high value added is for department stores carrying many lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-058",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "ShoeSaver sells only discount footwear from plain stores in low-rent plazas, with self-service racks and no fitting help. On the retail positioning matrix, ShoeSaver sits in the:",
+  "options": [
+   "broad line, high value added quadrant",
+   "broad line, low value added quadrant",
+   "narrow line, low value added quadrant",
+   "narrow line, high value added quadrant"
+  ],
+  "answer": 2,
+  "explanation": "A single line (shoes) = narrow; plain stores, low-rent locations and no service = low value added, the Payless ShoeSource-style quadrant. Broad line/low value added (Walmart, Costco) requires many product lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-059",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A classmate says the retail positioning matrix compares retailers on price and quality. Which correction is accurate?",
+  "options": [
+   "The axes are depth of line and markup percentage",
+   "The axes are breadth of product line and value added, where value added includes location, product reliability, prestige and service",
+   "The axes are level of service and form of ownership",
+   "The axes are target market size and number of stores"
+  ],
+  "answer": 1,
+  "explanation": "Breadth of product line and value added are the matrix dimensions; price is an outcome, not an axis. Service is part of value added, but form of ownership is a separate way of classifying outlets, not a matrix dimension.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-060",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Northern Lux, a narrow-line luxury handbag retailer with high value added, wants to move into the broad line, high value added quadrant. What should it do?",
+  "options": [
+   "Add many more product lines, such as clothing, shoes and cosmetics, while keeping its prestige and service",
+   "Cut service and prices while continuing to sell only handbags",
+   "Cut service and prices while adding many product lines",
+   "Narrow its line further to a single handbag brand"
+  ],
+  "answer": 0,
+  "explanation": "Moving from narrow to broad means adding product lines; staying high value added means keeping prestige, location and service. Cutting service and prices while adding lines would land Northern Lux in the broad line, low value added quadrant instead.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-061",
+  "concept": "c11-positioning-matrix",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an element of 'value added' on the retail positioning matrix?",
+  "options": [
+   "Breadth of product line",
+   "Location",
+   "Prestige",
+   "Product reliability"
+  ],
+  "answer": 0,
+  "explanation": "Value added includes elements such as location, product reliability, prestige and service. Breadth of product line is the matrix's OTHER axis, not part of value added.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-062",
+  "concept": "c11-shopper-marketing",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Graham's Spice LLC makes use of _____, which includes use of traditional media, new media, direct marketing, loyalty, and trade promotion to understand when and where its customers first think about purchasing its spices.",
+  "options": [
+   "understanding consumers",
+   "retail positioning",
+   "shopper marketing",
+   "purchase matrix"
+  ],
+  "answer": 2,
+  "explanation": "Shopper marketing is a discipline for understanding how consumers behave as shoppers in different channels and formats; it reaches back to the time and place a consumer first thinks about buying and is by necessity multichannel. Retail positioning is how a retailer wants to be perceived, not a study of when and where shoppers start their purchase journey.",
+  "source": "official"
+ },
+ {
+  "id": "q11-063",
+  "concept": "c11-shopper-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Shopper marketing is best defined as:",
+  "options": [
+   "a discipline designed to understand how consumers behave as shoppers in different channels and formats",
+   "how a retailer wants to be perceived by consumers relative to competitors",
+   "assigning a manager responsibility for the profitability of a product category",
+   "selling brand-name merchandise below regular prices"
+  ],
+  "answer": 0,
+  "explanation": "That is the course definition of shopper marketing. The distractors define retail positioning, category management and off-price retailing, three neighbouring retail concepts often confused with it.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-064",
+  "concept": "c11-shopper-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is shopper marketing described as 'by necessity' a multichannel practice?",
+  "options": [
+   "It can only be used by retailers that also operate catalogues",
+   "It focuses solely on in-store displays and signage",
+   "It requires manufacturers to sell through several types of wholesalers",
+   "It extends beyond the store to wherever and whenever consumers first think about purchasing, so it must reach them through many touchpoints"
+  ],
+  "answer": 3,
+  "explanation": "Because shopper marketing follows the shopper from the first thought of buying (on social media, in a flyer, at the shelf), it relies on traditional media, new media, direct marketing, loyalty, trade promotion and in-store tools. Saying it focuses solely on in-store displays contradicts its defining feature of extending outside the store.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-065",
+  "concept": "c11-shopper-marketing",
+  "also": [
+   "c11-category-management"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Brightwater Foods studies where customers are when they first think about buying granola (scrolling social media, reading a flyer, standing at the shelf) and coordinates digital ads, loyalty offers and in-store displays accordingly. A colleague calls this category management. Why is the colleague wrong?",
+  "options": [
+   "It is retail positioning, because it concerns how the brand is perceived",
+   "It is shopper marketing; category management gives one manager profit responsibility for a product category",
+   "It is the wheel of retailing, because the firm is adding services",
+   "It is intertype competition, because several channels are involved"
+  ],
+  "answer": 1,
+  "explanation": "Studying shopper behaviour across channels from the first moment of purchase consideration is shopper marketing. Category management is an internal structure in which a manager runs a category (e.g., snacks) as a strategic business unit; it does not describe tracking shoppers across media.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-066",
+  "concept": "c11-shopper-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about shopper marketing is NOT accurate?",
+  "options": [
+   "It extends to the time and place a consumer first thinks about purchasing",
+   "It uses traditional media, new media, direct marketing, loyalty and trade promotion",
+   "It examines how consumers behave in different channels and formats",
+   "It is limited to activities that take place inside the retail store"
+  ],
+  "answer": 3,
+  "explanation": "Shopper marketing deliberately extends WELL OUTSIDE the store, to the point where a consumer first thinks about buying. The other three statements come straight from the course definition.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-067",
+  "concept": "c11-retailing-mix",
+  "also": [
+   "c11-retail-pricing"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A retailer's year-end review shows $85,000 lost to shoplifting, damaged goods and paperwork errors. In the retailing mix figure, this issue falls in which quadrant?",
+  "options": [
+   "Products and services mix",
+   "Physical location mix",
+   "Communications mix",
+   "Retail pricing mix"
+  ],
+  "answer": 3,
+  "explanation": "Shrinkage (theft, breakage, paperwork errors) is listed in the retail pricing mix alongside markups, markdowns and image/quality/value, because losses must be covered through pricing. It is not part of the products and services mix, even though the lost items are products.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-068",
+  "concept": "c11-retailing-mix",
+  "also": [
+   "c11-retail-location"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Urban Pantry is deciding whether to open 12 small-format stores or 4 large ones and how to route deliveries from its warehouse to each store. These decisions fall in which part of the retailing mix?",
+  "options": [
+   "Physical location mix",
+   "Retail pricing mix",
+   "Products and services mix",
+   "Communications mix"
+  ],
+  "answer": 0,
+  "explanation": "Number of stores, store size, format and logistics are all elements of the physical location mix. The products and services mix covers assortment, service and guarantees, not how many stores to run or how goods reach them.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-069",
+  "concept": "c11-retailing-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "BrightNest Home introduces a 90-day no-questions exchange policy and debates dropping free in-home design consultations to keep costs down. These decisions belong to which retailing mix quadrant?",
+  "options": [
+   "Products and services mix",
+   "Retail pricing mix",
+   "Physical location mix",
+   "Communications mix"
+  ],
+  "answer": 0,
+  "explanation": "Guarantees and exchanges and product-service trade-offs are listed under the products and services mix. The pricing mix is tempting because cost is mentioned, but the decisions themselves are about which services to offer, not markups or markdowns.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-070",
+  "concept": "c11-retailing-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "According to the chapter, what is the main purpose of a retailer's communications mix?",
+  "options": [
+   "To set markups, markdowns and allowances for shrinkage",
+   "To choose between strip locations and power centres",
+   "To communicate the retailer's unique benefits using integrated, multiple channels",
+   "To determine the breadth and depth of the merchandise mix"
+  ],
+  "answer": 2,
+  "explanation": "The communications mix exists to communicate unique benefits, ideally through integrated, multiple channels (the Indigo example: stores, website, email, loyalty and social media working together). The other options belong to the pricing, location and products and services quadrants.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-071",
+  "concept": "c11-retailing-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which element does NOT belong in the communications mix quadrant of the retailing mix?",
+  "options": [
+   "Markdowns",
+   "Displays and signage",
+   "Database marketing",
+   "Telephone sales and follow-up"
+  ],
+  "answer": 0,
+  "explanation": "Markdowns belong in the retail pricing mix. The communications quadrant includes personal selling, advertising, displays and signage, public relations, catalogues, telephone sales and follow-up, website, direct marketing and database marketing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-072",
+  "concept": "c11-retailing-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which element is correctly matched with its retailing mix quadrant?",
+  "options": [
+   "Catalogues: physical location mix",
+   "Logistics: communications mix",
+   "Sales functions and assistance: retail pricing mix",
+   "Image, quality and value: retail pricing mix"
+  ],
+  "answer": 3,
+  "explanation": "The pricing quadrant lists image, quality and value along with markups, markdowns and shrinkage, because price signals image. Catalogues are in the communications mix, logistics in the physical location mix, and sales functions and assistance in the products and services mix.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-073",
+  "concept": "c11-retailing-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the course's retailing mix figure, what is at the centre of the four quadrants, and what surrounds the whole mix?",
+  "options": [
+   "The target market and consumers are at the centre, surrounded by information",
+   "Price is at the centre, surrounded by the other three quadrants",
+   "The wholesaler is at the centre, surrounded by suppliers",
+   "Store atmosphere is at the centre, surrounded by communications"
+  ],
+  "answer": 0,
+  "explanation": "All four quadrants (products and services, pricing, physical location, communications) are arranged around the target market and consumers, and information surrounds the mix. Price is only one quadrant, not the hub.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-074",
+  "concept": "c11-merchandise-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A retailer's merchandise mix is best described as:",
+  "options": [
+   "how many different products a store carries, and in what assortment",
+   "how many different types of products a store carries, and how they are displayed",
+   "what assortment of products a store expects to stock annually",
+   "the products a store is considering purchasing for the coming quarter of the business cycle"
+  ],
+  "answer": 0,
+  "explanation": "The merchandise mix describes how many different types of products a store carries and in what assortment. How products are displayed relates to store atmosphere, not the merchandise mix, which is why the second option is wrong.",
+  "source": "official"
+ },
+ {
+  "id": "q11-075",
+  "concept": "c11-merchandise-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "TrendHouse carries four product lines: shoes (60 items), appliances (25 items), CDs (300 titles) and men's clothing (90 items). What is the BREADTH of TrendHouse's merchandise mix?",
+  "options": [
+   "475 items",
+   "300 items",
+   "60 items",
+   "4 product lines"
+  ],
+  "answer": 3,
+  "explanation": "Breadth = the number of different product lines carried = 4 (shoes, appliances, CDs, men's clothing). 475 is the total item count (60 + 25 + 300 + 90 = 475), and 300 is the depth of the CD line, not breadth.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-076",
+  "concept": "c11-merchandise-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Store X carries 3 product lines with about 500 items in each. Store Y carries 40 product lines with about 10 items in each. Which statement is correct?",
+  "options": [
+   "Store X has the deeper merchandise mix; Store Y has the broader one",
+   "Store X has the broader merchandise mix; Store Y has the deeper one",
+   "Both stores have the same breadth because their totals are similar",
+   "Store Y is deeper because it carries more product lines"
+  ],
+  "answer": 0,
+  "explanation": "Breadth counts the number of product lines (Y = 40 vs X = 3), while depth counts items within each line (X = 500 vs Y = 10). So X is deeper and Y is broader; mixing these up is the most common trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-077",
+  "concept": "c11-merchandise-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Tackle Box Outdoors adds 40 new fishing lures to its existing fishing line without adding any new product lines. Which aspect of its merchandise mix has changed?",
+  "options": [
+   "Breadth",
+   "Depth",
+   "Store atmosphere",
+   "Level of service"
+  ],
+  "answer": 1,
+  "explanation": "Adding items within an existing line increases depth, the number of items in each product line. Breadth would change only if Tackle Box added a new line (e.g., camping gear).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-078",
+  "concept": "c11-merchandise-mix",
+  "also": [
+   "c11-store-atmosphere"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "A retailer's merchandise mix does NOT describe which of the following?",
+  "options": [
+   "How products are displayed and lit in the store",
+   "The number of different product lines carried",
+   "The number of items within each product line",
+   "The assortment offered within its lines"
+  ],
+  "answer": 0,
+  "explanation": "Display and lighting are store atmosphere decisions. The merchandise mix covers how many types of products (breadth) and in what assortment (depth) a store carries.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-079",
+  "concept": "c11-category-management",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Category management involves:",
+  "options": [
+   "a big-box retailer dominating one category with deep assortment and low prices",
+   "assigning a manager responsibility for the profitability of a product category and managing it as a strategic business unit",
+   "classifying retail outlets by the breadth of lines they carry",
+   "understanding how consumers behave as shoppers across channels"
+  ],
+  "answer": 1,
+  "explanation": "Category management makes one manager accountable for a category's profitability (e.g., shoes) and runs it like a strategic business unit. The first distractor describes a category killer, a store format, and the last describes shopper marketing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-080",
+  "concept": "c11-category-management",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "At FreshCo Markets, one manager is responsible for the entire snack category: choosing brands, allocating shelf space, planning promotions and answering for the category's profit. This approach is called:",
+  "options": [
+   "category killer",
+   "shopper marketing",
+   "category management",
+   "scrambled merchandising"
+  ],
+  "answer": 2,
+  "explanation": "Giving one manager profit responsibility for a whole product category and running it as a strategic business unit is category management. 'Category killer' sounds similar but is a type of discount specialty store, not an internal management approach.",
+  "source": "generated"
+ }
+]

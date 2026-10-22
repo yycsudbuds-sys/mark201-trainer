@@ -1,0 +1,312 @@
+[
+ {
+  "id": "q10-161",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is the main risk of operating a just-in-time inventory system?",
+  "options": [
+   "Inventory carrying costs become much higher than in traditional systems",
+   "Little stock on hand means a late delivery can quickly cause stockouts or stoppages",
+   "Suppliers must deliver larger shipments on a less frequent basis",
+   "It removes the need for fast, dependable transportation"
+  ],
+  "answer": 1,
+  "explanation": "JIT works only with fast, on-time delivery, because there is little stock to absorb a delay. It lowers carrying costs and relies on smaller, more frequent shipments, the opposite of the distractors.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-162",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which is NOT one of the reasons the chapter gives for holding inventory?",
+  "options": [
+   "To buffer against variations in supply and demand",
+   "To provide better customer service",
+   "To speculate on future price changes",
+   "To eliminate the need for order processing"
+  ],
+  "answer": 3,
+  "explanation": "Firms hold inventory to buffer variations in supply and demand, give better service, promote efficiency and speculate. Holding inventory does nothing to remove the need to process orders.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-163",
+  "concept": "c10-warehousing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "At a Fleetway Grocers facility, inbound trucks are unloaded and the pallets are moved straight across the dock onto outbound trucks headed to stores, spending only a few hours in the building. This practice is:",
+  "options": [
+   "cross-docking",
+   "traditional storage warehousing",
+   "vendor-managed inventory",
+   "reverse logistics"
+  ],
+  "answer": 0,
+  "explanation": "Cross-docking means unloading inbound shipments and loading them onto outbound vehicles with little or no storage. A traditional storage warehouse holds goods for longer periods.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-164",
+  "concept": "c10-warehousing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a distribution centre differ from a traditional storage warehouse?",
+  "options": [
+   "A distribution centre holds goods for years, while a storage warehouse ships everything the same day",
+   "A distribution centre is always public, while a storage warehouse is always private",
+   "A distribution centre keeps goods moving; a storage warehouse holds them for longer periods",
+   "There is no difference; both are built only for long-term storage of goods"
+  ],
+  "answer": 2,
+  "explanation": "Storage warehouses hold goods for moderate to long periods; distribution centres are designed to keep goods moving and often use cross-docking. Public vs private is about ownership, which is a separate warehousing decision.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-165",
+  "concept": "c10-warehousing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A firm that rents space and services from an independent warehouse operator, rather than owning its own facility, is using:",
+  "options": [
+   "private warehousing",
+   "public warehousing",
+   "cross-docking",
+   "vendor-managed inventory"
+  ],
+  "answer": 1,
+  "explanation": "Public warehouses are operated by independent firms that rent space and services to others; private warehouses are owned or operated by the firm itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-166",
+  "concept": "c10-warehousing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Harbourview Toys' volume triples for the six weeks before Christmas, and its small private warehouse is enough for the rest of the year. Which warehousing approach fits best?",
+  "options": [
+   "Build a private warehouse large enough for the Christmas peak",
+   "Eliminate all warehousing and cross-dock every product year-round",
+   "Combine its private warehouse with rented public warehouse space for the peak season",
+   "Replace warehousing with a reverse logistics program"
+  ],
+  "answer": 2,
+  "explanation": "The chapter notes that firms can use public, private or a combination of warehousing. Renting public space only for the peak avoids paying year-round for capacity that sits empty most of the year.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-167",
+  "concept": "c10-warehousing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which statement about warehousing is NOT correct?",
+  "options": [
+   "Warehouses can be public or private",
+   "Cross-docking means storing goods for long periods before shipping them",
+   "Distribution centres are designed to facilitate the timely movement of goods",
+   "Many firms use a combination of warehousing approaches"
+  ],
+  "answer": 1,
+  "explanation": "Cross-docking involves little or no storage: goods move from inbound to outbound vehicles quickly. Long-term storage describes a traditional storage warehouse.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-168",
+  "concept": "c10-reverse-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which is the BEST example of reverse logistics?",
+  "options": [
+   "H&M accepts used clothing in its stores. H&M then recycles the clothing to make new textiles.",
+   "Co-op purchases products from local farmers to sell in its grocery stores.",
+   "Apple ships its products directly to customers from its online store.",
+   "Zara hosts a promotional event to launch the opening of a new store where guests are given a tote bag."
+  ],
+  "answer": 0,
+  "explanation": "Reverse logistics reclaims recyclable and reusable materials, returns and reworks from the point of consumption for repair, remanufacturing, redistribution or disposal, which is exactly what H&M does with used clothing. Apple shipping to customers is forward (outbound) logistics through a direct channel.",
+  "source": "official"
+ },
+ {
+  "id": "q10-169",
+  "concept": "c10-reverse-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A process of reclaiming recyclable and reusable materials, returns and reworks from the point of consumption or use for repair, remanufacturing, redistribution or disposal is called:",
+  "options": [
+   "disintermediation",
+   "backward integration",
+   "cross-docking",
+   "reverse logistics"
+  ],
+  "answer": 3,
+  "explanation": "That is the definition of reverse logistics. Backward integration is a retailer or wholesaler owning upstream production; 'backward' there refers to ownership, not to products flowing back.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-170",
+  "concept": "c10-reverse-logistics",
+  "also": [
+   "c10-corporate-vms"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A student confuses reverse logistics with backward integration. Which explanation correctly separates them?",
+  "options": [
+   "Reverse logistics moves used goods back from consumers; backward integration means owning upstream production",
+   "Reverse logistics is a retailer buying its suppliers; backward integration is recycling used products",
+   "Both terms mean returning defective goods to the manufacturer for a refund or a replacement",
+   "Reverse logistics is part of channels between nations; backward integration is part of channels within nations"
+  ],
+  "answer": 0,
+  "explanation": "The two share a 'backward' feel but are unrelated: reverse logistics is the return flow of products and materials, while backward integration is ownership in a corporate VMS (e.g., a coffee chain owning its cookie bakery).",
+  "source": "generated"
+ },
+ {
+  "id": "q10-171",
+  "concept": "c10-reverse-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Voltway, an e-bike maker, collects worn batteries from customers, refurbishes the usable cells into new packs and safely disposes of the rest. This is an example of:",
+  "options": [
+   "reverse logistics",
+   "vendor-managed inventory",
+   "backward integration",
+   "disintermediation"
+  ],
+  "answer": 0,
+  "explanation": "Reclaiming used products from customers for remanufacturing and disposal is reverse logistics. Backward integration would mean Voltway owning its battery supplier.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-172",
+  "concept": "c10-reverse-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might a retailer invest in a reverse logistics program?",
+  "options": [
+   "To shorten its forward channel by removing wholesalers and selling direct",
+   "To recover value from returns and used products and meet sustainability expectations",
+   "To get newly launched products to consumers faster than competitors",
+   "To gain control over its suppliers by taking ownership of them"
+  ],
+  "answer": 1,
+  "explanation": "Reverse logistics turns returns and used goods into value through repair, remanufacturing, redistribution or responsible disposal, which also supports sustainability. Removing wholesalers or owning suppliers are forward-channel decisions.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-173",
+  "concept": "c10-3pl",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Firms that perform most or all of the logistics functions that manufacturers, suppliers and distributors would normally perform themselves are called:",
+  "options": [
+   "industrial distributors",
+   "agents or brokers",
+   "channel captains",
+   "third-party logistics providers"
+  ],
+  "answer": 3,
+  "explanation": "Third-party logistics providers (3PLs) perform most or all logistics functions for other firms. Industrial distributors buy and resell goods, and agents negotiate sales rather than handle logistics.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-174",
+  "concept": "c10-3pl",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Muskeg Apparel, an online clothing start-up, hands its warehousing, order picking, shipping and returns handling to LogiPro, an outside firm that does the same for dozens of other brands. LogiPro is a:",
+  "options": [
+   "wholesaler-sponsored voluntary chain",
+   "strategic channel alliance partner",
+   "third-party logistics provider",
+   "vendor-managed inventory supplier"
+  ],
+  "answer": 2,
+  "explanation": "An outside firm performing most or all logistics functions for other companies is a 3PL. A strategic channel alliance would involve selling Muskeg's products through another firm's marketing channel, not outsourcing its logistics.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-175",
+  "concept": "c10-3pl",
+  "also": [
+   "c10-intermediary-terms"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does a third-party logistics provider typically differ from a wholesaler?",
+  "options": [
+   "A 3PL always takes title to the goods it handles, whereas a wholesaler never does",
+   "A 3PL sells mainly to final consumers, whereas a wholesaler sells only to manufacturers",
+   "A 3PL stores and moves goods for a fee without buying them; a wholesaler takes title and resells",
+   "The two terms are interchangeable, since both store and move goods for other firms"
+  ],
+  "answer": 2,
+  "explanation": "A 3PL is a logistics service firm that moves and stores other firms' goods. A wholesaler buys (takes title to) goods and resells them, performing transactional as well as logistical functions.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-176",
+  "concept": "c10-3pl",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why would a manufacturer outsource its logistics to a 3PL?",
+  "options": [
+   "A specialist can do the work more efficiently, letting the manufacturer focus on its core business",
+   "Outsourcing removes the need for any logistics functions to be performed at all",
+   "A 3PL guarantees the manufacturer exclusive distribution in each of its markets",
+   "A 3PL takes ownership of the manufacturer's retail customers and their accounts"
+  ],
+  "answer": 0,
+  "explanation": "Like any channel partner, a 3PL must add value by doing the work better or more cheaply. The functions still have to be performed; outsourcing only changes who performs them.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-177",
+  "concept": "c10-3pl",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which task would a third-party logistics provider be LEAST likely to perform for a client?",
+  "options": [
+   "Warehousing the client's products",
+   "Designing the client's national advertising campaign",
+   "Transporting orders to customers",
+   "Processing returned goods"
+  ],
+  "answer": 1,
+  "explanation": "3PLs handle logistics functions such as warehousing, transportation, order fulfilment and returns. Advertising is a promotion activity outside logistics.",
+  "source": "generated"
+ }
+]

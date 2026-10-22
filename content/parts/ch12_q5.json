@@ -1,0 +1,130 @@
+[
+ {
+  "id": "q12-161",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the six regulatory bodies listed on the course slide?",
+  "options": [
+   "Canadian Wireless Telecommunications Association (CWTA)",
+   "Mobile Marketing Association (MMA)",
+   "Better Business Bureau (BBB)",
+   "Canadian Marketing Association (CMA)"
+  ],
+  "answer": 2,
+  "explanation": "The six bodies are ASC, the Competition Bureau, the CRTC, the CMA, the CWTA, and the MMA. The Better Business Bureau is not on the course's list.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-162",
+  "concept": "c12-regulators",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A Montreal retailer plans a campaign in which shoppers text a keyword to a five-digit short code to join a VIP list. Which two bodies on the course list focus specifically on the wireless and mobile marketing space?",
+  "options": [
+   "CRTC and ASC",
+   "CMA and the Competition Bureau",
+   "ASC and the CMA",
+   "CWTA and MMA"
+  ],
+  "answer": 3,
+  "explanation": "The Canadian Wireless Telecommunications Association represents the wireless industry (including guidelines for text-message short codes), and the Mobile Marketing Association sets mobile marketing guidelines. The CRTC regulates broadcasting and telecom broadly, and ASC covers advertising in general.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-163",
+  "concept": "c12-internal-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Before launching its 'Fresh in 60 seconds' campaign, Prairie Burger trains every crew member on the promise, shows staff the ads before customers see them, and rewards teams that deliver. This is an example of:",
+  "options": [
+   "a push strategy",
+   "internal marketing",
+   "personal selling",
+   "public relations"
+  ],
+  "answer": 1,
+  "explanation": "Internal marketing treats the company's own employees as an audience so they can deliver the brand promise. A push strategy aims incentives and training at channel members such as independent retailers, not the firm's own crew.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-164",
+  "concept": "c12-internal-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A Calgary software company hires someone to shape how current and prospective employees see the firm as a place to work, including running its careers social accounts and employee-story videos. This emerging role is the:",
+  "options": [
+   "media buyer",
+   "product manager",
+   "employer brand manager",
+   "sales manager"
+  ],
+  "answer": 2,
+  "explanation": "The course identifies the employer brand manager as an emerging role that manages the organization's image as an employer. A product manager manages a product brand's marketing, not the company's reputation with employees.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-165",
+  "concept": "c12-internal-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the course describe internal marketing as a key to competitive advantage?",
+  "options": [
+   "Because employees deliver the brand experience, so informed, engaged people make the external promise real",
+   "Because internal communications to staff are exempt from all Canadian advertising regulation",
+   "Because it removes the need to spend money on external IMC programs",
+   "Because employees count as earned media in the paid, owned, and earned framework"
+  ],
+  "answer": 0,
+  "explanation": "The course stresses people as the source of competitive advantage: staff who understand and believe in the brand deliver the experience customers were promised. Internal marketing supports external IMC; it doesn't replace it.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-166",
+  "concept": "c12-internal-marketing",
+  "also": [
+   "c12-push-pull"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Internal marketing and a push strategy can both involve training and incentives. What distinguishes them?",
+  "options": [
+   "Internal marketing targets channel members; push targets the firm's own employees",
+   "Internal marketing targets the firm's own employees; push targets channel members such as retailers and wholesalers",
+   "Internal marketing is used only in decline; push only in introduction",
+   "Internal marketing is a form of earned media; push is a form of owned media"
+  ],
+  "answer": 1,
+  "explanation": "The audience decides it: internal marketing is aimed inside the organization at its own people, while push is aimed at intermediaries and their sales staff. The first option reverses the two audiences.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-167",
+  "concept": "c12-internal-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the course's points about internal marketing?",
+  "options": [
+   "Internal marketing is a key to competitive advantage through people",
+   "The employer brand manager is an emerging role in organizations",
+   "Social media is important for employee engagement and content development",
+   "Internal marketing replaces the need for external marketing communications"
+  ],
+  "answer": 3,
+  "explanation": "The course notes internal marketing's role in competitive advantage, the emerging employer brand manager role, and social media's importance for engagement and content (with the ultimate goal of creating experiences). Nothing says it replaces external communications; it supports them.",
+  "source": "generated"
+ }
+]

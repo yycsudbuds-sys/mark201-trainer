@@ -1,0 +1,734 @@
+[
+  {
+    "id": "q01-041",
+    "concept": "c01-marketing-mix",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "In the marketing mix, which element is defined as 'a means of communication between the seller and the buyer'?",
+    "options": [
+      "Promotion",
+      "Price",
+      "Product",
+      "Place"
+    ],
+    "answer": 0,
+    "explanation": "Promotion is the means of communication between seller and buyer. Place is the means of getting the product to the consumer, price is what is exchanged for the product, and product is the good, service or idea that satisfies needs.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-042",
+    "concept": "c01-marketing-mix",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Maple Grove Cider decides to sell its new craft cider only at its own farm shop and in select independent liquor stores, rather than in every grocery chain. Which marketing mix decision is this?",
+    "options": [
+      "Product",
+      "Promotion",
+      "Price",
+      "Place"
+    ],
+    "answer": 3,
+    "explanation": "Place is the means of getting the product to the consumer, so choosing which outlets carry the cider is a place decision. Promotion would be how the cidery communicates with buyers, such as ads or tastings.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-043",
+    "concept": "c01-marketing-mix",
+    "also": [
+      "c01-environmental-forces"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which of the following is a controllable marketing mix decision rather than an environmental force?",
+    "options": [
+      "A rival opening a store across the street",
+      "A recession that reduces household spending",
+      "Cutting a streaming subscription price from $15 to $12 per month",
+      "A new federal law limiting food advertising to children"
+    ],
+    "answer": 2,
+    "explanation": "Price is one of the 4 Ps, which marketers control. A recession (economic), a new law (regulatory) and a rival's new store (competitive) are environmental forces, which the firm cannot control and can only respond to.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-044",
+    "concept": "c01-marketing-mix",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 3,
+    "stem": "A sporting-goods marketing manager lists decisions under her control. Which item does NOT belong on her list of marketing mix decisions?",
+    "options": [
+      "How quickly smartphone adoption grows among her customers",
+      "Whether to accept trade-in gear as part payment for new bikes",
+      "Whether to bundle free ski tuning with every pair of skis sold",
+      "Which delivery partners will get products to online buyers"
+    ],
+    "answer": 0,
+    "explanation": "Smartphone adoption is a technological environmental force the manager cannot control. Accepting trade-ins is a price decision (price is what is exchanged for the product), choosing delivery partners is place, and bundling ski tuning is part of the product offering - all controllable 4 P decisions.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-045",
+    "concept": "c01-marketing-mix",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Lumen Skincare launches a premium $95 serum in luxury packaging but sells it in dollar stores and promotes it with 'Cheapest in town!' flyers. Sales are poor. Which marketing mix principle did Lumen violate?",
+    "options": [
+      "The 4 Ps are uncontrollable, so marketers can only monitor them",
+      "Promotion matters more than the other three Ps combined",
+      "Price should always be set below competitors' prices",
+      "The 4 Ps must be consistently coordinated and appeal to the target market"
+    ],
+    "answer": 3,
+    "explanation": "The slides stress that the 4 Ps must be consistently coordinated and appeal to the target market. A premium product and price clash with discount distribution and bargain promotion. The 4 Ps are controllable; 'uncontrollable' describes environmental forces.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-046",
+    "concept": "c01-marketing-mix",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A Vancouver food bank's gift shop gives a reusable tote bag to anyone who contributes 30 minutes of volunteer time at its warehouse. In marketing mix terms, the 30 minutes of volunteer time is the:",
+    "options": [
+      "product",
+      "promotion",
+      "price",
+      "place"
+    ],
+    "answer": 2,
+    "explanation": "Price is defined as what is exchanged for the product, and it need not be money - here it is time and effort. The tote is the product; the volunteer time is not a means of communication (promotion) or of getting the product to the consumer (place).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-047",
+    "concept": "c01-environmental-forces",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Social, economic, technological, competitive and regulatory factors are the _____ that affect marketing decisions.",
+    "options": [
+      "business philosophies",
+      "environmental forces",
+      "marketing mix elements",
+      "value propositions"
+    ],
+    "answer": 1,
+    "explanation": "These five are the environmental forces: uncontrollable factors outside the marketer's direct control. The marketing mix elements (the 4 Ps) are the controllable factors marketers use to respond to them.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-048",
+    "concept": "c01-environmental-forces",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Bookings at Sunridge RV Rentals in Calgary dropped sharply after fuel prices and interest rates jumped and Canadians cut back on discretionary travel. Which environmental force is most directly at work?",
+    "options": [
+      "Economic",
+      "Regulatory",
+      "Technological",
+      "Social"
+    ],
+    "answer": 0,
+    "explanation": "Rising fuel costs, higher interest rates and reduced discretionary spending are economic conditions. A social force would involve changing values or lifestyles, and a regulatory force would involve new laws or rules.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-049",
+    "concept": "c01-environmental-forces",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "More Canadians are cutting back on meat for health and environmental reasons, so a Calgary burger chain adds plant-based patties to its menu. Which environmental force prompted the change?",
+    "options": [
+      "Competitive",
+      "Social",
+      "Economic",
+      "Regulatory"
+    ],
+    "answer": 1,
+    "explanation": "Shifting consumer values and lifestyles (health and environmental concerns) are social forces. Nothing in the stem mentions rivals' actions (competitive), prices or incomes (economic), or new rules (regulatory).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-050",
+    "concept": "c01-environmental-forces",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the five environmental forces?",
+    "options": [
+      "Competitive",
+      "Technological",
+      "Regulatory",
+      "Promotional"
+    ],
+    "answer": 3,
+    "explanation": "The five environmental forces are social, economic, technological, competitive and regulatory. Promotion is one of the controllable 4 Ps, so a 'promotional force' is a marketing mix element in disguise.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-051",
+    "concept": "c01-environmental-forces",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A new Health Canada rule bans certain health claims on supplement labels. In response, Vitality Labs redesigns its packaging and launches a new ad campaign. Which statement is correct?",
+    "options": [
+      "The rule is a competitive force because rival firms must also comply with it",
+      "The rule is a marketing mix decision; the redesign is an uncontrollable environmental force",
+      "The rule is a regulatory force; the packaging and ad changes are marketing mix decisions",
+      "The rule and the redesign are both marketing mix decisions controlled by the firm"
+    ],
+    "answer": 2,
+    "explanation": "Government rules are regulatory forces the firm cannot control; its responses (packaging, part of the product, and ads, part of promotion) are controllable marketing mix decisions. That rivals face the same rule does not make it a competitive force.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-052",
+    "concept": "c01-environmental-forces",
+    "also": [
+      "c01-marketing-definition"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 2,
+    "stem": "In the textbook figure showing the role of marketing in an organization, which statement is accurate?",
+    "options": [
+      "Marketing operates apart from R&D, finance and manufacturing so that it can concentrate fully on advertising",
+      "Marketing works with other departments and links the firm to customers, suppliers, partners and owners",
+      "Environmental forces sit inside the marketing department and are directly controlled by the marketing manager",
+      "Marketing links the organization only to its customers; suppliers and shareholders are not part of the picture"
+    ],
+    "answer": 1,
+    "explanation": "The figure shows the marketing department among R&D, manufacturing, finance, HR, IT and senior management, linking the organization to alliances, suppliers, customers and shareholders/owners, all surrounded by the uncontrollable environmental forces. Those forces sit outside the organization and cannot be controlled.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-053",
+    "concept": "c01-marketing-program",
+    "also": [
+      "c01-marketing-process"
+    ],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 2,
+    "stem": "After discovering consumers' needs, marketing's next task is to:",
+    "options": [
+      "create a target market mission statement",
+      "determine consumer demographics",
+      "translate information about consumer needs into products that satisfy them",
+      "design product prototypes",
+      "develop a value strategy"
+    ],
+    "answer": 2,
+    "explanation": "Once needs are discovered (step 1 of the marketing process), marketing must translate that information into offerings that satisfy them, which is done through a marketing program: a plan that integrates the marketing mix to provide a good, service or idea to prospective buyers. Designing prototypes is a narrower R&D task, and demographics are part of discovering needs, not the next step.",
+    "source": "official"
+  },
+  {
+    "id": "q01-054",
+    "concept": "c01-marketing-program",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "A plan that integrates the marketing mix to provide a good, service or idea to prospective buyers is a:",
+    "options": [
+      "marketing process",
+      "marketing concept",
+      "market orientation",
+      "marketing program"
+    ],
+    "answer": 3,
+    "explanation": "That is the definition of a marketing program. The marketing process is the broader three-step sequence (identify needs, manage the mix, realize profits), and the marketing concept is a philosophy, not a plan.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-055",
+    "concept": "c01-marketing-program",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "After learning that Regina shift workers want healthy late-night food, Harvest Bowl creates a $12 grain-bowl line, sells it from a food truck parked near hospitals from 10 p.m. to 3 a.m., and promotes it in a nurses' union newsletter. Together, these coordinated decisions form Harvest Bowl's:",
+    "options": [
+      "marketing program",
+      "market orientation",
+      "target market",
+      "value proposition"
+    ],
+    "answer": 0,
+    "explanation": "Integrating product, price, place and promotion into one plan for prospective buyers is a marketing program. The shift workers are the target market the program is aimed at, not the program itself.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-056",
+    "concept": "c01-marketing-program",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which statement correctly distinguishes the marketing mix from a marketing program?",
+    "options": [
+      "The mix applies only to physical goods; the program applies to services and ideas",
+      "The mix covers the uncontrollable forces; the program covers the controllable ones",
+      "The mix is the four controllable elements; the program is the plan that integrates them",
+      "The mix is the integrated plan; the program is the list of four controllable elements"
+    ],
+    "answer": 2,
+    "explanation": "The marketing mix is the set of ingredients (product, price, promotion, place); the marketing program is the recipe that integrates them into a coherent plan. Uncontrollable factors are environmental forces, not part of the mix.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-057",
+    "concept": "c01-marketing-program",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which activity is NOT part of designing a marketing program?",
+    "options": [
+      "Deciding how to communicate with buyers",
+      "Measuring Canada's aggregate flow of goods",
+      "Choosing a price for the new offering",
+      "Deciding how to get the offering to buyers"
+    ],
+    "answer": 1,
+    "explanation": "A marketing program integrates the 4 Ps for one organization's prospective buyers, so pricing, distribution and communication all belong. The aggregate flow of a nation's goods and services is macromarketing, which is outside any single firm's program.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-058",
+    "concept": "c01-marketing-process",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 1,
+    "stem": "What is the FIRST step in the marketing process shown in Figure 1-2?",
+    "options": [
+      "Promote the product to as many people as possible",
+      "Manage the marketing mix to meet consumer needs",
+      "Realize profits for the company",
+      "Identify consumer needs"
+    ],
+    "answer": 3,
+    "explanation": "The marketing process begins by identifying (discovering) consumer needs through research. Managing the marketing mix is step 2 and realizing profits is step 3; the process never starts with promotion.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-059",
+    "concept": "c01-marketing-process",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 3,
+    "stem": "A Calgary non-profit has researched what newcomers to Canada need and has launched free language workshops at public libraries, promoted through settlement agencies. In the marketing process, what comes next for this organization?",
+    "options": [
+      "Realize objectives, such as newcomers served",
+      "Identify consumer needs for the first time",
+      "Realize profits that it can pay out to owners",
+      "Manage the marketing mix to meet newcomers' needs"
+    ],
+    "answer": 0,
+    "explanation": "Step 1 (identify needs) and step 2 (manage the mix) are done, so step 3 follows; for a non-profit, step 3 is realizing objectives rather than profits. Paying profits to owners does not fit a non-profit.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-060",
+    "concept": "c01-marketing-process",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "After focus groups in Yellowknife and Edmonton revealed what tea drinkers dislike about current brands, Tundra Tea Co. is now choosing a $6 price, a recyclable tin, listings at Sobeys and an Instagram launch campaign. Which step of the marketing process is Tundra in?",
+    "options": [
+      "Realizing profits for the company",
+      "Building long-term relationships through CRM",
+      "Managing the marketing mix to meet consumer needs",
+      "Identifying consumer needs"
+    ],
+    "answer": 2,
+    "explanation": "Needs have already been identified (step 1), and Tundra is now setting product, price, place and promotion, which is step 2: managing the marketing mix to meet consumer needs. Profits (step 3) come only after the program reaches the market.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-061",
+    "concept": "c01-marketing-process",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about the marketing process in Figure 1-2 is NOT correct?",
+    "options": [
+      "The process begins by building a product and then searching for buyers",
+      "For a non-profit, the final step is realizing objectives rather than profits",
+      "Information about consumer needs flows from the market to the organization",
+      "Products, services and ideas flow from the organization to the market"
+    ],
+    "answer": 0,
+    "explanation": "The marketing process is 'a process that focuses on consumer needs': it begins by identifying needs, not by building a product first (that is production-era thinking). The other three statements describe Figure 1-2 accurately.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-062",
+    "concept": "c01-marketing-process",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why does the chapter describe the marketing process as 'a process that focuses on consumer needs'?",
+    "options": [
+      "It ends with consumer needs only after the firm has maximized its production output",
+      "It replaces profit with consumer needs as the organization's one and only goal",
+      "It treats consumer needs as an uncontrollable environmental force to be monitored",
+      "It begins by discovering needs, then designs the mix to satisfy them before profits follow"
+    ],
+    "answer": 3,
+    "explanation": "Needs drive the whole sequence: they are identified first, the marketing mix is managed to satisfy them, and profits (or objectives) result. The process does not drop profit - realizing profits is its third step.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-063",
+    "concept": "c01-marketing-process",
+    "also": [
+      "c01-marketing-concept"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A student writes: 'The marketing process and the marketing concept are the same thing.' Which correction is best?",
+    "options": [
+      "The process applies only to non-profit groups; the concept applies only to for-profit firms",
+      "The process is three steps: needs, mix, profits; the concept is satisfying needs while meeting goals",
+      "The process is a philosophy about serving customers; the concept is a three-step sequence of actions",
+      "The process is the 4 Ps of the mix; the concept is the five uncontrollable environmental forces"
+    ],
+    "answer": 1,
+    "explanation": "The marketing process is a sequence of steps; the marketing concept is the guiding idea behind it. The second option simply swaps the two definitions, and both apply to for-profit and non-profit organizations.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-064",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 1,
+    "stem": "Which sequence correctly shows the evolution of business philosophies?",
+    "options": [
+      "Production → marketing → sales → relationship/societal",
+      "Marketing → production → sales → relationship/societal",
+      "Production → sales → marketing → relationship/societal",
+      "Sales → production → marketing → relationship/societal"
+    ],
+    "answer": 2,
+    "explanation": "Firms first focused on efficient production (demand exceeded supply), then on selling their output as competition grew, then on consumer needs (marketing orientation), and today on long-term relationships and society's well-being.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-065",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "In 1912, a Montreal stove manufacturer could sell every stove it built because demand far exceeded supply, so its managers focused on making stoves as efficiently as possible. Which orientation did the firm have?",
+    "options": [
+      "Societal marketing orientation",
+      "Marketing orientation",
+      "Sales orientation",
+      "Production orientation"
+    ],
+    "answer": 3,
+    "explanation": "A production orientation focuses on producing goods efficiently and fits the early-1900s condition of demand exceeding supply. A sales orientation emerged later, once competition grew and firms had to push their output.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-066",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Facing new competitors and warehouses full of unsold vacuum cleaners, Hartwell Appliances hires a large door-to-door sales force and pays big commissions to push its existing models. Which orientation does this reflect?",
+    "options": [
+      "Relationship marketing orientation",
+      "Sales orientation",
+      "Production orientation",
+      "Marketing orientation"
+    ],
+    "answer": 1,
+    "explanation": "Pushing products the firm has already made through aggressive selling and promotion is the sales orientation. A marketing orientation would start by finding out what customers need before deciding what to make.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-067",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "What most clearly separates the marketing orientation from the sales orientation?",
+    "options": [
+      "Marketing emerged when demand exceeded supply; sales emerged once competition grew",
+      "Marketing stresses long-term relationships and society; sales stresses consumer needs",
+      "Marketing begins with consumer needs; sales begins with the products the firm has already made",
+      "Marketing relies on promotion; sales relies mainly on efficient production"
+    ],
+    "answer": 2,
+    "explanation": "The key difference is the starting point: the marketing orientation starts by discovering consumer needs, while the sales orientation pushes output the firm has already produced. 'Demand exceeded supply' describes the production era, and long-term relationships plus society describe today's relationship/societal orientation.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-068",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "According to the evolution of business philosophies, why did many firms shift from a production orientation to a sales orientation?",
+    "options": [
+      "Competition grew, so firms had to push their output to sell it",
+      "Consumers began demanding socially responsible business practices",
+      "Firms started sharing customer and competitor data across departments",
+      "Governments began banning efficient mass-production methods"
+    ],
+    "answer": 0,
+    "explanation": "The production era worked because demand exceeded supply; as competition grew, firms needed selling and promotion to move what they produced. Demand for social responsibility belongs to today's societal era, and sharing data across departments describes a market orientation.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-069",
+    "concept": "c01-business-philosophies",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Ridgeline Credit Union in Calgary now measures success by how many members stay for ten years or more, and it publicly reports on its community investments and environmentally responsible lending. Which stage in the evolution of business philosophies does this reflect?",
+    "options": [
+      "Production orientation",
+      "Sales orientation",
+      "Relationship/societal orientation",
+      "Marketing orientation"
+    ],
+    "answer": 2,
+    "explanation": "Long-term relationships (members staying a decade) plus attention to society's well-being (community investment, responsible lending) mark today's relationship/societal orientation. The plain marketing orientation focuses on satisfying consumer needs without that added long-term relationship and societal emphasis.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-070",
+    "concept": "c01-marketing-concept",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The idea that an organization should strive to satisfy the needs of consumers while also trying to achieve the organization's goals is the:",
+    "options": [
+      "marketing concept",
+      "sales orientation",
+      "societal marketing concept",
+      "market orientation"
+    ],
+    "answer": 0,
+    "explanation": "This two-part idea (satisfy consumers + achieve organizational goals) is the marketing concept. The societal marketing concept adds a third element, society's well-being, and market orientation is the practical implementation of the marketing concept.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-071",
+    "concept": "c01-marketing-concept",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "At Boreal Bikes in Thunder Bay, managers launch only models that customer research shows riders want, and only if the model can also meet the company's 25% margin target. Which idea guides Boreal?",
+    "options": [
+      "Macromarketing",
+      "The marketing concept",
+      "Customer experience management",
+      "The production orientation"
+    ],
+    "answer": 1,
+    "explanation": "Boreal balances both halves of the marketing concept: satisfying consumer needs (research-based models) and achieving organizational goals (the margin target). A production orientation would focus on making bikes efficiently regardless of what riders want.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-072",
+    "concept": "c01-marketing-concept",
+    "also": [
+      "c01-societal-csr"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "How does the societal marketing concept differ from the marketing concept?",
+    "options": [
+      "It focuses on pushing the firm's existing output through aggressive promotion",
+      "It drops the goal of satisfying consumer needs in favour of serving society",
+      "It requires collecting competitor information and sharing it across departments",
+      "It adds that needs be satisfied in a way that also provides for society's well-being"
+    ],
+    "answer": 3,
+    "explanation": "The societal marketing concept keeps the marketing concept's goal of satisfying consumers but adds society's well-being. It does not abandon consumers; aggressive selling is the sales orientation, and sharing information across departments is market orientation.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-073",
+    "concept": "c01-marketing-concept",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 3,
+    "stem": "A company claims to follow the marketing concept. Which practice is NOT consistent with that claim?",
+    "options": [
+      "Making whatever is cheapest to produce, then pushing it with heavy discounts",
+      "Rejecting a popular product idea that could never meet its profit goals",
+      "Researching customer needs before developing any new products",
+      "Updating its offering whenever customer needs change over time"
+    ],
+    "answer": 0,
+    "explanation": "Making whatever is cheapest and then pushing it ignores consumer needs (production and sales thinking). Rejecting an idea that cannot meet profit goals IS consistent with the marketing concept, because the concept includes achieving the organization's goals, not satisfying customers at any cost.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-074",
+    "concept": "c01-marketing-concept",
+    "also": [
+      "c01-market-orientation"
+    ],
+    "type": "tf",
+    "angle": "why",
+    "difficulty": 1,
+    "stem": "Firms that put great effort into implementing the marketing concept are said to have a market orientation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "True. Market orientation is the marketing concept put into practice: continuously collecting information about customers' needs and competitors' capabilities, sharing it across departments, and using it to create customer value.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-075",
+    "concept": "c01-market-orientation",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "An organization that focuses its efforts on continuously collecting information about customers' needs and competitors' capabilities, sharing this information across departments, and using the information to create customer values is said to:",
+    "options": [
+      "stress the societal marketing concept",
+      "have a focus on macromarketing",
+      "have a nonprofit orientation",
+      "have a market orientation",
+      "be utilizing consumerism"
+    ],
+    "answer": 3,
+    "explanation": "Collecting customer and competitor information, sharing it across departments and using it to create customer value is the definition of market orientation, the result of implementing the marketing concept. The societal marketing concept would add society's well-being, and macromarketing concerns a nation's aggregate flow of goods.",
+    "source": "official"
+  },
+  {
+    "id": "q01-076",
+    "concept": "c01-market-orientation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Every Monday, Tidewater Grocers' analytics team compiles loyalty-card data on shoppers' changing needs and a report on competitors' new services, sends both to the buying, store-operations and finance teams, and each team uses them to improve what customers get. Tidewater displays:",
+    "options": [
+      "macromarketing",
+      "the societal marketing concept",
+      "a sales orientation",
+      "a market orientation"
+    ],
+    "answer": 3,
+    "explanation": "All three components of market orientation are present: continuous collection of customer and competitor information, sharing across departments, and use of the information to create customer value. Nothing in the stem mentions society's well-being.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-077",
+    "concept": "c01-market-orientation",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT a component of a market orientation?",
+    "options": [
+      "Collecting information about competitors' capabilities",
+      "Keeping customer information inside the marketing department",
+      "Continuously collecting information about customers' needs",
+      "Using the gathered information to create customer value"
+    ],
+    "answer": 1,
+    "explanation": "A market orientation requires SHARING information across departments, not keeping it within marketing. Collecting customer and competitor information and using it to create value are the other components.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-078",
+    "concept": "c01-market-orientation",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which statement best distinguishes market orientation from the marketing concept?",
+    "options": [
+      "Market orientation is the underlying idea; the marketing concept is how a firm puts it into practice",
+      "Market orientation is a production-era philosophy; the marketing concept is the philosophy used today",
+      "Market orientation is the practical implementation (collect, share, use information); the marketing concept is the idea",
+      "Market orientation focuses on society's well-being; the marketing concept largely ignores customers"
+    ],
+    "answer": 2,
+    "explanation": "The marketing concept is the idea (satisfy consumer needs while achieving organizational goals); firms that work hard at implementing it achieve a market orientation by collecting, sharing and using information. The second option reverses them.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-079",
+    "concept": "c01-market-orientation",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "Cedar & Pine Furniture's marketing team surveys customers, but the design and production teams never see the results, and nobody tracks what competitors offer. What should the firm do to become market oriented?",
+    "options": [
+      "Sponsor a community program to adopt the societal marketing concept",
+      "Add competitor research and share all findings across departments so each can create customer value",
+      "Switch to a sales orientation to move existing inventory faster",
+      "Have the marketing team run customer surveys more often and keep the results in marketing"
+    ],
+    "answer": 1,
+    "explanation": "Market orientation has three parts: continuously collect information on customers' needs AND competitors' capabilities, share it across departments, and use it to create customer value. Cedar & Pine already collects customer data, so more surveys kept inside marketing miss both gaps: competitor information and cross-department sharing.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-080",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The idea that organizations are part of a larger society and are accountable to that society for their actions is called:",
+    "options": [
+      "customer relationship management",
+      "the marketing concept",
+      "corporate social responsibility",
+      "macromarketing"
+    ],
+    "answer": 2,
+    "explanation": "That is the definition of corporate social responsibility (CSR). Macromarketing is also society-level, but it describes the aggregate flow of a nation's goods and services, not an organization's accountability for its actions.",
+    "source": "generated"
+  }
+]

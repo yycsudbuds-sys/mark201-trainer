@@ -1,0 +1,727 @@
+[
+ {
+  "id": "q12-001",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Brightwater Bank's creative team takes the idea 'banking that respects your time' and turns it into a 15-second video of a customer finishing a mortgage application on her phone before her coffee cools. In the communication process, this translation of an idea into words and images is:",
+  "options": [
+   "decoding",
+   "encoding",
+   "feedback",
+   "the channel"
+  ],
+  "answer": 1,
+  "explanation": "Encoding is the sender's job of transforming an idea into symbols such as words, pictures, and sounds. Decoding is the opposite step, done by the receiver when interpreting those symbols, so it doesn't fit the sender's creative team.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-002",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A viewer in Edmonton watches Brightwater Bank's video and concludes, 'This bank will approve my mortgage quickly without a branch visit.' The viewer's interpretation of the ad's symbols is called:",
+  "options": [
+   "encoding",
+   "noise",
+   "decoding",
+   "field of experience"
+  ],
+  "answer": 2,
+  "explanation": "Decoding is the receiver taking the sender's symbols and transforming them back into an idea. Encoding is done by the sender, not the viewer; field of experience is the shared understanding that makes accurate decoding possible, not the act of interpreting itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-003",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Prairie Roast Coffee buys a 30-second spot on a Regina morning radio show. In the communication process, the radio station is the _____.",
+  "options": [
+   "channel",
+   "source",
+   "receiver",
+   "message"
+  ],
+  "answer": 0,
+  "explanation": "The channel is the means of conveying the message, here the radio station's broadcast. Prairie Roast is the source (sender), the listeners are the receivers, and the ad's content is the message.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-004",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northline Outfitters creates and pays for a campaign in which the company, through its spokesperson, tells Canadians its parkas are rated to -40. In the communication process, Northline is the:",
+  "options": [
+   "receiver",
+   "channel",
+   "message",
+   "source"
+  ],
+  "answer": 3,
+  "explanation": "The source (sender) is the company or person who has information to communicate: Northline and its spokesperson. The channel is the medium carrying the message (TV, Instagram), not the organization behind it.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-005",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the communication process, the receiver is best described as:",
+  "options": [
+   "the consumers who read, hear, or see the message",
+   "the medium, such as TV or a salesperson, that carries the message",
+   "the company that encodes and sends the message",
+   "the information the sender wants to transmit"
+  ],
+  "answer": 0,
+  "explanation": "The course defines receivers as the consumers who read, hear, or see the message. The medium that carries it is the channel, the company sending it is the source, and the information itself is the message.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-006",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Juniper Telecom posts an in-app notice reading 'Unlimited data now $10 cheaper' for its customers. Which option correctly maps the communication-process elements?",
+  "options": [
+   "Source: the app; message: Juniper; channel: the customers; receiver: the offer",
+   "Source: Juniper; message: the app; channel: the offer; receiver: customers who read it",
+   "Source: Juniper; message: the offer; channel: the app; receiver: customers who read it",
+   "Source: the customers; message: the offer; channel: Juniper; receiver: the app"
+  ],
+  "answer": 2,
+  "explanation": "Juniper is the source (sender), the $10-cheaper offer is the message (information to be transmitted), the app is the channel that carries it, and customers who read it are the receivers. The most tempting error is calling the app the message; the app is the vehicle, not the content.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-007",
+  "concept": "c12-communication-process",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "According to the course slide, communication requires all of the following EXCEPT:",
+  "options": [
+   "a source and a receiver",
+   "a channel of communication",
+   "a promotional budget",
+   "the processes of encoding and decoding"
+  ],
+  "answer": 2,
+  "explanation": "The slide lists a source, a message, a channel, a receiver, and the processes of encoding and decoding. A promotional budget is step 3 of the marketing communications planning process, not an element of communication itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-008",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "During a playoff broadcast, a regional cable glitch turns GlacierGear's commercial into pixelated video with garbled audio. In the communication process, the glitch is an example of:",
+  "options": [
+   "feedback",
+   "noise",
+   "selective inattention",
+   "decoding"
+  ],
+  "answer": 1,
+  "explanation": "Noise is any extraneous factor that distorts the message or the feedback, and technical interference is a textbook case. Selective inattention is a receiver tuning out a message that arrives clearly; here the message itself was distorted.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-009",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "After Prairie Pantry posts a new recipe reel, hundreds of followers comment with questions, share it, and click through to buy the featured spice blend. In the communication process, these responses back to the company are:",
+  "options": [
+   "decoding",
+   "the channel",
+   "noise",
+   "feedback"
+  ],
+  "answer": 3,
+  "explanation": "Feedback is the receiver's response communicated back to the sender; comments, clicks, and purchases all tell Prairie Pantry how the message landed. Decoding happens inside the receiver's head before any response is sent back.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-010",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Maple Crest Insurance translated its slogan 'We've got your back' word for word into another language for a newcomer audience; many readers understood it as an ad about back-injury coverage. The breakdown occurred mainly because sender and receivers lacked a shared:",
+  "options": [
+   "field of experience",
+   "channel",
+   "feedback loop",
+   "personal bias"
+  ],
+  "answer": 0,
+  "explanation": "Field of experience is the common understanding (language, culture, knowledge) sender and receiver need for a message to be decoded as intended, and a literal idiom translation breaks it. Personal bias is a barrier in which receivers understand a message but reject it because of their values; these readers simply decoded it differently.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-011",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Extraneous factors that work against effective communication by distorting a message or the feedback received are called:",
+  "options": [
+   "selective inexposure",
+   "field of experience",
+   "noise",
+   "decoding"
+  ],
+  "answer": 2,
+  "explanation": "That is the definition of noise. Field of experience refers to the shared understanding between sender and receiver, and selective inexposure is a barrier in which people avoid messages altogether.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-012",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which situation reflects a field-of-experience problem rather than noise?",
+  "options": [
+   "A bus-shelter poster for a gym is half covered by graffiti",
+   "A TV ad's soundtrack is drowned out by a crying baby in the living room",
+   "A printed flyer contains a typo in the store's phone number",
+   "A podcast ad for an investing app uses crypto slang its retired listeners don't understand"
+  ],
+  "answer": 3,
+  "explanation": "When the message arrives intact but the receiver lacks the knowledge to interpret it (unfamiliar jargon), sender and receiver don't share a field of experience. Graffiti, background crying, and typos are noise: factors that distort the message in transmission.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-013",
+  "concept": "c12-feedback-noise-experience",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is feedback valuable to the sender in the communication process?",
+  "options": [
+   "It shows whether the message was received and understood as intended",
+   "It removes noise from the channel before the message is sent",
+   "It translates the sender's idea into words and images",
+   "It guarantees that sender and receiver share a field of experience"
+  ],
+  "answer": 0,
+  "explanation": "Feedback (responses, questions, purchases) lets the sender judge whether the receiver decoded the message as intended and adjust. Translating an idea into symbols is encoding, which happens before the message is sent, not after.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-014",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Jonah pays extra for the ad-free tier of his streaming service and runs an ad blocker on his laptop so commercials never reach him. Which barrier to effective communication does this illustrate?",
+  "options": [
+   "selective inattention",
+   "selective inexposure",
+   "poor awareness",
+   "noise"
+  ],
+  "answer": 1,
+  "explanation": "Selective inexposure means avoiding exposure to messages altogether; ad-free subscriptions and ad blockers keep ads from ever reaching Jonah. Selective inattention would mean he sees the ads but tunes them out.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-015",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Every morning, Priya scrolls her social feed. Sponsored posts appear on her screen, but she glides past them without registering a single brand name. This barrier is:",
+  "options": [
+   "selective inexposure",
+   "personal bias",
+   "noise",
+   "selective inattention"
+  ],
+  "answer": 3,
+  "explanation": "Selective inattention occurs when people are exposed to a message but don't pay attention to it. Priya isn't avoiding exposure (inexposure), since the posts are right on her screen; she simply tunes them out.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-016",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Lena has been vegan for ten years. When a dairy marketing board's ad claims milk is the best source of calcium, she dismisses the claim immediately because it conflicts with her principles. Which barrier is at work?",
+  "options": [
+   "personal bias",
+   "selective inattention",
+   "field of experience",
+   "poor awareness"
+  ],
+  "answer": 0,
+  "explanation": "Personal bias (e.g., principles) leads receivers to reject a message because it conflicts with their beliefs. Lena understood the ad perfectly, so it isn't a field-of-experience problem, and she paid attention, so it isn't inattention.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-017",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "HushPod, a new Winnipeg startup, launched premium earbuds with superior noise cancelling. Its message isn't getting through because most shoppers have never heard of the brand and don't know the product exists. The main barrier is:",
+  "options": [
+   "selective inexposure",
+   "poor awareness",
+   "personal bias",
+   "selective inattention"
+  ],
+  "answer": 1,
+  "explanation": "Poor awareness means the audience doesn't know the brand or product, so messages have nothing to attach to. Nothing suggests shoppers are actively avoiding the ads (inexposure) or rejecting them on principle (bias).",
+  "source": "generated"
+ },
+ {
+  "id": "q12-018",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the key difference between selective inexposure and selective inattention?",
+  "options": [
+   "Inexposure is tuning out a message; inattention is avoiding it altogether",
+   "Inexposure stems from personal principles; inattention stems from low brand awareness",
+   "Inexposure is avoiding the message altogether; inattention is being exposed but tuning it out",
+   "Inexposure is caused by the sender's encoding; inattention by the receiver's decoding"
+  ],
+  "answer": 2,
+  "explanation": "With selective inexposure the message never reaches the person because they avoid it (ad blockers, ad-free plans); with selective inattention it reaches them but they don't pay attention. The first option reverses the two, which is exactly the trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-019",
+  "concept": "c12-barriers",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the four common barriers to effective communication listed in the course?",
+  "options": [
+   "poor awareness",
+   "selective inattention",
+   "personal bias",
+   "selective retention"
+  ],
+  "answer": 3,
+  "explanation": "The four barriers are poor awareness, selective inattention, selective inexposure, and personal bias. Selective retention is a perception concept from consumer behaviour (remembering only some information), not one of the four communication barriers.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-020",
+  "concept": "c12-barriers",
+  "also": [
+   "c12-inbound-outbound"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Regina meal-kit company learns that its target customers block banner ads and pay for ad-free streaming. Which response best works around this selective inexposure?",
+  "options": [
+   "Create useful recipe content that customers find through search and social on their own",
+   "Double the number of banner ads so customers see them more often",
+   "Rerun the same pre-roll video ads with a louder soundtrack",
+   "Lower prices and announce the discount in banner and pre-roll ads"
+  ],
+  "answer": 0,
+  "explanation": "When people avoid exposure to ads, more of the same ads won't reach them; inbound content that is seen in the right places (search, social) lets customers come to the brand. Doubling banner ads fails because ad blockers keep those ads from ever appearing.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-021",
+  "concept": "c12-marketing-communications",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Kotler and Keller define marketing communications as the means by which firms attempt to inform, _____, and remind consumers about the products and brands they sell.",
+  "options": [
+   "segment",
+   "persuade",
+   "price",
+   "distribute"
+  ],
+  "answer": 1,
+  "explanation": "The three purposes are inform, persuade, and remind. Segmenting, pricing, and distributing are other marketing activities (STP and the 4 Ps), not purposes of marketing communications.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-022",
+  "concept": "c12-marketing-communications",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Over one year, Arctic Spring Water ran ads announcing its new sparkling line, then ads arguing it tastes better than rival brands, then short 'still here, still refreshing' spots. These three kinds of messages reflect:",
+  "options": [
+   "awareness, interest, and evaluation: the hierarchy of effects",
+   "balance, consistency, and metrics: the issues in IMC",
+   "inform, persuade, and remind: the purposes of marketing communications",
+   "encode, transmit, and decode: the communication process"
+  ],
+  "answer": 2,
+  "explanation": "Announcing (inform), arguing superiority (persuade), and 'still here' spots (remind) match the Kotler/Keller definition of marketing communications. The hierarchy of effects describes stages a buyer goes through, not the purposes of a firm's messages.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-023",
+  "concept": "c12-marketing-communications",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A pharmacy chain's flyer announces that its flu-shot clinics open next week and explains who is eligible and how to book. Which purpose of marketing communications does this message mainly serve?",
+  "options": [
+   "remind",
+   "persuade",
+   "phase out",
+   "inform"
+  ],
+  "answer": 3,
+  "explanation": "Telling people about something new (dates, eligibility, how to book) is informing. Persuading would mean arguing why to choose this pharmacy over competitors, which the flyer doesn't do.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-024",
+  "concept": "c12-marketing-communications",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does integrated marketing communications (IMC) differ from marketing communications in general?",
+  "options": [
+   "Marketing communications informs, persuades, and reminds; IMC coordinates all of those activities to deliver one consistent message",
+   "Marketing communications uses only advertising; IMC adds personal selling to the mix",
+   "IMC targets only intermediaries, while marketing communications targets only consumers",
+   "IMC is the regulatory code that governs all marketing communications in Canada"
+  ],
+  "answer": 0,
+  "explanation": "Marketing communications is the broad means of informing, persuading, and reminding; IMC is the concept of coordinating all promotional activities so they provide a consistent message. IMC audiences can be consumers, intermediaries, or both, so the third option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-025",
+  "concept": "c12-marketing-communications",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the three purposes in the course's definition of marketing communications?",
+  "options": [
+   "inform",
+   "remind",
+   "regulate",
+   "persuade"
+  ],
+  "answer": 2,
+  "explanation": "Marketing communications attempt to inform, persuade, and remind consumers. Regulating marketing communications is the job of bodies such as Advertising Standards Canada and the Competition Bureau, not a purpose of the communications themselves.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-026",
+  "concept": "c12-imc",
+  "also": [
+   "c12-promotional-mix",
+   "c12-evaluation"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "In integrated marketing communications, what is a key challenge to address when putting together the promotional mix?",
+  "options": [
+   "Focusing solely on the most cost-effective promotional element",
+   "Ignoring the stage of the product's life cycle and the characteristics of the product",
+   "Limiting the promotional mix to only one or two traditional methods",
+   "Coordinating a consistent promotional effort across various departments responsible for different elements"
+  ],
+  "answer": 3,
+  "explanation": "Because the various promotional elements are often the responsibility of different departments, coordinating a consistent promotional effort is a key IMC challenge. Focusing on only the cheapest element or ignoring the PLC contradicts IMC, which balances the elements and considers the product's life cycle.",
+  "source": "official"
+ },
+ {
+  "id": "q12-027",
+  "concept": "c12-imc",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Bow River Ski Resort makes sure its TV spots, Instagram reels, ticket-window signage, email newsletter, and even staff greetings all use the same 'Your mountain, your pace' theme and visual style. This approach is the essence of:",
+  "options": [
+   "storytelling",
+   "integrated marketing communications",
+   "a push strategy",
+   "direct marketing"
+  ],
+  "answer": 1,
+  "explanation": "IMC coordinates all promotional activities to provide a consistent message across audiences, which is exactly what Bow River does across every element. A push strategy targets channel members such as retailers, not the resort's own customers.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-028",
+  "concept": "c12-imc",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about IMC is NOT consistent with the course?",
+  "options": [
+   "Each department should develop its own distinct message for the element it controls",
+   "The marketer must consider the balance of the promotional elements",
+   "The target audience can be consumers, intermediaries, or both",
+   "Programs should rely on metrics and analytics to measure success and make improvements"
+  ],
+  "answer": 0,
+  "explanation": "IMC requires all promotional activities to be coordinated to provide one consistent message, so separate departmental messages contradict it. Balance of elements, consumer and/or intermediary audiences, and reliance on metrics are all stated in the course.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-029",
+  "concept": "c12-imc",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the course, why must all marketing communications rely on metrics and analytics?",
+  "options": [
+   "To satisfy the Competition Bureau's campaign-reporting requirements",
+   "To replace the need to set objectives before a campaign",
+   "To measure and evaluate success and make improvements",
+   "To ensure every promotional element receives an equal share of the budget"
+  ],
+  "answer": 2,
+  "explanation": "The slide says marketing communications must work together and rely on metrics and analytics to measure and evaluate success and make improvements. Metrics don't replace objectives; objectives (step 1) are the yardstick the metrics are measured against.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-030",
+  "concept": "c12-imc",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A marketer must consider two IMC issues: balance and consistency. Which decision is mainly about BALANCE rather than consistency?",
+  "options": [
+   "Making sure the slogan on the package matches the slogan in TV ads",
+   "Training customer-service reps to repeat the campaign's key promise",
+   "Ensuring the website uses the same colours and tone as the flyers",
+   "Deciding how much weight to give advertising versus personal selling versus sales promotion"
+  ],
+  "answer": 3,
+  "explanation": "Balance is about the proportions of each promotional element in the mix. Matching slogans, colours, and service scripts are all about providing a consistent message across elements, which is the second IMC issue.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-031",
+  "concept": "c12-promotional-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The combination of advertising, personal selling, public relations, sales promotion, and direct marketing that a firm uses to communicate with its audiences is called the:",
+  "options": [
+   "marketing mix",
+   "promotional mix",
+   "product mix",
+   "media schedule"
+  ],
+  "answer": 1,
+  "explanation": "The promotional (marketing communications) mix is the set of communication tools. The marketing mix is broader, covering all 4 Ps, with promotion as only one of them.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-032",
+  "concept": "c12-promotional-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which promotional elements are classified as customized rather than mass forms of communication?",
+  "options": [
+   "advertising and sales promotion",
+   "public relations and advertising",
+   "personal selling and direct marketing",
+   "sales promotion and publicity"
+  ],
+  "answer": 2,
+  "explanation": "Personal selling and direct marketing tailor messages to specific individuals, so they are customized. Advertising, sales promotion, and public relations send the same message to large audiences, so they are mass elements.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-033",
+  "concept": "c12-promotional-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Coastal Bike Co. answers warranty claims and repair questions on its live-chat line within minutes and follows up after every service visit, treating each exchange as a chance to reinforce its brand promise. In the course's IMC components figure, this is:",
+  "options": [
+   "customer service",
+   "personal selling",
+   "direct marketing",
+   "public relations"
+  ],
+  "answer": 0,
+  "explanation": "The course's IMC components figure includes customer service as a communication element, since every support interaction carries the brand's message. Personal selling is two-way communication designed to influence a purchase decision, whereas these post-purchase warranty and repair exchanges are service.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-034",
+  "concept": "c12-promotional-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the components shown in the course's 'Concept of Integrated Marketing Communications' figure?",
+  "options": [
+   "Sponsorship",
+   "Email",
+   "Customer service",
+   "Pricing strategy"
+  ],
+  "answer": 3,
+  "explanation": "The figure shows advertising, PR/publicity, customer service, direct marketing, personal selling, sponsorship, digital/social media, email, and sales promotion. Pricing strategy belongs to a separate P of the marketing mix, not the communication components.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-035",
+  "concept": "c12-promotional-mix",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why do most marketers combine several promotional elements instead of relying on just one?",
+  "options": [
+   "The Competition Bureau requires every campaign to use at least two elements",
+   "Each element has distinct strengths and weaknesses, so combining them balances reach, cost, credibility, and feedback",
+   "Mass elements cannot legally carry a brand message without customized support",
+   "Customized elements always cost less per contact than mass elements"
+  ],
+  "answer": 1,
+  "explanation": "Advertising gives reach and control but little feedback, personal selling gives feedback but costs a lot per contact, and publicity gives credibility but little control, so a balanced mix offsets weaknesses. Customized elements actually cost MORE per contact, which is why the last option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-036",
+  "concept": "c12-advertising",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Any paid form of non-personal communication about an organization, good, service, or idea by an identified sponsor is:",
+  "options": [
+   "publicity",
+   "sales promotion",
+   "advertising",
+   "direct marketing"
+  ],
+  "answer": 2,
+  "explanation": "Paid, non-personal, and an identified sponsor are the three hallmarks of advertising. Publicity is also non-personal, but it is indirectly paid and not controlled by an identified sponsor.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-037",
+  "concept": "c12-advertising",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Rocky Ridge Motors pays a Calgary radio station to air a 30-second spot, written by its own team, that names the dealership and urges listeners to visit this weekend. This is an example of:",
+  "options": [
+   "advertising",
+   "publicity",
+   "personal selling",
+   "direct marketing"
+  ],
+  "answer": 0,
+  "explanation": "Rocky Ridge pays for the airtime, controls the message, and is identified as the sponsor, which makes it advertising. It isn't publicity, because the station was paid and didn't choose to cover the dealership as news.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-038",
+  "concept": "c12-advertising",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What best distinguishes advertising from publicity?",
+  "options": [
+   "Advertising is two-way and personal; publicity is one-way and non-personal",
+   "Advertising is a short-term inducement; publicity builds long-term relationships",
+   "Advertising can be used only in the introduction stage; publicity can be used in any stage",
+   "Advertising is paid by an identified sponsor who controls the message; publicity is indirectly paid and largely uncontrolled"
+  ],
+  "answer": 3,
+  "explanation": "Both are non-personal, but advertising space is bought by an identified sponsor who controls the content, while publicity (such as a news story) is indirectly paid and the firm has little control. A short-term inducement describes sales promotion, not advertising.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-039",
+  "concept": "c12-advertising",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which of the following is a commonly cited weakness of advertising as a promotional element?",
+  "options": [
+   "Little control over what the message says",
+   "High absolute cost and difficulty getting good feedback",
+   "Tendency to trigger promotion and price wars",
+   "Very high cost per contact because each contact is one-to-one"
+  ],
+  "answer": 1,
+  "explanation": "Advertising's strengths are reach and control; its weaknesses are high absolute cost and difficulty getting feedback. Little control is publicity's weakness, price wars are sales promotion's, and very high cost per contact is personal selling's.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-040",
+  "concept": "c12-advertising",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT a characteristic of advertising?",
+  "options": [
+   "It provides immediate two-way feedback",
+   "It is paid for",
+   "It is non-personal",
+   "It has an identified sponsor"
+  ],
+  "answer": 0,
+  "explanation": "Advertising is paid, non-personal communication by an identified sponsor; because it is one-way mass communication, feedback is hard to get. Immediate two-way feedback is the main strength of personal selling.",
+  "source": "generated"
+ }
+]

@@ -1,0 +1,728 @@
+[
+ {
+  "id": "q11-081",
+  "concept": "c11-category-management",
+  "also": [
+   "c11-depth-of-line"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly distinguishes category management from a category killer?",
+  "options": [
+   "A category killer is how a retailer manages product categories internally; category management is a store format",
+   "Both are store formats classified by depth of line",
+   "Category management is an internal way to manage product categories; a category killer is a store format with deep, low-priced assortment in one category",
+   "Both are forms of retail ownership"
+  ],
+  "answer": 2,
+  "explanation": "Category management is a management practice (one manager, one category, profit responsibility); a category killer (Best Buy, Staples) is a type of store. The reversed option swaps them.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-082",
+  "concept": "c11-category-management",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is a key benefit of category management for a retailer?",
+  "options": [
+   "Treating each category as a strategic business unit aligns its assortment with the target market and clarifies profit responsibility",
+   "It eliminates shrinkage from the category",
+   "It removes the need to select a target market",
+   "It turns the retailer into a merchant wholesaler"
+  ],
+  "answer": 0,
+  "explanation": "By making a manager accountable for a category's profitability, category management helps align the assortment with what the target market wants. It does not eliminate shrinkage or replace target market selection, which still comes first.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-083",
+  "concept": "c11-category-management",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Calgary grocer notices its baby-products aisle is cluttered with slow-selling brands, and no one can say whether the aisle makes money. Applying category management, the grocer should:",
+  "options": [
+   "open a separate big-box baby store with very low prices",
+   "add unrelated products such as hardware to the aisle",
+   "appoint one manager to run baby products as a strategic business unit, adjusting the assortment to target customers and profit",
+   "replace the aisle with self-service vending machines"
+  ],
+  "answer": 2,
+  "explanation": "Category management means one manager owns the category's profitability and tunes its assortment to the target market. Opening a big-box discount baby store would be launching a category killer, a different concept entirely.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-084",
+  "concept": "c11-store-atmosphere",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Cedar & Sage, a home decor store, plays soft acoustic music, uses warm lighting and diffuses a faint cedar scent to create a calm, upscale impression. Which element of the retailing mix is Cedar & Sage managing?",
+  "options": [
+   "Merchandise mix",
+   "Level of service",
+   "Shopper marketing",
+   "Store atmosphere"
+  ],
+  "answer": 3,
+  "explanation": "Music, lighting, scent and layout are atmospherics that shape the overall impression of the store. The merchandise mix is about which product lines and assortments are carried, which this scenario does not change.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-085",
+  "concept": "c11-store-atmosphere",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Store atmosphere refers to:",
+  "options": [
+   "the overall impression a store conveys through elements such as layout, lighting, music and scent",
+   "the number of product lines a store carries and its assortment",
+   "the services a store offers before and after a purchase",
+   "a store's position on the breadth-of-line and value-added matrix"
+  ],
+  "answer": 0,
+  "explanation": "Store atmosphere (atmospherics) is the overall impression created by sensory and design elements. The distractors describe the merchandise mix, prepurchase and postpurchase services, and the retail positioning matrix.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-086",
+  "concept": "c11-store-atmosphere",
+  "also": [
+   "c11-merchandise-mix"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A clothing retailer changes its layout, colour scheme and lighting but keeps exactly the same products and staffing. Which element of its products and services mix has changed?",
+  "options": [
+   "Store atmosphere",
+   "Merchandise mix",
+   "Level of service",
+   "Category management"
+  ],
+  "answer": 0,
+  "explanation": "Layout, colour and lighting are atmospheric elements, so store atmosphere has changed. The merchandise mix (types and assortment of products) and level of service (staffing and services) were explicitly left unchanged.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-087",
+  "concept": "c11-store-atmosphere",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do retailers invest in store atmosphere?",
+  "options": [
+   "It creates the overall impression that shapes the store's image and supports its positioning",
+   "It reduces the number of product lines the store must carry",
+   "It replaces the need for a communications mix",
+   "It allows the store to take title to goods it never handles"
+  ],
+  "answer": 0,
+  "explanation": "Atmosphere provides the overall impression customers form of the store, reinforcing its retail image and positioning (calm and upscale vs fast and bargain-focused). It does not change the merchandise mix or substitute for communications.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-088",
+  "concept": "c11-store-atmosphere",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT an atmospheric element of a store?",
+  "options": [
+   "Background music",
+   "Lighting",
+   "Markup percentage",
+   "Scent"
+  ],
+  "answer": 2,
+  "explanation": "Markup is a retail pricing decision. Atmospherics are sensory and design elements such as layout, music, lighting and scent that create the overall impression of a store.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-089",
+  "concept": "c11-retail-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ridgeview Sports cuts the price of last season's unsold snowboards by 40% to clear them out before spring. This price reduction is a:",
+  "options": [
+   "markdown",
+   "markup",
+   "shrinkage allowance",
+   "off-price retailing strategy"
+  ],
+  "answer": 0,
+  "explanation": "A markdown is a reduction in the selling price to move slow or seasonal merchandise. Off-price retailing is a whole strategy of selling brand names below regular prices using manufacturers' excess inventory, not a one-time cut on a store's own stock.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-090",
+  "concept": "c11-retail-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A convenience store's year-end count shows $3,200 less merchandise than its records, due to shoplifting, broken items and recording errors. This loss is called:",
+  "options": [
+   "shrinkage",
+   "markdown",
+   "bulk breaking",
+   "risk bearing"
+  ],
+  "answer": 0,
+  "explanation": "Shrinkage is inventory lost to theft, breakage and paperwork errors, and it is part of the retail pricing mix. Risk bearing is a WHOLESALER function (absorbing ownership risk), not the retail term for these losses.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-091",
+  "concept": "c11-retail-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A retailer buys a jacket for $60 and sells it for $75. What is the markup as a percentage of the selling price?",
+  "options": [
+   "20%",
+   "25%",
+   "15%",
+   "80%"
+  ],
+  "answer": 0,
+  "explanation": "Markup on selling price = (price - cost) / price = ($75 - $60) / $75 = $15 / $75 = 20%. 25% is the markup on COST ($15 / $60), and 80% is cost as a share of price ($60 / $75).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-092",
+  "concept": "c11-retail-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Harbour Home marks down a coffee maker from $120 to $90. By what percentage of the original price was it reduced?",
+  "options": [
+   "33%",
+   "30%",
+   "75%",
+   "25%"
+  ],
+  "answer": 3,
+  "explanation": "Markdown = $120 - $90 = $30; $30 / $120 (original price) = 25%. 33% is the trap of dividing by the new price ($30 / $90), and 75% is the new price as a share of the original ($90 / $120).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-093",
+  "concept": "c11-retail-pricing",
+  "also": [
+   "c11-off-price-retailing"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does a markdown differ from off-price retailing?",
+  "options": [
+   "A markdown sells brand names from manufacturers' excess inventory; off-price retailing reduces prices on slow stock",
+   "Both are forms of shrinkage caused by theft and breakage",
+   "A markdown reduces the price of a retailer's own slow-moving stock; off-price retailing sells brand names below regular prices by buying manufacturers' excess inventory",
+   "A markdown raises the selling price; off-price retailing lowers it"
+  ],
+  "answer": 2,
+  "explanation": "Markdowns are price cuts to move slow merchandise; off-price retailing (Winners, Costco, outlets) is an ongoing business model based on buying excess inventory. The reversed option swaps the two, and neither is shrinkage.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-094",
+  "concept": "c11-retail-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT listed in the retail pricing mix?",
+  "options": [
+   "Markups",
+   "Shrinkage",
+   "Image, quality and value",
+   "Store layout"
+  ],
+  "answer": 3,
+  "explanation": "The retail pricing mix lists image, quality and value; markups; markdowns; and shrinkage. Store layout belongs elsewhere: it is part of store atmosphere and of the size-and-layout decisions in the physical location mix.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-095",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Off-price retailing is best described as:",
+  "options": [
+   "selling brand-name merchandise at lower than regular prices, often by buying manufacturers' excess inventory",
+   "temporarily reducing the price of a store's own slow-moving stock",
+   "adding several unrelated product lines to a single store",
+   "selling only private-label goods at full price"
+  ],
+  "answer": 0,
+  "explanation": "Off-price retailers (warehouse clubs, outlet stores, single-price/extreme-value stores, off-price chains) build their model on brand names below regular prices. A temporary price cut on slow stock is a markdown, not off-price retailing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-096",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Bargain Boulevard buys designer-brand clothing and home goods that manufacturers overproduced or other retailers cancelled, and sells them at 20-60% below department-store prices. Bargain Boulevard is a(n):",
+  "options": [
+   "warehouse club",
+   "single-price (extreme-value) store",
+   "category killer",
+   "off-price chain"
+  ],
+  "answer": 3,
+  "explanation": "Off-price chains such as Winners buy brand-name excess inventory and sell it below regular prices. A warehouse club also sells for less, but it charges a membership fee and focuses on food and general merchandise in bulk.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-097",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "BulkWay charges an annual membership fee and sells food and general merchandise in large package sizes from no-frills warehouse stores. BulkWay is a(n):",
+  "options": [
+   "off-price chain",
+   "outlet store",
+   "warehouse club",
+   "hypermarket"
+  ],
+  "answer": 2,
+  "explanation": "Membership fees, bulk packages and no-frills warehouse stores mark a warehouse club (Costco). A hypermarket also combines groceries and general merchandise, but it has no membership model and is not an off-price format.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-098",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Northern Parka operates its own stores in a factory outlet mall, selling its excess inventory and discontinued styles at reduced prices. These stores are:",
+  "options": [
+   "off-price chains",
+   "outlet stores",
+   "warehouse clubs",
+   "sales offices"
+  ],
+  "answer": 1,
+  "explanation": "Outlet stores let a manufacturer sell its OWN excess and discontinued stock at reduced prices. Off-price chains buy other manufacturers' excess inventory; a sales office is a manufacturer's wholesaling unit that sells to businesses, not consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-099",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Loonie Land sells party supplies, kitchen gadgets and snacks at one or a few fixed low price points, with nothing over $5. Loonie Land is a(n):",
+  "options": [
+   "warehouse club",
+   "off-price chain",
+   "single-price (extreme-value) store",
+   "category killer"
+  ],
+  "answer": 2,
+  "explanation": "Single-price/extreme-value stores (Dollarama is the course example) sell at one or a few fixed low price points. An off-price chain sells brand-name apparel and home goods below regular prices but not at fixed price points.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-100",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a type of off-price retailer?",
+  "options": [
+   "Warehouse club",
+   "Outlet store",
+   "Off-price chain",
+   "Full-service department store"
+  ],
+  "answer": 3,
+  "explanation": "The four off-price types are warehouse clubs, outlet stores, single-price/extreme-value stores and off-price chains. A full-service department store sells at regular prices with many services.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-101",
+  "concept": "c11-off-price-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What BEST distinguishes a warehouse club from an off-price chain?",
+  "options": [
+   "A warehouse club is full-service; an off-price chain is self-service",
+   "An off-price chain is a contractual system; a warehouse club is a corporate chain",
+   "A warehouse club charges membership and sells food and general merchandise in bulk; an off-price chain sells brand-name goods bought from excess inventory",
+   "A warehouse club is a category killer; an off-price chain is a hypermarket"
+  ],
+  "answer": 2,
+  "explanation": "Both are off-price formats, but Costco-style clubs rely on memberships and bulk food and general merchandise, while Winners-style chains sell brand-name fashion and home goods from manufacturers' excess inventory. The other options mix in unrelated classification schemes (service level, ownership, merchandise line).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-102",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Stephen Avenue Books is located in downtown Calgary among office towers, banks and transit stops, where thousands of workers walk past daily. This location type is a:",
+  "options": [
+   "strip location",
+   "lifestyle centre",
+   "central business district",
+   "community shopping centre"
+  ],
+  "answer": 2,
+  "explanation": "The central business district is the downtown area of a city, with heavy foot traffic from office workers. A strip location is a cluster of stores along a busy street serving a neighbourhood.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-103",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Kingsgate Centre is a large mall of about 120 stores anchored by two department stores, drawing shoppers from across the city and surrounding towns. Kingsgate is a:",
+  "options": [
+   "community shopping centre",
+   "power centre",
+   "regional shopping centre",
+   "strip location"
+  ],
+  "answer": 2,
+  "explanation": "Regional shopping centres have roughly 50-150 stores with department-store anchors and draw from a wide area. A community centre is smaller: one primary store plus 20-40 smaller stores.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-104",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Maplewood Plaza has one primary store, a large supermarket, plus about 30 smaller shops serving several nearby neighbourhoods. Maplewood Plaza is a:",
+  "options": [
+   "regional shopping centre",
+   "lifestyle centre",
+   "power centre",
+   "community shopping centre"
+  ],
+  "answer": 3,
+  "explanation": "One primary store plus 20-40 smaller stores defines a community shopping centre. A regional centre is larger (50-150 stores) and anchored by department stores.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-105",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A dry cleaner, a pizza place, a nail salon, a convenience store and a pharmacy sit side by side along a busy neighbourhood street, each with parking out front. This is a:",
+  "options": [
+   "community shopping centre",
+   "central business district",
+   "strip location",
+   "power centre"
+  ],
+  "answer": 2,
+  "explanation": "A strip location is a cluster of stores along a busy street serving everyday neighbourhood needs. It is not a community shopping centre because there is no primary anchor store with 20-40 smaller stores.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-106",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "South Ridge Commons is a huge open-air strip of big-box stores anchored by several national retailers, including an electronics category killer, a home-improvement warehouse and a discount supercentre. South Ridge is a:",
+  "options": [
+   "regional shopping centre",
+   "lifestyle centre",
+   "power centre",
+   "strip location"
+  ],
+  "answer": 2,
+  "explanation": "A power centre is a huge shopping strip with several national anchor stores, often category killers. A plain strip location has small neighbourhood stores rather than multiple national big-box anchors.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-107",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "The Promenade is an open-air centre with upscale boutiques, restaurants, landscaped walkways and a cinema, designed to feel like a pedestrian village. The Promenade is a:",
+  "options": [
+   "power centre",
+   "lifestyle centre",
+   "regional shopping centre",
+   "central business district"
+  ],
+  "answer": 1,
+  "explanation": "Lifestyle centres are open-air, upscale centres mixing specialty shops with dining and entertainment. A power centre is also open-air, but it is built around big-box national anchors and category killers, not upscale boutiques and leisure.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-108",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What distinguishes a power centre from a regional shopping centre?",
+  "options": [
+   "A power centre has one primary store and 20-40 smaller stores; a regional centre is a downtown business district",
+   "A power centre is a huge strip anchored by national big-box stores or category killers; a regional centre has 50-150 stores with department-store anchors",
+   "A power centre is an upscale open-air village; a regional centre is a small neighbourhood strip",
+   "Both are names for downtown shopping areas"
+  ],
+  "answer": 1,
+  "explanation": "Anchors are the key: power centres cluster big-box national anchors and category killers in a giant strip, while regional centres have 50-150 stores anchored by department stores. One primary store plus 20-40 smaller ones describes a community centre.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-109",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a physical location decision in the retailing mix?",
+  "options": [
+   "Choosing the type of shopping area to locate in",
+   "Setting markdown percentages",
+   "Deciding how many stores to operate",
+   "Deciding whether to sell through non-store channels such as mail"
+  ],
+  "answer": 1,
+  "explanation": "Markdowns belong to the retail pricing mix. Physical location covers where to locate, the number of stores, store size, format and logistics, and non-store options such as mail.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-110",
+  "concept": "c11-retail-location",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Lumen Home, an upscale decor boutique, targets affluent shoppers who like to browse, dine and linger. It wants to sit among similar upscale shops and restaurants in an attractive open-air setting. Which location type fits Lumen Home BEST?",
+  "options": [
+   "Power centre",
+   "Strip location",
+   "Community shopping centre",
+   "Lifestyle centre"
+  ],
+  "answer": 3,
+  "explanation": "A lifestyle centre is an open-air, upscale centre mixing specialty shops with dining and entertainment, a match for Lumen's target market. A power centre is also open-air, but it is built around big-box national anchors and category killers that attract bargain-focused trips, not lingering affluent browsers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-111",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which statement is TRUE of non-store retailing?",
+  "options": [
+   "Non-store retailing describes small, mobile retail activities like door-to-door sales and food carts",
+   "Non-store retailing occurs outside and may be impacted by weather or other environmental forces",
+   "Non-store retailing comprises activities of varying levels of customer and retailer involvement, outside the store environment",
+   "Non-store retailing refers specifically to buying goods and services via automated or electronic means"
+  ],
+  "answer": 2,
+  "explanation": "Non-store retailing occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling. The 'automated or electronic' option is too narrow, because direct selling and telemarketing are non-store but involve people, and the first option wrongly limits it to small mobile activities.",
+  "source": "official"
+ },
+ {
+  "id": "q11-112",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Glow Beauty sells skin-care products through independent consultants who host parties in customers' homes and demonstrate the products. This form of non-store retailing is:",
+  "options": [
+   "telemarketing",
+   "television home shopping",
+   "direct selling",
+   "direct mail and catalogues"
+  ],
+  "answer": 2,
+  "explanation": "Direct selling involves personal contact with consumers in their homes or offices, door-to-door or through in-home parties (Avon, Tupperware). Telemarketing also involves personal contact, but by phone, not face to face.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-113",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Huckleberry Books, which has run stores across Canada for decades, launches a website and app so shoppers can order books for home delivery. Huckleberry has become a:",
+  "options": [
+   "category killer",
+   "wholesaler-sponsored voluntary chain",
+   "drop shipper",
+   "click-and-mortar retailer"
+  ],
+  "answer": 3,
+  "explanation": "A traditional bricks-and-mortar retailer that also engages in non-store retailing (here online) becomes a click-and-mortar retailer. A category killer is about deep, low-price assortment in one category, which the scenario does not mention.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-114",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "SnackSmart places machines in Edmonton hospitals and campus buildings that sell healthy snacks and drinks 24 hours a day with no staff present. This form of retailing is:",
+  "options": [
+   "direct selling",
+   "automatic vending",
+   "television home shopping",
+   "telemarketing"
+  ],
+  "answer": 1,
+  "explanation": "Automatic vending is non-store retailing through machines that sell without salespeople. Direct selling requires personal, face-to-face contact with consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-115",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a form of non-store retailing?",
+  "options": [
+   "Operating a store in a strip location",
+   "Television home shopping",
+   "Telemarketing",
+   "Automatic vending"
+  ],
+  "answer": 0,
+  "explanation": "A strip location is a type of physical store location, so it is store-based retailing. Non-store forms are automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-116",
+  "concept": "c11-non-store-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which pairing of non-store retailing form and example is correct?",
+  "options": [
+   "Television home shopping: a channel showcasing products that viewers order by phone or online",
+   "Telemarketing: a consultant demonstrating cookware at a home party",
+   "Direct selling: a call centre phoning households to sell insurance",
+   "Direct mail and catalogues: a machine dispensing phone chargers in an airport"
+  ],
+  "answer": 0,
+  "explanation": "TV home shopping displays products on television for viewers to order. The other pairings are swapped: a home party is direct selling, a call centre is telemarketing, and a machine is automatic vending.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-117",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fred uses the internet to research, compare, and decide on a new camera at his own pace. This demonstrates the online shopping benefit of:",
+  "options": [
+   "Limited control",
+   "Forced decision-making",
+   "Empowered consumers",
+   "Reliance on in-store salespeople"
+  ],
+  "answer": 2,
+  "explanation": "Online shoppers are empowered consumers: they seek information, evaluate alternatives and decide on their own time, terms and conditions, which is the CONTROL benefit of the six Cs. 'Limited control' and 'reliance on in-store salespeople' describe the opposite of what Fred is doing.",
+  "source": "official"
+ },
+ {
+  "id": "q11-118",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Dell Computers allows online shoppers to choose the components in their computer instead of buying one off the shelf. This exemplifies:",
+  "options": [
+   "communication benefits of online shopping",
+   "control benefits of online shopping",
+   "customization benefits of online shopping",
+   "cost benefits of online shopping"
+  ],
+  "answer": 2,
+  "explanation": "Choosing your own components tailors the product to you, which is the customization benefit. Control is the tempting distractor, but control is about deciding at your own pace and on your own terms, not configuring the product itself.",
+  "source": "official"
+ },
+ {
+  "id": "q11-119",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Priya, a nurse working night shifts, orders groceries online at 3 a.m. from home because no store is open when she is free. Which of the six Cs does this illustrate?",
+  "options": [
+   "Control",
+   "Choice",
+   "Cost",
+   "Convenience"
+  ],
+  "answer": 3,
+  "explanation": "Convenience means shopping 24/7 from anywhere, without store hours or travel. Control is about researching and deciding at your own pace and on your own terms; Priya's motive is timing and access, not decision power.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-120",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Marcus could not find size-15 hiking boots in any Calgary store, but online he found 40 styles from dozens of brands, plus a size-finder tool to help him narrow them down. Which of the six Cs does this illustrate?",
+  "options": [
+   "Customization",
+   "Communication",
+   "Choice",
+   "Convenience"
+  ],
+  "answer": 2,
+  "explanation": "Choice is the broad selection (plus assistance) available online, far beyond any local store's shelves. Customization would mean the boots were configured or personalized for Marcus, not simply picked from a larger range.",
+  "source": "generated"
+ }
+]

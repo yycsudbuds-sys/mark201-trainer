@@ -1,0 +1,750 @@
+[
+  {
+    "id": "q06-001",
+    "concept": "c06-stp-framework",
+    "also": [
+      "c06-market-segments"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Northline Outfitters, an Edmonton outdoor-gear retailer, has already divided Alberta shoppers into groups such as weekend campers, backcountry skiers and urban commuters. Its managers are now meeting to decide which one or two of these groups the company will actually pursue. Which step of the STP framework are they performing?",
+    "options": [
+      "Targeting",
+      "Segmentation",
+      "Differentiation",
+      "Positioning"
+    ],
+    "answer": 0,
+    "explanation": "Targeting is selecting the segment or segments to enter. The dividing (segmentation) is already done, and differentiation and positioning come only after the targets are chosen.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-002",
+    "concept": "c06-stp-framework",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "In the customer-driven marketing strategy model, which two steps make up the decision to 'select customers to serve'?",
+    "options": [
+      "Differentiation and positioning",
+      "Segmentation and positioning",
+      "Segmentation and targeting",
+      "Targeting and differentiation"
+    ],
+    "answer": 2,
+    "explanation": "Selecting customers to serve = segmentation (divide the total market into smaller segments) + targeting (select the segment or segments to enter). Differentiation and positioning together make up the other decision: deciding on a value proposition.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-003",
+    "concept": "c06-stp-framework",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which pairing correctly matches an STP step with what it does?",
+    "options": [
+      "Positioning: dividing the total market into smaller groups of buyers",
+      "Targeting: selecting the segment or segments to enter",
+      "Differentiation: placing the offering in the minds of target customers",
+      "Segmentation: making the offering different to create superior value"
+    ],
+    "answer": 1,
+    "explanation": "Targeting = selecting the segment(s) to enter. The other pairings swap definitions: dividing the market is segmentation, placing the offering in customers' minds is positioning, and making the offering different to create superior value is differentiation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-004",
+    "concept": "c06-stp-framework",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 3,
+    "stem": "A Calgary meal-kit start-up is working through the four steps of the customer-driven marketing strategy model in the order the course presents them. It has segmented the market and has just chosen young professional couples as its target. Which step comes next?",
+    "options": [
+      "Positioning",
+      "Differentiation",
+      "Segmentation",
+      "Mass customization"
+    ],
+    "answer": 1,
+    "explanation": "The model runs segmentation -> targeting -> differentiation -> positioning. After choosing a target, the firm decides how to differentiate its offering to create superior value, and then positions that offering in target customers' minds. Positioning is tempting, but it comes after differentiation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-005",
+    "concept": "c06-stp-framework",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "At the centre of the customer-driven marketing strategy model, what overall goal do segmentation, targeting, differentiation and positioning all serve?",
+    "options": [
+      "Create value for targeted customers",
+      "Maximize market share across the total market",
+      "Minimize the cost of reaching every possible buyer",
+      "Offer the largest possible product line"
+    ],
+    "answer": 0,
+    "explanation": "The centre of the model reads 'create value for targeted customers'. STP deliberately focuses on chosen segments instead of trying to win the total market or reach every buyer as cheaply as possible.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-006",
+    "concept": "c06-market-segmentation",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Aggregating prospective buyers into groups that have common needs and will respond similarly to a marketing action is called:",
+    "options": [
+      "targeting",
+      "product positioning",
+      "product differentiation",
+      "market segmentation"
+    ],
+    "answer": 3,
+    "explanation": "This is the textbook definition of market segmentation. Targeting comes afterward (choosing which group to pursue), and product differentiation is the strategy that segmentation leads to.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-007",
+    "concept": "c06-market-segmentation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Prairie Rink Supply groups its customers into hockey parents, adult rec-league players and elite junior players. People within each group need similar gear and react the same way to price promotions, while the groups differ from one another. The company has not yet decided which group to focus on. What is it doing?",
+    "options": [
+      "Targeting",
+      "Market segmentation",
+      "Positioning",
+      "Mass marketing"
+    ],
+    "answer": 1,
+    "explanation": "Grouping buyers who have common needs and respond similarly to marketing is market segmentation. It is not targeting yet, because no group has been chosen.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-008",
+    "concept": "c06-market-segmentation",
+    "also": [
+      "c06-product-differentiation"
+    ],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 1,
+    "stem": "According to the course slides, what does market segmentation ultimately lead to?",
+    "options": [
+      "Mass marketing",
+      "Repositioning",
+      "A single marketing mix for all buyers",
+      "Product differentiation"
+    ],
+    "answer": 3,
+    "explanation": "Once buyers are grouped by their distinct needs, the firm can offer different features and marketing to each group, which is product differentiation. Mass marketing and a single marketing mix are the opposite of segmentation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-009",
+    "concept": "c06-market-segmentation",
+    "also": [
+      "c06-stp-framework"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "A classmate says, 'Segmentation and targeting are the same thing; both are about picking the customers you sell to.' Which correction is best?",
+    "options": [
+      "Segmentation chooses the group to pursue; targeting divides the market into groups",
+      "Segmentation divides the market into groups; targeting chooses which group(s) to pursue",
+      "Segmentation places the brand in consumers' minds; targeting divides the market",
+      "Segmentation sets the price for each group; targeting designs the product"
+    ],
+    "answer": 1,
+    "explanation": "Segmentation forms groups of buyers with common needs; targeting selects the segment(s) to enter. The reversed version is the classic distractor, and placing a brand in consumers' minds is positioning.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-010",
+    "concept": "c06-market-segmentation",
+    "also": [
+      "c06-continuum"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about market segmentation is NOT correct?",
+    "options": [
+      "It groups buyers who have common needs",
+      "It groups buyers who will respond similarly to a marketing action",
+      "It produces relatively homogeneous groups of buyers",
+      "It requires the firm to use one marketing mix for the entire market"
+    ],
+    "answer": 3,
+    "explanation": "One marketing mix for the entire market is mass (undifferentiated) marketing, the opposite of segmentation. Common needs, a similar response and relatively homogeneous groups all describe segmentation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-011",
+    "concept": "c06-market-segments",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The specific group of existing and potential consumers to which marketers direct their marketing efforts is called the:",
+    "options": [
+      "market segment",
+      "persona",
+      "market-product grid",
+      "target market"
+    ],
+    "answer": 3,
+    "explanation": "That is the definition of a target market. A market segment is any relatively homogeneous group identified through segmentation; the target market is the segment(s) the firm chooses to aim at. A persona describes one typical customer.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-012",
+    "concept": "c06-market-segments",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Fjord Kayak Co. identifies five groups of paddlers in Western Canada. After analysis, it directs all of its advertising and product development at 'retired outdoor enthusiasts on Vancouver Island', both current customers and people who have never bought from it. That chosen group is Fjord's:",
+    "options": [
+      "target market",
+      "persona",
+      "segment of one",
+      "point-of-difference"
+    ],
+    "answer": 0,
+    "explanation": "The group a firm chooses to direct its marketing efforts toward, including existing and potential customers, is its target market. A persona is a character description of one typical customer, not the group itself.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-013",
+    "concept": "c06-market-segments",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "What is the key difference between a market segment and a target market?",
+    "options": [
+      "A segment includes only existing customers, while a target market includes only potential customers",
+      "A segment is any relatively homogeneous group identified in the market; a target market is the segment(s) the firm chooses to pursue",
+      "A segment is chosen by the firm, while a target market is identified by outside research companies",
+      "A segment is defined only by geographic variables, while a target market is defined only by psychographics"
+    ],
+    "answer": 1,
+    "explanation": "Segmentation can identify many segments; the target market is the one(s) selected for marketing efforts. Both can contain existing and potential customers, and either can be defined by any variable family.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-014",
+    "concept": "c06-market-segments",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Members of a well-defined market segment should share all of the following EXCEPT:",
+    "options": [
+      "similar consumption behaviour patterns",
+      "identical purchase histories with the firm",
+      "similar attitudes toward the product category",
+      "similar target market profiles"
+    ],
+    "answer": 1,
+    "explanation": "Segments are relatively homogeneous, with similar consumption behaviour, attitudes and target market profiles; they are not identical. Many members may never have bought from the firm at all, because segments include potential buyers.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-015",
+    "concept": "c06-market-segments",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "After grouping Edmonton pet owners into four segments, Pawsitive Foods' managers ask what would turn one of these segments into their target market. The correct answer is that the segment:",
+    "options": [
+      "is the group the firm chooses to direct its marketing efforts toward",
+      "has the largest number of people of any segment in the market",
+      "has been plotted on a perceptual map against competing brands",
+      "contains only consumers who have already purchased from the firm"
+    ],
+    "answer": 0,
+    "explanation": "A segment becomes a target market when the firm chooses it and directs its marketing efforts toward it. Size alone doesn't make it a target (size is only one selecting criterion), and target markets include potential as well as current customers.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-016",
+    "concept": "c06-product-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "At a Hallmark store you can find several different brands of greeting cards, including Fresh Ink, Nature's Sketchbook, Shoebox, Maxine, Mahogany, and Tree of Life cards - all made by Hallmark for sale in its stores. Hallmark uses a _____ strategy to reach several different market segments.",
+    "options": [
+      "product sampling",
+      "product extrapolation",
+      "behavioural segmentation",
+      "usage segmentation",
+      "product differentiation"
+    ],
+    "answer": 4,
+    "explanation": "A firm selling two or more products with different features targeted to different market segments is using product differentiation. Behavioural and usage segmentation are ways of grouping buyers, not the strategy of offering a distinct brand to each group.",
+    "source": "official"
+  },
+  {
+    "id": "q06-017",
+    "concept": "c06-product-differentiation",
+    "also": [
+      "c06-head-to-head-vs-differentiation"
+    ],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 2,
+    "stem": "A strategy that uses different marketing mix activities, such as product features and advertising, to help consumers perceive a product as being different from and better than competing products is:",
+    "options": [
+      "differentiation positioning",
+      "repositioning",
+      "product differentiation",
+      "niche marketing"
+    ],
+    "answer": 2,
+    "explanation": "This is the definition of product differentiation. Differentiation positioning is narrower: it means locating one brand in a smaller, less-competitive niche by stressing its unique attributes.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-018",
+    "concept": "c06-product-differentiation",
+    "also": [
+      "c06-head-to-head-vs-differentiation"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Rocky Ridge Brewing sells three beers with different recipes and labels: a light lager for young adults, a hoppy IPA for craft enthusiasts and a non-alcoholic brew for health-conscious drinkers. A classmate calls this 'differentiation positioning.' Why is 'product differentiation' the better label?",
+    "options": [
+      "Differentiation positioning applies only to services, while product differentiation applies only to physical goods",
+      "Differentiation positioning requires comparison ads against a named rival brand, which Rocky Ridge is not running",
+      "Differentiation positioning can only be used after a product has already been repositioned in consumers' minds",
+      "Distinct products aimed at different segments is product differentiation; differentiation positioning puts one brand in a niche"
+    ],
+    "answer": 3,
+    "explanation": "Several products with different features aimed at different segments = product differentiation, like Hallmark's card brands. Differentiation positioning is about where ONE brand sits: a smaller, less-competitive niche. Comparison ads against a named rival describe head-to-head positioning.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-019",
+    "concept": "c06-product-differentiation",
+    "also": [
+      "c06-market-segmentation"
+    ],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why does market segmentation naturally lead to product differentiation?",
+    "options": [
+      "Segmentation forces the firm to sell one product to all buyers at the lowest possible price",
+      "Segmentation removes competitors from each segment, so products no longer need to differ",
+      "Grouping buyers by distinct needs lets the firm tailor features and marketing so each group sees its offering as better",
+      "Differentiation must come first, because segments cannot be identified until products already differ"
+    ],
+    "answer": 2,
+    "explanation": "Different segments have different needs, so the firm tailors features and advertising to each one, which is product differentiation. Selling one product to everyone is mass marketing, and differentiation follows segmentation rather than coming before it.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-020",
+    "concept": "c06-product-differentiation",
+    "also": [
+      "c06-continuum"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT an example of product differentiation?",
+    "options": [
+      "A salt producer sells one product in one package with one ad campaign to all Canadians",
+      "A cereal maker offers a high-fibre line for adults and a sweetened line for kids, each with its own ads",
+      "A phone maker sells a rugged model for trades workers and a slim model for students",
+      "A card company sells several card brands designed for different customer groups"
+    ],
+    "answer": 0,
+    "explanation": "One product, one package and one campaign for everyone is mass (undifferentiated) marketing. The other examples offer different products or marketing to different segments, which is product differentiation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-021",
+    "concept": "c06-why-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the three reasons for segmenting a market given in the course?",
+    "options": [
+      "Consumers have a range of different needs",
+      "Segmenting guarantees the firm faces no competitors in each segment",
+      "Companies have limited amounts of money",
+      "Marketers need clear consumer insights on their target markets"
+    ],
+    "answer": 1,
+    "explanation": "The three reasons are: consumers have different needs, companies have limited money, and marketers need clear consumer insights. Segmenting doesn't remove competition; competitive position is something firms still have to weigh when they select targets.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-022",
+    "concept": "c06-why-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Aurora Skincare learns that teenagers want acne control, new mothers want gentle fragrance-free products and retirees want anti-aging benefits. No single all-purpose cream can satisfy such different wants, so it plans separate products. Which reason for segmenting does this situation most directly reflect?",
+    "options": [
+      "Companies have limited amounts of money",
+      "Marketers need clear consumer insights on their target markets",
+      "Consumers have a range of different needs",
+      "Segments must show potential for increased profit and ROI"
+    ],
+    "answer": 2,
+    "explanation": "The core issue is that the groups want different things: consumers have a range of different needs. 'Potential for increased profit and ROI' is a criterion for forming segments, not one of the three reasons to segment.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-023",
+    "concept": "c06-why-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "A small Saskatoon bakery has a marketing budget of only $8,000 for the year. Instead of advertising city-wide, the owner spends it all reaching office workers within a few blocks of the shop. Which reason for segmenting best justifies this decision?",
+    "options": [
+      "Companies have limited amounts of money",
+      "Consumers have a range of different needs",
+      "Marketers need clear consumer insights on their target markets",
+      "Segments must differ in their needs from one another"
+    ],
+    "answer": 0,
+    "explanation": "A limited budget can't reach everyone, so the bakery concentrates its spending on one group: companies have limited amounts of money. 'Segments must differ in their needs' is a forming criterion (difference among segments), not a reason to segment.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-024",
+    "concept": "c06-why-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Before launching a new sparkling water, Kelso Beverages commissions research to learn exactly who buys flavoured water, why, where and how often, so that its product and advertising decisions rest on a clear picture of those buyers instead of guesswork. Which reason for segmenting does this best reflect?",
+    "options": [
+      "Marketers need clear consumer insights on their target markets",
+      "Companies have limited amounts of money",
+      "Consumers have a range of different needs",
+      "Segments must be large enough to justify a separate program"
+    ],
+    "answer": 0,
+    "explanation": "Seeking a clear, research-based picture of buyers reflects the need for clear consumer insights on target markets. Segment size relates to the selecting criterion 'market size', not to the three reasons for segmenting.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-025",
+    "concept": "c06-why-segment",
+    "also": [
+      "c06-forming-criteria"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A manager lists 'similarity of needs of potential buyers within a segment' as one of the three reasons to segment a market. What is wrong with this?",
+    "options": [
+      "Nothing; it is the first of the three reasons to segment",
+      "It is a selecting criterion, and the selecting criteria are the same list as the reasons to segment",
+      "It is a step in positioning rather than in segmentation",
+      "It is a forming criterion; the reasons to segment are different needs, limited money and the need for consumer insights"
+    ],
+    "answer": 3,
+    "explanation": "Similarity within a segment is one of the five criteria for FORMING segments. The three reasons TO segment are: consumers have different needs, companies have limited money, and marketers need clear consumer insights. The selecting criteria (size, growth and so on) are a third, separate list.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-026",
+    "concept": "c06-continuum",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 1,
+    "stem": "On the target-market continuum from broadest to narrowest, which approach comes immediately after segment marketing?",
+    "options": [
+      "Mass marketing",
+      "Individualized marketing",
+      "Niche marketing",
+      "Differentiated marketing"
+    ],
+    "answer": 2,
+    "explanation": "The continuum runs mass -> segment -> niche -> individualized. 'Differentiated marketing' is just another name for segment marketing, and individualized (one-to-one) marketing is the narrowest end, after niche.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-027",
+    "concept": "c06-continuum",
+    "also": [
+      "c06-when-to-segment"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Through its website, True North Sneakers lets each buyer choose the sole, colours, laces and stitched initials, then builds that exact pair to order. It does this for tens of thousands of customers a year. This is an example of:",
+    "options": [
+      "niche marketing",
+      "mass customization",
+      "segment marketing",
+      "product sampling"
+    ],
+    "answer": 1,
+    "explanation": "Tailoring goods to individual customers' tastes on a high-volume, build-to-order basis is mass customization (individualized marketing). Niche marketing serves a small, specialized group, not each customer individually.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-028",
+    "concept": "c06-continuum",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "What best distinguishes niche marketing from individualized (one-to-one) marketing?",
+    "options": [
+      "Niche marketing tailors each product to one customer; individualized marketing focuses on a small specialized segment",
+      "Niche marketing uses one marketing mix for the whole market; individualized marketing uses several mixes",
+      "Niche marketing is used only by small firms; individualized marketing is used only by large firms",
+      "Niche marketing focuses on one or a few narrow segments; individualized marketing tailors the offering to each customer"
+    ],
+    "answer": 3,
+    "explanation": "A niche is still a group of people: one or a few narrowly defined, specialized segments. Individualized marketing (often through mass customization) treats each customer as a segment of one. The reversed version is the trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-029",
+    "concept": "c06-continuum",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which pairing of continuum approach and description is NOT correct?",
+    "options": [
+      "Mass marketing: one product and one marketing mix for the entire market",
+      "Segment marketing: different offerings designed for different segments",
+      "Individualized marketing: one-to-one marketing tailored to each customer",
+      "Niche marketing: tailoring each product to an individual customer's tastes"
+    ],
+    "answer": 3,
+    "explanation": "Niche marketing focuses on one or a few narrowly defined, specialized segments; tailoring to each individual customer is individualized marketing or mass customization. The other three pairings are correct.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-030",
+    "concept": "c06-continuum",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "A small Alberta organic-fertilizer company has a tiny budget and faces large national competitors in every major segment. It discovers a small, specialized group, rooftop urban gardeners in Calgary, whose needs no competitor serves well. Which approach on the continuum best fits its situation?",
+    "options": [
+      "Niche marketing",
+      "Mass marketing",
+      "Segment marketing",
+      "Individualized marketing"
+    ],
+    "answer": 0,
+    "explanation": "Focusing limited resources on one narrowly defined, specialized segment that rivals ignore is niche marketing. Segment marketing would mean serving several segments with different offerings, which its budget and the competition make unrealistic.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-031",
+    "concept": "c06-when-to-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 1,
+    "stem": "A business firm segments its markets when this strategy increases its sales revenue, profit, and ROI. When its increases in expenses more than offset the potentially increased revenues from segmentation, it should:",
+    "options": [
+      "terminate as many employees as possible to save money.",
+      "reduce production costs, which will lower quality.",
+      "act as its own distributor.",
+      "not attempt to segment its market any further.",
+      "discontinue manufacturing any products that are not in the mature stage of their product life cycle."
+    ],
+    "answer": 3,
+    "explanation": "Segmentation is worthwhile only when it increases sales revenue, profit and ROI. If the added expenses more than offset the added revenue, the firm should stop segmenting. Cost-cutting moves such as layoffs or lower quality don't address the segmentation decision at all.",
+    "source": "official"
+  },
+  {
+    "id": "q06-032",
+    "concept": "c06-when-to-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Seventh Heaven is a television show that is designed to have a broad appeal to a wide number of groups. It is a show that is appropriate to watch with young children without having to worry about being embarrassed. It is a show that teaches the importance of moral values by showing teens on the show learning to cope with real-life problems without being too moralistic. It appeals to an older market because it is reminiscent of TV dramas of previous decades. This WB television show is an example of:",
+    "options": [
+      "one product with multiple market segments.",
+      "multiple products with multiple market segments.",
+      "synergy.",
+      "mass customization.",
+      "none of these answers are correct."
+    ],
+    "answer": 0,
+    "explanation": "Television shows are single products that are often directed to two or more distinct segments; here, children, teens and older viewers. 'Multiple products with multiple segments' would need a different show for each group, and mass customization tailors the product to each individual.",
+    "source": "official"
+  },
+  {
+    "id": "q06-033",
+    "concept": "c06-when-to-segment",
+    "also": [
+      "c06-product-differentiation"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Kodiak Motors sells a compact hatchback designed for students, a minivan designed for young families and a luxury sedan designed for executives. These are three different models, each built and promoted for its own group. Which way of segmenting is this?",
+    "options": [
+      "Multiple products and multiple market segments",
+      "One product and multiple market segments",
+      "Segments of one",
+      "Mass marketing"
+    ],
+    "answer": 0,
+    "explanation": "Different products (models) for different segments = multiple products and multiple market segments. 'One product and multiple segments' would be a single model promoted differently to several groups, like one TV show watched by several audiences.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-034",
+    "concept": "c06-when-to-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Compared with a 'one product and multiple market segments' approach, a 'multiple products and multiple market segments' approach typically involves:",
+    "options": [
+      "lower costs, because one product is promoted to every segment at once",
+      "higher costs, but a better fit between each product and its segment's needs",
+      "no added promotion costs, because every segment buys the same product",
+      "identical costs, since only the advertising message changes by segment"
+    ],
+    "answer": 1,
+    "explanation": "Creating different products for different segments raises production and marketing costs, but each product fits its segment's needs better. One product for multiple segments is the low-cost option, with promotion as the main extra expense.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-035",
+    "concept": "c06-when-to-segment",
+    "also": [],
+    "type": "mc",
+    "angle": "calc",
+    "difficulty": 2,
+    "stem": "Lakeview Marine estimates that splitting its boat market into a fishing segment and a water-sports segment would raise annual revenue by $240,000 but add $275,000 in product, promotion and distribution expenses. Applying the 'when to segment' rule, what should it do?",
+    "options": [
+      "Segment, because revenue would rise by $240,000",
+      "Segment, because profit would rise by $35,000",
+      "Segment, because any increase in sales justifies segmentation",
+      "Not segment further, because added expenses exceed added revenue by $35,000"
+    ],
+    "answer": 3,
+    "explanation": "Added revenue $240,000 - added expenses $275,000 = -$35,000, so profit would FALL by $35,000. A firm segments only when doing so increases revenue, profit and ROI; when the extra expenses more than offset the extra revenue, it should not segment further.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-036",
+    "concept": "c06-forming-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Between two and three percent of the population have some degree of allergic reaction, usually mild, to preservatives used in salad bars. Restaurants might consider people with these 'allergies' as a separate segment. So these restaurants will need to have their regular salad bar plus a special salad bar for the allergies segment. This multiple product and multiple market segment strategy would have the greatest difficulty meeting which of the following criteria used to form market segments?",
+    "options": [
+      "instrumentality of sufficient marketing objectives to ignore that segment",
+      "different needs of buyers among different segments",
+      "similarity of needs of potential buyers within a segment",
+      "simplicity and cost of assigning potential buyers to segments",
+      "potential for increased profit and ROI"
+    ],
+    "answer": 4,
+    "explanation": "The segment is tiny (2-3% of the population), its members benefit only modestly, and running a duplicate salad bar is expensive, so it is unlikely to be profitable. That fails 'potential for increased profit and ROI'. Needs really do differ among the segments here, so that criterion is met.",
+    "source": "official"
+  },
+  {
+    "id": "q06-037",
+    "concept": "c06-forming-criteria",
+    "also": [
+      "c06-selecting-criteria"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT one of the five criteria for FORMING market segments?",
+    "options": [
+      "Expected growth of the segment",
+      "Similarity of needs of potential buyers within a segment",
+      "Difference of needs of buyers among segments",
+      "Feasibility of a marketing action to reach a segment"
+    ],
+    "answer": 0,
+    "explanation": "Expected growth is a criterion for SELECTING target segments. The five forming criteria are profit/ROI potential, similarity within, difference among, feasibility of a marketing action, and simplicity and cost of assigning buyers to segments.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-038",
+    "concept": "c06-forming-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Winnipeg gym considers creating an 'afternoon exercisers' segment, but research shows that morning and afternoon exercisers want exactly the same equipment, classes and prices. Which criterion for forming segments does this proposed split fail?",
+    "options": [
+      "Similarity of needs of potential buyers within a segment",
+      "Potential for increased profit and ROI",
+      "Simplicity and cost of assigning potential buyers to segments",
+      "Difference of needs of buyers among segments"
+    ],
+    "answer": 3,
+    "explanation": "Segments should differ in their needs from one another. If afternoon and morning exercisers want the same things, the split fails 'difference of needs among segments'. Similarity within the segment is actually met; the problem is that the groups aren't different from each other.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-039",
+    "concept": "c06-forming-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A bank wants to target customers who are 'privately planning to switch banks within six months', but there is no inexpensive way to identify which customers belong to this group without lengthy one-on-one interviews. Which forming criterion is the main problem?",
+    "options": [
+      "Feasibility of a marketing action to reach the segment",
+      "Simplicity and cost of assigning potential buyers to segments",
+      "Similarity of needs within the segment",
+      "Difference of needs among segments"
+    ],
+    "answer": 1,
+    "explanation": "The bank can't cheaply tell who is in the segment, so it fails 'simplicity and cost of assigning potential buyers to segments'. Feasibility of a marketing action is about whether a marketing program can reach the segment once its members are known.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-040",
+    "concept": "c06-forming-criteria",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which statement correctly contrasts two of the criteria for forming market segments?",
+    "options": [
+      "Needs should differ within a segment and be similar among segments",
+      "Needs should be similar both within and among segments, so one marketing mix fits all",
+      "Needs should be similar WITHIN a segment and different AMONG segments",
+      "Needs should differ both within and among segments, to maximize variety"
+    ],
+    "answer": 2,
+    "explanation": "Good segments are internally similar (members want the same things) and externally different (each segment wants something different from the others). The reversed wording is a common distractor.",
+    "source": "generated"
+  }
+]

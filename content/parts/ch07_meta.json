@@ -1,0 +1,1009 @@
+{
+ "chapter": 7,
+ "title": "Products and Brands",
+ "topics": [
+  {
+   "id": "t07-1",
+   "order": 1,
+   "title": "What a product really is",
+   "summary": "In marketing, a product is anything - a good, a service or even an idea - that satisfies a need in exchange for something of value. Marketers view every product as having three layers: the core benefit the customer is really buying, the actual product (brand, design, features), and the augmented extras such as warranties and repair service. Exam questions love to describe a feature and ask which layer it belongs to.",
+   "concepts": [
+    "c07-product",
+    "c07-core-product",
+    "c07-actual-product",
+    "c07-augmented-product"
+   ]
+  },
+  {
+   "id": "t07-2",
+   "order": 2,
+   "title": "Classifying consumer and business products",
+   "summary": "Consumer products are grouped by how much effort and risk the shopper puts in: convenience, shopping, specialty and unsought - and the class depends on the individual consumer's behaviour, not the item. Each class calls for a different marketing mix. Business products are bought to make other products or run a business: production goods become part of the final product, support goods help produce it, and demand for all of them is derived from consumer demand.",
+   "concepts": [
+    "c07-convenience",
+    "c07-shopping",
+    "c07-specialty",
+    "c07-unsought",
+    "c07-business-products",
+    "c07-derived-demand"
+   ]
+  },
+  {
+   "id": "t07-3",
+   "order": 3,
+   "title": "Product items, lines and the product mix",
+   "summary": "Companies organize what they sell from the smallest unit up: a product item (tracked by a SKU), product lines of closely related items, and the product mix made up of all the lines. Depth counts the items within a line, length the total number of items, and width (breadth) the number of different lines.",
+   "concepts": [
+    "c07-product-line",
+    "c07-product-mix"
+   ]
+  },
+  {
+   "id": "t07-4",
+   "order": 4,
+   "title": "Brands and brand value",
+   "summary": "A brand is the name, phrase, symbol or design that distinguishes a product from competitors, and it must be developed and nurtured by marketing. The spoken part is the brand name and the unspoken part is the brand mark; trademarks, copyrights and patents protect different assets. Strong brands earn associations, equity, personality, loyalty and advocates, are managed as assets that need ongoing investment, and are often built through experiences and storytelling.",
+   "concepts": [
+    "c07-brand",
+    "c07-brand-image",
+    "c07-legal-protection",
+    "c07-brand-equity",
+    "c07-brand-personality",
+    "c07-brand-loyalty",
+    "c07-brand-advocate",
+    "c07-experiential-branding"
+   ]
+  },
+  {
+   "id": "t07-5",
+   "order": 5,
+   "title": "Branding strategies and packaging",
+   "summary": "Firms decide who owns the brand (manufacturer, retailer's private label, no brand at all, or a mix) and how names are used across products (one family name, many separate brands, extensions, sub-brands, co-brands or licensing). Packaging and labelling then add functional, communication and perceptual benefits.",
+   "concepts": [
+    "c07-brand-types",
+    "c07-family-multibranding",
+    "c07-brand-extension",
+    "c07-co-branding",
+    "c07-brand-licensing",
+    "c07-packaging"
+   ]
+  },
+  {
+   "id": "t07-6",
+   "order": 6,
+   "title": "Services and the four I's",
+   "summary": "Services are intangible activities or benefits, and they differ from goods in four ways: intangibility, inconsistency, inseparability and inventory. Each 'I' creates a specific marketing problem with a matching fix - tangible cues, standardization and training, managing the person-to-person service encounter, and smoothing demand to avoid costly idle production capacity.",
+   "concepts": [
+    "c07-intangibility",
+    "c07-inconsistency",
+    "c07-inseparability",
+    "c07-inventory"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c07-product",
+   "topic": "t07-1",
+   "term": "Product (goods, services and ideas)",
+   "definition": "A good, a service, or an idea consisting of a bundle of tangible and intangible attributes that satisfies consumers' needs and is received in exchange for money or something else of value. A service is an intangible activity or benefit an organization provides to satisfy needs in exchange for money or something else of value.",
+   "explain": "In marketing, 'product' is much broader than a physical item. A bag of coffee (good), a WestJet flight (service) and a MADD campaign urging people not to drive impaired (idea) are all products, because each delivers attributes that satisfy a need in exchange for something of value. Some attributes can be touched (colour, size); others cannot (reputation, convenience, peace of mind).",
+   "example": "MADD Canada markets the idea of sober driving; Tim Hortons sells goods (coffee, doughnuts) bundled with a service (a fast drive-thru).",
+   "contrast": "A product is the whole bundle of attributes that satisfies a need; a brand is the name, phrase, symbol or design that distinguishes one company's product from competitors'. Goods are tangible, services are intangible activities or benefits, and ideas are causes or ways of thinking - all three count as products.",
+   "trap": "Watch for options that limit 'product' to physical goods, to tangible features only, or to things sold for money. Ideas (anti-impaired-driving, anti-smoking) and services (banking, haircuts) are products, and 'something else of value' means the exchange can be for time, a donation or a change in behaviour.",
+   "mnemonic": "G-S-I: Goods, Services and Ideas are all products.",
+   "figure": null
+  },
+  {
+   "id": "c07-core-product",
+   "topic": "t07-1",
+   "term": "Total product concept and the core product",
+   "definition": "The total product concept holds that marketers view products as having three layers: the core product (the fundamental benefit the consumer derives from the product), the actual product (the physical good or delivered service, including branding, design and features), and the augmented product (additional features and benefits that accompany the actual product).",
+   "explain": "Think of the layers as an onion. At the centre is why the customer buys at all - the benefit (a bicycle provides transportation and leisure). The actual product wraps that benefit in a specific branded, designed, featured item, and the augmented layer adds extras such as a warranty and repair service. Under this concept, what customers ultimately buy is the BENEFITS of the product, not just its tangible features.",
+   "example": "Bicycle (Figure 7-2): core = provides transportation and leisure activity; actual = branded bicycle with a metal unisex frame, 10 speeds, aluminum alloy wheels and a padded seat; augmented = warranty, repair facilities, online FAQs and service videos.",
+   "contrast": "Core = the benefit or need solved ('getting to work', 'peace of mind', 'clean teeth'); actual = what you can see, touch or specify (brand name, design, features, packaging, quality level); augmented = what comes WITH it (warranty, repairs, delivery, installation, FAQs, customer support).",
+   "trap": "A question asking 'what do customers buy?' wants 'the benefits of the product' - not 'only the tangible features' and not 'the complete package of benefits and features'. If a stem describes a functional or emotional benefit, it is CORE even when it sounds like a feature. 'Formal product' and 'future product' are distractors, not layers in this course.",
+   "mnemonic": "C-A-A from the inside out: Core (why), Actual (what), Augmented (what else).",
+   "figure": {
+    "type": "table",
+    "title": "Total product concept (Figure 7-2, bicycle)",
+    "head": [
+     "Layer",
+     "What it is",
+     "Bicycle example",
+     "Typical cues"
+    ],
+    "rows": [
+     [
+      "Core",
+      "Fundamental benefit the consumer derives",
+      "Provides transportation and leisure activity",
+      "benefit, need solved, peace of mind"
+     ],
+     [
+      "Actual",
+      "Physical product including branding, design and features",
+      "Branded bicycle, metal unisex frame, 10 speeds, aluminum alloy wheels, padded seat",
+      "brand name, design, features, packaging, quality level"
+     ],
+     [
+      "Augmented",
+      "Additional features or benefits that come with the actual product",
+      "Warranty, repair facilities, online FAQs, service videos",
+      "warranty, repairs, delivery, installation, customer support"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-actual-product",
+   "topic": "t07-1",
+   "term": "Actual product",
+   "definition": "The middle layer of the total product concept: the physical good or the delivered service that supplies the core benefit, including its branding, design and features.",
+   "explain": "This is the product as you would describe it on a spec sheet - the brand name, the styling, the features, the quality level and the packaging. It is how a company turns an abstract benefit into a specific offering customers can compare, so most differentiation on features and design happens at this layer.",
+   "example": "A Canada Goose parka's actual product is its brand name, down fill, hood design, colours and arctic-rated shell; its core product is staying warm, and its augmented product includes the warranty that comes with it.",
+   "contrast": "Actual vs core: a feature (10 speeds, a 4K screen) is actual; the benefit it delivers (transportation, entertainment) is core. Actual vs augmented: anything built into or part of the item itself is actual; services or promises that come along with it (warranty, free installation, repairs) are augmented.",
+   "trap": "Brand name, packaging, design, colour and quality level are ACTUAL even though they can feel like 'extras'. Don't classify an impressive built-in feature as augmented - augmented items accompany the product rather than being part of it. 'Formal product' is another textbook's label and is not used in this course.",
+   "mnemonic": "Actual = what's in the box (and the box itself).",
+   "figure": null
+  },
+  {
+   "id": "c07-augmented-product",
+   "topic": "t07-1",
+   "term": "Augmented product (including warranty)",
+   "definition": "The outer layer of the total product concept: additional features and benefits that accompany the actual product, such as a warranty, service contract, repair facilities, delivery, installation assistance, or a website and FAQs, used to distinguish it from competitive offerings. A warranty is a statement indicating the liability of the manufacturer for product deficiencies.",
+   "explain": "Augmentation is how companies stand out when actual products are similar. A warranty tells buyers the maker will stand behind the product; repair programs, free delivery, installation, tutorials and online support all sit in this layer. These extras accompany the product rather than being built into it.",
+   "example": "Patagonia repairs broken zippers and torn clothing long after purchase; a car maker gives its first 50 buyers a three-year warranty; an appliance store offers free installation and a 24/7 support line.",
+   "contrast": "Augmented vs actual: a feature built into the product (heated seats) is actual; a promise or service delivered alongside it (a three-year warranty, free tire changeovers) is augmented. Augmented vs core: the core is the basic benefit sought, not the extras around it.",
+   "trap": "Warranty, repair service, delivery, installation, online FAQs, service videos and support lines = AUGMENTED every time. Promotional framing ('the first 50 buyers get...') does not change the layer. Watch for the 'formal' and 'future' product distractors.",
+   "mnemonic": "Augmented = Additional, After-sale, Assurance.",
+   "figure": null
+  },
+  {
+   "id": "c07-convenience",
+   "topic": "t07-2",
+   "term": "Convenience products",
+   "definition": "Consumer products that are purchased frequently, are inexpensive, and require minimal shopping effort; they have widespread distribution and mass advertising, and consumers are aware of brands but will accept substitutes.",
+   "explain": "Consumer products are classified by the effort and risk a shopper puts into buying them. Convenience items are the low-effort end - toothpaste, snacks, gum. Because buyers will not go out of their way, the marketer must place the product almost everywhere and keep the brand top of mind with mass advertising. The manner in which a consumer product is classified depends on the individual.",
+   "example": "A chocolate bar beside the till at Shoppers Drug Mart, or a toothpaste brand stocked in every grocery, drug and convenience store in Canada.",
+   "contrast": "Convenience vs shopping: convenience = buy with little thought and accept substitutes; shopping = compare price, quality and style across a few outlets first. Convenience vs unsought: convenience products are wanted and bought routinely; unsought products are unknown or not initially wanted.",
+   "trap": "Cue words: 'frequently', 'inexpensive', 'minimal effort', 'grabs whatever is available', 'widespread distribution', 'mass advertising'. Remember the classification depends on the individual - the same item can be a convenience product for one person and a shopping product for another.",
+   "mnemonic": "Convenience = Cheap, Common, Close at hand.",
+   "figure": {
+    "type": "table",
+    "title": "Consumer product classes (classification depends on the individual)",
+    "head": [
+     "Class",
+     "Consumer effort",
+     "Price",
+     "Distribution",
+     "Promotion",
+     "Brand loyalty",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Convenience",
+      "Minimal; bought frequently",
+      "Inexpensive",
+      "Widespread",
+      "Mass advertising",
+      "Aware of brands but will accept substitutes",
+      "Toothpaste, snacks, gum"
+     ],
+     [
+      "Shopping",
+      "Compare alternatives on price, quality, style",
+      "Moderate",
+      "Fewer outlets",
+      "Emphasize differentiation",
+      "Limited brand preference",
+      "Clothing, appliances, cameras, furniture"
+     ],
+     [
+      "Specialty",
+      "Significant effort to search for and buy",
+      "High",
+      "Exclusive or very limited",
+      "Stress uniqueness to a targeted audience",
+      "Very brand loyal; will not accept substitutes",
+      "Rolex, luxury cars, designer goods"
+     ],
+     [
+      "Unsought",
+      "Doesn't know about it, or knows but doesn't initially want it",
+      "Varies",
+      "Varies",
+      "Aggressive promotion and personal selling",
+      "Will accept substitutes",
+      "Life insurance, burial plots, radical new products"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-shopping",
+   "topic": "t07-2",
+   "term": "Shopping products",
+   "definition": "Consumer products for which the consumer compares several alternatives on criteria such as price, quality and style; they are sold through fewer outlets at moderate prices, marketers emphasize differentiation, and brand preference is limited.",
+   "explain": "Shopping products deserve some homework: people visit a few stores or websites, read reviews and compare before buying a winter jacket, a fridge or a sofa. Because buyers compare, the marketer's job is to show how its offering differs on quality, style or value. Distribution doesn't need to be everywhere - just where comparison shoppers go.",
+   "example": "A couple in Edmonton compares three dishwashers at different retailers on price, energy rating and noise level before buying.",
+   "contrast": "Shopping vs specialty: shopping buyers compare alternatives and will switch brands; specialty buyers have already decided on one unique brand and will search hard for it, refusing substitutes. Shopping vs convenience: shopping involves deliberate comparison; convenience involves almost none.",
+   "trap": "Cue words: 'compares', 'visits several stores', 'weighs price, quality and style', 'reads reviews before deciding'. If the shopper insists on ONE brand only and travels far for it, it is specialty, not shopping - even for the same item. Price alone never decides the class.",
+   "mnemonic": "Shopping = Side-by-side comparison.",
+   "figure": null
+  },
+  {
+   "id": "c07-specialty",
+   "topic": "t07-2",
+   "term": "Specialty products",
+   "definition": "Consumer products with unique characteristics for which the consumer makes a significant effort to search for and buy a specific brand; they have exclusive or very limited distribution, high prices, and very brand-loyal buyers who will not accept substitutes.",
+   "explain": "With specialty products the brand decision is made before the shopping starts - the buyer wants THIS watch or THIS car and will travel to get it. Marketers protect the brand's uniqueness: few outlets, premium prices and image-focused promotion.",
+   "example": "A Calgary collector waits months and travels to Vancouver to buy one specific Rolex model from an authorized dealer, refusing similar watches.",
+   "contrast": "Specialty vs shopping: specialty buyers do not compare alternatives - they search for one brand; shopping buyers compare several. An expensive item bought after comparison shopping is a shopping product for that buyer.",
+   "trap": "Cue words: 'will accept no substitute', 'significant effort to find', 'exclusive dealer', 'very brand loyal', 'unique'. Don't equate specialty with 'expensive'. The same product can be specialty for one person and shopping for another - classification depends on the individual.",
+   "mnemonic": "Specialty = 'Only this one will do.'",
+   "figure": null
+  },
+  {
+   "id": "c07-unsought",
+   "topic": "t07-2",
+   "term": "Unsought products",
+   "definition": "Consumer products that the consumer either does not know about or knows about but does not initially want; they require aggressive promotion and personal selling.",
+   "explain": "Few people wake up wanting to buy life insurance or a burial plot, and nobody can want a radically new product they have never heard of. Because demand isn't there to begin with, marketers must create awareness and desire through aggressive promotion and personal selling.",
+   "example": "A life insurance adviser in Winnipeg contacts new parents; a start-up launching a never-before-seen home device must first make people aware the category exists.",
+   "contrast": "Unsought vs convenience: both may accept substitutes, but convenience goods are wanted and bought routinely, while unsought goods are unknown or unwanted until the marketer creates the need. Unsought vs specialty: specialty buyers actively hunt for the product; unsought buyers are unaware of it or avoid it.",
+   "trap": "Two triggers: 'doesn't know about it' (radical new products) OR 'knows about it but doesn't want it yet' (life insurance, burial plots). The marketing-mix cue is aggressive promotion and personal selling.",
+   "mnemonic": "Unsought = Unknown or Unwanted.",
+   "figure": null
+  },
+  {
+   "id": "c07-business-products",
+   "topic": "t07-2",
+   "term": "Business products: production and support goods",
+   "definition": "Products organizations buy to make other products or run their operations. Production goods become part of the final product (raw materials such as grain or lumber; component parts such as engines or microchips). Support goods assist in producing other products (installations, accessory equipment, supplies and services).",
+   "explain": "The test is simple: does the item end up INSIDE the final product? If yes, it is a production good - a raw material if it is basically unprocessed, a component part if it is already manufactured. If it only helps the business make things or operate, it is a support good: installations are buildings and fixed equipment, accessory equipment is tools and office equipment, supplies are consumables (stationery, paper clips, brooms), and services are things like maintenance, repair, legal and consulting.",
+   "example": "For an Alberta truck maker: steel = raw material; engines = component parts; the plant and fixed assembly line = installations; power tools and office computers = accessory equipment; paper and brooms = supplies; an outside maintenance contractor = services.",
+   "contrast": "Production vs support: production goods become part of the finished product; support goods never do. Installations vs accessory equipment: installations are buildings and fixed equipment; accessory equipment is tools and office equipment. Supplies vs accessory equipment: supplies are used up, equipment is reused.",
+   "trap": "A microchip inside a phone is a COMPONENT PART (production), but a computer used in the accounting office is ACCESSORY EQUIPMENT (support) - what decides it is whether the item becomes part of the product. 'Services' here means business services such as maintenance, repair, legal and consulting.",
+   "mnemonic": "Production = in the product; Support = I-A-S-S (Installations, Accessory equipment, Supplies, Services).",
+   "figure": {
+    "type": "table",
+    "title": "Business products",
+    "head": [
+     "Group",
+     "Type",
+     "What it is",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Production",
+      "Raw materials",
+      "Basic inputs that become part of the final product",
+      "Grain, lumber"
+     ],
+     [
+      "Production",
+      "Component parts",
+      "Manufactured items assembled into the final product",
+      "Engines, microchips"
+     ],
+     [
+      "Support",
+      "Installations",
+      "Buildings and fixed equipment",
+      "Factory, fixed assembly line"
+     ],
+     [
+      "Support",
+      "Accessory equipment",
+      "Tools and office equipment",
+      "Power tools, office computers"
+     ],
+     [
+      "Support",
+      "Supplies",
+      "Items used up in running the business",
+      "Stationery, paper clips, brooms"
+     ],
+     [
+      "Support",
+      "Services",
+      "Business services that help the firm operate",
+      "Maintenance, repair, legal, consulting"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-derived-demand",
+   "topic": "t07-2",
+   "term": "Derived demand",
+   "definition": "Demand for business products is derived from (driven by) demand for the consumer products they help produce.",
+   "explain": "Businesses don't buy paint-spraying equipment or steel for their own sake; they buy them because consumers want cars. When consumer demand rises, demand for the business inputs rises too, and when it falls, B2B suppliers feel it. A business marketer must therefore watch demand in the final consumer market.",
+   "example": "If consumer demand for Ford cars increases, Ford may increase its demand for paint-spraying equipment. If Canadians buy more oat milk, Prairie oat processors see orders rise.",
+   "contrast": "Derived demand vs consumer demand: consumer demand starts with end users; derived demand is the ripple effect on suppliers of business products. Derived demand is a characteristic of BUSINESS products, not a class of consumer products.",
+   "trap": "Distractors include 'primary demand', 'secondary demand', 'unit demand' and 'contrived demand'. Any stem linking a change in consumer purchases to a change in a business's purchases of inputs or equipment = derived demand.",
+   "mnemonic": "Derived = Downstream drives upstream.",
+   "figure": null
+  },
+  {
+   "id": "c07-product-line",
+   "topic": "t07-3",
+   "term": "Product item (SKU), product line, line depth and length",
+   "definition": "A product item is a specific product with a unique brand, size or price, identified by a stock keeping unit (SKU). A product line is a group of products closely related because they satisfy a class of needs, are used together, are sold to the same customer group, are distributed through the same outlets, or fall within a given price range. Line depth is the number of product items within a line; line length is the total number of items.",
+   "explain": "Think shelf level first: the SKU is one specific item (one detergent scent in one bottle size). Group related items and you get a product line (all of a brand's laundry detergents). Depth tells you how many variations - sizes, scents, formats - a line carries; length counts the total number of items. Deepening a line lets a firm serve more needs without entering a new category.",
+   "example": "Build-a-Bear Workshop's teddy bears, designed as gifts for almost every occasion, form a product line because they satisfy one class of need - gift-giving. One specific birthday bear in one outfit and size is a product item with its own SKU.",
+   "contrast": "Item/SKU = one specific version; product line = a related group of items; product mix = ALL of a company's lines. Depth = variety inside one line; width = number of different lines in the mix.",
+   "trap": "'Satisfies a class of needs', 'used together', 'same customer group', 'same outlets' and 'same price range' all point to PRODUCT LINE. Distractors: product class, product category, product mix, marketing mix. A unique brand, size or price = product item; its unique identifier = SKU. Adding a new size or flavour deepens a line - it does not create a new line.",
+   "mnemonic": "Depth goes down one line; width goes across lines.",
+   "figure": {
+    "type": "table",
+    "title": "From item to mix",
+    "head": [
+     "Term",
+     "Meaning",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Product item / SKU",
+      "One specific product with a unique brand, size or price; the SKU is its unique identifier",
+      "One scent of a detergent in one bottle size"
+     ],
+     [
+      "Product line",
+      "Closely related products (class of needs, used together, same customers, same outlets or same price range)",
+      "Build-a-Bear's gift teddy bears"
+     ],
+     [
+      "Line depth",
+      "Number of product items within a line",
+      "A pasta-sauce line offered in 14 flavours and sizes"
+     ],
+     [
+      "Line length",
+      "Total number of items",
+      "Every item the firm offers, counted together"
+     ],
+     [
+      "Product mix",
+      "All the product lines a company offers",
+      "P&G: baby care, fabric and home care, beauty, health and grooming"
+     ],
+     [
+      "Mix width (breadth)",
+      "Number of different product lines",
+      "Adding a pet-food line would make P&G's mix wider"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-product-mix",
+   "topic": "t07-3",
+   "term": "Product mix and mix width (breadth)",
+   "definition": "The product mix is all the product lines offered by a company; product mix width (or breadth) is the number of different product lines the company offers.",
+   "explain": "Step back from one line and look at everything a company sells. Procter & Gamble's mix includes baby care (Pampers), fabric and home care (Tide, Bounce), beauty, and health and grooming (Head & Shoulders, Old Spice) lines. Adding a brand-new line widens the mix; adding variations within an existing line only deepens that line.",
+   "example": "P&G's product mix spans baby care, fabric and home care, beauty, and health and grooming lines. If P&G added a pet-food line, its product mix would become wider.",
+   "contrast": "Product mix (all lines; measured by width) vs product line (one related group; measured by depth and length) vs marketing mix (the 4 Ps: product, price, place, promotion). Width counts lines; depth counts items within a line.",
+   "trap": "'Product mix' and 'marketing mix' sound alike - the marketing mix is the 4 Ps, not the assortment of products. Width = breadth = number of lines. A new flavour of an existing product does NOT widen the mix. In a count question, count lines for width, not items.",
+   "mnemonic": "Mix = Many lines; width = how many lines wide.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand",
+   "topic": "t07-4",
+   "term": "Brand, brand name and brand mark (logo)",
+   "definition": "A brand is a name, phrase, symbol or design, or a combination of these, uniquely given by a company to a product to distinguish it from the competition. The brand name is the part that can be spoken (words, letters, numbers); the brand mark or logo is the part that cannot be spoken (a symbol or design).",
+   "explain": "A brand is the identity that separates one company's offering from look-alike competitors, and it doesn't build itself - it needs to be developed and nurtured by marketing activity. Split it into what you can say ('Lululemon') and what you can only see (its stylized logo). Non-profits such as MADD have brands too.",
+   "example": "Lululemon's name (brand name) and its stylized logo (brand mark); MADD's name and lettering identify the charity and distinguish it from other causes.",
+   "contrast": "Brand name (spoken: 'Roots', 'WestJet', '7-Eleven') vs brand mark or logo (unspoken: the Nike swoosh, the Roots beaver). Brand vs product: the product is the bundle of attributes; the brand is the identity that distinguishes it. Brand vs trademark: the trademark is the LEGAL protection of a brand name or mark.",
+   "trap": "Numbers and letters that can be pronounced ('3M', 'H&M', '7-Eleven') are brand NAMES, not marks. A symbol with no pronounceable words is a brand mark. Brands need ongoing marketing - they are never created once and left alone.",
+   "mnemonic": "If you can SAY it, it's the name; if you can only SEE it, it's the mark.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-image",
+   "topic": "t07-4",
+   "term": "Brand associations and brand image",
+   "definition": "Brand associations are the thoughts, feelings and perceptions linked to a brand in a consumer's memory; together they form the brand image and reflect what the brand promises to deliver.",
+   "explain": "When you finish the sentence 'Apple is ___' or 'Tim Hortons is ___', the word that pops into your head is a brand association. What makes a brand more than a product is its substance - authenticity - so marketers must understand a brand's key associations (compare how H&M, Gap and Zara are seen). Brands also offer an 'educational' opportunity: teach people why they should care, because perceptions shape brand relationships.",
+   "example": "Tim Hortons is associated with 'Canadian', 'hockey' and 'Roll Up To Win'; Endy worked to build perceptions of a comfortable, hassle-free Canadian mattress delivered in a box.",
+   "contrast": "Brand image/associations = what consumers think and feel about the brand; brand personality = the human traits linked to it (one kind of association); brand equity = the added VALUE those associations create; brand loyalty = favourable attitude plus repeat purchase over time.",
+   "trap": "Fill-in-the-blank exercises ('Apple is ___') and 'what comes to mind' questions point to associations/image. The difference between a brand and a product is substance (authenticity) and associations, not physical features. Perceptions matter even when they don't match the technical facts.",
+   "mnemonic": "Image = what's in the consumer's head.",
+   "figure": null
+  },
+  {
+   "id": "c07-legal-protection",
+   "topic": "t07-4",
+   "term": "Trademark, copyright and patent",
+   "definition": "A trademark is legal protection identifying that the owner has the exclusive right to use a brand name or brand mark (registered with the Canadian Intellectual Property Office for 10 years, renewable). A copyright legally protects original written works, sound recordings or forms of communication from being copied by others (music, literature, performances). A patent protects inventions.",
+   "explain": "Each tool protects a different kind of asset. Brand identity (names and logos) is protected by trademarks; creative expression (songs, books, recordings, performances) by copyright; and new inventions (a new mechanism or device) by patents. Marketers rely on trademarks to stop competitors from using their names and marks.",
+   "example": "A Calgary brewery registers its name and grizzly logo as trademarks; a jingle written for its ads is protected by copyright; the new canning mechanism its engineers invented is protected by a patent.",
+   "contrast": "Trademark = brand name or mark (identity); copyright = written word, sound recording or form of communication (creative works); patent = invention (how something works). Brand loyalty and brand personality are marketing outcomes, not legal protections.",
+   "trap": "Copyright in this course lasts the creator's lifetime plus 50 YEARS - the exam answer is 50. (Canadian law actually extended copyright to life plus 70 years effective December 30, 2022, but the course material and test bank use lifetime plus 50.) Trademarks are registered for 10 years and are renewable. 'Written word, sound recording or form of communication' always = copyright.",
+   "mnemonic": "TM = Trade name or mark; copyright = Creative work; patent = Product invention.",
+   "figure": {
+    "type": "table",
+    "title": "Legal protection",
+    "head": [
+     "Protection",
+     "What it protects",
+     "Duration (course answer)",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Trademark",
+      "Exclusive right to use a brand name or brand mark",
+      "10 years, renewable (CIPO)",
+      "A brewery's name and logo"
+     ],
+     [
+      "Copyright",
+      "Original written works, sound recordings, forms of communication",
+      "Creator's lifetime + 50 years (exam answer)",
+      "A song, a novel, an ad jingle"
+     ],
+     [
+      "Patent",
+      "Inventions",
+      "Not specified in course material",
+      "A new canning mechanism"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-brand-equity",
+   "topic": "t07-4",
+   "term": "Brand equity and brands as assets",
+   "definition": "Brand equity is the added value a brand name gives to a product beyond its functional benefits; it provides a competitive advantage and allows higher prices. Because brands are assets, marketers must invest money to maintain their value.",
+   "explain": "Picture two identical hoodies, one plain and one with a Roots logo - the extra amount people will pay for the Roots one is brand equity. Like a building or a machine, a brand is an asset that loses value without upkeep, so companies keep investing in quality, advertising and experiences. Rankings such as Interbrand's best global brands (Apple first in 2025) and Leger's most admired brands in Canada show how valuable strong brands become; they are examples, not lists to memorize.",
+   "example": "Interbrand's 2025 ranking places Apple, Microsoft, Amazon and Google at the top in financial brand value; a branded battery commands a higher price than an unbranded one with the same specifications.",
+   "contrast": "Brand equity (the value or premium the name adds) vs brand loyalty (an individual consumer's favourable attitude and repeat purchase) vs brand image (the associations). Loyalty and positive associations are SOURCES of equity; equity is the resulting value.",
+   "trap": "'Added value beyond functional benefits', 'charge a premium', 'worth more than the physical product' and 'competitive advantage' = brand equity. If brands are assets, the correct action is to INVEST money to maintain their value - not sell them, not build new ones regularly, not balance them against liabilities.",
+   "mnemonic": "Equity = Extra value; assets need upkeep.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-personality",
+   "topic": "t07-4",
+   "term": "Brand personality",
+   "definition": "A set of human characteristics associated with a brand name.",
+   "explain": "If the brand were a person, who would it be? Marketers deliberately give brands traits - rugged, sophisticated, sincere, exciting, competent - through ads, characters, tone of voice and design, because consumers make emotional connections with brands much as they do with people.",
+   "example": "Roots projects a down-to-earth, outdoorsy, friendly personality; a luxury jeweller projects sophistication.",
+   "contrast": "Brand personality (human traits) vs brand image/associations (all the thoughts and feelings about the brand, of which personality is one kind) vs brand equity (the value added) vs brand loyalty (favourable attitude and repeat purchase over time).",
+   "trap": "Look for human adjectives - 'adventurous', 'sincere', 'playful', 'rugged', 'sophisticated' - or the phrase 'if the brand were a person'. Don't confuse personality with a brand advocate, who is a real person recommending the brand.",
+   "mnemonic": "Personality = the brand as a Person.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-loyalty",
+   "topic": "t07-4",
+   "term": "Brand loyalty",
+   "definition": "A favourable attitude toward and consistent purchase of a single brand over time.",
+   "explain": "Loyalty has two parts: the attitude (the consumer likes the brand) and the behaviour (the consumer keeps buying it over time). Marketers work to associate brands with specific personality traits and to help consumers make emotional connections with their brands, because loyal customers keep coming back.",
+   "example": "A Calgary driver has bought only Toyota vehicles for 20 years and says she wouldn't consider another make.",
+   "contrast": "Loyalty = the customer's own favourable attitude + repeat buying; advocacy = actively telling others; equity = the value the brand earns as a result. Repeat buying driven only by discounts, without a favourable attitude, is not true loyalty.",
+   "trap": "Cues: 'over time', 'consistently buys', 'favourable attitude', 'emotional connection'. If the stem says the person RECOMMENDS the brand to others, the answer is brand advocate, not brand loyalty. Specialty products feature very high brand loyalty.",
+   "mnemonic": "Loyalty = Like it + keep buying it.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-advocate",
+   "topic": "t07-4",
+   "term": "Brand advocate",
+   "definition": "A person who speaks well of a product by passing along positive comments to other people.",
+   "explain": "Advocates spread word of mouth - telling friends, posting reviews, defending the brand online. Because their comments come from fellow consumers rather than the company, marketers try to turn satisfied, loyal customers into advocates.",
+   "example": "An Edmonton runner who posts glowing reviews of her running shoes and convinces three teammates to buy the same brand.",
+   "contrast": "Brand advocate (tells others) vs brand loyalty (keeps buying with a favourable attitude) vs brand personality (human traits of the brand itself). 'Brand associate', 'brand preceptor' and 'personal brand' are distractors, not this concept.",
+   "trap": "Key cue: 'passes along positive comments to others' or 'recommends'. A loyal customer who never tells anyone is not an advocate, and an advocate need not be a long-time buyer.",
+   "mnemonic": "Advocate = Adds a voice.",
+   "figure": null
+  },
+  {
+   "id": "c07-experiential-branding",
+   "topic": "t07-4",
+   "term": "Experiential branding and storytelling",
+   "definition": "Branding whose aim is not to sell you something, but to show how a brand can enrich a consumer's life; storytelling is essential to it.",
+   "explain": "Instead of 'buy this', experiential branding says 'here is what life with this brand feels like'. Events, pop-ups, community activities and brand stories let people live the brand. Storytelling gives the experience meaning and emotion, making the brand memorable and building relationships.",
+   "example": "Lululemon's free community yoga classes and run clubs; an outdoor brand's Banff pop-up offering guided snowshoe walks and founder stories with no sales pitch.",
+   "contrast": "Experiential branding (showing how the brand enriches life; no hard sell) vs a traditional sales promotion (a direct pitch, discount or feature list) vs brand licensing (renting the name to another firm).",
+   "trap": "Cues: 'not to sell you something', 'enrich the consumer's life', 'experience', 'storytelling'. If the stem focuses on a discount, a feature list or closing the sale, it is not experiential branding.",
+   "mnemonic": "Show, don't sell - and tell a story.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-types",
+   "topic": "t07-5",
+   "term": "Manufacturer, private-label, generic and mixed branding",
+   "definition": "Manufacturer (national) branding: the producer owns the brand name. Private-label (store or house) branding: a retailer or wholesaler owns the brand, usually made for it by a manufacturer. Generic branding: no brand name, plain packaging, low price. Mixed branding: a firm markets products under its own name and under a reseller's (private-label) name.",
+   "explain": "The key question is WHO OWNS the brand name. Tide and Nike belong to their manufacturers. President's Choice (Loblaw), Kirkland (Costco) and Canadian Tire's Mastercraft and Motomaster belong to retailers even though another company makes them. Generic products skip branding to keep costs and prices low. Mixed branding lets a producer sell under its own label AND supply a retailer's private label.",
+   "example": "Canadian Tire carries manufacturer brands, its own private labels (Mastercraft tools, Motomaster batteries) and some unbranded basics; a cracker maker that sells under its own label and also makes a supermarket's store-brand crackers uses mixed branding.",
+   "contrast": "Private-label vs manufacturer: the brand owner is the retailer or wholesaler vs the producer - not who physically makes it. Private-label vs generic: private labels DO carry a brand name (PC, Kirkland); generics carry none. Mixed branding vs multibranding: mixed = the firm's own name + a reseller's name; multibranding = several of the firm's OWN names.",
+   "trap": "A store brand is still a brand (private-label), not a generic. A manufacturer brand is also called a national brand. 'Made by an outside manufacturer' does not make it a manufacturer brand - ownership of the name decides.",
+   "mnemonic": "Who owns the name? Maker = manufacturer; merchant = private label; nobody = generic; both = mixed.",
+   "figure": {
+    "type": "list",
+    "title": "Branding strategies at a glance",
+    "items": [
+     "Manufacturer (national) branding - producer owns the brand (Tide, Nike)",
+     "Private-label (store/house) branding - retailer or wholesaler owns the brand (President's Choice, Kirkland, Mastercraft, Motomaster)",
+     "Generic branding - no brand name, plain packaging, low price",
+     "Mixed branding - products sold under the firm's own name and a reseller's name",
+     "Multiproduct (family/umbrella/corporate) branding - one name for all products (Samsung, Heinz)",
+     "Brand extension - current brand name used to enter a new product class (Dove soap to Dove shampoo)",
+     "Sub-branding - corporate or family name combined with a new name (Porsche Cayenne, Gatorade G2)",
+     "Multibranding - a different name for each product or segment (Tide, Gain, Cheer; Black & Decker vs DeWalt)",
+     "Co-branding - two manufacturers' brand names on one product (Tim Hortons + Oreo; Nike + Apple)",
+     "Brand licensing - another firm uses the brand for a royalty or fee"
+    ]
+   }
+  },
+  {
+   "id": "c07-family-multibranding",
+   "topic": "t07-5",
+   "term": "Multiproduct (family) branding vs multibranding",
+   "definition": "Multiproduct branding (also called family, umbrella or corporate branding) uses one name for all of a company's products. Multibranding gives each product or market segment a different, distinct brand name.",
+   "explain": "One name or many? Samsung and Heinz put a single name on everything, so every product benefits from the same reputation and new products launch more easily - multiproduct branding makes brand extensions and sub-branding possible. Procter & Gamble instead sells Tide, Gain and Cheer under separate names so each detergent can target a different segment, and Stanley Black & Decker uses DeWalt for professionals and Black & Decker for homeowners.",
+   "example": "Multiproduct: Samsung phones, TVs and refrigerators; Heinz ketchup, beans and relish. Multibranding: P&G's Tide, Gain and Cheer; Black & Decker vs DeWalt.",
+   "contrast": "Family branding = one shared name (new products borrow its reputation, but a failure can reflect on every product); multibranding = separate names (each targets its own segment and is insulated from the others, but each must be built separately). Multibranding vs mixed branding: multibranding uses the firm's own names; mixed adds a reseller's private label.",
+   "trap": "Cues for family/multiproduct: 'all products carry the company name', 'umbrella', 'corporate'. Cues for multibranding: 'a different brand name for each product or segment', 'shoppers may not know the brands share an owner'. Don't confuse multibranding with multiproduct branding just because both start with 'multi'.",
+   "mnemonic": "Family = one family name; multibranding = many names.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-extension",
+   "topic": "t07-5",
+   "term": "Brand extension and sub-branding",
+   "definition": "A brand extension uses a current brand name to enter a completely new product class. Sub-branding combines a corporate or family brand name with a new brand name.",
+   "explain": "Both strategies borrow an established name. A brand extension stretches the SAME name into a new category (Dove soap to Dove shampoo; Tide detergent to Tide stain remover), betting that the name's reputation will transfer. Sub-branding pairs the parent name with a new name to signal something distinct yet related (Porsche Cayenne, Gatorade G2).",
+   "example": "Brand extension: Dove moving from bar soap into shampoo. Sub-branding: Porsche Cayenne; Gatorade G2.",
+   "contrast": "Brand extension (same name, new product CLASS) vs sub-branding (parent name + a NEW name) vs co-branding (two different companies' names on one product) vs adding a size or flavour to an existing line (that deepens the line; it is not entering a new class).",
+   "trap": "If a new name appears next to the parent name, think sub-branding; if the parent name alone moves into a different category, think brand extension. A new scent of the same candle stays in the same product class, so it is not a brand extension.",
+   "mnemonic": "Extension = same name, new class; sub-brand = family name + new name.",
+   "figure": null
+  },
+  {
+   "id": "c07-co-branding",
+   "topic": "t07-5",
+   "term": "Co-branding",
+   "definition": "Pairing two brand names of two manufacturers on a single product.",
+   "explain": "Co-branding lets each partner borrow the other's equity and reach the other's customers, because one product carries both names. It works best when the brands fit together and each adds something the other lacks.",
+   "example": "Tim Hortons and Oreo on a co-branded doughnut; Nike and Apple on running products.",
+   "contrast": "Co-branding (two companies' brands together on ONE product) vs brand licensing (one company lets another use its brand for a royalty or fee) vs sub-branding (one company's parent name + a new name) vs mixed branding (one firm sells under its own name and a reseller's name).",
+   "trap": "Count the companies: two different manufacturers' names on the same product = co-branding. Only one company's names = sub-branding. One firm paying a royalty to use another's name = licensing.",
+   "mnemonic": "Co = two brands Cooperating on one product.",
+   "figure": null
+  },
+  {
+   "id": "c07-brand-licensing",
+   "topic": "t07-5",
+   "term": "Brand licensing",
+   "definition": "A contractual agreement whereby a company allows another firm to use its brand name, patent, trade secret or other property for a royalty or fee.",
+   "explain": "Licensing lets a brand owner earn income and extend its reach without making the product itself, while the licensee gets instant recognition. Because someone else makes the product, the owner must protect its brand by controlling quality - a poor licensed product can damage the name.",
+   "example": "A junior hockey team lets an apparel maker produce and sell team-logo toques in exchange for a royalty on each one sold.",
+   "contrast": "Licensing (another firm pays a royalty or fee to use the property) vs co-branding (two manufacturers' names jointly on one product) vs brand extension (the owner itself uses its name in a new product class).",
+   "trap": "Cues: 'royalty', 'fee', 'contractual agreement', 'allows another firm to use'. Licensing can cover patents and trade secrets, not only brand names.",
+   "mnemonic": "Licensing = leasing your name.",
+   "figure": null
+  },
+  {
+   "id": "c07-packaging",
+   "topic": "t07-5",
+   "term": "Packaging and labelling benefits",
+   "definition": "Packaging is any container in which a product is offered for sale and on which label information is conveyed. It provides functional benefits (convenience, storage, protection, usability), communication benefits (label information, directions, nutrition facts, brand benefits) and perceptual benefits (shaping perceptions of quality and helping the brand stand out on the shelf). Labelling is an integral part of packaging.",
+   "explain": "Packaging first has to work (functional), then inform (communication), then persuade through its look and feel (perceptual). Tide PODS' single-use pods are a functional innovation; nutrition facts and directions communicate; a premium bottle or bold design signals quality and grabs attention on a crowded shelf.",
+   "example": "Tide PODS (functional: no measuring or pouring); a resealable cheese bag (functional: storage); a nutrition-facts table (communication); a sculpted glass bottle that looks premium (perceptual).",
+   "contrast": "Functional = makes the product easier to use, store or protect; communication = tells you something (information, directions, nutrition, brand benefits); perceptual = changes how you perceive the brand (quality impression, standing out). Packaging is part of the ACTUAL product layer, not the augmented layer.",
+   "trap": "If the packaging changes how the product is used (no measuring, resealable, easy-pour, protective), it is FUNCTIONAL - even if it also looks good. 'Communicate information about the product' and 'help the brand stand out' are the most common distractors.",
+   "mnemonic": "F-C-P: Function first, then Communicate, then Perception.",
+   "figure": {
+    "type": "list",
+    "title": "Benefits of packaging",
+    "items": [
+     "Functional - convenience, storage, protection, usability (Tide PODS single-use pods)",
+     "Communication - label information, directions, nutrition facts, brand benefits",
+     "Perceptual - shapes perceptions of quality and helps the brand stand out on the shelf"
+    ]
+   }
+  },
+  {
+   "id": "c07-intangibility",
+   "topic": "t07-6",
+   "term": "Intangibility (services)",
+   "definition": "Services are intangible activities or benefits; intangibility means they cannot be touched, seen or felt before purchase, which makes them hard for consumers to evaluate in advance.",
+   "explain": "You can test-drive a car, but you can't try a massage, a tax return or a haircut before buying it. Marketers reduce this uncertainty by making the service tangible: testimonials, photos and videos, credentials, well-designed facilities and uniforms act as tangible cues.",
+   "example": "A massage centre posts customer testimonials on its website; an Edmonton law firm displays its credentials in a professional office.",
+   "contrast": "Intangibility (can't see or touch before buying - add tangible cues) vs inconsistency (quality varies - standardize and train) vs inseparability (produced and consumed at the same time; the deliverer is part of the service) vs inventory (can't be stored - manage capacity and demand).",
+   "trap": "Testimonials, reviews, photos, virtual tours, credentials, attractive facilities and 'make the service visible' = intangibility. 'Incongruity' is a made-up distractor, not one of the four I's.",
+   "mnemonic": "Intangible = invisible, so make it visible.",
+   "figure": {
+    "type": "table",
+    "title": "The four I's of services",
+    "head": [
+     "Characteristic",
+     "What it means",
+     "Typical marketing response"
+    ],
+    "rows": [
+     [
+      "Intangibility",
+      "Cannot be touched or seen before purchase",
+      "Tangible cues: testimonials, facilities, photos, credentials"
+     ],
+     [
+      "Inconsistency",
+      "Quality varies with the people who deliver it",
+      "Standardization and training"
+     ],
+     [
+      "Inseparability",
+      "Consumer cannot separate the deliverer from the service; produced and consumed at the same time",
+      "Focus on the people and the service encounter"
+     ],
+     [
+      "Inventory",
+      "Cannot be stored; demand fluctuates; idle production capacity when supply exceeds demand (expensive)",
+      "Off-peak pricing, reservations, part-time staff"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c07-inconsistency",
+   "topic": "t07-6",
+   "term": "Inconsistency (services)",
+   "definition": "The quality of a service varies because it depends on the people who provide it, as well as when and where it is delivered.",
+   "explain": "Two baristas, two tellers, two physiotherapy sessions - the same service can be excellent one day and poor the next because people aren't machines. Firms fight inconsistency with standardization (procedures, checklists, technology) and training.",
+   "example": "A Calgary car-wash chain writes a 12-step checklist and trains every attendant on it so each wash meets the same standard.",
+   "contrast": "Inconsistency (quality varies across employees or occasions) vs inseparability (production and consumption happen together, so the provider is part of the service). Training to make quality uniform targets inconsistency.",
+   "trap": "Cues: 'varies', 'depends on which employee', 'different every visit', 'standardize', 'training program'. Don't pick inseparability just because a person is involved - ask whether the problem is VARIATION in quality.",
+   "mnemonic": "Inconsistency = 'It depends who you get.'",
+   "figure": null
+  },
+  {
+   "id": "c07-inseparability",
+   "topic": "t07-6",
+   "term": "Inseparability (services)",
+   "definition": "Consumers cannot separate the deliverer of the service from the service itself; the service is produced and consumed at the same time.",
+   "explain": "A haircut is created while you sit in the chair, and a concert happens as you listen. The customer is usually present, and the person delivering the service is, in the customer's eyes, the service - so the person-to-person encounter shapes how the whole service is judged.",
+   "example": "A client's opinion of a dental clinic is inseparable from the hygienist who cleans her teeth; a comedian's show is produced and consumed at the same moment.",
+   "contrast": "Inseparability (simultaneous production and consumption; the provider is the service) vs inconsistency (quality varies between deliveries) vs intangibility (cannot be seen before purchase).",
+   "trap": "Cues: 'at the same time', 'simultaneously', 'customer must be present', 'clients judge the service by the person delivering it', 'can't separate'. If the stem is about variation in quality from one employee to another, it is inconsistency instead.",
+   "mnemonic": "Inseparable = provider and service are glued together.",
+   "figure": null
+  },
+  {
+   "id": "c07-inventory",
+   "topic": "t07-6",
+   "term": "Inventory (services) and idle production capacity",
+   "definition": "Services cannot necessarily be stored and accessed when in demand; fluctuating demand makes it hard to assess the capacity needed at peak times, and idle production capacity - when the supply of a service exceeds demand - is expensive.",
+   "explain": "An empty airline seat or an unused hotel room tonight is revenue lost forever; it can't be put on a shelf for next weekend. Service firms smooth demand and capacity with off-peak pricing, reservations and appointments, and part-time staff for peak periods.",
+   "example": "A Banff hotel cuts weekday rates in November to fill rooms that would otherwise sit empty; a tax-preparation firm hires part-time staff for March and April.",
+   "contrast": "Inventory (perishability; mismatched supply and demand; idle capacity) vs intangibility (can't see or touch). Idle production capacity = supply EXCEEDS demand - not demand exceeding supply.",
+   "trap": "Cues: 'empty seats', 'unused appointments', 'off-peak pricing', 'reservations', 'peak demand', 'idle capacity'. Idle production capacity means the supply of the service exceeds demand, and it is expensive because costs continue.",
+   "mnemonic": "Unsold service time can't be inventoried.",
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a07-01",
+   "type": "sort",
+   "concept": "c07-core-product",
+   "title": "Core, actual or augmented?",
+   "prompt": "A Calgary family buys a minivan from Bow Valley Motors. Drag each item to the layer of the total product concept it belongs to.",
+   "buckets": [
+    "Core product",
+    "Actual product",
+    "Augmented product"
+   ],
+   "items": [
+    {
+     "text": "Safe, reliable transportation for the whole family",
+     "bucket": 0
+    },
+    {
+     "text": "Peace of mind on long family road trips",
+     "bucket": 0
+    },
+    {
+     "text": "Sliding doors, third-row seating and all-wheel drive",
+     "bucket": 1
+    },
+    {
+     "text": "The brand name and sleek exterior design",
+     "bucket": 1
+    },
+    {
+     "text": "Heated seats built into the front row",
+     "bucket": 1
+    },
+    {
+     "text": "Quality level of the interior materials",
+     "bucket": 1
+    },
+    {
+     "text": "Five-year powertrain warranty",
+     "bucket": 2
+    },
+    {
+     "text": "Free roadside assistance for three years",
+     "bucket": 2
+    },
+    {
+     "text": "Online owner FAQs and how-to service videos",
+     "bucket": 2
+    },
+    {
+     "text": "Free first oil change at the dealership",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Core = the fundamental benefit sought (transportation, peace of mind). Actual = the product itself, including brand name, design, built-in features and quality level. Augmented = extras that accompany the product: warranty, roadside assistance, FAQs and service videos, free service - exactly like the warranty, repair facilities and service videos in the bicycle example."
+  },
+  {
+   "id": "a07-02",
+   "type": "sort",
+   "concept": "c07-intangibility",
+   "title": "Which of the four I's?",
+   "prompt": "Each card describes a service challenge or a marketer's response to one. Drag it to the characteristic of services it reflects.",
+   "buckets": [
+    "Intangibility",
+    "Inconsistency",
+    "Inseparability",
+    "Inventory"
+   ],
+   "items": [
+    {
+     "text": "A massage centre posts customer testimonials on its website",
+     "bucket": 0
+    },
+    {
+     "text": "A law firm displays its credentials in a polished office to reassure prospects",
+     "bucket": 0
+    },
+    {
+     "text": "A daycare offers virtual tours so parents can 'see' the care before enrolling",
+     "bucket": 0
+    },
+    {
+     "text": "Car-wash quality depends on which attendant is on shift",
+     "bucket": 1
+    },
+    {
+     "text": "A coffee chain trains every barista on the same 10-step recipe",
+     "bucket": 1
+    },
+    {
+     "text": "A hotel chain writes standard check-in procedures for every location",
+     "bucket": 1
+    },
+    {
+     "text": "A haircut is produced while the client sits in the chair",
+     "bucket": 2
+    },
+    {
+     "text": "Patients judge a clinic largely by the hygienist who treats them",
+     "bucket": 2
+    },
+    {
+     "text": "A comedian's show is created and enjoyed at the same moment",
+     "bucket": 2
+    },
+    {
+     "text": "Empty seats on a flight that has departed can never be sold",
+     "bucket": 3
+    },
+    {
+     "text": "A golf course offers cheaper tee times on weekday mornings",
+     "bucket": 3
+    },
+    {
+     "text": "A tax-preparation firm hires part-time staff for March and April",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Intangibility is handled with tangible cues (testimonials, credentials, virtual tours). Inconsistency means quality varies with the people delivering it, so firms standardize and train. Inseparability means the service is produced and consumed at the same time and customers can't separate the deliverer from the service. Inventory means services can't be stored, so firms fight idle capacity with off-peak pricing and flexible staffing."
+  },
+  {
+   "id": "a07-03",
+   "type": "match",
+   "concept": "c07-family-multibranding",
+   "title": "Match the branding strategy",
+   "prompt": "Match each branding strategy with its example.",
+   "pairs": [
+    {
+     "left": "Private-label branding",
+     "right": "President's Choice products sold at Loblaws"
+    },
+    {
+     "left": "Mixed branding",
+     "right": "A cracker maker sells under its own label and also makes a supermarket's store-brand crackers"
+    },
+    {
+     "left": "Multiproduct (family) branding",
+     "right": "Samsung's name on its phones, TVs and refrigerators"
+    },
+    {
+     "left": "Multibranding",
+     "right": "P&G sells Tide, Gain and Cheer to different segments"
+    },
+    {
+     "left": "Brand extension",
+     "right": "Dove moves from bar soap into shampoo"
+    },
+    {
+     "left": "Sub-branding",
+     "right": "Porsche Cayenne"
+    },
+    {
+     "left": "Co-branding",
+     "right": "A doughnut carrying both the Tim Hortons and Oreo names"
+    },
+    {
+     "left": "Brand licensing",
+     "right": "A hockey team lets an apparel firm use its logo for a royalty"
+    }
+   ],
+   "explanation": "Ask two questions: who owns the name (manufacturer, retailer's private label, or both = mixed), and how names are used (one name for everything = family; separate names = multibranding; same name into a new class = extension; parent name + new name = sub-brand; two manufacturers' names on one product = co-branding; renting the name for a fee = licensing)."
+  },
+  {
+   "id": "a07-04",
+   "type": "sort",
+   "concept": "c07-convenience",
+   "title": "Classify the purchase",
+   "prompt": "Classify each consumer's behaviour as a convenience, shopping, specialty or unsought purchase. Remember: the class depends on the individual's behaviour.",
+   "buckets": [
+    "Convenience",
+    "Shopping",
+    "Specialty",
+    "Unsought"
+   ],
+   "items": [
+    {
+     "text": "Grabbing whatever gum is at the checkout",
+     "bucket": 0
+    },
+    {
+     "text": "Buying any toothpaste brand that's in stock at the corner store",
+     "bucket": 0
+    },
+    {
+     "text": "Picking up a snack bar at a gas station",
+     "bucket": 0
+    },
+    {
+     "text": "Comparing three sofas at different stores on price and style",
+     "bucket": 1
+    },
+    {
+     "text": "Reading reviews and comparing fridges at two retailers",
+     "bucket": 1
+    },
+    {
+     "text": "Travelling to Vancouver for one specific Rolex model, accepting no substitute",
+     "bucket": 2
+    },
+    {
+     "text": "Waiting months for one luxury car brand from its exclusive dealer",
+     "bucket": 2
+    },
+    {
+     "text": "Being approached by an adviser about life insurance you hadn't planned to buy",
+     "bucket": 3
+    },
+    {
+     "text": "Hearing about a radically new gadget you never knew existed",
+     "bucket": 3
+    },
+    {
+     "text": "Pre-planning a burial plot after a salesperson's call",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Convenience = frequent, low-effort purchases where substitutes are fine. Shopping = comparing alternatives on price, quality and style. Specialty = significant effort for one specific brand with no substitutes. Unsought = products the consumer doesn't know about or doesn't initially want, which require aggressive promotion and personal selling."
+  },
+  {
+   "id": "a07-05",
+   "type": "sort",
+   "concept": "c07-business-products",
+   "title": "Production or support good?",
+   "prompt": "Rocky Mountain Motors builds pickup trucks. Sort each purchase into production goods or support goods.",
+   "buckets": [
+    "Production goods",
+    "Support goods"
+   ],
+   "items": [
+    {
+     "text": "Steel for the truck bodies",
+     "bucket": 0
+    },
+    {
+     "text": "Engines installed in each truck",
+     "bucket": 0
+    },
+    {
+     "text": "Microchips for the dashboard displays",
+     "bucket": 0
+    },
+    {
+     "text": "Tires mounted on every finished truck",
+     "bucket": 0
+    },
+    {
+     "text": "Paint applied to every truck body",
+     "bucket": 0
+    },
+    {
+     "text": "The assembly plant building",
+     "bucket": 1
+    },
+    {
+     "text": "Power tools used on the line",
+     "bucket": 1
+    },
+    {
+     "text": "Computers in the accounting office",
+     "bucket": 1
+    },
+    {
+     "text": "Paper, paper clips and brooms",
+     "bucket": 1
+    },
+    {
+     "text": "Outside maintenance and legal services",
+     "bucket": 1
+    }
+   ],
+   "explanation": "Production goods (raw materials such as steel; component parts such as engines, chips and tires) become part of the finished truck. Support goods help make the truck but never become part of it: installations (the plant), accessory equipment (tools, office computers), supplies (paper, brooms) and services (maintenance, legal)."
+  },
+  {
+   "id": "a07-06",
+   "type": "match",
+   "concept": "c07-brand-equity",
+   "title": "Brand concepts in action",
+   "prompt": "Match each brand concept with the example that illustrates it.",
+   "pairs": [
+    {
+     "left": "Brand equity",
+     "right": "Shoppers pay $55 more for a branded hoodie than for an identical unbranded one"
+    },
+    {
+     "left": "Brand personality",
+     "right": "A brand described as rugged, honest and outdoorsy"
+    },
+    {
+     "left": "Brand loyalty",
+     "right": "Buying only one toothpaste brand for 15 years because you like it"
+    },
+    {
+     "left": "Brand advocate",
+     "right": "Posting a five-star review and urging friends to buy"
+    },
+    {
+     "left": "Brand associations",
+     "right": "Completing 'Tim Hortons is ___' with 'Canadian'"
+    },
+    {
+     "left": "Trademark",
+     "right": "Registering a name and logo with CIPO for exclusive use"
+    },
+    {
+     "left": "Copyright",
+     "right": "Protecting a song written for an ad from being copied"
+    },
+    {
+     "left": "Brand mark",
+     "right": "A symbol that is part of the brand but cannot be spoken"
+    }
+   ],
+   "explanation": "Equity = added value beyond function; personality = human traits; loyalty = favourable attitude plus repeat purchase over time; advocate = passes positive comments to others; associations = thoughts and feelings in memory; trademark = legal right to a brand name or mark; copyright = protection for creative works (course answer: lifetime plus 50 years); brand mark = the unspoken part of the brand."
+  }
+ ]
+}

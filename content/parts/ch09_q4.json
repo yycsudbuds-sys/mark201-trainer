@@ -1,0 +1,620 @@
+[
+ {
+  "id": "q09-103",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Trailhead Outfitters sells a jacket for $75 that cost it $60. Expressed as a percentage of the SELLING PRICE, what is the markup?",
+  "options": [
+   "15%",
+   "20%",
+   "25%",
+   "80%"
+  ],
+  "answer": 1,
+  "explanation": "Markup on price = (price - cost) / price = ($75 - $60) / $75 = $15 / $75 = 20%. 25% is the markup on COST ($15 / $60), and 80% is cost as a percentage of price (Figure 9-3).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-104",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A Quebec maple-syrup maker's cost to produce a case is $50, and it sells the case to distributors for $80. Expressed as a percentage of COST, what is the markup?",
+  "options": [
+   "37.5%",
+   "30%",
+   "160%",
+   "60%"
+  ],
+  "answer": 3,
+  "explanation": "Markup on cost = (price - cost) / cost = ($80 - $50) / $50 = $30 / $50 = 60%. 37.5% is the markup on PRICE ($30 / $80) - the base matters. Manufacturers often express markup on cost; retailers on price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-105",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bloom & Co., a Winnipeg flower shop, buys a bouquet for $30 and wants a 40% markup on the SELLING PRICE. What should the selling price be?",
+  "options": [
+   "$42.00",
+   "$50.00",
+   "$75.00",
+   "$48.00"
+  ],
+  "answer": 1,
+  "explanation": "When markup is on price, price is 100% and cost is 100% - 40% = 60% of price. Price = $30 / 0.60 = $50.00 (check: $20 markup / $50 = 40%). $42.00 applies 40% to COST ($30 x 1.4), which is only a 28.6% markup on price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-106",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A manufacturer uses a 50% markup on cost. A retail buyer asks what that markup equals when expressed as a percentage of the selling price. What is the correct answer?",
+  "options": [
+   "50.0%",
+   "66.7%",
+   "33.3%",
+   "25.0%"
+  ],
+  "answer": 2,
+  "explanation": "Assume cost = $100. A 50% markup on cost adds $50, so price = $150. Markup on price = $50 / $150 = 33.3% (formula: 0.50 / (1 + 0.50)). 66.7% converts the other way - it is the markup on cost that matches a 40% markup on price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-107",
+  "concept": "c09-markup",
+  "also": [
+   "c09-cost-plus"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which situation is standard markup pricing rather than cost-plus pricing?",
+  "options": [
+   "A contractor bills a city for a library's total construction cost plus a $250,000 fee",
+   "A consulting firm charges a government department its actual costs plus 10% on a one-time project",
+   "A Calgary drugstore adds the same 35% to the cost of every item in its cosmetics department",
+   "A defence supplier is paid its audited costs plus a fixed fee for a custom radar system"
+  ],
+  "answer": 2,
+  "explanation": "Standard markup adds a fixed percentage to the cost of ALL items in a product class - typical of retailers. The other three total the cost of a specific job or contract and add a specific amount or percentage: cost-plus pricing, common in construction and government contracts.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-108",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When markup is expressed relative to selling price, the selling price is always treated as 100 percent.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. In Figure 9-3 the $75 selling price = 100%, the $60 cost = 80% and the $15 markup = 20% of price. When markup is relative to cost, cost becomes the 100% base instead, so the same $15 is 25%.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-109",
+  "concept": "c09-cost-plus",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ironbridge Construction agrees to build a new fire hall for the City of Lethbridge. The city will pay Ironbridge's total project costs, whatever they turn out to be, plus a fixed fee of $300,000. This pricing method is:",
+  "options": [
+   "standard markup pricing",
+   "target profit pricing",
+   "cost-plus pricing",
+   "customary pricing"
+  ],
+  "answer": 2,
+  "explanation": "Cost-plus pricing sums the total cost of providing the product or service and adds a specific amount - common in construction and government contracts. Standard markup applies the same percentage to the cost of all items in a product class, as retailers do.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-110",
+  "concept": "c09-cost-plus",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Polaris Engineering will design a custom water-treatment system for an Alberta town on a cost-plus basis: total costs plus 8%. If the project's total costs come to $2,400,000, what will the town pay?",
+  "options": [
+   "$2,208,000",
+   "$2,592,000",
+   "$2,608,000",
+   "$2,400,000"
+  ],
+  "answer": 1,
+  "explanation": "Cost-plus = total cost + the specified percentage of cost = $2,400,000 + (0.08 x $2,400,000) = $2,400,000 + $192,000 = $2,592,000. $2,208,000 subtracts the 8% instead of adding it.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-111",
+  "concept": "c09-cost-plus",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Cost-plus pricing and standard markup pricing both start with cost. What best distinguishes cost-plus pricing?",
+  "options": [
+   "It adds a specific amount to the total cost of a particular job or contract; standard markup adds one percentage to a whole product class",
+   "It starts with consumer demand, while standard markup starts with cost",
+   "It is profit-oriented, while standard markup is cost-oriented",
+   "It is used mainly by grocery retailers, while standard markup is used mainly in government contracts"
+  ],
+  "answer": 0,
+  "explanation": "Both are cost-oriented, but cost-plus totals the cost of a specific job (construction, government contracts, services) and adds a specific amount, while standard markup adds a fixed percentage to every item in a class (retailers, manufacturers). Claiming grocery retailers rely on cost-plus reverses who typically uses which approach.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-112",
+  "concept": "c09-cost-plus",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ pricing involves summing the total unit cost of providing a product or service and adding a specific amount to the cost to arrive at a price.",
+  "options": [
+   "Target profit",
+   "Standard markup",
+   "Cost-plus",
+   "Loss-leader"
+  ],
+  "answer": 2,
+  "explanation": "That is cost-plus pricing - total unit cost plus a specific amount. Standard markup is similar but applies a fixed percentage to the cost of all items in a product class rather than to a specific job.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-113",
+  "concept": "c09-cost-plus",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Cost-plus pricing would be LEAST likely to be used by which organization?",
+  "options": [
+   "A construction firm building a hospital wing",
+   "An engineering firm on a custom government contract",
+   "A grocery chain pricing 30,000 everyday items",
+   "A consulting firm billing a one-time project"
+  ],
+  "answer": 2,
+  "explanation": "A grocer pricing thousands of items would use standard markup (a set percentage on the cost of all items in a class). Cost-plus is common in construction, government contracts and services, where each job's total cost is summed and a specific amount added.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-114",
+  "concept": "c09-target-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Charlie Tuna Inc. sells five-pound packages of ocean tuna. Its variable cost per package is $40, and its fixed cost is $410,000. It wants a target profit of $42,000 on a volume of 21,000 packages. What should it charge for a five-pound package of tuna?",
+  "options": [
+   "$50",
+   "$40",
+   "$61.52",
+   "$48.09"
+  ],
+  "answer": 2,
+  "explanation": "Target profit pricing: Profit = (P x Q) - [FC + (UVC x Q)]. $42,000 = (P x 21,000) - [$410,000 + ($40 x 21,000)], so 21,000P = $42,000 + $410,000 + $840,000 = $1,292,000 and P = $61.52. $40 is only the variable cost, which would cover neither fixed costs nor profit.",
+  "source": "official"
+ },
+ {
+  "id": "q09-115",
+  "concept": "c09-target-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Fjord Paddles has fixed costs of $150,000 and a unit variable cost of $12 per paddle. It expects to sell 20,000 paddles and wants a target profit of $50,000. What price should it set?",
+  "options": [
+   "$19.50",
+   "$14.50",
+   "$22.00",
+   "$10.00"
+  ],
+  "answer": 2,
+  "explanation": "P = (Target profit + FC + UVC x Q) / Q = ($50,000 + $150,000 + $12 x 20,000) / 20,000 = $440,000 / 20,000 = $22.00. $19.50 covers costs but leaves out the $50,000 profit; $10.00 forgets the variable cost per paddle.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-116",
+  "concept": "c09-target-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ridgeline Brewing's owners tell the marketing manager: 'Price our new lager so we make exactly $250,000 in profit this year on the volume we expect to sell.' Which approach is being requested?",
+  "options": [
+   "Target return-on-sales pricing",
+   "Target profit pricing",
+   "Target pricing",
+   "Standard markup pricing"
+  ],
+  "answer": 1,
+  "explanation": "Setting an annual target of a specific DOLLAR amount of profit is target profit pricing. Target return on sales would express the goal as a percentage of sales revenue, and target pricing starts from the price consumers will pay.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-117",
+  "concept": "c09-target-profit",
+  "also": [
+   "c09-target-return"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which goal calls for target profit pricing rather than target return-on-investment pricing?",
+  "options": [
+   "Earn 15% on the $2 million invested in the new plant",
+   "Earn $180,000 in profit this year",
+   "Earn profit equal to 10% of sales revenue",
+   "Earn a 25% markup on cost on every unit"
+  ],
+  "answer": 1,
+  "explanation": "A specific dollar amount ($180,000) is a target profit goal. A percentage of investment is target ROI, a percentage of sales is target return on sales, and a percentage added to cost is standard markup.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-118",
+  "concept": "c09-target-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Charlie Tuna calculated a price of $61.52 assuming it would sell 21,000 packages (fixed cost $410,000; variable cost $40 per package). If it actually sells only 15,000 packages at that price, what happens and why?",
+  "options": [
+   "It still earns $42,000, because the price already includes the target profit",
+   "It misses the target and loses money, because the price depended on an accurate demand estimate to cover fixed costs",
+   "It earns more than $42,000, because variable costs fall with lower volume",
+   "Its fixed costs fall in proportion to the lower volume, so profit is unchanged"
+  ],
+  "answer": 1,
+  "explanation": "Profit-oriented approaches depend on accurate estimates of demand. At 15,000 packages: TR = $61.52 x 15,000 = $922,800; TC = $410,000 + ($40 x 15,000) = $1,010,000, a loss of $87,200. Fixed costs do not shrink with volume, so the shortfall hits profit directly.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-119",
+  "concept": "c09-target-return",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Cascade Plastics invested $4 million in a new moulding line. Head office tells the marketing team to set prices that will earn an annual profit equal to 12% of that investment. Which approach is this?",
+  "options": [
+   "Target profit pricing",
+   "Target return-on-sales pricing",
+   "Target return-on-investment pricing",
+   "Cost-plus pricing"
+  ],
+  "answer": 2,
+  "explanation": "Setting price to achieve an annual target percentage return on investment is target ROI pricing. Target return on sales would base the percentage on sales revenue, and target profit pricing names a specific dollar amount.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-120",
+  "concept": "c09-target-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Harbour Hats wants a profit equal to 20% of its sales revenue. Its fixed costs are $40,000, its unit variable cost is $30, and it expects to sell 2,000 hats. What price achieves this target return on sales?",
+  "options": [
+   "$50.00",
+   "$60.00",
+   "$62.50",
+   "$70.00"
+  ],
+  "answer": 2,
+  "explanation": "Profit = 20% of TR, so (P x 2,000) - ($40,000 + $30 x 2,000) = 0.20 x P x 2,000. Then 2,000P - 400P = $100,000, so P = $100,000 / 1,600 = $62.50. Check: TR $125,000 - TC $100,000 = $25,000 = 20% of sales. $60.00 adds 20% to COST, which is only 16.7% of sales.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-121",
+  "concept": "c09-target-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kodiak Tools invested $500,000 in new equipment and wants a 12% annual return on that investment. Its fixed costs are $100,000, its unit variable cost is $20, and expected volume is 10,000 units. What price should it charge?",
+  "options": [
+   "$26.00",
+   "$30.00",
+   "$36.00",
+   "$86.00"
+  ],
+  "answer": 2,
+  "explanation": "Target profit = 12% x $500,000 = $60,000. P = ($60,000 + $100,000 + $20 x 10,000) / 10,000 = $360,000 / 10,000 = $36.00. $30.00 only breaks even, and $86.00 wrongly adds the whole investment as if it were a cost to recover this year.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-122",
+  "concept": "c09-target-return",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What is the key difference between target return-on-sales pricing and target return-on-investment pricing?",
+  "options": [
+   "Return on sales sets profit as a percentage of sales revenue; ROI sets profit as a percentage of the money invested",
+   "Return on sales is demand-oriented; ROI is cost-oriented",
+   "Return on sales names a specific dollar profit; ROI uses a percentage",
+   "Return on sales is used only by manufacturers; ROI only by retailers"
+  ],
+  "answer": 0,
+  "explanation": "Both are profit-oriented. Target return on sales expresses the profit goal as a percentage of sales volume (revenue); target ROI expresses it as a percentage of investment. A specific dollar profit is target profit pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-123",
+  "concept": "c09-target-return",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Setting a price to achieve a profit that is a specified percentage of the sales volume is called _____ pricing.",
+  "options": [
+   "target profit",
+   "target return-on-investment",
+   "standard markup",
+   "target return-on-sales"
+  ],
+  "answer": 3,
+  "explanation": "Target return-on-sales pricing ties profit to a percentage of sales. Standard markup also uses a percentage, but it is added to COST (a cost-oriented approach) rather than being a profit target measured against sales.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-124",
+  "concept": "c09-customary-market",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "SweetSpot Vending has charged $2.00 for its chocolate bars for years, because that price is set by tradition and is what vending-machine customers expect to pay. This is:",
+  "options": [
+   "customary pricing",
+   "odd-even pricing",
+   "loss-leader pricing",
+   "prestige pricing"
+  ],
+  "answer": 0,
+  "explanation": "Customary pricing sets a price based on tradition, a standardized channel of distribution or other competitive factors - vending items and candy bars are classic examples. Loss-leader pricing would deliberately price BELOW the customary price to pull traffic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-125",
+  "concept": "c09-customary-market",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Zenith Audio wants its new headphones positioned as the premium choice. Its research shows competitors cluster around $250. Using a competition-oriented approach, what should Zenith do?",
+  "options": [
+   "Price at $199 as a loss leader",
+   "Price above the $250 market price, using rivals' prices as the benchmark",
+   "Add a standard 30% to cost",
+   "Set the price to earn a 15% return on investment"
+  ],
+  "answer": 1,
+  "explanation": "Above-market pricing uses the market price as a benchmark and deliberately prices above it to signal a premium position (the instructor's example is the iPhone 17). Standard markup and target ROI ignore competitors' prices; they are cost- and profit-oriented.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-126",
+  "concept": "c09-customary-market",
+  "also": [
+   "c09-loss-leader"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which retailer is using below-market pricing rather than loss-leader pricing?",
+  "options": [
+   "A grocer sells eggs at a deep discount for one weekend to draw shoppers into the store",
+   "A discount chain sets everyday prices about 5% under competitors' prices across its whole store",
+   "An electronics store advertises a Black Friday TV far below its usual price",
+   "A pharmacy features milk below its customary price to build traffic"
+  ],
+  "answer": 1,
+  "explanation": "Below-market pricing is an ongoing positioning choice that uses competitors' market price as the benchmark (Walmart-style). The other three temporarily price a specific item below its customary price to attract traffic for other purchases - loss leaders.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-127",
+  "concept": "c09-customary-market",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Above-, at- or below-market pricing uses the _____ as the benchmark for setting a price.",
+  "options": [
+   "firm's total unit cost",
+   "market price set by competitors",
+   "price consumers are willing to pay",
+   "firm's target profit"
+  ],
+  "answer": 1,
+  "explanation": "Above-, at- or below-market pricing is competition-oriented: the 'market price' (what competitors charge) is the benchmark. Starting from consumers' willingness to pay would be target pricing, and starting from cost would be a cost-oriented approach.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-128",
+  "concept": "c09-customary-market",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a competition-oriented pricing approach?",
+  "options": [
+   "Customary pricing",
+   "Loss-leader pricing",
+   "Prestige pricing",
+   "At-market pricing"
+  ],
+  "answer": 2,
+  "explanation": "Prestige pricing is DEMAND-oriented - it targets status-conscious consumers. Customary, above/at/below-market and loss-leader pricing are the competition-oriented approaches, which focus on what competitors are doing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-129",
+  "concept": "c09-loss-leader",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Every Thursday, Bow Valley Foods advertises a 4 L jug of milk for $2.99, well below its customary $5.79, expecting shoppers who come for the milk to fill their carts with regularly priced items. This is:",
+  "options": [
+   "penetration pricing",
+   "loss-leader pricing",
+   "seasonal discount",
+   "customary pricing"
+  ],
+  "answer": 1,
+  "explanation": "Loss-leader pricing deliberately sells a product below its customary price to attract attention and traffic, in hopes shoppers buy other products. Penetration pricing applies to a NEW product's low introductory price, not to a staple like milk.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-130",
+  "concept": "c09-loss-leader",
+  "also": [
+   "c09-legal"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which of the following is loss-leader pricing rather than predatory pricing?",
+  "options": [
+   "A big-box chain prices far below cost near a new independent rival until the rival closes, then raises prices",
+   "A Saskatoon grocer sells turkeys below their customary price before Thanksgiving to draw shoppers who will buy side dishes too",
+   "A dominant airline floods a new competitor's routes with below-cost fares to force it out",
+   "A cement maker undercuts a small rival's prices until the rival leaves the region"
+  ],
+  "answer": 1,
+  "explanation": "Loss-leader pricing prices one item below its customary price to attract shoppers who will buy other products - a legal competition-oriented approach. The other three set very low prices to drive competitors out of business: predatory pricing, restricted by the Competition Act.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-131",
+  "concept": "c09-loss-leader",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is the main purpose of loss-leader pricing?",
+  "options": [
+   "To recover R&D costs quickly",
+   "To drive competitors out of business permanently",
+   "To reward buyers for paying their bills promptly",
+   "To attract store traffic in hopes customers buy other products as well"
+  ],
+  "answer": 3,
+  "explanation": "Loss leaders draw attention and traffic; the retailer profits on the other items shoppers buy. Driving competitors out of business is predatory pricing, recovering R&D is skimming, and rewarding prompt payment is a cash discount.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-132",
+  "concept": "c09-loss-leader",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Deliberately selling a product below its customary price to attract attention to it is called _____ pricing.",
+  "options": [
+   "penetration",
+   "customary",
+   "loss-leader",
+   "below-market"
+  ],
+  "answer": 2,
+  "explanation": "Loss-leader pricing sells an item below its customary price to attract attention and traffic. Below-market pricing is an ongoing, store-wide positioning against competitors' prices, not a single item used to lure shoppers.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-133",
+  "concept": "c09-loss-leader",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about loss-leader pricing is NOT correct?",
+  "options": [
+   "It is a competition-oriented approach",
+   "Milk and eggs are common loss leaders",
+   "It is used to launch new products with a low introductory price",
+   "The retailer hopes shoppers will buy other products too"
+  ],
+  "answer": 2,
+  "explanation": "A low introductory price on a new product is PENETRATION pricing. Loss leaders are usually familiar items (milk, eggs, Black Friday TVs) priced below their customary price to drive traffic - a competition-oriented approach.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-134",
+  "concept": "c09-cost-vs-value",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "In value-based pricing (Nagle/Holden), what is the FIRST element in the sequence?",
+  "options": [
+   "Product",
+   "Cost",
+   "Customers",
+   "Price"
+  ],
+  "answer": 2,
+  "explanation": "Value-based pricing runs Customers -> Value -> Price -> Cost -> Product, so it starts with customers. Cost-based pricing is the reverse and starts with the product.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-135",
+  "concept": "c09-cost-vs-value",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In cost-based pricing, which element comes immediately AFTER price?",
+  "options": [
+   "Cost",
+   "Value",
+   "Customers",
+   "Product"
+  ],
+  "answer": 1,
+  "explanation": "Cost-based pricing runs Product -> Cost -> Price -> Value -> Customers: after setting the price, the firm must convince buyers of the value. In value-based pricing it is the reverse - value comes immediately BEFORE price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-136",
+  "concept": "c09-cost-vs-value",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Peak Tech designs a new trail camera, adds up its manufacturing and marketing costs, sets a price that covers them plus a margin, and then asks its ad agency to convince hunters the camera is worth it. Which pricing logic is this?",
+  "options": [
+   "Value-based pricing",
+   "Target pricing",
+   "Cost-based pricing",
+   "Yield management pricing"
+  ],
+  "answer": 2,
+  "explanation": "Cost-based pricing follows Product -> Cost -> Price -> Value -> Customers: the product and costs come first, and value must be 'sold' afterward. Value-based (and target) pricing would start with what customers value and will pay.",
+  "source": "generated"
+ }
+]

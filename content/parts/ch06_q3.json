@@ -1,0 +1,736 @@
+[
+  {
+    "id": "q06-081",
+    "concept": "c06-business-segmentation",
+    "also": [
+      "c06-psychographic"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT one of the additional bases that businesses use to segment business markets?",
+    "options": [
+      "Lifestyle and personality",
+      "Operating characteristics",
+      "Purchasing approaches",
+      "Personal characteristics"
+    ],
+    "answer": 0,
+    "explanation": "Lifestyle and personality are psychographic variables used to segment CONSUMER markets. The additional B2B bases are operating characteristics, purchasing approaches, situational factors and personal characteristics (which describe individual buyers' traits such as risk attitude, not their lifestyle).",
+    "source": "generated"
+  },
+  {
+    "id": "q06-082",
+    "concept": "c06-business-segmentation",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A software vendor groups its corporate clients by NAICS industry code and number of employees, and separately by how risk-averse their individual buyers are. Which classification is correct?",
+    "options": [
+      "Both groupings are operating characteristics, because both describe how the client company runs",
+      "NAICS code and employees are demographic bases; buyers' attitude toward risk is a personal-characteristics base",
+      "NAICS code is a situational factor; buyers' attitude toward risk is a purchasing approach",
+      "Both groupings are psychographic variables borrowed directly from consumer markets"
+    ],
+    "answer": 1,
+    "explanation": "Industry code, number of employees, sales and location are business demographics. Attitude toward risk, buyer-seller similarity and loyalty are personal characteristics of the individuals who do the buying.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-083",
+    "concept": "c06-personas",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Character descriptions of a brand's typical customer are called:",
+    "options": [
+      "perceptual maps",
+      "positioning statements",
+      "personas",
+      "market segments"
+    ],
+    "answer": 2,
+    "explanation": "Personas are character descriptions of a brand's typical customer. A market segment is the group itself; the persona brings its typical member to life.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-084",
+    "concept": "c06-personas",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Bow River Bank's marketing team writes up 'Kayla, the Planner': 29, works in HR in Calgary, is saving for a condo, reads personal-finance blogs and values security. The write-up includes a photo and a personal quote. What has the team created?",
+    "options": [
+      "A market-product grid",
+      "A positioning statement",
+      "A persona",
+      "A perceptual map"
+    ],
+    "answer": 2,
+    "explanation": "A named, story-like character description of the typical customer is a persona. A positioning statement describes the brand ('For ... who desire ..., [brand] is the ...'), not the customer.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-085",
+    "concept": "c06-personas",
+    "also": [
+      "c06-market-segments"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "How does a persona differ from a market segment?",
+    "options": [
+      "A persona is a group of buyers with common needs, while a segment is a single fictional customer",
+      "A segment is a group of buyers with common needs; a persona is a character representing its typical customer",
+      "A persona plots competing brands on two perceptual dimensions, while a segment lists products",
+      "A persona states the brand's single competitive advantage, while a segment states its price"
+    ],
+    "answer": 1,
+    "explanation": "The segment is the group; the persona is a single character representing its typical member. The reversed version is the trap, and plotting brands on two dimensions describes a perceptual map.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-086",
+    "concept": "c06-personas",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why do marketers build personas for their target markets?",
+    "options": [
+      "To replace the need to identify and size market segments at all",
+      "To display competing brands on a two-dimensional graph of consumer perceptions",
+      "To make the typical customer concrete so product, message and media decisions fit that person",
+      "To calculate how the firm's sales split between heavy users and light users"
+    ],
+    "answer": 2,
+    "explanation": "Personas turn segment data into a relatable person, so teams design offerings and communications for that customer's needs and media habits. They build on segmentation instead of replacing it.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-087",
+    "concept": "c06-personas",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "A detailed target market profile or persona would typically include all of the following EXCEPT:",
+    "options": [
+      "demographic details such as age and occupation",
+      "psychographic details such as values and interests",
+      "a competitor's production costs per unit",
+      "media habits such as favourite apps and podcasts"
+    ],
+    "answer": 2,
+    "explanation": "Profiles and personas describe the customer: demographics, psychographics, media habits and needs. A competitor's production costs describe the competitor, not the target customer.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-088",
+    "concept": "c06-segmentation-analytics",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Toronto retailer wants to know which specific neighbourhood population clusters, with names like 'Middle-Class Mosaic', live near a proposed store site. Which source best fits this need?",
+    "options": [
+      "Nielsen general consumer trend data",
+      "Euromonitor global lifestyle trend reports",
+      "Environics Analytics PRIZM cluster data",
+      "A market-product grid of its own products"
+    ],
+    "answer": 2,
+    "explanation": "Environics Analytics (PRIZM) provides granular data that pinpoints population clusters such as 'Middle-Class Mosaic'. Nielsen and Euromonitor provide broader, general consumer and lifestyle trends.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-089",
+    "concept": "c06-segmentation-analytics",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "According to the course, how does data from Nielsen or Euromonitor differ from Environics Analytics' data?",
+    "options": [
+      "Nielsen and Euromonitor provide granular neighbourhood clusters; Environics provides only global trends",
+      "All three companies provide only perceptual maps of competing brands",
+      "Nielsen and Euromonitor provide general consumer and lifestyle trends; Environics pinpoints population clusters",
+      "Environics provides positioning statements; Nielsen and Euromonitor provide personas"
+    ],
+    "answer": 2,
+    "explanation": "General trends come from research companies like Nielsen and Euromonitor; Environics Analytics works at a more granular level, identifying population clusters. The reversed version is the trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-090",
+    "concept": "c06-segmentation-analytics",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Companies such as Environics Analytics provide data on a more _____ basis, pinpointing information on population clusters.",
+    "options": [
+      "general",
+      "national",
+      "historical",
+      "granular"
+    ],
+    "answer": 3,
+    "explanation": "Environics data is granular: fine-grained enough to pinpoint population clusters. 'General' describes the consumer and lifestyle trend data from Nielsen or Euromonitor.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-091",
+    "concept": "c06-segmentation-analytics",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "A national beverage brand wants a broad picture of how Canadian consumer and lifestyle trends are shifting before it plans the next three years. Which source does the course suggest for this kind of overview?",
+    "options": [
+      "A PRIZM cluster profile for one postal code",
+      "A persona written by its own sales team",
+      "The brand's own positioning statement",
+      "A research company such as Nielsen or Euromonitor"
+    ],
+    "answer": 3,
+    "explanation": "For general consumer and lifestyle trends, the course points to research companies such as Nielsen or Euromonitor. A single PRIZM cluster is granular and local: useful for pinpointing neighbourhoods, not for a national trend overview.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-092",
+    "concept": "c06-segmentation-analytics",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT an example of segmentation analytics as described in the course?",
+    "options": [
+      "Nielsen consumer trend data",
+      "Euromonitor lifestyle trend data",
+      "A brand's positioning statement",
+      "Environics Analytics PRIZM population clusters"
+    ],
+    "answer": 2,
+    "explanation": "A positioning statement is a formal description of a brand's image and what sets it apart; it isn't segmentation data. Nielsen, Euromonitor and Environics Analytics are the data sources the course names.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-093",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 1,
+    "stem": "What is the FIRST step in the six-step process for segmenting a market?",
+    "options": [
+      "Cluster common consumer variables to create meaningful segments",
+      "Identify consumer/customer needs and common characteristics in the market",
+      "Estimate the size and feasibility of each segment",
+      "Identify the segment(s) to be targeted"
+    ],
+    "answer": 1,
+    "explanation": "The process starts by identifying customer needs and common characteristics. Clustering (step 2) can't happen until the firm knows which needs and characteristics to group buyers on.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-094",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 2,
+    "stem": "In the six-step segmentation process, which step comes immediately AFTER 'cluster common consumer/customer variables to create meaningful market segments'?",
+    "options": [
+      "Estimate the size and feasibility of each segment",
+      "Identify the segment(s) to be targeted",
+      "Take actions with marketing programs to reach the segment(s)",
+      "Identify consumer needs and common characteristics"
+    ],
+    "answer": 0,
+    "explanation": "Step 2 (cluster) is followed by step 3: estimate the size and feasibility of each segment. Choosing targets is step 4, because firms must size segments before deciding which to pursue.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-095",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "order",
+    "difficulty": 1,
+    "stem": "What is the FIFTH step in the six-step process for segmenting a market?",
+    "options": [
+      "Monitor and evaluate the success of these programs compared with objectives",
+      "Take actions with marketing programs to reach the segment(s)",
+      "Identify the segment(s) to be targeted",
+      "Estimate the size and feasibility of each segment"
+    ],
+    "answer": 1,
+    "explanation": "Step 5 is taking action with marketing programs to reach the chosen segment(s). Monitoring and evaluating against objectives is step 6, the final step.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-096",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Sunridge Cycles launched ads and new store displays aimed at its 'family weekend rider' segment. Six months later, it compares family-bike sales against the targets it set at the start. Which step of the segmentation process is it in?",
+    "options": [
+      "Step 6: monitor and evaluate the success of these programs compared with objectives",
+      "Step 5: take actions with marketing programs to reach the segment(s)",
+      "Step 3: estimate the size and feasibility of each segment",
+      "Step 4: identify the segment(s) to be targeted"
+    ],
+    "answer": 0,
+    "explanation": "Comparing results with objectives is step 6. The campaign launch was step 5; this is the evaluation that follows it.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-097",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "A Kelowna winery has interviewed buyers about what they look for in wine. It now groups people who share similar characteristics into meaningful categories such as 'gift buyers', 'weekend entertainers' and 'serious collectors'. It has not yet estimated how big each group is. Which step is the winery in?",
+    "options": [
+      "Step 2: cluster common variables to create meaningful market segments",
+      "Step 1: identify needs and common characteristics",
+      "Step 3: estimate the size and feasibility of each segment",
+      "Step 4: identify the segment(s) to be targeted"
+    ],
+    "answer": 0,
+    "explanation": "Grouping buyers who share variables into meaningful segments is step 2 (cluster). The interviews about needs were step 1, and estimating each group's size comes next, in step 3.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-098",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Using census data and sales records, the Kelowna winery estimates that its 'serious collectors' and 'gift buyers' segments are both large and realistic to serve, while 'weekend entertainers' is small. It now decides to pursue collectors and gift buyers. Which step is this decision?",
+    "options": [
+      "Step 4: identify the segment(s) to be targeted",
+      "Step 2: cluster variables into segments",
+      "Step 5: take actions with marketing programs",
+      "Step 6: monitor and evaluate results"
+    ],
+    "answer": 0,
+    "explanation": "Choosing which segments to pursue is step 4. The sizing work just completed was step 3, and designing campaigns to reach the chosen segments will be step 5.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-099",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT one of the six steps in the process for segmenting a market?",
+    "options": [
+      "Estimate the size and feasibility of each segment",
+      "Write a positioning statement for each competitor",
+      "Monitor and evaluate the success of these programs compared with objectives",
+      "Cluster common consumer variables to create meaningful market segments"
+    ],
+    "answer": 1,
+    "explanation": "Positioning statements are written for one's own brand during positioning; they aren't a step in segmenting. The six steps are: identify needs, cluster, estimate size and feasibility, identify targets, take action, and monitor/evaluate.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-100",
+    "concept": "c06-six-step-process",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Why does 'estimate the size and feasibility of each segment' come BEFORE 'identify the segment(s) to be targeted'?",
+    "options": [
+      "Because targeting must be finished before any segments can be formed or clustered",
+      "Because a firm can't sensibly choose targets until it knows how large and reachable each segment is",
+      "Because the marketing program for each segment is launched during the estimating step",
+      "Because feasibility can only be judged after results are monitored against objectives"
+    ],
+    "answer": 1,
+    "explanation": "Size and feasibility are the evidence for choosing targets; without them, the choice is guesswork. The marketing program is launched in step 5 and monitoring happens in step 6, both after targeting.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-101",
+    "concept": "c06-market-product-grid",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "A framework that relates the market segments of potential buyers to the products offered or potential marketing actions is a:",
+    "options": [
+      "perceptual map",
+      "market-product grid",
+      "persona",
+      "positioning statement"
+    ],
+    "answer": 1,
+    "explanation": "That is a market-product grid: segments on one side (rows), products or marketing actions on the other (columns), and estimated market size in the cells. A perceptual map plots brands by consumer perceptions instead.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-102",
+    "concept": "c06-market-product-grid",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Polar Bikes builds a table with buyer segments (commuters, mountain riders, kids) as rows and its bike models as columns. It writes the estimated market size in each cell to see where to focus. What tool is this?",
+    "options": [
+      "A perceptual map",
+      "A positioning statement",
+      "A market-product grid",
+      "A segmentation analytics cluster"
+    ],
+    "answer": 2,
+    "explanation": "Segments in rows, products in columns and estimated market size in each cell make a market-product grid. A perceptual map would plot brands on two consumer-perception dimensions.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-103",
+    "concept": "c06-market-product-grid",
+    "also": [
+      "c06-perceptual-map"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "How does a market-product grid differ from a perceptual map?",
+    "options": [
+      "A grid plots brands on two perceptual dimensions, while a perceptual map lists segments against products",
+      "A grid relates segments to products with estimated market sizes; a perceptual map plots how consumers see brands",
+      "Both show consumers' perceptions of brands; they differ only in how the chart is formatted",
+      "A grid is used only for positioning, while a perceptual map is used only for segmentation"
+    ],
+    "answer": 1,
+    "explanation": "The grid is a segmentation/targeting tool that shows where market volume lies across segment-product combinations. The perceptual map is a positioning tool that shows where brands sit in consumers' minds. The swapped version is the trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-104",
+    "concept": "c06-market-product-grid",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "On Polar Bikes' market-product grid, the 'kids' row shows a large estimated market in the 'balance bike' column but a tiny one in the 'carbon road bike' column. What does this suggest Polar should do?",
+    "options": [
+      "Reposition its carbon road bikes as premium children's toys",
+      "Drop the kids' segment entirely and focus on adult riders",
+      "Focus its kids' marketing on balance bikes, not carbon road bikes",
+      "Cut carbon road bike prices for kids until that cell grows"
+    ],
+    "answer": 2,
+    "explanation": "The cells show estimated market size, so the large kids/balance-bike cell is where the opportunity lies. Dropping the whole segment would ignore that strong cell, and nothing in the grid calls for repositioning carbon bikes.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-105",
+    "concept": "c06-market-product-grid",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about a market-product grid is NOT correct?",
+    "options": [
+      "Rows typically represent market segments",
+      "Columns typically represent products or marketing actions",
+      "It plots brands by how consumers perceive them on two attributes",
+      "Cells typically show the estimated size of the market"
+    ],
+    "answer": 2,
+    "explanation": "Plotting brands by consumer perception on two attributes describes a perceptual map. The grid relates segments (rows) to products or marketing actions (columns), with estimated market sizes in the cells.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-106",
+    "concept": "c06-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A payday-loan company runs flashy ads concentrated in low-income neighbourhoods, aimed at people who are already struggling with debt. Critics call the campaign exploitative. Which ethical segmentation concern does this most directly raise?",
+    "options": [
+      "Targeting a segment with poor expected growth",
+      "Failing to differentiate the product",
+      "Targeting disadvantaged groups",
+      "Relying on an inaccurate perceptual map"
+    ],
+    "answer": 2,
+    "explanation": "Aiming high-cost loans at people in financial hardship is targeting a disadvantaged group, one of the legal and ethical issues the course lists. Expected growth is a selecting criterion, not an ethical concern.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-107",
+    "concept": "c06-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "The course lists several legal and ethical issues marketers must consider when segmenting and targeting. Which is NOT one of them?",
+    "options": [
+      "Avoiding consumer backlash",
+      "Using the 80/20 rule to reward heavy users",
+      "Targeting vulnerable groups",
+      "Marketing potentially harmful products"
+    ],
+    "answer": 1,
+    "explanation": "The listed issues are consumer backlash, vulnerable groups, disadvantaged groups and potentially harmful products. Rewarding heavy users through loyalty programs is a standard usage-rate tactic, not one of the listed ethical issues.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-108",
+    "concept": "c06-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "According to the course, when can social responsibility be more important than profits in segmentation and targeting?",
+    "options": [
+      "Only when a segment fails to meet the firm's ROI target",
+      "Only in not-for-profit and government organizations",
+      "Whenever a firm uses mass marketing instead of segmenting",
+      "When the marketing is viewed as exploitative or irresponsible"
+    ],
+    "answer": 3,
+    "explanation": "The slides state that social responsibility can be more important than profits if marketing is viewed as exploitative or irresponsible. This applies to all firms, not just not-for-profits, and isn't tied to ROI targets.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-109",
+    "concept": "c06-ethics",
+    "also": [
+      "c06-selecting-criteria"
+    ],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "A Canadian energy-drink brand discovers that its fastest-growing segment is 13- to 15-year-olds. Based on the course's guidance on socially responsible segmentation, what should it do?",
+    "options": [
+      "Avoid targeting this vulnerable group with a potentially harmful product",
+      "Target the group aggressively, because its expected growth is so high",
+      "Reposition the drink as a breakfast product for children and teens",
+      "Run head-to-head ads against rival energy drinks aimed at young teens"
+    ],
+    "answer": 0,
+    "explanation": "Young teens are a vulnerable group and energy drinks are potentially harmful, so targeting them risks harm and consumer backlash. High expected growth is a selecting criterion, but the course says social responsibility can outweigh profit.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-110",
+    "concept": "c06-ethics",
+    "also": [],
+    "type": "tf",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Because segmentation is legal, marketers never need to worry about consumer backlash when they choose which groups to target.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "False. Corrected statement: marketers must avoid consumer backlash, especially when targeting vulnerable or disadvantaged groups or marketing potentially harmful products, and social responsibility can matter more than profits.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-111",
+    "concept": "c06-product-positioning",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The impression of a branded product that a marketer wants to establish in consumers' minds, relative to their needs and in contrast to the competition, is called:",
+    "options": [
+      "product differentiation",
+      "market segmentation",
+      "targeting",
+      "product positioning"
+    ],
+    "answer": 3,
+    "explanation": "That is product positioning: the place the product occupies in consumers' minds relative to competitors. Product differentiation is using features and advertising to make products seem different and better.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-112",
+    "concept": "c06-product-positioning",
+    "also": [
+      "c06-selecting-criteria"
+    ],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the three basic factors on which product positioning is built?",
+    "options": [
+      "Market size",
+      "Image",
+      "Product attributes",
+      "Price"
+    ],
+    "answer": 0,
+    "explanation": "The three basic positioning factors are image, product attributes and price. Market size is a criterion for selecting target segments.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-113",
+    "concept": "c06-product-positioning",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 3,
+    "stem": "Summit Skincare positions its new serum as a premium, dermatologist-grade luxury product. Which marketing decision would most UNDERMINE that position?",
+    "options": [
+      "Featuring clinical test results in its ads",
+      "Using heavy glass packaging with a minimalist design",
+      "Pricing it above mass-market rivals",
+      "Selling it in discount bins at dollar stores"
+    ],
+    "answer": 3,
+    "explanation": "For positioning to succeed, all marketing mix efforts must support it. Discount-bin distribution contradicts a premium image, while the other choices reinforce it.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-114",
+    "concept": "c06-product-positioning",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 1,
+    "stem": "Once a brand has established its position, how does the course say that position should be maintained?",
+    "options": [
+      "By changing the advertising message every month to stay fresh",
+      "By matching every competitor's price cut immediately",
+      "By targeting every segment in the market",
+      "Through consistent performance and communication"
+    ],
+    "answer": 3,
+    "explanation": "Positions are maintained through consistent performance and communication. Constantly changing the message or chasing every segment blurs the place the brand holds in consumers' minds.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-115",
+    "concept": "c06-product-positioning",
+    "also": [
+      "c06-repositioning"
+    ],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Chiquita put its brand sticker on bananas, a fruit most shoppers saw as an unbranded commodity, and promoted them as consistently high-quality. This created a distinct place for the brand in consumers' minds where none had existed before. This best illustrates:",
+    "options": [
+      "product positioning",
+      "repositioning",
+      "mass customization",
+      "usage-rate segmentation"
+    ],
+    "answer": 0,
+    "explanation": "Creating a brand's first distinct place in consumers' minds is product positioning. Repositioning changes a place a product already occupies, but Chiquita was establishing a position for a previously unbranded commodity.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-116",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Children's Advil pain reliever positioned itself against Children's Tylenol pain reliever by running ads, which claimed that the Advil brand is superior because it works faster and longer than the Tylenol brand. This is an example of:",
+    "options": [
+      "head-to-head positioning.",
+      "lateral positioning.",
+      "differentiation.",
+      "consumer positioning.",
+      "cognitive positioning."
+    ],
+    "answer": 0,
+    "explanation": "Head-to-head positioning means competing directly with competitors on similar product attributes in the same target market; here, speed and duration of relief for the same parents. 'Lateral', 'consumer' and 'cognitive' positioning are not course terms.",
+    "source": "official"
+  },
+  {
+    "id": "q06-117",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "There are a lot of skateboard manufacturers on the market, but the BMW Streetcarver is the only one with stabilizers and wheel design based on BMW's automobile. This technology gives the BMW Streetcarver better control at high speeds and around sharp turns than any other brand. What type of positioning is BMW using with its skateboard priced at $495?",
+    "options": [
+      "parallel market positioning",
+      "distinction positioning",
+      "repositioning",
+      "differentiation positioning",
+      "head-to-head positioning"
+    ],
+    "answer": 3,
+    "explanation": "Differentiation positioning means seeking a smaller, less-competitive niche by stressing unique attributes: the only board with BMW-based stabilizers, at a premium price. It isn't head-to-head, because BMW isn't fighting mainstream boards on the same attributes for the same buyers.",
+    "source": "official"
+  },
+  {
+    "id": "q06-118",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Competing directly with competitors on similar product attributes in the same target market is called:",
+    "options": [
+      "differentiation positioning",
+      "repositioning",
+      "head-to-head positioning",
+      "niche marketing"
+    ],
+    "answer": 2,
+    "explanation": "That is head-to-head positioning. Differentiation positioning does the opposite: it avoids direct competition by seeking a smaller, less-competitive niche.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-119",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [
+      "c06-product-differentiation"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which statement correctly contrasts head-to-head positioning with differentiation positioning?",
+    "options": [
+      "Head-to-head competes on similar attributes in the same market; differentiation positioning seeks a smaller, less-competitive niche",
+      "Head-to-head seeks a smaller, less-competitive niche; differentiation positioning attacks the market leader directly",
+      "Head-to-head changes an existing position; differentiation positioning creates a brand's very first position",
+      "Both terms mean selling several different products to several different market segments"
+    ],
+    "answer": 0,
+    "explanation": "Head-to-head = same market, similar attributes, direct comparison. Differentiation positioning = a niche, unique attributes, less competition. Changing an existing position is repositioning, and selling different products to different segments is product differentiation.",
+    "source": "generated"
+  },
+  {
+    "id": "q06-120",
+    "concept": "c06-head-to-head-vs-differentiation",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Kestrel Audio stays out of the crowded wireless-earbud market dominated by large brands. Instead, it makes the only earbuds designed for competitive swimmers, waterproof to 10 metres with bone-conduction sound, and sells them to that small group at a premium price. This is:",
+    "options": [
+      "head-to-head positioning",
+      "differentiation positioning",
+      "repositioning",
+      "mass marketing"
+    ],
+    "answer": 1,
+    "explanation": "Seeking a smaller, less-competitive niche and stressing unique attributes is differentiation positioning. It isn't head-to-head, because Kestrel deliberately avoids competing with the big brands on similar attributes in the mainstream market.",
+    "source": "generated"
+  }
+]

@@ -1,0 +1,726 @@
+[
+ {
+  "id": "q10-001",
+  "concept": "c10-marketing-channel",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The individuals and firms involved in the process of making a product or service available for use or consumption by consumers or industrial users make up a:",
+  "options": [
+   "supply chain",
+   "supplier network",
+   "vertical marketing system",
+   "marketing channel"
+  ],
+  "answer": 3,
+  "explanation": "This is the textbook definition of a marketing channel. 'Supply chain' is tempting but broader: it also includes the supplier network of raw-material and parts suppliers upstream of the producer.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-002",
+  "concept": "c10-marketing-channel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northern Harvest, a Nova Scotia blueberry grower, sells frozen berries through a food broker, who arranges sales to a wholesaler, which supplies Sobeys stores. In channel terms, the broker, the wholesaler and Sobeys are all:",
+  "options": [
+   "intermediaries in the marketing channel",
+   "members of the supplier network",
+   "third-party logistics providers",
+   "channel captains"
+  ],
+  "answer": 0,
+  "explanation": "Intermediaries are individuals or firms performing a role in the marketing channel, involved in making a product available. These firms are downstream of the grower, so they are not the supplier network (which provides raw materials and parts), and nothing says any of them leads the whole channel.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-003",
+  "concept": "c10-marketing-channel",
+  "also": [
+   "c10-scm"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Velo Laurentien, a Quebec bicycle maker, buys steel tubing from a mill and sells finished bikes through sporting goods retailers. Which statement correctly separates its marketing channel from its supply chain?",
+  "options": [
+   "The retailers are part of the supply chain but not the marketing channel; the mill is part of both",
+   "The marketing channel and the supply chain are identical and include exactly the same firms",
+   "The mill is part of the supply chain but not the marketing channel; the retailers are part of both",
+   "Only the mill and the bike maker belong to the marketing channel"
+  ],
+  "answer": 2,
+  "explanation": "In Figure 10-9 the supply chain = supplier network (raw materials and parts, like the mill) + marketing channel (parties that distribute and promote the product, like retailers). So retailers sit in both, while the mill sits only in the supply chain.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-004",
+  "concept": "c10-marketing-channel",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the chapter, why do buyers benefit from a well-structured, efficient marketing channel?",
+  "options": [
+   "A longer channel always lowers the final price because each intermediary adds a discount",
+   "It makes products available where and when buyers want them while keeping the cost of reaching them down",
+   "It removes the need for channel functions such as storing and transporting",
+   "It guarantees that every product is sold directly by its producer"
+  ],
+  "answer": 1,
+  "explanation": "Reaching buyers efficiently is the point of a channel: intermediaries cut the number of contacts and perform functions that make products conveniently available. Channel functions never disappear, and efficient channels are often indirect rather than direct.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-005",
+  "concept": "c10-marketing-channel",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an intermediary in the marketing channel of Crunchwell, a Manitoba snack maker?",
+  "options": [
+   "The farm co-operative that supplies Crunchwell with corn and sunflower oil",
+   "The food broker that negotiates listings with grocery chains on Crunchwell's behalf",
+   "The wholesaler that resells cases of Crunchwell snacks to convenience stores",
+   "The grocery chain that sells Crunchwell snacks to shoppers"
+  ],
+  "answer": 0,
+  "explanation": "A raw-material supplier belongs to the supplier network (the upstream part of the supply chain), not the marketing channel. The broker, wholesaler and grocer all help make the finished snack available to buyers, so they are intermediaries.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-006",
+  "concept": "c10-channel-tradeoffs",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the instructor's framing of channel decisions, which two elements must always be traded off against each other?",
+  "options": [
+   "Price and promotion",
+   "Coverage and exclusivity",
+   "Cost and level of service",
+   "Ownership and control"
+  ],
+  "answer": 2,
+  "explanation": "The instructor's 'two key trade-offs' are cost and level of service: more service (speed, more outlets, support) usually costs more. Coverage (intensive, selective, exclusive) is a separate channel design consideration.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-007",
+  "concept": "c10-channel-tradeoffs",
+  "also": [],
+  "type": "fill",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "The instructor asks, 'What must every channel partner provide?' The answer is _____: an intermediary earns its place only if it performs its functions more efficiently or effectively than the producer could alone.",
+  "options": [
+   "exclusivity",
+   "value",
+   "financing",
+   "ownership"
+  ],
+  "answer": 1,
+  "explanation": "Every channel partner must add value. Financing is one function some partners provide, but not every partner must provide it; exclusivity and ownership are not requirements of channel membership.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-008",
+  "concept": "c10-channel-tradeoffs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Glacier Gear, an Edmonton maker of ski goggles, can ship every online order overnight from its own warehouse with a personal follow-up call, or sell through regional sporting goods stores that hold stock. The first option delights customers but costs far more per unit. Which instructor concept is Glacier Gear wrestling with?",
+  "options": [
+   "The choice between forward and backward integration",
+   "The difference between vertical and horizontal conflict",
+   "The choice between marketplace and marketspace",
+   "The trade-off between cost and level of service"
+  ],
+  "answer": 3,
+  "explanation": "Higher service (overnight shipping, personal follow-up) comes at a higher cost, which is the instructor's core channel trade-off. Integration would mean owning another channel stage, which Glacier Gear is not considering.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-009",
+  "concept": "c10-channel-tradeoffs",
+  "also": [
+   "c10-channel-functions"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Regina furniture maker reviews the regional wholesaler that buys, warehouses and resells its products to retailers. It finds it could do the same storage and delivery itself at lower cost and with better service to the same retailers. Based on the instructor's channel principle, what follows?",
+  "options": [
+   "The wholesaler must be kept, because every channel needs at least one wholesaler",
+   "The maker should grant the wholesaler exclusive distribution to motivate it",
+   "The wholesaler is not adding value, so the maker should consider taking over its functions",
+   "Once the wholesaler is removed, its storage and delivery functions will no longer be needed"
+  ],
+  "answer": 2,
+  "explanation": "Every channel partner must provide value; if the producer can perform the functions more efficiently, the intermediary is a candidate for removal. The functions themselves never vanish: the maker would now perform the storage and delivery.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-010",
+  "concept": "c10-channel-tradeoffs",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the instructor's key channel trade-offs is NOT correct?",
+  "options": [
+   "Raising the level of service usually raises channel cost",
+   "Every channel partner is expected to add value",
+   "Channel choices balance what buyers expect against what it costs to provide it",
+   "The lowest-cost channel is always the best choice, regardless of the service buyers expect"
+  ],
+  "answer": 3,
+  "explanation": "Channel design balances cost against level of service; choosing purely on lowest cost ignores the service side of the trade-off. The other statements restate the instructor's two trade-offs and the value requirement.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-011",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Coastal Reps, a Vancouver firm, negotiates sales of a seafood processor's products to restaurant chains and earns a commission. It has legal authority to act for the processor but never owns the seafood. Coastal Reps is best described as a(n):",
+  "options": [
+   "agent or broker",
+   "wholesaler",
+   "distributor",
+   "retailer"
+  ],
+  "answer": 0,
+  "explanation": "An agent or broker has legal authority to act on behalf of another channel member and does not take title. A wholesaler or distributor buys (takes title to) the goods it resells.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-012",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fraser Valley Supply buys canned goods from processors and resells them in case lots to independent grocery and convenience stores across B.C. Which intermediary term fits best?",
+  "options": [
+   "Agent",
+   "Wholesaler",
+   "Retailer",
+   "Broker"
+  ],
+  "answer": 1,
+  "explanation": "A wholesaler sells to other intermediaries, usually retailers, and the term usually applies to consumer goods. It is not a retailer because it does not sell to consumers, and not an agent or broker because it takes title to the goods.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-013",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Industrial Supply stocks bearings, belts and hydraulic hoses, sells them to farm-equipment repair shops and mining companies, and lets customers pay on 60-day terms. Which term is usually used for this kind of intermediary?",
+  "options": [
+   "Retailer",
+   "Broker",
+   "Distributor",
+   "Agent"
+  ],
+  "answer": 2,
+  "explanation": "A distributor performs many functions (selling, maintaining inventory, extending credit), and the term is usually used for business markets. A broker or agent would not hold inventory or take title, and a retailer sells to final consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-014",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes a distributor from a wholesaler as the terms are used in Figure 10-1?",
+  "options": [
+   "A distributor never takes title to the goods it sells, whereas a wholesaler always takes title",
+   "A distributor sells only to final consumers, whereas a wholesaler sells only to manufacturers",
+   "Both terms mean an intermediary with legal authority to act on a manufacturer's behalf",
+   "'Distributor' usually means a multi-function intermediary in business markets; 'wholesaler' usually means consumer goods"
+  ],
+  "answer": 3,
+  "explanation": "Figure 10-1: a distributor performs a variety of functions and the term is usually used for business markets, while a wholesaler sells to other intermediaries (usually retailers) and usually refers to consumer goods. Legal authority to act on another's behalf describes an agent or broker.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-015",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In Figure 10-1, 'dealer' is a general term that can mean the same as a distributor, a retailer or a wholesaler.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. 'Dealer' is the catch-all term in Figure 10-1; 'middleman', the other generic word, simply means an intermediary.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-016",
+  "concept": "c10-intermediary-terms",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about marketing intermediary terms is NOT correct?",
+  "options": [
+   "An agent takes title to the goods it sells on a manufacturer's behalf",
+   "'Middleman' is another name for intermediary",
+   "A retailer sells to consumers",
+   "A wholesaler sells to other intermediaries, usually retailers"
+  ],
+  "answer": 0,
+  "explanation": "Agents and brokers act on behalf of another channel member but do NOT take title; that is their defining feature. The other statements match Figure 10-1.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-017",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "As in Figure 10-2, four producers each want to sell to four buyers. How many contacts are needed with no intermediary, and how many when all trade goes through one intermediary?",
+  "options": [
+   "8 without; 4 with",
+   "16 without; 8 with",
+   "16 without; 4 with",
+   "8 without; 16 with"
+  ],
+  "answer": 1,
+  "explanation": "No intermediary: producers x buyers = 4 x 4 = 16. One intermediary: producers + buyers = 4 + 4 = 8. Counting only one side (4) or multiplying in both cases are the common errors.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-018",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Six Okanagan wineries each want to sell to five Calgary restaurants. How many contacts are ELIMINATED if all sales go through one wine distributor?",
+  "options": [
+   "11",
+   "19",
+   "30",
+   "25"
+  ],
+  "answer": 1,
+  "explanation": "Without the distributor: 6 x 5 = 30 contacts. With it: 6 + 5 = 11 contacts. Contacts eliminated = 30 - 11 = 19. Choosing 11 confuses the contacts that remain with the contacts saved.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-019",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does inserting one intermediary between many producers and many buyers reduce the total number of transactions?",
+  "options": [
+   "Each party contacts only the intermediary, so contacts equal producers + buyers rather than producers x buyers",
+   "The intermediary takes title to fewer products than the producers did, so fewer sales are recorded",
+   "Buyers purchase less often when an intermediary is present, so fewer orders are placed",
+   "The intermediary eliminates transporting and storing, so fewer shipments are needed"
+  ],
+  "answer": 0,
+  "explanation": "The saving comes from the structure of contacts: everyone connects to one hub instead of to each other. Intermediaries do not eliminate logistical functions such as transporting and storing; they perform them.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-020",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Rather than ordering parkas only when customers ask, Northwind Outfitters in Yellowknife keeps a deep stock all year so a customer can buy one the moment a cold snap hits. Which utility is Northwind mainly creating?",
+  "options": [
+   "Form utility",
+   "Place utility",
+   "Possession utility",
+   "Time utility"
+  ],
+  "answer": 3,
+  "explanation": "Time utility means having the product available WHEN the buyer wants it, here the instant a cold snap hits. Place utility is about WHERE it is available; the stem stresses timing, not location.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-021",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A Halifax appliance retailer offers in-store financing so a young couple can take home a $2,400 fridge today and pay over 18 months. Which utility does the financing create, and how does it differ from place utility?",
+  "options": [
+   "Time utility: it delivers the fridge quickly; place utility would be about the credit terms",
+   "Form utility: it changes the fridge's features; place utility would be about the payment plan",
+   "Possession utility: it eases ownership; place utility would be having the fridge at a convenient location",
+   "Place utility: the couple takes the fridge home; possession utility would be about warehousing"
+  ],
+  "answer": 2,
+  "explanation": "Possession utility is created by making it easier to acquire and own a product, for example through credit. Place utility is having the product where the buyer wants it, which has nothing to do with payment terms.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-022",
+  "concept": "c10-intermediary-value",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about how intermediaries create value is NOT correct?",
+  "options": [
+   "Adding an intermediary always increases the number of transactions in the channel",
+   "With one intermediary, contacts equal the number of producers plus the number of buyers",
+   "Without an intermediary, contacts equal the number of producers multiplied by the number of buyers",
+   "Intermediaries can create time, place, form and possession utility"
+  ],
+  "answer": 0,
+  "explanation": "Figure 10-2 shows the opposite: one intermediary cuts 4 x 4 = 16 contacts to 4 + 4 = 8. The other statements are the contact formulas and the four utilities.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-023",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A supermarket chain buys fruits and vegetables from different sources, transfers them to its stores, and arranges them for its customers. Which of the following functions is the store performing as an intermediary?",
+  "options": [
+   "Transactional function",
+   "Informational function",
+   "Logistical function",
+   "Facilitating function"
+  ],
+  "answer": 2,
+  "explanation": "Gathering products from different sources (selection/assorting), moving them (transporting) and arranging them for shoppers are logistical activities. 'Buys' tempts students toward transactional, but the dominant activity described is gathering, moving and arranging the produce; 'informational function' is not one of the three families.",
+  "source": "official"
+ },
+ {
+  "id": "q10-024",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Maple Leaf Hardware Supply buys hammers from six manufacturers, drills from four others and paint from three more, so a contractor can find everything in one catalogue. Which specific activity is it performing?",
+  "options": [
+   "Sorting",
+   "Risk-taking",
+   "Selection (assorting)",
+   "Selling"
+  ],
+  "answer": 2,
+  "explanation": "Selection (assorting) is putting together a selection of products from several different sources, a logistical activity. Sorting is different: buying large quantities of a product and dividing them into smaller amounts.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-025",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Lethbridge produce wholesaler buys potatoes by the truckload from growers and repacks them into 10-pound bags for small grocers. This is an example of:",
+  "options": [
+   "selection, a transactional function",
+   "sorting, a logistical function",
+   "buying, a facilitating function",
+   "storing, a transactional function"
+  ],
+  "answer": 1,
+  "explanation": "Purchasing in large quantities and dividing into smaller amounts is sorting (bulk breaking), which is logistical. Selection would be gathering products from many sources, and neither selection nor storing is transactional.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-026",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northern Plains Distributors lets its rural hardware-store customers pay for spring inventory 90 days after delivery. Which function family does this represent?",
+  "options": [
+   "Transactional",
+   "Logistical",
+   "Promotional",
+   "Facilitating"
+  ],
+  "answer": 3,
+  "explanation": "Extending credit to customers is financing, a facilitating function. It is not transactional (buying, selling, risk-taking) even though money is involved.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-027",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Montreal clothing wholesaler buys 20,000 winter jackets in March for next season and will absorb the loss if a warm winter leaves them unsold. Which activity, and which function family, does this illustrate?",
+  "options": [
+   "Storing, a logistical function",
+   "Financing, a facilitating function",
+   "Risk-taking, a transactional function",
+   "Sorting, a logistical function"
+  ],
+  "answer": 2,
+  "explanation": "Assuming the business risk of owning inventory is risk-taking, a transactional function. Students often file risk under facilitating, but Figure 10-3 places risk-taking with buying and selling because it comes from ownership.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-028",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "TrueNorth Foods Wholesale sends its suppliers monthly reports on which snack flavours are gaining share in Atlantic Canada and what competitors are discounting. This is:",
+  "options": [
+   "selling and promotion, a transactional function",
+   "marketing information and research, a facilitating function",
+   "selection and assorting, a logistical function",
+   "risk-taking on inventory, a transactional function"
+  ],
+  "answer": 1,
+  "explanation": "Providing information to customers and suppliers, including competitive conditions and trends, is marketing information and research, a facilitating function. It is not selling, because no products are being promoted and no orders sought.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-029",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An electronics distributor's sales reps call on retailers, demonstrate new products and take orders. Which function family is being performed?",
+  "options": [
+   "Facilitating",
+   "Logistical",
+   "Informational",
+   "Transactional"
+  ],
+  "answer": 3,
+  "explanation": "Contacting potential customers, promoting products and seeking orders is selling, a transactional function. Demonstrations share information, but the purpose is to sell; 'informational' is not one of the three families.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-030",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Before reselling, a Prairie grain handler inspects each farmer's wheat, tests its protein content and assigns it a quality grade. In Figure 10-3 terms, this is:",
+  "options": [
+   "grading, a facilitating function",
+   "sorting, a logistical function",
+   "buying, a transactional function",
+   "storing, a logistical function"
+  ],
+  "answer": 0,
+  "explanation": "Inspecting, testing and assigning quality grades is grading, listed with the facilitating functions. In channel vocabulary 'sorting' does not mean sorting by quality; it means buying in bulk and dividing into smaller amounts.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-031",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Thunder Bay wholesaler keeps snowblowers in a regional warehouse close to its dealers and runs its own trucks to deliver them when dealers reorder. Both activities belong to which function family?",
+  "options": [
+   "Transactional",
+   "Facilitating",
+   "Logistical for storing, but transactional for transporting",
+   "Logistical"
+  ],
+  "answer": 3,
+  "explanation": "Storing (assembling and protecting products at a convenient location) and transporting (physically moving products to customers) are both logistical functions in Figure 10-3. Transporting is not transactional; transactional covers buying, selling and risk-taking.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-032",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which pair places both activities in the SAME function family?",
+  "options": [
+   "Risk-taking and financing",
+   "Buying and storing",
+   "Sorting and selection (assorting)",
+   "Transporting and marketing research"
+  ],
+  "answer": 2,
+  "explanation": "Sorting and selection are both logistical. Risk-taking (transactional) and financing (facilitating) is the classic trap pair; buying is transactional while storing is logistical; transporting is logistical while marketing research is facilitating.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-033",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT a logistical function?",
+  "options": [
+   "Risk-taking",
+   "Storing",
+   "Sorting",
+   "Transporting"
+  ],
+  "answer": 0,
+  "explanation": "Risk-taking is transactional because it comes from owning inventory. The logistical functions are selection (assorting), storing, sorting and transporting.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-034",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "All of the following are transactional functions EXCEPT:",
+  "options": [
+   "buying",
+   "financing",
+   "selling",
+   "risk-taking"
+  ],
+  "answer": 1,
+  "explanation": "Financing (extending credit to customers) is a facilitating function. The transactional functions are buying, selling and risk-taking.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-035",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Purchasing products for resale is called _____, while purchasing in large quantities and dividing them into smaller amounts is called _____.",
+  "options": [
+   "sorting; buying",
+   "selection; storing",
+   "buying; sorting",
+   "buying; selection"
+  ],
+  "answer": 2,
+  "explanation": "Buying (transactional) is purchasing products for resale; sorting (logistical) is buying in large quantities and dividing into smaller amounts. Selection means gathering products from several different sources.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-036",
+  "concept": "c10-channel-functions",
+  "also": [
+   "c10-direct-indirect"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Alder Furniture cuts out its wholesaler and begins selling directly to retailers. What happens to the storing, sorting and financing functions the wholesaler used to perform?",
+  "options": [
+   "They disappear, because no intermediary remains to perform them",
+   "They must still be performed, by Alder, by the retailers or by someone else",
+   "They automatically shift to consumers",
+   "They become transactional functions once the wholesaler is gone"
+  ],
+  "answer": 1,
+  "explanation": "You can eliminate an intermediary, but not its functions: products still have to be stored, broken into smaller lots and financed. The work shifts to another channel member, which is why removing a partner only pays if someone else can do the job more efficiently.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-037",
+  "concept": "c10-channel-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Cold Lake Seafoods is choosing a channel partner. It most needs a partner that will extend credit to small restaurant customers and supply data on menu and competitor trends. Which type of functions is it primarily looking for?",
+  "options": [
+   "Logistical functions",
+   "Transactional functions",
+   "Sorting functions",
+   "Facilitating functions"
+  ],
+  "answer": 3,
+  "explanation": "Financing (credit) and marketing information and research are both facilitating functions. Logistical functions (selection, storing, sorting, transporting) handle the physical product, which is not the need described.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-038",
+  "concept": "c10-direct-indirect",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When a company uses intermediaries like wholesalers and retailers to distribute its products, it is following which distribution strategy?",
+  "options": [
+   "Direct",
+   "Indirect",
+   "Online",
+   "Indeterminate"
+  ],
+  "answer": 1,
+  "explanation": "In indirect marketing channels, intermediaries are inserted between the producer and consumers and perform numerous channel functions. 'Online' is not a channel type: online sales can be direct (a brand's own site) or indirect (through Amazon).",
+  "source": "official"
+ },
+ {
+  "id": "q10-039",
+  "concept": "c10-direct-indirect",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Aurora Skincare sells only through its own website and ships every order from its Kelowna facility to the customer's door. No other company resells its products. Which channel is Aurora using?",
+  "options": [
+   "Direct channel",
+   "Indirect channel",
+   "Dual distribution",
+   "Strategic channel alliance"
+  ],
+  "answer": 0,
+  "explanation": "A direct channel is one in which the producer and the ultimate consumer deal directly with each other, with no intermediaries. Dual distribution would require two or more types of channels; Aurora uses only one.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-040",
+  "concept": "c10-direct-indirect",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts direct and indirect channels?",
+  "options": [
+   "A direct channel is any channel that uses the Internet; an indirect channel uses physical stores",
+   "Direct: producer and ultimate consumer deal with each other; indirect: intermediaries are inserted between them",
+   "A direct channel always has lower total costs than an indirect channel for the same product",
+   "In an indirect channel the producer still performs all of the channel functions itself"
+  ],
+  "answer": 1,
+  "explanation": "The test is whether intermediaries exist, not the medium used. Direct channels are not automatically cheaper because intermediaries often perform functions more efficiently, and in indirect channels the intermediaries take on many of the functions.",
+  "source": "generated"
+ }
+]

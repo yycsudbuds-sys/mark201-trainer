@@ -1,0 +1,9 @@
+# raw course material extracts (copyrighted slides) stay local
+kb/MARK_201_*.txt
+kb/Extra_Chapter_*.txt
+tools/shots/
+tools/sample/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

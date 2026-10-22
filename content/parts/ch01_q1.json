@@ -1,0 +1,723 @@
+[
+  {
+    "id": "q01-001",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "Effective marketing requires:",
+    "options": [
+      "good common sense",
+      "all departments within an organization to work together",
+      "intimate knowledge and understanding of consumers and the marketplace",
+      "selling unwanted things",
+      "taking the customer's money"
+    ],
+    "answer": 2,
+    "explanation": "The chapter stresses that effective marketing requires intimate knowledge and understanding of consumers and the marketplace, which goes well beyond common sense. Departments working together helps (it is part of a market orientation), but it is not the stated requirement, and 'common sense' is exactly the misconception the chapter corrects.",
+    "source": "official"
+  },
+  {
+    "id": "q01-002",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The Chartered Institute of Marketing (UK) defines marketing as 'the management process responsible for identifying, anticipating and satisfying customer requirements _____.'",
+    "options": [
+      "efficiently",
+      "profitably",
+      "through relationships",
+      "ethically"
+    ],
+    "answer": 1,
+    "explanation": "The CIM definition ends with 'profitably': marketing must identify, anticipate and satisfy customer requirements while making money for the organization. Relationships belong to the Canadian Marketing Association definition (practices that 'build effective customer relationships'), not the CIM one.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-003",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which pairing of a marketing definition and its source is correct?",
+    "options": [
+      "Chartered Institute of Marketing (UK): 'the management process responsible for identifying, anticipating and satisfying customer requirements profitably'",
+      "Canadian Marketing Association: 'the management process responsible for identifying, anticipating and satisfying customer requirements profitably'",
+      "Chartered Institute of Marketing (UK): 'a set of business practices ... in ways that build effective customer relationships'",
+      "Canadian Marketing Association: 'the aggregate flow of a nation's goods and services to benefit society'"
+    ],
+    "answer": 0,
+    "explanation": "The CIM (UK) defines marketing as the management process responsible for identifying, anticipating and satisfying customer requirements profitably. The CMA definition is the one about business practices that 'build effective customer relationships', and 'aggregate flow of a nation's goods and services' defines macromarketing, not marketing.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-004",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "The new marketing manager at Northridge Outfitters, a Calgary jacket maker, tells the CEO: 'My job isn't just running ads. I research what hikers need, help shape the jackets, set prices, choose where they're sold and decide how we talk about them.' Which view of marketing is the manager describing?",
+    "options": [
+      "The popular view: a set of persuasive advertising and selling techniques used to move existing inventory",
+      "Corporate social responsibility: sponsoring community programs and fundraising for charitable organizations",
+      "Macromarketing: the aggregate flow of a nation's goods and services to benefit society as a whole",
+      "The textbook view: planning offerings and their pricing, promotion and distribution to meet needs and objectives"
+    ],
+    "answer": 3,
+    "explanation": "The manager covers the full textbook definition: discovering needs, then conceiving the product and its price, promotion and distribution to meet consumer needs and organizational objectives. The 'ads and selling' view is the misconception the chapter corrects; promotion is only one of the four Ps.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-005",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about marketing is NOT consistent with Chapter 1?",
+    "options": [
+      "Many marketing practices and theories are invisible to the average consumer",
+      "Marketing aims to benefit the organization, its stakeholders and society",
+      "Effective marketing can be done well using common sense alone",
+      "Marketing is often confused with advertising or selling techniques"
+    ],
+    "answer": 2,
+    "explanation": "The chapter states that effective marketing requires intimate knowledge and understanding of consumers and the marketplace, so 'common sense alone' is wrong. The other statements all appear in the chapter: marketing is commonly mistaken for ads or selling, much of it is invisible to consumers, and the AMA-style definition stresses benefits to the organization, stakeholders and society.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-006",
+    "concept": "c01-marketing-definition",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "A well-known athletic-apparel brand has had four CEOs in five years, plans to lay off 1,100 people, and faces skeptical customers, changing preferences and unionization demands while sales stay flat. According to the intro lecture, what is the marketer's role?",
+    "options": [
+      "Increase the advertising budget, because marketing's job is mainly running ads and selling harder",
+      "Wait for environmental forces to improve, because marketers cannot influence performance",
+      "Leave the problem to finance and HR, since flat sales and layoffs are not marketing issues",
+      "Make key decisions to stop the decline, such as going back to basics and leveraging brand equity"
+    ],
+    "answer": 3,
+    "explanation": "In the Lululemon case, the marketer's role is to make key decisions to stop the business's declining performance: go back to basics, stress key positive attributes, leverage brand equity, or change the operating model. Simply buying more ads reflects the narrow 'marketing = advertising' misconception.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-007",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "The Canadian Red Cross created a series of advertisements encouraging viewers to donate blood. After viewing the advertisement, Amanda went to the local Red Cross office and donated a pint of blood. Afterwards, Amanda returned home feeling satisfied that she had performed a good deed. Was this a marketing exchange?",
+    "options": [
+      "No, because the Red Cross is a non-profit organization",
+      "Yes, because the Red Cross ran an advertisement",
+      "Yes, because the donated blood was exchanged for a feeling of satisfaction",
+      "No, because no money was exchanged",
+      "No, because the Red Cross did not provide Amanda with a product"
+    ],
+    "answer": 2,
+    "explanation": "Exchange is the trade of things of value between buyer and seller so that each is better off. Amanda gave blood and received a feeling of satisfaction; the Red Cross received blood to serve society, so an exchange occurred. Money is not required and non-profits market too, so the 'no money' and 'non-profit' options fail; running an ad alone does not make something an exchange.",
+    "source": "official"
+  },
+  {
+    "id": "q01-008",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The trade of things of value between a buyer and a seller so that each is better off after the trade is called:",
+    "options": [
+      "exchange",
+      "customer value",
+      "utility",
+      "a value proposition"
+    ],
+    "answer": 0,
+    "explanation": "That is the definition of exchange, the core of marketing. Utility is the benefit users get from a product and customer value is the bundle of benefits buyers receive; both can result from an exchange, but neither is the trade itself.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-009",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the four factors required for marketing to occur?",
+    "options": [
+      "Something to exchange",
+      "A way for the parties to communicate",
+      "Money to serve as the medium of exchange",
+      "Two or more parties with unsatisfied needs"
+    ],
+    "answer": 2,
+    "explanation": "The four factors are: two or more parties with unsatisfied needs, a desire and ability to be satisfied, a way to communicate, and something to exchange. Money is not required; 'something to exchange' can be time, effort, blood or even a vote.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-010",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Kestrel Kayaks, a small Kelowna builder, makes a touring kayak that many Prairie paddlers would gladly buy and can afford. But Kestrel has no website, no retailers and no advertising, so paddlers have never heard of it. Which requirement for marketing to occur is missing?",
+    "options": [
+      "Two or more parties with unsatisfied needs",
+      "A way for the parties to communicate",
+      "A desire and ability to be satisfied",
+      "Something to exchange"
+    ],
+    "answer": 1,
+    "explanation": "Both sides have needs, the paddlers have the desire and ability to buy, and there is a kayak and money to trade, but the parties cannot communicate, so no exchange can happen. 'Desire and ability' is present because the paddlers want the kayak and can afford it.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-011",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "A group of Grade 10 students in Red Deer fall in love with a $90,000 electric pickup at an auto show. The dealer is eager to sell, its ads reach the students daily, and the truck is in stock. Why will a marketing exchange still not occur?",
+    "options": [
+      "Only one of the two parties in the situation has an unsatisfied need",
+      "The dealer has nothing of value to offer the students in exchange",
+      "They lack the ability to pay, so the 'desire and ability' requirement fails",
+      "There is no way for the dealer and the students to communicate with each other"
+    ],
+    "answer": 2,
+    "explanation": "The second requirement is a desire AND ability to be satisfied; the students have the desire but not the ability to pay $90,000. Communication is clearly present because the dealer's ads reach them daily, and there is a truck to exchange.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-012",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "tf",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "The second requirement for marketing to occur ('a desire and ability to be satisfied') mirrors the definition of a market, which also requires people to have both the desire and the ability to buy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "True. A market is people with both the desire and the ability to buy a specific product, and the second requirement for marketing is a desire and ability on the parties' part to be satisfied. Desire without ability (or ability without desire) fails both tests.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-013",
+    "concept": "c01-exchange",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 3,
+    "stem": "Which situation would NOT result in a marketing exchange?",
+    "options": [
+      "A volunteer gives up a Saturday at a food bank and leaves feeling proud of helping out",
+      "A Yukon carver's bowls are wanted by collectors who can afford them, but they have no way to reach him",
+      "A student trades two hours of calculus tutoring for a classmate's used marketing textbook",
+      "Residents vote for a city council candidate who promises to build the new park they want"
+    ],
+    "answer": 1,
+    "explanation": "The carver's situation lacks a way for the parties to communicate, one of the four requirements, so no exchange can happen. The other three are genuine marketing exchanges even though no money changes hands: tutoring for a book, time for a feeling of pride, and a vote for a promised park.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-014",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "A television advertisement shows several teenagers searching through the refrigerator for something to quench their thirst. The refrigerator offers the youngsters many alternatives - soft drinks, fruit drinks, sport drinks and bottles of Sunny Delight drink. The ad, which shows the teens happily selecting Sunny Delight over all the other product offerings, appeals to the consumers' _____ for liquid and attempts to shape consumers' _____ for the advertised product.",
+    "options": [
+      "wants; needs",
+      "wants; preferences",
+      "preferences; needs",
+      "needs; wants",
+      "needs; preferences"
+    ],
+    "answer": 3,
+    "explanation": "A need is felt deprivation of a basic necessity such as liquid (thirst); a want is a need shaped by knowledge, culture and personality into a preference for a specific item (Sunny Delight). The ad appeals to the need and shapes the want. 'Wants; needs' reverses them, and marketers do not create needs.",
+    "source": "official"
+  },
+  {
+    "id": "q01-015",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "In marketing terms, a want is best described as:",
+    "options": [
+      "a need that is shaped by a person's knowledge, culture and personality",
+      "a feeling of deprivation of basic necessities such as food, water and shelter",
+      "the unique combination of benefits a brand promises to deliver",
+      "the desire and the ability to buy a specific product"
+    ],
+    "answer": 0,
+    "explanation": "A want is a need shaped by knowledge, culture and personality into a preference for a specific item. Feeling deprived of basic necessities is the definition of a need, the most tempting distractor; desire plus ability describes a market.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-016",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A Montreal agency's creative brief says: 'Our campaign will make Canadians NEED our client's new premium sparkling water.' Using Chapter 1's terms, how should the brief be corrected?",
+    "options": [
+      "The campaign can create both needs and wants, provided its methods are ethical",
+      "The campaign should create a market for the product, which is the same as creating a need",
+      "The campaign can create a need, but only if it is aimed at a specific target market",
+      "The campaign can shape consumers' want for the brand; the underlying need (thirst) already exists"
+    ],
+    "answer": 3,
+    "explanation": "Marketers do not create needs; a need is felt deprivation of a basic necessity such as liquid, which exists before any ad. What marketing can do is shape the want, the learned preference for a specific product. Targeting or ethics do not change this rule.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-017",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "On a scorching Calgary Stampede afternoon, Rahim is badly thirsty. He walks past a free water fountain and lines up to buy a $7 Okanagan peach lemonade he saw on Instagram. Which element of this situation is a WANT?",
+    "options": [
+      "His preference for that specific peach lemonade",
+      "The Instagram post that promoted the lemonade",
+      "The $7 price charged for the lemonade",
+      "The thirst he feels in the afternoon heat"
+    ],
+    "answer": 0,
+    "explanation": "Rahim's thirst is the need; his learned preference for a specific product (that peach lemonade rather than free water) is the want. The price and the Instagram post are marketing mix elements (price and promotion), not needs or wants.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-018",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "The instructor asks: 'Who's in charge - the consumer or the marketer?' Which answer best reflects Chapter 1?",
+    "options": [
+      "The consumer: marketers only react and have no influence on what people want",
+      "Neither: environmental forces alone decide what consumers will buy",
+      "The marketer: marketing creates the needs that consumers then try to satisfy",
+      "Both: consumers' needs come first, but marketers shape their wants for specific products"
+    ],
+    "answer": 3,
+    "explanation": "The chapter's answer is both. Marketing starts by discovering consumer needs, which marketers cannot create, but it then shapes wants by influencing which products people prefer. 'The marketer creates needs' is the classic wrong belief.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-019",
+    "concept": "c01-needs-wants",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "Clearbrook Springs, a Winnipeg bottled-water start-up, knows that everyone needs water. It wants to grow sales of its own brand. Based on the need-want distinction, where should it focus its marketing effort?",
+    "options": [
+      "Treating all Canadians as one group, since everyone shares the need for water",
+      "Avoiding promotion, since the need for water already exists naturally",
+      "Shaping consumers' wants so they prefer Clearbrook as the way to satisfy thirst",
+      "Creating a brand-new need for hydration that consumers did not have before"
+    ],
+    "answer": 2,
+    "explanation": "Because the need (thirst) already exists and cannot be created by marketers, the brand's job is to shape the want: make Clearbrook the specific product people prefer. 'Creating a need' is impossible by the chapter's logic, and skipping promotion or targeting everyone wastes the chance to influence wants.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-020",
+    "concept": "c01-market",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "People with both the desire and the ability to buy a specific product make up a:",
+    "options": [
+      "target market",
+      "market",
+      "market segment",
+      "mass market"
+    ],
+    "answer": 1,
+    "explanation": "A market is defined by two conditions: desire and ability to buy a specific product. A target market is narrower - the specific group(s) of that market the firm chooses to direct its marketing program toward.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-021",
+    "concept": "c01-market",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Prairie Peaks Adventures sells $2,400 guided heli-skiing trips. Which group belongs to the MARKET for these trips?",
+    "options": [
+      "Wealthy retirees who have no interest in skiing of any kind",
+      "Everyone who lives within driving distance of the Rockies",
+      "Experienced skiers who want a heli-skiing trip and can afford $2,400",
+      "University students who dream of heli-skiing but cannot afford it"
+    ],
+    "answer": 2,
+    "explanation": "Only the experienced skiers have both the desire and the ability to buy. The students have desire without ability and the retirees have ability without desire, so neither group is part of the market.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-022",
+    "concept": "c01-market",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which statement correctly distinguishes a market from a target market?",
+    "options": [
+      "A market includes only a firm's existing customers; a target market includes only its potential customers",
+      "A market is everyone with the desire and ability to buy; a target market is the segment(s) the firm chooses to aim its program at",
+      "A market and a target market become the same thing once a product has been launched and promoted",
+      "A market is the segment a firm chooses to pursue; a target market is everyone who could possibly buy the product"
+    ],
+    "answer": 1,
+    "explanation": "The market is the full pool of people with desire and ability; the target market is the part of it the firm deliberately aims its marketing program at. The second option reverses the terms, and target markets include both existing and potential customers.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-023",
+    "concept": "c01-market",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Thousands of young followers 'like' a Montreal jeweller's $8,000 watches on Instagram, yet very few ever buy one. Using the chapter's definition, why are most of these followers NOT part of the jeweller's market?",
+    "options": [
+      "They have the desire but lack the ability to buy the product",
+      "They have the ability but lack the desire to buy the product",
+      "They have not yet been selected as the jeweller's target market",
+      "They are organizational buyers rather than ultimate consumers"
+    ],
+    "answer": 0,
+    "explanation": "A market requires both desire and ability to buy. The likes show desire, but most young followers cannot afford an $8,000 watch. Not being chosen as a target market does not remove anyone from the market; the target market is a subset chosen afterward.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-024",
+    "concept": "c01-market",
+    "also": [],
+    "type": "tf",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "A person who could easily afford a product but has no interest in buying it is still part of that product's market.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "False. Corrected: a market consists of people with BOTH the desire and the ability to buy a specific product, so someone with ability but no desire is not part of the market.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-025",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "Sound and Cinema is a company that will turn an ordinary basement into a home theatre. It advertises in publications that are mailed to homeowners in subdivisions in which the least expensive home costs $275,000. These homeowners are the _____ for Sound and Cinema.",
+    "options": [
+      "mass market",
+      "tangent market",
+      "market aggregation",
+      "target market",
+      "promotional market"
+    ],
+    "answer": 3,
+    "explanation": "A target market is one or more specific groups of existing and potential consumers toward which an organization directs its marketing program. Sound and Cinema deliberately aims its ads at affluent homeowners rather than everyone, which is the opposite of a mass-market approach.",
+    "source": "official"
+  },
+  {
+    "id": "q01-026",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Brookside Golf Club in Edmonton aims its new junior-league campaign at two groups: members' children and nearby families who have never golfed but attended its free summer clinic. A manager objects that people who have never bought from Brookside cannot be part of a target market. Is the manager right?",
+    "options": [
+      "Yes - potential consumers can belong to the market but never to a target market",
+      "Yes - a target market includes only existing customers who have already purchased",
+      "No - a target market automatically includes everyone in Edmonton who can afford golf",
+      "No - a target market includes both existing and potential consumers the program is aimed at"
+    ],
+    "answer": 3,
+    "explanation": "The definition of a target market explicitly covers existing AND potential consumers toward which the organization directs its marketing program, so the clinic families qualify. A target market is still a specific chosen group, not everyone with the ability to buy.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-027",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why does the chapter recommend that a firm with limited funds focus on a target market instead of trying to appeal to everyone?",
+    "options": [
+      "Choosing a target market removes the need to design a marketing mix",
+      "Targeting everyone always produces higher customer value per dollar spent",
+      "A target market includes only existing customers, who are cheaper to reach",
+      "Resources go further when focused on the groups most interested in buying"
+    ],
+    "answer": 3,
+    "explanation": "The slide's rationale: with limited funds, it is better to channel resources to the specific groups most interested in purchasing than to target everyone. A target market still needs a tailored marketing mix, and it includes potential as well as existing customers.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-028",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "FreshFit Meals, an Edmonton start-up, has a $15,000 launch budget for its high-protein meal-prep service. Research shows that downtown gym members aged 20 to 35 are by far the most interested buyers. What should FreshFit do?",
+    "options": [
+      "Spread the budget evenly across every Edmonton household",
+      "Direct its marketing program at downtown gym members aged 20 to 35",
+      "Skip research and promote to whoever responds to TV ads",
+      "Wait until it can afford a national campaign before marketing"
+    ],
+    "answer": 1,
+    "explanation": "With limited funds, FreshFit should channel its resources toward the group most interested in buying, which is exactly what selecting a target market means. Spreading $15,000 across every household is a mass-market approach that dilutes the budget.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-029",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about target markets is NOT correct?",
+    "options": [
+      "A target market can include both existing and potential customers",
+      "An organization may direct its program at more than one segment",
+      "A target market must include every person who is able to buy the product",
+      "The marketing mix should be designed to appeal to the target market"
+    ],
+    "answer": 2,
+    "explanation": "A target market is a chosen subset - one or more specific groups - not everyone able to buy. The definition explicitly includes existing and potential consumers and allows 'one or more' segments, and the 4 Ps must appeal to it.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-030",
+    "concept": "c01-target-market",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Glacier Gear sells winter boots across Canada. Plan A: one generic ad sent to all Canadians. Plan B: separate programs for urban commuters in Toronto and backcountry hunters in northern Alberta. Which statement is correct?",
+    "options": [
+      "Plan B uses target markets; Plan A treats everyone as one mass market",
+      "Both plans use target markets because both reach existing customers",
+      "Neither plan uses target markets because both sell the same boots",
+      "Plan A uses a target market; Plan B treats everyone as one mass market"
+    ],
+    "answer": 0,
+    "explanation": "Plan B directs distinct marketing programs at specific groups, which is targeting. Plan A aims one message at everyone, the mass-market approach. Reaching existing customers does not make something targeting; choosing specific groups does.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-031",
+    "concept": "c01-customer-value",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The unique combination of benefits received by targeted buyers that include quality, price, convenience, on-time delivery, and both before-sale and after-sale service is called:",
+    "options": [
+      "target marketing",
+      "benefit segmentation",
+      "customer value",
+      "customer satisfaction",
+      "product dissonance"
+    ],
+    "answer": 2,
+    "explanation": "This is the textbook definition of customer value: the benefits targeted buyers receive, including quality, price, convenience, on-time delivery and before- and after-sale service. Customer satisfaction is a related outcome (how well expectations were met), not the bundle of benefits itself.",
+    "source": "official"
+  },
+  {
+    "id": "q01-032",
+    "concept": "c01-customer-value",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Rocky Ridge Hardware in Cochrane cannot match big-box prices, so it offers free same-day delivery, expert project advice before you buy, and free tool repairs after you buy. Which of the three ways to deliver customer value is Rocky Ridge emphasizing?",
+    "options": [
+      "Best product",
+      "Best promotion",
+      "Best service",
+      "Best price"
+    ],
+    "answer": 2,
+    "explanation": "Firms typically deliver customer value through the best price, the best product or the best service. Rocky Ridge explicitly gives up on price and competes on before-sale and after-sale service. 'Best promotion' is not one of the three routes.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-033",
+    "concept": "c01-customer-value",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "Which statement best distinguishes customer value from a value proposition?",
+    "options": [
+      "Customer value is the benefits buyers actually receive; a value proposition is the benefits a brand promises to deliver",
+      "Customer value applies to non-profits; a value proposition applies only to for-profit firms",
+      "Customer value is a promise made in advertising; a value proposition is what buyers actually experience",
+      "Customer value refers only to low price; a value proposition refers only to product quality"
+    ],
+    "answer": 0,
+    "explanation": "Customer value is defined by benefits 'received by targeted buyers', while a value proposition is the unique combination of benefits a brand 'promises to deliver'. The second option simply reverses the two terms.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-034",
+    "concept": "c01-customer-value",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT part of the textbook definition of customer value?",
+    "options": [
+      "Before-sale and after-sale service",
+      "Market share",
+      "Convenience",
+      "On-time delivery"
+    ],
+    "answer": 1,
+    "explanation": "Customer value includes quality, price, convenience, on-time delivery, and before- and after-sale service. Market share measures the firm's performance; it is not a benefit that buyers receive.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-035",
+    "concept": "c01-customer-value",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Two Calgary grocers sell identical products at identical prices. Grocer A also offers 30-minute curbside pickup and no-questions-asked returns. Why does Grocer A likely deliver greater customer value?",
+    "options": [
+      "Customer value depends only on price, so Grocer A must secretly be charging less overall",
+      "Customer value depends on how much a firm spends on advertising its value promise",
+      "Customer value is the same as satisfaction, which depends only on the product itself",
+      "Customer value includes benefits like convenience and after-sale service, not just price and quality"
+    ],
+    "answer": 3,
+    "explanation": "Because customer value is a unique combination of benefits that includes convenience and after-sale service, Grocer A adds value even with equal prices and products. Advertising spending is not part of the definition; an advertised promise is a value proposition, not value received.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-036",
+    "concept": "c01-value-proposition",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The unique combination of benefits that a brand promises to deliver to consumers, setting it apart from competing brands, is its:",
+    "options": [
+      "customer value",
+      "marketing program",
+      "value proposition",
+      "target market"
+    ],
+    "answer": 2,
+    "explanation": "A value proposition is the brand's promise of a unique combination of benefits, and it differentiates the brand. Customer value is the benefits buyers actually receive, so 'promises' is the cue that separates the two.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-037",
+    "concept": "c01-value-proposition",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Okanagan Crust's box says: 'Ancient-grain crust, stone-baked, ready in nine minutes - the only frozen pizza that tastes like your favourite pizzeria.' In chapter terms, what is this statement communicating?",
+    "options": [
+      "Its market orientation",
+      "Its value proposition",
+      "Its customer relationship management",
+      "Its target market"
+    ],
+    "answer": 1,
+    "explanation": "The statement promises a unique combination of benefits (ancient-grain crust, pizzeria taste, nine-minute convenience) that differentiates the brand - a value proposition, much like the slide's Ancient Grains Crust pizza example. It does not describe who the customers are (target market).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-038",
+    "concept": "c01-value-proposition",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Brightline Telecom's ads promise 'No contracts, no surprise fees, 24/7 human support.' Six months later, a survey shows customers really did get reliable service, fair bills and fast help. The ad and the survey results illustrate, respectively:",
+    "options": [
+      "value proposition; customer value",
+      "target market; marketing mix",
+      "customer value; value proposition",
+      "marketing concept; market orientation"
+    ],
+    "answer": 0,
+    "explanation": "The ad is a promise of benefits that differentiates the brand (value proposition); the survey measures the benefits customers actually received (customer value). Reversing the order is the classic trap.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-039",
+    "concept": "c01-value-proposition",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "A new Halifax coffee roaster discovers that shoppers cannot tell its beans apart from three competitors' beans. What should it develop to fix this problem?",
+    "options": [
+      "A production orientation focused on roasting more beans more cheaply",
+      "A macromarketing plan for Canada's national coffee supply chain",
+      "A larger market that includes people unable to afford specialty coffee",
+      "A clear value proposition promising a unique combination of benefits"
+    ],
+    "answer": 3,
+    "explanation": "A value proposition differentiates a brand by promising a unique combination of benefits, which is exactly what the roaster lacks. People who cannot afford the product are not part of the market by definition, and a production focus ignores the differentiation problem.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-040",
+    "concept": "c01-value-proposition",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about a value proposition is NOT accurate?",
+    "options": [
+      "It should appeal to the brand's target market",
+      "It describes the benefits customers already received",
+      "It promises a unique combination of benefits",
+      "It helps differentiate a brand from competing brands"
+    ],
+    "answer": 1,
+    "explanation": "A value proposition is a promise of benefits; benefits actually received after purchase describe customer value. Differentiation and appeal to the target market are exactly what a value proposition is for.",
+    "source": "generated"
+  }
+]

@@ -1,0 +1,726 @@
+[
+ {
+  "id": "q12-041",
+  "concept": "c12-personal-selling",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The two-way flow of communication between a buyer and seller, designed to influence a person's or group's purchase decision, is:",
+  "options": [
+   "direct marketing",
+   "personal selling",
+   "customer service",
+   "public relations"
+  ],
+  "answer": 1,
+  "explanation": "A two-way flow designed to influence a purchase decision defines personal selling. Direct marketing is also customized, but it sends targeted messages to generate a response rather than holding a live two-way dialogue.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-042",
+  "concept": "c12-personal-selling",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A rep from Lakehead Medical Supply visits a Thunder Bay clinic, asks about patient volumes, demonstrates a new ultrasound unit, and reworks her proposal on the spot when the doctor raises budget concerns. This is:",
+  "options": [
+   "direct marketing",
+   "sales promotion",
+   "event marketing",
+   "personal selling"
+  ],
+  "answer": 3,
+  "explanation": "A live, two-way exchange in which the seller listens, demonstrates, and adapts the pitch to influence a purchase is personal selling. Direct marketing would send targeted mail, email, or calls seeking a response, without this tailored face-to-face dialogue.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-043",
+  "concept": "c12-personal-selling",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is the main strength of personal selling compared with other promotional elements?",
+  "options": [
+   "It has the lowest cost per contact of any element",
+   "It is the most credible because the firm doesn't pay for it",
+   "It offers immediate feedback and lets the message be tailored to each buyer",
+   "It reaches a mass audience with one identical message"
+  ],
+  "answer": 2,
+  "explanation": "Personal selling is customized and two-way, so the seller gets immediate feedback and can persuade by tailoring the message. Its weakness is the opposite of the first option: it has an extremely high cost per contact.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-044",
+  "concept": "c12-personal-selling",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Personal selling and direct marketing are both customized elements. Which statement correctly contrasts them?",
+  "options": [
+   "Personal selling is a live two-way dialogue with immediate feedback; direct marketing sends targeted communications to generate a response",
+   "Personal selling is paid by an identified sponsor; direct marketing is indirectly paid, like publicity in the news",
+   "Direct marketing offers the most immediate feedback of any element; personal selling offers the least feedback",
+   "Personal selling is a mass element that reaches large audiences; direct marketing is a customized element"
+  ],
+  "answer": 0,
+  "explanation": "Both tailor messages, but personal selling is interactive in real time, while direct marketing (mail, catalogues, email, telemarketing) reaches targeted individuals and asks them to respond. Personal selling is customized, not mass, so the last option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-045",
+  "concept": "c12-personal-selling",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Glacier Systems sells $250,000 custom water-treatment systems to Canadian municipalities. Each buyer has unique technical requirements and a committee that raises detailed questions. Which promotional element should carry the most weight in its mix?",
+  "options": [
+   "advertising",
+   "sales promotion",
+   "publicity",
+   "personal selling"
+  ],
+  "answer": 3,
+  "explanation": "Complex, high-priced, customized B2B purchases call for personal selling, which allows two-way discussion, immediate feedback, and tailored solutions; the high cost per contact is justified by the deal size. Advertising reaches many people but can't answer each committee's technical questions.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-046",
+  "concept": "c12-sales-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A short-term inducement of value offered to arouse interest in buying a good or service is:",
+  "options": [
+   "sales promotion",
+   "advertising",
+   "direct marketing",
+   "personal selling"
+  ],
+  "answer": 0,
+  "explanation": "Sales promotion is defined as a short-term inducement of value, such as a coupon, sample, contest, or rebate. Advertising communicates a message but doesn't itself add short-term value to trigger the purchase.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-047",
+  "concept": "c12-sales-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "For two weeks only, Northern Pantry offers buy-one-get-one-free on its granola bars and hands out $1-off coupons at store entrances in Red Deer. This is an example of:",
+  "options": [
+   "public relations",
+   "sales promotion",
+   "advertising",
+   "personal selling"
+  ],
+  "answer": 1,
+  "explanation": "Time-limited deals like BOGO offers and coupons are short-term inducements of value, which is sales promotion. Advertising would deliver a paid message about the brand without the added incentive.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-048",
+  "concept": "c12-sales-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which is a key weakness of sales promotion?",
+  "options": [
+   "It cannot change buying behaviour in the short run",
+   "It has an extremely high cost per contact",
+   "It gives the firm little control over the message",
+   "It can be easily abused and can lead to promotion and price wars"
+  ],
+  "answer": 3,
+  "explanation": "Sales promotion is effective at changing behaviour in the short run, but it is easily abused (and copied) and can spark promotion wars. Little control over the message is publicity's weakness, and high cost per contact belongs to personal selling.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-049",
+  "concept": "c12-sales-promotion",
+  "also": [
+   "c12-push-pull"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly contrasts consumer sales promotion with trade promotion?",
+  "options": [
+   "Consumer promotions such as allowances target retailers; trade promotions such as coupons target shoppers in the store",
+   "Trade promotions are a form of publicity earned from trade media; consumer promotions are a form of paid advertising",
+   "Consumer promotions such as coupons and samples target end users (pull); trade promotions such as allowances and co-op funds target channel members (push)",
+   "Consumer promotions are used only in the decline stage; trade promotions are used only in the introduction stage"
+  ],
+  "answer": 2,
+  "explanation": "Figure 12-2 places trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) in the push column aimed at the channel, and consumer promotion in the pull column aimed at consumers. The first option simply reverses the two audiences.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-050",
+  "concept": "c12-sales-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a form of sales promotion?",
+  "options": [
+   "a mail-in rebate",
+   "a newspaper story about the product's launch",
+   "a free in-store sample",
+   "a social media contest with prizes"
+  ],
+  "answer": 1,
+  "explanation": "Rebates, samples, and contests are short-term inducements of value, which makes them sales promotion. A newspaper story the firm didn't pay for is publicity, part of public relations.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-051",
+  "concept": "c12-public-relations",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A non-personal, indirectly paid presentation of an organization, good, or service, such as a news story, is called:",
+  "options": [
+   "advertising",
+   "product placement",
+   "sponsorship",
+   "publicity"
+  ],
+  "answer": 3,
+  "explanation": "Publicity is non-personal and indirectly paid: the firm doesn't buy the media space. Advertising and product placement are directly paid, and sponsorship involves paying a fee for association with an event.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-052",
+  "concept": "c12-public-relations",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After Ember Stoves donated 200 wood stoves to families displaced by northern Alberta wildfires, CBC News ran a feature about the donation. Ember paid nothing to the broadcaster for the coverage. The coverage is:",
+  "options": [
+   "publicity",
+   "advertising",
+   "sponsorship",
+   "sales promotion"
+  ],
+  "answer": 0,
+  "explanation": "Unpaid news coverage of a company's actions is publicity, a public relations outcome (and earned media). It isn't advertising, because Ember didn't buy the airtime or control the story.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-053",
+  "concept": "c12-public-relations",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which pairing correctly states a strength and a weakness of publicity?",
+  "options": [
+   "Strength: complete control of the message; weakness: low credibility",
+   "Strength: high credibility; weakness: little control over the message",
+   "Strength: immediate two-way feedback; weakness: high cost per contact",
+   "Strength: changes behaviour in the short run; weakness: can trigger price wars"
+  ],
+  "answer": 1,
+  "explanation": "Because publicity comes from an independent source such as a journalist, it is highly credible, but the firm can't control what is said or whether it runs. Immediate feedback with high cost per contact describes personal selling.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-054",
+  "concept": "c12-public-relations",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A skincare brand pays a magazine to run a two-page, article-style feature clearly labelled 'Sponsored content.' Why is this advertising rather than publicity?",
+  "options": [
+   "Because it appears in a magazine, which is a paid medium, rather than on television",
+   "Because it is non-personal communication delivered to a large audience at once",
+   "Because the brand paid for the space and, as the identified sponsor, controls the content",
+   "Because it is long enough to tell a detailed story about the brand's products"
+  ],
+  "answer": 2,
+  "explanation": "Advertising is paid communication by an identified sponsor who controls the message, so buying labelled space makes this advertising. Being non-personal doesn't decide it, because publicity is non-personal too.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-055",
+  "concept": "c12-public-relations",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT typically a public relations activity?",
+  "options": [
+   "Issuing a news release about a new product",
+   "Holding a press conference to announce a factory opening",
+   "Managing stakeholders' opinions during a product recall",
+   "Offering a mail-in rebate on a new appliance"
+  ],
+  "answer": 3,
+  "explanation": "PR manages the feelings, opinions, and beliefs of customers and other stakeholders through tools like news releases and press conferences. A mail-in rebate is a short-term inducement of value, which is sales promotion.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-056",
+  "concept": "c12-direct-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Using direct communication with consumers to generate a response (an order, a request for more information, or a store visit) is called:",
+  "options": [
+   "inbound marketing",
+   "personal selling",
+   "direct marketing",
+   "advertising"
+  ],
+  "answer": 2,
+  "explanation": "Direct marketing's defining feature is direct communication aimed at generating a measurable response. Advertising speaks to a mass audience without a direct response mechanism tied to individuals.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-057",
+  "concept": "c12-direct-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ridgeline Garden Supply mails its spring catalogue to past customers, follows up with an email containing a personal order code, and counts how many orders each code generates. This is:",
+  "options": [
+   "direct marketing",
+   "public relations",
+   "advertising",
+   "personal selling"
+  ],
+  "answer": 0,
+  "explanation": "Catalogues and targeted email asking for a trackable response are classic direct marketing tools, and the order codes show its measurability. There is no live two-way conversation, so it isn't personal selling.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-058",
+  "concept": "c12-direct-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which description best captures the strengths and weaknesses of direct marketing?",
+  "options": [
+   "Highly credible but hard to control",
+   "Reaches mass audiences cheaply but gives little feedback",
+   "Changes behaviour quickly but invites price wars",
+   "Targeted and measurable, but costly and raises privacy concerns"
+  ],
+  "answer": 3,
+  "explanation": "Direct marketing reaches specific individuals and its responses can be counted, but building and maintaining databases is costly and consumers worry about privacy. 'Highly credible but hard to control' describes publicity.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-059",
+  "concept": "c12-direct-marketing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a direct marketing tool?",
+  "options": [
+   "telemarketing",
+   "a press release",
+   "direct response TV",
+   "a mailed catalogue"
+  ],
+  "answer": 1,
+  "explanation": "Direct mail, catalogues, telemarketing, direct response TV, and email are direct marketing tools that seek a response. A press release is a public relations tool aimed at earning media coverage.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-060",
+  "concept": "c12-direct-marketing",
+  "also": [
+   "c12-paid-owned-earned"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Strata Sneakers sends promotional emails to its opted-in subscriber list. How is this classified in the course materials?",
+  "options": [
+   "It is a direct marketing tool and, on the digital channels slide, paid media",
+   "It is personal selling and, on the digital channels slide, owned media",
+   "It is public relations and, on the digital channels slide, earned media",
+   "It is sales promotion and, on the digital channels slide, owned media"
+  ],
+  "answer": 0,
+  "explanation": "Email is one of the direct marketing tools in the textbook, and the Keller/Swaminathan digital channels slide lists e-mail marketing under PAID media. Many students pick owned because the list belongs to the company, but the course slide classifies email marketing as paid.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-061",
+  "concept": "c12-sponsorship-placement",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "In a hit Canadian streaming comedy, the main characters always drink Polar Peak iced tea with the label clearly visible; Polar Peak paid the producers for this exposure. This is:",
+  "options": [
+   "sponsorship",
+   "publicity",
+   "product placement",
+   "event marketing"
+  ],
+  "answer": 2,
+  "explanation": "Paid inclusion of a brand within entertainment content is product placement. Sponsorship would mean paying to attach the brand's name to an event, team, or cause, such as a festival stage.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-062",
+  "concept": "c12-sponsorship-placement",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Summit Credit Union pays a fee to have its name on the Edmonton Folk Festival's main stage and its logo on all festival materials. This is:",
+  "options": [
+   "product placement",
+   "sponsorship",
+   "publicity",
+   "sales promotion"
+  ],
+  "answer": 1,
+  "explanation": "Paying a fee to be associated with someone else's event in exchange for exposure is sponsorship. Product placement puts a brand inside entertainment content such as a show or movie, not on an event stage.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-063",
+  "concept": "c12-sponsorship-placement",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What best distinguishes event marketing from sponsorship?",
+  "options": [
+   "Event marketing builds an experience that brings consumers and the brand together; sponsorship pays a fee for association with an event, team, or cause",
+   "Event marketing is always unpaid publicity earned through news coverage; sponsorship is always paid advertising bought in mass media",
+   "Event marketing targets channel members such as retailers; sponsorship targets ultimate consumers, media, and the public",
+   "Event marketing is used only in the decline stage to clear stock; sponsorship is used only during the introduction stage"
+  ],
+  "answer": 0,
+  "explanation": "Event marketing puts the brand at the centre of an experience (often one the brand creates, like a pop-up), while sponsorship buys association with an event or property someone else owns. Both are pull tools aimed at consumers in Figure 12-2, so the third option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-064",
+  "concept": "c12-sponsorship-placement",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do marketers use product placement?",
+  "options": [
+   "It guarantees the brand full control over how, when, and how often it appears on screen",
+   "It persuades retailers and wholesalers to give the brand more shelf space and feature pricing",
+   "It is required by the CRTC for any brand that also advertises on Canadian television",
+   "It shows the brand within entertainment people choose to watch, which feels less intrusive than a commercial"
+  ],
+  "answer": 3,
+  "explanation": "Product placement reaches consumers inside content they've chosen to watch, so it can get past ad avoidance and feels natural. It does not guarantee control, since producers decide how the scene plays, and persuading retailers is a push objective.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-065",
+  "concept": "c12-sponsorship-placement",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of product placement?",
+  "options": [
+   "A laptop brand used by the hero in a Canadian film, paid for by the maker",
+   "A car brand driven by characters in a racing video game under a paid deal",
+   "A bank's logo painted on the boards of a hockey arena it pays to sponsor",
+   "A paid soft-drink can placed on the desk of a late-night talk-show host"
+  ],
+  "answer": 2,
+  "explanation": "Product placement is paid inclusion of a brand inside entertainment content. A logo on arena boards in exchange for a fee is sponsorship (signage at a sponsored venue), not placement within a show, film, or game.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-066",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Laila purchases groceries from FoodMart. FoodMart offers her a membership card, which entitles Laila to coupons, lucky draws, and discounts on her continued purchases at FoodMart. Which of the following tools is FoodMart using to drive the customer through the customer advocacy funnel?",
+  "options": [
+   "Engagement",
+   "Loyalty",
+   "Trial",
+   "Awareness"
+  ],
+  "answer": 1,
+  "explanation": "Customer loyalty is encouraged through CRM programs that reward continued purchases, so a membership card with coupons, draws, and discounts puts FoodMart in the loyalty stage. Engagement would involve inviting her to participate in the product experience and interact with its marketing, not rewarding repeat buying.",
+  "source": "official"
+ },
+ {
+  "id": "q12-067",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "At a Vancouver mall pop-up, Alpine Audio invites passers-by to step into a soundproof booth, remix a track using its headphones, and post the result to the brand's social media challenge. Which advocacy funnel stage is Alpine targeting?",
+  "options": [
+   "Trial",
+   "Interest",
+   "Engagement",
+   "Advocacy"
+  ],
+  "answer": 2,
+  "explanation": "Engagement invites potential customers to participate in the product experience and interact with its marketing: remixing in the booth and joining a branded challenge. Trial would mean obtaining a free sample or getting the product as a limited trial or download.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-068",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Zenith Meditation lets new users download its app and use every premium feature free for 14 days before any billing begins. Which stage of the customer advocacy funnel does this offer target?",
+  "options": [
+   "Trial",
+   "Engagement",
+   "Purchase",
+   "Interest"
+  ],
+  "answer": 0,
+  "explanation": "Trial is when customers obtain free samples or get the product as a limited trial or download. Purchase comes next, when positive experiences during the trial lead users to pay.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-069",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Nomad Coffee gives its longest-standing subscribers early access to rare roasts and a behind-the-scenes farm tour. Many then post glowing recommendations and refer friends. Which funnel stage do these actions reflect?",
+  "options": [
+   "Loyalty",
+   "Engagement",
+   "Purchase",
+   "Advocacy"
+  ],
+  "answer": 3,
+  "explanation": "In the advocacy stage, loyal customers are rewarded with additional experiences and become advocates who recommend the product to others. Loyalty is repeat purchasing; the recommending is what marks advocacy.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-070",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Trailhead Tents uses search engine optimization, online video, and display ads to drive people who have never heard of it to its website. Which advocacy funnel stage is this?",
+  "options": [
+   "Interest",
+   "Awareness",
+   "Engagement",
+   "Trial"
+  ],
+  "answer": 1,
+  "explanation": "The course's awareness example is a company using a website, SEO, online video, and display ads to drive consumers to an online destination. Interest comes after people know the brand, when attributes are highlighted so they want to learn more.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-071",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "On its product page, KettleCraft highlights its kettle's 60-second boil time and stay-cool handle so curious visitors want to learn more. Which funnel stage is this designed for?",
+  "options": [
+   "Awareness",
+   "Purchase",
+   "Interest",
+   "Engagement"
+  ],
+  "answer": 2,
+  "explanation": "Interest is the stage where interesting product attributes are highlighted to prompt potential customers to learn more. Engagement goes further, inviting people to participate in the product experience and interact with marketing.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-072",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After a two-week free trial, Mei enjoys Zest Meal Kits so much that she pays for her first full month of deliveries. Which advocacy funnel stage has Mei just reached?",
+  "options": [
+   "Loyalty",
+   "Trial",
+   "Advocacy",
+   "Purchase"
+  ],
+  "answer": 3,
+  "explanation": "Purchase is the stage where positive product experiences (here, during the trial) lead to buying the product. Loyalty comes later, when ongoing positive experiences lead to repeat purchases over time.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-073",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 3,
+  "stem": "Which sequence correctly lists the LAST four stages of the customer advocacy funnel, in order?",
+  "options": [
+   "purchase, trial, loyalty, advocacy",
+   "trial, purchase, advocacy, loyalty",
+   "engagement, trial, loyalty, purchase",
+   "trial, purchase, loyalty, advocacy"
+  ],
+  "answer": 3,
+  "explanation": "The full funnel is awareness, interest, engagement, trial, purchase, loyalty, advocacy. Trial comes before purchase, and loyalty (repeat purchase) comes before advocacy (recommending to others).",
+  "source": "generated"
+ },
+ {
+  "id": "q12-074",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What distinguishes the loyalty stage from the advocacy stage of the customer advocacy funnel?",
+  "options": [
+   "Loyalty is repeat purchasing driven by ongoing positive experiences; advocacy is loyal customers recommending the product to others",
+   "Loyalty is obtaining free samples or a limited trial; advocacy is making the first full-price purchase",
+   "Loyalty is recommending the product to friends and family; advocacy is buying the product again and again",
+   "Loyalty is the final stage of the funnel and comes after advocacy, once customers stop recommending"
+  ],
+  "answer": 0,
+  "explanation": "Ongoing positive experiences lead to repeat purchases (loyalty), often encouraged by CRM programs; loyal customers who are rewarded with additional experiences then recommend the product (advocacy). The third option swaps the two definitions.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-075",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a stage of the customer advocacy funnel?",
+  "options": [
+   "Engagement",
+   "Trial",
+   "Evaluation",
+   "Loyalty"
+  ],
+  "answer": 2,
+  "explanation": "The funnel's seven stages are awareness, interest, engagement, trial, purchase, loyalty, and advocacy. Evaluation belongs to the hierarchy of effects (awareness, interest, evaluation, trial, adoption).",
+  "source": "generated"
+ },
+ {
+  "id": "q12-076",
+  "concept": "c12-advocacy-funnel",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Halifax skincare brand's online quiz and video tutorials attract many active participants, but analytics show few go on to buy because they're unsure the product suits their skin. According to the advocacy funnel, which tactic targets the NEXT stage?",
+  "options": [
+   "Run more display ads to build awareness",
+   "Launch a points program that rewards repeat purchases",
+   "Offer free trial-size samples matched to quiz results",
+   "Give referral rewards to customers who recommend the brand"
+  ],
+  "answer": 2,
+  "explanation": "Customers are already at engagement (participating and interacting), so the next stage is trial; free samples let them test the product before buying. A points program targets loyalty, which only makes sense after people have purchased.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-077",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Ginger Inc. is focusing its communication efforts to build awareness and create demand for its products amongst consumers. Ginger, Inc. is adopting a(n):",
+  "options": [
+   "personal selling strategy",
+   "push strategy",
+   "social network strategy",
+   "pull strategy"
+  ],
+  "answer": 3,
+  "explanation": "A pull strategy focuses communication efforts on ultimate consumers to build awareness, trial, and demand, so consumers pull the product through the channel. A push strategy would aim the effort at distributors, wholesalers, and retailers instead.",
+  "source": "official"
+ },
+ {
+  "id": "q12-078",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "A tech company develops a new smartphone and decides to promote it by offering incentives and training to mobile phone retailers and sales staff. This approach is designed to:",
+  "options": [
+   "Focus communication efforts on ultimate consumers to build awareness, trial, and demand for a product",
+   "Influence the distribution channel to support and sell the product",
+   "Create a direct-to-consumer sales channel",
+   "Build a direct relationship with customers"
+  ],
+  "answer": 1,
+  "explanation": "Incentives and training for retailers and their sales staff are a push strategy: communication aimed at the distribution channel to gain support through listings, sales, merchandising, feature pricing, and inclusion in flyers. The first option describes a pull strategy, which targets consumers.",
+  "source": "official"
+ },
+ {
+  "id": "q12-079",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Harvest Gold Foods offers grocery chains a trade allowance, pays for end-aisle displays, and contributes co-op advertising funds so retailers feature its new soup in their weekly flyers. Harvest Gold is using:",
+  "options": [
+   "a push strategy",
+   "a pull strategy",
+   "inbound communications",
+   "earned media"
+  ],
+  "answer": 0,
+  "explanation": "Trade allowances, merchandising (display) allowances, and co-op advertising funds are trade promotions directed at channel members, which is a push strategy. A pull strategy would aim advertising and consumer promotions at shoppers.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-080",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Lumen Skincare runs Instagram ads, mails free samples to consumers, and places its serum in a popular YouTube beauty series so shoppers start asking pharmacies to stock it. Lumen is using:",
+  "options": [
+   "a push strategy",
+   "a trade promotion strategy",
+   "a pull strategy",
+   "a personal selling strategy"
+  ],
+  "answer": 2,
+  "explanation": "Advertising, consumer promotion, and product placement aimed at end consumers create demand that pulls the product through the channel. A push strategy would target the pharmacies themselves with trade promotions and personal selling.",
+  "source": "generated"
+ }
+]

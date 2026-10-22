@@ -1,0 +1,730 @@
+[
+ {
+  "id": "q11-121",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Before buying a stroller online, Lena chats live with a company representative, emails a question about safety ratings and reads the brand's replies to her comments on Instagram. Which of the six Cs does this illustrate?",
+  "options": [
+   "Control",
+   "Communication",
+   "Cost",
+   "Choice"
+  ],
+  "answer": 1,
+  "explanation": "Communication covers two-way interaction online: email, live chat, reviews and social media. Control is tempting, but Lena's experience centres on exchanging messages with the company, not on deciding alone at her own pace.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-122",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ahmed uses a price-comparison site to find the lowest price on a gaming headset and saves $40 compared with the mall. Which of the six Cs does this illustrate?",
+  "options": [
+   "Cost",
+   "Choice",
+   "Control",
+   "Convenience"
+  ],
+  "answer": 0,
+  "explanation": "Cost refers to lower prices and the ease of comparing them online. Choice is about the breadth of selection, while Ahmed's goal is clearly to save money.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-123",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario BEST illustrates the CONTROL benefit of online shopping rather than CONVENIENCE?",
+  "options": [
+   "Jen orders a birthday gift at midnight because the website never closes",
+   "Tasha shops online from her cottage, hours from the nearest mall",
+   "Ben buys a desk lamp on his phone while riding the bus",
+   "Omar researches laptop specs on several sites over two weeks and decides on his own terms, without a salesperson"
+  ],
+  "answer": 3,
+  "explanation": "Control = empowered consumers who search, evaluate and decide at their own pace and on their own terms. The other three are about WHEN and WHERE someone can shop, which is convenience.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-124",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario illustrates CUSTOMIZATION rather than CHOICE?",
+  "options": [
+   "A shopper browses 3,000 sneaker styles from 50 brands",
+   "A shopper filters a huge catalogue by size to find in-stock styles",
+   "A shopper uses an online fit assistant to pick from hundreds of models",
+   "A shopper designs her own sneakers by picking the colours and materials and adding her initials"
+  ],
+  "answer": 3,
+  "explanation": "Customization tailors the product itself to the individual (like Dell letting buyers choose components). Browsing or filtering a large existing selection, even with help, is the choice benefit.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-125",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the six Cs that explain why consumers shop online?",
+  "options": [
+   "Choice",
+   "Community",
+   "Cost",
+   "Communication"
+  ],
+  "answer": 1,
+  "explanation": "The six Cs are convenience, choice, communication, customization, cost and control. 'Community' sounds plausible, but it is not on the course list.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-126",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the chapter, how do online reviews affect consumers?",
+  "options": [
+   "They make consumers rely more heavily on in-store salespeople",
+   "They create smarter, more informed and more demanding consumers",
+   "They reduce the influence of other people's opinions",
+   "They make consumers less sensitive to price differences"
+  ],
+  "answer": 1,
+  "explanation": "The slides state that reviews create smarter, more informed and demanding consumers, and that influencers' opinions are important. Reviews increase, not reduce, the role of other people's opinions.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-127",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the slides, online retailing allows consumers to do which three things?",
+  "options": [
+   "Browse, negotiate and return",
+   "Advertise, sell and deliver",
+   "Warehouse, transport and finance",
+   "Search, evaluate (compare) and purchase"
+  ],
+  "answer": 3,
+  "explanation": "Online retailing supports search, evaluation (comparison) and purchase. 'Warehouse, transport and finance' are wholesaler functions, not consumer activities.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-128",
+  "concept": "c11-online-six-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "FitWear, an online activewear retailer, finds that visitors leave because they are unsure whether products will suit them and have no one to ask. Which change MOST directly strengthens the COMMUNICATION benefit of shopping online?",
+  "options": [
+   "Cutting prices 15% below competitors",
+   "Adding live chat with fit specialists and showing customer reviews on every product page",
+   "Letting shoppers design their own custom leggings",
+   "Adding hundreds of new styles from other brands"
+  ],
+  "answer": 1,
+  "explanation": "Communication covers two-way interaction (chat, email, reviews, social media), which directly answers 'no one to ask.' The other options strengthen cost, customization and choice, which do not address the communication gap.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-129",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Jimmy's, a multichannel retailer, assists customers to order items that may be out of stock at one of its retail stores. The customers may use the catalogue to place the order. This provision BEST illustrates that Jimmy's:",
+  "options": [
+   "mainly has its retail outlets in the central business district",
+   "recognizes that the Internet is an effective relationship-building medium among different channel operations",
+   "benefits from the synergy of sharing information among its different channel operations",
+   "typically reduces the size of its target markets"
+  ],
+  "answer": 2,
+  "explanation": "Multichannel retailers integrate store and non-store formats (catalogue, online); because the channels share information, a store can fill an out-of-stock order through the catalogue, which is the synergy of sharing information. The Internet option is tempting, but the scenario involves a catalogue and is about channels working together, not the Internet as a relationship medium.",
+  "source": "official"
+ },
+ {
+  "id": "q11-130",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Kai tries on ski boots at a Banff ski shop and gets fitted by the staff, then orders the same boots online from a cheaper seller. This behaviour is called:",
+  "options": [
+   "showrooming",
+   "webrooming",
+   "scrambled merchandising",
+   "telemarketing"
+  ],
+  "answer": 0,
+  "explanation": "Showrooming = examining products in a store, then buying online. Webrooming is the reverse: researching online and then buying in a physical store.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-131",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Danielle reads reviews and compares blender prices online, then drives to a nearby store and buys the model she chose that afternoon. This behaviour is called:",
+  "options": [
+   "showrooming",
+   "automatic vending",
+   "retail positioning",
+   "webrooming"
+  ],
+  "answer": 3,
+  "explanation": "Webrooming = researching online, then buying in store; Danielle is a cross-channel shopper. Showrooming runs in the opposite direction (look in store, buy online).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-132",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes showrooming from webrooming?",
+  "options": [
+   "Showrooming means researching online and buying in a store; webrooming means examining in a store and buying online",
+   "Showrooming is done by retailers; webrooming is done by manufacturers",
+   "Showrooming means examining a product in a store and buying it online; webrooming means researching online and buying in a store",
+   "Both describe consumers who use only a single channel"
+  ],
+  "answer": 2,
+  "explanation": "Both are cross-channel shopping behaviours: showrooming uses the store as a showroom for an online purchase; webrooming uses the web to research an in-store purchase. They are consumer behaviours, and by definition involve more than one channel.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-133",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Retailers that use and integrate a combination of traditional store and non-store formats, such as stores, catalogues and online retailing, are called:",
+  "options": [
+   "multichannel retailers",
+   "category killers",
+   "independent retailers",
+   "drop shippers"
+  ],
+  "answer": 0,
+  "explanation": "Multichannel retailers integrate store and non-store formats to offer a broader spectrum of benefits and experiences. A drop shipper is a limited-service wholesaler, and a category killer is a deep, low-price store format.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-134",
+  "concept": "c11-multichannel-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do many retailers adopt a multichannel strategy?",
+  "options": [
+   "Multiple channels allow them to reduce the size of their target markets",
+   "Integrating channels lets them offer a broader spectrum of benefits and experiences and share information across channel operations",
+   "Multiple channels eliminate the need for any physical stores",
+   "Multiple channels stop consumers from shopping across channels"
+  ],
+  "answer": 1,
+  "explanation": "Using several integrated channels lets retailers reach shoppers in more ways and gain synergy from shared information (as in the Jimmy's example). Shrinking the target market is the distractor from the official question; multichannel retailing typically widens reach.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-135",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Despite fast home delivery, Olivia drives to a store for a new phone charger because she wants to walk out with it right now rather than wait two days. Which reason that face-to-face (F2F) retail is 'not dead yet' does this illustrate?",
+  "options": [
+   "Savings",
+   "Experience",
+   "Decline of middle-market retailers",
+   "Instant gratification"
+  ],
+  "answer": 3,
+  "explanation": "The slides list instant gratification, convenience, experience and savings as reasons F2F retail survives; wanting the item immediately is instant gratification. Nothing in the scenario involves saving money or an in-store experience.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-136",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the 2025 Retail Council of Canada / Adyen survey discussed in class, roughly what share of online shoppers reach checkout and then leave to compare shipping costs and prices on other sites?",
+  "options": [
+   "About 9%",
+   "About one-quarter",
+   "Nearly two-thirds",
+   "Over 95%"
+  ],
+  "answer": 2,
+  "explanation": "Nearly two-thirds of online shoppers make it to checkout and then leave to compare shipping costs and prices, a serious cart-abandonment threat. The 9% figure is the share who use a digital wallet.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-137",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a finding or recommendation from the retail trends survey (Retail Council of Canada / Adyen) discussed in class?",
+  "options": [
+   "Most Canadian shoppers now pay with digital wallets rather than cards",
+   "Nearly two-thirds of online shoppers leave at checkout to compare shipping costs and prices",
+   "Only 9% use a digital wallet; most use debit or credit cards",
+   "Experiential tools such as Instagram storefronts, QR codes and GPS can improve online retailing"
+  ],
+  "answer": 0,
+  "explanation": "Only 9% use a digital wallet and most pay by debit or credit card, so the claim that most use digital wallets is false. The other three statements match the survey slide.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-138",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Pine & Ply, an online furniture retailer, sees many shoppers reach checkout and then leave after seeing shipping costs. Based on the retail trends discussed in class, what threat is this, and what is a sensible response?",
+  "options": [
+   "Showrooming; open more physical stores in power centres",
+   "Shrinkage; add security tags to inventory",
+   "Cart abandonment as shoppers leave to compare shipping and prices elsewhere; show competitive, transparent shipping costs early",
+   "Intertype competition; add unrelated product lines"
+  ],
+  "answer": 2,
+  "explanation": "The survey found nearly two-thirds of online shoppers reach checkout, then leave to compare shipping costs and prices, so competitive, transparent shipping directly addresses the threat. Shrinkage is loss from theft, breakage and errors, which has nothing to do with abandoned carts.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-139",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Marco leaves a store without buying because the checkout line was 20 minutes long and the jacket he wanted was out of stock. Which point about the modern retail environment does this illustrate?",
+  "options": [
+   "Consumers dislike long lines, poor customer service and stock-outs",
+   "The decline of middle-market retailers",
+   "The growth of social media purchasing",
+   "Retail optimization through technology"
+  ],
+  "answer": 0,
+  "explanation": "The slides note that consumers dislike long lines, poor customer service and stock-outs, exactly what drove Marco away. The decline of middle-market retailers describes a market-wide squeeze on mid-priced chains, not one shopper's bad visit.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-140",
+  "concept": "c11-modern-retail-environment",
+  "also": [
+   "c11-wheel-of-retailing"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Mid-priced chains that are neither the cheapest option nor a premium experience are closing stores, while discounters and luxury retailers grow. Which modern retail trend does this describe?",
+  "options": [
+   "The wheel of retailing",
+   "Decline of middle-market retailers",
+   "Scrambled merchandising",
+   "Showrooming"
+  ],
+  "answer": 1,
+  "explanation": "The slides list the decline of middle-market retailers as a feature of today's environment, as shoppers gravitate to either low prices or high-value experiences. The wheel of retailing describes how a single low-price entrant trades up over time, not a squeeze on the middle of the market.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-141",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the chapter recommend experiential or interactive online features such as Instagram storefronts, QR codes and GPS tools?",
+  "options": [
+   "To improve the online retailing experience and engage shoppers",
+   "To reduce the retailer's breadth of product line",
+   "To eliminate the need for debit and credit cards",
+   "To avoid holding inventory, as drop shippers do"
+  ],
+  "answer": 0,
+  "explanation": "The survey slide suggests improving online retailing through experiential or interactive activities such as online social shopping (Instagram storefronts), QR codes and GPS. These tools engage shoppers; they do not change the product line or replace card payments (most shoppers still use debit or credit).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-142",
+  "concept": "c11-modern-retail-environment",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A small Edmonton boutique uses Shopify to sync inventory across its store, website and Instagram shop, so a customer can buy a sweater from an Instagram post and pick it up in store. Which modern retail theme does this BEST illustrate?",
+  "options": [
+   "Off-price retailing",
+   "The wheel of retailing",
+   "Technology-driven retail optimization supporting omnichannel and social media purchasing",
+   "Scrambled merchandising"
+  ],
+  "answer": 2,
+  "explanation": "The slides highlight omnichannel and social media purchasing, the role of technology and retail optimization (Shopify is the course example). Nothing here involves selling brand names below regular prices (off-price) or adding unrelated lines (scrambled merchandising).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-143",
+  "concept": "c11-wheel-of-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The wheel of retailing describes how:",
+  "options": [
+   "retail outlets pass through early growth, accelerated development, maturity and decline",
+   "very dissimilar types of retail outlets compete for the same customers",
+   "new retail forms enter as low-status, low-margin, low-price outlets, gradually add services and raise prices, and leave room for new low-price entrants",
+   "retailers move from narrow product lines to broad ones"
+  ],
+  "answer": 2,
+  "explanation": "That is the wheel of retailing. The first distractor describes the retail life cycle, the most commonly confused concept, and the second describes intertype competition.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-144",
+  "concept": "c11-wheel-of-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "QuickBurger began as a cheap walk-up burger stand. Over 30 years it added seating, drive-thrus, salads, premium coffee and renovated dining rooms, and its prices rose. Now no-frills food trucks undercut it on price. This pattern illustrates:",
+  "options": [
+   "the retail life cycle",
+   "scrambled merchandising",
+   "intertype competition",
+   "the wheel of retailing"
+  ],
+  "answer": 3,
+  "explanation": "Entering at low prices, trading up with services and higher prices, then being undercut by new low-price entrants is the wheel of retailing (the course's McDonald's example). The retail life cycle tracks the growth and decline of a format, not this trade-up-and-replace pattern.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-145",
+  "concept": "c11-wheel-of-retailing",
+  "also": [
+   "c11-retail-life-cycle"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which observation fits the wheel of retailing rather than the retail life cycle?",
+  "options": [
+   "A retail format's market share rises quickly, levels off and then falls",
+   "A format moves from early growth into accelerated development",
+   "Video-rental stores grow, mature and eventually close as streaming arrives",
+   "A discount chain upgrades its stores and services and raises prices, opening a gap for new low-price competitors"
+  ],
+  "answer": 3,
+  "explanation": "The wheel is about trading UP in price, status and service, which creates room for new low-price entrants. Growth, levelling off and decline over time are stages of the retail life cycle.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-146",
+  "concept": "c11-wheel-of-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In the wheel of retailing, what happens immediately after a new retailer enters the market as a low-status, low-margin, low-price outlet?",
+  "options": [
+   "It gradually adds services and upgrades its facilities, raising prices and status",
+   "New low-price retailers enter beneath it",
+   "It cuts services further to become a hard discounter",
+   "It enters the decline stage"
+  ],
+  "answer": 0,
+  "explanation": "The sequence is: enter at low prices, then trade up (add services, raise prices and status), which leaves a gap that new low-price entrants fill. New entrants come only AFTER the incumbent has traded up.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-147",
+  "concept": "c11-wheel-of-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "According to the wheel of retailing, why do opportunities keep opening up for new discount retailers?",
+  "options": [
+   "Established retailers trade up by adding services and raising prices, leaving a low-price gap",
+   "Consumers eventually refuse to shop at full-service stores",
+   "Category killers are forced out by regulation",
+   "Markups shrink to zero as retailers mature"
+  ],
+  "answer": 0,
+  "explanation": "As incumbents add services and raise prices and status, they abandon the low-price position, and new low-margin entrants step into that gap. The other options are not part of the wheel concept.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-148",
+  "concept": "c11-retail-life-cycle",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The retail life cycle refers to:",
+  "options": [
+   "new retail forms entering as low-price outlets and gradually trading up",
+   "the process of growth and decline that retail outlets, like products, experience",
+   "the steps a shopper follows from search to purchase",
+   "the sequence of functions a wholesaler performs"
+  ],
+  "answer": 1,
+  "explanation": "The retail life cycle applies life-cycle thinking to retail outlets: they grow and then decline. Entering at low prices and trading up describes the wheel of retailing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-149",
+  "concept": "c11-retail-life-cycle",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "What is the correct sequence of the retail life cycle stages?",
+  "options": [
+   "Introduction, growth, maturity, decline",
+   "Early growth, accelerated development, maturity, decline",
+   "Accelerated development, early growth, maturity, decline",
+   "Early growth, maturity, accelerated development, decline"
+  ],
+  "answer": 1,
+  "explanation": "The retail life cycle runs early growth, accelerated development, maturity, then decline. 'Introduction, growth, maturity, decline' is the PRODUCT life cycle, a common trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-150",
+  "concept": "c11-retail-life-cycle",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Video-rental chains spread rapidly in the 1980s and 1990s, peaked, then saw market share and profits collapse as streaming arrived, and most stores closed. This pattern best illustrates:",
+  "options": [
+   "the wheel of retailing",
+   "scrambled merchandising",
+   "intertype competition",
+   "the retail life cycle"
+  ],
+  "answer": 3,
+  "explanation": "A retail format growing, maturing and declining over time is the retail life cycle. Nothing here involves trading up in price and service, which is the wheel of retailing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-151",
+  "concept": "c11-retail-life-cycle",
+  "also": [
+   "c11-wheel-of-retailing"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly contrasts the retail life cycle with the wheel of retailing?",
+  "options": [
+   "The retail life cycle explains how low-price entrants trade up; the wheel of retailing tracks a format's growth and decline",
+   "The retail life cycle tracks a format's growth and decline over time; the wheel of retailing explains how low-price entrants trade up and get replaced",
+   "Both describe how individual consumers move from search to purchase",
+   "Both apply only to wholesalers, not retailers"
+  ],
+  "answer": 1,
+  "explanation": "Life cycle = stages of growth and decline (early growth, accelerated development, maturity, decline). Wheel = the price and status trade-up dynamic that leaves room for new discounters. The reversed option swaps them.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-152",
+  "concept": "c11-retail-life-cycle",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a stage of the retail life cycle?",
+  "options": [
+   "Early growth",
+   "Accelerated development",
+   "Maturity",
+   "Introduction"
+  ],
+  "answer": 3,
+  "explanation": "The retail life cycle stages are early growth, accelerated development, maturity and decline. 'Introduction' is the first stage of the product life cycle, not the retail life cycle.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-153",
+  "concept": "c11-wholesaling",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ includes all the activities in selling goods or services to those who buy for resale or business use.",
+  "options": [
+   "Wholesaling",
+   "Retailing",
+   "Shopper marketing",
+   "Non-store retailing"
+  ],
+  "answer": 0,
+  "explanation": "Wholesaling is defined by the buyer's purpose: resale or business use. Retailing sells to ultimate consumers for personal, family or household use.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-154",
+  "concept": "c11-wholesaling",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Canuck Office Supply sells pallets of copy paper, toner and office furniture to schools, hospitals and law firms for use in their operations. Canuck Office Supply is engaged in:",
+  "options": [
+   "wholesaling",
+   "retailing",
+   "direct selling",
+   "telemarketing"
+  ],
+  "answer": 0,
+  "explanation": "Selling to organizations that buy for business use is wholesaling, even though the schools and hospitals are the final users. Retailing requires ultimate consumers buying for personal, family or household use.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-155",
+  "concept": "c11-wholesaling",
+  "also": [
+   "c11-retailing"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which purchase is wholesaling rather than retailing?",
+  "options": [
+   "A parent buying latex gloves for household cleaning",
+   "A dentist buying boxes of latex gloves for her clinic",
+   "A student buying winter gloves for a ski trip",
+   "A retiree renting a snowblower to clear his driveway"
+  ],
+  "answer": 1,
+  "explanation": "The dentist buys for business use, which makes the sale wholesaling. The other buyers are ultimate consumers buying or renting for personal or household use, which is retailing even when the item is the same (gloves).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-156",
+  "concept": "c11-wholesaling",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the three main categories of wholesalers in the course figure?",
+  "options": [
+   "Merchant wholesalers",
+   "Agents and brokers",
+   "Manufacturer's branches and offices",
+   "Retailer-sponsored cooperatives"
+  ],
+  "answer": 3,
+  "explanation": "The figure's three categories are merchant wholesalers, agents and brokers, and manufacturer's branches and offices. Retailer-sponsored cooperatives are a type of contractual retail system (e.g., Home Hardware).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-157",
+  "concept": "c11-wholesaling",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What ultimately determines whether a sale is classified as wholesaling or retailing?",
+  "options": [
+   "The size of the order",
+   "The buyer's purpose: resale or business use versus personal, family or household use",
+   "Whether the seller operates a physical store",
+   "Whether the price is above or below the regular price"
+  ],
+  "answer": 1,
+  "explanation": "The definitions hinge on why the buyer purchases: resale or business use = wholesaling; personal, family or household use = retailing. A large order by a family is still retailing, and many retailers sell without stores.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-158",
+  "concept": "c11-merchant-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Merchant wholesalers are independently owned firms that:",
+  "options": [
+   "never take title and earn commissions on sales",
+   "take title to the merchandise they handle",
+   "are owned and operated by the manufacturer",
+   "only bring buyers and sellers together for single transactions"
+  ],
+  "answer": 1,
+  "explanation": "Taking title (ownership) is the defining feature of merchant wholesalers. Agents and brokers do not take title and earn commissions; manufacturer's branches and offices are owned by the manufacturer.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-159",
+  "concept": "c11-merchant-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Western Supply Co. carries a broad range of products (hardware, cleaning supplies, small appliances and toys) with only a few items in each line. It buys and owns the goods and offers credit, delivery and sales support to small retailers. Western Supply is a:",
+  "options": [
+   "specialty merchandise wholesaler",
+   "rack jobber",
+   "selling agent",
+   "general merchandise wholesaler"
+  ],
+  "answer": 3,
+  "explanation": "A full-service merchant wholesaler carrying a broad range with little depth is a general merchandise wholesaler. A specialty merchandise wholesaler does the opposite: a narrow range with a deep assortment.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-160",
+  "concept": "c11-merchant-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Pacific Seafood Distributors carries only seafood but offers an extremely deep assortment of fresh, frozen and specialty fish. It owns its stock and provides credit, delivery and merchandising advice to restaurants and grocers. It is a:",
+  "options": [
+   "general merchandise wholesaler",
+   "truck jobber",
+   "broker",
+   "specialty merchandise wholesaler"
+  ],
+  "answer": 3,
+  "explanation": "A narrow range with a deep assortment, plus full services, marks a specialty merchandise wholesaler. A truck jobber also sells perishables, but it is a limited-service wholesaler selling for cash from a truck, not offering credit and advice.",
+  "source": "generated"
+ }
+]

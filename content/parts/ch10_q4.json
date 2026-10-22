@@ -1,0 +1,730 @@
+[
+ {
+  "id": "q10-121",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Crispy Crunch Snacks pays retailers a $2 bonus for every case sold above target and funds their in-store displays. Which source of channel power is it using?",
+  "options": [
+   "Coercive power",
+   "Expert power",
+   "Reward power",
+   "Legitimate power"
+  ],
+  "answer": 2,
+  "explanation": "Reward power uses incentives such as bonuses, allowances and display funding to gain cooperation. Coercive power would threaten a penalty instead.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-122",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Boutiques across Canada compete to carry LuxeNord parkas because being associated with the prestigious brand enhances their own image. LuxeNord's influence over these retailers is mainly:",
+  "options": [
+   "referent power",
+   "expert power",
+   "reward power",
+   "legitimate power"
+  ],
+  "answer": 0,
+  "explanation": "Referent power exists when other members want to be identified with a respected or admired channel member. Expert power would come from specialized knowledge, which is not why these boutiques cooperate.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-123",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Resellers of DataForge's enterprise software follow its recommendations closely because DataForge has unmatched technical knowledge of how to configure the system. Which power source is this?",
+  "options": [
+   "Referent power",
+   "Coercive power",
+   "Reward power",
+   "Expert power"
+  ],
+  "answer": 3,
+  "explanation": "Expert power comes from specialized knowledge that others value. Referent power is about wanting to be associated with an admired brand, not about relying on its know-how.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-124",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "fill",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A franchisee that follows head office's pricing rules because its signed franchise agreement gives head office that authority is responding to _____ power, whereas a boutique that cooperates because it admires a designer's brand is responding to _____ power.",
+  "options": [
+   "coercive; reward",
+   "expert; legitimate",
+   "legitimate; referent",
+   "reward; coercive"
+  ],
+  "answer": 2,
+  "explanation": "Legitimate power is authority that comes from position or contract (the franchise agreement). Referent power is the desire to be identified with an admired member. Coercive power would require a threat, which neither case involves.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-125",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A channel member that coordinates, directs and supports other channel members is called a(n):",
+  "options": [
+   "channel captain",
+   "agent",
+   "middleman",
+   "third-party logistics provider"
+  ],
+  "answer": 0,
+  "explanation": "That is the definition of a channel captain, which can be a producer, wholesaler or retailer. 'Middleman' is just another name for any intermediary.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-126",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the channel captain is NOT correct?",
+  "options": [
+   "It coordinates, directs and supports other channel members",
+   "It must always be the manufacturer of the product",
+   "It can be a producer, a wholesaler or a retailer",
+   "Walmart is an example of a retailer acting as a channel captain"
+  ],
+  "answer": 1,
+  "explanation": "The channel captain can be any member with the power to lead: producer, wholesaler or retailer (Walmart is the classic retailer example). Assuming it must be the manufacturer is the trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-127",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Northern Lights Cosmetics is reviewing its retail partners at year-end. Which set of criteria matches the chapter's guidance for evaluating channel members?",
+  "options": [
+   "Cost, time, capability, dependability, accessibility and frequency of each partner's deliveries",
+   "Geographic concentration, number of customers, type of market and the partner's order size",
+   "Sales, inventory levels, treatment of damaged or lost goods, customer service and promotional cooperation",
+   "Information, convenience, variety and pre- and post-sale services offered to buyers"
+  ],
+  "answer": 2,
+  "explanation": "Channel members are evaluated on sales, inventory levels, treatment of damaged or lost goods, and other factors like customer service and cooperation in promotion. The distractors are the transportation criteria, the market factors and the buyer requirements.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-128",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ arises when one channel member believes another channel member is engaged in behaviour that prevents it from achieving its goals.",
+  "options": [
+   "Disintermediation",
+   "Disintegration",
+   "Channel designing",
+   "Channel conflict"
+  ],
+  "answer": 3,
+  "explanation": "This is the definition of channel conflict. Disintermediation is one specific cause of conflict (bypassing a member), not the general term.",
+  "source": "official"
+ },
+ {
+  "id": "q10-129",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Tez, an energy drink brand, has a disagreement with one of the major wholesalers of its products over the price of its drinks. What kind of conflict is reflected in this scenario?",
+  "options": [
+   "Disintermediation",
+   "Vertical conflict",
+   "Horizontal conflict",
+   "Selective conflict"
+  ],
+  "answer": 1,
+  "explanation": "Vertical conflict occurs between different levels of a marketing channel, here a producer and its wholesaler. It is not disintermediation, because Tez is not bypassing the wholesaler, and not horizontal conflict, which would be between two wholesalers.",
+  "source": "official"
+ },
+ {
+  "id": "q10-130",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Two Edmonton dealerships that both sell Kodiak trucks accuse each other of advertising in each other's territory and undercutting prices. This is:",
+  "options": [
+   "vertical conflict",
+   "disintermediation",
+   "dual distribution",
+   "horizontal conflict"
+  ],
+  "answer": 3,
+  "explanation": "Horizontal conflict occurs between intermediaries at the same level of the channel, such as two dealers of the same brand. Vertical conflict would be between Kodiak and one of its dealers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-131",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "Which statement correctly contrasts vertical and horizontal channel conflict?",
+  "options": [
+   "Vertical conflict occurs between different levels of a channel; horizontal conflict occurs between intermediaries at the same level",
+   "Vertical conflict occurs between competitors; horizontal conflict occurs between a manufacturer and its retailers",
+   "Vertical conflict happens only online; horizontal conflict happens only in stores",
+   "Vertical conflict involves only agents; horizontal conflict involves only wholesalers"
+  ],
+  "answer": 0,
+  "explanation": "Vertical = up and down the channel (e.g., manufacturer vs wholesaler or retailer); horizontal = side by side (e.g., two retailers of the same brand). The first distractor reverses the two definitions.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-132",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Kodiak's head office learns that two of its Halifax dealers are fighting over customers because their sales territories overlap. Which action best addresses this horizontal conflict?",
+  "options": [
+   "Bypassing both dealers to sell only through its own website",
+   "Clearly defining and enforcing each dealer's sales territory",
+   "Raising the wholesale price to both dealers",
+   "Adding a third dealer in the same overlapping area"
+  ],
+  "answer": 1,
+  "explanation": "The conflict is between members at the same level over territory, so clarifying territories removes its cause. Bypassing the dealers would create vertical conflict (disintermediation), and adding another dealer would intensify the overlap.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-133",
+  "concept": "c10-channel-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of vertical conflict?",
+  "options": [
+   "A manufacturer and its wholesaler disagree over price",
+   "A manufacturer bypasses its retailers to sell directly to consumers",
+   "Two retailers of the same brand fight over the same territory",
+   "A manufacturer squeezes its retailers' margins"
+  ],
+  "answer": 2,
+  "explanation": "Two retailers at the same level is horizontal conflict. The others pit members at different levels against each other; bypassing retailers is disintermediation, a form of vertical conflict.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-134",
+  "concept": "c10-disintermediation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Lakeshore Mattress has always sold through furniture retailers. It now launches a website that ships mattresses straight to consumers at lower prices, and its retailers protest. What is the specific term for what Lakeshore is doing?",
+  "options": [
+   "Disintermediation",
+   "Horizontal conflict",
+   "Strategic channel alliance",
+   "Selective distribution"
+  ],
+  "answer": 0,
+  "explanation": "Disintermediation occurs when a channel member bypasses another member and sells directly. It sparks conflict between levels (manufacturer vs retailers), so it is not horizontal conflict, which occurs between members at the same level.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-135",
+  "concept": "c10-disintermediation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Channel conflict that arises when a channel member bypasses another member and sells or buys products directly from others is called:",
+  "options": [
+   "dual distribution",
+   "disintermediation",
+   "backward integration",
+   "horizontal conflict"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of disintermediation. Backward integration involves owning an upstream supplier, not simply bypassing an intermediary.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-136",
+  "concept": "c10-disintermediation",
+  "also": [
+   "c10-channel-conflict"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Disintermediation is best classified as a form of:",
+  "options": [
+   "horizontal conflict, because it involves intermediaries at the same level",
+   "strategic channel alliance, because firms share a channel",
+   "administered VMS, because one member dominates the others",
+   "vertical conflict, because it involves members at different levels when one bypasses another"
+  ],
+  "answer": 3,
+  "explanation": "When a producer bypasses its retailers (or a buyer bypasses its distributor), the conflict is between different channel levels, so disintermediation is a type of vertical conflict.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-137",
+  "concept": "c10-disintermediation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Urban Plate, a large Toronto restaurant group, stops buying produce through its foodservice distributor and begins buying directly from Ontario farms. It does not own any farms. The distributor is upset. This is:",
+  "options": [
+   "disintermediation",
+   "horizontal conflict",
+   "backward integration",
+   "a strategic channel alliance"
+  ],
+  "answer": 0,
+  "explanation": "Disintermediation covers bypassing a member to BUY directly as well as to sell directly. It is not backward integration, because Urban Plate is buying from the farms, not owning them.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-138",
+  "concept": "c10-disintermediation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about disintermediation is NOT correct?",
+  "options": [
+   "It can occur when a manufacturer sells directly online, bypassing retailers",
+   "It can create conflict with the intermediary that is bypassed",
+   "It can occur on the buying side, when a buyer bypasses its distributor",
+   "It eliminates the channel functions the bypassed intermediary used to perform"
+  ],
+  "answer": 3,
+  "explanation": "Bypassing an intermediary removes the member, not the functions: storing, transporting, selling and financing must still be done by someone. The other statements are accurate.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-139",
+  "concept": "c10-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Activities that focus on getting the right amount of the right products to the right place at the right time at the lowest possible cost are called:",
+  "options": [
+   "supply chain management",
+   "logistics",
+   "the marketing channel",
+   "reverse logistics"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of logistics. Supply chain management is broader: it integrates information AND logistics activities across all firms in the chain.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-140",
+  "concept": "c10-logistics",
+  "also": [
+   "c10-scm"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does logistics differ from supply chain management?",
+  "options": [
+   "Logistics covers raw-material suppliers, while SCM covers only activities inside the producer's own warehouse",
+   "Logistics is mainly about promotion decisions, while SCM is mainly about pricing decisions in the channel",
+   "Logistics manages the flow of goods at lowest cost; SCM integrates information and logistics across all firms in the chain",
+   "The two terms are interchangeable, since both describe moving goods from producers to consumers"
+  ],
+  "answer": 2,
+  "explanation": "Logistics is the movement-of-goods piece; SCM integrates information and logistics across suppliers, the producer and the marketing channel. The first distractor reverses their scope.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-141",
+  "concept": "c10-logistics",
+  "also": [
+   "c10-transportation"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Boreal Books switches its shipping from rail to air. Transportation costs rise by $40,000 a year, but faster delivery lets it cut inventory costs by $55,000 and stockout costs by $10,000. What is the change in total logistics cost?",
+  "options": [
+   "An increase of $40,000",
+   "A decrease of $65,000",
+   "An increase of $15,000",
+   "A decrease of $25,000"
+  ],
+  "answer": 3,
+  "explanation": "Change in total logistics cost = +$40,000 - $55,000 - $10,000 = -$25,000. Looking only at transportation (+$40,000) ignores the trade-offs, and -$65,000 forgets to offset the higher transportation cost.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-142",
+  "concept": "c10-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do logistics managers focus on TOTAL logistics cost rather than minimizing each cost separately?",
+  "options": [
+   "Total cost is always lowest when each separate cost is minimized on its own",
+   "Customer service levels have no effect on any of the logistics costs",
+   "Costs trade off: cheaper, slower transport can raise inventory and stockout costs",
+   "Only transportation costs matter when evaluating logistics decisions"
+  ],
+  "answer": 2,
+  "explanation": "Total logistics cost covers transportation, materials handling and warehousing, inventory, stockouts, order processing and return goods handling, and these move against each other. Minimizing one in isolation often raises the total.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-143",
+  "concept": "c10-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Cascade Office Supply promises that orders placed by 2 p.m. arrive the next business day, and it keeps that promise on 99% of orders. The 99% figure measures which customer service factor?",
+  "options": [
+   "Dependability",
+   "Time",
+   "Communication",
+   "Convenience"
+  ],
+  "answer": 0,
+  "explanation": "Dependability is the consistency of service, meaning delivering as promised. Time (order cycle or lead time) is the next-day promise itself; the 99% describes how reliably that promise is met.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-144",
+  "concept": "c10-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which is NOT a component of total logistics cost?",
+  "options": [
+   "Inventory",
+   "Advertising",
+   "Stockouts",
+   "Return goods handling"
+  ],
+  "answer": 1,
+  "explanation": "Total logistics cost includes transportation, materials handling and warehousing, inventory, stockouts, order processing and return goods handling. Advertising is a promotion cost, not a logistics cost.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-145",
+  "concept": "c10-logistics",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT one of the four key logistics functions in a supply chain shown in the chapter?",
+  "options": [
+   "Transportation",
+   "Order processing",
+   "Market segmentation",
+   "Warehousing"
+  ],
+  "answer": 2,
+  "explanation": "The four key logistics functions are transportation, order processing, inventory management and warehousing. Market segmentation is a targeting decision, not a logistics function.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-146",
+  "concept": "c10-scm",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The integration and organization of information and logistics activities across firms in a supply chain, for the purpose of creating and delivering goods and services that provide value to consumers, is:",
+  "options": [
+   "logistics",
+   "supply chain management",
+   "a vertical marketing system",
+   "multichannel marketing"
+  ],
+  "answer": 1,
+  "explanation": "This is the definition of supply chain management. Logistics alone is the narrower activity of getting the right products to the right place at the right time at the lowest cost.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-147",
+  "concept": "c10-scm",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "For a car manufacturer, the steel mills and parts makers that supply it belong to the _____, while the dealers that sell its cars belong to the _____ (Figure 10-9).",
+  "options": [
+   "supplier network; marketing channel",
+   "marketing channel; supplier network",
+   "marketing channel; reverse logistics network",
+   "supplier network; horizontal marketing system"
+  ],
+  "answer": 0,
+  "explanation": "Figure 10-9: the supplier network is all parties supplying raw materials and parts; the marketing channel is all parties distributing and promoting the product. Together they make up the supply chain.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-148",
+  "concept": "c10-scm",
+  "also": [
+   "c10-marketing-channel"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement about the supply chain and the marketing channel is correct?",
+  "options": [
+   "The marketing channel is broader: it includes the supply chain plus promotion",
+   "The supply chain includes only raw-material suppliers, not distributors",
+   "The two terms are interchangeable",
+   "The supply chain is broader: it includes the supplier network as well as the marketing channel"
+  ],
+  "answer": 3,
+  "explanation": "A supply chain runs from suppliers through the producer to consumers, so it contains the marketing channel as its downstream part. The marketing channel does not include upstream suppliers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-149",
+  "concept": "c10-scm",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "The chapter says a firm must harmonize its supply chain with its marketing strategy. What does this mean in practice?",
+  "options": [
+   "Always minimize supply chain cost, whatever the firm's chosen marketing strategy",
+   "Change the marketing strategy to fit whatever supply chain the firm already has",
+   "Design the supply chain to deliver what the target market values, such as speed or low cost",
+   "Leave all supply chain decisions to suppliers so marketing can focus on promotion"
+  ],
+  "answer": 2,
+  "explanation": "Supply chain management exists to create and deliver value to consumers, so its design must support the chosen marketing strategy. Always minimizing cost could undercut a strategy built on fast, reliable service.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-150",
+  "concept": "c10-scm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Glacier Bikes sets up shared demand forecasts, real-time inventory data and coordinated production schedules with its tire and frame suppliers, its own plants and the retailers that sell its bikes. This is an example of:",
+  "options": [
+   "supply chain management",
+   "dual distribution",
+   "multichannel marketing",
+   "a horizontal marketing system"
+  ],
+  "answer": 0,
+  "explanation": "Integrating information and logistics activities across suppliers, the producer and channel members is supply chain management. Multichannel marketing concerns blending communication and delivery channels toward consumers, not coordinating suppliers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-151",
+  "concept": "c10-transportation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT one of the criteria used to evaluate transportation alternatives?",
+  "options": [
+   "Cost",
+   "Dependability",
+   "Accessibility",
+   "Perishability"
+  ],
+  "answer": 3,
+  "explanation": "The six transportation criteria are cost, time, capability, dependability, accessibility and frequency. Perishability is a product factor affecting channel choice, not a transportation criterion.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-152",
+  "concept": "c10-transportation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Polar Pharma must move vaccines that need to stay at -20 C, so it only considers carriers with refrigerated equipment. Which transportation criterion is it focusing on?",
+  "options": [
+   "Frequency",
+   "Capability",
+   "Accessibility",
+   "Cost"
+  ],
+  "answer": 1,
+  "explanation": "Capability is the ability of a mode or carrier to provide the equipment and conditions needed to move a particular kind of good, such as refrigeration. Accessibility is about whether the carrier's routes reach the needed locations.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-153",
+  "concept": "c10-transportation",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Emerald Gems must ship small, very high-value diamond parcels from Yellowknife to Toronto as quickly as possible. Which transportation mode fits best?",
+  "options": [
+   "Water",
+   "Pipeline",
+   "Air",
+   "Rail"
+  ],
+  "answer": 2,
+  "explanation": "Air is the fastest mode and, despite its high cost, suits small, high-value, urgent shipments. Water and rail are slower modes suited to bulky goods, and pipelines carry only liquids and gases.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-154",
+  "concept": "c10-transportation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement about transportation criteria is correct?",
+  "options": [
+   "Frequency is the reliability of delivery; dependability is how often shipments can be scheduled",
+   "Frequency is how often shipments can be scheduled; dependability is reliable, on-time, damage-free delivery",
+   "Accessibility is the price the carrier charges; cost is the set of routes the carrier serves",
+   "Capability is the speed of delivery; time is the availability of special equipment such as refrigeration"
+  ],
+  "answer": 1,
+  "explanation": "Frequency = how often pickups or shipments can be scheduled; dependability = consistency of on-time, damage-free service. The distractors swap pairs of criteria, a common exam trick.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-155",
+  "concept": "c10-transportation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Combining transportation modes, for example moving truck trailers on railway flatcars, is called:",
+  "options": [
+   "cross-docking",
+   "pipeline transportation",
+   "electronic data interchange",
+   "intermodal transportation"
+  ],
+  "answer": 3,
+  "explanation": "Intermodal transportation combines two or more modes to gain the advantages of each. Cross-docking is a warehousing practice, not a transportation mode.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-156",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "TrackMart's suppliers supply less merchandise on a more frequent basis. This is called a _____ inventory system.",
+  "options": [
+   "facilitating",
+   "transactional",
+   "time utility",
+   "just-in-time"
+  ],
+  "answer": 3,
+  "explanation": "A just-in-time (JIT) inventory system delivers less merchandise on a more frequent basis than traditional systems, keeping inventories very low. Facilitating and transactional are channel function families, and time utility is a type of value, not an inventory system.",
+  "source": "official"
+ },
+ {
+  "id": "q10-157",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Shoreline Pharmacy lets its main supplier monitor its sales data, decide how much of each product to restock, and ship replacements automatically. This is:",
+  "options": [
+   "vendor-managed inventory",
+   "just-in-time inventory",
+   "cross-docking",
+   "electronic data interchange"
+  ],
+  "answer": 0,
+  "explanation": "In vendor-managed inventory (VMI) the supplier determines the product amount and assortment a customer needs and automatically delivers it. JIT is about small, frequent deliveries; it does not require the supplier to make the reorder decision.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-158",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Big North Hardware's computers send purchase orders to, and receive invoices from, its suppliers' computers with no paper forms. This order-processing technology is:",
+  "options": [
+   "vendor-managed inventory",
+   "efficient consumer response",
+   "third-party logistics",
+   "electronic data interchange (EDI)"
+  ],
+  "answer": 3,
+  "explanation": "EDI links computers in different firms to transmit documents such as purchase orders and invoices electronically, speeding up order processing. VMI goes further by handing the reorder decision to the supplier.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-159",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the key difference between just-in-time (JIT) and vendor-managed inventory (VMI)?",
+  "options": [
+   "JIT keeps stock very low with small, frequent deliveries; under VMI the supplier decides what to restock and sends it",
+   "JIT hands reorder decisions to the supplier, while VMI requires the customer to hold large safety stocks",
+   "JIT is a warehousing method with no storage time, while VMI is a mode of transportation",
+   "They are identical inventory systems that simply go by two different names"
+  ],
+  "answer": 0,
+  "explanation": "JIT is defined by low inventory and frequent delivery; VMI is defined by who decides, namely the vendor. 'Warehousing with no storage' describes cross-docking, not JIT.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-160",
+  "concept": "c10-order-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Inventory management systems designed to reduce a retailer's lead time for receiving merchandise, thereby lowering its inventory investment and improving customer service, are known as:",
+  "options": [
+   "reverse logistics and recycling programs",
+   "selective distribution systems for retailers",
+   "efficient consumer response or quick response systems",
+   "cross-docking warehouse operations"
+  ],
+  "answer": 2,
+  "explanation": "ECR/QR systems shorten the retailer's lead time so it can carry less inventory while keeping shelves stocked. Cross-docking is a warehousing technique that may support them, but it is not the name of the inventory system.",
+  "source": "generated"
+ }
+]

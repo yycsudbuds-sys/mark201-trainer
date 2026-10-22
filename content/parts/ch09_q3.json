@@ -1,0 +1,625 @@
+[
+ {
+  "id": "q09-069",
+  "concept": "c09-four-approaches",
+  "also": [
+   "c09-target-pricing",
+   "c09-target-profit"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Target pricing and target profit pricing sound alike. Which statement correctly places them in Figure 9-2?",
+  "options": [
+   "Both are profit-oriented",
+   "Target pricing is demand-oriented; target profit pricing is profit-oriented",
+   "Target pricing is cost-oriented; target profit pricing is demand-oriented",
+   "Both are demand-oriented"
+  ],
+  "answer": 1,
+  "explanation": "Target pricing starts with the price consumers will pay and works backward, so it is demand-oriented. Target profit pricing solves for the price that yields a specific dollar profit, so it is profit-oriented, along with target return on sales and target ROI.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-070",
+  "concept": "c09-four-approaches",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ approaches to pricing emphasize factors underlying expected customer tastes and preferences.",
+  "options": [
+   "Demand-oriented",
+   "Cost-oriented",
+   "Profit-oriented",
+   "Competition-oriented"
+  ],
+  "answer": 0,
+  "explanation": "Demand-oriented approaches (skimming, penetration, prestige, odd-even, target, bundle, yield management) weigh customer tastes and preferences. Competition-oriented approaches instead focus on what competitors are doing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-071",
+  "concept": "c09-four-approaches",
+  "also": [
+   "c09-final-price-steps"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does Figure 9-2 describe its four groups of approaches as ways to select only an APPROXIMATE price level?",
+  "options": [
+   "Because the Competition Bureau must approve the final price",
+   "Because the list price, special adjustments and ongoing monitoring still refine the price",
+   "Because the approaches apply only to new products",
+   "Because costs cannot be known until the product is sold"
+  ],
+  "answer": 1,
+  "explanation": "Selecting an approximate price level is only Step 1. The firm still sets the list or quoted price (Step 2), makes special adjustments such as discounts, allowances and geographic adjustments (Step 3), and monitors and adjusts prices (Step 4). No regulator approves ordinary prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-072",
+  "concept": "c09-skimming",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "The manufacturer of a new variety of fat-free ice cream needs to determine a pricing strategy for its new product. Which of the following conditions would suggest using a skimming pricing strategy for the tasty fat-free ice cream?",
+  "options": [
+   "The ice cream market is highly conservative",
+   "A large portion of the market has inelastic demand for fat-free ice cream, over a fairly broad range of prices",
+   "Economies of scale in production are substantial",
+   "Retailers are willing to pay for new brands of premium ice cream in an extremely overcrowded category"
+  ],
+  "answer": 1,
+  "explanation": "Skimming works when enough customers are price-insensitive - inelastic demand over a broad range of prices - because they weigh the new product's price, quality and ability to satisfy their needs against substitutes. Substantial economies of scale favour PENETRATION pricing, since lower unit costs reward high volume.",
+  "source": "official"
+ },
+ {
+  "id": "q09-073",
+  "concept": "c09-skimming",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "H&G Co. Ltd. has used a high initial price for its newly launched cellphones. The company hopes to recover its research and development costs with this pricing. This is an example of a:",
+  "options": [
+   "price lining strategy",
+   "price skimming strategy",
+   "yield management pricing strategy",
+   "prestige pricing strategy"
+  ],
+  "answer": 1,
+  "explanation": "A high initial price used to help recover research and development costs is price skimming. Prestige pricing also uses a high price, but to attract status-conscious buyers permanently - not as a launch tactic for recovering R&D.",
+  "source": "official"
+ },
+ {
+  "id": "q09-074",
+  "concept": "c09-skimming",
+  "also": [
+   "c09-prestige"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario describes skimming rather than prestige pricing?",
+  "options": [
+   "A Swiss watch brand keeps prices high year after year because lower prices would hurt its exclusive image",
+   "A designer handbag maker found that cutting prices reduced sales",
+   "A gaming-console maker launches at $899, planning price cuts as competitors release rival consoles",
+   "A luxury vodka is priced well above other vodkas to appeal to status-conscious buyers"
+  ],
+  "answer": 2,
+  "explanation": "Skimming sets a high INITIAL price on a new product and lowers it over time as competitors enter. The other three keep prices high permanently to attract status-conscious buyers - prestige pricing, where cutting price can reduce demand.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-075",
+  "concept": "c09-skimming",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which condition does NOT favour a skimming strategy for a new product?",
+  "options": [
+   "The high price signals high quality to buyers",
+   "Competitors cannot enter quickly because of patents",
+   "Unit costs drop sharply as production volume grows",
+   "Enough buyers are relatively insensitive to price"
+  ],
+  "answer": 2,
+  "explanation": "When unit costs fall sharply with volume (economies of scale), a low price that builds volume pays off - a PENETRATION condition. Skimming favours price-insensitive early buyers, a quality signal and barriers that keep competitors out.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-076",
+  "concept": "c09-skimming",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "BioClear has a patented water filter that rivals cannot copy for several years. Research shows a sizable group of health-conscious buyers will pay almost any price, and production costs will not drop much with volume. Which initial pricing approach fits best?",
+  "options": [
+   "Penetration pricing",
+   "Skimming pricing",
+   "Loss-leader pricing",
+   "Customary pricing"
+  ],
+  "answer": 1,
+  "explanation": "All the skimming conditions are present: price-insensitive buyers (an inelastic segment), a barrier to entry (the patent) and little cost advantage from volume. Penetration would suit price-sensitive buyers and strong economies of scale - neither is present.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-077",
+  "concept": "c09-penetration",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "When Pixel Play launched its new handheld game console, it priced it well below rival systems to appeal immediately to the mass market and build a large user base quickly. This is:",
+  "options": [
+   "skimming pricing",
+   "loss-leader pricing",
+   "penetration pricing",
+   "prestige pricing"
+  ],
+  "answer": 2,
+  "explanation": "Penetration pricing sets a low initial price on a new product to appeal immediately to the mass market (the instructor's example is the Nintendo Wii U). Loss-leader pricing cuts the price of an existing item to pull traffic toward other products - not a new-product launch strategy.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-078",
+  "concept": "c09-penetration",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which set of conditions makes penetration pricing most attractive?",
+  "options": [
+   "Price-insensitive buyers and high barriers to entry",
+   "Price-sensitive buyers, unit costs that fall with volume, and a low price that discourages competitors",
+   "A product bought mainly as a status symbol",
+   "A fixed, perishable capacity such as hotel rooms"
+  ],
+  "answer": 1,
+  "explanation": "Penetration works when many buyers are price-sensitive (elastic demand), economies of scale lower unit costs as volume grows, and the low price discourages competitors. Price-insensitive buyers plus entry barriers describe skimming; perishable capacity suits yield management.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-079",
+  "concept": "c09-penetration",
+  "also": [
+   "c09-loss-leader"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is penetration pricing rather than loss-leader pricing?",
+  "options": [
+   "A new meal-kit company enters Ontario at $5 per meal, far below rivals, to build a subscriber base quickly",
+   "A Calgary supermarket sells butter at $2.99, below its usual price, to draw shoppers in",
+   "A hardware chain sells snow shovels below their customary price on the first snowy weekend to boost store traffic",
+   "An electronics store advertises a Black Friday TV doorbuster to fill the store"
+  ],
+  "answer": 0,
+  "explanation": "Penetration is a low INITIAL price on a NEW product to win the mass market. The others cut prices on existing items to attract traffic in hopes shoppers buy other products - loss-leader pricing, a competition-oriented approach.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-080",
+  "concept": "c09-penetration",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "SnapCharge is launching a phone charger in a market full of price-sensitive buyers. Its factory's unit cost will drop sharply as volume rises, and it wants to discourage rivals from entering. What initial price should it set?",
+  "options": [
+   "A high initial price to recover R&D, lowered later",
+   "A low initial price to win the mass market quickly",
+   "A price ending in an even number to signal quality",
+   "A price set by tradition for the category"
+  ],
+  "answer": 1,
+  "explanation": "Elastic demand, economies of scale and a desire to deter competitors are the classic penetration conditions, so a low initial price fits. A high initial price lowered later is skimming, which needs price-insensitive buyers.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-081",
+  "concept": "c09-penetration",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which of the following is NOT a condition favouring penetration pricing?",
+  "options": [
+   "Many segments of the market are price-sensitive",
+   "Unit costs fall as production experience accumulates",
+   "A low price discourages competitors from entering",
+   "A large segment has inelastic demand over a broad range of prices"
+  ],
+  "answer": 3,
+  "explanation": "A large segment with inelastic demand is a SKIMMING condition - those buyers will pay a high initial price. Penetration needs price-sensitive (elastic) buyers, economies of scale or experience, and a low price that keeps competitors out.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-082",
+  "concept": "c09-prestige",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Aurelia Perfumes cut the price of its signature fragrance from $240 to $150 and was shocked when sales dropped. Buyers had valued the high price as a mark of exclusivity. Which approach should Aurelia have stuck with?",
+  "options": [
+   "Penetration pricing",
+   "Prestige pricing",
+   "Odd-even pricing",
+   "Below-market pricing"
+  ],
+  "answer": 1,
+  "explanation": "Prestige pricing sets a high price so status-conscious consumers will buy; for these goods, lowering the price can reduce demand. Penetration and below-market pricing rely on low prices to win volume - exactly what backfired.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-083",
+  "concept": "c09-prestige",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "For a prestige product, why can a price cut REDUCE the quantity demanded?",
+  "options": [
+   "Because demand is perfectly inelastic",
+   "Because fixed costs rise when price falls",
+   "Because competitors immediately match the lower price",
+   "Because the demand curve bends backward: a lower price makes the product less attractive to status-conscious buyers"
+  ],
+  "answer": 3,
+  "explanation": "Prestige goods have a demand curve that bends backward over part of its range: a lower price signals less status, so fewer people want the product. Inelastic demand would mean quantity barely changes - not that it falls when price falls.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-084",
+  "concept": "c09-prestige",
+  "also": [
+   "c09-customary-market"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Luxe Motors prices its sports cars 20% above competitors' average price, deliberately using that market price as its benchmark. Which approach is this, as opposed to prestige pricing?",
+  "options": [
+   "Above-market pricing (competition-oriented)",
+   "Skimming pricing (demand-oriented)",
+   "Target pricing (demand-oriented)",
+   "Cost-plus pricing (cost-oriented)"
+  ],
+  "answer": 0,
+  "explanation": "Using competitors' market price as a benchmark and pricing above it is above-market pricing, a competition-oriented approach (the instructor's example is the iPhone 17). Prestige pricing is demand-oriented: the high price is set to attract status-conscious buyers, not measured against rivals' prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-085",
+  "concept": "c09-prestige",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ pricing involves setting a high price so that quality- or status-conscious consumers will be attracted to the product and buy it.",
+  "options": [
+   "Skimming",
+   "Prestige",
+   "Above-market",
+   "Target"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of prestige pricing. Skimming also uses a high price, but only initially for a new product, typically to recover R&D before the price is lowered over time.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-086",
+  "concept": "c09-prestige",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Prestige pricing sets a high initial price that the firm plans to lower as competitors enter the market.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. A high initial price planned to fall as competitors enter describes SKIMMING. Prestige pricing keeps the price high permanently because the high price is part of the product's status appeal; lowering it can actually reduce demand.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-087",
+  "concept": "c09-target-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Deliberately adjusting the composition and features of a product to achieve the price consumers are willing to pay is called:",
+  "options": [
+   "target profit pricing",
+   "cost-plus pricing",
+   "standard markup pricing",
+   "target pricing"
+  ],
+  "answer": 3,
+  "explanation": "Target pricing estimates the price consumers will pay, then works backward to design and cost the product. Target profit pricing instead solves the profit equation for the price that yields a specific dollar profit.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-088",
+  "concept": "c09-target-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northwind Furniture learns that university students will pay about $199 for a desk. Its engineers then choose particleboard, a flat-pack design and fewer drawers so the desk can be made for $110 and still sell profitably at $199. This is:",
+  "options": [
+   "target pricing",
+   "target return-on-sales pricing",
+   "penetration pricing",
+   "cost-plus pricing"
+  ],
+  "answer": 0,
+  "explanation": "Target pricing starts with the price consumers are willing to pay and works backward, adjusting the product's composition and features to hit the needed cost. Cost-plus does the reverse - it starts with the cost and adds an amount on top.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-089",
+  "concept": "c09-target-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement best distinguishes target pricing from target profit pricing?",
+  "options": [
+   "Target pricing adds a fixed percentage to cost; target profit pricing benchmarks against competitors",
+   "They are two names for the same profit-oriented approach",
+   "Target pricing starts from what consumers will pay and designs backward; target profit pricing solves for the price that yields a set dollar profit",
+   "Target pricing is profit-oriented; target profit pricing is demand-oriented"
+  ],
+  "answer": 2,
+  "explanation": "Target pricing is demand-oriented - the consumer's acceptable price comes first and the product is engineered to fit. Target profit pricing is profit-oriented - it plugs a dollar profit goal, costs and volume into the profit equation and solves for price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-090",
+  "concept": "c09-target-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In target pricing, what is the FIRST step?",
+  "options": [
+   "Total the product's costs and add a markup",
+   "Estimate the price consumers are willing to pay",
+   "Set a dollar profit target",
+   "Match the competitors' market price"
+  ],
+  "answer": 1,
+  "explanation": "Target pricing begins by estimating the price consumers will pay, then works backward through the needed margins to the cost the product must be designed to. Totalling costs first is the cost-oriented logic (standard markup, cost-plus).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-091",
+  "concept": "c09-target-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT characteristic of target pricing?",
+  "options": [
+   "It is a demand-oriented approach",
+   "The product's features may be changed to hit a cost",
+   "It begins with the firm's total unit cost and adds a set amount",
+   "It starts with an estimate of what consumers will pay"
+  ],
+  "answer": 2,
+  "explanation": "Beginning with total unit cost and adding a set amount is cost-plus pricing (cost-oriented). Target pricing begins with consumers' acceptable price and adjusts the product to meet a cost that makes that price work.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-092",
+  "concept": "c09-bundle",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Maple Fibre offers home internet, TV and a mobile line for $120 a month, compared with $155 if bought separately. This is:",
+  "options": [
+   "yield management pricing",
+   "bundle pricing",
+   "a cumulative quantity discount",
+   "customary pricing"
+  ],
+  "answer": 1,
+  "explanation": "Bundle pricing markets two or more products in a single package price. A quantity discount rewards buying MORE of the same product, not combining different products.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-093",
+  "concept": "c09-bundle",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "Why do fast-food chains use bundle pricing for value meals?",
+  "options": [
+   "Buyers see the package as a better deal than buying items separately, and the chain sells more items per order",
+   "It lets them charge different prices to different customers for the same item",
+   "It is required by the Competition Act",
+   "It allows them to recover R&D costs quickly"
+  ],
+  "answer": 0,
+  "explanation": "Bundle pricing gives buyers perceived savings on a package and lets the seller move more products per sale. Charging different buyers different prices for the same item is a flexible-price policy, not bundling.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-094",
+  "concept": "c09-bundle",
+  "also": [
+   "c09-yield-management"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which of the following is bundle pricing rather than yield management?",
+  "options": [
+   "An airline charges $129 for a Tuesday seat and $389 for a Friday seat on the same route",
+   "A ski resort sells a lift ticket, rental skis and a lesson together for one price",
+   "A hotel raises room rates as occupancy for a weekend climbs",
+   "A theatre charges more for seats to a nearly sold-out Saturday show"
+  ],
+  "answer": 1,
+  "explanation": "Bundle pricing combines two or more products (lift ticket, rentals, lesson) into one package price. The other three vary the price of the same fixed capacity by date or demand - yield management.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-095",
+  "concept": "c09-bundle",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ pricing is the marketing of two or more products in a single package price.",
+  "options": [
+   "Bundle",
+   "Customary",
+   "Odd-even",
+   "Loss-leader"
+  ],
+  "answer": 0,
+  "explanation": "Bundle pricing combines products into one package price (e.g., a value meal). Loss-leader pricing, by contrast, prices ONE item below its customary price to attract traffic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-096",
+  "concept": "c09-bundle",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of bundle pricing?",
+  "options": [
+   "A car dealer includes winter tires, mats and remote start in one package price",
+   "A cafe sells a coffee-and-muffin combo for $5",
+   "A grocer gives 10% off any single order over $200",
+   "A software firm sells three apps together for one suite price"
+  ],
+  "answer": 2,
+  "explanation": "Ten percent off a large single order is a noncumulative quantity DISCOUNT, a Step 3 adjustment. The other three sell two or more products together for a single package price - bundle pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-097",
+  "concept": "c09-yield-management",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Peak View Hotel in Banff charges $189 for a standard room on a quiet November Tuesday and $549 for the same room on a ski-season Saturday, adjusting rates to earn the most from its 120 rooms. This is:",
+  "options": [
+   "skimming pricing",
+   "yield management pricing",
+   "prestige pricing",
+   "bundle pricing"
+  ],
+  "answer": 1,
+  "explanation": "Yield management charges different prices to maximize revenue for a set amount of capacity at a given time - the 120 rooms are fixed and an unsold night is lost forever. Skimming is a high initial price on a new product that falls over time, not a rate that moves with demand for fixed capacity.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-098",
+  "concept": "c09-yield-management",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Yield management pricing is the marketing of two or more products in a single package price.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. That describes bundle pricing. Yield management pricing is charging different prices to maximize revenue for a set amount of capacity at any given time, as airlines and hotels do.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-099",
+  "concept": "c09-yield-management",
+  "also": [
+   "c09-one-flexible"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is yield management pricing, rather than flexible pricing based on the individual buyer?",
+  "options": [
+   "A transit system charges seniors and students lower fares than adults",
+   "A car dealer negotiates a different price with each buyer",
+   "An airline raises fares on a flight as its remaining seats fill up",
+   "A furniture store lets salespeople haggle with customers"
+  ],
+  "answer": 2,
+  "explanation": "Yield management varies price with demand for a FIXED capacity at a given time (the flight's remaining seats). The others vary price by the individual BUYER - age-based fares and haggling are flexible-price policies.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-100",
+  "concept": "c09-yield-management",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is yield management especially suited to airlines and hotels?",
+  "options": [
+   "Their capacity is fixed, and a seat or room left unsold on a given date can never be sold later",
+   "Their products are commodities sold in pure competition",
+   "Their costs are almost entirely variable",
+   "Customary prices in these industries cannot be changed"
+  ],
+  "answer": 0,
+  "explanation": "Yield management maximizes revenue from a set amount of capacity at a given time; an empty seat after departure is revenue lost forever, so varying prices to fill capacity pays off. These are differentiated services, not commodities, and their costs are largely fixed.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-101",
+  "concept": "c09-yield-management",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "For which business would yield management pricing be LEAST useful?",
+  "options": [
+   "A Calgary concert venue with 2,000 seats per show",
+   "A ferry with a fixed number of car spaces per sailing",
+   "A canned-soup manufacturer that can store unsold inventory",
+   "A Whistler ski lodge with 60 rooms"
+  ],
+  "answer": 2,
+  "explanation": "Yield management fits fixed, time-bound capacity that perishes if unsold - seats, car spaces and rooms. A soup maker can store unsold cans and sell them later, so there is no perishable capacity to manage.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-102",
+  "concept": "c09-markup",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Nature's Taste, a manufacturer of floral jellies made from pansies, honeysuckle, and wisteria, prices its jellies by adding 30 percent to the cost of everything that goes into making the jellies including salaries, jars, sugar, and pectin. Which of the following pricing methods is being used here?",
+  "options": [
+   "Target return-on-sales pricing",
+   "Flexible pricing",
+   "Yield management pricing",
+   "Standard markup pricing"
+  ],
+  "answer": 3,
+  "explanation": "Adding a set percentage (30%) to cost is standard markup pricing; manufacturers commonly express markup as a percentage of cost - (price - cost) / cost. Target return-on-sales pricing would set price to earn profit equal to a percentage of SALES, not cost.",
+  "source": "official"
+ }
+]

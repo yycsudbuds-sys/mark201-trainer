@@ -1,0 +1,724 @@
+[
+ {
+  "id": "q11-001",
+  "concept": "c11-retailing",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ includes all activities involved in selling, renting, and providing goods and services to ultimate consumers for personal, family, or household use.",
+  "options": [
+   "manufacturing",
+   "wholesaling",
+   "retailing",
+   "facilitating"
+  ],
+  "answer": 2,
+  "explanation": "Retailing covers every activity (selling, renting, providing goods and services) aimed at ULTIMATE consumers for personal, family, or household use. Wholesaling is the tempting distractor, but it sells to those who buy for resale or business use, not to end consumers.",
+  "source": "official"
+ },
+ {
+  "id": "q11-002",
+  "concept": "c11-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Black Tie Rentals, a downtown Edmonton shop, rents tuxedos and suits to grooms and wedding guests for weekend events and returns them to its racks on Monday. How is Black Tie Rentals' core activity classified?",
+  "options": [
+   "Wholesaling, because the suits are rented rather than sold",
+   "Brokering, because no ownership passes to the customer",
+   "Retailing, because it provides goods to ultimate consumers for personal use",
+   "Non-store retailing, because customers do not keep the goods"
+  ],
+  "answer": 2,
+  "explanation": "Retailing includes renting as well as selling, as long as the customer is an ultimate consumer using the item for personal, family, or household use. Wholesaling is wrong because it is defined by the buyer's purpose (resale or business use), not by whether goods are sold or rented.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-003",
+  "concept": "c11-retailing",
+  "also": [
+   "c11-wholesaling"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Prairie Paper Co. sells cases of printer paper to families buying school supplies and to a Calgary accounting firm that uses the paper in its office. Which statement is correct?",
+  "options": [
+   "Both are retailing because the same product is sold in the same store",
+   "Both are wholesaling because the paper is sold by the case",
+   "Sales to families are retailing; sales to the accounting firm are wholesaling",
+   "Sales to the accounting firm are retailing because the firm is the final user"
+  ],
+  "answer": 2,
+  "explanation": "The buyer's purpose decides it: ultimate consumers buying for personal or household use = retailing; buyers purchasing for resale or BUSINESS use = wholesaling. The accounting firm is the final user, but it uses the paper for business, which the definition places in wholesaling; order size (cases) is irrelevant.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-004",
+  "concept": "c11-retailing",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "Retailers invest in social and entertainment experiences partly because shopping is not only a way to acquire necessities but also a social activity and sometimes an adventure.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The instructor stresses that shopping is also a social activity and sometimes an adventure, which is why retailers add experiences such as dining and entertainment (e.g., West Edmonton Mall's water park) instead of only stocking necessities.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-005",
+  "concept": "c11-retailing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of retailing?",
+  "options": [
+   "A Banff ski shop renting snowboards to vacationers",
+   "A food distributor selling cases of frozen fries to restaurants",
+   "A hair salon providing haircuts to local residents",
+   "An online store selling phone cases to students"
+  ],
+  "answer": 1,
+  "explanation": "Restaurants buy the fries to use in their business (and resell them as meals), so that sale is wholesaling. Renting snowboards and providing haircuts are still retailing because the customers are ultimate consumers; renting and providing services are explicitly part of the retailing definition.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-006",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northside Pharmacy keeps its Regina location open 24 hours a day, seven days a week, so customers can fill prescriptions at 3 a.m. Which utility does this primarily create?",
+  "options": [
+   "Time utility",
+   "Place utility",
+   "Form utility",
+   "Possession utility"
+  ],
+  "answer": 0,
+  "explanation": "Time utility means having products available WHEN consumers want them, and round-the-clock hours do exactly that. Place utility is the tempting choice, but it is about WHERE products are available (convenient locations), not the hours.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-007",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Summit Furniture lets customers take a sofa home today and pay nothing for 12 months through in-store financing, or put it on layaway. Which utility is Summit creating?",
+  "options": [
+   "Time utility",
+   "Possession utility",
+   "Form utility",
+   "Place utility"
+  ],
+  "answer": 1,
+  "explanation": "Possession utility makes it easier for consumers to take ownership or use of a product; credit, financing and layaway are the classic examples. Time utility is wrong because the issue is not when the store is open but how easily the customer can afford to own the sofa.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-008",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "At Northern Threads, a Winnipeg menswear store, in-house tailors hem trousers and adjust jacket sleeves so each suit fits the buyer before he leaves the store. Which utility does this create?",
+  "options": [
+   "Possession utility",
+   "Form utility",
+   "Place utility",
+   "Time utility"
+  ],
+  "answer": 1,
+  "explanation": "Form utility comes from producing or altering a product to suit the consumer, and tailoring changes the product itself. Possession utility is tempting because the customer takes the suit home, but possession utility is about easing ownership (credit, layaway), not changing the product.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-009",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which pairing of retailer practice and utility is correct?",
+  "options": [
+   "Extended holiday shopping hours: place utility",
+   "Stores in nearly every neighbourhood: place utility",
+   "A layaway plan for winter coats: form utility",
+   "Assembling bicycles before pickup: possession utility"
+  ],
+  "answer": 1,
+  "explanation": "Convenient locations put products WHERE consumers want them, which is place utility. Extended hours create time utility (when), layaway creates possession utility (easier ownership), and assembling a product creates form utility (altering the product).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-010",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Possession utility is created when a retailer:",
+  "options": [
+   "makes it easier for consumers to take ownership or use of a product, such as through credit or layaway",
+   "has products available when consumers want to buy them",
+   "alters or assembles a product to suit the consumer",
+   "locates stores close to where consumers live and work"
+  ],
+  "answer": 0,
+  "explanation": "Possession utility = easing ownership or use (credit, financing, layaway). The other options describe time utility (when), form utility (altering the product) and place utility (where).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-011",
+  "concept": "c11-retail-utilities",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A Saskatoon appliance store finds that many shoppers love its fridges but leave without buying because they cannot pay the full price at once. Which utility should the store strengthen to win these sales?",
+  "options": [
+   "Time utility, by extending store hours",
+   "Possession utility, by offering credit or instalment plans",
+   "Place utility, by opening more locations",
+   "Form utility, by customizing fridge finishes"
+  ],
+  "answer": 1,
+  "explanation": "The barrier is affordability of ownership, so the fix is possession utility: credit, financing or instalment payments. Longer hours (time) or more stores (place) would not solve the shopper's inability to pay up front.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-012",
+  "concept": "c11-independent-chain",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Rosa owns and operates a single bakery-café in Lethbridge, making all buying and pricing decisions herself. Classified by form of ownership, her business is a(n):",
+  "options": [
+   "independent retailer",
+   "corporate chain",
+   "contractual system",
+   "franchise"
+  ],
+  "answer": 0,
+  "explanation": "An independent retailer is owned by an individual and usually operates one store; it is the most common form of retail ownership. It is not a franchise or other contractual system because Rosa has not joined a group or licensed another firm's name and system.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-013",
+  "concept": "c11-independent-chain",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Maple Grocers operates 140 stores across Canada, all owned by the same parent company, which negotiates purchases centrally for every store. Maple Grocers is a:",
+  "options": [
+   "retailer-sponsored cooperative",
+   "corporate chain",
+   "wholesaler-sponsored voluntary chain",
+   "hypermarket"
+  ],
+  "answer": 1,
+  "explanation": "Multiple outlets under COMMON ownership with centralized buying define a corporate chain. Co-ops and voluntary chains are contractual systems made up of independently owned stores, and 'hypermarket' describes a merchandise-line format, not a form of ownership.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-014",
+  "concept": "c11-independent-chain",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "What is the main advantage a corporate chain has over an independent retailer?",
+  "options": [
+   "Each outlet is independently owned, so local owners share promotion costs",
+   "Centralized buying gives it greater bargaining power with suppliers",
+   "It is automatically classified as a full-service retailer",
+   "It is protected from intertype competition"
+  ],
+  "answer": 1,
+  "explanation": "Because a corporate chain buys for many outlets at once, it can negotiate better terms; centralized buying and bargaining power are its hallmark. Independently owned outlets sharing promotion describes a contractual system, not a corporate chain.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-015",
+  "concept": "c11-independent-chain",
+  "also": [
+   "c11-contractual-system"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Store A is one of 300 hardware stores under one banner; each is owned by a local entrepreneur, and the owners jointly run the group's buying operation. Store B is one of 300 stores under another banner, all owned by a single corporation. Which classification is correct?",
+  "options": [
+   "Store A is part of a corporate chain; Store B is part of a contractual system",
+   "Both are corporate chains because each operates under a common banner",
+   "Store A is part of a contractual system; Store B is part of a corporate chain",
+   "Store A is an independent retailer; Store B is a franchise"
+  ],
+  "answer": 2,
+  "explanation": "Ownership, not the banner, decides: independently owned stores banding together (here a retailer-sponsored co-op) form a contractual system, while outlets with common ownership form a corporate chain. Sharing a banner does not make Store A a corporate chain.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-016",
+  "concept": "c11-independent-chain",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The corporate chain is the most common form of retail ownership.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The INDEPENDENT retailer, owned by an individual and usually operating one store, is the most common form of retail ownership. Corporate chains (common ownership of many outlets) and contractual systems are the other two ownership forms.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-017",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Bright @ Night allows its independent members, retailers of lighting fixtures, to concentrate their buying power and to plan collaborative promotional and pricing activities. Bright @ Night is a _____.",
+  "options": [
+   "manufacturer's agent",
+   "contractual system",
+   "corporate chain",
+   "joint venture"
+  ],
+  "answer": 1,
+  "explanation": "A contractual system is independently owned stores that band together to act like a chain, pooling buying power and coordinating promotion and pricing. It is not a corporate chain, because the members remain independently owned rather than sharing one owner.",
+  "source": "official"
+ },
+ {
+  "id": "q11-018",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Pharmacy Partners was formed by 60 independent pharmacists, who jointly own and run the buying and warehousing operation that supplies their stores. This arrangement is a:",
+  "options": [
+   "retailer-sponsored cooperative",
+   "wholesaler-sponsored voluntary chain",
+   "franchise",
+   "corporate chain"
+  ],
+  "answer": 0,
+  "explanation": "When independent RETAILERS themselves band together and run a shared buying or wholesale operation, it is a retailer-sponsored cooperative (like Home Hardware). A wholesaler-sponsored voluntary chain is organized by a wholesaler, not by the retailers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-019",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Westfield Foods, a grocery wholesaler, invites independent grocers to operate under a common store banner, buy their stock from Westfield and share joint advertising. The grocers remain independently owned. This is a:",
+  "options": [
+   "retailer-sponsored cooperative",
+   "wholesaler-sponsored voluntary chain",
+   "corporate chain",
+   "manufacturer's sales office"
+  ],
+  "answer": 1,
+  "explanation": "A wholesaler organizing independent retailers into a chain-like group that buys from it is a wholesaler-sponsored voluntary chain (IGA is the course example). It is not a retailer-sponsored co-op, because the wholesaler, not the retailers, sponsors the group.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-020",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "In a franchise system such as Tim Hortons, the franchisee typically:",
+  "options": [
+   "owns all outlets in the system and buys centrally for them",
+   "pays an initial fee and ongoing royalties for the right to use the franchisor's name and operating system",
+   "takes title to goods but never physically handles them",
+   "earns a commission for bringing buyers and sellers together"
+  ],
+  "answer": 1,
+  "explanation": "A franchise is a contractual system in which the franchisor supplies the name and system and the independently owning franchisee pays a fee plus royalties. Owning all outlets describes a corporate chain; the last two options describe a drop shipper and a broker.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-021",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which feature BEST distinguishes a contractual system from a corporate chain?",
+  "options": [
+   "Contractual-system stores are independently owned but band together to act like a chain",
+   "Contractual systems always offer full service, while chains offer self-service",
+   "Corporate chains cannot use centralized buying",
+   "Contractual systems sell only through non-store formats"
+  ],
+  "answer": 0,
+  "explanation": "The dividing line is ownership: corporate chain outlets share common ownership, while contractual-system stores keep separate owners and cooperate by agreement. Level of service and store vs non-store format are separate classification schemes, and corporate chains are known FOR centralized buying.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-022",
+  "concept": "c11-contractual-system",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a type of contractual system?",
+  "options": [
+   "Retailer-sponsored cooperative",
+   "Corporate chain",
+   "Wholesaler-sponsored voluntary chain",
+   "Franchise"
+  ],
+  "answer": 1,
+  "explanation": "The three contractual systems are retailer-sponsored cooperatives, wholesaler-sponsored voluntary chains and franchises, all built on independently owned stores. A corporate chain is a separate form of ownership in which one company owns all the outlets.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-023",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Kyra aims to expand her women's clothing boutique across Canada and make it a high-end store. Well-trained, informed salespeople in each store will give customers a personalized shopping experience, using a database of regular customers' preferred colours, textures and sizes so customers do not have to repeat these details every visit. Customers' needs will be addressed in-store. Kyra is aiming to make her boutique:",
+  "options": [
+   "move from limited service to full service",
+   "move from self-service to full service",
+   "become a more self-service store",
+   "offer full-service at self-service prices"
+  ],
+  "answer": 0,
+  "explanation": "Trained salespeople, personalized help and a customer-preference database are hallmarks of FULL service. A boutique that already has salespeople offers limited service, not self-service, so 'from self-service to full service' misstates the starting point, and nothing in the plan lowers prices to self-service levels.",
+  "source": "official"
+ },
+ {
+  "id": "q11-024",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "At CostLess Warehouse, shoppers find products on bare steel shelving, load their own carts and bag their own purchases; there are almost no salespeople on the floor. Classified by level of service, CostLess is a:",
+  "options": [
+   "limited-service retailer",
+   "full-service retailer",
+   "category killer",
+   "self-service retailer"
+  ],
+  "answer": 3,
+  "explanation": "When the customer performs most of the functions, the store is self-service; warehouse clubs, pay-at-the-pump gas stations and online stores are course examples. 'Category killer' classifies a store by merchandise line, a different scheme from level of service.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-025",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pairing of retailer and level of service is correct?",
+  "options": [
+   "Warehouse club: self-service",
+   "Pay-at-the-pump gas station: full-service",
+   "Holt Renfrew: limited-service",
+   "Online store: full-service"
+  ],
+  "answer": 0,
+  "explanation": "Warehouse clubs are self-service: customers do most of the work. Gas stations and online stores are also self-service, while Holt Renfrew, with personal shoppers and attentive staff, is the course's full-service example.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-026",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Wildrose Mall adds a water park, a food hall and live weekend concerts to give shoppers reasons to stay longer. In the products and services mix, these additions are best described as:",
+  "options": [
+   "ancillary services",
+   "prepurchase services",
+   "postpurchase services",
+   "self-service features"
+  ],
+  "answer": 0,
+  "explanation": "Ancillary services are extras beyond the core shopping transaction, such as experiences and dining (the course's West Edmonton Mall water park example). Prepurchase services help before a sale (information, demonstrations) and postpurchase services follow it (delivery, returns, repairs).",
+  "source": "generated"
+ },
+ {
+  "id": "q11-027",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT typical of a full-service retailer?",
+  "options": [
+   "Personalized assistance from knowledgeable salespeople",
+   "Records of each regular customer's preferences",
+   "Customers locate, select and carry products with little staff help",
+   "Services such as alterations and delivery"
+  ],
+  "answer": 2,
+  "explanation": "Customers doing most of the work describes self-service. Full-service retailers provide many services and personal attention: knowledgeable staff, preference records (as in Kyra's boutique), alterations and delivery.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-028",
+  "concept": "c11-level-of-service",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A retailer that offers some services, such as credit and merchandise returns, but leaves most of the shopping to customers is a _____ retailer.",
+  "options": [
+   "self-service",
+   "limited-service",
+   "full-service",
+   "specialty"
+  ],
+  "answer": 1,
+  "explanation": "Limited-service retailers (e.g., Walmart, many department stores) offer some services such as credit and returns. Self-service offers almost none and full-service offers many personalized services; 'specialty' describes merchandise line, not service.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-029",
+  "concept": "c11-depth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Peak Running sells only running shoes, apparel and accessories. It stocks dozens of brands in every size and width, charges regular prices and offers expert gait analysis. Classified by merchandise line, Peak Running is a:",
+  "options": [
+   "category killer",
+   "general merchandise store",
+   "specialty outlet",
+   "hypermarket"
+  ],
+  "answer": 2,
+  "explanation": "A specialty outlet offers a deep assortment within a narrow line (Lululemon, Foot Locker). It is not a category killer because nothing suggests very low prices or big-box scale; category killers combine depth with discount pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-030",
+  "concept": "c11-depth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "HomeBuild Depot operates enormous stores carrying a vast assortment of home-improvement products at very low prices, and many small local hardware stores close after it enters a market. HomeBuild Depot is a:",
+  "options": [
+   "specialty outlet",
+   "department store",
+   "power centre",
+   "category killer"
+  ],
+  "answer": 3,
+  "explanation": "A category killer is a specialty discount outlet that focuses on one category with deep assortment and very low prices (Home Depot, Best Buy, Staples), 'killing' smaller competitors. A power centre is a location type (a big strip of anchor stores), not the store format itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-031",
+  "concept": "c11-depth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What BEST distinguishes a category killer from a typical specialty outlet?",
+  "options": [
+   "The category killer pairs a deep assortment in one category with very low prices",
+   "The category killer carries many unrelated product lines",
+   "The specialty outlet carries broad lines with little depth",
+   "The specialty outlet is always part of a contractual system"
+  ],
+  "answer": 0,
+  "explanation": "Both are deep-and-narrow (depth of line) formats; the category killer adds discount pricing and big-box scale. Carrying many unrelated lines is scrambled merchandising, and ownership (contractual system) is a different classification scheme.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-032",
+  "concept": "c11-depth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Stores classified by depth of line, such as Lululemon and Foot Locker, offer:",
+  "options": [
+   "a large assortment within a narrow range of product lines",
+   "a wide range of product lines with limited assortment in each",
+   "several unrelated product lines under one roof",
+   "full grocery lines combined with general merchandise"
+  ],
+  "answer": 0,
+  "explanation": "Depth = how many items are carried within a line, so depth-of-line stores go deep in a narrow range. A wide range of lines describes breadth (general merchandise stores); unrelated lines describe scrambled merchandising; grocery plus general merchandise describes a hypermarket.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-033",
+  "concept": "c11-depth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which retailer is LEAST likely to be classified as a category killer?",
+  "options": [
+   "A big-box electronics chain with a huge selection at low prices",
+   "A department store carrying clothing, cosmetics, housewares and furniture",
+   "A big-box office-supply chain with a deep assortment at low prices",
+   "A home-improvement warehouse with a vast selection at low prices"
+  ],
+  "answer": 1,
+  "explanation": "Category killers focus on ONE category with deep assortment and low prices (Best Buy, Staples, Home Depot). A department store carries many different lines, so it is classified by breadth of line as a general merchandise store.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-034",
+  "concept": "c11-breadth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Hartwell's carries cosmetics, women's and men's clothing, housewares, luggage and furniture, each in its own department, with moderate selection in each. Classified by merchandise line, Hartwell's is a:",
+  "options": [
+   "specialty outlet",
+   "general merchandise (department) store",
+   "category killer",
+   "warehouse club"
+  ],
+  "answer": 1,
+  "explanation": "Carrying many different product lines (breadth) organized into departments makes Hartwell's a general merchandise store. Specialty outlets and category killers are classified by depth: a narrow line with a deep assortment.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-035",
+  "concept": "c11-breadth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northland Supercentre is a 200,000-square-foot store that sells a full line of groceries alongside clothing, electronics, toys and hardware under one roof. Northland is a:",
+  "options": [
+   "category killer",
+   "department store",
+   "power centre",
+   "hypermarket (supercentre)"
+  ],
+  "answer": 3,
+  "explanation": "A hypermarket or supercentre is a very large store combining general merchandise with a full grocery line (Walmart Supercentre, Real Canadian Superstore). A power centre is a location, a large strip of several big-box anchors, not a single store.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-036",
+  "concept": "c11-breadth-of-line",
+  "also": [
+   "c11-depth-of-line"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts the two ways of classifying stores by merchandise line?",
+  "options": [
+   "Breadth-of-line stores carry many different product lines; depth-of-line stores carry a deep assortment within few lines",
+   "Breadth-of-line stores carry a deep assortment within few lines; depth-of-line stores carry many different lines",
+   "Breadth refers to the level of service; depth refers to the form of ownership",
+   "Breadth refers to the number of stores; depth refers to store size"
+  ],
+  "answer": 0,
+  "explanation": "Breadth = number of different lines (department stores, hypermarkets); depth = assortment within a line (specialty outlets, category killers). The reversed option is the classic trap, and service level and ownership are separate classification schemes.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-037",
+  "concept": "c11-breadth-of-line",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A very large store that combines a full grocery offering with general merchandise in one location is called a(n) _____.",
+  "options": [
+   "hypermarket (supercentre)",
+   "category killer",
+   "lifestyle centre",
+   "specialty outlet"
+  ],
+  "answer": 0,
+  "explanation": "Hypermarkets and supercentres combine groceries and general merchandise in one very large store. A lifestyle centre is an open-air upscale shopping location, not a store, and a category killer focuses on a single category.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-038",
+  "concept": "c11-breadth-of-line",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT classified by breadth of line?",
+  "options": [
+   "Department store",
+   "Specialty outlet",
+   "Hypermarket",
+   "General merchandise store"
+  ],
+  "answer": 1,
+  "explanation": "Specialty outlets are classified by DEPTH: a deep assortment in a narrow line. Department stores, hypermarkets and other general merchandise stores are breadth-of-line formats that carry many different product lines.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-039",
+  "concept": "c11-scrambled-merchandising",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Corner Rx, a pharmacy chain, now sells milk, frozen dinners, greeting cards, phone chargers and seasonal patio furniture alongside prescriptions. This practice is called:",
+  "options": [
+   "intertype competition",
+   "category management",
+   "scrambled merchandising",
+   "assortment building"
+  ],
+  "answer": 2,
+  "explanation": "Offering several unrelated product lines in a single store is scrambled merchandising (e.g., drugstores selling groceries, Canadian Tire selling food). Intertype competition is the RESULT, as the pharmacy now competes with supermarkets, not the assortment practice itself.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-040",
+  "concept": "c11-scrambled-merchandising",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "As a discount general-merchandise chain expands its grocery aisles, a regional supermarket chain finds it is now fighting the discounter for the same weekly grocery shoppers. The rivalry between these two very different types of retailers is called:",
+  "options": [
+   "intertype competition",
+   "scrambled merchandising",
+   "category management",
+   "the wheel of retailing"
+  ],
+  "answer": 0,
+  "explanation": "Competition between very dissimilar types of retail outlets is intertype competition (e.g., Walmart vs Loblaws in groceries). Scrambled merchandising is the discounter's strategy that CAUSED the rivalry, not the rivalry itself.",
+  "source": "generated"
+ }
+]

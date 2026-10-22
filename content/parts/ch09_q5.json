@@ -1,0 +1,580 @@
+[
+ {
+  "id": "q09-137",
+  "concept": "c09-cost-vs-value",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly contrasts cost-based and value-based pricing?",
+  "options": [
+   "Cost-based starts with the product and ends with customers; value-based starts with customers and ends with the product",
+   "Cost-based starts with customers; value-based starts with the product",
+   "Both sequences start with cost but end differently",
+   "Value-based pricing ignores costs entirely"
+  ],
+  "answer": 0,
+  "explanation": "The two sequences are mirror images: cost-based = Product, Cost, Price, Value, Customers; value-based = Customers, Value, Price, Cost, Product. Value-based pricing does not ignore costs - cost comes after price, as the amount the firm can spend to deliver that value.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-138",
+  "concept": "c09-cost-vs-value",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does value-based pricing begin with customers rather than with the product?",
+  "options": [
+   "So the firm can guarantee a fixed margin over its unit cost",
+   "Because customers determine the firm's fixed costs",
+   "So the price reflects the value customers perceive, with costs and the product then designed to fit that price",
+   "So the firm never needs to consider competitors"
+  ],
+  "answer": 2,
+  "explanation": "Pricing is the attempt to capture the value the marketing mix creates. Starting with customers and value means the price reflects what buyers perceive, and costs and the product are then held to what that price allows. Guaranteeing a margin over unit cost is the cost-based logic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-139",
+  "concept": "c09-final-price-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In setting a final price, which step comes immediately after 'set the list or quoted price'?",
+  "options": [
+   "Select an approximate price level",
+   "Make special adjustments to the list or quoted price",
+   "Monitor and adjust prices",
+   "Identify pricing constraints"
+  ],
+  "answer": 1,
+  "explanation": "The four steps are: (1) select an approximate price level, (2) set the list or quoted price, (3) make special adjustments - discounts, allowances, geographic adjustments, (4) monitor and adjust prices. Identifying constraints happens earlier in the pricing process, not within these four steps.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-140",
+  "concept": "c09-final-price-steps",
+  "also": [],
+  "type": "tf",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "The first step in setting a final price is to set the list or quoted price.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Step 1 is to select an approximate price level using one of the four approach buckets (demand-, cost-, profit- or competition-oriented). Setting the list or quoted price is Step 2.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-141",
+  "concept": "c09-final-price-steps",
+  "also": [
+   "c09-discounts-allowances"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Having already set a list price, Prairie Paint's sales manager now offers retailers 2/10 net 30 payment terms, a discount for orders placed before spring, and free freight to Saskatchewan stores. Which step of setting a final price is he working on?",
+  "options": [
+   "Step 1: Select an approximate price level",
+   "Step 2: Set the list or quoted price",
+   "Step 3: Make special adjustments to the list or quoted price",
+   "Step 4: Monitor and adjust prices"
+  ],
+  "answer": 2,
+  "explanation": "Discounts (cash, seasonal) and geographic adjustments (freight) are special adjustments made in Step 3. Step 2 is where the list price and the one-price vs flexible-price policy are set.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-142",
+  "concept": "c09-final-price-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the four steps in setting a final price?",
+  "options": [
+   "Identify pricing objectives",
+   "Monitor and adjust prices",
+   "Set the list or quoted price",
+   "Make special adjustments to the list or quoted price"
+  ],
+  "answer": 0,
+  "explanation": "Identifying pricing objectives (and constraints) comes earlier in the pricing process. The four final-price steps are: select an approximate price level, set the list or quoted price, make special adjustments, and monitor and adjust prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-143",
+  "concept": "c09-final-price-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Six months after launching its fitness app at $12.99 a month, Pulse Fitness sees subscriptions slip after a rival cuts its price to $8.99. Which step of setting a final price should Pulse now carry out?",
+  "options": [
+   "Select an approximate price level for the first time",
+   "Monitor and adjust prices",
+   "Choose a geographic adjustment",
+   "Calculate a cash discount"
+  ],
+  "answer": 1,
+  "explanation": "Step 4 - monitor and adjust prices - responds to changes in competition, demand and costs after launch. Pricing is not 'set and forget'; Step 1 was completed at launch.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-144",
+  "concept": "c09-one-flexible",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "City transit services often offer different riders a unique price to ride based on age, employment, etc. This is an example of a _____ policy.",
+  "options": [
+   "penetration strategy",
+   "flexible price",
+   "one-price policy",
+   "bundle-pricing policy"
+  ],
+  "answer": 1,
+  "explanation": "A flexible-price policy sets different prices for products and services depending on individual buyers and purchase situations - here, riders' age or employment. A one-price policy would charge every rider the same fare.",
+  "source": "official"
+ },
+ {
+  "id": "q09-145",
+  "concept": "c09-one-flexible",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "At Clearwater Motors, every customer pays the posted sticker price - no haggling and no special deals - whether they are a first-time buyer or a returning customer. This is a:",
+  "options": [
+   "flexible-price policy",
+   "yield management approach",
+   "one-price policy",
+   "form of price discrimination"
+  ],
+  "answer": 2,
+  "explanation": "A one-price policy sets one price for all buyers of a product (no-haggle car brands and Walmart are examples). A flexible-price policy would let the price vary by buyer or situation, as in traditional dealer negotiation.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-146",
+  "concept": "c09-one-flexible",
+  "also": [
+   "c09-legal"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which situation reflects a legal flexible-price policy rather than illegal price discrimination?",
+  "options": [
+   "A manufacturer charges a large chain less than competing independent retailers for identical quantities, lessening competition",
+   "A Calgary museum charges students, seniors and adults different admission prices",
+   "A supplier secretly gives one distributor lower prices than its competing distributors for the same volume",
+   "A wholesaler charges two competing grocers different prices for the same order size, harming the smaller one"
+  ],
+  "answer": 1,
+  "explanation": "Charging consumers different prices based on age or status is a legal flexible-price policy. Price discrimination involves charging COMPETING business buyers different prices for like quantities in a way that lessens competition - restricted under the Competition Act.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-147",
+  "concept": "c09-one-flexible",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "When a big concert ends in downtown Edmonton, a rideshare app's fares jump to 2.5 times normal for 30 minutes. What explains this dynamic pricing?",
+  "options": [
+   "Prices are adjusted in real time based on demand",
+   "The app is using a one-price policy",
+   "The fare includes a uniform delivered charge",
+   "The app is practising customary pricing"
+  ],
+  "answer": 0,
+  "explanation": "Dynamic pricing adjusts prices in real time based on demand - like Uber surge pricing - and is a form of flexible pricing. A one-price policy would keep the fare the same regardless of demand, and customary pricing keeps a traditional price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-148",
+  "concept": "c09-one-flexible",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ is the practice of adjusting prices in real time based on changes in demand.",
+  "options": [
+   "Customary pricing",
+   "Cost-plus pricing",
+   "Standard markup pricing",
+   "Dynamic pricing"
+  ],
+  "answer": 3,
+  "explanation": "Dynamic pricing adjusts prices in real time as demand changes (for example, Uber surge pricing); it is a form of flexible pricing. Customary pricing does the opposite - it keeps a price fixed by tradition.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-149",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "In the spring and early summer, before Canada Day, Molson Coors offers retailers a discount on Molson Canadian to see their product lead long-weekend sales. This is known as a:",
+  "options": [
+   "seasonal discount",
+   "cash discount",
+   "pre-buy discount",
+   "functional discount"
+  ],
+  "answer": 0,
+  "explanation": "Seasonal discounts encourage buyers to buy an item or stock inventory earlier than their normal demand would require - retailers stock up before the Canada Day long weekend. A functional (trade) discount rewards resellers for performing marketing functions, not for timing.",
+  "source": "official"
+ },
+ {
+  "id": "q09-150",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Northern Supply invoices a Kelowna restaurant $5,000 on terms of 2/10 net 30. If the restaurant pays on day 8, how much does it pay?",
+  "options": [
+   "$4,000",
+   "$4,900",
+   "$5,000",
+   "$4,980"
+  ],
+  "answer": 1,
+  "explanation": "2/10 net 30 means 2% off if paid within 10 days; otherwise the full amount is due within 30 days. Paying on day 8 qualifies: $5,000 - (0.02 x $5,000) = $5,000 - $100 = $4,900. The full $5,000 applies only if it pays after day 10.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-151",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A manufacturer quotes a list price of $200 with a chain trade (functional) discount of 30/10/5 to wholesalers. What does a wholesaler pay?",
+  "options": [
+   "$110.00",
+   "$126.00",
+   "$119.70",
+   "$140.00"
+  ],
+  "answer": 2,
+  "explanation": "Chain discounts are applied one after another: $200 x 0.70 = $140; $140 x 0.90 = $126; $126 x 0.95 = $119.70. Adding the discounts together (45% off = $110) is the classic error - each discount applies to the already-reduced price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-152",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A Red Deer cafe chain earns larger price reductions from its coffee roaster as its total purchases over the year add up, regardless of the size of any single order. This is a:",
+  "options": [
+   "noncumulative quantity discount",
+   "cumulative quantity discount",
+   "seasonal discount",
+   "cash discount"
+  ],
+  "answer": 1,
+  "explanation": "Cumulative quantity discounts apply to total purchases over a period of time and encourage repeat buying and loyalty. Noncumulative quantity discounts are based on the size of a SINGLE order.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-153",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Crunchy Prairie Snacks gives Valley Fresh Grocers free cases of chips in return for running an end-of-aisle display and featuring the chips in its weekly flyer. This is a:",
+  "options": [
+   "trade-in allowance",
+   "functional discount",
+   "cumulative quantity discount",
+   "promotional allowance"
+  ],
+  "answer": 3,
+  "explanation": "Promotional allowances are cash payments or extra goods given to resellers for advertising or promoting the product; under the Competition Act they must be offered proportionally to all competing resellers. A functional (trade) discount rewards general channel functions such as warehousing and selling, not a specific promotion.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-154",
+  "concept": "c09-discounts-allowances",
+  "also": [
+   "c09-geographic"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the discounts a seller might offer as a special adjustment to the list price?",
+  "options": [
+   "Quantity discount",
+   "FOB origin pricing",
+   "Seasonal discount",
+   "Cash discount"
+  ],
+  "answer": 1,
+  "explanation": "FOB origin pricing is a GEOGRAPHIC adjustment - it determines who pays freight and when title passes - not a discount. The four discounts are quantity, seasonal, trade (functional) and cash.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-155",
+  "concept": "c09-discounts-allowances",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Discounts are reductions from list price that a seller gives a buyer as a reward for some favourable activity, such as paying promptly or buying in large quantities.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True - this is the course definition of discounts. Each type rewards a different favourable activity: buying more (quantity), buying early (seasonal), performing marketing functions (trade or functional) or paying promptly (cash).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-156",
+  "concept": "c09-geographic",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Free-on-board (FOB) origin pricing is a method of pricing where the:",
+  "options": [
+   "title of goods remains with the manufacturer until sold to the ultimate consumer",
+   "title of goods passes to the buyer upon arrival at the final destination",
+   "title of goods passes to the buyer at the point of loading",
+   "price the seller sets includes all transportation costs"
+  ],
+  "answer": 2,
+  "explanation": "FOB means 'free on board' some vehicle at some location: the seller pays to load the product, and title passes to the buyer at the point of loading, after which the buyer pays the freight. A price that includes all transportation costs describes uniform delivered pricing.",
+  "source": "official"
+ },
+ {
+  "id": "q09-157",
+  "concept": "c09-geographic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Gold Fertilizer quotes a Manitoba co-op a price at its Red Deer plant. Once the product is loaded onto the co-op's hired truck, the co-op owns it and pays the freight. This is:",
+  "options": [
+   "uniform delivered pricing",
+   "FOB origin pricing",
+   "single-zone pricing",
+   "basing-point pricing"
+  ],
+  "answer": 1,
+  "explanation": "Under FOB origin pricing the buyer takes title at the point of loading and pays transportation from the seller's location. Uniform delivered pricing (and its variations such as single-zone and basing-point) builds freight into the seller's quoted price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-158",
+  "concept": "c09-geographic",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts FOB origin pricing with uniform delivered pricing?",
+  "options": [
+   "Under FOB origin the seller pays freight; under uniform delivered the buyer pays",
+   "Both make distant buyers pay more than nearby buyers",
+   "Under uniform delivered pricing, title passes at the point of loading",
+   "Under FOB origin the buyer pays freight; under uniform delivered the price includes all transportation costs"
+  ],
+  "answer": 3,
+  "explanation": "FOB origin: the buyer pays freight and takes title at the point of loading, so distant buyers pay more. Uniform delivered: the seller quotes a price that includes all transportation costs. Saying the seller pays freight under FOB origin reverses the roles.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-159",
+  "concept": "c09-geographic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Maple Lane Books, an online retailer in Toronto, charges every customer in Canada the same delivered price, whether they live in Ottawa or Iqaluit. This form of uniform delivered pricing is called:",
+  "options": [
+   "multiple-zone pricing",
+   "FOB origin pricing",
+   "single-zone (postage-stamp) pricing",
+   "basing-point pricing"
+  ],
+  "answer": 2,
+  "explanation": "Single-zone (postage-stamp) pricing charges all buyers the same delivered price, like a stamp that costs the same to mail anywhere - a variation of uniform delivered pricing. Multiple-zone pricing would set different prices for different geographic zones.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-160",
+  "concept": "c09-geographic",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which of the following is NOT a variation of uniform delivered pricing?",
+  "options": [
+   "FOB origin pricing",
+   "Single-zone pricing",
+   "Basing-point pricing",
+   "FOB with freight-allowed pricing"
+  ],
+  "answer": 0,
+  "explanation": "FOB origin pricing is the opposite of uniform delivered pricing - the buyer pays freight from the seller's location. Single-zone, multiple-zone, FOB with freight-allowed (freight absorption) and basing-point pricing are all variations of uniform delivered pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-161",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Executives from three Ontario bakeries meet secretly and agree to raise the wholesale price of a loaf of bread by $1.50 at the same time. This is:",
+  "options": [
+   "horizontal price fixing",
+   "price discrimination",
+   "predatory pricing",
+   "vertical price fixing"
+  ],
+  "answer": 0,
+  "explanation": "Competitors colluding or conspiring to set prices is price fixing; because the conspirators are rivals at the same level of the channel, it is HORIZONTAL price fixing. Vertical price fixing involves a manufacturer controlling the prices its own resellers charge.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-162",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "BlendPro, a kitchen-appliance maker, tells retailers they must sell its blenders for no less than $199 and stops shipping to a Winnipeg store that advertised them at $159. This is an example of:",
+  "options": [
+   "horizontal price fixing",
+   "vertical price fixing (resale price maintenance)",
+   "predatory pricing",
+   "bait and switch"
+  ],
+  "answer": 1,
+  "explanation": "When a manufacturer controls the resale price its retailers charge, it is vertical price fixing (resale price maintenance), restricted under the Competition Act. Horizontal price fixing would require competing firms at the same level to collude.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-163",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Discount Electronics Depot advertises a 65-inch TV for $299 but keeps only one in stock. When shoppers arrive, staff say it is sold out, criticize the model anyway and push an $899 TV instead. This practice is:",
+  "options": [
+   "loss-leader pricing",
+   "double ticketing",
+   "price discrimination",
+   "bait and switch"
+  ],
+  "answer": 3,
+  "explanation": "Bait and switch is a form of deceptive pricing: advertising a bargain the seller does not intend to sell, then steering buyers to a pricier item. A genuine loss leader is actually available at the low price to draw traffic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-164",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "A shopper at a Halifax hardware store finds a drill with two price stickers: $89.99 and $119.99. Under Canada's rules on double ticketing, what price must the store charge?",
+  "options": [
+   "$119.99, the higher price",
+   "$89.99, the lower price",
+   "The average of the two prices",
+   "Whatever price is in the store's computer system"
+  ],
+  "answer": 1,
+  "explanation": "Double ticketing is a deceptive pricing practice; when a product carries two prices, the seller must sell it at the LOWER price. The store cannot charge the higher sticker or default to its system price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-165",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which situation is price discrimination rather than price fixing?",
+  "options": [
+   "Two competing cement makers agree to charge contractors the same high price",
+   "Rival airlines agree to add identical fuel surcharges",
+   "A manufacturer charges a large chain a lower price than competing small retailers for the same quantity, lessening competition",
+   "Three gas stations in a town agree not to undercut one another"
+  ],
+  "answer": 2,
+  "explanation": "Price discrimination is one seller charging COMPETING buyers different prices for like quantities in a way that lessens competition. Price fixing is competitors colluding to set prices, as in the other three options.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-166",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which of the following is NOT a form of deceptive pricing?",
+  "options": [
+   "Bait and switch",
+   "Double ticketing",
+   "Predatory pricing",
+   "Misleading comparisons with a 'suggested' price"
+  ],
+  "answer": 2,
+  "explanation": "Predatory pricing - a very low price set to drive competitors out of business - is a separate legal issue, not deceptive pricing. Bait and switch, double ticketing, bargains conditional on other purchases and misleading comparable-value or suggested-price comparisons are all deceptive pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-167",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In Canada, pricing practices such as price fixing and deceptive pricing are governed by the _____, which is enforced by the Competition Bureau.",
+  "options": [
+   "Competition Act",
+   "Consumer Packaging and Labelling Act",
+   "Weights and Measures Act",
+   "Food and Drugs Act"
+  ],
+  "answer": 0,
+  "explanation": "The Competition Act, enforced by the Competition Bureau, covers price fixing, price discrimination, deceptive pricing and predatory pricing. The Consumer Packaging and Labelling Act governs the information on labels, not pricing conduct.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-168",
+  "concept": "c09-legal",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "When an independent pharmacy opens in a small Alberta town, a national chain drops prices at its nearby store far below cost, planning to raise them again once the independent closes. This is:",
+  "options": [
+   "loss-leader pricing",
+   "penetration pricing",
+   "predatory pricing",
+   "below-market pricing"
+  ],
+  "answer": 2,
+  "explanation": "Predatory pricing charges a very low price to injure or drive out competitors, with the plan of raising prices afterward. Loss-leader pricing also cuts prices, but to draw traffic for other products - not to eliminate a rival.",
+  "source": "generated"
+ }
+]

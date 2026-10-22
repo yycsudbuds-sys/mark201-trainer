@@ -1,0 +1,528 @@
+[
+ {
+  "id": "q11-161",
+  "concept": "c11-merchant-wholesalers",
+  "also": [
+   "c11-agents-brokers"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A merchant wholesaler and a manufacturers' agent both sell a producer's goods to retailers. What is the key difference?",
+  "options": [
+   "The agent takes title to the goods; the merchant wholesaler earns a commission",
+   "The merchant wholesaler is owned by the manufacturer; the agent is independent",
+   "The merchant wholesaler takes title to the goods; the agent does not and earns a commission",
+   "The agent always holds inventory in a branch office"
+  ],
+  "answer": 2,
+  "explanation": "Title is the dividing line: merchant wholesalers buy and own the goods, while agents and brokers sell on commission without taking title. Ownership by the manufacturer describes branches and offices, not merchant wholesalers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-162",
+  "concept": "c11-merchant-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Because merchant wholesalers take title to the goods they handle, they:",
+  "options": [
+   "earn only a commission on each sale",
+   "bear the risks of ownership, such as theft, damage, spoilage and obsolescence",
+   "cannot resell the goods to retailers",
+   "are considered vertical integration by the manufacturer"
+  ],
+  "answer": 1,
+  "explanation": "Owning the goods means owning the risk, which is why risk bearing is a wholesaler function. Earning only commissions is what agents and brokers do, precisely because they do NOT take title.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-163",
+  "concept": "c11-merchant-wholesalers",
+  "also": [
+   "c11-limited-service-wholesalers"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What distinguishes full-service merchant wholesalers from limited-service merchant wholesalers?",
+  "options": [
+   "Full-service wholesalers do not take title, while limited-service wholesalers do",
+   "Limited-service wholesalers are owned by manufacturers",
+   "Full-service wholesalers sell only to ultimate consumers",
+   "Full-service wholesalers provide a wide range of services, while limited-service wholesalers offer only a few"
+  ],
+  "answer": 3,
+  "explanation": "Both groups are merchant wholesalers and both take title; they differ in how many services they perform. General and specialty merchandise wholesalers are full-service, while rack jobbers, cash and carry wholesalers, drop shippers and truck jobbers are limited-service.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-164",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Glossy Racks Inc. installs and stocks magazine and greeting-card displays in pharmacies. It owns the merchandise on the racks and bills each store only for the items that sell. Glossy Racks is a:",
+  "options": [
+   "truck jobber",
+   "drop shipper",
+   "rack jobber",
+   "broker"
+  ],
+  "answer": 2,
+  "explanation": "Rack jobbers furnish and stock display racks in stores, own the inventory and bill only for items sold. A truck jobber sells perishables for cash from a truck rather than maintaining racks.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-165",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Restaurant owners visit Metro Depot's warehouse, pay for supplies on the spot and haul them away in their own vans; Metro offers no credit and no delivery. Metro Depot is a:",
+  "options": [
+   "truck jobber",
+   "general merchandise wholesaler",
+   "cash and carry wholesaler",
+   "rack jobber"
+  ],
+  "answer": 2,
+  "explanation": "Customers paying cash and furnishing their own transportation, with no credit or delivery, defines cash and carry wholesaling. A general merchandise wholesaler is full-service, offering credit and delivery.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-166",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "TimberLink takes orders from builders for carloads of lumber and has the sawmill ship directly to each job site. TimberLink owns the lumber while it is in transit but never stores or handles it. TimberLink is a:",
+  "options": [
+   "drop shipper",
+   "broker",
+   "rack jobber",
+   "cash and carry wholesaler"
+  ],
+  "answer": 0,
+  "explanation": "Drop shippers (desk jobbers) take title but never physically handle, store or deliver the goods; the producer ships directly to the customer, typical for bulky goods like lumber. A broker also never handles goods, but a broker does not take title.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-167",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Fresh Daily Dairy runs a small warehouse and sends trucks along regular routes each morning, selling milk and yogurt to convenience stores for cash right off the truck. Fresh Daily is a:",
+  "options": [
+   "truck jobber",
+   "rack jobber",
+   "drop shipper",
+   "specialty merchandise wholesaler"
+  ],
+  "answer": 0,
+  "explanation": "Truck jobbers are small wholesalers with a small warehouse that sell perishables (bakery, dairy, meat) for cash from their trucks. A rack jobber stocks and owns in-store displays and bills only for items sold.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-168",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [
+   "c11-agents-brokers"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Both a drop shipper and a broker can arrange a sale without ever physically handling the goods. What distinguishes them?",
+  "options": [
+   "The drop shipper takes title to the goods; the broker does not",
+   "The broker takes title to the goods; the drop shipper does not",
+   "The drop shipper is owned by the manufacturer; the broker is independent",
+   "The broker always stores inventory in a warehouse"
+  ],
+  "answer": 0,
+  "explanation": "A drop shipper is a merchant wholesaler, so it owns the goods even though the producer ships them directly. A broker is an agent intermediary: it brings buyers and sellers together for a commission without taking title.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-169",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a limited-service merchant wholesaler?",
+  "options": [
+   "Cash and carry wholesaler",
+   "Truck jobber",
+   "Rack jobber",
+   "Selling agent"
+  ],
+  "answer": 3,
+  "explanation": "Selling agents are agents (no title) that handle a single producer's entire marketing function. The four limited-service merchant wholesalers are rack jobbers, cash and carry wholesalers, drop shippers and truck jobbers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-170",
+  "concept": "c11-limited-service-wholesalers",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A rack jobber is best defined as a wholesaler that:",
+  "options": [
+   "owns goods but ships them directly from producer to customer without handling them",
+   "furnishes and stocks racks in stores, owns the merchandise displayed and bills only for items sold",
+   "sells perishable goods for cash directly from a truck",
+   "requires customers to pay cash and provide their own transportation"
+  ],
+  "answer": 1,
+  "explanation": "That is the rack jobber definition (common for hosiery and magazines). The distractors define the drop shipper, truck jobber and cash and carry wholesaler, the other three limited-service types.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-171",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Ana represents four non-competing producers (a cutlery maker, a cookware maker, a linen maker and a candle maker), selling their lines to kitchen stores in an exclusive Alberta territory for a commission. Ana is a:",
+  "options": [
+   "selling agent",
+   "broker",
+   "general merchandise wholesaler",
+   "manufacturers' agent"
+  ],
+  "answer": 3,
+  "explanation": "Manufacturers' agents work for several producers, carrying non-competitive, complementary lines in an exclusive territory, and do not take title. A selling agent represents only ONE producer and handles its entire marketing function.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-172",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Okanagan Ridge, a small winery, contracts with Vino Sales Group to handle its entire marketing function (pricing, promotion and selling in all markets) for a commission. Vino Sales Group is a:",
+  "options": [
+   "manufacturers' agent",
+   "selling agent",
+   "broker",
+   "sales office"
+  ],
+  "answer": 1,
+  "explanation": "A selling agent represents a single producer and is responsible for that producer's entire marketing function. A sales office is owned by the manufacturer itself, not an independent agent.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-173",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Hana connects a potato farm with a food processor for a one-time sale of surplus potatoes and earns a commission. She has no ongoing relationship with either party and never owns the potatoes. Hana is acting as a:",
+  "options": [
+   "broker",
+   "manufacturers' agent",
+   "drop shipper",
+   "truck jobber"
+  ],
+  "answer": 0,
+  "explanation": "Brokers bring buyers and sellers together to make a sale, usually with no continuous relationship (common in real estate, food and insurance). A drop shipper would take title to the potatoes, which Hana does not.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-174",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes a manufacturers' agent from a selling agent?",
+  "options": [
+   "A selling agent sells non-competing lines for several producers in an exclusive territory; a manufacturers' agent handles the entire marketing function for one producer",
+   "A manufacturers' agent takes title; a selling agent does not",
+   "A manufacturers' agent sells non-competing lines for several producers in an exclusive territory; a selling agent handles the entire marketing function for one producer",
+   "A selling agent is owned by the manufacturer; a manufacturers' agent is independent"
+  ],
+  "answer": 2,
+  "explanation": "The key differences are how many producers they represent and how much of the marketing they handle. Neither takes title (both are agents earning commissions), and neither is owned by the manufacturer.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-175",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Agents and brokers differ from merchant wholesalers because they:",
+  "options": [
+   "take title to the goods and bear ownership risk",
+   "do not take title to the goods and typically earn commissions",
+   "are owned and operated by the manufacturer",
+   "sell mainly to ultimate consumers"
+  ],
+  "answer": 1,
+  "explanation": "Agents and brokers facilitate sales without owning the goods, earning commissions instead of resale margins. Taking title and bearing risk is what merchant wholesalers do.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-176",
+  "concept": "c11-agents-brokers",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about brokers is NOT accurate?",
+  "options": [
+   "Their main function is bringing buyers and sellers together",
+   "They usually have no continuous relationship with their clients",
+   "They are common in real estate, food and insurance",
+   "They take title to the goods they sell"
+  ],
+  "answer": 3,
+  "explanation": "Brokers never take title; they are agent intermediaries paid commissions. The other statements match the course description of brokers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-177",
+  "concept": "c11-manufacturer-branches",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Manufacturer's branches and offices are wholesaling operations that are:",
+  "options": [
+   "independently owned and take title to goods",
+   "independent agents that earn commissions",
+   "owned jointly by independent retailers",
+   "owned and operated by the manufacturer"
+  ],
+  "answer": 3,
+  "explanation": "Manufacturer's branches and offices are a form of vertical integration in wholesaling: the producer owns them. Independent firms that take title are merchant wholesalers; independent commission earners are agents and brokers.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-178",
+  "concept": "c11-manufacturer-branches",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Polar Appliances, a manufacturer, owns a regional facility in Winnipeg that holds inventory and sells and delivers appliances to retailers across the Prairies. This facility is a:",
+  "options": [
+   "sales office",
+   "selling agent",
+   "drop shipper",
+   "branch office"
+  ],
+  "answer": 3,
+  "explanation": "A manufacturer-owned unit that carries inventory and performs wholesaling functions is a branch office. A sales office does not carry inventory; it only performs a sales function.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-179",
+  "concept": "c11-manufacturer-branches",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "TechCore Chips, a manufacturer, opens a small downtown Toronto office where its salespeople meet business customers and take orders. All products ship from the factory; the office holds no inventory. This is a:",
+  "options": [
+   "branch office",
+   "broker",
+   "sales office",
+   "rack jobber"
+  ],
+  "answer": 2,
+  "explanation": "A manufacturer-owned sales office carries no inventory and performs only a sales function. A branch office would also store inventory and perform other wholesaling functions.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-180",
+  "concept": "c11-manufacturer-branches",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the key difference between a manufacturer's branch office and its sales office?",
+  "options": [
+   "A sales office carries inventory; a branch office does not",
+   "A branch office is independently owned; a sales office is owned by the manufacturer",
+   "A sales office takes title to goods; a branch office earns commissions",
+   "A branch office carries inventory; a sales office does not and performs only a sales function"
+  ],
+  "answer": 3,
+  "explanation": "Both are owned by the manufacturer; inventory is the difference. Branch = inventory plus wholesaling functions; sales office = no inventory, selling only.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-181",
+  "concept": "c11-manufacturer-branches",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might a manufacturer set up its own branch offices instead of relying on merchant wholesalers?",
+  "options": [
+   "To avoid ever holding inventory",
+   "To let independent agents take title to its goods",
+   "To control wholesaling functions directly through ownership (vertical integration)",
+   "To form a retailer-sponsored cooperative"
+  ],
+  "answer": 2,
+  "explanation": "Manufacturer's branches and offices represent vertical integration in wholesaling: the producer owns and controls the wholesale operation. Avoiding inventory describes a sales office, not the reason to open a branch office, which carries inventory.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-182",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Grocery Wholesale buys pasta by the truckload from manufacturers and resells it to small independent grocers in cases of 12. Which wholesaler function is this?",
+  "options": [
+   "Bulk breaking",
+   "Buying and assortment building",
+   "Warehousing",
+   "Risk bearing"
+  ],
+  "answer": 0,
+  "explanation": "Bulk breaking means buying in large quantities and dividing them into smaller lots that small customers can use. Assortment building is about bringing together a VARIETY of products, not splitting one product into smaller quantities.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-183",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A wholesaler lets small retailers pay for their orders 60 days after delivery. Which wholesaler function is this?",
+  "options": [
+   "Risk bearing",
+   "Financing",
+   "Market information",
+   "Transportation"
+  ],
+  "answer": 1,
+  "explanation": "Extending credit to customers is the financing function. Risk bearing is absorbing the risks of owning goods (theft, damage, spoilage, obsolescence), not giving customers time to pay.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-184",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A heat wave spoils a wholesaler's stock of chocolate before it can be resold, and the wholesaler absorbs the loss because it owns the goods. This reflects which wholesaler function?",
+  "options": [
+   "Financing",
+   "Risk bearing",
+   "Warehousing",
+   "Bulk breaking"
+  ],
+  "answer": 1,
+  "explanation": "By taking title, wholesalers absorb risks such as spoilage, theft, damage and obsolescence; that is the risk-bearing function. Warehousing (storing goods) is where the loss happened, but absorbing the financial loss is risk bearing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-185",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A wholesaler helps an independent hardware store redesign its layout, train its clerks and set up an inventory-control system. Which wholesaler function is this?",
+  "options": [
+   "Market information",
+   "Management services and counselling",
+   "Selling and promoting",
+   "Buying and assortment building"
+  ],
+  "answer": 1,
+  "explanation": "Helping retailers improve operations (training, layout, accounting or inventory systems) is management services and counselling. Market information is passing along facts about competitors, new products and prices, not hands-on operational help.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-186",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A wholesaler tells its suppliers which competing products are gaining popularity with retailers and how prices are trending. Which wholesaler function is this?",
+  "options": [
+   "Management services and counselling",
+   "Selling and promoting",
+   "Risk bearing",
+   "Market information"
+  ],
+  "answer": 3,
+  "explanation": "Sharing information about competitors, new products and price developments is the market information function. Management services and counselling involves helping customers run their businesses, not reporting market trends.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-187",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the nine wholesaler functions?",
+  "options": [
+   "Bulk breaking",
+   "Financing",
+   "Market information",
+   "Category management"
+  ],
+  "answer": 3,
+  "explanation": "Category management is a retailer practice (managing a product category as a strategic business unit). The nine wholesaler functions are selling and promoting, buying and assortment building, bulk breaking, warehousing, transportation, financing, risk bearing, market information, and management services and counselling.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-188",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes bulk breaking from buying and assortment building?",
+  "options": [
+   "Bulk breaking divides large quantities into smaller lots; assortment building brings together a variety of products customers need",
+   "Bulk breaking brings together a variety of products; assortment building divides large quantities into smaller lots",
+   "Both refer to storing goods until customers need them",
+   "Both refer to extending credit to customers"
+  ],
+  "answer": 0,
+  "explanation": "Bulk breaking is about QUANTITY (a truckload into cases); assortment building is about VARIETY (gathering many items so customers can buy from one source). Storing goods is warehousing and extending credit is financing.",
+  "source": "generated"
+ },
+ {
+  "id": "q11-189",
+  "concept": "c11-wholesaler-functions",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Warehousing, transportation, financing and risk bearing are all among the nine wholesaler functions.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The nine functions are selling and promoting; buying and assortment building; bulk breaking; warehousing; transportation; financing; risk bearing; market information; and management services and counselling.",
+  "source": "generated"
+ }
+]

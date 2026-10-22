@@ -1,0 +1,443 @@
+{
+  "chapter": 8,
+  "title": "New Product Development",
+  "topics": [
+    {"id": "t08-1", "order": 1, "title": "The product life cycle", "summary": "Every product moves through four stages: introduction, growth, maturity and decline. The right marketing mix changes at each stage. This topic covers how the sales and profit curves behave, the stage-by-stage management table (Figure 8-3) you must memorize, primary vs selective demand, and what to do when a product declines (deletion vs harvesting).", "concepts": ["c08-plc", "c08-plc-stage-table", "c08-introduction", "c08-primary-selective-demand", "c08-growth", "c08-maturity", "c08-decline", "c08-deletion-harvesting"]},
+    {"id": "t08-2", "order": 2, "title": "PLC shapes", "summary": "Not every product follows the textbook curve. How much a consumer must learn changes the length of the introduction stage (high-learning vs low-learning products), and fashions and fads have their own distinctive patterns. Exam questions describe a product's sales pattern and ask you to name the shape.", "concepts": ["c08-high-learning", "c08-low-learning", "c08-fashion-fad"]},
+    {"id": "t08-3", "order": 3, "title": "Extending the PLC", "summary": "Instead of letting a mature product slide into decline, marketers can stretch its life: modify the product, modify the market, reposition it, or introduce a new product. Know each tactic's sub-types (product improvements, line extensions, new customers, increased use, new use situations, trading up and down) and the cannibalization risk that comes with line extensions.", "concepts": ["c08-plc-extension", "c08-product-modification", "c08-line-extension", "c08-cannibalization", "c08-market-modification", "c08-repositioning"]},
+    {"id": "t08-4", "order": 4, "title": "Innovation, adoption and failure", "summary": "New products are the lifeblood of a company, but they are costly and risky to develop. This topic covers how new an innovation is (minor, continuous, radical), who adopts it and when (the adoption curve and its five categories), the four barriers that stop people adopting, and the five reasons new products fail.", "concepts": ["c08-degree-innovation", "c08-adoption-curve", "c08-adoption-barriers", "c08-product-failure"]},
+    {"id": "t08-5", "order": 5, "title": "Growth strategy and the NPD process", "summary": "Firms choose where to grow using the strategic approaches to growth matrix (market penetration, product development, market development, diversification). They then follow a seven-step new product development process from strategy to commercialization. Know each step's purpose, methods and position in the sequence.", "concepts": ["c08-ansoff", "c08-npd-process", "c08-npd-strategy-ideas", "c08-screening", "c08-business-analysis", "c08-development", "c08-test-marketing", "c08-commercialization"]}
+  ],
+  "concepts": [
+    {
+      "id": "c08-plc",
+      "topic": "t08-1",
+      "term": "Product life cycle (PLC)",
+      "definition": "The stages a new product goes through in the marketplace (introduction, growth, maturity and decline), used to help manage a product from its initial launch to its eventual decline.",
+      "explain": "Think of the PLC as a product's biography. Sales (in units) rise slowly at launch, climb fast in growth, peak and plateau in maturity, and fall in decline. The profit curve lags behind sales: it is negative or minimal at introduction, reaches its maximum late in growth, levels off in maturity and then falls. The length of the cycle varies by product, and technology products tend to have much shorter cycles.",
+      "example": "Smartphones moved from introduction (few buyers, high prices) through rapid growth to maturity, where Rogers, Bell and Telus now fight over subscribers with discounts and promotions.",
+      "contrast": "The PLC tracks a PRODUCT's sales and profits over time; the adoption curve tracks the PEOPLE (innovators to laggards) who buy it over time. The NPD process is the seven-step internal process that happens BEFORE the PLC begins at commercialization.",
+      "trap": "Watch the timing of the peaks: profits reach their maximum in GROWTH and level off in maturity, while SALES peak in maturity. A statement that 'profits peak in maturity' or 'sales peak in growth' is wrong for this course.",
+      "mnemonic": "I-G-M-D: 'I Grow, Mature, Decline.' Profit peaks first (growth), sales peak second (maturity).",
+      "figure": {"type": "list", "title": "PLC curve facts (Figure 8-1)", "items": ["Introduction: sales low and slow; profit negative or minimal", "Growth: sales rise rapidly; profits increase and reach their maximum", "Maturity: sales peak and plateau; profits are maximized and level off", "Decline: sales fall; profits decrease to minimal", "The profit curve lags the sales curve; technology products have shorter PLCs"]}
+    },
+    {
+      "id": "c08-plc-stage-table",
+      "topic": "t08-1",
+      "term": "PLC stage table (Figure 8-3: managing the stages of the PLC)",
+      "definition": "The course's summary of how competition, the general marketing objective, the 4 Ps (product, price, place, promotion) and profit change across the introduction, growth, maturity and decline stages.",
+      "explain": "This table is a must-memorize grid: seven rows by four stages. Read each row as a story. Competitors go few, more, many, fewer. Objectives go awareness, product differentiation, brand loyalty, product rationalization. Distribution goes limited, increased, full, reduced. Most exam questions give you one or two cells and ask for the stage, or name a stage and ask for the right action.",
+      "example": "A Calgary start-up launching a smart bike lock with limited distribution, awareness advertising and a skimming price is in introduction. Once rivals copy it and the company adds features and expands into more stores, it has moved to growth.",
+      "contrast": "Don't mix up the objective row and the promotion row. Growth's OBJECTIVE is product differentiation and its PROMOTION emphasizes points of difference versus competitors. Maturity's objective is brand loyalty, but its promotion focuses on pricing and sales promotion.",
+      "trap": "Each price cue maps to one stage: 'skimming or penetration' = introduction; 'slowly reduced' = growth; discounts 'used frequently' = maturity; 'very low prices' = decline. 'Full distribution is achieved' = maturity, NOT growth (growth = distribution is increased).",
+      "mnemonic": "Objectives A-D-L-R: 'A Dog Loves Running' (Awareness, Differentiation, Loyalty, Rationalization).",
+      "figure": {"type": "table", "title": "Figure 8-3 Managing the stages of the product life cycle", "head": ["Row", "Introduction", "Growth", "Maturity", "Decline"], "rows": [
+        ["Competition", "Few competitors exist", "More competitors enter the market", "Many competitors in the market", "Reduced competition, with some competitors leaving the market"],
+        ["General marketing objective", "Awareness", "Product differentiation", "Brand loyalty", "Product rationalization"],
+        ["Product", "Focus on a new product or brand", "Introduce more features", "Ensure full product line is available and innovative with new ideas", "Retain only best sellers or discontinue"],
+        ["Price", "Use a skimming or penetration strategy", "Prices are slowly reduced", "Price discounts are used frequently", "Very low prices"],
+        ["Place", "Limited distribution", "Distribution is increased", "Full distribution is achieved", "Distribution is reduced"],
+        ["Promotion", "Focus on building awareness with advertising", "Emphasize points of difference versus the competition", "Focus on pricing and sales promotion", "Only minimal promotion, if any"],
+        ["Profit", "Minimal profits, if any", "Increased profits that reach their maximum", "Maximized profits that level off", "Decreasing and minimal profits"]
+      ]}
+    },
+    {
+      "id": "c08-introduction",
+      "topic": "t08-1",
+      "term": "Introduction stage",
+      "definition": "The first PLC stage, when a product is launched; the marketing objective is to create consumer awareness and stimulate trial, with few competitors, limited distribution and minimal profits, if any.",
+      "explain": "At launch nobody knows the product, so the job is awareness and trial. Costs are high (R&D, launch advertising) and sales are low, so profits are minimal or negative. Price is set with either skimming (a high price to recover R&D) or penetration (a low price to build volume), distribution is limited, and advertising focuses on building awareness. The firm must first stimulate primary demand for the product class, and later selective demand for its brand.",
+      "example": "When an Edmonton firm launches the first app-controlled snow-melting driveway mat, it advertises heavily to explain what the product is, sells it through only a few retailers, and earns little or no profit.",
+      "contrast": "Introduction vs growth: in introduction there are FEW competitors and the objective is AWARENESS; in growth MORE competitors enter, repeat buyers appear and the objective shifts to PRODUCT DIFFERENTIATION.",
+      "trap": "'Create awareness and stimulate trial' is the introduction signal. Skimming OR penetration pricing both belong to introduction, so don't let 'low price' push you to decline ('very low prices') or maturity ('frequent discounts').",
+      "mnemonic": "Introduction = 'Hello, world': awareness, trial, few rivals, little profit.",
+      "figure": null
+    },
+    {
+      "id": "c08-primary-selective-demand",
+      "topic": "t08-1",
+      "term": "Primary vs selective demand",
+      "definition": "Primary demand is the desire for the product class rather than for a specific brand; selective demand is the desire for a specific brand within the product class.",
+      "explain": "When a product category is brand new, consumers don't yet want the category at all, so the pioneer must first sell the idea of the product class (primary demand). As competitors enter and the category becomes familiar, marketing shifts to persuading buyers to choose one brand over the others (selective demand). In the introduction stage the firm stimulates primary demand first and selective demand later.",
+      "example": "Early ads for oat milk explained why anyone would drink oat milk at all (primary demand); today oat-milk brands argue that their brand tastes better or is more sustainable than rivals (selective demand).",
+      "contrast": "Primary = 'buy this KIND of product'; selective = 'buy OUR brand of it'. Don't confuse selective demand with selective distribution (a place decision) or with brand loyalty (the maturity-stage objective).",
+      "trap": "A pioneering firm explaining what a new category does = primary demand. If the ad compares brands or stresses points of difference versus rivals, it is selective demand.",
+      "mnemonic": "Primary = Product class first; Selective = Specific brand second.",
+      "figure": null
+    },
+    {
+      "id": "c08-growth",
+      "topic": "t08-1",
+      "term": "Growth stage",
+      "definition": "The second PLC stage, marked by rapidly increasing sales, the entry of more competitors, repeat purchasers and an objective of product differentiation; profits increase and reach their maximum.",
+      "explain": "Word spreads, early buyers become repeat buyers, and sales climb fast. Competitors see the opportunity and enter, so the firm differentiates: it introduces more features and versions, slowly reduces prices, increases distribution, and its promotion emphasizes points of difference versus the competition. Profits increase and reach their peak late in this stage.",
+      "example": "As e-bikes caught on in Canada, early brands added longer-range batteries and cargo versions, expanded from specialty shops into big sporting-goods chains, and advertised what made their bike better than the new rivals.",
+      "contrast": "Growth vs maturity: growth = MORE competitors entering, distribution INCREASED, prices SLOWLY REDUCED, profits REACH their maximum; maturity = MANY competitors, FULL distribution, FREQUENT discounts, profits LEVEL OFF.",
+      "trap": "Profits PEAK in growth (per the course table), even though sales keep rising into maturity. 'Emphasize points of difference versus the competition' is growth's promotion, not introduction's (awareness) or maturity's (pricing and sales promotion).",
+      "mnemonic": "Growth = 'Get different': more features, more rivals, more stores, max profit.",
+      "figure": null
+    },
+    {
+      "id": "c08-maturity",
+      "topic": "t08-1",
+      "term": "Maturity stage",
+      "definition": "The third PLC stage, when sales growth slows and sales peak, many competitors fight for share, marginal competitors drop out and the objective is brand loyalty; profits are maximized and level off.",
+      "explain": "Most people who will buy the product already have, so growth comes from taking share. With many competitors, firms try to hold market share and build brand loyalty: they ensure the full product line is available and innovative (often adding line extensions), use price discounts frequently, achieve full distribution and promote through pricing and sales promotion. Profits level off and eventually start to decline. Most PLC extension strategies are used here.",
+      "example": "Canadian soft drinks are mature: the big brands offer many flavours and sizes, are sold everywhere from Loblaws to gas stations, and constantly run flyer deals.",
+      "contrast": "Maturity vs decline: maturity = MANY competitors and FREQUENT discounts with FULL distribution; decline = competitors LEAVING, VERY LOW prices, REDUCED distribution and minimal promotion.",
+      "trap": "'Full distribution is achieved' and 'price discounts are used frequently' are maturity cues. 'Brand loyalty' is maturity's objective, so don't pick growth (product differentiation). Sales peak in maturity, while profits peaked in growth and level off here.",
+      "mnemonic": "Maturity = 'Many rivals, loyal fans, everywhere, always on sale.'",
+      "figure": null
+    },
+    {
+      "id": "c08-decline",
+      "topic": "t08-1",
+      "term": "Decline stage",
+      "definition": "The final PLC stage, when sales fall (usually because of environmental change or new technology), competition is reduced as some competitors leave, and the objective is product rationalization.",
+      "explain": "When a better technology or changing tastes arrive, sales drop. Firms rationalize: they retain only best sellers or discontinue items, cut prices very low, reduce distribution and do only minimal promotion, if any. Profits are decreasing and minimal. Management then chooses between deletion (drop the product) and harvesting (keep it with reduced support).",
+      "example": "DVD players declined as streaming took over; the remaining makers trimmed their lines to a couple of models, sold them at very low prices and stopped advertising.",
+      "contrast": "Decline vs maturity: both involve price pressure, but maturity uses FREQUENT DISCOUNTS while many competitors fight; decline has VERY LOW PRICES while competitors EXIT and distribution SHRINKS. Decline vs introduction: introduction has FEW competitors that EXIST; decline has REDUCED competition as rivals LEAVE.",
+      "trap": "'Product rationalization' is the decline objective; don't confuse it with 'brand loyalty' (maturity). 'Reduced competition' signals decline, not introduction ('few competitors exist').",
+      "mnemonic": "Decline = 'Drop or milk': trim the line, slash the price, shrink the shelves.",
+      "figure": null
+    },
+    {
+      "id": "c08-deletion-harvesting",
+      "topic": "t08-1",
+      "term": "Deletion vs harvesting",
+      "definition": "Deletion is dropping a product from the company's product line; harvesting is keeping the product but reducing marketing support (and costs) to reap some minor profits from the remaining sales.",
+      "explain": "Both are decline-stage strategies. Deletion removes the product completely, freeing resources for better opportunities. Harvesting keeps selling to remaining buyers while cutting promotion and other costs, so each remaining sale is more profitable even as volume shrinks.",
+      "example": "A Winnipeg snack maker drops its slow-selling sour-cream crisps entirely (deletion) but keeps its old-fashioned toffee on shelves with no advertising because a loyal base still buys it (harvesting).",
+      "contrast": "Harvesting KEEPS the product and CUTS support; deletion DROPS the product. Neither is a PLC extension strategy: extension strategies (product or market modification, repositioning, a new product) try to sustain or revive sales, while harvesting accepts the decline.",
+      "trap": "Harvesting cues: 'drastically reduces promotion', 'maximize the remaining profit', 'keeps the product'. Deletion cues: 'discontinue', 'drop from the line', 'remove'. Distractors on the official question are line extension, radical innovation and commercialization.",
+      "mnemonic": "Harvest = keep the crop, stop the watering. Delete = pull it out.",
+      "figure": null
+    },
+    {
+      "id": "c08-high-learning",
+      "topic": "t08-2",
+      "term": "High-learning product",
+      "definition": "A product for which significant consumer education is required, resulting in an extended introductory period in the PLC.",
+      "explain": "If consumers must learn what a product is, how to use it and why it's better, sales take a long time to build, so the introduction stage stretches out. Marketers spend heavily on education before growth kicks in.",
+      "example": "When the Swiffer Sweeper first launched, consumers had to understand the new product, how to use it and what to do with their old brooms and mops. Early microwave ovens and electric vehicles are other examples.",
+      "contrast": "High-learning = LONG introduction because of consumer education; low-learning = SHORT introduction because benefits are self-evident. Both describe the PLC SHAPE; they are not the degree-of-innovation categories (minor, continuous, radical).",
+      "trap": "The stem describes consumers needing to learn how to use something, then asks what 'type of product' it is in PLC terms. Don't pick 'fad' or vague options like 'learning' or 'new concept'. If the question asks about degree of INNOVATION instead, the answer set is minor/continuous/radical.",
+      "mnemonic": "High learning = high hurdle = long launch.",
+      "figure": null
+    },
+    {
+      "id": "c08-low-learning",
+      "topic": "t08-2",
+      "term": "Low-learning product",
+      "definition": "A product whose benefits are self-evident and requires little learning, so it has a short introductory stage and sales begin immediately.",
+      "explain": "Because buyers instantly understand what the product does, it skips the long education phase and sales start right away. The downside is that such products are easily copied by competitors, so the firm needs strong, broad distribution to win share quickly.",
+      "example": "Dr. Oetker's new frozen pizza flavours sell well immediately with very little promotion; a new cereal under a well-known brand behaves the same way.",
+      "contrast": "Low-learning vs high-learning: SHORT introduction and immediate sales vs EXTENDED introduction and heavy education. Low-learning is about PLC SHAPE; the same product judged on degree of innovation would be a MINOR innovation.",
+      "trap": "'Sells well immediately with very little promotion' = low-learning for a PLC-shape question. Don't choose 'fashion' or 'fad': a fad also rises quickly, but its defining feature is the rapid FALL.",
+      "mnemonic": "Low learning = little lag.",
+      "figure": null
+    },
+    {
+      "id": "c08-fashion-fad",
+      "topic": "t08-2",
+      "term": "Fashion and fad products",
+      "definition": "A fashion product is a style that becomes popular, declines and then returns in cycles over the years; a fad is a product with a rapid rise and an equally rapid fall, giving it a very short life cycle.",
+      "explain": "Both have unusual PLC shapes. Fashions are cyclical: a style falls out of favour and comes back years later. Fads explode in popularity and disappear almost as quickly, usually without returning.",
+      "example": "Fidget spinners and the Pet Rock were fads; wide-leg jeans and retro sneaker styles are fashions that keep coming back.",
+      "contrast": "Fashion = comes BACK (cyclical, over years); fad = up fast and DOWN fast (very short life, no comeback). A low-learning product also starts fast, but it can enjoy a long life afterward.",
+      "trap": "'Reappears', 'returns', 'comes back in style' = fashion. 'Craze', 'sudden spike then collapse', 'gone within a year' = fad. Don't equate 'fashion' with the clothing industry: a clothing item can be a fad.",
+      "mnemonic": "Fashion = Frequent comeback; Fad = Fast and finished.",
+      "figure": null
+    },
+    {
+      "id": "c08-plc-extension",
+      "topic": "t08-3",
+      "term": "PLC extension strategies",
+      "definition": "Four ways marketers can extend a product's life cycle: (1) modifying the product, (2) modifying the market, (3) repositioning the product and (4) introducing a new product.",
+      "explain": "Rather than accept decline, a firm can change the product itself (improvements, line extensions), change who buys it or how it is used (new customers, more use, new use situations), change how it is positioned and the value it offers (repositioning, trading up or down), or replace it with a new product. These strategies are typically used in late growth and maturity.",
+      "example": "Arm & Hammer extended the life of its baking soda by promoting a new use situation (deodorizing the fridge) rather than just baking.",
+      "contrast": "Extension strategies try to SUSTAIN or REVIVE sales; harvesting and deletion are decline-stage strategies that ACCEPT falling sales. Don't confuse them with the strategic approaches to growth (Ansoff matrix), which classify growth by product and market newness.",
+      "trap": "Know each tactic's parent bucket: product improvements and line extensions = MODIFYING THE PRODUCT; new customers, increased use and new use situations = MODIFYING THE MARKET; trading up and trading down = REPOSITIONING.",
+      "mnemonic": "P-M-R-N: 'Please Make Revenue Now' (Product, Market, Reposition, New product).",
+      "figure": {"type": "list", "title": "Four PLC extension strategies", "items": ["1. Modifying the product: product improvements; line extensions", "2. Modifying the market: finding new customers; increasing a product's use; creating a new use situation", "3. Repositioning a product: meet changing consumer needs, react to competition or improve value (trading up / trading down)", "4. Introducing a new product"]}
+    },
+    {
+      "id": "c08-product-modification",
+      "topic": "t08-3",
+      "term": "Product modification (product improvements)",
+      "definition": "A PLC extension strategy that alters a product's characteristics, such as its quality, performance or appearance, to increase sales; product improvements and line extensions are its two forms.",
+      "explain": "Here the firm changes the PRODUCT, not the market. A product improvement upgrades the existing item (a better formula, longer battery life, a new design) so it stays competitive. A line extension adds a new variety, flavour or size to the existing line. Both aim to keep a mature product fresh.",
+      "example": "A Canadian detergent brand reformulates its existing liquid to clean better in cold water and relaunches it as 'new and improved', which is a product improvement.",
+      "contrast": "A product improvement modifies an EXISTING item; a line extension ADDS a new item to the line; market modification leaves the product alone and changes WHO uses it or HOW/WHEN it is used.",
+      "trap": "If the product itself is unchanged and only the label recipes or the target customer change, it is MARKET modification, not a product improvement. The official soup-recipe question uses 'product improvements' as a distractor.",
+      "mnemonic": "Improve the item or extend the line: either way you're changing the PRODUCT.",
+      "figure": null
+    },
+    {
+      "id": "c08-line-extension",
+      "topic": "t08-3",
+      "term": "Line extension",
+      "definition": "The addition of a new item, such as a new flavour, size, variety or model, to an already existing product line under the same brand.",
+      "explain": "Line extensions are a product-modification strategy used heavily in maturity: they keep a brand fresh, fill shelf space and meet varied needs. Because the brand is already known and trusted, new items usually require little learning and sell quickly. The risk is that too many varieties confuse consumers and cannibalize the brand's existing items, which is the point of the slide asking 'Why all the varieties? Good idea?' about Tide.",
+      "example": "Kellogg's adds two new cereals to its well-known brands and sells over 3 million units in the first quarter because consumers already trust the name.",
+      "contrast": "Line extension = a new item in the SAME product line and category; brand extension (Chapter 7) = an existing brand name moved into a NEW product class; product improvement = changing an EXISTING item rather than adding one.",
+      "trap": "Line-extension scenarios come with distractors like test marketing, harvesting or dumping. If the brand enters a totally different category (a cereal brand launching frozen pizza), think brand extension, not line extension.",
+      "mnemonic": "Line extension = longer line, same brand, same category.",
+      "figure": null
+    },
+    {
+      "id": "c08-cannibalization",
+      "topic": "t08-3",
+      "term": "Cannibalization",
+      "definition": "When a new product takes sales away from the firm's own existing products rather than from competitors.",
+      "explain": "If a company launches something its own customers buy INSTEAD of its current products, total company sales barely grow. Cannibalization is a key risk of adding too many line extensions, because new varieties mostly pull buyers from the brand's existing varieties.",
+      "example": "When a snack brand launches a 'lightly salted' version of its chips, many buyers simply switch from its regular chips, so the new item mostly eats into the company's own sales.",
+      "contrast": "Cannibalization = sales shifted from the firm's OWN products; normal competition = sales taken from or lost to RIVALS. A line extension is the action; cannibalization is a possible consequence.",
+      "trap": "'Sales of the company's existing product fell after it launched its own new version' = cannibalization, not the decline stage or harvesting. The cause is the firm's own new product, not an outside technology change or a competitor.",
+      "mnemonic": "Cannibal = eating your own.",
+      "figure": null
+    },
+    {
+      "id": "c08-market-modification",
+      "topic": "t08-3",
+      "term": "Market modification",
+      "definition": "A PLC extension strategy that changes the market for a product rather than the product itself, by finding new customers, increasing a product's use, or creating a new use situation.",
+      "explain": "Finding new customers means selling the same product to a group that did not buy it before. Increasing a product's use means getting existing customers to use it more often or in larger amounts. Creating a new use situation means promoting a new occasion or purpose for the product.",
+      "example": "Suzanne's Soup Company added dinner recipes to its labels so people would eat its soup at dinner, not just lunch (a new use situation); Arm & Hammer promoting baking soda as a fridge deodorizer is another new use situation.",
+      "contrast": "New use situation = a new OCCASION or PURPOSE; increasing use = the SAME use more OFTEN or in larger amounts; finding new customers = a new GROUP of buyers. Product modification, by contrast, changes the product itself.",
+      "trap": "Recipes on labels and 'use it for X too' = new use situation, not increasing use. 'Three cans a day instead of one' = increasing use. 'Market our baby shampoo to adults' = finding new customers.",
+      "mnemonic": "Who, how much, what for: new customers (who), increased use (how much), new use situation (what for).",
+      "figure": {"type": "list", "title": "Three market modifications", "items": ["Finding new customers: a new group of users for the unchanged product", "Increasing a product's use: current users use it more often or in larger amounts", "Creating a new use situation: a new occasion or purpose for the product"]}
+    },
+    {
+      "id": "c08-repositioning",
+      "topic": "t08-3",
+      "term": "Repositioning (incl. trading up and trading down)",
+      "definition": "Changing the place a product occupies in consumers' minds relative to competing products, in order to meet changing consumer needs, react to competition or improve value; it includes trading up and trading down.",
+      "explain": "A firm may reposition to react to a competitor's position, reach a new market, catch a rising trend or change the value it offers. Trading up adds value (features, higher quality) and raises the price. Trading down reduces features, quality or price, and also includes downsizing package contents while keeping the price the same.",
+      "example": "A Quebec cheese maker repositions its mild cheddar from a kids' lunchbox snack to a premium charcuterie-board cheese with new packaging and a higher price (trading up).",
+      "contrast": "Repositioning changes the product's POSITION and value in consumers' minds; product modification changes the PRODUCT itself (an improvement or a new item in the line); market modification targets new users or uses. Trading up = more for more; trading down = less for less, or less for the same price.",
+      "trap": "Shrinking package contents at the same price is trading DOWN, not a product improvement. Upgrading an existing item and raising its price is trading UP, not a line extension, unless a separate new item is added to the line.",
+      "mnemonic": "Up = more for more; Down = less for less (or less for the same).",
+      "figure": null
+    },
+    {
+      "id": "c08-degree-innovation",
+      "topic": "t08-4",
+      "term": "Degree of innovation (minor, continuous, radical)",
+      "definition": "A classification of new products by how much new learning they require of consumers: minor innovations require no new learning, continuous innovations change the consumer's normal routine but do not require totally new learning, and radical innovations require new learning and consumption patterns.",
+      "explain": "'Newness' can be judged from the company's view (new to the firm), the market's view (new to the market) or the consumer's view (how much the consumer must learn). The more learning required, the more the marketing must educate: minor innovations need awareness and wide distribution; continuous innovations need advertising of points of difference and benefits; radical innovations need education through advertising, product trial and personal selling, with public relations playing a major role.",
+      "example": "New and improved toothpaste = minor; Swiffer WetJet or wearable technology = continuous; Amazon Alexa, self-driving cars or 3D printers = radical.",
+      "contrast": "Degree of innovation classifies the innovation by CONSUMER LEARNING; high- and low-learning describe the SHAPE of the PLC. One product can be both: Dr. Oetker's new pizza flavours are a low-learning product AND a minor innovation.",
+      "trap": "'Continuous improvement' and 'mini updates' are not course terms. 'Changes the routine but not totally new learning' = continuous, not radical. 'Public relations plays a major role', 'personal selling' and 'product trial' = radical. 'Wide distribution' as the emphasis = minor.",
+      "mnemonic": "Minor = no learning; Continuous = new routine; Radical = new everything.",
+      "figure": {"type": "table", "title": "Figure 8-5 Degree of product innovation", "head": ["Degree", "Consumer learning", "Examples", "Marketing emphasis"], "rows": [
+        ["Minor innovation", "Requires no new learning by consumers", "New and improved toothpaste or detergent", "Gain consumer awareness and wide distribution"],
+        ["Continuous innovation", "Changes the consumer's normal routine but does not require totally new learning", "Swiffer WetJet; wearable technology", "Advertise points of difference and benefits to consumers"],
+        ["Radical innovation", "Requires new learning and consumption patterns by consumers", "Amazon Alexa / Google Home; self-driving cars; 3D printers", "Educate consumers through advertising, product trial and personal selling; public relations can play a major role"]
+      ]}
+    },
+    {
+      "id": "c08-adoption-curve",
+      "topic": "t08-4",
+      "term": "Adoption curve (diffusion of innovation)",
+      "definition": "A model of how a new product is adopted over time by five adopter categories: innovators (2.5%), early adopters (13.5%), early majority (34%), late majority (34%) and laggards (16%).",
+      "explain": "People don't all buy a new product at once. Venturesome innovators try it first, then early adopters, the leaders in social settings whose approval influences the deliberate early majority. The skeptical late majority follows, and laggards, who fear debt and rely on neighbours and friends for information, come last. Marketers court early adopters because their influence drives the mass market.",
+      "example": "When a new smart-ring fitness tracker launches in Toronto, tech enthusiasts who read many review sources buy it first (innovators); popular fitness instructors who post about it are early adopters; most others follow over the next few years.",
+      "contrast": "Innovators are VENTURESOME, higher educated and use MULTIPLE information sources; early adopters are LEADERS in social settings with slightly above-average education. Early majority (deliberate, many informal social contacts) vs late majority (skeptical, below-average social status): both are 34%.",
+      "trap": "Percentages: 2.5 / 13.5 / 34 / 34 / 16. Laggards are 16%, not 2.5%. Innovators plus early adopters together = 16%; adoption reaches 50% once the early majority has adopted and 84% after the late majority. 'Leaders in social settings' = early adopters, NOT innovators.",
+      "mnemonic": "2.5-13.5-34-34-16: 'Venturesome, Leaders, Deliberate, Skeptical, Debt-fearing.'",
+      "figure": {"type": "table", "title": "Figure 8-6 The adoption curve", "head": ["Category", "Share", "Descriptors"], "rows": [
+        ["Innovators", "2.5%", "Venturesome; higher educated; use multiple information sources"],
+        ["Early adopters", "13.5%", "Leaders in social settings; slightly above average education"],
+        ["Early majority", "34%", "Deliberate; many informal social contacts"],
+        ["Late majority", "34%", "Skeptical; below average social status"],
+        ["Laggards", "16%", "Fear of debt; neighbours and friends are information sources"]
+      ]}
+    },
+    {
+      "id": "c08-adoption-barriers",
+      "topic": "t08-4",
+      "term": "Barriers to adoption",
+      "definition": "Four barriers that deter consumers from adopting a new product: usage, value, risk and psychological barriers.",
+      "explain": "A usage barrier exists when the product isn't compatible with consumers' existing habits. A value barrier exists when the product offers no incentive to switch from what people already use. A risk barrier is the perceived physical, economic or social risk of adopting. A psychological barrier comes from cultural differences or image concerns. Marketers must identify which barrier is at work before they can remove it.",
+      "example": "Many Albertans hesitate to buy an electric vehicle because they fear being stranded far from a charger on a cold highway (a risk barrier), even though they understand how to drive one.",
+      "contrast": "Usage = 'it doesn't fit how I do things'; value = 'it's not better than what I have'; risk = 'what if it fails, costs me, or embarrasses me'; psychological = 'it clashes with my culture or my image'.",
+      "trap": "The four barriers are Usage, Value, Risk and Psychological; 'price', 'distribution' and 'awareness' are not on the list. A cost worry can be a value barrier (not worth switching) or a risk barrier (fear of an expensive mistake), so read the cue words.",
+      "mnemonic": "U-V-R-P: 'Useful? Valuable? Risky? Personal?'",
+      "figure": {"type": "list", "title": "Four barriers to adoption", "items": ["Usage: the product is not compatible with existing habits", "Value: the product offers no incentive to change", "Risk: physical, economic or social risk of adopting", "Psychological: cultural differences or image concerns"]}
+    },
+    {
+      "id": "c08-product-failure",
+      "topic": "t08-4",
+      "term": "NPD challenges and why new products fail",
+      "definition": "New products are the lifeblood of a company, but new product development is expensive and risky; new products commonly fail because of an insignificant point of difference, an incomplete new concept definition, insufficient market attractiveness, poor execution of the marketing mix, or bad timing.",
+      "explain": "NPD is an expensive undertaking with a high risk of failure, high research costs and extensive time and effort spent on prototypes and marketing materials. A failure means expensive product write-offs (labour, materials and expenses to fix the problem) and a lack of future credibility in the market. Figure 8-7 pairs each failure issue with a solution; for example, an insignificant point of difference is fixed by determining a distinctive, meaningful POD through consumer research and competitor monitoring.",
+      "example": "The Amazon Fire Phone, Google Glass, Lululemon's sheer pants and New Coke are notable new-product failures shown in the slides.",
+      "contrast": "Insignificant POD (not meaningfully different) vs incomplete concept definition (features, benefits and positioning never clearly defined) vs insufficient market attractiveness (target market too small or not growing) vs poor marketing-mix execution (4 Ps misaligned, weak distribution) vs bad timing (launched when consumers weren't eager or conditions were wrong).",
+      "trap": "Match the SOLUTION to the issue: 'identify a target market large enough with growth potential' fixes insufficient market attractiveness; 'align the 4 Ps incl. brand name and package and gain sufficient distribution' fixes poor execution; 'launch when consumers are eager; monitor market conditions and competitors' fixes bad timing.",
+      "mnemonic": "Failure causes P-C-M-E-T: POD, Concept, Market, Execution, Timing.",
+      "figure": {"type": "table", "title": "Figure 8-7 Why new products and services fail", "head": ["Issue", "Potential solution"], "rows": [
+        ["Insignificant point of difference", "Determine a distinctive, meaningful POD for the target audience; conduct research with consumers and monitor competitors"],
+        ["Incomplete new concept definition", "Identify consumer insights and clearly define the product's features and benefits; develop a clear positioning"],
+        ["Insufficient market attractiveness", "Identify a target market (with a need) that is large enough and has growth potential"],
+        ["Poor execution of the marketing mix", "Ensure the 4 Ps (including brand name and package) are aligned and attractive; focus on gaining sufficient distribution"],
+        ["Bad timing", "Launch when consumers are eager to purchase; monitor market conditions and competitor actions"]
+      ]}
+    },
+    {
+      "id": "c08-ansoff",
+      "topic": "t08-5",
+      "term": "Strategic approaches to growth (Ansoff matrix)",
+      "definition": "A matrix that classifies growth strategies by whether the product and the market are current or new: market penetration (current product, current market), product development (new product, current market), market development (current product, new market) and diversification (new product, new market).",
+      "explain": "Ask two questions: is the product current or new, and is the market (the customers) current or new? Market penetration finds ways to make current products appeal more to current customers. Product development reaches current customers with a new product. Market development reaches new customers, such as a new segment or a new country, with a current product. Diversification reaches new customers with a new product and carries the most risk because nothing is familiar.",
+      "example": "A coffee chain running a loyalty promotion so regulars visit more often is market penetration; adding a new menu item for those regulars is product development; taking its existing menu to a new country is market development; launching an unrelated product for a new market is diversification.",
+      "contrast": "Market DEVELOPMENT = current product, NEW market; product DEVELOPMENT = NEW product, current market. The word before 'development' tells you what is new. Adapting an existing product line to a new country's culture is still market development, not product development or diversification.",
+      "trap": "Light adaptation of an existing line for a foreign market (the official Yummy Brand question) = market development. Call it diversification only when BOTH the product and the market are genuinely new. Selling more of the same product to the same customers, or winning share from rivals in the same market, = market penetration.",
+      "mnemonic": "The word before 'development' names what's NEW. Penetration = nothing new; diversification = everything new.",
+      "figure": {"type": "table", "title": "Figure 8-8 Strategic approaches to growth", "head": ["Markets", "Current products", "New products"], "rows": [
+        ["Current markets", "MARKET PENETRATION: finding ways to make current products appeal to current customers", "PRODUCT DEVELOPMENT: reaching current customers with a new product"],
+        ["New markets", "MARKET DEVELOPMENT: reaching new customers with a current product", "DIVERSIFICATION: reaching new customers with a new product"]
+      ]}
+    },
+    {
+      "id": "c08-npd-process",
+      "topic": "t08-5",
+      "term": "New product development (NPD) process",
+      "definition": "The seven sequential steps a firm uses to develop new products: (1) new product development strategy, (2) idea generation, (3) screening and evaluation, (4) business analysis, (5) development, (6) test marketing and (7) commercialization.",
+      "explain": "The process works like a funnel: many ideas enter, and at each step weak ideas are eliminated so money is spent only on the most promising ones. The early steps are cheap (strategy, ideas, screening with concept tests); the later steps (prototypes, test markets, full launch) are expensive. Test marketing is done only if necessary.",
+      "example": "A Calgary beverage company sets a goal of low-sugar drinks (strategy), collects 120 flavour ideas from staff and customers (idea generation), narrows them to five concepts tested with consumers (screening and evaluation), projects costs and profits (business analysis), brews prototypes (development), sells them only in Lethbridge (test marketing), then launches across Alberta (commercialization).",
+      "contrast": "Screening and evaluation narrows ideas and uses CONCEPT TESTS (descriptions); business analysis makes FINANCIAL projections; development builds PROTOTYPES; test marketing sells on a LIMITED scale in defined areas; commercialization is the FULL launch.",
+      "trap": "Know the positions: screening and evaluation is step 3; business analysis is step 4 and comes BEFORE development (step 5); test marketing is step 6, BEFORE commercialization. Concept tests happen in screening, not development.",
+      "mnemonic": "'Smart Ideas Survive Business Development Testing Completely': Strategy, Ideas, Screening, Business analysis, Development, Test marketing, Commercialization.",
+      "figure": {"type": "list", "title": "Figure 8-9 Steps in the NPD process", "items": ["1. New product development strategy: identify an NPD focus that meets company objectives (company objectives; SWOT analysis)", "2. Idea generation: brainstorm new ideas (employees, co-workers, consumers)", "3. Screening and evaluation: evaluate ideas and develop concepts (internal technical evaluation; external concept tests)", "4. Business analysis: key features, marketing strategy, financial projections (production, legal, profitability)", "5. Development: create and test the prototype internally and with consumers", "6. Test marketing: test product and marketing strategy on a limited scale, if necessary", "7. Commercialization: launch and fully market the product (all of the marketing mix; possible regional rollout)"]}
+    },
+    {
+      "id": "c08-npd-strategy-ideas",
+      "topic": "t08-5",
+      "term": "NPD strategy and idea generation (steps 1-2)",
+      "definition": "Step 1, new product development strategy, identifies a new-product focus that meets company objectives, using the company's objectives and a SWOT analysis; step 2, idea generation, brainstorms new ideas from sources such as employees, co-workers, consumers, suppliers, competitors, universities and crowdsourcing.",
+      "explain": "Before inventing anything, the firm decides what kind of new products fit its goals and strengths (the strategic direction, often framed with the growth matrix). Then it casts a wide net for ideas: employees and co-workers, consumers' suggestions and complaints, suppliers, competitors (through reverse engineering), universities and inventors, and crowdsourcing or open innovation.",
+      "example": "A Halifax seafood company reviews its objectives and runs a SWOT analysis showing strength in frozen distribution (strategy), then runs an online contest inviting customers to suggest new frozen meals (idea generation through crowdsourcing).",
+      "contrast": "Strategy = deciding the FOCUS (objectives, SWOT); idea generation = BRAINSTORMING many ideas; screening and evaluation = NARROWING those ideas to a manageable list of promising concepts.",
+      "trap": "Reverse engineering a competitor's product and crowdsourcing are IDEA GENERATION sources, not screening or development. A SWOT analysis of the company, product or brand belongs to the STRATEGY step, not business analysis.",
+      "mnemonic": "First decide WHERE to look (strategy), then look EVERYWHERE (ideas).",
+      "figure": null
+    },
+    {
+      "id": "c08-screening",
+      "topic": "t08-5",
+      "term": "Screening and evaluation (incl. concept tests)",
+      "definition": "The third NPD step, which internally and externally evaluates new-product ideas to eliminate those that warrant no further effort, reducing the array of brainstormed ideas to a manageable list of promising concepts.",
+      "explain": "Internally, the company checks technical requirements and fit. Externally, it runs concept tests: consumers see a description or sketch of the product idea (not an actual product) and say how interested they are. Ideas that fail are dropped cheaply, before money is spent on detailed financials or prototypes.",
+      "example": "A Vancouver kitchenware firm shows 300 consumers written descriptions of six gadget ideas and drops the four with the weakest purchase intent.",
+      "contrast": "Concept test (screening) = consumers react to a DESCRIPTION of an idea; prototype test (development) = consumers try an actual working MODEL; test market = consumers BUY the finished product in a limited area.",
+      "trap": "'Reduce the array of brainstorming ideas to a manageable list' = screening and evaluation (official question), not idea generation or development. If consumers react to descriptions or drawings, it is a concept test in screening.",
+      "mnemonic": "Screen = sieve: lots of ideas in, a few concepts out.",
+      "figure": null
+    },
+    {
+      "id": "c08-business-analysis",
+      "topic": "t08-5",
+      "term": "Business analysis",
+      "definition": "The fourth NPD step, which specifies the product's key features and anticipated marketing strategy and makes financial projections, assessing production, legal and profitability issues.",
+      "explain": "Before spending on prototypes, the firm checks whether the concept makes business sense: what features it will have, how it will be priced, promoted and distributed, what it will cost to produce, whether there are legal issues, and whether it will be profitable.",
+      "example": "Before building any prototypes, a Saskatoon agri-tech firm forecasts sales of its soil sensor, estimates production costs, checks for patent conflicts and projects a three-year break-even.",
+      "contrast": "Business analysis = paper and spreadsheet work (features, marketing mix, finances, legal); screening and evaluation = narrowing ideas with concept tests; development = building and testing the physical PROTOTYPE.",
+      "trap": "'Financial projections', 'profitability', 'legal issues' and 'production' = business analysis. It comes BEFORE development (step 4 vs step 5), even though some students assume you build first and crunch numbers afterward.",
+      "mnemonic": "Business analysis = 'Will it make money?'",
+      "figure": null
+    },
+    {
+      "id": "c08-development",
+      "topic": "t08-5",
+      "term": "Development (prototype step)",
+      "definition": "The fifth NPD step, which turns the idea on paper into a prototype and tests it internally at the company and externally with consumers.",
+      "explain": "Engineers and designers build working models. Internal company assessments (lab tests of safety, durability and performance) and external tests in which consumers use the prototype make sure the product works and that people like it before it goes anywhere near a store.",
+      "example": "A Montreal toy maker builds 50 working prototypes of a coding robot, stress-tests them in its lab and lends them to families for two weeks to gather feedback.",
+      "contrast": "Development = consumers test a working PROTOTYPE; concept tests in screening = consumers react only to a DESCRIPTION; test marketing = the finished product is actually SOLD in a limited area.",
+      "trap": "Don't confuse the NPD step 'development' with 'product development' in the growth matrix (a new product for current customers) or 'market development' (a current product for new customers). In the NPD process, development means building and testing prototypes.",
+      "mnemonic": "Development = 'Make a model and try it.'",
+      "figure": null
+    },
+    {
+      "id": "c08-test-marketing",
+      "topic": "t08-5",
+      "term": "Test marketing",
+      "definition": "The sixth NPD step: offering a product for sale on a limited basis in a defined area to gauge consumer reactions and test the marketing strategy before a full launch.",
+      "explain": "Types include standard test markets (the product is sold in actual cities through regular channels), controlled test markets (retailers are paid to stock and display the product) and simulated or laboratory test markets (consumers see ads and shop in a simulated store). Test marketing is not always necessary: it is expensive, it alerts competitors, and it isn't practical for durable goods.",
+      "example": "A packaged-food company sells its new frozen perogies only in Regina and Saskatoon for three months to measure repeat purchases before going national.",
+      "contrast": "Test marketing sells the FINISHED product on a LIMITED scale to gather information; commercialization is the FULL-scale launch; development tests PROTOTYPES; a regional rollout (part of commercialization) is a sequenced full launch, not a test.",
+      "trap": "Firms may SKIP test marketing when it is too costly, when they don't want to tip off competitors, or for durable goods such as cars or appliances. 'Retailers are paid' = controlled test market; 'simulated store' = simulated test market; 'actual cities, regular channels' = standard test market.",
+      "mnemonic": "Test market = 'Try it in Regina before all of Canada.'",
+      "figure": null
+    },
+    {
+      "id": "c08-commercialization",
+      "topic": "t08-5",
+      "term": "Commercialization (incl. regional rollout)",
+      "definition": "The seventh and final NPD step: positioning and launching a new product in full-scale production and sales with full marketing support, implementing all areas of the marketing mix.",
+      "explain": "This is the expensive full launch: production ramps up, the full marketing mix goes live, and the product enters the introduction stage of the PLC. Many firms use a regional rollout, introducing the product sequentially into geographical areas so that production and marketing can build up gradually.",
+      "example": "After a successful start in Ontario, a beverage start-up launches its sparkling tea in Quebec in spring, the Prairies in summer and B.C. in fall: a regional rollout during commercialization.",
+      "contrast": "Commercialization = FULL-scale launch (possibly region by region); test marketing = LIMITED sale to gather data before deciding whether to launch. A regional rollout is a launch schedule, not a test.",
+      "trap": "'Full-scale production, sales and marketing support' = commercialization (official question). Distractors include concept test, test marketing and business analysis. Commercialization is where the NPD process hands off to the PLC's introduction stage.",
+      "mnemonic": "Commercialization = 'Go big, or go region by region.'",
+      "figure": null
+    }
+  ],
+  "activities": [
+    {"id": "a08-01", "type": "order", "concept": "c08-npd-process", "title": "Order the NPD steps", "prompt": "Put the seven steps of the new product development process in the correct order.", "items": ["New product development strategy", "Idea generation", "Screening and evaluation", "Business analysis", "Development", "Test marketing", "Commercialization"], "explanation": "The process is a funnel. The firm first sets a strategic focus, then brainstorms ideas, screens them down to a manageable list (concept tests), runs the numbers on the survivors (business analysis), builds and tests prototypes (development), tests the finished product on a limited scale if necessary (test marketing), and finally launches with full marketing support (commercialization). Business analysis comes before development so money isn't spent on prototypes that won't be profitable."},
+    {"id": "a08-02", "type": "sort", "concept": "c08-ansoff", "title": "Sort into the growth matrix", "prompt": "Drag each scenario into the correct strategic approach to growth.", "buckets": ["Market penetration", "Product development", "Market development", "Diversification"], "items": [
+      {"text": "A coffee chain launches a loyalty app so regulars buy their usual drinks more often", "bucket": 0},
+      {"text": "A paint store cuts prices on its existing paint to win neighbourhood shoppers from rivals", "bucket": 0},
+      {"text": "A bank creates a new travel-insurance product for its current account holders", "bucket": 1},
+      {"text": "A yogurt maker adds a new high-protein yogurt for its existing grocery shoppers", "bucket": 1},
+      {"text": "A Canadian snack brand adapts its existing line to local tastes and enters Costa Rica", "bucket": 2},
+      {"text": "A children's sunscreen brand starts marketing the same sunscreen to adult golfers", "bucket": 2},
+      {"text": "A dairy co-operative opens a chain of car washes in a new province", "bucket": 3},
+      {"text": "A furniture maker launches electric scooters aimed at university students", "bucket": 3}
+    ], "explanation": "Ask two questions: is the product current or new, and is the market current or new? Same product, same customers = market penetration. New product, same customers = product development. Same product, new customers (a new segment or a new country, even with cultural adaptation) = market development. New product, new customers = diversification."},
+    {"id": "a08-03", "type": "sort", "concept": "c08-plc-stage-table", "title": "Sort PLC stage characteristics", "prompt": "Drag each characteristic from Figure 8-3 to the PLC stage where it belongs.", "buckets": ["Introduction", "Growth", "Maturity", "Decline"], "items": [
+      {"text": "Few competitors exist", "bucket": 0},
+      {"text": "Use a skimming or penetration strategy", "bucket": 0},
+      {"text": "Focus on building awareness with advertising", "bucket": 0},
+      {"text": "Prices are slowly reduced", "bucket": 1},
+      {"text": "Objective: product differentiation", "bucket": 1},
+      {"text": "Increased profits that reach their maximum", "bucket": 1},
+      {"text": "Full distribution is achieved", "bucket": 2},
+      {"text": "Price discounts are used frequently", "bucket": 2},
+      {"text": "Objective: brand loyalty", "bucket": 2},
+      {"text": "Retain only best sellers or discontinue", "bucket": 3},
+      {"text": "Distribution is reduced", "bucket": 3},
+      {"text": "Objective: product rationalization", "bucket": 3}
+    ], "explanation": "Read each row of Figure 8-3 as a story. Competition: few, more, many, reduced. Objective: awareness, product differentiation, brand loyalty, product rationalization. Price: skimming or penetration, slowly reduced, frequent discounts, very low. Place: limited, increased, full, reduced. Profit: minimal, rising to its maximum (growth), maximized and levelling off (maturity), decreasing (decline)."},
+    {"id": "a08-04", "type": "match", "concept": "c08-adoption-curve", "title": "Match the adopter categories", "prompt": "Match each adopter category with its share of adopters and its descriptors.", "pairs": [
+      {"left": "Innovators", "right": "2.5%: venturesome; higher educated; use multiple information sources"},
+      {"left": "Early adopters", "right": "13.5%: leaders in social settings; slightly above average education"},
+      {"left": "Early majority", "right": "34%: deliberate; many informal social contacts"},
+      {"left": "Late majority", "right": "34%: skeptical; below average social status"},
+      {"left": "Laggards", "right": "16%: fear of debt; neighbours and friends are information sources"}
+    ], "explanation": "The percentages run 2.5, 13.5, 34, 34, 16 and add to 100. Innovators are the venturesome risk-takers; early adopters are the leaders in social settings whose influence moves the deliberate early majority; the skeptical late majority follows; laggards fear debt and rely on neighbours and friends."},
+    {"id": "a08-05", "type": "sort", "concept": "c08-degree-innovation", "title": "Sort by degree of innovation", "prompt": "Drag each example, learning requirement or marketing emphasis to its degree of innovation (Figure 8-5).", "buckets": ["Minor innovation", "Continuous innovation", "Radical innovation"], "items": [
+      {"text": "New and improved detergent", "bucket": 0},
+      {"text": "Requires no new learning by consumers", "bucket": 0},
+      {"text": "Emphasis: gain consumer awareness and wide distribution", "bucket": 0},
+      {"text": "Swiffer WetJet", "bucket": 1},
+      {"text": "Changes the normal routine but does not require totally new learning", "bucket": 1},
+      {"text": "Emphasis: advertise points of difference and benefits", "bucket": 1},
+      {"text": "Self-driving cars", "bucket": 2},
+      {"text": "Requires new learning and consumption patterns", "bucket": 2},
+      {"text": "Emphasis: educate through advertising, product trial and personal selling; PR plays a major role", "bucket": 2}
+    ], "explanation": "The more a consumer must learn, the more the marketing must educate. Minor innovations need no learning, so awareness and wide distribution are enough. Continuous innovations change routines, so ads stress points of difference and benefits. Radical innovations need new consumption patterns, so firms educate through advertising, trial, personal selling and public relations."},
+    {"id": "a08-06", "type": "match", "concept": "c08-plc-extension", "title": "Match the PLC extension tactic", "prompt": "Match each PLC extension tactic with the scenario that illustrates it.", "pairs": [
+      {"left": "Product improvement", "right": "A detergent is reformulated to clean better in cold water"},
+      {"left": "Line extension", "right": "Kellogg's adds two new cereals to its well-known brands"},
+      {"left": "Finding new customers", "right": "A baby shampoo is marketed to adults with sensitive scalps"},
+      {"left": "Increasing a product's use", "right": "A sparkling-water brand urges current drinkers to have three cans a day instead of one"},
+      {"left": "Creating a new use situation", "right": "Labels on a lunch soup carry dinner recipes"},
+      {"left": "Trading up", "right": "Basic candles get soy wax, designer jars and a higher price"},
+      {"left": "Trading down", "right": "A chip bag shrinks from 235 g to 200 g at the same price"},
+      {"left": "Introducing a new product", "right": "A sixth-generation tablet replaces a fifth generation whose sales have flattened"}
+    ], "explanation": "Product improvements and line extensions modify the PRODUCT. New customers, increased use and new use situations modify the MARKET (who, how much, and for what). Trading up and trading down are REPOSITIONING moves that change the value offered. Replacing an ageing product with a new one is the fourth strategy, introducing a new product."}
+  ]
+}

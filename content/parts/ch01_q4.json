@@ -1,0 +1,163 @@
+[
+  {
+    "id": "q01-121",
+    "concept": "c01-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Leaders at a Calgary marketing agency refuse a client's request to bury automatic-renewal fees in tiny print, saying it conflicts with the CMA Code even though no specific law clearly forbids it. Their decision is driven mainly by:",
+    "options": [
+      "a regulatory force",
+      "macromarketing",
+      "customer experience management",
+      "ethical principles"
+    ],
+    "answer": 3,
+    "explanation": "The agency is acting on moral principles and a code of ethics, not on a legal requirement, so ethics is the driver. A regulatory force would be a law or government rule, and the stem says no law clearly forbids the practice.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-122",
+    "concept": "c01-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about codes of ethics in marketing is NOT accurate, according to the chapter?",
+    "options": [
+      "Only government agencies issue codes of ethics for marketers",
+      "The CMA publishes a Canadian Marketing Code of Ethics and Standards",
+      "Many industries and professional associations have codes of ethics",
+      "Many companies have their own guidelines and codes of ethics"
+    ],
+    "answer": 0,
+    "explanation": "The slides note that many companies, industries and professional associations have guidelines and codes of ethics, including the CMA's Canadian Marketing Code of Ethics and Standards. Codes are not limited to government agencies.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-123",
+    "concept": "c01-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A Winnipeg supplement company's new ad is technically legal, but it implies results that the company's own studies do not support. Which statement best applies?",
+    "options": [
+      "The ad is a CSR initiative, because any form of advertising has some effect on society",
+      "The ad may be legal yet unethical; codes of ethics like the CMA Code guide conduct beyond the law",
+      "The ad is a regulatory environmental force, which the company itself cannot control",
+      "Because the ad is legal, it is automatically ethical, so no code of ethics applies"
+    ],
+    "answer": 1,
+    "explanation": "Laws set the legal minimum, while ethics are the moral principles governing what an individual or group believes is right, so an ad can satisfy the law and still mislead. That gap is why companies, industries and associations such as the CMA publish codes of ethics. The firm's own ad is a controllable decision, not an environmental force.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-124",
+    "concept": "c01-ethics",
+    "also": [],
+    "type": "tf",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The Canadian Marketing Code of Ethics and Standards is published by the Chartered Institute of Marketing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "False. Corrected: the Canadian Marketing Code of Ethics and Standards is published by the Canadian Marketing Association (CMA). The Chartered Institute of Marketing is the UK body whose definition of marketing appears on the slides.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-125",
+    "concept": "c01-who-markets",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "What kinds of organizations engage in marketing?",
+    "options": [
+      "only those that can afford national advertising",
+      "very large and established nonprofit organizations",
+      "exclusively Fortune 1000 companies",
+      "every organization markets",
+      "virtually no organizations"
+    ],
+    "answer": 3,
+    "explanation": "Every organization markets, because each needs people to engage in exchanges with it or to think or behave in a certain way - including non-profits like the Canadian Red Cross and government agencies like the Ministry of Transportation. Marketing is not limited to big advertisers or large companies.",
+    "source": "official"
+  },
+  {
+    "id": "q01-126",
+    "concept": "c01-who-markets",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Alberta's transportation ministry runs radio and billboard ads urging drivers to put their phones away while driving. Nothing is sold. Which statement best describes this campaign?",
+    "options": [
+      "It is macromarketing, because a government is doing it",
+      "It is not marketing, because no product or money is exchanged",
+      "It is marketing an idea, showing that government agencies market too",
+      "It is not marketing, because only for-profit firms can market"
+    ],
+    "answer": 2,
+    "explanation": "Ideas can be marketed, and governments market when they try to get people to think or behave in a certain way, like the chapter's Ministry of Transportation example. A government running a campaign is still one organization's marketing, not macromarketing (the aggregate flow of a nation's goods and services).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-127",
+    "concept": "c01-who-markets",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which statement about who markets is NOT correct?",
+    "options": [
+      "Non-profits such as the Canadian Red Cross engage in marketing",
+      "Services, such as dental care, can be marketed",
+      "Marketing applies only to physical goods sold for profit",
+      "Ideas, such as road safety, can be marketed"
+    ],
+    "answer": 2,
+    "explanation": "Everyone markets: goods, services and ideas, for-profit and non-profit. Limiting marketing to physical goods sold for profit contradicts the chapter's 'Who markets? Everyone' slide.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-128",
+    "concept": "c01-who-markets",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "According to Chapter 1, why is understanding marketing valuable even for students who will never work in a marketing department?",
+    "options": [
+      "Because marketing affects everyone, knowing it makes us better customers, citizens and career planners",
+      "Marketing is mainly common sense, so a marketing course offers an easy and useful credit",
+      "Marketing affects only consumer-goods firms, which employ most business graduates in Canada",
+      "Marketing knowledge is legally required to obtain every Canadian business licence"
+    ],
+    "answer": 0,
+    "explanation": "The career slide states that marketing affects all individuals, organizations, industries and countries, and that knowing it makes us better customers, more informed citizens and better career planners. 'Common sense' is the misconception the chapter rejects.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-129",
+    "concept": "c01-who-markets",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A Calgary food bank seeking donors, a city councillor seeking re-election and the Town of Banff promoting winter tourism all run campaigns. Which statement is most accurate?",
+    "options": [
+      "Only Banff is marketing, because tourism is a service that visitors pay money for",
+      "All three are marketing, since organizations, individuals and places can all be marketed",
+      "Only the food bank is marketing, because charities are the only non-business exception",
+      "None of them is marketing, because none of them sells a physical product for profit"
+    ],
+    "answer": 1,
+    "explanation": "Everyone markets: non-profits, individuals and places as well as firms, and the offering can be a good, service, idea, person or place. Requiring a physical product or a profit motive reflects the narrow view of marketing the chapter corrects.",
+    "source": "generated"
+  }
+]

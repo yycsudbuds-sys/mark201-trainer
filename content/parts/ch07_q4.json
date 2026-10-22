@@ -1,0 +1,650 @@
+[
+ {
+  "id": "q07-121",
+  "concept": "c07-co-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Tim Hortons partners with Oreo to sell a doughnut that features both brand names. This is an example of:",
+  "options": [
+   "Mixed branding",
+   "Brand licensing",
+   "Sub-branding",
+   "Co-branding"
+  ],
+  "answer": 3,
+  "explanation": "Co-branding pairs two brand names of two manufacturers on a single product. Sub-branding would combine one company's parent name with a new name, and licensing involves one firm paying to use another's name.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-122",
+  "concept": "c07-co-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Co-branding is best defined as:",
+  "options": [
+   "Marketing products under the firm's own name and a reseller's name",
+   "Pairing two brand names of two manufacturers on a single product",
+   "Allowing another firm to use a brand name in exchange for a royalty",
+   "Using one brand name for all of a company's products"
+  ],
+  "answer": 1,
+  "explanation": "Co-branding = two manufacturers' brand names on one product. The other options define multiproduct (family) branding, brand licensing and mixed branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-123",
+  "concept": "c07-co-branding",
+  "also": [
+   "c07-brand-licensing"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is co-branding rather than brand licensing or sub-branding?",
+  "options": [
+   "A Canadian snack maker and a national chocolate brand jointly launch a granola bar carrying both companies' names",
+   "A clothing company pays a hockey team a royalty to put the team's logo on hoodies it makes and sells",
+   "A cookware firm pays a celebrity chef's company a fee to put the chef's name on its pans",
+   "A coffee chain launches 'Summit Cold Brew', combining its own name with a new product name"
+  ],
+  "answer": 0,
+  "explanation": "Two manufacturers' names jointly on one product is co-branding. Paying a royalty or fee to use another party's name (the hockey team, the celebrity chef) is licensing, and one company's name plus a new name is sub-branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-124",
+  "concept": "c07-co-branding",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might two manufacturers choose co-branding?",
+  "options": [
+   "Each brand can borrow the other's equity and reach the other's customers",
+   "It lets a retailer own the brand name instead of the manufacturers",
+   "It lets one firm earn royalties without making any product",
+   "It removes the need for either firm to protect its trademark"
+  ],
+  "answer": 0,
+  "explanation": "Co-branding lets partners combine their brand equity on one product and reach each other's customers. Earning royalties without making the product is licensing, and retailer ownership of the name is private-label branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-125",
+  "concept": "c07-co-branding",
+  "also": [],
+  "type": "tf",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "When Nike and Apple put both of their brand names on the same running product, they are using co-branding.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Co-branding pairs two manufacturers' brand names on a single product, as in the course's Nike + Apple and Tim Hortons + Oreo examples.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-126",
+  "concept": "c07-brand-licensing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A contractual agreement whereby a company allows another firm to use its brand name, patent, trade secret or other property for a royalty or fee is called:",
+  "options": [
+   "Brand extension",
+   "Co-branding",
+   "Mixed branding",
+   "Brand licensing"
+  ],
+  "answer": 3,
+  "explanation": "That is brand licensing. Co-branding pairs two manufacturers' names on one product, mixed branding sells under the firm's own and a reseller's names, and a brand extension is the owner itself using its name in a new product class.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-127",
+  "concept": "c07-brand-licensing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "The Calgary Chinooks, a junior hockey team, allow Northern Threads to make and sell Chinooks-logo toques; Northern Threads pays the team 10% of every sale. This arrangement is:",
+  "options": [
+   "Co-branding",
+   "Brand extension",
+   "Brand licensing",
+   "Private-label branding"
+  ],
+  "answer": 2,
+  "explanation": "Allowing another firm to use your brand name or logo in exchange for a royalty is brand licensing. It isn't a brand extension because the team itself isn't making the toques, and it isn't co-branding because two manufacturers' names aren't being paired.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-128",
+  "concept": "c07-brand-licensing",
+  "also": [
+   "c07-brand-extension"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly distinguishes brand licensing from brand extension?",
+  "options": [
+   "Licensing always puts two manufacturers' names on one product, while an extension never does",
+   "In licensing, another firm pays to use the brand; in an extension, the brand owner itself uses its name in a new product class",
+   "Licensing applies only to patents, while an extension applies only to trademarks",
+   "In licensing, the owner uses its name in a new product class; in an extension, another firm pays a royalty"
+  ],
+  "answer": 1,
+  "explanation": "Licensing is a contract letting another firm use the brand (or patent, trade secret) for a royalty or fee; a brand extension is the owner stretching its own name into a new class. Two manufacturers' names on one product is co-branding.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-129",
+  "concept": "c07-brand-licensing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "From the brand owner's perspective, what is a main benefit of brand licensing?",
+  "options": [
+   "Eliminating the need to register the brand as a trademark",
+   "Removing any risk that the licensed product could affect the brand's image",
+   "Turning the brand into a generic product with no name",
+   "Earning royalty or fee income while another firm makes and sells the product"
+  ],
+  "answer": 3,
+  "explanation": "Licensing generates royalty or fee income and extends the brand's reach without the owner producing the item. It doesn't replace trademark protection, and a poor licensed product can still damage the brand.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-130",
+  "concept": "c07-brand-licensing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Alpine Cafe, famous in Canmore for its maple granola, is offered a deal: a national food company will make and sell 'Alpine Cafe Granola' in grocery stores and pay Alpine a 6% royalty. What should Alpine insist on before signing?",
+  "options": [
+   "That the granola be sold as a generic product with no brand name",
+   "That the food company also print its own brand name on the package, making it co-branding",
+   "Quality controls in the licensing contract, since a poor licensed product could damage its brand",
+   "That the deal be structured as derived demand so its cafe sales rise automatically"
+  ],
+  "answer": 2,
+  "explanation": "In licensing, someone else makes the product under your name, so the owner must protect brand equity through quality requirements in the contract. Adding a second name, going generic or invoking derived demand doesn't protect the brand.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-131",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Tide released Tide PODS; this innovation in packaging resulted in convenient, single-use pods, eliminated the need for measuring and pouring liquid detergent, and provided a hassle-free laundry experience. This demonstrates:",
+  "options": [
+   "How packaging can provide a functional benefit.",
+   "How packaging can communicate the brand benefits.",
+   "How packaging can help a brand stand out.",
+   "How packaging can communicate information about the product."
+  ],
+  "answer": 0,
+  "explanation": "First and foremost, packaging has functional benefits - it allows a product to be conveniently used, and single-use pods remove measuring and pouring. Communicating information or brand benefits is a communication benefit, and standing out on the shelf is a perceptual benefit.",
+  "source": "official"
+ },
+ {
+  "id": "q07-132",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Harvest Table's redesigned cereal box adds a large nutrition-facts table, allergy warnings and step-by-step serving suggestions. These changes mainly provide which packaging benefit?",
+  "options": [
+   "Communication benefit",
+   "Augmented benefit",
+   "Perceptual benefit",
+   "Functional benefit"
+  ],
+  "answer": 0,
+  "explanation": "Label information such as nutrition facts, warnings and directions is a communication benefit of packaging. A functional benefit would change how the product is used, stored or protected, such as a resealable liner.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-133",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Glacier Spring switches from a plain plastic bottle to a frosted, sculpted glass bottle so its water looks premium and catches shoppers' eyes on a crowded shelf. This change mainly delivers a:",
+  "options": [
+   "Functional benefit",
+   "Perceptual benefit",
+   "Core benefit",
+   "Communication benefit"
+  ],
+  "answer": 1,
+  "explanation": "Shaping perceptions of quality and helping the brand stand out on the shelf are perceptual benefits. The bottle doesn't make the water easier to use (functional) or add label information (communication).",
+  "source": "generated"
+ },
+ {
+  "id": "q07-134",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Packaging is best defined as:",
+  "options": [
+   "A written statement of the manufacturer's liability for product deficiencies",
+   "The additional services that accompany a product after purchase",
+   "Any container in which a product is offered for sale and on which label information is conveyed",
+   "The part of a brand that cannot be spoken, such as a symbol"
+  ],
+  "answer": 2,
+  "explanation": "Packaging is any container in which a product is offered for sale and on which label information is conveyed; labelling is an integral part of it. The other options describe a warranty, a brand mark and the augmented product.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-135",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A yogurt brand redesigns its tub with a resealable lid, a bold new colour scheme and clearer serving directions. Which pairing of change and benefit is correct?",
+  "options": [
+   "Resealable lid - perceptual; bold colours - communication; serving directions - functional",
+   "Resealable lid - functional; bold colours - perceptual; serving directions - communication",
+   "Resealable lid - functional; bold colours - communication; serving directions - perceptual",
+   "Resealable lid - communication; bold colours - functional; serving directions - perceptual"
+  ],
+  "answer": 1,
+  "explanation": "A resealable lid improves storage and usability (functional), bold colours shape perception and help the brand stand out (perceptual), and directions are label information (communication). The option pairing bold colours with communication is tempting because it gets the lid right, but colours shape perception rather than convey information.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-136",
+  "concept": "c07-packaging",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A Canadian juice brand wants its packaging to signal higher quality so it can justify a premium price on a crowded shelf. Which packaging benefit should it focus on?",
+  "options": [
+   "Perceptual benefit",
+   "Functional benefit",
+   "Augmented-product benefit",
+   "Communication benefit"
+  ],
+  "answer": 0,
+  "explanation": "Perceptual benefits shape how consumers perceive quality and help a brand stand out. Functional changes improve usability, communication adds information, and packaging belongs to the actual product, not the augmented layer.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-137",
+  "concept": "c07-intangibility",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ease and Relax Centre, a specialty unit providing high-end massaging services, has customer testimonials on its website. By doing this, Ease and Relax Centre is dealing with the service characteristic of:",
+  "options": [
+   "incongruity",
+   "inconsistency",
+   "intangibility",
+   "inseparability"
+  ],
+  "answer": 2,
+  "explanation": "A massage can't be seen or touched before purchase, so testimonials give prospective clients tangible evidence of the experience - a response to intangibility. Inconsistency is about variable quality between deliveries, and 'incongruity' is not one of the four I's.",
+  "source": "official"
+ },
+ {
+  "id": "q07-138",
+  "concept": "c07-intangibility",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The service characteristic meaning that services cannot be touched, seen or tried before they are purchased is _____.",
+  "options": [
+   "inseparability",
+   "inconsistency",
+   "inventory",
+   "intangibility"
+  ],
+  "answer": 3,
+  "explanation": "Intangibility means a service can't be touched or seen before purchase, so marketers add tangible cues. Inseparability is simultaneous production and consumption, inconsistency is variable quality, and inventory is the inability to store services.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-139",
+  "concept": "c07-intangibility",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Clearview Financial Planning in Calgary finds that prospects hesitate because they can't evaluate its advice before signing up. Which tactic best addresses this characteristic of services?",
+  "options": [
+   "Hire part-time planners for the busy RRSP season",
+   "Offer lower fees during slow months to fill unused appointment slots",
+   "Show tangible cues such as client testimonials, credentials and a professional office",
+   "Write a standard script so every planner delivers advice the same way"
+  ],
+  "answer": 2,
+  "explanation": "Not being able to evaluate a service before purchase is intangibility, which tangible cues address. Off-peak pricing and part-time staff address inventory, and standard scripts address inconsistency.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-140",
+  "concept": "c07-intangibility",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Rocky Lodge Hotels takes four actions. Which one targets intangibility rather than another of the four I's?",
+  "options": [
+   "Posting 360-degree virtual tours and guest reviews of its rooms online",
+   "Discounting rooms on weeknights when occupancy is low",
+   "Taking online reservations to manage peak-season demand",
+   "Training all front-desk staff to follow the same check-in standards"
+  ],
+  "answer": 0,
+  "explanation": "Virtual tours and reviews let guests 'see' an intangible stay before buying. Weeknight discounts and reservations manage inventory (perishable capacity), and standardized training addresses inconsistency.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-141",
+  "concept": "c07-intangibility",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the four I's of services?",
+  "options": [
+   "Inseparability",
+   "Incongruity",
+   "Intangibility",
+   "Inventory"
+  ],
+  "answer": 1,
+  "explanation": "The four I's are intangibility, inconsistency, inseparability and inventory. 'Incongruity' appears as a distractor in test-bank questions but is not one of them.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-142",
+  "concept": "c07-inconsistency",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Customers of Summit Hair Studio rave about the senior stylist but complain that cuts from the newer stylists vary a lot from visit to visit. This problem reflects which characteristic of services?",
+  "options": [
+   "Intangibility",
+   "Inventory",
+   "Inseparability",
+   "Inconsistency"
+  ],
+  "answer": 3,
+  "explanation": "Inconsistency means service quality varies because it depends on the people who deliver it. Inseparability is tempting because a stylist is involved, but the problem described is VARIATION in quality, not simultaneous production and consumption.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-143",
+  "concept": "c07-inconsistency",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Peak Fitness, an Edmonton gym chain, wants every personal-training session to meet the same standard no matter which trainer leads it. Which response targets the inconsistency of services?",
+  "options": [
+   "Post member testimonials and before-and-after photos online",
+   "Build a more attractive, modern gym facility",
+   "Offer discounted memberships for off-peak hours",
+   "Standardize session plans and train all trainers on them"
+  ],
+  "answer": 3,
+  "explanation": "Standardization and training reduce the variation that comes from different people delivering the service. Testimonials and attractive facilities are tangible cues (intangibility), and off-peak discounts manage inventory.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-144",
+  "concept": "c07-inconsistency",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Inconsistency means the quality of a service can vary because it depends on the people who provide it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Because services are delivered by people, quality can differ from one employee or occasion to the next, which is why firms rely on standardization and training.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-145",
+  "concept": "c07-inconsistency",
+  "also": [
+   "c07-inseparability"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which situation illustrates inconsistency rather than inseparability?",
+  "options": [
+   "The same restaurant meal is excellent on Monday and poorly prepared on Friday, depending on the cook on shift",
+   "A patient must be present in the dentist's chair while the cleaning is performed",
+   "A concert is produced by the band at the same moment the audience consumes it",
+   "A client's view of a law firm is shaped by the lawyer who personally handles her case"
+  ],
+  "answer": 0,
+  "explanation": "Quality that varies with who is working is inconsistency. Being present during delivery, simultaneous production and consumption, and judging the service by its deliverer all describe inseparability.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-146",
+  "concept": "c07-inconsistency",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why are training and standardization the main tools for managing inconsistency?",
+  "options": [
+   "Services cannot be stored, so training builds up inventory for peak periods",
+   "Services are produced by machines, so standardization keeps them calibrated",
+   "Service quality depends on the people delivering it, so making their performance uniform reduces variation",
+   "Services cannot be seen before purchase, so training makes them tangible"
+  ],
+  "answer": 2,
+  "explanation": "Inconsistency comes from the human element - different people deliver at different quality levels - so standard procedures and training narrow that variation. Storage problems are inventory, and invisibility before purchase is intangibility.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-147",
+  "concept": "c07-inseparability",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "At Cedar Spa, each massage is produced by the therapist at the same moment the client experiences it, and clients judge the spa largely by the therapist who treats them. This illustrates:",
+  "options": [
+   "Intangibility",
+   "Inseparability",
+   "Inconsistency",
+   "Inventory"
+  ],
+  "answer": 1,
+  "explanation": "Inseparability means consumers can't separate the deliverer of the service from the service itself, and production and consumption happen at the same time. Inconsistency would require the stem to describe quality varying between therapists or visits.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-148",
+  "concept": "c07-inseparability",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The service characteristic in which consumers cannot separate the deliverer of the service from the service itself is:",
+  "options": [
+   "Idle production capacity",
+   "Inseparability",
+   "Inconsistency",
+   "Intangibility"
+  ],
+  "answer": 1,
+  "explanation": "That is inseparability - the service is produced and consumed simultaneously, so the provider is part of the experience. Idle production capacity is part of the inventory characteristic (supply exceeding demand).",
+  "source": "generated"
+ },
+ {
+  "id": "q07-149",
+  "concept": "c07-inseparability",
+  "also": [
+   "c07-inconsistency"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A Calgary tutoring company notices two issues: (A) students judge the company almost entirely by the individual tutor sitting with them, and (B) lesson quality differs noticeably from tutor to tutor. Which matching is correct?",
+  "options": [
+   "A = inconsistency; B = inseparability",
+   "A = intangibility; B = inventory",
+   "A = inseparability; B = intangibility",
+   "A = inseparability; B = inconsistency"
+  ],
+  "answer": 3,
+  "explanation": "Judging the service by the person delivering it is inseparability; quality differing from one tutor to another is inconsistency. The reversed option is the classic trap - ask whether the issue is 'who delivers it' or 'how much it varies'.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-150",
+  "concept": "c07-inseparability",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Because of inseparability, a dental clinic's patients see the hygienist as the service itself. What should the clinic prioritize?",
+  "options": [
+   "Removing its brand name so patients focus only on the hygienists",
+   "Offering discounts on slow weekday afternoons to fill empty appointment slots",
+   "Hiring and preparing hygienists who create a positive experience in every patient interaction",
+   "Posting more photos of the clinic online so patients can see it before booking"
+  ],
+  "answer": 2,
+  "explanation": "When the deliverer can't be separated from the service, the person-to-person encounter IS the service, so the people delivering it matter most. Photos address intangibility, off-peak discounts address inventory, and dropping the brand name helps nothing.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-151",
+  "concept": "c07-inseparability",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Inseparability means a service is produced first and stored, then consumed later when the customer needs it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Inseparability means the service is produced and consumed at the same time, and the consumer can't separate the deliverer from the service. The fact that services can't be stored relates to the inventory characteristic.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-152",
+  "concept": "c07-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "On weekday afternoons, Lakeview Bowling in Regina has most of its lanes empty while staff are on shift and the lights and heat are on. This costly situation is an example of:",
+  "options": [
+   "Idle production capacity",
+   "Derived demand",
+   "Inconsistency",
+   "Inseparability"
+  ],
+  "answer": 0,
+  "explanation": "Idle production capacity occurs when the supply of a service exceeds demand, and it's expensive because costs continue while capacity goes unused - part of the inventory characteristic. Inconsistency is about varying quality, not unused capacity.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-153",
+  "concept": "c07-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A Banff ski-rental shop has long line-ups on holiday weekends but sits mostly idle midweek. Which set of tactics addresses the inventory characteristic of services?",
+  "options": [
+   "Write a standard fitting checklist for every rental technician",
+   "Post customer testimonials and photos of happy skiers on its website",
+   "Offer midweek discounts, take online reservations and add part-time staff on weekends",
+   "Change its name and logo to appear more premium"
+  ],
+  "answer": 2,
+  "explanation": "Services can't be stored, so firms smooth demand and capacity with off-peak pricing, reservations and part-time staff. Testimonials address intangibility, and checklists address inconsistency.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-154",
+  "concept": "c07-inventory",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Idle production capacity occurs when the supply of a service exceeds demand, and it is expensive for the service provider.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. When supply exceeds demand, the provider still pays for staff, space and equipment while capacity goes unused - and that unused capacity can't be stored for later.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-155",
+  "concept": "c07-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which statement about the inventory characteristic of services is NOT correct?",
+  "options": [
+   "Unused capacity, such as an empty airline seat, is costly to the provider",
+   "Idle production capacity occurs when demand for a service exceeds the supply available",
+   "Fluctuating demand makes it hard to judge the capacity needed at peak times",
+   "Services cannot necessarily be stored and accessed when they are in demand"
+  ],
+  "answer": 1,
+  "explanation": "Idle production capacity is the reverse: the SUPPLY of a service exceeds demand. The other statements correctly describe inventory - services can't be stored, fluctuating demand complicates peak planning, and unused capacity is expensive.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-156",
+  "concept": "c07-inventory",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why is an empty seat on a Prairie Air flight that has already departed considered a service-inventory problem?",
+  "options": [
+   "The seat's capacity perished when the plane left; it cannot be stored and sold later",
+   "Passengers cannot separate the pilot from the flight they are taking",
+   "The flight attendants' service quality varied on that particular flight",
+   "Passengers could not see or touch the flight before buying a ticket"
+  ],
+  "answer": 0,
+  "explanation": "Services can't be stored, so capacity that goes unused at departure is lost forever - an inventory problem. Varying quality is inconsistency, not seeing the flight beforehand is intangibility, and the pilot being part of the service is inseparability.",
+  "source": "generated"
+ }
+]

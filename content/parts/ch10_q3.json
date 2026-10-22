@@ -1,0 +1,726 @@
+[
+ {
+  "id": "q10-081",
+  "concept": "c10-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT one of the three types of vertical marketing systems?",
+  "options": [
+   "Corporate",
+   "Contractual",
+   "Administered",
+   "Horizontal"
+  ],
+  "answer": 3,
+  "explanation": "The three VMS types are corporate (ownership), contractual (contracts) and administered (size and influence). A horizontal marketing system is the contrasting idea of firms at the same level pooling resources.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-082",
+  "concept": "c10-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do channel members form a vertical marketing system instead of operating as independent firms?",
+  "options": [
+   "Central coordination achieves channel economies and maximum marketing impact",
+   "So each member can maximize its own profit regardless of the others",
+   "To eliminate the need for logistics activities",
+   "To bring unrelated firms at the same level together to share resources"
+  ],
+  "answer": 0,
+  "explanation": "A VMS is professionally managed and centrally coordinated precisely to gain channel economies and marketing impact. Independent members chasing their own profit describes the conventional channel a VMS replaces; pooling at the same level is horizontal.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-083",
+  "concept": "c10-corporate-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Mocha Jive coffee shops operate their own cafés and have a subsidiary company, Perfect Cookies, that produces a wide variety of cookies and snacks for their stores. This is an example of:",
+  "options": [
+   "dual distribution",
+   "selective distribution",
+   "backward integration",
+   "horizontal marketing system"
+  ],
+  "answer": 2,
+  "explanation": "A retailer owning the manufacturing operation that supplies it is backward integration, which creates a corporate VMS. It is not a horizontal marketing system, which would require unrelated firms at the same level pooling resources.",
+  "source": "official"
+ },
+ {
+  "id": "q10-084",
+  "concept": "c10-corporate-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Laurentian Leather, a Quebec handbag maker, buys a chain of 30 boutiques so that it controls how its bags are displayed and sold. This is:",
+  "options": [
+   "backward integration",
+   "a retailer-sponsored cooperative",
+   "forward integration",
+   "an administered VMS"
+  ],
+  "answer": 2,
+  "explanation": "A producer acquiring intermediaries downstream (closer to the consumer) is forward integration, creating a corporate VMS. Backward integration runs the other way: a retailer or wholesaler acquiring production.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-085",
+  "concept": "c10-corporate-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly distinguishes forward from backward integration?",
+  "options": [
+   "Forward: a producer owns intermediaries closer to the consumer; backward: a retailer or wholesaler owns production",
+   "Forward: a retailer owns the manufacturer that supplies it; backward: a manufacturer opens its own stores",
+   "Forward integration relies on contracts between firms, while backward integration relies on ownership",
+   "Both terms describe two firms at the same channel level merging to pool their resources"
+  ],
+  "answer": 0,
+  "explanation": "Direction is measured from the firm doing the acquiring: toward the consumer = forward, toward the source = backward. Both involve ownership (corporate VMS); the reversed definitions are the classic trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-086",
+  "concept": "c10-corporate-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A corporate vertical marketing system is characterized by:",
+  "options": [
+   "contracts among independently owned firms at different levels",
+   "coordination through the size and influence of one dominant member",
+   "unrelated firms at the same level pooling resources",
+   "ownership of successive stages of production and distribution by one firm"
+  ],
+  "answer": 3,
+  "explanation": "Corporate VMS = ownership, achieved through forward or backward integration. Contracts describe a contractual VMS; size and influence describe an administered VMS.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-087",
+  "concept": "c10-corporate-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Harvest Moon Grocers, a Saskatchewan supermarket chain, is frustrated by inconsistent supply of its private-label bread and wants permanent control over production. Which move would create a corporate VMS through backward integration?",
+  "options": [
+   "Signing a franchise agreement with a national bakery brand",
+   "Joining a retailer-sponsored cooperative with other grocers",
+   "Buying the bakery that produces its private-label bread",
+   "Letting the largest bread brand manage its shelf displays"
+  ],
+  "answer": 2,
+  "explanation": "Owning the upstream supplier is backward integration, which creates a corporate VMS. A franchise agreement or cooperative would be contractual, and letting a dominant brand manage the shelves would be an administered arrangement.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-088",
+  "concept": "c10-corporate-vms",
+  "also": [
+   "c10-contractual-vms"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which is NOT an example of a corporate VMS?",
+  "options": [
+   "Apple selling its products through its own Apple Stores",
+   "An independent hardware store joining Home Hardware's retailer-owned cooperative",
+   "Ralph Lauren operating its own chain of Polo stores",
+   "A coffee chain owning the bakery that makes its cookies"
+  ],
+  "answer": 1,
+  "explanation": "A retailer-sponsored cooperative is a contractual VMS: the stores stay independently owned and coordinate by agreement. The other three involve one firm owning successive stages (forward or backward integration).",
+  "source": "generated"
+ },
+ {
+  "id": "q10-089",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Valley Fresh, a Nova Scotia food wholesaler, signs up 60 independently owned grocers who agree to buy through Valley Fresh, use a common store banner and follow its merchandising program. This is a:",
+  "options": [
+   "retailer-sponsored cooperative",
+   "wholesaler-sponsored voluntary chain",
+   "corporate VMS",
+   "manufacturer-sponsored wholesale franchise system"
+  ],
+  "answer": 1,
+  "explanation": "A wholesaler that contracts with independent retailers to standardize and coordinate buying and merchandising sponsors a voluntary chain (IGA is the chapter's example). If the retailers had banded together to own the wholesale operation, it would be a cooperative.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-090",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Two hundred independent hardware store owners jointly own and operate a wholesale buying organization that supplies all their stores under a shared banner. This is a:",
+  "options": [
+   "wholesaler-sponsored voluntary chain",
+   "corporate VMS",
+   "horizontal marketing system",
+   "retailer-sponsored cooperative"
+  ],
+  "answer": 3,
+  "explanation": "Independent retailers banding together to run their own wholesale operation form a retailer-sponsored cooperative (Home Hardware is the chapter's example). It is a contractual VMS, not corporate, because each store remains independently owned.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-091",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "What is the key difference between a wholesaler-sponsored voluntary chain and a retailer-sponsored cooperative?",
+  "options": [
+   "The sponsor: a wholesaler organizes a voluntary chain, while independent retailers organize a cooperative",
+   "A voluntary chain is coordinated through ownership, while a cooperative is coordinated through influence",
+   "A voluntary chain charges franchise fees, while a cooperative operates with no agreements at all",
+   "There is no real difference, since both are examples of an administered VMS"
+  ],
+  "answer": 0,
+  "explanation": "Both are contractual VMSs; the difference is the sponsor. Wholesaler-sponsored = IGA-style voluntary chain; retailer-sponsored = Home Hardware-style cooperative. Neither is based on ownership or on mere influence.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-092",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Coca-Cola licenses independent bottlers in each territory, who buy syrup, bottle the drink and sell it to retailers. This is an example of a:",
+  "options": [
+   "manufacturer-sponsored retail franchise system",
+   "service-sponsored franchise system",
+   "manufacturer-sponsored wholesale franchise system",
+   "wholesaler-sponsored voluntary chain"
+  ],
+  "answer": 2,
+  "explanation": "The bottlers are franchised wholesalers (they sell to retailers) under a manufacturer's sponsorship. A manufacturer-sponsored RETAIL franchise, like Ford dealers, licenses outlets that sell to final consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-093",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Kodiak Motors authorizes independently owned dealerships across Canada to sell and service its vehicles under the Kodiak brand. This is a:",
+  "options": [
+   "manufacturer-sponsored wholesale franchise system",
+   "corporate VMS using forward integration",
+   "manufacturer-sponsored retail franchise system",
+   "retailer-sponsored cooperative"
+  ],
+  "answer": 2,
+  "explanation": "A manufacturer licensing independent retailers (dealers) to sell its product to consumers is a manufacturer-sponsored retail franchise system, like Ford dealers. It is not forward integration, because Kodiak does not own the dealerships.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-094",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which example is NOT correctly matched with its contractual VMS type?",
+  "options": [
+   "IGA: wholesaler-sponsored voluntary chain",
+   "Home Hardware: retailer-sponsored cooperative",
+   "Ford dealers: manufacturer-sponsored retail franchise system",
+   "Coca-Cola bottlers: service-sponsored franchise system"
+  ],
+  "answer": 3,
+  "explanation": "Coca-Cola bottlers are a manufacturer-sponsored wholesale franchise system. Service-sponsored franchise systems are illustrated by firms such as Holiday Inn and McDonald's.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-095",
+  "concept": "c10-contractual-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the chapter's classification of franchise programs, McDonald's and Holiday Inn are examples of a:",
+  "options": [
+   "manufacturer-sponsored retail franchise system",
+   "service-sponsored franchise system",
+   "manufacturer-sponsored wholesale franchise system",
+   "retailer-sponsored cooperative"
+  ],
+  "answer": 1,
+  "explanation": "McDonald's and Holiday Inn are the chapter's examples of service-sponsored franchise systems, in which a service company licenses franchisees to operate under its name. They do not manufacture a product for dealers or bottlers to resell.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-096",
+  "concept": "c10-administered-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In an administered vertical marketing system, coordination among successive stages is achieved through:",
+  "options": [
+   "the size and influence of one channel member",
+   "ownership of the stages by one firm",
+   "formal franchise contracts",
+   "a wholesale operation owned by retailers"
+  ],
+  "answer": 0,
+  "explanation": "Administered VMS = coordination through one member's size and influence (e.g., Procter & Gamble), with no ownership and no binding contracts. Ownership is corporate; franchise contracts and retailer-owned wholesalers are contractual.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-097",
+  "concept": "c10-administered-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Because its brands are must-haves for grocers, Brightway, a giant household products maker, gets independent supermarket chains to follow its shelf-layout plans and promotion calendars, even though it owns no stores and has no franchise contracts with them. This is a(n):",
+  "options": [
+   "corporate VMS",
+   "administered VMS",
+   "contractual VMS",
+   "horizontal marketing system"
+  ],
+  "answer": 1,
+  "explanation": "Coordination that comes from a dominant member's size and influence, without ownership or contracts, is an administered VMS. Corporate would require ownership of the stores; contractual would require formal agreements such as franchises.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-098",
+  "concept": "c10-administered-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A national retailer dictates package sizes, delivery schedules and pricing terms to hundreds of independent suppliers simply because of its enormous purchase volumes. It owns none of them and has no franchise or cooperative agreements with them. Why is this an administered rather than a corporate or contractual VMS?",
+  "options": [
+   "The retailer owns the successive stages of production and distribution",
+   "The suppliers have signed franchise agreements with the retailer",
+   "The suppliers and the retailer are at the same channel level",
+   "Coordination comes from the retailer's size and influence, not ownership or contracts"
+  ],
+  "answer": 3,
+  "explanation": "Administered VMSs rely on size and power (Walmart and P&G are the classic examples). Ownership would make it corporate and franchise or cooperative agreements would make it contractual; suppliers and retailer are at different levels, so it is vertical, not horizontal.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-099",
+  "concept": "c10-administered-vms",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which situation is NOT an example of an administered VMS?",
+  "options": [
+   "A grocery chain buys the dairy that supplies its private-label milk",
+   "Procter & Gamble's influence leads retailers to cooperate on displays and promotions",
+   "Walmart's buying power leads suppliers to adopt its inventory systems",
+   "A dominant toy maker persuades independent stores to follow its merchandising guidelines"
+  ],
+  "answer": 0,
+  "explanation": "Buying the supplier is ownership, which is backward integration in a corporate VMS. The other three achieve coordination through size and influence alone, the mark of an administered VMS.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-100",
+  "concept": "c10-administered-vms",
+  "also": [
+   "c10-channel-power"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Brandt Appliances, the market-leading appliance maker, wants independent dealers to adopt its display standards and sales training, but it does not want to buy stores or sign franchise contracts. What approach is it relying on?",
+  "options": [
+   "Backward integration into dealer ownership",
+   "A retailer-sponsored cooperative",
+   "An administered VMS, using its size and influence to secure cooperation",
+   "A horizontal marketing system with competing appliance makers"
+  ],
+  "answer": 2,
+  "explanation": "Without ownership (corporate) or contracts (contractual), Brandt's only coordinating mechanism is its market power, which makes this an administered VMS. Owning dealers would in any case be forward, not backward, integration.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-101",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Fresh Catch, a Nova Scotia exporter of live lobster, uses the shortest possible channel to get its product to restaurants. Which factor most directly drives this choice?",
+  "options": [
+   "Unit value, a product factor",
+   "Order size, a market factor",
+   "Perishability, a product factor",
+   "Desire for channel control, a company factor"
+  ],
+  "answer": 2,
+  "explanation": "Perishable products need short or direct channels so they reach buyers before they spoil. Unit value is also a product factor, but the stem's cue is that the product is live and spoils quickly.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-102",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT a product factor affecting channel choice?",
+  "options": [
+   "Technical factors",
+   "Geographic concentration",
+   "Perishability",
+   "Unit value"
+  ],
+  "answer": 1,
+  "explanation": "Geographic concentration of buyers is a market factor. The product factors are technical factors, perishability, unit value and product life cycle stage.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-103",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which pairing of channel-choice factor and factor group is correct?",
+  "options": [
+   "Perishability: company factor",
+   "Desire for channel control: product factor",
+   "Number of potential customers: product factor",
+   "Order size: market factor"
+  ],
+  "answer": 3,
+  "explanation": "Market factors are geographic concentration, number of potential customers, type of market and order size. Perishability is a product factor, desire for channel control is a company factor, and number of potential customers is a market factor.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-104",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Snackwise sells low-priced granola bars bought in small quantities by millions of consumers across Canada. Based on market and product factors, which channel is most appropriate?",
+  "options": [
+   "A longer, indirect channel using wholesalers and retailers",
+   "A direct channel with its own sales force calling on each consumer",
+   "Exclusive distribution through one retailer per province",
+   "A short direct channel justified by high unit value"
+  ],
+  "answer": 0,
+  "explanation": "Many dispersed customers, small order sizes and low unit value all point to a longer, indirect channel in which intermediaries spread the cost of reaching buyers. High unit value is the opposite of this product.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-105",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does low unit value generally push a producer toward a longer, indirect channel?",
+  "options": [
+   "Low-value products are always perishable, so they must pass through many intermediaries",
+   "Intermediaries refuse to carry high-value products, so only low-value ones are left for them",
+   "Each sale is too small to pay for direct contact, so intermediaries spread costs over many products",
+   "Low-value products are always technically complex and need many specialists to sell them"
+  ],
+  "answer": 2,
+  "explanation": "With low unit value, the margin on each sale cannot cover the cost of direct contact, while intermediaries carrying many products can reach buyers more cheaply. Technical complexity points the other way, toward direct channels.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-106",
+  "concept": "c10-channel-choice-factors",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Bytewise, a young Ottawa start-up with limited cash and little distribution experience, relies on established distributors instead of building its own warehouses and sales force. Which group of channel factors is driving this?",
+  "options": [
+   "Company factors: financial resources and ability of management",
+   "Market factors: geographic concentration of buyers",
+   "Product factors: perishability of the goods",
+   "Market factors: type of market served"
+  ],
+  "answer": 0,
+  "explanation": "A firm's own financial resources and management ability are company factors, and limited resources push it toward intermediaries. Nothing in the stem concerns where customers are or how perishable the product is.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-107",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which of the following channel designs are chosen for specialty products or services like high-end sports vehicles, exclusive women's jewellery, and yachts because only one retail outlet in a specified geographical area carries these products?",
+  "options": [
+   "Intensive distribution",
+   "Selective distribution",
+   "Exclusive distribution",
+   "Dual distribution"
+  ],
+  "answer": 2,
+  "explanation": "Exclusive distribution means only one retailer in a specified geographic area carries the product, and it is typically chosen for specialty products such as specialty automobiles, some fragrances and yachts. Selective distribution uses a few retailers per area (shopping goods); dual distribution is about channel types, not coverage.",
+  "source": "official"
+ },
+ {
+  "id": "q10-108",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Which product category is MOST likely to use exclusive distribution?",
+  "options": [
+   "Specialty products.",
+   "Unsought products.",
+   "Everyday products.",
+   "Convenience products."
+  ],
+  "answer": 0,
+  "explanation": "Exclusive distribution suits specialty products, which buyers will make a special effort to find (luxury cars, yachts, high-end fragrances). Convenience products are the opposite: they need intensive distribution in as many outlets as possible.",
+  "source": "official"
+ },
+ {
+  "id": "q10-109",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fizzi, a Canadian sparkling water brand, wants its cans in every grocery store, gas station, vending machine and convenience store in the country. This coverage strategy is:",
+  "options": [
+   "selective distribution",
+   "intensive distribution",
+   "exclusive distribution",
+   "dual distribution"
+  ],
+  "answer": 1,
+  "explanation": "Placing a product in as many outlets as possible is intensive distribution, typical for convenience goods. Dual distribution concerns using two or more channel types, not the number of outlets.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-110",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Whirlwind, a mid-priced appliance brand, is carried by only a few retailers in each city, for example three stores in Edmonton, so shoppers can compare models while dealers earn enough to provide good service. This is:",
+  "options": [
+   "intensive distribution",
+   "exclusive distribution",
+   "a strategic channel alliance",
+   "selective distribution"
+  ],
+  "answer": 3,
+  "explanation": "Using a few retailers in a specific geographic area is selective distribution, typical for shopping goods such as appliances and apparel. Exclusive distribution would mean only one retailer in Edmonton.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-111",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which pairing of target market coverage strategy and product type is correct?",
+  "options": [
+   "Intensive distribution: specialty goods such as yachts",
+   "Selective distribution: shopping goods such as appliances and apparel",
+   "Exclusive distribution: convenience goods such as gum",
+   "Selective distribution: convenience goods such as batteries"
+  ],
+  "answer": 1,
+  "explanation": "The course mapping is convenience -> intensive, shopping -> selective, specialty -> exclusive. The wrong options swap the extremes, which is the most common trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-112",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why would a luxury fragrance maker choose exclusive rather than intensive distribution?",
+  "options": [
+   "Few outlets protect the brand's prestige and dealer service, and buyers will seek the brand out",
+   "Exclusive distribution maximizes the number of outlets and encourages impulse purchases",
+   "Exclusive distribution guarantees consumers the lowest possible retail price for the fragrance",
+   "Intensive distribution is not permitted for premium consumer products such as fragrances"
+  ],
+  "answer": 0,
+  "explanation": "Specialty goods are bought by customers willing to make a special effort, so one outlet per area is enough and protects image and dealer service. Maximizing outlets and impulse purchases describes intensive distribution for convenience goods.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-113",
+  "concept": "c10-coverage-intensity",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which is NOT one of the target market coverage options considered in channel design?",
+  "options": [
+   "Intensive distribution",
+   "Selective distribution",
+   "Exclusive distribution",
+   "Dual distribution"
+  ],
+  "answer": 3,
+  "explanation": "Target market coverage is intensive, selective or exclusive. Dual distribution is a different decision (two or more channel types for the same product) and appears as a distractor in the official question.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-114",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the chapter, which buyer requirements should a channel be designed to satisfy?",
+  "options": [
+   "Cost, time, capability and dependability",
+   "Sales, inventory levels and treatment of damaged goods",
+   "Information, convenience, variety, and pre- and/or post-sale services",
+   "Coercive, reward and legitimate power"
+  ],
+  "answer": 2,
+  "explanation": "Satisfying buyer requirements means providing information, convenience, variety and pre- and/or post-sale services. Cost, time, capability and dependability are transportation criteria; sales and inventory levels are criteria for evaluating channel members.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-115",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "TechNest, a Winnipeg electronics retailer, stocks 40 brands of headphones at every price point so shoppers can compare a wide assortment of models. Which buyer requirement is it addressing?",
+  "options": [
+   "Information",
+   "Variety",
+   "Post-sale service",
+   "Convenience"
+  ],
+  "answer": 1,
+  "explanation": "Variety refers to the breadth and depth of products available, here 40 brands across price points. Convenience would be about ease of access (location, hours, online ordering), not assortment.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-116",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Glow Spas, a Calgary hot-tub dealer, delivers and installs every tub it sells and offers a five-year maintenance plan. Which buyer requirement does this address?",
+  "options": [
+   "Variety",
+   "Convenience",
+   "Pre- and post-sale services",
+   "Information"
+  ],
+  "answer": 2,
+  "explanation": "Delivery, installation and ongoing maintenance are pre- and post-sale services. Information would involve explaining the product to buyers before they purchase.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-117",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Prairie Pantry extends its store hours to 24/7 and adds curbside pickup so busy parents can shop whenever and however suits them. Which buyer requirement is it improving?",
+  "options": [
+   "Variety",
+   "Information",
+   "Pre-sale service",
+   "Convenience"
+  ],
+  "answer": 3,
+  "explanation": "Convenience covers ease of access: locations, hours, parking and pickup options. Variety would involve expanding the assortment, which the stem does not mention.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-118",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A home-security company's new dealer channel delights customers with expert advice and installation, but the dealers' distribution, advertising and selling expenses exceed what they earn on each sale. Which channel design consideration is failing?",
+  "options": [
+   "Profitability",
+   "Satisfying buyer requirements",
+   "Target market coverage",
+   "Selective distribution"
+  ],
+  "answer": 0,
+  "explanation": "Buyer requirements are being met (advice and installation), but profitability, meaning distribution, advertising and selling expenses relative to revenue, is not. A channel that satisfies buyers but loses money for its members will not last.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-119",
+  "concept": "c10-buyer-requirements",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Sun Valley Solar sells complex rooftop solar systems to homeowners who are unfamiliar with the technology and need detailed explanations before buying. Which buyer requirement should its channel design emphasize most?",
+  "options": [
+   "Variety: carrying many unrelated product lines",
+   "Convenience: stocking panels in convenience stores",
+   "Intensive coverage: as many outlets as possible",
+   "Information: knowledgeable salespeople who can explain the product"
+  ],
+  "answer": 3,
+  "explanation": "Buyers of technical, unfamiliar products most need information from knowledgeable salespeople. Intensive coverage and convenience-store placement suit simple convenience goods, not complex systems.",
+  "source": "generated"
+ },
+ {
+  "id": "q10-120",
+  "concept": "c10-channel-power",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Titan Tools tells a Calgary hardware chain it will stop supplying its best-selling drills unless the chain gives Titan more shelf space. Which source of channel power is Titan using?",
+  "options": [
+   "Reward power",
+   "Coercive power",
+   "Legitimate power",
+   "Referent power"
+  ],
+  "answer": 1,
+  "explanation": "Coercive power rests on the threat of punishment or withdrawal of support. Reward power would offer an incentive for cooperating rather than threatening a penalty.",
+  "source": "generated"
+ }
+]

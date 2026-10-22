@@ -1,0 +1,614 @@
+[
+ {
+  "id": "q09-001",
+  "concept": "c09-price",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Live 'n' Homes, a company that manages apartments, is renovating 17 units. It has to replace the dishwashers in each of them and is looking to finance the purchase. Each dishwasher is listed at $800. The merchant offers a $200 discount per unit on the dishwashers; a credit of $20 for the dishwashers Live 'n' Homes trades in; and financing for a cost of $30 per unit. What is the net (or final) price Live 'n' Homes will pay for each dishwasher?",
+  "options": [
+   "$590",
+   "$600",
+   "$610",
+   "$730"
+  ],
+  "answer": 2,
+  "explanation": "Final price = List price - Incentives and allowances + Extra fees = $800 - ($200 + $20) + $30 = $610. $590 comes from flipping the signs (adding the trade-in credit and subtracting the financing fee); fees such as financing always raise the final price.",
+  "source": "official"
+ },
+ {
+  "id": "q09-002",
+  "concept": "c09-price",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Peaks Snowmobiles lists a new sled at $14,500. A Grande Prairie buyer receives a $1,200 spring discount and a $3,000 trade-in allowance for an old sled, then pays a $450 financing fee and a $150 delivery surcharge. Using the price equation, what is the final price?",
+  "options": [
+   "$9,700",
+   "$11,500",
+   "$10,300",
+   "$10,900"
+  ],
+  "answer": 3,
+  "explanation": "Final price = $14,500 - ($1,200 + $3,000) + ($450 + $150) = $14,500 - $4,200 + $600 = $10,900. $10,300 ignores the extra fees and $9,700 subtracts them, but financing charges and surcharges are ADDED in the price equation.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-003",
+  "concept": "c09-price",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ is the money or other considerations, including other goods and services, exchanged for the ownership or use of a product.",
+  "options": [
+   "Price",
+   "Value",
+   "Barter",
+   "Cost"
+  ],
+  "answer": 0,
+  "explanation": "That is the definition of price. Value is the ratio of perceived benefits to price, and barter is one specific exchange of goods or services for goods or services - price is the broader term covering money AND other considerations.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-004",
+  "concept": "c09-price",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A Red Deer dentist agrees to provide a year of check-ups for a local carpenter's family in exchange for the carpenter building new reception cabinets. No money changes hands. This exchange is best described as:",
+  "options": [
+   "a trade-in allowance",
+   "a functional discount",
+   "a promotional allowance",
+   "barter"
+  ],
+  "answer": 3,
+  "explanation": "Barter is the exchange of goods or services for other goods or services rather than for money. A trade-in allowance also involves handing over an item, but it only reduces a money price - here no money is exchanged at all.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-005",
+  "concept": "c09-price",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which situation is barter rather than a trade-in allowance?",
+  "options": [
+   "A car buyer hands over her old sedan and receives $4,000 off the new car's price",
+   "A cellphone shopper gets $150 off a new phone for returning his old one",
+   "A dishwasher buyer receives a $20 credit for turning in an old unit",
+   "An Edmonton print shop designs a bakery's menus in return for a month of catering"
+  ],
+  "answer": 3,
+  "explanation": "Barter swaps goods or services directly, with no money price involved - menus for catering. In the other three, the old item merely reduces a money price, which makes it a trade-in allowance (subtracted in the price equation).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-006",
+  "concept": "c09-price",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "When using the price equation (Final price = List price - Incentives and allowances + Extra fees), which of the following would NOT be subtracted from the list price?",
+  "options": [
+   "A quantity discount",
+   "A trade-in allowance",
+   "A cash discount",
+   "A financing charge"
+  ],
+  "answer": 3,
+  "explanation": "Incentives and allowances such as quantity discounts, cash discounts and trade-ins are subtracted. Extra fees - financing charges, surcharges, late-payment penalties - are ADDED, so a financing charge raises the final price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-007",
+  "concept": "c09-value-pricing",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Most consumers believe that the higher the price of the diamond, the higher its quality is. This is an example of price influencing the perception of overall quality and _____ to consumers.",
+  "options": [
+   "acceptable cost",
+   "volume",
+   "value",
+   "trade-in allowances"
+  ],
+  "answer": 2,
+  "explanation": "For some products, price influences the perception of overall quality and ultimately value; for many consumers a low-priced diamond would imply poor quality and poor perceived value. 'Volume' is a pricing objective and 'trade-in allowances' a price adjustment - neither is what price signals here.",
+  "source": "official"
+ },
+ {
+  "id": "q09-008",
+  "concept": "c09-value-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Tundra Outerwear adds a removable fleece liner and a lifetime repair guarantee to its winter parka while keeping the price at $349. Which concept does this illustrate?",
+  "options": [
+   "Value pricing",
+   "Penetration pricing",
+   "Prestige pricing",
+   "Above-market pricing"
+  ],
+  "answer": 0,
+  "explanation": "Value pricing is increasing product or service benefits while maintaining or decreasing price. Penetration pricing is a low INITIAL price on a new product to win the mass market; here the price did not drop - the benefits rose.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-009",
+  "concept": "c09-value-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A Halifax gym raises its monthly membership from $50 to $60 without adding any equipment, classes or hours. According to the value equation, what happens to members' perceived value?",
+  "options": [
+   "It rises, because a higher price always signals higher quality",
+   "It stays the same, because benefits are unchanged",
+   "It rises, because the gym earns more revenue to reinvest",
+   "It falls, because price rose while perceived benefits did not"
+  ],
+  "answer": 3,
+  "explanation": "Value = perceived benefits / price. With benefits held constant, raising the denominator (price) lowers value. The price-quality link matters for some products like diamonds, but here members know the benefits are explicitly unchanged.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-010",
+  "concept": "c09-value-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which scenario is an example of value pricing rather than penetration pricing?",
+  "options": [
+   "A new energy drink launches at $1.49, half the category average, to win shelf space fast",
+   "A streaming service enters Canada at $3.99 a month to sign up subscribers quickly",
+   "A new smartphone brand debuts its first model well below rivals to grab market share",
+   "A tire retailer adds free seasonal storage and rotation to its tire packages at last year's price"
+  ],
+  "answer": 3,
+  "explanation": "Value pricing raises benefits while holding or lowering price - the tire package gains storage and rotation at an unchanged price. The other three are low INITIAL prices on NEW offerings to win the mass market quickly: penetration pricing.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-011",
+  "concept": "c09-value-pricing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might a jeweller avoid pricing a one-carat diamond far below competitors' prices, even if its costs would allow it?",
+  "options": [
+   "Because costs set a ceiling over price in the long run",
+   "Because the Competition Act prohibits below-market pricing",
+   "Because lowering price always reduces total revenue",
+   "Because a very low price can signal poor quality and lower perceived value"
+  ],
+  "answer": 3,
+  "explanation": "For some products price shapes perceived quality and ultimately value, so a cheap diamond implies a poor or fake stone. Costs set a FLOOR, not a ceiling; whether a price cut lowers revenue depends on elasticity; and below-market pricing is legal (predatory pricing is the restricted practice).",
+  "source": "generated"
+ },
+ {
+  "id": "q09-012",
+  "concept": "c09-price-importance",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "According to the course, pricing has a dual purpose or role. What are the two roles?",
+  "options": [
+   "Generating revenue and learning about the marketplace",
+   "Creating value and communicating benefits",
+   "Covering costs and beating competitors",
+   "Building awareness and encouraging trial"
+  ],
+  "answer": 0,
+  "explanation": "Pricing must (1) generate revenue and (2) help the firm learn about the marketplace, as with the quality heuristic. Creating value is mainly the job of the other three marketing-mix elements; pricing is the attempt to capture that value.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-013",
+  "concept": "c09-price-importance",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Okanagan Ridge Winery tests its new Riesling at $16 in some stores and $24 in others. To its surprise, the $24 bottles sell better because shoppers assume the pricier wine must be better. This finding best illustrates which role of pricing?",
+  "options": [
+   "Generating revenue through penetration",
+   "Meeting a survival pricing objective",
+   "Creating a reference price through odd-even endings",
+   "Learning about the marketplace through the quality heuristic"
+  ],
+  "answer": 3,
+  "explanation": "Price's second role is learning about the marketplace - here the winery learns that buyers use price as a cue to quality (the quality heuristic). Odd-even pricing concerns endings such as $15.99, which is not what the test revealed.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-014",
+  "concept": "c09-price-importance",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "Pricing is called the 'moment of truth' because it is the first marketing-mix decision a firm must make.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Pricing is the 'moment of truth' because it is where the focus of a transaction eventually comes to - every exchange ends at the price paid. The chapter says nothing about price being decided first.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-015",
+  "concept": "c09-price-importance",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Glacier Gear has a well-designed backpack, strong Instagram promotion and distribution through major sporting-goods chains, but it priced the pack so low that each sale loses money. What does the chapter predict?",
+  "options": [
+   "Low prices always create a quality signal that raises demand",
+   "The strong product and promotion will make up for the pricing",
+   "The firm has used value pricing correctly and will earn long-run profit",
+   "Poor pricing can make an otherwise reasonable marketing strategy financially ineffective"
+  ],
+  "answer": 3,
+  "explanation": "The course stresses that poor pricing strategies can make reasonable marketing strategies financially ineffective - the other Ps create value, but price must capture it. Low prices also tend to signal LOWER quality, not higher.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-016",
+  "concept": "c09-price-importance",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the importance of price is NOT consistent with the chapter?",
+  "options": [
+   "Product, promotion and place go a long way to create value; pricing tries to capture it",
+   "Consumers may use price as a heuristic to judge quality",
+   "A poor pricing strategy can make a reasonable marketing strategy financially ineffective",
+   "Price is the marketing-mix element that creates most of a product's value"
+  ],
+  "answer": 3,
+  "explanation": "The chapter says the other three marketing-mix elements go a long way to CREATE value, while pricing is the attempt to CAPTURE that value. The quality heuristic and the risk of poor pricing come straight from the slides.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-017",
+  "concept": "c09-consumer-psychology",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A shopper sees a shampoo tagged 'Regular $12.99, Sale $8.99' and decides it is a great deal because she compares the sale price with the regular price. The $12.99 is acting as a(n):",
+  "options": [
+   "reference price",
+   "customary price",
+   "seasonal discount",
+   "loss leader"
+  ],
+  "answer": 0,
+  "explanation": "A reference price is the price consumers use to compare against a purchase price - here the 'regular' price. A customary price is one set by tradition (like a vending item), not a comparison point in the buyer's mind.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-018",
+  "concept": "c09-consumer-psychology",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Northern Sound prices its wireless earbuds at $199.99 instead of $200 so they seem like a better deal. This is:",
+  "options": [
+   "odd-even pricing",
+   "customary pricing",
+   "prestige pricing",
+   "bundle pricing"
+  ],
+  "answer": 0,
+  "explanation": "Odd-even pricing sets prices a few dollars or cents under an even number to suggest a bargain. Prestige pricing would set a HIGH price level for status-conscious buyers, and even endings would be used to suggest quality.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-019",
+  "concept": "c09-consumer-psychology",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why might a luxury restaurant in Vancouver price its tasting menu at an even $180 rather than $179.99?",
+  "options": [
+   "Odd endings increase price elasticity for luxury goods",
+   "Even prices are required by the Competition Act for restaurants",
+   "Even prices are a form of loss-leader pricing",
+   "Even prices suggest quality, while odd endings suggest a bargain"
+  ],
+  "answer": 3,
+  "explanation": "In odd-even pricing, odd endings ($179.99) suggest a bargain while even prices ($180) suggest quality - the image a luxury restaurant wants. No law requires even prices, and a loss leader is an item priced below its customary price to build traffic.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-020",
+  "concept": "c09-consumer-psychology",
+  "also": [
+   "c09-prestige"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Maison Lux sells handbags at $2,400 and found that a markdown to $1,600 actually reduced sales. ValueMart prices its kettles at $29.97. Which pairing correctly names each store's approach?",
+  "options": [
+   "Maison Lux: prestige; ValueMart: odd-even",
+   "Maison Lux: skimming; ValueMart: customary",
+   "Maison Lux: above-market; ValueMart: loss leader",
+   "Maison Lux: odd-even; ValueMart: prestige"
+  ],
+  "answer": 0,
+  "explanation": "Prestige pricing keeps price high for status-conscious buyers, and lowering it can reduce demand (a backward-bending demand curve). $29.97 sits just under an even number to suggest a bargain: odd-even pricing. Skimming would be a high INITIAL price that is later lowered on purpose.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-021",
+  "concept": "c09-consumer-psychology",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "An Edmonton boutique hotel wants its signature suite to be seen as premium, not discount. Based on consumer psychology and price endings, which nightly price is the best choice?",
+  "options": [
+   "$399.99",
+   "$399.95",
+   "$398.95",
+   "$400"
+  ],
+  "answer": 3,
+  "explanation": "Even prices suggest quality, while odd endings suggest a bargain. $400 supports a premium image; the other three are odd endings that signal a deal.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-022",
+  "concept": "c09-three-cs",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The three key considerations when studying pricing are customers, costs and _____.",
+  "options": [
+   "channels",
+   "communication",
+   "company",
+   "competition"
+  ],
+  "answer": 3,
+  "explanation": "The 3 Cs of pricing are customers, costs and competition: 'your price' sits among your costs, competitors' prices and what customers want to pay. Channels, communication and company belong to other frameworks.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-023",
+  "concept": "c09-three-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "A pricing analyst at Maple Leaf Brews is told to 'cover the 3 Cs' before recommending a price for a six-pack. Which piece of information is NOT one of the 3 Cs?",
+  "options": [
+   "What customers are willing to pay for a six-pack",
+   "The brewery's costs to produce and market a six-pack",
+   "The prices rival craft brewers charge",
+   "The number of retail outlets carrying the beer"
+  ],
+  "answer": 3,
+  "explanation": "The 3 Cs are customers (what they want to pay), costs (yours) and competition (competitors' prices). Distribution coverage is a place decision, not one of the three key pricing considerations.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-024",
+  "concept": "c09-three-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Before pricing its new meal kits, PrairieBox surveys 400 Saskatoon households about the most they would pay per week. Which of the 3 Cs is PrairieBox studying?",
+  "options": [
+   "Customers",
+   "Competition",
+   "Costs",
+   "Channels"
+  ],
+  "answer": 0,
+  "explanation": "Asking what households would pay studies CUSTOMERS - what the customer wants to pay. Costs would be PrairieBox's own production and marketing costs; competition would be rival meal-kit prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-025",
+  "concept": "c09-three-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is it risky to set a price by looking only at costs, one of the 3 Cs?",
+  "options": [
+   "Costs never affect price in the long run",
+   "Cost-based prices are illegal under the Competition Act",
+   "Looking at costs makes demand perfectly elastic",
+   "The price may exceed what customers will pay or sit far from competitors' prices"
+  ],
+  "answer": 3,
+  "explanation": "Your price sits among your costs, competitors' prices and what customers want to pay. Costs tell you the floor, but a cost-only price ignores customers' willingness to pay and the competition. Costs do matter - in the long run they set a floor under price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-026",
+  "concept": "c09-three-cs",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Rocky View Roofing's cost per roof is $7,800. Homeowner research shows most will pay at most $11,000, and two rivals charge about $9,500. Applying the 3 Cs, which price range is most defensible?",
+  "options": [
+   "Below $7,800, to undercut both rivals",
+   "Exactly $7,800, so price equals cost",
+   "Above $11,000, to signal quality",
+   "Between $7,800 and $11,000, positioned relative to the $9,500 rival price"
+  ],
+  "answer": 3,
+  "explanation": "Costs set the lower limit in the long run ($7,800), customers' willingness to pay sets the upper limit ($11,000), and competitors' prices ($9,500) guide where to sit in between. Pricing below cost is not sustainable, and above $11,000 exceeds what customers will pay.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-027",
+  "concept": "c09-pricing-objectives",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "_____ specify the role of price in an organization's marketing and strategic plans.",
+  "options": [
+   "Pricing objectives",
+   "Pricing approaches",
+   "Pricing constraints",
+   "Price adjustments"
+  ],
+  "answer": 0,
+  "explanation": "Pricing objectives specify the role of price in an organization's marketing and strategic plans (profit, sales, market share, volume, survival, social responsibility). Pricing constraints are the factors that LIMIT the range of prices a firm can set.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-028",
+  "concept": "c09-pricing-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "During a sharp downturn in Alberta's oil patch, Badlands Equipment Rentals cuts its rates to just cover its costs so it can keep operating until demand returns. Which pricing objective is it pursuing?",
+  "options": [
+   "Market share",
+   "Target return",
+   "Social responsibility",
+   "Survival"
+  ],
+  "answer": 3,
+  "explanation": "Survival objectives aim to cover costs and stay in business in the short run, often during hard times. Market share would be about growing sales relative to total industry sales, not merely staying afloat.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-029",
+  "concept": "c09-pricing-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Canadian pharmaceutical firm prices its new malaria drug at cost in low-income countries, recognizing its obligations to patients and society. This reflects which pricing objective?",
+  "options": [
+   "Social responsibility",
+   "Volume",
+   "Survival",
+   "Current profit"
+  ],
+  "answer": 0,
+  "explanation": "Social responsibility objectives recognize obligations to customers and society - for example, pricing medicines affordably. Survival would mean pricing just to stay in business, which is not the motive here.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-030",
+  "concept": "c09-pricing-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Polar Pop's pricing team lists four items on a whiteboard. Which one is a pricing OBJECTIVE rather than a pricing constraint?",
+  "options": [
+   "Competitors' prices for similar soft drinks",
+   "The product's early stage in the product life cycle",
+   "The cost of producing and marketing each case",
+   "Growing Polar Pop's share of total industry sales from 8% to 12%"
+  ],
+  "answer": 3,
+  "explanation": "Market share (a firm's sales revenue relative to total industry sales) is a pricing objective - something price should achieve. Competitors' prices, costs and newness (PLC stage) are constraints that limit the range of prices.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-031",
+  "concept": "c09-pricing-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the pricing objectives identified in the chapter?",
+  "options": [
+   "Managing for long-run profit",
+   "Market share",
+   "Volume",
+   "Yield management"
+  ],
+  "answer": 3,
+  "explanation": "Yield management is a demand-oriented pricing APPROACH used in Step 1, not an objective. The objectives are profit (long-run, current, target return), sales, market share, volume, survival and social responsibility.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-032",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Which of the following is TRUE about production cost as a pricing constraint?",
+  "options": [
+   "In the short run, a firm's price must cover all the costs of producing a product",
+   "Covering the firm's costs does not affect pricing the product at all",
+   "In the long run, a firm's costs set a floor under its price",
+   "In the long run, a firm's costs set a ceiling over its price"
+  ],
+  "answer": 2,
+  "explanation": "In the long run a firm's price must cover all the costs of producing and marketing a product or the firm will fail - so costs set a FLOOR under price. In the short run a firm may price below full cost (for example, to survive), and costs are a floor, not a ceiling.",
+  "source": "official"
+ },
+ {
+  "id": "q09-033",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Aurora Labs launches the first Canadian-made home air-quality sensor, with no direct substitutes yet, and prices it well above what it expects to charge in three years. Which pricing constraint gives Aurora this latitude?",
+  "options": [
+   "Newness of the product (stage in the product life cycle)",
+   "Cost of changing prices",
+   "Pure competition in the market",
+   "Single product vs product line"
+  ],
+  "answer": 0,
+  "explanation": "Newness of the product - its stage in the PLC - affects price: early in the life cycle, with few substitutes, a firm can charge more. Pure competition would do the opposite, forcing the firm to accept the market price.",
+  "source": "generated"
+ },
+ {
+  "id": "q09-034",
+  "concept": "c09-pricing-constraints",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Canada's national wireless market is dominated by three large carriers. When one cuts its unlimited-data price, the others match within days, and analysts warn of a price war. This type of competitive market is:",
+  "options": [
+   "oligopoly",
+   "monopolistic competition",
+   "pure monopoly",
+   "pure competition"
+  ],
+  "answer": 0,
+  "explanation": "An oligopoly has a few sellers that watch and react to each other's prices, which can trigger price wars. Monopolistic competition has MANY sellers with differentiated products, so one firm's price cut does not force everyone to respond.",
+  "source": "generated"
+ }
+]

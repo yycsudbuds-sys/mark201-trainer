@@ -1,0 +1,872 @@
+{
+ "chapter": 12,
+ "title": "Integrated Marketing Communications: The Mix, Trends, and Industry",
+ "topics": [
+  {
+   "id": "t12-1",
+   "order": 1,
+   "title": "How communication works",
+   "summary": "Before any marketing message can work, it has to travel from a sender to a receiver. This topic covers the parts of the communication process (source, encoding, message, channel, receiver, decoding, feedback, noise, field of experience) and the four barriers that stop marketing messages from getting through.",
+   "concepts": [
+    "c12-communication-process",
+    "c12-feedback-noise-experience",
+    "c12-barriers"
+   ]
+  },
+  {
+   "id": "t12-2",
+   "order": 2,
+   "title": "Marketing communications, IMC, and the promotional mix",
+   "summary": "Marketing communications inform, persuade, and remind. IMC is the idea that every tool (ads, personal selling, sales promotion, PR, direct marketing, sponsorship, social media, email, customer service) must deliver one consistent, measured message. Here you learn each tool, what it is good and bad at, and whether it is mass or customized.",
+   "concepts": [
+    "c12-marketing-communications",
+    "c12-imc",
+    "c12-promotional-mix",
+    "c12-advertising",
+    "c12-personal-selling",
+    "c12-sales-promotion",
+    "c12-public-relations",
+    "c12-direct-marketing",
+    "c12-sponsorship-placement"
+   ]
+  },
+  {
+   "id": "t12-3",
+   "order": 3,
+   "title": "Designing programs: the advocacy funnel and push vs pull",
+   "summary": "Marketers design communications to move people from first hearing about a brand all the way to recommending it: the seven-stage customer advocacy funnel. They also decide whether to aim their efforts at the channel (push) or at consumers (pull), and the two usually work together.",
+   "concepts": [
+    "c12-advocacy-funnel",
+    "c12-push-pull"
+   ]
+  },
+  {
+   "id": "t12-4",
+   "order": 4,
+   "title": "The six-step marketing communications process",
+   "summary": "Planning an IMC program follows six steps: specify objectives, identify the target audience, set the budget, design the program, schedule and run it, then evaluate and recommend changes. This topic covers each step and its tools: communication vs behavioural objectives, touch points, budgeting methods, the PLC table, scheduling patterns, and pretests/posttests.",
+   "concepts": [
+    "c12-imc-steps",
+    "c12-objectives",
+    "c12-target-audience",
+    "c12-budget-methods",
+    "c12-plc-promotion",
+    "c12-scheduling",
+    "c12-evaluation"
+   ]
+  },
+  {
+   "id": "t12-5",
+   "order": 5,
+   "title": "Digital channels and the changing landscape",
+   "summary": "Communication is shifting toward content customers find on their own (inbound) and toward digital channels classified as paid, owned, or earned. Connected consumers and evolving media are reshaping where messages appear, and storytelling is a powerful way to engage people emotionally.",
+   "concepts": [
+    "c12-inbound-outbound",
+    "c12-paid-owned-earned",
+    "c12-trends",
+    "c12-storytelling"
+   ]
+  },
+  {
+   "id": "t12-6",
+   "order": 6,
+   "title": "The industry, regulators, and internal marketing",
+   "summary": "Advertisers, agencies, media, suppliers, measurement companies, and regulators together make up the marketing communications industry. Six bodies (ASC, Competition Bureau, CRTC, CMA, CWTA, MMA) guide and regulate it, and internal marketing reminds firms that their own employees deliver the brand promise.",
+   "concepts": [
+    "c12-industry-agencies",
+    "c12-regulators",
+    "c12-internal-marketing"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c12-communication-process",
+   "topic": "t12-1",
+   "term": "Communication process (source, message, channel, receiver, encoding, decoding)",
+   "definition": "Communication is the process of conveying a message to others; it requires a source (sender), a message (information to be transmitted), a channel of communication, a receiver (consumers who read, hear, or see the message), and the processes of encoding and decoding.",
+   "explain": "Think of it as a relay. The source has an idea and encodes it into words, images, or sounds (the message), sends it through a channel (TV, a salesperson, Instagram), and the receiver decodes it back into meaning. Encoding is done by the sender; decoding is done by the receiver. If any link is weak, the meaning the receiver takes away can differ from what the sender intended.",
+   "example": "Lululemon (source) encodes the idea 'gear that moves with you' into a video of a runner (message), posts it on Instagram (channel), and a follower in Calgary (receiver) decodes it as 'these leggings won't ride up on my runs.'",
+   "contrast": "Encoding vs decoding is the classic trap: encoding = the SENDER turning an idea into symbols; decoding = the RECEIVER interpreting those symbols. The channel is the vehicle that carries the message (radio station, salesperson, app), not the message itself and not the company behind it (the source).",
+   "trap": "Stems describe a creative team 'turning an idea into an ad' (encoding) or a viewer 'interpreting' or 'concluding' something (decoding). Don't confuse the channel (the medium) with the source (who is speaking) or the message (the content).",
+   "mnemonic": "S-M-C-R: Sender Makes it, Channel Carries it, Receiver Reads it. ENcode = ENter the idea into symbols; DEcode = DEcipher them.",
+   "figure": {
+    "type": "list",
+    "title": "Elements of the communication process",
+    "items": [
+     "Source (sender): the company or person with information to convey",
+     "Encoding: the sender turns the idea into symbols (words, pictures, sounds)",
+     "Message: the information to be transmitted",
+     "Channel: the means of conveying the message (TV, radio, salesperson, social media)",
+     "Receiver: consumers who read, hear, or see the message",
+     "Decoding: the receiver interprets the symbols back into meaning",
+     "Feedback: the receiver's response, communicated back to the sender",
+     "Noise: extraneous factors that distort the message or the feedback",
+     "Field of experience: the shared understanding sender and receiver need for the message to be decoded as intended"
+    ]
+   }
+  },
+  {
+   "id": "c12-feedback-noise-experience",
+   "topic": "t12-1",
+   "term": "Feedback, noise, and field of experience",
+   "definition": "Feedback is the receiver's response to a message, communicated back to the sender; noise is any extraneous factor that works against effective communication by distorting the message or the feedback; field of experience is the shared understanding and knowledge sender and receiver need for the message to be decoded as intended.",
+   "explain": "These three explain why communication succeeds or fails once a message is sent. Feedback (comments, clicks, purchases, questions) tells the sender whether the message landed. Noise is interference anywhere in the system: static, a typo, a cluttered page, a noisy room. Field of experience is common ground: if the receiver doesn't share the sender's language, culture, or knowledge, they decode the message differently.",
+   "example": "A Vancouver brand's English slogan translated word for word confuses its newcomer audience (field of experience problem); a cable glitch that garbles its TV spot is noise; the drop in calls to its sales line afterward is feedback.",
+   "contrast": "Noise distorts the transmission (something gets in the way); field of experience is a mismatch in understanding (the message arrives clearly but means something different to the receiver). Personal bias, a barrier, is different again: the receiver understands the message but rejects it because of their values.",
+   "trap": "Jargon, slang, inside jokes, and literal translations = field of experience, not noise. Static, typos, poor reception, background distractions = noise. Comments, clicks, questions, or purchases flowing back to the sender = feedback.",
+   "mnemonic": "Feedback flows BACK; Noise is a Nuisance; Field of experience = common ground.",
+   "figure": null
+  },
+  {
+   "id": "c12-barriers",
+   "topic": "t12-1",
+   "term": "Barriers to effective communication",
+   "definition": "Four common barriers keep marketing messages from working: poor awareness, selective inattention, selective inexposure, and personal bias (e.g., principles).",
+   "explain": "Poor awareness: the audience doesn't know the brand or product exists, so messages have nothing to attach to. Selective inattention: people are exposed to the message but tune it out. Selective inexposure: people avoid being exposed at all (ad blockers, ad-free subscriptions, 'no flyers' signs). Personal bias: people's beliefs or principles lead them to reject or discount the message.",
+   "example": "A Toronto shopper pays for ad-free streaming (inexposure), scrolls past sponsored posts without noticing them (inattention), has never heard of a new earbud brand (poor awareness), and dismisses a fast-fashion ad because she opposes fast fashion (personal bias).",
+   "contrast": "Inexposure vs inattention is the key split: inexposure = the message never reaches the person because they avoid it; inattention = it reaches them but they don't pay attention. Personal bias differs from field of experience: bias is rejecting a message you understand; field of experience is failing to understand it.",
+   "trap": "'Installs an ad blocker', 'pays for ad-free', 'opts out' = inexposure. 'Sees but ignores', 'scrolls past', 'tunes out' = inattention. 'Values', 'principles', 'beliefs' = personal bias. 'Never heard of the brand' = poor awareness. Selective retention or distortion are perception terms from consumer behaviour, not on this list.",
+   "mnemonic": "A-I-E-B: Awareness is poor, Ignore it (inattention), Evade it (inexposure), Bias against it.",
+   "figure": {
+    "type": "list",
+    "title": "Common barriers to effective communication",
+    "items": [
+     "Poor awareness: the audience doesn't know the brand, product, or message exists",
+     "Selective inattention: exposed to the message but tunes it out",
+     "Selective inexposure: avoids exposure to the message altogether",
+     "Personal bias (e.g., principles): beliefs or values lead the receiver to reject the message"
+    ]
+   }
+  },
+  {
+   "id": "c12-marketing-communications",
+   "topic": "t12-2",
+   "term": "Marketing communications",
+   "definition": "The means by which firms attempt to inform, persuade, and remind consumers about the products and brands they sell (Kotler/Keller).",
+   "explain": "Every ad, post, coupon, sales call, or sponsorship is marketing communications, and each has three possible jobs: inform (tell people something new), persuade (convince them to choose you), and remind (keep the brand top of mind). The course also stresses that today 'the lines are blurred between reality, entertainment, self-expression, and marketing communications': brand messages often look like content people watch and share for its own sake.",
+   "example": "WestJet informs travellers about a new route, persuades them its fares beat rivals', and reminds past flyers with holiday-season emails.",
+   "contrast": "Marketing communications is the broad activity (inform, persuade, remind); IMC is the discipline of coordinating all of it so every element delivers one consistent message. The marketing mix (4 Ps) is broader still: promotion is only one P.",
+   "trap": "The three verbs are inform, persuade, remind; watch for swaps like 'segment', 'price', 'distribute', or 'regulate'. The same verbs reappear in the PLC table (inform in introduction, persuade in growth, remind in maturity).",
+   "mnemonic": "I-P-R: Inform, Persuade, Remind.",
+   "figure": null
+  },
+  {
+   "id": "c12-imc",
+   "topic": "t12-2",
+   "term": "Integrated marketing communications (IMC)",
+   "definition": "The concept of designing marketing communications programs that coordinate all promotional activities to provide a consistent message across all audiences (a target audience of consumers, intermediaries, or both), relying on metrics and analytics to measure and evaluate success and make improvements.",
+   "explain": "IMC means every touch (ads, social posts, salespeople, packaging, events, customer service) works together and says the same thing. The marketer must consider two issues: (1) the balance of the promotional elements, and (2) coordinating all promotional activities to provide a consistent message to the target audience. Because different elements are often run by different departments, coordinating a consistent effort is a key challenge, so marketers use a process (the six steps) that makes programs easy to design and evaluate.",
+   "example": "A Calgary hockey team's promotion night bundles discounted tickets, a collectible T-shirt giveaway, a website landing page, radio ads, and a ticket phone line, all built around one theme and message.",
+   "contrast": "Balance = how much of each tool to use (the proportions of the mix). Consistency = whether every tool says the same thing. Plain 'marketing communications' just means informing, persuading, and reminding; IMC adds the coordination and measurement.",
+   "trap": "Answers like 'each department develops its own message' or 'focus solely on the most cost-effective element' contradict IMC. The key challenge is coordinating a consistent promotional effort across the departments responsible for different elements. The audience can be consumers OR intermediaries OR both.",
+   "mnemonic": "IMC = One Voice: Balance the tools, Coordinate the message, Measure the results.",
+   "figure": null
+  },
+  {
+   "id": "c12-promotional-mix",
+   "topic": "t12-2",
+   "term": "Promotional mix (IMC components)",
+   "definition": "The combination of communication tools a firm uses (advertising, personal selling, public relations/publicity, sales promotion, and direct marketing), expanded in IMC to include digital/social media, email, event marketing and sponsorship, product placement, and customer service.",
+   "explain": "Each tool has strengths and weaknesses, so firms combine them. Mass elements (advertising, sales promotion, public relations) send the same message to large audiences; customized elements (personal selling, direct marketing) tailor the message to individuals. The course's IMC components figure shows advertising, PR/publicity, customer service, direct marketing, personal selling, sponsorship, digital/social media, email, and sales promotion all feeding one integrated message.",
+   "example": "Canadian Tire combines TV ads (advertising), weekly flyers with discounts (sales promotion), in-store staff help (personal selling and customer service), Triangle Rewards emails (direct marketing/email), and sports sponsorships.",
+   "contrast": "The promotional mix is only the Promotion P; the marketing mix is all 4 Ps (product, price, place, promotion). Mass vs customized: advertising, sales promotion, and PR are mass; personal selling and direct marketing are customized.",
+   "trap": "'Pricing strategy' or 'distribution intermediaries' are not IMC components. Customer service DOES count as an IMC component in the course figure. Never call personal selling a mass element, and never give it a low cost per contact.",
+   "mnemonic": "Mass = A-S-P (Advertising, Sales promotion, PR); Customized = P-D (Personal selling, Direct marketing).",
+   "figure": {
+    "type": "table",
+    "title": "Promotional mix elements",
+    "head": [
+     "Element",
+     "Mass or customized",
+     "Key strength",
+     "Key weakness"
+    ],
+    "rows": [
+     [
+      "Advertising",
+      "Mass",
+      "Efficient reach; control over the message",
+      "High absolute cost; hard to get feedback"
+     ],
+     [
+      "Personal selling",
+      "Customized",
+      "Immediate feedback; persuasive; tailored",
+      "Very high cost per contact"
+     ],
+     [
+      "Public relations / publicity",
+      "Mass",
+      "High credibility",
+      "Little control over the message"
+     ],
+     [
+      "Sales promotion",
+      "Mass",
+      "Changes behaviour in the short run",
+      "Easily abused; can trigger promotion and price wars"
+     ],
+     [
+      "Direct marketing",
+      "Customized",
+      "Targeted and measurable",
+      "Cost (databases); privacy concerns"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-advertising",
+   "topic": "t12-2",
+   "term": "Advertising",
+   "definition": "Any paid form of non-personal communication about an organization, good, service, or idea by an identified sponsor.",
+   "explain": "Advertising is mass communication you pay for and put your name on: TV, radio, print, out-of-home, and digital ads. Because you buy the space, you control exactly what is said and when, and you can reach huge audiences efficiently. The downsides are a high absolute cost and difficulty getting feedback on whether the message worked.",
+   "example": "Tim Hortons pays for national TV spots announcing its Roll Up To Win contest, clearly branded as Tim Hortons.",
+   "contrast": "Advertising vs publicity: both are non-personal, but advertising is paid by an identified sponsor who controls the message, while publicity is indirectly paid and largely uncontrolled. Advertising vs personal selling: one-way mass communication vs two-way customized communication.",
+   "trap": "Cue words: 'paid', 'identified sponsor', 'non-personal'. If the firm didn't pay the media outlet and can't control the story, it's publicity. Clearly labelled, paid 'sponsored content' is advertising. Advertising does NOT give immediate two-way feedback.",
+   "mnemonic": "Advertising = P-I-N: Paid, Identified sponsor, Non-personal.",
+   "figure": null
+  },
+  {
+   "id": "c12-personal-selling",
+   "topic": "t12-2",
+   "term": "Personal selling",
+   "definition": "The two-way flow of communication between a buyer and seller, designed to influence a person's or group's purchase decision.",
+   "explain": "Personal selling happens face to face, by phone, or by video, with a salesperson who can listen, answer questions, and adjust the pitch on the spot. That makes it the most customized and persuasive element, with immediate feedback, which suits complex, expensive, or B2B products. Its weakness is cost: it is extremely expensive per contact, so it can't reach mass audiences efficiently.",
+   "example": "A rep for an Edmonton farm-equipment dealer visits a grain farm, asks about acreage, and recommends a combine configuration that fits the farmer's budget.",
+   "contrast": "Personal selling vs direct marketing: both are customized, but personal selling is a live two-way dialogue with immediate feedback, while direct marketing sends targeted messages (mail, email, catalogues, telemarketing) to generate a response. Personal selling vs customer service: selling aims to influence a purchase decision; service supports customers, often after the sale.",
+   "trap": "Cue words: 'two-way', 'adjusts the pitch', 'demonstrates', 'answers objections'. Personal selling appears in BOTH the push and pull columns of Figure 12-2. Its weakness is HIGH cost per contact, never low.",
+   "mnemonic": "Personal selling = Pricey but Precise.",
+   "figure": null
+  },
+  {
+   "id": "c12-sales-promotion",
+   "topic": "t12-2",
+   "term": "Sales promotion",
+   "definition": "A short-term inducement of value offered to arouse interest in buying a good or service, such as coupons, samples, contests, and rebates (consumer promotions) or allowances and co-op funds (trade promotions).",
+   "explain": "Sales promotion gives people an extra reason to act now. Consumer promotions (coupons, free samples, contests, rebates) target end users and support a pull strategy; trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) target channel members and support a push strategy. It is very effective at changing behaviour in the short run, but it is easily abused and can trigger promotion and price wars.",
+   "example": "Shoppers Drug Mart offers bonus PC Optimum points this weekend only (consumer promotion); a snack maker gives Loblaws a merchandising allowance for an end-aisle display (trade promotion).",
+   "contrast": "Sales promotion vs advertising: advertising builds awareness and attitudes with a message; sales promotion adds tangible short-term value (a deal) to trigger action. Consumer promotion (pull, aimed at shoppers) vs trade promotion (push, aimed at the channel).",
+   "trap": "Cue words: 'limited time', 'coupon', 'free sample', 'contest', 'rebate', 'buy one get one'. A news story about the product is publicity, not sales promotion. In the PLC table, free samples = introduction; discounts, coupons, and events = maturity.",
+   "mnemonic": "Sales promotion = 'Act NOW' value.",
+   "figure": null
+  },
+  {
+   "id": "c12-public-relations",
+   "topic": "t12-2",
+   "term": "Public relations and publicity",
+   "definition": "Public relations is a form of communication management that seeks to influence the feelings, opinions, or beliefs held by customers, potential customers, shareholders, employees, and other stakeholders; publicity is a non-personal, indirectly paid presentation of an organization, good, or service, such as a news story.",
+   "explain": "PR tools include news releases, press conferences, community involvement, and reputation management (for example, during a recall). When media cover the company because the story is newsworthy, that coverage is publicity: the firm didn't buy the space. Publicity is highly credible because it comes from a third party, but the firm has little control over what is said or whether it runs at all.",
+   "example": "After a Canadian outerwear brand donates parkas to northern communities, CBC runs a story about it; the company paid nothing for the airtime.",
+   "contrast": "Publicity vs advertising: publicity is indirectly paid and uncontrolled; advertising is paid, with an identified sponsor and full control. In the digital channels framework, public relations and media coverage are earned media.",
+   "trap": "'The company paid nothing to the outlet', 'a news story', 'media covered' = publicity. A labelled, paid 'sponsored' article is advertising. Strength = credibility; weakness = lack of control. A mail-in rebate is sales promotion, not PR.",
+   "mnemonic": "Publicity: Praised by others, Paid indirectly, Poor control.",
+   "figure": null
+  },
+  {
+   "id": "c12-direct-marketing",
+   "topic": "t12-2",
+   "term": "Direct marketing",
+   "definition": "Using direct communication with consumers to generate a response in the form of an order, a request for further information, or a visit to a retail outlet, through tools such as direct mail, catalogues, telemarketing, direct response TV, and email.",
+   "explain": "Direct marketing talks to specific people (usually from a database) and asks them to respond, so results can be measured precisely (responses, orders, redemptions by code). It is customized and targeted. Its weaknesses include the cost of building and maintaining databases and consumers' privacy concerns.",
+   "example": "Mark's mails a catalogue and sends a personalized email with a unique order code to past customers, then counts the orders each code produces.",
+   "contrast": "Direct marketing vs advertising: direct marketing targets known individuals and seeks a measurable response; advertising broadcasts to a mass audience. Direct marketing vs personal selling: targeted messages vs a live two-way conversation. On the course's digital channels slide, email marketing is classified as PAID media.",
+   "trap": "Cue words: 'catalogue', 'direct mail', 'telemarketing', 'respond', 'order code', 'database'. A press release is PR, not direct marketing. Email marketing = paid media on the slide, not owned.",
+   "mnemonic": "Direct marketing: Direct to you, Data-driven, Demands a response.",
+   "figure": null
+  },
+  {
+   "id": "c12-sponsorship-placement",
+   "topic": "t12-2",
+   "term": "Event marketing, sponsorship, and product placement",
+   "definition": "Event marketing involves a brand in an experience or occasion that brings consumers and the brand together; sponsorship is when a company pays a fee to be associated with an event, team, cause, or individual in exchange for exposure; product placement is the paid inclusion of a brand in entertainment content such as TV shows, movies, video games, or online videos.",
+   "explain": "These tools reach consumers in settings they chose to be in (a festival, a game, a favourite show), so the brand feels less intrusive than a commercial. All three appear on the PULL side of Figure 12-2, aimed at consumers. The trade-off is less control over exactly how and when the brand is seen, and effects that can be harder to measure.",
+   "example": "A telecom pays to put its name on a hockey arena (sponsorship); a Canadian beer brand runs its own pop-up summer festival (event marketing); a streaming series shows characters using a specific phone brand under a paid deal (product placement).",
+   "contrast": "Event marketing = the brand creates or is woven into an experience; sponsorship = the brand pays to attach its name to someone else's event, team, or cause; product placement = the brand appears inside entertainment content. None of these is publicity, because the firm pays.",
+   "trap": "A logo on arena boards or a festival stage = sponsorship, not product placement. A product used on screen by characters = product placement. These are pull tools, not push tools.",
+   "mnemonic": "Sponsor = Sign on their event; Event marketing = your own Experience; Placement = Product on screen.",
+   "figure": null
+  },
+  {
+   "id": "c12-advocacy-funnel",
+   "topic": "t12-3",
+   "term": "Customer advocacy funnel",
+   "definition": "A model (Figure 12-1) of how marketing communications move consumers through seven stages: awareness, interest, engagement, trial, purchase, loyalty, and advocacy, where loyal customers recommend the product to others.",
+   "explain": "The funnel shows that communications don't stop at the sale. Awareness (a website, SEO, online video, and display ads drive people to an online destination) leads to interest (attributes are highlighted so people want to learn more), engagement (people participate in the product experience and interact with its marketing), trial (free samples, limited trials, downloads), purchase (positive experiences lead to buying), loyalty (repeat purchases, encouraged by CRM/loyalty programs), and advocacy (loyal customers are rewarded with extra experiences and recommend the product).",
+   "example": "A Calgary meal-kit brand runs YouTube ads (awareness), highlights 15-minute recipes (interest), hosts an Instagram cook-along (engagement), offers a free first box (trial), converts to a paid order (purchase), rewards repeat orders with points (loyalty), and gives top fans perks so they recommend it (advocacy).",
+   "contrast": "Loyalty = repeat purchasing, often driven by reward programs; advocacy = recommending to others. Engagement = participating and interacting with the brand and its marketing; trial = getting the product itself to try (sample, limited trial, download). Don't confuse the funnel with the hierarchy of effects (awareness, interest, evaluation, trial, adoption).",
+   "trap": "Membership cards, points, and coupons for continued purchases = LOYALTY (official question). 'Recommend', 'refer friends', 'rave reviews' = ADVOCACY. 'Free sample', '14-day free trial', 'download' = TRIAL. 'Evaluation' and 'adoption' are hierarchy-of-effects stages, not funnel stages.",
+   "mnemonic": "A-I-E-T-P-L-A: 'All Interested Eager Testers Purchase, Love, Advocate.'",
+   "figure": {
+    "type": "list",
+    "title": "Figure 12-1 The customer advocacy funnel (top to bottom)",
+    "items": [
+     "1. Awareness: a website, SEO, online video, and display ads drive consumers to an online destination",
+     "2. Interest: interesting product attributes are highlighted so potential customers want to learn more",
+     "3. Engagement: potential customers participate in the product experience and interact with its marketing",
+     "4. Trial: customers obtain free samples or get the product as a limited trial or download",
+     "5. Purchase: positive product experiences lead to purchase",
+     "6. Loyalty: ongoing positive experiences lead to repeat purchases, encouraged by CRM/loyalty programs",
+     "7. Advocacy: loyal customers are rewarded with additional experiences and recommend the product to others"
+    ]
+   }
+  },
+  {
+   "id": "c12-push-pull",
+   "topic": "t12-3",
+   "term": "Push vs pull strategies",
+   "definition": "A push strategy directs communications at channel members (distributors, wholesalers, retailers) to gain their support in stocking and selling the product; a pull strategy directs communications at ultimate consumers (and media and the public) to build awareness, trial, and demand so consumers ask for the product.",
+   "explain": "Push: the manufacturer pushes the product through the channel using direct response, personal selling, and trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds) to win listings, sales, merchandising displays, feature pricing, and inclusion in flyers. Pull: the manufacturer creates consumer demand that pulls the product through the channel, using advertising, publicity, consumer promotion, product placement, event marketing, social media and sponsorship, and personal selling, aiming for awareness, interest, recognition, trial, purchase, loyalty, and advocacy. The course stresses that the two work together.",
+   "example": "A Quebec cheese maker pays Metro a merchandising allowance for a feature display (push) while running Instagram recipes and in-store sampling for shoppers (pull).",
+   "contrast": "Push targets the trade (intermediaries); pull targets consumers. Incentives and training for retailers' sales staff = push. Push is NOT the same as outbound, and pull is NOT the same as inbound: TV ads aimed at consumers are outbound AND pull.",
+   "trap": "Ask WHO receives the communication: retailers, wholesalers, distributors, or their sales staff = push; consumers = pull. Results like listings, displays, feature pricing, and flyer inclusion = push; awareness, trial, loyalty, and advocacy = pull. Personal selling appears in both columns.",
+   "mnemonic": "PUSH = Persuade Us (the Stores) to Handle it; PULL = People Urge Local stores to List it.",
+   "figure": {
+    "type": "table",
+    "title": "Figure 12-2 Push and pull communication strategies",
+    "head": [
+     "Aspect",
+     "Push strategy",
+     "Pull strategy"
+    ],
+    "rows": [
+     [
+      "Focus",
+      "Distributors, wholesalers, retailers (the channel)",
+      "Consumers, media, the public"
+     ],
+     [
+      "Tools",
+      "Direct response; personal selling; trade promotions (trade allowances, trade shows, merchandising allowances, co-op advertising funds)",
+      "Advertising; publicity; consumer promotion; product placement; event marketing; social media and sponsorship; personal selling"
+     ],
+     [
+      "Results sought",
+      "Listings, sales, merchandising displays, feature pricing, inclusion in flyers",
+      "Awareness, interest, recognition, trial, purchase, loyalty, advocacy"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-imc-steps",
+   "topic": "t12-4",
+   "term": "Six steps in the marketing communications process",
+   "definition": "The planning process for an IMC program (Figure 12-3): (1) specify the IMC objectives, (2) identify the target audience, (3) set the promotional budget, (4) design the promotional program, (5) schedule and run the IMC elements, and (6) evaluate the program and recommend changes.",
+   "explain": "The steps flow logically: decide what you want to achieve, then who you need to reach, then how much you will spend to get there, then which tools and messages to use, then when and how often each runs, and finally whether it worked and what to change. Customer touch points are considered when identifying the target audience (step 2); the product life cycle is considered when designing the program (step 4).",
+   "example": "A Winnipeg gym (1) aims for 2,000 trial memberships, (2) targets students near campus and maps their touch points, (3) budgets $60,000, (4) chooses TikTok creators, campus posters, and a free-week offer, (5) runs them in late August and January, and (6) reviews sign-ups and engagement to adjust the next campaign.",
+   "contrast": "Designing the program (step 4: which tools and messages) vs scheduling and running (step 5: timing, frequency, duration). Specifying objectives (step 1: what to achieve) vs evaluating (step 6: did we achieve it, and what should change).",
+   "trap": "Official questions: defining goals before launch = step 1; deciding the specific timing of TV ads and online videos = step 5; reviewing sales data, feedback, and digital engagement afterward = step 6. Touch points go with step 2; the PLC goes with step 4. Selecting intermediaries is a distribution decision, not one of the six steps.",
+   "mnemonic": "'Only Target Buyers Deserve Scheduled Evaluations': Objectives, Target audience, Budget, Design, Schedule, Evaluate.",
+   "figure": {
+    "type": "list",
+    "title": "Figure 12-3 Steps in the marketing communications process",
+    "items": [
+     "1. Specify the IMC objectives",
+     "2. Identify the target audience (consider customer touch points)",
+     "3. Set the promotional budget",
+     "4. Design the promotional program (consider the product life cycle)",
+     "5. Schedule and run the IMC elements",
+     "6. Evaluate the program and recommend changes"
+    ]
+   }
+  },
+  {
+   "id": "c12-objectives",
+   "topic": "t12-4",
+   "term": "Communication vs behavioural objectives (and the hierarchy of effects)",
+   "definition": "Communication objectives lay the foundation to build customer relationships (e.g., awareness, knowledge, attitudes); behavioural objectives relate to outcomes that are action-oriented and necessary for business success (e.g., trial, purchase, repeat purchase). The hierarchy of effects is the sequence of stages a prospective buyer goes through: awareness, interest, evaluation, trial, adoption.",
+   "explain": "Step 1 of the process means setting both kinds of objectives. Communication objectives work on the mind: getting people to know, understand, and feel good about a brand. Behavioural objectives work on actions: trying, buying, and buying again. The hierarchy of effects reminds marketers that buyers move from awareness and interest through evaluation before they try and adopt a product, so early objectives tend to be communication-based and later ones behavioural.",
+   "example": "A new Alberta oat milk sets a communication objective (raise brand awareness among Edmonton coffee drinkers to 40%) and a behavioural objective (10,000 trial purchases in three months).",
+   "contrast": "Awareness, knowledge, attitudes, recall = communication. Trial, purchase, repeat purchase, sign-ups = behavioural. The hierarchy of effects (awareness, interest, evaluation, trial, adoption) is not the advocacy funnel, which has engagement, purchase, loyalty, and advocacy and no 'evaluation' stage.",
+   "trap": "A number doesn't make an objective behavioural: '30% awareness' is still a communication objective. 'Evaluation' and 'adoption' belong to the hierarchy of effects; 'loyalty' and 'advocacy' belong to the funnel.",
+   "mnemonic": "Communication = Head (know, feel); Behavioural = Hands (do, buy). Hierarchy of effects: A-I-E-T-A.",
+   "figure": {
+    "type": "table",
+    "title": "Communication vs behavioural objectives",
+    "head": [
+     "Type",
+     "Purpose",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Communication",
+      "Lay the foundation to build customer relationships",
+      "Awareness, knowledge, attitudes"
+     ],
+     [
+      "Behavioural",
+      "Action-oriented outcomes necessary for business success",
+      "Trial, purchase, repeat purchase"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-target-audience",
+   "topic": "t12-4",
+   "term": "Target audience and customer touch points",
+   "definition": "The target audience is the group of prospective buyers toward which a promotional program is directed; customer touch points are all the points of contact between a customer and a brand (ads, packaging, the store, the website, service calls), considered when identifying the target audience.",
+   "explain": "Step 2 asks: who exactly are we talking to, and where do they meet our brand? Knowing the audience's demographics, lifestyle, and media habits tells you which tools and channels can reach them. Mapping touch points shows every moment that shapes their impression, so each can carry a consistent message. In IMC the audience can be consumers, intermediaries, or both.",
+   "example": "A Halifax dental clinic identifies young families as its audience and maps their touch points: Google search results, the booking app, the reminder text, the waiting room, and the follow-up email.",
+   "contrast": "Touch points (where the customer contacts the brand) are not channels of distribution (how the product gets to market) or the promotional schedule (when tools run). The target audience can include intermediaries, such as retailers in a push program, not only end consumers.",
+   "trap": "Touch points are considered at step 2 (identify the target audience), not step 4 (where the PLC is considered). Internal documents customers never see are not touch points.",
+   "mnemonic": "Touch points = every place the customer 'touches' the brand.",
+   "figure": null
+  },
+  {
+   "id": "c12-budget-methods",
+   "topic": "t12-4",
+   "term": "Promotional budgeting methods",
+   "definition": "Ways to set the promotional budget (step 3): percentage of sales (a fixed percentage of past or anticipated sales), competitive parity (matching competitors' spending or share of market), all-you-can-afford (money left after other budget items), and objective and task (determine the objectives, outline the tasks needed to reach them, and total their costs).",
+   "explain": "Percentage of sales is simple but backwards: it makes sales the cause of promotion instead of the result, so spending falls just when sales need help. Competitive parity keeps pace with rivals but ignores the firm's own objectives. All-you-can-afford is common in small firms but has no link to goals. Objective and task is considered the best approach because spending is tied directly to what the firm wants to achieve, though estimating the tasks requires judgment.",
+   "example": "A Kelowna winery sets an objective (5,000 trial bottles), lists the tasks (tastings, Instagram ads, a food-show booth), and adds up their costs: objective and task.",
+   "contrast": "Percentage of sales = based on sales; competitive parity = based on rivals; all-you-can-afford = based on leftover cash; objective and task = based on goals. Only objective and task starts from objectives.",
+   "trap": "'Matches the rival's spending' or 'share of market' = competitive parity. 'Whatever is left over' = all-you-can-afford. 'X% of last year's sales' = percentage of sales. 'Lists the tasks and adds up the cost' = objective and task.",
+   "mnemonic": "Sales, Rivals, Leftovers, Goals: only Goals is the gold standard.",
+   "figure": {
+    "type": "list",
+    "title": "Promotional budgeting methods",
+    "items": [
+     "Percentage of sales: a fixed % of past or anticipated sales (simple, but backwards logic)",
+     "Competitive parity: match competitors' spending or share of market (ignores own objectives)",
+     "All-you-can-afford: money left after other budget items (common in small firms)",
+     "Objective and task: set objectives, outline tasks, total their cost (best approach; needs judgment)"
+    ]
+   }
+  },
+  {
+   "id": "c12-plc-promotion",
+   "topic": "t12-4",
+   "term": "Product life cycle and promotional programs",
+   "definition": "The promotional objective and the composition of the promotional mix change across the product life cycle, which is considered when designing the promotional program (step 4): introduction, to inform; growth, to persuade; maturity, to remind; decline, to phase out (Figure 12-4).",
+   "explain": "In introduction, people must learn the product exists: publicity in magazines, advertising, a salesforce calling on intermediaries, and free samples. In growth, competitors arrive, so the job is to persuade: personal selling to intermediaries and advertising that differentiates the brand from competitors. In maturity, the goal is to maintain existing buyers: reminder advertising, sales promotion such as discounts, coupons, and events, limited personal selling, and direct-mail reminders. In decline, little money is spent on promotion as the product is phased out.",
+   "example": "A new Canadian electric snowblower is reviewed in magazines (introduction), later runs 'quieter than the competition' ads (growth), then relies on coupons and reminder ads (maturity), and finally gets almost no promotion before it is discontinued (decline).",
+   "contrast": "Maturity = maintain existing buyers with reminder advertising and sales promotion; 'reduce promotional spending to maximize profit' describes decline, not maturity. Free samples = introduction; discounts and coupons = maturity.",
+   "trap": "Official question: the PLC helps marketers choose the appropriate communication tools at each phase. Map the verbs: inform/persuade/remind/phase out = introduction/growth/maturity/decline. 'Differentiate from competing brands' = growth.",
+   "mnemonic": "I-P-R-P: Inform, Persuade, Remind, Phase out.",
+   "figure": {
+    "type": "table",
+    "title": "Figure 12-4 Product life cycle considerations for promotional programs",
+    "head": [
+     "Stage",
+     "Promotional objective",
+     "Promotional activities"
+    ],
+    "rows": [
+     [
+      "Introduction",
+      "To inform",
+      "Publicity in magazines; advertising; salesforce calling on intermediaries; sales promotion in the form of free samples"
+     ],
+     [
+      "Growth",
+      "To persuade",
+      "Personal selling to intermediaries; advertising to differentiate the product from competing brands"
+     ],
+     [
+      "Maturity",
+      "To remind",
+      "Reminder advertising; sales promotion in the form of discounts, coupons, and events; limited personal selling; direct-mail reminders"
+     ],
+     [
+      "Decline",
+      "To phase out",
+      "Little money spent on promotion"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-scheduling",
+   "topic": "t12-4",
+   "term": "Scheduling the IMC elements (continuous, flighting, pulse)",
+   "definition": "The promotional schedule describes the order in which each promotional tool is introduced and the frequency and duration of its use (step 5); common patterns are continuous (steady activity), flighting (intermittent periods of activity and no activity), and pulse (a continuous base plus periodic bursts).",
+   "explain": "Once the program is designed, the marketer decides timing: which tool launches first, how often each runs, and for how long. Continuous scheduling suits products bought steadily all year. Flighting concentrates spending in bursts when demand is seasonal and goes dark in between. Pulse combines both: an always-on presence with extra pushes at peak times.",
+   "example": "Canadian Tire keeps weekly flyers running all year and adds heavy TV bursts before winter and the holidays: a pulse schedule.",
+   "contrast": "Flighting has gaps with NO activity; pulse never drops to zero. Scheduling (when and how often) is step 5; designing the program (which tools and messages) is step 4.",
+   "trap": "Official question: deciding the specific timing of TV ads and online video placements = scheduling the IMC elements, not designing the program. 'Heavy, then nothing' = flighting; 'steady base plus spikes' = pulse.",
+   "mnemonic": "Continuous = Constant; Flighting = Flies, then Lands; Pulse = a heartbeat on a steady line.",
+   "figure": null
+  },
+  {
+   "id": "c12-evaluation",
+   "topic": "t12-4",
+   "term": "Evaluating the program and recommending changes",
+   "definition": "The final step (6) of the marketing communications process: measuring results with pretests (before elements run) and posttests (after) and with metrics such as sales data, customer feedback, and digital engagement (click-through, conversion, and engagement rates), then recommending changes.",
+   "explain": "IMC relies on metrics and analytics to measure success and make improvements, so evaluation is built into the process. Pretests check ads or concepts before money is spent; posttests measure what happened afterward (recall, attitude change, sales). Results are compared with the objectives set in step 1 and drive changes to the next program. Because different departments often run different elements, coordinating a consistent promotional effort, and consistent measurement, is a practical challenge.",
+   "example": "After its spring campaign, an Ottawa bike shop compares its sales lift, survey feedback, and Instagram engagement against its goals and shifts budget from flyers to short-form video.",
+   "contrast": "Pretest = before launch; posttest = after. Evaluating (step 6) vs specifying objectives (step 1): objectives are the yardstick, and evaluation measures against it. Deciding when ads run is scheduling (step 5), not evaluation.",
+   "trap": "Official question: reviewing sales data, customer feedback, and digital engagement after the campaign = evaluating the program and recommending changes. 'Recommend changes' means results feed back into the next plan.",
+   "mnemonic": "Pre = Preview; Post = Post-mortem.",
+   "figure": null
+  },
+  {
+   "id": "c12-inbound-outbound",
+   "topic": "t12-5",
+   "term": "Inbound vs outbound communications",
+   "definition": "Inbound communications draw customers to the brand; they require excellent content and the ability to be seen in the right places (search, social, content marketing) and can be considerably more cost-effective than outbound. Outbound communications are the more traditional approach of sending messages out to audiences (advertising, cold calls, direct mail).",
+   "explain": "Inbound flips the direction: instead of interrupting people, you create useful content and make sure it shows up where they are already looking (search results, social feeds), so they come to you. Because interested people find you, inbound can be much more cost-effective. Outbound is the traditional broadcast or interruption approach: ads, telemarketing, and direct mail sent to audiences whether or not they are looking.",
+   "example": "A Calgary renovation firm publishes basement-development cost guides that rank on Google (inbound) and also mails postcards to new homeowners (outbound).",
+   "contrast": "Inbound/outbound is about direction (they come to you vs you go to them); push/pull is about the target (the trade vs consumers). A TV ad aimed at consumers is outbound but pull. Inbound overlaps with owned and earned media but is a different classification.",
+   "trap": "Inbound cue words: 'content', 'SEO', 'be found', 'searching', 'how-to guides'. Outbound cue words: 'cold calls', 'mailed flyers', 'radio spots', 'traditional'. Don't equate inbound with pull.",
+   "mnemonic": "Inbound = they come IN; Outbound = you send OUT.",
+   "figure": null
+  },
+  {
+   "id": "c12-paid-owned-earned",
+   "topic": "t12-5",
+   "term": "Paid, owned, and earned media (digital channels)",
+   "definition": "Paid media are channels the company pays to use (search advertising, display advertising, social media advertising, email marketing, paid bloggers/influencers, mobile in-app advertising); owned media are channels the company controls at least in part (company websites, company-owned social media such as Facebook pages and YouTube channels, official blogs, mobile apps); earned media is exposure generated by others (review websites such as Amazon reviews and Yelp, public relations, media coverage).",
+   "explain": "Ask two questions: did we pay for it, and do we control it? Paid = we pay for placement. Owned = we run the channel ourselves. Earned = other people (customers, journalists) create or spread it, which makes it credible but uncontrollable. The course slide (Keller/Swaminathan) specifically classifies email marketing and paid influencers as PAID.",
+   "example": "Roots runs Instagram ads (paid), posts on its own Instagram account and website (owned), and gets a fashion-magazine feature and customer reviews (earned).",
+   "contrast": "A brand's own Facebook PAGE is owned; Facebook ADS are paid. Influencers the brand pays are paid; unpaid customer reviews and media stories are earned. 'Organic media' is not one of the three categories.",
+   "trap": "Email marketing = paid (per the course slide), even though it goes to the company's own list. Official question: regularly updating the official blog and social profiles = owned. Reviews, PR, and media coverage = earned.",
+   "mnemonic": "Paid = you Pay; Owned = you Own; Earned = others give it to you.",
+   "figure": {
+    "type": "table",
+    "title": "Digital channels (Keller/Swaminathan)",
+    "head": [
+     "Type",
+     "Examples from the course slide"
+    ],
+    "rows": [
+     [
+      "Paid",
+      "Search advertising; display advertising; social media advertising; e-mail marketing; paid bloggers/influencers; mobile in-app advertising"
+     ],
+     [
+      "Owned",
+      "Company websites; company-owned social media (e.g., Facebook pages, YouTube channel); official blog; mobile apps"
+     ],
+     [
+      "Earned",
+      "Review websites (Amazon reviews, Yelp); public relations; media coverage"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-trends",
+   "topic": "t12-5",
+   "term": "Changing landscape: connected consumers and evolving media",
+   "definition": "Connected consumers: affordable and fast Internet technology provides consumers with easy-to-use services and devices that facilitate marketing communications. Evolving media: content produced strictly for streaming; traditional media creating their own online assets to remain competitive and relevant; news organizations delivering content through YouTube channels and apps; radio stations streaming content and creating podcasts; out-of-home being replaced with digital boards; digital advertising shifting to mobile.",
+   "explain": "Two forces are reshaping marketing communications. Consumers are always connected, so they can search, compare, review, and share instantly, and brands can reach them anywhere. Meanwhile, media themselves are changing form: TV and news move online and to streaming, radio becomes podcasts, billboards go digital, and ad spending follows audiences to mobile.",
+   "example": "A Toronto shopper compares prices on her phone in a store (connected consumer) while a TV network releases a streaming-only series and a downtown billboard switches to a digital screen (evolving media).",
+   "contrast": "Connected consumers is about consumers' technology and behaviour; evolving media is about how media outlets and formats are changing. Neither is the same as inbound communications, which is a firm's strategy.",
+   "trap": "Every example on the evolving media list moves TOWARD digital, streaming, and mobile. Anything describing a return to print only, or a move away from mobile, is not on the list.",
+   "mnemonic": "Consumers CONNECT; Media MORPH.",
+   "figure": {
+    "type": "list",
+    "title": "Evolving media (course list)",
+    "items": [
+     "Content produced strictly for streaming",
+     "Traditional media creating their own online assets to remain competitive and relevant",
+     "News organizations using YouTube channels and apps to deliver content",
+     "Radio stations streaming content and creating podcasts",
+     "Out-of-home being replaced with digital boards",
+     "Digital advertising shifting to mobile"
+    ]
+   }
+  },
+  {
+   "id": "c12-storytelling",
+   "topic": "t12-5",
+   "term": "Storytelling",
+   "definition": "Storytelling builds relationships by conveying events using images and words; stories engage people through their emotions and experiences, which motivates them to act and to more readily accept a concept or idea.",
+   "explain": "Instead of listing features, a brand tells a story with characters, a challenge, and a resolution. Because stories trigger emotion and connect to people's own experiences, audiences remember them, relate to the brand, and are more open to its message. Dove's campaigns about real women's self-image are the course example.",
+   "example": "A Canadian bank's video follows a newcomer family's first year in Saskatoon, from opening an account to buying a first home, instead of quoting interest rates.",
+   "contrast": "Storytelling vs feature or price advertising: storytelling persuades through emotion and experience; feature ads persuade through facts, specs, and deals. Storytelling vs product placement: placement puts the product inside someone else's story; storytelling is the brand's own narrative.",
+   "trap": "Cue words: 'journey', 'follows a family', 'emotions', 'images and words'. Statistics, ingredient lists, and coupons are not storytelling.",
+   "mnemonic": "Facts tell; stories SELL (through emotion).",
+   "figure": null
+  },
+  {
+   "id": "c12-industry-agencies",
+   "topic": "t12-6",
+   "term": "Marketing communications industry and agency types",
+   "definition": "The marketing communications industry is made up of areas (advertisers or clients, agencies, media, suppliers, regulators, and measurement companies) that work together to form an industry that is ethical, trustworthy, cohesive, and measurable. Agencies may be full-service (research, creative, media, production), limited-service or specialty (e.g., creative boutiques, media-buying services), or in-house (a department inside the advertiser's company).",
+   "explain": "Advertisers hire agencies to create and place communications, media companies sell the space and time, suppliers provide production services, measurement companies track audiences and results, and regulators set the rules. Agencies differ by scope: full-service agencies do it all, limited-service agencies specialize in one function, and in-house agencies are departments within the advertiser itself.",
+   "example": "A Canadian grocery chain uses a full-service Toronto agency for its national campaign, a media-buying specialist for digital placements, and its in-house team for weekly flyers.",
+   "contrast": "Full-service = one-stop shop; limited-service = one specialty (creative only, media buying only); in-house = owned by the advertiser. Measurement companies measure audiences and results; regulators set and enforce rules.",
+   "trap": "Distribution intermediaries (wholesalers, retailers) belong to marketing channels, not the marketing communications industry. The four qualities are ethical, trustworthy, cohesive, and measurable.",
+   "mnemonic": "Industry players: Advertisers, Agencies, Media, Suppliers, Regulators, Measurement.",
+   "figure": null
+  },
+  {
+   "id": "c12-regulators",
+   "topic": "t12-6",
+   "term": "Regulatory bodies in Canadian marketing communications",
+   "definition": "Six bodies guide or regulate Canadian marketing communications: Advertising Standards Canada (ASC), the Competition Bureau, the Canadian Radio-television and Telecommunications Commission (CRTC), the Canadian Marketing Association (CMA), the Canadian Wireless Telecommunications Association (CWTA), and the Mobile Marketing Association (MMA).",
+   "explain": "ASC is the industry's self-regulatory body; it administers the Canadian Code of Advertising Standards and handles complaints about ads. The Competition Bureau is the federal agency that enforces the Competition Act, including rules against misleading advertising and deceptive marketing. The CRTC regulates broadcasting and telecommunications and enforces Canada's anti-spam legislation (CASL). The CMA is the marketers' association, with a code of ethics and standards of practice. The CWTA represents the wireless (mobile) industry, for example through guidelines for text-message short-code campaigns, and the MMA sets guidelines and best practices for mobile marketing.",
+   "example": "A misleading 'was $899, now $399' claim could draw a Competition Bureau investigation; a consumer complaint about an exaggerated ad goes to ASC; a new broadcast licence comes from the CRTC.",
+   "contrast": "ASC = voluntary industry self-regulation through its Code; Competition Bureau = law enforcement under the Competition Act; CRTC = broadcasting and telecom regulator; CMA = marketers' code of ethics; CWTA and MMA = the wireless and mobile specialists.",
+   "trap": "Don't mix up the ASC Code (self-regulation) with the Competition Act (federal law). Bodies such as the Better Business Bureau are not on the course's list of six.",
+   "mnemonic": "ASC = Ad Standards Code; Competition Bureau = Competition Act; CRTC = broadcasting and telecom; CMA = Marketers' ethics; CWTA = Wireless; MMA = Mobile.",
+   "figure": {
+    "type": "table",
+    "title": "Regulatory bodies",
+    "head": [
+     "Body",
+     "What it does"
+    ],
+    "rows": [
+     [
+      "Advertising Standards Canada (ASC)",
+      "Industry self-regulatory body; administers the Canadian Code of Advertising Standards and handles complaints about ads"
+     ],
+     [
+      "Competition Bureau",
+      "Federal agency that enforces the Competition Act, including misleading advertising and deceptive marketing practices"
+     ],
+     [
+      "CRTC",
+      "Regulates broadcasting and telecommunications; enforces anti-spam legislation (CASL)"
+     ],
+     [
+      "Canadian Marketing Association (CMA)",
+      "Marketers' association with a code of ethics and standards of practice"
+     ],
+     [
+      "Canadian Wireless Telecommunications Association (CWTA)",
+      "Represents the wireless (mobile) industry, e.g., guidelines for text-message short codes"
+     ],
+     [
+      "Mobile Marketing Association (MMA)",
+      "Sets guidelines and best practices for mobile marketing"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-internal-marketing",
+   "topic": "t12-6",
+   "term": "Internal marketing and the employer brand manager",
+   "definition": "Internal marketing treats the organization's own employees (its people) as an audience to inform, train, and engage so they can deliver the brand promise; the course calls it a key to competitive advantage. An emerging role is the employer brand manager, who shapes how current and prospective employees see the organization as a place to work.",
+   "explain": "External campaigns promise an experience, but employees deliver it. Internal marketing makes sure staff understand, believe in, and can deliver what the brand promises. The course notes that social media is important for employee engagement and content development, and that the ultimate goal is to create experiences.",
+   "example": "Before a new service campaign launches, WestJet shares the ads with crews first, trains them on the promise, and features employee stories on its social channels.",
+   "contrast": "Internal marketing targets the firm's OWN employees; a push strategy targets channel members (retailers, wholesalers) and their staff; external IMC targets customers. An employer brand manager manages the company's image as an employer, not a product brand.",
+   "trap": "Training and incentives for a retailer's sales staff = push strategy, not internal marketing. Internal marketing supports external IMC; it does not replace it.",
+   "mnemonic": "Market INSIDE before you market OUTSIDE.",
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a12-01",
+   "type": "order",
+   "concept": "c12-advocacy-funnel",
+   "title": "Build the customer advocacy funnel",
+   "prompt": "Put the seven stages of the customer advocacy funnel (Figure 12-1) in order, from the top of the funnel to the bottom.",
+   "items": [
+    "Awareness",
+    "Interest",
+    "Engagement",
+    "Trial",
+    "Purchase",
+    "Loyalty",
+    "Advocacy"
+   ],
+   "explanation": "Customers first learn the brand exists (awareness), find attributes worth learning about (interest), participate and interact (engagement), try a sample or limited version (trial), buy (purchase), keep buying thanks to positive experiences and rewards (loyalty), and finally recommend it to others (advocacy)."
+  },
+  {
+   "id": "a12-02",
+   "type": "order",
+   "concept": "c12-imc-steps",
+   "title": "Six steps of the marketing communications process",
+   "prompt": "Put the six steps of the marketing communications process (Figure 12-3) in order.",
+   "items": [
+    "Specify the IMC objectives",
+    "Identify the target audience",
+    "Set the promotional budget",
+    "Design the promotional program",
+    "Schedule and run the IMC elements",
+    "Evaluate the program and recommend changes"
+   ],
+   "explanation": "Decide what to achieve before whom to reach, whom to reach before how much to spend, the budget before designing the program, the design before scheduling it, and evaluate only after it runs. Touch points inform step 2; the PLC informs step 4."
+  },
+  {
+   "id": "a12-03",
+   "type": "sort",
+   "concept": "c12-paid-owned-earned",
+   "title": "Paid, owned, or earned?",
+   "prompt": "Sort each digital channel example from the course slide into paid, owned, or earned media.",
+   "buckets": [
+    "Paid",
+    "Owned",
+    "Earned"
+   ],
+   "items": [
+    {
+     "text": "Search advertising",
+     "bucket": 0
+    },
+    {
+     "text": "Display banner ads on a news site",
+     "bucket": 0
+    },
+    {
+     "text": "Email marketing to subscribers",
+     "bucket": 0
+    },
+    {
+     "text": "Paid influencer posts",
+     "bucket": 0
+    },
+    {
+     "text": "Mobile in-app advertising",
+     "bucket": 0
+    },
+    {
+     "text": "Company website",
+     "bucket": 1
+    },
+    {
+     "text": "Brand's own YouTube channel",
+     "bucket": 1
+    },
+    {
+     "text": "Brand's mobile app",
+     "bucket": 1
+    },
+    {
+     "text": "Company Facebook page",
+     "bucket": 1
+    },
+    {
+     "text": "Customer reviews on Yelp or Amazon",
+     "bucket": 2
+    },
+    {
+     "text": "Public relations",
+     "bucket": 2
+    },
+    {
+     "text": "News media coverage of a launch",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Paid = the company buys the placement (including email marketing and paid influencers, per the course slide). Owned = channels the company controls (its website, its own social pages and channels, its apps). Earned = exposure created by others (reviews, PR, media coverage)."
+  },
+  {
+   "id": "a12-04",
+   "type": "sort",
+   "concept": "c12-push-pull",
+   "title": "Push tool or pull tool?",
+   "prompt": "Sort each promotional tool from Figure 12-2 into the strategy it supports.",
+   "buckets": [
+    "Push (aimed at the channel)",
+    "Pull (aimed at consumers)"
+   ],
+   "items": [
+    {
+     "text": "Trade allowances",
+     "bucket": 0
+    },
+    {
+     "text": "Trade shows",
+     "bucket": 0
+    },
+    {
+     "text": "Merchandising allowances",
+     "bucket": 0
+    },
+    {
+     "text": "Co-op advertising funds",
+     "bucket": 0
+    },
+    {
+     "text": "Incentives and training for retailers' sales staff",
+     "bucket": 0
+    },
+    {
+     "text": "Advertising",
+     "bucket": 1
+    },
+    {
+     "text": "Publicity",
+     "bucket": 1
+    },
+    {
+     "text": "Consumer promotion (coupons, samples)",
+     "bucket": 1
+    },
+    {
+     "text": "Product placement",
+     "bucket": 1
+    },
+    {
+     "text": "Event marketing",
+     "bucket": 1
+    },
+    {
+     "text": "Social media and sponsorship",
+     "bucket": 1
+    }
+   ],
+   "explanation": "Push tools are trade promotions and selling efforts aimed at distributors, wholesalers, and retailers to win listings, displays, feature pricing, and flyer space. Pull tools are aimed at consumers, media, and the public to build awareness, trial, loyalty, and advocacy. Personal selling appears in both columns, so it is left out here."
+  },
+  {
+   "id": "a12-05",
+   "type": "match",
+   "concept": "c12-regulators",
+   "title": "Who regulates what?",
+   "prompt": "Match each regulatory body with what it does.",
+   "pairs": [
+    {
+     "left": "Advertising Standards Canada (ASC)",
+     "right": "Industry self-regulation; administers the Canadian Code of Advertising Standards"
+    },
+    {
+     "left": "Competition Bureau",
+     "right": "Enforces the Competition Act, including misleading advertising and deceptive marketing"
+    },
+    {
+     "left": "CRTC",
+     "right": "Regulates broadcasting and telecommunications; enforces anti-spam legislation"
+    },
+    {
+     "left": "Canadian Marketing Association (CMA)",
+     "right": "Marketers' association with a code of ethics and standards of practice"
+    },
+    {
+     "left": "Canadian Wireless Telecommunications Association (CWTA)",
+     "right": "Represents Canada's wireless (mobile) industry"
+    },
+    {
+     "left": "Mobile Marketing Association (MMA)",
+     "right": "Sets guidelines and best practices for mobile marketing"
+    }
+   ],
+   "explanation": "ASC is voluntary industry self-regulation through its Code, while the Competition Bureau enforces federal law. The CRTC is the broadcasting and telecom regulator, the CMA is the marketers' ethics body, and the CWTA and MMA cover the wireless and mobile space."
+  },
+  {
+   "id": "a12-06",
+   "type": "match",
+   "concept": "c12-plc-promotion",
+   "title": "PLC stage to promotional focus",
+   "prompt": "Match each product life cycle stage with its promotional objective and signature activities (Figure 12-4).",
+   "pairs": [
+    {
+     "left": "Introduction",
+     "right": "To inform: magazine publicity, advertising, salesforce calling on intermediaries, free samples"
+    },
+    {
+     "left": "Growth",
+     "right": "To persuade: personal selling to intermediaries, advertising that differentiates from competing brands"
+    },
+    {
+     "left": "Maturity",
+     "right": "To remind: reminder advertising, discounts, coupons and events, limited personal selling, direct-mail reminders"
+    },
+    {
+     "left": "Decline",
+     "right": "To phase out: little money spent on promotion"
+    }
+   ],
+   "explanation": "The promotional objective moves from inform to persuade to remind to phase out as the product ages, and the tools change with it: samples when new, differentiation when rivals arrive, reminders and deals to keep buyers in maturity, and minimal spending in decline."
+  }
+ ]
+}

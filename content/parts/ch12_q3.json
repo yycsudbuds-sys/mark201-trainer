@@ -1,0 +1,736 @@
+[
+ {
+  "id": "q12-081",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts push and pull strategies?",
+  "options": [
+   "Push focuses on consumers, media, and the public; pull focuses on distributors, wholesalers, and retailers",
+   "Push focuses on distributors, wholesalers, and retailers; pull focuses on consumers, media, and the public",
+   "Push uses only advertising; pull uses only trade shows",
+   "Push and pull are two names for the same strategy"
+  ],
+  "answer": 1,
+  "explanation": "Figure 12-2 shows push aimed at the channel (distributors, wholesalers, retailers) and pull aimed at consumers, media, and the public. The first option reverses them, which is the most common trap.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-082",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A brand manager reports that her campaign won new listings at two national chains, better merchandising displays, feature pricing, and inclusion in retailer flyers. These results are associated with:",
+  "options": [
+   "a pull strategy",
+   "the advocacy stage of the funnel",
+   "earned media",
+   "a push strategy"
+  ],
+  "answer": 3,
+  "explanation": "Figure 12-2 lists listings, sales, merchandising displays, feature pricing, and inclusion in flyers as the results sought by a push strategy. Pull results are consumer outcomes such as awareness, trial, loyalty, and advocacy.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-083",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "According to Figure 12-2, which result is NOT typically sought by a pull strategy?",
+  "options": [
+   "trial",
+   "awareness",
+   "retailer listings",
+   "advocacy"
+  ],
+  "answer": 2,
+  "explanation": "Pull results are consumer outcomes: awareness, interest, recognition, trial, purchase, loyalty, and advocacy. Retailer listings are a push result, gained by influencing the channel.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-084",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does Figure 12-2 note that push and pull strategies should 'work together'?",
+  "options": [
+   "Pull-created demand is wasted if stores don't stock the product, and push-won shelf space needs consumer demand to sell through",
+   "The Competition Act requires every manufacturer to run both strategies at once whenever it launches a product",
+   "Push and pull use exactly the same tools, so running both together adds almost nothing to the budget",
+   "A firm can use only one strategy per PLC stage, so it must alternate between push and pull each year"
+  ],
+  "answer": 0,
+  "explanation": "Pull creates consumer demand and push secures distribution and in-store support; each is weaker without the other. The tools differ (trade promotions vs advertising and consumer promotion), so the third option is wrong.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-085",
+  "concept": "c12-push-pull",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "In Figure 12-2, personal selling appears as a tool for both push and pull strategies.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Personal selling is listed in the push column (aimed at channel members) and in the pull column alongside advertising, publicity, consumer promotion, product placement, event marketing, and social media and sponsorship. So 'personal selling' alone doesn't tell you the strategy; look at who is being targeted.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-086",
+  "concept": "c12-imc-steps",
+  "also": [
+   "c12-objectives"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Before launching a new advertising campaign, a company first defines what they hope to achieve, such as increasing brand awareness or boosting sales. This initial step in the marketing communications process is:",
+  "options": [
+   "specifying the IMC objectives",
+   "evaluating the program and recommending changes",
+   "identifying the target audience",
+   "scheduling and running the IMC elements"
+  ],
+  "answer": 0,
+  "explanation": "Step 1 of the six-step process is specifying the IMC objectives: deciding what the program should achieve before anything else. Evaluating the program is the final step (6), when results are compared against those objectives.",
+  "source": "official"
+ },
+ {
+  "id": "q12-087",
+  "concept": "c12-imc-steps",
+  "also": [
+   "c12-target-audience"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Before writing any ads, Fjord Outdoor profiles the 25-to-40-year-old urban hikers it wants to reach: their lifestyle, media habits, and every place they encounter the brand. Which step of the marketing communications process is this?",
+  "options": [
+   "Specifying the IMC objectives",
+   "Identifying the target audience",
+   "Designing the promotional program",
+   "Evaluating the program and recommending changes"
+  ],
+  "answer": 1,
+  "explanation": "Step 2, identifying the target audience, means understanding who you're trying to reach (demographics, lifestyle, media habits) and considering their customer touch points. Designing the program (step 4) uses this knowledge to choose tools and messages.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-088",
+  "concept": "c12-imc-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Mosaic Mobile's team decides that its phone launch will combine TikTok videos, influencer partnerships, in-store displays, and a sampling event, and develops the creative message for each. Which step of the process is this?",
+  "options": [
+   "Scheduling and running the IMC elements",
+   "Designing the promotional program",
+   "Specifying the IMC objectives",
+   "Setting the promotional budget"
+  ],
+  "answer": 1,
+  "explanation": "Choosing which promotional tools to use and developing their messages is designing the promotional program (step 4). Scheduling (step 5) comes after and decides when, how often, and how long each element runs.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-089",
+  "concept": "c12-imc-steps",
+  "also": [
+   "c12-budget-methods"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Saskatoon furniture retailer determines that it will spend $180,000 on promotion next year after costing out the tasks needed to reach its goals. Which step of the marketing communications process is this?",
+  "options": [
+   "Designing the promotional program",
+   "Specifying the IMC objectives",
+   "Evaluating the program",
+   "Setting the promotional budget"
+  ],
+  "answer": 3,
+  "explanation": "Deciding how much to spend is step 3, setting the promotional budget, here using the objective-and-task method. Designing the program (step 4) then uses that budget to choose tools and messages.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-090",
+  "concept": "c12-imc-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which step immediately precedes 'schedule and run the IMC elements' in the marketing communications process?",
+  "options": [
+   "Design the promotional program",
+   "Set the promotional budget",
+   "Evaluate the program and recommend changes",
+   "Identify the target audience"
+  ],
+  "answer": 0,
+  "explanation": "Step 4, designing the promotional program, comes right before step 5, scheduling and running the elements: you must choose the tools before deciding their timing. Setting the budget is step 3.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-091",
+  "concept": "c12-imc-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 3,
+  "stem": "In Figure 12-3, customer touch points and the product life cycle are flagged as considerations at which steps, respectively?",
+  "options": [
+   "Step 1 (objectives) and step 3 (budget)",
+   "Step 4 (design the program) and step 2 (target audience)",
+   "Step 2 (target audience) and step 4 (design the program)",
+   "Step 5 (schedule and run) and step 6 (evaluate)"
+  ],
+  "answer": 2,
+  "explanation": "Customer touch points are considered when identifying the target audience (step 2), and the product life cycle is considered when designing the promotional program (step 4). The second option reverses the pairing.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-092",
+  "concept": "c12-imc-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the six steps in the marketing communications process?",
+  "options": [
+   "Set the promotional budget",
+   "Select distribution intermediaries",
+   "Evaluate the program and recommend changes",
+   "Specify the IMC objectives"
+  ],
+  "answer": 1,
+  "explanation": "Selecting intermediaries is a distribution (place) decision. The six steps are specify objectives, identify the target audience, set the budget, design the program, schedule and run, and evaluate and recommend changes.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-093",
+  "concept": "c12-imc-steps",
+  "also": [
+   "c12-scheduling"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Marketer A is choosing between a continuous and a flighting schedule and fixing the exact weeks each video runs. Marketer B is choosing whether to use influencers or printed flyers to carry the message. Which steps are they in, respectively?",
+  "options": [
+   "A: designing the promotional program; B: scheduling and running the IMC elements",
+   "A: setting the budget; B: identifying the target audience",
+   "A: evaluating the program; B: specifying the IMC objectives",
+   "A: scheduling and running the IMC elements; B: designing the promotional program"
+  ],
+  "answer": 3,
+  "explanation": "Timing decisions (continuous vs flighting, which weeks) belong to step 5, scheduling and running; choosing which tools carry the message belongs to step 4, designing the program. The first option swaps the two.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-094",
+  "concept": "c12-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Polaris Bank sets a goal to raise unaided awareness of its new no-fee student account from 10% to 30% among Calgary post-secondary students by spring. This is:",
+  "options": [
+   "a behavioural objective",
+   "a communication objective",
+   "a promotional schedule",
+   "a customer touch point"
+  ],
+  "answer": 1,
+  "explanation": "Awareness is a communication objective, which builds the foundation for customer relationships. Being measurable (10% to 30%) doesn't make it behavioural; behavioural objectives involve actions such as trial or purchase.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-095",
+  "concept": "c12-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which option correctly classifies these two objectives? (1) Improve consumers' attitudes toward the brand. (2) Increase repeat purchases by 15%.",
+  "options": [
+   "(1) behavioural; (2) communication",
+   "Both are communication objectives",
+   "(1) communication; (2) behavioural",
+   "Both are behavioural objectives"
+  ],
+  "answer": 2,
+  "explanation": "Attitudes are a communication objective (laying the foundation for relationships); repeat purchase is an action-oriented behavioural objective. The first option reverses them.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-096",
+  "concept": "c12-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In the hierarchy of effects, which stage comes between interest and trial?",
+  "options": [
+   "Evaluation",
+   "Engagement",
+   "Adoption",
+   "Awareness"
+  ],
+  "answer": 0,
+  "explanation": "The hierarchy of effects runs awareness, interest, evaluation, trial, adoption. Engagement sits between interest and trial in the customer advocacy funnel, a different model and a common mix-up.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-097",
+  "concept": "c12-objectives",
+  "also": [
+   "c12-advocacy-funnel"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 3,
+  "stem": "Which of the following is NOT a stage in the hierarchy of effects?",
+  "options": [
+   "Awareness",
+   "Adoption",
+   "Evaluation",
+   "Loyalty"
+  ],
+  "answer": 3,
+  "explanation": "The hierarchy of effects is awareness, interest, evaluation, trial, adoption. Loyalty is a stage of the customer advocacy funnel, not the hierarchy of effects.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-098",
+  "concept": "c12-objectives",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does the course describe communication objectives as laying 'the foundation to build customer relationships'?",
+  "options": [
+   "Because they are measured in dollars of revenue, which shows directly how much each relationship is worth",
+   "Because people generally need to know about and feel positively toward a brand before they try it and buy it",
+   "Because they replace behavioural objectives once sales begin, so the firm can stop tracking purchases",
+   "Because the Competition Act requires every campaign to state an awareness target before it runs"
+  ],
+  "answer": 1,
+  "explanation": "Awareness, knowledge, and attitudes set up the later action-oriented outcomes (trial, purchase, repeat purchase), mirroring the hierarchy of effects. They don't replace behavioural objectives; firms typically set both.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-099",
+  "concept": "c12-target-audience",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "All the points of contact between a customer and a brand (ads, packaging, the store, the website, service calls) are called:",
+  "options": [
+   "channels of distribution",
+   "the promotional schedule",
+   "the media mix",
+   "customer touch points"
+  ],
+  "answer": 3,
+  "explanation": "Customer touch points are every place a customer comes into contact with the brand, considered when identifying the target audience. Channels of distribution are the routes a product takes to market, not points of communication contact.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-100",
+  "concept": "c12-target-audience",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Brightline Optometry maps every place a patient encounters its brand: its Google listing, the booking app, the reminder text, the waiting room, the eyewear bag, and the follow-up survey. Brightline is identifying its:",
+  "options": [
+   "customer touch points",
+   "communication objectives",
+   "promotional schedule",
+   "pretest results"
+  ],
+  "answer": 0,
+  "explanation": "Listing every point of contact between customer and brand is mapping customer touch points, which supports step 2 (identify the target audience). A promotional schedule sets the timing and frequency of promotional tools, not points of contact.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-101",
+  "concept": "c12-target-audience",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why should marketers consider customer touch points when identifying the target audience?",
+  "options": [
+   "Touch points determine which stage of the product life cycle the product is currently in",
+   "Knowing where and how the audience encounters the brand shows which channels and moments can carry a consistent message",
+   "Touch points are the inputs needed to calculate a percentage-of-sales promotional budget",
+   "Advertising Standards Canada requires a complete touch-point map before any campaign can run"
+  ],
+  "answer": 1,
+  "explanation": "Understanding the audience's points of contact reveals where messages will actually reach them and where consistency matters, which is central to IMC. The PLC is considered at step 4 and isn't determined by touch points.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-102",
+  "concept": "c12-target-audience",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "IMC messages can be directed at consumers, intermediaries, or both. Which promotional program has a target audience of INTERMEDIARIES rather than consumers?",
+  "options": [
+   "A paint maker's Instagram tutorials aimed at do-it-yourself homeowners",
+   "A paint maker's TV ads aimed at young families",
+   "A paint maker's trade-show booth and dealer incentives aimed at hardware-store owners",
+   "A paint maker's in-store coupons aimed at shoppers"
+  ],
+  "answer": 2,
+  "explanation": "Hardware-store owners are channel members, so a trade show and dealer incentives target intermediaries. In-store coupons may be redeemed in the store, but they're aimed at shoppers, who are consumers.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-103",
+  "concept": "c12-target-audience",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a customer touch point for a restaurant chain?",
+  "options": [
+   "The chain's mobile ordering app",
+   "The takeout packaging",
+   "A server's greeting at the table",
+   "An internal spreadsheet of supplier costs"
+  ],
+  "answer": 3,
+  "explanation": "Touch points are points of contact between the customer and the brand; the app, packaging, and service staff all shape customer impressions. An internal cost spreadsheet is never seen by customers, so it isn't a touch point.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-104",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Every year, Chinook Hardware sets its promotional budget at 4% of the previous year's sales. Which budgeting method is this?",
+  "options": [
+   "Competitive parity",
+   "Percentage of sales",
+   "All-you-can-afford",
+   "Objective and task"
+  ],
+  "answer": 1,
+  "explanation": "Setting the budget as a fixed percentage of past or anticipated sales is the percentage-of-sales method. Competitive parity would base the figure on what rivals spend.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-105",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "After learning that its main rival spends about $2 million a year on advertising, Lakeshore Mattress sets its own budget at $2 million. Which method is Lakeshore using?",
+  "options": [
+   "Objective and task",
+   "All-you-can-afford",
+   "Competitive parity",
+   "Percentage of sales"
+  ],
+  "answer": 2,
+  "explanation": "Matching competitors' spending (or share of market) is competitive parity. Its weakness is that it ignores Lakeshore's own objectives, unlike objective and task.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-106",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The owner of a two-location bakery in Red Deer pays rent, wages, and suppliers first; whatever money is left at the end of the month goes to promotion. Which budgeting method is this?",
+  "options": [
+   "All-you-can-afford",
+   "Percentage of sales",
+   "Competitive parity",
+   "Objective and task"
+  ],
+  "answer": 0,
+  "explanation": "Funding promotion with money left after other budget items is the all-you-can-afford method, common in small businesses. It has no link to goals or to sales levels.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-107",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Aurora Fitness wants 3,000 new trial memberships. It lists the tasks needed (six weeks of social ads, a sampling event, and a direct-mail drop) and totals their costs to set its budget. Which method is this?",
+  "options": [
+   "Percentage of sales",
+   "Competitive parity",
+   "All-you-can-afford",
+   "Objective and task"
+  ],
+  "answer": 3,
+  "explanation": "Objective and task sets objectives, outlines the tasks required to meet them, and totals the cost. It's considered the best approach because spending is tied to what the firm wants to accomplish.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-108",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Last year Kestrel Outfitters had sales of $3,200,000. If it sets its promotional budget at 3.5% of last year's sales, how much will it budget for promotion?",
+  "options": [
+   "$11,200",
+   "$112,000",
+   "$1,120,000",
+   "$320,000"
+  ],
+  "answer": 1,
+  "explanation": "Percentage of sales: $3,200,000 x 0.035 = $112,000. $1,120,000 comes from multiplying by 0.35 (35%) and $11,200 from 0.0035 (0.35%), both decimal-place errors.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-109",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "What is the main criticism of the percentage-of-sales budgeting method?",
+  "options": [
+   "It treats sales as the cause of promotion rather than its result, so spending drops just when sales are weak",
+   "It copies competitors' spending levels and so ignores the firm's own objectives for the campaign",
+   "It can be used only by small firms that fund promotion from whatever cash is left over",
+   "It requires detailed judgment about the cost of every task needed to reach each objective"
+  ],
+  "answer": 0,
+  "explanation": "Percentage of sales has backwards logic: sales determine promotion, when promotion is supposed to drive sales, so a sales slump automatically cuts the budget. Copying competitors is the flaw of competitive parity, and needing judgment about task costs is objective and task's drawback.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-110",
+  "concept": "c12-budget-methods",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about promotional budgeting methods is NOT correct?",
+  "options": [
+   "Objective and task starts with objectives and costs out the tasks needed to reach them",
+   "Competitive parity matches competitors' spending or share of market",
+   "Percentage of sales bases the budget on the firm's communication objectives",
+   "All-you-can-afford is common among small firms"
+  ],
+  "answer": 2,
+  "explanation": "Percentage of sales bases the budget on past or anticipated sales, not on objectives; only objective and task starts from objectives. The other three statements are accurate descriptions.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-111",
+  "concept": "c12-plc-promotion",
+  "also": [
+   "c12-imc-steps"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "The product life cycle is useful in describing the phases a product moves through from launch to discontinuation, but the PLC also helps marketers in:",
+  "options": [
+   "choosing the appropriate communication tools at each phase of the cycle",
+   "budgeting the marketing spend",
+   "meeting product demand",
+   "creating the most effective messaging for the product"
+  ],
+  "answer": 0,
+  "explanation": "All products have a life cycle, and the composition of the promotional mix changes from one phase to the next, which is why the PLC is considered at step 4, designing the promotional program. Budgeting is a separate step (3) using methods such as objective and task.",
+  "source": "official"
+ },
+ {
+  "id": "q12-112",
+  "concept": "c12-plc-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "In the maturity stage of a popular line of kitchen appliances, the company's marketing objective is most likely to:",
+  "options": [
+   "Increase consumer awareness of the product category",
+   "Persuade consumers to choose their brand over competitors",
+   "Maintain existing buyers with reminder advertising and sales promotions",
+   "Reduce promotional spending to maximize profits"
+  ],
+  "answer": 2,
+  "explanation": "In maturity the goal is to maintain existing buyers: advertising reminds buyers of the product and sales promotions help maintain loyalty. Reducing promotional spending describes the decline stage (phase out), and persuading against competitors is the growth-stage objective.",
+  "source": "official"
+ },
+ {
+  "id": "q12-113",
+  "concept": "c12-plc-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Orbit Robotics has just launched Canada's first window-cleaning robot. It sends units to tech magazines for reviews, runs ads explaining what the product does, and has its salesforce call on electronics retailers. What is Orbit's promotional objective at this stage?",
+  "options": [
+   "To persuade",
+   "To inform",
+   "To remind",
+   "To phase out"
+  ],
+  "answer": 1,
+  "explanation": "Magazine publicity, explanatory advertising, and salesforce calls on intermediaries are introduction-stage activities, where the objective is to inform. Persuading comes in growth, once competitors arrive.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-114",
+  "concept": "c12-plc-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Two years later, several rivals sell robot window cleaners. Orbit's ads now stress why its model cleans faster than competing brands, and its reps work hard to keep intermediaries carrying it. What is Orbit's promotional objective now?",
+  "options": [
+   "To inform",
+   "To remind",
+   "To phase out",
+   "To persuade"
+  ],
+  "answer": 3,
+  "explanation": "In growth, personal selling to intermediaries and advertising that differentiates the product from competing brands serve the objective to persuade. Reminding is the maturity-stage objective, after the market has settled.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-115",
+  "concept": "c12-plc-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Sales of Vista Electronics' DVD players have dwindled, and the company plans to discontinue them soon. It now spends very little money on promoting them. What is its promotional objective?",
+  "options": [
+   "To phase out",
+   "To remind",
+   "To persuade",
+   "To inform"
+  ],
+  "answer": 0,
+  "explanation": "Little money spent on promotion is the decline-stage activity, where the objective is to phase out. Reminder advertising belongs to maturity, when the firm is still actively maintaining buyers.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-116",
+  "concept": "c12-plc-promotion",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "According to Figure 12-4, which activity is NOT associated with the introduction stage?",
+  "options": [
+   "Publicity in magazines",
+   "Salesforce calling on intermediaries",
+   "Sales promotion in the form of free samples",
+   "Reminder advertising"
+  ],
+  "answer": 3,
+  "explanation": "Introduction activities are publicity in magazines, advertising, the salesforce calling on intermediaries, and free samples. Reminder advertising is a maturity-stage activity, when the goal is to remind.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-117",
+  "concept": "c12-plc-promotion",
+  "also": [
+   "c12-sales-promotion"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Figure 12-4 uses sales promotion in two different stages. Which pairing is correct?",
+  "options": [
+   "Introduction: discounts and coupons; maturity: free samples",
+   "Growth: free samples; decline: discounts and coupons",
+   "Introduction: free samples; maturity: discounts, coupons, and events",
+   "Growth: contests; introduction: rebates"
+  ],
+  "answer": 2,
+  "explanation": "Free samples help new buyers try a product in introduction; discounts, coupons, and events help keep existing buyers in maturity. The first option reverses the two stages.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-118",
+  "concept": "c12-scheduling",
+  "also": [
+   "c12-imc-steps"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Amy is in the midst of deciding on specific timing of TV advertisements and online video placements. She is most likely engaged in:",
+  "options": [
+   "scheduling the IMC elements",
+   "setting the promotional budget",
+   "designing the promotional program",
+   "evaluating the promotional program"
+  ],
+  "answer": 0,
+  "explanation": "The promotional schedule describes when each promotional tool is used and for what frequency and duration, so deciding the timing of TV ads and video placements is scheduling (step 5). Designing the program (step 4) decides which tools and messages to use, not when they run.",
+  "source": "official"
+ },
+ {
+  "id": "q12-119",
+  "concept": "c12-scheduling",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Banff ski resort advertises heavily from October to February and runs no advertising at all from March to September. Which scheduling approach is this?",
+  "options": [
+   "Continuous",
+   "Pulse",
+   "Flighting",
+   "Competitive parity"
+  ],
+  "answer": 2,
+  "explanation": "Flighting alternates periods of advertising with periods of no advertising. Pulse would keep a steady base of advertising all year and add bursts at peak times, but the resort goes completely dark.",
+  "source": "generated"
+ },
+ {
+  "id": "q12-120",
+  "concept": "c12-scheduling",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A national grocery chain runs a steady base of weekly flyers all year, then adds bursts of heavy TV advertising before Thanksgiving, Christmas, and back-to-school. Which scheduling approach is this?",
+  "options": [
+   "Flighting",
+   "Continuous",
+   "Objective and task",
+   "Pulse"
+  ],
+  "answer": 3,
+  "explanation": "Pulse scheduling combines a continuous base level of promotion with periodic bursts. It isn't flighting, because flighting includes periods with no activity at all.",
+  "source": "generated"
+ }
+]

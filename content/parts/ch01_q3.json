@@ -1,0 +1,728 @@
+[
+  {
+    "id": "q01-081",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Every summer, Prairie Sky Insurance designs and runs a free swimming-lessons program for children in Regina's inner-city neighbourhoods. Which type of CSR initiative is this?",
+    "options": [
+      "Sponsorship and/or spearheading of community programs",
+      "Sponsorship of or involvement in fundraising for charitable organizations",
+      "A business philosophy that implements socially responsible practices",
+      "Customer relationship management aimed at policyholders"
+    ],
+    "answer": 0,
+    "explanation": "Prairie Sky is spearheading a community program, the first CSR type on the slide. No charity is raising money (type 2), and the firm's overall business practices are not changing (type 3).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-082",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "During April, Harbourfront Hardware in Halifax asks shoppers to donate at checkout to the Canadian Cancer Society and matches every dollar raised. Which type of CSR initiative is this?",
+    "options": [
+      "Sponsorship and/or spearheading of community programs",
+      "Experiential marketing at the point of sale",
+      "A business philosophy that implements socially responsible practices",
+      "Sponsorship of or involvement in fundraising for charitable organizations"
+    ],
+    "answer": 3,
+    "explanation": "Raising and matching money for a charity is the second CSR type: fundraising initiatives for charitable organizations. It is not the firm running its own community program (type 1) or changing how the entire business operates (type 3).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-083",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Polaris Apparel overhauls how it operates: it pays all suppliers a living wage, switches every product line to recycled fabric, and ties executive bonuses to emissions cuts. Which type of CSR initiative is this?",
+    "options": [
+      "Partnership marketing with sustainable brands",
+      "A business philosophy that implements socially responsible practices",
+      "Sponsorship of or involvement in fundraising for charitable organizations",
+      "Sponsorship and/or spearheading of community programs"
+    ],
+    "answer": 1,
+    "explanation": "When social responsibility is built into the way the whole business runs (sourcing, materials, pay incentives), it is the third CSR type: a business philosophy that implements socially responsible practices. No specific community program or charity fundraiser is involved.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-084",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the three types of CSR initiatives listed in the chapter?",
+    "options": [
+      "Sponsoring or spearheading community programs",
+      "Sponsoring or taking part in fundraising for charities",
+      "Running a points program that rewards repeat customers",
+      "Adopting a business philosophy of socially responsible practices"
+    ],
+    "answer": 2,
+    "explanation": "The three CSR types are community programs, charitable fundraising, and a socially responsible business philosophy. A points program rewarding repeat customers is a customer relationship (loyalty) tactic, not a CSR initiative.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-085",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "Glenbow Beverages wants to move from the marketing concept to the societal marketing concept. Which change would best accomplish this?",
+    "options": [
+      "Cutting sugar and using recyclable bottles while still meeting tastes and profit goals",
+      "Sharing competitor data across all departments every week to create customer value",
+      "Speeding up production lines to lower the cost of making each bottle",
+      "Hiring more salespeople to push existing inventory into more stores"
+    ],
+    "answer": 0,
+    "explanation": "The societal marketing concept satisfies consumer needs (and organizational goals) in a way that also provides for society's well-being, which healthier drinks and recyclable packaging do. Faster production is production thinking, pushing inventory is sales thinking, and sharing competitor data is market orientation.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-086",
+    "concept": "c01-societal-csr",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 3,
+    "stem": "Nordic Outfitters' CEO says: 'We design only what customers say they need, priced so we still hit our profit target, but we will not use a cheaper fabric that pollutes local rivers, even though customers would never notice.' The final part of her statement goes beyond the marketing concept to reflect the:",
+    "options": [
+      "market orientation",
+      "sales orientation",
+      "customer relationship management",
+      "societal marketing concept"
+    ],
+    "answer": 3,
+    "explanation": "Satisfying customers while meeting profit goals is the marketing concept; refusing a cheaper input to protect society's well-being, even when customers would not notice, adds the societal dimension. Market orientation is about collecting, sharing and using customer and competitor information, which the statement does not describe.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-087",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Rajan's Wealth Software and Yi Capital Group, two top vendors of financial management software, have recently launched their own online trading exchange aimed at increasing the ease with which their customers can finance their new products and ideas. Both of these organizations provide exceptional, ongoing service to their business customers. These two organizations hope to benefit from:",
+    "options": [
+      "customer relationship management",
+      "societal marketing concept",
+      "customer orientation",
+      "product valuation",
+      "none of the above"
+    ],
+    "answer": 0,
+    "explanation": "CRM is the process of building and developing long-term relationships with customers by delivering customer value and satisfaction, and exceptional, ongoing service to business customers aims at exactly that. The societal marketing concept would require a focus on society's well-being, which the stem never mentions.",
+    "source": "official"
+  },
+  {
+    "id": "q01-088",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The process of building and developing long-term relationships with customers by delivering customer value and satisfaction is called:",
+    "options": [
+      "the marketing concept",
+      "market orientation",
+      "customer experience management",
+      "customer relationship management"
+    ],
+    "answer": 3,
+    "explanation": "This is the definition of CRM. Customer experience management concerns the customer's internal response to all aspects of the organization; the cue words here are 'long-term relationships' delivered through 'value and satisfaction'.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-089",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Linking an organization to its individual customers, employees, suppliers and other partners for their mutual long-term benefit is the definition of:",
+    "options": [
+      "customer relationship management",
+      "relationship marketing",
+      "partnership marketing",
+      "macromarketing"
+    ],
+    "answer": 1,
+    "explanation": "Relationship marketing links the organization not only to customers but also to employees, suppliers and other partners. CRM focuses on long-term relationships with customers specifically, so the mention of employees and suppliers is the cue. Partnership marketing is a formal association between brands.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-090",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Northwind Auto in Edmonton records each customer's service history, sends personalized maintenance reminders, and gives free winter-tire swaps to clients who have stayed five years or more. Northwind is practising:",
+    "options": [
+      "customer relationship management",
+      "macromarketing",
+      "the production orientation",
+      "experiential marketing"
+    ],
+    "answer": 0,
+    "explanation": "Tracking individual customers and rewarding long-time clients builds long-term relationships by delivering value and satisfaction, which is CRM. Experiential marketing would involve creating hands-on brand experiences, not ongoing relationship building.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-091",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 2,
+    "stem": "Why do firms invest in customer relationship management rather than focusing only on individual sales?",
+    "options": [
+      "To replace the 4 Ps of the marketing mix with a single, cheaper promotional tool",
+      "To control environmental forces such as the state of the economy and competitors",
+      "To keep customers returning long-term by delivering value and satisfaction",
+      "To lower production costs by making manufacturing more efficient and automated"
+    ],
+    "answer": 2,
+    "explanation": "CRM's purpose is long-term relationships built on delivering customer value and satisfaction, so customers keep coming back. Environmental forces cannot be controlled by any marketing tool, and CRM works alongside the marketing mix rather than replacing it.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-092",
+    "concept": "c01-crm",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which practice is NOT consistent with customer relationship management?",
+    "options": [
+      "Tracking each customer's preferences to personalize future offers",
+      "Using high-pressure tactics to maximize one-time sales, ignoring repeat business",
+      "Providing exceptional ongoing service to existing business clients",
+      "Rewarding long-time customers with loyalty perks and early access"
+    ],
+    "answer": 1,
+    "explanation": "CRM is about long-term relationships, so one-off, high-pressure selling that ignores repeat business contradicts it. Ongoing service, personalization and loyalty rewards all build long-term relationships through value and satisfaction.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-093",
+    "concept": "c01-customer-experience",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 2,
+    "stem": "Managing the internal response that customers have to all aspects of an organization and its offering is called:",
+    "options": [
+      "customer experience management",
+      "customer value",
+      "experiential marketing",
+      "customer relationship management"
+    ],
+    "answer": 0,
+    "explanation": "This is customer experience management; its cue words are 'internal response' and 'all aspects of an organization'. Experiential marketing is a promotional practice that creates hands-on brand experiences, and CRM is about long-term relationships built on value and satisfaction.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-094",
+    "concept": "c01-customer-experience",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Aurora Hotels hires a team to map every guest touchpoint - the booking app, check-in, room scent, staff greetings and checkout emails - and redesigns any point where guests say they felt frustrated or ignored. Which practice is this?",
+    "options": [
+      "Experiential marketing",
+      "Macromarketing",
+      "Customer experience management",
+      "Partnership marketing"
+    ],
+    "answer": 2,
+    "explanation": "Managing guests' internal response across all aspects of the organization is customer experience management. Experiential marketing, the tempting look-alike, means creating hands-on brand events for consumers, not redesigning every service touchpoint.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-095",
+    "concept": "c01-customer-experience",
+    "also": [
+      "c01-crm"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Which statement best distinguishes customer experience management from customer relationship management (CRM)?",
+    "options": [
+      "Experience management applies only to organizational buyers; CRM applies only to ultimate consumers buying for households",
+      "Experience management is a production-era practice; CRM is a sales-era practice used to push inventory",
+      "Experience management builds long-term relationships through delivering value; CRM manages customers' feelings at each touchpoint",
+      "Experience management targets customers' internal response to every aspect of the firm; CRM targets long-term relationships via value and satisfaction"
+    ],
+    "answer": 3,
+    "explanation": "The definitions differ in focus: customer experience management targets the customer's internal response to all aspects of the organization, while CRM targets long-term relationships through value and satisfaction. The second option swaps the definitions; in practice the two support each other.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-096",
+    "concept": "c01-customer-experience",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about customer experience management is NOT correct?",
+    "options": [
+      "It covers all aspects of the organization and its offering",
+      "It focuses only on the product itself, ignoring websites, staff and service",
+      "A positive experience can support long-term customer relationships",
+      "It concerns customers' internal response to the organization"
+    ],
+    "answer": 1,
+    "explanation": "Customer experience management covers ALL aspects of the organization and its offering - the website, staff, service and the product - so 'only the product' is wrong. A good experience supports the long-term relationships CRM aims for.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-097",
+    "concept": "c01-customer-experience",
+    "also": [
+      "c01-evolving-practices"
+    ],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A student confuses customer experience management with experiential marketing. Which example is experiential marketing rather than customer experience management?",
+    "options": [
+      "An airline studies how travellers feel at each step from booking to baggage claim",
+      "A hotel retrains staff and updates its website so guests feel welcome at every touchpoint",
+      "A chip brand sets up a pop-up 'flavour lab' at a Toronto festival where visitors create and taste their own seasonings",
+      "A bank redesigns its app, branch greetings and follow-up calls after customers report feeling ignored"
+    ],
+    "answer": 2,
+    "explanation": "Experiential marketing creates opportunities for consumers to interact directly with a brand, such as a hands-on festival pop-up. The other three options manage customers' internal response across the organization's touchpoints, which is customer experience management.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-098",
+    "concept": "c01-consumers-org-buyers",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "Which of the following is the best example of an organizational buyer?",
+    "options": [
+      "A mother buying milk for her young son",
+      "A computer programmer buying the latest game for his PlayStation",
+      "A store owner buying hand-painted slate signs to sell in her store",
+      "A botanist buying a rose bush for his home garden",
+      "A baseball player buying a t-ball set for his daughter"
+    ],
+    "answer": 2,
+    "explanation": "Organizational buyers are manufacturers, wholesalers, retailers and government agencies that buy for their own use or for resale. The store owner is buying signs to resell; every other buyer is purchasing for personal or household use, which makes them ultimate consumers regardless of their occupation.",
+    "source": "official"
+  },
+  {
+    "id": "q01-099",
+    "concept": "c01-consumers-org-buyers",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Priya, a dentist in Lethbridge, buys a laptop. In which situation is she acting as an organizational buyer?",
+    "options": [
+      "She buys it for her clinic's front desk",
+      "She buys it as a birthday gift for her sister",
+      "She buys it to stream movies in her living room",
+      "She buys it for her teenage son's homework"
+    ],
+    "answer": 0,
+    "explanation": "What matters is the purpose of the purchase. Buying for the clinic's own use makes Priya an organizational buyer; the other purchases are for personal or household use, so she would be an ultimate consumer even though she is a professional.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-100",
+    "concept": "c01-consumers-org-buyers",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 2,
+    "stem": "The same 24-pack of bottled water is bought by a Calgary family for a camping trip and by a convenience-store owner to sell from her cooler. What determines which buyer is the ultimate consumer?",
+    "options": [
+      "The size of the order: small versus bulk quantities",
+      "The price paid: full retail versus a discounted price",
+      "The type of product: consumer goods versus industrial goods",
+      "The purpose of the purchase: household use versus resale"
+    ],
+    "answer": 3,
+    "explanation": "Ultimate consumers buy for household use; organizational buyers buy for their own organizational use or for resale. The product here is identical, so the only thing that separates the two buyers is the purpose of the purchase.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-101",
+    "concept": "c01-consumers-org-buyers",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT an organizational buyer?",
+    "options": [
+      "A dentist buying a gaming console for his den",
+      "A Canadian Tire dealer buying barbecues to resell",
+      "Alberta Health Services buying hospital beds",
+      "A Regina bakery buying flour to make bread"
+    ],
+    "answer": 0,
+    "explanation": "The dentist is buying for household use, so he is an ultimate consumer despite his professional job - the classic job-title trap. A government agency buying for its own use, a manufacturer (bakery) buying inputs, and a retailer buying for resale are all organizational buyers.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-102",
+    "concept": "c01-consumers-org-buyers",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "A provincial ministry buys 500 snow shovels to sell at cost to seniors through community centres. How should the ministry be classified, and why?",
+    "options": [
+      "Not a buyer at all, because no profit is made on the resale",
+      "Ultimate consumer, because the shovels will end up being used in seniors' households",
+      "Ultimate consumer, because government agencies are not businesses",
+      "Organizational buyer, because a government agency is buying for resale rather than household use"
+    ],
+    "answer": 3,
+    "explanation": "Organizational buyers include government agencies that buy for their own use or for resale. The ministry is reselling (even at cost), so it is an organizational buyer; the seniors who later buy the shovels for home use are the ultimate consumers.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-103",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The benefits or customer value received by users of a product is called:",
+    "options": [
+      "exchange",
+      "a value proposition",
+      "utility",
+      "customer satisfaction"
+    ],
+    "answer": 2,
+    "explanation": "Utility is the benefit or customer value users receive from a product, and it comes in four types: form, place, time and possession. A value proposition is a promised set of benefits, not the benefit actually received through use.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-104",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Sunrise Coffee opens a kiosk beyond security in the Edmonton International Airport so departing travellers can get coffee right beside their gates. Which utility does this create most directly?",
+    "options": [
+      "Possession utility",
+      "Place utility",
+      "Time utility",
+      "Form utility"
+    ],
+    "answer": 1,
+    "explanation": "Place utility means having the offering available where consumers need it - here, right at the gates. Time utility would be about when it is available (for example, opening early for 5 a.m. flights).",
+    "source": "generated"
+  },
+  {
+    "id": "q01-105",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "Northgate Pharmacy stays open 24 hours a day so customers can fill urgent prescriptions at 3 a.m. Which utility does this primarily provide?",
+    "options": [
+      "Possession utility",
+      "Place utility",
+      "Time utility",
+      "Form utility"
+    ],
+    "answer": 2,
+    "explanation": "Being available WHEN consumers need the product is time utility. Place utility is about WHERE it is available, which the 24-hour schedule does not change.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-106",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Harmon Furniture in Winnipeg lets shoppers take a $3,000 sofa home today with 24 months of interest-free financing. Which utility does the financing offer create?",
+    "options": [
+      "Possession utility",
+      "Time utility",
+      "Place utility",
+      "Form utility"
+    ],
+    "answer": 0,
+    "explanation": "Possession utility is getting the product to consumers so they can own and use it, and offering credit or financing is the textbook example. Place utility concerns where the sofa is available, which the financing does not change.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-107",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which type of utility does marketing NOT create directly, but only influences?",
+    "options": [
+      "Place utility",
+      "Form utility",
+      "Possession utility",
+      "Time utility"
+    ],
+    "answer": 1,
+    "explanation": "Form utility comes from producing the good or service, so production creates it; marketing influences it by identifying what consumers want. Marketing directly creates place, time and possession utility.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-108",
+    "concept": "c01-utility",
+    "also": [],
+    "type": "mc",
+    "angle": "why",
+    "difficulty": 3,
+    "stem": "Golden Wheat Bakery turns flour, eggs and butter into fresh croissants every morning. Which utility does this create, and what is marketing's role in it?",
+    "options": [
+      "Possession utility; marketing creates it directly by offering customers credit",
+      "Place utility; marketing creates it directly by choosing store locations",
+      "Form utility; marketing creates it directly through its promotion",
+      "Form utility; marketing influences it through insight into what consumers want"
+    ],
+    "answer": 3,
+    "explanation": "Turning raw materials into a product is form utility, created by production. Marketing's role is to influence form utility by feeding consumer insights into product design, not to create it directly; promotion does not make the croissant.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-109",
+    "concept": "c01-macro-micro",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "How an individual organization directs its marketing activities and allocates its resources to benefit its customers is called:",
+    "options": [
+      "micromarketing",
+      "market orientation",
+      "a value proposition",
+      "macromarketing"
+    ],
+    "answer": 0,
+    "explanation": "This is micromarketing: the marketing of one organization. Macromarketing looks at the aggregate flow of a whole nation's goods and services to benefit society.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-110",
+    "concept": "c01-macro-micro",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A University of Alberta economist studies how efficiently Canada's entire food system moves products from farms to consumers in every province, and whether that system benefits society. This is a study of:",
+    "options": [
+      "micromarketing",
+      "macromarketing",
+      "relationship marketing",
+      "market orientation"
+    ],
+    "answer": 1,
+    "explanation": "Examining the aggregate flow of a nation's goods to benefit society is macromarketing. Micromarketing would focus on how a single organization directs its own marketing activities.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-111",
+    "concept": "c01-macro-micro",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "Loblaw, one of Canada's largest retailers, decides how to divide its national advertising budget among its store banners. Which term best applies?",
+    "options": [
+      "Neither, because budget decisions are financial rather than marketing activities",
+      "Macromarketing, because the company is very large and advertises nationally",
+      "Macromarketing, because the decision affects consumers across the whole nation",
+      "Micromarketing, because it is one organization allocating its marketing resources"
+    ],
+    "answer": 3,
+    "explanation": "Micromarketing is about how an individual organization directs its marketing and allocates its resources, regardless of company size. Macromarketing is the aggregate flow of a nation's goods and services, not one large firm's national campaign.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-112",
+    "concept": "c01-macro-micro",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 2,
+    "stem": "Which statement about macromarketing is NOT correct?",
+    "options": [
+      "It focuses on benefits to society as a whole",
+      "It concerns the aggregate flow of a nation's goods and services",
+      "It refers to marketing done by very large companies with national budgets",
+      "It looks at the overall system rather than a single organization"
+    ],
+    "answer": 2,
+    "explanation": "Macromarketing is about the aggregate flow of a nation's goods and services to benefit society - a system-level view. Company size has nothing to do with it; even a giant firm's own plans are micromarketing.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-113",
+    "concept": "c01-macro-micro",
+    "also": [],
+    "type": "fill",
+    "angle": "define",
+    "difficulty": 2,
+    "stem": "The aggregate flow of a nation's goods and services to benefit society is called _____.",
+    "options": [
+      "the societal marketing concept",
+      "macromarketing",
+      "corporate social responsibility",
+      "micromarketing"
+    ],
+    "answer": 1,
+    "explanation": "Macromarketing is the society-wide, aggregate flow of a nation's goods and services. The societal marketing concept and CSR also mention society, but they describe how an individual organization should behave, not the national flow of goods.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-114",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "not",
+    "difficulty": 1,
+    "stem": "Which of the following is NOT one of the seven new and evolving marketing practices identified in Chapter 1?",
+    "options": [
+      "Production orientation",
+      "Partnership marketing",
+      "Metrics and analytics",
+      "Augmented reality"
+    ],
+    "answer": 0,
+    "explanation": "The seven practices are digital marketing (content, mobile, social media), augmented reality, experiential marketing, influencer marketing, partnership marketing, metrics and analytics, and new regulations and ethical considerations. Production orientation is the earliest business philosophy, not a new practice.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-115",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 1,
+    "stem": "A Montreal furniture retailer's app lets shoppers point their phone at an empty corner of the living room and see a life-sized 3D sofa placed there. Which evolving practice is this?",
+    "options": [
+      "Partnership marketing",
+      "Influencer marketing",
+      "Experiential marketing",
+      "Augmented reality"
+    ],
+    "answer": 3,
+    "explanation": "Overlaying digital images onto the real-world view through a phone is augmented reality. Experiential marketing involves hands-on, real-world brand experiences such as events or pop-ups.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-116",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "Glacier Water pays a Calgary fitness creator with 400,000 TikTok followers to post videos featuring its bottles in her daily workout routine. Which evolving practice is this?",
+    "options": [
+      "Metrics and analytics",
+      "Experiential marketing",
+      "Influencer marketing",
+      "Partnership marketing"
+    ],
+    "answer": 2,
+    "explanation": "Paying a personality with a large, trusting following to promote a brand is influencer marketing. Partnership marketing is a formal association between two brands, not a paid endorsement by an individual creator.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-117",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "identify",
+    "difficulty": 2,
+    "stem": "A Canadian coffee chain and a national bookseller form a formal association: co-branded cafés inside the bookstores and a shared loyalty reward. Which evolving practice is this?",
+    "options": [
+      "Partnership marketing",
+      "Influencer marketing",
+      "Experiential marketing",
+      "Augmented reality"
+    ],
+    "answer": 0,
+    "explanation": "Partnership marketing is the creation of formal associations between brands that contribute to each other's success, such as co-branded locations and shared rewards. Influencer marketing would rely on an individual personality's endorsement.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-118",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "contrast",
+    "difficulty": 3,
+    "stem": "A student lists the seven new and evolving practices as: content marketing, mobile marketing, social media marketing, augmented reality, experiential marketing, influencer marketing and partnership marketing. What is wrong with this list?",
+    "options": [
+      "Partnership marketing belongs to the relationship era of business philosophy, not to evolving practices",
+      "Content, mobile and social media belong under digital marketing, and metrics/analytics and regulations/ethics are missing",
+      "Influencer marketing and partnership marketing are really the same practice and should be combined",
+      "Augmented reality is just a form of experiential marketing and should not be listed as a separate item"
+    ],
+    "answer": 1,
+    "explanation": "The chapter groups content, mobile and social media marketing as parts of item 1, digital marketing. The full list of seven also includes metrics and analytics and new marketing regulations and ethical considerations, which the student left out.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-119",
+    "concept": "c01-evolving-practices",
+    "also": [],
+    "type": "mc",
+    "angle": "apply",
+    "difficulty": 2,
+    "stem": "Brightwater Cosmetics runs ads on three platforms but cannot tell which one actually drives sales. Which evolving marketing practice would most directly solve this problem?",
+    "options": [
+      "Experiential marketing",
+      "Augmented reality",
+      "Metrics and analytics",
+      "Partnership marketing"
+    ],
+    "answer": 2,
+    "explanation": "Metrics and analytics measure marketing results, letting Brightwater compare which platform drives sales. The other practices are ways of reaching or engaging customers, not ways of measuring performance.",
+    "source": "generated"
+  },
+  {
+    "id": "q01-120",
+    "concept": "c01-ethics",
+    "also": [],
+    "type": "mc",
+    "angle": "define",
+    "difficulty": 1,
+    "stem": "The moral principles and values that govern the actions and decisions of an individual or group are called:",
+    "options": [
+      "the societal marketing concept",
+      "corporate social responsibility",
+      "laws",
+      "ethics"
+    ],
+    "answer": 3,
+    "explanation": "That is the definition of ethics. Laws are rules enforced by government; CSR is the idea that organizations are accountable to society, which is broader than the moral principles guiding individual decisions.",
+    "source": "generated"
+  }
+]

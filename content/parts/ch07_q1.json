@@ -1,0 +1,719 @@
+[
+ {
+  "id": "q07-001",
+  "concept": "c07-product",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In marketing, a product is best defined as:",
+  "options": [
+   "A good, service or idea consisting of a bundle of tangible and intangible attributes that satisfies needs in exchange for something of value",
+   "A physical good with tangible attributes that a manufacturer sells to consumers in exchange for money",
+   "A name, phrase, symbol or design that distinguishes one company's offering from those of competitors",
+   "The fundamental benefit a consumer derives from buying and using a good"
+  ],
+  "answer": 0,
+  "explanation": "A product is a good, a service or an idea - a bundle of tangible and intangible attributes received in exchange for money or something else of value. Limiting it to physical goods sold for money is too narrow; 'name, phrase, symbol or design' defines a brand, and 'fundamental benefit' is only the core layer.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-002",
+  "concept": "c07-product",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "MADD Canada runs a campaign persuading young Albertans to plan a safe ride home instead of driving impaired. Nothing is sold and no fee is charged. From a marketing perspective, what MADD is offering is:",
+  "options": [
+   "Not a product, because no money changes hands",
+   "Not a product, because nothing tangible is exchanged",
+   "A product - an idea exchanged for something of value other than money",
+   "A product line, because the campaign satisfies a class of needs"
+  ],
+  "answer": 2,
+  "explanation": "Products include goods, services AND ideas, and the exchange can be for 'something else of value' - here, a change in behaviour. Lacking tangibility or money does not disqualify it; a product line is a group of closely related products, not a single campaign idea.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-003",
+  "concept": "c07-product",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT consistent with the marketing definition of a product?",
+  "options": [
+   "A product includes intangible attributes such as reputation and convenience",
+   "A product can be an idea, such as a campaign against texting while driving",
+   "A product can be exchanged for something of value other than money",
+   "A product must be a tangible item that can be examined before purchase"
+  ],
+  "answer": 3,
+  "explanation": "The definition covers services and ideas, which can't be touched, so 'must be tangible' contradicts it. A product is a bundle of tangible AND intangible attributes, and the exchange can be for money or something else of value.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-004",
+  "concept": "c07-product",
+  "also": [
+   "c07-brand"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Ravi tells his study group, 'Products and brands are the same thing - Lululemon is a product.' Which response best corrects him?",
+  "options": [
+   "A product is built by marketing activity, while a brand appears on its own once sales begin",
+   "A product is the bundle of attributes that satisfies a need; a brand is the name, symbol or design that distinguishes it from competitors",
+   "A brand is the bundle of tangible attributes, while a product is the image consumers hold",
+   "A product is always a physical good, while a brand is always a service or an idea"
+  ],
+  "answer": 1,
+  "explanation": "The product is the good, service or idea (the leggings) with its bundle of attributes; the brand (Lululemon) is the name, symbol or design that distinguishes it and must be developed and nurtured by marketing. Products aren't limited to physical goods, and brands don't arise on their own.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-005",
+  "concept": "c07-product",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "Why does a marketer treat a haircut as a 'product' even though the customer takes nothing tangible home?",
+  "options": [
+   "Because services - intangible activities or benefits provided in exchange for something of value - are one kind of product",
+   "Because the barber uses tangible tools such as scissors and clippers to deliver it",
+   "Because the salon's name and logo make it a brand rather than a service",
+   "Because anything sold for money is classified as a good under the total product concept"
+  ],
+  "answer": 0,
+  "explanation": "A service is an intangible activity or benefit that satisfies needs in exchange for money or something else of value, and services are one of the three kinds of products (goods, services, ideas). The tools used are not what the customer buys, and a brand name doesn't change what the offering is.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-006",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Knowing what you do about the total product concept, what do customers buy when purchasing a product?",
+  "options": [
+   "Only the tangible features.",
+   "The complete package of benefits and features.",
+   "The additional services and benefits.",
+   "The benefits of the product."
+  ],
+  "answer": 3,
+  "explanation": "Marketers view products as having three layers (core, actual, augmented), and the core product - the fundamental benefit the consumer derives - is what customers ultimately buy. 'The complete package of benefits and features' is the tempting distractor, but the course answer is the benefits; 'additional services' describes the augmented layer and 'tangible features' the actual layer.",
+  "source": "official"
+ },
+ {
+  "id": "q07-007",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "SnugNest sells baby monitors with HD video, a crying-detection alert and a two-year warranty. In focus groups, parents say what they really want is 'to sleep knowing my baby is safe.' Under the total product concept, this peace of mind is the:",
+  "options": [
+   "Augmented product",
+   "Product item",
+   "Core product",
+   "Actual product"
+  ],
+  "answer": 2,
+  "explanation": "The core product is the fundamental benefit the consumer derives - here, reassurance that the baby is safe. The HD video and alert are features of the actual product, and the warranty is part of the augmented product.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-008",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "Moving from the innermost layer outward, the three layers of the total product concept are:",
+  "options": [
+   "Core, augmented, actual",
+   "Actual, core, augmented",
+   "Augmented, actual, core",
+   "Core, actual, augmented"
+  ],
+  "answer": 3,
+  "explanation": "The core benefit sits at the centre, the actual product (branding, design, features) wraps it, and the augmented product (warranty, repairs, FAQs) forms the outer layer. Putting 'actual' first confuses the physical product with the benefit it delivers.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-009",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "In the textbook's bicycle example of the total product concept, which pairing of item and layer is correct?",
+  "options": [
+   "Padded seat and branded metal frame - core product",
+   "Provides transportation and leisure activity - core product",
+   "Ten speeds and aluminum alloy wheels - augmented product",
+   "Online FAQs and service videos - actual product"
+  ],
+  "answer": 1,
+  "explanation": "In Figure 7-2 the core is the benefit (transportation and leisure); features such as 10 speeds, alloy wheels, the padded seat and branding make up the actual product; and the warranty, repair facilities, online FAQs and service videos are augmented. Each wrong option shifts an item one layer off.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-010",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A Calgary toothpaste maker's ads list its fluoride formula, mint gel and new pump dispenser, yet it keeps losing share to a rival whose ads promise 'a confident, healthy smile.' Based on the total product concept, what should the maker change?",
+  "options": [
+   "Add more technical features to the actual product so its ads have more to list",
+   "Widen its product mix by launching a new line of mouthwash",
+   "Lead its messaging with the core benefit customers seek, such as healthy teeth and confidence",
+   "Offer a longer warranty, since augmented features are what customers ultimately buy"
+  ],
+  "answer": 2,
+  "explanation": "Under the total product concept, customers ultimately buy the benefits (the core), so a features-only message misses why people buy. More features (actual) or extras (augmented) don't fix a message that never connects to the core benefit, and widening the mix doesn't address the problem.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-011",
+  "concept": "c07-core-product",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Under the total product concept, a customer buying a power drill is ultimately buying its tangible features, such as the motor and battery, so marketers should focus only on the actual product layer.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Customers ultimately buy the benefits of a product - the core layer (for a drill, the ability to make holes and finish the job). Features belong to the actual layer, and marketers manage all three layers but must connect them to the core benefit.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-012",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northline Bikes advertises its new e-bike's carbon frame, 500-watt motor, integrated lights and matte-black finish, all sold under the Northline name. These elements make up the e-bike's:",
+  "options": [
+   "Actual product",
+   "Core product",
+   "Augmented product",
+   "Product mix"
+  ],
+  "answer": 0,
+  "explanation": "The actual product is the physical product including its branding, design and features - the frame, motor, lights, finish and brand name. The core would be the benefit (easy, fun transportation), and augmented would be extras such as a warranty or service plan.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-013",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the total product concept, the physical good or delivered service - including its branding, design and features - is called the _____ product.",
+  "options": [
+   "augmented",
+   "actual",
+   "future",
+   "core"
+  ],
+  "answer": 1,
+  "explanation": "The actual layer is the product itself - brand, design, features, packaging and quality level. The core is the underlying benefit, the augmented layer is the extras that accompany it (warranty, repairs), and 'future product' is not one of the three layers used in this course.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-014",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A Canadian Tire customer buys a snow blower. Which item belongs to the ACTUAL product rather than the augmented product?",
+  "options": [
+   "A how-to video library on the retailer's website",
+   "Free assembly and delivery to the customer's home",
+   "The two-year parts-and-labour warranty",
+   "The heated hand grips built into the handles"
+  ],
+  "answer": 3,
+  "explanation": "Heated grips are a built-in feature, so they are part of the actual product. A warranty, free assembly and delivery, and online how-to videos accompany the product rather than being part of it, so they are augmented.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-015",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "For a new smartphone, which of the following is NOT part of the actual product?",
+  "options": [
+   "The brand name and logo on the back",
+   "A one-year extended repair plan",
+   "The phone's colour and design",
+   "The 6.5-inch display and triple camera"
+  ],
+  "answer": 1,
+  "explanation": "A repair plan is an additional service that comes with the phone, which makes it augmented. Brand name, features such as the display and camera, and design or colour are all elements of the actual product.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-016",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "tf",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "A premium chocolate maker's elegant gold-foil box is part of the augmented product because it is an extra the customer doesn't eat.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Packaging, like branding, design and features, is part of the ACTUAL product. The augmented product is the additional services and benefits that accompany it - a warranty, delivery, installation or customer support.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-017",
+  "concept": "c07-actual-product",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Two Saskatoon cafes sell nearly identical lattes. Cafe Prairie wants to differentiate at the actual-product layer. Which move does that?",
+  "options": [
+   "Introduce a signature oat-honey latte served in a distinctive branded cup",
+   "Offer a satisfaction guarantee that replaces any drink for free",
+   "Promote coffee as 'the energy you need to start your day'",
+   "Add a free delivery service for orders placed through its app"
+  ],
+  "answer": 0,
+  "explanation": "Changing the drink's features, design and branded packaging works on the actual product. A satisfaction guarantee and free delivery are extras that accompany the product (augmented), and 'energy to start your day' describes the core benefit.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-018",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fast & Swift, a sedan manufacturer, has introduced Spectra, a leisure car that boasts of an eco-friendly model at a comparatively lower price. The first 50 buyers are given a three-year warranty on their purchase. The three-year warranty provided to the first 50 buyers refers to the _____ product.",
+  "options": [
+   "formal",
+   "core",
+   "augmented",
+   "future"
+  ],
+  "answer": 2,
+  "explanation": "A warranty is an additional feature that accompanies the actual product, so it belongs to the augmented product (along with service contracts, delivery, installation and support websites). The core would be the car's basic benefit (transportation), and 'formal' and 'future' are not layers of the total product concept in this course.",
+  "source": "official"
+ },
+ {
+  "id": "q07-019",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Patagonia is known for their focus on sustainability; they stand behind their products and will repair broken zippers or torn clothing long after you've purchased to keep it out of the landfill. This forms part of their:",
+  "options": [
+   "core product",
+   "actual product",
+   "augmented product",
+   "future product",
+   "none of the above"
+  ],
+  "answer": 2,
+  "explanation": "Repairing zippers and torn clothing long after purchase is an after-sale service that accompanies the product - the augmented layer. It isn't part of the garment itself (actual) or the basic benefit of staying warm and covered (core).",
+  "source": "official"
+ },
+ {
+  "id": "q07-020",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which statement best describes a warranty?",
+  "options": [
+   "Label information that describes directions, ingredients and nutrition",
+   "Legal protection giving the owner the exclusive right to use a brand name or mark",
+   "A statement indicating the liability of the manufacturer for product deficiencies",
+   "A contractual agreement allowing another firm to use a brand name for a fee"
+  ],
+  "answer": 2,
+  "explanation": "A warranty states the manufacturer's liability for product deficiencies and is a classic augmented-product element. Exclusive rights to a brand name or mark describe a trademark, label information is a communication benefit of packaging, and the fee arrangement is brand licensing.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-021",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Maple Home Appliances sells a dishwasher with a stainless-steel tub, a quiet 42-decibel motor, free installation and a 24/7 support line. Which pair lists ONLY augmented-product elements?",
+  "options": [
+   "The quiet motor and free installation",
+   "The stainless-steel tub and the 24/7 support line",
+   "The stainless-steel tub and the quiet motor",
+   "Free installation and the 24/7 support line"
+  ],
+  "answer": 3,
+  "explanation": "Installation and customer support accompany the product, so they are augmented. The tub and the motor are built-in features of the actual product, so any pair that includes them mixes layers.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-022",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why would a company invest in the augmented layer - extended warranties, free repairs, online support - when its actual product already performs well?",
+  "options": [
+   "To reduce the number of items in its product line",
+   "To distinguish its offering from competitors whose actual products are similar",
+   "To change the core benefit that customers are seeking",
+   "To move the product from the shopping class to the convenience class"
+  ],
+  "answer": 1,
+  "explanation": "Augmented features are additional benefits used to distinguish a product from competitive offerings, especially when actual products are hard to tell apart. They don't change the core benefit, and they have nothing to do with line length or the consumer product class.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-023",
+  "concept": "c07-augmented-product",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following would NOT be part of a new laptop's augmented product?",
+  "options": [
+   "A backlit keyboard built into the laptop",
+   "A three-year on-site repair plan",
+   "Free next-day home delivery",
+   "Online FAQs and setup tutorial videos"
+  ],
+  "answer": 0,
+  "explanation": "A backlit keyboard is a built-in feature, so it belongs to the actual product. Delivery, a repair plan and online FAQs or videos are extras that accompany the product - augmented, just like the warranty and service videos in the bicycle example.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-024",
+  "concept": "c07-convenience",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Every morning on her way to work in Regina, Mei grabs whatever brand of chewing gum is at the gas-station till without comparing options. For Mei, gum is a:",
+  "options": [
+   "Specialty product",
+   "Unsought product",
+   "Convenience product",
+   "Shopping product"
+  ],
+  "answer": 2,
+  "explanation": "Frequent, inexpensive purchases made with minimal effort, where substitutes are acceptable, are convenience products. A shopping product would involve comparing price, quality or style before buying.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-025",
+  "concept": "c07-convenience",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A new Canadian granola-bar brand will be marketed as a convenience product. Which marketing-mix plan fits that classification?",
+  "options": [
+   "Moderate price, a few selected outlets, and messages explaining how it differs from rivals",
+   "Premium price, exclusive distribution through one flagship store, and image advertising",
+   "Aggressive personal selling to make consumers aware that they need the product",
+   "Low price, widespread distribution in grocery, drug and convenience stores, and mass advertising"
+  ],
+  "answer": 3,
+  "explanation": "Convenience products are inexpensive, need widespread distribution because buyers won't search for them, and rely on mass advertising. The exclusive plan fits specialty products, selected outlets with differentiation fits shopping products, and aggressive personal selling fits unsought products.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-026",
+  "concept": "c07-convenience",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Convenience products are bought frequently with minimal shopping effort; consumers are aware of brands but will usually accept a substitute.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Convenience products are frequent, inexpensive purchases with minimal effort, widespread distribution and mass advertising; buyers know the brands but accept substitutes - unlike specialty buyers, who refuse them.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-027",
+  "concept": "c07-convenience",
+  "also": [
+   "c07-shopping"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Liam buys whatever paper towels are on sale at the nearest grocery store. His neighbour Grace visits three stores comparing price, absorbency and sheet count before buying paper towels in bulk. How should paper towels be classified?",
+  "options": [
+   "Convenience for Liam and shopping for Grace, because classification depends on the individual",
+   "Specialty for Grace, because she makes a significant effort before buying",
+   "Shopping for both, because at least one consumer compares alternatives",
+   "Convenience for both, because paper towels are inexpensive and bought frequently"
+  ],
+  "answer": 0,
+  "explanation": "How a consumer product is classified depends on the individual's effort and behaviour. Grace compares price and quality across stores, which is shopping behaviour; specialty would require insisting on one unique brand and refusing substitutes, which she doesn't do.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-028",
+  "concept": "c07-convenience",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which characteristic does NOT describe a convenience product?",
+  "options": [
+   "It is purchased frequently and is relatively inexpensive",
+   "It is supported by mass advertising",
+   "Consumers are very brand loyal and will not accept substitutes",
+   "It is distributed widely through many outlets"
+  ],
+  "answer": 2,
+  "explanation": "Refusing substitutes and very high brand loyalty describe specialty products. Convenience products are frequent, inexpensive, widely distributed and mass advertised, and their buyers will accept substitutes.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-029",
+  "concept": "c07-shopping",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Before buying a winter coat, Aisha visits four Edmonton stores, comparing price, warmth ratings and style, and she is open to whichever brand offers the best combination. For Aisha, the coat is a:",
+  "options": [
+   "Convenience product",
+   "Shopping product",
+   "Unsought product",
+   "Specialty product"
+  ],
+  "answer": 1,
+  "explanation": "Comparing several alternatives on price, quality and style while staying open to different brands is shopping-product behaviour. A specialty product would mean she wanted one specific brand and would accept no substitute.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-030",
+  "concept": "c07-shopping",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Products such as clothing, appliances and furniture, for which consumers compare several alternatives on price, quality and style, are called _____ products.",
+  "options": [
+   "convenience",
+   "unsought",
+   "specialty",
+   "shopping"
+  ],
+  "answer": 3,
+  "explanation": "Shopping products are compared on price, quality and style and are sold through fewer outlets at moderate prices. Convenience products involve minimal comparison, specialty products involve searching for one brand, and unsought products aren't initially wanted.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-031",
+  "concept": "c07-shopping",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Breeze Appliances sells mid-priced refrigerators through a few major retailers. Knowing its fridges are shopping products, what should Breeze emphasize in its marketing?",
+  "options": [
+   "Persuasive personal selling to convince people they need a fridge at all",
+   "How its fridges differ from competitors' on features, quality and value",
+   "Availability in every corner store so buyers never need to search",
+   "Exclusivity and a refusal to discount, so buyers seek out one authorized dealer"
+  ],
+  "answer": 1,
+  "explanation": "Because shopping-product buyers compare alternatives, marketers emphasize differentiation and sell through fewer outlets at moderate prices. Everywhere distribution suits convenience products, exclusivity suits specialty products, and creating the need suits unsought products.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-032",
+  "concept": "c07-shopping",
+  "also": [
+   "c07-specialty"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Daniel and Priya both buy high-end cameras. Daniel compared five models online and in stores before choosing one. Priya would only buy a Leica and drove from Red Deer to Calgary's sole authorized dealer to get it. Which classification is correct?",
+  "options": [
+   "Shopping product for both, because cameras are listed as shopping goods",
+   "Specialty product for Daniel; shopping product for Priya",
+   "Shopping product for Daniel; specialty product for Priya",
+   "Specialty product for both, because the cameras are expensive"
+  ],
+  "answer": 2,
+  "explanation": "Classification depends on the individual's behaviour, not the price tag or a textbook list. Daniel compared alternatives (shopping); Priya insisted on one brand and made a significant effort to get it (specialty).",
+  "source": "generated"
+ },
+ {
+  "id": "q07-033",
+  "concept": "c07-shopping",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Shopping products need the widest possible distribution because consumers will not go out of their way to find them.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. That describes convenience products. Shopping products are sold through fewer outlets because consumers are willing to visit several stores to compare price, quality and style before buying.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-034",
+  "concept": "c07-specialty",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Marcel has wanted one particular Swiss watch model for years. When no Calgary jeweller carried it, he flew to Toronto to buy it at the brand's boutique and turned down the salesperson's suggestion of a similar model. For Marcel, the watch is a:",
+  "options": [
+   "Convenience product",
+   "Shopping product",
+   "Unsought product",
+   "Specialty product"
+  ],
+  "answer": 3,
+  "explanation": "Unique characteristics, a significant effort to search, and refusal to accept substitutes define a specialty product. Marcel never compared alternatives, so it isn't a shopping product for him.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-035",
+  "concept": "c07-specialty",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which set of characteristics describes specialty products?",
+  "options": [
+   "Unique characteristics, very brand-loyal buyers, exclusive distribution and high prices",
+   "Little consumer awareness or desire, supported by aggressive personal selling",
+   "Comparison on price, quality and style, fewer outlets and moderate prices",
+   "Frequent purchase, low prices, widespread distribution and mass advertising"
+  ],
+  "answer": 0,
+  "explanation": "Specialty products have unique characteristics, exclusive or very limited distribution, high prices and very brand-loyal buyers. The 'frequent purchase, low price' set describes convenience products, the 'comparison on price, quality and style' set describes shopping products, and 'little awareness or desire' describes unsought products.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-036",
+  "concept": "c07-specialty",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Aurora Timepieces, a Canadian luxury watchmaker with fiercely loyal buyers, is offered a deal to stock its watches in every discount department store in Canada. Given its products' classification, what is the best response?",
+  "options": [
+   "Decline, because specialty products depend on aggressive personal selling to create awareness",
+   "Decline, because specialty products rely on exclusive or very limited distribution that protects their uniqueness",
+   "Accept, but cut prices so the watches can compete with convenience goods",
+   "Accept, because wider distribution always strengthens products with brand-loyal buyers"
+  ],
+  "answer": 1,
+  "explanation": "Specialty products use exclusive or very limited distribution and high prices; mass distribution would undermine the uniqueness loyal buyers seek. Aggressive personal selling to create awareness describes unsought products, not specialty products.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-037",
+  "concept": "c07-specialty",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about specialty products is NOT accurate?",
+  "options": [
+   "Distribution is typically exclusive or very limited",
+   "Consumers make a significant effort to search for the product",
+   "Buyers tend to be very brand loyal",
+   "Consumers compare several brands on price before deciding which to buy"
+  ],
+  "answer": 3,
+  "explanation": "Comparing brands on price is shopping-product behaviour. Specialty buyers have already settled on a specific brand, make a significant effort to find it, and are very brand loyal.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-038",
+  "concept": "c07-specialty",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Any product with a high price, such as a luxury SUV, is automatically a specialty product.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Classification depends on the individual's behaviour. A buyer who compares several luxury SUVs on price, quality and style is treating it as a shopping product; it is a specialty product only for a buyer who insists on one brand and makes a significant effort to get it.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-039",
+  "concept": "c07-unsought",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Evergreen Memorial Gardens has salespeople call Winnipeg families to discuss pre-planning burial plots - something most people know about but would rather not think about. Burial plots are an example of:",
+  "options": [
+   "Unsought products",
+   "Convenience products",
+   "Shopping products",
+   "Specialty products"
+  ],
+  "answer": 0,
+  "explanation": "Unsought products are those the consumer doesn't know about, or knows about but doesn't initially want; burial plots and life insurance are classic examples, and they need aggressive promotion and personal selling. Specialty products, by contrast, are actively sought out.",
+  "source": "generated"
+ },
+ {
+  "id": "q07-040",
+  "concept": "c07-unsought",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Products that the consumer either does not know about or knows about but does not initially want are called _____ products.",
+  "options": [
+   "specialty",
+   "convenience",
+   "unsought",
+   "shopping"
+  ],
+  "answer": 2,
+  "explanation": "That is the definition of unsought products, which require aggressive promotion and personal selling. Convenience, shopping and specialty products are all ones consumers already want, with low, moderate and high buying effort.",
+  "source": "generated"
+ }
+]
