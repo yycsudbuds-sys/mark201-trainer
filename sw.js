@@ -1,6 +1,6 @@
 // Service worker: network-first with cache fallback, so the trainer keeps working offline
 // and always picks up the newest deploy when online. VERSION is rewritten by tools/build.py.
-const VERSION = '6043429bf6';
+const VERSION = 'af50ff1a22';
 const CACHE = 'mark201-' + VERSION;
 const CORE = ['./', './index.html', './app/css/tokens.css', './app/css/base.css', './app/css/components.css', './app/css/scenes.css', './app/css/modes.css', './app/audio.js', './app/scenes.js', './app/icons.js', './app/cutscene.js', './app/battle.js', './app/commanders.js', './app/scene-director.js', './app/geo.js', './app/geo/med.json', './app/maplabels.js', './app/cosmetic.js', './app/wartable.js', './app/visuals.js', './app/map.js', './app/views/lesson.js', './app/main.js', './app/data.js', './app/engine.js', './app/store.js', './app/ui.js', './app/achievements.js',
   './app/views/home.js', './app/views/campaign.js', './app/views/drill.js', './app/views/exam.js', './app/views/arcade.js', './app/views/learn.js', './app/views/progress.js', './app/views/settings.js', './app/views/runner.js', './app/views/concept.js', './app/views/common.js'];

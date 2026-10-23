@@ -19,7 +19,7 @@ export function createLabelLayer(host) {
     for (const it of items) {
       let n = nodes.get(it.id);
       if (!n) { n = h('div', { class: 'mlabel', dataset: { id: it.id } }, h('div', { class: 'ml-name' }), h('div', { class: 'ml-num' }), h('div', { class: 'ml-badge' })); el.appendChild(n); nodes.set(it.id, n); }
-      n.className = `mlabel ${it.state || ''}${it.next ? ' next' : ''}${it.small ? ' small' : ''}`;
+      n.className = `mlabel ${it.state || ''}${it.next ? ' next' : ''}${it.small ? ' small' : ''}${it.numFirst ? ' numfirst' : ''}`;
       n.querySelector('.ml-name').textContent = it.name;
       n.querySelector('.ml-num').textContent = it.numeral || '';
       const badge = n.querySelector('.ml-badge'); badge.replaceChildren();

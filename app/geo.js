@@ -135,9 +135,9 @@ export function paintColorMap(canvas, geo, { next = null } = {}) {
   for (const num of ORDER) { const pv = PROV[num]; ctx.beginPath(); ringPath(ctx, pv.poly, P); ctx.fillStyle = CH_COLOR[num]; ctx.globalAlpha = 0.2; ctx.fill(); ctx.globalAlpha = 1; }
   ctx.lineJoin = 'round';
   for (const num of ORDER) { const pv = PROV[num]; ctx.beginPath(); ringPath(ctx, pv.poly, P); ctx.strokeStyle = 'rgba(46, 33, 20, 0.55)'; ctx.lineWidth = w / 600; ctx.setLineDash([w / 300, w / 500]); ctx.stroke(); ctx.setLineDash([]); }
-  // relief marks along the ridges
+  // relief comes from the shaded height map; no hatching (it read as noise)
   ctx.strokeStyle = 'rgba(70, 50, 25, 0.55)'; ctx.lineWidth = w / 1200;
-  for (const r of RIDGES) { const path = smoothPath(r.pts, 60); const n = Math.floor(path.length / 4); for (let i = 0; i < n; i++) { const [x, y] = P(...path[i * 4]); const s = (w / 260) * (0.6 + r.h * 0.6); for (let k = -1; k <= 1; k++) { const xx = x + k * s * 0.9, yy = y + (k ? s * 0.25 : 0); ctx.beginPath(); ctx.moveTo(xx - s * 0.45, yy + s * 0.3); ctx.lineTo(xx, yy - s * 0.35); ctx.lineTo(xx + s * 0.45, yy + s * 0.3); ctx.stroke(); } } }
+  for (const r of []) { const path = smoothPath(r.pts, 60); const n = Math.floor(path.length / 4); for (let i = 0; i < n; i++) { const [x, y] = P(...path[i * 4]); const s = (w / 260) * (0.6 + r.h * 0.6); for (let k = -1; k <= 1; k++) { const xx = x + k * s * 0.9, yy = y + (k ? s * 0.25 : 0); ctx.beginPath(); ctx.moveTo(xx - s * 0.45, yy + s * 0.3); ctx.lineTo(xx, yy - s * 0.35); ctx.lineTo(xx + s * 0.45, yy + s * 0.3); ctx.stroke(); } } }
   ctx.restore();
   // coast ink
   landPath(ctx, geo, P); ctx.strokeStyle = 'rgba(255, 248, 230, 0.55)'; ctx.lineWidth = w / 260; ctx.stroke();

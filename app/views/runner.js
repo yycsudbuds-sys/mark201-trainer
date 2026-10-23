@@ -4,7 +4,7 @@
 // The study logic (pickNext, pursuits, app.answer) is untouched.
 import { h, clear, coinFlight, fmtTime } from '../ui.js';
 import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } from '../engine.js';
-import { conceptCard } from './concept.js';
+import { conceptCard, figureEl } from './concept.js';
 import { visualFor } from '../visuals.js';
 import { attachBattle } from '../battle.js';
 import { richText, icon, CHAPTER_ICON } from '../icons.js';
@@ -136,6 +136,14 @@ export function createRunner(app, cfg) {
     }
     card.appendChild(h('div', { class: 'qhead' }, h('div', { class: 'qicon' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 28, tone: 'gold' })), h('div', { class: 'qmeta' }, metas)));
     card.appendChild(h('div', { class: 'stem' }, richText(q.stem)));
+    const fig = figureForQuestion(app, q, entry);
+    if (fig) {
+      const body = h('div', { class: 'qfigure-body' }, fig.el);
+      if (cfg.feedback === 'deferred') { // the real exam will not show it: keep it one tap away
+        const btn = h('button', { class: 'btn sm ghost', type: 'button', onClick: () => { body.classList.toggle('open'); btn.textContent = body.classList.contains('open') ? 'Hide the figure' : 'Show the figure'; } }, 'Show the figure');
+        card.appendChild(h('div', { class: 'qfigure' }, h('div', { class: 'row between wrap' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), fig.label || 'Reference'), btn), body));
+      } else card.appendChild(h('div', { class: 'qfigure' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), fig.label || 'Reference'), body.classList.add('open') || body));
+    }
     const optEls = options.map((o, i) => h('button', { class: 'option tablet', dataset: { i },
       onClick: () => choose(i),
       onPointerenter: () => { const t = performance.now(); if (t - hoverTick > 120) { hoverTick = t; app.sound('tick'); } },
@@ -283,6 +291,16 @@ function feedbackPanel(app, q, entry, correct, res) {
       vis ? h('div', { class: 'feedback-vis' }, vis) : null));
 }
 function safeVisual(entry) { try { return visualFor(entry.concept, entry.chapter); } catch { return null; } }
+/** The figure, table or diagram a stem refers to ("Figure 8-3", "the break-even chart"), looked up in the chapter. */
+function figureForQuestion(app, q, entry) {
+  const stem = String(q.stem || ''); const ch = entry.chapter;
+  const m = stem.match(/figure\s*(\d+)\s*[-\u2013]\s*(\d+)/i);
+  if (m) { const key = `${m[1]}-${m[2]}`; const c = ch.concepts.find(x => x.figure && x.figure.title && String(x.figure.title).replace(/\u2013/g, '-').includes(key)); if (c) return { el: figureEl(c.figure), label: c.figure.title }; }
+  if (!/\b(figure|exhibit|diagram|chart|graph|table|perceptual map|shown in the chapter)\b/i.test(stem)) return null;
+  if (entry.concept.figure) return { el: figureEl(entry.concept.figure), label: entry.concept.figure.title || 'From the chapter' };
+  const vis = safeVisual(entry); if (vis) return { el: vis, label: 'The diagram' };
+  return null;
+}
 
 export function resultCard(app, title, sum, extra) {
   const pct = sum.answered ? sum.correct / sum.answered : 0;

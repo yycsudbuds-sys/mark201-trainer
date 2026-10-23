@@ -796,3 +796,57 @@ body.has-band .main { height: calc(100vh - var(--band-h)); overflow-y: auto; ove
 @media (max-width: 760px) { .map-frame { overflow: hidden; } .map-frame > svg { min-width: 0; } }
 /* the fort card below the table */
 .level-sheet .sheet-card h2 { word-break: normal; overflow-wrap: anywhere; }
+
+/* ---------- fixes after the Phase 3 review ---------- */
+/* the figure a question refers to */
+.qfigure { margin: 0.7rem 0 0.2rem; padding: 0.55rem 0.9rem 0.7rem; background: rgba(240, 225, 188, 0.1); border: 1px solid rgba(201, 162, 39, 0.4); border-radius: 6px; font-size: 0.92rem; }
+.qfigure .eyebrow { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--gold-leaf-light); }
+.qfigure-body { display: none; margin-top: 0.3rem; }
+.qfigure-body.open { display: block; }
+.qfigure .fig { font-size: 0.88rem; }
+.qfigure ul.fig { margin: 0.2rem 0 0 1.1rem; padding: 0; }
+.qfigure table.fig th, .qfigure table.fig td { padding: 0.25rem 0.5rem; }
+.qfigure .eyebrow.mt-sm { margin-top: 0; }
+/* the trap slide: the question the trap comes from */
+.trap-ref { margin-top: 1rem; padding: 0.9rem 1.05rem; border: 1px dashed rgba(139, 30, 30, 0.55); border-radius: 10px; background: rgba(139, 30, 30, 0.06); animation: fadeUp 0.45s both; animation-delay: 0.3s; }
+.trap-ref .eyebrow { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--pompeian); }
+.trap-ref .trap-stem { font-weight: 600; margin: 0.35rem 0 0.45rem; line-height: 1.5; }
+.trap-opts { margin: 0 0 0.5rem 1.3rem; padding: 0; }
+.trap-opts li { padding: 0.12rem 0; line-height: 1.45; }
+.trap-opts li.right { font-weight: 700; color: #3F5733; }
+.trap-opts li .ico { margin-left: 0.3rem; vertical-align: -0.1em; }
+/* the road strip above the province: I -> V -> Siege */
+.road-strip { display: flex; align-items: stretch; gap: 0.55rem; margin: 0.1rem 0 0.9rem; overflow-x: auto; padding: 0.3rem 0.1rem 0.4rem; scrollbar-width: thin; }
+.rs-node { flex: 1 1 0; min-width: 118px; display: flex; flex-direction: column; align-items: center; gap: 0.18rem; padding: 0.5rem 0.45rem 0.45rem; background: linear-gradient(180deg, #3A322A, #2A241D); border: 1px solid rgba(0, 0, 0, 0.6); border-radius: 6px; color: #D9CDB4; cursor: pointer; position: relative; font-family: var(--font-body); text-align: center; box-shadow: var(--bevel-stone); transition: transform var(--dur-fast); }
+.rs-node:hover { transform: translateY(-2px); }
+.rs-node + .rs-node::before { content: ''; position: absolute; left: -0.6rem; top: 50%; width: 0.5rem; height: 2px; background: var(--gold-leaf-dark); }
+.rs-top { display: inline-flex; align-items: center; gap: 0.3rem; }
+.rs-num { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--gold-leaf-light); }
+.rs-title { font-size: 0.74rem; line-height: 1.2; }
+.rs-state { font-family: var(--font-display); font-size: 0.52rem; letter-spacing: 0.14em; text-transform: uppercase; color: #B4A58A; margin-top: 0.1rem; }
+.rs-node.done { border-color: rgba(201, 162, 39, 0.6); background: linear-gradient(180deg, #5E1313, #3A0C0C); color: #F6E7C8; }
+.rs-node.done .rs-state { color: var(--gold-leaf-light); }
+.rs-node.next { border-color: var(--gold-leaf); box-shadow: var(--bevel-stone), 0 0 0 1px var(--gold-leaf), 0 0 16px rgba(201, 162, 39, 0.55); }
+.rs-node.next .rs-state { color: var(--gold-leaf-light); }
+.rs-node.locked { opacity: 0.6; }
+.rs-node.siege { min-width: 150px; background: linear-gradient(180deg, #4A3C2C, #2A241D); }
+.rs-node.siege.done { background: linear-gradient(180deg, #5E1313, #3A0C0C); }
+@media (max-width: 640px) { .rs-node { min-width: 104px; } .rs-title { font-size: 0.68rem; } }
+/* fort labels: numeral first */
+.mlabel.numfirst .ml-num { order: -1; font-size: 1.05rem; letter-spacing: 0.08em; color: #8B1E1E; font-weight: 700; margin-top: 0; line-height: 1; }
+.mlabel.numfirst .ml-name { font-size: 0.66rem; margin-top: 2px; }
+.mlabel.conquered.numfirst .ml-num { color: #5E1313; }
+.mlabel.small.next { box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.9), 0 0 16px rgba(201, 162, 39, 0.6), 0 6px 12px rgba(0, 0, 0, 0.35); }
+
+/* figure panel on the dark dispatch card: light ink, one title, scrollable */
+.qfigure, .qfigure .fig, .qfigure table.fig th, .qfigure table.fig td, .qfigure ul.fig li { color: #F6EEDC; }
+.qfigure table.fig { background: rgba(0, 0, 0, 0.28); border-color: rgba(201, 162, 39, 0.3); }
+.qfigure table.fig th { color: var(--gold-leaf-light); }
+.qfigure-body > div > .eyebrow { display: none; }
+.qfigure-body.open { max-height: 280px; overflow: auto; }
+.qfigure .vizwrap, .qfigure .viz { color: #F6EEDC; }
+/* fort labels: a little narrower, three lines allowed */
+.mlabel.small { max-width: 140px; }
+.mlabel.small .ml-name { font-size: 0.64rem; line-height: 1.15; }
+
+.runner .qcard .qfigure .eyebrow, .qfigure .row .eyebrow { color: var(--gold-leaf-light); }

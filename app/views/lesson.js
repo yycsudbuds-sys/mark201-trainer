@@ -67,11 +67,18 @@ export function createLesson(app, cids, opts = {}) {
       return h('div', { class: 'slide' }, head, h('p', { class: 'small muted' }, 'Interact with the diagram. Say what each part means before you reveal it.'), s.vis, s.table ? revealTable(s.table, { color: chapter?.color }) : null);
     }
     if (s.kind === 'confuse') {
+      const entry = app.conceptOf(c.id); const qs = entry ? entry.chapter.questions.filter(q => q.concept === c.id) : [];
+      const ref = qs.find(q => q.source === 'official') || qs.find(q => q.angle === 'not' || q.angle === 'contrast') || qs[0];
       return h('div', { class: 'slide' }, head,
         h('div', { class: 'versus' },
           h('div', { class: 'vs-side' }, h('div', { class: 'eyebrow' }, 'Don\'t confuse it with'), h('p', null, c.contrast)),
           h('div', { class: 'vs-badge' }, 'vs'),
-          h('div', { class: 'vs-side trap' }, h('div', { class: 'eyebrow' }, 'Exam trap'), h('p', null, c.trap))));
+          h('div', { class: 'vs-side trap' }, h('div', { class: 'eyebrow' }, 'Exam trap · the wrong answers it tempts you with'), h('p', null, c.trap))),
+        ref ? h('div', { class: 'trap-ref' },
+          h('div', { class: 'eyebrow' }, icon('tablet', { size: 14, tone: 'crimson' }), ref.source === 'official' ? 'The practice-exam question this trap comes from' : 'A question that sets this trap'),
+          h('p', { class: 'trap-stem' }, ref.stem),
+          h('ol', { class: 'trap-opts' }, ref.options.map((o, i) => h('li', { class: i === ref.answer ? 'right' : '' }, o, i === ref.answer ? icon('laurel', { size: 14, tone: 'laurel' }) : null))),
+          h('p', { class: 'small muted' }, 'The laurel marks the right answer. The others are the phrases the trap warns about. You will meet this question again in battle.')) : null);
     }
     if (s.kind === 'check') {
       checkDone = false;

@@ -57,7 +57,7 @@ export async function createWarTable(app, opts = {}) {
   const noiseTex = new THREE.CanvasTexture(noiseCanvas); noiseTex.wrapS = noiseTex.wrapT = THREE.RepeatWrapping; noiseTex.colorSpace = THREE.NoColorSpace;
 
   // ---- helpers: lon/lat -> world
-  const HEIGHT = 1.4, BASE = 0.32; // the land is a raised vellum plate; ridges rise above it
+  const HEIGHT = 1.0, BASE = 0.32; // the land is a raised vellum plate; ridges rise above it
   const heightAt = (lon, lat) => { const s = sampleData(dm, lon, lat); return s.land ? BASE + s.height01 * HEIGHT : 0; };
   const world = (lon, lat, up = 0) => { const [x, y] = proj.toXY(lon, lat); return new THREE.Vector3(x, heightAt(lon, lat) + up, -y); };
 
@@ -178,19 +178,35 @@ export async function createWarTable(app, opts = {}) {
   const triremes = SEA_LANES.map((lane, i) => { const pts = lane.map(p => { const [x, y] = proj.toXY(p[0], p[1]); return new THREE.Vector3(x, 0.02, -y); }); const curve = new THREE.CatmullRomCurve3(pts, true); const m = triremeModel(); m.scale.setScalar(0.9); scene.add(m); return { curve, mesh: m, t: i * 0.23 }; });
 
   // ---- province view objects (built on zoom)
-  let prov = { num: 0, forts: [], road: null, roadTop: null, group: null, built: 0 };
+  let prov = { num: 0, forts: [], segs: [], halo: null, token: null, group: null, built: 0, nextIdx: -1 };
   function buildProvince(num) {
     clearProvince();
     const ch = app.index.chapter.get(num); const pv = PROV[num]; const group = new THREE.Group(); scene.add(group);
-    const path = smoothPath(pv.road, 64); const pts = path.map(p => world(p[0], p[1], 0.1)); const curve = new THREE.CatmullRomCurve3(pts);
-    const road = new THREE.Mesh(new THREE.TubeGeometry(curve, 96, 0.1, 6, false), M.road); road.geometry.setDrawRange(0, 0); group.add(road);
-    const roadTop = new THREE.Mesh(new THREE.TubeGeometry(curve, 96, 0.045, 5, false), M.roadTop); roadTop.position.y = 0.04; roadTop.geometry.setDrawRange(0, 0); group.add(roadTop);
-    const forts = ch.topics.map((t, i) => { const [lon, lat] = alongPath(path, (i + 1) / (ch.topics.length + 1)); const g = new THREE.Group(); g.position.copy(world(lon, lat, 0)); const model = fortModel(); g.add(model); g.userData = { topic: t, index: i }; model.scale.set(2, 0.01, 2);
-      const cleared = !!app.state.campaign.topics[t.id]?.cleared; const std = standard(cleared ? cloth.red : cloth.grey, cleared ? 1.6 : 1); std.position.set(0.8, 0, -0.5); std.visible = cleared; g.add(std); group.add(g);
-      return { group: g, model, std, topic: t, index: i, cleared, pos: [lon, lat] }; });
-    prov = { num, forts, road, roadTop, group, built: performance.now(), curve };
+    const path = smoothPath(pv.road, 64); const N = ch.topics.length;
+    const tAt = i => (i + 1) / (N + 1); // fort i sits at tAt(i); the capital at 1
+    const nextIdx = ch.topics.findIndex(t => !app.state.campaign.topics[t.id]?.cleared); // -1 when all are planted
+    const segs = [];
+    for (let i = 0; i <= N; i++) {
+      const t0 = i === 0 ? 0 : tAt(i - 1), t1 = i < N ? tAt(i) : 1; const pts = [];
+      for (let k = 0; k <= 10; k++) { const [lon, lat] = alongPath(path, t0 + (t1 - t0) * k / 10); pts.push(world(lon, lat, 0.1)); }
+      const curve = new THREE.CatmullRomCurve3(pts);
+      const done = i < N ? !!app.state.campaign.topics[ch.topics[i].id]?.cleared : chapterProgress(app, ch).boss;
+      const isNext = i < N ? i === nextIdx : nextIdx === -1 && !done;
+      const mat = done ? new THREE.MeshStandardMaterial({ color: 0xc9a227, roughness: 0.6, metalness: 0.3 }) : isNext ? new THREE.MeshStandardMaterial({ color: 0xe6d3a8, roughness: 0.8 }) : new THREE.MeshStandardMaterial({ color: 0x6b4b2a, roughness: 0.95 });
+      const road = new THREE.Mesh(new THREE.TubeGeometry(curve, 32, isNext ? 0.16 : 0.12, 6, false), mat); road.geometry.setDrawRange(0, 0); group.add(road);
+      segs.push({ mesh: road, curve, isNext, done });
+    }
+    const forts = ch.topics.map((t, i) => { const [lon, lat] = alongPath(path, tAt(i)); const g = new THREE.Group(); g.position.copy(world(lon, lat, 0)); const model = fortModel(); g.add(model); g.userData = { topic: t, index: i }; model.scale.set(2.4, 0.01, 2.4);
+      const cleared = !!app.state.campaign.topics[t.id]?.cleared; const std = standard(cleared ? cloth.red : cloth.grey, cleared ? 1.8 : 1); std.position.set(0.9, 0, -0.6); std.visible = cleared; g.add(std); group.add(g);
+      return { group: g, model, std, topic: t, index: i, cleared, pos: [lon, lat], isNext: i === nextIdx }; });
+    // a pulsing halo under the next objective (a fort, or the capital once every standard is planted)
+    const halo = new THREE.Mesh(new THREE.RingGeometry(1.1, 1.5, 40), new THREE.MeshBasicMaterial({ color: 0xe3c76a, transparent: true, opacity: 0.8, side: THREE.DoubleSide, depthWrite: false })); halo.rotation.x = -Math.PI / 2;
+    const target = nextIdx >= 0 ? forts[nextIdx].group.position : capitals.get(num).group.position; halo.position.copy(target).add(new THREE.Vector3(0, 0.08, 0)); group.add(halo);
+    const tok = tokenModel(); tok.scale.setScalar(1.6); tok.position.copy(target).add(new THREE.Vector3(-1.3, 0, 0.9)); group.add(tok);
+    prov = { num, forts, segs, halo, token: tok, group, built: performance.now(), nextIdx };
   }
-  function clearProvince() { if (prov.group) { scene.remove(prov.group); prov.group.traverse(o => { if (o.geometry && o.geometry !== G.fortWall && o.geometry !== G.fortTower && o.geometry !== G.tent && o.geometry !== G.pole && o.geometry !== G.cloth) o.geometry.dispose && o.geometry.dispose(); }); } prov = { num: 0, forts: [], road: null, roadTop: null, group: null, built: 0 }; }
+  const SHARED = new Set(Object.values(G)); SHARED.add(roofGeo);
+  function clearProvince() { if (prov.group) { scene.remove(prov.group); prov.group.traverse(o => { if (o.geometry && !SHARED.has(o.geometry)) o.geometry.dispose && o.geometry.dispose(); }); } prov = { num: 0, forts: [], segs: [], halo: null, token: null, group: null, built: 0, nextIdx: -1 }; }
 
   // ---- progress -> materials and models
   let lastSnapshot = null;
@@ -205,7 +221,7 @@ export async function createWarTable(app, opts = {}) {
       if (st === 'conquered' && !wasConquered && animate) { dissolve[num] = 0; anims.push({ t: 0, dur: 1.8, fn: k => { dissolve[num] = k; }, done: () => { cap.eagle.position.y = 0; } }); cap.eagle.position.y = 6; anims.push({ t: 0, dur: 1.4, fn: k => { cap.eagle.position.y = 6 * (1 - spring(k)); }, done: () => { cap.eagle.position.y = 0; } }); burstCoins(cap.group.position); app.sound && app.sound('fanfare'); }
       else dissolve[num] = st === 'conquered' ? 1 : 0;
     }
-    const nc = capitals.get(next || 1); token.position.copy(nc.group.position).add(new THREE.Vector3(1.6, 0, 1.1)); token.visible = !!next;
+    const nc = capitals.get(next || 1); token.position.copy(nc.group.position).add(new THREE.Vector3(1.6, 0, 1.1)); token.visible = !!next && mode === 'overview';
     // labels
     labels.set(prov.num ? fortLabels() : ORDER.map(num => { const ch = app.index.chapter.get(num); const pv = PROV[num]; const st = snap[num].st; const p = chapterProgress(app, ch);
       return { id: 'p' + num, name: pv.name, numeral: `Chapter ${ROMAN[num]}`, state: st, next: next === num, priority: next === num ? 3 : st === 'open' ? 2 : 1, pos: world(pv.label[0], pv.label[1], 0.3), status: st === 'conquered' ? 'Conquered' : st === 'locked' ? 'Locked' : `${p.cleared} / ${p.topics} standards` }; }));
@@ -214,7 +230,7 @@ export async function createWarTable(app, opts = {}) {
     lastSnapshot = snap; labelsDirty = true;
     paintColorMap(colorCanvas, geo, { next }); colorTex.needsUpdate = true;
   }
-  function fortLabels() { const ch = app.index.chapter.get(prov.num); return prov.forts.map(f => { const t = f.topic; const solid = t.concepts.filter(cid => masteryOf(cid) >= 3).length; return { id: 'f' + f.index, name: t.title, numeral: `Battle ${ROMAN_SMALL[f.index + 1]}`, state: f.cleared ? 'conquered' : 'open', small: true, priority: 0.5, pos: f.group.position.clone().add(new THREE.Vector3(0, 1.0, 0)), status: f.cleared ? 'Standard planted' : `${solid} / ${t.concepts.length} held`, dy: f.index % 2 ? 46 : -52 }; }).concat([{ id: 'boss', name: `Siege of ${PROV[prov.num].capital}`, numeral: prov.forts.every(f => f.cleared) ? '24 questions · 90% takes the city' : 'Win every battle first', state: chapterProgress(app, ch).boss ? 'conquered' : prov.forts.every(f => f.cleared) ? 'open' : 'locked', small: true, priority: 1.5, pos: capitals.get(prov.num).group.position.clone().add(new THREE.Vector3(0, 2.2, 0)), status: '', dy: -40 }]); }
+  function fortLabels() { const ch = app.index.chapter.get(prov.num); return prov.forts.map(f => { const t = f.topic; const solid = t.concepts.filter(cid => masteryOf(cid) >= 3).length; return { id: 'f' + f.index, name: t.title, numeral: ROMAN_SMALL[f.index + 1], numFirst: true, next: f.isNext, state: f.cleared ? 'conquered' : 'open', small: true, priority: f.isNext ? 1.2 : 0.5, pos: f.group.position.clone().add(new THREE.Vector3(0, 1.0, 0)), status: f.cleared ? 'Standard planted' : `${solid} / ${t.concepts.length} held`, dy: f.index % 2 ? 58 : -62 }; }).concat([{ id: 'boss', name: `Siege of ${PROV[prov.num].capital}`, numeral: 'The capital', numFirst: false, next: prov.nextIdx === -1 && !chapterProgress(app, ch).boss, state: chapterProgress(app, ch).boss ? 'conquered' : prov.forts.every(f => f.cleared) ? 'open' : 'locked', small: true, priority: 2, pos: capitals.get(prov.num).group.position.clone().add(new THREE.Vector3(0, 2.4, 0)), status: chapterProgress(app, ch).boss ? 'Taken' : prov.forts.every(f => f.cleared) ? '24 questions · 90%' : 'Win every battle first', dy: -78 }]); }
   const ROMAN_SMALL = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
   function masteryOf(cid) { return masteryLevel(app.state.concepts[cid]); }
 
@@ -228,7 +244,7 @@ export async function createWarTable(app, opts = {}) {
   const cam = { target: new THREE.Vector3(0, 0.4, 0), dist: 70, pitch: 76, yaw: 0 };
   let camFrom = null, camTo = null, camT = 0, camDur = 1.2, camDone = null;
   function fitOverview() { const fov = camera.fov * Math.PI / 180; const a = camera.aspect || 1; const dW = (W * 0.56) / (Math.tan(fov / 2) * a); const dH = (Hh * 0.62) / Math.tan(fov / 2); return { target: new THREE.Vector3(0, 0.4, 0), dist: Math.max(dW, dH, 20), pitch: 76, yaw: 0 }; }
-  function fitProvince(num) { const [a, b] = provinceBounds(num); const [x0, y0] = proj.toXY(a[0], a[1]); const [x1, y1] = proj.toXY(b[0], b[1]); const cx = (x0 + x1) / 2, cz = -(y0 + y1) / 2; const fov = camera.fov * Math.PI / 180; const asp = camera.aspect || 1; const dW = ((x1 - x0) * 0.7) / (2 * Math.tan(fov / 2) * asp); const dH = ((y1 - y0) * 0.86) / (2 * Math.tan(fov / 2)); return { target: new THREE.Vector3(cx, 0.6, cz + (y1 - y0) * 0.06), dist: Math.max(11, dW, dH), pitch: 47, yaw: -12 }; }
+  function fitProvince(num) { const pts = PROV[num].road.concat([PROV[num].cap]); const a = [Math.min(...pts.map(p => p[0])) - 0.8, Math.min(...pts.map(p => p[1])) - 0.6], b = [Math.max(...pts.map(p => p[0])) + 0.8, Math.max(...pts.map(p => p[1])) + 0.6]; const [x0, y0] = proj.toXY(a[0], a[1]); const [x1, y1] = proj.toXY(b[0], b[1]); const cx = (x0 + x1) / 2, cz = -(y0 + y1) / 2; const fov = camera.fov * Math.PI / 180; const asp = camera.aspect || 1; const dW = ((x1 - x0) * 0.86) / (2 * Math.tan(fov / 2) * asp); const dH = ((y1 - y0) * 1.22) / (2 * Math.tan(fov / 2)); return { target: new THREE.Vector3(cx, 0.6, cz - (y1 - y0) * 0.05), dist: Math.max(9, dW, dH), pitch: 58, yaw: 0 }; }
   function applyCam(extraYaw = 0, extraDist = 0) { const p = (cam.pitch) * Math.PI / 180, y = (cam.yaw + extraYaw) * Math.PI / 180; const d = cam.dist + extraDist; camera.position.set(cam.target.x + Math.sin(y) * Math.cos(p) * d, cam.target.y + Math.sin(p) * d, cam.target.z + Math.cos(y) * Math.cos(p) * d); camera.lookAt(cam.target); }
   function tweenCam(to, dur, done) { camFrom = { target: cam.target.clone(), dist: cam.dist, pitch: cam.pitch, yaw: cam.yaw }; camTo = to; camT = 0; camDur = dur; camDone = done || null; if (dur <= 0) { Object.assign(cam, { dist: to.dist, pitch: to.pitch, yaw: to.yaw }); cam.target.copy(to.target); camFrom = camTo = null; done && done(); } }
 
@@ -236,6 +252,7 @@ export async function createWarTable(app, opts = {}) {
   let mode = 'overview'; let focus = 0; let anims = []; let labelsDirty = true; let hoverId = 0; let hoverFort = null;
   function enterProvince(num, { instant = false } = {}) {
     mode = 'province'; focus = num; buildProvince(num); landUniforms.focusId.value = num;
+    for (const [n, c] of capitals) { c.group.visible = n === num; } roadGroup.visible = false; token.visible = false;
     const to = fitProvince(num); const dur = instant ? 0 : 1.2;
     anims.push({ t: 0, dur: dur || 0.01, fn: k => { landUniforms.dimOthers.value = k * 0.85; } });
     tweenCam(to, dur, () => unfold(instant));
@@ -244,18 +261,18 @@ export async function createWarTable(app, opts = {}) {
   }
   function unfold(instant) {
     if (!prov.group) return;
-    const road = prov.road, top = prov.roadTop; const total = road.geometry.index ? road.geometry.index.count : road.geometry.attributes.position.count; const totalTop = top.geometry.index ? top.geometry.index.count : top.geometry.attributes.position.count;
-    anims.push({ t: 0, dur: instant ? 0.01 : 1.0, fn: k => { road.geometry.setDrawRange(0, Math.floor(total * k)); top.geometry.setDrawRange(0, Math.floor(totalTop * k)); } });
-    prov.forts.forEach((f, i) => { anims.push({ t: -(instant ? 0 : 0.25 + i * 0.14), dur: instant ? 0.01 : 0.6, fn: k => { f.model.scale.set(2, 2 * (0.01 + 0.99 * spring(k)), 2); } }); });
-    const cap = capitals.get(prov.num); anims.push({ t: -(instant ? 0 : 0.4 + prov.forts.length * 0.14), dur: instant ? 0.01 : 0.7, fn: k => { const s = 0.72 + 0.6 * spring(k); cap.model.scale.set(s, s, s); } });
+    prov.segs.forEach((sg, i) => { const total = sg.mesh.geometry.index ? sg.mesh.geometry.index.count : sg.mesh.geometry.attributes.position.count; anims.push({ t: -(instant ? 0 : i * 0.16), dur: instant ? 0.01 : 0.35, fn: k => { sg.mesh.geometry.setDrawRange(0, Math.floor(total * k)); } }); });
+    prov.forts.forEach((f, i) => { anims.push({ t: -(instant ? 0 : 0.2 + i * 0.16), dur: instant ? 0.01 : 0.6, fn: k => { f.model.scale.set(2.4, 2.4 * (0.01 + 0.99 * spring(k)), 2.4); } }); });
+    const cap = capitals.get(prov.num); anims.push({ t: -(instant ? 0 : 0.3 + prov.forts.length * 0.16), dur: instant ? 0.01 : 0.7, fn: k => { const s = 0.72 + 0.55 * spring(k); cap.model.scale.set(s, s, s); } });
     app.sound && !instant && app.sound('unroll');
     labelsDirty = true;
   }
   function leaveProvince({ instant = false } = {}) {
     const cap = prov.num ? capitals.get(prov.num) : null;
     mode = 'overview'; focus = 0;
+    for (const c of capitals.values()) c.group.visible = true; roadGroup.visible = true;
     anims.push({ t: 0, dur: instant ? 0.01 : 0.6, fn: k => { landUniforms.dimOthers.value = (1 - k) * 0.85; }, done: () => { landUniforms.focusId.value = 0; } });
-    if (cap) anims.push({ t: 0, dur: instant ? 0.01 : 0.5, fn: k => { const s = 1.32 - 0.6 * k; cap.model.scale.set(s, s, s); } });
+    if (cap) anims.push({ t: 0, dur: instant ? 0.01 : 0.5, fn: k => { const s = 1.27 - 0.55 * k; cap.model.scale.set(s, s, s); } });
     clearProvince();
     tweenCam(fitOverview(), instant ? 0 : 1.1);
     refresh({ animate: false });
@@ -310,6 +327,8 @@ export async function createWarTable(app, opts = {}) {
     // triremes
     for (const tr of triremes) { tr.t = (tr.t + dt * 0.012) % 1; const p = tr.curve.getPointAt(tr.t); const q = tr.curve.getPointAt((tr.t + 0.01) % 1); tr.mesh.position.set(p.x, 0.02 + Math.sin(uTime.value * 1.3 + tr.t * 20) * 0.03, p.z); tr.mesh.lookAt(q.x, tr.mesh.position.y, q.z); tr.mesh.rotation.z = Math.sin(uTime.value * 1.1 + tr.t * 9) * 0.05; }
     token.position.y = capitals.get(nextIsland(app) || 1).group.position.y + Math.sin(uTime.value * 2.2) * 0.04;
+    if (prov.halo) { const k = 1 + 0.12 * Math.sin(uTime.value * 3); prov.halo.scale.set(k, k, 1); prov.halo.material.opacity = 0.55 + 0.35 * Math.sin(uTime.value * 3); }
+    if (prov.token) prov.token.position.y = Math.sin(uTime.value * 2.2) * 0.05;
     // coins
     if (coinLife > 0) { coinLife -= dt; for (let i = 0; i < coinN; i++) { const v = coinVel[i]; v.y -= 14 * dt; coinPos[i * 3] += v.x * dt; coinPos[i * 3 + 1] = Math.max(0.05, coinPos[i * 3 + 1] + v.y * dt); coinPos[i * 3 + 2] += v.z * dt; if (coinPos[i * 3 + 1] <= 0.06 && v.y < 0) v.y = -v.y * 0.35; } coinGeo.attributes.position.needsUpdate = true; coins.material.opacity = Math.min(1, coinLife); } else coins.material.opacity = 0;
     seaMat.uniforms.camPos.value = camera.position;

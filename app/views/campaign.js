@@ -71,12 +71,20 @@ function island(app, ch) {
   const sheet = h('div', { class: 'level-sheet' });
   const use3d = wantsTable(app);
   const mapFrame = h('div', { class: 'map-frame' + (use3d ? ' map-3d loading' : '') });
+  const RS = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+  const allCleared = ch.topics.every(t => topicCleared(app, t));
+  const nextIdx = ch.topics.findIndex(t => !topicCleared(app, t));
+  const strip = h('div', { class: 'road-strip', role: 'list', 'aria-label': 'The road through the province' },
+    ch.topics.map((t, i) => { const cleared = topicCleared(app, t); return h('button', { class: 'rs-node' + (cleared ? ' done' : '') + (i === nextIdx ? ' next' : ''), type: 'button', role: 'listitem', title: t.title, onClick: () => { app.sound('knock'); sheet.dataset.user = '1'; showSheet(t, i); } },
+      h('span', { class: 'rs-top' }, h('span', { class: 'rs-num' }, RS[i + 1]), icon(cleared ? 'standard' : 'gate', { size: 15, tone: cleared ? 'crimson' : 'bronze' })), h('span', { class: 'rs-title' }, t.title), h('span', { class: 'rs-state' }, cleared ? 'Standard planted' : i === nextIdx ? 'Next battle' : 'Ahead')); }),
+    h('button', { class: 'rs-node siege' + (prog.boss ? ' done' : allCleared ? ' next' : ' locked'), type: 'button', role: 'listitem', onClick: () => onBoss() },
+      h('span', { class: 'rs-top' }, icon('siegetower', { size: 16, tone: 'gold' })), h('span', { class: 'rs-title' }, `Siege of ${isl?.capital || 'the capital'}`), h('span', { class: 'rs-state' }, prog.boss ? 'City taken' : allCleared ? 'Lay siege · 90% takes the city' : 'Win every battle first')));
   const page = h('div', { class: 'island-page', style: { '--ch': ch.color } },
     h('a', { class: 'back', href: '#/campaign' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Back to the map of provinces'),
     h('div', { class: 'page-head mt-sm' },
       h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ROMAN[ch.chapter]} · Provincia ${isl?.name || ''}`), h('h1', { class: 'row' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 30, tone: 'gold' }), ch.title), h('p', null, `${ch.topics.length} battles on the road, ${ch.concepts.length} strongholds. ${prog.cleared}/${ch.topics.length} standards planted${prog.boss ? `, ${isl?.capital || 'the capital'} taken.` : '.'}`)),
       h('div', { class: 'row wrap' }, h('a', { class: 'btn ghost', href: `#/learn/${ch.chapter}` }, icon('scroll', { size: 16, tone: 'gold' }), 'Scrolls'), h('a', { class: 'btn ghost', href: `#/drill/chapter/${ch.chapter}` }, icon('gladius', { size: 16, tone: 'gold' }), 'Drill province'))),
-    mapFrame, sheet);
+    strip, mapFrame, sheet);
   function showSheet(t, i) {
     const cleared = topicCleared(app, t);
     sheet.innerHTML = '';
