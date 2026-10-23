@@ -134,10 +134,10 @@
   "difficulty": 2,
   "stem": "A Calgary craft brewery makes and sells beer. Which of its purchases is NOT a production good?",
   "options": [
-   "Hops",
+   "Hops added to every batch during the boil",
    "A new brewhouse building with fixed brewing tanks",
-   "Brewer's yeast",
-   "Malted barley"
+   "Brewer's yeast used to ferment the beer",
+   "Malted barley that is brewed into the beer"
   ],
   "answer": 1,
   "explanation": "The building and fixed tanks are an installation - a support good that assists production. Barley, hops and yeast become part of the beer, so they are raw materials, which are production goods.",
@@ -602,7 +602,7 @@
   "difficulty": 2,
   "stem": "Endy, an online mattress company, finds many shoppers doubt that a mattress shipped in a box can be comfortable. Using the idea that brands provide an 'educational' opportunity, Endy should:",
   "options": [
-   "Teach shoppers why they should care - explaining how the mattress is made and why it performs - to reshape perceptions",
+   "Teach shoppers why they should care by explaining how the mattress is made and performs",
    "License its name to a furniture retailer to escape the negative perceptions",
    "Stop advertising and let the mattress's features speak for themselves",
    "Cut its price below every competitor so that perceptions no longer matter"

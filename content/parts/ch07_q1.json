@@ -64,10 +64,10 @@
   "difficulty": 2,
   "stem": "Ravi tells his study group, 'Products and brands are the same thing - Lululemon is a product.' Which response best corrects him?",
   "options": [
-   "A product is built by marketing activity, while a brand appears on its own once sales begin",
+   "A product needs to be developed and nurtured by marketing, while a brand forms on its own once sales begin",
    "A product is the bundle of attributes that satisfies a need; a brand is the name, symbol or design that distinguishes it from competitors",
-   "A brand is the bundle of tangible attributes, while a product is the image consumers hold",
-   "A product is always a physical good, while a brand is always a service or an idea"
+   "A brand is the bundle of tangible attributes that satisfies a need; a product is the image consumers hold of it",
+   "A product is always a physical good that can be touched, while a brand is always a service or an idea"
   ],
   "answer": 1,
   "explanation": "The product is the good, service or idea (the leggings) with its bundle of attributes; the brand (Lululemon) is the name, symbol or design that distinguishes it and must be developed and nurtured by marketing. Products aren't limited to physical goods, and brands don't arise on their own.",
@@ -160,7 +160,7 @@
    "Online FAQs and service videos - actual product"
   ],
   "answer": 1,
-  "explanation": "In Figure 7-2 the core is the benefit (transportation and leisure); features such as 10 speeds, alloy wheels, the padded seat and branding make up the actual product; and the warranty, repair facilities, online FAQs and service videos are augmented. Each wrong option shifts an item one layer off.",
+  "explanation": "In Figure 7-2 the core is the benefit (transportation and leisure); features such as 10 speeds, alloy wheels, the padded seat and branding make up the actual product; and the warranty, repair facilities, online FAQs and service videos are augmented. The other pairings each put an item one layer off: the seat and frame and the speeds and wheels are actual, and the FAQs and videos are augmented.",
   "source": "generated"
  },
  {
