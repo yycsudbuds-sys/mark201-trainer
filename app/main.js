@@ -8,6 +8,8 @@ import * as Audio from './audio.js';
 import { SceneDirector, sceneForRoute } from './scene-director.js';
 import { icon } from './icons.js';
 import { getDenarii } from './cosmetic.js';
+import { brazier, clepsydra, legionaryAvatar } from './legion.js';
+import { ceremony } from './cutscene.js';
 import * as Home from './views/home.js';
 import * as Campaign from './views/campaign.js';
 import * as Drill from './views/drill.js';
@@ -71,7 +73,7 @@ const app = {
     }
     const lvBefore = levelForXp(this.state.xp - res.xp).index;
     const lvAfter = levelForXp(this.state.xp).index;
-    if (lvAfter > lvBefore) { toast(`Promotion! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('fanfare'); }
+    if (lvAfter > lvBefore) { toast(`Promotion! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('fanfare'); if (this.state.settings.briefings !== false) setTimeout(() => ceremony(this, LEVELS[lvAfter]), 900); }
     const unlocked = checkAchievements(this);
     for (const a of unlocked) { toast(`Honour earned: ${a.title}`, 'xp', 3000); }
     this.store.save();
@@ -125,19 +127,18 @@ export function renderHeader() {
   const st = app.state;
   const lv = levelForXp(st.xp);
   const r = readiness(app.content, st);
-  const streak = app.store.streakDays();
   headerEl.appendChild(h('div', { class: 'row wrap' },
     h('div', { class: 'xpbar' },
       h('span', { class: 'level-pill' }, `Lv ${lv.number} · ${lv.title}`),
       bar(lv.progress, { color: 'var(--accent)', height: 6 }),
       h('span', { class: 'mono small muted' }, lv.next ? `${st.xp} / ${lv.next.xp} XP` : `${st.xp} XP`)),
-    h('span', { class: 'chip' }, icon('flame', { size: 14, tone: 'gold' }), `${streak} day${streak === 1 ? '' : 's'}`),
+    brazier(app), clepsydra(app),
     h('span', { class: 'chip', title: 'Test readiness estimate' }, icon('scutum', { size: 14, tone: 'gold' }), `Test Readiness ${Math.round(r.score * 100)}%`),
     h('span', { class: 'chip denarii', title: 'Denarii: cosmetic coin from answers, pursuits and wagers', dataset: { denarii: '1' } }, icon('coin', { size: 14, tone: 'gold' }), `${getDenarii()}`),
   ));
   headerEl.appendChild(h('div', { class: 'row' },
     volumeControl(),
-    h('a', { class: 'btn sm ghost', href: '#/settings' }, icon('person', { size: 16, tone: 'gold' }), st.name),
+    h('a', { class: 'btn sm ghost you', href: '#/settings' }, legionaryAvatar(26), st.name),
   ));
   const due = dueCount(app.content, st);
   navEl.querySelectorAll('[data-due]').forEach(b => { b.textContent = due ? `${due} due` : ''; b.classList.toggle('hidden', !due); });
@@ -197,6 +198,7 @@ function applySettings() {
   if (app.director) { app.director.refreshTheme(); if (app.state?.settings?.sound === false) Audio.ambience(null); else { try { const { key, params } = parseHash(); const sc = sceneForRoute(ROUTES[key] ? key : 'home', params); Audio.ambience(sc.amb || null); } catch { /* cosmetic */ } } }
 }
 app.applySettings = applySettings;
+app.renderHeader = renderHeader;
 
 function welcome() {
   clear(root);

@@ -15,7 +15,7 @@ with sync_playwright() as p:
     pg.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
     pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.store.flush(); }")
     # 1. a figure question: drill the PLC stage table concept until a stem mentions Figure 8-3
     pg.goto(BASE + "#/drill/concepts/c08-plc-stage-table,c08-maturity", wait_until="load"); pg.wait_for_timeout(600)
@@ -45,7 +45,7 @@ with sync_playwright() as p:
     pg.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
     pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; const t = a.content.chapters[0].topics[0]; a.state.campaign.topics[t.id] = { cleared: Date.now() }; a.store.flush(); }")
     pg.goto(BASE + "#/campaign/1", wait_until="load")
     pg.wait_for_selector(".wartable-canvas", timeout=30000); pg.wait_for_timeout(3200)

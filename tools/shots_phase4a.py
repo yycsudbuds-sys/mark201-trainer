@@ -28,7 +28,7 @@ with sync_playwright() as p:
     pg.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
     pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.store.flush(); }")
     ids = pg.evaluate("""() => { const a = window.__app; const out = { tf: [], fill: [], calc: [], order: null, match: null };
       for (const ch of a.content.chapters) { for (const q of ch.questions) { if (q.type === 'tf' && out.tf.length < 2) out.tf.push(q.concept); if (q.type === 'fill' && out.fill.length < 2) out.fill.push(q.concept); if (q.angle === 'calc' && out.calc.length < 2) out.calc.push(q.concept); }

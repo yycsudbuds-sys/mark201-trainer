@@ -24,7 +24,7 @@ with sync_playwright() as p:
         if pg.locator("input[type=text]").count():
             pg.fill("input[type=text]", "Austin")
             pg.click("text=Join the legion")
-            pg.wait_for_selector(".hq")
+            pg.wait_for_selector(".castra, .hq")
         pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.store.flush(); }")
         for name, route in ROUTES:
             pg.goto(BASE + route, wait_until="load")

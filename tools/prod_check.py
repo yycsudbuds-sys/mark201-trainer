@@ -7,7 +7,7 @@ with sync_playwright() as p:
     pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
     pg.on("pageerror", lambda e: errors.append(str(e)))
     pg.goto(BASE, wait_until="load"); pg.wait_for_selector("input[type=text]", timeout=20000)
-    pg.fill("input[type=text]", "Prod"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq"); pg.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
+    pg.fill("input[type=text]", "Prod"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq"); pg.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
     print("content version:", pg.evaluate("window.__app.content.version"), "questions:", pg.evaluate("window.__app.content.stats.questions"))
     pg.wait_for_timeout(1500)
     print("service worker:", pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r ? (r.active ? 'active' : 'installing') : 'none')"))
@@ -28,7 +28,7 @@ with sync_playwright() as p:
     ctx.set_offline(True)
     try:
         pg.reload(wait_until="load"); pg.wait_for_timeout(800)
-        print("offline reload ok, hero present:", pg.locator(".hq").count() > 0)
+        print("offline reload ok, hero present:", pg.locator(".castra, .hq").count() > 0)
     except Exception as e:
         print("offline reload failed:", str(e)[:120])
     ctx.set_offline(False)

@@ -28,6 +28,7 @@ const ACH_ICON = {
 import { readiness, chapterMastery, weakestConcepts, ANGLE_LABELS, MASTERY_LABELS, levelForXp } from '../engine.js';
 import { ACHIEVEMENTS } from '../achievements.js';
 import { shelfMap } from './common.js';
+import { rankLadder, phalerae, legionGround } from '../legion.js';
 
 export function render(app) {
   const st = app.state;
@@ -52,7 +53,8 @@ export function render(app) {
         h('span', { class: 'mono small muted', style: { width: '190px' } }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} ${m.dist[2]} · ${m.pursuits ? m.pursuits + ' ' : ''}`, m.pursuits ? icon('target', { size: 14, tone: 'mono' }) : null, `${m.pursuits ? ' · ' : ''}${Math.round(m.score * 100)}%`),
         h('a', { class: 'btn sm ghost', href: `#/drill/chapter/${ch.chapter}` }, 'Drill')))),
       h('p', { class: 'tiny muted mt-sm' }, icon('laurel', { size: 14, tone: 'gold' }), ' mastered · ', icon('check', { size: 14, tone: 'mono' }), ' solid · learning · ', icon('target', { size: 14, tone: 'mono' }), ' open pursuits')),
-    h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'The Armoury')), shelfMap(app)),
+    h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'Cursus honorum'), rankLadder(app)),
+    h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Your legion')), legionGround(app)),
     h('div', { class: 'grid two' },
       h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Weakest strongholds'),
         weakest.length ? h('div', { class: 'list' }, weakest.map(w => h('div', { class: 'li', style: { '--ch': w.chapter.color } },
@@ -66,8 +68,7 @@ export function render(app) {
           days.length ? h('div', null, h('div', { class: 'spark', style: { '--ch': 'var(--accent)' } }, days.map(([d, v]) => h('span', { title: `${d}: ${v.answered} answered, ${v.xp} XP`, style: { height: Math.max(6, Math.min(100, v.answered / Math.max(1, Math.max(...days.map(x => x[1].answered))) * 100)) + '%' } }))), h('div', { class: 'row between tiny muted mt-sm' }, h('span', null, days[0][0]), h('span', null, days[days.length - 1][0]))) : h('p', { class: 'muted small' }, 'No study days yet.')),
         h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Great battles'),
           exams.length ? h('div', { class: 'list' }, exams.slice().reverse().map(e => h('div', { class: 'li' }, h('b', { style: { color: e.score >= 0.9 ? 'var(--good)' : e.score >= 0.7 ? 'var(--accent)' : 'var(--bad)' } }, `${Math.round(e.score * 100)}%`), h('span', { class: 's' }, `${e.correct}/${e.n} · ${fmtTime(e.durationSec)} · ${timeAgo(e.t)}`)))) : h('p', { class: 'muted small' }, 'Run a midterm simulation to see history here.')))),
-    h('div', null, h('div', { class: 'page-head' }, h('h2', null, `Honours · ${Object.keys(st.achievements).length}/${ACHIEVEMENTS.length}`)),
-      h('div', { class: 'grid four' }, ACHIEVEMENTS.map(a => h('div', { class: 'ach' + (st.achievements[a.id] ? '' : ' locked') }, h('div', { class: 'ico' }, icon(ACH_ICON[a.id] || 'laurel', { size: 26, tone: st.achievements[a.id] ? 'gold' : 'iron' })), h('div', null, h('div', { class: 't' }, a.title), h('div', { class: 's' }, a.desc)))))));
+    h('div', null, h('div', { class: 'page-head' }, h('h2', null, `Phalerae · ${Object.keys(st.achievements).length}/${ACHIEVEMENTS.length}`)), phalerae(app)));
 }
 
 function stackedBar(dist, color) {

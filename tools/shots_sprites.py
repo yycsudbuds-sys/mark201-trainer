@@ -23,7 +23,7 @@ with sync_playwright() as p:
     pg.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
     pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     for prov in PROVINCES:
         name = pg.evaluate(MAKE, [prov, "field", 0]); pg.wait_for_timeout(500)
         pg.evaluate("window.__band.advance(1)"); pg.wait_for_timeout(380)

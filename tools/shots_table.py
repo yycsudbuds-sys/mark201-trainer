@@ -12,7 +12,7 @@ errors = []
 def setup(pg, cosmetic=None):
     pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.store.flush(); }")
     if cosmetic is not None:
         pg.evaluate("(c) => localStorage.setItem('mark201.cosmetic.v1', JSON.stringify(Object.assign(JSON.parse(localStorage.getItem('mark201.cosmetic.v1') || '{}'), c)))", cosmetic)

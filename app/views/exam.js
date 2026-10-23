@@ -70,7 +70,11 @@ function result(app, rec) {
   const pct = Math.round(rec.score * 100);
   const chRows = Object.entries(rec.byChapter).sort((a, b) => a[0] - b[0]).map(([chn, v]) => {
     const ch = app.index.chapter.get(parseInt(chn, 10));
-    return h('div', { class: 'bar-row' }, h('span', { class: 'bar-label' }, `Ch ${chn} ${ch?.short || ''}`), h('div', { class: 'row' }, h('div', { class: 'bar', style: { height: '10px' } }, h('div', { class: 'bar-fill', style: { width: (v.c / v.n * 100) + '%', background: ch?.color || 'var(--accent)' } })), h('span', { class: 'mono small', style: { width: '48px', textAlign: 'right' } }, `${v.c}/${v.n}`)));
+    const held = v.c / v.n >= 0.8; const missed = [...new Set(rec.log.filter(l => !l.correct && app.questionOf(l.qid)?.chapter.chapter === parseInt(chn, 10)).map(l => app.questionOf(l.qid).question.concept))];
+    return h('div', { class: 'casualty ' + (held ? 'held' : 'broke'), style: { '--ch': ch?.color || 'var(--accent)' } },
+      h('span', { class: 'cas-ico' }, icon(held ? 'standard' : 'shieldcrack', { size: 20, tone: held ? 'crimson' : 'iron' })),
+      h('div', { class: 'grow' }, h('div', { class: 'row between wrap' }, h('b', null, `Ch ${chn} · ${ch?.title || ''}`), h('span', { class: 'cas-state' }, held ? 'Held' : 'Broke')), h('div', { class: 'bar', style: { height: '8px' } }, h('div', { class: 'bar-fill', style: { width: (v.c / v.n * 100) + '%', background: held ? 'var(--laurel)' : 'var(--pompeian)' } })), h('div', { class: 'tiny muted' }, `${v.c}/${v.n} correct`)),
+      missed.length ? h('a', { class: 'btn sm', href: `#/drill/concepts/${missed.join(',')}` }, icon('swords', { size: 12, tone: 'gold' }), ' Weak Flank') : h('span', { class: 'chip good' }, icon('laurel', { size: 12, tone: 'laurel' }), 'Clean'));
   });
   const missConcepts = [...new Set(rec.misses.map(m => app.questionOf(m)?.question.concept).filter(Boolean))];
   let filter = 'wrong';
@@ -91,8 +95,10 @@ function result(app, rec) {
   };
   drawList();
   const seg = h('div', { class: 'seg' }, h('button', { class: 'on', onClick: e => { filter = 'wrong'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, `Ground lost (${rec.misses.length})`), h('button', { onClick: e => { filter = 'all'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, 'All questions'));
-  return h('div', { class: 'runner stack', style: { gap: '1.2rem' } },
-    h('div', { class: 'card center' },
+  return h('div', { class: 'runner stack report', style: { gap: '1.2rem' } },
+    h('div', { class: 'scroll report-scroll' }, h('div', { class: 'scroll-roller top', 'aria-hidden': 'true' }), h('div', { class: 'scroll-paper' },
+    h('div', { class: 'center' },
+      h('div', { class: 'eyebrow' }, 'Battle report'),
       h('div', { class: 'eyebrow' }, rec.reason === 'time' ? 'The sun set on the field' : 'The field is cleared'),
       h('div', { class: 'score-big', style: { color: pct >= 90 ? 'var(--good)' : pct >= 70 ? 'var(--accent)' : 'var(--bad)' } }, `${pct}%`),
       h('p', { class: 'muted' }, `${rec.correct} of ${rec.n} · ${fmtTime(rec.durationSec)}${rec.answered < rec.n ? ` · ${rec.n - rec.answered} unanswered` : ''}`),
@@ -100,7 +106,7 @@ function result(app, rec) {
       h('div', { class: 'row wrap mt', style: { justifyContent: 'center' } },
         missConcepts.length ? h('a', { class: 'btn primary big', href: `#/drill/concepts/${missConcepts.join(',')}` }, icon('swords', { size: 16, tone: 'mono' }), ` Retake ${missConcepts.length} lost stronghold${missConcepts.length === 1 ? '' : 's'}`) : null,
         h('a', { class: 'btn', href: '#/exam' }, 'Another battle'), h('a', { class: 'btn ghost', href: '#/home' }, 'Castra'))),
-    h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'By province'), h('div', { class: 'stack' }, chRows)),
+    h('h3', { class: 'mt' }, 'Casualty map'), h('p', { class: 'small muted' }, 'A province held when four of five answers were right. Broken provinces link straight to the Weak Flank drill for the concepts that fell.'), h('div', { class: 'stack casualties' }, chRows)), h('div', { class: 'scroll-roller bottom', 'aria-hidden': 'true' })),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Debrief'), seg), list));
 }
 

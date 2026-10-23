@@ -6,6 +6,7 @@
 // Everything here is cosmetic and driven only by calls from the runner (advance/setback/hit/miss/breach/win).
 import { h } from './ui.js';
 import { commanderFor, portraitSvg } from './commanders.js';
+import { getCosmetic } from './cosmetic.js';
 
 const H = 220;            // logical height of the scene
 const GROUND = 200;       // y of the front rank's feet
@@ -55,9 +56,9 @@ function scutum(ctx, x0, y0, w, hgt, fill, emblem = true) {
 function spear(ctx, x, y1, y2, tip = '#D9D4C8', w = 1.3) { ctx.strokeStyle = '#B9B2A5'; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x, y1); ctx.lineTo(x, y2); ctx.stroke(); P(ctx, tip, c => { c.moveTo(x, y1 - 7); c.lineTo(x + 2, y1); c.lineTo(x - 2, y1); }); }
 function legionary(ctx, o = {}) {
   const tunic = o.tunic || RED;
-  legs(ctx); body(ctx, tunic); // lorica segments
+  legs(ctx); if (o.cloak) P(ctx, o.cloak, x => { x.moveTo(-9, -36); x.lineTo(-14, -6); x.lineTo(-2, -10); x.lineTo(-4, -36); }); body(ctx, tunic); // lorica segments
   ctx.strokeStyle = IRON; ctx.lineWidth = 1.2; for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.moveTo(-6, -34 + i * 4); ctx.lineTo(6, -34 + i * 4); ctx.stroke(); }
-  headAt(ctx, o.skin || SKIN); galea(ctx, -44, true, GOLD);
+  headAt(ctx, o.skin || SKIN); galea(ctx, -44, true, GOLD); if (o.crest) P(ctx, o.crest, x => { x.moveTo(-6, -49); x.quadraticCurveTo(0, -60, 6, -49); x.quadraticCurveTo(0, -52, -6, -49); });
   if (o.testudo) { // shield held flat overhead
     scutum(ctx, -16, -60, 32, 10, o.shield || RED, false);
   } else {
@@ -149,7 +150,10 @@ function sprite(key, painter, px, w = 110, hgt = 140, ox = 55, oy = 136, flip = 
 }
 
 // ---------------------------------------------------------------- the battle
+const HERO_COLORS = { red: '#8B1E1E', white: '#F0E1BC', black: '#1A1410', gold: '#C9A227', purple: '#66023C', green: '#4F6A3F' };
+let HERO = { crest: '#8B1E1E', cloak: null };
 export function createBattle({ province = 'default', mode = 'field', needed = 0, motion = true, chapter = null } = {}) {
+  try { const eq = getCosmetic().equipped || {}; HERO = { crest: HERO_COLORS[eq.crest] || '#8B1E1E', cloak: eq.cloak && eq.cloak !== 'red' ? HERO_COLORS[eq.cloak] : null }; } catch { HERO = { crest: '#8B1E1E', cloak: null }; }
   const en = ENEMY[province] || ENEMY.default;
   const cmd = mode === 'siege' ? commanderFor(province) : null;
   const root = h('div', { class: 'battle-band canvas' + (mode === 'siege' ? ' siege' : ''), 'aria-hidden': 'true' });
@@ -187,6 +191,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
       for (let i = 0; i < legN; i++) units.push({ side: 'leg', type: 'legionary', x: 56 + i * 50 - r * 18, y, sc, rank: r, ph: R() * 6.28, fall: 0, dx: 0, alpha: 1, v: 0 });
       for (let i = 0; i < enN; i++) units.push({ side: 'en', type: en.unit, variant: (i % 4 === 1 && r === 2) ? 1 : 0, x: LW - 66 - i * 52 + r * 16, y, sc, rank: r, ph: R() * 6.28, fall: 0, dx: 0, alpha: 1, v: 0 });
     });
+    const lead = units.find(u => u.side === 'leg' && u.rank === 2); if (lead) lead.hero = true;
     const fx = 56 + legN * 50 + 10;
     units.push({ side: 'leg', type: 'signifer', x: fx, y: 204, sc: 1.2, rank: 2, ph: 1, fall: 0, dx: 0, alpha: 1 });
     units.push({ side: 'leg', type: 'aquilifer', x: fx + 46, y: 204, sc: 1.2, rank: 2, ph: 2, fall: 0, dx: 0, alpha: 1 });
@@ -355,7 +360,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
         if (u.fall) { const k = Math.min(1, u.fall * 2.4); rot = (u.side === 'leg' ? -1 : 1) * k * 1.35; y += k * 6; if (u.fall > 2.0) alpha *= Math.max(0, 1 - (u.fall - 2.0) / 0.6); }
         if (u.rout) rot = Math.sin(S.t * 18 + u.ph) * 0.12;
         const flip = u.side === 'en';
-        if (u.type === 'legionary') blit(testudo ? 'leg-t' : 'leg', c => legionary(c, { testudo }), x, y, u.sc, false, rot, alpha);
+        if (u.type === 'legionary') { if (u.hero) blit(testudo ? 'hero-t' : 'hero', c => legionary(c, { testudo, crest: HERO.crest, cloak: HERO.cloak }), x, y, u.sc * 1.12, false, rot, alpha); else blit(testudo ? 'leg-t' : 'leg', c => legionary(c, { testudo }), x, y, u.sc, false, rot, alpha); }
         else if (u.type === 'signifer') blit('sig', signifer, x, y, u.sc, false, rot, alpha);
         else if (u.type === 'aquilifer') blit('aq', aquilifer, x, y, u.sc, false, rot, alpha);
         else blit(u.type + (u.variant || 0), c => ENEMY_PAINT[u.type](c, en, u.variant || 0), x, y, u.sc, flip, rot, alpha);

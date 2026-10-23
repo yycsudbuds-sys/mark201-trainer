@@ -57,7 +57,7 @@ with sync_playwright() as p:
     page.wait_for_selector("input[type=text]")
     page.fill("input[type=text]", "Tester")
     page.click("text=Join the legion")
-    page.wait_for_selector(".hq")
+    page.wait_for_selector(".castra, .hq")
     page.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; s.settings.motion = false; window.__app.store.flush(); window.__app.applySettings(); })()")
     shot(page, "01_home")
 
@@ -188,7 +188,7 @@ with sync_playwright() as p:
     if m.locator("input[type=text]").count():
         m.fill("input[type=text]", "Mobile")
         m.click("text=Join the legion")
-        m.wait_for_selector(".hq")
+        m.wait_for_selector(".castra, .hq")
         m.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
     m.screenshot(path=os.path.join(SHOTS, "29_mobile_home.png"), full_page=True)
     m.goto(BASE + "#/drill", wait_until="load")

@@ -4,7 +4,7 @@ import { masteryLevel, buildExam } from '../engine.js';
 import { worldMap, islandTrail, chapterProgress, nextIsland, ISLANDS, provinceState, ROMAN, zoomToProvince } from '../map.js';
 import { PROVINCE_SCENE } from '../scenes.js';
 import { icon, CHAPTER_ICON } from '../icons.js';
-import { getCosmetic } from '../cosmetic.js';
+import { getCosmetic, addDenarii } from '../cosmetic.js';
 import { warBriefing, triumph } from '../cutscene.js';
 import { createLesson } from './lesson.js';
 import { createRunner, resultCard, missesList } from './runner.js';
@@ -153,7 +153,7 @@ function checkpoint(app, ch, t) {
       const cleared = topicConceptsSolid(app, t);
       const rec = app.state.campaign.topics[t.id] || (app.state.campaign.topics[t.id] = {});
       let first = false;
-      if (cleared && !rec.cleared) { rec.cleared = Date.now(); first = true; app.grantXp(100, 'standard planted'); app.confetti({ colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); app.sound('horn'); }
+      if (cleared && !rec.cleared) { rec.cleared = Date.now(); first = true; app.grantXp(100, 'standard planted'); addDenarii(20, 'standard'); app.confetti({ colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); app.sound('horn'); }
       else if (cleared) rec.lastCleared = Date.now();
       app.store.save();
       host.innerHTML = '';
@@ -202,7 +202,7 @@ function boss(app, ch) {
       if (complete) rec.best = Math.max(rec.best || 0, score);
       const won = complete && score >= 0.9;
       const first = won && !rec.cleared;
-      if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); }
+      if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); addDenarii(50, 'conquest'); }
       else if (won) { app.grantXp(100, 'the city holds for Rome'); }
       app.store.save();
       const show = () => {

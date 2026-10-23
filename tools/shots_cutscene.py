@@ -13,7 +13,7 @@ with sync_playwright() as p:
         pg = ctx.new_page()
         pg.goto(BASE, wait_until="load"); pg.wait_for_timeout(300)
         if pg.locator("input[type=text]").count():
-            pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+            pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
         pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = true; a.store.flush(); }")
         pg.goto(BASE + "#/campaign/1/t01-1/drill", wait_until="load")
         pg.wait_for_selector(".cutscene.show", timeout=8000); pg.wait_for_timeout(1400)

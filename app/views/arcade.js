@@ -6,6 +6,8 @@ import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
 import { conceptCard, masteryChip, figureEl } from './concept.js';
 import { icon } from '../icons.js';
+import { setCosmetic } from '../cosmetic.js';
+import { dayKeyOf } from '../legion.js';
 
 export function render(app, params) {
   const [sub, arg] = params;
@@ -54,6 +56,7 @@ function blitz(app) {
       else { combo = 0; scoreEl.children[2].textContent = 'multiplier ×1.0'; }
     },
     onFinish: (sum, reason) => {
+      setCosmetic({ lastBlitzDay: dayKeyOf() });
       const best = app.state.stats.blitzBest || 0;
       if (score > best) { app.state.stats.blitzBest = score; app.toast('New skirmish record!', 'xp'); app.confetti({ count: 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A'] }); }
       app.grantXp(Math.round(score / 20), 'skirmish');
@@ -86,15 +89,21 @@ function duelConfig(app) {
 function duel(app) {
   const chapters = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   const host = h('div', { style: { '--ch': '#A78BFA' } });
+  let favour = 6; let lastT = Date.now();
+  const favourEl = h('div', { class: 'favour' }, h('span', { class: 'eyebrow' }, icon('hand', { size: 14, tone: 'gold' }), 'Crowd favour'), h('span', { class: 'favour-track' }, h('span', { class: 'favour-fill', style: { width: (favour / 20 * 100) + '%' } })), h('span', { class: 'small muted favour-txt' }, 'The crowd waits'));
+  host.appendChild(favourEl);
   const runner = createRunner(app, {
     title: 'Gladiator Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', scene: 'colosseum', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
     pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false },
+    onAnswer: ({ correct }) => { const dt = Date.now() - lastT; lastT = Date.now(); favour = Math.max(0, Math.min(20, favour + (correct ? (dt < 8000 ? 2 : 1) : -2))); favourEl.querySelector('.favour-fill').style.width = (favour / 20 * 100) + '%'; favourEl.querySelector('.favour-txt').textContent = favour >= 14 ? 'The crowd roars' : favour >= 8 ? 'The crowd is with you' : 'The crowd murmurs'; if (correct && dt < 8000) app.sound('cries'); },
     onFinish: (sum, reason) => {
+      const up = favour >= 10; setTimeout(() => app.sound('thumbs', { up }), 400);
       if (sum.correct > (app.state.stats.duelBest || 0)) { app.state.stats.duelBest = sum.correct; app.toast('New Duel best!', 'xp'); }
       app.grantXp(sum.correct * 8, 'duel');
       app.store.save();
       host.innerHTML = '';
-      host.append(resultCard(app, reason === 'hearts' ? 'Defeated' : 'Duel over', sum,
+      host.append(h('div', { class: 'verdict-box ' + (up ? 'up' : 'down') }, h('div', { class: 'emperor-thumb' }), h('div', null, h('div', { class: 'eyebrow' }, 'The emperor decides'), h('h3', null, up ? 'Pollice verso: live, gladiator' : 'Pollice verso: the crowd was not moved'), h('p', { class: 'small muted' }, `Crowd favour ${favour}/20. Fast, correct answers win the crowd.`))),
+        resultCard(app, reason === 'hearts' ? 'Defeated' : 'Duel over', sum,
         h('div', { class: 'row wrap mt', style: { justifyContent: 'center' } }, h('a', { class: 'btn primary', href: '#/arcade/duel/go' }, 'Rematch'), h('a', { class: 'btn ghost', href: '#/arcade' }, 'Arcade'))),
       sum.log.some(l => !l.correct) ? h('div', { class: 'mt' }, h('h3', { class: 'mb' }, 'Misses'), missesList(app, sum.log)) : null);
     },

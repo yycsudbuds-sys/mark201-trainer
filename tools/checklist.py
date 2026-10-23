@@ -26,7 +26,7 @@ with sync_playwright() as p:
     print("first load:", nav)
     check("home load under 1.5 s locally", (nav["loadMs"] or 9999) < 1500, f"{nav['loadMs']} ms, {nav['kb']} kB over {nav['files']} files")
     if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".hq")
+        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
     # keyboard-only battle, briefing included
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = true; a.store.flush(); }")
     pg.goto(BASE + "#/campaign/1/t01-1/drill", wait_until="load")

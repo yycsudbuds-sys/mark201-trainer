@@ -3,7 +3,7 @@
 import { h } from './ui.js';
 import { svg } from './visuals.js';
 import { PROVINCES, ROMAN } from './map.js';
-import { masteryLevel } from './engine.js';
+import { masteryLevel, LEVELS } from './engine.js';
 import { icon } from './icons.js';
 
 const LEGATUS = 'Legatus Gaius Mercator';
@@ -239,3 +239,34 @@ export function triumph(app, ctx) {
     setTimeout(() => go.focus({ preventScroll: true }), 50);
   });
 }
+
+/** The promotion ceremony: the Legatus pins a phalera on your cuirass. Skippable; honours the briefings toggle. */
+export function ceremony(app, level) {
+  return new Promise(resolve => {
+    let done = false;
+    const overlay = h('div', { class: 'cutscene ceremony', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Promotion' });
+    const go = h('button', { class: 'btn primary big', onClick: () => finish() }, 'Ave ', h('span', { class: 'kbd' }, 'Enter'));
+    const cuirass = h('div', { class: 'cer-cuirass', 'aria-hidden': 'true' }, h('div', { class: 'cer-plate' }), h('div', { class: 'cer-medal' }, icon('laurel', { size: 26, tone: 'gold' })));
+    const tent = h('div', { class: 'tent' },
+      h('div', { class: 'tent-canvas' }), h('div', { class: 'tent-seam' }), h('div', { class: 'tent-floor' }),
+      h('div', { class: 'standard a' }), h('div', { class: 'standard b' }),
+      h('div', { class: 'torch left' }, h('div', { class: 'glow' }), h('div', { class: 'stick' }), h('div', { class: 'flame' })),
+      h('div', { class: 'torch right' }, h('div', { class: 'glow' }), h('div', { class: 'stick' }), h('div', { class: 'flame' })),
+      h('div', { class: 'legatus' }, legatusSvg()), cuirass, h('div', { class: 'tent-vignette' }),
+      h('div', { class: 'briefing' },
+        h('div', { class: 'brief-name' }, icon('galea', { size: 18, tone: 'gold' }), LEGATUS, h('span', { class: 'muted' }, '· Promotion')),
+        h('div', { class: 'brief-text' }, `${app.state.name}. By the Senate's decree and the legion's acclaim, you are raised to `, h('b', null, level.title), `. Wear this phalera on your cuirass. The next rank is earned the same way: hold your ground, answer true.`),
+        h('div', { class: 'brief-actions' }, h('div', { class: 'row wrap' }, h('span', { class: 'brief-step' }, `Rank ${LEVELS_INDEX(level) + 1} of 11`)), h('div', { class: 'row' }, go))));
+    overlay.appendChild(tent);
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => { overlay.classList.add('show'); setTimeout(() => cuirass.classList.add('pinned'), 700); });
+    const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    app.sound && app.sound('promotion'); setTimeout(() => app.sound && app.sound('seal'), 800);
+    const auto = setTimeout(() => finish(), 9000);
+    function finish() { if (done) return; done = true; clearTimeout(auto); document.removeEventListener('keydown', onKey, true); window.removeEventListener('hashchange', finish); document.body.style.overflow = prevOverflow; overlay.classList.remove('show'); setTimeout(() => overlay.remove(), 450); resolve(); }
+    function onKey(e) { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); finish(); } }
+    document.addEventListener('keydown', onKey, true); window.addEventListener('hashchange', finish);
+    setTimeout(() => go.focus({ preventScroll: true }), 50);
+  });
+}
+function LEVELS_INDEX(level) { return LEVELS.findIndex(l => l.title === level.title); }

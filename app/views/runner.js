@@ -27,7 +27,7 @@ export function createRunner(app, cfg) {
   const state = {
     counter: 0, recent: [], recentQids: [], pursuitQueue: [], combo: 0, hearts: cfg.hearts ?? null,
     answered: 0, correct: 0, xp: 0, log: [], fixedIdx: 0, current: null, timeLeft: cfg.timer || null, qTimeLeft: null, finished: false,
-    pursuitsCleared: 0, startedAt: Date.now(), lastLightning: 0,
+    pursuitsCleared: 0, startedAt: Date.now(), lastLightning: 0, furyMark: 0,
   };
   const el = h('div', { class: 'runner' + (arena ? ' arena' : ' battle') });
   let timerId = null; let qTimerId = null;
@@ -93,6 +93,7 @@ export function createRunner(app, cfg) {
     const right = h('div', { class: 'row wrap' });
     if (state.hearts !== null) right.appendChild(h('span', { class: 'hearts', 'aria-label': `${state.hearts} lives` }, Array.from({ length: cfg.hearts || 0 }, (_, i) => icon(i < state.hearts ? 'scutum' : 'shieldcrack', { size: 18, tone: i < state.hearts ? 'crimson' : 'iron' }))));
     if (state.combo >= 2) right.appendChild(h('span', { class: 'combo' }, icon('flame', { size: 16, tone: 'gold' }), `×${state.combo}`));
+    if (cfg.feedback !== 'deferred') { const fury = Math.min(8, state.combo - state.furyMark); right.appendChild(h('span', { class: 'fury' + (fury >= 8 ? ' ready' : ''), title: fury >= 8 ? "Imperator's Favor: the next correct answer pays double denarii" : `Fury ${fury}/8: eight in a row earns the Imperator's Favor` }, h('span', { class: 'fury-track' }, h('span', { class: 'fury-fill', style: { width: (fury / 8 * 100) + '%' } })), fury >= 8 ? icon('aquila', { size: 14, tone: 'gold' }) : null)); }
     right.appendChild(h('span', { class: 'chip' }, `${state.correct}/${state.answered}${cfg.limit ? ` · ${cfg.limit}` : ''}`));
     if (state.timeLeft !== null) right.appendChild(h('span', { class: 'timer' + (state.timeLeft <= 30 ? ' low' : ''), dataset: { timer: '1' } }, icon('waterclock', { size: 14, tone: 'mono' }), fmtTime(state.timeLeft)));
     if (cfg.perQuestionTimer) right.appendChild(h('span', { class: 'timer', dataset: { qtimer: '1' } }, fmtTime(state.qTimeLeft ?? cfg.perQuestionTimer)));
@@ -208,6 +209,9 @@ export function createRunner(app, cfg) {
       });
       const res = afterAnswer(q, correct, i, options, answer, pick);
       let dn = correct ? 1 : 0; if (wager) dn += correct ? wager : -wager;
+      let favor = false;
+      if (correct && state.combo - 1 - state.furyMark >= 8) { favor = true; dn = Math.max(2, dn * 2); state.furyMark = state.combo; app.sound('fanfare'); const fx = h('div', { class: 'favor' }, icon('aquila', { size: 42, tone: 'gold' }), h('div', null, h('div', { class: 'favor-title' }, "Imperator's Favor"), h('div', { class: 'small' }, 'Double denarii for eight in a row'))); document.body.appendChild(fx); setTimeout(() => fx.remove(), 2200); }
+      if (!correct) state.furyMark = 0;
       if (dn !== 0) { const bal = getDenarii(); dn = Math.max(dn, -bal); addDenarii(dn, wager ? 'wager' : 'answer'); if (dn > 0) app.sound('coins'); }
       if (wagerEl) wagerEl.classList.add('settled');
       if (cfg.siege) { const old = headEl.querySelector('.wall-bar'); if (old) old.replaceWith(wallBar()); }

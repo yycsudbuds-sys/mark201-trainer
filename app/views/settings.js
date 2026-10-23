@@ -2,6 +2,7 @@
 import { h, modal, toast } from '../ui.js';
 import { icon } from '../icons.js';
 import { getCosmetic, setCosmetic } from '../cosmetic.js';
+import { shopView } from '../shop.js';
 import { MASTERY_LABELS } from '../engine.js';
 
 export function render(app) {
@@ -35,6 +36,7 @@ export function render(app) {
         setTimeout(() => input.focus(), 50);
       } }, '+ Add player'),
       h('p', { class: 'tiny muted' }, 'Progress lives in this browser. Friends opening the same link on their own devices get their own fresh profile automatically. Use a second player here only if you share one computer.'))),
+    shopView(app),
     h('div', { class: 'card stack' }, h('h3', null, 'Exam'),
       h('div', { class: 'field' }, h('label', null, 'Midterm date and time (drives the countdown and plan)'), dateInput)),
     h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Experience'),
