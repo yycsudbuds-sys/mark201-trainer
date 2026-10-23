@@ -81,9 +81,23 @@ function sheet(app, ch) {
                 h('dt', null, h('span', { class: `mdot m${masteryLevel(app.state.concepts[cid])}` }), h('a', { href: `#/learn/${ch.chapter}/${cid}` }, c.term)),
                 h('dd', null, c.definition, c.mnemonic ? h('span', { class: 'sheet-mn' }, icon('tablet', { size: 13, tone: 'bronze' }), c.mnemonic) : null));
             })),
-            t.concepts.map(cid => { const f = figureEl(app.conceptOf(cid).concept.figure); return f ? h('div', { class: 'sheet-figure' }, f) : null; }));
+            t.concepts.map(cid => { const fig = app.conceptOf(cid).concept.figure; const f = figureEl(fig); return f ? bronzeTablet(app, fig, f) : null; }));
         })),
         h('div', { class: 'scroll-roller bottom', 'aria-hidden': 'true' }))));
   return page;
 }
 const ROMANS = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+/** A must-memorize table as an engraved bronze tablet with a quiz mode: hide one column, reveal cells on tap. */
+function bronzeTablet(app, fig, figureNode) {
+  const wrap = h('div', { class: 'sheet-figure bronze' }, figureNode);
+  const table = figureNode.querySelector && figureNode.querySelector('table.fig');
+  if (!table || !fig.head) return wrap;
+  let hidden = -1;
+  const apply = () => { table.querySelectorAll('tbody tr').forEach(tr => { [...tr.children].forEach((td, ci) => { td.classList.toggle('cell-hidden', ci === hidden && !td.classList.contains('revealed')); if (ci !== hidden) td.classList.remove('revealed'); }); }); bar.querySelectorAll('.bq-col').forEach(b => b.classList.toggle('on', Number(b.dataset.ci) === hidden)); };
+  table.addEventListener('click', e => { const td = e.target.closest('td'); if (td && td.classList.contains('cell-hidden')) { td.classList.add('revealed'); td.classList.remove('cell-hidden'); app.sound('seal'); } });
+  const bar = h('div', { class: 'bronze-quiz' }, h('span', { class: 'eyebrow' }, icon('eye', { size: 13, tone: 'bronze' }), 'Quiz yourself · hide'),
+    fig.head.map((hd, ci) => ci === 0 ? null : h('button', { class: 'bq-col', type: 'button', dataset: { ci }, onClick: () => { hidden = hidden === ci ? -1 : ci; app.sound('tick'); apply(); } }, hd)),
+    h('span', { class: 'tiny muted' }, 'tap a hidden cell to reveal it'));
+  wrap.prepend(bar);
+  return wrap;
+}

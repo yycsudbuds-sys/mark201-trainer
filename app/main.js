@@ -7,6 +7,7 @@ import { checkAchievements } from './achievements.js';
 import * as Audio from './audio.js';
 import { SceneDirector, sceneForRoute } from './scene-director.js';
 import { icon } from './icons.js';
+import { getDenarii } from './cosmetic.js';
 import * as Home from './views/home.js';
 import * as Campaign from './views/campaign.js';
 import * as Drill from './views/drill.js';
@@ -132,6 +133,7 @@ export function renderHeader() {
       h('span', { class: 'mono small muted' }, lv.next ? `${st.xp} / ${lv.next.xp} XP` : `${st.xp} XP`)),
     h('span', { class: 'chip' }, icon('flame', { size: 14, tone: 'gold' }), `${streak} day${streak === 1 ? '' : 's'}`),
     h('span', { class: 'chip', title: 'Test readiness estimate' }, icon('scutum', { size: 14, tone: 'gold' }), `Test Readiness ${Math.round(r.score * 100)}%`),
+    h('span', { class: 'chip denarii', title: 'Denarii: cosmetic coin from answers, pursuits and wagers', dataset: { denarii: '1' } }, icon('coin', { size: 14, tone: 'gold' }), `${getDenarii()}`),
   ));
   headerEl.appendChild(h('div', { class: 'row' },
     volumeControl(),
@@ -225,6 +227,7 @@ function boot() {
   buildShell();
   app.store.on(type => { if (type === 'profile') { applySettings(); route(); } });
   window.addEventListener('hashchange', route);
+  window.addEventListener('denarii', e => { const c = document.querySelector('[data-denarii]'); if (c) { c.lastChild.textContent = String(e.detail.after); c.classList.remove('bump'); void c.offsetWidth; c.classList.add('bump'); } });
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && app.state) { app.store.touchSession(); renderHeader(); } });
   window.addEventListener('beforeunload', () => app.store.flush());
   if (!location.hash) location.hash = '#/home';

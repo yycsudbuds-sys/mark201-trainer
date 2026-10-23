@@ -140,7 +140,7 @@ with sync_playwright() as p:
         go(page, "#/arcade/build/" + aid)
         page.wait_for_selector(".card")
         if kind == "order":
-            page.click("text=Check order")
+            page.click("text=Check the arch")
         elif kind == "sort":
             guard = 0
             while page.locator(".pool .token").count() and guard < 30:
@@ -154,13 +154,15 @@ with sync_playwright() as p:
             for i in range(lefts.count()):
                 lefts.nth(i).click()
                 rights.nth(i).click()
-            page.click("text=Check matches")
+            page.click("text=Check the rigging")
         page.wait_for_timeout(200)
         shot(page, name)
 
     # Boss
     go(page, "#/campaign/7/boss")
-    page.wait_for_selector(".qcard")
+    try: page.wait_for_selector(".qcard", timeout=12000)
+    except Exception as e:
+        print("BOSS DID NOT RENDER:", str(e)[:80]); print("view:", page.locator(".view").inner_text()[:400].replace(chr(10), " | ")); print("errors so far:", errors[:4]); shot(page, "25_boss_failed"); raise
     answer_n(page, 24)
     page.wait_for_timeout(300)
     shot(page, "25_boss")

@@ -1,5 +1,6 @@
 // Arcade: Blitz (timed), Confusables Duel, Build & Sort (activities), Flashcards.
 import { h, shuffle, plural, fmtTime } from '../ui.js';
+import { svg } from '../visuals.js';
 import { masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
@@ -157,23 +158,40 @@ function nextActivity(app, ch, act) {
 }
 
 function orderGame(app, act, body, finish) {
+  // Stone blocks you drag to build an arch, first to last from left to right. Arrows and the keyboard still work.
   const correct = act.items;
   let cur = shuffle(correct);
   if (cur.join('|') === correct.join('|')) cur = cur.reverse();
-  const list = h('div', { class: 'order-list' });
+  const n = cur.length;
+  const arch = h('div', { class: 'arch' }); arch.style.setProperty('--n', String(n));
+  let dragFrom = -1;
   const draw = () => {
-    list.innerHTML = '';
-    cur.forEach((item, i) => list.appendChild(h('div', { class: 'order-item' },
-      h('span', { class: 'idx' }, String(i + 1)), h('span', { class: 'order-text' }, item),
-      h('span', { class: 'mv' }, h('button', { class: 'icon-btn', 'aria-label': 'Move up', disabled: i === 0, onClick: () => { app.sound('knock'); [cur[i - 1], cur[i]] = [cur[i], cur[i - 1]]; draw(); } }, icon('arrow', { size: 14, tone: 'gold', cls: 'up' })), h('button', { class: 'icon-btn', 'aria-label': 'Move down', disabled: i === cur.length - 1, onClick: () => { app.sound('knock'); [cur[i + 1], cur[i]] = [cur[i], cur[i + 1]]; draw(); } }, icon('arrow', { size: 14, tone: 'gold', cls: 'down' }))))));
+    arch.innerHTML = '';
+    cur.forEach((item, i) => {
+      const block = h('div', { class: 'arch-block', dataset: { i }, tabindex: '0', role: 'listitem', 'aria-label': `Position ${i + 1}: ${item}` },
+        h('span', { class: 'ab-idx' }, String(i + 1)), h('span', { class: 'ab-text' }, item),
+        h('span', { class: 'ab-mv' }, h('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Move earlier', disabled: i === 0, onClick: e => { e.stopPropagation(); app.sound('knock'); [cur[i - 1], cur[i]] = [cur[i], cur[i - 1]]; draw(); } }, icon('arrow', { size: 12, tone: 'gold', cls: 'flip' })), h('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Move later', disabled: i === n - 1, onClick: e => { e.stopPropagation(); app.sound('knock'); [cur[i + 1], cur[i]] = [cur[i], cur[i + 1]]; draw(); } }, icon('arrow', { size: 12, tone: 'gold' }))));
+      block.addEventListener('pointerdown', ev => {
+        if (ev.target.closest('button')) return;
+        const start = { x: ev.clientX, y: ev.clientY }; let ghost = null; let moved = false; let over = null;
+        const onMove = e => { const dx = e.clientX - start.x, dy = e.clientY - start.y; if (!moved && Math.hypot(dx, dy) < 6) return; if (!moved) { moved = true; try { block.setPointerCapture(e.pointerId); } catch { /* ignore */ } ghost = block.cloneNode(true); ghost.classList.add('drag-ghost', 'arch-ghost'); const r = block.getBoundingClientRect(); ghost.style.width = r.width + 'px'; ghost.style.left = r.left + 'px'; ghost.style.top = r.top + 'px'; ghost.style.transform = ''; document.body.appendChild(ghost); block.classList.add('lifted'); app.sound('rustle'); dragFrom = i; }
+          ghost.style.transform = `translate(${dx}px, ${dy}px)`; const el = document.elementFromPoint(e.clientX, e.clientY); const b = el && el.closest('.arch-block:not(.lifted)'); if (b !== over) { over && over.classList.remove('over'); over = b; over && over.classList.add('over'); } e.preventDefault(); };
+        const onUp = e => { block.removeEventListener('pointermove', onMove); block.removeEventListener('pointerup', onUp); block.removeEventListener('pointercancel', onUp); if (!moved) return; ghost && ghost.remove(); block.classList.remove('lifted');
+          const el = document.elementFromPoint(e.clientX, e.clientY); const b = el && el.closest('.arch-block'); if (b && Number(b.dataset.i) !== i) { const j = Number(b.dataset.i); const [item2] = cur.splice(i, 1); cur.splice(j, 0, item2); app.sound('crumble'); } over && over.classList.remove('over'); dragFrom = -1; draw(); };
+        block.addEventListener('pointermove', onMove); block.addEventListener('pointerup', onUp); block.addEventListener('pointercancel', onUp);
+      });
+      arch.appendChild(block);
+    });
+    arch.appendChild(h('div', { class: 'keystone', 'aria-hidden': 'true' }, icon('laurel', { size: 18, tone: 'gold' })));
   };
   draw();
-  body.append(h('p', { class: 'small muted' }, 'Use the arrows to arrange the items from first to last, then check.'), list,
+  body.append(h('p', { class: 'small muted' }, 'Drag the stone blocks into order, first to last, left to right (or use the arrows). When the order is right the keystone drops in.'), arch,
     h('button', { class: 'btn primary big mt', onClick: () => {
       let ok = 0;
-      [...list.children].forEach((row, i) => { const good = cur[i] === correct[i]; if (good) ok++; row.classList.add(good ? 'ok' : 'bad'); });
+      [...arch.querySelectorAll('.arch-block')].forEach((blk, i) => { const good = cur[i] === correct[i]; if (good) ok++; blk.classList.add(good ? 'ok' : 'bad'); });
+      if (ok === correct.length) { arch.classList.add('locked'); app.sound('impact'); setTimeout(() => app.sound('horn'), 350); }
       finish(ok / correct.length, ok < correct.length ? h('div', { class: 'mt-sm' }, h('b', { class: 'small' }, 'Correct order:'), h('ol', { class: 'fig' }, correct.map(x => h('li', null, x)))) : null);
-    } }, 'Check order'));
+    } }, 'Check the arch'));
 }
 
 function sortGame(app, act, body, finish) {
@@ -239,28 +257,48 @@ function sortGame(app, act, body, finish) {
 }
 
 function matchGame(app, act, body, finish) {
+  // String a rope between pairs, like rigging a ballista: tap a term then its match, or drag from left to right.
   const lefts = act.pairs.map((p, i) => ({ text: p.left, i }));
   const rights = shuffle(act.pairs.map((p, i) => ({ text: p.right, i })));
   const pairs = new Map(); // left i -> right i
   let selLeft = null;
-  const grid = h('div', { class: 'match-grid' });
+  const grid = h('div', { class: 'match-grid ropes' });
+  const ropeLayer = svg('svg', { class: 'rope-layer', 'aria-hidden': 'true' });
+  const liveRope = svg('path', { class: 'rope live', d: '' }); ropeLayer.appendChild(liveRope);
   const letters = 'ABCDEFGHIJ';
+  const wrap = h('div', { class: 'ropes-wrap' }, ropeLayer, grid);
+  const ropeD = (x1, y1, x2, y2) => { const sag = Math.min(40, Math.abs(x2 - x1) * 0.12); return `M ${x1} ${y1} Q ${(x1 + x2) / 2} ${(y1 + y2) / 2 + sag} ${x2} ${y2}`; };
+  const anchors = () => { const r = wrap.getBoundingClientRect(); const L = [...grid.querySelectorAll('.col:first-child .match-item')].map(e => { const b = e.getBoundingClientRect(); return [b.right - r.left, b.top + b.height / 2 - r.top]; }); const R = [...grid.querySelectorAll('.col:last-child .match-item')].map(e => { const b = e.getBoundingClientRect(); return [b.left - r.left, b.top + b.height / 2 - r.top]; }); return { L, R }; };
+  const drawRopes = () => { ropeLayer.querySelectorAll('.rope:not(.live)').forEach(x => x.remove()); const r = wrap.getBoundingClientRect(); ropeLayer.setAttribute('viewBox', `0 0 ${r.width} ${r.height}`); ropeLayer.setAttribute('width', r.width); ropeLayer.setAttribute('height', r.height); const { L, R } = anchors(); for (const [li, ri] of pairs) { const a = L[lefts.findIndex(l => l.i === li)], b = R[rights.findIndex(x => x.i === ri)]; if (a && b) ropeLayer.appendChild(svg('path', { class: 'rope', d: ropeD(a[0], a[1], b[0], b[1]) })); } };
   const draw = () => {
     grid.innerHTML = '';
     const lcol = h('div', { class: 'col' }); const rcol = h('div', { class: 'col' });
-    for (const l of lefts) { const r = pairs.get(l.i); lcol.appendChild(h('button', { class: 'match-item' + (selLeft === l.i ? ' sel' : '') + (r !== undefined ? ' paired' : ''), onClick: () => { selLeft = selLeft === l.i ? null : l.i; draw(); } }, r !== undefined ? h('span', { class: 'tag' }, letters[rights.findIndex(x => x.i === r)]) : null, l.text)); }
-    rights.forEach((r, ri) => { const taken = [...pairs.values()].includes(r.i); rcol.appendChild(h('button', { class: 'match-item' + (taken ? ' paired' : ''), onClick: () => { if (selLeft === null) return; for (const [k, v] of pairs) if (v === r.i) pairs.delete(k); pairs.set(selLeft, r.i); selLeft = null; draw(); } }, h('span', { class: 'tag' }, letters[ri]), r.text)); });
+    for (const l of lefts) { const r = pairs.get(l.i); const item = h('button', { class: 'match-item' + (selLeft === l.i ? ' sel' : '') + (r !== undefined ? ' paired' : ''), type: 'button', onClick: () => { if (dragging) return; selLeft = selLeft === l.i ? null : l.i; app.sound('tick'); draw(); } }, h('span', { class: 'knot' }), r !== undefined ? h('span', { class: 'tag' }, letters[rights.findIndex(x => x.i === r)]) : null, l.text);
+      item.addEventListener('pointerdown', ev => startRope(ev, l.i, item)); lcol.appendChild(item); }
+    rights.forEach((r, ri) => { const taken = [...pairs.values()].includes(r.i); rcol.appendChild(h('button', { class: 'match-item right' + (taken ? ' paired' : ''), type: 'button', dataset: { ri: r.i }, onClick: () => { if (selLeft === null) return; tie(selLeft, r.i); selLeft = null; draw(); } }, h('span', { class: 'tag' }, letters[ri]), r.text, h('span', { class: 'knot' }))); });
     grid.append(lcol, rcol);
+    requestAnimationFrame(drawRopes);
   };
+  const tie = (li, ri) => { for (const [k, v] of pairs) if (v === ri) pairs.delete(k); pairs.set(li, ri); app.sound('seal'); };
+  let dragging = false;
+  function startRope(ev, li, item) {
+    const start = { x: ev.clientX, y: ev.clientY }; let moved = false;
+    const onMove = e => { const dx = e.clientX - start.x, dy = e.clientY - start.y; if (!moved && Math.hypot(dx, dy) < 8) return; if (!moved) { moved = true; dragging = true; try { item.setPointerCapture(e.pointerId); } catch { /* ignore */ } item.classList.add('sel'); app.sound('rustle'); }
+      const r = wrap.getBoundingClientRect(); const { L } = anchors(); const a = L[lefts.findIndex(l => l.i === li)]; liveRope.setAttribute('d', ropeD(a[0], a[1], e.clientX - r.left, e.clientY - r.top)); e.preventDefault(); };
+    const onUp = e => { item.removeEventListener('pointermove', onMove); item.removeEventListener('pointerup', onUp); item.removeEventListener('pointercancel', onUp); if (!moved) return; liveRope.setAttribute('d', ''); const el = document.elementFromPoint(e.clientX, e.clientY); const t = el && el.closest('.match-item.right'); if (t) { tie(li, Number(t.dataset.ri)); selLeft = null; } setTimeout(() => { dragging = false; }, 0); draw(); };
+    item.addEventListener('pointermove', onMove); item.addEventListener('pointerup', onUp); item.addEventListener('pointercancel', onUp);
+  }
   draw();
-  body.append(h('p', { class: 'small muted' }, 'Tap a term on the left, then its match on the right.'), grid,
+  const ro = new ResizeObserver(() => drawRopes()); ro.observe(wrap);
+  body.append(h('p', { class: 'small muted' }, 'Tap a term on the left, then its match on the right, or drag a rope from a term to its match.'), wrap,
     h('button', { class: 'btn primary big mt', onClick: () => {
       if (pairs.size < lefts.length) { app.toast('Match every item first', 'bad'); return; }
       let ok = 0;
       const lcol = grid.querySelector('.col');
       lefts.forEach((l, idx) => { const good = pairs.get(l.i) === l.i; if (good) ok++; lcol.children[idx].classList.add(good ? 'ok' : 'bad'); });
+      ropeLayer.querySelectorAll('.rope:not(.live)').forEach((p, k) => { const li = [...pairs.keys()][k]; p.classList.add(pairs.get(li) === li ? 'ok' : 'bad'); });
       finish(ok / lefts.length, ok < lefts.length ? h('div', { class: 'mt-sm' }, h('b', { class: 'small' }, 'Correct pairs:'), h('ul', { class: 'fig' }, act.pairs.map(p => h('li', null, h('b', null, p.left + ' → '), p.right)))) : null);
-    } }, 'Check matches'));
+    } }, 'Check the rigging'));
 }
 
 // ---------- Flashcards ----------

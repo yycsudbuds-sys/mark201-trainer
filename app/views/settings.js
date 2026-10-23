@@ -43,6 +43,7 @@ export function render(app) {
       sw('briefings', 'War briefings', 'The Legatus briefs you in his tent before each lesson, battle, siege and drill. Skippable any time.'),
       sw('sound', 'Sound effects', 'Short blips for right, wrong, promotions.'),
       sw('motion', 'Motion and confetti', 'Turn off for a calmer, faster feel.', () => app.applySettings()),
+      cosSwitch('wagers', 'Confidence wagers', 'Bet 1, 2 or 3 denarii before answering with Q, W, E. Cosmetic coin only: never touches XP or mastery, and never offered in the Great Battle.', true),
       cosSwitch('warTable3d', 'Conquest in 3D', 'The war table in three dimensions. Off, or when motion is off, Conquest uses the painted 2.5D map instead.', true)),
     h('div', { class: 'card stack' }, h('h3', null, 'Backup'),
       h('p', { class: 'small muted' }, 'Export your progress as a file to move it to another device or keep a backup.'),

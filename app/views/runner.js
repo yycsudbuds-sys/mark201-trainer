@@ -8,6 +8,8 @@ import { conceptCard, figureEl } from './concept.js';
 import { visualFor } from '../visuals.js';
 import { attachBattle } from '../battle.js';
 import { richText, icon, CHAPTER_ICON } from '../icons.js';
+import { getCosmetic, getDenarii, addDenarii } from '../cosmetic.js';
+import { vignetteFor } from '../vignettes.js';
 
 const REASON_LABEL = { pursuit: 'Pursuit', weak: 'Weak flank', due: 'Due for review', new: 'New ground', review: 'Review', exam: 'Battle', boss: 'Siege', campaign: 'Battle', blitz: 'Skirmish', duel: 'Duel' };
 const REASON_ICON = { pursuit: 'standard', weak: 'shieldcrack', due: 'sundial', new: 'pilum', review: 'scroll', exam: 'scutum', boss: 'siegetower', campaign: 'swords', blitz: 'gladius', duel: 'gladius' };
@@ -43,6 +45,7 @@ export function createRunner(app, cfg) {
     if (state.finished) return;
     state.finished = true;
     const won = reason === 'goal' || (cfg.siege && state.correct >= cfg.siege.needed);
+    if (cfg.feedback === 'deferred' && state.correct) addDenarii(state.correct, 'great battle');
     if (won && el.battlefield && !el.battlefield.inline) { el.battlefield.win(); el.battlefield.deferDestroy(2800); if (!cfg.siege) { app.sound('rout'); setTimeout(() => app.sound('horn'), 500); } }
     cleanup();
     cfg.onFinish && cfg.onFinish(summary(), reason);
@@ -135,7 +138,12 @@ export function createRunner(app, cfg) {
         h('span', { class: 'pips' }, Array.from({ length: cs.pursuit.need }, (_, i) => h('span', { class: 'pip' + (i < cs.pursuit.done ? ' on' : '') })))));
     }
     card.appendChild(h('div', { class: 'qhead' }, h('div', { class: 'qicon' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 28, tone: 'gold' })), h('div', { class: 'qmeta' }, metas)));
-    card.appendChild(h('div', { class: 'stem' }, richText(q.stem)));
+    const stemEl = h('div', { class: 'stem' }, richText(q.stem));
+    stemEl.querySelectorAll('.blank').forEach(b => { b.classList.add('wax-slot'); b.setAttribute('aria-label', 'blank: press a number or drag an answer here'); });
+    const isFill = q.type === 'fill' || stemEl.querySelector('.wax-slot');
+    const vig = (q.angle === 'identify' || q.angle === 'apply') && !isFill ? vignetteFor(ch.chapter) : null;
+    card.appendChild(vig ? h('div', { class: 'stem-row' }, stemEl, h('div', { class: 'vignette', 'aria-hidden': 'true' }, vig)) : stemEl);
+    if (q.angle === 'calc') card.appendChild(abacusDrawer(app));
     const fig = figureForQuestion(app, q, entry);
     if (fig) {
       const body = h('div', { class: 'qfigure-body' }, fig.el);
@@ -144,13 +152,34 @@ export function createRunner(app, cfg) {
         card.appendChild(h('div', { class: 'qfigure' }, h('div', { class: 'row between wrap' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), fig.label || 'Reference'), btn), body));
       } else card.appendChild(h('div', { class: 'qfigure' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), fig.label || 'Reference'), body.classList.add('open') || body));
     }
-    const optEls = options.map((o, i) => h('button', { class: 'option tablet', dataset: { i },
-      onClick: () => choose(i),
-      onPointerenter: () => { const t = performance.now(); if (t - hoverTick > 120) { hoverTick = t; app.sound('tick'); } },
-      onPointerdown: () => app.sound('knock') },
-      h('span', { class: 'key coin' }, h('span', { class: 'key-n' }, String(i + 1))), h('span', { class: 'opt-text' }, richText(o, { blanks: false })), h('span', { class: 'laurel-mark' }, icon('laurel', { size: 22, tone: 'gold' }))));
+    const isTF = q.type === 'tf' && options.length === 2;
+    const optEls = options.map((o, i) => isTF
+      ? h('button', { class: 'option thumb ' + (/^true$/i.test(o) ? 'up' : 'down'), dataset: { i }, onClick: () => choose(i), onPointerenter: () => { const t = performance.now(); if (t - hoverTick > 120) { hoverTick = t; app.sound('tick'); } }, onPointerdown: () => app.sound('knock') },
+        h('span', { class: 'key coin' }, h('span', { class: 'key-n' }, String(i + 1))), thumbSvg(/^true$/i.test(o)), h('span', { class: 'opt-text' }, o), h('span', { class: 'thumb-sub' }, /^true$/i.test(o) ? 'Pollice verso up' : 'Pollice verso down'), h('span', { class: 'laurel-mark' }, icon('laurel', { size: 22, tone: 'gold' })))
+      : h('button', { class: 'option tablet' + (isFill ? ' draggable' : ''), dataset: { i },
+        onClick: () => { if (dragMovedIdx === i) { dragMovedIdx = -1; return; } choose(i); },
+        onPointerenter: () => { const t = performance.now(); if (t - hoverTick > 120) { hoverTick = t; app.sound('tick'); } },
+        onPointerdown: ev => { app.sound('knock'); if (isFill) startSlotDrag(ev, i); } },
+        h('span', { class: 'key coin' }, h('span', { class: 'key-n' }, String(i + 1))), h('span', { class: 'opt-text' }, richText(o, { blanks: false })), h('span', { class: 'laurel-mark' }, icon('laurel', { size: 22, tone: 'gold' }))));
+    let dragMovedIdx = -1;
+    function startSlotDrag(ev, i) {
+      const tok = optEls[i]; const start = { x: ev.clientX, y: ev.clientY }; let ghost = null; let moved = false;
+      const onMove = e => { const dx = e.clientX - start.x, dy = e.clientY - start.y; if (!moved && Math.hypot(dx, dy) < 8) return; if (!moved) { moved = true; try { tok.setPointerCapture(e.pointerId); } catch { /* ignore */ } ghost = h('div', { class: 'slot-ghost' }, options[i]); document.body.appendChild(ghost); app.sound('rustle'); stemEl.classList.add('slot-target'); } ghost.style.transform = `translate(${e.clientX + 12}px, ${e.clientY - 18}px)`; e.preventDefault(); };
+      const onUp = e => { tok.removeEventListener('pointermove', onMove); tok.removeEventListener('pointerup', onUp); tok.removeEventListener('pointercancel', onUp); if (!moved) return; dragMovedIdx = i; ghost && ghost.remove(); stemEl.classList.remove('slot-target'); const under = document.elementFromPoint(e.clientX, e.clientY); if (under && under.closest && under.closest('.stem')) choose(i); };
+      tok.addEventListener('pointermove', onMove); tok.addEventListener('pointerup', onUp); tok.addEventListener('pointercancel', onUp);
+    }
+    // the confidence wager: cosmetic denarii only, keys Q W E, never in deferred (exam) mode
+    const wagerOn = cfg.feedback !== 'deferred' && getCosmetic().wagers !== false;
+    let wager = 0; let wagerEl = null;
+    if (wagerOn) {
+      wagerEl = h('div', { class: 'wager' }, h('span', { class: 'wager-label' }, icon('coin', { size: 14, tone: 'gold' }), 'Wager'),
+        [1, 2, 3].map((n, k) => h('button', { class: 'wager-coin', type: 'button', dataset: { n }, title: `Bet ${n} denari${n === 1 ? 'us' : 'i'} (${'QWE'[k]})`, onClick: () => setWager(n) }, h('span', { class: 'wager-key' }, 'QWE'[k]), h('b', null, String(n)))),
+        h('span', { class: 'small muted wager-bal' }, `${getDenarii()} denarii`));
+      card.appendChild(wagerEl);
+    }
+    function setWager(n) { if (done) return; wager = wager === n ? 0 : n; wagerEl.querySelectorAll('.wager-coin').forEach(b => b.classList.toggle('on', Number(b.dataset.n) === wager)); app.sound('coin'); }
     if (el.battlefield && el.battlefield.inline) card.appendChild(el.battlefield); // short screens: the battle is a strip above the answers
-    card.appendChild(h('div', { class: 'options' }, optEls));
+    card.appendChild(h('div', { class: 'options' + (isTF ? ' thumbs' : '') }, optEls));
     if (cs && cs.pursuit && cfg.feedback !== 'deferred' && el.battlefield && el.battlefield.plantFlag) el.battlefield.plantFlag(q.concept);
     bodyEl.appendChild(card);
     const foot = h('div', { class: 'runner-foot' });
@@ -163,6 +192,8 @@ export function createRunner(app, cfg) {
       clearInterval(qTimerId);
       const correct = i === answer;
       if (i >= 0) optEls[i].classList.add('sealed');
+      if (isFill && i >= 0) { const parts = String(options[i]).split(/\s*;\s*|\s+\/\s+/); stemEl.querySelectorAll('.wax-slot').forEach((slot, k) => { slot.textContent = parts[Math.min(k, parts.length - 1)]; slot.classList.add('filled'); }); app.sound('stylus'); }
+      if (isTF) { card.classList.add(correct ? 'crowd-cheer' : 'crowd-boo'); app.sound('thumbs', { up: correct }); }
       if (cfg.feedback === 'deferred') {
         optEls.forEach((b, j) => { b.disabled = true; b.classList.toggle('picked', j === i); });
         afterAnswer(q, correct, i, options, answer, pick);
@@ -176,8 +207,11 @@ export function createRunner(app, cfg) {
         else b.classList.add('dim');
       });
       const res = afterAnswer(q, correct, i, options, answer, pick);
+      let dn = correct ? 1 : 0; if (wager) dn += correct ? wager : -wager;
+      if (dn !== 0) { const bal = getDenarii(); dn = Math.max(dn, -bal); addDenarii(dn, wager ? 'wager' : 'answer'); if (dn > 0) app.sound('coins'); }
+      if (wagerEl) wagerEl.classList.add('settled');
       if (cfg.siege) { const old = headEl.querySelector('.wall-bar'); if (old) old.replaceWith(wallBar()); }
-      card.appendChild(feedbackPanel(app, q, entry, correct, res));
+      card.appendChild(feedbackPanel(app, q, entry, correct, res, dn, wager));
       if (res && res.xp) coinFlight(optEls[answer], res.xp);
       const cont = h('button', { class: 'btn primary big', onClick: next }, 'Advance ', h('span', { class: 'kbd' }, 'Enter'));
       foot.append(h('span', { class: 'small muted' }, 'Keys 1–5 answer · Enter advances'), cont);
@@ -185,7 +219,7 @@ export function createRunner(app, cfg) {
       if (state.hearts !== null && state.hearts <= 0) setTimeout(() => finish('hearts'), 900);
       if (state.timeLeft !== null && state.timeLeft <= 0) setTimeout(() => finish('time'), 900);
     }
-    currentHandlers = { choose, count: options.length, done: () => done, next };
+    currentHandlers = { choose, count: options.length, done: () => done, next, setWager: wagerOn ? setWager : null };
     if (cfg.perQuestionTimer) {
       state.qTimeLeft = cfg.perQuestionTimer;
       clearInterval(qTimerId);
@@ -216,7 +250,7 @@ export function createRunner(app, cfg) {
     else if (correct) { app.sound('correct'); if (!arena && !cfg.siege) app.sound('pila'); if (state.combo >= 2) app.sound('combo', { n: state.combo }); if (state.combo === 3 && !cfg.siege) app.sound('impact'); if (state.combo === 5 && !cfg.siege) app.sound('charge'); }
     else { app.sound('wrong'); if (!arena && !cfg.siege) app.sound('shieldcrack'); }
     for (const ev of res.events) {
-      if (ev.type === 'pursuitCleared') { state.pursuitsCleared++; app.state.stats.pursuitsCleared = (app.state.stats.pursuitsCleared || 0) + 1; }
+      if (ev.type === 'pursuitCleared') { state.pursuitsCleared++; app.state.stats.pursuitsCleared = (app.state.stats.pursuitsCleared || 0) + 1; if (cfg.feedback !== 'deferred') addDenarii(5, 'pursuit'); }
       if (reveal && el.battlefield && el.battlefield.plantFlag) { if (ev.type === 'pursuitStarted') el.battlefield.plantFlag(ev.cid); else if (ev.type === 'pursuitCleared') el.battlefield.clearFlag(ev.cid); }
     }
     // Pursuit scheduling (adaptive modes only)
@@ -238,6 +272,8 @@ export function createRunner(app, cfg) {
     if (e.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
     const n = parseInt(e.key, 10);
     if (n >= 1 && n <= currentHandlers.count && !currentHandlers.done()) { e.preventDefault(); currentHandlers.choose(n - 1); }
+    else if (currentHandlers.setWager && /^[qweQWE]$/.test(e.key) && !currentHandlers.done()) { e.preventDefault(); currentHandlers.setWager('qwe'.indexOf(e.key.toLowerCase()) + 1); }
+    else if (/^[aA]$/.test(e.key) && !e.ctrlKey && !e.metaKey) { const d = el.querySelector('.abacus'); if (d) { e.preventDefault(); d.classList.toggle('open'); if (d.classList.contains('open')) { d.querySelector('input')?.focus(); app.sound('rustle'); } } }
     else if ((e.key === 'Enter' || e.key === ' ') && currentHandlers.done() && cfg.feedback !== 'deferred') { e.preventDefault(); currentHandlers.next(); }
   }
   document.addEventListener('keydown', onKey);
@@ -262,7 +298,7 @@ export function createRunner(app, cfg) {
 }
 
 /** Layered feedback: verdict + explanation first; wax seals open the trap, contrast, example and mnemonic; the diagram sits beside. */
-function feedbackPanel(app, q, entry, correct, res) {
+function feedbackPanel(app, q, entry, correct, res, dn = 0, wager = 0) {
   const c = entry.concept;
   const vis = safeVisual(entry);
   const seals = [
@@ -284,11 +320,32 @@ function feedbackPanel(app, q, entry, correct, res) {
   return h('div', { class: 'feedback ' + (correct ? 'ok' : 'no') },
     h('div', { class: 'feedback-grid' + (vis ? ' with-vis' : '') },
       h('div', { class: 'feedback-main' },
-        h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 22, tone: correct ? 'laurel' : 'crimson' }), correct ? 'The line holds' : 'The line breaks', res && res.xp ? h('span', { class: 'xp-gain' }, icon('coin', { size: 16, tone: 'gold' }), `+${res.xp} XP`) : null),
+        h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 22, tone: correct ? 'laurel' : 'crimson' }), correct ? 'The line holds' : 'The line breaks', res && res.xp ? h('span', { class: 'xp-gain' }, icon('coin', { size: 16, tone: 'gold' }), `+${res.xp} XP`) : null, dn ? h('span', { class: 'dn-gain ' + (dn > 0 ? 'win' : 'loss') }, `${dn > 0 ? '+' : ''}${dn} denari${Math.abs(dn) === 1 ? 'us' : 'i'}${wager ? ' · wager' : ''}`) : null),
         h('p', { class: 'explanation' }, q.explanation),
         h('p', { class: 'small muted' }, 'Stronghold: ', h('b', null, c.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
         seals.length ? sealRow : null, body),
       vis ? h('div', { class: 'feedback-vis' }, vis) : null));
+}
+/** The emperor's thumb, up or down. */
+function thumbSvg(up) {
+  const w = h('span', { class: 'thumb-ico', 'aria-hidden': 'true' });
+  w.innerHTML = `<svg viewBox="0 0 64 64" width="56" height="56"${up ? '' : ' style="transform:scaleY(-1)"'}><path d="M 14 30 h 10 v 24 h -10 z" fill="#E6D3A8" stroke="#3B2A17" stroke-width="2"/><path d="M 24 32 c 2 -8 6 -12 10 -22 c 2 -4 8 -3 8 3 c 0 6 -3 10 -4 14 h 12 c 4 0 6 4 4 7 c 2 2 2 6 -1 7 c 2 3 0 7 -3 7 c 1 4 -2 6 -5 6 h -21 z" fill="#E6D3A8" stroke="#3B2A17" stroke-width="2" stroke-linejoin="round"/></svg>`;
+  return w;
+}
+/** A small abacus scratchpad for calculation questions: arithmetic only, never leaves the page. */
+function abacusDrawer(app) {
+  const input = h('input', { type: 'text', class: 'abacus-in', placeholder: 'e.g. 1200 / (40 - 16)', 'aria-label': 'Abacus: type a calculation', autocomplete: 'off' });
+  const out = h('div', { class: 'abacus-out' }, '=');
+  const hist = h('div', { class: 'abacus-hist' });
+  const calc = () => { const expr = input.value.replace(/[×x]/g, '*').replace(/÷/g, '/').replace(/%/g, '/100').replace(/,/g, ''); if (!/^[\d\s.+\-*/()]*$/.test(expr) || !expr.trim()) { out.textContent = '='; return; } try { const v = Function('"use strict"; return (' + expr + ')')(); out.textContent = Number.isFinite(v) ? '= ' + (Math.round(v * 10000) / 10000).toLocaleString() : '= ?'; } catch { out.textContent = '= ?'; } };
+  input.addEventListener('input', calc);
+  input.addEventListener('keydown', e => { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); if (out.textContent !== '=') { hist.prepend(h('div', { class: 'abacus-line' }, input.value, ' ', out.textContent)); app.sound('stylus'); } } if (e.key === 'Escape') { drawer.classList.remove('open'); input.blur(); } });
+  const keys = ['7', '8', '9', '÷', '4', '5', '6', '×', '1', '2', '3', '-', '0', '.', '%', '+', '(', ')', 'C'];
+  const pad = h('div', { class: 'abacus-pad' }, keys.map(k => h('button', { type: 'button', class: 'abacus-key' + (k === 'C' ? ' clear' : ''), onClick: () => { if (k === 'C') input.value = ''; else input.value += k; calc(); input.focus(); app.sound('tick'); } }, k)));
+  const drawer = h('div', { class: 'abacus' },
+    h('button', { class: 'abacus-btn btn sm ghost', type: 'button', onClick: () => { drawer.classList.toggle('open'); if (drawer.classList.contains('open')) { input.focus(); app.sound('rustle'); } } }, icon('scale', { size: 14, tone: 'gold' }), 'Abacus ', h('span', { class: 'kbd' }, 'A')),
+    h('div', { class: 'abacus-body' }, h('div', { class: 'row' }, input, out), pad, hist, h('p', { class: 'tiny muted' }, 'Scratch arithmetic only. Answer with the number keys as usual.')));
+  return drawer;
 }
 function safeVisual(entry) { try { return visualFor(entry.concept, entry.chapter); } catch { return null; } }
 /** The figure, table or diagram a stem refers to ("Figure 8-3", "the break-even chart"), looked up in the chapter. */

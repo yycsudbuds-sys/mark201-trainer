@@ -54,7 +54,7 @@ export function createLesson(app, cids, opts = {}) {
     if (s.kind === 'hook') {
       return h('div', { class: 'slide hook' }, head,
         h('p', { class: 'slide-def' }, c.definition),
-        c.mnemonic ? h('div', { class: 'callout hint' }, h('span', { class: 'callout-ico' }, icon('tablet', { size: 20, tone: 'gold' })), h('span', null, c.mnemonic)) : null,
+        c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, c.mnemonic))) : null,
         h('div', { class: 'tiny muted mt' }, cs ? `Your status: ${MASTERY_LABELS[masteryLevel(cs)]}${masteryLevel(cs) < 4 && cs.a?.length ? ' · to master: ' + masteryGaps(cs).slice(0, 2).join(', ') : ''}` : 'New to you.'));
     }
     if (s.kind === 'explain') {
