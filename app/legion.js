@@ -14,7 +14,7 @@ export function equipped() { const c = getCosmetic().equipped || {}; return { cr
 export function legionaryAvatar(size = 40, eq = equipped()) {
   const crest = COLORS[eq.crest] || COLORS.red; const cloak = COLORS[eq.cloak] || COLORS.red;
   const emblem = eq.emblem === 'bolt' ? '<path d="M 36 44 l -5 9 h 4 l -3 8 l 7 -10 h -4 l 3 -7 z" fill="#E3C76A"/>' : eq.emblem === 'boar' ? '<ellipse cx="35" cy="50" rx="6" ry="4" fill="#E3C76A"/><circle cx="40" cy="49" r="2.4" fill="#E3C76A"/>' : eq.emblem === 'eagle' ? '<path d="M 35 44 l -8 5 l 5 -1 l -2 5 l 5 -4 l 5 4 l -2 -5 l 5 1 z" fill="#E3C76A"/>' : '<path d="M 34 47 l -5 -5 M 36 47 l 5 -5 M 33 51 l -6 3 M 37 51 l 6 3" stroke="#E3C76A" stroke-width="1.2" fill="none"/>';
-  const w = h('span', { class: 'avatar', 'aria-hidden': 'true', style: { '--sz': size + 'px' } });
+  const w = h('span', { class: 'avatar', 'aria-hidden': 'true' }); w.style.width = size + 'px'; w.style.height = size + 'px';
   w.innerHTML = `<svg viewBox="0 0 64 64" width="${size}" height="${size}">
     <path d="M 10 64 C 12 46 22 40 32 40 C 42 40 52 46 54 64 Z" fill="${cloak}"/>
     <path d="M 20 64 C 21 50 26 44 32 43 C 38 44 43 50 44 64 Z" fill="#8C8C90"/>

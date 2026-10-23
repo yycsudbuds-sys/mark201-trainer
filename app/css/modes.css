@@ -1457,4 +1457,7 @@ td.revealed { background: rgba(201, 162, 39, 0.18) !important; }
 @media (max-width: 900px) { .cer-cuirass { right: 6%; top: 30%; width: 100px; height: 112px; } .cer-medal { width: 40px; height: 40px; } }
 
 .you-avatar { overflow: hidden; }
-.you-avatar .avatar { margin-top: 26px; transform: scale(1.25); transform-origin: 50% 20%; }
+.you-avatar .avatar { transform: translateY(-4%) scale(1.12); transform-origin: 50% 50%; }
+
+.ladder.compact .rung { min-width: 44px; padding: 0.25rem 0.15rem; font-size: 0.44rem; letter-spacing: 0.04em; }
+.ladder.compact .rung.now { min-width: 56px; font-size: 0.5rem; }
