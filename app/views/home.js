@@ -1,5 +1,6 @@
 // Home (HQ): map hero, next quest, mode cartridges, the Shelf, two-day plan.
 import { h, ring, fmtPct } from '../ui.js';
+import { icon } from '../icons.js';
 import { readiness, masteryLevel, dueCount } from '../engine.js';
 import { shelfMap, nextAction } from './common.js';
 import { worldMap, chapterProgress } from '../map.js';
@@ -54,19 +55,19 @@ export function render(app) {
   const modes = h('section', null,
     h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Orders of the day'), h('p', null, 'Different engagements, one engine: every answer feeds the same mastery model and review schedule.'))),
     h('div', { class: 'cartridges' },
-      cart('#/campaign', '🗺️', 'Conquest', 'Provinces, roads, standards, sieges.', '#C9A227', `${islands}/8 conquered`),
-      cart('#/drill', '⚔️', 'Field Drill', 'Adaptive mix. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
-      cart('#/exam', '🛡️', 'Great Battle', 'Timed, mixed, debriefed.', '#6FA0B8', '20–80 Q'),
-      cart('#/arcade/blitz', '⚡', 'Skirmish', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
-      cart('#/drill/weak', '🛡️', 'Weak Flank', 'Only what is below Solid.', '#C8683A', 'reinforce'),
-      cart('#/arcade/duel', '🗡️', 'Gladiator Duel', 'Tell-apart and NOT questions.', '#A98BC9', '20 s each'),
-      cart('#/arcade/build', '🏗️', 'Siege Works', 'Order, sort, match the tables.', '#8FAA5A', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
-      cart('#/arcade/flash', '📜', 'Scrolls', 'Recall with honest grading.', '#B08968', 'recall'),
-      cart('#/learn', '🏛️', 'Archives', 'Slides and diagrams, one idea at a time.', '#B4A58A', 'study'),
+      cart('#/campaign', icon('map', { size: 28, tone: 'gold' }), 'Conquest', 'Provinces, roads, standards, sieges.', '#C9A227', `${islands}/8 conquered`),
+      cart('#/drill', icon('swords', { size: 28, tone: 'gold' }), 'Field Drill', 'Adaptive mix. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
+      cart('#/exam', icon('scutum', { size: 28, tone: 'gold' }), 'Great Battle', 'Timed, mixed, debriefed.', '#6FA0B8', '20–80 Q'),
+      cart('#/arcade/blitz', icon('gladius', { size: 28, tone: 'gold' }), 'Skirmish', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
+      cart('#/drill/weak', icon('scutum', { size: 28, tone: 'gold' }), 'Weak Flank', 'Only what is below Solid.', '#C8683A', 'reinforce'),
+      cart('#/arcade/duel', icon('gladius', { size: 28, tone: 'gold' }), 'Gladiator Duel', 'Tell-apart and NOT questions.', '#A98BC9', '20 s each'),
+      cart('#/arcade/build', icon('siegetower', { size: 28, tone: 'gold' }), 'Siege Works', 'Order, sort, match the tables.', '#8FAA5A', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
+      cart('#/arcade/flash', icon('scroll', { size: 28, tone: 'gold' }), 'Scrolls', 'Recall with honest grading.', '#B08968', 'recall'),
+      cart('#/learn', icon('temple', { size: 28, tone: 'gold' }), 'Archives', 'Slides and diagrams, one idea at a time.', '#B4A58A', 'study'),
     ));
 
   const shelf = h('section', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'The Armoury'), h('p', null, 'Every concept is a weapon on its province rack. Forge them all. Click a piece to open its scroll.')), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Senate report →')),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'The Armoury'), h('p', null, 'Every concept is a weapon on its province rack. Forge them all. Click a piece to open its scroll.')), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Senate report ', icon('arrow', { size: 14, tone: 'mono' }))),
     shelfMap(app));
 
   const plan = planSection(app);

@@ -53,16 +53,24 @@ export function toast(msg, kind = 'info', ms = 2600) {
   setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, ms);
 }
 
-// ---- XP float ----
-export function floatXp(anchor, text) {
-  if (!anchor || prefersReducedMotion()) return;
+// ---- XP coin flight: a bronze coin lifts from the answer and flies to the XP bar ----
+export function coinFlight(anchor, amount) {
+  if (!anchor) return;
+  const target = document.querySelector('.xpbar');
   const r = anchor.getBoundingClientRect();
-  const el = h('div', { class: 'xp-float' }, text);
-  el.style.left = (r.left + r.width / 2) + 'px';
-  el.style.top = (r.top) + 'px';
+  const el = h('div', { class: 'xp-coin' }, h('span', { class: 'xp-coin-disc' }), h('span', { class: 'xp-coin-text' }, `+${amount} XP`));
+  el.style.left = (r.left + Math.min(r.width - 40, 60)) + 'px';
+  el.style.top = (r.top + r.height / 2) + 'px';
   document.body.appendChild(el);
-  setTimeout(() => el.remove(), 1200);
+  if (prefersReducedMotion() || !target) { el.classList.add('static'); setTimeout(() => el.remove(), 900); return; }
+  const t = target.getBoundingClientRect();
+  const dx = (t.left + t.width * 0.4) - (r.left + Math.min(r.width - 40, 60));
+  const dy = (t.top + t.height / 2) - (r.top + r.height / 2);
+  requestAnimationFrame(() => { el.classList.add('lift'); setTimeout(() => { el.style.setProperty('--dx', dx + 'px'); el.style.setProperty('--dy', dy + 'px'); el.classList.add('fly'); }, 420); });
+  setTimeout(() => { target.classList.remove('shimmer'); void target.offsetWidth; target.classList.add('shimmer'); }, 1050);
+  setTimeout(() => el.remove(), 1300);
 }
+export function floatXp(anchor, text) { coinFlight(anchor, String(text).replace(/[^\d]/g, '') || text); }
 
 export function prefersReducedMotion() {
   return document.documentElement.dataset.motion === 'off' || window.matchMedia('(prefers-reduced-motion: reduce)').matches;

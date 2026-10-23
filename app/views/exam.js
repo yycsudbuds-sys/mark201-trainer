@@ -1,5 +1,6 @@
 // Midterm simulator: timed, deferred feedback, exam-weighted; full debrief.
 import { h, fmtTime, timeAgo } from '../ui.js';
+import { icon } from '../icons.js';
 import { buildExam } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner } from './runner.js';
@@ -81,7 +82,7 @@ function result(app, rec) {
     for (const l of items) {
       const q = app.questionOf(l.qid)?.question; if (!q) continue; const c = app.conceptOf(q.concept);
       list.appendChild(h('div', { class: 'review-item ' + (l.correct ? 'right' : 'wrong') },
-        h('div', { class: 'row wrap small' }, h('span', { class: 'chip ch', style: { '--ch': c.chapter.color } }, `Ch ${c.chapter.chapter}`), h('b', null, c.concept.term), h('span', { class: 'muted' }, l.correct ? '✓' : '✗')),
+        h('div', { class: 'row wrap small' }, h('span', { class: 'chip ch', style: { '--ch': c.chapter.color } }, `Ch ${c.chapter.chapter}`), h('b', null, c.concept.term), h('span', { class: 'muted' }, l.correct ? icon('check', { size: 14, tone: 'laurel' }) : icon('cross', { size: 14, tone: 'crimson' }))),
         h('p', null, q.stem),
         !l.correct ? h('div', { class: 'opt chosen' }, l.chosen === null ? '(no answer)' : `You chose: ${l.chosen}`) : null,
         h('div', { class: 'opt correct' }, `Answer: ${l.answer}`),
@@ -97,7 +98,7 @@ function result(app, rec) {
       h('p', { class: 'muted' }, `${rec.correct} of ${rec.n} · ${fmtTime(rec.durationSec)}${rec.answered < rec.n ? ` · ${rec.n - rec.answered} unanswered` : ''}`),
       h('p', null, verdict(pct)),
       h('div', { class: 'row wrap mt', style: { justifyContent: 'center' } },
-        missConcepts.length ? h('a', { class: 'btn primary big', href: `#/drill/concepts/${missConcepts.join(',')}` }, `⚔️ Retake ${missConcepts.length} lost stronghold${missConcepts.length === 1 ? '' : 's'}`) : null,
+        missConcepts.length ? h('a', { class: 'btn primary big', href: `#/drill/concepts/${missConcepts.join(',')}` }, icon('swords', { size: 16, tone: 'mono' }), ` Retake ${missConcepts.length} lost stronghold${missConcepts.length === 1 ? '' : 's'}`) : null,
         h('a', { class: 'btn', href: '#/exam' }, 'Another battle'), h('a', { class: 'btn ghost', href: '#/home' }, 'Castra'))),
     h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'By province'), h('div', { class: 'stack' }, chRows)),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Debrief'), seg), list));

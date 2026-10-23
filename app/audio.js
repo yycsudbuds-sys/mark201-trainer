@@ -44,12 +44,14 @@ function ensure() {
 
 /** Call from the first user gesture. */
 export function unlock() {
-  if (A.unlocked) return; A.unlocked = true;
+  if (A.unlocked) return;
+  if (!A.enabled || !A.enabled()) return; // sound effects off: touch nothing, unlock later if they are turned on
+  A.unlocked = true;
   const ctx = ensure(); if (!ctx) return;
   try { const b = ctx.createBuffer(1, 1, 22050); const s = ctx.createBufferSource(); s.buffer = b; s.connect(ctx.destination); s.start(0); } catch { /* ignore */ }
   if (ctx.state === 'suspended') ctx.resume().catch(() => {});
 }
-function autoUnlock() { unlock(); window.removeEventListener('pointerdown', autoUnlock); window.removeEventListener('keydown', autoUnlock); }
+function autoUnlock() { unlock(); if (A.unlocked) { window.removeEventListener('pointerdown', autoUnlock); window.removeEventListener('keydown', autoUnlock); } }
 window.addEventListener('pointerdown', autoUnlock, { passive: true }); window.addEventListener('keydown', autoUnlock);
 document.addEventListener('visibilitychange', () => { if (!A.ctx) return; if (document.hidden) A.amb && A.amb.gain.setTargetAtTime(0, A.ctx.currentTime, 0.2); else A.amb && A.amb.gain.setTargetAtTime(0.55, A.ctx.currentTime, 0.5); });
 

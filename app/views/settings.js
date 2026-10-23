@@ -1,5 +1,6 @@
 // Settings: profiles, backup, theme, sound, exam date, reset, how-it-works.
 import { h, modal, toast } from '../ui.js';
+import { icon } from '../icons.js';
 import { MASTERY_LABELS } from '../engine.js';
 
 export function render(app) {
@@ -39,8 +40,8 @@ export function render(app) {
     h('div', { class: 'card stack' }, h('h3', null, 'Backup'),
       h('p', { class: 'small muted' }, 'Export your progress as a file to move it to another device or keep a backup.'),
       h('div', { class: 'row wrap' },
-        h('button', { class: 'btn', onClick: () => { const blob = new Blob([app.store.exportJSON()], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `mark201-progress-${st.name.replace(/\W+/g, '_')}-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); } }, '⬇ Export progress'),
-        h('button', { class: 'btn', onClick: () => fileInput.click() }, '⬆ Import progress'), fileInput,
+        h('button', { class: 'btn', onClick: () => { const blob = new Blob([app.store.exportJSON()], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `mark201-progress-${st.name.replace(/\W+/g, '_')}-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); } }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Export progress'),
+        h('button', { class: 'btn', onClick: () => fileInput.click() }, icon('arrow', { size: 14, tone: 'mono' }), ' Import progress'), fileInput,
         h('button', { class: 'btn danger', onClick: () => modal({ title: 'Reset all progress?', body: h('p', null, `Everything for ${st.name} is wiped: mastery, XP, history. Export first if unsure.`), actions: [{ label: 'Cancel', kind: 'ghost' }, { label: 'Reset everything', kind: 'danger', onClick: () => { app.store.resetActive(); toast('Progress reset'); } }] }) }, 'Reset progress'))),
     h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'How mastery works'),
       h('div', { class: 'stack small' },
@@ -48,7 +49,7 @@ export function render(app) {
         h('p', null, h('b', null, 'Solid'), ' needs 3 correct answers from at least 2 different question angles, with the last 2 in a row correct.'),
         h('p', null, h('b', null, 'Mastered'), ' needs 4 correct answers from at least 3 angles (definition, scenario, apply, tell-apart, exception, why, calculate, sequence), the last 3 in a row correct, no open pursuit, and at least one correct answer in a later study session (a 45-minute break starts a new session). That last rule is the research: one correct recall in each of several spaced sessions beats many recalls in one sitting.'),
         h('p', null, h('b', null, 'Pursuit'), ': any wrong answer opens a pursuit. The engine schedules three more questions on that concept, from different angles, spaced a few questions apart. A wrong answer during a pursuit resets it. Clearing one is worth +25 XP.'),
-        h('p', null, h('b', null, 'Review timing'), ': each correct answer pushes the concept further out (10 min → 1 h → 4 h → 12 h → 36 h). Due concepts float to the top of Smart Drill.'),
+        h('p', null, h('b', null, 'Review timing'), ': each correct answer pushes the concept further out (10 min, then 1 h, 4 h, 12 h, 36 h). Due concepts float to the top of Smart Drill.'),
         h('p', null, h('b', null, 'Readiness'), ' = 60% average mastery + 15% coverage + 25% last two simulation scores.'))),
     h('p', { class: 'tiny faint center' }, `Content v${app.content.version} · ${app.content.stats.questions} questions · ${app.content.stats.concepts} concepts · ${app.content.stats.activities} activities`));
 }

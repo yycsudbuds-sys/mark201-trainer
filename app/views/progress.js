@@ -1,5 +1,30 @@
 // Progress: readiness breakdown, per-chapter mastery, weakest concepts, angle accuracy, history, achievements.
 import { h, ring, fmtPct, timeAgo, fmtTime } from '../ui.js';
+import { icon, CHAPTER_ICON } from '../icons.js';
+const ACH_ICON = {
+  'first': 'gladius',
+  'fifty': 'scroll',
+  'twofifty': 'column',
+  'fivehundred': 'scutum',
+  'combo10': 'flame',
+  'combo25': 'brazier',
+  'pursuit': 'target',
+  'pursuit10': 'pilum',
+  'solid10': 'column',
+  'master10': 'laurel',
+  'master50': 'laurel',
+  'master100': 'aquila',
+  'masterall': 'aquila',
+  'boss1': 'galea',
+  'bossall': 'standard',
+  'exam1': 'tablet',
+  'exam90': 'seal',
+  'exam100': 'laurel',
+  'blitz1500': 'horn',
+  'chapterfull': 'book',
+  'streak2': 'sundial',
+  'reader': 'book',
+};
 import { readiness, chapterMastery, weakestConcepts, ANGLE_LABELS, MASTERY_LABELS, levelForXp } from '../engine.js';
 import { ACHIEVEMENTS } from '../achievements.js';
 import { shelfMap } from './common.js';
@@ -22,16 +47,16 @@ export function render(app) {
       h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Answers'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, String(st.stats.answered)), h('div', { class: 'small muted' }, `${st.stats.answered ? Math.round(st.stats.correct / st.stats.answered * 100) : 0}% accuracy · best combo ${st.stats.bestCombo || 0} · ${st.stats.pursuitsCleared || 0} pursuits cleared`))),
     h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'By province'),
       h('div', { class: 'stack' }, chapters.map(({ ch, m }) => h('div', { class: 'row wrap', style: { '--ch': ch.color } },
-        h('span', { style: { width: '150px', fontWeight: 700, fontSize: '0.9rem' } }, `${ch.emoji} Ch ${ch.chapter} ${ch.short}`),
+        h('span', { style: { width: '150px', fontWeight: 700, fontSize: '0.9rem' } }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` Ch ${ch.chapter} ${ch.short}`),
         h('div', { class: 'grow', style: { minWidth: '160px' } }, stackedBar(m.dist, ch.color)),
-        h('span', { class: 'mono small muted', style: { width: '190px' } }, `${m.dist[4]}★ ${m.dist[3]}▮ ${m.dist[2]}▯ · ${m.pursuits ? m.pursuits + ' 🎯 · ' : ''}${Math.round(m.score * 100)}%`),
+        h('span', { class: 'mono small muted', style: { width: '190px' } }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} ${m.dist[2]} · ${m.pursuits ? m.pursuits + ' ' : ''}`, m.pursuits ? icon('target', { size: 14, tone: 'mono' }) : null, `${m.pursuits ? ' · ' : ''}${Math.round(m.score * 100)}%`),
         h('a', { class: 'btn sm ghost', href: `#/drill/chapter/${ch.chapter}` }, 'Drill')))),
-      h('p', { class: 'tiny muted mt-sm' }, '★ mastered · ▮ solid · ▯ learning · 🎯 open pursuits')),
+      h('p', { class: 'tiny muted mt-sm' }, icon('laurel', { size: 14, tone: 'gold' }), ' mastered · ', icon('check', { size: 14, tone: 'mono' }), ' solid · learning · ', icon('target', { size: 14, tone: 'mono' }), ' open pursuits')),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'The Armoury')), shelfMap(app)),
     h('div', { class: 'grid two' },
       h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Weakest strongholds'),
         weakest.length ? h('div', { class: 'list' }, weakest.map(w => h('div', { class: 'li', style: { '--ch': w.chapter.color } },
-          h('span', { class: `mdot m${w.level}` }), h('div', { class: 'grow' }, h('div', { class: 't' }, w.concept.term), h('div', { class: 's' }, `Ch ${w.chapter.chapter} · ${MASTERY_LABELS[w.level]} · ${Math.round(w.acc * 100)}% of ${w.total}${w.pursuit ? ' · 🎯' : ''}`)),
+          h('span', { class: `mdot m${w.level}` }), h('div', { class: 'grow' }, h('div', { class: 't' }, w.concept.term), h('div', { class: 's' }, `Ch ${w.chapter.chapter} · ${MASTERY_LABELS[w.level]} · ${Math.round(w.acc * 100)}% of ${w.total}${w.pursuit ? ' · ' : ''}`, w.pursuit ? icon('target', { size: 14, tone: 'mono' }) : null)),
           h('a', { class: 'btn sm', href: `#/drill/concepts/${w.concept.id}` }, 'Drill')))) : h('div', { class: 'empty' }, 'Answer some questions and your weak spots will show up here.'),
         weakest.length ? h('a', { class: 'btn primary block mt', href: `#/drill/concepts/${weakest.map(w => w.concept.id).join(',')}` }, 'Drill all of these') : null),
       h('div', { class: 'stack' },
@@ -42,7 +67,7 @@ export function render(app) {
         h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Great battles'),
           exams.length ? h('div', { class: 'list' }, exams.slice().reverse().map(e => h('div', { class: 'li' }, h('b', { style: { color: e.score >= 0.9 ? 'var(--good)' : e.score >= 0.7 ? 'var(--accent)' : 'var(--bad)' } }, `${Math.round(e.score * 100)}%`), h('span', { class: 's' }, `${e.correct}/${e.n} · ${fmtTime(e.durationSec)} · ${timeAgo(e.t)}`)))) : h('p', { class: 'muted small' }, 'Run a midterm simulation to see history here.')))),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, `Honours · ${Object.keys(st.achievements).length}/${ACHIEVEMENTS.length}`)),
-      h('div', { class: 'grid four' }, ACHIEVEMENTS.map(a => h('div', { class: 'ach' + (st.achievements[a.id] ? '' : ' locked') }, h('div', { class: 'ico' }, a.ico), h('div', null, h('div', { class: 't' }, a.title), h('div', { class: 's' }, a.desc)))))));
+      h('div', { class: 'grid four' }, ACHIEVEMENTS.map(a => h('div', { class: 'ach' + (st.achievements[a.id] ? '' : ' locked') }, h('div', { class: 'ico' }, icon(ACH_ICON[a.id] || 'laurel', { size: 26, tone: st.achievements[a.id] ? 'gold' : 'iron' })), h('div', null, h('div', { class: 't' }, a.title), h('div', { class: 's' }, a.desc)))))));
 }
 
 function stackedBar(dist, color) {

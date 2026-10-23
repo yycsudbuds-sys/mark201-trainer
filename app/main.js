@@ -5,6 +5,8 @@ import { recordAttempt, levelForXp, readiness, dueCount, LEVELS } from './engine
 import { h, clear, toast, confetti, bar } from './ui.js';
 import { checkAchievements } from './achievements.js';
 import * as Audio from './audio.js';
+import { SceneDirector, sceneForRoute } from './scene-director.js';
+import { icon } from './icons.js';
 import * as Home from './views/home.js';
 import * as Campaign from './views/campaign.js';
 import * as Drill from './views/drill.js';
@@ -18,14 +20,14 @@ const ROUTES = {
   home: Home, campaign: Campaign, drill: Drill, exam: Exam, arcade: Arcade, learn: Learn, progress: Progress, settings: Settings,
 };
 const NAV = [
-  ['home', '🏛️', 'Castra'],
-  ['campaign', '🗺️', 'Conquest'],
-  ['drill', '⚔️', 'Field Drill'],
-  ['exam', '🛡️', 'Great Battle'],
-  ['arcade', '🏟️', 'Arena'],
-  ['learn', '📜', 'Archives'],
-  ['progress', '🦅', 'Senate'],
-  ['settings', '⚙️', 'Quartermaster'],
+  ['home', 'brazier', 'Castra'],
+  ['campaign', 'map', 'Conquest'],
+  ['drill', 'gladius', 'Field Drill'],
+  ['exam', 'scutum', 'Great Battle'],
+  ['arcade', 'swords', 'Arena'],
+  ['learn', 'scroll', 'Archives'],
+  ['progress', 'aquila', 'Senate'],
+  ['settings', 'gear', 'Quartermaster'],
 ];
 
 function buildIndex(content) {
@@ -62,15 +64,15 @@ const app = {
     if (ctx.combo > (this.state.stats.bestCombo || 0)) this.state.stats.bestCombo = ctx.combo;
     for (const ev of res.events) {
       const name = this.conceptOf(ev.cid)?.concept.term || ev.cid;
-      if (ev.type === 'masteryUp' && ev.to === 4) { toast(`★ Mastered: ${name}`, 'good'); this.sound('level'); }
+      if (ev.type === 'masteryUp' && ev.to === 4) { toast(`Mastered: ${name}`, 'good'); this.sound('promotion'); }
       else if (ev.type === 'masteryUp' && ev.to === 3) toast(`Solid: ${name}`, 'good', 1800);
       else if (ev.type === 'pursuitCleared') { toast(`Pursuit cleared: ${name} (+25 XP)`, 'good'); this.sound('clear'); }
     }
     const lvBefore = levelForXp(this.state.xp - res.xp).index;
     const lvAfter = levelForXp(this.state.xp).index;
-    if (lvAfter > lvBefore) { toast(`Promotion! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('level'); }
+    if (lvAfter > lvBefore) { toast(`Promotion! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('fanfare'); }
     const unlocked = checkAchievements(this);
-    for (const a of unlocked) { toast(`🏆 ${a.title}`, 'xp', 3000); }
+    for (const a of unlocked) { toast(`Honour earned: ${a.title}`, 'xp', 3000); }
     this.store.save();
     renderHeader();
     return res;
@@ -80,9 +82,9 @@ const app = {
     this.state.xp += amount;
     const d = this.store.state.days[Object.keys(this.store.state.days).pop()];
     if (d) d.xp += amount;
-    toast(`+${amount} XP ${why ? '· ' + why : ''}`, 'xp', 2200);
+    toast(`+${amount} XP ${why ? '· ' + why : ''}`, 'xp', 2200); this.sound('coins');
     const unlocked = checkAchievements(this);
-    for (const a of unlocked) toast(`🏆 ${a.title}`, 'xp', 3000);
+    for (const a of unlocked) toast(`Honour earned: ${a.title}`, 'xp', 3000);
     this.store.save();
     renderHeader();
   },
@@ -104,14 +106,14 @@ function buildShell() {
     h('a', { class: 'brand', href: '#/home' },
       h('div', { class: 'brand-mark', html: brandSvg() }),
       h('div', null, h('div', { class: 'brand-name' }, 'MARK 201'), h('div', { class: 'brand-sub' }, 'Imperium'))),
-    NAV.map(([key, ico, label]) => h('a', { class: 'nav-link', href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, ico), label, key === 'drill' ? h('span', { class: 'badge quiet', dataset: { due: '1' } }, '') : null)),
+    NAV.map(([key, ico, label]) => h('a', { class: 'nav-link', href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 20, tone: 'gold' })), label, key === 'drill' ? h('span', { class: 'badge quiet', dataset: { due: '1' } }, '') : null)),
     h('div', { class: 'nav-foot small muted' }, h('div', { dataset: { profileName: '1' } }), h('div', { class: 'tiny faint' }, `${app.content.stats.questions} questions · ${app.content.stats.concepts} concepts`)),
   );
   headerEl = h('div', { class: 'topbar' });
   mainEl = h('main', { class: 'main', id: 'main' }, headerEl, h('div', { class: 'view' }));
   bottomEl = h('nav', { class: 'bottom-nav', 'aria-label': 'Main' },
     NAV.filter(([k]) => ['home', 'campaign', 'drill', 'exam', 'arcade', 'progress'].includes(k)).map(([key, ico, label]) =>
-      h('a', { href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, ico), label)));
+      h('a', { href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 22, tone: 'gold' })), label)));
   shell = h('div', { class: 'shell' }, navEl, mainEl, bottomEl);
   root.appendChild(shell);
 }
@@ -128,15 +130,29 @@ export function renderHeader() {
       h('span', { class: 'level-pill' }, `Lv ${lv.number} · ${lv.title}`),
       bar(lv.progress, { color: 'var(--accent)', height: 6 }),
       h('span', { class: 'mono small muted' }, lv.next ? `${st.xp} / ${lv.next.xp} XP` : `${st.xp} XP`)),
-    h('span', { class: 'chip' }, `🔥 ${streak} day${streak === 1 ? '' : 's'}`),
-    h('span', { class: 'chip', title: 'Test readiness estimate' }, `Test Readiness ${Math.round(r.score * 100)}%`),
+    h('span', { class: 'chip' }, icon('flame', { size: 14, tone: 'gold' }), `${streak} day${streak === 1 ? '' : 's'}`),
+    h('span', { class: 'chip', title: 'Test readiness estimate' }, icon('scutum', { size: 14, tone: 'gold' }), `Test Readiness ${Math.round(r.score * 100)}%`),
   ));
   headerEl.appendChild(h('div', { class: 'row' },
-    h('a', { class: 'btn sm ghost', href: '#/settings' }, '👤 ', st.name),
+    volumeControl(),
+    h('a', { class: 'btn sm ghost', href: '#/settings' }, icon('person', { size: 16, tone: 'gold' }), st.name),
   ));
   const due = dueCount(app.content, st);
   navEl.querySelectorAll('[data-due]').forEach(b => { b.textContent = due ? `${due} due` : ''; b.classList.toggle('hidden', !due); });
   navEl.querySelectorAll('[data-profile-name]').forEach(el => { el.textContent = st.name; });
+}
+
+/** Master volume: a bronze mute button and a short slider. Writes mark201.cosmetic.v1 only. */
+function volumeControl() {
+  const soundOn = app.state?.settings?.sound !== false;
+  const muted = Audio.isMuted() || !soundOn;
+  const btn = h('button', { class: 'vol-btn' + (muted ? ' muted' : ''), type: 'button', title: soundOn ? (Audio.isMuted() ? 'Unmute' : 'Mute') : 'Sound effects are off in the Quartermaster', 'aria-label': 'Mute', 'aria-pressed': String(muted), disabled: !soundOn },
+    icon(muted ? 'cross' : 'horn', { size: 16, tone: muted ? 'iron' : 'gold' }));
+  const slider = h('input', { type: 'range', class: 'vol-range', min: '0', max: '100', step: '5', value: String(Math.round(Audio.getVolume() * 100)), 'aria-label': 'Master volume', disabled: !soundOn });
+  btn.addEventListener('click', () => { const m = Audio.toggleMuted(); btn.classList.toggle('muted', m); btn.setAttribute('aria-pressed', String(m)); btn.replaceChildren(icon(m ? 'cross' : 'horn', { size: 16, tone: m ? 'iron' : 'gold' })); if (!m) Audio.play('tick'); });
+  let t = 0;
+  slider.addEventListener('input', () => { Audio.setVolume(Number(slider.value) / 100); if (Audio.isMuted()) { Audio.setMuted(false); btn.classList.remove('muted'); btn.replaceChildren(icon('horn', { size: 16, tone: 'gold' })); } const now = performance.now(); if (now - t > 150) { t = now; Audio.play('tick'); } });
+  return h('div', { class: 'vol' + (soundOn ? '' : ' off') }, btn, slider);
 }
 
 function setActive(routeKey) {
@@ -154,6 +170,7 @@ function route() {
   const { key, params } = parseHash();
   const mod = ROUTES[key] || Home;
   const viewHost = mainEl.querySelector('.view');
+  if (app.director) { try { const sc = sceneForRoute(ROUTES[key] ? key : 'home', params); app.director.setScene(sc.kind, sc); } catch { /* scene is cosmetic */ } }
   if (app.currentView && app.currentView.cleanup) { try { app.currentView.cleanup(); } catch { /* ignore */ } }
   clear(viewHost);
   let el;
@@ -175,6 +192,7 @@ function applySettings() {
   document.documentElement.dataset.theme = s.theme || 'dark';
   document.documentElement.dataset.motion = s.motion === false ? 'off' : 'on';
   document.querySelector('meta[name=theme-color]')?.setAttribute('content', s.theme === 'light' ? '#EEF1F7' : '#121726');
+  if (app.director) { app.director.refreshTheme(); if (app.state?.settings?.sound === false) Audio.ambience(null); else { try { const { key, params } = parseHash(); const sc = sceneForRoute(ROUTES[key] ? key : 'home', params); Audio.ambience(sc.amb || null); } catch { /* cosmetic */ } } }
 }
 app.applySettings = applySettings;
 
@@ -202,6 +220,7 @@ function welcome() {
 function boot() {
   if (!app.store.loadActive()) { welcome(); return; }
   Audio.initAudio(() => app.state?.settings?.sound !== false);
+  app.director = new SceneDirector({ getTheme: () => app.state?.settings?.theme || 'dark', getMotion: () => app.state?.settings?.motion !== false, audio: Audio });
   applySettings();
   buildShell();
   app.store.on(type => { if (type === 'profile') { applySettings(); route(); } });

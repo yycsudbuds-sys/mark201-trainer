@@ -3,8 +3,7 @@ import { h, clear, floatXp } from '../ui.js';
 import { markSeen, masteryLevel, MASTERY_LABELS, shuffleOptions, pickQuestionForConcept, masteryGaps } from '../engine.js';
 import { visualFor, hasTableToo, revealTable, glyphFor } from '../visuals.js';
 import { conceptCard } from './concept.js';
-import { attachScene, PROVINCE_SCENE } from '../scenes.js';
-import { richText } from '../icons.js';
+import { richText, icon } from '../icons.js';
 
 function sentences(text) {
   return String(text || '').split(/(?<=[.!?])\s+(?=[A-Z("'“])/).map(s => s.trim()).filter(Boolean);
@@ -34,7 +33,6 @@ export function createLesson(app, cids, opts = {}) {
   const foot = h('div', { class: 'lesson-foot' });
   const scroll = h('div', { class: 'scroll' }, h('div', { class: 'scroll-roller top', 'aria-hidden': 'true' }), h('div', { class: 'scroll-paper' }, stage), h('div', { class: 'scroll-roller bottom', 'aria-hidden': 'true' }));
   el.append(top, scroll, foot);
-  if (chapter && PROVINCE_SCENE[chapter.chapter]) attachScene(el, PROVINCE_SCENE[chapter.chapter], { blur: 10, tint: 0.42 });
   let checkDone = false; let checkEl = null;
 
   function conceptIndex(i) { const cid = slides[i].cid; return cids.indexOf(cid); }
@@ -56,14 +54,14 @@ export function createLesson(app, cids, opts = {}) {
     if (s.kind === 'hook') {
       return h('div', { class: 'slide hook' }, head,
         h('p', { class: 'slide-def' }, c.definition),
-        c.mnemonic ? h('div', { class: 'callout hint' }, h('span', { class: 'callout-ico' }, '💡'), h('span', null, c.mnemonic)) : null,
+        c.mnemonic ? h('div', { class: 'callout hint' }, h('span', { class: 'callout-ico' }, icon('tablet', { size: 20, tone: 'gold' })), h('span', null, c.mnemonic)) : null,
         h('div', { class: 'tiny muted mt' }, cs ? `Your status: ${MASTERY_LABELS[masteryLevel(cs)]}${masteryLevel(cs) < 4 && cs.a?.length ? ' · to master: ' + masteryGaps(cs).slice(0, 2).join(', ') : ''}` : 'New to you.'));
     }
     if (s.kind === 'explain') {
       const lines = sentences(c.explain);
       return h('div', { class: 'slide' }, head,
         h('div', { class: 'lines' }, lines.map((l, i) => h('p', { class: 'line', style: { '--i': i } }, l))),
-        h('div', { class: 'callout example', style: { '--i': lines.length } }, h('span', { class: 'callout-ico' }, '🧪'), h('div', null, h('b', null, 'Example'), h('div', null, c.example))));
+        h('div', { class: 'callout example', style: { '--i': lines.length } }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 20, tone: 'gold' })), h('div', null, h('b', null, 'Example'), h('div', null, c.example))));
     }
     if (s.kind === 'visual') {
       return h('div', { class: 'slide' }, head, h('p', { class: 'small muted' }, 'Interact with the diagram. Say what each part means before you reveal it.'), s.vis, s.table ? revealTable(s.table, { color: chapter?.color }) : null);
@@ -94,10 +92,10 @@ export function createLesson(app, cids, opts = {}) {
     const last = idx === slides.length - 1;
     const canNext = s.kind !== 'check' || checkDone;
     foot.append(
-      h('button', { class: 'btn ghost', disabled: idx === 0, onClick: () => { idx--; draw(-1); } }, '← Back'),
+      h('button', { class: 'btn ghost', disabled: idx === 0, onClick: () => { idx--; draw(-1); } }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Back'),
       h('div', { class: 'small muted center' }, `${idx + 1} / ${slides.length}`),
-      last && canNext ? h('button', { class: 'btn primary big', onClick: () => opts.onComplete && opts.onComplete() }, opts.completeLabel || 'Finish lesson →')
-        : h('button', { class: 'btn primary', disabled: !canNext, onClick: () => { idx++; draw(1); } }, canNext ? 'Next →' : 'Answer to continue'));
+      last && canNext ? h('button', { class: 'btn primary big', onClick: () => opts.onComplete && opts.onComplete() }, opts.completeLabel || 'Finish lesson', ' ', icon('arrow', { size: 14, tone: 'mono' }))
+        : h('button', { class: 'btn primary', disabled: !canNext, onClick: () => { idx++; draw(1); } }, canNext ? ['Next ', icon('arrow', { size: 14, tone: 'mono' })] : 'Answer to continue'));
   }
 
   function draw(dir = 1) {
@@ -147,7 +145,7 @@ export function miniQuestion(app, q, onDone) {
     const res = app.answer(q, correct, { mode: 'lesson', combo: 0 });
     app.sound(correct ? 'correct' : 'wrong');
     if (res.xp) floatXp(opts[answer], `+${res.xp} XP`);
-    box.appendChild(h('div', { class: 'explain' }, h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, correct ? '✓ Correct' : '✗ Not quite'), h('p', null, q.explanation)));
+    box.appendChild(h('div', { class: 'explain' }, h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 18, tone: correct ? 'laurel' : 'crimson' }), correct ? 'Correct' : 'Not quite'), h('p', null, q.explanation)));
     onDone && onDone(correct);
   }
   return box;

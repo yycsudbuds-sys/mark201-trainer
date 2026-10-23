@@ -49,6 +49,7 @@ function ground(s, d, y, c1, c2) { s.appendChild(svg('rect', { x: 0, y, width: W
 function mist(a, d, y, hgt, c, opacity, dur, rev = false) { const g = svg('g', { class: 'amb-mist', style: `animation-duration:${dur}s;${rev ? 'animation-direction:alternate-reverse;' : ''}` }); g.appendChild(svg('ellipse', { cx: W * 0.3, cy: y, rx: W * 0.55, ry: hgt, fill: rad(d, [[0, c, opacity], [1, c, 0]]) })); g.appendChild(svg('ellipse', { cx: W * 0.85, cy: y + hgt * 0.4, rx: W * 0.5, ry: hgt * 0.8, fill: rad(d, [[0, c, opacity * 0.8], [1, c, 0]]) })); a.appendChild(g); }
 function motes(a, n, c, seed, area = [0, 0, W, H]) { const r = rnd(seed); for (let i = 0; i < n; i++) a.appendChild(svg('circle', { cx: area[0] + r() * area[2], cy: area[1] + r() * area[3], r: 1.5 + r() * 2.5, fill: c, class: 'amb-mote', style: `animation-duration:${6 + r() * 8}s;animation-delay:${-r() * 10}s;opacity:${0.3 + r() * 0.5}` })); }
 function flame(a, d, x, y, size) { a.appendChild(svg('circle', { cx: x, cy: y - size * 0.4, r: size * 3.2, fill: rad(d, [[0, '#FFB347', 0.5], [0.5, '#E2581E', 0.14], [1, '#E2581E', 0]]), class: 'amb-glow' })); a.appendChild(svg('path', { d: `M ${x} ${y - size * 1.6} C ${x + size * 0.6} ${y - size * 1.1}, ${x + size * 0.5} ${y - size * 0.2}, ${x} ${y} C ${x - size * 0.5} ${y - size * 0.2}, ${x - size * 0.6} ${y - size * 1.1}, ${x} ${y - size * 1.6} Z`, fill: '#FFD27A', class: 'amb-flame', style: `transform-origin:${x}px ${y}px` })); }
+function smoke(a, d, x, y, sz) { for (let i = 0; i < 4; i++) a.appendChild(svg('ellipse', { cx: x + (i - 1.5) * sz * 0.3, cy: y, rx: sz * 0.7, ry: sz * 0.5, fill: rad(d, [[0, '#B4A58A', 0.35], [1, '#B4A58A', 0]]), class: 'amb-smoke', style: `animation-duration:${5 + i * 1.3}s;animation-delay:${-i * 1.7}s` })); }
 function stars(s, n, seed, maxY = H * 0.5) { const r = rnd(seed); for (let i = 0; i < n; i++) s.appendChild(svg('circle', { cx: r() * W, cy: r() * maxY, r: 0.6 + r() * 1.4, fill: '#FFF6DC', opacity: 0.3 + r() * 0.6 })); }
 
 const SCENES = {
@@ -210,6 +211,122 @@ const SCENES = {
     const r = rnd(111);
     for (let i = 0; i < 46; i++) a.appendChild(svg('line', { x1: 0, y1: 520 + r() * 380, x2: 120 + r() * 300, y2: 0, class: 'amb-streak', stroke: '#FFF4D0', 'stroke-width': 1 + r() * 3, style: `animation-duration:${0.5 + r() * 0.7}s;animation-delay:${-r() * 2}s;opacity:${0.25 + r() * 0.45}`, transform: `translate(0 0)` }));
     mist(a, d, 820, 60, '#E6CB92', 0.5, 6); mist(a, d, 880, 50, '#D9B27A', 0.5, 4, true); motes(a, 40, '#FFE4B0', 113, [0, 500, W, 400]);
+  },
+  // ---------- mode scenes ----------
+  camp(s, d, a) {
+    sky(s, d, [[0, '#1A1830'], [0.45, '#5A3A4A'], [0.72, '#C8784A'], [1, '#E6A567']]);
+    stars(s, 40, 201, H * 0.4);
+    ridge(s, 520, 30, '#3A2E3A', 202, 1.1); ridge(s, 580, 36, '#2E2630', 203, 0.8);
+    for (let i = 0; i < 80; i++) s.appendChild(svg('path', { d: `M ${i * 20 + 4} 600 l 0 -46 l 6 -8 l 6 8 l 0 46 z`, fill: i % 2 ? '#3B2A17' : '#4A3418' }));
+    [[300, 600], [1300, 600]].forEach(([x, y]) => { s.appendChild(svg('line', { x1: x, y1: y, x2: x, y2: y - 180, stroke: '#C9A227', 'stroke-width': 5 })); s.appendChild(svg('rect', { x: x - 26, y: y - 176, width: 52, height: 34, fill: '#8B1E1E', stroke: '#C9A227', 'stroke-width': 2 })); s.appendChild(svg('path', { d: `M ${x} ${y - 200} l -14 10 l 9 -2 l -3 10 l 8 -8 l 8 8 l -3 -10 l 9 2 z`, fill: '#E3C76A' })); });
+    ground(s, d, 600, '#4A3A26', '#1A120C');
+    const rows = [[640, 0.6, 14], [700, 0.8, 11], [790, 1.05, 8]];
+    const r = rnd(204);
+    rows.forEach(([base, sc, n]) => { for (let i = 0; i < n; i++) { const x = 60 + i * (W / n) + r() * 30; const w = 110 * sc; const hgt = 80 * sc; s.appendChild(svg('path', { d: `M ${x} ${base} L ${x + w / 2} ${base - hgt} L ${x + w} ${base} Z`, fill: sc > 1 ? '#B9A27A' : '#A08B66' })); s.appendChild(svg('path', { d: `M ${x + w / 2} ${base - hgt} L ${x + w * 0.5 + w * 0.42} ${base} L ${x + w} ${base} Z`, fill: '#6B5A3E', opacity: 0.55 })); s.appendChild(svg('path', { d: `M ${x + w * 0.42} ${base} L ${x + w * 0.5} ${base - hgt * 0.5} L ${x + w * 0.58} ${base} Z`, fill: '#2A1C0E' })); } });
+    [[420, 860, 20], [980, 850, 22], [1350, 870, 16]].forEach(([x, y, sz]) => { s.appendChild(svg('ellipse', { cx: x, cy: y + 4, rx: sz * 1.6, ry: sz * 0.5, fill: '#2A1C0E' })); for (let k = 0; k < 4; k++) s.appendChild(svg('line', { x1: x - sz + k * 10, y1: y + 2, x2: x + sz - k * 10, y2: y - 4, stroke: '#3B2A17', 'stroke-width': 5, 'stroke-linecap': 'round' })); flame(a, d, x, y - 2, sz); smoke(a, d, x, y - sz * 2, sz * 1.4); });
+    motes(a, 30, '#FFB347', 205, [0, 500, W, 400]);
+  },
+  training(s, d, a) {
+    sky(s, d, [[0, '#7FA3B8'], [0.6, '#D9C9A6'], [1, '#E6D3A8']]);
+    sun(s, d, 1250, 160, 70, '#FFF4D0', 3.5);
+    ridge(s, 520, 24, '#9A8F70', 211, 0.9, 0.15);
+    for (let i = 0; i < 30; i++) s.appendChild(svg('path', { d: `M ${i * 56} 560 l 0 -40 l 8 -4 l 8 4 l 0 40 z`, fill: '#5A3F22' }));
+    ground(s, d, 560, '#B8925A', '#5A4028');
+    [[300, 1], [560, 0.9], [820, 1.05], [1100, 0.95], [1380, 1]].forEach(([x, sc]) => {
+      s.appendChild(svg('rect', { x: x - 10 * sc, y: 640 - 200 * sc, width: 20 * sc, height: 230 * sc, fill: '#4A3418' }));
+      s.appendChild(svg('ellipse', { cx: x, cy: 640 - 150 * sc, rx: 44 * sc, ry: 50 * sc, fill: '#D9B27A', stroke: '#8B6B3A', 'stroke-width': 3 }));
+      s.appendChild(svg('ellipse', { cx: x, cy: 640 - 150 * sc, rx: 26 * sc, ry: 30 * sc, fill: 'none', stroke: '#8B1E1E', 'stroke-width': 3 }));
+      s.appendChild(svg('ellipse', { cx: x, cy: 640 - 150 * sc, rx: 9 * sc, ry: 10 * sc, fill: '#8B1E1E' }));
+      for (let k = 0; k < 5; k++) s.appendChild(svg('line', { x1: x - 30 * sc + k * 15 * sc, y1: 640 - 110 * sc, x2: x - 36 * sc + k * 18 * sc, y2: 640 - 60 * sc, stroke: '#C9A227', 'stroke-width': 1.5 }));
+      s.appendChild(svg('ellipse', { cx: x + 20, cy: 680 * sc + 180 * (1 - sc), rx: 70 * sc, ry: 14 * sc, fill: '#3A2A1A', opacity: 0.35 }));
+    });
+    s.appendChild(svg('rect', { x: 60, y: 600, width: 180, height: 10, fill: '#4A3418' })); for (let k = 0; k < 7; k++) s.appendChild(svg('rect', { x: 70 + k * 24, y: 540, width: 6, height: 120, fill: '#8B6B3A' }));
+    mist(a, d, 820, 50, '#E6D3A8', 0.4, 12); motes(a, 40, '#FFF4D0', 212, [0, 200, W, 600]);
+  },
+  stormplain(s, d, a) {
+    sky(s, d, [[0, '#0E1118'], [0.4, '#2A3140'], [0.75, '#5A5A62'], [1, '#8A8370']]);
+    for (let i = 0; i < 6; i++) ridge(s, 120 + i * 60, 40, i % 2 ? '#1E2430' : '#262D3A', 221 + i, 0.6 + i * 0.1, 0.25);
+    ridge(s, 560, 20, '#4A4A3A', 228, 0.8, 0.12);
+    ground(s, d, 580, '#5A5A42', '#1C1C14');
+    const r = rnd(229);
+    for (let i = 0; i < 120; i++) { const x = 60 + r() * 600; const y = 600 + r() * 40; s.appendChild(svg('rect', { x, y, width: 4, height: 9, fill: '#5A1313' })); if (i % 9 === 0) s.appendChild(svg('line', { x1: x + 2, y1: y, x2: x + 2, y2: y - 22, stroke: '#C9A227', 'stroke-width': 1.2 })); }
+    for (let i = 0; i < 120; i++) { const x = 940 + r() * 600; const y = 600 + r() * 40; s.appendChild(svg('rect', { x, y, width: 4, height: 9, fill: '#2A2E36' })); if (i % 9 === 0) s.appendChild(svg('line', { x1: x + 2, y1: y, x2: x + 2, y2: y - 22, stroke: '#8A8F99', 'stroke-width': 1.2 })); }
+    s.appendChild(svg('path', { d: 'M 1120 60 l -40 120 l 30 -10 l -50 150 l 70 -110 l -30 8 z', fill: '#E6ECF4', class: 'bolt' }));
+    mist(a, d, 640, 60, '#8A8F99', 0.3, 16); motes(a, 24, '#CFD6E0', 230, [0, 300, W, 500]);
+    for (let i = 0; i < 40; i++) { const rx = r() * W; a.appendChild(svg('line', { x1: rx, y1: 0, x2: rx - 6, y2: 24, class: 'amb-rain', stroke: '#CFD6E0', 'stroke-width': 1, style: `animation-duration:${0.7 + r() * 0.5}s;animation-delay:${-r() * 2}s;opacity:${0.1 + r() * 0.25}` })); }
+  },
+  arenafloor(s, d, a) {
+    sky(s, d, [[0, '#E6B97A'], [1, '#D9A86A']]);
+    const r = rnd(241);
+    for (let t = 0; t < 3; t++) { const y = 120 + t * 90; s.appendChild(svg('rect', { x: 0, y, width: W, height: 90, fill: t % 2 ? '#B9956A' : '#A8845C' })); for (let i = 0; i < 70; i++) { const x = i * 24 + r() * 10; s.appendChild(svg('circle', { cx: x, cy: y + 40 + r() * 20, r: 7, fill: '#2A1C14' })); s.appendChild(svg('rect', { x: x - 9, y: y + 48 + r() * 10, width: 18, height: 20, rx: 5, fill: ['#8B1E1E', '#E6D3A8', '#4F5E2A', '#2A1C14', '#C9A227'][Math.floor(r() * 5)] })); } }
+    s.appendChild(svg('rect', { x: 640, y: 150, width: 320, height: 240, fill: '#6B1E2A' })); s.appendChild(svg('path', { d: 'M 630 150 h 340 l -20 -40 h -300 z', fill: '#8B1E1E' })); [660, 940].forEach(x => s.appendChild(svg('rect', { x: x - 10, y: 150, width: 20, height: 240, fill: '#E8DCC2' })));
+    s.appendChild(svg('circle', { cx: 800, cy: 270, r: 22, fill: '#8A5A3C' })); s.appendChild(svg('path', { d: 'M 760 390 c 0 -60 20 -90 40 -90 s 40 30 40 90 z', fill: '#66023C' })); s.appendChild(svg('path', { d: 'M 778 258 q 22 -20 44 0', stroke: '#C9A227', 'stroke-width': 4, fill: 'none' }));
+    s.appendChild(svg('rect', { x: 0, y: 390, width: W, height: 70, fill: '#CDB47C' })); for (let i = 0; i < 16; i++) s.appendChild(svg('rect', { x: i * 100 + 30, y: 400, width: 40, height: 50, fill: '#3B2A17' }));
+    s.appendChild(svg('rect', { x: 0, y: 460, width: W, height: 440, fill: lin(d, [[0, '#E6CB92'], [1, '#B8925A']]) }));
+    const glad = (x, flip) => { const g = svg('g', { transform: `translate(${x} 700) scale(${flip ? -1 : 1} 1)` }); g.appendChild(svg('ellipse', { cx: 0, cy: 150, rx: 70, ry: 14, fill: '#8A6A3C', opacity: 0.5 })); g.appendChild(svg('circle', { cx: 0, cy: -40, r: 22, fill: '#1A1410' })); g.appendChild(svg('path', { d: 'M -22 -50 q 22 -30 44 0 l 6 20 h -56 z', fill: '#1A1410' })); g.appendChild(svg('path', { d: 'M -28 -16 l 56 0 l -10 110 h -36 z', fill: '#1A1410' })); g.appendChild(svg('path', { d: 'M 24 -10 l 90 -60 l 8 8 l -86 70 z', fill: '#1A1410' })); g.appendChild(svg('path', { d: 'M -70 -40 a 42 42 0 0 1 0 84 l -14 0 a 42 42 0 0 1 0 -84 z', fill: '#1A1410' })); g.appendChild(svg('path', { d: 'M -20 94 l -10 56 h 18 l 6 -56 z M 8 94 l 10 56 h 18 l -6 -56 z', fill: '#1A1410' })); return g; };
+    s.appendChild(glad(520, false)); s.appendChild(glad(1080, true));
+    mist(a, d, 820, 50, '#F3D9B0', 0.4, 10); motes(a, 50, '#FFE4B0', 242, [0, 400, W, 500]);
+  },
+  yard(s, d, a) {
+    sky(s, d, [[0, '#9FB4C4'], [0.6, '#D9C9A6'], [1, '#E6D3A8']]);
+    sun(s, d, 300, 140, 60, '#FFF4D0', 3);
+    ridge(s, 520, 24, '#8C8070', 251, 0.8, 0.15);
+    ground(s, d, 580, '#B8A27A', '#5A4A30');
+    const scaf = svg('g', {}); for (let i = 0; i < 6; i++) scaf.appendChild(svg('rect', { x: 120 + i * 60, y: 200, width: 8, height: 400, fill: '#6B4B2A' })); for (let j = 0; j < 5; j++) scaf.appendChild(svg('rect', { x: 110, y: 230 + j * 80, width: 330, height: 8, fill: '#5A3F22' })); for (let j = 0; j < 4; j++) scaf.appendChild(svg('line', { x1: 120, y1: 238 + j * 80, x2: 440, y2: 310 + j * 80, stroke: '#4A3418', 'stroke-width': 4 })); s.appendChild(scaf);
+    s.appendChild(svg('rect', { x: 700, y: 520, width: 360, height: 30, fill: '#5A3F22' })); s.appendChild(svg('rect', { x: 740, y: 400, width: 40, height: 130, fill: '#6B4B2A' })); s.appendChild(svg('rect', { x: 980, y: 400, width: 40, height: 130, fill: '#6B4B2A' })); s.appendChild(svg('rect', { x: 740, y: 400, width: 280, height: 24, fill: '#5A3F22' })); s.appendChild(svg('path', { d: 'M 760 412 l -120 -80 M 1000 412 l 120 -80', stroke: '#4A3418', 'stroke-width': 10 })); s.appendChild(svg('path', { d: 'M 640 332 L 1120 332', stroke: '#B9B2A5', 'stroke-width': 3 })); s.appendChild(svg('rect', { x: 820, y: 440, width: 120, height: 60, fill: '#8B6B3A' }));
+    for (let i = 0; i < 4; i++) for (let j = 0; j < 3 - (i % 2); j++) s.appendChild(svg('rect', { x: 1180 + i * 70 - j * 10, y: 700 - j * 60, width: 66, height: 56, fill: ['#D9CDB4', '#CDBF9F', '#C4B390'][(i + j) % 3], stroke: '#8C8070', 'stroke-width': 2 }));
+    s.appendChild(svg('path', { d: 'M 1420 760 L 1480 300 L 1540 760', stroke: '#5A3F22', 'stroke-width': 12, fill: 'none' })); s.appendChild(svg('line', { x1: 1480, y1: 300, x2: 1340, y2: 560, stroke: '#2A1C0E', 'stroke-width': 3 })); s.appendChild(svg('rect', { x: 1314, y: 560, width: 52, height: 46, fill: '#CDBF9F', stroke: '#8C8070', 'stroke-width': 2 })); s.appendChild(svg('circle', { cx: 1480, cy: 300, r: 14, fill: '#4A3418' }));
+    s.appendChild(svg('ellipse', { cx: 880, cy: 760, rx: 300, ry: 20, fill: '#5A4A30', opacity: 0.4 }));
+    mist(a, d, 800, 50, '#E6D3A8', 0.35, 14); motes(a, 40, '#FFF4D0', 252, [0, 200, W, 600]);
+  },
+  study(s, d, a) {
+    s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: lin(d, [[0, '#120C08'], [0.5, '#2A1C12'], [1, '#0E0906']]) }));
+    s.appendChild(svg('rect', { x: 1080, y: 120, width: 300, height: 360, fill: lin(d, [[0, '#0E1A2E'], [1, '#24485E']]) })); s.appendChild(svg('path', { d: 'M 1060 120 h 340 v 380 h -340 z M 1230 120 v 380 M 1060 300 h 340', fill: 'none', stroke: '#3B2A17', 'stroke-width': 12 })); s.appendChild(svg('circle', { cx: 1310, cy: 200, r: 30, fill: '#E6ECF4', opacity: 0.9 }));
+    s.appendChild(svg('rect', { x: 120, y: 140, width: 760, height: 16, fill: '#5A3F22' })); for (let i = 0; i < 18; i++) { s.appendChild(svg('circle', { cx: 150 + i * 40, cy: 124, r: 14, fill: ['#E6D3A8', '#D9C08C', '#CDB47C'][i % 3] })); s.appendChild(svg('circle', { cx: 150 + i * 40, cy: 124, r: 5, fill: '#8B6B3A' })); }
+    s.appendChild(svg('rect', { x: 120, y: 300, width: 760, height: 16, fill: '#5A3F22' })); for (let i = 0; i < 9; i++) s.appendChild(svg('rect', { x: 150 + i * 80, y: 220, width: 60, height: 80, fill: ['#8B1E1E', '#4F5E2A', '#2E4A7A'][i % 3] }));
+    s.appendChild(svg('rect', { x: 200, y: 640, width: 1200, height: 40, fill: '#5A3F22' })); s.appendChild(svg('rect', { x: 240, y: 680, width: 40, height: 220, fill: '#3B2A17' })); s.appendChild(svg('rect', { x: 1320, y: 680, width: 40, height: 220, fill: '#3B2A17' }));
+    s.appendChild(svg('rect', { x: 420, y: 610, width: 420, height: 34, rx: 14, fill: '#E6D3A8' })); s.appendChild(svg('rect', { x: 470, y: 560, width: 320, height: 60, fill: '#F0E1BC' })); for (let i = 0; i < 5; i++) s.appendChild(svg('line', { x1: 490, y1: 575 + i * 10, x2: 760 - (i % 2) * 60, y2: 575 + i * 10, stroke: '#8B6B3A', 'stroke-width': 1.5 }));
+    s.appendChild(svg('rect', { x: 900, y: 620, width: 200, height: 24, rx: 10, fill: '#D9C08C' }));
+    s.appendChild(svg('path', { d: 'M 1000 600 q 30 -20 70 0 l -10 14 h -50 z', fill: '#B48C5E' })); s.appendChild(svg('rect', { x: 1030, y: 580, width: 10, height: 20, fill: '#8C6B4A' }));
+    flame(a, d, 1072, 596, 14);
+    s.appendChild(svg('rect', { x: 0, y: 700, width: W, height: 200, fill: lin(d, [[0, '#1A110B', 0], [1, '#3B2A17', 0.5]]) }));
+    motes(a, 24, '#FFE4B0', 262, [200, 200, 1200, 500]);
+  },
+  curia(s, d, a) {
+    s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: lin(d, [[0, '#1A1510'], [0.5, '#3A322A'], [1, '#1A1510']]) }));
+    for (let i = 0; i < 8; i++) s.appendChild(svg('rect', { x: 100 + i * 180, y: 40, width: 140, height: 90, fill: 'none', stroke: '#5A4634', 'stroke-width': 6 }));
+    for (let i = 0; i < 7; i++) { const x = 80 + i * 240; s.appendChild(svg('rect', { x: x - 26, y: 150, width: 52, height: 420, fill: lin(d, [[0, '#B9B0A2'], [0.5, '#ECE6DA'], [1, '#8E867A']], 0, 0, 1, 0) })); s.appendChild(svg('rect', { x: x - 38, y: 140, width: 76, height: 22, fill: '#CDC4B4' })); s.appendChild(svg('rect', { x: x - 36, y: 570, width: 72, height: 18, fill: '#CDC4B4' })); }
+    for (let t = 0; t < 4; t++) { const y = 470 + t * 55; const inset = 120 + t * 60; s.appendChild(svg('path', { d: `M ${inset} ${y} L 620 ${y - 10} L 620 ${y + 30} L ${inset} ${y + 40} Z`, fill: t % 2 ? '#ECE6DA' : '#D9D1C2' })); s.appendChild(svg('path', { d: `M ${W - inset} ${y} L 980 ${y - 10} L 980 ${y + 30} L ${W - inset} ${y + 40} Z`, fill: t % 2 ? '#ECE6DA' : '#D9D1C2' })); }
+    s.appendChild(svg('rect', { x: 640, y: 560, width: 320, height: 40, fill: '#CDC4B4' })); s.appendChild(svg('rect', { x: 680, y: 530, width: 240, height: 30, fill: '#D9D1C2' })); s.appendChild(svg('rect', { x: 770, y: 450, width: 60, height: 90, fill: '#66023C' })); s.appendChild(svg('rect', { x: 760, y: 440, width: 80, height: 14, fill: '#C9A227' }));
+    s.appendChild(svg('path', { d: `M 0 600 L ${W} 600 L ${W} ${H} L 0 ${H} Z`, fill: lin(d, [[0, '#8E867A'], [1, '#3A322A']]) }));
+    for (let i = 0; i < 12; i++) s.appendChild(svg('path', { d: `M ${i * 140 - 100} ${H} L ${i * 140 + 60} 600 L ${i * 140 + 80} 600 L ${i * 140 - 60} ${H} Z`, fill: '#ECE6DA', opacity: 0.12 }));
+    [[200, 560], [1400, 560]].forEach(([x, y]) => { s.appendChild(svg('rect', { x: x - 4, y: y - 80, width: 8, height: 90, fill: '#4A3418' })); flame(a, d, x, y - 84, 16); });
+    motes(a, 24, '#FFE4B0', 271, [0, 200, W, 500]);
+  },
+  armoury(s, d, a) {
+    s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: lin(d, [[0, '#1E0E0C'], [0.5, '#4A1A16'], [1, '#1A0A08']]) }));
+    for (let i = 0; i < 14; i++) s.appendChild(svg('rect', { x: i * 120, y: 0, width: 60, height: H, fill: '#000', opacity: 0.12 }));
+    s.appendChild(svg('path', { d: `M 0 ${H} L 0 320 Q ${W / 2} 40 ${W} 320 L ${W} ${H} Z`, fill: '#3A1410' }));
+    s.appendChild(svg('rect', { x: 100, y: 250, width: 640, height: 14, fill: '#5A3F22' }));
+    for (let i = 0; i < 7; i++) { const x = 120 + i * 90; s.appendChild(svg('path', { d: `M ${x} 270 h 60 q 6 0 6 6 v 84 q 0 6 -6 6 h -60 q -6 0 -6 -6 v -84 q 0 -6 6 -6 z`, fill: i % 2 ? '#8B1E1E' : '#731818', stroke: '#C9A227', 'stroke-width': 2 })); s.appendChild(svg('circle', { cx: x + 30, cy: 318, r: 8, fill: '#C9A227' })); }
+    s.appendChild(svg('rect', { x: 860, y: 250, width: 600, height: 14, fill: '#5A3F22' }));
+    for (let i = 0; i < 6; i++) { const x = 900 + i * 100; s.appendChild(svg('path', { d: `M ${x - 24} 318 a 24 24 0 0 1 48 0 v 12 h -48 z`, fill: '#C9A227', stroke: '#3E2D0C', 'stroke-width': 1.5 })); s.appendChild(svg('path', { d: `M ${x - 20} 300 q 20 -30 40 0 q -20 -10 -40 0 z`, fill: '#8B1E1E' })); s.appendChild(svg('rect', { x: x - 30, y: 330, width: 60, height: 10, fill: '#8E6B1C' })); }
+    for (let i = 0; i < 9; i++) s.appendChild(svg('line', { x1: 1200 + i * 10, y1: 860, x2: 1230 + i * 6, y2: 560, stroke: '#B9B2A5', 'stroke-width': 3 }));
+    s.appendChild(svg('rect', { x: 200, y: 720, width: 300, height: 140, rx: 8, fill: '#5A3F22', stroke: '#C9A227', 'stroke-width': 3 })); s.appendChild(svg('rect', { x: 330, y: 770, width: 40, height: 50, fill: '#C9A227' }));
+    ground(s, d, 860, '#3A2A1A', '#120A08');
+    [[640, 700, 16], [1000, 700, 16]].forEach(([x, y, sz]) => { s.appendChild(svg('rect', { x: x - 4, y: y - 90, width: 8, height: 100, fill: '#4A3418' })); flame(a, d, x, y - 94, sz); });
+    motes(a, 20, '#FFB347', 281, [0, 300, W, 500]);
+  },
+  wartable(s, d, a) {
+    s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: lin(d, [[0, '#2A1C0E'], [1, '#120A06']]) }));
+    for (let i = 0; i < 20; i++) s.appendChild(svg('rect', { x: 0, y: i * 46, width: W, height: 22, fill: '#000', opacity: 0.08 }));
+    s.appendChild(svg('rect', { x: 120, y: 90, width: 1360, height: 720, rx: 10, fill: '#5A3F22', stroke: '#2A1C0E', 'stroke-width': 10 }));
+    s.appendChild(svg('rect', { x: 160, y: 130, width: 1280, height: 640, fill: lin(d, [[0, '#E9D7AE'], [1, '#CDB47C']]) }));
+    s.appendChild(svg('path', { d: 'M 300 500 Q 500 300 760 360 T 1240 320 L 1300 700 L 260 720 Z', fill: '#D9C08C', stroke: '#6B5636', 'stroke-width': 3 }));
+    for (let i = 0; i < 40; i++) s.appendChild(svg('path', { d: `M ${200 + (i * 97) % 1200} ${160 + (i * 61) % 580} q 10 -4 20 0`, stroke: '#6B5636', 'stroke-opacity': 0.3, fill: 'none' }));
+    [[520, 420, '#8B1E1E'], [860, 380, '#8B1E1E'], [1060, 520, '#3A3F47'], [700, 600, '#3A3F47']].forEach(([x, y, c]) => { s.appendChild(svg('rect', { x: x - 14, y: y - 10, width: 28, height: 20, fill: c })); s.appendChild(svg('line', { x1: x, y1: y - 10, x2: x, y2: y - 36, stroke: '#C9A227', 'stroke-width': 3 })); });
+    [[200, 150], [1400, 150], [200, 760], [1400, 760]].forEach(([x, y]) => { s.appendChild(svg('rect', { x: x - 10, y: y - 40, width: 20, height: 40, fill: '#F1E4C4' })); flame(a, d, x, y - 42, 14); });
+    motes(a, 16, '#FFE4B0', 291, [120, 90, 1360, 720]);
   },
 };
 

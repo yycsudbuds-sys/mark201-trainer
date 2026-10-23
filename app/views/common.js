@@ -1,5 +1,6 @@
 // Shared view pieces: chapter picker, the Shelf mastery map, next-action logic.
 import { h } from '../ui.js';
+import { icon, CHAPTER_ICON } from '../icons.js';
 import { masteryLevel, chapterMastery, dueCount, readiness } from '../engine.js';
 
 export function chapterPicker(app, selected, onChange) {
@@ -9,7 +10,7 @@ export function chapterPicker(app, selected, onChange) {
     const all = selected.size === app.content.chapters.length;
     el.appendChild(h('button', { class: all ? 'on' : '', style: { '--ch': 'var(--accent)' }, onClick: () => { if (all) selected.clear(); else app.content.chapters.forEach(c => selected.add(c.chapter)); render(); onChange && onChange(selected); } }, all ? 'All chapters' : 'Select all'));
     for (const ch of app.content.chapters) {
-      el.appendChild(h('button', { class: selected.has(ch.chapter) ? 'on' : '', style: { '--ch': ch.color }, onClick: () => { if (selected.has(ch.chapter)) selected.delete(ch.chapter); else selected.add(ch.chapter); render(); onChange && onChange(selected); } }, `${ch.emoji} Ch ${ch.chapter}`));
+      el.appendChild(h('button', { class: selected.has(ch.chapter) ? 'on' : '', style: { '--ch': ch.color }, onClick: () => { if (selected.has(ch.chapter)) selected.delete(ch.chapter); else selected.add(ch.chapter); render(); onChange && onChange(selected); } }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` Ch ${ch.chapter}`));
     }
   };
   render();
@@ -41,14 +42,14 @@ export function shelfMap(app, { chapters = null, onTile = null, legend = true } 
       const cls = ['tile', `m${lvl}`, cs && cs.pursuit ? 'pursuit' : '', cs && cs.a?.length && cs.due <= now && lvl < 4 ? 'due' : ''].join(' ');
       const t = h('button', { class: cls, 'aria-label': `${c.term}: ${['new', 'seen', 'learning', 'solid', 'mastered'][lvl]}`,
         onClick: () => onTile ? onTile(c, ch) : app.navigate(`#/learn/${ch.chapter}/${c.id}`),
-        onMouseenter: e => showTip(e.currentTarget, `<b>${c.term}</b>${['Not started', 'Seen', 'Learning', 'Solid', 'Mastered'][lvl]}${cs && cs.pursuit ? ' · 🎯 pursuit open' : ''}${cs && cs.a?.length ? ` · ${cs.a.filter(a => a[3]).length}/${cs.a.length} correct` : ''}`),
+        onMouseenter: e => showTip(e.currentTarget, `<b>${c.term}</b>${['Not started', 'Seen', 'Learning', 'Solid', 'Mastered'][lvl]}${cs && cs.pursuit ? ' · <span class="ico-inline">' + icon('target', { size: 12, tone: 'mono' }).outerHTML + '</span> pursuit open' : ''}${cs && cs.a?.length ? ` · ${cs.a.filter(a => a[3]).length}/${cs.a.length} correct` : ''}`),
         onMouseleave: hideTip, onBlur: hideTip });
       items.appendChild(t);
     }
     wrap.appendChild(h('div', { class: 'shelf', style: { '--ch': ch.color } },
       h('div', { class: 'shelf-head' },
-        h('a', { class: 'shelf-title', href: `#/campaign/${ch.chapter}`, style: { color: 'inherit', textDecoration: 'none' } }, h('span', { class: 'num' }, `CH ${String(ch.chapter).padStart(2, '0')}`), `${ch.emoji} ${ch.title}`),
-        h('span', { class: 'small muted mono' }, `${m.dist[4]}★ ${m.dist[3]}▮ · ${Math.round(m.score * 100)}%`)),
+        h('a', { class: 'shelf-title', href: `#/campaign/${ch.chapter}`, style: { color: 'inherit', textDecoration: 'none' } }, h('span', { class: 'num' }, `CH ${String(ch.chapter).padStart(2, '0')}`), icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` ${ch.title}`),
+        h('span', { class: 'small muted mono' }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} · ${Math.round(m.score * 100)}%`)),
       items, h('div', { class: 'shelf-board' })));
   }
   if (legend) {

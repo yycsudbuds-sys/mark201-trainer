@@ -4,7 +4,7 @@ import { masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
 import { conceptCard, masteryChip, figureEl } from './concept.js';
-import { attachScene } from '../scenes.js';
+import { icon } from '../icons.js';
 
 export function render(app, params) {
   const [sub, arg] = params;
@@ -16,23 +16,23 @@ export function render(app, params) {
 }
 
 function hub(app) {
-  const tile = (href, ico, title, desc, color, meta) => h('a', { class: 'mode-tile', href, style: { '--ch': color } }, h('div', { class: 'ico' }, ico), h('h3', null, title), h('p', null, desc), h('div', { class: 'meta' }, meta.map(m => h('span', { class: 'chip' }, m))));
+  const tile = (href, ico, title, desc, color, meta) => h('a', { class: 'mode-tile', href, style: { '--ch': color } }, h('div', { class: 'ico' }, icon(ico, { size: 34, tone: 'gold' })), h('h3', null, title), h('p', null, desc), h('div', { class: 'meta' }, meta.map(m => h('span', { class: 'chip' }, m))));
   const st = app.state.stats;
   const done = Object.values(app.state.activities).filter(a => a.done).length;
   return h('div', null,
     h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'The Arena'), h('p', null, 'Different contests, same engine underneath: every answer updates mastery and the review schedule.'))),
     h('div', { class: 'grid two' },
-      tile('#/arcade/blitz', '⚡', 'Skirmish', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#D28C3C', [`Best ${st.blitzBest || 0}`]),
-      tile('#/arcade/duel', '🗡️', 'Gladiator Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A98BC9', [`Best ${st.duelBest || 0}/15`]),
-      tile('#/arcade/build', '🏗️', 'Siege Works', 'Order the processes, sort items into buckets, match pairs. The memorization tables as engineering.', '#8FAA5A', [`${done}/${app.content.stats.activities} built`]),
-      tile('#/arcade/flash', '📜', 'Scrolls', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#B08968', ['Recall'])));
+      tile('#/arcade/blitz', 'gladius', 'Skirmish', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#D28C3C', [`Best ${st.blitzBest || 0}`]),
+      tile('#/arcade/duel', 'swords', 'Gladiator Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A98BC9', [`Best ${st.duelBest || 0}/15`]),
+      tile('#/arcade/build', 'siegetower', 'Siege Works', 'Order the processes, sort items into buckets, match pairs. The memorization tables as engineering.', '#8FAA5A', [`${done}/${app.content.stats.activities} built`]),
+      tile('#/arcade/flash', 'scroll', 'Scrolls', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#B08968', ['Recall'])));
 }
 
 // ---------- Blitz ----------
 function blitzConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('blitzch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '⚡ Skirmish'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('gladius', { size: 28, tone: 'gold' }), 'Skirmish'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best score: ${app.state.stats.blitzBest || 0}`)),
@@ -75,7 +75,7 @@ function blitz(app) {
 function duelConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🗡️ Gladiator Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('swords', { size: 28, tone: 'gold' }), 'Gladiator Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best: ${app.state.stats.duelBest || 0}/15`)),
@@ -105,16 +105,16 @@ function duel(app) {
 
 // ---------- Build & Sort ----------
 function buildList(app) {
-  const TYPE = { order: '🔢 Order', sort: '🗂️ Sort', match: '🔗 Match' };
+  const TYPE = { order: ['column', 'Order'], sort: ['crate', 'Sort'], match: ['hand', 'Match'] };
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🏗️ Siege Works'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect build counts as a correct “sequence” answer for the concept.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('siegetower', { size: 28, tone: 'gold' }), 'Siege Works'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect build counts as a correct “sequence” answer for the concept.'))),
     h('div', { class: 'stack' }, app.content.chapters.map(ch => h('div', { class: 'card', style: { '--ch': ch.color } },
       h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter}`), h('h3', { class: 'mb' }, ch.title),
       h('div', { class: 'list' }, ch.activities.map(a => {
         const rec = app.state.activities[a.id];
         return h('a', { class: 'li', href: `#/arcade/build/${a.id}`, style: { textDecoration: 'none', color: 'inherit' } },
-          h('span', { class: 'chip ch' }, TYPE[a.type]), h('div', { class: 'grow' }, h('div', { class: 't' }, a.title), h('div', { class: 's' }, app.conceptOf(a.concept)?.concept.term)),
-          rec?.done ? h('span', { class: 'chip good' }, `✓ ${rec.best === 1 ? 'perfect' : Math.round(rec.best * 100) + '%'}`) : rec?.best !== undefined ? h('span', { class: 'chip warn' }, `${Math.round(rec.best * 100)}%`) : h('span', { class: 'chip' }, 'New'));
+          h('span', { class: 'chip ch' }, icon(TYPE[a.type][0], { size: 14, tone: 'gold' }), TYPE[a.type][1]), h('div', { class: 'grow' }, h('div', { class: 't' }, a.title), h('div', { class: 's' }, app.conceptOf(a.concept)?.concept.term)),
+          rec?.done ? h('span', { class: 'chip good' }, icon('laurel', { size: 14, tone: 'laurel' }), rec.best === 1 ? 'perfect' : Math.round(rec.best * 100) + '%') : rec?.best !== undefined ? h('span', { class: 'chip warn' }, `${Math.round(rec.best * 100)}%`) : h('span', { class: 'chip' }, 'New'));
       }))))));
 }
 
@@ -123,7 +123,7 @@ function activity(app, aid) {
   for (const c of app.content.chapters) { const a = c.activities.find(x => x.id === aid); if (a) { act = a; ch = c; break; } }
   if (!act) return h('div', { class: 'card' }, 'Unknown activity. ', h('a', { href: '#/arcade/build' }, 'Back'));
   const host = h('div', { class: 'runner', style: { '--ch': ch.color } },
-    h('a', { class: 'back', href: '#/arcade/build' }, '← Build & Sort'),
+    h('a', { class: 'back', href: '#/arcade/build' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Siege Works'),
     h('div', { class: 'page-head mt-sm' }, h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter} · ${app.conceptOf(act.concept)?.concept.term}`), h('h2', null, act.title), h('p', null, act.prompt))));
   const body = h('div', { class: 'card' });
   host.appendChild(body);
@@ -133,10 +133,10 @@ function activity(app, aid) {
     rec.best = Math.max(rec.best || 0, fraction); rec.tries = (rec.tries || 0) + 1; if (perfect) rec.done = Date.now();
     const q = { id: aid, concept: act.concept, angle: 'order', difficulty: 2, type: 'activity' };
     const res = app.answer(q, perfect, { mode: 'build', combo: 0 });
-    if (perfect) { app.sound('clear'); app.confetti({ count: 70 }); } else app.sound('wrong');
+    if (perfect) { app.sound('horn'); app.confetti({ count: 70, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); } else { app.sound('crumble'); }
     app.store.save();
     body.appendChild(h('div', { class: 'explain' },
-      h('div', { class: 'verdict ' + (perfect ? 'ok' : 'no') }, perfect ? `✓ Perfect${res.xp ? ` · +${res.xp} XP` : ''}` : `${Math.round(fraction * 100)}% — not yet`),
+      h('div', { class: 'verdict ' + (perfect ? 'ok' : 'no') }, icon(perfect ? 'laurel' : 'shieldcrack', { size: 20, tone: perfect ? 'laurel' : 'crimson' }), perfect ? `Perfect${res.xp ? ` · +${res.xp} XP` : ''}` : `${Math.round(fraction * 100)}% — not yet`),
       h('p', null, act.explanation),
       detailEl || null,
       h('div', { class: 'row wrap mt' }, h('a', { class: 'btn primary', href: `#/arcade/build/${aid}` }, perfect ? 'Do it again' : 'Try again'), h('a', { class: 'btn ghost', href: '#/arcade/build' }, 'All activities'),
@@ -153,7 +153,7 @@ function nextActivity(app, ch, act) {
   const all = app.content.chapters.flatMap(c => c.activities);
   const i = all.indexOf(act);
   const n = all[i + 1];
-  return n ? h('a', { class: 'btn ghost', href: `#/arcade/build/${n.id}` }, `Next: ${n.title} →`) : null;
+  return n ? h('a', { class: 'btn ghost', href: `#/arcade/build/${n.id}` }, `Next: ${n.title} `, icon('arrow', { size: 14, tone: 'mono' })) : null;
 }
 
 function orderGame(app, act, body, finish) {
@@ -164,8 +164,8 @@ function orderGame(app, act, body, finish) {
   const draw = () => {
     list.innerHTML = '';
     cur.forEach((item, i) => list.appendChild(h('div', { class: 'order-item' },
-      h('span', { class: 'idx' }, String(i + 1)), h('span', null, item),
-      h('span', { class: 'mv' }, h('button', { class: 'icon-btn', 'aria-label': 'Move up', disabled: i === 0, onClick: () => { [cur[i - 1], cur[i]] = [cur[i], cur[i - 1]]; draw(); } }, '↑'), h('button', { class: 'icon-btn', 'aria-label': 'Move down', disabled: i === cur.length - 1, onClick: () => { [cur[i + 1], cur[i]] = [cur[i], cur[i + 1]]; draw(); } }, '↓')))));
+      h('span', { class: 'idx' }, String(i + 1)), h('span', { class: 'order-text' }, item),
+      h('span', { class: 'mv' }, h('button', { class: 'icon-btn', 'aria-label': 'Move up', disabled: i === 0, onClick: () => { app.sound('knock'); [cur[i - 1], cur[i]] = [cur[i], cur[i - 1]]; draw(); } }, icon('arrow', { size: 14, tone: 'gold', cls: 'up' })), h('button', { class: 'icon-btn', 'aria-label': 'Move down', disabled: i === cur.length - 1, onClick: () => { app.sound('knock'); [cur[i + 1], cur[i]] = [cur[i], cur[i + 1]]; draw(); } }, icon('arrow', { size: 14, tone: 'gold', cls: 'down' }))))));
   };
   draw();
   body.append(h('p', { class: 'small muted' }, 'Use the arrows to arrange the items from first to last, then check.'), list,
@@ -182,24 +182,60 @@ function sortGame(app, act, body, finish) {
   let selected = null;
   const pool = h('div', { class: 'pool' });
   const buckets = h('div', { class: 'buckets' });
+  const makeToken = (it, inBucket) => {
+    const tok = h('button', { class: 'token block' + (selected === it.i ? ' sel' : ''), type: 'button', dataset: { i: it.i }, 'aria-label': `${it.text}. ${inBucket ? 'Tap to send back.' : 'Drag to a cart, or tap then tap a cart.'}` }, h('span', { class: 'block-face' }, it.text));
+    // tap flow
+    tok.addEventListener('click', e => {
+      if (tok.dataset.dragged) { delete tok.dataset.dragged; return; }
+      if (inBucket) { if (selected !== null) return; e.stopPropagation(); placed.delete(it.i); app.sound('knock'); draw(); return; }
+      selected = selected === it.i ? null : it.i; app.sound('tick'); draw();
+    });
+    // pointer drag flow (mouse, touch, pen)
+    tok.addEventListener('pointerdown', e => {
+      if (e.button !== undefined && e.button !== 0) return;
+      const start = { x: e.clientX, y: e.clientY }; let ghost = null; let moved = false; let over = null;
+      const onMove = ev => {
+        const dx = ev.clientX - start.x; const dy = ev.clientY - start.y;
+        if (!moved && Math.hypot(dx, dy) < 6) return;
+        if (!moved) { moved = true; tok.setPointerCapture(ev.pointerId); ghost = tok.cloneNode(true); ghost.classList.add('drag-ghost'); const r = tok.getBoundingClientRect(); ghost.style.width = r.width + 'px'; ghost.style.left = r.left + 'px'; ghost.style.top = r.top + 'px'; document.body.appendChild(ghost); tok.classList.add('lifted'); app.sound('rustle'); }
+        ghost.style.transform = `translate(${dx}px, ${dy}px) rotate(${Math.max(-6, Math.min(6, dx / 30))}deg)`;
+        const el = document.elementFromPoint(ev.clientX, ev.clientY);
+        const b = el && el.closest('.bucket');
+        if (b !== over) { over && over.classList.remove('over'); over = b; over && over.classList.add('over'); if (over) app.sound('tick'); }
+        ev.preventDefault();
+      };
+      const onUp = ev => {
+        tok.removeEventListener('pointermove', onMove); tok.removeEventListener('pointerup', onUp); tok.removeEventListener('pointercancel', onUp);
+        if (!moved) return;
+        tok.dataset.dragged = '1';
+        ghost && ghost.remove(); tok.classList.remove('lifted');
+        const el = document.elementFromPoint(ev.clientX, ev.clientY); const b = el && el.closest('.bucket');
+        if (b) { placed.set(it.i, Number(b.dataset.bi)); selected = null; app.sound('crumble'); } else if (inBucket) { placed.delete(it.i); app.sound('knock'); }
+        over && over.classList.remove('over');
+        draw();
+      };
+      tok.addEventListener('pointermove', onMove); tok.addEventListener('pointerup', onUp); tok.addEventListener('pointercancel', onUp);
+    });
+    return tok;
+  };
   const draw = () => {
     pool.innerHTML = ''; buckets.innerHTML = '';
-    for (const it of items) if (!placed.has(it.i)) pool.appendChild(h('button', { class: 'token' + (selected === it.i ? ' sel' : ''), onClick: () => { selected = selected === it.i ? null : it.i; draw(); } }, it.text));
-    if (!pool.children.length) pool.appendChild(h('span', { class: 'small muted' }, 'All items placed. Check your sorting.'));
+    for (const it of items) if (!placed.has(it.i)) pool.appendChild(makeToken(it, false));
+    if (!pool.children.length) pool.appendChild(h('span', { class: 'small muted' }, 'Every block is loaded. Check your sorting.'));
     act.buckets.forEach((b, bi) => {
-      const bucket = h('div', { class: 'bucket' + (selected !== null ? ' target' : ''), role: 'button', tabindex: '0', onClick: () => { if (selected !== null) { placed.set(selected, bi); selected = null; draw(); } } },
-        h('h4', null, b), h('div', { class: 'items' }, items.filter(it => placed.get(it.i) === bi).map(it => h('button', { class: 'token', dataset: { i: it.i }, onClick: e => { if (selected !== null) return; e.stopPropagation(); placed.delete(it.i); draw(); } }, it.text))));
+      const bucket = h('div', { class: 'bucket cart' + (selected !== null ? ' target' : ''), role: 'button', tabindex: '0', dataset: { bi }, onClick: () => { if (selected !== null) { placed.set(selected, bi); selected = null; app.sound('crumble'); draw(); } }, onKeydown: e => { if ((e.key === 'Enter' || e.key === ' ') && selected !== null) { e.preventDefault(); placed.set(selected, bi); selected = null; draw(); } } },
+        h('h4', null, icon('wagon', { size: 18, tone: 'gold' }), b), h('div', { class: 'items' }, items.filter(it => placed.get(it.i) === bi).map(it => makeToken(it, true))), h('div', { class: 'cart-wheels', 'aria-hidden': 'true' }));
       buckets.appendChild(bucket);
     });
   };
   draw();
-  body.append(h('p', { class: 'small muted' }, 'Tap an item, then tap its bucket. Tap a placed item to send it back.'), pool, buckets,
+  body.append(h('p', { class: 'small muted' }, 'Drag each stone block into the right cart. On a keyboard or by tap: pick a block, then pick its cart. Tap a loaded block to send it back.'), pool, buckets,
     h('button', { class: 'btn primary big mt', onClick: () => {
-      if (placed.size < items.length) { app.toast('Place every item first', 'bad'); return; }
+      if (placed.size < items.length) { app.toast('Load every block first', 'bad'); return; }
       let ok = 0;
       for (const it of items) { const good = placed.get(it.i) === it.bucket; if (good) ok++; const tok = buckets.querySelector(`.token[data-i="${it.i}"]`); if (tok) tok.classList.add(good ? 'ok' : 'bad'); }
-      finish(ok / items.length, ok < items.length ? h('div', { class: 'mt-sm' }, h('b', { class: 'small' }, 'Correct buckets:'), h('ul', { class: 'fig' }, act.buckets.map((b, bi) => h('li', null, h('b', null, b + ': '), act.items.filter(x => x.bucket === bi).map(x => x.text).join(', '))))) : null);
-    } }, 'Check sorting'));
+      finish(ok / items.length, ok < items.length ? h('div', { class: 'mt-sm' }, h('b', { class: 'small' }, 'Correct carts:'), h('ul', { class: 'fig' }, act.buckets.map((b, bi) => h('li', null, h('b', null, b + ': '), act.items.filter(x => x.bucket === bi).map(x => x.text).join(', '))))) : null);
+    } }, 'Check the carts'));
 }
 
 function matchGame(app, act, body, finish) {
@@ -235,7 +271,7 @@ function flashConfig(app) {
   const fSeg = h('div', { class: 'seg' }, [['all', 'All'], ['weak', 'Below Solid'], ['due', 'Due / pursuit']].map(([k, l]) => h('button', { class: filter === k ? 'on' : '', onClick: e => { filter = k; fSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   const sSeg = h('div', { class: 'seg' }, [['term', 'Show term → recall definition'], ['def', 'Show definition → recall term']].map(([k, l]) => h('button', { class: side === k ? 'on' : '', onClick: e => { side = k; sSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '📜 Scrolls'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('scroll', { size: 28, tone: 'gold' }), 'Scrolls'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'field' }, h('label', null, 'Deck'), fSeg), h('div', { class: 'field' }, h('label', null, 'Direction'), sSeg),
@@ -259,7 +295,6 @@ function flash(app) {
   deck = shuffle(deck);
   const host = h('div', { class: 'runner flash-host' });
   if (!deck.length) { host.appendChild(h('div', { class: 'empty' }, 'No cards match this deck. ', h('a', { href: '#/arcade/flash' }, 'Change the filter'))); return host; }
-  attachScene(host, 'library', { blur: 6, tint: 0.4 });
   let idx = 0; let graded = { again: 0, hard: 0, good: 0, easy: 0 };
   const head = h('div', { class: 'runner-head' });
   const cardHost = h('div');
@@ -277,7 +312,7 @@ function flash(app) {
     const { c, ch } = deck[idx];
     const front = cfg.side === 'def' ? h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · which term?`), h('p', { class: 'def', style: { fontSize: '1.15rem' } }, c.definition)) : h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · define it`), h('div', { class: 'term' }, c.term));
     const card = h('div', { class: 'flash', style: { '--ch': ch.color } }, h('div', { class: 'flash-inner' },
-      h('div', { class: 'flash-face', onClick: () => card.classList.add('flipped') }, front, h('p', { class: 'tiny muted' }, 'Tap or press Space to flip')),
+      h('div', { class: 'flash-face', onClick: () => { app.sound('unroll'); card.classList.add('flipped'); } }, front, h('p', { class: 'tiny muted' }, 'Tap or press Space to flip')),
       h('div', { class: 'flash-face back', onClick: () => card.classList.remove('flipped') }, conceptCard(app, c.id, { compact: true, showMastery: true }))));
     const grade = (g) => {
       graded[g]++;

@@ -446,3 +446,69 @@ input[type="text"], input[type="number"], input[type="datetime-local"], select {
 .ico.tone-iron { --ico-fill: var(--iron-light); --ico-stroke: var(--iron-dark); --ico-hl: rgba(255, 255, 255, 0.45); }
 .ico.tone-mono { --ico-fill: currentColor; --ico-stroke: currentColor; --ico-hl: transparent; }
 .ico.tone-mono .ico-f { fill-opacity: 0.25; }
+
+/* ===================================================================
+   PHASE 1 — icons everywhere, parchment and stone panels, master
+   volume, toasts off the answers, the XP coin flight.
+   =================================================================== */
+.ico.flip { transform: rotate(180deg); }
+.ico.up { transform: rotate(-90deg); }
+.ico.down { transform: rotate(90deg); }
+.nav-link > .ico, .bottom-nav a > .ico { width: 24px; height: 24px; font-size: 0; text-align: center; }
+.mode-tile > .ico, .world > .ico, .quest-ico, .callout-ico { font-size: 0; display: grid; place-items: center; }
+.mode-tile > .ico { width: 48px; height: 48px; }
+.callout-ico { width: 28px; height: 28px; flex-shrink: 0; }
+h1.row, h2.row, h3.row { gap: 0.55rem; }
+.btn > .ico { margin-right: 0.1rem; }
+.back { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+/* ---------- panels ---------- */
+.panel { position: relative; padding: 1.2rem 1.35rem; color: var(--text); isolation: isolate; }
+.panel.parchment { color: var(--vellum-ink); filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45)); }
+.panel.parchment::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--parch-grain), linear-gradient(180deg, #F2E4C2, #E6D3A8 60%, #DAC391); clip-path: polygon(0 1.5%, 1.2% 0, 30% 0.6%, 55% 0, 80% 0.8%, 99% 0, 100% 2%, 99.4% 40%, 100% 70%, 99.2% 98%, 98% 100%, 70% 99.2%, 40% 100%, 12% 99.3%, 0.5% 100%, 0 97%, 0.6% 60%, 0 30%); }
+.panel.parchment .muted, .panel.parchment .small.muted { color: var(--vellum-ink-soft); }
+.panel.parchment .eyebrow { color: var(--pompeian); }
+.panel.stone { background: linear-gradient(180deg, #3A322A, #2A241D 60%, #1C1612); border: 1px solid rgba(0, 0, 0, 0.6); box-shadow: var(--bevel-stone); border-radius: var(--radius-stone); }
+.panel.stone::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: var(--grain); opacity: 0.6; pointer-events: none; }
+
+/* ---------- chips and small HUD bits ---------- */
+.chip { gap: 0.3rem; }
+.chip.pips { gap: 3px; }
+.chip.pips .pip { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(0, 0, 0, 0.45); }
+.chip.pips .pip.on { background: var(--gold-leaf); }
+.chip.reason { margin-left: auto; background: rgba(139, 30, 30, 0.35); border-color: rgba(201, 162, 39, 0.5); color: #F6E7C8; }
+.hearts { display: inline-flex; gap: 3px; align-items: center; filter: none; font-size: 0; }
+.combo { display: inline-flex; align-items: center; gap: 0.3rem; }
+.timer { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+/* ---------- master volume in the top bar ---------- */
+.vol { display: inline-flex; align-items: center; gap: 0.4rem; }
+.vol-btn { width: 34px; height: 34px; border-radius: 50%; border: 1px solid #1a1410; background: radial-gradient(circle at 38% 32%, #D9B45A, #8E6B1C 60%, #3E2D0C 100%); box-shadow: var(--bevel-bronze); display: grid; place-items: center; cursor: pointer; padding: 0; transition: transform var(--dur-fast) var(--ease-spring); }
+.vol-btn:hover:not(:disabled) { transform: scale(1.08); }
+.vol-btn.muted { background: radial-gradient(circle at 38% 32%, #8A8A8E, #4A4A4E 55%, #202022 100%); }
+.vol-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.vol-btn:focus-visible { outline: 2px solid var(--gold-leaf); outline-offset: 2px; }
+.vol-range { -webkit-appearance: none; appearance: none; width: 86px; height: 6px; border-radius: 3px; background: linear-gradient(180deg, #1C1612, #2A241D); border: 1px solid rgba(0, 0, 0, 0.6); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6); cursor: pointer; margin: 0; }
+.vol-range::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: radial-gradient(circle at 38% 32%, #E3C76A, #C9A227 55%, #6B4B12); border: 1px solid #3E2D0C; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+.vol-range::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: #C9A227; border: 1px solid #3E2D0C; }
+.vol-range:focus-visible { outline: 2px solid var(--gold-leaf); outline-offset: 2px; }
+.vol-range:disabled { opacity: 0.4; }
+.vol.off .vol-range { display: none; }
+@media (max-width: 640px) { .vol-range { display: none; } .topbar .chip { font-size: 0.68rem; } }
+
+/* ---------- toasts: top right, never over the answers ---------- */
+.toasts { top: 0.8rem; bottom: auto; left: auto; right: 0.9rem; transform: none; width: min(340px, 86vw); justify-items: end; }
+@media (max-width: 900px) { .toasts { right: 0.6rem; top: 0.6rem; width: min(300px, 80vw); } }
+.toast { text-align: left; font-size: 0.78rem; }
+
+/* ---------- +XP coin flight to the XP bar ---------- */
+.xp-coin { position: fixed; z-index: 130; pointer-events: none; display: flex; align-items: center; gap: 0.4rem; transform: translate(-50%, -50%); font-family: var(--font-display); font-weight: 700; color: var(--gold-leaf-light); text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); font-size: 0.95rem; opacity: 0; }
+.xp-coin-disc { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 38% 32%, #F0D98A, #C9A227 55%, #6B4B12); border: 1px solid #3E2D0C; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+.xp-coin.lift { animation: coinLift 0.42s var(--ease-spring) forwards; }
+@keyframes coinLift { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.4); } 100% { opacity: 1; transform: translate(-50%, calc(-50% - 26px)) scale(1); } }
+.xp-coin.fly { animation: coinFly 0.62s cubic-bezier(0.5, 0, 0.2, 1) forwards; }
+@keyframes coinFly { 0% { opacity: 1; transform: translate(-50%, calc(-50% - 26px)) scale(1); } 100% { opacity: 0; transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px))) scale(0.5); } }
+.xp-coin.static { animation: coinStatic 0.9s ease-out forwards; }
+@keyframes coinStatic { 0% { opacity: 0; transform: translate(-50%, -50%); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, calc(-50% - 40px)); } }
+.xpbar.shimmer { animation: xpShimmer 0.7s ease-out; }
+@keyframes xpShimmer { 0% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); } 30% { box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.55), 0 0 22px rgba(201, 162, 39, 0.6); } 100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); } }

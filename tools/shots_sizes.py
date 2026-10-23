@@ -32,7 +32,12 @@ with sync_playwright() as p:
             if name == "battle":
                 pg.wait_for_selector(".qcard", timeout=8000)
                 pg.wait_for_timeout(400)
-            pg.screenshot(path=os.path.join(OUT, f"{LABEL}{tag}_{name}.png"), full_page=(name not in ("battle", "lesson")))
+            full = name not in ("battle", "lesson")
+            if full:
+                # headless full-page capture cannot rasterise the fixed scene layer at page height; hide it for the capture only
+                pg.evaluate("document.querySelectorAll('.scene-stage').forEach(s => s.style.visibility = 'hidden')")
+            pg.screenshot(path=os.path.join(OUT, f"{LABEL}{tag}_{name}.png"), full_page=full)
+            pg.evaluate("document.querySelectorAll('.scene-stage').forEach(s => s.style.visibility = '')")
             ov = pg.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth + 1")
             if ov:
                 errors.append(f"[{tag}] horizontal overflow on {name}")

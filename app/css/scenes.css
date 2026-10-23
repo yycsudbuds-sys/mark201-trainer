@@ -501,3 +501,165 @@ h1, h2, h3, h4, .brand-name, .level-pill, .ring-label, .stat .v, .score-big, .bi
 
 /* ---------- map frame and province sheet polish ---------- */
 .map-frame { border-radius: 6px; box-shadow: inset 0 0 40px rgba(59, 42, 23, 0.6), 0 24px 40px rgba(0, 0, 0, 0.55); }
+
+/* ===================================================================
+   PHASE 1 — scene director stage, front-line band, parchment map,
+   the general's tent redrawn.
+   =================================================================== */
+:root { --band-h: 136px; --bottom-nav-h: 62px; }
+body.has-band { scroll-padding-bottom: calc(var(--band-h) + 1rem); }
+
+/* ---------- scene stage (one persistent backdrop behind every route) ---------- */
+.scene-stage { position: fixed; inset: 0 0 0 var(--nav-w); z-index: 0; pointer-events: none; overflow: hidden; background: #0B0806; contain: strict; }
+@media (max-width: 900px) { .scene-stage { inset: 0; } }
+.scene-stage .scene-bg { position: absolute; inset: 0; transition: opacity 0.7s ease; }
+.scene-stage .scene-ambient { filter: none; } /* the ambient layer repaints every frame; keep it cheap */
+.scene-stage.night .scene-static { filter: blur(var(--scene-blur, 8px)) saturate(0.92) brightness(0.8); }
+.scene-stage.day .scene-static { filter: blur(var(--scene-blur, 8px)) saturate(1.05) brightness(1.12) contrast(0.95); }
+.scene-stage.day .scene-tint { background: linear-gradient(180deg, rgba(246, 234, 208, 0.22), rgba(246, 234, 208, 0.44) 60%, rgba(246, 234, 208, 0.68)); }
+.scene-stage.day .scene-ambient .amb-glow { opacity: 0.35; }
+.scene-stage.battle .scene-static { filter: blur(calc(var(--scene-blur, 8px) * 0.75)) saturate(0.95) brightness(0.84); }
+.scene-stage.still .scene-ambient *, .scene-stage.paused .scene-ambient *, .scene-stage.still .scene-static *, .scene-stage.paused .scene-static * { animation-play-state: paused !important; }
+.scene-stage::after { content: ''; position: absolute; inset: 0; background: var(--vignette); pointer-events: none; }
+.scene-stage.lightning::before { content: ''; position: absolute; inset: 0; z-index: 2; background: #E6ECF4; opacity: 0; animation: lightningFlash 0.9s steps(1) both; pointer-events: none; }
+@keyframes lightningFlash { 0% { opacity: 0; } 4% { opacity: 0.5; } 9% { opacity: 0; } 16% { opacity: 0.3; } 22% { opacity: 0; } 100% { opacity: 0; } }
+.scene-stormplain .bolt { opacity: 0; }
+.scene-stage.lightning .scene-stormplain .bolt { animation: boltFlash 0.9s steps(1) both; }
+@keyframes boltFlash { 0% { opacity: 0; } 4% { opacity: 1; } 9% { opacity: 0; } 16% { opacity: 0.8; } 22% { opacity: 0; } 100% { opacity: 0; } }
+.amb-rain { animation: rainFall 0.9s linear infinite; }
+@keyframes rainFall { from { transform: translateY(-40px); } to { transform: translateY(940px); } }
+.amb-smoke { animation: smokeRise 6s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes smokeRise { 0% { transform: translate(0, 0) scale(0.7); opacity: 0.55; } 100% { transform: translate(18px, -120px) scale(2); opacity: 0; } }
+.scene-bg.cheer .scene-ambient { animation: cheer 0.6s ease-out; }
+:root[data-motion="off"] .amb-rain, :root[data-motion="off"] .amb-smoke { animation: none; }
+
+/* ---------- front-line band ---------- */
+.battle-band { position: fixed; left: var(--nav-w); right: 0; bottom: 0; height: var(--band-h); z-index: 2; pointer-events: none; opacity: 0; transition: opacity 0.5s ease; overflow: hidden; }
+.battle-band.on { opacity: 1; }
+.battle-band::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 8, 6, 0) 0%, rgba(11, 8, 6, 0.55) 22%, rgba(11, 8, 6, 0.72) 55%, rgba(11, 8, 6, 0.85) 100%); }
+.battle-band::after { content: ''; position: absolute; left: 0; right: 0; top: 18%; height: 1px; background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.35) 20%, rgba(201, 162, 39, 0.35) 80%, transparent); }
+.battle-band svg { position: relative; width: 100%; height: 100%; display: block; }
+.battle-band .bb-haze { animation: hazeDrift 26s linear infinite alternate; transform-box: fill-box; transform-origin: center; }
+.bb-legion { transform: translateX(var(--adv, 0px)); will-change: transform; transform-box: fill-box; transform-origin: 50% 100%; }
+.bb-enemy { transform: translateX(var(--ret, 0px)); will-change: transform; }
+.bb-unit { animation: march 1.5s ease-in-out infinite; }
+@keyframes march { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.6px); } }
+.bb-volley { opacity: 0; }
+.battle-band.adv .bb-volley, .battle-band.testudo .bb-volley, .battle-band.charge .bb-volley { animation: volley 0.75s cubic-bezier(0.3, 0.6, 0.6, 1) both; }
+@keyframes volley { 0% { opacity: 1; transform: translate(0, 0); } 50% { opacity: 1; transform: translate(230px, -34px); } 100% { opacity: 0; transform: translate(460px, 6px); } }
+.battle-band.adv .bb-legion { animation: stepUp 0.5s var(--ease-out); }
+@keyframes stepUp { 0% { transform: translateX(calc(var(--adv, 0px) - 16px)); } 60% { transform: translateX(calc(var(--adv, 0px) + 4px)); } 100% { transform: translateX(var(--adv, 0px)); } }
+.battle-band.testudo .bb-legion { animation: testudo 0.8s var(--ease-out); }
+@keyframes testudo { 0% { transform: translateX(calc(var(--adv, 0px) - 16px)) scaleY(1); } 35% { transform: translateX(var(--adv, 0px)) scaleY(0.9); } 100% { transform: translateX(var(--adv, 0px)) scaleY(1); } }
+.battle-band.charge .bb-legion { animation: charge 0.9s var(--ease-out); }
+@keyframes charge { 0% { transform: translateX(calc(var(--adv, 0px) - 30px)); } 50% { transform: translateX(calc(var(--adv, 0px) + 26px)); } 100% { transform: translateX(var(--adv, 0px)); } }
+.bb-cavalry { opacity: 0; transform: translateX(-260px); }
+.battle-band.charge .bb-cavalry { animation: cavalry 1.5s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+@keyframes cavalry { 0% { opacity: 0; transform: translateX(-260px); } 15% { opacity: 1; } 85% { opacity: 1; } 100% { opacity: 0; transform: translateX(1500px); } }
+.battle-band.setback .bb-legion { animation: stagger 0.55s ease-out; }
+@keyframes stagger { 0% { transform: translateX(calc(var(--adv, 0px) + 18px)); } 40% { transform: translateX(calc(var(--adv, 0px) - 8px)); } 100% { transform: translateX(var(--adv, 0px)); } }
+.battle-band.setback .bb-enemy { animation: push 0.55s ease-out; }
+@keyframes push { 0% { transform: translateX(calc(var(--ret, 0px) - 22px)); } 100% { transform: translateX(var(--ret, 0px)); } }
+.bb-flash { fill: #8B1E1E; opacity: 0; }
+.battle-band.setback .bb-flash { animation: redFlash 0.6s ease-out; }
+@keyframes redFlash { 0% { opacity: 0.45; } 100% { opacity: 0; } }
+.bb-flag { transform-box: fill-box; transform-origin: 50% 100%; animation: flagIn 0.5s var(--ease-spring) both; }
+@keyframes flagIn { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.battle-band.win .bb-enemy { animation: rout 1.6s ease-in forwards; }
+@keyframes rout { to { transform: translateX(400px); opacity: 0; } }
+body.has-band .main { padding-bottom: calc(var(--band-h) + 2.5rem); }
+@media (max-width: 900px) { :root { --band-h: 96px; } .battle-band { left: 0; bottom: var(--bottom-nav-h); } body.has-band .main { padding-bottom: calc(var(--band-h) + var(--bottom-nav-h) + 1.5rem); } }
+@media (max-width: 640px) { :root { --band-h: 72px; } }
+@media (max-height: 640px) { :root { --band-h: 60px; } }
+:root[data-motion="off"] .battle-band, :root[data-motion="off"] .battle-band * { animation: none !important; transition: none !important; }
+
+/* ---------- parchment map: provinces clipped to the coast ---------- */
+.map-frame { position: relative; }
+.province { cursor: pointer; outline: none; }
+.province .terr { fill: var(--ch); fill-opacity: 0.22; stroke: var(--ch); stroke-width: 1.5; stroke-opacity: 0.75; stroke-linejoin: round; transition: fill-opacity 0.25s; }
+.province:hover .terr, .province:focus-visible .terr { fill-opacity: 0.42; }
+.province.open .terr { stroke: #C9A227; stroke-width: 2; }
+.province.locked { cursor: not-allowed; }
+.province.locked .terr { fill: #8C8070; fill-opacity: 0.16; stroke: #6B5F4D; stroke-dasharray: 4 3; stroke-width: 1.2; }
+.province.locked:hover .terr { fill-opacity: 0.24; }
+.province.conquered .terr { fill: #8B1E1E; fill-opacity: 0.2; stroke: #8B1E1E; stroke-width: 2; }
+.province.next .terr { animation: terrPulse 2.4s ease-in-out infinite; }
+@keyframes terrPulse { 0%, 100% { fill-opacity: 0.22; } 50% { fill-opacity: 0.42; } }
+.cap-dot { fill: #2E2114; stroke: #C9A227; stroke-width: 1.5; }
+.cap-core { fill: #C9A227; }
+.province.conquered .cap-dot { fill: #8B1E1E; }
+.province.locked .cap-dot { fill: #6B5F4D; stroke: #8C8070; }
+.province.locked .cap-core { fill: #B4A58A; }
+.std-pole { stroke: #6B5F4D; stroke-width: 1; }
+.std-cloth { fill: #B4A58A; opacity: 0.5; }
+.std.up .std-pole { stroke: #3E2D0C; }
+.std.up .std-cloth { fill: #8B1E1E; opacity: 1; }
+.eagle { fill: #C9A227; stroke: #3E2D0C; stroke-width: 0.5; }
+.plabel { pointer-events: none; }
+.prov-name { font-family: var(--font-display); font-weight: 700; font-size: 17px; fill: #2E2114; letter-spacing: 0.06em; paint-order: stroke; stroke: rgba(233, 215, 174, 0.9); stroke-width: 4px; stroke-linejoin: round; }
+.prov-num { font-family: var(--font-display); font-size: 9.5px; letter-spacing: 0.22em; fill: #6E5A3E; paint-order: stroke; stroke: rgba(233, 215, 174, 0.9); stroke-width: 3px; stroke-linejoin: round; }
+.plabel.locked .prov-name { fill: #6B5F4D; }
+.plabel.locked .prov-num { fill: #8C8070; }
+.plabel.conquered .prov-name { fill: #5E1313; }
+.pbadge { fill: #2E2114; fill-opacity: 0.88; stroke: #C9A227; stroke-width: 0.8; }
+.pbadge-t { font-family: var(--font-display); font-size: 8.5px; letter-spacing: 0.14em; fill: #E3C76A; }
+.plabel.locked .pbadge { fill: #6B5F4D; stroke: #8C8070; }
+.plabel.locked .pbadge-t { fill: #E9D7AE; }
+.plabel.conquered .pbadge { fill: #8B1E1E; stroke: #E3C76A; }
+.plock { fill: none; stroke: #4A3F30; stroke-width: 1.4; stroke-linejoin: round; }
+.plegion { fill: none; stroke: #C9A227; stroke-width: 1.6; stroke-linecap: round; animation: bob 1.6s ease-in-out infinite; transform-box: fill-box; }
+.road-edge { fill: none; stroke: rgba(46, 33, 20, 0.45); stroke-width: 5; stroke-linecap: round; }
+.worldmap .route { stroke: #6E5A3E; stroke-width: 2; stroke-dasharray: 6 5; animation: none; }
+.worldmap .route.done { stroke: #8B1E1E; stroke-dasharray: none; }
+.worldmap .route.next { stroke: #C9A227; stroke-width: 2.4; animation: routeFlow 1.6s linear infinite; }
+.worldmap.compact .pbadge, .worldmap.compact .pbadge-t, .worldmap.compact .plock, .worldmap.compact .plegion { display: none; }
+.worldmap.compact .prov-name { font-size: 15px; }
+@media (max-width: 760px) { .cartouche-g, .map-legend { display: none; } }
+.worldmap.zooming { transition: transform 0.52s var(--ease-in-out), opacity 0.52s ease; transform: scale(2.3); opacity: 0; }
+.map-frame.zooming::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle, transparent 25%, #0B0806 100%); animation: fadeIn 0.52s both; pointer-events: none; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* provincial road: castra and the walled capital */
+.trail .road-edge { stroke: rgba(46, 33, 20, 0.5); stroke-width: 9; }
+.trail .road { fill: none; stroke: #CDB47C; stroke-width: 5; stroke-dasharray: 2 9; stroke-linecap: round; }
+.castrum { fill: #B9A27A; stroke: #3B2A17; stroke-width: 1.5; transition: filter 0.2s; }
+.tower { fill: #5A3F22; }
+.gate { fill: #2A1C0E; }
+.tents { fill: #E9D7AE; stroke: #6B5636; stroke-width: 0.6; }
+.node.cleared .castrum { fill: #8B1E1E; stroke: #E3C76A; }
+.node.cleared .tents { fill: #F0E1BC; }
+.node.next .castrum { stroke: #C9A227; stroke-width: 2.5; }
+.node:hover .castrum, .node:focus-visible .castrum, .node:hover .wall, .node:focus-visible .wall { filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.45)); }
+.wall { fill: #CDC4B4; stroke: #3B2A17; stroke-width: 1.5; stroke-linejoin: round; }
+.temple { fill: #ECE6DA; stroke: #3B2A17; stroke-width: 1; }
+.col { fill: #8E867A; }
+.node.boss.cleared .wall { fill: #8B1E1E; stroke: #E3C76A; }
+.node.boss.cleared .temple { fill: #F0E1BC; }
+.node.boss.locked { opacity: 0.8; }
+.node .halo { fill: #C9A227; }
+.node.next .halo { animation: haloPulse 1.6s ease-in-out infinite; }
+.node .arc { stroke: #8B1E1E; stroke-width: 3; }
+.node.cleared .arc { stroke: #E3C76A; }
+.trail .node-n { fill: #2E2114; stroke: none; }
+.trail .node-label { fill: #2E2114; stroke: rgba(233, 215, 174, 0.92); stroke-width: 4px; }
+.trail .node-sub { fill: #6E5A3E; stroke: rgba(233, 215, 174, 0.92); stroke-width: 3px; }
+
+/* ---------- the general's tent, redrawn ---------- */
+.tent-table { left: 50%; bottom: 7%; width: 66%; height: 24%; transform: translateX(-50%); clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%); background: linear-gradient(180deg, #7A5A33, #4A3418 55%, #2E2010); border: 0; border-radius: 0; box-shadow: none; }
+.tent-table::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0 5px, transparent 5px 34px), linear-gradient(180deg, rgba(255, 220, 160, 0.12), transparent 40%); }
+.tent-table::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 18%; background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
+.tent-map { position: absolute; left: 50%; top: 10%; bottom: auto; width: 54%; height: 62%; transform: translateX(-50%); background: linear-gradient(180deg, #F0E1BC, #E6D3A8); border: 1px solid #6B5636; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5); opacity: 1; clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%); }
+.tent-map::before { inset: 12% 8%; border: 1px solid rgba(90, 67, 48, 0.5); opacity: 1; }
+.tent-map::after { left: 22%; top: 28%; width: 56%; height: 44%; background: radial-gradient(ellipse at 30% 50%, #8B1E1E 0 9%, transparent 10%), radial-gradient(ellipse at 62% 36%, #3A3F47 0 7%, transparent 8%), linear-gradient(100deg, transparent 48%, rgba(90, 67, 48, 0.5) 49%, rgba(90, 67, 48, 0.5) 50%, transparent 51%); }
+.tent-token { position: absolute; width: 16px; height: 11px; border-radius: 2px; background: linear-gradient(180deg, #B0302A, #5E1313); box-shadow: 0 3px 3px rgba(0, 0, 0, 0.55); }
+.tent-token::before { content: ''; position: absolute; left: 50%; top: -14px; width: 2px; height: 14px; background: var(--gold-leaf); }
+.tent-token.t1 { left: 40%; top: 36%; }
+.tent-token.t2 { left: 56%; top: 48%; background: linear-gradient(180deg, #4A4F57, #22262C); }
+.tent-scroll { position: absolute; right: 8%; top: 30%; width: 17%; height: 13%; background: linear-gradient(90deg, #B99E66, #F0E1BC 15%, #F0E1BC 85%, #B99E66); border-radius: 999px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55); transform: rotate(-8deg); }
+.tent-scroll::before, .tent-scroll::after { content: ''; position: absolute; top: -18%; width: 6px; height: 136%; border-radius: 3px; background: linear-gradient(180deg, #6B4B2A, #3B2A17); }
+.tent-scroll::before { left: -3px; }
+.tent-scroll::after { right: -3px; }
+.legatus { left: 2%; bottom: 0; width: 380px; height: 422px; }
+.briefing { bottom: 4%; }
+@media (max-width: 900px) { .legatus { width: 230px; height: 256px; } .tent-table { width: 84%; height: 20%; bottom: 38%; } .tent-scroll { display: none; } }
+@media (max-height: 560px) { .legatus, .tent-table { display: none; } }

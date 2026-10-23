@@ -147,7 +147,7 @@ with sync_playwright() as p:
                 page.locator(".pool .token").first.click()
                 page.locator(".bucket h4").first.click()
                 guard += 1
-            page.click("text=Check sorting")
+            page.click("text=Check the carts")
         else:
             lefts = page.locator(".match-grid .col").first.locator(".match-item")
             rights = page.locator(".match-grid .col").nth(1).locator(".match-item")

@@ -1,5 +1,6 @@
 // Smart Drill (adaptive), Weak Spot Hunter, chapter drill, concept-list drill.
 import { h } from '../ui.js';
+import { icon } from '../icons.js';
 import { masteryLevel, dueCount } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
@@ -27,8 +28,8 @@ function config(app, { weak }) {
   for (const ch of app.content.chapters) for (const c of ch.concepts) { const cs = app.state.concepts[c.id]; if (cs?.pursuit) pursuits++; if (cs?.a?.length && masteryLevel(cs) < 3) weakCount++; }
   const goalSeg = h('div', { class: 'seg' }, [15, 30, 60, 0].map(n => h('button', { class: goal === n ? 'on' : '', onClick: e => { goal = n; goalSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, n ? `${n} Q` : 'Endless')));
   const modeSeg = h('div', { class: 'seg' },
-    h('button', { class: mode === 'drill' ? 'on' : '', onClick: e => { mode = 'drill'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, '⚔️ Full field'),
-    h('button', { class: mode === 'weak' ? 'on' : '', onClick: e => { mode = 'weak'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, '🛡️ Weak flank only'));
+    h('button', { class: mode === 'drill' ? 'on' : '', onClick: e => { mode = 'drill'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, icon('swords', { size: 16, tone: 'mono' }), ' Full field'),
+    h('button', { class: mode === 'weak' ? 'on' : '', onClick: e => { mode = 'weak'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, icon('scutum', { size: 16, tone: 'mono' }), ' Weak flank only'));
   return h('div', { class: 'runner' },
     h('div', { class: 'page-head' }, h('div', null, h('h1', null, weak ? 'Reinforce the Weak Flank' : 'Field Drill'), h('p', null, 'The engine picks the ground: open pursuits first, then strongholds due for review, then weak and fresh ones, interleaved across the provinces. Lose one and it is contested three more times from different angles.'))),
     h('div', { class: 'card stack' },

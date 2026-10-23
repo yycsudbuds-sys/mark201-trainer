@@ -1,5 +1,6 @@
 // Concept card component (the "reading" unit) and small mastery widgets.
 import { h } from '../ui.js';
+import { icon } from '../icons.js';
 import { masteryLevel, MASTERY_LABELS, masteryGaps, conceptSummary, ANGLE_LABELS } from '../engine.js';
 
 export function masteryChip(app, cid) {
@@ -41,7 +42,7 @@ export function conceptCard(app, cid, opts = {}) {
     h('div', { class: 'sec' }, h('b', null, 'Example'), c.example),
     h('div', { class: 'sec contrast' }, h('b', null, "Don't confuse it with"), c.contrast),
     h('div', { class: 'sec trap' }, h('b', null, 'Exam trap'), c.trap),
-    c.mnemonic ? h('div', { class: 'sec mnemonic' }, '💡 ', c.mnemonic) : null,
+    c.mnemonic ? h('div', { class: 'sec mnemonic' }, icon('tablet', { size: 18, tone: 'gold' }), ' ', c.mnemonic) : null,
     opts.compact ? null : figureEl(c.figure),
     opts.showAngles && cs ? anglesStrip(cs) : null,
     opts.actions ? h('div', { class: 'row wrap mt' }, opts.actions) : null,
