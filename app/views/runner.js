@@ -3,6 +3,7 @@
 import { h, clear, floatXp, fmtTime, escapeHtml } from '../ui.js';
 import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { conceptCard } from './concept.js';
+import { visualFor } from '../visuals.js';
 
 const REASON_LABEL = { pursuit: '🎯 Pursuit', weak: '🩹 Weak spot', due: '⏰ Due for review', new: '✨ New', review: '🔁 Review', exam: 'Exam', boss: '👑 Boss', campaign: '🗺️ Checkpoint', blitz: '⚡ Blitz', duel: '⚔️ Duel' };
 
@@ -148,7 +149,7 @@ export function createRunner(app, cfg) {
         h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, correct ? '✓ Correct' : '✗ Not quite', res && res.xp ? h('span', { class: 'mono small', style: { marginLeft: 'auto', color: 'var(--accent)' } }, `+${res.xp} XP`) : null),
         h('p', null, q.explanation),
         h('p', { class: 'small muted' }, 'Concept: ', h('b', null, entry.concept.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
-        (!correct || cfg.showLearnAlways) ? h('details', { class: 'learn-more', open: !correct && cfg.showLearnOnWrong !== false }, h('summary', null, 'Review this concept'), conceptCard(app, q.concept, { compact: true, showMastery: false })) : h('details', { class: 'learn-more' }, h('summary', null, 'Review this concept'), conceptCard(app, q.concept, { compact: true, showMastery: false })),
+        h('details', { class: 'learn-more', open: !correct && cfg.showLearnOnWrong !== false }, h('summary', null, 'Review this concept'), conceptCard(app, q.concept, { compact: true, showMastery: false }), safeVisual(entry)),
       );
       card.appendChild(expl);
       if (res && res.xp) floatXp(optEls[answer], `+${res.xp} XP`);
@@ -217,6 +218,8 @@ export function createRunner(app, cfg) {
   el.cleanup = () => { clearTimeout(kick); prevCleanup(); };
   return el;
 }
+
+function safeVisual(entry) { try { return visualFor(entry.concept, entry.chapter); } catch { return null; } }
 
 export function resultCard(app, title, sum, extra) {
   const pct = sum.answered ? sum.correct / sum.answered : 0;

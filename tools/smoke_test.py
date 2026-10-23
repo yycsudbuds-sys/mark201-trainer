@@ -57,7 +57,7 @@ with sync_playwright() as p:
     page.wait_for_selector("input[type=text]")
     page.fill("input[type=text]", "Tester")
     page.click("text=Start training")
-    page.wait_for_selector(".hero")
+    page.wait_for_selector(".hq")
     shot(page, "01_home")
 
     for route, name in [("#/campaign", "02_campaign"), ("#/campaign/7", "03_chapter"), ("#/learn", "04_learn"), ("#/learn/7", "05_learn_ch"), ("#/learn/7/sheet", "06_sheet"), ("#/progress", "07_progress"), ("#/settings", "08_settings"), ("#/arcade", "09_arcade"), ("#/exam", "10_exam_cfg"), ("#/drill", "11_drill_cfg"), ("#/arcade/build", "12_build")]:
@@ -185,7 +185,7 @@ with sync_playwright() as p:
     if m.locator("input[type=text]").count():
         m.fill("input[type=text]", "Mobile")
         m.click("text=Start training")
-        m.wait_for_selector(".hero")
+        m.wait_for_selector(".hq")
     m.screenshot(path=os.path.join(SHOTS, "29_mobile_home.png"), full_page=True)
     m.goto(BASE + "#/drill", wait_until="load")
     m.wait_for_timeout(200)

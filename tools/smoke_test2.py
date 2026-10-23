@@ -50,7 +50,7 @@ def run():
         page.wait_for_selector("input[type=text]")
         page.fill("input[type=text]", "Tester2")
         page.click("text=Start training")
-        page.wait_for_selector(".hero")
+        page.wait_for_selector(".hq")
         page.evaluate("(() => { const s = window.__app.state; s.settings.motion = false; window.__app.store.flush(); window.__app.applySettings(); })()")
         for aid, name in [("a07-02", "23_sort"), ("a07-03", "24_match")]:
             go(page, "#/arcade/build/" + aid)
@@ -102,7 +102,7 @@ def run():
         if m.locator("input[type=text]").count():
             m.fill("input[type=text]", "Mobile")
             m.click("text=Start training")
-            m.wait_for_selector(".hero")
+            m.wait_for_selector(".hq")
         m.screenshot(path=os.path.join(SHOTS, "29_mobile_home.png"), full_page=True)
         m.goto(BASE + "#/drill", wait_until="load")
         m.wait_for_timeout(200)

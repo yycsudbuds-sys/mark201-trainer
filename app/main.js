@@ -22,7 +22,7 @@ const NAV = [
   ['drill', '🎯', 'Smart Drill'],
   ['exam', '📝', 'Midterm Sim'],
   ['arcade', '🕹️', 'Arcade'],
-  ['learn', '📖', 'Learn'],
+  ['learn', '📖', 'Lessons'],
   ['progress', '📈', 'Progress'],
   ['settings', '⚙️', 'Settings'],
 ];

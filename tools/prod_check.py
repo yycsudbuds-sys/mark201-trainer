@@ -7,7 +7,7 @@ with sync_playwright() as p:
     pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
     pg.on("pageerror", lambda e: errors.append(str(e)))
     pg.goto(BASE, wait_until="load"); pg.wait_for_selector("input[type=text]", timeout=20000)
-    pg.fill("input[type=text]", "Prod"); pg.click("text=Start training"); pg.wait_for_selector(".hero")
+    pg.fill("input[type=text]", "Prod"); pg.click("text=Start training"); pg.wait_for_selector(".hq")
     print("content version:", pg.evaluate("window.__app.content.version"), "questions:", pg.evaluate("window.__app.content.stats.questions"))
     pg.wait_for_timeout(1500)
     print("service worker:", pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r ? (r.active ? 'active' : 'installing') : 'none')"))
