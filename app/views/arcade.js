@@ -4,6 +4,7 @@ import { masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
 import { conceptCard, masteryChip, figureEl } from './concept.js';
+import { attachScene } from '../scenes.js';
 
 export function render(app, params) {
   const [sub, arg] = params;
@@ -45,7 +46,7 @@ function blitz(app) {
   const scoreEl = h('div', { class: 'card center tight mb' }, h('div', { class: 'eyebrow' }, 'Score'), h('div', { class: 'score-big mono', style: { fontSize: '2.2rem' } }, '0'), h('div', { class: 'small muted' }, 'multiplier ×1.0'));
   host.appendChild(scoreEl);
   const runner = createRunner(app, {
-    title: 'Skirmish', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
+    title: 'Skirmish', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', scene: 'chariot', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
     pickOpts: { difficultyMax: 2, shortOnly: true, excludeMastered: false }, showLearnOnWrong: false,
     onAnswer: ({ correct }) => {
       if (correct) { combo++; const mult = 1 + Math.floor(combo / 3) * 0.5; score += Math.round(100 * mult); scoreEl.children[1].textContent = String(score); scoreEl.children[2].textContent = `multiplier ×${mult.toFixed(1)}`; }
@@ -85,7 +86,7 @@ function duel(app) {
   const chapters = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   const host = h('div', { style: { '--ch': '#A78BFA' } });
   const runner = createRunner(app, {
-    title: 'Gladiator Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
+    title: 'Gladiator Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', scene: 'colosseum', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
     pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false },
     onFinish: (sum, reason) => {
       if (sum.correct > (app.state.stats.duelBest || 0)) { app.state.stats.duelBest = sum.correct; app.toast('New Duel best!', 'xp'); }
@@ -256,8 +257,9 @@ function flash(app) {
     }
   }
   deck = shuffle(deck);
-  const host = h('div', { class: 'runner' });
+  const host = h('div', { class: 'runner flash-host' });
   if (!deck.length) { host.appendChild(h('div', { class: 'empty' }, 'No cards match this deck. ', h('a', { href: '#/arcade/flash' }, 'Change the filter'))); return host; }
+  attachScene(host, 'library', { blur: 6, tint: 0.4 });
   let idx = 0; let graded = { again: 0, hard: 0, good: 0, easy: 0 };
   const head = h('div', { class: 'runner-head' });
   const cardHost = h('div');
@@ -300,6 +302,7 @@ function flash(app) {
     if (k >= 1 && k <= 4) { const btns = cardHost.querySelectorAll('.flash-grade .btn'); btns[k - 1] && btns[k - 1].click(); }
   };
   document.addEventListener('keydown', onKey);
-  host.cleanup = () => document.removeEventListener('keydown', onKey);
+  const prevCleanup = host.cleanup;
+  host.cleanup = () => { document.removeEventListener('keydown', onKey); prevCleanup && prevCleanup(); };
   return host;
 }

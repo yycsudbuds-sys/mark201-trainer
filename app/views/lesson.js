@@ -3,6 +3,8 @@ import { h, clear, floatXp } from '../ui.js';
 import { markSeen, masteryLevel, MASTERY_LABELS, shuffleOptions, pickQuestionForConcept, masteryGaps } from '../engine.js';
 import { visualFor, hasTableToo, revealTable, glyphFor } from '../visuals.js';
 import { conceptCard } from './concept.js';
+import { attachScene, PROVINCE_SCENE } from '../scenes.js';
+import { richText } from '../icons.js';
 
 function sentences(text) {
   return String(text || '').split(/(?<=[.!?])\s+(?=[A-Z("'“])/).map(s => s.trim()).filter(Boolean);
@@ -30,7 +32,9 @@ export function createLesson(app, cids, opts = {}) {
   const top = h('div', { class: 'lesson-top' });
   const stage = h('div', { class: 'lesson-stage' });
   const foot = h('div', { class: 'lesson-foot' });
-  el.append(top, stage, foot);
+  const scroll = h('div', { class: 'scroll' }, h('div', { class: 'scroll-roller top', 'aria-hidden': 'true' }), h('div', { class: 'scroll-paper' }, stage), h('div', { class: 'scroll-roller bottom', 'aria-hidden': 'true' }));
+  el.append(top, scroll, foot);
+  if (chapter && PROVINCE_SCENE[chapter.chapter]) attachScene(el, PROVINCE_SCENE[chapter.chapter], { blur: 10, tint: 0.42 });
   let checkDone = false; let checkEl = null;
 
   function conceptIndex(i) { const cid = slides[i].cid; return cids.indexOf(cid); }
@@ -122,7 +126,8 @@ export function createLesson(app, cids, opts = {}) {
   let sx = null;
   stage.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
   stage.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) < 60) return; const s = slides[idx]; if (dx < 0 && idx < slides.length - 1 && (s.kind !== 'check' || checkDone)) { idx++; draw(1); } else if (dx > 0 && idx > 0) { idx--; draw(-1); } }, { passive: true });
-  el.cleanup = () => document.removeEventListener('keydown', onKey);
+  const prevCleanup = el.cleanup;
+  el.cleanup = () => { document.removeEventListener('keydown', onKey); prevCleanup && prevCleanup(); };
   draw(1);
   return el;
 }
@@ -131,9 +136,9 @@ export function createLesson(app, cids, opts = {}) {
 export function miniQuestion(app, q, onDone) {
   const { options, answer } = shuffleOptions(q);
   const box = h('div', { class: 'mini-q' });
-  const stem = h('div', { class: 'stem', html: q.stem.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch])).replace(/_{3,}/g, '<span class="blank"></span>') });
+  const stem = h('div', { class: 'stem' }, richText(q.stem));
   let done = false;
-  const opts = options.map((o, i) => h('button', { class: 'option', onClick: () => pick(i) }, h('span', { class: 'key' }, String(i + 1)), h('span', null, o)));
+  const opts = options.map((o, i) => h('button', { class: 'option', onClick: () => pick(i) }, h('span', { class: 'key' }, h('span', { class: 'key-n' }, String(i + 1))), h('span', { class: 'opt-text' }, richText(o, { blanks: false }))));
   box.append(stem, h('div', { class: 'options' }, opts));
   function pick(i) {
     if (done) return; done = true;

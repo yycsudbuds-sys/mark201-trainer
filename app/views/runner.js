@@ -5,6 +5,8 @@ import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } 
 import { conceptCard } from './concept.js';
 import { visualFor } from '../visuals.js';
 import { attachBattlefield } from '../battlefield.js';
+import { attachScene } from '../scenes.js';
+import { richText } from '../icons.js';
 
 const REASON_LABEL = { pursuit: '🎯 Pursuit', weak: '🩹 Weak flank', due: '⏰ Due for review', new: '✨ New ground', review: '🔁 Review', exam: 'Battle', boss: '🏛️ Siege', campaign: '⚔️ Battle', blitz: '⚡ Skirmish', duel: '🗡️ Duel' };
 
@@ -120,8 +122,8 @@ export function createRunner(app, cfg) {
         h('span', { class: 'pips' }, Array.from({ length: cs.pursuit.need }, (_, i) => h('span', { class: 'pip' + (i < cs.pursuit.done ? ' on' : '') })))));
     }
     card.appendChild(h('div', { class: 'qmeta' }, metas));
-    card.appendChild(h('div', { class: 'stem', html: stemHtml(q) }));
-    const optEls = options.map((o, i) => h('button', { class: 'option', dataset: { i }, onClick: () => choose(i) }, h('span', { class: 'key' }, String(i + 1)), h('span', null, o)));
+    card.appendChild(h('div', { class: 'stem' }, richText(q.stem)));
+    const optEls = options.map((o, i) => h('button', { class: 'option', dataset: { i }, onClick: () => choose(i) }, h('span', { class: 'key' }, h('span', { class: 'key-n' }, String(i + 1))), h('span', { class: 'opt-text' }, richText(o, { blanks: false }))));
     card.appendChild(h('div', { class: 'options' }, optEls));
     bodyEl.appendChild(card);
     const foot = h('div', { class: 'runner-foot' });
@@ -213,7 +215,9 @@ export function createRunner(app, cfg) {
     }, 1000);
   }
 
-  const bf = attachBattlefield(el);
+  const sceneKind = cfg.scene || 'battlefield';
+  const bf = sceneKind === 'battlefield' ? attachBattlefield(el) : attachScene(el, sceneKind, { blur: sceneKind === 'chariot' ? 7 : 5, tint: 0.5 });
+  if (sceneKind !== 'battlefield') { el.battlefield = { advance: () => bf.cheer(), setback: () => bf.jeer() }; }
   el.start = next;
   el.getSummary = summary;
   const kick = setTimeout(next, 0);
