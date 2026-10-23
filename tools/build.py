@@ -41,7 +41,13 @@ def main():
         "stats": {"questions": total_q, "concepts": total_c, "activities": total_a},
     }
     text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    digest = hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
+    hasher = hashlib.sha1(text.encode("utf-8"))
+    for f in sorted(glob.glob(os.path.join(ROOT, "app", "**", "*.*"), recursive=True)) + [os.path.join(ROOT, "index.html")]:
+        if f.endswith("data.js"):
+            continue
+        with open(f, "rb") as fh:
+            hasher.update(fh.read())
+    digest = hasher.hexdigest()[:10]
     payload["version"] = digest
     text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     out = os.path.join(ROOT, "app", "data.js")
