@@ -4,6 +4,7 @@ import { masteryLevel, buildExam } from '../engine.js';
 import { worldMap, islandTrail, chapterProgress, nextIsland, ISLANDS, provinceState, ROMAN, zoomToProvince } from '../map.js';
 import { PROVINCE_SCENE } from '../scenes.js';
 import { icon, CHAPTER_ICON } from '../icons.js';
+import { getCosmetic } from '../cosmetic.js';
 import { warBriefing, triumph } from '../cutscene.js';
 import { createLesson } from './lesson.js';
 import { createRunner, resultCard, missesList } from './runner.js';
@@ -22,6 +23,16 @@ export function render(app, params) {
   return lesson(app, ch, t);
 }
 
+// ---- the war table is one scene shared by #/campaign and #/campaign/N so the camera moves between them ----
+let tableP = null; let tableFailed = false;
+function wantsTable(app) { if (tableFailed) return false; try { return getCosmetic().warTable3d !== false && app.state.settings.motion !== false && !window.matchMedia('(prefers-reduced-motion: reduce)').matches && !(navigator.deviceMemory && navigator.deviceMemory < 2) && !(navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2); } catch { return false; } }
+function getTable(app, initialProvince) {
+  if (!tableP) tableP = import('../wartable.js').then(m => { if (!m.webglOk()) throw new Error('no webgl'); return m.createWarTable(app, { initialProvince, onProvince: (ch, state) => { if (state === 'locked') { lockedPrompt(app, ch); return; } app.sound('horn'); app.navigate(`#/campaign/${ch.chapter}`); }, onFort: (t, i) => { app.sound('knock'); tableHooks.onFort && tableHooks.onFort(t, i); }, onBoss: () => { tableHooks.onBoss && tableHooks.onBoss(); } }); }).catch(err => { console.warn('war table unavailable, using the 2.5D map', err); tableFailed = true; tableP = null; throw err; });
+  return tableP;
+}
+const tableHooks = { onFort: null, onBoss: null };
+function releaseTable(host) { host.dead = true; const next = location.hash; if (/^#\/campaign(\/\d+)?$/.test(next)) return; if (tableP) tableP.then(t => t.unmount()).catch(() => {}); }
+
 function topicCleared(app, t) { return !!app.state.campaign.topics[t.id]?.cleared; }
 function topicConceptsSolid(app, t) { return t.concepts.every(cid => masteryLevel(app.state.concepts[cid]) >= 3 && !app.state.concepts[cid]?.pursuit); }
 
@@ -31,13 +42,17 @@ function world(app) {
   const totalFlags = app.content.chapters.reduce((s, ch) => s + ch.topics.length, 0);
   const next = nextIsland(app);
   const nextCh = next ? app.index.chapter.get(next) : null;
-  const mapFrame = h('div', { class: 'map-frame' });
-  mapFrame.appendChild(worldMap(app, { onIsland: (ch, state) => {
+  const use3d = wantsTable(app);
+  const mapFrame = h('div', { class: 'map-frame' + (use3d ? ' map-3d loading' : '') });
+  const motion = app.state.settings.motion !== false && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fallback = () => { if (mapFrame.dead) return; mapFrame.classList.remove('map-3d', 'loading'); mapFrame.appendChild(worldMap(app, { onIsland: (ch, state) => {
     if (state === 'locked') { lockedPrompt(app, ch); return; }
     app.sound('horn');
-    zoomToProvince(mapFrame, ch.chapter, { motion: app.state.settings.motion !== false && !window.matchMedia('(prefers-reduced-motion: reduce)').matches }).then(() => app.navigate(`#/campaign/${ch.chapter}`));
-  } }));
-  return h('div', { class: 'world-page' },
+    zoomToProvince(mapFrame, ch.chapter, { motion }).then(() => app.navigate(`#/campaign/${ch.chapter}`));
+  } })); };
+  if (use3d) getTable(app).then(t => { if (mapFrame.dead) return; t.mount(mapFrame); mapFrame.classList.remove('loading'); t.showOverview({ instant: t.mode === 'overview' }); }).catch(fallback);
+  else fallback();
+  const page = h('div', { class: 'world-page' },
     h('div', { class: 'page-head' },
       h('div', null, h('div', { class: 'eyebrow' }, 'Conquest'), h('h1', null, 'Imperium Marketing'), h('p', null, 'Eight provinces, one per chapter. March on a province, win each battle on its road (study the scrolls, then prove it), and plant the standard. Lay siege to the capital at 90% to conquer the province.')),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, icon('aquila', { size: 14, tone: 'gold' }), `${conquered}/8 provinces conquered`), h('span', { class: 'chip' }, icon('standard', { size: 14, tone: 'crimson' }), `${flags}/${totalFlags} standards planted`))),
@@ -46,22 +61,22 @@ function world(app) {
       h('div', { class: 'quest-ico' }, icon(CHAPTER_ICON[nextCh.chapter] || 'seal', { size: 34, tone: 'gold' })),
       h('div', { class: 'grow' }, h('div', { class: 'eyebrow' }, 'Next objective'), h('h3', null, `Chapter ${ROMAN[nextCh.chapter]}: ${ISLANDS[nextCh.chapter].name} · ${nextCh.title}`), h('p', { class: 'small muted' }, nextCh.tag)),
       h('a', { class: 'btn ch big', href: `#/campaign/${nextCh.chapter}` }, 'March ', icon('arrow', { size: 14, tone: 'mono' }))) : h('div', { class: 'quest' }, h('div', { class: 'quest-ico' }, icon('aquila', { size: 34, tone: 'gold' })), h('div', null, h('h3', null, 'Every province is yours, Imperator.'), h('p', { class: 'small muted' }, 'Keep the armoury stocked with field drills and great battles.'))));
+  page.cleanup = () => releaseTable(mapFrame);
+  return page;
 }
 
 function island(app, ch) {
   const isl = ISLANDS[ch.chapter];
   const prog = chapterProgress(app, ch);
   const sheet = h('div', { class: 'level-sheet' });
+  const use3d = wantsTable(app);
+  const mapFrame = h('div', { class: 'map-frame' + (use3d ? ' map-3d loading' : '') });
   const page = h('div', { class: 'island-page', style: { '--ch': ch.color } },
     h('a', { class: 'back', href: '#/campaign' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Back to the map of provinces'),
     h('div', { class: 'page-head mt-sm' },
       h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ROMAN[ch.chapter]} · Provincia ${isl?.name || ''}`), h('h1', { class: 'row' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 30, tone: 'gold' }), ch.title), h('p', null, `${ch.topics.length} battles on the road, ${ch.concepts.length} strongholds. ${prog.cleared}/${ch.topics.length} standards planted${prog.boss ? `, ${isl?.capital || 'the capital'} taken.` : '.'}`)),
       h('div', { class: 'row wrap' }, h('a', { class: 'btn ghost', href: `#/learn/${ch.chapter}` }, icon('scroll', { size: 16, tone: 'gold' }), 'Scrolls'), h('a', { class: 'btn ghost', href: `#/drill/chapter/${ch.chapter}` }, icon('gladius', { size: 16, tone: 'gold' }), 'Drill province'))),
-    h('div', { class: 'map-frame' }, islandTrail(app, ch, {
-      onNode: (t, i) => { sheet.dataset.user = '1'; app.sound('knock'); showSheet(t, i); },
-      onBoss: () => app.navigate(`#/campaign/${ch.chapter}/boss`),
-    })),
-    sheet);
+    mapFrame, sheet);
   function showSheet(t, i) {
     const cleared = topicCleared(app, t);
     sheet.innerHTML = '';
@@ -77,9 +92,14 @@ function island(app, ch) {
         h('span', { class: 'small muted' }, 'Scrolls first if the ground is new. The battle is won when every stronghold reaches Solid.'))));
     if (sheet.dataset.user) sheet.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
-  // auto-open the next level's sheet
+  const onNode = (t, i) => { sheet.dataset.user = '1'; showSheet(t, i); };
+  const onBoss = () => { const all = ch.topics.every(t => topicCleared(app, t)); if (all) app.navigate(`#/campaign/${ch.chapter}/boss`); else app.toast('Win every battle on the road before laying siege to the capital', 'info'); };
+  const fallback = () => { if (mapFrame.dead) return; mapFrame.classList.remove('map-3d', 'loading'); mapFrame.appendChild(islandTrail(app, ch, { onNode: (t, i) => { app.sound('knock'); onNode(t, i); }, onBoss })); };
+  if (use3d) { tableHooks.onFort = onNode; tableHooks.onBoss = onBoss; getTable(app, ch.chapter).then(t => { if (mapFrame.dead) return; const fresh = t.mode === 'overview' && !t.el.isConnected; t.mount(mapFrame); mapFrame.classList.remove('loading'); t.showProvince(ch.chapter, { instant: fresh }); }).catch(fallback); }
+  else fallback();
   const nextTopic = ch.topics.find(t => !topicCleared(app, t)) || ch.topics[ch.topics.length - 1];
   showSheet(nextTopic, ch.topics.indexOf(nextTopic));
+  page.cleanup = () => releaseTable(mapFrame);
   return page;
 }
 

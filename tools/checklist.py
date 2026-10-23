@@ -80,7 +80,7 @@ with sync_playwright() as p:
     def fps(route, sel):
         pg.goto(BASE + route, wait_until="load"); pg.wait_for_timeout(300); pg.wait_for_selector(sel, timeout=8000); pg.wait_for_timeout(400)
         return pg.evaluate("() => new Promise(res => { let n = 0; const t0 = performance.now(); (function f() { n++; if (performance.now() - t0 < 2000) requestAnimationFrame(f); else res(Math.round(n / 2)); })(); })")
-    f_battle = fps("#/campaign/1/t01-1/drill", ".qcard"); f_map = fps("#/campaign", ".worldmap")
+    f_battle = fps("#/campaign/1/t01-1/drill", ".qcard"); f_map = fps("#/campaign", ".map-frame")
     print(f"fps (headless, no GPU): battle {f_battle}, map {f_map}")
     check("no console or page errors", not errors, "; ".join(errors[:3]))
     b.close()

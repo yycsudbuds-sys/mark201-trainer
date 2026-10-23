@@ -64,7 +64,10 @@ def simplify(pts, tol):
         return [pts[a], pts[b]]
     closed = pts[0] == pts[-1]
     pts = pts if closed else pts + [pts[0]]
-    return dp(0, len(pts) - 1)
+    # a closed ring has a zero-length chord from first to last point, so split it at the farthest point first
+    x0, y0 = pts[0]
+    m = max(range(1, len(pts) - 1), key=lambda i: (pts[i][0] - x0) ** 2 + (pts[i][1] - y0) ** 2)
+    return dp(0, m)[:-1] + dp(m, len(pts) - 1)
 
 def area(ring):
     s = 0

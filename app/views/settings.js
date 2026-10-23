@@ -1,12 +1,18 @@
 // Settings: profiles, backup, theme, sound, exam date, reset, how-it-works.
 import { h, modal, toast } from '../ui.js';
 import { icon } from '../icons.js';
+import { getCosmetic, setCosmetic } from '../cosmetic.js';
 import { MASTERY_LABELS } from '../engine.js';
 
 export function render(app) {
   const st = app.state; const s = st.settings;
   const sw = (key, label, desc, apply) => {
     const btn = h('button', { class: 'switch' + (s[key] !== false ? ' on' : ''), role: 'switch', 'aria-checked': String(s[key] !== false), 'aria-label': label, onClick: () => { s[key] = s[key] === false; btn.classList.toggle('on', s[key] !== false); btn.setAttribute('aria-checked', String(s[key] !== false)); app.store.save(); apply && apply(); } });
+    return h('div', { class: 'toggle' }, h('div', null, h('div', { style: { fontWeight: 700 } }, label), h('div', { class: 'small muted' }, desc)), btn);
+  };
+  const cosSwitch = (key, label, desc, dflt) => {
+    const cos = getCosmetic(); let on = cos[key] === undefined ? dflt : !!cos[key];
+    const btn = h('button', { class: 'switch' + (on ? ' on' : ''), role: 'switch', 'aria-checked': String(on), 'aria-label': label, onClick: () => { on = !on; setCosmetic({ [key]: on }); btn.classList.toggle('on', on); btn.setAttribute('aria-checked', String(on)); } });
     return h('div', { class: 'toggle' }, h('div', null, h('div', { style: { fontWeight: 700 } }, label), h('div', { class: 'small muted' }, desc)), btn);
   };
   const nameInput = h('input', { type: 'text', value: st.name, maxlength: '24' });
@@ -36,7 +42,8 @@ export function render(app) {
         h('div', { class: 'seg' }, h('button', { class: s.theme !== 'light' ? 'on' : '', onClick: e => { s.theme = 'dark'; app.store.save(); app.applySettings(); e.currentTarget.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, 'Night camp'), h('button', { class: s.theme === 'light' ? 'on' : '', onClick: e => { s.theme = 'light'; app.store.save(); app.applySettings(); e.currentTarget.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, 'Day march'))),
       sw('briefings', 'War briefings', 'The Legatus briefs you in his tent before each lesson, battle, siege and drill. Skippable any time.'),
       sw('sound', 'Sound effects', 'Short blips for right, wrong, promotions.'),
-      sw('motion', 'Motion and confetti', 'Turn off for a calmer, faster feel.', () => app.applySettings())),
+      sw('motion', 'Motion and confetti', 'Turn off for a calmer, faster feel.', () => app.applySettings()),
+      cosSwitch('warTable3d', 'Conquest in 3D', 'The war table in three dimensions. Off, or when motion is off, Conquest uses the painted 2.5D map instead.', true)),
     h('div', { class: 'card stack' }, h('h3', null, 'Backup'),
       h('p', { class: 'small muted' }, 'Export your progress as a file to move it to another device or keep a backup.'),
       h('div', { class: 'row wrap' },

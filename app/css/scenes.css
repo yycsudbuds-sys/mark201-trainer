@@ -750,3 +750,49 @@ body.has-band .main { height: calc(100vh - var(--band-h)); overflow-y: auto; ove
 .tri-title .tri-spoils { justify-content: flex-start; }
 .tri-arch-text { top: 14px; font-size: 0.55rem; }
 @media (max-width: 640px) { .tri-title { width: 92%; top: 3%; } .tri-arch { top: 30%; height: 36%; } }
+
+/* ===================================================================
+   PHASE 3 — the war table (3D) and the 2.5D parchment map, HTML labels.
+   =================================================================== */
+.map-frame.map-3d { position: relative; height: clamp(380px, 68vh, 760px); overflow: hidden; background: #1a120c; border-color: #3B2A17; }
+.map-frame.map-3d.loading::after { content: 'Unrolling the war table…'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.75rem; color: var(--gold-leaf-light); background: radial-gradient(ellipse at center, rgba(90, 63, 34, 0.5), rgba(14, 10, 7, 0.9)); }
+.wartable { position: absolute; inset: 0; }
+.wartable-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.wartable-canvas:active { cursor: grabbing; }
+/* labels shared by both maps */
+.mlabels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.mlabel { position: absolute; left: 0; top: 0; pointer-events: auto; cursor: pointer; display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 96px; max-width: 170px; padding: 0.28rem 0.5rem 0.3rem; background: linear-gradient(180deg, rgba(240, 225, 188, 0.94), rgba(222, 200, 148, 0.94)); border: 1px solid rgba(74, 52, 24, 0.6); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.5); border-radius: 3px; transition: opacity 0.25s, transform 0.08s linear; will-change: transform; clip-path: polygon(0 4%, 3% 0, 97% 2%, 100% 6%, 99% 94%, 96% 100%, 4% 98%, 0 92%); }
+.mlabel .ml-name { font-family: var(--font-display); font-weight: 700; font-size: 0.86rem; letter-spacing: 0.06em; color: #2E2114; line-height: 1.1; }
+.mlabel .ml-num { font-family: var(--font-display); font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: #6E5A3E; margin-top: 1px; }
+.mlabel .ml-badge { display: inline-flex; align-items: center; gap: 0.25rem; margin-top: 0.3rem; padding: 0.12rem 0.45rem; border-radius: 2px; background: #2E2114; color: #E3C76A; font-family: var(--font-display); font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(201, 162, 39, 0.6); white-space: nowrap; }
+.mlabel.locked { opacity: 0.8; } .mlabel.locked .ml-name { color: #6B5F4D; } .mlabel.locked .ml-badge { background: #6B5F4D; color: #E9D7AE; border-color: #8C8070; }
+.mlabel.conquered .ml-name { color: #5E1313; } .mlabel.conquered .ml-badge { background: #8B1E1E; border-color: #E3C76A; }
+.mlabel.next { box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.85), 0 0 18px rgba(201, 162, 39, 0.55), 0 6px 12px rgba(0, 0, 0, 0.35); }
+.mlabel.faded { opacity: 0.22; pointer-events: none; }
+.mlabel.hidden { display: none; }
+.mlabel.small { min-width: 80px; max-width: 128px; padding: 0.2rem 0.4rem 0.25rem; }
+.mlabel.small .ml-name { font-size: 0.68rem; letter-spacing: 0.03em; font-family: var(--font-body); font-weight: 700; }
+.mlabel.small .ml-num { font-size: 0.52rem; }
+.mlabel:hover { transform-origin: center; filter: brightness(1.06); }
+@media (max-width: 640px) { .mlabel { min-width: 76px; max-width: 130px; padding: 0.2rem 0.35rem; } .mlabel .ml-name { font-size: 0.72rem; } .mlabel .ml-badge { font-size: 0.5rem; letter-spacing: 0.08em; } }
+/* the 2.5D parchment map */
+.map25 { position: relative; width: 100%; height: clamp(360px, 68vh, 740px); overflow: hidden; background: #BFAD86; touch-action: none; }
+.map25.compact { height: auto; aspect-ratio: 1000 / 860; touch-action: auto; }
+.map25-stage { position: absolute; inset: 0; transition: transform 0.56s var(--ease-in-out); transform-style: preserve-3d; }
+.map25 .worldmap { width: 100%; height: 100%; display: block; cursor: grab; }
+.map25.compact .worldmap { cursor: pointer; }
+.map25.zooming .map25-stage { transform: perspective(1100px) rotateX(38deg) scale(2.6); }
+.map25.zooming .mlabels { opacity: 0; }
+.map25-cartouche { position: absolute; right: 0.8rem; top: 0.7rem; padding: 0.45rem 0.9rem; background: linear-gradient(180deg, #F0E1BC, #DEC894); border: 1px solid #6B5636; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35); text-align: center; pointer-events: none; }
+.map25-cartouche .map-title { font-family: var(--font-display); font-weight: 700; letter-spacing: 0.22em; font-size: 0.78rem; color: #2E2114; }
+.map25-cartouche .map-subtitle { font-family: var(--font-display); letter-spacing: 0.22em; font-size: 0.52rem; color: #6E5A3E; }
+@media (max-width: 640px) { .map25-cartouche { right: 0.4rem; top: 0.4rem; padding: 0.25rem 0.5rem; } .map25-cartouche .map-title { font-size: 0.58rem; letter-spacing: 0.14em; } .map25-cartouche .map-subtitle { font-size: 0.42rem; } }
+.legion-token .std-pole { stroke: #3E2D0C; stroke-width: 1.4; } .legion-token .std-cloth { fill: #8B1E1E; opacity: 1; } .legion-token .tok-head { fill: #8A5A3C; } .legion-token .tok-body { fill: #8B1E1E; stroke: #3E2D0C; stroke-width: 0.6; }
+.worldmap.compact .prov-name { font-size: 15px; }
+.map25 .province.locked { cursor: not-allowed; }
+.map25 .province .terr { transition: fill-opacity 0.25s, transform 0.25s; }
+.map25 .province:hover .terr, .map25 .province:focus-visible .terr { fill-opacity: 0.42; }
+:root[data-motion="off"] .map25-stage { transition: none; }
+@media (max-width: 760px) { .map-frame { overflow: hidden; } .map-frame > svg { min-width: 0; } }
+/* the fort card below the table */
+.level-sheet .sheet-card h2 { word-break: normal; overflow-wrap: anywhere; }
