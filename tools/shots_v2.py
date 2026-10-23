@@ -15,7 +15,7 @@ with sync_playwright() as p:
     pg.goto(BASE, wait_until="load")
     pg.wait_for_selector("input[type=text]")
     pg.fill("input[type=text]", "Austin")
-    pg.click("text=Start training")
+    pg.click("text=Join the legion")
     pg.wait_for_selector(".hq")
     pg.evaluate("""() => { const a = window.__app; const st = a.state; const ch1 = a.index.chapter.get(1); ch1.topics.forEach(t => st.campaign.topics[t.id] = {cleared: Date.now()}); st.campaign.bosses[1] = {cleared: Date.now(), best: 0.95}; const ch6 = a.index.chapter.get(6); st.campaign.topics[ch6.topics[0].id] = {cleared: Date.now()}; st.campaign.topics[ch6.topics[1].id] = {cleared: Date.now()}; a.store.flush(); }""")
     shots = [
@@ -42,7 +42,7 @@ with sync_playwright() as p:
     m.wait_for_timeout(300)
     if m.locator("input[type=text]").count():
         m.fill("input[type=text]", "M")
-        m.click("text=Start training")
+        m.click("text=Join the legion")
         m.wait_for_timeout(300)
         m.goto(BASE + "#/campaign/8", wait_until="load")
         m.wait_for_timeout(800)

@@ -3,6 +3,7 @@ import { h, fmtTime, timeAgo } from '../ui.js';
 import { buildExam } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner } from './runner.js';
+import { warBriefing } from '../cutscene.js';
 
 export function render(app, params) {
   const [sub] = params;
@@ -19,7 +20,7 @@ function config(app) {
   const tSeg = h('div', { class: 'seg' }, [[60, '60 s / Q'], [75, '75 s / Q'], [90, '90 s / Q'], [0, 'Untimed']].map(([k, l]) => h('button', { class: per === k ? 'on' : '', onClick: e => { per = k; tSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   const history = (app.state.exams || []).slice().reverse();
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Midterm Simulator'), h('p', null, 'Exam conditions: questions mixed across chapters and weighted like the real test, no feedback until you finish, a clock. Every miss becomes a pursuit in Smart Drill.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'The Great Battle'), h('p', null, 'Exam conditions: questions mixed across every province and weighted like the real test, no word from the Legatus until the field is cleared, a clock. Every miss becomes a pursuit in Field Drill.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('div', { class: 'field' }, h('label', null, 'Questions'), nSeg), h('div', { class: 'field' }, h('label', null, 'Pace'), tSeg)),
@@ -27,7 +28,7 @@ function config(app) {
         if (!selected.size) { app.toast('Pick at least one chapter', 'bad'); return; }
         sessionStorage.setItem('examcfg', JSON.stringify({ chapterList: [...selected], n, per }));
         app.navigate('#/exam/go');
-      } }, 'Start simulation'),
+      } }, 'Give battle'),
       h('p', { class: 'tiny muted' }, 'Tip: the real midterm is mostly scenario questions. The simulator over-weights those and leans on difficulty 2–3.')),
     history.length ? h('div', { class: 'mt' }, h('h2', { class: 'mb' }, 'History'), h('div', { class: 'list' }, history.slice(0, 12).map(e => h('div', { class: 'li' },
       h('div', { class: 'score-big', style: { fontSize: '1.4rem', color: e.score >= 0.9 ? 'var(--good)' : e.score >= 0.7 ? 'var(--accent)' : 'var(--bad)' } }, `${Math.round(e.score * 100)}%`),
@@ -41,8 +42,12 @@ function run(app, cfg) {
   const questions = buildExam(app.content, app.state, { n, chapters });
   if (questions.length < n) app.toast(`Only ${questions.length} questions available for this selection`, 'info');
   const host = h('div');
-  const runner = createRunner(app, {
-    title: 'Midterm simulation', subtitle: `${questions.length} questions · ${cfg.per ? fmtTime(cfg.per * questions.length) + ' total' : 'untimed'} · no feedback until the end`,
+  let runner = null;
+  warBriefing(app, { kind: 'exam', cta: 'Give battle' }).then(() => { if (host.dead) return; runner = build(); host.appendChild(runner); });
+  host.cleanup = () => { host.dead = true; runner && runner.cleanup && runner.cleanup(); };
+  return host;
+  function build() { return createRunner(app, {
+    title: 'The Great Battle', subtitle: `${questions.length} questions · ${cfg.per ? fmtTime(cfg.per * questions.length) + ' total' : 'untimed'} · no feedback until the end`,
     mode: 'exam', questions, feedback: 'deferred', limit: questions.length, timer: cfg.per ? cfg.per * questions.length : null, pursuit: false,
     onFinish: (sum, reason) => {
       const byChapter = {};
@@ -56,10 +61,7 @@ function run(app, cfg) {
       app.navigate('#/exam/result');
     },
     onExit: () => {},
-  });
-  host.appendChild(runner);
-  host.cleanup = () => runner.cleanup && runner.cleanup();
-  return host;
+  }); }
 }
 
 function result(app, rec) {
@@ -75,7 +77,7 @@ function result(app, rec) {
   const drawList = () => {
     list.innerHTML = '';
     const items = rec.log.filter(l => filter === 'all' || !l.correct);
-    if (!items.length) list.appendChild(h('div', { class: 'empty' }, 'No misses. Clean sheet!'));
+    if (!items.length) list.appendChild(h('div', { class: 'empty' }, 'No ground lost. A triumph.'));
     for (const l of items) {
       const q = app.questionOf(l.qid)?.question; if (!q) continue; const c = app.conceptOf(q.concept);
       list.appendChild(h('div', { class: 'review-item ' + (l.correct ? 'right' : 'wrong') },
@@ -87,17 +89,17 @@ function result(app, rec) {
     }
   };
   drawList();
-  const seg = h('div', { class: 'seg' }, h('button', { class: 'on', onClick: e => { filter = 'wrong'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, `Misses (${rec.misses.length})`), h('button', { onClick: e => { filter = 'all'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, 'All questions'));
+  const seg = h('div', { class: 'seg' }, h('button', { class: 'on', onClick: e => { filter = 'wrong'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, `Ground lost (${rec.misses.length})`), h('button', { onClick: e => { filter = 'all'; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); drawList(); } }, 'All questions'));
   return h('div', { class: 'runner stack', style: { gap: '1.2rem' } },
     h('div', { class: 'card center' },
-      h('div', { class: 'eyebrow' }, rec.reason === 'time' ? 'Time expired' : 'Simulation complete'),
+      h('div', { class: 'eyebrow' }, rec.reason === 'time' ? 'The sun set on the field' : 'The field is cleared'),
       h('div', { class: 'score-big', style: { color: pct >= 90 ? 'var(--good)' : pct >= 70 ? 'var(--accent)' : 'var(--bad)' } }, `${pct}%`),
       h('p', { class: 'muted' }, `${rec.correct} of ${rec.n} · ${fmtTime(rec.durationSec)}${rec.answered < rec.n ? ` · ${rec.n - rec.answered} unanswered` : ''}`),
       h('p', null, verdict(pct)),
       h('div', { class: 'row wrap mt', style: { justifyContent: 'center' } },
-        missConcepts.length ? h('a', { class: 'btn primary big', href: `#/drill/concepts/${missConcepts.join(',')}` }, `🎯 Drill my ${missConcepts.length} missed concept${missConcepts.length === 1 ? '' : 's'}`) : null,
-        h('a', { class: 'btn', href: '#/exam' }, 'New simulation'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home'))),
-    h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'By chapter'), h('div', { class: 'stack' }, chRows)),
+        missConcepts.length ? h('a', { class: 'btn primary big', href: `#/drill/concepts/${missConcepts.join(',')}` }, `⚔️ Retake ${missConcepts.length} lost stronghold${missConcepts.length === 1 ? '' : 's'}`) : null,
+        h('a', { class: 'btn', href: '#/exam' }, 'Another battle'), h('a', { class: 'btn ghost', href: '#/home' }, 'Castra'))),
+    h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'By province'), h('div', { class: 'stack' }, chRows)),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Debrief'), seg), list));
 }
 

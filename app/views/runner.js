@@ -4,8 +4,9 @@ import { h, clear, floatXp, fmtTime, escapeHtml } from '../ui.js';
 import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { conceptCard } from './concept.js';
 import { visualFor } from '../visuals.js';
+import { attachBattlefield } from '../battlefield.js';
 
-const REASON_LABEL = { pursuit: '🎯 Pursuit', weak: '🩹 Weak spot', due: '⏰ Due for review', new: '✨ New', review: '🔁 Review', exam: 'Exam', boss: '👑 Boss', campaign: '🗺️ Checkpoint', blitz: '⚡ Blitz', duel: '⚔️ Duel' };
+const REASON_LABEL = { pursuit: '🎯 Pursuit', weak: '🩹 Weak flank', due: '⏰ Due for review', new: '✨ New ground', review: '🔁 Review', exam: 'Battle', boss: '🏛️ Siege', campaign: '⚔️ Battle', blitz: '⚡ Skirmish', duel: '🗡️ Duel' };
 
 /**
  * createRunner(app, config) -> element with .cleanup()
@@ -146,15 +147,15 @@ export function createRunner(app, cfg) {
       });
       const res = afterAnswer(q, correct, i, options, answer, pick);
       const expl = h('div', { class: 'explain' },
-        h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, correct ? '✓ Correct' : '✗ Not quite', res && res.xp ? h('span', { class: 'mono small', style: { marginLeft: 'auto', color: 'var(--accent)' } }, `+${res.xp} XP`) : null),
+        h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, correct ? '✓ The line holds' : '✗ Ground lost', res && res.xp ? h('span', { class: 'mono small', style: { marginLeft: 'auto', color: 'var(--accent)' } }, `+${res.xp} XP`) : null),
         h('p', null, q.explanation),
         h('p', { class: 'small muted' }, 'Concept: ', h('b', null, entry.concept.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
         h('details', { class: 'learn-more', open: !correct && cfg.showLearnOnWrong !== false }, h('summary', null, 'Review this concept'), conceptCard(app, q.concept, { compact: true, showMastery: false }), safeVisual(entry)),
       );
       card.appendChild(expl);
       if (res && res.xp) floatXp(optEls[answer], `+${res.xp} XP`);
-      const cont = h('button', { class: 'btn primary big', onClick: next }, 'Continue ', h('span', { class: 'kbd' }, 'Enter'));
-      foot.append(h('span', { class: 'small muted' }, 'Keys 1–5 answer · Enter continues'), cont);
+      const cont = h('button', { class: 'btn primary big', onClick: next }, 'Advance ', h('span', { class: 'kbd' }, 'Enter'));
+      foot.append(h('span', { class: 'small muted' }, 'Keys 1–5 answer · Enter advances'), cont);
       setTimeout(() => cont.focus(), 30);
       if (state.hearts !== null && state.hearts <= 0) { setTimeout(() => finish('hearts'), 900); }
       if (state.timeLeft !== null && state.timeLeft <= 0) { setTimeout(() => finish('time'), 900); }
@@ -175,6 +176,7 @@ export function createRunner(app, cfg) {
   function afterAnswer(q, correct, chosenIdx, options, answerIdx, pick) {
     state.answered++;
     if (correct) { state.combo++; state.correct++; } else { state.combo = 0; if (state.hearts !== null) { state.hearts--; app.sound('heart'); } }
+    if (el.battlefield) { if (correct) el.battlefield.advance(); else el.battlefield.setback(); }
     const res = app.answer(q, correct, { mode: cfg.mode, combo: state.combo });
     state.xp += res.xp;
     if (correct) app.sound('correct'); else app.sound('wrong');
@@ -211,6 +213,7 @@ export function createRunner(app, cfg) {
     }, 1000);
   }
 
+  const bf = attachBattlefield(el);
   el.start = next;
   el.getSummary = summary;
   const kick = setTimeout(next, 0);

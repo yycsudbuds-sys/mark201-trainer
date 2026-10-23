@@ -40,33 +40,33 @@ export function render(app) {
 
   const hero = h('section', { class: 'hq' },
     h('div', { class: 'hq-side' },
-      h('div', { class: 'eyebrow' }, exam ? `Midterm ${exam}` : 'Midterm trainer'),
-      h('h1', null, `Hey ${st.name}.`),
+      h('div', { class: 'eyebrow' }, exam ? `The midterm ${exam} · Castra` : 'Castra'),
+      h('h1', null, `Ave, ${st.name}.`),
       h('p', { class: 'muted' }, headline(r, counts)),
-      h('div', { class: 'hq-ring' }, ring(r.score, { size: 132, stroke: 11, color: r.score >= 0.85 ? 'var(--good)' : 'var(--accent)', label: h('div', { class: 'center' }, h('div', { class: 'big', style: { fontSize: '1.9rem', fontFamily: 'var(--font-display)', fontWeight: 800 } }, fmtPct(r.score)), h('div', { class: 'tiny muted' }, 'exam ready')) })),
+      h('div', { class: 'hq-ring' }, ring(r.score, { size: 132, stroke: 11, color: r.score >= 0.85 ? 'var(--good)' : 'var(--accent)', label: h('div', { class: 'center' }, h('div', { class: 'big', style: { fontSize: '1.9rem', fontFamily: 'var(--font-display)', fontWeight: 800 } }, fmtPct(r.score)), h('div', { class: 'tiny muted' }, 'test readiness')) })),
       h('div', { class: 'hq-stats' },
-        stat(counts[4], 'mastered', 'var(--good)'), stat(counts[3], 'solid'), stat(islands, 'islands claimed'),
+        stat(counts[4], 'mastered', 'var(--good)'), stat(counts[3], 'solid'), stat(islands, 'provinces conquered'),
         stat(pursuits, 'pursuits open', pursuits ? 'var(--bad)' : undefined), stat(due, 'due now', due ? 'var(--accent)' : undefined), stat(today.answered, 'answered today')),
       h('a', { class: 'btn primary big', href: na.href }, na.cta),
       h('p', { class: 'small muted' }, h('b', null, na.title), ' · ', na.desc)),
-    h('div', { class: 'hq-map' }, h('a', { class: 'map-link', href: '#/campaign', 'aria-label': 'Open the campaign map' }, worldMap(app, { compact: true }))));
+    h('div', { class: 'hq-map' }, h('a', { class: 'map-link', href: '#/campaign', 'aria-label': 'Open the map of provinces' }, worldMap(app, { compact: true }))));
 
   const modes = h('section', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Pick a cartridge'), h('p', null, 'Different games, one engine: every answer feeds the same mastery model and review schedule.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Orders of the day'), h('p', null, 'Different engagements, one engine: every answer feeds the same mastery model and review schedule.'))),
     h('div', { class: 'cartridges' },
-      cart('#/campaign', '🗺️', 'Campaign', 'Islands, trails, flags, bosses.', '#2DD4BF', `${islands}/8 claimed`),
-      cart('#/drill', '🎯', 'Smart Drill', 'Adaptive mix. Misses trigger a pursuit.', '#FF6B6B', `${due} due · ${pursuits} pursuits`),
-      cart('#/exam', '📝', 'Midterm Sim', 'Timed, mixed, debriefed.', '#38BDF8', '20–80 Q'),
-      cart('#/arcade/blitz', '⚡', 'Blitz', '90 s, three lives, combos.', '#FFB84D', `best ${st.stats.blitzBest || 0}`),
-      cart('#/drill/weak', '🩹', 'Weak Spots', 'Only what is below Solid.', '#F472B6', 'targeted'),
-      cart('#/arcade/duel', '⚔️', 'Duel', 'Tell-apart and NOT questions.', '#A78BFA', '20 s each'),
-      cart('#/arcade/build', '🧩', 'Build & Sort', 'Order, sort, match the tables.', '#A3E635', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
-      cart('#/arcade/flash', '🃏', 'Flashcards', 'Recall with honest grading.', '#FB923C', 'recall'),
-      cart('#/learn', '📖', 'Lessons', 'Slides and diagrams, one idea at a time.', '#9AA3B8', 'read'),
+      cart('#/campaign', '🗺️', 'Conquest', 'Provinces, roads, standards, sieges.', '#C9A227', `${islands}/8 conquered`),
+      cart('#/drill', '⚔️', 'Field Drill', 'Adaptive mix. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
+      cart('#/exam', '🛡️', 'Great Battle', 'Timed, mixed, debriefed.', '#6FA0B8', '20–80 Q'),
+      cart('#/arcade/blitz', '⚡', 'Skirmish', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
+      cart('#/drill/weak', '🛡️', 'Weak Flank', 'Only what is below Solid.', '#C8683A', 'reinforce'),
+      cart('#/arcade/duel', '🗡️', 'Gladiator Duel', 'Tell-apart and NOT questions.', '#A98BC9', '20 s each'),
+      cart('#/arcade/build', '🏗️', 'Siege Works', 'Order, sort, match the tables.', '#8FAA5A', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
+      cart('#/arcade/flash', '📜', 'Scrolls', 'Recall with honest grading.', '#B08968', 'recall'),
+      cart('#/learn', '🏛️', 'Archives', 'Slides and diagrams, one idea at a time.', '#B4A58A', 'study'),
     ));
 
   const shelf = h('section', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'The Shelf'), h('p', null, 'Every concept is a product on its chapter shelf. Fill the shelves. Click a tile to open its lesson.')), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Full progress →')),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'The Armoury'), h('p', null, 'Every concept is a weapon on its province rack. Forge them all. Click a piece to open its scroll.')), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Senate report →')),
     shelfMap(app));
 
   const plan = planSection(app);
@@ -74,11 +74,11 @@ export function render(app) {
 }
 
 function headline(r, counts) {
-  if (counts[4] + counts[3] + counts[2] === 0) return 'The archipelago is unexplored and the shelves are empty. Land on the first island.';
-  if (r.score < 0.4) return 'Good start. Keep planting flags.';
-  if (r.score < 0.7) return 'Momentum. The weak spots are showing themselves.';
-  if (r.score < 0.9) return 'Strong. Hunt the stragglers and run simulations.';
-  return 'You are exam-ready. Stay sharp.';
+  if (counts[4] + counts[3] + counts[2] === 0) return 'The provinces are unconquered and the armoury is empty. March on Italia.';
+  if (r.score < 0.4) return 'A good start. Keep planting standards.';
+  if (r.score < 0.7) return 'Momentum. The weak flanks are showing themselves.';
+  if (r.score < 0.9) return 'Strong. Hunt the stragglers and give battle.';
+  return 'The legions are ready. Stay sharp.';
 }
 function stat(v, k, color) { return h('div', { class: 'stat' }, h('div', { class: 'v', style: color ? { color } : null }, String(v)), h('div', { class: 'k' }, k)); }
 function cart(href, ico, title, desc, color, meta) {
@@ -106,6 +106,6 @@ function planSection(app) {
       return row;
     })));
   return h('details', { class: 'plan', open: done < total && done > 0 ? true : null },
-    h('summary', null, h('h2', null, 'Two-day plan'), h('span', { class: 'chip' }, `${done}/${total} done`), h('span', { class: 'small muted' }, 'Retrieval over rereading, spacing across sessions, interleaving once the basics are in, and sleep.')),
+    h('summary', null, h('h2', null, 'Campaign plan'), h('span', { class: 'chip' }, `${done}/${total} done`), h('span', { class: 'small muted' }, 'Retrieval over rereading, spacing across sessions, interleaving once the basics are in, and sleep.')),
     h('div', { class: 'grid three mt' }, days));
 }

@@ -1,6 +1,6 @@
-# MARK 201 Trainer
+# MARK 201 · Imperium
 
-A game-style, adaptive midterm trainer for MARK 201 (Introduction to Marketing), covering Chapters 1, 6, 7, 8, 9, 10, 11 and 12 of *Marketing: The Core* (Canadian edition). Static site, no account needed, progress saved in the browser.
+A Roman-conquest-themed, adaptive midterm trainer for MARK 201 (Introduction to Marketing), covering Chapters 1, 6, 7, 8, 9, 10, 11 and 12 of *Marketing: The Core* (Canadian edition). Static site, no account needed, progress saved in the browser.
 
 **Live:** https://yycsudbuds-sys.github.io/mark201-trainer/
 
@@ -10,9 +10,12 @@ A game-style, adaptive midterm trainer for MARK 201 (Introduction to Marketing),
 - **Mastery model.** A concept is *Solid* after 3 correct answers from 2+ angles with the last 2 in a row right. It is *Mastered* only after 4 correct answers from 3+ angles, the last 3 in a row, no open pursuit, and at least one correct answer in a later study session (45+ minutes apart). That spacing rule comes from the successive-relearning research: one correct recall in each of several spaced sessions beats many recalls in one sitting.
 - **Pursuit.** Any wrong answer opens a pursuit: the engine schedules three more questions on that concept from different angles, a few questions apart. A miss during a pursuit resets it.
 - **Spaced review.** Each correct answer pushes a concept further out (10 min, 1 h, 4 h, 12 h, 36 h). Due concepts float to the top of Smart Drill.
-- **Campaign as a world.** The Marketing Archipelago: eight islands (chapters) connected by routes. Each island has a trail of levels (topics); a level is a slide lesson (definition, plain English, interactive diagram, confusables, quick check) followed by a checkpoint. Flags plant as checkpoints clear, islands fill with colour, and a 90% boss claims the island.
+- **Conquest campaign.** A parchment map of the Roman world: eight provinces (chapters, labelled “Chapter I · Italia” through “Chapter XII · Aegyptus”) with explicit Locked / Open / Conquered states. Each province has a road of battles (topics); a battle is a slide lesson (definition, plain English, interactive diagram, confusables, quick check) followed by a checkpoint. Standards plant as checkpoints clear, and a 90% siege of the capital conquers the province. Locked provinces can be force-marched if you insist.
+- **War briefings.** Before every lesson, battle, siege, field drill and great battle, a Legatus briefs you in a torch-lit tent (flickering torches, sweeping shadows, typewriter dialogue, skippable, toggle in the Quartermaster). The briefing is generated from the real topic: its concepts, the ones you have faltered on, and the confusables to watch.
+- **Living battlefield.** Every quiz runs over an animated battlefield behind a dark glass panel. A correct answer advances the legion and raises the vexillum; a wrong one locks the shield wall and gives ground. It is pure CSS transform work, so it never pauses or delays the quiz.
 - **Lessons are slides, not walls of text.** Every concept is chunked into short slides with ~20 bespoke interactive diagrams (PLC curve, adoption bell, break-even with a price slider, markup two ways, elasticity demo, channel flows, contact math, communication process, push/pull, funnel, matrices, continuums) plus tap-to-reveal tables for every memorization figure.
-- **Modes:** Campaign (above), Smart Drill (adaptive, interleaved), Weak Spot Hunter, Midterm Simulator (timed, deferred feedback, debrief, "drill my misses"), Blitz, Confusables Duel, Build & Sort (order / sort / match the tables and processes), Flashcards, Learn (full concept cards + cheat sheets), Progress (readiness, the Shelf, weakest concepts, angle accuracy, achievements).
+- **Modes:** Conquest (above), Field Drill (adaptive, interleaved), Weak Flank, the Great Battle (timed midterm simulation, deferred feedback, debrief, retake lost ground), Skirmish (blitz), Gladiator Duel (confusables), Siege Works (order / sort / match), Scrolls (flashcards), Archives (lessons + tablets), Senate (progress: Test Readiness, the Armoury, weakest strongholds, angle accuracy, honours).
+- **What the theme did not touch:** the XP progression and level thresholds, the Test Readiness formula, the mastery/pursuit/spacing engine, and every lesson, question, answer and explanation.
 - **Multiple players.** Progress lives in `localStorage`, so each browser is independent. Several people can share one computer via profiles. Export/import for backups.
 - Works offline after the first load (service worker).
 

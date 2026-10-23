@@ -10,14 +10,14 @@ import hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHAPTER_META = {
-    1: {"color": "#FF6B6B", "short": "Marketing", "emoji": "🧭", "tag": "Why marketing exists"},
-    6: {"color": "#FFB84D", "short": "STP", "emoji": "🎯", "tag": "Segment, target, position"},
-    7: {"color": "#A3E635", "short": "Products", "emoji": "📦", "tag": "Products, brands, services"},
-    8: {"color": "#2DD4BF", "short": "New products", "emoji": "🚀", "tag": "Life cycles and launches"},
-    9: {"color": "#38BDF8", "short": "Pricing", "emoji": "🏷️", "tag": "Capture the value"},
-    10: {"color": "#A78BFA", "short": "Channels", "emoji": "🚚", "tag": "Channels and supply chains"},
-    11: {"color": "#F472B6", "short": "Retail", "emoji": "🛒", "tag": "Retailing and wholesaling"},
-    12: {"color": "#FB923C", "short": "IMC", "emoji": "📣", "tag": "Integrated communications"},
+    1: {"color": "#D4A834", "short": "Marketing", "emoji": "🏛️", "tag": "Why marketing exists", "province": "Italia", "numeral": "I"},
+    6: {"color": "#C8683A", "short": "STP", "emoji": "🎯", "tag": "Segment, target, position", "province": "Hispania", "numeral": "VI"},
+    7: {"color": "#8FAA5A", "short": "Products", "emoji": "🏺", "tag": "Products, brands, services", "province": "Gallia", "numeral": "VII"},
+    8: {"color": "#6FA0B8", "short": "New products", "emoji": "⚔️", "tag": "Life cycles and launches", "province": "Britannia", "numeral": "VIII"},
+    9: {"color": "#B08968", "short": "Pricing", "emoji": "🪙", "tag": "Capture the value", "province": "Germania", "numeral": "IX"},
+    10: {"color": "#A98BC9", "short": "Channels", "emoji": "⛵", "tag": "Channels and supply chains", "province": "Graecia", "numeral": "X"},
+    11: {"color": "#D28C3C", "short": "Retail", "emoji": "🏪", "tag": "Retailing and wholesaling", "province": "Asia", "numeral": "XI"},
+    12: {"color": "#4FA3A5", "short": "IMC", "emoji": "📯", "tag": "Integrated communications", "province": "Aegyptus", "numeral": "XII"},
 }
 
 

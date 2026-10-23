@@ -56,8 +56,9 @@ with sync_playwright() as p:
     go(page, "")
     page.wait_for_selector("input[type=text]")
     page.fill("input[type=text]", "Tester")
-    page.click("text=Start training")
+    page.click("text=Join the legion")
     page.wait_for_selector(".hq")
+    page.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; s.settings.motion = false; window.__app.store.flush(); window.__app.applySettings(); })()")
     shot(page, "01_home")
 
     for route, name in [("#/campaign", "02_campaign"), ("#/campaign/7", "03_chapter"), ("#/learn", "04_learn"), ("#/learn/7", "05_learn_ch"), ("#/learn/7/sheet", "06_sheet"), ("#/progress", "07_progress"), ("#/settings", "08_settings"), ("#/arcade", "09_arcade"), ("#/exam", "10_exam_cfg"), ("#/drill", "11_drill_cfg"), ("#/arcade/build", "12_build")]:
@@ -77,7 +78,7 @@ with sync_playwright() as p:
 
     # Smart drill
     go(page, "#/drill")
-    page.click("text=Start drilling")
+    page.click("text=March out")
     page.wait_for_selector(".qcard")
     shot(page, "15_drill_q")
     n = answer_n(page, 10)
@@ -87,7 +88,7 @@ with sync_playwright() as p:
     # Exam
     go(page, "#/exam")
     page.click("text=20 Q")
-    page.click("text=Start simulation")
+    page.click("text=Give battle")
     page.wait_for_selector(".qcard")
     shot(page, "17_exam_q")
     for _ in range(25):
@@ -166,7 +167,7 @@ with sync_playwright() as p:
 
     # weak hunter
     go(page, "#/drill/weak")
-    page.click("text=Start drilling")
+    page.click("text=March out")
     page.wait_for_timeout(300)
     shot(page, "26_weak")
     answer_n(page, 4)
@@ -184,12 +185,13 @@ with sync_playwright() as p:
     m.wait_for_timeout(300)
     if m.locator("input[type=text]").count():
         m.fill("input[type=text]", "Mobile")
-        m.click("text=Start training")
+        m.click("text=Join the legion")
         m.wait_for_selector(".hq")
+        m.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
     m.screenshot(path=os.path.join(SHOTS, "29_mobile_home.png"), full_page=True)
     m.goto(BASE + "#/drill", wait_until="load")
     m.wait_for_timeout(200)
-    m.click("text=Start drilling")
+    m.click("text=March out")
     m.wait_for_selector(".qcard")
     m.screenshot(path=os.path.join(SHOTS, "30_mobile_q.png"), full_page=False)
     # horizontal overflow check

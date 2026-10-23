@@ -17,14 +17,14 @@ const ROUTES = {
   home: Home, campaign: Campaign, drill: Drill, exam: Exam, arcade: Arcade, learn: Learn, progress: Progress, settings: Settings,
 };
 const NAV = [
-  ['home', '🏠', 'Home'],
-  ['campaign', '🗺️', 'Campaign'],
-  ['drill', '🎯', 'Smart Drill'],
-  ['exam', '📝', 'Midterm Sim'],
-  ['arcade', '🕹️', 'Arcade'],
-  ['learn', '📖', 'Lessons'],
-  ['progress', '📈', 'Progress'],
-  ['settings', '⚙️', 'Settings'],
+  ['home', '🏛️', 'Castra'],
+  ['campaign', '🗺️', 'Conquest'],
+  ['drill', '⚔️', 'Field Drill'],
+  ['exam', '🛡️', 'Great Battle'],
+  ['arcade', '🏟️', 'Arena'],
+  ['learn', '📜', 'Archives'],
+  ['progress', '🦅', 'Senate'],
+  ['settings', '⚙️', 'Quartermaster'],
 ];
 
 function buildIndex(content) {
@@ -66,7 +66,7 @@ const app = {
     }
     const lvBefore = levelForXp(this.state.xp - res.xp).index;
     const lvAfter = levelForXp(this.state.xp).index;
-    if (lvAfter > lvBefore) { toast(`Level up! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('level'); }
+    if (lvAfter > lvBefore) { toast(`Promotion! You are now ${LEVEL_TITLE(lvAfter)}`, 'xp', 3200); this.confetti({ count: 80 }); this.sound('level'); }
     const unlocked = checkAchievements(this);
     for (const a of unlocked) { toast(`🏆 ${a.title}`, 'xp', 3000); }
     this.store.save();
@@ -101,7 +101,7 @@ function buildShell() {
   navEl = h('nav', { class: 'nav', 'aria-label': 'Main' },
     h('a', { class: 'brand', href: '#/home' },
       h('div', { class: 'brand-mark', html: brandSvg() }),
-      h('div', null, h('div', { class: 'brand-name' }, 'MARK 201'), h('div', { class: 'brand-sub' }, 'Midterm trainer'))),
+      h('div', null, h('div', { class: 'brand-name' }, 'MARK 201'), h('div', { class: 'brand-sub' }, 'Imperium'))),
     NAV.map(([key, ico, label]) => h('a', { class: 'nav-link', href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, ico), label, key === 'drill' ? h('span', { class: 'badge quiet', dataset: { due: '1' } }, '') : null)),
     h('div', { class: 'nav-foot small muted' }, h('div', { dataset: { profileName: '1' } }), h('div', { class: 'tiny faint' }, `${app.content.stats.questions} questions · ${app.content.stats.concepts} concepts`)),
   );
@@ -127,7 +127,7 @@ export function renderHeader() {
       bar(lv.progress, { color: 'var(--accent)', height: 6 }),
       h('span', { class: 'mono small muted' }, lv.next ? `${st.xp} / ${lv.next.xp} XP` : `${st.xp} XP`)),
     h('span', { class: 'chip' }, `🔥 ${streak} day${streak === 1 ? '' : 's'}`),
-    h('span', { class: 'chip', title: 'Exam readiness estimate' }, `Readiness ${Math.round(r.score * 100)}%`),
+    h('span', { class: 'chip', title: 'Test readiness estimate' }, `Test Readiness ${Math.round(r.score * 100)}%`),
   ));
   headerEl.appendChild(h('div', { class: 'row' },
     h('a', { class: 'btn sm ghost', href: '#/settings' }, '👤 ', st.name),
@@ -187,11 +187,11 @@ function welcome() {
   input.addEventListener('keydown', e => { if (e.key === 'Enter') start(); });
   root.appendChild(h('div', { class: 'boot' },
     h('div', { class: 'brand-mark', style: { width: '64px', height: '64px', margin: '0 auto' }, html: brandSvg() }),
-    h('h1', null, 'MARK 201 Trainer'),
-    h('p', { class: 'muted', style: { maxWidth: '44ch' } }, 'Chapters 1, 6, 7, 8, 9, 10, 11 and 12. Every concept, drilled from every angle until it is concretely yours.'),
+    h('h1', null, 'MARK 201 · Imperium'),
+    h('p', { class: 'muted', style: { maxWidth: '44ch' } }, 'Eight provinces to conquer: chapters 1, 6, 7, 8, 9, 10, 11 and 12. Every concept, contested from every angle until it is yours.'),
     h('div', { class: 'card', style: { width: 'min(380px, 92vw)', textAlign: 'left' } },
-      h('div', { class: 'field' }, h('label', null, 'Create your player'), input),
-      h('button', { class: 'btn primary block mt', onClick: start }, 'Start training'),
+      h('div', { class: 'field' }, h('label', null, 'Enlist: your name, legionary'), input),
+      h('button', { class: 'btn primary block mt', onClick: start }, 'Join the legion'),
       h('p', { class: 'tiny faint mt-sm' }, 'Progress is saved in this browser only. Friends using the link get their own separate progress.')),
   ));
   setTimeout(() => input.focus(), 50);

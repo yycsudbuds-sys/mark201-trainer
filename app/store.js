@@ -22,7 +22,7 @@ export function freshState(name) {
     session: { id: 1, lastActive: 0, startedAt: 0, answered: 0, correct: 0 },
     sessions: [],
     days: {},
-    settings: { theme: 'dark', sound: true, motion: true, examDate: '2026-10-24T09:00', dailyGoal: 60 },
+    settings: { theme: 'dark', sound: true, motion: true, briefings: true, examDate: '2026-10-24T09:00', dailyGoal: 60 },
   };
 }
 

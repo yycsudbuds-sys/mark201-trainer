@@ -12,17 +12,17 @@ export const SESSION_GAP_MIN = 45;
 export const PURSUIT_NEED = 3;
 
 export const LEVELS = [
-  { xp: 0, title: 'Intern' },
-  { xp: 300, title: 'Marketing Assistant' },
-  { xp: 800, title: 'Coordinator' },
-  { xp: 1500, title: 'Brand Associate' },
-  { xp: 2500, title: 'Brand Manager' },
-  { xp: 4000, title: 'Senior Brand Manager' },
-  { xp: 6000, title: 'Marketing Director' },
-  { xp: 8500, title: 'VP Marketing' },
-  { xp: 11500, title: 'CMO' },
-  { xp: 15000, title: 'Marketing Legend' },
-  { xp: 20000, title: 'Kotler Tier' },
+  { xp: 0, title: 'Tiro' },
+  { xp: 300, title: 'Miles' },
+  { xp: 800, title: 'Immunis' },
+  { xp: 1500, title: 'Decanus' },
+  { xp: 2500, title: 'Optio' },
+  { xp: 4000, title: 'Centurio' },
+  { xp: 6000, title: 'Primus Pilus' },
+  { xp: 8500, title: 'Tribunus' },
+  { xp: 11500, title: 'Legatus' },
+  { xp: 15000, title: 'Consul' },
+  { xp: 20000, title: 'Imperator' },
 ];
 
 export function levelForXp(xp) {

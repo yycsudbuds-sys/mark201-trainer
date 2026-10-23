@@ -19,19 +19,19 @@ function hub(app) {
   const st = app.state.stats;
   const done = Object.values(app.state.activities).filter(a => a.done).length;
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Arcade'), h('p', null, 'Different games, same engine underneath: every answer updates mastery and the review schedule.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'The Arena'), h('p', null, 'Different contests, same engine underneath: every answer updates mastery and the review schedule.'))),
     h('div', { class: 'grid two' },
-      tile('#/arcade/blitz', '⚡', 'Blitz', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#FFB84D', [`Best ${st.blitzBest || 0}`]),
-      tile('#/arcade/duel', '⚔️', 'Confusables Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A78BFA', [`Best ${st.duelBest || 0}/15`]),
-      tile('#/arcade/build', '🧩', 'Build & Sort', 'Order the processes, sort items into buckets, match pairs. The memorization tables as puzzles.', '#A3E635', [`${done}/${app.content.stats.activities} done`]),
-      tile('#/arcade/flash', '🃏', 'Flashcards', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#FB923C', ['Recall'])));
+      tile('#/arcade/blitz', '⚡', 'Skirmish', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#D28C3C', [`Best ${st.blitzBest || 0}`]),
+      tile('#/arcade/duel', '🗡️', 'Gladiator Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A98BC9', [`Best ${st.duelBest || 0}/15`]),
+      tile('#/arcade/build', '🏗️', 'Siege Works', 'Order the processes, sort items into buckets, match pairs. The memorization tables as engineering.', '#8FAA5A', [`${done}/${app.content.stats.activities} built`]),
+      tile('#/arcade/flash', '📜', 'Scrolls', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#B08968', ['Recall'])));
 }
 
 // ---------- Blitz ----------
 function blitzConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('blitzch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '⚡ Blitz'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '⚡ Skirmish'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best score: ${app.state.stats.blitzBest || 0}`)),
@@ -45,7 +45,7 @@ function blitz(app) {
   const scoreEl = h('div', { class: 'card center tight mb' }, h('div', { class: 'eyebrow' }, 'Score'), h('div', { class: 'score-big mono', style: { fontSize: '2.2rem' } }, '0'), h('div', { class: 'small muted' }, 'multiplier ×1.0'));
   host.appendChild(scoreEl);
   const runner = createRunner(app, {
-    title: 'Blitz', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
+    title: 'Skirmish', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
     pickOpts: { difficultyMax: 2, shortOnly: true, excludeMastered: false }, showLearnOnWrong: false,
     onAnswer: ({ correct }) => {
       if (correct) { combo++; const mult = 1 + Math.floor(combo / 3) * 0.5; score += Math.round(100 * mult); scoreEl.children[1].textContent = String(score); scoreEl.children[2].textContent = `multiplier ×${mult.toFixed(1)}`; }
@@ -53,8 +53,8 @@ function blitz(app) {
     },
     onFinish: (sum, reason) => {
       const best = app.state.stats.blitzBest || 0;
-      if (score > best) { app.state.stats.blitzBest = score; app.toast('New Blitz high score!', 'xp'); app.confetti({ count: 120 }); }
-      app.grantXp(Math.round(score / 20), 'blitz');
+      if (score > best) { app.state.stats.blitzBest = score; app.toast('New skirmish record!', 'xp'); app.confetti({ count: 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A'] }); }
+      app.grantXp(Math.round(score / 20), 'skirmish');
       app.store.save();
       host.innerHTML = '';
       host.append(resultCard(app, reason === 'hearts' ? 'Out of lives' : reason === 'time' ? 'Time!' : 'Blitz over', sum,
@@ -74,7 +74,7 @@ function blitz(app) {
 function duelConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '⚔️ Confusables Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🗡️ Gladiator Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best: ${app.state.stats.duelBest || 0}/15`)),
@@ -85,7 +85,7 @@ function duel(app) {
   const chapters = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   const host = h('div', { style: { '--ch': '#A78BFA' } });
   const runner = createRunner(app, {
-    title: 'Confusables Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
+    title: 'Gladiator Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
     pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false },
     onFinish: (sum, reason) => {
       if (sum.correct > (app.state.stats.duelBest || 0)) { app.state.stats.duelBest = sum.correct; app.toast('New Duel best!', 'xp'); }
@@ -106,7 +106,7 @@ function duel(app) {
 function buildList(app) {
   const TYPE = { order: '🔢 Order', sort: '🗂️ Sort', match: '🔗 Match' };
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🧩 Build & Sort'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect run counts as a correct “sequence” answer for the concept.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🏗️ Siege Works'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect build counts as a correct “sequence” answer for the concept.'))),
     h('div', { class: 'stack' }, app.content.chapters.map(ch => h('div', { class: 'card', style: { '--ch': ch.color } },
       h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter}`), h('h3', { class: 'mb' }, ch.title),
       h('div', { class: 'list' }, ch.activities.map(a => {
@@ -234,7 +234,7 @@ function flashConfig(app) {
   const fSeg = h('div', { class: 'seg' }, [['all', 'All'], ['weak', 'Below Solid'], ['due', 'Due / pursuit']].map(([k, l]) => h('button', { class: filter === k ? 'on' : '', onClick: e => { filter = k; fSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   const sSeg = h('div', { class: 'seg' }, [['term', 'Show term → recall definition'], ['def', 'Show definition → recall term']].map(([k, l]) => h('button', { class: side === k ? 'on' : '', onClick: e => { side = k; sSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '🃏 Flashcards'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, '📜 Scrolls'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'field' }, h('label', null, 'Deck'), fSeg), h('div', { class: 'field' }, h('label', null, 'Direction'), sSeg),
@@ -264,7 +264,7 @@ function flash(app) {
   host.append(head, cardHost);
   const draw = () => {
     head.innerHTML = '';
-    head.append(h('div', null, h('div', { class: 'eyebrow' }, 'Flashcards'), h('div', { class: 'small muted' }, `${idx + 1} / ${deck.length}`)), h('div', { class: 'row' }, h('span', { class: 'chip' }, `again ${graded.again} · hard ${graded.hard} · good ${graded.good} · easy ${graded.easy}`), h('a', { class: 'btn sm ghost', href: '#/arcade/flash' }, 'End')));
+    head.append(h('div', null, h('div', { class: 'eyebrow' }, 'Scrolls'), h('div', { class: 'small muted' }, `${idx + 1} / ${deck.length}`)), h('div', { class: 'row' }, h('span', { class: 'chip' }, `again ${graded.again} · hard ${graded.hard} · good ${graded.good} · easy ${graded.easy}`), h('a', { class: 'btn sm ghost', href: '#/arcade/flash' }, 'End')));
     head.appendChild(h('div', { class: 'bar', style: { height: '6px' } }, h('div', { class: 'bar-fill', style: { width: (idx / deck.length * 100) + '%', background: 'var(--accent)' } })));
     cardHost.innerHTML = '';
     if (idx >= deck.length) {
