@@ -2,8 +2,9 @@
 import { CONTENT } from './data.js';
 import { Store } from './store.js';
 import { recordAttempt, levelForXp, readiness, dueCount, LEVELS } from './engine.js';
-import { h, clear, toast, sound, confetti, bar } from './ui.js';
+import { h, clear, toast, confetti, bar } from './ui.js';
 import { checkAchievements } from './achievements.js';
+import * as Audio from './audio.js';
 import * as Home from './views/home.js';
 import * as Campaign from './views/campaign.js';
 import * as Drill from './views/drill.js';
@@ -46,7 +47,8 @@ const app = {
   currentView: null,
   navigate(hash) { if (location.hash === hash) route(); else location.hash = hash; },
   toast,
-  sound(kind) { sound(kind, this.state?.settings?.sound !== false); },
+  sound(kind, opts) { Audio.play(kind, opts); },
+  audio: Audio,
   confetti(opts) { confetti(opts); },
   sessionId() { return this.store.touchSession(); },
   chapterColor(num) { return this.index.chapter.get(num)?.color || 'var(--accent)'; },
@@ -199,6 +201,7 @@ function welcome() {
 
 function boot() {
   if (!app.store.loadActive()) { welcome(); return; }
+  Audio.initAudio(() => app.state?.settings?.sound !== false);
   applySettings();
   buildShell();
   app.store.on(type => { if (type === 'profile') { applySettings(); route(); } });

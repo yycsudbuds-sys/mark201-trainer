@@ -1,0 +1,77 @@
+/* ===================================================================
+   IMPERIUM ART BIBLE — tokens
+   Materials, light, shape, motion and type. Use these names in new
+   rules. Legacy variables below are aliased to them so nothing shifts.
+   =================================================================== */
+:root {
+  /* Materials */
+  --carrara: #ECE6DA;            /* veined white marble */
+  --carrara-vein: #B9B0A2;
+  --carrara-shadow: #8E867A;
+  --travertine: #CDB47C;         /* warm porous stone */
+  --basalt: #1C1612;             /* dark volcanic stone */
+  --basalt-2: #2A241D;
+  --basalt-3: #3A322A;
+  --bronze: #8C6B4A;
+  --bronze-light: #B48C5E;
+  --bronze-dark: #5A4330;
+  --gold-leaf: #C9A227;
+  --gold-leaf-light: #E3C76A;
+  --gold-leaf-dark: #8B6B1A;
+  --pompeian: #8B1E1E;           /* Pompeian red */
+  --pompeian-light: #B0302A;
+  --pompeian-dark: #5E1313;
+  --terracotta: #B5623A;
+  --papyrus: #E6D3A8;
+  --vellum: #F0E1BC;
+  --vellum-ink: #2E2114;
+  --vellum-ink-soft: #6E5A3E;
+  --wax: #1C1612;                /* black wax tablet */
+  --wax-red: #8B1E1E;
+  --leather: #4A3418;
+  --leather-light: #6B4B2A;
+  --iron: #5A5A5E;
+  --iron-light: #8C8C90;
+  --iron-dark: #2B2B2E;
+  --tyrian: #66023C;             /* reserved for rare and legendary */
+  --laurel: #7FA86A;
+  --laurel-dark: #4F6A3F;
+
+  /* Light */
+  --torch: #FFB347;
+  --torch-core: #FFF1B0;
+  --lamp: #FFD27A;
+  --moon: #E6ECF4;
+  --sun: #FFF4D0;
+  --key-light: 315deg;           /* top-left */
+  --vignette: radial-gradient(ellipse at 50% 40%, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --parch-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.1 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* Shape: bevels and depth */
+  --bevel-stone: inset 0 1px 0 rgba(255, 245, 225, 0.14), inset 0 -3px 0 rgba(0, 0, 0, 0.45), 0 2px 0 #1a140e, 0 18px 34px rgba(0, 0, 0, 0.5);
+  --bevel-stone-light: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -3px 0 rgba(59, 42, 23, 0.2), 0 2px 0 #b9a27a, 0 14px 30px rgba(59, 42, 23, 0.25);
+  --bevel-bronze: inset 0 1px 0 rgba(255, 230, 180, 0.35), inset 0 -2px 0 rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 10px 20px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-float: 0 24px 48px rgba(0, 0, 0, 0.55), 0 6px 12px rgba(0, 0, 0, 0.35);
+  --radius-stone: 18px 7px 16px 9px / 9px 16px 7px 18px;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.2, 0.9, 0.25, 1.2);
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+  --dur-slow: 400ms;
+  --dur-cinematic: 1200ms;
+
+  /* Type */
+  --font-display: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-mono: 'Cinzel', 'Times New Roman', serif;
+  --measure: 65ch;
+  --lh-body: 1.65;
+  --lh-tight: 1.15;
+  --track-caps: 0.14em;
+}
+

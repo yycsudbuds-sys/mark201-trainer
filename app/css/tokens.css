@@ -1,0 +1,189 @@
+/* Imperium design tokens — see the art bible section at the top. Legacy aliases follow. */
+/* ===================================================================
+   IMPERIUM ART BIBLE — tokens
+   Materials, light, shape, motion and type. Use these names in new
+   rules. Legacy variables below are aliased to them so nothing shifts.
+   =================================================================== */
+:root {
+  /* Materials */
+  --carrara: #ECE6DA;            /* veined white marble */
+  --carrara-vein: #B9B0A2;
+  --carrara-shadow: #8E867A;
+  --travertine: #CDB47C;         /* warm porous stone */
+  --basalt: #1C1612;             /* dark volcanic stone */
+  --basalt-2: #2A241D;
+  --basalt-3: #3A322A;
+  --bronze: #8C6B4A;
+  --bronze-light: #B48C5E;
+  --bronze-dark: #5A4330;
+  --gold-leaf: #C9A227;
+  --gold-leaf-light: #E3C76A;
+  --gold-leaf-dark: #8B6B1A;
+  --pompeian: #8B1E1E;           /* Pompeian red */
+  --pompeian-light: #B0302A;
+  --pompeian-dark: #5E1313;
+  --terracotta: #B5623A;
+  --papyrus: #E6D3A8;
+  --vellum: #F0E1BC;
+  --vellum-ink: #2E2114;
+  --vellum-ink-soft: #6E5A3E;
+  --wax: #1C1612;                /* black wax tablet */
+  --wax-red: #8B1E1E;
+  --leather: #4A3418;
+  --leather-light: #6B4B2A;
+  --iron: #5A5A5E;
+  --iron-light: #8C8C90;
+  --iron-dark: #2B2B2E;
+  --tyrian: #66023C;             /* reserved for rare and legendary */
+  --laurel: #7FA86A;
+  --laurel-dark: #4F6A3F;
+
+  /* Light */
+  --torch: #FFB347;
+  --torch-core: #FFF1B0;
+  --lamp: #FFD27A;
+  --moon: #E6ECF4;
+  --sun: #FFF4D0;
+  --key-light: 315deg;           /* top-left */
+  --vignette: radial-gradient(ellipse at 50% 40%, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --parch-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.1 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* Shape: bevels and depth */
+  --bevel-stone: inset 0 1px 0 rgba(255, 245, 225, 0.14), inset 0 -3px 0 rgba(0, 0, 0, 0.45), 0 2px 0 #1a140e, 0 18px 34px rgba(0, 0, 0, 0.5);
+  --bevel-stone-light: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -3px 0 rgba(59, 42, 23, 0.2), 0 2px 0 #b9a27a, 0 14px 30px rgba(59, 42, 23, 0.25);
+  --bevel-bronze: inset 0 1px 0 rgba(255, 230, 180, 0.35), inset 0 -2px 0 rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 10px 20px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-float: 0 24px 48px rgba(0, 0, 0, 0.55), 0 6px 12px rgba(0, 0, 0, 0.35);
+  --radius-stone: 18px 7px 16px 9px / 9px 16px 7px 18px;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.2, 0.9, 0.25, 1.2);
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+  --dur-slow: 400ms;
+  --dur-cinematic: 1200ms;
+
+  /* Type */
+  --font-display: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-mono: 'Cinzel', 'Times New Roman', serif;
+  --measure: 65ch;
+  --lh-body: 1.65;
+  --lh-tight: 1.15;
+  --track-caps: 0.14em;
+}
+
+/* MARK 201 Trainer — "midnight aisle" design system */
+:root {
+  --bg: #121726;
+  --bg-2: #0C101C;
+  --surface: #1A2134;
+  --surface-2: #222B42;
+  --surface-3: #2A3450;
+  --line: rgba(242, 239, 233, 0.09);
+  --line-strong: rgba(242, 239, 233, 0.18);
+  --text: #F2EFE9;
+  --muted: #9AA3B8;
+  --faint: #6B7489;
+  --accent: #FFB84D;
+  --accent-ink: #231600;
+  --good: #4ADE80;
+  --bad: #FB7185;
+  --warn: #FBBF24;
+  --info: #38BDF8;
+  --ring-track: rgba(242, 239, 233, 0.1);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font-display: 'Bricolage Grotesque', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  --nav-w: 232px;
+  --ch: var(--accent);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #EEF1F7;
+  --bg-2: #E3E8F2;
+  --surface: #FFFFFF;
+  --surface-2: #F3F5FA;
+  --surface-3: #E8ECF5;
+  --line: rgba(21, 26, 43, 0.09);
+  --line-strong: rgba(21, 26, 43, 0.2);
+  --text: #151A2B;
+  --muted: #5B6478;
+  --faint: #8C94A8;
+  --accent: #D97706;
+  --accent-ink: #FFFFFF;
+  --good: #16A34A;
+  --bad: #E11D48;
+  --warn: #D97706;
+  --info: #0284C7;
+  --ring-track: rgba(21, 26, 43, 0.1);
+  --shadow: 0 10px 30px rgba(21, 26, 43, 0.1);
+  color-scheme: light;
+}
+
+/* ===== ROMAN EMPIRE CONQUEST THEME =====
+   Weathered stone, iron rivets, crimson and gold banners, parchment maps.
+   Loaded last: overrides tokens and components from styles.css / game.css. */
+
+:root, :root[data-theme="dark"] {
+  --bg: #15110D;            /* basalt night */
+  --bg-2: #0E0B08;
+  --surface: #2A241D;       /* weathered stone */
+  --surface-2: #352D25;
+  --surface-3: #42382E;
+  --line: rgba(234, 219, 192, 0.10);
+  --line-strong: rgba(234, 219, 192, 0.22);
+  --text: #EADBC0;          /* parchment */
+  --muted: #B4A58A;
+  --faint: #7E7360;
+  --accent: #C9A227;        /* imperial gold */
+  --accent-ink: #1A1206;
+  --crimson: #8B1E1E;
+  --crimson-2: #B0302A;
+  --gold: #C9A227;
+  --gold-2: #E3C76A;
+  --bronze: #8C6B4A;
+  --iron: #5A5A5E;
+  --good: #7FA86A;          /* laurel */
+  --bad: #C94A3A;
+  --warn: #D9A441;
+  --info: #7FA3B8;
+  --ring-track: rgba(234, 219, 192, 0.12);
+  --shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font-display: 'Cinzel', 'Bricolage Grotesque', serif;
+  --font-body: 'EB Garamond', 'Manrope', Georgia, serif;
+  --font-mono: 'Cinzel', 'JetBrains Mono', monospace;
+  --parch: #E6D3A8;
+  --parch-2: #D9C08C;
+  --parch-ink: #3B2A17;
+  --stone-grad: linear-gradient(160deg, #3A322A 0%, #2A241D 45%, #221C16 100%);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #E3D1A6;            /* day parchment */
+  --bg-2: #D6C08A;
+  --surface: #F1E4C4;
+  --surface-2: #E8D8B2;
+  --surface-3: #DCC89C;
+  --line: rgba(59, 42, 23, 0.14);
+  --line-strong: rgba(59, 42, 23, 0.3);
+  --text: #2E2114;
+  --muted: #6E5A3E;
+  --faint: #9A8565;
+  --accent: #8B1E1E;
+  --accent-ink: #F6EAD0;
+  --ring-track: rgba(59, 42, 23, 0.12);
+  --shadow: 0 14px 30px rgba(59, 42, 23, 0.25);
+  --stone-grad: linear-gradient(160deg, #F6EAD0 0%, #EEDFBD 50%, #E3D1A6 100%);
+  color-scheme: light;
+}
