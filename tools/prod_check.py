@@ -11,7 +11,7 @@ with sync_playwright() as p:
     print("content version:", pg.evaluate("window.__app.content.version"), "questions:", pg.evaluate("window.__app.content.stats.questions"))
     pg.wait_for_timeout(1500)
     print("service worker:", pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r ? (r.active ? 'active' : 'installing') : 'none')"))
-    fonts = pg.evaluate("document.fonts.check('800 16px \"Bricolage Grotesque\"') && document.fonts.check('400 16px Manrope')")
+    fonts = pg.evaluate("document.fonts.check('700 16px Cinzel') && document.fonts.check('400 16px \"EB Garamond\"')")
     print("display/body fonts loaded:", fonts)
     pg.goto(BASE + "#/drill", wait_until="load"); pg.click("text=March out"); pg.wait_for_selector(".qcard")
     for i in range(5):
@@ -28,7 +28,7 @@ with sync_playwright() as p:
     ctx.set_offline(True)
     try:
         pg.reload(wait_until="load"); pg.wait_for_timeout(800)
-        print("offline reload ok, hero present:", pg.locator(".hero").count() > 0)
+        print("offline reload ok, hero present:", pg.locator(".hq").count() > 0)
     except Exception as e:
         print("offline reload failed:", str(e)[:120])
     ctx.set_offline(False)
