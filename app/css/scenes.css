@@ -663,3 +663,90 @@ body.has-band .main { padding-bottom: calc(var(--band-h) + 2.5rem); }
 .briefing { bottom: 4%; }
 @media (max-width: 900px) { .legatus { width: 230px; height: 256px; } .tent-table { width: 84%; height: 20%; bottom: 38%; } .tent-scroll { display: none; } }
 @media (max-height: 560px) { .legatus, .tent-table { display: none; } }
+
+/* ===================================================================
+   PHASE 2 — cinematic battle band (canvas), siege HUD, wall bar,
+   the Triumph parade.
+   =================================================================== */
+:root { --band-h: 190px; }
+@media (max-width: 1100px) { :root { --band-h: 156px; } }
+@media (max-width: 900px) { :root { --band-h: 124px; } }
+@media (max-width: 640px) { :root { --band-h: 96px; } }
+@media (max-height: 640px) { :root { --band-h: 84px; } }
+.battle-band.canvas { background: transparent; }
+.battle-band.canvas::before { background: linear-gradient(180deg, rgba(11, 8, 6, 0) 0%, rgba(11, 8, 6, 0.25) 35%, rgba(11, 8, 6, 0.45) 100%); }
+.battle-band.canvas::after { top: 0; opacity: 0.6; }
+.battle-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+/* short screens: the battle is a cinematic strip inside the card, above the answers */
+.battle-band.inline { position: relative; left: auto; right: auto; bottom: auto; width: 100%; height: 92px; border-radius: 8px; overflow: hidden; margin: 0.5rem 0 0.9rem; z-index: 0; opacity: 1; transition: none; box-shadow: inset 0 0 0 1px rgba(201, 162, 39, 0.35), 0 8px 16px rgba(0, 0, 0, 0.45); background: linear-gradient(180deg, #221B2A, #3A2C1C); }
+.battle-band.inline::before { background: linear-gradient(180deg, rgba(11, 8, 6, 0.1), rgba(11, 8, 6, 0.3)); }
+.battle-band.inline::after { display: none; }
+/* siege HUD: the enemy commander */
+.siege-hud { position: absolute; right: 1rem; top: 0.6rem; display: flex; align-items: center; gap: 0.6rem; z-index: 2; max-width: min(380px, 60%); pointer-events: none; }
+.cmd-portrait { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 40% 30%, #3A322A, #1C1612); border: 2px solid var(--gold-leaf-dark); box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5), 0 4px 10px rgba(0, 0, 0, 0.5); flex-shrink: 0; display: grid; place-items: end center; }
+.cmd-portrait svg { width: 64px; height: auto; display: block; margin-bottom: -6px; }
+.cmd-text { color: #F6E7C8; font-family: var(--font-display); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.85); min-width: 0; }
+.cmd-name { font-size: 0.8rem; letter-spacing: 0.08em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cmd-title { font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: #B4A58A; }
+.taunt { position: absolute; right: 1rem; top: calc(0.6rem + 64px); z-index: 2; max-width: min(340px, 60%); padding: 0.45rem 0.7rem; background: rgba(14, 10, 7, 0.88); border: 1px solid rgba(201, 162, 39, 0.5); border-radius: 6px; color: #F6E7C8; font-family: var(--font-body); font-style: italic; font-size: 0.95rem; line-height: 1.35; opacity: 0; transform: translateY(-4px); transition: opacity 0.25s, transform 0.25s; pointer-events: none; }
+.taunt.show { opacity: 1; transform: none; }
+.taunt.surrender { border-color: var(--gold-leaf); color: var(--gold-leaf-light); font-style: normal; }
+@media (max-width: 900px) { .siege-hud { top: 0.35rem; right: 0.5rem; } .cmd-portrait { width: 40px; height: 40px; } .cmd-portrait svg { width: 46px; } .cmd-title { display: none; } .taunt { top: calc(0.35rem + 46px); right: 0.5rem; font-size: 0.8rem; max-width: 70%; } }
+.battle-band.inline .siege-hud { top: 0.3rem; right: 0.4rem; }
+.battle-band.inline .cmd-portrait { width: 34px; height: 34px; border-width: 1.5px; }
+.battle-band.inline .cmd-portrait svg { width: 38px; }
+.battle-band.inline .cmd-text { display: none; }
+.battle-band.inline .taunt { top: 0.3rem; right: 2.9rem; font-size: 0.72rem; max-width: 62%; padding: 0.2rem 0.45rem; }
+/* wall integrity bar (replaces the progress bar during a siege) */
+.wall-bar { display: flex; align-items: center; gap: 0.5rem; width: 100%; margin-top: 0.4rem; }
+.wall-label { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: #D9CDB4; }
+.wall-track { flex: 1; height: 11px; border-radius: 3px; background: #1C1612; border: 1px solid rgba(0, 0, 0, 0.6); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6); overflow: hidden; }
+.wall-fill { height: 100%; background: repeating-linear-gradient(90deg, #A89D8A 0 10px, #9A8F7C 10px 20px); transition: width 0.5s var(--ease-out); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3); }
+.wall-pct { font-family: var(--font-display); font-size: 0.72rem; color: var(--gold-leaf-light); min-width: 3.2ch; text-align: right; }
+:root[data-motion="off"] .wall-fill, :root[data-motion="off"] .taunt { transition: none; }
+
+/* ---------- Triumph ---------- */
+.cutscene.triumph { background: #0B0806; }
+.tri-scene { position: relative; width: min(1100px, 100vw); height: min(620px, 100vh); overflow: hidden; background: linear-gradient(180deg, #F3D9A8 0%, #E6B97A 45%, #D9A86A 70%, #B8925A 100%); }
+.tri-sky { position: absolute; inset: 0; background: radial-gradient(circle at 70% 18%, rgba(255, 244, 208, 0.9), rgba(255, 244, 208, 0.25) 18%, transparent 40%); }
+.tri-buildings { position: absolute; left: 0; right: 0; top: 18%; height: 40%; background:
+  linear-gradient(180deg, transparent 0 30%, #CDB47C 30% 34%, transparent 34%),
+  repeating-linear-gradient(90deg, #D9C08C 0 26px, #CDB47C 26px 34px, transparent 34px 48px);
+  opacity: 0.55; mask-image: linear-gradient(180deg, transparent, #000 20%, #000); -webkit-mask-image: linear-gradient(180deg, transparent, #000 20%, #000); }
+.tri-crowd { position: absolute; left: 0; right: 0; height: 90px; background-image: radial-gradient(circle at 10px 18px, #2A1C14 0 7px, transparent 8px), radial-gradient(circle at 34px 26px, #3B2A17 0 7px, transparent 8px), radial-gradient(circle at 58px 16px, #1A1410 0 7px, transparent 8px), radial-gradient(circle at 10px 40px, #8B1E1E 0 9px, transparent 10px), radial-gradient(circle at 34px 48px, #E6D3A8 0 9px, transparent 10px), radial-gradient(circle at 58px 38px, #4F5E2A 0 9px, transparent 10px); background-size: 72px 60px; }
+.tri-crowd.back { top: 44%; height: 70px; opacity: 0.7; filter: blur(0.6px); }
+.tri-crowd.front { bottom: 0; height: 64px; background-size: 84px 70px; filter: blur(1.4px); opacity: 0.95; z-index: 3; }
+.tri-arch { position: absolute; left: 50%; top: 8%; width: 300px; height: 56%; transform: translateX(-50%); background: linear-gradient(180deg, #ECE6DA, #CDC4B4 70%, #8E867A); border: 6px solid #8E867A; box-shadow: 0 24px 40px rgba(0, 0, 0, 0.35); clip-path: polygon(0 0, 100% 0, 100% 100%, 72% 100%, 72% 55%, 70% 42%, 62% 34%, 50% 31%, 38% 34%, 30% 42%, 28% 55%, 28% 100%, 0 100%); }
+.tri-arch-text { position: absolute; left: 0; right: 0; top: 10px; text-align: center; font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.22em; color: #5A4634; }
+.tri-road { position: absolute; left: 0; right: 0; bottom: 0; height: 22%; background: repeating-linear-gradient(90deg, #B9A27A 0 40px, #A89060 40px 44px), linear-gradient(180deg, #CDB47C, #B8925A); background-blend-mode: multiply; box-shadow: inset 0 14px 20px rgba(0, 0, 0, 0.25); }
+.tri-parade { position: absolute; left: 0; bottom: 4%; width: 200%; height: 46%; z-index: 2; }
+.tri-parade-svg { width: 100%; height: 100%; display: block; animation: triMarch 9.5s linear both; }
+@keyframes triMarch { from { transform: translateX(10%); } to { transform: translateX(-52%); } }
+.tri-march { animation: triBob 0.5s ease-in-out infinite alternate; }
+@keyframes triBob { from { transform: translateY(0); } to { transform: translateY(-3px); } }
+.tri-petals { position: absolute; inset: 0; pointer-events: none; z-index: 4; }
+.tri-petals span { position: absolute; top: -20px; width: 9px; height: 6px; border-radius: 50% 50% 50% 0; background: #E3A0A8; opacity: 0.9; animation: petal 6s linear infinite; }
+.tri-petals span:nth-child(3n) { background: #F2D06B; } .tri-petals span:nth-child(4n) { background: #F6E7C8; width: 7px; }
+@keyframes petal { 0% { transform: translate(0, 0) rotate(0); opacity: 0; } 10% { opacity: 0.95; } 100% { transform: translate(-60px, 680px) rotate(540deg); opacity: 0.2; } }
+.tri-title { position: absolute; left: 50%; top: 9%; transform: translateX(-50%); text-align: center; color: #2E2114; z-index: 5; width: min(92%, 720px); text-shadow: 0 1px 0 rgba(255, 245, 220, 0.8); }
+.tri-title .eyebrow { color: var(--pompeian); }
+.tri-title h1 { font-size: clamp(1.6rem, 5vw, 3rem); margin: 0.1rem 0 0.2rem; color: #2E2114; letter-spacing: 0.04em; }
+.tri-title p { margin: 0 0 0.5rem; color: #5A4634; }
+.tri-spoils { justify-content: center; }
+.tri-spoils .chip { background: rgba(46, 33, 20, 0.85); color: #F6E7C8; border-color: var(--gold-leaf); }
+.tri-actions { position: absolute; right: 1rem; bottom: 1rem; display: flex; gap: 0.6rem; z-index: 6; }
+@media (max-width: 640px) { .tri-arch { width: 200px; top: 14%; height: 46%; } .tri-title { top: 4%; } .tri-parade { height: 40%; } .tri-actions { bottom: 0.6rem; right: 0.6rem; } }
+:root[data-motion="off"] .tri-parade-svg { animation: none; transform: translateX(-24%); }
+:root[data-motion="off"] .tri-march, :root[data-motion="off"] .tri-petals span { animation: none; }
+
+/* ---------- the band is reserved space: the page scrolls above it, never under it ---------- */
+body.has-band .main { height: calc(100vh - var(--band-h)); overflow-y: auto; overscroll-behavior: contain; padding-bottom: 1.5rem; box-sizing: border-box; scrollbar-gutter: stable; }
+@media (max-width: 900px) { body.has-band .main { height: calc(100vh - var(--band-h) - var(--bottom-nav-h)); padding-bottom: 1rem; } }
+.battle-band.canvas::before { background: linear-gradient(180deg, rgba(11, 8, 6, 0.55) 0%, rgba(11, 8, 6, 0.1) 30%, rgba(11, 8, 6, 0.2) 100%); }
+.siege-hud { max-width: min(330px, 46%); }
+.cmd-text { overflow: hidden; }
+.cmd-name { font-size: 0.74rem; }
+.tri-title { left: 3.5%; top: 6%; transform: none; text-align: left; width: min(46%, 440px); }
+.tri-title .tri-spoils { justify-content: flex-start; }
+.tri-arch-text { top: 14px; font-size: 0.55rem; }
+@media (max-width: 640px) { .tri-title { width: 92%; top: 3%; } .tri-arch { top: 30%; height: 36%; } }

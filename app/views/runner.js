@@ -6,7 +6,7 @@ import { h, clear, coinFlight, fmtTime } from '../ui.js';
 import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } from '../engine.js';
 import { conceptCard } from './concept.js';
 import { visualFor } from '../visuals.js';
-import { attachBand } from '../battlefield.js';
+import { attachBattle } from '../battle.js';
 import { richText, icon, CHAPTER_ICON } from '../icons.js';
 
 const REASON_LABEL = { pursuit: 'Pursuit', weak: 'Weak flank', due: 'Due for review', new: 'New ground', review: 'Review', exam: 'Battle', boss: 'Siege', campaign: 'Battle', blitz: 'Skirmish', duel: 'Duel' };
@@ -21,6 +21,7 @@ const REASON_ICON = { pursuit: 'standard', weak: 'shieldcrack', due: 'sundial', 
  */
 export function createRunner(app, cfg) {
   const arena = cfg.band === false || (cfg.scene && cfg.scene !== 'battlefield');
+  const inlineBand = !arena && window.matchMedia('(max-height: 700px), (max-width: 640px)').matches;
   const state = {
     counter: 0, recent: [], recentQids: [], pursuitQueue: [], combo: 0, hearts: cfg.hearts ?? null,
     answered: 0, correct: 0, xp: 0, log: [], fixedIdx: 0, current: null, timeLeft: cfg.timer || null, qTimeLeft: null, finished: false,
@@ -41,6 +42,8 @@ export function createRunner(app, cfg) {
   function finish(reason) {
     if (state.finished) return;
     state.finished = true;
+    const won = reason === 'goal' || (cfg.siege && state.correct >= cfg.siege.needed);
+    if (won && el.battlefield && !el.battlefield.inline) { el.battlefield.win(); el.battlefield.deferDestroy(2800); if (!cfg.siege) { app.sound('rout'); setTimeout(() => app.sound('horn'), 500); } }
     cleanup();
     cfg.onFinish && cfg.onFinish(summary(), reason);
   }
@@ -92,10 +95,28 @@ export function createRunner(app, cfg) {
     if (cfg.perQuestionTimer) right.appendChild(h('span', { class: 'timer', dataset: { qtimer: '1' } }, fmtTime(state.qTimeLeft ?? cfg.perQuestionTimer)));
     right.appendChild(h('button', { class: 'btn sm ghost', onClick: () => { finish('exit'); cfg.onExit && cfg.onExit(summary()); } }, 'End'));
     headEl.append(left, right);
-    if (cfg.limit) headEl.appendChild(h('div', { class: 'bar', style: { height: '6px' } }, h('div', { class: 'bar-fill', style: { width: (state.answered / cfg.limit * 100) + '%', background: 'var(--gold-leaf)' } })));
+    if (cfg.siege) headEl.appendChild(wallBar());
+    else if (cfg.limit) headEl.appendChild(h('div', { class: 'bar', style: { height: '6px' } }, h('div', { class: 'bar-fill', style: { width: (state.answered / cfg.limit * 100) + '%', background: 'var(--gold-leaf)' } })));
+  }
+  /** Siege: the wall integrity bar replaces the plain progress bar. */
+  function wallBar() {
+    const integ = el.battlefield && el.battlefield.integrity ? el.battlefield.integrity() : Math.max(0, 1 - state.correct / (cfg.siege.needed || 1));
+    return h('div', { class: 'wall-bar', title: `Wall integrity ${Math.round(integ * 100)}% · ${state.answered}/${cfg.limit} questions` },
+      h('span', { class: 'wall-label' }, icon('gate', { size: 14, tone: 'gold' }), 'Wall'),
+      h('div', { class: 'wall-track' }, h('div', { class: 'wall-fill', style: { width: (integ * 100) + '%' } })),
+      h('span', { class: 'wall-pct' }, `${Math.round(integ * 100)}%`),
+      h('span', { class: 'small muted' }, `${state.answered}/${cfg.limit}`));
   }
 
   let currentHandlers = null; let hoverTick = 0;
+  /** A new question starts at the top of its scroll container (never scrolls mid-answer). */
+  function scrollToTop() {
+    requestAnimationFrame(() => {
+      const sc = el.closest('.main');
+      if (sc && getComputedStyle(sc).overflowY === 'auto') { if (sc.scrollTop > 0) sc.scrollTop = 0; }
+      else if (headEl.getBoundingClientRect().top < 0) window.scrollTo({ top: 0 });
+    });
+  }
   function renderQuestion(pick) {
     const q = pick.question;
     const entry = app.conceptOf(q.concept);
@@ -103,6 +124,7 @@ export function createRunner(app, cfg) {
     const { options, answer } = shuffleOptions(q);
     const cs = app.state.concepts[q.concept];
     renderHead(); clear(bodyEl);
+    scrollToTop();
     const metas = [h('span', { class: 'chip ch' }, `Ch ${ch.chapter} · ${ch.short}`), h('span', { class: 'chip' }, ANGLE_LABELS[q.angle] || q.angle),
       h('span', { class: 'chip pips', title: `Difficulty ${q.difficulty} of 3` }, Array.from({ length: 3 }, (_, i) => h('span', { class: 'pip' + (i < q.difficulty ? ' on' : '') })))];
     if (q.source === 'official') metas.push(h('span', { class: 'chip warn' }, 'Official practice Q'));
@@ -119,7 +141,9 @@ export function createRunner(app, cfg) {
       onPointerenter: () => { const t = performance.now(); if (t - hoverTick > 120) { hoverTick = t; app.sound('tick'); } },
       onPointerdown: () => app.sound('knock') },
       h('span', { class: 'key coin' }, h('span', { class: 'key-n' }, String(i + 1))), h('span', { class: 'opt-text' }, richText(o, { blanks: false })), h('span', { class: 'laurel-mark' }, icon('laurel', { size: 22, tone: 'gold' }))));
+    if (el.battlefield && el.battlefield.inline) card.appendChild(el.battlefield); // short screens: the battle is a strip above the answers
     card.appendChild(h('div', { class: 'options' }, optEls));
+    if (cs && cs.pursuit && cfg.feedback !== 'deferred' && el.battlefield && el.battlefield.plantFlag) el.battlefield.plantFlag(q.concept);
     bodyEl.appendChild(card);
     const foot = h('div', { class: 'runner-foot' });
     bodyEl.appendChild(foot);
@@ -144,6 +168,7 @@ export function createRunner(app, cfg) {
         else b.classList.add('dim');
       });
       const res = afterAnswer(q, correct, i, options, answer, pick);
+      if (cfg.siege) { const old = headEl.querySelector('.wall-bar'); if (old) old.replaceWith(wallBar()); }
       card.appendChild(feedbackPanel(app, q, entry, correct, res));
       if (res && res.xp) coinFlight(optEls[answer], res.xp);
       const cont = h('button', { class: 'btn primary big', onClick: next }, 'Advance ', h('span', { class: 'kbd' }, 'Enter'));
@@ -168,13 +193,24 @@ export function createRunner(app, cfg) {
     state.answered++;
     if (correct) { state.combo++; state.correct++; } else { state.combo = 0; if (state.hearts !== null) { state.hearts--; app.sound('shieldcrack'); } }
     // Battlefield / arena reactions. Purely visual; never delays the quiz.
-    if (el.battlefield) { if (correct) el.battlefield.advance(state.combo); else el.battlefield.setback(); }
+    const reveal = cfg.feedback !== 'deferred'; // the Great Battle gives nothing away until the end
+    if (el.battlefield && !reveal) el.battlefield.advance(0);
+    else if (el.battlefield) {
+      if (cfg.siege) {
+        if (correct) { el.battlefield.hit(); app.sound('ballista'); setTimeout(() => app.sound('impact'), 420); if (state.correct >= cfg.siege.needed && !state.breached) { state.breached = true; el.battlefield.breach(); el.battlefield.surrender(); app.sound('gate'); setTimeout(() => app.sound('crumble'), 350); setTimeout(() => app.sound('charge'), 1000); setTimeout(() => app.sound('fanfare'), 2000); } }
+        else { el.battlefield.miss(); el.battlefield.randomTaunt(); setTimeout(() => app.sound('pila'), 250); }
+      } else if (correct) el.battlefield.advance(state.combo); else el.battlefield.setback();
+    }
     if (app.director) app.director.react(correct ? 'cheer' : 'jeer');
     const res = app.answer(q, correct, { mode: cfg.mode, combo: state.combo });
     state.xp += res.xp;
-    if (correct) { app.sound('correct'); if (!arena) app.sound('pila'); if (state.combo >= 2) app.sound('combo', { n: state.combo }); if (state.combo === 3) app.sound('impact'); if (state.combo === 5) app.sound('charge'); }
-    else { app.sound('wrong'); if (!arena) app.sound('impact'); }
-    for (const ev of res.events) if (ev.type === 'pursuitCleared') { state.pursuitsCleared++; app.state.stats.pursuitsCleared = (app.state.stats.pursuitsCleared || 0) + 1; }
+    if (!reveal) { app.sound('knock'); app.sound('pila'); }
+    else if (correct) { app.sound('correct'); if (!arena && !cfg.siege) app.sound('pila'); if (state.combo >= 2) app.sound('combo', { n: state.combo }); if (state.combo === 3 && !cfg.siege) app.sound('impact'); if (state.combo === 5 && !cfg.siege) app.sound('charge'); }
+    else { app.sound('wrong'); if (!arena && !cfg.siege) app.sound('shieldcrack'); }
+    for (const ev of res.events) {
+      if (ev.type === 'pursuitCleared') { state.pursuitsCleared++; app.state.stats.pursuitsCleared = (app.state.stats.pursuitsCleared || 0) + 1; }
+      if (reveal && el.battlefield && el.battlefield.plantFlag) { if (ev.type === 'pursuitStarted') el.battlefield.plantFlag(ev.cid); else if (ev.type === 'pursuitCleared') el.battlefield.clearFlag(ev.cid); }
+    }
     // Pursuit scheduling (adaptive modes only)
     if (cfg.pursuit !== false && !cfg.questions) {
       const cs = app.state.concepts[q.concept];
@@ -184,7 +220,6 @@ export function createRunner(app, cfg) {
         else state.pursuitQueue.forEach(p => { if (p.cid === q.concept) p.notBefore = state.counter + gap; });
       }
     }
-    if (el.battlefield && el.battlefield.setPursuits) el.battlefield.setPursuits(state.pursuitQueue.length);
     state.log.push({ qid: q.id, cid: q.concept, correct, chosen: chosenIdx >= 0 ? options[chosenIdx] : null, answer: options[answerIdx], reason: pick.reason, t: Date.now() });
     if (cfg.onAnswer) cfg.onAnswer({ q, correct, summary: summary() });
     return res;
@@ -209,7 +244,7 @@ export function createRunner(app, cfg) {
     }, 1000);
   }
 
-  if (!arena) attachBand(el, { province: cfg.province || 'default' });
+  if (!arena) attachBattle(el, { province: cfg.province || 'default', mode: cfg.siege ? 'siege' : 'field', needed: cfg.siege ? cfg.siege.needed : 0, motion: app.state.settings.motion !== false && !window.matchMedia('(prefers-reduced-motion: reduce)').matches, inline: inlineBand });
   el.start = next;
   el.getSummary = summary;
   const kick = setTimeout(next, 0);

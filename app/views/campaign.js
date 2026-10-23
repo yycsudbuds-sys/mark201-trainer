@@ -4,7 +4,7 @@ import { masteryLevel, buildExam } from '../engine.js';
 import { worldMap, islandTrail, chapterProgress, nextIsland, ISLANDS, provinceState, ROMAN, zoomToProvince } from '../map.js';
 import { PROVINCE_SCENE } from '../scenes.js';
 import { icon, CHAPTER_ICON } from '../icons.js';
-import { warBriefing } from '../cutscene.js';
+import { warBriefing, triumph } from '../cutscene.js';
 import { createLesson } from './lesson.js';
 import { createRunner, resultCard, missesList } from './runner.js';
 
@@ -166,26 +166,32 @@ function boss(app, ch) {
   host.cleanup = () => { host.dead = true; runner && runner.cleanup && runner.cleanup(); };
   return host;
   function buildBoss() { return createRunner(app, {
-    title: `Siege of ${ISLANDS[ch.chapter]?.capital || 'the capital'}`, subtitle: `Provincia ${ISLANDS[ch.chapter]?.name || ch.chapter} · ${ch.title}. ${n} questions, 90% to take the city.`, mode: 'boss', questions, feedback: 'immediate', limit: n, pursuit: false, hearts: null, province: PROVINCE_SCENE[ch.chapter],
+    title: `Siege of ${ISLANDS[ch.chapter]?.capital || 'the capital'}`, subtitle: `Provincia ${ISLANDS[ch.chapter]?.name || ch.chapter} · ${ch.title}. ${n} questions, 90% to take the city.`, mode: 'boss', questions, feedback: 'immediate', limit: n, pursuit: false, hearts: null, province: PROVINCE_SCENE[ch.chapter], siege: { needed: Math.ceil(n * 0.9) },
     onFinish: (sum, reason) => {
       const score = sum.answered ? sum.correct / sum.answered : 0;
       const complete = sum.answered >= n;
       const rec = app.state.campaign.bosses[ch.chapter] || (app.state.campaign.bosses[ch.chapter] = {});
       if (complete) rec.best = Math.max(rec.best || 0, score);
       const won = complete && score >= 0.9;
-      if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); app.confetti({ count: 220, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); app.sound('fanfare'); }
-      else if (won) { app.grantXp(100, 'the city holds for Rome'); app.confetti({ colors: ['#8B1E1E', '#C9A227', '#E3C76A'] }); }
+      const first = won && !rec.cleared;
+      if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); }
+      else if (won) { app.grantXp(100, 'the city holds for Rome'); }
       app.store.save();
-      host.innerHTML = '';
-      if (won) host.appendChild(h('div', { class: 'claim crown', style: { '--ch': ch.color } }, h('div', { class: 'claim-crown' }, icon('aquila', { size: 48, tone: 'gold' })), h('div', { class: 'claim-text' }, h('div', { class: 'eyebrow' }, 'Province conquered'), h('h2', null, `${ISLANDS[ch.chapter]?.name || ch.title} is Roman`), h('p', { class: 'small muted' }, `${sum.correct}/${n}. Chapter ${ROMAN[ch.chapter]} is yours.`))));
-      host.appendChild(resultCard(app, won ? 'The city has fallen' : complete ? 'The walls held' : 'Siege lifted', sum,
-        h('div', { class: 'stack mt' },
-          won ? null : complete ? h('p', null, `You need 90% (${Math.ceil(n * 0.9)}/${n}) to take the city. Drill the ground lost below, then renew the siege.`) : h('p', { class: 'muted' }, 'Finish every question to record the siege.'),
-          h('div', { class: 'row wrap', style: { justifyContent: 'center' } },
-            h('a', { class: 'btn primary', href: won ? '#/campaign' : `#/campaign/${ch.chapter}/boss` }, won ? 'Back to the map' : 'Renew the siege'),
-            sum.log.some(l => !l.correct) ? h('a', { class: 'btn', href: `#/drill/concepts/${[...new Set(sum.log.filter(l => !l.correct).map(l => l.cid))].join(',')}` }, icon('target', { size: 16, tone: 'gold' }), 'Drill my misses') : null,
-            h('a', { class: 'btn ghost', href: `#/campaign/${ch.chapter}` }, 'Back to the province')))));
-      host.appendChild(h('div', { class: 'mt' }, h('h3', { class: 'mb' }, 'Review'), missesList(app, sum.log)));
+      const show = () => {
+        if (host.dead) return;
+        host.innerHTML = '';
+        if (won) { app.confetti({ count: first ? 220 : 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); host.appendChild(h('div', { class: 'claim crown', style: { '--ch': ch.color } }, h('div', { class: 'claim-crown' }, icon('aquila', { size: 48, tone: 'gold' })), h('div', { class: 'claim-text' }, h('div', { class: 'eyebrow' }, 'Province conquered'), h('h2', null, `${ISLANDS[ch.chapter]?.name || ch.title} is Roman`), h('p', { class: 'small muted' }, `${sum.correct}/${n}. Chapter ${ROMAN[ch.chapter]} is yours.`)))); }
+        host.appendChild(resultCard(app, won ? 'The city has fallen' : complete ? 'The walls held' : 'Siege lifted', sum,
+          h('div', { class: 'stack mt' },
+            won ? null : complete ? h('p', null, `You need 90% (${Math.ceil(n * 0.9)}/${n}) to take the city. Drill the ground lost below, then renew the siege.`) : h('p', { class: 'muted' }, 'Finish every question to record the siege.'),
+            h('div', { class: 'row wrap', style: { justifyContent: 'center' } },
+              h('a', { class: 'btn primary', href: won ? '#/campaign' : `#/campaign/${ch.chapter}/boss` }, won ? 'Back to the map' : 'Renew the siege'),
+              sum.log.some(l => !l.correct) ? h('a', { class: 'btn', href: `#/drill/concepts/${[...new Set(sum.log.filter(l => !l.correct).map(l => l.cid))].join(',')}` }, icon('target', { size: 16, tone: 'gold' }), 'Drill my misses') : null,
+              h('a', { class: 'btn ghost', href: `#/campaign/${ch.chapter}` }, 'Back to the province')))));
+        host.appendChild(h('div', { class: 'mt' }, h('h3', { class: 'mb' }, 'Review'), missesList(app, sum.log)));
+      };
+      if (won) { setTimeout(() => { if (!host.dead) triumph(app, { chapter: ch, score: sum.correct, n, first }).then(show); }, 1400); host.innerHTML = ''; host.appendChild(h('div', { class: 'panel stone center result' }, h('div', { class: 'eyebrow' }, 'The gate is breached'), h('p', { class: 'muted' }, 'The legion storms the city…'))); }
+      else show();
     },
   }); }
 }

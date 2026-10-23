@@ -162,3 +162,80 @@ export function warBriefing(app, ctx) {
     setTimeout(() => goBtn.focus({ preventScroll: true }), 50);
   });
 }
+
+/** The parade: a procession drawn once, slid across the arch by CSS. viewBox 0 0 1400 300. */
+function paradeSvg(ctx) {
+  const s = svg('svg', { viewBox: '0 0 1400 300', class: 'tri-parade-svg', 'aria-hidden': 'true' });
+  const g = svg('g', { class: 'tri-march' }); s.appendChild(g);
+  const legionary = (x, y, sc = 1) => { const u = svg('g', { transform: `translate(${x} ${y}) scale(${sc})` });
+    u.appendChild(svg('path', { d: 'M -8 0 h 5 v -14 h -5 z M 3 0 h 5 v -14 h -5 z', fill: '#3B2A17' }));
+    u.appendChild(svg('rect', { x: -7, y: -40, width: 14, height: 26, rx: 3, fill: '#8B1E1E' }));
+    for (let i = 0; i < 4; i++) u.appendChild(svg('line', { x1: -6, y1: -36 + i * 4, x2: 6, y2: -36 + i * 4, stroke: '#8C8C90', 'stroke-width': 1.2 }));
+    u.appendChild(svg('circle', { cx: 0, cy: -46, r: 5.4, fill: '#8A5A3C' }));
+    u.appendChild(svg('path', { d: 'M -7 -46 a 7 7 0 0 1 14 0 v 3 h -14 z', fill: '#C9A227' })); u.appendChild(svg('path', { d: 'M -6 -50 q 6 -10 12 0 q -6 -3 -12 0 z', fill: '#8B1E1E' }));
+    u.appendChild(svg('line', { x1: 10, y1: -70, x2: 10, y2: -8, stroke: '#B9B2A5', 'stroke-width': 1.4 }));
+    u.appendChild(svg('rect', { x: -16, y: -40, width: 24, height: 34, rx: 3, fill: '#8B1E1E', stroke: '#2A0808' })); u.appendChild(svg('circle', { cx: -4, cy: -23, r: 3, fill: '#C9A227' }));
+    return u; };
+  const standard = (x, y, eagleTop) => { const u = svg('g', { transform: `translate(${x} ${y})` });
+    u.appendChild(svg('line', { x1: 12, y1: 0, x2: 12, y2: -130, stroke: '#C9A227', 'stroke-width': 3 }));
+    if (eagleTop) { u.appendChild(svg('rect', { x: -2, y: -116, width: 28, height: 12, fill: '#C9A227' })); u.appendChild(svg('path', { d: 'M 12 -136 l -16 8 l 9 -2 l -3 10 l 10 -8 l 10 8 l -3 -10 l 9 2 z', fill: '#E3C76A' })); }
+    else { u.appendChild(svg('rect', { x: -3, y: -118, width: 30, height: 20, fill: '#8B1E1E', stroke: '#C9A227', 'stroke-width': 1.5 })); u.appendChild(svg('text', { x: 12, y: -104, 'text-anchor': 'middle', 'font-size': 9, fill: '#E3C76A', 'font-family': 'Cinzel, serif', 'font-weight': 700 }, 'SPQR')); [-90, -78, -66].forEach(yy => u.appendChild(svg('circle', { cx: 12, cy: yy, r: 5.5, fill: '#C9A227', stroke: '#6B4B12' }))); }
+    u.appendChild(svg('path', { d: 'M -8 0 h 5 v -14 h -5 z M 3 0 h 5 v -14 h -5 z', fill: '#3B2A17' })); u.appendChild(svg('rect', { x: -7, y: -40, width: 14, height: 26, rx: 3, fill: '#6B4B12' })); u.appendChild(svg('circle', { cx: 0, cy: -46, r: 5.4, fill: '#8A5A3C' })); u.appendChild(svg('ellipse', { cx: 0, cy: -50, rx: 11, ry: 6, fill: eagleTop ? '#E3C76A' : '#B5623A' }));
+    return u; };
+  const horse = (x, y) => svg('path', { transform: `translate(${x} ${y})`, d: 'M -30 -2 l 8 -20 l 12 -4 h 20 l 14 -4 l 10 -10 l 6 2 l -4 12 l 8 4 l -14 4 l -6 10 l 6 8 h -8 l -6 -10 h -16 l -10 8 h -8 l -2 -10 l -14 10 z', fill: '#1A1410' });
+  // trumpeters, standards, ranks, the quadriga, the spoils wagon, captives
+  [40, 80].forEach(x => { const t = legionary(x, 260, 0.95); t.appendChild(svg('path', { d: 'M 6 -44 l 40 -12 l 2 6 l -40 14 z', fill: '#C9A227' })); g.appendChild(t); });
+  g.appendChild(standard(150, 260, true)); g.appendChild(standard(200, 260, false));
+  for (let r = 0; r < 2; r++) for (let i = 0; i < 7; i++) g.appendChild(legionary(260 + i * 36 + r * 12, 262 - r * 14, 1 - r * 0.1));
+  // the quadriga
+  const q = svg('g', { transform: 'translate(560 262)' });
+  [0, 26, 52, 78].forEach((dx, i) => q.appendChild(horse(80 + dx, -i * 2)));
+  q.appendChild(svg('path', { d: 'M -40 0 l 4 -44 q 30 -14 60 0 l 4 44 z', fill: '#C9A227', stroke: '#6B4B12', 'stroke-width': 2 })); q.appendChild(svg('circle', { cx: -10, cy: 2, r: 16, fill: '#3B2A17', stroke: '#C9A227', 'stroke-width': 3 })); for (let i = 0; i < 6; i++) q.appendChild(svg('line', { x1: -10, y1: 2, x2: -10 + Math.cos(i) * 14, y2: 2 + Math.sin(i) * 14, stroke: '#C9A227', 'stroke-width': 2 }));
+  q.appendChild(svg('rect', { x: -14, y: -76, width: 20, height: 34, rx: 4, fill: '#66023C' })); q.appendChild(svg('circle', { cx: -4, cy: -84, r: 7, fill: '#8A5A3C' })); q.appendChild(svg('path', { d: 'M -14 -86 q 10 -10 20 0', fill: 'none', stroke: '#C9A227', 'stroke-width': 3 })); q.appendChild(svg('path', { d: 'M 6 -70 l 30 -16 l 2 5 l -28 16 z', fill: '#4F6A3F' }));
+  g.appendChild(q);
+  // the spoils wagon and captives behind
+  const w = svg('g', { transform: 'translate(820 262)' });
+  w.appendChild(svg('rect', { x: -50, y: -40, width: 100, height: 36, fill: '#5A3F22', stroke: '#2A1C0E', 'stroke-width': 2 })); [-32, 32].forEach(cx => { w.appendChild(svg('circle', { cx, cy: 0, r: 14, fill: '#2A1C0E' })); w.appendChild(svg('circle', { cx, cy: 0, r: 4, fill: '#8B6B3A' })); });
+  [[-36, '#E6D3A8'], [-12, '#C9A227'], [12, '#E6D3A8']].forEach(([x, c]) => w.appendChild(svg('path', { d: `M ${x} -40 q 0 -22 10 -30 q 10 8 10 30 z`, fill: c, stroke: '#6B4B2A', 'stroke-width': 1 })));
+  w.appendChild(svg('rect', { x: 30, y: -58, width: 18, height: 18, fill: '#C9A227', stroke: '#6B4B12' }));
+  w.appendChild(horse(110, 0)); g.appendChild(w);
+  [960, 990, 1020].forEach((x, i) => { const c = svg('g', { transform: `translate(${x} 262)` }); c.appendChild(svg('path', { d: 'M -8 0 h 5 v -14 h -5 z M 3 0 h 5 v -14 h -5 z', fill: '#3B2A17' })); c.appendChild(svg('rect', { x: -7, y: -40, width: 14, height: 26, rx: 3, fill: ['#2F5A4A', '#3A2A1E', '#6B4A2A'][i] })); c.appendChild(svg('circle', { cx: 0, cy: -46, r: 5.4, fill: '#C8956A' })); c.appendChild(svg('line', { x1: -6, y1: -28, x2: 6, y2: -28, stroke: '#8C8C90', 'stroke-width': 2 })); g.appendChild(c); });
+  for (let i = 0; i < 6; i++) g.appendChild(legionary(1080 + i * 36, 262, 1));
+  g.appendChild(standard(1320, 260, false));
+  return s;
+}
+
+/** Triumph: a 6 to 10 second parade through Rome after a province is conquered. Skippable. */
+export function triumph(app, ctx) {
+  return new Promise(resolve => {
+    const pv = PROVINCES[ctx.chapter.chapter] || { name: ctx.chapter.title };
+    let done = false;
+    const overlay = h('div', { class: 'cutscene triumph', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Triumph' });
+    const petals = h('div', { class: 'tri-petals', 'aria-hidden': 'true' }, Array.from({ length: 26 }, (_, i) => h('span', { style: { left: ((i * 37) % 100) + '%', animationDelay: ((i * 0.37) % 4).toFixed(2) + 's', animationDuration: (5 + (i % 4)) + 's' } })));
+    const spoils = [`${ctx.chapter.concepts.length} strongholds`, `${ctx.chapter.topics.length} standards`, ctx.score != null ? `${ctx.score} / ${ctx.n} at the walls` : null].filter(Boolean);
+    const skip = h('button', { class: 'btn ghost sm', onClick: () => finish() }, 'Skip');
+    const go = h('button', { class: 'btn primary big', onClick: () => finish() }, 'Continue ', h('span', { class: 'kbd' }, 'Enter'));
+    const scene = h('div', { class: 'tri-scene' },
+      h('div', { class: 'tri-sky' }), h('div', { class: 'tri-buildings' }), h('div', { class: 'tri-crowd back' }),
+      h('div', { class: 'tri-arch' }, h('div', { class: 'tri-arch-text' }, 'SENATVS · POPVLVSQVE · ROMANVS')),
+      h('div', { class: 'tri-road' }), h('div', { class: 'tri-parade' }, paradeSvg(ctx)), h('div', { class: 'tri-crowd front' }), petals,
+      h('div', { class: 'tri-title' }, h('div', { class: 'eyebrow' }, ctx.first ? 'Triumphus' : 'The city holds for Rome'), h('h1', null, `${pv.name} is Roman`), h('p', null, `Chapter ${roman(ctx.chapter.chapter)} · ${ctx.chapter.title}`), h('div', { class: 'row wrap tri-spoils' }, spoils.map(t => h('span', { class: 'chip' }, icon('coin', { size: 12, tone: 'gold' }), t)))),
+      h('div', { class: 'tri-actions' }, skip, go));
+    overlay.appendChild(scene);
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    app.sound && app.sound('fanfare'); setTimeout(() => app.sound && app.sound('cries'), 900); setTimeout(() => app.sound && app.sound('coins'), 1800);
+    const auto = setTimeout(() => finish(), 9500);
+    function finish() {
+      if (done) return; done = true; clearTimeout(auto);
+      document.removeEventListener('keydown', onKey); window.removeEventListener('hashchange', finish);
+      document.body.style.overflow = prevOverflow;
+      overlay.classList.remove('show'); setTimeout(() => overlay.remove(), 450);
+      resolve();
+    }
+    function onKey(e) { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') { e.preventDefault(); finish(); } }
+    document.addEventListener('keydown', onKey); window.addEventListener('hashchange', finish);
+    setTimeout(() => go.focus({ preventScroll: true }), 50);
+  });
+}
