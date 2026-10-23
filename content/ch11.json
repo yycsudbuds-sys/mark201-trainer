@@ -1227,7 +1227,7 @@
    "difficulty": 1,
    "stem": "Possession utility is created when a retailer:",
    "options": [
-    "makes it easier for consumers to take ownership or use of a product, such as through credit or layaway",
+    "makes it easier for consumers to take ownership or use of a product",
     "has products available when consumers want to buy them",
     "alters or assembles a product to suit the consumer",
     "locates stores close to where consumers live and work"
@@ -1408,12 +1408,12 @@
    "stem": "In a franchise system such as Tim Hortons, the franchisee typically:",
    "options": [
     "owns all outlets in the system and buys centrally for them",
-    "pays an initial fee and ongoing royalties for the right to use the franchisor's name and operating system",
+    "pays a fee plus royalties to use the franchisor's name and operating system",
     "takes title to goods but never physically handles them",
     "earns a commission for bringing buyers and sellers together"
    ],
    "answer": 1,
-   "explanation": "A franchise is a contractual system in which the franchisor supplies the name and system and the independently owning franchisee pays a fee plus royalties. Owning all outlets describes a corporate chain; the last two options describe a drop shipper and a broker.",
+   "explanation": "A franchise is a contractual system in which the franchisor supplies the name and system and the independently owning franchisee pays a fee plus royalties. Owning all outlets describes a corporate chain, taking title without handling the goods describes a drop shipper, and earning commissions for matching buyers and sellers describes a broker.",
    "source": "generated"
   },
   {
@@ -1660,12 +1660,12 @@
    "stem": "Hartwell's carries cosmetics, women's and men's clothing, housewares, luggage and furniture, each in its own department, with moderate selection in each. Classified by merchandise line, Hartwell's is a:",
    "options": [
     "specialty outlet",
-    "general merchandise (department) store",
+    "department store",
     "category killer",
     "warehouse club"
    ],
    "answer": 1,
-   "explanation": "Carrying many different product lines (breadth) organized into departments makes Hartwell's a general merchandise store. Specialty outlets and category killers are classified by depth: a narrow line with a deep assortment.",
+   "explanation": "Carrying many different product lines (breadth) organized into departments makes Hartwell's a department store, the classic general merchandise (breadth-of-line) store. Specialty outlets and category killers are classified by depth: a narrow line with a deep assortment.",
    "source": "generated"
   },
   {
@@ -1807,13 +1807,13 @@
    "difficulty": 3,
    "stem": "A mid-sized hardware store in Red Deer adds snack foods, pet food and phone chargers near its tills. A classmate says the store has 'become a hypermarket.' Why is the classmate wrong?",
    "options": [
-    "It is intertype competition, which only occurs between identical stores",
-    "It is a category killer, because it now covers more categories",
-    "It is a specialty outlet, because hardware is still its main line",
-    "Adding unrelated lines to an existing store is scrambled merchandising; a hypermarket is a very large format combining groceries and general merchandise"
+    "It is intertype competition, which by definition occurs only between stores of the same type",
+    "It is a category killer, because it now covers more product categories at low prices",
+    "It is a specialty outlet, because hardware is still its main line of merchandise",
+    "It is scrambled merchandising; a hypermarket is a very large store combining groceries and general merchandise"
    ],
    "answer": 3,
-   "explanation": "Scrambled merchandising is a strategy any store can use by adding unrelated lines. A hypermarket is a specific, very large store format built around groceries plus general merchandise. Intertype competition is between DISSIMILAR outlets, so that option is wrong on its own terms.",
+   "explanation": "Scrambled merchandising is a strategy any store can use by adding unrelated lines. A hypermarket is a specific, very large store format built around groceries plus general merchandise. The intertype-competition option is wrong on its own terms, because intertype competition is between DISSIMILAR outlets.",
    "source": "generated"
   },
   {
@@ -1972,7 +1972,7 @@
     "Add low-quality, low-priced lines to attract bargain hunters",
     "Switch to self-service and cut prices deeply to match discounters",
     "Move into a power centre next to category killers",
-    "Keep the quality and calibre of its merchandise, accepting that loyal customers may buy slightly less for a while"
+    "Keep its merchandise quality consistent, even if loyal customers buy slightly less"
    ],
    "answer": 3,
    "explanation": "The official explanation notes that high-end customers may buy slightly less in a recession but are not looking for lower quality, so the retailer should stay consistent with its high-end position. Adding cheap lines is exactly the mistake that cost Raphael & Sons its loyal customers.",
@@ -2114,12 +2114,12 @@
    "stem": "A classmate says the retail positioning matrix compares retailers on price and quality. Which correction is accurate?",
    "options": [
     "The axes are depth of line and markup percentage",
-    "The axes are breadth of product line and value added, where value added includes location, product reliability, prestige and service",
+    "The axes are breadth of product line and value added",
     "The axes are level of service and form of ownership",
     "The axes are target market size and number of stores"
    ],
    "answer": 1,
-   "explanation": "Breadth of product line and value added are the matrix dimensions; price is an outcome, not an axis. Service is part of value added, but form of ownership is a separate way of classifying outlets, not a matrix dimension.",
+   "explanation": "Breadth of product line and value added (location, product reliability, prestige and service) are the matrix dimensions; price is an outcome, not an axis. Service is part of value added, but form of ownership is a separate way of classifying outlets, not a matrix dimension.",
    "source": "generated"
   },
   {
@@ -2131,7 +2131,7 @@
    "difficulty": 3,
    "stem": "Northern Lux, a narrow-line luxury handbag retailer with high value added, wants to move into the broad line, high value added quadrant. What should it do?",
    "options": [
-    "Add many more product lines, such as clothing, shoes and cosmetics, while keeping its prestige and service",
+    "Add many more product lines while keeping its prestige and service",
     "Cut service and prices while continuing to sell only handbags",
     "Cut service and prices while adding many product lines",
     "Narrow its line further to a single handbag brand"
@@ -2206,7 +2206,7 @@
     "It can only be used by retailers that also operate catalogues",
     "It focuses solely on in-store displays and signage",
     "It requires manufacturers to sell through several types of wholesalers",
-    "It extends beyond the store to wherever and whenever consumers first think about purchasing, so it must reach them through many touchpoints"
+    "It extends beyond the store to wherever consumers first think about buying"
    ],
    "answer": 3,
    "explanation": "Because shopper marketing follows the shopper from the first thought of buying (on social media, in a flyer, at the shelf), it relies on traditional media, new media, direct marketing, loyalty, trade promotion and in-store tools. Saying it focuses solely on in-store displays contradicts its defining feature of extending outside the store.",
@@ -2395,7 +2395,7 @@
     "the products a store is considering purchasing for the coming quarter of the business cycle"
    ],
    "answer": 0,
-   "explanation": "The merchandise mix describes how many different types of products a store carries and in what assortment. How products are displayed relates to store atmosphere, not the merchandise mix, which is why the second option is wrong.",
+   "explanation": "The merchandise mix describes how many different types of products a store carries and in what assortment. How products are displayed is a store atmosphere idea, so the 'and how they are displayed' option is wrong; the annual-stocking and coming-quarter options describe purchase planning, not the merchandise mix.",
    "source": "official"
   },
   {
@@ -2482,12 +2482,12 @@
    "stem": "Category management involves:",
    "options": [
     "a big-box retailer dominating one category with deep assortment and low prices",
-    "assigning a manager responsibility for the profitability of a product category and managing it as a strategic business unit",
+    "assigning a manager profit responsibility for a product category, run as a strategic business unit",
     "classifying retail outlets by the breadth of lines they carry",
     "understanding how consumers behave as shoppers across channels"
    ],
    "answer": 1,
-   "explanation": "Category management makes one manager accountable for a category's profitability (e.g., shoes) and runs it like a strategic business unit. The first distractor describes a category killer, a store format, and the last describes shopper marketing.",
+   "explanation": "Category management makes one manager accountable for a category's profitability (e.g., shoes) and runs it like a strategic business unit. A big-box store dominating one category at low prices is a category killer (a store format), and understanding how consumers behave as shoppers across channels is shopper marketing.",
    "source": "generated"
   },
   {
@@ -2537,10 +2537,10 @@
    "difficulty": 2,
    "stem": "What is a key benefit of category management for a retailer?",
    "options": [
-    "Treating each category as a strategic business unit aligns its assortment with the target market and clarifies profit responsibility",
-    "It eliminates shrinkage from the category",
-    "It removes the need to select a target market",
-    "It turns the retailer into a merchant wholesaler"
+    "It aligns each category's assortment with the target market",
+    "It eliminates shrinkage losses from every product category",
+    "It removes the need to select a target market first",
+    "It turns the retailer into a merchant wholesaler for that category"
    ],
    "answer": 0,
    "explanation": "By making a manager accountable for a category's profitability, category management helps align the assortment with what the target market wants. It does not eliminate shrinkage or replace target market selection, which still comes first.",
@@ -2557,11 +2557,11 @@
    "options": [
     "open a separate big-box baby store with very low prices",
     "add unrelated products such as hardware to the aisle",
-    "appoint one manager to run baby products as a strategic business unit, adjusting the assortment to target customers and profit",
+    "appoint one manager to run the baby category and answer for its profit",
     "replace the aisle with self-service vending machines"
    ],
    "answer": 2,
-   "explanation": "Category management means one manager owns the category's profitability and tunes its assortment to the target market. Opening a big-box discount baby store would be launching a category killer, a different concept entirely.",
+   "explanation": "Category management means one manager runs the category as a strategic business unit, owning its profitability and tuning its assortment to the target market. Opening a big-box discount baby store would be launching a category killer, a different concept entirely.",
    "source": "generated"
   },
   {
@@ -2629,7 +2629,7 @@
    "difficulty": 2,
    "stem": "Why do retailers invest in store atmosphere?",
    "options": [
-    "It creates the overall impression that shapes the store's image and supports its positioning",
+    "It creates an overall impression that supports the store's image",
     "It reduces the number of product lines the store must carry",
     "It replaces the need for a communications mix",
     "It allows the store to take title to goods it never handles"
@@ -2775,7 +2775,7 @@
    "difficulty": 1,
    "stem": "Off-price retailing is best described as:",
    "options": [
-    "selling brand-name merchandise at lower than regular prices, often by buying manufacturers' excess inventory",
+    "selling brand-name merchandise below regular prices, often via excess inventory",
     "temporarily reducing the price of a store's own slow-moving stock",
     "adding several unrelated product lines to a single store",
     "selling only private-label goods at full price"
@@ -2885,7 +2885,7 @@
    "options": [
     "A warehouse club is full-service; an off-price chain is self-service",
     "An off-price chain is a contractual system; a warehouse club is a corporate chain",
-    "A warehouse club charges membership and sells food and general merchandise in bulk; an off-price chain sells brand-name goods bought from excess inventory",
+    "A warehouse club sells in bulk to fee-paying members; an off-price chain resells brand-name excess inventory",
     "A warehouse club is a category killer; an off-price chain is a hypermarket"
    ],
    "answer": 2,
@@ -3069,7 +3069,7 @@
     "Non-store retailing refers specifically to buying goods and services via automated or electronic means"
    ],
    "answer": 2,
-   "explanation": "Non-store retailing occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling. The 'automated or electronic' option is too narrow, because direct selling and telemarketing are non-store but involve people, and the first option wrongly limits it to small mobile activities.",
+   "explanation": "Non-store retailing occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling. The 'automated or electronic' option is too narrow, because direct selling and telemarketing are non-store but involve people, and the 'small, mobile retail activities' option wrongly limits it to door-to-door sales and food carts; weather has nothing to do with the definition.",
    "source": "official"
   },
   {
@@ -3282,7 +3282,7 @@
     "Jen orders a birthday gift at midnight because the website never closes",
     "Tasha shops online from her cottage, hours from the nearest mall",
     "Ben buys a desk lamp on his phone while riding the bus",
-    "Omar researches laptop specs on several sites over two weeks and decides on his own terms, without a salesperson"
+    "Omar compares laptops across sites for two weeks and decides on his own terms"
    ],
    "answer": 3,
    "explanation": "Control = empowered consumers who search, evaluate and decide at their own pace and on their own terms. The other three are about WHEN and WHERE someone can shop, which is convenience.",
@@ -3300,7 +3300,7 @@
     "A shopper browses 3,000 sneaker styles from 50 brands",
     "A shopper filters a huge catalogue by size to find in-stock styles",
     "A shopper uses an online fit assistant to pick from hundreds of models",
-    "A shopper designs her own sneakers by picking the colours and materials and adding her initials"
+    "A shopper designs her own sneakers, choosing colours, materials and initials"
    ],
    "answer": 3,
    "explanation": "Customization tailors the product itself to the individual (like Dell letting buyers choose components). Browsing or filtering a large existing selection, even with help, is the choice benefit.",
@@ -3370,7 +3370,7 @@
    "stem": "FitWear, an online activewear retailer, finds that visitors leave because they are unsure whether products will suit them and have no one to ask. Which change MOST directly strengthens the COMMUNICATION benefit of shopping online?",
    "options": [
     "Cutting prices 15% below competitors",
-    "Adding live chat with fit specialists and showing customer reviews on every product page",
+    "Adding live chat with fit specialists and customer reviews",
     "Letting shoppers design their own custom leggings",
     "Adding hundreds of new styles from other brands"
    ],
@@ -3477,13 +3477,13 @@
    "difficulty": 2,
    "stem": "Why do many retailers adopt a multichannel strategy?",
    "options": [
-    "Multiple channels allow them to reduce the size of their target markets",
-    "Integrating channels lets them offer a broader spectrum of benefits and experiences and share information across channel operations",
-    "Multiple channels eliminate the need for any physical stores",
-    "Multiple channels stop consumers from shopping across channels"
+    "Multiple channels allow them to shrink the size of their target markets",
+    "Integrated channels offer broader benefits and synergy from shared information",
+    "Multiple channels eliminate the need to operate any physical stores",
+    "Multiple channels prevent consumers from shopping across channels"
    ],
    "answer": 1,
-   "explanation": "Using several integrated channels lets retailers reach shoppers in more ways and gain synergy from shared information (as in the Jimmy's example). Shrinking the target market is the distractor from the official question; multichannel retailing typically widens reach.",
+   "explanation": "Using several integrated channels lets retailers offer a broader spectrum of benefits and experiences and gain synergy from sharing information among channel operations (as in the Jimmy's example). Shrinking the target market is the distractor from the official question; multichannel retailing typically widens reach.",
    "source": "generated"
   },
   {
@@ -3551,7 +3551,7 @@
    "options": [
     "Showrooming; open more physical stores in power centres",
     "Shrinkage; add security tags to inventory",
-    "Cart abandonment as shoppers leave to compare shipping and prices elsewhere; show competitive, transparent shipping costs early",
+    "Cart abandonment; show competitive, transparent shipping costs early",
     "Intertype competition; add unrelated product lines"
    ],
    "answer": 2,
@@ -3567,7 +3567,7 @@
    "difficulty": 1,
    "stem": "Marco leaves a store without buying because the checkout line was 20 minutes long and the jacket he wanted was out of stock. Which point about the modern retail environment does this illustrate?",
    "options": [
-    "Consumers dislike long lines, poor customer service and stock-outs",
+    "Consumers dislike long lines and stock-outs",
     "The decline of middle-market retailers",
     "The growth of social media purchasing",
     "Retail optimization through technology"
@@ -3625,7 +3625,7 @@
    "options": [
     "Off-price retailing",
     "The wheel of retailing",
-    "Technology-driven retail optimization supporting omnichannel and social media purchasing",
+    "Retail optimization through technology",
     "Scrambled merchandising"
    ],
    "answer": 2,
@@ -3643,11 +3643,11 @@
    "options": [
     "retail outlets pass through early growth, accelerated development, maturity and decline",
     "very dissimilar types of retail outlets compete for the same customers",
-    "new retail forms enter as low-status, low-margin, low-price outlets, gradually add services and raise prices, and leave room for new low-price entrants",
-    "retailers move from narrow product lines to broad ones"
+    "new retail forms enter at low prices, trade up over time and leave room for new low-price entrants",
+    "retailers gradually move from narrow product lines to broad, general merchandise lines"
    ],
    "answer": 2,
-   "explanation": "That is the wheel of retailing. The first distractor describes the retail life cycle, the most commonly confused concept, and the second describes intertype competition.",
+   "explanation": "The wheel of retailing describes new forms entering as low-status, low-margin, low-price outlets, then adding services and raising prices until new discounters fill the gap below them. Moving through early growth, accelerated development, maturity and decline is the retail life cycle (the most commonly confused concept), and dissimilar outlets competing for the same customers is intertype competition.",
    "source": "generated"
   },
   {
@@ -3682,7 +3682,7 @@
     "A retail format's market share rises quickly, levels off and then falls",
     "A format moves from early growth into accelerated development",
     "Video-rental stores grow, mature and eventually close as streaming arrives",
-    "A discount chain upgrades its stores and services and raises prices, opening a gap for new low-price competitors"
+    "A discount chain adds services and raises prices, opening a gap for new discounters"
    ],
    "answer": 3,
    "explanation": "The wheel is about trading UP in price, status and service, which creates room for new low-price entrants. Growth, levelling off and decline over time are stages of the retail life cycle.",
@@ -3697,7 +3697,7 @@
    "difficulty": 2,
    "stem": "In the wheel of retailing, what happens immediately after a new retailer enters the market as a low-status, low-margin, low-price outlet?",
    "options": [
-    "It gradually adds services and upgrades its facilities, raising prices and status",
+    "It gradually adds services, raising its prices and status",
     "New low-price retailers enter beneath it",
     "It cuts services further to become a hard discounter",
     "It enters the decline stage"
@@ -3715,7 +3715,7 @@
    "difficulty": 2,
    "stem": "According to the wheel of retailing, why do opportunities keep opening up for new discount retailers?",
    "options": [
-    "Established retailers trade up by adding services and raising prices, leaving a low-price gap",
+    "Established retailers trade up, leaving a low-price gap",
     "Consumers eventually refuse to shop at full-service stores",
     "Category killers are forced out by regulation",
     "Markups shrink to zero as retailers mature"
@@ -3899,8 +3899,8 @@
    "difficulty": 2,
    "stem": "What ultimately determines whether a sale is classified as wholesaling or retailing?",
    "options": [
-    "The size of the order",
-    "The buyer's purpose: resale or business use versus personal, family or household use",
+    "The size of the order being placed",
+    "The buyer's purpose for making the purchase",
     "Whether the seller operates a physical store",
     "Whether the price is above or below the regular price"
    ],
@@ -4339,7 +4339,7 @@
    "options": [
     "To avoid ever holding inventory",
     "To let independent agents take title to its goods",
-    "To control wholesaling functions directly through ownership (vertical integration)",
+    "To control wholesaling directly through ownership",
     "To form a retailer-sponsored cooperative"
    ],
    "answer": 2,

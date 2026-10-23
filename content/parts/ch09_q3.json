@@ -177,13 +177,13 @@
   "difficulty": 2,
   "stem": "Which set of conditions makes penetration pricing most attractive?",
   "options": [
-   "Price-insensitive buyers and high barriers to entry",
+   "Price-insensitive buyers, high barriers to entry and a high price that signals quality",
    "Price-sensitive buyers, unit costs that fall with volume, and a low price that discourages competitors",
-   "A product bought mainly as a status symbol",
-   "A fixed, perishable capacity such as hotel rooms"
+   "A product bought mainly as a status symbol, where a lower price would hurt demand",
+   "A fixed, perishable capacity, such as hotel rooms, that must be sold by a set date"
   ],
   "answer": 1,
-  "explanation": "Penetration works when many buyers are price-sensitive (elastic demand), economies of scale lower unit costs as volume grows, and the low price discourages competitors. Price-insensitive buyers plus entry barriers describe skimming; perishable capacity suits yield management.",
+  "explanation": "Penetration works when many buyers are price-sensitive (elastic demand), economies of scale lower unit costs as volume grows, and the low price discourages competitors. Price-insensitive buyers plus entry barriers describe skimming; a status symbol calls for prestige pricing; perishable capacity suits yield management.",
   "source": "generated"
  },
  {
@@ -269,10 +269,10 @@
   "difficulty": 3,
   "stem": "For a prestige product, why can a price cut REDUCE the quantity demanded?",
   "options": [
-   "Because demand is perfectly inelastic",
-   "Because fixed costs rise when price falls",
-   "Because competitors immediately match the lower price",
-   "Because the demand curve bends backward: a lower price makes the product less attractive to status-conscious buyers"
+   "Because demand for prestige goods is perfectly inelastic at every price",
+   "Because fixed costs rise when price falls, so the firm must cut output",
+   "Because competitors immediately match the lower price and take the sales",
+   "Because the demand curve bends backward: a lower price signals less status"
   ],
   "answer": 3,
   "explanation": "Prestige goods have a demand curve that bends backward over part of its range: a lower price signals less status, so fewer people want the product. Inelastic demand would mean quantity barely changes - not that it falls when price falls.",
@@ -451,8 +451,8 @@
   "options": [
    "Buyers see the package as a better deal than buying items separately, and the chain sells more items per order",
    "It lets them charge different prices to different customers for the same item",
-   "It is required by the Competition Act",
-   "It allows them to recover R&D costs quickly"
+   "It is required by the Competition Act for restaurants that sell combo meals",
+   "It allows them to recover the R&D costs of new menu items quickly"
   ],
   "answer": 0,
   "explanation": "Bundle pricing gives buyers perceived savings on a package and lets the seller move more products per sale. Charging different buyers different prices for the same item is a flexible-price policy, not bundling.",
@@ -578,9 +578,9 @@
   "stem": "Why is yield management especially suited to airlines and hotels?",
   "options": [
    "Their capacity is fixed, and a seat or room left unsold on a given date can never be sold later",
-   "Their products are commodities sold in pure competition",
-   "Their costs are almost entirely variable",
-   "Customary prices in these industries cannot be changed"
+   "Their products are commodities sold in pure competition at a market price",
+   "Their costs are almost entirely variable and rise with each extra passenger or guest",
+   "Customary prices in these industries cannot be changed without losing customers"
   ],
   "answer": 0,
   "explanation": "Yield management maximizes revenue from a set amount of capacity at a given time; an empty seat after departure is revenue lost forever, so varying prices to fill capacity pays off. These are differentiated services, not commodities, and their costs are largely fixed.",

@@ -170,7 +170,7 @@
   "difficulty": 1,
   "stem": "Possession utility is created when a retailer:",
   "options": [
-   "makes it easier for consumers to take ownership or use of a product, such as through credit or layaway",
+   "makes it easier for consumers to take ownership or use of a product",
    "has products available when consumers want to buy them",
    "alters or assembles a product to suit the consumer",
    "locates stores close to where consumers live and work"
@@ -204,7 +204,7 @@
   "type": "mc",
   "angle": "identify",
   "difficulty": 1,
-  "stem": "Rosa owns and operates a single bakery-café in Lethbridge, making all buying and pricing decisions herself. Classified by form of ownership, her business is a(n):",
+  "stem": "Rosa owns and operates a single bakery-caf\u00e9 in Lethbridge, making all buying and pricing decisions herself. Classified by form of ownership, her business is a(n):",
   "options": [
    "independent retailer",
    "corporate chain",
@@ -351,12 +351,12 @@
   "stem": "In a franchise system such as Tim Hortons, the franchisee typically:",
   "options": [
    "owns all outlets in the system and buys centrally for them",
-   "pays an initial fee and ongoing royalties for the right to use the franchisor's name and operating system",
+   "pays a fee plus royalties to use the franchisor's name and operating system",
    "takes title to goods but never physically handles them",
    "earns a commission for bringing buyers and sellers together"
   ],
   "answer": 1,
-  "explanation": "A franchise is a contractual system in which the franchisor supplies the name and system and the independently owning franchisee pays a fee plus royalties. Owning all outlets describes a corporate chain; the last two options describe a drop shipper and a broker.",
+  "explanation": "A franchise is a contractual system in which the franchisor supplies the name and system and the independently owning franchisee pays a fee plus royalties. Owning all outlets describes a corporate chain, taking title without handling the goods describes a drop shipper, and earning commissions for matching buyers and sellers describes a broker.",
   "source": "generated"
  },
  {
@@ -603,12 +603,12 @@
   "stem": "Hartwell's carries cosmetics, women's and men's clothing, housewares, luggage and furniture, each in its own department, with moderate selection in each. Classified by merchandise line, Hartwell's is a:",
   "options": [
    "specialty outlet",
-   "general merchandise (department) store",
+   "department store",
    "category killer",
    "warehouse club"
   ],
   "answer": 1,
-  "explanation": "Carrying many different product lines (breadth) organized into departments makes Hartwell's a general merchandise store. Specialty outlets and category killers are classified by depth: a narrow line with a deep assortment.",
+  "explanation": "Carrying many different product lines (breadth) organized into departments makes Hartwell's a department store, the classic general merchandise (breadth-of-line) store. Specialty outlets and category killers are classified by depth: a narrow line with a deep assortment.",
   "source": "generated"
  },
  {

@@ -28,13 +28,13 @@
   "difficulty": 3,
   "stem": "A mid-sized hardware store in Red Deer adds snack foods, pet food and phone chargers near its tills. A classmate says the store has 'become a hypermarket.' Why is the classmate wrong?",
   "options": [
-   "It is intertype competition, which only occurs between identical stores",
-   "It is a category killer, because it now covers more categories",
-   "It is a specialty outlet, because hardware is still its main line",
-   "Adding unrelated lines to an existing store is scrambled merchandising; a hypermarket is a very large format combining groceries and general merchandise"
+   "It is intertype competition, which by definition occurs only between stores of the same type",
+   "It is a category killer, because it now covers more product categories at low prices",
+   "It is a specialty outlet, because hardware is still its main line of merchandise",
+   "It is scrambled merchandising; a hypermarket is a very large store combining groceries and general merchandise"
   ],
   "answer": 3,
-  "explanation": "Scrambled merchandising is a strategy any store can use by adding unrelated lines. A hypermarket is a specific, very large store format built around groceries plus general merchandise. Intertype competition is between DISSIMILAR outlets, so that option is wrong on its own terms.",
+  "explanation": "Scrambled merchandising is a strategy any store can use by adding unrelated lines. A hypermarket is a specific, very large store format built around groceries plus general merchandise. The intertype-competition option is wrong on its own terms, because intertype competition is between DISSIMILAR outlets.",
   "source": "generated"
  },
  {
@@ -114,7 +114,7 @@
   "type": "mc",
   "angle": "identify",
   "difficulty": 2,
-  "stem": "Before opening, the owners of Kettle & Crumb, a café-bookshop, negotiate with publishers and coffee roasters about which titles and beans to buy, in what quantities and on what terms. Which retailer marketing decision does this reflect?",
+  "stem": "Before opening, the owners of Kettle & Crumb, a caf\u00e9-bookshop, negotiate with publishers and coffee roasters about which titles and beans to buy, in what quantities and on what terms. Which retailer marketing decision does this reflect?",
   "options": [
    "Communications",
    "Store atmosphere",
@@ -193,7 +193,7 @@
    "Add low-quality, low-priced lines to attract bargain hunters",
    "Switch to self-service and cut prices deeply to match discounters",
    "Move into a power centre next to category killers",
-   "Keep the quality and calibre of its merchandise, accepting that loyal customers may buy slightly less for a while"
+   "Keep its merchandise quality consistent, even if loyal customers buy slightly less"
   ],
   "answer": 3,
   "explanation": "The official explanation notes that high-end customers may buy slightly less in a recession but are not looking for lower quality, so the retailer should stay consistent with its high-end position. Adding cheap lines is exactly the mistake that cost Raphael & Sons its loyal customers.",
@@ -335,12 +335,12 @@
   "stem": "A classmate says the retail positioning matrix compares retailers on price and quality. Which correction is accurate?",
   "options": [
    "The axes are depth of line and markup percentage",
-   "The axes are breadth of product line and value added, where value added includes location, product reliability, prestige and service",
+   "The axes are breadth of product line and value added",
    "The axes are level of service and form of ownership",
    "The axes are target market size and number of stores"
   ],
   "answer": 1,
-  "explanation": "Breadth of product line and value added are the matrix dimensions; price is an outcome, not an axis. Service is part of value added, but form of ownership is a separate way of classifying outlets, not a matrix dimension.",
+  "explanation": "Breadth of product line and value added (location, product reliability, prestige and service) are the matrix dimensions; price is an outcome, not an axis. Service is part of value added, but form of ownership is a separate way of classifying outlets, not a matrix dimension.",
   "source": "generated"
  },
  {
@@ -352,7 +352,7 @@
   "difficulty": 3,
   "stem": "Northern Lux, a narrow-line luxury handbag retailer with high value added, wants to move into the broad line, high value added quadrant. What should it do?",
   "options": [
-   "Add many more product lines, such as clothing, shoes and cosmetics, while keeping its prestige and service",
+   "Add many more product lines while keeping its prestige and service",
    "Cut service and prices while continuing to sell only handbags",
    "Cut service and prices while adding many product lines",
    "Narrow its line further to a single handbag brand"
@@ -427,7 +427,7 @@
    "It can only be used by retailers that also operate catalogues",
    "It focuses solely on in-store displays and signage",
    "It requires manufacturers to sell through several types of wholesalers",
-   "It extends beyond the store to wherever and whenever consumers first think about purchasing, so it must reach them through many touchpoints"
+   "It extends beyond the store to wherever consumers first think about buying"
   ],
   "answer": 3,
   "explanation": "Because shopper marketing follows the shopper from the first thought of buying (on social media, in a flyer, at the shelf), it relies on traditional media, new media, direct marketing, loyalty, trade promotion and in-store tools. Saying it focuses solely on in-store displays contradicts its defining feature of extending outside the store.",
@@ -616,7 +616,7 @@
    "the products a store is considering purchasing for the coming quarter of the business cycle"
   ],
   "answer": 0,
-  "explanation": "The merchandise mix describes how many different types of products a store carries and in what assortment. How products are displayed relates to store atmosphere, not the merchandise mix, which is why the second option is wrong.",
+  "explanation": "The merchandise mix describes how many different types of products a store carries and in what assortment. How products are displayed is a store atmosphere idea, so the 'and how they are displayed' option is wrong; the annual-stocking and coming-quarter options describe purchase planning, not the merchandise mix.",
   "source": "official"
  },
  {
@@ -703,12 +703,12 @@
   "stem": "Category management involves:",
   "options": [
    "a big-box retailer dominating one category with deep assortment and low prices",
-   "assigning a manager responsibility for the profitability of a product category and managing it as a strategic business unit",
+   "assigning a manager profit responsibility for a product category, run as a strategic business unit",
    "classifying retail outlets by the breadth of lines they carry",
    "understanding how consumers behave as shoppers across channels"
   ],
   "answer": 1,
-  "explanation": "Category management makes one manager accountable for a category's profitability (e.g., shoes) and runs it like a strategic business unit. The first distractor describes a category killer, a store format, and the last describes shopper marketing.",
+  "explanation": "Category management makes one manager accountable for a category's profitability (e.g., shoes) and runs it like a strategic business unit. A big-box store dominating one category at low prices is a category killer (a store format), and understanding how consumers behave as shoppers across channels is shopper marketing.",
   "source": "generated"
  },
  {

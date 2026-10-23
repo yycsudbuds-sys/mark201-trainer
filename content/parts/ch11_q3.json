@@ -28,10 +28,10 @@
   "difficulty": 2,
   "stem": "What is a key benefit of category management for a retailer?",
   "options": [
-   "Treating each category as a strategic business unit aligns its assortment with the target market and clarifies profit responsibility",
-   "It eliminates shrinkage from the category",
-   "It removes the need to select a target market",
-   "It turns the retailer into a merchant wholesaler"
+   "It aligns each category's assortment with the target market",
+   "It eliminates shrinkage losses from every product category",
+   "It removes the need to select a target market first",
+   "It turns the retailer into a merchant wholesaler for that category"
   ],
   "answer": 0,
   "explanation": "By making a manager accountable for a category's profitability, category management helps align the assortment with what the target market wants. It does not eliminate shrinkage or replace target market selection, which still comes first.",
@@ -48,11 +48,11 @@
   "options": [
    "open a separate big-box baby store with very low prices",
    "add unrelated products such as hardware to the aisle",
-   "appoint one manager to run baby products as a strategic business unit, adjusting the assortment to target customers and profit",
+   "appoint one manager to run the baby category and answer for its profit",
    "replace the aisle with self-service vending machines"
   ],
   "answer": 2,
-  "explanation": "Category management means one manager owns the category's profitability and tunes its assortment to the target market. Opening a big-box discount baby store would be launching a category killer, a different concept entirely.",
+  "explanation": "Category management means one manager runs the category as a strategic business unit, owning its profitability and tuning its assortment to the target market. Opening a big-box discount baby store would be launching a category killer, a different concept entirely.",
   "source": "generated"
  },
  {
@@ -120,7 +120,7 @@
   "difficulty": 2,
   "stem": "Why do retailers invest in store atmosphere?",
   "options": [
-   "It creates the overall impression that shapes the store's image and supports its positioning",
+   "It creates an overall impression that supports the store's image",
    "It reduces the number of product lines the store must carry",
    "It replaces the need for a communications mix",
    "It allows the store to take title to goods it never handles"
@@ -266,7 +266,7 @@
   "difficulty": 1,
   "stem": "Off-price retailing is best described as:",
   "options": [
-   "selling brand-name merchandise at lower than regular prices, often by buying manufacturers' excess inventory",
+   "selling brand-name merchandise below regular prices, often via excess inventory",
    "temporarily reducing the price of a store's own slow-moving stock",
    "adding several unrelated product lines to a single store",
    "selling only private-label goods at full price"
@@ -376,7 +376,7 @@
   "options": [
    "A warehouse club is full-service; an off-price chain is self-service",
    "An off-price chain is a contractual system; a warehouse club is a corporate chain",
-   "A warehouse club charges membership and sells food and general merchandise in bulk; an off-price chain sells brand-name goods bought from excess inventory",
+   "A warehouse club sells in bulk to fee-paying members; an off-price chain resells brand-name excess inventory",
    "A warehouse club is a category killer; an off-price chain is a hypermarket"
   ],
   "answer": 2,
@@ -560,7 +560,7 @@
    "Non-store retailing refers specifically to buying goods and services via automated or electronic means"
   ],
   "answer": 2,
-  "explanation": "Non-store retailing occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling. The 'automated or electronic' option is too narrow, because direct selling and telemarketing are non-store but involve people, and the first option wrongly limits it to small mobile activities.",
+  "explanation": "Non-store retailing occurs outside a retail outlet through activities involving varying levels of customer and retailer involvement: automatic vending, direct mail and catalogues, TV home shopping, online retailing, telemarketing and direct selling. The 'automated or electronic' option is too narrow, because direct selling and telemarketing are non-store but involve people, and the 'small, mobile retail activities' option wrongly limits it to door-to-door sales and food carts; weather has nothing to do with the definition.",
   "source": "official"
  },
  {

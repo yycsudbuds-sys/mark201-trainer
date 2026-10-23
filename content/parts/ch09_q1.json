@@ -458,9 +458,9 @@
   "difficulty": 3,
   "stem": "Rocky View Roofing's cost per roof is $7,800. Homeowner research shows most will pay at most $11,000, and two rivals charge about $9,500. Applying the 3 Cs, which price range is most defensible?",
   "options": [
-   "Below $7,800, to undercut both rivals",
-   "Exactly $7,800, so price equals cost",
-   "Above $11,000, to signal quality",
+   "Below $7,800, undercutting both rivals to win as many roofs as possible",
+   "Exactly $7,800, so that the price of each roof just equals its cost",
+   "Above $11,000, so that the high price signals superior quality",
    "Between $7,800 and $11,000, positioned relative to the $9,500 rival price"
   ],
   "answer": 3,
@@ -585,9 +585,9 @@
   "stem": "Aurora Labs launches the first Canadian-made home air-quality sensor, with no direct substitutes yet, and prices it well above what it expects to charge in three years. Which pricing constraint gives Aurora this latitude?",
   "options": [
    "Newness of the product (stage in the product life cycle)",
-   "Cost of changing prices",
-   "Pure competition in the market",
-   "Single product vs product line"
+   "Cost of changing prices and the time period they apply",
+   "Pure competition in the home-sensor market",
+   "Single product vs product line considerations"
   ],
   "answer": 0,
   "explanation": "Newness of the product - its stage in the PLC - affects price: early in the life cycle, with few substitutes, a firm can charge more. Pure competition would do the opposite, forcing the firm to accept the market price.",

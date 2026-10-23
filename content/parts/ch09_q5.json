@@ -9,9 +9,9 @@
   "stem": "Which statement correctly contrasts cost-based and value-based pricing?",
   "options": [
    "Cost-based starts with the product and ends with customers; value-based starts with customers and ends with the product",
-   "Cost-based starts with customers; value-based starts with the product",
-   "Both sequences start with cost but end differently",
-   "Value-based pricing ignores costs entirely"
+   "Cost-based starts with customers and ends with the product; value-based starts with the product",
+   "Both sequences start with cost and set price second, but they end at different points",
+   "Value-based pricing ignores costs entirely and sets price from customer value alone"
   ],
   "answer": 0,
   "explanation": "The two sequences are mirror images: cost-based = Product, Cost, Price, Value, Customers; value-based = Customers, Value, Price, Cost, Product. Value-based pricing does not ignore costs - cost comes after price, as the amount the firm can spend to deliver that value.",
@@ -26,10 +26,10 @@
   "difficulty": 3,
   "stem": "Why does value-based pricing begin with customers rather than with the product?",
   "options": [
-   "So the firm can guarantee a fixed margin over its unit cost",
-   "Because customers determine the firm's fixed costs",
+   "So the firm can guarantee a fixed margin over its total unit cost on every sale",
+   "Because customers determine the firm's fixed costs and therefore its price floor",
    "So the price reflects the value customers perceive, with costs and the product then designed to fit that price",
-   "So the firm never needs to consider competitors"
+   "So the firm never needs to consider competitors' prices when it sets a price"
   ],
   "answer": 2,
   "explanation": "Pricing is the attempt to capture the value the marketing mix creates. Starting with customers and value means the price reflects what buyers perceive, and costs and the product are then held to what that price allows. Guaranteeing a margin over unit cost is the cost-based logic.",
@@ -461,7 +461,7 @@
   "stem": "BlendPro, a kitchen-appliance maker, tells retailers they must sell its blenders for no less than $199 and stops shipping to a Winnipeg store that advertised them at $159. This is an example of:",
   "options": [
    "horizontal price fixing",
-   "vertical price fixing (resale price maintenance)",
+   "vertical price fixing",
    "predatory pricing",
    "bait and switch"
   ],
@@ -514,13 +514,13 @@
   "difficulty": 3,
   "stem": "Which situation is price discrimination rather than price fixing?",
   "options": [
-   "Two competing cement makers agree to charge contractors the same high price",
-   "Rival airlines agree to add identical fuel surcharges",
-   "A manufacturer charges a large chain a lower price than competing small retailers for the same quantity, lessening competition",
-   "Three gas stations in a town agree not to undercut one another"
+   "Two competing cement makers secretly agree to charge all contractors the same high price",
+   "Rival airlines agree with one another to add identical fuel surcharges to every fare",
+   "A manufacturer charges a big chain less than competing small retailers for the same quantity, hurting competition",
+   "Three gas stations in a small town agree with each other not to undercut one another's prices"
   ],
   "answer": 2,
-  "explanation": "Price discrimination is one seller charging COMPETING buyers different prices for like quantities in a way that lessens competition. Price fixing is competitors colluding to set prices, as in the other three options.",
+  "explanation": "Price discrimination is one seller charging COMPETING buyers different prices for like quantities in a way that lessens competition. Price fixing is competitors colluding to set prices - the cement makers, the airlines and the gas stations each reach an agreement with rivals rather than treating buyers unequally.",
   "source": "generated"
  },
  {

@@ -490,7 +490,7 @@
    "explain": "When capacity is fixed and perishable - airline seats, hotel rooms, concert seats - an unsold unit is lost forever. Yield management raises prices when demand for the remaining capacity is high and lowers them when it is soft, so the firm earns the most from the capacity it has. The instructor's example is airline seats.",
    "example": "A Banff hotel charges $189 for a room on a quiet November Tuesday and $549 for the same room on a ski-season Saturday.",
    "contrast": "Yield management (prices vary with demand for a FIXED CAPACITY over time) vs a flexible-price policy based on the buyer (prices vary by individual BUYER or purchase situation, e.g., age or negotiation) vs bundle pricing (several products, one price).",
-   "trap": "Cue words: 'fixed number of seats or rooms', 'maximize revenue from capacity', 'price varies by date or time'. Different prices by age or by haggling is a flexible-price policy, not yield management.",
+   "trap": "Cue words: 'fixed number of seats or rooms', 'maximize revenue from capacity', 'price varies by date or time'. Different prices by age or by haggling is a flexible-price policy, not yield management. 'Adjusting prices in real time based on demand' (Uber surge) is the course's wording for dynamic pricing; a fixed number of seats or rooms sold over time is the yield-management cue.",
    "mnemonic": "Yield: squeeze the most revenue from every seat.",
    "figure": null
   },
@@ -646,8 +646,8 @@
    "id": "c09-final-price-steps",
    "topic": "t09-6",
    "term": "Four steps in setting a final price",
-   "definition": "Step 1: select an approximate price level (using one of the four approach buckets). Step 2: set the list or quoted price (one-price or flexible-price policy). Step 3: make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments). Step 4: monitor and adjust prices.",
-   "explain": "The approaches give a ballpark; the list price turns it into a quoted number and a policy; special adjustments tailor it to particular buyers and situations; monitoring keeps it right as costs, competitors and demand change. Pricing is never 'set and forget'.",
+   "definition": "Step 1: select an approximate price level (using one of the four approach buckets). Step 2: set the list or quoted price (one-price or flexible-price policy). Step 3: make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments and, in the slides, dynamic pricing). Step 4: monitor and adjust prices.",
+   "explain": "The approaches give a ballpark; the list price turns it into a quoted number and a policy; special adjustments tailor it to particular buyers and situations; monitoring keeps it right as costs, competitors and demand change. Pricing is never 'set and forget'. The slides list dynamic pricing (real-time, demand-based changes such as Uber surge) among the Step 3 adjustments, while the textbook treats it as a form of flexible pricing; the one-price vs flexible-price POLICY choice itself is Step 2.",
    "example": "A Calgary bike shop prices a new e-bike near competitors' level (Step 1), lists it at a fixed $2,999 for everyone (Step 2), offers a $300 trade-in allowance (Step 3) and reviews the price after a rival's spring sale (Step 4).",
    "contrast": "The four final-price steps (approximate level -> list price -> special adjustments -> monitor) vs the four approach buckets (demand, cost, profit, competition), which are only the tools used inside Step 1. Identifying objectives and constraints comes before these steps.",
    "trap": "One-price vs flexible-price is decided in Step 2, not Step 3. Discounts, allowances and FOB or delivered pricing are Step 3. 'Monitor and adjust' is the last step.",
@@ -658,7 +658,7 @@
     "items": [
      "Step 1: Select an approximate price level",
      "Step 2: Set the list or quoted price (one-price vs flexible-price policy)",
-     "Step 3: Make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments)",
+     "Step 3: Make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments, dynamic pricing)",
      "Step 4: Monitor and adjust prices"
     ]
    }
@@ -668,7 +668,7 @@
    "topic": "t09-6",
    "term": "One-price vs flexible-price policy (and dynamic pricing)",
    "definition": "A one-price policy sets one price for all buyers of a product or service. A flexible-price policy sets different prices for products and services depending on individual buyers and purchase situations; dynamic pricing - adjusting prices in real time based on demand (e.g., Uber surge pricing) - is a form of flexible pricing.",
-   "explain": "Choosing the price policy is part of Step 2 of setting a final price. One-price policies (no-haggle car brands, Walmart) build trust and simplify selling. Flexible pricing lets a car dealer negotiate, or a transit authority charge seniors, students and adults different fares. Dynamic pricing uses technology to change prices minute to minute as demand rises and falls.",
+   "explain": "Choosing the price policy is part of Step 2 of setting a final price (the slides also show dynamic pricing, such as Uber surge, among the Step 3 special adjustments). One-price policies (no-haggle car brands, Walmart) build trust and simplify selling. Flexible pricing lets a car dealer negotiate, or a transit authority charge seniors, students and adults different fares. Dynamic pricing uses technology to change prices minute to minute as demand rises and falls.",
    "example": "A city transit system charges different fares for youth, seniors and adults (flexible-price policy); a no-haggle car brand posts one sticker price that every buyer pays (one-price policy).",
    "contrast": "Flexible-price policy (different prices for different BUYERS or situations; legal with consumers) vs price discrimination (different prices to COMPETING business buyers for like quantities, illegal when it lessens competition) vs yield management (prices vary with demand for a fixed capacity over time).",
    "trap": "Different prices by age, employment, negotiation or real-time demand = flexible (dynamic) pricing - not penetration, bundle or one-price. 'Same price for everyone' = one-price policy.",

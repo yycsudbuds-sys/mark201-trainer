@@ -490,7 +490,7 @@
    "explain": "When capacity is fixed and perishable - airline seats, hotel rooms, concert seats - an unsold unit is lost forever. Yield management raises prices when demand for the remaining capacity is high and lowers them when it is soft, so the firm earns the most from the capacity it has. The instructor's example is airline seats.",
    "example": "A Banff hotel charges $189 for a room on a quiet November Tuesday and $549 for the same room on a ski-season Saturday.",
    "contrast": "Yield management (prices vary with demand for a FIXED CAPACITY over time) vs a flexible-price policy based on the buyer (prices vary by individual BUYER or purchase situation, e.g., age or negotiation) vs bundle pricing (several products, one price).",
-   "trap": "Cue words: 'fixed number of seats or rooms', 'maximize revenue from capacity', 'price varies by date or time'. Different prices by age or by haggling is a flexible-price policy, not yield management.",
+   "trap": "Cue words: 'fixed number of seats or rooms', 'maximize revenue from capacity', 'price varies by date or time'. Different prices by age or by haggling is a flexible-price policy, not yield management. 'Adjusting prices in real time based on demand' (Uber surge) is the course's wording for dynamic pricing; a fixed number of seats or rooms sold over time is the yield-management cue.",
    "mnemonic": "Yield: squeeze the most revenue from every seat.",
    "figure": null
   },
@@ -646,8 +646,8 @@
    "id": "c09-final-price-steps",
    "topic": "t09-6",
    "term": "Four steps in setting a final price",
-   "definition": "Step 1: select an approximate price level (using one of the four approach buckets). Step 2: set the list or quoted price (one-price or flexible-price policy). Step 3: make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments). Step 4: monitor and adjust prices.",
-   "explain": "The approaches give a ballpark; the list price turns it into a quoted number and a policy; special adjustments tailor it to particular buyers and situations; monitoring keeps it right as costs, competitors and demand change. Pricing is never 'set and forget'.",
+   "definition": "Step 1: select an approximate price level (using one of the four approach buckets). Step 2: set the list or quoted price (one-price or flexible-price policy). Step 3: make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments and, in the slides, dynamic pricing). Step 4: monitor and adjust prices.",
+   "explain": "The approaches give a ballpark; the list price turns it into a quoted number and a policy; special adjustments tailor it to particular buyers and situations; monitoring keeps it right as costs, competitors and demand change. Pricing is never 'set and forget'. The slides list dynamic pricing (real-time, demand-based changes such as Uber surge) among the Step 3 adjustments, while the textbook treats it as a form of flexible pricing; the one-price vs flexible-price POLICY choice itself is Step 2.",
    "example": "A Calgary bike shop prices a new e-bike near competitors' level (Step 1), lists it at a fixed $2,999 for everyone (Step 2), offers a $300 trade-in allowance (Step 3) and reviews the price after a rival's spring sale (Step 4).",
    "contrast": "The four final-price steps (approximate level -> list price -> special adjustments -> monitor) vs the four approach buckets (demand, cost, profit, competition), which are only the tools used inside Step 1. Identifying objectives and constraints comes before these steps.",
    "trap": "One-price vs flexible-price is decided in Step 2, not Step 3. Discounts, allowances and FOB or delivered pricing are Step 3. 'Monitor and adjust' is the last step.",
@@ -658,7 +658,7 @@
     "items": [
      "Step 1: Select an approximate price level",
      "Step 2: Set the list or quoted price (one-price vs flexible-price policy)",
-     "Step 3: Make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments)",
+     "Step 3: Make special adjustments to the list or quoted price (discounts, allowances, geographic adjustments, dynamic pricing)",
      "Step 4: Monitor and adjust prices"
     ]
    }
@@ -668,7 +668,7 @@
    "topic": "t09-6",
    "term": "One-price vs flexible-price policy (and dynamic pricing)",
    "definition": "A one-price policy sets one price for all buyers of a product or service. A flexible-price policy sets different prices for products and services depending on individual buyers and purchase situations; dynamic pricing - adjusting prices in real time based on demand (e.g., Uber surge pricing) - is a form of flexible pricing.",
-   "explain": "Choosing the price policy is part of Step 2 of setting a final price. One-price policies (no-haggle car brands, Walmart) build trust and simplify selling. Flexible pricing lets a car dealer negotiate, or a transit authority charge seniors, students and adults different fares. Dynamic pricing uses technology to change prices minute to minute as demand rises and falls.",
+   "explain": "Choosing the price policy is part of Step 2 of setting a final price (the slides also show dynamic pricing, such as Uber surge, among the Step 3 special adjustments). One-price policies (no-haggle car brands, Walmart) build trust and simplify selling. Flexible pricing lets a car dealer negotiate, or a transit authority charge seniors, students and adults different fares. Dynamic pricing uses technology to change prices minute to minute as demand rises and falls.",
    "example": "A city transit system charges different fares for youth, seniors and adults (flexible-price policy); a no-haggle car brand posts one sticker price that every buyer pays (one-price policy).",
    "contrast": "Flexible-price policy (different prices for different BUYERS or situations; legal with consumers) vs price discrimination (different prices to COMPETING business buyers for like quantities, illegal when it lessens competition) vs yield management (prices vary with demand for a fixed capacity over time).",
    "trap": "Different prices by age, employment, negotiation or real-time demand = flexible (dynamic) pricing - not penetration, bundle or one-price. 'Same price for everyone' = one-price policy.",
@@ -1487,9 +1487,9 @@
    "difficulty": 3,
    "stem": "Rocky View Roofing's cost per roof is $7,800. Homeowner research shows most will pay at most $11,000, and two rivals charge about $9,500. Applying the 3 Cs, which price range is most defensible?",
    "options": [
-    "Below $7,800, to undercut both rivals",
-    "Exactly $7,800, so price equals cost",
-    "Above $11,000, to signal quality",
+    "Below $7,800, undercutting both rivals to win as many roofs as possible",
+    "Exactly $7,800, so that the price of each roof just equals its cost",
+    "Above $11,000, so that the high price signals superior quality",
     "Between $7,800 and $11,000, positioned relative to the $9,500 rival price"
    ],
    "answer": 3,
@@ -1614,9 +1614,9 @@
    "stem": "Aurora Labs launches the first Canadian-made home air-quality sensor, with no direct substitutes yet, and prices it well above what it expects to charge in three years. Which pricing constraint gives Aurora this latitude?",
    "options": [
     "Newness of the product (stage in the product life cycle)",
-    "Cost of changing prices",
-    "Pure competition in the market",
-    "Single product vs product line"
+    "Cost of changing prices and the time period they apply",
+    "Pure competition in the home-sensor market",
+    "Single product vs product line considerations"
    ],
    "answer": 0,
    "explanation": "Newness of the product - its stage in the PLC - affects price: early in the life cycle, with few substitutes, a firm can charge more. Pure competition would do the opposite, forcing the firm to accept the market price.",
@@ -1793,9 +1793,9 @@
    "difficulty": 2,
    "stem": "According to the chapter, why does creating the correct price begin the forecasting process?",
    "options": [
-    "With a price known, the firm can estimate demand - given its own and competitors' marketing efforts - and translate it into revenue",
-    "Once a price is set, demand no longer needs to be estimated",
-    "Forecasting is only needed to calculate fixed costs",
+    "With a price known, the firm can estimate demand and translate it into estimated revenue",
+    "Once a price is set, demand no longer needs to be estimated or revised",
+    "Forecasting is only needed to calculate the firm's fixed costs for the year",
     "Price determines the break-even point, which replaces the need for a forecast"
    ],
    "answer": 0,
@@ -2430,13 +2430,13 @@
    "difficulty": 2,
    "stem": "Which set of conditions makes penetration pricing most attractive?",
    "options": [
-    "Price-insensitive buyers and high barriers to entry",
+    "Price-insensitive buyers, high barriers to entry and a high price that signals quality",
     "Price-sensitive buyers, unit costs that fall with volume, and a low price that discourages competitors",
-    "A product bought mainly as a status symbol",
-    "A fixed, perishable capacity such as hotel rooms"
+    "A product bought mainly as a status symbol, where a lower price would hurt demand",
+    "A fixed, perishable capacity, such as hotel rooms, that must be sold by a set date"
    ],
    "answer": 1,
-   "explanation": "Penetration works when many buyers are price-sensitive (elastic demand), economies of scale lower unit costs as volume grows, and the low price discourages competitors. Price-insensitive buyers plus entry barriers describe skimming; perishable capacity suits yield management.",
+   "explanation": "Penetration works when many buyers are price-sensitive (elastic demand), economies of scale lower unit costs as volume grows, and the low price discourages competitors. Price-insensitive buyers plus entry barriers describe skimming; a status symbol calls for prestige pricing; perishable capacity suits yield management.",
    "source": "generated"
   },
   {
@@ -2522,10 +2522,10 @@
    "difficulty": 3,
    "stem": "For a prestige product, why can a price cut REDUCE the quantity demanded?",
    "options": [
-    "Because demand is perfectly inelastic",
-    "Because fixed costs rise when price falls",
-    "Because competitors immediately match the lower price",
-    "Because the demand curve bends backward: a lower price makes the product less attractive to status-conscious buyers"
+    "Because demand for prestige goods is perfectly inelastic at every price",
+    "Because fixed costs rise when price falls, so the firm must cut output",
+    "Because competitors immediately match the lower price and take the sales",
+    "Because the demand curve bends backward: a lower price signals less status"
    ],
    "answer": 3,
    "explanation": "Prestige goods have a demand curve that bends backward over part of its range: a lower price signals less status, so fewer people want the product. Inelastic demand would mean quantity barely changes - not that it falls when price falls.",
@@ -2704,8 +2704,8 @@
    "options": [
     "Buyers see the package as a better deal than buying items separately, and the chain sells more items per order",
     "It lets them charge different prices to different customers for the same item",
-    "It is required by the Competition Act",
-    "It allows them to recover R&D costs quickly"
+    "It is required by the Competition Act for restaurants that sell combo meals",
+    "It allows them to recover the R&D costs of new menu items quickly"
    ],
    "answer": 0,
    "explanation": "Bundle pricing gives buyers perceived savings on a package and lets the seller move more products per sale. Charging different buyers different prices for the same item is a flexible-price policy, not bundling.",
@@ -2831,9 +2831,9 @@
    "stem": "Why is yield management especially suited to airlines and hotels?",
    "options": [
     "Their capacity is fixed, and a seat or room left unsold on a given date can never be sold later",
-    "Their products are commodities sold in pure competition",
-    "Their costs are almost entirely variable",
-    "Customary prices in these industries cannot be changed"
+    "Their products are commodities sold in pure competition at a market price",
+    "Their costs are almost entirely variable and rise with each extra passenger or guest",
+    "Customary prices in these industries cannot be changed without losing customers"
    ],
    "answer": 0,
    "explanation": "Yield management maximizes revenue from a set amount of capacity at a given time; an empty seat after departure is revenue lost forever, so varying prices to fill capacity pays off. These are differentiated services, not commodities, and their costs are largely fixed.",
@@ -2944,7 +2944,7 @@
     "25.0%"
    ],
    "answer": 2,
-   "explanation": "Assume cost = $100. A 50% markup on cost adds $50, so price = $150. Markup on price = $50 / $150 = 33.3% (formula: 0.50 / (1 + 0.50)). 66.7% converts the other way - it is the markup on cost that matches a 40% markup on price.",
+   "explanation": "Assume cost = $100. A 50% markup on cost adds $50, so price = $150. Markup on price = $50 / $150 = 33.3% (formula: 0.50 / (1 + 0.50)). 66.7% is cost as a share of price ($100 / $150), not the markup, and 50.0% simply keeps cost as the base instead of switching to price.",
    "source": "generated"
   },
   {
@@ -3088,7 +3088,7 @@
     "$48.09"
    ],
    "answer": 2,
-   "explanation": "Target profit pricing: Profit = (P x Q) - [FC + (UVC x Q)]. $42,000 = (P x 21,000) - [$410,000 + ($40 x 21,000)], so 21,000P = $42,000 + $410,000 + $840,000 = $1,292,000 and P = $61.52. $40 is only the variable cost, which would cover neither fixed costs nor profit.",
+   "explanation": "Target profit pricing: Profit = (P x Q) - [FC + (UVC x Q)]. $42,000 = (P x 21,000) - [$410,000 + ($40 x 21,000)], so 21,000P = $42,000 + $410,000 + $840,000 = $1,292,000 and P = $1,292,000 / 21,000 = $61.52 (rounded to the cent). $40 is only the variable cost, which would cover neither fixed costs nor profit.",
    "source": "official"
   },
   {
@@ -3198,7 +3198,7 @@
     "$70.00"
    ],
    "answer": 2,
-   "explanation": "Profit = 20% of TR, so (P x 2,000) - ($40,000 + $30 x 2,000) = 0.20 x P x 2,000. Then 2,000P - 400P = $100,000, so P = $100,000 / 1,600 = $62.50. Check: TR $125,000 - TC $100,000 = $25,000 = 20% of sales. $60.00 adds 20% to COST, which is only 16.7% of sales.",
+   "explanation": "Profit = 20% of TR, so (P x 2,000) - ($40,000 + $30 x 2,000) = 0.20 x P x 2,000. Then 2,000P - 400P = $100,000, so P = $100,000 / 1,600 = $62.50. Check: TR $125,000 - TC $100,000 = $25,000 = 20% of sales. $60.00 adds 20% to the $50 average unit COST ($100,000 / 2,000), which earns only $20,000 profit - 16.7% of sales.",
    "source": "generated"
   },
   {
@@ -3229,9 +3229,9 @@
    "stem": "What is the key difference between target return-on-sales pricing and target return-on-investment pricing?",
    "options": [
     "Return on sales sets profit as a percentage of sales revenue; ROI sets profit as a percentage of the money invested",
-    "Return on sales is demand-oriented; ROI is cost-oriented",
-    "Return on sales names a specific dollar profit; ROI uses a percentage",
-    "Return on sales is used only by manufacturers; ROI only by retailers"
+    "Return on sales is demand-oriented, while ROI is a cost-oriented approach to pricing",
+    "Return on sales names a specific dollar profit, while ROI uses a percentage of investment",
+    "Return on sales is used only by manufacturers, while ROI is used only by retailers"
    ],
    "answer": 0,
    "explanation": "Both are profit-oriented. Target return on sales expresses the profit goal as a percentage of sales volume (revenue); target ROI expresses it as a percentage of investment. A specific dollar profit is target profit pricing.",
@@ -3503,9 +3503,9 @@
    "stem": "Which statement correctly contrasts cost-based and value-based pricing?",
    "options": [
     "Cost-based starts with the product and ends with customers; value-based starts with customers and ends with the product",
-    "Cost-based starts with customers; value-based starts with the product",
-    "Both sequences start with cost but end differently",
-    "Value-based pricing ignores costs entirely"
+    "Cost-based starts with customers and ends with the product; value-based starts with the product",
+    "Both sequences start with cost and set price second, but they end at different points",
+    "Value-based pricing ignores costs entirely and sets price from customer value alone"
    ],
    "answer": 0,
    "explanation": "The two sequences are mirror images: cost-based = Product, Cost, Price, Value, Customers; value-based = Customers, Value, Price, Cost, Product. Value-based pricing does not ignore costs - cost comes after price, as the amount the firm can spend to deliver that value.",
@@ -3520,10 +3520,10 @@
    "difficulty": 3,
    "stem": "Why does value-based pricing begin with customers rather than with the product?",
    "options": [
-    "So the firm can guarantee a fixed margin over its unit cost",
-    "Because customers determine the firm's fixed costs",
+    "So the firm can guarantee a fixed margin over its total unit cost on every sale",
+    "Because customers determine the firm's fixed costs and therefore its price floor",
     "So the price reflects the value customers perceive, with costs and the product then designed to fit that price",
-    "So the firm never needs to consider competitors"
+    "So the firm never needs to consider competitors' prices when it sets a price"
    ],
    "answer": 2,
    "explanation": "Pricing is the attempt to capture the value the marketing mix creates. Starting with customers and value means the price reflects what buyers perceive, and costs and the product are then held to what that price allows. Guaranteeing a margin over unit cost is the cost-based logic.",
@@ -3955,7 +3955,7 @@
    "stem": "BlendPro, a kitchen-appliance maker, tells retailers they must sell its blenders for no less than $199 and stops shipping to a Winnipeg store that advertised them at $159. This is an example of:",
    "options": [
     "horizontal price fixing",
-    "vertical price fixing (resale price maintenance)",
+    "vertical price fixing",
     "predatory pricing",
     "bait and switch"
    ],
@@ -4008,13 +4008,13 @@
    "difficulty": 3,
    "stem": "Which situation is price discrimination rather than price fixing?",
    "options": [
-    "Two competing cement makers agree to charge contractors the same high price",
-    "Rival airlines agree to add identical fuel surcharges",
-    "A manufacturer charges a large chain a lower price than competing small retailers for the same quantity, lessening competition",
-    "Three gas stations in a town agree not to undercut one another"
+    "Two competing cement makers secretly agree to charge all contractors the same high price",
+    "Rival airlines agree with one another to add identical fuel surcharges to every fare",
+    "A manufacturer charges a big chain less than competing small retailers for the same quantity, hurting competition",
+    "Three gas stations in a small town agree with each other not to undercut one another's prices"
    ],
    "answer": 2,
-   "explanation": "Price discrimination is one seller charging COMPETING buyers different prices for like quantities in a way that lessens competition. Price fixing is competitors colluding to set prices, as in the other three options.",
+   "explanation": "Price discrimination is one seller charging COMPETING buyers different prices for like quantities in a way that lessens competition. Price fixing is competitors colluding to set prices - the cement makers, the airlines and the gas stations each reach an agreement with rivals rather than treating buyers unequally.",
    "source": "generated"
   },
   {

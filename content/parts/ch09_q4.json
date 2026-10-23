@@ -68,7 +68,7 @@
    "25.0%"
   ],
   "answer": 2,
-  "explanation": "Assume cost = $100. A 50% markup on cost adds $50, so price = $150. Markup on price = $50 / $150 = 33.3% (formula: 0.50 / (1 + 0.50)). 66.7% converts the other way - it is the markup on cost that matches a 40% markup on price.",
+  "explanation": "Assume cost = $100. A 50% markup on cost adds $50, so price = $150. Markup on price = $50 / $150 = 33.3% (formula: 0.50 / (1 + 0.50)). 66.7% is cost as a share of price ($100 / $150), not the markup, and 50.0% simply keeps cost as the base instead of switching to price.",
   "source": "generated"
  },
  {
@@ -212,7 +212,7 @@
    "$48.09"
   ],
   "answer": 2,
-  "explanation": "Target profit pricing: Profit = (P x Q) - [FC + (UVC x Q)]. $42,000 = (P x 21,000) - [$410,000 + ($40 x 21,000)], so 21,000P = $42,000 + $410,000 + $840,000 = $1,292,000 and P = $61.52. $40 is only the variable cost, which would cover neither fixed costs nor profit.",
+  "explanation": "Target profit pricing: Profit = (P x Q) - [FC + (UVC x Q)]. $42,000 = (P x 21,000) - [$410,000 + ($40 x 21,000)], so 21,000P = $42,000 + $410,000 + $840,000 = $1,292,000 and P = $1,292,000 / 21,000 = $61.52 (rounded to the cent). $40 is only the variable cost, which would cover neither fixed costs nor profit.",
   "source": "official"
  },
  {
@@ -322,7 +322,7 @@
    "$70.00"
   ],
   "answer": 2,
-  "explanation": "Profit = 20% of TR, so (P x 2,000) - ($40,000 + $30 x 2,000) = 0.20 x P x 2,000. Then 2,000P - 400P = $100,000, so P = $100,000 / 1,600 = $62.50. Check: TR $125,000 - TC $100,000 = $25,000 = 20% of sales. $60.00 adds 20% to COST, which is only 16.7% of sales.",
+  "explanation": "Profit = 20% of TR, so (P x 2,000) - ($40,000 + $30 x 2,000) = 0.20 x P x 2,000. Then 2,000P - 400P = $100,000, so P = $100,000 / 1,600 = $62.50. Check: TR $125,000 - TC $100,000 = $25,000 = 20% of sales. $60.00 adds 20% to the $50 average unit COST ($100,000 / 2,000), which earns only $20,000 profit - 16.7% of sales.",
   "source": "generated"
  },
  {
@@ -353,9 +353,9 @@
   "stem": "What is the key difference between target return-on-sales pricing and target return-on-investment pricing?",
   "options": [
    "Return on sales sets profit as a percentage of sales revenue; ROI sets profit as a percentage of the money invested",
-   "Return on sales is demand-oriented; ROI is cost-oriented",
-   "Return on sales names a specific dollar profit; ROI uses a percentage",
-   "Return on sales is used only by manufacturers; ROI only by retailers"
+   "Return on sales is demand-oriented, while ROI is a cost-oriented approach to pricing",
+   "Return on sales names a specific dollar profit, while ROI uses a percentage of investment",
+   "Return on sales is used only by manufacturers, while ROI is used only by retailers"
   ],
   "answer": 0,
   "explanation": "Both are profit-oriented. Target return on sales expresses the profit goal as a percentage of sales volume (revenue); target ROI expresses it as a percentage of investment. A specific dollar profit is target profit pricing.",

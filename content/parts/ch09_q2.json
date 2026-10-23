@@ -152,9 +152,9 @@
   "difficulty": 2,
   "stem": "According to the chapter, why does creating the correct price begin the forecasting process?",
   "options": [
-   "With a price known, the firm can estimate demand - given its own and competitors' marketing efforts - and translate it into revenue",
-   "Once a price is set, demand no longer needs to be estimated",
-   "Forecasting is only needed to calculate fixed costs",
+   "With a price known, the firm can estimate demand and translate it into estimated revenue",
+   "Once a price is set, demand no longer needs to be estimated or revised",
+   "Forecasting is only needed to calculate the firm's fixed costs for the year",
    "Price determines the break-even point, which replaces the need for a forecast"
   ],
   "answer": 0,

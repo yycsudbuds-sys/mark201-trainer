@@ -47,7 +47,7 @@
    "Jen orders a birthday gift at midnight because the website never closes",
    "Tasha shops online from her cottage, hours from the nearest mall",
    "Ben buys a desk lamp on his phone while riding the bus",
-   "Omar researches laptop specs on several sites over two weeks and decides on his own terms, without a salesperson"
+   "Omar compares laptops across sites for two weeks and decides on his own terms"
   ],
   "answer": 3,
   "explanation": "Control = empowered consumers who search, evaluate and decide at their own pace and on their own terms. The other three are about WHEN and WHERE someone can shop, which is convenience.",
@@ -65,7 +65,7 @@
    "A shopper browses 3,000 sneaker styles from 50 brands",
    "A shopper filters a huge catalogue by size to find in-stock styles",
    "A shopper uses an online fit assistant to pick from hundreds of models",
-   "A shopper designs her own sneakers by picking the colours and materials and adding her initials"
+   "A shopper designs her own sneakers, choosing colours, materials and initials"
   ],
   "answer": 3,
   "explanation": "Customization tailors the product itself to the individual (like Dell letting buyers choose components). Browsing or filtering a large existing selection, even with help, is the choice benefit.",
@@ -135,7 +135,7 @@
   "stem": "FitWear, an online activewear retailer, finds that visitors leave because they are unsure whether products will suit them and have no one to ask. Which change MOST directly strengthens the COMMUNICATION benefit of shopping online?",
   "options": [
    "Cutting prices 15% below competitors",
-   "Adding live chat with fit specialists and showing customer reviews on every product page",
+   "Adding live chat with fit specialists and customer reviews",
    "Letting shoppers design their own custom leggings",
    "Adding hundreds of new styles from other brands"
   ],
@@ -242,13 +242,13 @@
   "difficulty": 2,
   "stem": "Why do many retailers adopt a multichannel strategy?",
   "options": [
-   "Multiple channels allow them to reduce the size of their target markets",
-   "Integrating channels lets them offer a broader spectrum of benefits and experiences and share information across channel operations",
-   "Multiple channels eliminate the need for any physical stores",
-   "Multiple channels stop consumers from shopping across channels"
+   "Multiple channels allow them to shrink the size of their target markets",
+   "Integrated channels offer broader benefits and synergy from shared information",
+   "Multiple channels eliminate the need to operate any physical stores",
+   "Multiple channels prevent consumers from shopping across channels"
   ],
   "answer": 1,
-  "explanation": "Using several integrated channels lets retailers reach shoppers in more ways and gain synergy from shared information (as in the Jimmy's example). Shrinking the target market is the distractor from the official question; multichannel retailing typically widens reach.",
+  "explanation": "Using several integrated channels lets retailers offer a broader spectrum of benefits and experiences and gain synergy from sharing information among channel operations (as in the Jimmy's example). Shrinking the target market is the distractor from the official question; multichannel retailing typically widens reach.",
   "source": "generated"
  },
  {
@@ -316,7 +316,7 @@
   "options": [
    "Showrooming; open more physical stores in power centres",
    "Shrinkage; add security tags to inventory",
-   "Cart abandonment as shoppers leave to compare shipping and prices elsewhere; show competitive, transparent shipping costs early",
+   "Cart abandonment; show competitive, transparent shipping costs early",
    "Intertype competition; add unrelated product lines"
   ],
   "answer": 2,
@@ -332,7 +332,7 @@
   "difficulty": 1,
   "stem": "Marco leaves a store without buying because the checkout line was 20 minutes long and the jacket he wanted was out of stock. Which point about the modern retail environment does this illustrate?",
   "options": [
-   "Consumers dislike long lines, poor customer service and stock-outs",
+   "Consumers dislike long lines and stock-outs",
    "The decline of middle-market retailers",
    "The growth of social media purchasing",
    "Retail optimization through technology"
@@ -390,7 +390,7 @@
   "options": [
    "Off-price retailing",
    "The wheel of retailing",
-   "Technology-driven retail optimization supporting omnichannel and social media purchasing",
+   "Retail optimization through technology",
    "Scrambled merchandising"
   ],
   "answer": 2,
@@ -408,11 +408,11 @@
   "options": [
    "retail outlets pass through early growth, accelerated development, maturity and decline",
    "very dissimilar types of retail outlets compete for the same customers",
-   "new retail forms enter as low-status, low-margin, low-price outlets, gradually add services and raise prices, and leave room for new low-price entrants",
-   "retailers move from narrow product lines to broad ones"
+   "new retail forms enter at low prices, trade up over time and leave room for new low-price entrants",
+   "retailers gradually move from narrow product lines to broad, general merchandise lines"
   ],
   "answer": 2,
-  "explanation": "That is the wheel of retailing. The first distractor describes the retail life cycle, the most commonly confused concept, and the second describes intertype competition.",
+  "explanation": "The wheel of retailing describes new forms entering as low-status, low-margin, low-price outlets, then adding services and raising prices until new discounters fill the gap below them. Moving through early growth, accelerated development, maturity and decline is the retail life cycle (the most commonly confused concept), and dissimilar outlets competing for the same customers is intertype competition.",
   "source": "generated"
  },
  {
@@ -447,7 +447,7 @@
    "A retail format's market share rises quickly, levels off and then falls",
    "A format moves from early growth into accelerated development",
    "Video-rental stores grow, mature and eventually close as streaming arrives",
-   "A discount chain upgrades its stores and services and raises prices, opening a gap for new low-price competitors"
+   "A discount chain adds services and raises prices, opening a gap for new discounters"
   ],
   "answer": 3,
   "explanation": "The wheel is about trading UP in price, status and service, which creates room for new low-price entrants. Growth, levelling off and decline over time are stages of the retail life cycle.",
@@ -462,7 +462,7 @@
   "difficulty": 2,
   "stem": "In the wheel of retailing, what happens immediately after a new retailer enters the market as a low-status, low-margin, low-price outlet?",
   "options": [
-   "It gradually adds services and upgrades its facilities, raising prices and status",
+   "It gradually adds services, raising its prices and status",
    "New low-price retailers enter beneath it",
    "It cuts services further to become a hard discounter",
    "It enters the decline stage"
@@ -480,7 +480,7 @@
   "difficulty": 2,
   "stem": "According to the wheel of retailing, why do opportunities keep opening up for new discount retailers?",
   "options": [
-   "Established retailers trade up by adding services and raising prices, leaving a low-price gap",
+   "Established retailers trade up, leaving a low-price gap",
    "Consumers eventually refuse to shop at full-service stores",
    "Category killers are forced out by regulation",
    "Markups shrink to zero as retailers mature"
@@ -664,8 +664,8 @@
   "difficulty": 2,
   "stem": "What ultimately determines whether a sale is classified as wholesaling or retailing?",
   "options": [
-   "The size of the order",
-   "The buyer's purpose: resale or business use versus personal, family or household use",
+   "The size of the order being placed",
+   "The buyer's purpose for making the purchase",
    "Whether the seller operates a physical store",
    "Whether the price is above or below the regular price"
   ],
