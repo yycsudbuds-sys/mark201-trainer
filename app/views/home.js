@@ -9,24 +9,24 @@ import { legionaryAvatar, legionGround, rankLadder, dailyOrders, brazier, clepsy
 
 const PLAN = [
   { day: 'Today', items: [
-    ['Campaign: Ch 1 and Ch 6 provinces', 'Each battle: the scrolls (5 min), then win the battle.'],
-    ['Campaign: Ch 7 and Ch 8 provinces', 'Ch 8 is table-heavy (PLC, Ansoff, adoption curve). Use Siege Works after the battle.'],
-    ['Break 45+ min, then Field Drill (30 Q)', 'A gap starts a new session. Mastered requires a correct answer in a later session.'],
-    ['Campaign: Ch 9 and Ch 10 provinces', 'Pricing has calculations: do every calc question until BEP and markup are automatic.'],
-    ['Campaign: Ch 11 and Ch 12 provinces', 'Wholesaler types and the advocacy funnel are pure memorization: use Siege Works.'],
-    ['Skirmish × 3 before bed', 'Fast retrieval of definitions. Then sleep: memory consolidates overnight.'],
+    ['Campaign: Chapters 1 and 6', 'Each topic: the lesson (5 min), then pass the checkpoint quiz.'],
+    ['Campaign: Chapters 7 and 8', 'Ch 8 is table-heavy (PLC, Ansoff, adoption curve). Use Build & Sort after the quiz.'],
+    ['Break 45+ min, then Smart Drill (30 Q)', 'A gap starts a new session. Mastered requires a correct answer in a later session.'],
+    ['Campaign: Chapters 9 and 10', 'Pricing has calculations: do every calc question until BEP and markup are automatic.'],
+    ['Campaign: Chapters 11 and 12', 'Wholesaler types and the advocacy funnel are pure memorization: use Build & Sort.'],
+    ['Blitz × 3 before bed', 'Fast retrieval of definitions. Then sleep: memory consolidates overnight.'],
   ] },
   { day: 'Tomorrow', items: [
-    ['Morning: Field Drill until no pursuits remain', 'Interleaved across all provinces. Aim for 60+ questions.'],
-    ['Great Battle #1 (60 Q, timed)', 'Review every miss. Then retake the lost ground.'],
-    ['Take every capital', '90% or better on each siege. Sieges still open are your weakest chapters.'],
-    ['Afternoon: Scrolls sweep of every concept', 'Grade honestly: Again on anything you hesitated on.'],
-    ['Great Battle #2 (80 Q)', 'Target 95%+. Anything missed twice gets a scroll re-read.'],
-    ['Evening: Weak Flank, then stop', 'Light review only. No all-nighter: sleep beats cramming.'],
+    ['Morning: Smart Drill until no pursuits remain', 'Interleaved across all chapters. Aim for 60+ questions.'],
+    ['Midterm Simulation #1 (60 Q, timed)', 'Review every miss. Then retake the lost ground.'],
+    ['Clear every chapter boss', '90% or better on each. Bosses still standing are your weakest chapters.'],
+    ['Afternoon: Flashcard sweep of every concept', 'Grade honestly: Again on anything you hesitated on.'],
+    ['Midterm Simulation #2 (80 Q)', 'Target 95%+. Anything missed twice gets its lesson re-read.'],
+    ['Evening: Weak Spot Hunter, then stop', 'Light review only. No all-nighter: sleep beats cramming.'],
   ] },
-  { day: 'Battle day', items: [
-    ['20-minute Skirmish warm-up', 'Wake up retrieval, do not learn new material.'],
-    ['Skim the tablets for Ch 8 and Ch 9', 'PLC table, adoption percentages, pricing buckets, BEP formula.'],
+  { day: 'Exam day', items: [
+    ['20-minute Blitz warm-up', 'Wake up retrieval, do not learn new material.'],
+    ['Skim the cheat sheets for Ch 8 and Ch 9', 'PLC table, adoption percentages, pricing buckets, BEP formula.'],
   ] },
 ];
 
@@ -50,39 +50,39 @@ export function render(app) {
       h('div', { class: 'you-rank' }, h('div', { class: 'eyebrow' }, `Lv ${lv.number} · ${lv.title}`), h('div', { class: 'you-name' }, st.name), eq.name ? h('div', { class: 'small muted' }, eq.name) : null,
         h('div', { class: 'row wrap mt-sm' }, brazier(app), clock, h('a', { class: 'chip', href: '#/settings' }, icon('galea', { size: 14, tone: 'gold' }), 'Outfit')))),
     h('div', { class: 'castra-main' },
-      h('div', { class: 'eyebrow' }, 'Castra · the camp'),
+      h('div', { class: 'eyebrow' }, 'Home · the camp (Castra)'),
       h('h1', null, `Ave, ${st.name}.`),
       h('p', { class: 'muted' }, headline(r, counts)),
       h('div', { class: 'row wrap castra-stats' },
         h('div', { class: 'hq-ring' }, ring(r.score, { size: 112, stroke: 10, color: r.score >= 0.85 ? 'var(--good)' : 'var(--gold-leaf)', label: h('div', { class: 'center' }, h('div', { class: 'big', style: { fontSize: '1.6rem', fontFamily: 'var(--font-display)', fontWeight: 800 } }, fmtPct(r.score)), h('div', { class: 'tiny muted' }, 'readiness')) })),
         h('div', { class: 'hq-stats' },
-          stat(counts[4], 'mastered', 'var(--good)'), stat(counts[3], 'solid'), stat(islands, 'provinces'),
+          stat(counts[4], 'mastered', 'var(--good)'), stat(counts[3], 'solid'), stat(islands, 'chapters cleared'),
           stat(pursuits, 'pursuits open', pursuits ? 'var(--bad)' : undefined), stat(due, 'due now', due ? 'var(--gold-leaf-light)' : undefined), stat(today.answered, 'answered today'))),
       h('a', { class: 'btn primary big castra-cta', href: na.href }, na.cta),
       h('p', { class: 'small muted' }, h('b', null, na.title), ' · ', na.desc),
       rankLadder(app, { compact: true })),
     h('div', { class: 'castra-side' },
-      h('a', { class: 'peek', href: '#/campaign', 'aria-label': 'Open the war table' }, h('div', { class: 'peek-tilt' }, worldMap(app, { compact: true })), h('span', { class: 'peek-label' }, icon('map', { size: 14, tone: 'gold' }), 'The war table')),
+      h('a', { class: 'peek', href: '#/campaign', 'aria-label': 'Open the war table' }, h('div', { class: 'peek-tilt' }, worldMap(app, { compact: true })), h('span', { class: 'peek-label' }, icon('map', { size: 14, tone: 'gold' }), 'Campaign map')),
       dailyOrders(app)));
 
   const modes = h('section', { class: 'palisade-wrap' },
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Orders of the day'), h('p', null, 'Shields on the palisade. Different engagements, one engine: every answer feeds the same mastery model and review schedule.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Study modes'), h('p', null, 'Shields on the palisade. Different ways to practise, one engine: every answer feeds the same mastery model and review schedule.'))),
     h('div', { class: 'palisade' }),
     h('div', { class: 'cartridges' },
-      cart('#/campaign', icon('map', { size: 28, tone: 'gold' }), 'Conquest', 'Provinces, roads, standards, sieges.', '#C9A227', `${islands}/8 conquered`),
-      cart('#/drill', icon('swords', { size: 28, tone: 'gold' }), 'Field Drill', 'Adaptive mix. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
-      cart('#/exam', icon('scutum', { size: 28, tone: 'gold' }), 'Great Battle', 'Timed, mixed, debriefed.', '#6FA0B8', '20–80 Q'),
-      cart('#/arcade/blitz', icon('gladius', { size: 28, tone: 'gold' }), 'Skirmish', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
-      cart('#/drill/weak', icon('scutum', { size: 28, tone: 'gold' }), 'Weak Flank', 'Only what is below Solid.', '#C8683A', 'reinforce'),
-      cart('#/arcade/duel', icon('gladius', { size: 28, tone: 'gold' }), 'Gladiator Duel', 'Tell-apart and NOT questions.', '#A98BC9', `best ${st.stats.duelBest || 0}/15`),
-      cart('#/arcade/build', icon('siegetower', { size: 28, tone: 'gold' }), 'Siege Works', 'Order, sort, match the tables.', '#8FAA5A', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
-      cart('#/arcade/flash', icon('scroll', { size: 28, tone: 'gold' }), 'Scrolls', 'Recall with honest grading.', '#B08968', 'recall'),
-      cart('#/learn', icon('temple', { size: 28, tone: 'gold' }), 'Archives', 'Slides and diagrams, one idea at a time.', '#B4A58A', 'study'),
+      cart('#/campaign', icon('map', { size: 28, tone: 'gold' }), 'Campaign', 'Chapter by chapter: lesson, checkpoint quiz, chapter boss.', '#C9A227', `${islands}/8 chapters`),
+      cart('#/drill', icon('swords', { size: 28, tone: 'gold' }), 'Smart Drill', 'Adaptive mix of every chapter. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
+      cart('#/exam', icon('scutum', { size: 28, tone: 'gold' }), 'Midterm Simulation', 'Timed, mixed, no feedback until the debrief.', '#6FA0B8', '20–80 Q'),
+      cart('#/arcade/blitz', icon('gladius', { size: 28, tone: 'gold' }), 'Blitz', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
+      cart('#/drill/weak', icon('scutum', { size: 28, tone: 'gold' }), 'Weak Spot Hunter', 'Only concepts below Solid.', '#C8683A', 'reinforce'),
+      cart('#/arcade/duel', icon('gladius', { size: 28, tone: 'gold' }), 'Confusables Duel', 'Tell-apart and NOT questions.', '#A98BC9', `best ${st.stats.duelBest || 0}/15`),
+      cart('#/arcade/build', icon('siegetower', { size: 28, tone: 'gold' }), 'Build & Sort', 'Order, sort and match the tables.', '#8FAA5A', `${Object.values(st.activities).filter(a => a.done).length}/${app.content.stats.activities}`),
+      cart('#/arcade/flash', icon('scroll', { size: 28, tone: 'gold' }), 'Flashcards', 'Recall with honest grading.', '#B08968', 'recall'),
+      cart('#/learn', icon('temple', { size: 28, tone: 'gold' }), 'Learn', 'Lessons, diagrams and cheat sheets.', '#B4A58A', 'study'),
     ));
 
   const ground = legionGround(app);
   const legion = h('section', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, eq.name ? `Your legion · ${eq.name}` : 'Your legion'), h('p', null, `${app.content.stats.concepts} soldiers, one per stronghold, in eight cohorts. Recruits are ghosts, the learning wear tunics, the solid wear armour, the mastered carry gold standards. Wounded soldiers have a pursuit open; a raised hand is due for review. Click a soldier to open its scroll.`)), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Senate report ', icon('arrow', { size: 14, tone: 'mono' }))),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, eq.name ? `Your legion · ${eq.name}` : 'Your legion'), h('p', null, `${app.content.stats.concepts} soldiers, one per stronghold, in eight cohorts. Recruits are ghosts, the learning wear tunics, the solid wear armour, the mastered carry gold standards. Wounded soldiers have a pursuit open; a raised hand is due for review. Click a soldier to open its scroll.`)), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Progress report ', icon('arrow', { size: 14, tone: 'mono' }))),
     ground);
 
   const plan = planSection(app);
@@ -90,7 +90,7 @@ export function render(app) {
 }
 
 function headline(r, counts) {
-  if (counts[4] + counts[3] + counts[2] === 0) return 'The provinces are unconquered and the legion is raw recruits. March on Italia.';
+  if (counts[4] + counts[3] + counts[2] === 0) return 'No chapter is cleared yet and the legion is raw recruits. Start with Chapter 1.';
   if (r.score < 0.4) return 'A good start. Keep planting standards.';
   if (r.score < 0.7) return 'Momentum. The weak flanks are showing themselves.';
   if (r.score < 0.9) return 'Strong. Hunt the stragglers and give battle.';
@@ -116,6 +116,6 @@ function planSection(app) {
     });
   });
   return h('details', { class: 'plan', open: done < total && done > 0 ? true : null },
-    h('summary', null, h('h2', null, 'Marching route'), h('span', { class: 'chip' }, `${done}/${total} waypoints`), h('span', { class: 'small muted' }, 'Retrieval over rereading, spacing across sessions, interleaving once the basics are in, and sleep.')),
+    h('summary', null, h('h2', null, 'Study plan · marching route'), h('span', { class: 'chip' }, `${done}/${total} waypoints`), h('span', { class: 'small muted' }, 'Retrieval over rereading, spacing across sessions, interleaving once the basics are in, and sleep.')),
     route);
 }

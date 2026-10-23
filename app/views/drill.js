@@ -9,7 +9,7 @@ import { warBriefing } from '../cutscene.js';
 export function render(app, params) {
   const [sub, arg] = params;
   if (sub === 'weak') return config(app, { weak: true });
-  if (sub === 'chapter') return start(app, { chapters: new Set([parseInt(arg, 10)]), limit: 30, title: `Province drill · Chapter ${arg}` });
+  if (sub === 'chapter') return start(app, { chapters: new Set([parseInt(arg, 10)]), limit: 30, title: `Chapter ${arg} drill` });
   if (sub === 'concepts') {
     const ids = (arg || '').split(',').filter(Boolean);
     return start(app, { concepts: new Set(ids), limit: Math.max(12, ids.length * 4), title: 'Retake the lost ground', weak: false, pursuitFirst: true });
@@ -31,13 +31,13 @@ function config(app, { weak }) {
     h('button', { class: mode === 'drill' ? 'on' : '', onClick: e => { mode = 'drill'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, icon('swords', { size: 16, tone: 'mono' }), ' Full field'),
     h('button', { class: mode === 'weak' ? 'on' : '', onClick: e => { mode = 'weak'; modeSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, icon('scutum', { size: 16, tone: 'mono' }), ' Weak flank only'));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, weak ? 'Reinforce the Weak Flank' : 'Field Drill'), h('p', null, 'The engine picks the ground: open pursuits first, then strongholds due for review, then weak and fresh ones, interleaved across the provinces. Lose one and it is contested three more times from different angles.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, weak ? 'Weak Spot Hunter' : 'Smart Drill'), h('p', null, 'The engine picks the ground: open pursuits first, then concepts due for review, then weak and fresh ones, interleaved across the chapters. Lose one and it is contested three more times from different angles.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'row wrap' }, h('span', { class: 'chip bad' }, `${pursuits} pursuits open`), h('span', { class: 'chip warn' }, `${due} due for review`), h('span', { class: 'chip' }, `${weakCount} weak`)),
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('div', { class: 'field' }, h('label', null, 'Session goal'), goalSeg), h('div', { class: 'field' }, h('label', null, 'Mode'), modeSeg)),
       h('button', { class: 'btn primary big', onClick: () => {
-        if (!selected.size) { app.toast('Pick at least one province', 'bad'); return; }
+        if (!selected.size) { app.toast('Pick at least one chapter', 'bad'); return; }
         sessionStorage.setItem('drillcfg', JSON.stringify({ chapterList: [...selected], limit: goal || null, mode }));
         app.navigate('#/drill/go');
       } }, 'March out'),
@@ -54,7 +54,7 @@ function start(app, cfg, fromSession) {
   host.cleanup = () => { host.dead = true; runner && runner.cleanup && runner.cleanup(); };
   return host;
   function build() { return createRunner(app, {
-    title: cfg.title || (mode === 'weak' ? 'Reinforce the Weak Flank' : 'Field Drill'), subtitle: chapters && chapters.size < app.content.chapters.length ? `Provinces ${[...chapters].sort((a, b) => a - b).join(', ')}` : 'All provinces, interleaved',
+    title: cfg.title || (mode === 'weak' ? 'Weak Spot Hunter' : 'Smart Drill'), subtitle: chapters && chapters.size < app.content.chapters.length ? `Chapters ${[...chapters].sort((a, b) => a - b).join(', ')}` : 'All chapters, interleaved',
     mode, chapters, concepts: cfg.concepts || null, limit: cfg.limit || null, feedback: 'immediate',
     pickOpts: { excludeMastered: mode !== 'weak' && !cfg.concepts },
     introCard: (mode === 'weak' || cfg.pursuitFirst) ? cid => { if (introduced.has(cid)) return false; introduced.add(cid); return true; } : null,
@@ -62,11 +62,11 @@ function start(app, cfg, fromSession) {
       host.innerHTML = '';
       host.append(resultCard(app, reason === 'exhausted' ? 'No ground left to contest right now' : 'Drill complete', sum,
         h('div', { class: 'stack mt' },
-          reason === 'exhausted' ? h('p', { class: 'muted' }, 'Everything in this selection is mastered or resting until its next review. Return after a break, or widen the provinces.') : null,
+          reason === 'exhausted' ? h('p', { class: 'muted' }, 'Everything in this selection is mastered or resting until its next review. Return after a break, or widen the chapter selection.') : null,
           h('div', { class: 'row wrap', style: { justifyContent: 'center' } },
             h('a', { class: 'btn primary', href: fromSession ? '#/drill/go' : location.hash }, 'March again'),
             h('a', { class: 'btn ghost', href: '#/drill' }, 'Change orders'),
-            h('a', { class: 'btn ghost', href: '#/home' }, 'Castra')))),
+            h('a', { class: 'btn ghost', href: '#/home' }, 'Home')))),
       sum.log.some(l => !l.correct) ? h('div', { class: 'mt' }, h('h3', { class: 'mb' }, `Ground lost (${sum.log.filter(l => !l.correct).length})`), missesList(app, sum.log)) : null);
     },
   }); }

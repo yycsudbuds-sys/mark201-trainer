@@ -23,7 +23,7 @@ export function render(app) {
     try { app.store.importJSON(await f.text()); toast('Progress imported into a new profile', 'good'); } catch (err) { toast(err.message, 'bad'); }
   } });
   return h('div', { class: 'runner stack', style: { gap: '1.2rem' } },
-    h('div', { class: 'page-head' }, h('h1', null, 'Quartermaster')),
+    h('div', { class: 'page-head' }, h('h1', null, 'Settings')),
     h('div', { class: 'card stack' }, h('h3', null, 'Legionary'),
       h('div', { class: 'row wrap' }, h('div', { class: 'field grow' }, h('label', null, 'Name'), nameInput), h('button', { class: 'btn', style: { alignSelf: 'end' }, onClick: () => { const v = nameInput.value.trim(); if (v) { app.store.renameProfile(app.store.activeId, v); toast('Renamed', 'good'); } } }, 'Save')),
       h('div', { class: 'field' }, h('label', null, 'Profiles on this device'),
@@ -42,11 +42,11 @@ export function render(app) {
     h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Experience'),
       h('div', { class: 'toggle' }, h('div', null, h('div', { style: { fontWeight: 700 } }, 'Watch'), h('div', { class: 'small muted' }, 'Night camp is easier on the eyes after dark; day march for daylight.')),
         h('div', { class: 'seg' }, h('button', { class: s.theme !== 'light' ? 'on' : '', onClick: e => { s.theme = 'dark'; app.store.save(); app.applySettings(); e.currentTarget.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, 'Night camp'), h('button', { class: s.theme === 'light' ? 'on' : '', onClick: e => { s.theme = 'light'; app.store.save(); app.applySettings(); e.currentTarget.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, 'Day march'))),
-      sw('briefings', 'War briefings', 'The Legatus briefs you in his tent before each lesson, battle, siege and drill. Skippable any time.'),
+      sw('briefings', 'War briefings', 'The Legatus briefs you in his tent before each lesson, checkpoint, boss and drill. Skippable any time.'),
       sw('sound', 'Sound effects', 'Short blips for right, wrong, promotions.'),
       sw('motion', 'Motion and confetti', 'Turn off for a calmer, faster feel.', () => app.applySettings()),
-      cosSwitch('wagers', 'Confidence wagers', 'Bet 1, 2 or 3 denarii before answering with Q, W, E. Cosmetic coin only: never touches XP or mastery, and never offered in the Great Battle.', true),
-      cosSwitch('warTable3d', 'Conquest in 3D', 'The war table in three dimensions. Off, or when motion is off, Conquest uses the painted 2.5D map instead.', true)),
+      cosSwitch('wagers', 'Confidence wagers', 'Bet 1, 2 or 3 denarii before answering with Q, W, E. Cosmetic coin only: never touches XP or mastery, and never offered in the Midterm Simulation.', true),
+      cosSwitch('warTable3d', 'Campaign map in 3D', 'The war table in three dimensions. Off, or when motion is off, the Campaign uses the painted 2.5D map instead.', true)),
     h('div', { class: 'card stack' }, h('h3', null, 'Backup'),
       h('p', { class: 'small muted' }, 'Export your progress as a file to move it to another device or keep a backup.'),
       h('div', { class: 'row wrap' },

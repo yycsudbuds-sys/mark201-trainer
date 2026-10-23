@@ -23,14 +23,14 @@ const ROUTES = {
   home: Home, campaign: Campaign, drill: Drill, exam: Exam, arcade: Arcade, learn: Learn, progress: Progress, settings: Settings,
 };
 const NAV = [
-  ['home', 'brazier', 'Castra'],
-  ['campaign', 'map', 'Conquest'],
-  ['drill', 'gladius', 'Field Drill'],
-  ['exam', 'scutum', 'Great Battle'],
-  ['arcade', 'swords', 'Arena'],
-  ['learn', 'scroll', 'Archives'],
-  ['progress', 'aquila', 'Senate'],
-  ['settings', 'gear', 'Quartermaster'],
+  ['home', 'brazier', 'Home', 'Castra'],
+  ['campaign', 'map', 'Campaign', 'Conquest map'],
+  ['drill', 'gladius', 'Smart Drill', 'Field Drill'],
+  ['exam', 'scutum', 'Midterm Simulation', 'Great Battle'],
+  ['arcade', 'swords', 'Arcade', 'Arena'],
+  ['learn', 'scroll', 'Learn', 'Lessons & cheat sheets'],
+  ['progress', 'aquila', 'Progress', 'Senate report'],
+  ['settings', 'gear', 'Settings', 'Quartermaster'],
 ];
 
 function buildIndex(content) {
@@ -109,14 +109,14 @@ function buildShell() {
     h('a', { class: 'brand', href: '#/home' },
       h('div', { class: 'brand-mark', html: brandSvg() }),
       h('div', null, h('div', { class: 'brand-name' }, 'MARK 201'), h('div', { class: 'brand-sub' }, 'Imperium'))),
-    NAV.map(([key, ico, label]) => h('a', { class: 'nav-link', href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 20, tone: 'gold' })), label, key === 'drill' ? h('span', { class: 'badge quiet', dataset: { due: '1' } }, '') : null)),
+    NAV.map(([key, ico, label, roman]) => h('a', { class: 'nav-link', href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 20, tone: 'gold' })), h('span', { class: 'nav-text' }, h('span', { class: 'nav-main' }, label), h('span', { class: 'nav-sub' }, roman)), key === 'drill' ? h('span', { class: 'badge quiet', dataset: { due: '1' } }, '') : null)),
     h('div', { class: 'nav-foot small muted' }, h('div', { dataset: { profileName: '1' } }), h('div', { class: 'tiny faint' }, `${app.content.stats.questions} questions · ${app.content.stats.concepts} concepts`)),
   );
   headerEl = h('div', { class: 'topbar' });
   mainEl = h('main', { class: 'main', id: 'main' }, headerEl, h('div', { class: 'view' }));
   bottomEl = h('nav', { class: 'bottom-nav', 'aria-label': 'Main' },
     NAV.filter(([k]) => ['home', 'campaign', 'drill', 'exam', 'arcade', 'progress'].includes(k)).map(([key, ico, label]) =>
-      h('a', { href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 22, tone: 'gold' })), label)));
+      h('a', { href: '#/' + key, dataset: { route: key } }, h('span', { class: 'ico' }, icon(ico, { size: 22, tone: 'gold' })), label === 'Midterm Simulation' ? 'Midterm' : label === 'Smart Drill' ? 'Drill' : label)));
   shell = h('div', { class: 'shell' }, navEl, mainEl, bottomEl);
   root.appendChild(shell);
 }
@@ -194,6 +194,7 @@ function applySettings() {
   const s = app.state.settings;
   document.documentElement.dataset.theme = s.theme || 'dark';
   document.documentElement.dataset.motion = s.motion === false ? 'off' : 'on';
+  if (s.motion === false) document.querySelectorAll('canvas.confetti').forEach(c => c.remove()); // motion off also ends any confetti mid-flight
   document.querySelector('meta[name=theme-color]')?.setAttribute('content', s.theme === 'light' ? '#EEF1F7' : '#121726');
   if (app.director) { app.director.refreshTheme(); if (app.state?.settings?.sound === false) Audio.ambience(null); else { try { const { key, params } = parseHash(); const sc = sceneForRoute(ROUTES[key] ? key : 'home', params); Audio.ambience(sc.amb || null); } catch { /* cosmetic */ } } }
 }
@@ -212,7 +213,7 @@ function welcome() {
   root.appendChild(h('div', { class: 'boot' },
     h('div', { class: 'brand-mark', style: { width: '64px', height: '64px', margin: '0 auto' }, html: brandSvg() }),
     h('h1', null, 'MARK 201 · Imperium'),
-    h('p', { class: 'muted', style: { maxWidth: '44ch' } }, 'Eight provinces to conquer: chapters 1, 6, 7, 8, 9, 10, 11 and 12. Every concept, contested from every angle until it is yours.'),
+    h('p', { class: 'muted', style: { maxWidth: '44ch' } }, 'Eight chapters to conquer: 1, 6, 7, 8, 9, 10, 11 and 12. Every concept, contested from every angle until it is yours.'),
     h('div', { class: 'card', style: { width: 'min(380px, 92vw)', textAlign: 'left' } },
       h('div', { class: 'field' }, h('label', null, 'Enlist: your name, legionary'), input),
       h('button', { class: 'btn primary block mt', onClick: start }, 'Join the legion'),

@@ -286,6 +286,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
 
   // ---- simulation
   function step(dt) {
+    if (siege && !S.wall) layout(); // the first frame can land before the ResizeObserver has laid the siege out
     S.t += dt;
     S.legX += (S.legTarget - S.legX) * Math.min(1, dt * 4);
     S.enX += (S.enTarget - S.enX) * Math.min(1, dt * 4);
@@ -334,6 +335,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
 
   // ---- drawing
   function render() {
+    if (siege && !S.wall) layout();
     const LW = S.LW; ctx.setTransform(S.dpr * S.scale, 0, 0, S.dpr * S.scale, 0, 0);
     ctx.clearRect(0, 0, LW, H);
     let sx = 0, sy = 0; if (S.shake > 0) { sx = (R() - 0.5) * S.shake; sy = (R() - 0.5) * S.shake * 0.6; }

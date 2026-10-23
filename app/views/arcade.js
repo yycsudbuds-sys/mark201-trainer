@@ -23,19 +23,19 @@ function hub(app) {
   const st = app.state.stats;
   const done = Object.values(app.state.activities).filter(a => a.done).length;
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'The Arena'), h('p', null, 'Different contests, same engine underneath: every answer updates mastery and the review schedule.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Arcade'), h('p', null, 'Four quick game modes, same engine underneath: every answer updates mastery and the review schedule.'))),
     h('div', { class: 'grid two' },
-      tile('#/arcade/blitz', 'gladius', 'Skirmish', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#D28C3C', [`Best ${st.blitzBest || 0}`]),
-      tile('#/arcade/duel', 'swords', 'Gladiator Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A98BC9', [`Best ${st.duelBest || 0}/15`]),
-      tile('#/arcade/build', 'siegetower', 'Siege Works', 'Order the processes, sort items into buckets, match pairs. The memorization tables as engineering.', '#8FAA5A', [`${done}/${app.content.stats.activities} built`]),
-      tile('#/arcade/flash', 'scroll', 'Scrolls', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#B08968', ['Recall'])));
+      tile('#/arcade/blitz', 'gladius', 'Blitz · Skirmish', '90 seconds, three lives, combo multiplier. Short questions only. Best for warming up recall.', '#D28C3C', [`Best ${st.blitzBest || 0}`]),
+      tile('#/arcade/duel', 'swords', 'Confusables Duel', 'Only “tell them apart” and “which is NOT” questions, 20 seconds each, 15 rounds, three lives.', '#A98BC9', [`Best ${st.duelBest || 0}/15`]),
+      tile('#/arcade/build', 'siegetower', 'Build & Sort · Siege Works', 'Order the processes, sort items into buckets, match pairs. The memorization tables as engineering.', '#8FAA5A', [`${done}/${app.content.stats.activities} built`]),
+      tile('#/arcade/flash', 'scroll', 'Flashcards', 'Classic recall with honest self-grading. Again / Hard / Good / Easy feed the spacing schedule.', '#B08968', ['Recall'])));
 }
 
 // ---------- Blitz ----------
 function blitzConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('blitzch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('gladius', { size: 28, tone: 'gold' }), 'Skirmish'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('gladius', { size: 28, tone: 'gold' }), 'Blitz · Skirmish'), h('p', null, '90 seconds on the clock, three lives. Every correct answer scores 100 × your combo multiplier (+0.5× every 3 in a row). Wrong answers cost a life and reset the combo.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best score: ${app.state.stats.blitzBest || 0}`)),
@@ -49,7 +49,7 @@ function blitz(app) {
   const scoreEl = h('div', { class: 'card center tight mb' }, h('div', { class: 'eyebrow' }, 'Score'), h('div', { class: 'score-big mono', style: { fontSize: '2.2rem' } }, '0'), h('div', { class: 'small muted' }, 'multiplier ×1.0'));
   host.appendChild(scoreEl);
   const runner = createRunner(app, {
-    title: 'Skirmish', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', scene: 'chariot', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
+    title: 'Blitz', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', scene: 'chariot', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
     pickOpts: { difficultyMax: 2, shortOnly: true, excludeMastered: false }, showLearnOnWrong: false,
     onAnswer: ({ correct }) => {
       if (correct) { combo++; const mult = 1 + Math.floor(combo / 3) * 0.5; score += Math.round(100 * mult); scoreEl.children[1].textContent = String(score); scoreEl.children[2].textContent = `multiplier ×${mult.toFixed(1)}`; }
@@ -58,8 +58,8 @@ function blitz(app) {
     onFinish: (sum, reason) => {
       setCosmetic({ lastBlitzDay: dayKeyOf() });
       const best = app.state.stats.blitzBest || 0;
-      if (score > best) { app.state.stats.blitzBest = score; app.toast('New skirmish record!', 'xp'); app.confetti({ count: 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A'] }); }
-      app.grantXp(Math.round(score / 20), 'skirmish');
+      if (score > best) { app.state.stats.blitzBest = score; app.toast('New Blitz record!', 'xp'); app.confetti({ count: 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A'] }); }
+      app.grantXp(Math.round(score / 20), 'blitz');
       app.store.save();
       host.innerHTML = '';
       host.append(resultCard(app, reason === 'hearts' ? 'Out of lives' : reason === 'time' ? 'Time!' : 'Blitz over', sum,
@@ -79,7 +79,7 @@ function blitz(app) {
 function duelConfig(app) {
   const selected = new Set(JSON.parse(sessionStorage.getItem('duelch') || 'null') || app.content.chapters.map(c => c.chapter));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('swords', { size: 28, tone: 'gold' }), 'Gladiator Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('swords', { size: 28, tone: 'gold' }), 'Confusables Duel'), h('p', null, 'The exam loves near-miss distractors. This mode serves only “tell them apart” and “which is NOT” questions: 15 rounds, 20 seconds each, three lives.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, `Best: ${app.state.stats.duelBest || 0}/15`)),
@@ -93,7 +93,7 @@ function duel(app) {
   const favourEl = h('div', { class: 'favour' }, h('span', { class: 'eyebrow' }, icon('hand', { size: 14, tone: 'gold' }), 'Crowd favour'), h('span', { class: 'favour-track' }, h('span', { class: 'favour-fill', style: { width: (favour / 20 * 100) + '%' } })), h('span', { class: 'small muted favour-txt' }, 'The crowd waits'));
   host.appendChild(favourEl);
   const runner = createRunner(app, {
-    title: 'Gladiator Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', scene: 'colosseum', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
+    title: 'Confusables Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', scene: 'colosseum', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
     pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false },
     onAnswer: ({ correct }) => { const dt = Date.now() - lastT; lastT = Date.now(); favour = Math.max(0, Math.min(20, favour + (correct ? (dt < 8000 ? 2 : 1) : -2))); favourEl.querySelector('.favour-fill').style.width = (favour / 20 * 100) + '%'; favourEl.querySelector('.favour-txt').textContent = favour >= 14 ? 'The crowd roars' : favour >= 8 ? 'The crowd is with you' : 'The crowd murmurs'; if (correct && dt < 8000) app.sound('cries'); },
     onFinish: (sum, reason) => {
@@ -117,7 +117,7 @@ function duel(app) {
 function buildList(app) {
   const TYPE = { order: ['column', 'Order'], sort: ['crate', 'Sort'], match: ['hand', 'Match'] };
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('siegetower', { size: 28, tone: 'gold' }), 'Siege Works'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect build counts as a correct “sequence” answer for the concept.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('siegetower', { size: 28, tone: 'gold' }), 'Build & Sort · Siege Works'), h('p', null, 'The processes and tables the exam expects you to reproduce. A perfect build counts as a correct “sequence” answer for the concept.'))),
     h('div', { class: 'stack' }, app.content.chapters.map(ch => h('div', { class: 'card', style: { '--ch': ch.color } },
       h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter}`), h('h3', { class: 'mb' }, ch.title),
       h('div', { class: 'list' }, ch.activities.map(a => {
@@ -133,7 +133,7 @@ function activity(app, aid) {
   for (const c of app.content.chapters) { const a = c.activities.find(x => x.id === aid); if (a) { act = a; ch = c; break; } }
   if (!act) return h('div', { class: 'card' }, 'Unknown activity. ', h('a', { href: '#/arcade/build' }, 'Back'));
   const host = h('div', { class: 'runner', style: { '--ch': ch.color } },
-    h('a', { class: 'back', href: '#/arcade/build' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Siege Works'),
+    h('a', { class: 'back', href: '#/arcade/build' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Build & Sort'),
     h('div', { class: 'page-head mt-sm' }, h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter} · ${app.conceptOf(act.concept)?.concept.term}`), h('h2', null, act.title), h('p', null, act.prompt))));
   const body = h('div', { class: 'card' });
   host.appendChild(body);
@@ -318,7 +318,7 @@ function flashConfig(app) {
   const fSeg = h('div', { class: 'seg' }, [['all', 'All'], ['weak', 'Below Solid'], ['due', 'Due / pursuit']].map(([k, l]) => h('button', { class: filter === k ? 'on' : '', onClick: e => { filter = k; fSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   const sSeg = h('div', { class: 'seg' }, [['term', 'Show term → recall definition'], ['def', 'Show definition → recall term']].map(([k, l]) => h('button', { class: side === k ? 'on' : '', onClick: e => { side = k; sSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   return h('div', { class: 'runner' },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('scroll', { size: 28, tone: 'gold' }), 'Scrolls'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', { class: 'row' }, icon('scroll', { size: 28, tone: 'gold' }), 'Flashcards'), h('p', null, 'Say the answer out loud before you flip. Grade honestly: “Again” schedules it soon, “Easy” pushes it far out. Self-grades can take a concept to Solid, but Mastered needs real questions.'))),
     h('div', { class: 'card stack' },
       h('div', { class: 'field' }, h('label', null, 'Chapters'), chapterPicker(app, selected)),
       h('div', { class: 'field' }, h('label', null, 'Deck'), fSeg), h('div', { class: 'field' }, h('label', null, 'Direction'), sSeg),
@@ -348,7 +348,7 @@ function flash(app) {
   host.append(head, cardHost);
   const draw = () => {
     head.innerHTML = '';
-    head.append(h('div', null, h('div', { class: 'eyebrow' }, 'Scrolls'), h('div', { class: 'small muted' }, `${idx + 1} / ${deck.length}`)), h('div', { class: 'row' }, h('span', { class: 'chip' }, `again ${graded.again} · hard ${graded.hard} · good ${graded.good} · easy ${graded.easy}`), h('a', { class: 'btn sm ghost', href: '#/arcade/flash' }, 'End')));
+    head.append(h('div', null, h('div', { class: 'eyebrow' }, 'Flashcards'), h('div', { class: 'small muted' }, `${idx + 1} / ${deck.length}`)), h('div', { class: 'row' }, h('span', { class: 'chip' }, `again ${graded.again} · hard ${graded.hard} · good ${graded.good} · easy ${graded.easy}`), h('a', { class: 'btn sm ghost', href: '#/arcade/flash' }, 'End')));
     head.appendChild(h('div', { class: 'bar', style: { height: '6px' } }, h('div', { class: 'bar-fill', style: { width: (idx / deck.length * 100) + '%', background: 'var(--accent)' } })));
     cardHost.innerHTML = '';
     if (idx >= deck.length) {

@@ -74,11 +74,11 @@ export function nextAction(app) {
   const r = readiness(app.content, st);
   // find first chapter whose campaign is incomplete
   const unfinished = app.content.chapters.find(ch => !st.campaign.bosses?.[ch.chapter]?.cleared);
-  if (started === 0) return { title: 'March on Italia', desc: 'Study the Chapter I scrolls, then win its battles. Reading first, then immediate retrieval, is the fastest way in.', href: '#/campaign/1', cta: 'Begin the conquest' };
-  if (pursuits >= 4) return { title: `${pursuits} pursuits are open`, desc: 'Ground lost recently. Field Drill will contest it from new angles until it holds.', href: '#/drill', cta: 'Field Drill' };
-  if (due >= 8) return { title: `${due} strongholds are due for review`, desc: 'Spaced review is where memory becomes durable. A 20-question drill clears most of these.', href: '#/drill', cta: 'Review now' };
-  if (unfinished && r.score < 0.75) return { title: `Continue in ${unfinished.province || 'the province'} (Chapter ${unfinished.numeral || unfinished.chapter})`, desc: `${unfinished.title}: win its battles and take the capital.`, href: `#/campaign/${unfinished.chapter}`, cta: 'Continue the conquest' };
+  if (started === 0) return { title: 'Start with Chapter 1', desc: 'Read the Chapter 1 lessons, then pass its checkpoint quizzes. Reading first, then immediate retrieval, is the fastest way in.', href: '#/campaign/1', cta: 'Start the campaign' };
+  if (pursuits >= 4) return { title: `${pursuits} pursuits are open`, desc: 'Concepts you missed recently. Smart Drill asks about them from new angles until they hold.', href: '#/drill', cta: 'Smart Drill' };
+  if (due >= 8) return { title: `${due} concepts are due for review`, desc: 'Spaced review is where memory becomes durable. A 20-question drill clears most of these.', href: '#/drill', cta: 'Review now' };
+  if (unfinished && r.score < 0.75) return { title: `Continue Chapter ${unfinished.chapter}`, desc: `${unfinished.title}: pass its checkpoints and clear the chapter boss.`, href: `#/campaign/${unfinished.chapter}`, cta: 'Continue the conquest' };
   const exams = st.exams || [];
-  if (!exams.length || (Date.now() - exams[exams.length - 1].t) > 3 * 3600000) return { title: 'Give battle', desc: 'Timed, mixed, no feedback until the end. Your misses feed straight back into Field Drill.', href: '#/exam', cta: 'The Great Battle' };
-  return { title: 'Reinforce the weak flank', desc: 'Everything below Solid, plus anything you have missed. Then rest: a later session is required for Mastered.', href: '#/drill/weak', cta: 'Weak Flank' };
+  if (!exams.length || (Date.now() - exams[exams.length - 1].t) > 3 * 3600000) return { title: 'Run a midterm simulation', desc: 'Timed, mixed, no feedback until the end. Your misses feed straight back into Smart Drill.', href: '#/exam', cta: 'Midterm Simulation' };
+  return { title: 'Hunt the weak spots', desc: 'Everything below Solid, plus anything you have missed. Then rest: a later session is required for Mastered.', href: '#/drill/weak', cta: 'Weak Spot Hunter' };
 }

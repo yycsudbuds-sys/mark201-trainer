@@ -41,12 +41,12 @@ export function render(app) {
   const exams = (st.exams || []).slice(-10);
 
   return h('div', { class: 'stack', style: { gap: '1.3rem' } },
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Report to the Senate'), h('p', null, 'Test Readiness blends mastery (60%), how much of the course you have touched (15%) and your last two great battles (25%).'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Progress'), h('p', null, 'Test Readiness blends mastery (60%), how much of the course you have touched (15%) and your last two midterm simulations (25%).'))),
     h('div', { class: 'grid three' },
       h('div', { class: 'card row' }, ring(r.score, { size: 84, stroke: 8, color: r.score >= 0.85 ? 'var(--good)' : 'var(--accent)', label: fmtPct(r.score) }), h('div', null, h('div', { class: 'eyebrow' }, 'Test Readiness'), h('div', { class: 'small muted' }, `Mastery ${fmtPct(r.mastery)} · coverage ${fmtPct(r.coverage)}${r.examAvg !== null ? ` · sims ${fmtPct(r.examAvg)}` : ''}`))),
       h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Level'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, `Lv ${lv.number}`), h('div', { class: 'small muted' }, `${lv.title} · ${st.xp} XP${lv.next ? ` · ${lv.next.xp - st.xp} to next` : ''}`)),
       h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Answers'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, String(st.stats.answered)), h('div', { class: 'small muted' }, `${st.stats.answered ? Math.round(st.stats.correct / st.stats.answered * 100) : 0}% accuracy · best combo ${st.stats.bestCombo || 0} · ${st.stats.pursuitsCleared || 0} pursuits cleared`))),
-    h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'By province'),
+    h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'By chapter'),
       h('div', { class: 'stack' }, chapters.map(({ ch, m }) => h('div', { class: 'row wrap', style: { '--ch': ch.color } },
         h('span', { style: { width: '150px', fontWeight: 700, fontSize: '0.9rem' } }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` Ch ${ch.chapter} ${ch.short}`),
         h('div', { class: 'grow', style: { minWidth: '160px' } }, stackedBar(m.dist, ch.color)),
@@ -56,7 +56,7 @@ export function render(app) {
     h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'Cursus honorum'), rankLadder(app)),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Your legion')), legionGround(app)),
     h('div', { class: 'grid two' },
-      h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Weakest strongholds'),
+      h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Weakest concepts'),
         weakest.length ? h('div', { class: 'list' }, weakest.map(w => h('div', { class: 'li', style: { '--ch': w.chapter.color } },
           h('span', { class: `mdot m${w.level}` }), h('div', { class: 'grow' }, h('div', { class: 't' }, w.concept.term), h('div', { class: 's' }, `Ch ${w.chapter.chapter} · ${MASTERY_LABELS[w.level]} · ${Math.round(w.acc * 100)}% of ${w.total}${w.pursuit ? ' · ' : ''}`, w.pursuit ? icon('target', { size: 14, tone: 'mono' }) : null)),
           h('a', { class: 'btn sm', href: `#/drill/concepts/${w.concept.id}` }, 'Drill')))) : h('div', { class: 'empty' }, 'Answer some questions and your weak spots will show up here.'),
@@ -66,7 +66,7 @@ export function render(app) {
           angles.length ? h('div', { class: 'stack' }, angles.map(a => h('div', { class: 'bar-row' }, h('span', { class: 'bar-label' }, ANGLE_LABELS[a.a] || a.a), h('div', { class: 'row' }, h('div', { class: 'bar', style: { height: '10px' } }, h('div', { class: 'bar-fill', style: { width: (a.acc * 100) + '%', background: a.acc >= 0.85 ? 'var(--good)' : a.acc >= 0.7 ? 'var(--accent)' : 'var(--bad)' } })), h('span', { class: 'mono small', style: { width: '70px', textAlign: 'right' } }, `${Math.round(a.acc * 100)}% · ${a.n}`))))) : h('p', { class: 'muted small' }, 'No data yet.')),
         h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Last 7 days'),
           days.length ? h('div', null, h('div', { class: 'spark', style: { '--ch': 'var(--accent)' } }, days.map(([d, v]) => h('span', { title: `${d}: ${v.answered} answered, ${v.xp} XP`, style: { height: Math.max(6, Math.min(100, v.answered / Math.max(1, Math.max(...days.map(x => x[1].answered))) * 100)) + '%' } }))), h('div', { class: 'row between tiny muted mt-sm' }, h('span', null, days[0][0]), h('span', null, days[days.length - 1][0]))) : h('p', { class: 'muted small' }, 'No study days yet.')),
-        h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Great battles'),
+        h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'Midterm simulations'),
           exams.length ? h('div', { class: 'list' }, exams.slice().reverse().map(e => h('div', { class: 'li' }, h('b', { style: { color: e.score >= 0.9 ? 'var(--good)' : e.score >= 0.7 ? 'var(--accent)' : 'var(--bad)' } }, `${Math.round(e.score * 100)}%`), h('span', { class: 's' }, `${e.correct}/${e.n} · ${fmtTime(e.durationSec)} · ${timeAgo(e.t)}`)))) : h('p', { class: 'muted small' }, 'Run a midterm simulation to see history here.')))),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, `Phalerae · ${Object.keys(st.achievements).length}/${ACHIEVEMENTS.length}`)), phalerae(app)));
 }

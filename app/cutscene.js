@@ -69,25 +69,25 @@ export function briefingLines(app, ctx) {
   if (ctx.kind === 'lesson' && ch && t) {
     const terms = t.concepts.map(cid => app.conceptOf(cid).concept.term);
     const weak = t.concepts.filter(cid => { const cs = app.state.concepts[cid]; return cs && cs.a?.length && masteryLevel(cs) < 3; }).map(cid => app.conceptOf(cid).concept.term);
-    lines.push(`${name}. We march on ${pv.name}, Chapter ${roman(ch.chapter)}: ${ch.title}. The ground ahead is “${t.title}”.`);
-    lines.push(`Our scouts count ${terms.length} strongholds: ${terms.slice(0, 4).join(', ')}${terms.length > 4 ? ' and more' : ''}. Study each before you fight for it.`);
+    lines.push(`${name}. We march on Chapter ${ch.chapter}: ${ch.title}. The ground ahead is the topic “${t.title}”.`);
+    lines.push(`Our scouts count ${terms.length} concepts: ${terms.slice(0, 4).join(', ')}${terms.length > 4 ? ' and more' : ''}. Learn each before the quiz.`);
     if (weak.length) lines.push(`Intelligence says you faltered here before: ${weak.slice(0, 3).join(', ')}. Read those scrolls twice.`);
-    lines.push('Read the scrolls, then the battle. Hold every stronghold to Solid and we plant the standard. The legion is yours.');
+    lines.push('Read the lesson, then take the checkpoint quiz. Hold every concept to Solid and we plant the standard. The legion is yours.');
   } else if (ctx.kind === 'checkpoint' && ch && t) {
     const traps = t.concepts.map(cid => app.conceptOf(cid).concept.contrast).filter(Boolean);
-    lines.push(`Battle for “${t.title}”, ${pv.name}. ${t.concepts.length} strongholds must each be held to Solid: three correct answers from two angles, the last two in a row.`);
+    lines.push(`Checkpoint quiz for “${t.title}”, Chapter ${ch.chapter}. ${t.concepts.length} concepts must each reach Solid: three correct answers from two angles, the last two in a row.`);
     if (traps.length) lines.push(`Watch the flanks. The enemy will try to confuse you: ${firstClause(traps[0])}`);
     lines.push('Every wrong answer opens a pursuit: the same ground will be contested three more times from new angles. Steady. Take command.');
   } else if (ctx.kind === 'boss' && ch) {
-    lines.push(`The siege of ${pv.capital}, capital of ${pv.name}. Twenty-four questions drawn from the whole province, weighted toward the hard ground.`);
-    lines.push('Ninety percent takes the city. Fall short and we regroup: drill the misses, then return. No retreat is final.');
+    lines.push(`The Chapter ${ch.chapter} boss: the siege of ${pv.capital}. Twenty-four questions drawn from the whole chapter, weighted toward the hard ground.`);
+    lines.push('Ninety percent clears the chapter. Fall short and we regroup: drill the misses, then return. No retreat is final.');
   } else if (ctx.kind === 'exam') {
-    lines.push(`${name}. This is the great battle in miniature: timed, mixed across every province, no word from me until the field is cleared.`);
-    lines.push('Read each scenario for its cue. Every miss becomes a pursuit in the field drills afterwards. Begin when ready.');
+    lines.push(`${name}. A midterm simulation: timed, mixed across every chapter, no feedback from me until the field is cleared.`);
+    lines.push('Read each scenario for its cue. Every miss becomes a pursuit in Smart Drill afterwards. Begin when ready.');
   } else if (ctx.kind === 'weak') {
-    lines.push('We ride to reinforce the weak flank: only strongholds below Solid, or under pursuit. You will see the scroll first, then prove it.');
+    lines.push('Weak Spot Hunter: only concepts below Solid, or under pursuit. You will see the concept card first, then prove it.');
   } else {
-    lines.push(`${name}. Field drill across the provinces. The engine chooses the ground: pursuits first, then due reviews, then weak and fresh strongholds, interleaved.`);
+    lines.push(`${name}. Smart Drill across every chapter. The engine chooses the ground: pursuits first, then due reviews, then weak and fresh concepts, interleaved.`);
     lines.push('Three different questions after any miss. Answer with 1 to 5, advance with Enter. Take command.');
   }
   return lines;
@@ -116,7 +116,7 @@ export function warBriefing(app, ctx) {
       h('div', { class: 'torch right' }, h('div', { class: 'glow' }), h('div', { class: 'stick' }), h('div', { class: 'flame' })),
       h('div', { class: 'shadow-sweep' }), avatar, h('div', { class: 'tent-vignette' }),
       h('div', { class: 'briefing' },
-        h('div', { class: 'brief-name' }, icon('galea', { size: 18, tone: 'gold' }), LEGATUS, h('span', { class: 'muted', style: { letterSpacing: '0.1em' } }, ctx.chapter ? `· Provincia ${PROVINCES[ctx.chapter.chapter]?.name || ''}` : '· Castra')),
+        h('div', { class: 'brief-name' }, icon('galea', { size: 18, tone: 'gold' }), LEGATUS, h('span', { class: 'muted', style: { letterSpacing: '0.1em' } }, ctx.chapter ? `· Chapter ${ctx.chapter.chapter}` : '· Home camp')),
         textEl,
         h('div', { class: 'brief-actions' }, h('div', { class: 'row wrap' }, stepEl, objectives), h('div', { class: 'row' }, skipBtn, nextBtn, goBtn))));
     overlay.appendChild(tent);
@@ -212,14 +212,14 @@ export function triumph(app, ctx) {
     let done = false;
     const overlay = h('div', { class: 'cutscene triumph', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Triumph' });
     const petals = h('div', { class: 'tri-petals', 'aria-hidden': 'true' }, Array.from({ length: 26 }, (_, i) => h('span', { style: { left: ((i * 37) % 100) + '%', animationDelay: ((i * 0.37) % 4).toFixed(2) + 's', animationDuration: (5 + (i % 4)) + 's' } })));
-    const spoils = [`${ctx.chapter.concepts.length} strongholds`, `${ctx.chapter.topics.length} standards`, ctx.score != null ? `${ctx.score} / ${ctx.n} at the walls` : null].filter(Boolean);
+    const spoils = [`${ctx.chapter.concepts.length} concepts`, `${ctx.chapter.topics.length} checkpoints`, ctx.score != null ? `${ctx.score} / ${ctx.n} at the walls` : null].filter(Boolean);
     const skip = h('button', { class: 'btn ghost sm', onClick: () => finish() }, 'Skip');
     const go = h('button', { class: 'btn primary big', onClick: () => finish() }, 'Continue ', h('span', { class: 'kbd' }, 'Enter'));
     const scene = h('div', { class: 'tri-scene' },
       h('div', { class: 'tri-sky' }), h('div', { class: 'tri-buildings' }), h('div', { class: 'tri-crowd back' }),
       h('div', { class: 'tri-arch' }, h('div', { class: 'tri-arch-text' }, 'SENATVS · POPVLVSQVE · ROMANVS')),
       h('div', { class: 'tri-road' }), h('div', { class: 'tri-parade' }, paradeSvg(ctx)), h('div', { class: 'tri-crowd front' }), petals,
-      h('div', { class: 'tri-title' }, h('div', { class: 'eyebrow' }, ctx.first ? 'Triumphus' : 'The city holds for Rome'), h('h1', null, `${pv.name} is Roman`), h('p', null, `Chapter ${roman(ctx.chapter.chapter)} · ${ctx.chapter.title}`), h('div', { class: 'row wrap tri-spoils' }, spoils.map(t => h('span', { class: 'chip' }, icon('coin', { size: 12, tone: 'gold' }), t)))),
+      h('div', { class: 'tri-title' }, h('div', { class: 'eyebrow' }, ctx.first ? 'Triumphus · chapter boss cleared' : 'The chapter holds for Rome'), h('h1', null, `Chapter ${ctx.chapter.chapter} conquered`), h('p', null, ctx.chapter.title), h('div', { class: 'row wrap tri-spoils' }, spoils.map(t => h('span', { class: 'chip' }, icon('coin', { size: 12, tone: 'gold' }), t)))),
       h('div', { class: 'tri-actions' }, skip, go));
     overlay.appendChild(scene);
     document.body.appendChild(overlay);

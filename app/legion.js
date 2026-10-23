@@ -122,7 +122,7 @@ export function dailyOrders(app) {
   const quests = [
     { id: 'answer25', title: 'Answer 25 questions', have: day.answered, need: 25, reward: 15, ico: 'gladius' },
     { id: 'pursuit1', title: 'Clear a pursuit', have: Math.max(0, (st.stats.pursuitsCleared || 0) - (o.base.pursuits || 0)), need: 1, reward: 10, ico: 'target' },
-    odd ? { id: 'standard1', title: 'Plant a standard', have: planted, need: 1, reward: 20, ico: 'standard' } : { id: 'skirmish1', title: 'Finish a Skirmish', have: getCosmetic().lastBlitzDay === today ? 1 : 0, need: 1, reward: 10, ico: 'horn' },
+    odd ? { id: 'standard1', title: 'Plant a standard', have: planted, need: 1, reward: 20, ico: 'standard' } : { id: 'skirmish1', title: 'Finish a Blitz', have: getCosmetic().lastBlitzDay === today ? 1 : 0, need: 1, reward: 10, ico: 'horn' },
   ];
   const el = h('div', { class: 'orders' }, h('div', { class: 'orders-head' }, h('div', { class: 'eyebrow' }, icon('tablet', { size: 14, tone: 'crimson' }), 'Daily orders'), h('span', { class: 'small muted' }, 'reset at midnight')));
   for (const q of quests) {
@@ -151,7 +151,7 @@ export function clepsydra(app) {
   const t = new Date(iso).getTime(); if (isNaN(t)) return null;
   const el = h('a', { class: 'clepsydra chip', href: '#/settings', title: 'Time to the midterm (set in the Quartermaster)' }, h('span', { class: 'clep-glass', 'aria-hidden': 'true' }, h('span', { class: 'clep-water' })), h('span', { class: 'clep-text' }));
   const tick = () => { const d = t - Date.now(); const txt = el.querySelector('.clep-text'); const water = el.querySelector('.clep-water'); if (!txt) return;
-    if (d <= 0) { txt.textContent = 'Battle day'; el.classList.add('urgent'); water.style.height = '0%'; return; }
+    if (d <= 0) { txt.textContent = 'Exam day'; el.classList.add('urgent'); water.style.height = '0%'; return; }
     const hrs = d / 3600000; txt.textContent = hrs >= 48 ? `${Math.floor(hrs / 24)} d ${Math.floor(hrs % 24)} h` : hrs >= 1 ? `${Math.floor(hrs)} h ${Math.floor((d % 3600000) / 60000)} m` : `${Math.floor(d / 60000)} min`;
     el.classList.toggle('urgent', hrs < 24); water.style.height = Math.max(4, Math.min(100, hrs / 72 * 100)) + '%'; };
   tick(); const id = setInterval(() => { if (!el.isConnected) { clearInterval(id); return; } tick(); }, 30000);

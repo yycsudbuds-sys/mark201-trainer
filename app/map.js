@@ -56,7 +56,7 @@ function roadPath(pts) { let d = `M ${pts[0][0]} ${pts[0][1]}`; for (let i = 1; 
 /** The 2.5D map. opts: { onIsland(ch, state, evt), compact } -> element (fills itself once the coastline loads). */
 export function worldMap(app, opts = {}) {
   const compact = !!opts.compact;
-  const wrap = h('div', { class: 'map25' + (compact ? ' compact' : ''), role: compact ? null : 'img', 'aria-label': 'Map of the provinces' });
+  const wrap = h('div', { class: 'map25' + (compact ? ' compact' : ''), role: compact ? null : 'img', 'aria-label': 'Campaign map' });
   const stage = h('div', { class: 'map25-stage' }); wrap.appendChild(stage);
   if (!compact) wrap.appendChild(h('div', { class: 'map25-cartouche' }, h('div', { class: 'map-title' }, 'IMPERIUM MARKETING'), h('div', { class: 'map-subtitle' }, 'TABULA PROVINCIARUM')));
   const labels = compact ? null : createLabelLayer(wrap);
@@ -89,7 +89,7 @@ export function worldMap(app, opts = {}) {
     for (const num of ORDER) {
       const ch = app.index.chapter.get(num); if (!ch) continue;
       const pv = PROV[num]; const prog = chapterProgress(app, ch); const state = provinceState(app, ch);
-      const g = svg('g', { class: `province ${state}` + (next === num ? ' next' : ''), tabindex: compact ? null : '0', role: compact ? null : 'button', 'aria-label': `Chapter ${ROMAN[num]}: ${pv.name} (${ch.title}), ${state}`, style: `--ch:${ch.color}` });
+      const g = svg('g', { class: `province ${state}` + (next === num ? ' next' : ''), tabindex: compact ? null : '0', role: compact ? null : 'button', 'aria-label': `Chapter ${num}: ${ch.title}, ${state}`, style: `--ch:${ch.color}` });
       const d = 'M ' + pv.poly.map(p => Pf(p[0], p[1]).join(' ')).join(' L ') + ' Z';
       g.appendChild(svg('path', { d, class: 'terr' }));
       if (state === 'locked') g.appendChild(svg('path', { d, fill: `url(#${Pre}fog)`, class: 'fog' }));
@@ -101,9 +101,9 @@ export function worldMap(app, opts = {}) {
       if (state === 'conquered') cap.appendChild(svg('path', { d: 'M 0 -22 l -7 4 l 4.5 -1 l -1.5 5 l 4 -4 l 4 4 l -1.5 -5 l 4.5 1 z', class: 'eagle' }));
       g.appendChild(cap);
       if (!compact) { const go = (e) => opts.onIsland ? opts.onIsland(ch, state, e) : app.navigate(`#/campaign/${num}`); g.addEventListener('click', e => { if (dragMoved) return; go(e); }); g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(e); } }); }
-      else { const [lx, ly] = P(pv.label[0], pv.label[1]); g.appendChild(svg('text', { x: lx, y: ly, class: 'prov-name', 'text-anchor': 'middle' }, pv.name)); }
+      else { const [lx, ly] = P(pv.label[0], pv.label[1]); g.appendChild(svg('text', { x: lx, y: ly, class: 'prov-name', 'text-anchor': 'middle' }, `Ch ${num}`)); }
       provs.appendChild(g);
-      items.push({ id: 'p' + num, name: pv.name, numeral: `Chapter ${ROMAN[num]}`, state, next: next === num, priority: next === num ? 3 : state === 'open' ? 2 : 1, pos: P(pv.label[0], pv.label[1]), status: state === 'conquered' ? 'Conquered' : state === 'locked' ? 'Locked' : `${prog.cleared} / ${prog.topics} standards`, ch });
+      items.push({ id: 'p' + num, name: `Chapter ${num}`, numeral: ch.short || ch.title, state, next: next === num, priority: next === num ? 3 : state === 'open' ? 2 : 1, pos: P(pv.label[0], pv.label[1]), status: state === 'conquered' ? 'Conquered' : state === 'locked' ? 'Locked' : `${prog.cleared} / ${prog.topics} standards`, ch });
     }
     // legion token on the next province
     if (next) { const pv = PROV[next]; const [tx, ty] = P(pv.cap[0] + 1.6, pv.cap[1] - 0.9); s.appendChild(svg('g', { class: 'legion-token', transform: `translate(${tx} ${ty})` }, svg('line', { x1: 4, y1: 0, x2: 4, y2: -22, class: 'std-pole' }), svg('path', { d: 'M 4 -22 l 10 3 l -10 3 z', class: 'std-cloth' }), svg('circle', { cx: 0, cy: -8, r: 3.2, class: 'tok-head' }), svg('rect', { x: -3, y: -5, width: 6, height: 8, rx: 1.5, class: 'tok-body' }))); }
@@ -144,7 +144,7 @@ export function zoomToProvince(frameEl, num, { motion = true } = {}) {
 export function islandTrail(app, ch, opts = {}) {
   const W = 1000; const H = 440; const P = 'tr' + (++defIds) + '-';
   const pv = PROVINCES[ch.chapter] || { name: ch.title, capital: 'the capital' };
-  const s = svg('svg', { viewBox: `0 0 ${W} ${H}`, class: 'trail', role: 'img', 'aria-label': `Province of ${pv.name}`, style: `--ch:${ch.color}` });
+  const s = svg('svg', { viewBox: `0 0 ${W} ${H}`, class: 'trail', role: 'img', 'aria-label': `Chapter ${ch.chapter} road`, style: `--ch:${ch.color}` });
   s.appendChild(parchDefs(P));
   s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: `url(#${P}seaParch)` }));
   s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: `url(#${P}seaLines)`, opacity: 0.55 }));
@@ -206,9 +206,9 @@ export function islandTrail(app, ch, opts = {}) {
   else bg.appendChild(svg('text', { y: -28, class: 'node-n', 'text-anchor': 'middle' }, allCleared ? '' : ''));
   if (!allCleared && !prog.boss) bg.appendChild(svg('path', { d: 'M -5 -24 v -4 a 5 5 0 0 1 10 0 v 4 M -7 -24 h 14 v 9 h -14 z', class: 'plock' }));
   const bl = (n - 1) % 2 === 0 ? 56 : -58;
-  bg.appendChild(svg('text', { y: bl, class: 'node-label', 'text-anchor': 'middle' }, prog.boss ? `${pv.capital} taken` : `Siege of ${pv.capital}`));
-  bg.appendChild(svg('text', { y: bl + 15, class: 'node-sub', 'text-anchor': 'middle' }, allCleared ? '24 questions · 90% takes the city' : 'win every battle first'));
-  const goBoss = () => { if (allCleared && opts.onBoss) opts.onBoss(); else app.toast('Win every battle on the road before laying siege to the capital', 'info'); };
+  bg.appendChild(svg('text', { y: bl, class: 'node-label', 'text-anchor': 'middle' }, prog.boss ? 'Chapter boss cleared' : `Chapter ${ch.chapter} boss`));
+  bg.appendChild(svg('text', { y: bl + 15, class: 'node-sub', 'text-anchor': 'middle' }, allCleared ? '24 questions · 90% clears it' : 'pass every checkpoint first'));
+  const goBoss = () => { if (allCleared && opts.onBoss) opts.onBoss(); else app.toast('Pass every checkpoint quiz in this chapter before the chapter boss', 'info'); };
   bg.addEventListener('click', goBoss); bg.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goBoss(); } });
   s.appendChild(bg);
   return s;

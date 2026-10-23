@@ -11,7 +11,7 @@ import { richText, icon, CHAPTER_ICON } from '../icons.js';
 import { getCosmetic, getDenarii, addDenarii } from '../cosmetic.js';
 import { vignetteFor } from '../vignettes.js';
 
-const REASON_LABEL = { pursuit: 'Pursuit', weak: 'Weak flank', due: 'Due for review', new: 'New ground', review: 'Review', exam: 'Battle', boss: 'Siege', campaign: 'Battle', blitz: 'Skirmish', duel: 'Duel' };
+const REASON_LABEL = { pursuit: 'Pursuit', weak: 'Weak spot', due: 'Due for review', new: 'New ground', review: 'Review', exam: 'Midterm', boss: 'Chapter boss', campaign: 'Checkpoint', blitz: 'Blitz', duel: 'Duel' };
 const REASON_ICON = { pursuit: 'standard', weak: 'shieldcrack', due: 'sundial', new: 'pilum', review: 'scroll', exam: 'scutum', boss: 'siegetower', campaign: 'swords', blitz: 'gladius', duel: 'gladius' };
 
 /**
