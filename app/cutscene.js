@@ -2,7 +2,6 @@
 // Skippable; the "War briefings" toggle disables it entirely.
 import { h } from './ui.js';
 import { svg } from './visuals.js';
-import { PROVINCES, ROMAN } from './map.js';
 import { masteryLevel, LEVELS } from './engine.js';
 import { icon } from './icons.js';
 
@@ -60,10 +59,8 @@ function legatusSvg() {
   return s;
 }
 
-function roman(n) { return ROMAN[n] || String(n); }
-
 export function briefingLines(app, ctx) {
-  const ch = ctx.chapter; const pv = ch ? PROVINCES[ch.chapter] : null; const t = ctx.topic;
+  const ch = ctx.chapter; const pv = ch ? (app.pack.geo.prov[ch.chapter] || { capital: 'the capital' }) : null; const t = ctx.topic;
   const name = app.state.name || 'Legionary';
   const lines = [];
   if (ctx.kind === 'lesson' && ch && t) {
@@ -79,8 +76,8 @@ export function briefingLines(app, ctx) {
     if (traps.length) lines.push(`Watch the flanks. The enemy will try to confuse you: ${firstClause(traps[0])}`);
     lines.push('Every wrong answer opens a pursuit: the same ground will be contested three more times from new angles. Steady. Take command.');
   } else if (ctx.kind === 'boss' && ch) {
-    lines.push(`The Chapter ${ch.chapter} boss: the siege of ${pv.capital}. Twenty-four questions drawn from the whole chapter, weighted toward the hard ground.`);
-    lines.push('Ninety percent clears the chapter. Fall short and we regroup: drill the misses, then return. No retreat is final.');
+    lines.push(`The Chapter ${ch.chapter} boss: the siege of ${pv.capital}. ${app.pack.boss.n} questions drawn from the whole chapter, weighted toward the hard ground.`);
+    lines.push(`${Math.round(app.pack.boss.pass * 100)} percent clears the chapter. Fall short and we regroup: drill the misses, then return. No retreat is final.`);
   } else if (ctx.kind === 'exam') {
     lines.push(`${name}. A midterm simulation: timed, mixed across every chapter, no feedback from me until the field is cleared.`);
     lines.push('Read each scenario for its cue. Every miss becomes a pursuit in Smart Drill afterwards. Begin when ready.');
@@ -208,7 +205,6 @@ function paradeSvg(ctx) {
 /** Triumph: a 6 to 10 second parade through Rome after a province is conquered. Skippable. */
 export function triumph(app, ctx) {
   return new Promise(resolve => {
-    const pv = PROVINCES[ctx.chapter.chapter] || { name: ctx.chapter.title };
     let done = false;
     const overlay = h('div', { class: 'cutscene triumph', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Triumph' });
     const petals = h('div', { class: 'tri-petals', 'aria-hidden': 'true' }, Array.from({ length: 26 }, (_, i) => h('span', { style: { left: ((i * 37) % 100) + '%', animationDelay: ((i * 0.37) % 4).toFixed(2) + 's', animationDuration: (5 + (i % 4)) + 's' } })));
@@ -256,7 +252,7 @@ export function ceremony(app, level) {
       h('div', { class: 'briefing' },
         h('div', { class: 'brief-name' }, icon('galea', { size: 18, tone: 'gold' }), LEGATUS, h('span', { class: 'muted' }, '· Promotion')),
         h('div', { class: 'brief-text' }, `${app.state.name}. By the Senate's decree and the legion's acclaim, you are raised to `, h('b', null, level.title), `. Wear this phalera on your cuirass. The next rank is earned the same way: hold your ground, answer true.`),
-        h('div', { class: 'brief-actions' }, h('div', { class: 'row wrap' }, h('span', { class: 'brief-step' }, `Rank ${LEVELS_INDEX(level) + 1} of 11`)), h('div', { class: 'row' }, go))));
+        h('div', { class: 'brief-actions' }, h('div', { class: 'row wrap' }, h('span', { class: 'brief-step' }, `Rank ${LEVELS_INDEX(level) + 1} of ${LEVELS.length}`)), h('div', { class: 'row' }, go))));
     overlay.appendChild(tent);
     document.body.appendChild(overlay);
     requestAnimationFrame(() => { overlay.classList.add('show'); setTimeout(() => cuirass.classList.add('pinned'), 700); });

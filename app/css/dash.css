@@ -1,0 +1,75 @@
+/* The gate (login) and the Forum (dashboard, leaderboard, public profiles). Same stone, parchment and gold as the rest. */
+
+/* ---------- login ---------- */
+.login { min-height: 100vh; display: grid; place-content: center; gap: 1rem; padding: 1.5rem 1rem 3rem; position: relative; z-index: 1; }
+.login-card { width: min(460px, 94vw); padding: 1.4rem 1.5rem 1.2rem; border-radius: var(--radius-stone); background: linear-gradient(180deg, rgba(28, 22, 18, 0.92), rgba(14, 10, 7, 0.95)); border: 1px solid rgba(0, 0, 0, 0.6); box-shadow: var(--bevel-stone); display: grid; gap: 0.8rem; }
+.login-brand { display: flex; align-items: center; gap: 0.9rem; }
+.login-brand h1 { margin: 0; font-size: 2rem; line-height: 1; }
+.brand-mark.big { width: 56px; height: 56px; border-radius: 12px; }
+.brand-mark.big svg { width: 40px; height: 40px; }
+.login-lede { margin: 0; }
+.login input[type=text] { font-size: 1.15rem; padding: 0.8rem 0.9rem; }
+.login-actions .btn { flex: 1 1 160px; }
+.login-msg { min-height: 1.3em; font-size: 0.92rem; color: var(--muted); }
+.login-msg.bad { color: var(--bad); }
+.login-msg.good { color: var(--good); }
+.login-extra:empty { display: none; }
+.login-recent { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.login-recent .chip { cursor: pointer; }
+.login-legacy { width: min(460px, 94vw); }
+.login-foot:empty { display: none; }
+[data-theme="light"] .login-card { background: linear-gradient(180deg, rgba(246, 240, 228, 0.96), rgba(232, 222, 204, 0.98)); border-color: rgba(90, 67, 48, 0.35); }
+
+/* ---------- forum / dashboard ---------- */
+.dash-hero { position: relative; display: grid; grid-template-columns: 170px minmax(0, 1fr) 220px; gap: 1.4rem; align-items: start; padding: 1.4rem; border-radius: var(--radius-stone); background: linear-gradient(180deg, rgba(28, 22, 18, 0.82), rgba(14, 10, 7, 0.9)); border: 1px solid rgba(0, 0, 0, 0.6); box-shadow: var(--bevel-stone); overflow: hidden; }
+[data-theme="light"] .dash-hero { background: linear-gradient(180deg, rgba(246, 240, 228, 0.92), rgba(232, 222, 204, 0.96)); border-color: rgba(90, 67, 48, 0.35); }
+.dash-you { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.dash-main h1 { margin: 0.1rem 0 0.4rem; }
+.dash-rank { gap: 0.5rem; }
+.xpbar.wide { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; margin-top: 0.7rem; max-width: 520px; }
+.xpbar.wide .bar { width: 100%; }
+.dash-side .ladder.compact { flex-wrap: wrap; justify-content: flex-end; row-gap: 0.35rem; }
+.chip.sync { gap: 0.4rem; }
+.chip.sync::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--laurel); box-shadow: 0 0 6px var(--laurel); }
+.chip.sync.pending::before, .chip.sync.saving::before { background: var(--gold-leaf); box-shadow: 0 0 6px var(--gold-leaf); animation: syncPulse 1s ease-in-out infinite; }
+.chip.sync.offline::before { background: var(--iron-light); box-shadow: none; }
+.chip.sync.error::before { background: var(--pompeian-light); box-shadow: 0 0 6px var(--pompeian-light); }
+.chip.sync.off::before { background: var(--iron); box-shadow: none; }
+@keyframes syncPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+[data-motion="off"] .chip.sync::before { animation: none; }
+
+.course-grid { align-items: stretch; }
+.course-card { display: grid; gap: 0.9rem; border-top: 3px solid var(--ch); }
+.course-card h3 { margin: 0.1rem 0; font-size: 1.35rem; }
+.course-stats { display: flex; gap: 1.1rem; align-items: center; flex-wrap: wrap; }
+.course-stats .ring-label .big { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; }
+.course-nums { display: grid; grid-template-columns: repeat(2, minmax(90px, 1fr)); gap: 0.5rem 1.2rem; }
+.course-nums .stat .v { font-size: 1.2rem; }
+.course-plan { padding: 0.7rem 0.85rem; border-radius: var(--radius-sm); background: rgba(0, 0, 0, 0.22); border: 1px solid var(--line); display: grid; gap: 0.25rem; font-size: 0.92rem; }
+[data-theme="light"] .course-plan { background: rgba(90, 67, 48, 0.08); }
+.course-soon { display: flex; align-items: center; gap: 0.6rem; color: var(--muted); padding: 1rem 0; }
+
+.shop-link { display: flex; align-items: center; gap: 0.9rem; text-decoration: none; color: inherit; }
+.shop-link h3 { margin: 0; }
+.board .seg.wrap { flex-wrap: wrap; }
+.board-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; max-height: 520px; overflow: auto; }
+.board-row { display: flex; align-items: center; gap: 0.7rem; padding: 0.45rem 0.6rem; border-radius: 10px; border: 1px solid transparent; }
+.board-row:nth-child(odd) { background: rgba(0, 0, 0, 0.14); }
+[data-theme="light"] .board-row:nth-child(odd) { background: rgba(90, 67, 48, 0.07); }
+.board-row.me { border-color: color-mix(in srgb, var(--gold-leaf) 60%, transparent); background: color-mix(in srgb, var(--gold-leaf) 14%, transparent); }
+.board-rank { width: 28px; text-align: center; font-family: var(--font-display); font-weight: 800; color: var(--muted); }
+.board-name { text-decoration: none; color: inherit; display: grid; line-height: 1.2; min-width: 0; }
+.board-name .t { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.board-name .s { font-size: 0.78rem; color: var(--muted); }
+.board-val { font-weight: 700; white-space: nowrap; }
+.by-chapter { display: grid; gap: 0.35rem; }
+
+@media (max-width: 900px) {
+  .dash-hero { grid-template-columns: 1fr; }
+  .dash-side { display: none; }
+  .dash-you { flex-direction: row; justify-content: flex-start; }
+}
+@media (max-width: 640px) {
+  .login-card { padding: 1.1rem 1rem; }
+  .course-nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

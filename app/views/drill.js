@@ -14,12 +14,12 @@ export function render(app, params) {
     const ids = (arg || '').split(',').filter(Boolean);
     return start(app, { concepts: new Set(ids), limit: Math.max(12, ids.length * 4), title: 'Retake the lost ground', weak: false, pursuitFirst: true });
   }
-  if (sub === 'go') return start(app, JSON.parse(sessionStorage.getItem('drillcfg') || '{}'), true);
+  if (sub === 'go') return start(app, JSON.parse(sessionStorage.getItem(`drillcfg.${app.course}`) || '{}'), true);
   return config(app, {});
 }
 
 function config(app, { weak }) {
-  const saved = JSON.parse(sessionStorage.getItem('drillcfg') || 'null');
+  const saved = JSON.parse(sessionStorage.getItem(`drillcfg.${app.course}`) || 'null');
   const selected = new Set(saved && saved.chapterList ? saved.chapterList : app.content.chapters.map(c => c.chapter));
   let goal = saved?.limit ?? 30;
   let mode = weak ? 'weak' : (saved?.mode || 'drill');
@@ -38,7 +38,7 @@ function config(app, { weak }) {
       h('div', { class: 'row wrap' }, h('div', { class: 'field' }, h('label', null, 'Session goal'), goalSeg), h('div', { class: 'field' }, h('label', null, 'Mode'), modeSeg)),
       h('button', { class: 'btn primary big', onClick: () => {
         if (!selected.size) { app.toast('Pick at least one chapter', 'bad'); return; }
-        sessionStorage.setItem('drillcfg', JSON.stringify({ chapterList: [...selected], limit: goal || null, mode }));
+        sessionStorage.setItem(`drillcfg.${app.course}`, JSON.stringify({ chapterList: [...selected], limit: goal || null, mode }));
         app.navigate('#/drill/go');
       } }, 'March out'),
       h('p', { class: 'tiny muted' }, 'Keyboard: 1–5 to answer, Enter to continue. Weak-spot mode shows the concept card before the first question of each concept.')));

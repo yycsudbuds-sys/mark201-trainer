@@ -5,6 +5,9 @@ import os
 import sys
 import time
 from playwright.sync_api import sync_playwright
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from testlib import gate_create, gate_enter, to_camp, cleanup, test_name
+NAME = test_name("smoke")
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8791/"
 SHOTS = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), "shots")
@@ -53,11 +56,9 @@ with sync_playwright() as p:
     page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type in ("error",) else None)
     page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
 
-    go(page, "")
-    page.wait_for_selector("input[type=text]")
-    page.fill("input[type=text]", "Tester")
-    page.click("text=Join the legion")
-    page.wait_for_selector(".castra, .hq")
+    gate_create(page, BASE, NAME)
+    shot(page, "00_forum")
+    to_camp(page, BASE)
     page.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; s.settings.motion = false; window.__app.store.flush(); window.__app.applySettings(); })()")
     shot(page, "01_home")
 
@@ -132,7 +133,7 @@ with sync_playwright() as p:
     import json as _json
     _acts = {}
     for _ch in _json.load(open(os.path.join(os.path.dirname(__file__), "..", "content", "ch07.json"), encoding="utf-8"))["activities"]:
-        _acts.setdefault(_ch["type"], _ch["id"])
+        _acts.setdefault(_ch["type"], "mark201-" + _ch["id"])
     for kind, name in [("order", "22_order"), ("sort", "23_sort"), ("match", "24_match")]:
         aid = _acts.get(kind)
         if not aid:
@@ -185,11 +186,10 @@ with sync_playwright() as p:
     m.on("pageerror", lambda e: errors.append(f"mobile pageerror: {e}"))
     m.goto(BASE + "#/home", wait_until="load")
     m.wait_for_timeout(300)
-    if m.locator("input[type=text]").count():
-        m.fill("input[type=text]", "Mobile")
-        m.click("text=Join the legion")
-        m.wait_for_selector(".castra, .hq")
-        m.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
+    gate_enter(m, BASE, NAME.upper())
+    m.screenshot(path=os.path.join(SHOTS, "29_mobile_forum.png"), full_page=True)
+    to_camp(m, BASE)
+    m.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
     m.screenshot(path=os.path.join(SHOTS, "29_mobile_home.png"), full_page=True)
     m.goto(BASE + "#/drill", wait_until="load")
     m.wait_for_timeout(200)
@@ -202,6 +202,7 @@ with sync_playwright() as p:
 
     browser.close()
 
+print("cleanup:", cleanup(NAME))
 print("\nERRORS:" if errors else "\nNo console/page errors.")
 for e in errors:
     print(" -", e)

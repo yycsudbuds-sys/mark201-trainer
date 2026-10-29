@@ -7,3 +7,5 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+# FIN 201 course material extracts (copyrighted) stay local
+kb/fin201/

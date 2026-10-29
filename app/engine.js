@@ -247,15 +247,33 @@ export function pickNext(content, state, opts) {
   return null;
 }
 
+// One index per content bundle (built lazily, cached by object identity): concept id -> chapter number and
+// concept id -> its questions. Ids are opaque strings prefixed with the course id, so nothing is parsed out of them.
+const INDEX = new WeakMap();
+export function contentIndex(content) {
+  let ix = INDEX.get(content);
+  if (ix) return ix;
+  ix = { chapterOf: new Map(), byConcept: new Map() };
+  for (const ch of content.chapters) {
+    for (const c of ch.concepts) { ix.chapterOf.set(c.id, ch.chapter); if (!ix.byConcept.has(c.id)) ix.byConcept.set(c.id, []); }
+    for (const q of ch.questions) {
+      let arr = ix.byConcept.get(q.concept);
+      if (!arr) { arr = []; ix.byConcept.set(q.concept, arr); }
+      arr.push(q);
+      if (!ix.chapterOf.has(q.concept)) ix.chapterOf.set(q.concept, ch.chapter);
+    }
+  }
+  INDEX.set(content, ix);
+  return ix;
+}
+
 export function chapterOfConcept(content, cid) {
-  const m = /^c(\d\d)-/.exec(cid);
-  return m ? parseInt(m[1], 10) : null;
+  const ix = contentIndex(content);
+  return ix.chapterOf.has(cid) ? ix.chapterOf.get(cid) : null;
 }
 
 export function questionsForConcept(content, cid) {
-  const ch = content.chapters.find(c => c.chapter === chapterOfConcept(content, cid));
-  if (!ch) return [];
-  return ch.questions.filter(q => q.concept === cid);
+  return contentIndex(content).byConcept.get(cid) || [];
 }
 
 export function pickQuestionForConcept(content, state, cid, opts) {

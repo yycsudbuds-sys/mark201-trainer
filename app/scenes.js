@@ -331,6 +331,8 @@ const SCENES = {
 };
 
 export const PROVINCE_SCENE = { 1: 'italia', 6: 'hispania', 7: 'gallia', 8: 'britannia', 9: 'germania', 10: 'graecia', 11: 'asia', 12: 'aegyptus' };
+/** A course pack adds its own province scenes here (kind -> painter(s, d, a, dAmb)). */
+export function registerScenes(map) { Object.assign(SCENES, map); }
 
 /** Build a scene element: .scene-bg > .scene-static(svg) + .scene-ambient(svg) + .scene-tint. */
 export function sceneFor(kind, { blur = 8, tint = 0.45 } = {}) {

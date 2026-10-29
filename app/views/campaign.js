@@ -1,9 +1,8 @@
 // Campaign: the Marketing Archipelago. World map → island trail → lesson → checkpoint → boss.
 import { h, plural } from '../ui.js';
 import { masteryLevel, buildExam } from '../engine.js';
-import { worldMap, islandTrail, chapterProgress, nextIsland, ISLANDS, provinceState, ROMAN, zoomToProvince } from '../map.js';
-import { PROVINCE_SCENE } from '../scenes.js';
-import { icon, CHAPTER_ICON } from '../icons.js';
+import { worldMap, islandTrail, chapterProgress, nextIsland, provinceState, zoomToProvince } from '../map.js';
+import { icon } from '../icons.js';
 import { getCosmetic, addDenarii } from '../cosmetic.js';
 import { warBriefing, triumph } from '../cutscene.js';
 import { createLesson } from './lesson.js';
@@ -17,7 +16,7 @@ export function render(app, params) {
   if (!ch) return h('div', { class: 'card' }, 'Unknown chapter. ', h('a', { href: '#/campaign' }, 'Back to the map'));
   if (topicId === 'boss') return boss(app, ch);
   if (!topicId) return island(app, ch);
-  const t = ch.topics.find(x => x.id === topicId);
+  const t = ch.topics.find(x => x.id === topicId || x.id === `${app.course}-${topicId}`);
   if (!t) return h('div', { class: 'card' }, 'Unknown level. ', h('a', { href: `#/campaign/${chNum}` }, 'Back to the island'));
   if (action === 'drill') return checkpoint(app, ch, t);
   return lesson(app, ch, t);
@@ -54,11 +53,11 @@ function world(app) {
   else fallback();
   const page = h('div', { class: 'world-page' },
     h('div', { class: 'page-head' },
-      h('div', null, h('div', { class: 'eyebrow' }, 'Campaign · Conquest map'), h('h1', null, 'Campaign'), h('p', null, 'Eight chapters, one province each. Open a chapter, work through its topics (read the lesson, then pass the checkpoint quiz) and plant a standard for each. Clear the chapter boss (24 questions, 90%) to conquer it.')),
-      h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, icon('aquila', { size: 14, tone: 'gold' }), `${conquered}/8 chapters cleared`), h('span', { class: 'chip' }, icon('standard', { size: 14, tone: 'crimson' }), `${flags}/${totalFlags} standards planted`))),
+      h('div', null, h('div', { class: 'eyebrow' }, 'Campaign · Conquest map'), h('h1', null, 'Campaign'), h('p', null, `${app.pack.copy.chapters} Open a chapter, work through its topics (read the lesson, then pass the checkpoint quiz) and plant a standard for each. Clear the chapter boss (${app.pack.boss.n} questions, ${Math.round(app.pack.boss.pass * 100)}%) to conquer it.`)),
+      h('div', { class: 'row wrap' }, h('span', { class: 'chip' }, icon('aquila', { size: 14, tone: 'gold' }), `${conquered}/${app.content.chapters.length} chapters cleared`), h('span', { class: 'chip' }, icon('standard', { size: 14, tone: 'crimson' }), `${flags}/${totalFlags} standards planted`))),
     mapFrame,
     nextCh ? h('div', { class: 'quest', style: { '--ch': nextCh.color } },
-      h('div', { class: 'quest-ico' }, icon(CHAPTER_ICON[nextCh.chapter] || 'seal', { size: 34, tone: 'gold' })),
+      h('div', { class: 'quest-ico' }, icon(app.chapterIcon(nextCh.chapter), { size: 34, tone: 'gold' })),
       h('div', { class: 'grow' }, h('div', { class: 'eyebrow' }, 'Next objective'), h('h3', null, `Chapter ${nextCh.chapter} · ${nextCh.title}`), h('p', { class: 'small muted' }, nextCh.tag)),
       h('a', { class: 'btn ch big', href: `#/campaign/${nextCh.chapter}` }, `Open Chapter ${nextCh.chapter} `, icon('arrow', { size: 14, tone: 'mono' }))) : h('div', { class: 'quest' }, h('div', { class: 'quest-ico' }, icon('aquila', { size: 34, tone: 'gold' })), h('div', null, h('h3', null, 'Every chapter is cleared, Imperator.'), h('p', { class: 'small muted' }, 'Keep sharp with Smart Drill and midterm simulations.'))));
   page.cleanup = () => releaseTable(mapFrame);
@@ -66,7 +65,6 @@ function world(app) {
 }
 
 function island(app, ch) {
-  const isl = ISLANDS[ch.chapter];
   const prog = chapterProgress(app, ch);
   const sheet = h('div', { class: 'level-sheet' });
   const use3d = wantsTable(app);
@@ -78,11 +76,11 @@ function island(app, ch) {
     ch.topics.map((t, i) => { const cleared = topicCleared(app, t); return h('button', { class: 'rs-node' + (cleared ? ' done' : '') + (i === nextIdx ? ' next' : ''), type: 'button', role: 'listitem', title: t.title, onClick: () => { app.sound('knock'); sheet.dataset.user = '1'; showSheet(t, i); } },
       h('span', { class: 'rs-top' }, h('span', { class: 'rs-num' }, RS[i + 1]), icon(cleared ? 'standard' : 'gate', { size: 15, tone: cleared ? 'crimson' : 'bronze' })), h('span', { class: 'rs-title' }, t.title), h('span', { class: 'rs-state' }, cleared ? 'Standard planted' : i === nextIdx ? 'Up next' : 'Ahead')); }),
     h('button', { class: 'rs-node siege' + (prog.boss ? ' done' : allCleared ? ' next' : ' locked'), type: 'button', role: 'listitem', onClick: () => onBoss() },
-      h('span', { class: 'rs-top' }, icon('siegetower', { size: 16, tone: 'gold' })), h('span', { class: 'rs-title' }, 'Chapter boss'), h('span', { class: 'rs-state' }, prog.boss ? 'City taken' : allCleared ? 'Lay siege · 90% takes the city' : 'Pass every checkpoint first')));
+      h('span', { class: 'rs-top' }, icon('siegetower', { size: 16, tone: 'gold' })), h('span', { class: 'rs-title' }, 'Chapter boss'), h('span', { class: 'rs-state' }, prog.boss ? 'City taken' : allCleared ? `Lay siege · ${Math.round(app.pack.boss.pass * 100)}% takes the city` : 'Pass every checkpoint first')));
   const page = h('div', { class: 'island-page', style: { '--ch': ch.color } },
     h('a', { class: 'back', href: '#/campaign' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Back to the campaign map'),
     h('div', { class: 'page-head mt-sm' },
-      h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter} · campaign`), h('h1', { class: 'row' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 30, tone: 'gold' }), ch.title), h('p', null, `${ch.topics.length} topics, ${ch.concepts.length} concepts. ${prog.cleared}/${ch.topics.length} checkpoints passed${prog.boss ? ', chapter boss cleared.' : '.'}`)),
+      h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter} · campaign`), h('h1', { class: 'row' }, icon(app.chapterIcon(ch.chapter), { size: 30, tone: 'gold' }), ch.title), h('p', null, `${ch.topics.length} topics, ${ch.concepts.length} concepts. ${prog.cleared}/${ch.topics.length} checkpoints passed${prog.boss ? ', chapter boss cleared.' : '.'}`)),
       h('div', { class: 'row wrap' }, h('a', { class: 'btn ghost', href: `#/learn/${ch.chapter}` }, icon('scroll', { size: 16, tone: 'gold' }), 'Lessons'), h('a', { class: 'btn ghost', href: `#/drill/chapter/${ch.chapter}` }, icon('gladius', { size: 16, tone: 'gold' }), 'Drill this chapter'))),
     strip, mapFrame, sheet);
   function showSheet(t, i) {
@@ -127,9 +125,10 @@ function lesson(app, ch, t) {
 }
 
 function lockedPrompt(app, ch) {
-  const pv = ISLANDS[ch.chapter];
-  const idx = [1, 6, 7, 8, 9, 10, 11, 12].indexOf(ch.chapter);
-  const prev = app.index.chapter.get([1, 6, 7, 8, 9, 10, 11, 12][idx - 1]);
+  const order = app.pack.order;
+  const idx = order.indexOf(ch.chapter);
+  const prev = app.index.chapter.get(order[idx - 1]);
+  if (!prev) { app.navigate(`#/campaign/${ch.chapter}`); return; }
   import('../ui.js').then(({ modal }) => modal({
     title: `Chapter ${ch.chapter} is locked`,
     body: h('div', { class: 'stack' }, h('p', null, `Chapter ${ch.chapter} opens once you pass a checkpoint in Chapter ${prev.chapter} (${prev.title}).`), h('p', { class: 'small muted' }, 'A forced march skips ahead. Allowed, but the chapters build on each other.')),
@@ -147,7 +146,7 @@ function checkpoint(app, ch, t) {
   return host;
   function buildCheckpoint() { return createRunner(app, {
     title: `Checkpoint · ${t.title}`, subtitle: `Chapter ${ch.chapter}. Every concept to Solid passes the checkpoint and plants the standard.`, mode: 'campaign',
-    concepts, limit, feedback: 'immediate', pickOpts: { interleave: false }, province: PROVINCE_SCENE[ch.chapter],
+    concepts, limit, feedback: 'immediate', pickOpts: { interleave: false }, province: app.chapterScene(ch.chapter),
     stopWhen: s => s.answered >= t.concepts.length * 2 && topicConceptsSolid(app, t),
     onFinish: (sum, reason) => {
       const cleared = topicConceptsSolid(app, t);
@@ -186,7 +185,7 @@ function nextTopicLink(app, ch, t) {
 }
 
 function boss(app, ch) {
-  const n = 24;
+  const n = app.pack.boss.n; const pass = app.pack.boss.pass; const pct = Math.round(pass * 100);
   const questions = buildExam(app.content, app.state, { n, chapters: new Set([ch.chapter]) });
   const host = h('div', { style: { '--ch': ch.color } });
   let runner = null;
@@ -194,13 +193,13 @@ function boss(app, ch) {
   host.cleanup = () => { host.dead = true; runner && runner.cleanup && runner.cleanup(); };
   return host;
   function buildBoss() { return createRunner(app, {
-    title: `Chapter ${ch.chapter} boss`, subtitle: `${ch.title}. ${n} questions from the whole chapter, 90% to clear it (the siege of ${ISLANDS[ch.chapter]?.capital || 'the capital'}).`, mode: 'boss', questions, feedback: 'immediate', limit: n, pursuit: false, hearts: null, province: PROVINCE_SCENE[ch.chapter], siege: { needed: Math.ceil(n * 0.9) },
+    title: `Chapter ${ch.chapter} boss`, subtitle: `${ch.title}. ${n} questions from the whole chapter, ${pct}% to clear it (the siege of ${app.pack.geo.prov[ch.chapter]?.capital || 'the capital'}).`, mode: 'boss', questions, feedback: 'immediate', limit: n, pursuit: false, hearts: null, province: app.chapterScene(ch.chapter), siege: { needed: Math.ceil(n * pass) },
     onFinish: (sum, reason) => {
       const score = sum.answered ? sum.correct / sum.answered : 0;
       const complete = sum.answered >= n;
       const rec = app.state.campaign.bosses[ch.chapter] || (app.state.campaign.bosses[ch.chapter] = {});
       if (complete) rec.best = Math.max(rec.best || 0, score);
-      const won = complete && score >= 0.9;
+      const won = complete && score >= pass;
       const first = won && !rec.cleared;
       if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); addDenarii(50, 'conquest'); }
       else if (won) { app.grantXp(100, 'the city holds for Rome'); }
@@ -211,7 +210,7 @@ function boss(app, ch) {
         if (won) { app.confetti({ count: first ? 220 : 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); host.appendChild(h('div', { class: 'claim crown', style: { '--ch': ch.color } }, h('div', { class: 'claim-crown' }, icon('aquila', { size: 48, tone: 'gold' })), h('div', { class: 'claim-text' }, h('div', { class: 'eyebrow' }, 'Chapter boss cleared'), h('h2', null, `Chapter ${ch.chapter} conquered`), h('p', { class: 'small muted' }, `${sum.correct}/${n}. ${ch.title} is yours.`)))); }
         host.appendChild(resultCard(app, won ? 'Chapter boss cleared' : complete ? 'Not yet · the walls held' : 'Boss attempt stopped', sum,
           h('div', { class: 'stack mt' },
-            won ? null : complete ? h('p', null, `You need 90% (${Math.ceil(n * 0.9)}/${n}) to clear the chapter boss. Drill the misses below, then try again.`) : h('p', { class: 'muted' }, 'Finish every question to record the attempt.'),
+            won ? null : complete ? h('p', null, `You need ${pct}% (${Math.ceil(n * pass)}/${n}) to clear the chapter boss. Drill the misses below, then try again.`) : h('p', { class: 'muted' }, 'Finish every question to record the attempt.'),
             h('div', { class: 'row wrap', style: { justifyContent: 'center' } },
               h('a', { class: 'btn primary', href: won ? '#/campaign' : `#/campaign/${ch.chapter}/boss` }, won ? 'Back to the campaign map' : 'Try the boss again'),
               sum.log.some(l => !l.correct) ? h('a', { class: 'btn', href: `#/drill/concepts/${[...new Set(sum.log.filter(l => !l.correct).map(l => l.cid))].join(',')}` }, icon('target', { size: 16, tone: 'gold' }), 'Drill my misses') : null,

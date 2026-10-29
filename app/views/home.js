@@ -7,28 +7,7 @@ import { nextAction } from './common.js';
 import { worldMap, chapterProgress } from '../map.js';
 import { legionaryAvatar, legionGround, rankLadder, dailyOrders, brazier, clepsydra, equipped } from '../legion.js';
 
-const PLAN = [
-  { day: 'Today', items: [
-    ['Campaign: Chapters 1 and 6', 'Each topic: the lesson (5 min), then pass the checkpoint quiz.'],
-    ['Campaign: Chapters 7 and 8', 'Ch 8 is table-heavy (PLC, Ansoff, adoption curve). Use Build & Sort after the quiz.'],
-    ['Break 45+ min, then Smart Drill (30 Q)', 'A gap starts a new session. Mastered requires a correct answer in a later session.'],
-    ['Campaign: Chapters 9 and 10', 'Pricing has calculations: do every calc question until BEP and markup are automatic.'],
-    ['Campaign: Chapters 11 and 12', 'Wholesaler types and the advocacy funnel are pure memorization: use Build & Sort.'],
-    ['Blitz × 3 before bed', 'Fast retrieval of definitions. Then sleep: memory consolidates overnight.'],
-  ] },
-  { day: 'Tomorrow', items: [
-    ['Morning: Smart Drill until no pursuits remain', 'Interleaved across all chapters. Aim for 60+ questions.'],
-    ['Midterm Simulation #1 (60 Q, timed)', 'Review every miss. Then retake the lost ground.'],
-    ['Clear every chapter boss', '90% or better on each. Bosses still standing are your weakest chapters.'],
-    ['Afternoon: Flashcard sweep of every concept', 'Grade honestly: Again on anything you hesitated on.'],
-    ['Midterm Simulation #2 (80 Q)', 'Target 95%+. Anything missed twice gets its lesson re-read.'],
-    ['Evening: Weak Spot Hunter, then stop', 'Light review only. No all-nighter: sleep beats cramming.'],
-  ] },
-  { day: 'Exam day', items: [
-    ['20-minute Blitz warm-up', 'Wake up retrieval, do not learn new material.'],
-    ['Skim the cheat sheets for Ch 8 and Ch 9', 'PLC table, adoption percentages, pricing buckets, BEP formula.'],
-  ] },
-];
+// The study plan (marching route) comes from the course pack.
 
 export function render(app) {
   const st = app.state;
@@ -38,7 +17,7 @@ export function render(app) {
   const due = dueCount(app.content, st);
   const today = st.days[Object.keys(st.days).sort().pop()] || { answered: 0, correct: 0 };
   const na = nextAction(app);
-  const lv = levelForXp(st.xp);
+  const lv = levelForXp(app.xp());
   const islands = app.content.chapters.filter(ch => chapterProgress(app, ch).boss).length;
   const eq = equipped();
   const clock = clepsydra(app);
@@ -52,7 +31,7 @@ export function render(app) {
     h('div', { class: 'castra-main' },
       h('div', { class: 'eyebrow' }, 'Home · the camp (Castra)'),
       h('h1', null, `Ave, ${st.name}.`),
-      h('p', { class: 'muted' }, headline(r, counts)),
+      h('p', { class: 'muted' }, headline(r, counts, app)),
       h('div', { class: 'row wrap castra-stats' },
         h('div', { class: 'hq-ring' }, ring(r.score, { size: 112, stroke: 10, color: r.score >= 0.85 ? 'var(--good)' : 'var(--gold-leaf)', label: h('div', { class: 'center' }, h('div', { class: 'big', style: { fontSize: '1.6rem', fontFamily: 'var(--font-display)', fontWeight: 800 } }, fmtPct(r.score)), h('div', { class: 'tiny muted' }, 'readiness')) })),
         h('div', { class: 'hq-stats' },
@@ -69,7 +48,7 @@ export function render(app) {
     h('div', { class: 'page-head' }, h('div', null, h('h2', null, 'Study modes'), h('p', null, 'Shields on the palisade. Different ways to practise, one engine: every answer feeds the same mastery model and review schedule.'))),
     h('div', { class: 'palisade' }),
     h('div', { class: 'cartridges' },
-      cart('#/campaign', icon('map', { size: 28, tone: 'gold' }), 'Campaign', 'Chapter by chapter: lesson, checkpoint quiz, chapter boss.', '#C9A227', `${islands}/8 chapters`),
+      cart('#/campaign', icon('map', { size: 28, tone: 'gold' }), 'Campaign', 'Chapter by chapter: lesson, checkpoint quiz, chapter boss.', '#C9A227', `${islands}/${app.content.chapters.length} chapters`),
       cart('#/drill', icon('swords', { size: 28, tone: 'gold' }), 'Smart Drill', 'Adaptive mix of every chapter. Misses trigger a pursuit.', '#8B1E1E', `${due} due · ${pursuits} pursuits`),
       cart('#/exam', icon('scutum', { size: 28, tone: 'gold' }), 'Midterm Simulation', 'Timed, mixed, no feedback until the debrief.', '#6FA0B8', '20–80 Q'),
       cart('#/arcade/blitz', icon('gladius', { size: 28, tone: 'gold' }), 'Blitz', '90 s, three lives, combos.', '#D28C3C', `best ${st.stats.blitzBest || 0}`),
@@ -82,15 +61,15 @@ export function render(app) {
 
   const ground = legionGround(app);
   const legion = h('section', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h2', null, eq.name ? `Your legion · ${eq.name}` : 'Your legion'), h('p', null, `${app.content.stats.concepts} soldiers, one per stronghold, in eight cohorts. Recruits are ghosts, the learning wear tunics, the solid wear armour, the mastered carry gold standards. Wounded soldiers have a pursuit open; a raised hand is due for review. Click a soldier to open its scroll.`)), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Progress report ', icon('arrow', { size: 14, tone: 'mono' }))),
+    h('div', { class: 'page-head' }, h('div', null, h('h2', null, eq.name ? `Your legion · ${eq.name}` : 'Your legion'), h('p', null, `${app.content.stats.concepts} soldiers, one per stronghold, in ${app.pack.copy.cohorts}. Recruits are ghosts, the learning wear tunics, the solid wear armour, the mastered carry gold standards. Wounded soldiers have a pursuit open; a raised hand is due for review. Click a soldier to open its scroll.`)), h('a', { class: 'btn sm ghost', href: '#/progress' }, 'Progress report ', icon('arrow', { size: 14, tone: 'mono' }))),
     ground);
 
   const plan = planSection(app);
   return h('div', { class: 'stack', style: { gap: '1.6rem' } }, hero, modes, legion, plan);
 }
 
-function headline(r, counts) {
-  if (counts[4] + counts[3] + counts[2] === 0) return 'No chapter is cleared yet and the legion is raw recruits. Start with Chapter 1.';
+function headline(r, counts, app) {
+  if (counts[4] + counts[3] + counts[2] === 0) return `No chapter is cleared yet and the legion is raw recruits. Start with Chapter ${app.pack.order[0]}.`;
   if (r.score < 0.4) return 'A good start. Keep planting standards.';
   if (r.score < 0.7) return 'Momentum. The weak flanks are showing themselves.';
   if (r.score < 0.9) return 'Strong. Hunt the stragglers and give battle.';
@@ -101,7 +80,7 @@ function cart(href, ico, title, desc, color, meta) {
   return h('a', { class: 'cart', href, style: { '--ch': color } }, h('div', { class: 'cart-top' }, h('span', { class: 'cart-ico' }, ico), h('span', { class: 'cart-meta' }, meta)), h('h3', null, title), h('p', null, desc), h('div', { class: 'cart-ridge' }));
 }
 function planSection(app) {
-  const st = app.state;
+  const st = app.state; const PLAN = app.pack.plan || [];
   const done = PLAN.reduce((s, d, di) => s + d.items.filter((_, i) => st.plan[`${di}-${i}`]).length, 0);
   const total = PLAN.reduce((s, d) => s + d.items.length, 0);
   let n = 0;

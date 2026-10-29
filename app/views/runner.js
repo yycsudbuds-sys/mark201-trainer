@@ -7,7 +7,7 @@ import { shuffleOptions, ANGLE_LABELS, pickNext, masteryLevel, MASTERY_LABELS } 
 import { conceptCard, figureEl } from './concept.js';
 import { visualFor } from '../visuals.js';
 import { attachBattle } from '../battle.js';
-import { richText, icon, CHAPTER_ICON } from '../icons.js';
+import { richText, icon } from '../icons.js';
 import { getCosmetic, getDenarii, addDenarii } from '../cosmetic.js';
 import { vignetteFor } from '../vignettes.js';
 
@@ -138,7 +138,7 @@ export function createRunner(app, cfg) {
       card.appendChild(h('div', { class: 'pursuit-banner' }, icon('standard', { size: 18, tone: 'crimson' }), h('span', null, h('b', null, 'Pursuit: '), `prove you know ${entry.concept.term} — ${cs.pursuit.need - cs.pursuit.done} more right in a row`),
         h('span', { class: 'pips' }, Array.from({ length: cs.pursuit.need }, (_, i) => h('span', { class: 'pip' + (i < cs.pursuit.done ? ' on' : '') })))));
     }
-    card.appendChild(h('div', { class: 'qhead' }, h('div', { class: 'qicon' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 28, tone: 'gold' })), h('div', { class: 'qmeta' }, metas)));
+    card.appendChild(h('div', { class: 'qhead' }, h('div', { class: 'qicon' }, icon(app.chapterIcon(ch.chapter), { size: 28, tone: 'gold' })), h('div', { class: 'qmeta' }, metas)));
     const stemEl = h('div', { class: 'stem' }, richText(q.stem));
     stemEl.querySelectorAll('.blank').forEach(b => { b.classList.add('wax-slot'); b.setAttribute('aria-label', 'blank: press a number or drag an answer here'); });
     const isFill = q.type === 'fill' || stemEl.querySelector('.wax-slot');

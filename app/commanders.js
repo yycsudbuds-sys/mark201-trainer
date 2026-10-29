@@ -24,6 +24,9 @@ export const COMMANDERS = {
     taunts: ['Your line wavers.', 'Hold, and we will break you.', 'Another one falls.'], surrender: 'The field is yours.' },
 };
 
+/** A course pack adds its own enemy commanders here (scene kind -> commander). */
+export function registerCommanders(map) { Object.assign(COMMANDERS, map); }
+
 export function commanderFor(chapterOrKind) {
   const kind = typeof chapterOrKind === 'number' ? PROVINCE_SCENE[chapterOrKind] : chapterOrKind;
   return COMMANDERS[kind] || COMMANDERS.default;

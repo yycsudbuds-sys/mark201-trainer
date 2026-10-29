@@ -1101,6 +1101,7 @@ table.fig.reveal td.hid::after { font-family: var(--font-display); }
 .option.tablet.picked { box-shadow: var(--bevel-stone-light), 0 0 0 2px var(--gold-leaf); }
 .option.tablet:disabled { cursor: default; }
 :root[data-motion="off"] .option.tablet, :root[data-motion="off"] .option.tablet .key.coin, :root[data-motion="off"] .option.tablet .laurel-mark { transition: none; }
+:root[data-motion="off"] .option.thumb, :root[data-motion="off"] .option.thumb .key.coin, :root[data-motion="off"] .option.thumb .thumb-ico, :root[data-motion="off"] .option.thumb .laurel-mark { transition: none; }
 :root[data-motion="off"] .option.tablet.wrong, :root[data-motion="off"] .option.tablet.correct::after { animation: none; }
 
 /* layered feedback: verdict and explanation on parchment, wax seals for the rest, diagram beside */
@@ -1334,6 +1335,7 @@ td.revealed { background: rgba(201, 162, 39, 0.18) !important; }
 .clepsydra.urgent { border-color: var(--pompeian-light); color: #FFB3A7; }
 .clepsydra.urgent .clep-glass { border-color: var(--pompeian-light); }
 .clepsydra.urgent .clep-water { background: linear-gradient(180deg, #E26B5A, #8B1E1E); animation: pulse 1.6s ease-in-out infinite; }
+[data-motion="off"] .clepsydra.urgent .clep-water { animation: none; }
 /* fury meter and the Imperator's Favor */
 .fury { display: inline-flex; align-items: center; gap: 0.3rem; }
 .fury-track { width: 64px; height: 8px; border-radius: 4px; background: #1C1612; border: 1px solid rgba(0, 0, 0, 0.6); overflow: hidden; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6); }

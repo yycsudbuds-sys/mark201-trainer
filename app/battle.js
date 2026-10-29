@@ -23,6 +23,8 @@ export const ENEMY = {
   aegyptus: { unit: 'egyptian', color: '#1E6A7A', trim: '#E3C76A', skin: '#B07A4A', name: 'the Ptolemaic line' },
   default: { unit: 'warrior', color: '#3A3F47', trim: '#8A8F99', skin: '#D9A47C', name: 'the enemy' },
 };
+/** A course pack adds its own enemy lines here (scene kind -> enemy). */
+export function registerEnemies(map) { Object.assign(ENEMY, map); }
 const RED = '#8B1E1E', RED_D = '#5E1313', GOLD = '#C9A227', GOLD_L = '#E3C76A', IRON = '#8C8C90', IRON_D = '#4A4A4E', LEATHER = '#3B2A17', SKIN = '#8A5A3C', WOOD = '#5A3F22', WOOD_D = '#2A1C0E';
 
 // ---------------------------------------------------------------- sprite painters (origin: feet centre, y up is negative)

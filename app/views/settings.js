@@ -16,26 +16,18 @@ export function render(app) {
     const btn = h('button', { class: 'switch' + (on ? ' on' : ''), role: 'switch', 'aria-checked': String(on), 'aria-label': label, onClick: () => { on = !on; setCosmetic({ [key]: on }); btn.classList.toggle('on', on); btn.setAttribute('aria-checked', String(on)); } });
     return h('div', { class: 'toggle' }, h('div', null, h('div', { style: { fontWeight: 700 } }, label), h('div', { class: 'small muted' }, desc)), btn);
   };
-  const nameInput = h('input', { type: 'text', value: st.name, maxlength: '24' });
   const dateInput = h('input', { type: 'datetime-local', value: s.examDate || '', onChange: e => { s.examDate = e.target.value; app.store.save(); toast('Exam date saved', 'good'); } });
   const fileInput = h('input', { type: 'file', accept: 'application/json', style: { display: 'none' }, onChange: async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { app.store.importJSON(await f.text()); toast('Progress imported into a new profile', 'good'); } catch (err) { toast(err.message, 'bad'); }
+    try { app.store.importJSON(await f.text()); toast('Progress merged into this profile', 'good'); app.navigate('#/settings'); } catch (err) { toast(err.message, 'bad'); }
   } });
   return h('div', { class: 'runner stack', style: { gap: '1.2rem' } },
     h('div', { class: 'page-head' }, h('h1', null, 'Settings')),
     h('div', { class: 'card stack' }, h('h3', null, 'Legionary'),
-      h('div', { class: 'row wrap' }, h('div', { class: 'field grow' }, h('label', null, 'Name'), nameInput), h('button', { class: 'btn', style: { alignSelf: 'end' }, onClick: () => { const v = nameInput.value.trim(); if (v) { app.store.renameProfile(app.store.activeId, v); toast('Renamed', 'good'); } } }, 'Save')),
-      h('div', { class: 'field' }, h('label', null, 'Profiles on this device'),
-        h('div', { class: 'list' }, app.store.profiles.map(p => h('div', { class: 'li' }, h('span', { class: 'grow t' }, p.name, p.id === app.store.activeId ? h('span', { class: 'badge', style: { marginLeft: '8px' } }, 'active') : null),
-          p.id !== app.store.activeId ? h('button', { class: 'btn sm', onClick: () => app.store.switchProfile(p.id) }, 'Switch') : null,
-          app.store.profiles.length > 1 ? h('button', { class: 'btn sm danger', onClick: () => modal({ title: `Delete ${p.name}?`, body: h('p', null, 'All progress for this profile on this device is erased. This cannot be undone.'), actions: [{ label: 'Cancel', kind: 'ghost' }, { label: 'Delete', kind: 'danger', onClick: () => { app.store.deleteProfile(p.id); toast('Profile deleted'); } }] }) }, 'Delete') : null)))),
-      h('div', { class: 'row wrap' }, h('button', { class: 'btn', onClick: () => {
-        const input = h('input', { type: 'text', placeholder: 'Name', maxlength: '24' });
-        modal({ title: 'New player', body: h('div', { class: 'field' }, h('label', null, 'Name'), input), actions: [{ label: 'Cancel', kind: 'ghost' }, { label: 'Create', kind: 'primary', onClick: () => { const v = input.value.trim(); if (!v) return false; app.store.createProfile(v); toast(`Welcome, ${v}`, 'good'); } }] });
-        setTimeout(() => input.focus(), 50);
-      } }, '+ Add player'),
-      h('p', { class: 'tiny muted' }, 'Progress lives in this browser. Friends opening the same link on their own devices get their own fresh profile automatically. Use a second player here only if you share one computer.'))),
+      h('div', { class: 'row wrap between' },
+        h('div', null, h('div', { class: 'eyebrow' }, 'Profile'), h('div', { style: { fontWeight: 700, fontSize: '1.15rem' } }, app.profile.username), h('div', { class: 'small muted' }, 'One name, every device. Type it at the gate on any device to open this camp: XP, coins, gear and every course campaign come with it.')),
+        h('div', { class: 'row wrap' }, h('a', { class: 'btn sm', href: '#/dash' }, 'The Forum'), h('button', { class: 'btn sm ghost', onClick: () => modal({ title: 'Switch profile?', body: h('p', null, 'Your progress is saved. The next name typed at the gate opens its own camp.'), actions: [{ label: 'Stay', kind: 'ghost' }, { label: 'Switch profile', kind: 'primary', onClick: () => { app.syncer && app.syncer.flushNow(); app.store.logout(); } }] }) }, 'Switch profile'))),
+      h('p', { class: 'tiny muted' }, 'Progress saves to the cloud whenever you are online (the chip in the top bar says Saved, Saving or Offline). Offline sessions catch up the next time you are connected.')),
     shopView(app),
     h('div', { class: 'card stack' }, h('h3', null, 'Exam'),
       h('div', { class: 'field' }, h('label', null, 'Midterm date and time (drives the countdown and plan)'), dateInput)),
@@ -48,11 +40,11 @@ export function render(app) {
       cosSwitch('wagers', 'Confidence wagers', 'Bet 1, 2 or 3 denarii before answering with Q, W, E. Cosmetic coin only: never touches XP or mastery, and never offered in the Midterm Simulation.', true),
       cosSwitch('warTable3d', 'Campaign map in 3D', 'The war table in three dimensions. Off, or when motion is off, the Campaign uses the painted 2.5D map instead.', true)),
     h('div', { class: 'card stack' }, h('h3', null, 'Backup'),
-      h('p', { class: 'small muted' }, 'Export your progress as a file to move it to another device or keep a backup.'),
+      h('p', { class: 'small muted' }, 'Progress already follows your name between devices. Export keeps a file backup; Import merges a backup (old or new) into this profile, keeping the higher XP and every unlock.'),
       h('div', { class: 'row wrap' },
-        h('button', { class: 'btn', onClick: () => { const blob = new Blob([app.store.exportJSON()], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `mark201-progress-${st.name.replace(/\W+/g, '_')}-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); } }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Export progress'),
+        h('button', { class: 'btn', onClick: () => { const blob = new Blob([app.store.exportJSON()], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `imperium-progress-${app.profile.username.replace(/\W+/g, '_')}-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); } }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Export progress'),
         h('button', { class: 'btn', onClick: () => fileInput.click() }, icon('arrow', { size: 14, tone: 'mono' }), ' Import progress'), fileInput,
-        h('button', { class: 'btn danger', onClick: () => modal({ title: 'Reset all progress?', body: h('p', null, `Everything for ${st.name} is wiped: mastery, XP, history. Export first if unsure.`), actions: [{ label: 'Cancel', kind: 'ghost' }, { label: 'Reset everything', kind: 'danger', onClick: () => { app.store.resetActive(); toast('Progress reset'); } }] }) }, 'Reset progress'))),
+        h('button', { class: 'btn danger', onClick: () => modal({ title: `Reset ${app.pack.title} progress?`, body: h('p', null, `Everything for ${app.profile.username} in ${app.pack.title} is wiped: mastery, XP, history. Other courses, coins and gear stay. Export first if unsure.`), actions: [{ label: 'Cancel', kind: 'ghost' }, { label: 'Reset this course', kind: 'danger', onClick: () => { app.store.resetCourse(); toast('Progress reset'); app.navigate('#/home'); } }] }) }, `Reset ${app.pack.title} progress`))),
     h('div', { class: 'card' }, h('h3', { class: 'mb' }, 'How mastery works'),
       h('div', { class: 'stack small' },
         h('p', null, 'Every concept moves through five states: ', MASTERY_LABELS.map((m, i) => h('span', { class: 'chip', style: { marginRight: '4px' } }, h('span', { class: `mdot m${i}`, style: { '--ch': 'var(--accent)' } }), m)), '.'),

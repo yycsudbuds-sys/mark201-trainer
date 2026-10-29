@@ -4,7 +4,7 @@
 // a legion token, HTML labels with a collision pass, hover lift, a 1.2 s dolly into a province whose battle road
 // then unfolds into forts, and the reverse on Back. Everything reads existing engine data; nothing is written.
 import { h } from './ui.js';
-import { loadGeo, makeProjection, PROV, ORDER, ROADS, SEA_LANES, ROMAN, paintColorMap, paintDataMap, paintNoise, sampleData, smoothPath, alongPath, centroid, provinceBounds } from './geo.js';
+import { loadGeo, makeProjection, slotOf, paintColorMap, paintDataMap, paintNoise, sampleData, smoothPath, alongPath } from './geo.js';
 import { createLabelLayer } from './maplabels.js';
 import { chapterProgress, provinceState, nextIsland } from './map.js';
 import { masteryLevel } from './engine.js';
@@ -30,6 +30,7 @@ const spring = t => 1 - Math.exp(-6 * t) * Math.cos(9 * t);
 export async function createWarTable(app, opts = {}) {
   const THREE = await loadThree();
   const geo = await loadGeo();
+  const G = app.pack.geo; const { prov: PROV, order: ORDER, roads: ROADS, seaLanes: SEA_LANES } = G; const S = num => slotOf(G, num);
   const proj = makeProjection(geo.bbox, 64);
   const W = proj.W, Hh = proj.H;
   const el = h('div', { class: 'wartable' });
@@ -49,8 +50,8 @@ export async function createWarTable(app, opts = {}) {
   const colorCanvas = document.createElement('canvas'); colorCanvas.width = TW; colorCanvas.height = TH;
   const dataCanvas = document.createElement('canvas'); dataCanvas.width = TW; dataCanvas.height = TH;
   const noiseCanvas = document.createElement('canvas'); noiseCanvas.width = 256; noiseCanvas.height = 256;
-  paintColorMap(colorCanvas, geo, { next: nextIsland(app) });
-  const dm = paintDataMap(dataCanvas, geo);
+  paintColorMap(colorCanvas, geo, { next: nextIsland(app), G });
+  const dm = paintDataMap(dataCanvas, geo, G);
   paintNoise(noiseCanvas, 3);
   const colorTex = new THREE.CanvasTexture(colorCanvas); colorTex.colorSpace = THREE.SRGBColorSpace; colorTex.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
   const dataTex = new THREE.CanvasTexture(dataCanvas); dataTex.colorSpace = THREE.NoColorSpace; dataTex.minFilter = THREE.LinearFilter; dataTex.generateMipmaps = false;
@@ -62,7 +63,7 @@ export async function createWarTable(app, opts = {}) {
   const world = (lon, lat, up = 0) => { const [x, y] = proj.toXY(lon, lat); return new THREE.Vector3(x, heightAt(lon, lat) + up, -y); };
 
   // ---- land
-  const provState = new Float32Array(13), dissolve = new Float32Array(13);
+  const provState = new Float32Array(16), dissolve = new Float32Array(16);
   const landUniforms = { colorMap: { value: colorTex }, dataMap: { value: dataTex }, noiseMap: { value: noiseTex }, time: uTime, heightScale: { value: HEIGHT }, baseH: { value: BASE }, hoverId: { value: 0 }, liftAmt: { value: 0 }, focusId: { value: 0 }, dimOthers: { value: 0 }, provState: { value: provState }, dissolve: { value: dissolve }, lightDir: { value: new THREE.Vector3(-0.45, 0.8, -0.35).normalize() }, texel: { value: new THREE.Vector2(1 / TW, 1 / TH) }, nightMix: { value: 1 } };
   const landMat = new THREE.ShaderMaterial({ uniforms: landUniforms, vertexShader: `
     uniform sampler2D dataMap; uniform float heightScale; uniform float baseH; uniform float hoverId; uniform float liftAmt;
@@ -73,14 +74,14 @@ export async function createWarTable(app, opts = {}) {
       gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0); }`,
     fragmentShader: `
     uniform sampler2D colorMap; uniform sampler2D dataMap; uniform sampler2D noiseMap; uniform float time; uniform float hoverId; uniform float focusId; uniform float dimOthers;
-    uniform float provState[13]; uniform float dissolve[13]; uniform vec3 lightDir; uniform vec2 texel; uniform float nightMix;
+    uniform float provState[16]; uniform float dissolve[16]; uniform vec3 lightDir; uniform vec2 texel; uniform float nightMix;
     varying vec2 vUv; varying float vH;
     void main() { vec4 d = texture2D(dataMap, vUv); if (d.g < 0.02) discard; vec3 col = texture2D(colorMap, vUv).rgb;
       float hl = texture2D(dataMap, vUv - vec2(texel.x, 0.0)).r, hr = texture2D(dataMap, vUv + vec2(texel.x, 0.0)).r, hd = texture2D(dataMap, vUv - vec2(0.0, texel.y)).r, hu = texture2D(dataMap, vUv + vec2(0.0, texel.y)).r;
       vec3 n = normalize(vec3((hl - hr) * 13.0, 1.0, (hd - hu) * 13.0)); float diff = max(dot(n, lightDir), 0.0);
       col *= mix(0.7 + 0.26 * diff, 0.54 + 0.4 * diff, nightMix);
       float id = floor(d.b * 255.0 / 20.0 + 0.5); int ii = int(id); float st = 0.0; float dis = 0.0;
-      for (int k = 0; k < 13; k++) { if (k == ii) { st = provState[k]; dis = dissolve[k]; } }
+      for (int k = 0; k < 16; k++) { if (k == ii) { st = provState[k]; dis = dissolve[k]; } }
       float edge = clamp((1.0 - d.g) * 255.0 / 127.0, 0.0, 1.0);
       float nz = texture2D(noiseMap, vUv * 6.0 + vec2(time * 0.012, -time * 0.008)).r;
       if (id > 0.5) {
@@ -213,13 +214,13 @@ export async function createWarTable(app, opts = {}) {
   function refresh({ animate = true } = {}) {
     const next = nextIsland(app); const snap = {};
     for (const num of ORDER) { const ch = app.index.chapter.get(num); const st = provinceState(app, ch); const p = chapterProgress(app, ch);
-      provState[num] = st === 'locked' ? 0 : st === 'open' ? 1 : 2; snap[num] = { st, cleared: ch.topics.filter(t => app.state.campaign.topics[t.id]?.cleared).map(t => t.id) };
+      provState[S(num)] = st === 'locked' ? 0 : st === 'open' ? 1 : 2; snap[num] = { st, cleared: ch.topics.filter(t => app.state.campaign.topics[t.id]?.cleared).map(t => t.id) };
       const cap = capitals.get(num); cap.eagle.visible = st === 'conquered';
       // standards ring: one small standard per battle, red when planted
       cap.ring.clear(); ch.topics.forEach((t, i) => { const a = -Math.PI / 2 + (i / ch.topics.length) * Math.PI * 2; const up = !!app.state.campaign.topics[t.id]?.cleared; const s = standard(up ? cloth.red : cloth.grey, up ? 0.9 : 0.55); s.position.set(Math.cos(a) * 1.75, 0, Math.sin(a) * 1.75); cap.ring.add(s); });
       const wasConquered = lastSnapshot ? lastSnapshot[num].st === 'conquered' : st === 'conquered';
-      if (st === 'conquered' && !wasConquered && animate) { dissolve[num] = 0; anims.push({ t: 0, dur: 1.8, fn: k => { dissolve[num] = k; }, done: () => { cap.eagle.position.y = 0; } }); cap.eagle.position.y = 6; anims.push({ t: 0, dur: 1.4, fn: k => { cap.eagle.position.y = 6 * (1 - spring(k)); }, done: () => { cap.eagle.position.y = 0; } }); burstCoins(cap.group.position); app.sound && app.sound('fanfare'); }
-      else dissolve[num] = st === 'conquered' ? 1 : 0;
+      if (st === 'conquered' && !wasConquered && animate) { dissolve[S(num)] = 0; anims.push({ t: 0, dur: 1.8, fn: k => { dissolve[S(num)] = k; }, done: () => { cap.eagle.position.y = 0; } }); cap.eagle.position.y = 6; anims.push({ t: 0, dur: 1.4, fn: k => { cap.eagle.position.y = 6 * (1 - spring(k)); }, done: () => { cap.eagle.position.y = 0; } }); burstCoins(cap.group.position); app.sound && app.sound('fanfare'); }
+      else dissolve[S(num)] = st === 'conquered' ? 1 : 0;
     }
     const nc = capitals.get(next || 1); token.position.copy(nc.group.position).add(new THREE.Vector3(1.6, 0, 1.1)); token.visible = !!next && mode === 'overview';
     // labels
@@ -228,9 +229,9 @@ export async function createWarTable(app, opts = {}) {
     // standards newly planted in the open province view
     if (prov.num && lastSnapshot && animate) { const ch = app.index.chapter.get(prov.num); for (const f of prov.forts) { const now = !!app.state.campaign.topics[f.topic.id]?.cleared; if (now && !lastSnapshot[prov.num].cleared.includes(f.topic.id)) { f.std.visible = true; f.std.scale.setScalar(0.01); const s = f.std; anims.push({ t: 0, dur: 0.9, fn: k => s.scale.setScalar(1.1 * spring(k)) }); app.sound && app.sound('horn'); } } }
     lastSnapshot = snap; labelsDirty = true;
-    paintColorMap(colorCanvas, geo, { next }); colorTex.needsUpdate = true;
+    paintColorMap(colorCanvas, geo, { next, G }); colorTex.needsUpdate = true;
   }
-  function fortLabels() { const ch = app.index.chapter.get(prov.num); return prov.forts.map(f => { const t = f.topic; const solid = t.concepts.filter(cid => masteryOf(cid) >= 3).length; return { id: 'f' + f.index, name: t.title, numeral: ROMAN_SMALL[f.index + 1], numFirst: true, next: f.isNext, state: f.cleared ? 'conquered' : 'open', small: true, priority: f.isNext ? 1.2 : 0.5, pos: f.group.position.clone().add(new THREE.Vector3(0, 1.0, 0)), status: f.cleared ? 'Standard planted' : `${solid} / ${t.concepts.length} held`, dy: f.index % 2 ? 58 : -62 }; }).concat([{ id: 'boss', name: `Chapter ${prov.num} boss`, numeral: `The siege of ${PROV[prov.num].capital}`, numFirst: false, next: prov.nextIdx === -1 && !chapterProgress(app, ch).boss, state: chapterProgress(app, ch).boss ? 'conquered' : prov.forts.every(f => f.cleared) ? 'open' : 'locked', small: true, priority: 2, pos: capitals.get(prov.num).group.position.clone().add(new THREE.Vector3(0, 2.4, 0)), status: chapterProgress(app, ch).boss ? 'Taken' : prov.forts.every(f => f.cleared) ? '24 questions · 90%' : 'Pass every checkpoint first', dy: -78 }]); }
+  function fortLabels() { const ch = app.index.chapter.get(prov.num); return prov.forts.map(f => { const t = f.topic; const solid = t.concepts.filter(cid => masteryOf(cid) >= 3).length; return { id: 'f' + f.index, name: t.title, numeral: ROMAN_SMALL[f.index + 1], numFirst: true, next: f.isNext, state: f.cleared ? 'conquered' : 'open', small: true, priority: f.isNext ? 1.2 : 0.5, pos: f.group.position.clone().add(new THREE.Vector3(0, 1.0, 0)), status: f.cleared ? 'Standard planted' : `${solid} / ${t.concepts.length} held`, dy: f.index % 2 ? 58 : -62 }; }).concat([{ id: 'boss', name: `Chapter ${prov.num} boss`, numeral: `The siege of ${PROV[prov.num].capital}`, numFirst: false, next: prov.nextIdx === -1 && !chapterProgress(app, ch).boss, state: chapterProgress(app, ch).boss ? 'conquered' : prov.forts.every(f => f.cleared) ? 'open' : 'locked', small: true, priority: 2, pos: capitals.get(prov.num).group.position.clone().add(new THREE.Vector3(0, 2.4, 0)), status: chapterProgress(app, ch).boss ? 'Taken' : prov.forts.every(f => f.cleared) ? `${app.pack.boss.n} questions · ${Math.round(app.pack.boss.pass * 100)}%` : 'Pass every checkpoint first', dy: -78 }]); }
   const ROMAN_SMALL = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
   function masteryOf(cid) { return masteryLevel(app.state.concepts[cid]); }
 
@@ -251,7 +252,7 @@ export async function createWarTable(app, opts = {}) {
   // ---- state machine: overview <-> province
   let mode = 'overview'; let focus = 0; let anims = []; let labelsDirty = true; let hoverId = 0; let hoverFort = null;
   function enterProvince(num, { instant = false } = {}) {
-    mode = 'province'; focus = num; buildProvince(num); landUniforms.focusId.value = num;
+    mode = 'province'; focus = num; buildProvince(num); landUniforms.focusId.value = S(num);
     for (const [n, c] of capitals) { c.group.visible = n === num; } roadGroup.visible = false; token.visible = false;
     const to = fitProvince(num); const dur = instant ? 0 : 1.2;
     anims.push({ t: 0, dur: dur || 0.01, fn: k => { landUniforms.dimOthers.value = k * 0.85; } });
@@ -285,7 +286,7 @@ export async function createWarTable(app, opts = {}) {
   function fortUnder(ev) { if (!prov.group) return null; const hits = pick(ev).intersectObjects([prov.group, capitals.get(prov.num).group], true); for (const hh of hits) { let o = hh.object; while (o && !(o.userData && (o.userData.topic || o.userData.capital))) o = o.parent; if (o) return o; } return null; }
   function onMove(ev) {
     if (dragging) { const dx = ev.clientX - dragging.x, dy = ev.clientY - dragging.y; if (Math.hypot(dx, dy) > 6) moved = true; if (moved && mode === 'overview') { const k = cam.dist / 900; cam.target.x = THREE.MathUtils.clamp(dragging.tx - dx * k, -W * 0.45, W * 0.45); cam.target.z = THREE.MathUtils.clamp(dragging.tz - dy * k, -Hh * 0.45, Hh * 0.45); labelsDirty = true; } return; }
-    if (mode === 'overview') { const id = provinceUnder(ev); if (id !== hoverId) { hoverId = id; landUniforms.hoverId.value = id; canvas.style.cursor = id ? 'pointer' : 'grab'; if (id) app.sound && app.sound('tick'); } }
+    if (mode === 'overview') { const id = provinceUnder(ev); if (id !== hoverId) { hoverId = id; landUniforms.hoverId.value = S(id); canvas.style.cursor = id ? 'pointer' : 'grab'; if (id) app.sound && app.sound('tick'); } }
     else { const o = fortUnder(ev); const key = o ? (o.userData.topic ? o.userData.topic.id : 'boss') : null; if (key !== hoverFort) { hoverFort = key; canvas.style.cursor = key ? 'pointer' : 'default'; if (key) app.sound && app.sound('tick'); } for (const f of prov.forts) { const s = f.topic.id === hoverFort ? 1.08 : 1; f.group.scale.set(s, s, s); } }
   }
   function onDown(ev) { if (ev.button !== undefined && ev.button !== 0) return; dragging = { x: ev.clientX, y: ev.clientY, tx: cam.target.x, tz: cam.target.z }; moved = false; try { canvas.setPointerCapture(ev.pointerId); } catch { /* ignore */ } }

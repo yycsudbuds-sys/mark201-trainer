@@ -5,14 +5,11 @@
 import { svg } from './visuals.js';
 import { h } from './ui.js';
 import { masteryLevel, chapterMastery } from './engine.js';
-import { loadGeo, makeProjection, PROV, ORDER as GEO_ORDER, ROADS, RIDGES, ROMAN as GEO_ROMAN, smoothPath, centroid } from './geo.js';
+import { loadGeo, makeProjection, smoothPath, centroid } from './geo.js';
 import { createLabelLayer } from './maplabels.js';
 
-export const ROMAN = GEO_ROMAN;
-export const ORDER = GEO_ORDER;
-/** chapter -> { name, capital } (plus the geo fields) for the views that only need names. */
-export const PROVINCES = Object.fromEntries(ORDER.map(n => [n, PROV[n]]));
-export const ISLANDS = PROVINCES;
+/** The active course's geography: { order, prov, roads, ridges, seaLanes, roman, colors, title, subtitle, seaLabels }. */
+const geoOf = app => app.pack.geo;
 const EUROPE = '';
 
 export function chapterProgress(app, ch) {
@@ -25,6 +22,7 @@ export function chapterProgress(app, ch) {
 export function provinceState(app, ch) {
   const prog = chapterProgress(app, ch);
   if (prog.boss) return 'conquered';
+  const ORDER = app.pack.order;
   const idx = ORDER.indexOf(ch.chapter);
   if (idx <= 0) return 'open';
   if (app.state.campaign.unlocked?.[ch.chapter]) return 'open';
@@ -34,7 +32,7 @@ export function provinceState(app, ch) {
   return prevProg.cleared > 0 || prevProg.boss ? 'open' : 'locked';
 }
 export function nextIsland(app) {
-  for (const num of ORDER) { const ch = app.index.chapter.get(num); if (ch && !chapterProgress(app, ch).boss) return num; }
+  for (const num of app.pack.order) { const ch = app.index.chapter.get(num); if (ch && !chapterProgress(app, ch).boss) return num; }
   return null;
 }
 
@@ -58,7 +56,8 @@ export function worldMap(app, opts = {}) {
   const compact = !!opts.compact;
   const wrap = h('div', { class: 'map25' + (compact ? ' compact' : ''), role: compact ? null : 'img', 'aria-label': 'Campaign map' });
   const stage = h('div', { class: 'map25-stage' }); wrap.appendChild(stage);
-  if (!compact) wrap.appendChild(h('div', { class: 'map25-cartouche' }, h('div', { class: 'map-title' }, 'IMPERIUM MARKETING'), h('div', { class: 'map-subtitle' }, 'TABULA PROVINCIARUM')));
+  const G = geoOf(app); const { prov: PROV, order: ORDER, roads: ROADS, ridges: RIDGES } = G;
+  if (!compact) wrap.appendChild(h('div', { class: 'map25-cartouche' }, h('div', { class: 'map-title' }, G.title || 'IMPERIUM'), h('div', { class: 'map-subtitle' }, G.subtitle || 'TABULA PROVINCIARUM')));
   const labels = compact ? null : createLabelLayer(wrap);
   let svgEl = null; let vb = null; let proj = null;
   loadGeo().then(geo => { if (wrap.dead) return; build(geo); }).catch(() => { stage.appendChild(h('div', { class: 'empty' }, 'The map could not be drawn.')); });
@@ -83,8 +82,7 @@ export function worldMap(app, opts = {}) {
     for (const rd of ROADS) { const pts = smoothPath(rd.pts, 40).map(p => P(p[0], p[1])); const chA = app.index.chapter.get(rd.from); const done = chA && chapterProgress(app, chA).boss; const isNext = next === rd.to && !done;
       roads.appendChild(svg('path', { d: roadPath(pts), class: 'road-edge' + (done ? ' done' : '') })); roads.appendChild(svg('path', { d: roadPath(pts), class: 'route' + (done ? ' done' : '') + (isNext ? ' next' : '') })); }
     s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: Hh, class: 'parch-grain', filter: `url(#${Pre}grain)` }));
-    const [mx, my] = P(18, 34.5); s.appendChild(svg('text', { x: mx, y: my, class: 'sea-label', 'text-anchor': 'middle' }, 'MARE NOSTRUM'));
-    const [ox, oy] = P(-8.5, 47); s.appendChild(svg('text', { x: ox, y: oy, class: 'sea-label', 'text-anchor': 'middle' }, 'OCEANUS'));
+    for (const [label, lon, lat] of (G.seaLabels || [])) { const [mx, my] = P(lon, lat); s.appendChild(svg('text', { x: mx, y: my, class: 'sea-label', 'text-anchor': 'middle' }, label)); }
     const items = [];
     for (const num of ORDER) {
       const ch = app.index.chapter.get(num); if (!ch) continue;
@@ -143,7 +141,7 @@ export function zoomToProvince(frameEl, num, { motion = true } = {}) {
 /** Provincial road: battles as castra, the capital as a walled city. opts: {onNode(topic, i), onBoss()} */
 export function islandTrail(app, ch, opts = {}) {
   const W = 1000; const H = 440; const P = 'tr' + (++defIds) + '-';
-  const pv = PROVINCES[ch.chapter] || { name: ch.title, capital: 'the capital' };
+  const pv = app.pack.geo.prov[ch.chapter] || { name: ch.title, capital: 'the capital' };
   const s = svg('svg', { viewBox: `0 0 ${W} ${H}`, class: 'trail', role: 'img', 'aria-label': `Chapter ${ch.chapter} road`, style: `--ch:${ch.color}` });
   s.appendChild(parchDefs(P));
   s.appendChild(svg('rect', { x: 0, y: 0, width: W, height: H, fill: `url(#${P}seaParch)` }));
@@ -207,7 +205,7 @@ export function islandTrail(app, ch, opts = {}) {
   if (!allCleared && !prog.boss) bg.appendChild(svg('path', { d: 'M -5 -24 v -4 a 5 5 0 0 1 10 0 v 4 M -7 -24 h 14 v 9 h -14 z', class: 'plock' }));
   const bl = (n - 1) % 2 === 0 ? 56 : -58;
   bg.appendChild(svg('text', { y: bl, class: 'node-label', 'text-anchor': 'middle' }, prog.boss ? 'Chapter boss cleared' : `Chapter ${ch.chapter} boss`));
-  bg.appendChild(svg('text', { y: bl + 15, class: 'node-sub', 'text-anchor': 'middle' }, allCleared ? '24 questions · 90% clears it' : 'pass every checkpoint first'));
+  bg.appendChild(svg('text', { y: bl + 15, class: 'node-sub', 'text-anchor': 'middle' }, allCleared ? `${app.pack.boss.n} questions · ${Math.round(app.pack.boss.pass * 100)}% clears it` : 'pass every checkpoint first'));
   const goBoss = () => { if (allCleared && opts.onBoss) opts.onBoss(); else app.toast('Pass every checkpoint quiz in this chapter before the chapter boss', 'info'); };
   bg.addEventListener('click', goBoss); bg.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goBoss(); } });
   s.appendChild(bg);

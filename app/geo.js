@@ -65,6 +65,11 @@ export const SEA_LANES = [
   [[-7.2, 47.6], [-5.4, 49.2], [-4.6, 48.2]],
   [[18.5, 34.5], [22, 33.4], [26.5, 33.2], [23, 34.4]],
 ];
+const CH_COLOR = { 1: '#C9A227', 6: '#B5623A', 7: '#4F6A3F', 8: '#2E4A7A', 9: '#6B4B2A', 10: '#8A2A1E', 11: '#7A4A1E', 12: '#1E6A7A' };
+/** A geography: the provinces of one course's campaign. Packs supply their own; this one is the marketing map. */
+export const DEFAULT_GEO = { order: ORDER, prov: PROV, roads: ROADS, ridges: RIDGES, seaLanes: SEA_LANES, roman: ROMAN, colors: CH_COLOR };
+/** Province slot (1-based position in G.order) for a chapter; slots are what the data map and shaders carry. */
+export function slotOf(G, num) { const i = G.order.indexOf(num); return i < 0 ? 0 : i + 1; }
 
 let geoPromise = null;
 /** Load the coastline once. Returns { bbox, polys } with polys as [outer ring, ...holes] in lon/lat. */
@@ -83,9 +88,9 @@ export function makeProjection(bbox, width = 64) {
   return { W, H: Hh, toXY, toUV, fromUV, bbox };
 }
 export function centroid(poly) { let x = 0, y = 0; for (const p of poly) { x += p[0]; y += p[1]; } return [x / poly.length, y / poly.length]; }
-export function provinceBounds(num) { const p = PROV[num].poly; let a = [Infinity, Infinity], b = [-Infinity, -Infinity]; for (const q of p) { a[0] = Math.min(a[0], q[0]); a[1] = Math.min(a[1], q[1]); b[0] = Math.max(b[0], q[0]); b[1] = Math.max(b[1], q[1]); } return [a, b]; }
+export function provinceBounds(num, G = DEFAULT_GEO) { const p = G.prov[num].poly; let a = [Infinity, Infinity], b = [-Infinity, -Infinity]; for (const q of p) { a[0] = Math.min(a[0], q[0]); a[1] = Math.min(a[1], q[1]); b[0] = Math.max(b[0], q[0]); b[1] = Math.max(b[1], q[1]); } return [a, b]; }
 export function pointInPoly(x, y, poly) { let inside = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) { const [xi, yi] = poly[i], [xj, yj] = poly[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside; } return inside; }
-export function provinceAt(lon, lat) { for (const num of ORDER) if (pointInPoly(lon, lat, PROV[num].poly)) return num; return 0; }
+export function provinceAt(lon, lat, G = DEFAULT_GEO) { for (const num of G.order) if (pointInPoly(lon, lat, G.prov[num].poly)) return num; return 0; }
 
 /** Catmull-Rom through lon/lat points, returns n samples. */
 export function smoothPath(pts, n = 48) {
@@ -112,14 +117,14 @@ export function alongPath(path, t) {
 function ringPath(ctx, ring, P) { ring.forEach((p, i) => { const [x, y] = P(p[0], p[1]); if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }); ctx.closePath(); }
 function landPath(ctx, geo, P) { ctx.beginPath(); for (const poly of geo.polys) for (const ring of poly) ringPath(ctx, ring, P); }
 function makeNoise(seed) { let s = seed; return () => { s = (s * 1103515245 + 12345) & 0x7fffffff; return s / 0x7fffffff; }; }
-const CH_COLOR = { 1: '#C9A227', 6: '#B5623A', 7: '#4F6A3F', 8: '#2E4A7A', 9: '#6B4B2A', 10: '#8A2A1E', 11: '#7A4A1E', 12: '#1E6A7A' };
 
 /**
  * Paint the vellum colour map. canvas pixel space: x = u*w, y = (1-v)*h (north up). Status is NOT painted here
  * (the shader / SVG handle it); only the drawn map: vellum, sea hatching, land, coast ink, province tints and borders,
  * roads, relief marks, capital rings.
  */
-export function paintColorMap(canvas, geo, { next = null } = {}) {
+export function paintColorMap(canvas, geo, { next = null, G = DEFAULT_GEO } = {}) {
+  const { order: ORDER, prov: PROV, roads: ROADS, colors: CH_COLOR } = G;
   const w = canvas.width, hgt = canvas.height; const ctx = canvas.getContext('2d');
   const proj = makeProjection(geo.bbox); const P = (lon, lat) => { const [u, v] = proj.toUV(lon, lat); return [u * w, (1 - v) * hgt]; };
   const g = ctx.createLinearGradient(0, 0, w, hgt); g.addColorStop(0, '#D9C59A'); g.addColorStop(0.5, '#CDB47C'); g.addColorStop(1, '#BFA66F');
@@ -132,7 +137,7 @@ export function paintColorMap(canvas, geo, { next = null } = {}) {
   ctx.save(); landPath(ctx, geo, P); ctx.clip('evenodd');
   const lg = ctx.createLinearGradient(0, 0, 0, hgt); lg.addColorStop(0, 'rgba(255,250,235,0.18)'); lg.addColorStop(1, 'rgba(120,90,50,0.22)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, w, hgt);
   // province tints and inked borders (clipped to land)
-  for (const num of ORDER) { const pv = PROV[num]; ctx.beginPath(); ringPath(ctx, pv.poly, P); ctx.fillStyle = CH_COLOR[num]; ctx.globalAlpha = 0.2; ctx.fill(); ctx.globalAlpha = 1; }
+  for (const num of ORDER) { const pv = PROV[num]; ctx.beginPath(); ringPath(ctx, pv.poly, P); ctx.fillStyle = CH_COLOR[num] || '#8C6B4A'; ctx.globalAlpha = 0.2; ctx.fill(); ctx.globalAlpha = 1; }
   ctx.lineJoin = 'round';
   for (const num of ORDER) { const pv = PROV[num]; ctx.beginPath(); ringPath(ctx, pv.poly, P); ctx.strokeStyle = 'rgba(46, 33, 20, 0.55)'; ctx.lineWidth = w / 600; ctx.setLineDash([w / 300, w / 500]); ctx.stroke(); ctx.setLineDash([]); }
   // relief comes from the shaded height map; no hatching (it read as noise)
@@ -158,13 +163,14 @@ export function paintColorMap(canvas, geo, { next = null } = {}) {
  * G = land with border proximity (0 sea, 128 at a province border, 255 interior), B = province id * 20, A = 255.
  * Returns the ImageData too so JS can sample it (picking, road heights).
  */
-export function paintDataMap(canvas, geo) {
+export function paintDataMap(canvas, geo, G = DEFAULT_GEO) {
+  const { order: ORDER, prov: PROV, ridges: RIDGES } = G;
   const w = canvas.width, hgt = canvas.height;
   const proj = makeProjection(geo.bbox); const P = (lon, lat) => { const [u, v] = proj.toUV(lon, lat); return [u * w, (1 - v) * hgt]; };
   const mk = () => { const c = document.createElement('canvas'); c.width = w; c.height = hgt; return c; };
   const land = mk(), ids = mk(), height = mk(), border = mk();
   let ctx = land.getContext('2d'); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, w, hgt); landPath(ctx, geo, P); ctx.fillStyle = '#fff'; ctx.fill('evenodd');
-  ctx = ids.getContext('2d'); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, w, hgt); for (const num of ORDER) { ctx.beginPath(); ringPath(ctx, PROV[num].poly, P); const v = num * 20; ctx.fillStyle = `rgb(${v},${v},${v})`; ctx.fill(); }
+  ctx = ids.getContext('2d'); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, w, hgt); ORDER.forEach((num, i) => { ctx.beginPath(); ringPath(ctx, PROV[num].poly, P); const v = (i + 1) * 20; ctx.fillStyle = `rgb(${v},${v},${v})`; ctx.fill(); });
   ctx = height.getContext('2d'); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, w, hgt);
   for (const r of RIDGES) { const path = smoothPath(r.pts, 80); const rad = (r.w / (geo.bbox[2] - geo.bbox[0])) * w; for (const p of path) { const [x, y] = P(p[0], p[1]); const gr = ctx.createRadialGradient(x, y, 0, x, y, rad); gr.addColorStop(0, `rgba(255,255,255,${0.5 * r.h})`); gr.addColorStop(1, 'rgba(255,255,255,0)'); ctx.fillStyle = gr; ctx.fillRect(x - rad, y - rad, rad * 2, rad * 2); } }
   // gentle inland rise so coasts are low and interiors a little higher
@@ -181,13 +187,13 @@ export function paintDataMap(canvas, geo) {
     d[i + 3] = 255;
   }
   out.putImageData(img, 0, 0);
-  return { canvas, data: img.data, w, h: hgt, proj };
+  return { canvas, data: img.data, w, h: hgt, proj, order: ORDER };
 }
-/** Sample the data map at lon/lat: { land, height01, id, edge01 }. */
+/** Sample the data map at lon/lat: { land, height01, slot, id (chapter number, 0 at sea or outside), edge01 }. */
 export function sampleData(dm, lon, lat) {
   const [u, v] = dm.proj.toUV(lon, lat); const x = Math.max(0, Math.min(dm.w - 1, Math.round(u * dm.w))); const y = Math.max(0, Math.min(dm.h - 1, Math.round((1 - v) * dm.h)));
-  const i = (y * dm.w + x) * 4; const g = dm.data[i + 1];
-  return { land: g > 0, height01: Math.max(0, dm.data[i] - 90) / 255, id: Math.round(dm.data[i + 2] / 20), edge01: g > 0 ? (255 - g) / 127 : 0 };
+  const i = (y * dm.w + x) * 4; const g = dm.data[i + 1]; const slot = Math.round(dm.data[i + 2] / 20);
+  return { land: g > 0, height01: Math.max(0, dm.data[i] - 90) / 255, slot, id: slot ? (dm.order[slot - 1] || 0) : 0, edge01: g > 0 ? (255 - g) / 127 : 0 };
 }
 /** A tileable value-noise texture for fog of war. */
 export function paintNoise(canvas, seed = 3) {

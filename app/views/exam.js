@@ -8,17 +8,18 @@ import { warBriefing } from '../cutscene.js';
 
 export function render(app, params) {
   const [sub] = params;
-  if (sub === 'go') return run(app, JSON.parse(sessionStorage.getItem('examcfg') || '{}'));
-  if (sub === 'result') return result(app, JSON.parse(sessionStorage.getItem('examresult') || 'null'));
+  if (sub === 'go') return run(app, JSON.parse(sessionStorage.getItem(`examcfg.${app.course}`) || '{}'));
+  if (sub === 'result') return result(app, JSON.parse(sessionStorage.getItem(`examresult.${app.course}`) || 'null'));
   return config(app);
 }
 
 function config(app) {
-  const saved = JSON.parse(sessionStorage.getItem('examcfg') || 'null');
+  const EX = app.pack.exam;
+  const saved = JSON.parse(sessionStorage.getItem(`examcfg.${app.course}`) || 'null');
   const selected = new Set(saved?.chapterList || app.content.chapters.map(c => c.chapter));
-  let n = saved?.n || 40; let per = saved?.per ?? 75;
-  const nSeg = h('div', { class: 'seg' }, [20, 40, 60, 80].map(k => h('button', { class: n === k ? 'on' : '', onClick: e => { n = k; nSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, `${k} Q`)));
-  const tSeg = h('div', { class: 'seg' }, [[60, '60 s / Q'], [75, '75 s / Q'], [90, '90 s / Q'], [0, 'Untimed']].map(([k, l]) => h('button', { class: per === k ? 'on' : '', onClick: e => { per = k; tSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
+  let n = saved?.n || EX.defaultN; let per = saved?.per ?? EX.defaultPer;
+  const nSeg = h('div', { class: 'seg' }, EX.sizes.map(k => h('button', { class: n === k ? 'on' : '', onClick: e => { n = k; nSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, `${k} Q`)));
+  const tSeg = h('div', { class: 'seg' }, EX.paces.map(([k, l]) => h('button', { class: per === k ? 'on' : '', onClick: e => { per = k; tSeg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); } }, l)));
   const history = (app.state.exams || []).slice().reverse();
   return h('div', { class: 'runner' },
     h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Midterm Simulation'), h('p', null, 'Exam conditions: questions mixed across every chapter and weighted like the real test, no word from the Legatus until the field is cleared, a clock. Every miss becomes a pursuit in Smart Drill.'))),
@@ -27,10 +28,10 @@ function config(app) {
       h('div', { class: 'row wrap' }, h('div', { class: 'field' }, h('label', null, 'Questions'), nSeg), h('div', { class: 'field' }, h('label', null, 'Pace'), tSeg)),
       h('button', { class: 'btn primary big', onClick: () => {
         if (!selected.size) { app.toast('Pick at least one chapter', 'bad'); return; }
-        sessionStorage.setItem('examcfg', JSON.stringify({ chapterList: [...selected], n, per }));
+        sessionStorage.setItem(`examcfg.${app.course}`, JSON.stringify({ chapterList: [...selected], n, per }));
         app.navigate('#/exam/go');
       } }, 'Give battle'),
-      h('p', { class: 'tiny muted' }, 'Tip: the real midterm is mostly scenario questions. The simulator over-weights those and leans on difficulty 2–3.')),
+      h('p', { class: 'tiny muted' }, EX.tip || '')),
     history.length ? h('div', { class: 'mt' }, h('h2', { class: 'mb' }, 'History'), h('div', { class: 'list' }, history.slice(0, 12).map(e => h('div', { class: 'li' },
       h('div', { class: 'score-big', style: { fontSize: '1.4rem', color: e.score >= 0.9 ? 'var(--good)' : e.score >= 0.7 ? 'var(--accent)' : 'var(--bad)' } }, `${Math.round(e.score * 100)}%`),
       h('div', { class: 'grow' }, h('div', { class: 't' }, `${e.correct}/${e.n} · ${fmtTime(e.durationSec)}`), h('div', { class: 's' }, `${timeAgo(e.t)} · chapters ${e.chapters.join(', ')}`)),
@@ -39,7 +40,7 @@ function config(app) {
 
 function run(app, cfg) {
   const chapters = new Set(cfg.chapterList || app.content.chapters.map(c => c.chapter));
-  const n = cfg.n || 40;
+  const n = cfg.n || app.pack.exam.defaultN;
   const questions = buildExam(app.content, app.state, { n, chapters });
   if (questions.length < n) app.toast(`Only ${questions.length} questions available for this selection`, 'info');
   const host = h('div');
@@ -58,7 +59,7 @@ function run(app, cfg) {
       app.grantXp(100 + Math.round(rec.score * 200), 'simulation complete');
       if (rec.score >= 0.9) app.confetti({ count: 200 });
       app.store.save();
-      sessionStorage.setItem('examresult', JSON.stringify(rec));
+      sessionStorage.setItem(`examresult.${app.course}`, JSON.stringify(rec));
       app.navigate('#/exam/result');
     },
     onExit: () => {},

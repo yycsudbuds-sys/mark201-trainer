@@ -1,6 +1,6 @@
 // Shared view pieces: chapter picker, the Shelf mastery map, next-action logic.
 import { h } from '../ui.js';
-import { icon, CHAPTER_ICON } from '../icons.js';
+import { icon } from '../icons.js';
 import { masteryLevel, chapterMastery, dueCount, readiness } from '../engine.js';
 
 export function chapterPicker(app, selected, onChange) {
@@ -10,7 +10,7 @@ export function chapterPicker(app, selected, onChange) {
     const all = selected.size === app.content.chapters.length;
     el.appendChild(h('button', { class: all ? 'on' : '', style: { '--ch': 'var(--accent)' }, onClick: () => { if (all) selected.clear(); else app.content.chapters.forEach(c => selected.add(c.chapter)); render(); onChange && onChange(selected); } }, all ? 'All chapters' : 'Select all'));
     for (const ch of app.content.chapters) {
-      el.appendChild(h('button', { class: selected.has(ch.chapter) ? 'on' : '', style: { '--ch': ch.color }, onClick: () => { if (selected.has(ch.chapter)) selected.delete(ch.chapter); else selected.add(ch.chapter); render(); onChange && onChange(selected); } }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` Ch ${ch.chapter}`));
+      el.appendChild(h('button', { class: selected.has(ch.chapter) ? 'on' : '', style: { '--ch': ch.color }, onClick: () => { if (selected.has(ch.chapter)) selected.delete(ch.chapter); else selected.add(ch.chapter); render(); onChange && onChange(selected); } }, icon(app.chapterIcon(ch.chapter), { size: 22, tone: 'gold' }), ` Ch ${ch.chapter}`));
     }
   };
   render();
@@ -48,7 +48,7 @@ export function shelfMap(app, { chapters = null, onTile = null, legend = true } 
     }
     wrap.appendChild(h('div', { class: 'shelf', style: { '--ch': ch.color } },
       h('div', { class: 'shelf-head' },
-        h('a', { class: 'shelf-title', href: `#/campaign/${ch.chapter}`, style: { color: 'inherit', textDecoration: 'none' } }, h('span', { class: 'num' }, `CH ${String(ch.chapter).padStart(2, '0')}`), icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` ${ch.title}`),
+        h('a', { class: 'shelf-title', href: `#/campaign/${ch.chapter}`, style: { color: 'inherit', textDecoration: 'none' } }, h('span', { class: 'num' }, `CH ${String(ch.chapter).padStart(2, '0')}`), icon(app.chapterIcon(ch.chapter), { size: 22, tone: 'gold' }), ` ${ch.title}`),
         h('span', { class: 'small muted mono' }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} · ${Math.round(m.score * 100)}%`)),
       items, h('div', { class: 'shelf-board' })));
   }
@@ -65,16 +65,17 @@ export function shelfMap(app, { chapters = null, onTile = null, legend = true } 
   return wrap;
 }
 
-/** Decide what the learner should do next. */
-export function nextAction(app) {
-  const st = app.state; const now = Date.now();
+/** Decide what the learner should do next. ctx may name another course's { content, state, pack } (the Forum cards). */
+export function nextAction(app, ctx = {}) {
+  const content = ctx.content || app.content; const st = ctx.state || app.state; const pack = ctx.pack || app.pack; const now = Date.now();
+  const first = pack && pack.order ? pack.order[0] : content.chapters[0].chapter;
   let pursuits = 0; let started = 0; let total = 0;
-  for (const ch of app.content.chapters) for (const c of ch.concepts) { total++; const cs = st.concepts[c.id]; if (cs && cs.a?.length) started++; if (cs && cs.pursuit) pursuits++; }
-  const due = dueCount(app.content, st, now);
-  const r = readiness(app.content, st);
+  for (const ch of content.chapters) for (const c of ch.concepts) { total++; const cs = st.concepts[c.id]; if (cs && cs.a?.length) started++; if (cs && cs.pursuit) pursuits++; }
+  const due = dueCount(content, st, now);
+  const r = readiness(content, st);
   // find first chapter whose campaign is incomplete
-  const unfinished = app.content.chapters.find(ch => !st.campaign.bosses?.[ch.chapter]?.cleared);
-  if (started === 0) return { title: 'Start with Chapter 1', desc: 'Read the Chapter 1 lessons, then pass its checkpoint quizzes. Reading first, then immediate retrieval, is the fastest way in.', href: '#/campaign/1', cta: 'Start the campaign' };
+  const unfinished = content.chapters.find(ch => !st.campaign.bosses?.[ch.chapter]?.cleared);
+  if (started === 0) return { title: `Start with Chapter ${first}`, desc: `Read the Chapter ${first} lessons, then pass its checkpoint quizzes. Reading first, then immediate retrieval, is the fastest way in.`, href: `#/campaign/${first}`, cta: 'Start the campaign' };
   if (pursuits >= 4) return { title: `${pursuits} pursuits are open`, desc: 'Concepts you missed recently. Smart Drill asks about them from new angles until they hold.', href: '#/drill', cta: 'Smart Drill' };
   if (due >= 8) return { title: `${due} concepts are due for review`, desc: 'Spaced review is where memory becomes durable. A 20-question drill clears most of these.', href: '#/drill', cta: 'Review now' };
   if (unfinished && r.score < 0.75) return { title: `Continue Chapter ${unfinished.chapter}`, desc: `${unfinished.title}: pass its checkpoints and clear the chapter boss.`, href: `#/campaign/${unfinished.chapter}`, cta: 'Continue the conquest' };

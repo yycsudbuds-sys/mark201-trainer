@@ -3,8 +3,7 @@ import { h } from '../ui.js';
 import { masteryLevel, chapterMastery } from '../engine.js';
 import { figureEl } from './concept.js';
 import { createLesson } from './lesson.js';
-import { ISLANDS } from '../map.js';
-import { icon, CHAPTER_ICON } from '../icons.js';
+import { icon } from '../icons.js';
 
 export function render(app, params) {
   const [chStr, cid] = params;
@@ -22,7 +21,7 @@ function list(app) {
       const read = ch.concepts.filter(c => app.state.concepts[c.id]?.seen).length;
       const m = chapterMastery(app.content, app.state, ch.chapter);
       return h('div', { class: 'world', style: { '--ch': ch.color } },
-        h('div', { class: 'ico' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 30, tone: 'gold' })),
+        h('div', { class: 'ico' }, icon(app.chapterIcon(ch.chapter), { size: 30, tone: 'gold' })),
         h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.chapter}`), h('h3', null, ch.title), h('p', { class: 'small muted' }, `${ch.concepts.length} concepts · ${read} read · ${m.dist[4]} mastered`),
           h('div', { class: 'dots' }, ch.concepts.map(c => h('span', { class: `mdot m${masteryLevel(app.state.concepts[c.id])}` })))),
         h('div', { class: 'row wrap' }, h('a', { class: 'btn sm ch', href: `#/learn/${ch.chapter}` }, icon('scroll', { size: 14, tone: 'gold' }), 'Open the lessons'), h('a', { class: 'btn sm ghost', href: `#/learn/${ch.chapter}/sheet` }, 'Cheat sheet')));
@@ -65,7 +64,7 @@ function sheet(app, ch) {
     h('div', { class: 'row wrap mt' }, h('a', { class: 'btn sm ghost', href: `#/learn/${ch.chapter}` }, icon('scroll', { size: 14, tone: 'gold' }), 'Lessons'), h('a', { class: 'btn sm ch', href: `#/drill/chapter/${ch.chapter}` }, icon('gladius', { size: 14, tone: 'gold' }), 'Drill')));
   const page = h('div', { class: 'sheet-page', style: { '--ch': ch.color } },
     h('a', { class: 'back', href: `#/learn/${ch.chapter}` }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ` Chapter ${ch.numeral || ch.chapter} scrolls`),
-    h('div', { class: 'page-head mt-sm' }, h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.numeral || ch.chapter} · cheat sheet`), h('h1', { class: 'row' }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 30, tone: 'gold' }), ch.title), h('p', null, 'Every term with its one-line definition, plus the must-memorize tables. Read this the morning of the exam.'))),
+    h('div', { class: 'page-head mt-sm' }, h('div', null, h('div', { class: 'eyebrow' }, `Chapter ${ch.numeral || ch.chapter} · cheat sheet`), h('h1', { class: 'row' }, icon(app.chapterIcon(ch.chapter), { size: 30, tone: 'gold' }), ch.title), h('p', null, 'Every term with its one-line definition, plus the must-memorize tables. Read this the morning of the exam.'))),
     h('div', { class: 'sheet-layout' }, toc,
       h('div', { class: 'sheet-scroll' },
         h('div', { class: 'scroll-roller top', 'aria-hidden': 'true' }),

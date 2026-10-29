@@ -2,7 +2,7 @@
 // honours Night camp / Day march, drops to a still frame when motion is off, pauses when the tab is hidden,
 // and drives per-scene ambience through audio.js.
 import { h } from './ui.js';
-import { sceneFor, PROVINCE_SCENE } from './scenes.js';
+import { sceneFor } from './scenes.js';
 
 const ROUTE_SCENES = {
   home: { kind: 'camp', amb: 'camp', tint: 0.5, blur: 3 },
@@ -16,11 +16,12 @@ const ROUTE_SCENES = {
 };
 
 /** Decide the scene for a route. Battle routes get the province landscape as the sky behind the front line. */
-export function sceneForRoute(key, params) {
+export function sceneForRoute(key, params, pack = null) {
   const base = ROUTE_SCENES[key] || ROUTE_SCENES.home;
+  if (key === 'dash' || key === 'legion') return { kind: 'curia', amb: 'senate', tint: 0.5, blur: 4 };
   if (key === 'campaign' && params[0]) {
     const num = parseInt(params[0], 10);
-    const kind = PROVINCE_SCENE[num] || 'italia';
+    const kind = (pack && pack.chapterMeta(num).scene) || 'italia';
     if (params[1] === 'boss') return { kind, amb: 'plain', tint: 0.48, blur: 4, battle: true };
     if (params[2] === 'drill') return { kind, amb: 'plain', tint: 0.48, blur: 4, battle: true };
     if (params[2] === 'read' || params[1]) return { kind, amb: 'study', tint: 0.42, blur: 9 };

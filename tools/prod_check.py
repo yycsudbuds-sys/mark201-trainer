@@ -1,13 +1,16 @@
+import os
 import sys
 from playwright.sync_api import sync_playwright
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from testlib import gate_create, to_camp, cleanup, test_name
+NAME = test_name("prod")
 BASE = "https://yycsudbuds-sys.github.io/mark201-trainer/"
 errors = []
 with sync_playwright() as p:
     b = p.chromium.launch(args=["--disable-gpu"]); ctx = b.new_context(viewport={"width": 1280, "height": 900}); pg = ctx.new_page()
     pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
     pg.on("pageerror", lambda e: errors.append(str(e)))
-    pg.goto(BASE, wait_until="load"); pg.wait_for_selector("input[type=text]", timeout=20000)
-    pg.fill("input[type=text]", "Prod"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq"); pg.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
+    gate_create(pg, BASE, NAME); to_camp(pg, BASE); pg.evaluate("(() => { const s = window.__app.state; s.settings.briefings = false; window.__app.store.flush(); })()")
     print("content version:", pg.evaluate("window.__app.content.version"), "questions:", pg.evaluate("window.__app.content.stats.questions"))
     pg.wait_for_timeout(1500)
     print("service worker:", pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r ? (r.active ? 'active' : 'installing') : 'none')"))
@@ -33,4 +36,5 @@ with sync_playwright() as p:
         print("offline reload failed:", str(e)[:120])
     ctx.set_offline(False)
     b.close()
+print("cleanup:", cleanup(NAME))
 print("ERRORS:", errors if errors else "none")

@@ -1,6 +1,6 @@
 // Progress: readiness breakdown, per-chapter mastery, weakest concepts, angle accuracy, history, achievements.
 import { h, ring, fmtPct, timeAgo, fmtTime } from '../ui.js';
-import { icon, CHAPTER_ICON } from '../icons.js';
+import { icon } from '../icons.js';
 const ACH_ICON = {
   'first': 'gladius',
   'fifty': 'scroll',
@@ -33,7 +33,7 @@ import { rankLadder, phalerae, legionGround } from '../legion.js';
 export function render(app) {
   const st = app.state;
   const r = readiness(app.content, st);
-  const lv = levelForXp(st.xp);
+  const total = app.xp(); const lv = levelForXp(total);
   const chapters = app.content.chapters.map(ch => ({ ch, m: chapterMastery(app.content, st, ch.chapter) }));
   const weakest = weakestConcepts(app.content, st, 12);
   const angles = Object.entries(st.stats.byAngle || {}).map(([a, v]) => ({ a, acc: v.c / (v.c + v.w), n: v.c + v.w })).sort((x, y) => x.acc - y.acc);
@@ -44,11 +44,11 @@ export function render(app) {
     h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Progress'), h('p', null, 'Test Readiness blends mastery (60%), how much of the course you have touched (15%) and your last two midterm simulations (25%).'))),
     h('div', { class: 'grid three' },
       h('div', { class: 'card row' }, ring(r.score, { size: 84, stroke: 8, color: r.score >= 0.85 ? 'var(--good)' : 'var(--accent)', label: fmtPct(r.score) }), h('div', null, h('div', { class: 'eyebrow' }, 'Test Readiness'), h('div', { class: 'small muted' }, `Mastery ${fmtPct(r.mastery)} · coverage ${fmtPct(r.coverage)}${r.examAvg !== null ? ` · sims ${fmtPct(r.examAvg)}` : ''}`))),
-      h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Level'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, `Lv ${lv.number}`), h('div', { class: 'small muted' }, `${lv.title} · ${st.xp} XP${lv.next ? ` · ${lv.next.xp - st.xp} to next` : ''}`)),
+      h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Level'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, `Lv ${lv.number}`), h('div', { class: 'small muted' }, `${lv.title} · ${total} XP across every course${lv.next ? ` · ${lv.next.xp - total} to next` : ''}`)),
       h('div', { class: 'card' }, h('div', { class: 'eyebrow' }, 'Answers'), h('div', { class: 'score-big', style: { fontSize: '1.8rem' } }, String(st.stats.answered)), h('div', { class: 'small muted' }, `${st.stats.answered ? Math.round(st.stats.correct / st.stats.answered * 100) : 0}% accuracy · best combo ${st.stats.bestCombo || 0} · ${st.stats.pursuitsCleared || 0} pursuits cleared`))),
     h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'By chapter'),
       h('div', { class: 'stack' }, chapters.map(({ ch, m }) => h('div', { class: 'row wrap', style: { '--ch': ch.color } },
-        h('span', { style: { width: '150px', fontWeight: 700, fontSize: '0.9rem' } }, icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 22, tone: 'gold' }), ` Ch ${ch.chapter} ${ch.short}`),
+        h('span', { style: { width: '150px', fontWeight: 700, fontSize: '0.9rem' } }, icon(app.chapterIcon(ch.chapter), { size: 22, tone: 'gold' }), ` Ch ${ch.chapter} ${ch.short}`),
         h('div', { class: 'grow', style: { minWidth: '160px' } }, stackedBar(m.dist, ch.color)),
         h('span', { class: 'mono small muted', style: { width: '190px' } }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} ${m.dist[2]} · ${m.pursuits ? m.pursuits + ' ' : ''}`, m.pursuits ? icon('target', { size: 14, tone: 'mono' }) : null, `${m.pursuits ? ' · ' : ''}${Math.round(m.score * 100)}%`),
         h('a', { class: 'btn sm ghost', href: `#/drill/chapter/${ch.chapter}` }, 'Drill')))),

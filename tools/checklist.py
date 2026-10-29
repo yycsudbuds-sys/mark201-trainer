@@ -1,11 +1,15 @@
 """Pre-commit checklist (PLAN.md): saved state shape and localStorage keys unchanged, export/import round trip,
 keyboard-only battle including the briefing, sound off really silent, motion off really still, first-load timing
 and payload, and frame rate on the battle and map screens. Usage: python tools/checklist.py <base>"""
+import os
 import sys
 from playwright.sync_api import sync_playwright
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from testlib import gate_create, to_camp, cleanup, test_name
+NAME = test_name("check")
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8791/"
-EXPECTED_SHAPE = ['achievements', 'activities', 'campaign', 'concepts', 'createdAt', 'days', 'exams', 'name', 'plan', 'questions', 'session', 'sessions', 'settings', 'stats', 'v', 'xp']
+EXPECTED_SHAPE = ['achievements', 'activities', 'campaign', 'concepts', 'course', 'createdAt', 'days', 'exams', 'name', 'plan', 'questions', 'session', 'sessions', 'settings', 'stats', 'updatedAt', 'v', 'xp']
 results = []
 def check(name, ok, detail=""):
     results.append((name, ok, detail)); print(("PASS " if ok else "FAIL ") + name + (" — " + detail if detail else ""))
@@ -25,8 +29,8 @@ with sync_playwright() as p:
         kb: Math.round(res.reduce((s, r) => s + size(r), 0) / 1024), files: res.length, biggest: res.map(r => [r.name.split('/').pop().split('?')[0], Math.round(size(r) / 1024) + 'kB']).sort((a, c) => parseInt(c[1]) - parseInt(a[1])).slice(0, 6) }; }""")
     print("first load:", nav)
     check("home load under 1.5 s locally", (nav["loadMs"] or 9999) < 1500, f"{nav['loadMs']} ms, {nav['kb']} kB over {nav['files']} files")
-    if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Austin"); pg.click("text=Join the legion"); pg.wait_for_selector(".castra, .hq")
+    if pg.locator(".login input[type=text]").count():
+        gate_create(pg, BASE, NAME); to_camp(pg, BASE)
     # keyboard-only battle, briefing included
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = true; a.store.flush(); }")
     pg.goto(BASE + "#/campaign/1/t01-1/drill", wait_until="load")
@@ -46,18 +50,20 @@ with sync_playwright() as p:
     check("keyboard-only battle runs to the result", pg.locator(".score-big").count() > 0, f"answered {answered}")
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.store.flush(); }")
     # saved state shape and storage keys
-    shape = pg.evaluate("Object.keys(window.__app.state).sort()")
-    check("state shape unchanged", shape == EXPECTED_SHAPE, ", ".join(shape))
+    shape = pg.evaluate("Object.keys(window.__app.state).filter(k => !k.startsWith('_')).sort()")
+    check("course state shape as specified", shape == EXPECTED_SHAPE, ", ".join(shape))
     keys = pg.evaluate("Object.keys(localStorage).sort()")
-    ok_keys = "mark201.profiles.v1" in keys and "mark201.active.v1" in keys and any(k.startswith("mark201.state.v1.") for k in keys) and all(k.startswith("mark201.") for k in keys)
-    check("localStorage keys as specified (+ mark201.cosmetic.v1 only)", ok_keys and all(k in ("mark201.profiles.v1", "mark201.active.v1", "mark201.cosmetic.v1") or k.startswith("mark201.state.v1.") for k in keys), ", ".join(keys))
+    ok_keys = "imperium.profiles.v2" in keys and "imperium.active.v2" in keys and any(k.startswith("imperium.profile.v2.") for k in keys) and any(k.startswith("imperium.course.v2.") for k in keys)
+    check("localStorage keys: imperium.* profile cache (+ mark201.cosmetic.v1 device prefs only)", ok_keys and all(k.startswith("imperium.") or k == "mark201.cosmetic.v1" for k in keys), ", ".join(keys))
     # export / import round trip
     snap = pg.evaluate("() => { const a = window.__app; return { xp: a.state.xp, concepts: JSON.stringify(a.state.concepts), stats: JSON.stringify(a.state.stats), campaign: JSON.stringify(a.state.campaign) }; }")
     exported = pg.evaluate("window.__app.store.exportJSON()")
-    imp = pg.evaluate("(txt) => { const a = window.__app; a.store.importJSON(txt); return { xp: a.state.xp, concepts: JSON.stringify(a.state.concepts), stats: JSON.stringify(a.state.stats), campaign: JSON.stringify(a.state.campaign), name: a.state.name }; }", exported)
-    check("export then import round-trips XP, mastery, pursuits, campaign", all(imp[k] == snap[k] for k in ("xp", "concepts", "stats", "campaign")), f"xp {snap['xp']} → {imp['xp']} as {imp['name']!r}")
-    pg.reload(wait_until="load"); pg.wait_for_timeout(500)
-    check("reload shows the same XP in the header", pg.evaluate("window.__app.state.xp") == imp["xp"] and str(imp["xp"]) in (pg.evaluate("document.querySelector('.xpbar').innerText") or ""), pg.evaluate("document.querySelector('.xpbar').innerText").replace("\n", " "))
+    imp = pg.evaluate("(txt) => { const a = window.__app; a.store.importJSON(txt); return { xp: a.state.xp, concepts: JSON.stringify(a.state.concepts), stats: JSON.stringify(a.state.stats), campaign: JSON.stringify(a.state.campaign), name: a.profile.username }; }", exported)
+    import json as _json
+    same = lambda k: (imp[k] == snap[k]) if k == "xp" else (_json.loads(imp[k]) == _json.loads(snap[k]))
+    check("export then import round-trips XP, mastery, pursuits, campaign", all(same(k) for k in ("xp", "concepts", "stats", "campaign")), f"xp {snap['xp']} -> {imp['xp']} as {imp['name']!r}")
+    pg.reload(wait_until="load"); pg.wait_for_selector(".xpbar", timeout=15000); pg.wait_for_timeout(500)
+    check("reload shows the same XP in the header", pg.evaluate("window.__app.state.xp") == imp["xp"] and str(pg.evaluate("window.__app.xp()")) in (pg.evaluate("document.querySelector('.xpbar').innerText") or ""), pg.evaluate("document.querySelector('.xpbar').innerText").replace("\n", " "))
     # sound off: no audio nodes, no ambience
     pg.evaluate("() => { const a = window.__app; a.state.settings.sound = false; a.state.settings.briefings = false; a.applySettings(); a.store.flush(); }")
     pg.evaluate("() => { window.__nodes = 0; const P = (window.AudioContext || window.webkitAudioContext).prototype; for (const k of ['createOscillator', 'createBufferSource']) { const o = P[k]; P[k] = function () { window.__nodes++; return o.apply(this, arguments); }; } }")
@@ -84,6 +90,7 @@ with sync_playwright() as p:
     print(f"fps (headless, no GPU): battle {f_battle}, map {f_map}")
     check("no console or page errors", not errors, "; ".join(errors[:3]))
     b.close()
+print("cleanup:", cleanup(NAME))
 fails = [r for r in results if not r[1]]
 print(f"\n{len(results) - len(fails)}/{len(results)} checks passed")
 sys.exit(1 if fails else 0)

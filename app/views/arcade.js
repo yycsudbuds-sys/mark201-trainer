@@ -130,6 +130,7 @@ function buildList(app) {
 
 function activity(app, aid) {
   let act = null; let ch = null;
+  if (!aid.startsWith(app.course + '-')) aid = app.course + '-' + aid; // old links carried unprefixed ids
   for (const c of app.content.chapters) { const a = c.activities.find(x => x.id === aid); if (a) { act = a; ch = c; break; } }
   if (!act) return h('div', { class: 'card' }, 'Unknown activity. ', h('a', { href: '#/arcade/build' }, 'Back'));
   const host = h('div', { class: 'runner', style: { '--ch': ch.color } },

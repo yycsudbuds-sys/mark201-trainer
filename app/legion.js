@@ -2,13 +2,15 @@
 // the rank ladder, the phalerae (medals on a cuirass), the daily orders, the Vesta brazier and the clepsydra.
 // Everything reads existing engine data or the cosmetic store. Nothing here changes what is learned or scored.
 import { h } from './ui.js';
-import { icon, CHAPTER_ICON } from './icons.js';
+import { icon } from './icons.js';
 import { masteryLevel, chapterMastery, LEVELS, levelForXp } from './engine.js';
 import { ACHIEVEMENTS } from './achievements.js';
 import { getCosmetic, setCosmetic, getDenarii, addDenarii } from './cosmetic.js';
 
 export const COLORS = { red: '#8B1E1E', white: '#F0E1BC', black: '#1A1410', gold: '#C9A227', purple: '#66023C', green: '#4F6A3F', blue: '#2E4A7A' };
-export function equipped() { const c = getCosmetic().equipped || {}; return { crest: c.crest || 'red', emblem: c.emblem || 'wings', cloak: c.cloak || 'red', banner: c.banner || 'spqr', table: c.table || 'oak', name: c.name || '' }; }
+/** Equipped gear from any cosmetics object (yours, or another legionary's from the leaderboard). */
+export function equippedFrom(cos = {}) { const c = (cos && cos.equipped) || {}; return { crest: c.crest || 'red', emblem: c.emblem || 'wings', cloak: c.cloak || 'red', banner: c.banner || 'spqr', table: c.table || 'oak', name: c.name || '' }; }
+export function equipped() { return equippedFrom(getCosmetic()); }
 
 /** Your legionary: a bust with the equipped crest, shield emblem and cloak. */
 export function legionaryAvatar(size = 40, eq = equipped()) {
@@ -48,7 +50,7 @@ export function legionGround(app, { chapters = null, onSoldier = null } = {}) {
       ranks.appendChild(b);
     }
     wrap.appendChild(h('div', { class: 'cohort', style: { '--ch': ch.color } },
-      h('div', { class: 'cohort-head' }, h('a', { class: 'cohort-title', href: `#/campaign/${ch.chapter}` }, h('span', { class: 'num' }, `COH ${String(ch.chapter).padStart(2, '0')}`), icon(CHAPTER_ICON[ch.chapter] || 'seal', { size: 18, tone: 'gold' }), ch.title),
+      h('div', { class: 'cohort-head' }, h('a', { class: 'cohort-title', href: `#/campaign/${ch.chapter}` }, h('span', { class: 'num' }, `COH ${String(ch.chapter).padStart(2, '0')}`), icon(app.chapterIcon(ch.chapter), { size: 18, tone: 'gold' }), ch.title),
         h('span', { class: 'small muted' }, icon('standard', { size: 13, tone: 'gold' }), `${m.dist[4]} `, icon('scutum', { size: 13, tone: 'mono' }), `${m.dist[3]} · ${Math.round(m.score * 100)}%`)),
       ranks));
   }
@@ -77,13 +79,13 @@ function soldierSvg(lvl, wounded, due, color) {
 
 /** The rank ladder: the existing levels shown as a Roman cursus honorum. */
 export function rankLadder(app, { compact = false } = {}) {
-  const lv = levelForXp(app.state.xp);
+  const lv = levelForXp(app.xp());
   const el = h('div', { class: 'ladder' + (compact ? ' compact' : '') });
   LEVELS.forEach((L, i) => {
     const state = i < lv.index ? 'done' : i === lv.index ? 'now' : 'ahead';
     el.appendChild(h('div', { class: 'rung ' + state, title: `${L.title} · ${L.xp} XP` }, h('span', { class: 'rung-dot' }, state === 'done' ? icon('laurel', { size: 10, tone: 'gold' }) : state === 'now' ? icon('galea', { size: 12, tone: 'gold' }) : null), h('span', { class: 'rung-name' }, L.title), compact ? null : h('span', { class: 'rung-xp' }, `${L.xp}`)));
   });
-  if (!compact) el.appendChild(h('div', { class: 'ladder-next small muted' }, lv.next ? `${lv.next.xp - app.state.xp} XP to ${lv.next.title}` : 'Imperator. The ladder is climbed.'));
+  if (!compact) el.appendChild(h('div', { class: 'ladder-next small muted' }, lv.next ? `${lv.next.xp - app.xp()} XP to ${lv.next.title}` : 'Imperator. The ladder is climbed.'));
   return el;
 }
 
