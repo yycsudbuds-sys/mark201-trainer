@@ -1,0 +1,1150 @@
+{
+ "chapter": 8,
+ "title": "Stocks: equity valuation",
+ "topics": [
+  {
+   "id": "t08-1",
+   "order": 1,
+   "title": "Returns on a stock",
+   "summary": "A share pays you in two ways: dividends and a change in its price. The holding period return rolls both into one percentage for the period. When returns vary from year to year, the arithmetic average tells you the return in a typical year, but only the geometric average tells you what your money actually compounded at.",
+   "concepts": [
+    "c08-hpr",
+    "c08-arith-vs-geo",
+    "c08-compound-value"
+   ]
+  },
+  {
+   "id": "t08-2",
+   "order": 2,
+   "title": "Valuation vocabulary",
+   "summary": "Before valuing a share you need the language: book, market and liquidation value; the numbers on a quote screen; how debt and equity differ; how shares are issued and traded; and what preferred stock is. The exam asks for these definitions and for reading a quote screen (sample question 9).",
+   "concepts": [
+    "c08-book-market-liquidation",
+    "c08-quote-screen",
+    "c08-debt-vs-equity",
+    "c08-markets-trading",
+    "c08-preferred-stock"
+   ]
+  },
+  {
+   "id": "t08-3",
+   "order": 3,
+   "title": "Comparables",
+   "summary": "The fastest valuation prices a share as a multiple (P/E, price/sales, EV/EBITDA) borrowed from similar firms. It works because firms with similar growth, plowback and risk should have similar multiples. The exam tests the method (sample question 1) and when it breaks down.",
+   "concepts": [
+    "c08-pe-comparables",
+    "c08-ev-multiples",
+    "c08-why-comparables"
+   ]
+  },
+  {
+   "id": "t08-4",
+   "order": 4,
+   "title": "Dividend discount model",
+   "summary": "A share is worth the present value of the dividends it will pay. A constant dividend is a perpetuity, a dividend growing at g forever is a growing perpetuity (Gordon growth), and growth for a finite number of years is a growing annuity. Rearranging the Gordon price splits the required return into a dividend yield and a capital gain rate.",
+   "concepts": [
+    "c08-constant-dividend",
+    "c08-gordon-growth",
+    "c08-required-return-components",
+    "c08-growing-annuity"
+   ]
+  },
+  {
+   "id": "t08-5",
+   "order": 5,
+   "title": "Non-constant growth",
+   "summary": "Many firms pay nothing at first or grow quickly before settling down. Draw a timeline, find the horizon price one period before the first constant-growth dividend, and discount everything to today. Backwards problems ask for the growth rate or dividend that makes the price match.",
+   "concepts": [
+    "c08-nonconstant-timeline",
+    "c08-two-stage",
+    "c08-solve-backwards"
+   ]
+  },
+  {
+   "id": "t08-6",
+   "order": 6,
+   "title": "Where growth comes from",
+   "summary": "Growth is not free: a firm grows by plowing earnings back and earning ROE on them, so g = b × ROE. The same inputs give the forward P/E, the value of growth opportunities (NPVGO) and the growth rate implied by trailing versus forward multiples.",
+   "concepts": [
+    "c08-plowback-growth",
+    "c08-forward-pe",
+    "c08-npvgo",
+    "c08-implied-growth"
+   ]
+  },
+  {
+   "id": "t08-7",
+   "order": 7,
+   "title": "Free cash flow valuation",
+   "summary": "When dividends are a poor guide, value the cash the business generates. FCF (after-tax operating cash before financing) discounted at the firm's rate gives enterprise value; FCFE (cash left for shareholders) discounted gives equity directly. Working capital changes and net borrowing are the usual traps, and you must know when each model fits.",
+   "concepts": [
+    "c08-fcf-ev",
+    "c08-fcfe",
+    "c08-working-capital",
+    "c08-which-model"
+   ]
+  },
+  {
+   "id": "t08-8",
+   "order": 8,
+   "title": "Market efficiency",
+   "summary": "In an efficient market prices already reflect the relevant information. The three forms say which information: past prices (weak), public information (semi-strong), all information including private (strong). We want weak and semi-strong efficiency but not strong. Inefficiencies such as momentum are how an investor might profit, and noise and behaviour explain why prices deviate.",
+   "concepts": [
+    "c08-efficiency-forms",
+    "c08-inefficiency-profit",
+    "c08-noise-behaviour"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c08-hpr",
+   "topic": "t08-1",
+   "term": "Holding period return",
+   "definition": "The total return on a share over one period: r_E = (P1 + D1)/P0 − 1 = (P1 − P0)/P0 + D1/P0, the capital gain yield plus the dividend yield.",
+   "explain": "Treat the share as an investment of P0 that returns P1 + D1 at the end of the period. The return is the gain per dollar invested. The period is whatever time the prices and dividend cover; it need not be a year. A realised return can be negative even in a year when a dividend is paid.",
+   "example": "Buy at P0 = $40.00, receive D1 = $1.20 and sell at P1 = $43.00: capital gain yield = 3.00/40.00 = 7.50%, dividend yield = 1.20/40.00 = 3.00%, so r_E = (43.00 + 1.20)/40.00 − 1 = 10.50%.",
+   "contrast": "r_E is a realised (or forecast) return built from prices and dividends; R is the required return investors demand, used to discount. Both the dividend yield and the capital gain yield divide by today's price P0, never by P1.",
+   "trap": "Dividing by P1; leaving out the dividend; forgetting the −1 (1.105 is a growth factor, not a return); treating a six-month return as an annual rate; thinking a dividend always makes the return positive.",
+   "mnemonic": "Everything you get back, over what you paid, minus 1.",
+   "formula": "r_E = (P1 + D1)/P0 − 1 = (P1 − P0)/P0 + D1/P0",
+   "given": true,
+   "archetypes": [
+    "A1"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-arith-vs-geo",
+   "topic": "t08-1",
+   "term": "Arithmetic versus geometric average return",
+   "definition": "The arithmetic average r_A = (R1 + … + R_N)/N is the return in an average year; the geometric average R_G = [(1 + R1)…(1 + R_N)]^(1/N) − 1 is the average compound return per year. r_A ≥ R_G, with equality only if every yearly return is the same.",
+   "explain": "The arithmetic average is the simple mean and suits a forecast of a typical year. The geometric average reflects compounding, so it is 'the truth' about how fast wealth grew. The more the returns vary, the further R_G falls below r_A (roughly R_G ≈ r_A − σ²/2).",
+   "example": "The lecture example: returns of 8%, −3% and 5%. r_A = (8 − 3 + 5)/3 = 3.3333%. R_G = (1.08 × 0.97 × 1.05)^(1/3) − 1 = 1.09998^(1/3) − 1 = 3.2274% per annum.",
+   "contrast": "Arithmetic answers 'what was the return in an average year'; geometric answers 'what was the average compound return per year'. Arithmetic is for forecasting a typical year, geometric for growth already earned.",
+   "trap": "Averaging the returns when the question asks for the compound return; multiplying the factors but skipping the Nth root; forgetting the −1; entering percentages instead of decimals; using N − 1 as the root.",
+   "mnemonic": "Arithmetic = average of the numbers; geometric = average of the growth factors.",
+   "formula": "r_A = (R1 + … + R_N)/N;  R_G = [(1 + R1)(1 + R2)…(1 + R_N)]^(1/N) − 1",
+   "given": true,
+   "archetypes": [
+    "A1"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-compound-value",
+   "topic": "t08-1",
+   "term": "Compound value and implied compound return",
+   "definition": "A holding of PV that earns R1, …, R_N is worth PV(1 + R1)…(1 + R_N) = PV(1 + R_G)^N after N years. Given the start and end values, the compound return is R_G = (FV/PV)^(1/N) − 1.",
+   "explain": "Because each year's return is earned on the previous year's ending value, the growth factors multiply. This works forwards (find the ending value) and backwards (find the starting investment or the yearly rate). The order of the returns does not matter unless money is added or withdrawn.",
+   "example": "The lecture example: $1,000 in a stock returning 8%, −3% and 5% is worth 1,000 × 1.08 × 0.97 × 1.05 = $1,099.98. The compound return is (1,099.98/1,000)^(1/3) − 1 = 3.2274% per annum.",
+   "contrast": "Compounding the arithmetic average overstates the ending value whenever returns vary; adding the returns ignores compounding altogether; (FV/PV)^(1/N) − 1 is the geometric average.",
+   "trap": "Turning a −9% return into a factor of 1.09 instead of 0.91; dividing the total gain by N; using N − 1 years; forgetting to take the Nth root; rounding the factors early.",
+   "mnemonic": "Multiply the factors, then take the root.",
+   "formula": "FV = PV(1 + R1)…(1 + R_N) = PV(1 + R_G)^N;  R_G = (FV/PV)^(1/N) − 1",
+   "given": true,
+   "archetypes": [
+    "A1"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-book-market-liquidation",
+   "topic": "t08-2",
+   "term": "Book, market and liquidation value",
+   "definition": "Book value of equity is assets minus liabilities at historical cost on the balance sheet. Market value of equity (market capitalisation) is the share price times the shares outstanding. Liquidation value is the amount left for the owners if the assets are sold and the creditors are paid first.",
+   "explain": "Book value looks backwards at accounting costs, market value looks forwards at expected cash flows, and liquidation value is the fire-sale floor. A healthy firm usually has a price-to-book above 1 (growth opportunities, intangibles, historical-cost accounting); as a rough guide P/E is in the teens to 20s and P/B in the 1 to 3 range, and P/B below 1 signals expected returns below the cost of equity.",
+   "example": "Sigma Tools: assets $90M, liabilities $55M, so book equity is $35M. With 4 million shares at $22.00 the market value is $88M, P/B = 88/35 = 2.51. If a sale would fetch $62M for the assets, liquidation value of equity = 62 − 55 = $7M.",
+   "contrast": "Book value is not liquidation value, and liquidation value is not 'the price to buy a bankrupt firm'. Sample question 2 asks for the definition: the amount from selling the assets and paying off the creditors.",
+   "trap": "Choosing 'equal to the book value of equity' or 'the price to buy a firm after bankruptcy' for liquidation value; inverting P/B; forgetting that creditors are paid before shareholders.",
+   "mnemonic": "Book = past costs, Market = future cash flows, Liquidation = fire sale.",
+   "formula": "Market cap = P × shares;  P/B = market cap ÷ book equity;  liquidation value = asset sale proceeds − liabilities",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Three values of a firm",
+    "head": [
+     "Value",
+     "Where it comes from",
+     "Question it answers"
+    ],
+    "rows": [
+     [
+      "Book",
+      "Balance sheet, historical cost",
+      "What do the accounts say equity is worth?"
+     ],
+     [
+      "Market",
+      "Price × shares outstanding",
+      "What do investors pay for the firm as a going concern?"
+     ],
+     [
+      "Liquidation",
+      "Asset sale proceeds minus amounts owed to creditors",
+      "What is left for owners if the firm is shut down?"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c08-quote-screen",
+   "topic": "t08-2",
+   "term": "Reading a quote screen",
+   "definition": "A quote screen shows the last price and change, bid and ask, day and year ranges, volume, dividend yield, forward dividend yield, market cap, price/sales, trailing P/E, consensus forward P/E and P/B. Missing figures follow: shares = market cap ÷ P; EPS = P ÷ (P/E); net income = EPS × shares; DPS = yield × P; expected growth = trailing P/E ÷ forward P/E − 1.",
+   "explain": "Every ratio on the screen shares the same price, so ratios can be turned back into per-share quantities. The exam gives a screen and asks for derived numbers (sample question 9). Trailing means last twelve months, forward means analysts' forecast for the coming year.",
+   "example": "Sample screen: last $60.34, market cap $6,397,100, P/E 18.798, forward P/E 17.943. Shares = 6,397,100/60.34 = 106,018. Expected growth = 18.798/17.943 − 1 = 4.77% per annum.",
+   "contrast": "Last price (most recent trade) versus bid (what buyers offer) versus ask (what sellers want); trailing versus forward P/E; dividend yield (D0/P) versus forward dividend yield (D1/P).",
+   "trap": "Using the bid or ask in place of the last price; dividing forward by trailing P/E (sign reverses); reading market cap in thousands of dollars; mixing trailing and forward figures; forgetting the −1 on the ratio.",
+   "mnemonic": "Same price, different earnings.",
+   "formula": "Shares = market cap ÷ P;  EPS = P ÷ (P/E);  NI = EPS × shares;  growth = (trailing P/E ÷ forward P/E) − 1",
+   "given": false,
+   "archetypes": [
+    "A6"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-debt-vs-equity",
+   "topic": "t08-2",
+   "term": "Debt versus equity",
+   "definition": "Debt is a contractual borrowing repaid with interest; equity is ownership. They differ in risk level, voting rights, predictability of income (interest versus dividends) and tax treatment (interest is deductible to the firm, dividends are not).",
+   "explain": "Lenders have a prior claim, a promised payment and no vote; shareholders have the residual claim, a discretionary dividend and a vote on directors who hire and fire management. Because equity is riskier, shareholders require a higher expected return than lenders. The review guide asks for at least four differences.",
+   "example": "A firm pays $3 million of interest and $3 million of dividends. Only the interest lowers its taxable income. If it skips the dividend, nothing happens in law; if it skips the interest, it is in default.",
+   "contrast": "Debt versus equity versus preferred stock (equity for tax and law, but with a fixed dividend and priority over common). Debt has a maturity; common shares do not.",
+   "trap": "Calling dividends tax-deductible; thinking a missed dividend is a default; saying debt holders vote; saying debt is riskier than equity for the investor.",
+   "mnemonic": "Risk, Vote, Predictable, Tax: RVPT.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Four differences between debt and equity",
+    "head": [
+     "",
+     "Debt",
+     "Equity"
+    ],
+    "rows": [
+     [
+      "Risk to the investor",
+      "Lower: contractual claim, paid first",
+      "Higher: residual claim, paid last"
+     ],
+     [
+      "Voting rights",
+      "None (while paid)",
+      "Vote to elect directors"
+     ],
+     [
+      "Predictability of income",
+      "Interest is promised",
+      "Dividends are discretionary"
+     ],
+     [
+      "Taxation (firm)",
+      "Interest is tax-deductible",
+      "Dividends come from after-tax profit"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c08-markets-trading",
+   "topic": "t08-2",
+   "term": "Markets and trading",
+   "definition": "In the primary market a firm sells new securities (IPO or seasoned equity offering) and receives the money; in the secondary market investors trade existing securities and the firm receives nothing. Trading uses exchanges and platforms (NYSE, NASDAQ, TSX, ECNs), brokers who arrange trades and dealers who hold inventory and quote a bid and an ask.",
+   "explain": "A dealer buys at the bid and sells at the ask; the spread is its profit, and an investor buys at the ask and sells at the bid. A market order trades at once at the best price available; a limit order trades only at its stated price or better. A liquid secondary market makes shares more attractive in the primary market.",
+   "example": "Bid $60.31, ask $60.35: buying 1,000 shares at the ask and selling at the bid loses (60.35 − 60.31) × 1,000 = $40.00 of spread.",
+   "contrast": "Broker (agent, earns a commission, no inventory) versus dealer (principal, earns the spread, holds inventory); primary versus secondary; NYSE (one designated market maker per stock) versus NASDAQ (competing dealers); market versus limit order.",
+   "trap": "Mixing up bid and ask; thinking the company receives money when shares trade between investors; thinking a limit order is certain to be filled; treating the TSX as an American exchange.",
+   "mnemonic": "Dealers Buy at the Bid, Sell at the Ask (B-B, S-A).",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c08-preferred-stock",
+   "topic": "t08-2",
+   "term": "Preferred stock",
+   "definition": "Preferred stock is equity with a fixed stated dividend and priority over common stock for dividends and in liquidation, usually without a vote. Because the dividend is fixed (g = 0), its price is a perpetuity: P0 = D/R.",
+   "explain": "Preferred looks like a bond (fixed payment, credit ratings, priority) but is equity in law and tax: the dividend is not deductible and skipping it is not a default. Cumulative preferred dividends that are skipped build up as arrears that must be paid before common dividends.",
+   "example": "A preferred share pays $5.25 a year and investors require 6.2% per annum: P0 = 5.25/0.062 = $84.68. If the price falls to $70.00 with the same dividend, R = 5.25/70.00 = 7.50%.",
+   "contrast": "Preferred versus common (fixed versus growing dividend, priority versus residual) and preferred versus a bond (no default on a skipped dividend, no tax deduction).",
+   "trap": "Using the Gordon growth formula with g > 0; valuing a deferred first dividend at the wrong date (the perpetuity value sits one period before the first payment); thinking preferred dividends are tax-deductible.",
+   "mnemonic": "Preferred = bond-like payment, equity-like law.",
+   "formula": "P0 = D/R",
+   "given": true,
+   "archetypes": [],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c08-pe-comparables",
+   "topic": "t08-3",
+   "term": "Valuation by P/E comparables",
+   "definition": "Estimate a share's price as a benchmark multiple times a matching per-share figure: P = benchmark P/E × EPS (trailing P/E with trailing EPS, forward P/E with forward EPS), or P = benchmark P/S × sales per share for loss-making firms.",
+   "explain": "The benchmark comes from similar firms, an industry average or the firm's own history. This is relative valuation: it says what the price should be if the firm trades like its peers. A target price in t years uses EPS_t = EPS0(1 + g)^t. Sample question 1 (a broker pricing a firm off its earnings and similar firms' P/E) is comparables.",
+   "example": "EPS last year $3.10, expected growth 7%, benchmark P/E 16. Price today on trailing EPS = 16 × 3.10 = $49.60. Target price in 3 years = 16 × 3.10 × 1.07^3 = 16 × 3.7976 = $60.76.",
+   "contrast": "Comparables (relative value, multiples) versus DCF/DDM (intrinsic value from the firm's own cash flows); trailing versus forward P/E; P/E versus price/sales (used when earnings are negative).",
+   "trap": "Applying a trailing multiple to forecast EPS (that is a target price one year ahead, not today's price); averaging price over EPS wrongly (average the yearly P/Es); using total sales instead of sales per share; treating a P/E of 19 as 19%.",
+   "mnemonic": "Price = multiple × metric, same basis on both sides.",
+   "formula": "P = benchmark P/E × EPS;  P = benchmark P/S × sales per share;  EPS_t = EPS0(1 + g)^t",
+   "given": false,
+   "archetypes": [
+    "A7"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-ev-multiples",
+   "topic": "t08-3",
+   "term": "Enterprise value multiples",
+   "definition": "Enterprise value (EV) = market value of equity + debt − cash, the value of the operating business to all investors. An EV multiple such as EV/EBITDA gives EV = multiple × EBITDA, and equity is then Equity = EV − Debt + Cash.",
+   "explain": "EBITDA is measured before interest, so EV/EBITDA is not distorted by how a firm is financed and can compare firms with different debt. You must walk from EV to equity before dividing by shares.",
+   "example": "Peers trade at 8.5 × EBITDA. A firm has EBITDA $24.0M, debt $58.0M, cash $9.5M and 10.0M shares: EV = 204.0; Equity = 204.0 − 58.0 + 9.5 = $155.5M; value per share = $15.55.",
+   "contrast": "Equity multiple (P/E: equity value directly) versus EV multiple (EV/EBITDA: whole business, needs the debt and cash bridge).",
+   "trap": "Dividing EV by the shares; subtracting cash instead of adding it; applying an EV/EBITDA multiple to net income; forgetting debt.",
+   "mnemonic": "EV in, then −Debt +Cash, then ÷ shares.",
+   "formula": "EV = multiple × EBITDA;  Equity = EV − Debt + Cash",
+   "given": true,
+   "archetypes": [
+    "A7"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-why-comparables",
+   "topic": "t08-3",
+   "term": "Why comparables work",
+   "definition": "A constant-growth firm's forward P/E is P0/EPS1 = (1 − b)/(R − g), so firms with similar growth g, ROE (hence plowback b) and risk (hence required return R) should have similar P/E ratios.",
+   "explain": "Comparables are not magic: they work to the extent that the peer firms really share the drivers of the multiple. A firm with higher growth, lower risk or a higher payout deserves a higher P/E, and a small error in the benchmark causes a large error in price.",
+   "example": "b = 40%, g = 5%, R = 11%: forward P/E = 0.60/0.06 = 10.0. If peers with the same b, g and R trade at about 10 times forward earnings, a P/E of 10 for your firm is 'normal'.",
+   "contrast": "Relative valuation (multiples of peers) versus intrinsic valuation (DDM/FCF); growth stock P/E versus income stock P/E.",
+   "trap": "Comparing a high-growth firm with mature firms; using the plowback b instead of the payout 1 − b in the numerator; ignoring that the benchmark is hard to choose.",
+   "mnemonic": "Same g, same ROE, same risk, same P/E.",
+   "formula": "Forward P/E = (1 − b)/(R − g)",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-constant-dividend",
+   "topic": "t08-4",
+   "term": "Constant dividend (perpetuity)",
+   "definition": "A share that pays the same dividend D every year forever is an ordinary perpetuity: P0 = D/R. The price stays at D/R at every date.",
+   "explain": "No growth means no capital gain, so the entire return R is the dividend yield D/P0. This is the model for preferred stock and for a firm with a fixed dividend policy. A perpetuity formula values the stream one period before the first payment.",
+   "example": "D = $2.75 each year and R = 8.5%: P0 = 2.75/0.085 = $32.35, and the price will still be $32.35 in five years. Separately, a $2.00 dividend first paid in 4 years with R = 8%: P3 = 2.00/0.08 = $25.00 and P0 = 25.00/1.08^3 = $19.85.",
+   "contrast": "Constant dividend (g = 0, D/R) versus Gordon growth (g ≠ 0, D1/(R − g)).",
+   "trap": "Growing the price at R; discounting a perpetuity value that is already at the right date; using R in percent; forgetting to discount when the first dividend is several years away.",
+   "mnemonic": "No growth, no gain: yield = R.",
+   "formula": "P0 = D/R;  R = D/P0",
+   "given": true,
+   "archetypes": [
+    "A2"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-gordon-growth",
+   "topic": "t08-4",
+   "term": "Gordon growth model",
+   "definition": "If dividends grow at a constant rate g forever, D_{n+1} = (1 + g)D_n, a share is worth P0 = D1/(R − g) with D1 = D0(1 + g) when D0 was just paid; the price at time t is P_t = D_{t+1}/(R − g) = P0(1 + g)^t. It requires g < R.",
+   "explain": "The formula values a growing perpetuity one period before its first payment. Use D1 in the numerator, never D0. The price grows at g because every future dividend does. It is the workhorse of the stock questions (the recommended problems 1, 4 and 19).",
+   "example": "D0 = $1.85 just paid, g = 3.5%, R = 10.5%: D1 = 1.85 × 1.035 = 1.9147; P0 = 1.9147/(0.105 − 0.035) = $27.35. In 4 years: P4 = 27.35 × 1.035^4 = $31.39.",
+   "contrast": "D0 versus D1 ('just paid' versus 'next year'); P_t uses D_{t+1}; constant dividend (g = 0) is a special case; negative g is allowed.",
+   "trap": "Using D0 instead of D1 (or growing D1 again); R plus g in the denominator; growing the dividend twice; computing P_t with D_t; g as a whole number; a negative price from g > R means the model does not apply.",
+   "mnemonic": "Next dividend over the gap: D1 over R minus g.",
+   "formula": "P0 = D1/(R − g);  D1 = D0(1 + g);  P_t = P0(1 + g)^t",
+   "given": true,
+   "archetypes": [
+    "A2"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-required-return-components",
+   "topic": "t08-4",
+   "term": "Components of the required return",
+   "definition": "Rearranging the Gordon model gives R = D1/P0 + g: the dividend yield plus the capital gain rate. In the constant-growth model the capital gain rate equals g, because the price grows with the dividend.",
+   "explain": "You can read the market's required return off a price, or solve for g, D1, D0 or P0 when the other pieces are known. The split matters: growth stocks earn R mostly as capital gains, income stocks mostly as dividends, and non-payers entirely as capital gains.",
+   "example": "P0 = $41.50, D1 = $2.04, g = 4.6%: dividend yield = 2.04/41.50 = 4.9157%, R = 4.9157% + 4.6% = 9.52% per annum. If R = 9.4%, P0 = $45.00 and D1 = $1.62, then g = 9.4% − 3.6% = 5.8%.",
+   "contrast": "Dividend yield (D1/P0) versus capital gain yield (g); required return R versus holding period return r_E; the yield uses NEXT year's dividend.",
+   "trap": "Using D0 for the yield; leaving out g; adding the yield to R when solving for g; forgetting to convert D0 to D1 when the dividend 'was just paid'.",
+   "mnemonic": "R = yield + growth: income plus capital gain.",
+   "formula": "R = D1/P0 + g",
+   "given": true,
+   "archetypes": [
+    "A2"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-growing-annuity",
+   "topic": "t08-4",
+   "term": "Growing annuity (finite growth)",
+   "definition": "The present value of N dividends, the first being D1, each growing at g, is PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N]. It is the Gordon value minus the value of the dividends after year N.",
+   "explain": "Use it for a high-growth phase that lasts N years (the first stage of a two-stage valuation) or a firm that pays and then liquidates. It works even when g > R, because the finite stream still has a finite value; when g < R and N is very large it approaches D1/(R − g).",
+   "example": "D1 = $1.80, g = 4%, R = 10%, N = 8: PV = 1.80/0.06 × [1 − (1.04/1.10)^8] = 30.00 × 0.36155 = $10.85. With g = 15% > R = 10%, D1 = $2.00 and N = 6: PV = (2.00/−0.05) × [1 − (1.15/1.10)^6] = −40.00 × (−0.30566) = $12.23.",
+   "contrast": "Growing annuity (N dividends) versus growing perpetuity (Gordon: forever) versus an ordinary annuity (g = 0).",
+   "trap": "Using g/R instead of (1 + g)/(1 + R); N one too many or too few; treating g > R as an error; dropping the sign when both factors are negative; forgetting the horizon price when the stream continues.",
+   "mnemonic": "Gordon minus the tail.",
+   "formula": "PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N]",
+   "given": true,
+   "archetypes": [
+    "A2"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-nonconstant-timeline",
+   "topic": "t08-5",
+   "term": "Non-constant growth timeline",
+   "definition": "When dividends are zero or growing at a changing rate early on, list the explicit dividends, find the first dividend of the constant-growth stage D_{T+1}, compute the horizon price P_T = D_{T+1}/(R − g2) at date T (one period before it), and discount the dividends and P_T to today.",
+   "explain": "Always draw the timeline and mark the date of each dividend. The Gordon formula always gives the price one period BEFORE the first dividend used, which is where the most common mistake happens.",
+   "example": "No dividends for 4 years, D5 = $3.00 then growth of 4% forever, R = 10%: P4 = 3.00/(0.10 − 0.04) = $50.00 and P0 = 50.00/1.10^4 = $34.15.",
+   "contrast": "Horizon price P_T (a value at date T) versus the first dividend D_{T+1}; the dividend at T is still received at T and is discounted separately.",
+   "trap": "Placing the horizon price one year off; growing D_T by g1 instead of g2; discounting P_T by T + 1 periods; leaving out a dividend; adding the horizon price twice.",
+   "mnemonic": "Draw it, mark T, price one year before D_{T+1}.",
+   "formula": "P_T = D_{T+1}/(R − g2);  P0 = Σ D_t/(1 + R)^t + P_T/(1 + R)^T",
+   "given": false,
+   "archetypes": [
+    "A3"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-two-stage",
+   "topic": "t08-5",
+   "term": "Two-stage growth formula",
+   "definition": "A firm growing at g1 for T years and then at g2 forever has P0 = D1/(R − g1) × [1 − ((1 + g1)/(1 + R))^T] + P_T/(1 + R)^T with P_T = D_{T+1}/(R − g2) and D_{T+1} = D0(1 + g1)^T(1 + g2).",
+   "explain": "It is the timeline method in one line: a growing annuity for the first stage plus the discounted horizon price. The first stage may have g1 > R. Both formulas are on the sheet, but you must assemble them and pick the dates correctly.",
+   "example": "D0 = $1.25, g1 = 20% for 3 years, g2 = 5%, R = 12%: annuity part = 1.50/(0.12 − 0.20) × [1 − (1.20/1.12)^3] = 4.3117; D4 = 1.25 × 1.2^3 × 1.05 = 2.268; P3 = 2.268/0.07 = 32.40; PV of P3 = 32.40/1.12^3 = 23.0617; P0 = 27.37.",
+   "contrast": "Timeline (sum of discounted terms) versus the closed form: both give the same answer; the growing annuity covers dividends 1 to T and does not include P_T.",
+   "trap": "Using g2 in the annuity term; discounting P_T by T + 1 periods; computing D_{T+1} with the wrong number of growth steps; adding the annuity and the undiscounted horizon price.",
+   "mnemonic": "Annuity for stage one, perpetuity for stage two, discounted.",
+   "formula": "P0 = D1/(R − g1)[1 − ((1 + g1)/(1 + R))^T] + [D_{T+1}/(R − g2)]/(1 + R)^T",
+   "given": true,
+   "archetypes": [
+    "A3"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-solve-backwards",
+   "topic": "t08-5",
+   "term": "Solving backwards",
+   "definition": "When the price (today or at the horizon) is given, rearrange the same model to find the unknown: for example g2 from P_T = D_T(1 + g2)/(R − g2) gives g2 = (R·P_T − D_T)/(P_T + D_T); an unknown D0 enters every term linearly, so factor it out.",
+   "explain": "The structure of the valuation does not change; you just solve for the missing growth rate or dividend. Seminar 4's Giant stock finds the constant growth rate beginning in year 4 from a known year-3 price.",
+   "example": "Giant: D0 = $1.50, g1 = 7% for 3 years, P3 = $20, R = 15%. D3 = 1.50 × 1.07^3 = 1.8376; g2 = (0.15 × 20 − 1.8376)/(20 + 1.8376) = 5.32%.",
+   "contrast": "Forward valuation (inputs → price) versus implied-input valuation (price → input); implied g from a price versus implied R from a price.",
+   "trap": "Forgetting that D_T already contains g1 growth; using D1 instead of D_T in the g2 formula; solving the equation with the wrong sign; not factoring out D0.",
+   "mnemonic": "Same equation, different unknown.",
+   "formula": "g2 = (R·P_T − D_T)/(P_T + D_T);  D1 = P0 ÷ (annuity factor + discounted horizon factor)",
+   "given": false,
+   "archetypes": [
+    "A3"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-plowback-growth",
+   "topic": "t08-6",
+   "term": "Plowback and growth",
+   "definition": "The plowback ratio b = (EPS − DPS)/EPS = 1 − payout is the share of earnings reinvested. Growth is g = b × ROE, where ROE = EPS ÷ book equity per share at the START of the year.",
+   "explain": "Reinvested earnings earn ROE, so book equity grows at b × ROE and, if payout and ROE stay constant, so do earnings and dividends. Young firms plow back more (b near 1, g large); mature firms pay out more (b near 0, g small). Sample question 4: ROE 15%, payout 40% → b = 60%, g = 9%.",
+   "example": "EPS = $3.00, DPS = $1.80, book equity per share at start of year $15.00: b = 1.20/3.00 = 40%; ROE = 3.00/15.00 = 20%; g = 8%. With R = 12%: D1 = 1.80 × 1.08 = 1.944 and P0 = 1.944/(0.12 − 0.08) = $48.60.",
+   "contrast": "Plowback b versus payout 1 − b; ROE on start-of-year equity (the professor's convention) versus end-of-year equity; the textbook's 'sustainable growth' formula is NOT the professor's.",
+   "trap": "Using payout as b; growing EPS twice when finding D1; ROE on end-of-year equity; using the textbook sustainable growth formula; forgetting that g changes if b changes.",
+   "mnemonic": "g = b × ROE: grow by what you keep times what you earn on it.",
+   "formula": "g = b × ROE;  b = (EPS − DPS)/EPS = 1 − payout",
+   "given": true,
+   "archetypes": [
+    "A4"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c08-forward-pe",
+   "topic": "t08-6",
+   "term": "Forward P/E and its drivers",
+   "definition": "With D1 = (1 − b)EPS1 and a Gordon price, the forward P/E is P0/EPS1 = (1 − b)/(R − g). Higher growth, lower risk (lower R) and a higher payout (lower b, with g constant) all raise the P/E.",
+   "explain": "It explains why young growth firms have high P/Es and why mature income stocks have low ones, and it underlies the comparables approach. Remember that g = b × ROE links growth and plowback: if g is fixed, a higher payout needs a higher ROE.",
+   "example": "b = 40%, g = 8%, R = 12%: forward P/E = 0.60/0.04 = 15.0. With EPS1 = 3.00 × 1.08 = 3.24, P0 = 15.0 × 3.24 = $48.60.",
+   "contrast": "Forward P/E (P0/EPS1) versus trailing P/E (P0/EPS0 = forward P/E × (1 + g)); earnings yield is the inverse of the P/E.",
+   "trap": "Using b rather than 1 − b in the numerator; using EPS0 with a forward multiple; reading a high P/E as 'expensive' without checking g and R.",
+   "mnemonic": "(1 − b) over (R − g): payout over the gap.",
+   "formula": "Forward P/E = (1 − b)/(R − g)",
+   "given": false,
+   "archetypes": [
+    "A4"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-npvgo",
+   "topic": "t08-6",
+   "term": "Net present value of growth opportunities",
+   "definition": "A firm that never grew would be worth EPS1/R. The price is P0 = EPS1/R + NPVGO, so NPVGO = P0 − EPS1/R, and P/E = 1/R + NPVGO/EPS1.",
+   "explain": "A positive NPVGO means the firm's growth projects create value. A negative NPVGO means either the stock is undervalued (buy) or growth is destroying value (do not buy): reinvesting at ROE below R is worse than paying the earnings out.",
+   "example": "Seminar 4's Johnson: EPS1 = $8, P0 = $72.94, R = 10% → NPVGO = 72.94 − 80 = −$7.06, so growth destroys value. Own example: EPS1 = $5.00, R = 10%, P0 = $62: no-growth value $50, NPVGO = $12.00, P/E = 10 + 2.4 = 12.4.",
+   "contrast": "NPVGO (value of the growth projects) versus total growth: a firm can grow quickly and still have NPVGO < 0; no-growth value EPS1/R versus price.",
+   "trap": "Using EPS0 instead of EPS1; subtracting in the wrong order (EPS1/R − P0); interpreting a negative NPVGO as 'no growth' rather than 'growth destroys value or the price is too low'.",
+   "mnemonic": "Price = no-growth value + growth value.",
+   "formula": "P0 = EPS1/R + NPVGO",
+   "given": true,
+   "archetypes": [
+    "A5"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-implied-growth",
+   "topic": "t08-6",
+   "term": "Growth implied by trailing and forward multiples",
+   "definition": "Because trailing and forward P/E share the same price, EPS1/EPS0 = trailing P/E ÷ forward P/E, so the expected growth in earnings is (trailing P/E ÷ forward P/E) − 1.",
+   "explain": "A forward P/E lower than the trailing P/E means earnings are expected to rise; higher means they are expected to fall. The same trick works for dividends with the trailing and forward dividend yields (D1/D0 = forward yield ÷ trailing yield).",
+   "example": "Sample question 9(b): 18.798/17.943 − 1 = 4.77% expected growth this year. Own example: trailing 21.5, forward 19.3 → 21.5/19.3 − 1 = 11.40%.",
+   "contrast": "Growth in EPS (from P/E ratios) versus growth in the price (not the same); trailing versus forward.",
+   "trap": "Dividing forward by trailing (sign reversed); forgetting the −1; using the day's price change as growth; subtracting the P/Es.",
+   "mnemonic": "Trailing over forward, minus one.",
+   "formula": "g = trailing P/E ÷ forward P/E − 1",
+   "given": false,
+   "archetypes": [
+    "A6"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-fcf-ev",
+   "topic": "t08-7",
+   "term": "Free cash flow and enterprise value",
+   "definition": "Free cash flow to the firm is FCF = EBIT(1 − T) + D&A − CAPEX − ΔWC, the after-tax operating cash available to all investors. Discounting FCF at the firm's rate gives enterprise value; for a constant perpetuity EV = FCF/R, and equity follows from Equity = EV − Debt + Cash.",
+   "explain": "Start from the income statement: Revenue − Operating expenses = EBITDA; − D&A = EBIT; − Interest = EBT; − Tax = NPAT. FCF uses EBIT, not NPAT, so interest never appears. Use FCF when you want the value of the whole business independent of financing.",
+   "example": "Perfect Pizzas (lecture): sales $2.0M, costs $0.7M, D&A $0.2M, interest $0.1M, tax $0.3M (T = 30%), no CAPEX or ΔWC. EBIT = 1,100k; FCF = 1,100(0.70) + 200 = $970k; EV = 970/0.10 = $9.7M.",
+   "contrast": "FCF (firm, before interest, discounted at the firm rate → EV) versus FCFE (equity, after interest and borrowing, → equity value).",
+   "trap": "Subtracting interest in FCF; starting from NPAT; adding CAPEX instead of subtracting it; subtracting a decrease in WC; forgetting that the result is EV, not equity.",
+   "mnemonic": "EBIT times (1 − T), add back D&A, take out CAPEX and ΔWC.",
+   "formula": "FCF = EBIT(1 − T) + D&A − CAPEX − ΔWC;  EV = FCF/R",
+   "given": true,
+   "archetypes": [
+    "A8"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-fcfe",
+   "topic": "t08-7",
+   "term": "Free cash flow to equity",
+   "definition": "FCFE = NPAT + D&A − CAPEX − ΔWC + ΔDebt, equivalently FCF − (1 − T) × Interest + ΔDebt. Discounting FCFE at the cost of equity gives the value of equity directly.",
+   "explain": "FCFE is what is left for shareholders after interest, tax and net borrowing, so ΔDebt (net borrowing) adds cash. Equity from FCFE should agree with Equity = EV − Debt + Cash from the FCF route.",
+   "example": "Perfect Pizzas: NPAT 700k + D&A 200k, no CAPEX, ΔWC or ΔDebt → FCFE = $900k; Equity = 900/0.10 = $9.0M. FCF − (1 − 0.30) × 100k = 970 − 70 = 900k confirms it, and EV − Equity = 9.7 − 9.0 = $0.7M of net debt.",
+   "contrast": "FCFE (after interest, includes ΔDebt, discount at R_E) versus FCF (before interest, discount at the firm rate); DDM values the dividends actually paid.",
+   "trap": "Dropping ΔDebt; subtracting ΔDebt; using EBIT(1 − T) instead of NPAT; subtracting interest twice; discounting FCFE at the firm rate.",
+   "mnemonic": "NPAT is already after interest; add borrowing.",
+   "formula": "FCFE = NPAT + D&A − CAPEX − ΔWC + ΔDebt = FCF − (1 − T)·Interest + ΔDebt",
+   "given": true,
+   "archetypes": [
+    "A8"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-working-capital",
+   "topic": "t08-7",
+   "term": "Working capital and its change",
+   "definition": "Working capital WC = Cash + Inventory + Receivables − Payables (= current assets − current liabilities). A positive change in working capital, ΔWC > 0, is a cash outflow that is subtracted in FCF.",
+   "explain": "Money tied up in inventory and receivables, or in cash, is not available to investors; payables are financing from suppliers. So inventory up, receivables up, payables down and cash up are positive changes in WC. Sample question 6 asks which event gives a positive change in net working capital (inventory increases).",
+   "example": "Inventory rises $40k, receivables rise $25k, payables rise $15k: ΔWC = 40 + 25 − 15 = +$50k, so FCF is reduced by $50k.",
+   "contrast": "ΔWC (a balance-sheet change) versus CAPEX (long-term investment) versus salaries or taxes (income-statement items, not working capital).",
+   "trap": "Treating an increase in payables as an increase in WC; adding ΔWC instead of subtracting it; counting salaries, corporate tax or CAPEX as working capital.",
+   "mnemonic": "More stuff tied up = positive ΔWC = less cash.",
+   "formula": "WC = Cash + Inventory + Receivables − Payables",
+   "given": true,
+   "archetypes": [
+    "A8"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-which-model",
+   "topic": "t08-7",
+   "term": "Choosing a valuation model",
+   "definition": "Use comparables for a quick relative price when good peers exist; the DDM for a firm with stable, forecastable dividends; FCF (FCFF) to value the whole firm independent of financing; FCFE to value the equity directly when borrowing changes.",
+   "explain": "The review guide asks when to choose each. Comparables need similar firms; the DDM struggles with firms that pay no dividend or an irregular one; FCF needs a sensible discount rate for the whole firm and the debt and cash bridge; FCFE needs forecasts of net borrowing.",
+   "example": "A start-up with sales but losses: price/sales comparables. A mature utility with a steady, growing dividend: Gordon growth. A private company being bought outright: FCF to EV, then Equity = EV − Debt + Cash.",
+   "contrast": "Relative valuation (comparables) versus intrinsic valuation (DCF: DDM, FCF, FCFE); firm value (EV) versus equity value.",
+   "trap": "Using P/E on negative earnings; using the DDM for a firm with no dividends; discounting FCFE at the firm rate; stopping at EV without the bridge to equity.",
+   "mnemonic": "Comparables: peers. DDM: dividends. FCF: firm. FCFE: shareholders.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Which model when",
+    "head": [
+     "Model",
+     "Cash flows or metric",
+     "Output",
+     "Good when"
+    ],
+    "rows": [
+     [
+      "Comparables",
+      "Multiple × EPS, sales or EBITDA",
+      "Price (or EV)",
+      "Good peers exist; quick check"
+     ],
+     [
+      "DDM",
+      "Dividends",
+      "Equity",
+      "Stable, forecastable dividends"
+     ],
+     [
+      "FCF (FCFF)",
+      "EBIT(1 − T) + D&A − CAPEX − ΔWC",
+      "Enterprise value",
+      "Whole business; financing may change"
+     ],
+     [
+      "FCFE",
+      "NPAT + D&A − CAPEX − ΔWC + ΔDebt",
+      "Equity",
+      "Equity directly; net borrowing predictable"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c08-efficiency-forms",
+   "topic": "t08-8",
+   "term": "Forms of market efficiency",
+   "definition": "In an efficient market prices already reflect the relevant information. Weak form: past prices (charts) are priced in. Semi-strong form: all publicly released information is priced in. Strong form: all information, including private, is priced in.",
+   "explain": "Each form includes the one before it. Weak and semi-strong efficiency are desirable: they mean public information gives no edge. Strong-form efficiency is undesirable because it would mean even private information is already in prices, i.e. insiders have been trading on it (insider trading).",
+   "example": "An earnings announcement under semi-strong efficiency: the price jumps to its new level at once and stays there. Under semi-strong inefficiency the price drifts toward the new level over days. Under strong-form efficiency the price would already have moved before the announcement.",
+   "contrast": "Efficiency (prices fair) versus inefficiency (a pattern you can exploit); weak form (past prices) versus semi-strong (public information) versus strong (private).",
+   "trap": "Choosing 'weak-form efficiency' when the stem describes buying on momentum (that relies on a weak-form INEFFICIENCY); thinking efficient markets mean prices never change; thinking strong-form efficiency is the goal.",
+   "mnemonic": "Weak = Watch the chart, Semi = Study the news, Strong = Secret information.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Forms of market efficiency",
+    "head": [
+     "Form",
+     "Information priced in",
+     "Desirable?"
+    ],
+    "rows": [
+     [
+      "Weak",
+      "Past history of prices",
+      "Yes"
+     ],
+     [
+      "Semi-strong",
+      "All publicly released information",
+      "Yes"
+     ],
+     [
+      "Strong",
+      "All information, including private",
+      "No (implies insider trading)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c08-inefficiency-profit",
+   "topic": "t08-8",
+   "term": "Profiting from inefficiency",
+   "definition": "An inefficiency is a predictable pattern in prices. Buying because a price has been trending upward (the momentum effect) relies on a weak-form inefficiency; a delayed price response to a public announcement is a semi-strong inefficiency; an overreaction followed by reversal is another.",
+   "explain": "If past prices predicted the future, charting would make money, which the weak form says it cannot. Sample question 3: buying a stock because its price has continued upward with momentum relies on weak-form inefficiencies. After an announcement the price may respond efficiently (once), slowly (delayed) or too much (overreaction).",
+   "example": "A stock rises for six straight months and you buy expecting more: you are betting on momentum, a weak-form inefficiency. If good news is announced and the price keeps creeping up for a week, buying on the news earns a profit because the market is semi-strong inefficient.",
+   "contrast": "Weak-form inefficiency (past prices help) versus weak-form efficiency (they do not); delayed response versus overreaction.",
+   "trap": "Choosing 'weak form efficiency' instead of 'weak-form inefficiencies' when relying on momentum; thinking semi-strong inefficiency is about private information.",
+   "mnemonic": "Momentum = the market has memory.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c08-noise-behaviour",
+   "topic": "t08-8",
+   "term": "Noise trading and behaviour",
+   "definition": "Prices can deviate from fair value because of noise (selling for personal reasons such as health or to pay tax bills) and behaviour (disposition effect: selling winners and holding losers; overconfidence; sentiment).",
+   "explain": "Noise traders move prices for reasons unrelated to value, and behavioural biases push many investors in the same direction, so mispricings can persist. These ideas explain how inefficiencies arise.",
+   "example": "An investor sells a winning stock early to lock in a gain but keeps a loser hoping for a recovery: the disposition effect. Another sells shares in April to pay a tax bill: noise.",
+   "contrast": "Noise (liquidity or personal reasons) versus behaviour (biases and sentiment) versus information (rational price changes).",
+   "trap": "Calling the disposition effect 'selling losers'; thinking noise trading is based on information.",
+   "mnemonic": "Noise = needs cash; behaviour = biased mind.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 1,
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a08-01",
+   "type": "order",
+   "concept": "c08-nonconstant-timeline",
+   "title": "Order the non-constant growth steps",
+   "prompt": "Put the steps of a non-constant growth valuation in the correct order.",
+   "items": [
+    "List the explicit dividends of the early stage",
+    "Find the first dividend of the constant-growth stage, D_{T+1}",
+    "Compute the horizon price P_T = D_{T+1}/(R − g2), one period before that dividend",
+    "Discount each early dividend and P_T back to today at R",
+    "Add the present values to get P0"
+   ],
+   "explanation": "The horizon price is a value at date T, one period before the first constant-growth dividend. Only after finding it can you discount everything to today and sum."
+  },
+  {
+   "id": "a08-02",
+   "type": "order",
+   "concept": "c08-plowback-growth",
+   "title": "Order the growth-from-plowback steps",
+   "prompt": "Put the steps for valuing a firm from EPS, DPS and book equity in order.",
+   "items": [
+    "Find the plowback ratio b = (EPS − DPS)/EPS",
+    "Find ROE = EPS ÷ book equity at the start of the year",
+    "Compute growth g = b × ROE",
+    "Grow the dividend: D1 = DPS(1 + g)",
+    "Compute the price P0 = D1/(R − g)"
+   ],
+   "explanation": "You need b and ROE for g, then D1 from the dividend just paid, then the Gordon price. ROE uses start-of-year equity."
+  },
+  {
+   "id": "a08-03",
+   "type": "sort",
+   "concept": "c08-working-capital",
+   "title": "Positive or negative change in working capital",
+   "prompt": "Drag each event to the type of change in working capital it causes.",
+   "buckets": [
+    "Positive ΔWC (cash tied up, FCF falls)",
+    "Negative ΔWC (cash released, FCF rises)"
+   ],
+   "items": [
+    {
+     "text": "Inventory increases",
+     "bucket": 0
+    },
+    {
+     "text": "Accounts receivable increase",
+     "bucket": 0
+    },
+    {
+     "text": "Accounts payable decrease",
+     "bucket": 0
+    },
+    {
+     "text": "Cash balance increases",
+     "bucket": 0
+    },
+    {
+     "text": "Inventory decreases",
+     "bucket": 1
+    },
+    {
+     "text": "Accounts receivable fall (customers pay faster)",
+     "bucket": 1
+    },
+    {
+     "text": "Accounts payable increase",
+     "bucket": 1
+    },
+    {
+     "text": "Cash balance falls",
+     "bucket": 1
+    }
+   ],
+   "explanation": "WC = Cash + Inventory + Receivables − Payables. Anything that raises a positive component or lowers payables raises WC and uses cash."
+  },
+  {
+   "id": "a08-04",
+   "type": "sort",
+   "concept": "c08-efficiency-forms",
+   "title": "Which form prices this information first?",
+   "prompt": "Drag each item of information to the weakest form of market efficiency that builds it into the price.",
+   "buckets": [
+    "Weak form",
+    "Semi-strong form",
+    "Strong form"
+   ],
+   "items": [
+    {
+     "text": "Last year's closing prices and price charts",
+     "bucket": 0
+    },
+    {
+     "text": "A six-month price trend showing momentum",
+     "bucket": 0
+    },
+    {
+     "text": "A public earnings announcement",
+     "bucket": 1
+    },
+    {
+     "text": "A press release announcing a dividend cut",
+     "bucket": 1
+    },
+    {
+     "text": "A published analyst report built on public filings",
+     "bucket": 1
+    },
+    {
+     "text": "A board's confidential plan to bid for a rival",
+     "bucket": 2
+    },
+    {
+     "text": "Unreleased drug trial results known only to insiders",
+     "bucket": 2
+    },
+    {
+     "text": "A manager's private knowledge of a contract about to be lost",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Weak form covers past prices, semi-strong adds everything public, and strong form adds private information. Strong-form efficiency is undesirable because it implies insider trading."
+  },
+  {
+   "id": "a08-05",
+   "type": "match",
+   "concept": "c08-gordon-growth",
+   "title": "Match the symbol to its meaning",
+   "prompt": "Match each Gordon growth symbol to its meaning.",
+   "pairs": [
+    {
+     "left": "D0",
+     "right": "The dividend just paid"
+    },
+    {
+     "left": "D1",
+     "right": "The dividend one year from now, D0(1 + g)"
+    },
+    {
+     "left": "g",
+     "right": "The constant dividend growth rate, also the capital gain rate"
+    },
+    {
+     "left": "R",
+     "right": "The required return (discount rate)"
+    },
+    {
+     "left": "P_t",
+     "right": "The price at time t, found with D_{t+1}"
+    },
+    {
+     "left": "D1/P0",
+     "right": "The dividend yield"
+    }
+   ],
+   "explanation": "The numerator is always the NEXT dividend, and the price at time t uses the dividend one period later."
+  },
+  {
+   "id": "a08-06",
+   "type": "match",
+   "concept": "c08-which-model",
+   "title": "Match the situation to the valuation approach",
+   "prompt": "Match each situation to the most suitable valuation approach.",
+   "pairs": [
+    {
+     "left": "Mature firm with steady, growing dividends",
+     "right": "Gordon growth / DDM"
+    },
+    {
+     "left": "Loss-making start-up that reports sales",
+     "right": "Price/sales comparables"
+    },
+    {
+     "left": "Profitable firm with no dividends and many similar peers",
+     "right": "P/E comparables"
+    },
+    {
+     "left": "Value the whole business regardless of how it is financed",
+     "right": "FCF discounted to enterprise value"
+    },
+    {
+     "left": "Value the shares directly when borrowing changes each year",
+     "right": "FCFE discounted to equity"
+    }
+   ],
+   "explanation": "Match the model to what the firm reports and what you want: dividends (DDM), earnings or sales with peers (comparables), firm cash flows (FCF) or shareholder cash flows (FCFE)."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "f08-hpr",
+   "name": "Holding period return",
+   "formula": "r_E = (P1 + D1)/P0 − 1 = (P1 − P0)/P0 + D1/P0",
+   "given": true,
+   "concepts": [
+    "c08-hpr"
+   ],
+   "when": "One-period stock return; splits into capital gain yield plus dividend yield.",
+   "trap": "The dividend yield divides by today's price P0, not P1."
+  },
+  {
+   "id": "f08-arith",
+   "name": "Arithmetic average return",
+   "formula": "r_A = (R1 + R2 + … + R_N)/N",
+   "given": true,
+   "concepts": [
+    "c08-arith-vs-geo"
+   ],
+   "when": "The return in a typical year; forecasting next year.",
+   "trap": "r_A ≥ R_G; it overstates compound growth."
+  },
+  {
+   "id": "f08-geo",
+   "name": "Geometric average return",
+   "formula": "R_G = [(1 + R1)(1 + R2)…(1 + R_N)]^(1/N) − 1",
+   "given": true,
+   "concepts": [
+    "c08-arith-vs-geo",
+    "c08-compound-value"
+   ],
+   "when": "The compound return per year actually earned.",
+   "trap": "Convert percentages to decimals, take the Nth root, then subtract 1."
+  },
+  {
+   "id": "f08-compound-value",
+   "name": "Compound value of a holding",
+   "formula": "FV = PV(1 + R1)…(1 + R_N) = PV(1 + R_G)^N;  R_G = (FV/PV)^(1/N) − 1",
+   "given": true,
+   "concepts": [
+    "c08-compound-value"
+   ],
+   "when": "Ending value after varying yearly returns, or the yearly rate implied by start and end values.",
+   "trap": "A −9% year is the factor 0.91; do not compound the arithmetic average."
+  },
+  {
+   "id": "f08-perpetuity",
+   "name": "Perpetuity (constant dividend, preferred stock)",
+   "formula": "P0 = D/R",
+   "given": true,
+   "concepts": [
+    "c08-constant-dividend",
+    "c08-preferred-stock"
+   ],
+   "when": "A fixed dividend forever; value sits one period before the first payment.",
+   "trap": "No growth means the price never changes; deferred first dividends need discounting."
+  },
+  {
+   "id": "f08-gordon",
+   "name": "Gordon growth price",
+   "formula": "P0 = D1/(R − g);  D1 = D0(1 + g)",
+   "given": true,
+   "concepts": [
+    "c08-gordon-growth"
+   ],
+   "when": "Dividends growing at a constant rate g forever with g < R.",
+   "trap": "Use D1, not D0; price at time t uses D_{t+1}."
+  },
+  {
+   "id": "f08-price-t",
+   "name": "Price at time t",
+   "formula": "P_t = D_{t+1}/(R − g) = P0(1 + g)^t",
+   "given": false,
+   "concepts": [
+    "c08-gordon-growth"
+   ],
+   "when": "The price in the future under constant growth.",
+   "trap": "The price grows at g; the numerator is the dividend one period after t."
+  },
+  {
+   "id": "f08-required-return",
+   "name": "Required return components",
+   "formula": "R = D1/P0 + g",
+   "given": true,
+   "concepts": [
+    "c08-required-return-components"
+   ],
+   "when": "Read R off a price, or solve for g, D1 or P0.",
+   "trap": "The yield uses next year's dividend; g is also the capital gain rate."
+  },
+  {
+   "id": "f08-growing-annuity",
+   "name": "Growing annuity",
+   "formula": "PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N]",
+   "given": true,
+   "concepts": [
+    "c08-growing-annuity",
+    "c08-two-stage"
+   ],
+   "when": "N dividends growing at g, such as a finite high-growth phase.",
+   "trap": "Ratio is (1 + g)/(1 + R); g may exceed R; add the discounted horizon price if the stream continues."
+  },
+  {
+   "id": "f08-horizon",
+   "name": "Horizon price and timeline",
+   "formula": "P_T = D_{T+1}/(R − g2);  P0 = Σ D_t/(1 + R)^t + P_T/(1 + R)^T",
+   "given": false,
+   "concepts": [
+    "c08-nonconstant-timeline",
+    "c08-two-stage"
+   ],
+   "when": "Non-constant growth: dividends early, constant growth after date T.",
+   "trap": "P_T sits one period before D_{T+1}; discount it T periods, not T + 1."
+  },
+  {
+   "id": "f08-solve-g2",
+   "name": "Implied constant growth from a horizon price",
+   "formula": "g2 = (R·P_T − D_T)/(P_T + D_T)",
+   "given": false,
+   "concepts": [
+    "c08-solve-backwards"
+   ],
+   "when": "Find the later growth rate that makes the model reproduce a known P_T.",
+   "trap": "D_T already includes the early growth g1."
+  },
+  {
+   "id": "f08-plowback",
+   "name": "Growth from plowback",
+   "formula": "g = b × ROE;  b = (EPS − DPS)/EPS = 1 − payout",
+   "given": true,
+   "concepts": [
+    "c08-plowback-growth"
+   ],
+   "when": "Estimate g from accounting figures.",
+   "trap": "ROE is on start-of-year equity; payout is not b."
+  },
+  {
+   "id": "f08-forward-pe",
+   "name": "Forward P/E",
+   "formula": "P0/EPS1 = (1 − b)/(R − g)",
+   "given": false,
+   "concepts": [
+    "c08-forward-pe",
+    "c08-why-comparables"
+   ],
+   "when": "Why growth, risk and payout drive the multiple; comparables logic.",
+   "trap": "The numerator is the payout 1 − b, not b."
+  },
+  {
+   "id": "f08-npvgo",
+   "name": "Value of growth opportunities",
+   "formula": "P0 = EPS1/R + NPVGO;  P/E = 1/R + NPVGO/EPS1",
+   "given": true,
+   "concepts": [
+    "c08-npvgo"
+   ],
+   "when": "Split the price into a no-growth value and the value of growth.",
+   "trap": "Use EPS1; a negative NPVGO means growth destroys value or the stock is undervalued."
+  },
+  {
+   "id": "f08-implied-growth",
+   "name": "Growth implied by P/E ratios",
+   "formula": "g = trailing P/E ÷ forward P/E − 1  (EPS1/EPS0)",
+   "given": false,
+   "concepts": [
+    "c08-implied-growth",
+    "c08-quote-screen"
+   ],
+   "when": "Expected earnings growth from a quote screen.",
+   "trap": "Trailing over forward; forgetting the −1."
+  },
+  {
+   "id": "f08-comparables",
+   "name": "Price from a benchmark multiple",
+   "formula": "P = benchmark P/E × EPS;  P = benchmark P/S × sales per share;  EPS_t = EPS0(1 + g)^t",
+   "given": false,
+   "concepts": [
+    "c08-pe-comparables"
+   ],
+   "when": "Comparables valuation and target prices.",
+   "trap": "Match trailing with trailing EPS and forward with forward EPS."
+  },
+  {
+   "id": "f08-quote",
+   "name": "Quote screen derivations",
+   "formula": "Shares = market cap ÷ P;  EPS = P ÷ (P/E);  NI = EPS × shares;  DPS = yield × P",
+   "given": false,
+   "concepts": [
+    "c08-quote-screen"
+   ],
+   "when": "Recover per-share and total figures from the screen.",
+   "trap": "Use the last price, not the bid or ask."
+  },
+  {
+   "id": "f08-wc",
+   "name": "Working capital",
+   "formula": "WC = Cash + Inventory + Receivables − Payables = Current assets − Current liabilities",
+   "given": true,
+   "concepts": [
+    "c08-working-capital"
+   ],
+   "when": "Compute ΔWC for FCF and FCFE.",
+   "trap": "A positive ΔWC is a cash outflow; payables work the other way."
+  },
+  {
+   "id": "f08-fcf",
+   "name": "Free cash flow to the firm",
+   "formula": "FCF = EBIT(1 − T) + D&A − CAPEX − ΔWC",
+   "given": true,
+   "concepts": [
+    "c08-fcf-ev"
+   ],
+   "when": "Value the whole firm: discount at the firm's rate to get enterprise value.",
+   "trap": "No interest in FCF; EBIT, not NPAT."
+  },
+  {
+   "id": "f08-fcfe",
+   "name": "Free cash flow to equity",
+   "formula": "FCFE = NPAT + D&A − CAPEX − ΔWC + ΔDebt",
+   "given": true,
+   "concepts": [
+    "c08-fcfe"
+   ],
+   "when": "Value the equity directly.",
+   "trap": "ΔDebt (net borrowing) adds cash."
+  },
+  {
+   "id": "f08-equity-ev",
+   "name": "Equity from enterprise value",
+   "formula": "Equity = EV − Debt + Cash",
+   "given": true,
+   "concepts": [
+    "c08-ev-multiples",
+    "c08-fcf-ev",
+    "c08-which-model"
+   ],
+   "when": "Move from an EV multiple or an FCF valuation to equity.",
+   "trap": "Subtract debt, add cash."
+  }
+ ]
+}

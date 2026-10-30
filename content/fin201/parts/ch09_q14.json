@@ -1,0 +1,1085 @@
+[
+ {
+  "id": "q09-525",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The equivalent annual value (EAV) of a project is its NPV divided by the _____ factor for the project's own life and the required return.",
+  "options": [
+   "perpetuity",
+   "growth",
+   "annuity",
+   "compounding"
+  ],
+  "answer": 2,
+  "explanation": "EAV = NPV ÷ annuity factor(R, N): it converts the NPV into the level annual amount, for N years at R, that has the same present value. EAA, EAB and EAC are the same idea for annuity, benefit and cost.",
+  "source": "generated",
+  "ref": "L05A s36; FS p2"
+ },
+ {
+  "id": "q09-526",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A firm compares two machines that do the same job. It converts each machine's present value of costs into a level cost per year over that machine's life and picks the machine with the lower figure. This is the:",
+  "options": [
+   "equivalent annual cost (EAC) method",
+   "accounting rate of return method",
+   "profitability index method",
+   "discounted payback method"
+  ],
+  "answer": 0,
+  "explanation": "EAC (also called EAV for a cost) puts different lives on a common annual footing. The other three measures do not address unequal lives.",
+  "source": "generated",
+  "ref": "L05A s36; S6 s11-14"
+ },
+ {
+  "id": "q09-527",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Why is the EAV a better basis than the raw NPV for choosing between a 2-year project and a 3-year project that can each be repeated?",
+  "options": [
+   "The EAV ignores the time value of money, so it is easier to compare",
+   "The raw NPV ignores the required return, so it cannot be compared",
+   "The EAV is a per-year amount, while the raw NPVs cover different spans of time",
+   "The EAV and the raw NPV always rank projects the same way"
+  ],
+  "answer": 2,
+  "explanation": "A 3-year project's NPV covers three years of service and a 2-year project's NPV covers two, so comparing them is unfair. The EAV spreads each NPV over its own life as an annuity. The raw NPV does use the required return; it simply covers different periods.",
+  "source": "generated",
+  "ref": "L05A s36"
+ },
+ {
+  "id": "q09-528",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must a firm equalise the lives of mutually exclusive projects before choosing the cheapest one?",
+  "options": [
+   "Because the shorter project must be replaced sooner, so its costs recur",
+   "Because NPV can only be calculated for projects with equal lives",
+   "Because the required return is higher for longer projects",
+   "Because the longer project always has the higher NPV"
+  ],
+  "answer": 0,
+  "explanation": "Both options provide the same service, so to compare like with like, assume each is replaced again and again. EAV, CCR and the LCM chain all do this. NPV can be computed for any life, but raw NPVs of unequal lives mislead.",
+  "source": "generated",
+  "ref": "L05A s36; SM 10-27"
+ },
+ {
+  "id": "q09-529",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following statements about EAV is NOT correct?",
+  "options": [
+   "It is also called EAA, and EAB or EAC for benefits or costs",
+   "It uses the annuity factor for the project's own life",
+   "For two cost projects it favours the one with the lower annual cost",
+   "It can only be used when the projects being compared have the same life"
+  ],
+  "answer": 3,
+  "explanation": "EAV is designed for UNEQUAL lives: each project's NPV is converted to a per-year amount over its own life. For equal lives you can just compare NPVs.",
+  "source": "generated",
+  "ref": "L05A s36"
+ },
+ {
+  "id": "q09-530",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "When choosing between two cost-only machines with different lives, the firm should pick the one with the lower (less negative) equivalent annual cost.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Equivalent annual cost is the yearly cost of owning and replacing the machine forever. The machine with the lower annual cost gives the same service for less money.",
+  "source": "generated",
+  "ref": "SM 10-27; S6 s14"
+ },
+ {
+  "id": "q09-531",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "At R = 10%, Bus A (a 4-year life) costs −$41,730 per year on an equivalent annual basis and Bus B (a 6-year life) costs −$44,285 per year. Both buses do the same job. What should the transit firm conclude?",
+  "options": [
+   "Buy Bus B: its figure is larger in absolute terms and so must be better",
+   "They are equally attractive, since both are negative",
+   "Buy Bus A: its equivalent annual cost is lower",
+   "Neither: negative equivalent annual values mean both should be rejected"
+  ],
+  "answer": 2,
+  "explanation": "For cost projects the EAV is negative and the better option is the one that is less negative. Both options do the same job, so the service is needed either way; the decision is only about which is cheaper per year.",
+  "source": "generated",
+  "ref": "S6 s14; SM 10-28"
+ },
+ {
+  "id": "q09-532",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps for comparing two cost projects of different lives with the EAC method in order. (a) Choose the project with the lower EAC. (b) Divide each present value of costs by the annuity factor for that project's own life. (c) Compute each project's present value of costs. (d) Fix the required return R.",
+  "options": [
+   "c, d, a, b",
+   "d, c, b, a",
+   "d, b, c, a",
+   "c, b, d, a"
+  ],
+  "answer": 1,
+  "explanation": "Fix R, find each project's PV of costs, divide by the annuity factor (R, own N), then compare the yearly costs and pick the lowest.",
+  "source": "generated",
+  "ref": "L05A s19, s36"
+ },
+ {
+  "id": "q09-533",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A machine with a 5-year life has a present value of costs of −$11,706 at R = 9%. To find its EAC, which annuity factor should be used?",
+  "options": [
+   "The 3-year factor at 9%, because the other machine lasts 3 years",
+   "The 5-year factor at 0%, which is just 5",
+   "The 5-year factor at 9%, (1 − 1/1.09⁵)/0.09 = 3.88965",
+   "The 9-year factor at 5%, because the rate and life can be swapped"
+  ],
+  "answer": 2,
+  "explanation": "Each project's EAC uses its OWN life N and the required return R. Using another project's life, ignoring R, or swapping N and R all give wrong results.",
+  "source": "generated",
+  "ref": "L05A s36; FS p2"
+ },
+ {
+  "id": "q09-534",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Seeds Co. can buy Machine X for $5,800 with operating costs of $1,100 at the end of each of 3 years, no salvage. The required return is 9% per annum. What is the equivalent annual value (EAV) of the machine? (Enter a negative number, in $, to the cent.)",
+  "answer": -3391.32,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)",
+  "steps": [
+   {
+    "label": "Annuity factor (9%, 3 years)",
+    "value": 2.53129,
+    "check": "(1-1/1.09**3)/0.09",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of costs",
+    "value": -8584.42,
+    "check": "-(5800+1100*(1-1/1.09**3)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "EAV = PV of costs ÷ annuity factor",
+    "value": -3391.32,
+    "check": "-(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor = (1 − 1/1.09³)/0.09 = 2.53129",
+   "PV of costs = −(5,800 + 1,100 × 2.53129) = −$8,584.42",
+   "EAV = −$8,584.42 / 2.53129 = −$3,391.32 per year"
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 9, PMT = −1100, CPT PV → −2,784.42; − 5800 = −8,584.42",
+   "÷ 2.53129 = −3,391.32"
+  ],
+  "errors": [
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Reported the PV of costs without annualising",
+    "value": -8584.42,
+    "check": "-(5800+1100*(1-1/1.09**3)/0.09)",
+    "explain": "The PV of costs is a lump sum. The EAV divides it by the annuity factor to get a yearly amount."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided the PV of costs by 3",
+    "value": -2861.47,
+    "check": "-(5800+1100*(1-1/1.09**3)/0.09)/3",
+    "explain": "Dividing by N ignores the time value of money; the annuity factor (2.53129) is smaller than N because of discounting."
+   },
+   {
+    "id": "eac-sign",
+    "label": "Reported the cost as a positive number",
+    "value": 3391.32,
+    "check": "(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)",
+    "explain": "The professor's convention keeps costs negative, so the EAV of a cost is negative."
+   }
+  ],
+  "explanation": "The EAV turns a lump-sum PV into the level annual amount over the machine's own life. Costs stay negative, so the better machine has the less negative EAV.",
+  "source": "generated",
+  "ref": "SM 10-27; S6 s11-14"
+ },
+ {
+  "id": "q09-535",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Seeds Co. compares Machine X ($5,800 now, $1,100 a year for 3 years) with Machine Y ($8,400 now, $850 a year for 5 years). No salvage and R = 9% per annum. Each can be replaced indefinitely. By how many dollars per year is the cheaper machine's equivalent annual cost lower than the other's? (Answer in $, to the cent.)",
+  "answer": 381.74,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)-(8400+850*(1-1/1.09**5)/0.09)/((1-1/1.09**5)/0.09)",
+  "steps": [
+   {
+    "label": "EAC of Machine X",
+    "value": 3391.32,
+    "check": "(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "EAC of Machine Y",
+    "value": 3009.58,
+    "check": "(8400+850*(1-1/1.09**5)/0.09)/((1-1/1.09**5)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Annual saving of the cheaper machine",
+    "value": 381.74,
+    "check": "(5800+1100*(1-1/1.09**3)/0.09)/((1-1/1.09**3)/0.09)-(8400+850*(1-1/1.09**5)/0.09)/((1-1/1.09**5)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "X: PV of costs = 8,584.42; annuity factor (9%, 3) = 2.53129; EAC = 3,391.32",
+   "Y: PV of costs = 11,706.20; annuity factor (9%, 5) = 3.88965; EAC = 3,009.58",
+   "Y is cheaper per year even though its PV of costs is higher (raw PV favours X): saving = 3,391.32 − 3,009.58 = $381.74."
+  ],
+  "keystrokes": [
+   "X: PV costs 8,584.42 ÷ 2.53129 = 3,391.32",
+   "Y: 8400 + 850 × 3.88965 = 11,706.20; ÷ 3.88965 = 3,009.58",
+   "3,391.32 − 3,009.58 = 381.74"
+  ],
+  "errors": [
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Compared the raw PVs of costs (11,706.20 − 8,584.42)",
+    "value": 3121.78,
+    "check": "(8400+850*(1-1/1.09**5)/0.09)-(5800+1100*(1-1/1.09**3)/0.09)",
+    "explain": "Raw PVs favour X, but Y covers five years of service against three. Annualise first."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided each PV of costs by its number of years",
+    "value": 520.23,
+    "check": "(5800+1100*(1-1/1.09**3)/0.09)/3-(8400+850*(1-1/1.09**5)/0.09)/5",
+    "explain": "Dividing by N ignores discounting and understates the annual cost."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used the 5-year factor for both machines",
+    "value": -802.59,
+    "check": "((5800+1100*(1-1/1.09**3)/0.09)-(8400+850*(1-1/1.09**5)/0.09))/((1-1/1.09**5)/0.09)",
+    "explain": "Machine X lasts 3 years, so its own annuity factor has N = 3."
+   }
+  ],
+  "explanation": "The machine with the higher present value of costs can still be cheaper per year because it lasts longer. EAC is the right comparison for unequal lives.",
+  "source": "generated",
+  "ref": "SM 10-27; L05A s36"
+ },
+ {
+  "id": "q09-536",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Laurentian Dairy is considering Mixer 1: cost $640,000, saving $255,000 a year for 6 years. The required return is 11% per annum. What is the equivalent annual benefit (EAB) of Mixer 1? (Answer in $, to the cent.)",
+  "answer": 103719.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(255000*(1-1/1.11**6)/0.11-640000)/((1-1/1.11**6)/0.11)",
+  "steps": [
+   {
+    "label": "Annuity factor (11%, 6 years)",
+    "value": 4.23054,
+    "check": "(1-1/1.11**6)/0.11",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of Mixer 1",
+    "value": 438787.15,
+    "check": "255000*(1-1/1.11**6)/0.11-640000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "EAB = NPV ÷ annuity factor",
+    "value": 103719.0,
+    "check": "(255000*(1-1/1.11**6)/0.11-640000)/((1-1/1.11**6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (11%, 6) = 4.23054",
+   "NPV = 255,000 × 4.230538 − 640,000 = $438,787.15",
+   "EAB = $438,787.15 / 4.23054 = $103,719.00 per year"
+  ],
+  "keystrokes": [
+   "N = 6, I/Y = 11, PMT = 255000, CPT PV → 1,078,787.15; − 640000 = 438,787.15",
+   "÷ 4.23054 = 103,718.99"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Divided the NPV by 6",
+    "value": 73131.19,
+    "check": "(255000*(1-1/1.11**6)/0.11-640000)/6",
+    "explain": "The annual equivalent uses the annuity factor, not the number of years."
+   },
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Reported the NPV itself",
+    "value": 438787.15,
+    "check": "255000*(1-1/1.11**6)/0.11-640000",
+    "explain": "The NPV is a lump sum; the EAB is the level annual equivalent."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 10-year annuity factor (the other mixer's life)",
+    "value": 74506.68,
+    "check": "(255000*(1-1/1.11**6)/0.11-640000)/((1-1/1.11**10)/0.11)",
+    "explain": "Mixer 1 lasts 6 years, so its annuity factor has N = 6."
+   }
+  ],
+  "explanation": "Mixer 1's EAB is $103,719.00. Mixer 2 (cost $910,000, saving $240,000 for 10 years) has EAB $85,480.70, so Mixer 1 is better even though Mixer 2 has the higher NPV ($503,415.68 against $438,787.15).",
+  "source": "generated",
+  "ref": "SM 10-45; L05A s36"
+ },
+ {
+  "id": "q09-537",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project with a 4-year life has a net present value of costs of −$21,430 at the required return of 11% per annum. It will be replaced at the end of each life. What is its equivalent annual cost (EAC)? (Enter a negative number, in $, to the cent.)",
+  "answer": -6907.45,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-21430/((1-1/1.11**4)/0.11)",
+  "steps": [
+   {
+    "label": "Annuity factor (11%, 4 years)",
+    "value": 3.10245,
+    "check": "(1-1/1.11**4)/0.11",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EAC",
+    "value": -6907.45,
+    "check": "-21430/((1-1/1.11**4)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (11%, 4) = (1 − 1/1.11⁴)/0.11 = 3.10245",
+   "EAC = −21,430 / 3.10245 = −$6,907.45 per year"
+  ],
+  "keystrokes": [
+   "N = 4, I/Y = 11, PV = 21430, CPT PMT → −6,907.45",
+   "or −21430 ÷ 3.10245 = −6,907.45"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Divided by 4",
+    "value": -5357.5,
+    "check": "-21430/4",
+    "explain": "That ignores discounting; use the annuity factor (3.10245), which is below 4."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity factor",
+    "value": -5798.32,
+    "check": "-21430/((1-1/1.11**5)/0.11)",
+    "explain": "The project lives 4 years, so N = 4."
+   },
+   {
+    "id": "eac-sign",
+    "label": "Reported a positive number",
+    "value": 6907.45,
+    "check": "21430/((1-1/1.11**4)/0.11)",
+    "explain": "A cost stays negative in the EAV convention."
+   }
+  ],
+  "explanation": "When the NPV is already known, the EAV only needs the annuity factor for the project's life: EAV = NPV ÷ annuity factor(R, N).",
+  "source": "generated",
+  "ref": "S6 s14; SM 10-29"
+ },
+ {
+  "id": "q09-538",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Option X costs $80,000 and lasts 1 year; Option Y costs $150,000 and lasts 2 years. Each is replaced at the end of its life, with no other costs. At what required return are the two options equally costly on an equivalent annual basis? (% per annum, 2 decimals.)",
+  "answer": 14.2857,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1/(150000/80000-1)-1)*100",
+  "steps": [
+   {
+    "label": "Y cost ÷ X cost",
+    "value": 1.875,
+    "check": "150000/80000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "1/(1 + R) = (Y ÷ X) − 1",
+    "value": 0.875,
+    "check": "150000/80000-1",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Break-even R",
+    "value": 14.2857,
+    "check": "(1/(150000/80000-1)-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "EAC(X) = 80,000/annuity factor(R, 1) = 80,000(1 + R).",
+   "EAC(Y) = 150,000/[1/(1 + R) + 1/(1 + R)²].",
+   "Setting them equal: 80,000[1 + 1/(1 + R)] = 150,000, so 1/(1 + R) = 150,000/80,000 − 1 = 0.875 and R = 14.2857%.",
+   "Check: EAC(X) = 80,000 × 1.142857 = 91,428.57; EAC(Y) = 150,000/(0.875 + 0.765625) = 150,000/1.640625 = 91,428.57. Equal to the cent."
+  ],
+  "keystrokes": [
+   "150000 ÷ 80000 = 1.875; − 1 = 0.875; 1/x = 1.142857; − 1 = 0.142857 → 14.29%"
+  ],
+  "errors": [
+   {
+    "id": "rate-from-cost-ratio",
+    "label": "Reported Y/X − 1 as the rate",
+    "value": 87.5,
+    "check": "(150000/80000-1)*100",
+    "explain": "That is 87.5%, the difference in costs, not a discount rate. It equals 1/(1 + R), not R."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Reported 1/(Y/X − 1) = 1.1429 as 114.29%",
+    "value": 114.2857,
+    "check": "(1/(150000/80000-1))*100",
+    "explain": "1/(1 + R) = 0.875 gives 1 + R = 1.1429, and R is that minus 1."
+   }
+  ],
+  "explanation": "Below the break-even rate the longer, costlier option is cheaper per year; above it, the cheaper short-lived option wins. The lecture finds such a rate with a calculator; here a one- and two-year pair gives a closed form.",
+  "source": "generated",
+  "ref": "L05A s37"
+ },
+ {
+  "id": "q09-539",
+  "concept": "c09-eav",
+  "also": [
+   "c09-ccr-lcm"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow River Packaging can run Maintenance Program A: $480,000 up front for 2 years of service, or Program B: $660,000 up front for 3 years. Either is repeated indefinitely, and R = 9% per annum. What is the equivalent annual value (EAV) of Program A?",
+  "options": [
+   "−$480,000.00",
+   "−$272,865.07",
+   "−$240,000.00",
+   "−$189,626.28"
+  ],
+  "answer": 1,
+  "explanation": "EAV = −480,000 / annuity factor(9%, 2) = −480,000 / 1.75911 = −$272,865.07. −$480,000 is the raw cost, −$240,000 divides by N = 2, and −$189,626.28 uses Program B's 3-year factor. Program B's EAV is −$260,736.14, so B is cheaper per year.",
+  "source": "generated",
+  "ref": "L05A s37"
+ },
+ {
+  "id": "q09-540",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Laurentian Dairy compares Mixer 1 (NPV $438,787.15, 6-year life) with Mixer 2 (cost $910,000, saving $240,000 a year for 10 years). The required return is 11% per annum. What is the EAB of Mixer 2?",
+  "options": [
+   "$85,480.70",
+   "$503,415.68",
+   "$50,341.57",
+   "$118,995.67"
+  ],
+  "answer": 0,
+  "explanation": "NPV of Mixer 2 = 240,000 × 5.88923 − 910,000 = $503,415.68; EAB = $503,415.68 / 5.88923 = $85,480.70. The wrong values are the raw NPV, NPV ÷ 10 and the NPV over the other mixer's 6-year factor. Mixer 1's EAB is $103,719.00, so Mixer 1 is better.",
+  "source": "generated",
+  "ref": "SM 10-45"
+ },
+ {
+  "id": "q09-541",
+  "concept": "c09-eav",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Machine X has a present value of costs of $8,584 over 3 years. Machine Y has a present value of costs of $11,706 over 5 years. Each is repeated indefinitely at R = 9% and does the same job. Which should be bought?",
+  "options": [
+   "Machine X: its present value of costs is lower",
+   "Machine Y: its equivalent annual cost is lower ($3,010 against $3,391)",
+   "Machine X: it has the shorter life and so is less risky",
+   "They cannot be compared because the lives differ"
+  ],
+  "answer": 1,
+  "explanation": "Raw present values mislead because Y buys two more years of service. Annual equivalents are $8,584/2.53129 = $3,391 for X and $11,706/3.88965 = $3,010 for Y, so Y is cheaper per year.",
+  "source": "generated",
+  "ref": "SM 10-27, 10-28"
+ },
+ {
+  "id": "q09-542",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The constant chain of replacement (CCR) is also called the NPV to _____ because the project is replaced forever.",
+  "options": [
+   "perpetuity growth",
+   "payback",
+   "maturity",
+   "infinity"
+  ],
+  "answer": 3,
+  "explanation": "CCR assumes the project is repeated at the end of each life forever, and sums the present values of all repeats. The result is NPV × (1+R)^N / ((1+R)^N − 1).",
+  "source": "generated",
+  "ref": "L05A s36"
+ },
+ {
+  "id": "q09-543",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A firm assumes each of its two machines will be replaced with an identical machine at the end of its life, again and again, and computes the present value of all those cash flows to infinity. This is the:",
+  "options": [
+   "payback method",
+   "equivalent annual value method with no replacement",
+   "profitability index method",
+   "constant chain of replacement (CCR) method"
+  ],
+  "answer": 3,
+  "explanation": "The CCR (NPV to infinity) values the endless chain of replacements. EAV is the annual equivalent of the same chain, and CCR = EAV ÷ R.",
+  "source": "generated",
+  "ref": "L05A s36"
+ },
+ {
+  "id": "q09-544",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A project has an EAV of −$272,865.07 per year at R = 9%. What is its CCR (NPV to infinity)?",
+  "options": [
+   "−$3,031,834.13, which is EAV ÷ R",
+   "−$24,557.86, which is EAV × R",
+   "−$272,865.07, because the EAV already includes all replacements",
+   "−$2,455,785.65, which is EAV × 9"
+  ],
+  "answer": 0,
+  "explanation": "The EAV is the level payment of the endless chain, so CCR = EAV / R = −272,865.07 / 0.09 = −$3,031,834.1 (−$3,031,834.13 with the unrounded EAV). Multiplying by R (or by 9) inverts the perpetuity formula.",
+  "source": "generated",
+  "ref": "L05A s36-37; FS p1"
+ },
+ {
+  "id": "q09-545",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the lowest-common-multiple (LCM) method and the CCR method differ?",
+  "options": [
+   "LCM repeats the projects until their lives end together; CCR repeats them forever",
+   "The LCM method ignores replacements, while the CCR includes them",
+   "The LCM method uses payback periods, while the CCR uses NPV",
+   "The LCM method can only be used when the two lives are equal"
+  ],
+  "answer": 0,
+  "explanation": "LCM stops at the first year in which both chains end together (6 years for lives of 2 and 3). CCR carries on forever. Both give the same ranking as the EAV, since each is a multiple of the EAV.",
+  "source": "generated",
+  "ref": "L05A s36"
+ },
+ {
+  "id": "q09-546",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "In the LCM chain method, why is the project's NPV repeated at each replacement date rather than just once?",
+  "options": [
+   "Because the NPV rises with each replacement as the firm learns",
+   "Each replacement is a new copy of the project, so its NPV recurs, discounted to today",
+   "Because the discount rate falls with each later replacement",
+   "Because only the initial cost repeats, not the inflows"
+  ],
+  "answer": 1,
+  "explanation": "A replacement project has the same NPV as the original but arrives later, so its NPV is discounted to today by (1 + R)^(replacement date). A chain of NPV, NPV/(1+R)^N, NPV/(1+R)^2N and so on gives the LCM total.",
+  "source": "generated",
+  "ref": "L05A s36; SM 10-44"
+ },
+ {
+  "id": "q09-547",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a correct statement about the LCM, CCR and EAV methods?",
+  "options": [
+   "They are three ways of comparing projects with unequal lives",
+   "They all assume each project is replaced by an identical copy",
+   "They can rank unequal-life projects differently, so use all three",
+   "The CCR equals the EAV divided by the required return"
+  ],
+  "answer": 2,
+  "explanation": "Because CCR = EAV/R and the LCM chain is the EAV times the annuity factor over the LCM years, all three give the same ranking. Using one of them is enough.",
+  "source": "generated",
+  "ref": "L05A s36-37; SM 10-44"
+ },
+ {
+  "id": "q09-548",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The CCR method and the EAV method always choose the same project.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "CCR = EAV / R, so the two differ only by the constant factor 1/R. Whichever project has the higher (less negative) EAV also has the higher (less negative) CCR.",
+  "source": "generated",
+  "ref": "L05A s36-37"
+ },
+ {
+  "id": "q09-549",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow River Packaging's Maintenance Program A costs $480,000 up front and gives 2 years of service. It is repeated forever. The required return is 9% per annum. What is its CCR (NPV to infinity)? (Enter a negative number, in $, to the cent.)",
+  "answer": -3031834.13,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-480000*1.09**2/(1.09**2-1)",
+  "steps": [
+   {
+    "label": "(1 + R)^N",
+    "value": 1.1881,
+    "check": "1.09**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CCR = NPV × (1+R)^N / ((1+R)^N − 1)",
+    "value": -3031834.13,
+    "check": "-480000*1.09**2/(1.09**2-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "(1 + R)^N = 1.09² = 1.1881",
+   "CCR = −480,000 × 1.1881 / (1.1881 − 1) = −480,000 × 1.1881 / 0.1881",
+   "= −$3,031,834.13",
+   "Cross-check: EAV = −$272,865.07 and EAV / R = −$3,031,834.13."
+  ],
+  "keystrokes": [
+   "1.09 y^x 2 = 1.1881",
+   "1.1881 ÷ 0.1881 = 6.31632; × 480000 = 3,031,834.13; enter as negative"
+  ],
+  "errors": [
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Reported the single NPV of −480,000",
+    "value": -480000.0,
+    "check": "-480000",
+    "explain": "That counts only the first purchase; the chain includes every replacement."
+   },
+   {
+    "id": "ccr-factor-inverted",
+    "label": "Used ((1+R)^N − 1)/(1+R)^N instead",
+    "value": -75993.6,
+    "check": "-480000*(1.09**2-1)/1.09**2",
+    "explain": "The chain multiplies the NPV by (1+R)^N/((1+R)^N − 1), which is greater than 1, not by its reciprocal."
+   },
+   {
+    "id": "eav-for-ccr",
+    "label": "Stopped at the EAV (forgot to divide by R)",
+    "value": -272865.07,
+    "check": "-480000/((1-1/1.09**2)/0.09)",
+    "explain": "That is the equivalent annual value; the CCR is EAV ÷ R."
+   }
+  ],
+  "explanation": "CCR = NPV × (1+R)^N/((1+R)^N − 1). It is the sum of an NPV that recurs every N years forever, which is the geometric series NPV × [1 + 1/(1+R)^N + 1/(1+R)^2N + ...].",
+  "source": "generated",
+  "ref": "L05A s36-37"
+ },
+ {
+  "id": "q09-550",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow River Packaging compares Program A ($480,000 now, 2 years of service) with Program B ($660,000 now, 3 years of service) using a lowest-common-multiple chain at R = 9% per annum. Program A is bought at years 0, 2 and 4; Program B at years 0 and 3. What is the NPV of the cheaper chain? (Enter a negative number, in $, to the cent.)",
+  "answer": -1169641.1,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-660000-660000/1.09**3",
+  "steps": [
+   {
+    "label": "LCM of the two lives (years)",
+    "value": 6.0,
+    "check": "6",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of Program A's chain",
+    "value": -1224050.5,
+    "check": "-480000-480000/1.09**2-480000/1.09**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Program B's chain",
+    "value": -1169641.1,
+    "check": "-660000-660000/1.09**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "LCM of 2 and 3 years = 6 years. Over 6 years Program A is bought 3 times (years 0, 2, 4) and Program B twice (years 0, 3).",
+   "Chain A = −480,000 − 480,000/1.09² − 480,000/1.09⁴ = −$1,224,050.50",
+   "Chain B = −660,000 − 660,000/1.09³ = −$1,169,641.10",
+   "B is cheaper (less negative). Cross-check with EAV: −$260,736.14 × annuity factor(9%, 6) = −$260,736.14 × 4.48592 = −$1,169,641.10."
+  ],
+  "keystrokes": [
+   "A: −480000 − 480000 ÷ 1.1881 − 480000 ÷ 1.41158 = −1,224,050.50",
+   "B: −660000 − 660000 ÷ 1.295029 = −1,169,641.10"
+  ],
+  "errors": [
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Compared single purchases and reported the cheaper one (A, −480,000)",
+    "value": -480000.0,
+    "check": "-480000",
+    "explain": "One purchase of A covers only 2 years and one of B covers 3; the chains must cover the same 6 years."
+   },
+   {
+    "id": "chain-too-long",
+    "label": "Repeated B a third time at year 6",
+    "value": -1563177.53,
+    "check": "-660000-660000/1.09**3-660000/1.09**6",
+    "explain": "Year 6 is the END of the common span; B's second life runs from year 3 to year 6, so no further purchase is made."
+   },
+   {
+    "id": "chain-missing-repeat",
+    "label": "Left out A's third purchase (year 4) and treated the cheaper-looking chain as the answer",
+    "value": -884006.4,
+    "check": "-480000-480000/1.09**2",
+    "explain": "A is bought three times in 6 years (years 0, 2 and 4)."
+   }
+  ],
+  "explanation": "The LCM chain repeats the full NPV at each replacement date within the common period. Program B's chain is the cheaper (less negative) one, which agrees with the EAV and CCR rankings.",
+  "source": "generated",
+  "ref": "L05A s37; SM 10-44"
+ },
+ {
+  "id": "q09-551",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A machine's CCR at R = 9% per annum is −$2,897,068.22. What is its equivalent annual value (EAV)? (Enter a negative number, in $, to the cent.)",
+  "answer": -260736.14,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-2897068.22*0.09",
+  "steps": [
+   {
+    "label": "EAV = CCR × R",
+    "value": -260736.14,
+    "check": "-2897068.22*0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "CCR = EAV / R, so EAV = CCR × R",
+   "EAV = −2,897,068.22 × 0.09 = −$260,736.14"
+  ],
+  "keystrokes": [
+   "2897068.22 × 0.09 = 260,736.14 → −260,736.14"
+  ],
+  "errors": [
+   {
+    "id": "ccr-eav-inverted",
+    "label": "Divided the CCR by R",
+    "value": -32189646.89,
+    "check": "-2897068.22/0.09",
+    "explain": "That multiplies the figure by about 11; the EAV is smaller than the CCR."
+   },
+   {
+    "id": "ccr-for-eav",
+    "label": "Left the CCR unchanged",
+    "value": -2897068.22,
+    "check": "-2897068.22",
+    "explain": "The CCR is not an annual figure; it is the infinite-horizon PV."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Multiplied by 9 instead of 0.09",
+    "value": -26073613.98,
+    "check": "-2897068.22*9",
+    "explain": "R = 9% must be entered as 0.09."
+   }
+  ],
+  "explanation": "CCR and EAV are linked by the perpetuity formula: CCR = EAV / R, so EAV = CCR × R.",
+  "source": "generated",
+  "ref": "L05A s37; FS p1"
+ },
+ {
+  "id": "q09-552",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Program B costs $660,000 up front, gives 3 years of service and is repeated forever. The required return is 9% per annum. What is its CCR (NPV to infinity)?",
+  "options": [
+   "−$660,000.00",
+   "−$2,897,068.22",
+   "−$260,736.14",
+   "−$150,358.90"
+  ],
+  "answer": 1,
+  "explanation": "CCR = −660,000 × 1.09³ / (1.09³ − 1) = −660,000 × 1.295029 / 0.295029 = −$2,897,068.22. The wrong options are the single-purchase NPV (−$660,000), the EAV (−$260,736.14, forgetting ÷ R) and the reciprocal factor.",
+  "source": "generated",
+  "ref": "L05A s36-37"
+ },
+ {
+  "id": "q09-553",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Using a lowest-common-multiple chain at R = 9% per annum, Program A ($480,000, 2-year life, bought at years 0, 2 and 4) has what chain NPV over 6 years?",
+  "options": [
+   "−$1,224,050.50",
+   "−$884,006.40",
+   "−$1,440,000.00",
+   "−$272,865.07"
+  ],
+  "answer": 0,
+  "explanation": "Chain A = −480,000 − 480,000/1.09² − 480,000/1.09⁴ = −480,000 − 404,006.40 − 340,044.10 = −$1,224,050.50. The other options leave out the third purchase, add the three purchases without discounting (−$1,440,000) or divide by the 6-year annuity factor, which would give an annual figure.",
+  "source": "generated",
+  "ref": "L05A s37"
+ },
+ {
+  "id": "q09-554",
+  "concept": "c09-ccr-lcm",
+  "also": [
+   "c09-eav"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Using CCR at R = 9% per annum, Program A scores −$3,031,834.13 and Program B scores −$2,897,068.22. Both provide the same service. What should the firm do?",
+  "options": [
+   "Choose Program B: its CCR is less negative, so it costs less",
+   "Choose Program A: its CCR is larger in absolute value",
+   "Choose Program A: its life is shorter, so it is less risky",
+   "Neither: CCR cannot be used when costs are negative"
+  ],
+  "answer": 0,
+  "explanation": "CCRs are comparable because each is the value of an endless chain of the same service. Costs are negative, so the less negative CCR (B) is better. The same ranking comes from the EAV (−$260,736 against −$272,865).",
+  "source": "generated",
+  "ref": "L05A s36-37"
+ },
+ {
+  "id": "q09-555",
+  "concept": "c09-ccr-lcm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Two machines last 4 years and 6 years. For a lowest-common-multiple comparison, how many years should the replacement chains cover? (Years.)",
+  "answer": 12.0,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "12",
+  "steps": [
+   {
+    "label": "LCM of 4 and 6",
+    "value": 12.0,
+    "check": "12",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Multiples of 4: 4, 8, 12, 16 ... Multiples of 6: 6, 12, 18 ...",
+   "The lowest common multiple is 12 years: the 4-year machine is bought 3 times (0, 4, 8) and the 6-year machine twice (0, 6)."
+  ],
+  "keystrokes": [
+   "No calculator needed: smallest number divisible by both 4 and 6 = 12"
+  ],
+  "errors": [
+   {
+    "id": "lcm-product",
+    "label": "Multiplied the lives (4 × 6)",
+    "value": 24.0,
+    "check": "24",
+    "explain": "24 is a common multiple, but not the lowest; 12 already works."
+   },
+   {
+    "id": "lcm-sum",
+    "label": "Added the lives (4 + 6)",
+    "value": 10.0,
+    "check": "10",
+    "explain": "A sum is not a multiple of both lives; the chain needs a year where both machines end together."
+   }
+  ],
+  "explanation": "The LCM is the shortest span after which both chains end on the same date, so the comparison covers equal time.",
+  "source": "generated",
+  "ref": "L05A s36"
+ }
+]

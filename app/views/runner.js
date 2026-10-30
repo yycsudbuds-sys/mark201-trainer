@@ -67,6 +67,7 @@ export function createRunner(app, cfg) {
       if (!pick) return finish('exhausted');
       if (pick.queueItem) state.pursuitQueue = state.pursuitQueue.filter(p => p !== pick.queueItem);
     }
+    if (pick.question.type === 'gen') { const made = app.pack && app.pack.generate ? app.pack.generate(pick.question) : null; if (!made) return finish('exhausted'); pick.question = made; }
     state.counter++;
     state.current = pick;
     state.recent.push(pick.cid); if (state.recent.length > 40) state.recent.shift();
@@ -123,6 +124,7 @@ export function createRunner(app, cfg) {
   }
   function renderQuestion(pick) {
     const q = pick.question;
+    if (q.type === 'numeric' || q.type === 'multistep') return renderNumeric(pick);
     const entry = app.conceptOf(q.concept);
     const ch = entry.chapter;
     const { options, answer } = shuffleOptions(q);
@@ -235,7 +237,125 @@ export function createRunner(app, cfg) {
     }
   }
 
-  function afterAnswer(q, correct, chosenIdx, options, answerIdx, pick) {
+  /** Typed answers: one box with a unit (numeric), or one box per intermediate step (multistep). A wrong one-shot
+   *  answer is diagnosed against the question's error library and can be broken into steps; every step shows the
+   *  professor's working. Exam mode records the typed value and moves on. */
+  function renderNumeric(pick) {
+    const q = pick.question;
+    const entry = app.conceptOf(q.concept);
+    const ch = entry.chapter;
+    const cs = app.state.concepts[q.concept];
+    renderHead(); clear(bodyEl);
+    scrollToTop();
+    const stepMode0 = q.type === 'multistep';
+    const metas = [h('span', { class: 'chip ch' }, `Ch ${ch.chapter} · ${ch.short}`), h('span', { class: 'chip' }, stepMode0 ? 'Step by step' : 'Typed answer'),
+      h('span', { class: 'chip pips', title: `Difficulty ${q.difficulty} of 3` }, Array.from({ length: 3 }, (_, i) => h('span', { class: 'pip' + (i < q.difficulty ? ' on' : '') })))];
+    if (q.source === 'official') metas.push(h('span', { class: 'chip warn' }, 'Official practice Q'));
+    if (cfg.feedback !== 'deferred' && pick.reason && REASON_LABEL[pick.reason]) metas.push(h('span', { class: 'chip reason' }, icon(REASON_ICON[pick.reason] || 'pilum', { size: 14, tone: 'gold' }), REASON_LABEL[pick.reason]));
+    const card = h('div', { class: 'qcard panel parchment numeric', style: { '--ch': ch.color } });
+    if (cs && cs.pursuit && cfg.feedback !== 'deferred') card.appendChild(h('div', { class: 'pursuit-banner' }, icon('standard', { size: 18, tone: 'crimson' }), h('span', null, h('b', null, 'Pursuit: '), `prove you know ${entry.concept.term} — ${cs.pursuit.need - cs.pursuit.done} more right in a row`), h('span', { class: 'pips' }, Array.from({ length: cs.pursuit.need }, (_, i) => h('span', { class: 'pip' + (i < cs.pursuit.done ? ' on' : '') })))));
+    card.appendChild(h('div', { class: 'qhead' }, h('div', { class: 'qicon' }, icon(app.chapterIcon(ch.chapter), { size: 28, tone: 'gold' })), h('div', { class: 'qmeta' }, metas)));
+    card.appendChild(h('div', { class: 'stem' }, richText(q.stem, { blanks: false })));
+    card.appendChild(abacusDrawer(app));
+    const fig = figureForQuestion(app, q, entry);
+    if (fig) card.appendChild(h('div', { class: 'qfigure' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), fig.label || 'Reference'), h('div', { class: 'qfigure-body open' }, fig.el)));
+    if (el.battlefield && el.battlefield.inline) card.appendChild(el.battlefield);
+    if (cs && cs.pursuit && cfg.feedback !== 'deferred' && el.battlefield && el.battlefield.plantFlag) el.battlefield.plantFlag(q.concept);
+    const work = h('div', { class: 'numeric-work' }); card.appendChild(work);
+    bodyEl.appendChild(card);
+    const foot = h('div', { class: 'runner-foot' }); bodyEl.appendChild(foot);
+    let done = false; let recorded = false; let stepMode = stepMode0; let stepIdx = 0; const stepResults = [];
+    const steps = Array.isArray(q.steps) ? q.steps : [];
+
+    function box(unit, tol, onSubmit, placeholder) {
+      const input = h('input', { type: 'text', class: 'num-in', inputmode: 'decimal', autocomplete: 'off', spellcheck: 'false', placeholder: placeholder || (unit === '$' ? 'e.g. 1,234.56' : unit === '%' ? 'e.g. 12.5' : 'number'), 'aria-label': 'Your answer' });
+      const btn = h('button', { class: 'btn primary', type: 'button', onClick: () => onSubmit(input.value) }, 'Answer ', h('span', { class: 'kbd' }, 'Enter'));
+      input.addEventListener('keydown', e => { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); onSubmit(input.value); } });
+      const row = h('div', { class: 'num-row' }, unit === '$' ? h('span', { class: 'num-unit' }, '$') : null, input, unit && unit !== '$' ? h('span', { class: 'num-unit' }, unitLabel(unit)) : null, btn);
+      const hint = h('div', { class: 'tiny muted num-hint' }, `Accepted within ${tolText(tol, unit)}. Commas, $ and % are fine.`);
+      setTimeout(() => input.focus({ preventScroll: true }), 30);
+      return { row, hint, input };
+    }
+    function oneShot() {
+      clear(work);
+      const b = box(q.unit, q.tolerance, submitFinal);
+      work.append(h('div', { class: 'eyebrow' }, icon('tablet', { size: 13, tone: 'gold' }), 'Your answer'), b.row, b.hint);
+      currentHandlers = { choose: () => {}, count: 0, done: () => done, next, setWager: null };
+    }
+    function submitFinal(raw) {
+      if (done) return;
+      const v = parseNumber(raw); if (v === null) { app.sound('wrong'); work.querySelector('.num-in')?.classList.add('shake'); setTimeout(() => work.querySelector('.num-in')?.classList.remove('shake'), 400); return; }
+      done = true;
+      const val = coerceUnit(v, q.answer, q.unit);
+      const correct = within(val, q.answer, q.tolerance);
+      const typed = { chosen: fmtNum(val, q.unit), answer: fmtNum(q.answer, q.unit) };
+      if (cfg.feedback === 'deferred') { afterAnswer(q, correct, -1, [], -1, pick, typed); recorded = true; work.querySelectorAll('input,button').forEach(x => { x.disabled = true; }); setTimeout(next, 220); return; }
+      const res = afterAnswer(q, correct, -1, [], -1, pick, typed); recorded = true;
+      let dn = correct ? 1 : 0; if (correct && state.combo - 1 - state.furyMark >= 8) { dn = 2; state.furyMark = state.combo; app.sound('fanfare'); } if (!correct) state.furyMark = 0;
+      if (dn) { addDenarii(dn, 'answer'); app.sound('coins'); }
+      if (cfg.siege) { const old = headEl.querySelector('.wall-bar'); if (old) old.replaceWith(wallBar()); }
+      const diag = correct ? null : diagnose(q, val);
+      if (diag) logCalcError(app, diag, q);
+      work.querySelectorAll('input,button').forEach(x => { x.disabled = true; });
+      card.appendChild(numericFeedback(app, q, entry, correct, res, { typed: val, diag, dn }));
+      if (res && res.xp) coinFlight(work, res.xp);
+      const cont = h('button', { class: 'btn primary big', onClick: next }, 'Advance ', h('span', { class: 'kbd' }, 'Enter'));
+      if (!correct && steps.length >= 2) foot.appendChild(h('button', { class: 'btn', type: 'button', onClick: () => { foot.innerHTML = ''; card.querySelector('.feedback')?.remove(); stepMode = true; stepIdx = 0; done = false; renderSteps(true); } }, icon('scroll', { size: 14, tone: 'gold' }), ' Break it into steps'));
+      foot.append(h('span', { class: 'small muted' }, 'Enter advances'), cont);
+      setTimeout(() => cont.focus({ preventScroll: true }), 30);
+      if (state.hearts !== null && state.hearts <= 0) setTimeout(() => finish('hearts'), 900);
+      if (state.timeLeft !== null && state.timeLeft <= 0) setTimeout(() => finish('time'), 900);
+    }
+    function renderSteps(remedial) {
+      clear(work);
+      const list = h('ol', { class: 'num-steps' });
+      steps.forEach((st, i) => {
+        const li = h('li', { class: 'num-step' + (i < stepIdx ? (stepResults[i] ? ' ok' : ' no') : i === stepIdx ? ' now' : ' ahead') });
+        li.append(h('div', { class: 'num-step-label' }, h('span', { class: 'num-step-n' }, String(i + 1)), st.label, st.unit ? h('span', { class: 'tiny muted' }, ` (${unitLabel(st.unit)})`) : null));
+        if (i < stepIdx) li.append(h('div', { class: 'num-step-val' }, stepResults[i] ? icon('check', { size: 14, tone: 'laurel' }) : icon('cross', { size: 14, tone: 'crimson' }), ` ${fmtNum(st.value, st.unit || '')}${stepResults[i] ? '' : ` (you entered ${fmtNum(stepResults.typed[i], st.unit || '')})`}`));
+        if (i === stepIdx) { const b = box(st.unit || '', st.tolerance, raw => submitStep(raw, remedial), 'this step'); li.append(b.row, b.hint); }
+        list.appendChild(li);
+      });
+      work.append(h('div', { class: 'eyebrow' }, icon('tablet', { size: 13, tone: 'gold' }), remedial ? 'Again, step by step' : 'Enter each step'), list);
+      currentHandlers = { choose: () => {}, count: 0, done: () => done, next, setWager: null };
+    }
+    function submitStep(raw, remedial) {
+      if (done) return;
+      const st = steps[stepIdx]; const v = parseNumber(raw); if (v === null) { app.sound('wrong'); return; }
+      const val = coerceUnit(v, st.value, st.unit || ''); const ok = within(val, st.value, st.tolerance || { rel: 0.005, abs: 0.01 });
+      stepResults.typed = stepResults.typed || []; stepResults.typed[stepIdx] = val; stepResults[stepIdx] = ok;
+      app.sound(ok ? 'correct' : 'wrong'); stepIdx++;
+      if (stepIdx < steps.length) { renderSteps(remedial); return; }
+      done = true;
+      const allOk = stepResults.every(Boolean); const firstWrong = stepResults.findIndex(x => !x);
+      renderSteps(remedial);
+      work.querySelectorAll('input,button').forEach(x => { x.disabled = true; });
+      let res = null;
+      if (!recorded) {
+        const typed = { chosen: fmtNum(stepResults.typed[steps.length - 1], steps[steps.length - 1].unit || q.unit), answer: fmtNum(q.answer, q.unit) };
+        if (cfg.feedback === 'deferred') { afterAnswer(q, allOk, -1, [], -1, pick, typed); recorded = true; setTimeout(next, 220); return; }
+        res = afterAnswer(q, allOk, -1, [], -1, pick, typed); recorded = true;
+        if (allOk) { addDenarii(1, 'answer'); app.sound('coins'); } else state.furyMark = 0;
+        if (cfg.siege) { const old = headEl.querySelector('.wall-bar'); if (old) old.replaceWith(wallBar()); }
+      }
+      const diag = allOk ? null : { id: 'step-' + (firstWrong + 1), label: `First wrong step: ${steps[firstWrong].label}`, explain: `Expected ${fmtNum(steps[firstWrong].value, steps[firstWrong].unit || '')}, you entered ${fmtNum(stepResults.typed[firstWrong], steps[firstWrong].unit || '')}. Everything after it inherits the slip.` };
+      if (diag && !remedial) logCalcError(app, { id: 'step-' + (firstWrong + 1) + '-' + (steps[firstWrong].label || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40), label: diag.label }, q);
+      card.appendChild(numericFeedback(app, q, entry, allOk, res, { typed: stepResults.typed[steps.length - 1], diag, dn: allOk && !recorded ? 1 : 0, stepped: true, remedial }));
+      if (res && res.xp) coinFlight(work, res.xp);
+      const cont = h('button', { class: 'btn primary big', onClick: next }, 'Advance ', h('span', { class: 'kbd' }, 'Enter'));
+      foot.innerHTML = ''; foot.append(h('span', { class: 'small muted' }, 'Enter advances'), cont);
+      setTimeout(() => cont.focus({ preventScroll: true }), 30);
+      if (state.hearts !== null && state.hearts <= 0) setTimeout(() => finish('hearts'), 900);
+      if (state.timeLeft !== null && state.timeLeft <= 0) setTimeout(() => finish('time'), 900);
+    }
+    if (stepMode && steps.length >= 2) renderSteps(false); else oneShot();
+    if (cfg.perQuestionTimer) {
+      state.qTimeLeft = cfg.perQuestionTimer; clearInterval(qTimerId);
+      qTimerId = setInterval(() => { state.qTimeLeft -= 1; const t = headEl.querySelector('[data-qtimer]'); if (t) { t.textContent = fmtTime(state.qTimeLeft); t.classList.toggle('low', state.qTimeLeft <= 5); } if (state.qTimeLeft <= 0) { clearInterval(qTimerId); if (!done) submitFinal('0'); } }, 1000);
+    }
+  }
+
+  function afterAnswer(q, correct, chosenIdx, options, answerIdx, pick, typed = null) {
     state.answered++;
     if (correct) { state.combo++; state.correct++; } else { state.combo = 0; if (state.hearts !== null) { state.hearts--; app.sound('shieldcrack'); } }
     // Battlefield / arena reactions. Purely visual; never delays the quiz.
@@ -266,7 +386,7 @@ export function createRunner(app, cfg) {
         else state.pursuitQueue.forEach(p => { if (p.cid === q.concept) p.notBefore = state.counter + gap; });
       }
     }
-    state.log.push({ qid: q.id, cid: q.concept, correct, chosen: chosenIdx >= 0 ? options[chosenIdx] : null, answer: options[answerIdx], reason: pick.reason, t: Date.now() });
+    state.log.push({ qid: q.id, cid: q.concept, correct, chosen: typed ? typed.chosen : (chosenIdx >= 0 ? options[chosenIdx] : null), answer: typed ? typed.answer : options[answerIdx], reason: pick.reason, t: Date.now(), seed: q.seed || undefined });
     if (cfg.onAnswer) cfg.onAnswer({ q, correct, summary: summary() });
     return res;
   }
@@ -295,6 +415,7 @@ export function createRunner(app, cfg) {
   if (!arena) attachBattle(el, { province: cfg.province || 'default', mode: cfg.siege ? 'siege' : 'field', needed: cfg.siege ? cfg.siege.needed : 0, motion: app.state.settings.motion !== false && !window.matchMedia('(prefers-reduced-motion: reduce)').matches, inline: inlineBand });
   el.start = next;
   el.getSummary = summary;
+  el.getCurrent = () => state.current; // tests and the console peek at the live question
   const kick = setTimeout(next, 0);
   const prevCleanup = el.cleanup;
   el.cleanup = () => { clearTimeout(kick); prevCleanup(); };
@@ -329,6 +450,66 @@ function feedbackPanel(app, q, entry, correct, res, dn = 0, wager = 0) {
         h('p', { class: 'small muted' }, 'Stronghold: ', h('b', null, c.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
         seals.length ? sealRow : null, body),
       vis ? h('div', { class: 'feedback-vis' }, vis) : null));
+}
+// ---- typed answers: parsing, tolerance, diagnosis, worked solutions
+export function parseNumber(raw) {
+  let t = String(raw ?? '').trim().replace(/[\s,$]/g, '').replace(/[−–]/g, '-').replace(/%|x$|×$/gi, '').replace(/years?$/i, '').replace(/shares?$/i, '');
+  if (/^\(.*\)$/.test(t)) t = '-' + t.slice(1, -1);
+  if (!t || !/^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i.test(t)) return null;
+  const v = Number(t); return Number.isFinite(v) ? v : null;
+}
+/** Rates typed as decimals (0.125 for 12.5%) are accepted when the answer is clearly a percentage. */
+export function coerceUnit(v, answer, unit) { if (unit === '%' && Math.abs(v) < 1 && Math.abs(answer) >= 1 && Math.abs(v * 100 - answer) < Math.abs(v - answer)) return v * 100; return v; }
+export function within(v, target, tol) { tol = tol || {}; const a = tol.abs, r = tol.rel; if (a === undefined && r === undefined) return Math.abs(v - target) <= 0.01 + 1e-9; return (a !== undefined && Math.abs(v - target) <= a + 1e-9) || (r !== undefined && Math.abs(v - target) <= Math.abs(target) * r + 1e-9); }
+export function tolText(tol, unit) { tol = tol || { abs: 0.01 }; const parts = []; if (tol.abs !== undefined) parts.push('±' + fmtNum(tol.abs, unit)); if (tol.rel !== undefined) parts.push('±' + (tol.rel * 100).toFixed(1) + '% of the answer'); return parts.join(' or '); }
+export function unitLabel(unit) { return { '$': '$', '%': '% per annum', years: 'years', shares: 'shares', x: '×', '': '' }[unit] ?? unit; }
+export function fmtNum(v, unit) {
+  if (v === null || v === undefined || !Number.isFinite(v)) return '—';
+  const neg = v < 0; const a = Math.abs(v);
+  if (unit === '$') return (neg ? '−$' : '$') + a.toLocaleString('en-CA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  if (unit === '%') return (neg ? '−' : '') + (Math.round(a * 100) / 100).toLocaleString('en-CA', { maximumFractionDigits: 2 }) + '%';
+  if (unit === 'years') return (neg ? '−' : '') + (Math.round(a * 100) / 100) + ' years';
+  if (unit === 'shares') return (neg ? '−' : '') + Math.round(a).toLocaleString('en-CA') + ' shares';
+  if (unit === 'x') return (neg ? '−' : '') + (Math.round(a * 100) / 100) + '×';
+  return (neg ? '−' : '') + (Math.round(a * 10000) / 10000).toLocaleString('en-CA', { maximumFractionDigits: 4 });
+}
+/** Match a wrong answer against the question's error library (loose tolerance: 1% or the question's own). */
+export function diagnose(q, val) {
+  for (const e of q.errors || []) { const tol = { abs: Math.max((q.tolerance && q.tolerance.abs) || 0, Math.abs(e.value) * 0.004 + 0.005), rel: 0.01 }; if (within(val, e.value, tol)) return e; }
+  if (q.unit === '%' && within(val * 100, q.answer, q.tolerance)) return { id: 'units', label: 'Answered as a decimal instead of a percentage', explain: 'The box wants a percentage: 12.5, not 0.125.' };
+  if (q.unit === '%' && within(val / 100, q.answer, q.tolerance)) return { id: 'units', label: 'Percentage entered 100× too large', explain: 'Check the units on the answer box.' };
+  if (within(-val, q.answer, q.tolerance)) return { id: 'sign-cf0', label: 'Sign reversed', explain: 'Right size, wrong sign. Check which way the cash flows.' };
+  return null;
+}
+/** Weak-skill log: how often each classic error was made, and on which concepts (shown on the Progress page). */
+export function logCalcError(app, diag, q) {
+  const st = app.state.stats; st.calcErrors = st.calcErrors || {}; st.calcErrors[diag.id] = (st.calcErrors[diag.id] || 0) + 1;
+  st.calcErrorConcepts = st.calcErrorConcepts || {}; const by = st.calcErrorConcepts[diag.id] || (st.calcErrorConcepts[diag.id] = {}); by[q.concept] = (by[q.concept] || 0) + 1;
+  st.calcErrorLabels = st.calcErrorLabels || {}; st.calcErrorLabels[diag.id] = diag.label;
+  app.store.save();
+}
+function numericFeedback(app, q, entry, correct, res, { typed, diag, dn = 0, stepped = false, remedial = false } = {}) {
+  const c = entry.concept;
+  const seals = [
+    ['keys', 'Calculator keystrokes', (q.keystrokes || []).length ? h('ul', { class: 'keys' }, q.keystrokes.map(k => h('li', null, k))) : null, 'tablet'],
+    ['errors', 'Classic mistakes', (q.errors || []).length ? h('ul', { class: 'errlib' }, q.errors.map(e => h('li', { class: diag && diag.id === e.id ? 'hit' : '' }, h('b', null, e.label), ` → ${fmtNum(e.value, q.unit)}. `, e.explain))) : null, 'shieldcrack'],
+    ['trap', 'Exam trap', c.trap ? h('p', null, c.trap) : null, 'swords'],
+    ['confuse', "Don't confuse it with", c.contrast ? h('p', null, c.contrast) : null, 'amphora'],
+  ].filter(x => x[2]);
+  const open = new Set(correct ? [] : ['errors']);
+  const body = h('div', { class: 'seal-body' }); const sealRow = h('div', { class: 'seals' });
+  const draw = () => { clear(body); for (const [key, label, node, ico] of seals) if (open.has(key)) body.appendChild(h('div', { class: 'seal-text', dataset: { key } }, h('div', { class: 'eyebrow' }, icon(ico, { size: 14, tone: 'crimson' }), label), node)); sealRow.querySelectorAll('.seal').forEach(b => b.classList.toggle('broken', open.has(b.dataset.key))); };
+  for (const [key, label, , ico] of seals) sealRow.appendChild(h('button', { class: 'seal', type: 'button', dataset: { key }, 'aria-expanded': String(open.has(key)), onClick: e => { const on = open.has(key); if (on) open.delete(key); else { open.add(key); app.sound('seal'); } e.currentTarget.setAttribute('aria-expanded', String(!on)); draw(); } }, h('span', { class: 'seal-wax' }, icon(ico, { size: 16, tone: 'parchment' })), h('span', { class: 'seal-label' }, label)));
+  draw();
+  const verdictText = correct ? (remedial ? 'Now it holds' : 'The line holds') : 'The line breaks';
+  return h('div', { class: 'feedback ' + (correct ? 'ok' : 'no') },
+    h('div', { class: 'feedback-main' },
+      h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 22, tone: correct ? 'laurel' : 'crimson' }), verdictText, res && res.xp ? h('span', { class: 'xp-gain' }, icon('coin', { size: 16, tone: 'gold' }), `+${res.xp} XP`) : null, dn ? h('span', { class: 'dn-gain win' }, `+${dn} denari${dn === 1 ? 'us' : 'i'}`) : null),
+      h('div', { class: 'num-compare' }, h('span', { class: 'num-you' + (correct ? ' ok' : ' no') }, 'You: ', h('b', null, fmtNum(typed, q.unit))), h('span', { class: 'num-right' }, 'Answer: ', h('b', null, fmtNum(q.answer, q.unit)), h('span', { class: 'tiny muted' }, ` (${tolText(q.tolerance, q.unit)})`))),
+      diag ? h('div', { class: 'diagnosis' }, icon('target', { size: 16, tone: 'crimson' }), h('div', null, h('b', null, diag.label), h('div', { class: 'small' }, diag.explain))) : null,
+      h('div', { class: 'worked' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), 'Worked solution'), h('ol', { class: 'worked-lines' }, (q.solution || [q.explanation]).map(line => h('li', null, line)))),
+      h('p', { class: 'small muted' }, 'Stronghold: ', h('b', null, c.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
+      seals.length ? sealRow : null, body));
 }
 /** The emperor's thumb, up or down. */
 function thumbSvg(up) {

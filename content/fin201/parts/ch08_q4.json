@@ -1,0 +1,1182 @@
+[
+ {
+  "id": "q08-121",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Aspen Outdoor Gear lost money last year, so you value it with price/sales. Sales were $2,850,000 with 190,000 shares outstanding, and similar firms trade at a price/sales ratio of 3.3. What price per share do you estimate? Answer in $.",
+  "answer": 49.5,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3.3*2850000/190000",
+  "steps": [
+   {
+    "label": "Sales per share",
+    "value": 15.0,
+    "check": "2850000/190000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price = P/S × sales per share",
+    "value": 49.5,
+    "check": "3.3*2850000/190000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P = benchmark P/S × sales per share",
+   "Sales per share = 2,850,000/190,000 = $15.00",
+   "P = 3.3 × 15.00 = $49.50"
+  ],
+  "keystrokes": [
+   "2,850,000 ÷ 190,000 = 15.00",
+   "× 3.3 = 49.50"
+  ],
+  "errors": [
+   {
+    "id": "total-for-per-share",
+    "label": "Applied P/S to total sales",
+    "value": 9405000.0,
+    "check": "3.3*2850000",
+    "explain": "The multiple is price per share over sales per share; convert to per-share sales first."
+   },
+   {
+    "id": "ratio-inverted",
+    "label": "Divided sales per share by P/S",
+    "value": 4.55,
+    "check": "15/3.3",
+    "explain": "Price = P/S × sales per share, not sales per share ÷ P/S."
+   }
+  ],
+  "explanation": "Price/sales is used just like P/E: benchmark multiple times the matching per-share metric.",
+  "source": "generated",
+  "ref": "SM 8-12"
+ },
+ {
+  "id": "q08-122",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Marten Logistics' recent year-end prices and annual EPS were: Year 1 $36.40 and $2.00; Year 2 $41.30 and $2.20; Year 3 $45.15 and $2.45; Year 4 $43.70 and $2.60. Using its average historical P/E as the benchmark, and EPS growth of 9% next year, what target price do you expect one year after Year 4? Answer in $.",
+  "answer": 51.16,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4*2.60*1.09",
+  "steps": [
+   {
+    "label": "Average of the four yearly P/E ratios",
+    "value": 18.0522,
+    "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Next year's EPS = 2.60 × 1.09",
+    "value": 2.834,
+    "check": "2.60*1.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Target price = average P/E × EPS1",
+    "value": 51.16,
+    "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4*2.60*1.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P/E by year: 18.20, 18.77, 18.43, 16.81",
+   "Average P/E = 18.0522",
+   "EPS1 = 2.60 × 1.09 = 2.8340",
+   "P1 = 18.0522 × 2.8340 = $51.16"
+  ],
+  "keystrokes": [
+   "36.40 ÷ 2.00 = 18.20; repeat for each year",
+   "Average of the four P/E = 18.0522",
+   "2.60 × 1.09 = 2.8340",
+   "× 18.0522 = 51.16"
+  ],
+  "errors": [
+   {
+    "id": "eps0-for-eps1",
+    "label": "Used Year 4 EPS instead of next year's",
+    "value": 46.94,
+    "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4*2.60",
+    "explain": "A target price a year ahead needs the EPS of that year, EPS1 = EPS0(1 + g)."
+   },
+   {
+    "id": "latest-pe-only",
+    "label": "Used only the Year 4 P/E",
+    "value": 47.63,
+    "check": "43.70/2.60*2.60*1.09",
+    "explain": "The benchmark is the AVERAGE of the yearly P/E ratios, not just the latest one."
+   }
+  ],
+  "explanation": "Compute P/E for each year, average them, grow EPS one year, then multiply.",
+  "source": "generated",
+  "ref": "SM 8-26"
+ },
+ {
+  "id": "q08-123",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Harbour Transit earned $3.20 per share last year and pays no dividend. Similar firms trade at a P/E of 18, and earnings are expected to grow 6.5% next year. Using the same P/E for both dates, what return do you expect over the year? Answer in % per annum.",
+  "answer": 6.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(18*3.20*1.065/(18*3.20)-1)*100",
+  "steps": [
+   {
+    "label": "Price today = 18 × EPS0",
+    "value": 57.6,
+    "check": "18*3.20",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Target price in one year = 18 × EPS1",
+    "value": 61.344,
+    "check": "18*3.20*1.065",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Expected return",
+    "value": 6.5,
+    "check": "(18*3.20*1.065/(18*3.20)-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P0 = 18 × 3.20 = $57.60",
+   "EPS1 = 3.20 × 1.065 = 3.408;  P1 = 18 × 3.408 = $61.344",
+   "r = (P1 + 0)/P0 − 1 = 61.344/57.60 − 1 = 6.50%",
+   "With no dividend and a constant P/E, the return equals the EPS growth rate."
+  ],
+  "keystrokes": [
+   "18 × 3.20 = 57.60",
+   "18 × 3.20 × 1.065 = 61.344",
+   "61.344 ÷ 57.60 − 1 = 0.065"
+  ],
+  "errors": [
+   {
+    "id": "eps0-for-eps1",
+    "label": "Used last year's EPS for both prices",
+    "value": 0.0,
+    "check": "(18*3.20/(18*3.20)-1)*100",
+    "explain": "If both prices use EPS0 the return is zero: the target price needs next year's EPS."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1",
+    "value": 106.5,
+    "check": "(18*3.20*1.065/(18*3.20))*100",
+    "explain": "1.065 is the growth factor, not the return."
+   }
+  ],
+  "explanation": "A constant P/E means price grows with earnings. With no dividend, return = EPS growth (SM 8-25).",
+  "source": "generated",
+  "ref": "SM 8-25; L04 s18"
+ },
+ {
+  "id": "q08-124",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bright Bay Software earned $1.80 per share last year and analysts forecast $2.10 for next year. Similar firms trade at an average forward P/E of 17. What price does comparables give today?",
+  "options": [
+   "$35.70",
+   "$30.60",
+   "$33.15",
+   "$8.10"
+  ],
+  "answer": 0,
+  "explanation": "A forward multiple belongs with forward EPS: 17 × $2.10 = $35.70. Using last year's EPS (17 × $1.80 = $30.60) is the trailing-forward mix-up, dividing gives $8.10, and averaging the two EPS figures has no basis in the method.",
+  "source": "generated",
+  "ref": "L04 s18; TB 8.1"
+ },
+ {
+  "id": "q08-125",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peers trade at an average trailing P/E of 15.5. Vista Retail earned $3.20 per share last year and is expected to earn $3.60 next year. What price does comparables give today?",
+  "options": [
+   "$0.21",
+   "$49.60",
+   "$4.84",
+   "$55.80"
+  ],
+  "answer": 1,
+  "explanation": "A trailing multiple applies to trailing EPS: 15.5 × $3.20 = $49.60. 15.5 × $3.60 = $55.80 applies it to next year's EPS, which gives next year's price, and the other two invert the formula.",
+  "source": "generated",
+  "ref": "L04 s18; TB 8.1"
+ },
+ {
+  "id": "q08-126",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A broker values a company by applying the industry's trailing P/E of 20 to this year's expected EPS of $2.50 (last year's EPS was $2.00) and gets $50.00. What does the $50.00 represent?",
+  "options": [
+   "Today's fair price, because any P/E times any EPS gives today's price",
+   "A target price one year from today, because a trailing multiple on next year's EPS prices next year",
+   "The average of today's price and next year's price, since two EPS figures are involved",
+   "The value per share if earnings did not grow at all"
+  ],
+  "answer": 1,
+  "explanation": "A trailing benchmark applied to next year's EPS is a target price one year from now: 20 × $2.50 = $50.00. Today's price on trailing EPS would be 20 × $2.00 = $40.00.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-127",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A benchmark based on forward P/E ratios should be applied to the firm's trailing earnings per share.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "A forward multiple was calculated on forecast EPS, so apply it to forecast EPS (EPS1).",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-128",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Price = benchmark P/E × _____ (matching the type of P/E).",
+  "options": [
+   "book value per share",
+   "dividends per share",
+   "earnings per share",
+   "sales per share"
+  ],
+  "answer": 2,
+  "explanation": "P = benchmark P/E × EPS; with a price/sales benchmark you use sales per share instead.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-129",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Enterprise value (EV) equals:",
+  "options": [
+   "market value of equity − debt + cash",
+   "book value of equity + debt",
+   "market value of equity + debt + cash",
+   "market value of equity + debt − cash"
+  ],
+  "answer": 3,
+  "explanation": "EV is the value of the operating business to all its investors. Rearranged, Equity = EV − Debt + Cash, the formula-sheet version.",
+  "source": "generated",
+  "ref": "L04 s18; FS p2"
+ },
+ {
+  "id": "q08-130",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An analyst applies the peers' average EV/EBITDA of 9.0 to a firm's EBITDA of $30 million and gets $270 million. This $270 million is the firm's:",
+  "options": [
+   "enterprise value (EV)",
+   "book value of the assets",
+   "market value of equity",
+   "liquidation value of the assets"
+  ],
+  "answer": 0,
+  "explanation": "An EV multiple times EBITDA gives EV. To reach equity you subtract debt and add cash, then divide by shares for a price.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-131",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does an EV/EBITDA valuation differ from a P/E valuation?",
+  "options": [
+   "EV/EBITDA values the whole business and needs Equity = EV − Debt + Cash; P/E gives equity directly.",
+   "EV/EBITDA gives the equity value directly; P/E values the whole business including debt.",
+   "Both ratios give enterprise value, but P/E uses a different discount rate.",
+   "EV/EBITDA is based on net income, while P/E is based on EBITDA before interest."
+  ],
+  "answer": 0,
+  "explanation": "P/E is an equity multiple (price over earnings to shareholders). EV/EBITDA is a firm-level multiple measured before interest, so debt and cash must be handled afterwards.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-132",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which item is NOT needed to move from an EV multiple valuation to an equity value per share?",
+  "options": [
+   "Debt",
+   "The firm's tax rate",
+   "Cash",
+   "Shares outstanding"
+  ],
+  "answer": 1,
+  "explanation": "Equity = EV − Debt + Cash, then divide by shares outstanding. A tax rate is not part of that bridge.",
+  "source": "generated",
+  "ref": "FS p2"
+ },
+ {
+  "id": "q08-133",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is EV/EBITDA better than P/E for comparing firms with very different debt levels?",
+  "options": [
+   "Because P/E cannot be calculated at all for firms that have borrowed money.",
+   "Because EV ignores debt altogether, so leverage cannot distort it.",
+   "EV and EBITDA sit before the split between lenders and shareholders, so financing does not affect the ratio.",
+   "Because EBITDA is always larger than net income, so the ratio is more stable."
+  ],
+  "answer": 2,
+  "explanation": "Interest changes net income and the equity value but not EBITDA or EV, so EV/EBITDA is capital-structure neutral.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-134",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Peers trade at an average EV/EBITDA of 8.5. Kestrel Rail has EBITDA of $24.0 million, debt of $58.0 million, cash of $9.5 million and 10.0 million shares. What share price does this multiple imply? Answer in $.",
+  "answer": 15.55,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(8.5*24.0-58.0+9.5)/10.0",
+  "steps": [
+   {
+    "label": "Enterprise value ($ million)",
+    "value": 204.0,
+    "check": "8.5*24.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Equity value ($ million)",
+    "value": 155.5,
+    "check": "8.5*24.0-58.0+9.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Price per share",
+    "value": 15.55,
+    "check": "(8.5*24.0-58.0+9.5)/10.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "EV = 8.5 × 24.0 = $204.0 million",
+   "Equity = EV − Debt + Cash = 204.0 − 58.0 + 9.5 = $155.5 million",
+   "Price = 155.5/10.0 = $15.55"
+  ],
+  "keystrokes": [
+   "8.5 × 24 = 204.0",
+   "− 58 + 9.5 = 155.5",
+   "÷ 10 = 15.55"
+  ],
+  "errors": [
+   {
+    "id": "ev-as-equity",
+    "label": "Divided EV by shares",
+    "value": 20.4,
+    "check": "8.5*24.0/10.0",
+    "explain": "The multiple gives EV; debt and cash must be adjusted before dividing by shares."
+   },
+   {
+    "id": "cash-sign",
+    "label": "Subtracted cash instead of adding it",
+    "value": 13.65,
+    "check": "(8.5*24.0-58.0-9.5)/10.0",
+    "explain": "Equity = EV − Debt + Cash: cash belongs to the owners and is added."
+   },
+   {
+    "id": "debt-ignored",
+    "label": "Ignored debt but added cash",
+    "value": 21.35,
+    "check": "(8.5*24.0+9.5)/10.0",
+    "explain": "Lenders have a prior claim on EV, so debt is subtracted."
+   }
+  ],
+  "explanation": "EV multiple → EV → Equity = EV − Debt + Cash → ÷ shares.",
+  "source": "generated",
+  "ref": "SM 8-11; FS p2"
+ },
+ {
+  "id": "q08-135",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Ridgeline Power has a market capitalisation of $412 million, debt of $150 million and cash of $35 million. Its EBITDA last year was $52.7 million. What EV/EBITDA multiple does it trade at? Answer as a multiple (x).",
+  "answer": 10.0,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(412+150-35)/52.7",
+  "steps": [
+   {
+    "label": "Enterprise value ($ million)",
+    "value": 527.0,
+    "check": "412+150-35",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "EV/EBITDA",
+    "value": 10.0,
+    "check": "(412+150-35)/52.7",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "EV = market cap + debt − cash = 412 + 150 − 35 = $527 million",
+   "EV/EBITDA = 527/52.7 = 10.00x"
+  ],
+  "keystrokes": [
+   "412 + 150 − 35 = 527",
+   "÷ 52.7 = 10.00"
+  ],
+  "errors": [
+   {
+    "id": "cash-ignored",
+    "label": "Forgot to subtract cash",
+    "value": 10.66,
+    "check": "(412+150)/52.7",
+    "explain": "EV nets cash against debt."
+   },
+   {
+    "id": "mcap-only",
+    "label": "Used market cap alone",
+    "value": 7.82,
+    "check": "412/52.7",
+    "explain": "Market cap is the equity value only; EBITDA belongs to all investors, so use EV."
+   },
+   {
+    "id": "cash-sign",
+    "label": "Added cash",
+    "value": 11.33,
+    "check": "(412+150+35)/52.7",
+    "explain": "EV = equity + debt − cash."
+   }
+  ],
+  "explanation": "Match the numerator to the metric: EBITDA is before interest, so divide EV, not market cap.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-136",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Highland Telecom has EBITDA of $18.0 million, debt of $20.0 million, cash of $31.0 million (a net cash position) and 7.0 million shares. Peers trade at EV/EBITDA of 7.0. What is the implied value per share? Answer in $.",
+  "answer": 19.57,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(7.0*18.0-20.0+31.0)/7.0",
+  "steps": [
+   {
+    "label": "Enterprise value ($ million)",
+    "value": 126.0,
+    "check": "7.0*18.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Equity value ($ million)",
+    "value": 137.0,
+    "check": "7.0*18.0-20.0+31.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Value per share",
+    "value": 19.57,
+    "check": "(7.0*18.0-20.0+31.0)/7.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "EV = 7.0 × 18.0 = $126.0 million",
+   "Equity = EV − Debt + Cash = 126.0 − 20.0 + 31.0 = $137.0 million",
+   "Per share = 137.0/7.0 = $19.57"
+  ],
+  "keystrokes": [
+   "7 × 18 = 126",
+   "126 − 20 + 31 = 137",
+   "137 ÷ 7 = 19.57"
+  ],
+  "errors": [
+   {
+    "id": "cash-sign",
+    "label": "Subtracted cash and added debt",
+    "value": 16.43,
+    "check": "(7.0*18.0-31.0+20.0)/7.0",
+    "explain": "A net cash position increases equity value above EV."
+   },
+   {
+    "id": "ev-as-equity",
+    "label": "Divided EV by shares",
+    "value": 18.0,
+    "check": "7.0*18.0/7.0",
+    "explain": "EV is not equity; adjust for debt and cash first."
+   }
+  ],
+  "explanation": "With net cash the equity is worth MORE than EV: Equity = EV − Debt + Cash.",
+  "source": "generated",
+  "ref": "FS p2; L04 s18"
+ },
+ {
+  "id": "q08-137",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peers trade at an average EV/EBITDA of 9.0. A firm has EBITDA of $30 million, debt of $85 million and cash of $12 million. What is the implied value of its equity?",
+  "options": [
+   "$173 million",
+   "$270 million",
+   "$343 million",
+   "$197 million"
+  ],
+  "answer": 3,
+  "explanation": "EV = 9.0 × 30 = $270 million; Equity = 270 − 85 + 12 = $197 million. $270 million treats EV as equity, $173 million subtracts the cash, and $343 million adds the debt.",
+  "source": "generated",
+  "ref": "FS p2"
+ },
+ {
+  "id": "q08-138",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cedar Foods has a market capitalisation of $640 million, debt of $210 million and cash of $55 million. What is its enterprise value?",
+  "options": [
+   "$640 million",
+   "$905 million",
+   "$795 million",
+   "$485 million"
+  ],
+  "answer": 2,
+  "explanation": "EV = market value of equity + debt − cash = 640 + 210 − 55 = $795 million. $485 million reverses both signs, $905 million adds the cash, and $640 million is only the equity.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-139",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A firm trades at an EV/EBITDA of 12 while its peers trade at about 8. What is the most sensible reading?",
+  "options": [
+   "It has less debt than its peers, which is the only reason its multiple could be higher.",
+   "Its EBITDA must be negative, because any multiple above the peer average signals operating losses.",
+   "It must be undervalued, because a multiple of 12 is a higher number than a multiple of 8.",
+   "The market pays more per dollar of operating profit, perhaps for higher growth or lower risk, or the shares are rich."
+  ],
+  "answer": 3,
+  "explanation": "A multiple above the peer average means a higher price per dollar of EBITDA. Comparables logic asks whether growth and risk justify it.",
+  "source": "generated",
+  "ref": "L04 s18, s32"
+ },
+ {
+  "id": "q08-140",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Equity value = Enterprise value − Debt + Cash.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "It is the formula-sheet relation. Debt holders have a claim on EV, and cash is the owners' to keep.",
+  "source": "generated",
+  "ref": "FS p2"
+ },
+ {
+  "id": "q08-141",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Dividing an EV/EBITDA-based enterprise value by the number of shares gives the right price per share only if the firm's debt and cash happen to be equal, for example both zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Equity = EV − Debt + Cash equals EV only when debt equals cash. Otherwise the bridge must be made before dividing by shares.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-142",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Equity = EV − Debt + _____.",
+  "options": [
+   "Cash",
+   "Capital expenditure",
+   "Interest",
+   "EBITDA"
+  ],
+  "answer": 0,
+  "explanation": "Cash is added back because enterprise value is measured net of cash.",
+  "source": "generated",
+  "ref": "FS p2"
+ },
+ {
+  "id": "q08-143",
+  "concept": "c08-ev-multiples",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "You value a firm with an EV/EBITDA multiple and then want a share price. Which sequence is correct?",
+  "options": [
+   "Price = multiple × EBITDA ÷ shares",
+   "EV = multiple × EBITDA; Equity = EV − Debt + Cash; price = Equity ÷ shares",
+   "Equity = multiple × EBITDA; EV = Equity − Debt + Cash; price = EV ÷ shares",
+   "EV = multiple × net income; price = EV ÷ shares"
+  ],
+  "answer": 1,
+  "explanation": "The multiple is applied to EBITDA to get EV, then the bridge to equity, then per share.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-144",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why should two firms in the same industry trade at similar P/E multiples?",
+  "options": [
+   "Because exchanges set the P/E ratio for each industry and publish it as a benchmark.",
+   "Because firms in the same industry report the same earnings per share each year.",
+   "Because dividends per share are identical for all firms within an industry.",
+   "P/E depends on growth, plowback and risk, and firms in one industry tend to share these."
+  ],
+  "answer": 3,
+  "explanation": "From P0 = (1 − b)EPS1/(R − g), P/E = (1 − b)/(R − g). Similar g, ROE (hence b) and risk (hence R) mean similar multiples.",
+  "source": "generated",
+  "ref": "L04 s32"
+ },
+ {
+  "id": "q08-145",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "For a firm with a constant plowback b, growth rate g and required return R, the forward P/E (P0/EPS1) equals:",
+  "options": [
+   "(1 − b)/(R − g)",
+   "b/(R − g)",
+   "(1 − b)/g",
+   "(1 − b)/(R + g)"
+  ],
+  "answer": 0,
+  "explanation": "P0 = D1/(R − g) and D1 = (1 − b)EPS1, so P0/EPS1 = (1 − b)/(R − g). Using b instead of the payout 1 − b is the plowback-for-payout error.",
+  "source": "generated",
+  "ref": "L04 s30"
+ },
+ {
+  "id": "q08-146",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "All else equal, which change would LOWER a firm's forward P/E?",
+  "options": [
+   "A higher growth rate g",
+   "A higher required return R",
+   "A higher payout ratio, with g held constant",
+   "A lower required return R"
+  ],
+  "answer": 1,
+  "explanation": "P/E = (1 − b)/(R − g). A higher R widens the denominator and lowers the multiple. Higher g, lower R or higher payout (with g constant) raise it.",
+  "source": "generated",
+  "ref": "L04 s31"
+ },
+ {
+  "id": "q08-147",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an assumption behind 'similar firms should have similar P/E multiples'?",
+  "options": [
+   "Similar ROE and therefore similar plowback ratios",
+   "Similar risk, so similar required returns on equity",
+   "They pay identical dividends per share",
+   "Similar growth rates in earnings and dividends"
+  ],
+  "answer": 2,
+  "explanation": "The logic uses growth, ROE/plowback and risk (cost of equity). Dividends per share depend on firm size and need not match.",
+  "source": "generated",
+  "ref": "L04 s32"
+ },
+ {
+  "id": "q08-148",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm plows back 40% of earnings and expects to grow at 5% per year. Investors require 11%. What is its forward P/E?",
+  "options": [
+   "10.00",
+   "6.67",
+   "3.75",
+   "16.67"
+  ],
+  "answer": 0,
+  "explanation": "Forward P/E = (1 − b)/(R − g) = 0.60/0.06 = 10.0. Using b in the numerator gives 6.67 (payout-as-plowback slip), R + g gives 3.75, and ignoring the payout gives 16.67.",
+  "source": "generated",
+  "ref": "L04 s30"
+ },
+ {
+  "id": "q08-149",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Firm B plows back 30% of earnings and grows 6% per year; investors require 10%. What is B's forward P/E?",
+  "options": [
+   "7.00",
+   "4.38",
+   "17.50",
+   "7.50"
+  ],
+  "answer": 2,
+  "explanation": "Forward P/E = (1 − b)/(R − g) = 0.70/0.04 = 17.5. 7.50 uses b instead of 1 − b, 4.38 adds g, and 7.00 ignores growth.",
+  "source": "generated",
+  "ref": "L04 s30"
+ },
+ {
+  "id": "q08-150",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can a small error in the benchmark P/E cause a large error in an estimated share price?",
+  "options": [
+   "Because P/E ratios are measured in percent, so a small change is large in dollars.",
+   "Because the error compounds each year the benchmark is applied to later earnings.",
+   "Because EPS is always an estimate, so any error in P/E is multiplied by the forecast error.",
+   "Price = P/E × EPS, so each point of P/E is worth EPS dollars; 2 points on a P/E of 18 is an 11% price error."
+  ],
+  "answer": 3,
+  "explanation": "The critical thinking question in the text points to this: the hardest part of price-ratio analysis is choosing the correct benchmark.",
+  "source": "generated",
+  "ref": "SM 8 CTQ 12"
+ },
+ {
+  "id": "q08-151",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Two firms in the same industry have forward P/E ratios of 25 and 12. Which explanation fits the P/E formula (1 − b)/(R − g)?",
+  "options": [
+   "The two firms must have the same EPS, so the price gap is the whole story.",
+   "The first has higher expected growth or lower risk than the second.",
+   "The second pays no dividends, which pushes its P/E down mechanically.",
+   "The first must be overvalued, whatever the reasons for the gap."
+  ],
+  "answer": 1,
+  "explanation": "A big gap in multiples signals a difference in g, R or payout. It is a reason to question whether the firms are truly comparable.",
+  "source": "generated",
+  "ref": "L04 s31-32"
+ },
+ {
+  "id": "q08-152",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "All else equal, higher expected growth, lower risk or a higher payout ratio (with growth unchanged) tend to produce a higher forward P/E.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "From P/E = (1 − b)/(R − g): g up, R down or b down all raise the ratio.",
+  "source": "generated",
+  "ref": "L04 s31"
+ },
+ {
+  "id": "q08-153",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "You value a fast-growing biotech firm using the average P/E of mature utilities. What is the likely problem?",
+  "options": [
+   "There is no problem; P/E ratios are universal.",
+   "The utilities' multiple overstates growth, so the biotech is overvalued.",
+   "The utilities' multiple reflects low growth, so it would probably undervalue the biotech.",
+   "Utilities never have earnings."
+  ],
+  "answer": 2,
+  "explanation": "Comparables only work when growth, ROE and risk are similar. A high-growth firm deserves a higher multiple than a mature one.",
+  "source": "generated",
+  "ref": "L04 s32"
+ },
+ {
+  "id": "q08-154",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which three characteristics must similar firms share for the comparables approach to work well?",
+  "options": [
+   "Growth rate, ROE (hence plowback) and risk (cost of equity)",
+   "Dividend per share, EPS and the share price itself",
+   "Book value, total assets and sales in the latest year",
+   "Name, age and country of incorporation of the firm"
+  ],
+  "answer": 0,
+  "explanation": "These are the three drivers in the forward P/E formula.",
+  "source": "generated",
+  "ref": "L04 s32"
+ },
+ {
+  "id": "q08-155",
+  "concept": "c08-why-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does comparables valuation differ from DCF valuation?",
+  "options": [
+   "Comparables use only dividends, while DCF uses only earnings per share.",
+   "Comparables value a stock relative to similar firms' prices; DCF discounts the firm's own forecast cash flows.",
+   "Comparables discount forecast cash flows at R; DCF applies multiples to earnings.",
+   "They are two names for the same method; only the labels differ."
+  ],
+  "answer": 1,
+  "explanation": "Relative valuation (multiples) versus intrinsic valuation (DDM, FCF, FCFE).",
+  "source": "generated",
+  "ref": "L04 s17, s36"
+ },
+ {
+  "id": "q08-156",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A stock pays the same dividend D every year forever. Its price today is:",
+  "options": [
+   "P0 = D × R",
+   "P0 = D/(1 + R)",
+   "P0 = D/(R − g) with g = R",
+   "P0 = D/R"
+  ],
+  "answer": 3,
+  "explanation": "A level payment forever is an ordinary perpetuity, valued at D/R, the Gordon growth formula with g = 0.",
+  "source": "generated",
+  "ref": "L04 s19; TB 8.1"
+ },
+ {
+  "id": "q08-157",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Paradise Prototyping pays a $10 dividend each year and its policy is to continue it indefinitely. Which model values the share?",
+  "options": [
+   "NPVGO",
+   "Perpetuity (zero-growth DDM)",
+   "Two-stage growth",
+   "Growing perpetuity with g > 0"
+  ],
+  "answer": 1,
+  "explanation": "With a constant dividend the share is an ordinary perpetuity, P0 = D/R, like a preferred share.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-158",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Lakeshore Cement has a policy of paying a fixed dividend of $2.75 per share every year, and investors require 8.5% per annum. What is the share price today? Answer in $.",
+  "answer": 32.35,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.75/0.085",
+  "steps": [
+   {
+    "label": "Price P0 = D/R",
+    "value": 32.35,
+    "check": "2.75/0.085",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Constant dividend, so P0 = D/R",
+   "P0 = 2.75/0.085 = $32.35"
+  ],
+  "keystrokes": [
+   "2.75 ÷ 0.085 = 32.35"
+  ],
+  "errors": [
+   {
+    "id": "rate-as-percent",
+    "label": "Used R = 8.5 instead of 0.085",
+    "value": 0.32,
+    "check": "2.75/8.5",
+    "explain": "Put the rate in decimals (0.085) before dividing."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Added a growth factor of (1 + R)",
+    "value": 35.1,
+    "check": "2.75*1.085/0.085",
+    "explain": "A fixed dividend does not grow, so there is no (1 + g) term."
+   }
+  ],
+  "explanation": "A constant dividend is an ordinary perpetuity: divide by R.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-159",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A utility share that pays a fixed annual dividend of $2.40 is priced at $31.50. What return does it offer? Answer in % per annum.",
+  "answer": 7.62,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.40/31.50*100",
+  "steps": [
+   {
+    "label": "R = D/P0",
+    "value": 7.619,
+    "check": "2.40/31.50*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P0 = D/R  →  R = D/P0",
+   "R = 2.40/31.50 = 7.6190% ≈ 7.62% per annum"
+  ],
+  "keystrokes": [
+   "2.40 ÷ 31.50 = 0.0762"
+  ],
+  "errors": [
+   {
+    "id": "inverted-ratio",
+    "label": "Divided price by dividend",
+    "value": 13.12,
+    "check": "31.50/2.40",
+    "explain": "13.13 is the price-to-dividend multiple, not a rate."
+   },
+   {
+    "id": "div-by-p1",
+    "label": "Divided by price plus dividend",
+    "value": 7.08,
+    "check": "2.40/(31.50+2.40)*100",
+    "explain": "The denominator is today's price P0."
+   }
+  ],
+  "explanation": "With no growth, the whole return is the dividend yield: R = D/P0.",
+  "source": "generated",
+  "ref": "SM 8-8; TB 8.1"
+ },
+ {
+  "id": "q08-160",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A mature firm pays a fixed dividend of $1.80 per share each year, required return 7.5% per annum. What do you expect the share price to be in 5 years? Answer in $.",
+  "answer": 24.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.80/0.075",
+  "steps": [
+   {
+    "label": "Price today D/R",
+    "value": 24.0,
+    "check": "1.80/0.075",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price in 5 years (same)",
+    "value": 24.0,
+    "check": "1.80/0.075",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Each year the remaining dividends are the same perpetuity, so P5 = D/R",
+   "P5 = 1.80/0.075 = $24.00, the same as today"
+  ],
+  "keystrokes": [
+   "1.80 ÷ 0.075 = 24.00"
+  ],
+  "errors": [
+   {
+    "id": "grew-at-r",
+    "label": "Grew the price at R for 5 years",
+    "value": 34.46,
+    "check": "1.80/0.075*1.075^5",
+    "explain": "With no dividend growth there is no capital gain, so the price does not grow."
+   },
+   {
+    "id": "discounted-twice",
+    "label": "Discounted the price for 5 years",
+    "value": 16.72,
+    "check": "1.80/0.075/1.075^5",
+    "explain": "The price at year 5 is a value at year 5; no discounting is needed."
+   }
+  ],
+  "explanation": "With g = 0 the capital gain yield is 0, so the price stays at D/R forever.",
+  "source": "generated",
+  "ref": "TB 8.1; L04 s20"
+ }
+]

@@ -1,0 +1,1016 @@
+[
+ {
+  "id": "q08-041",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Compounding the arithmetic average return for N years, instead of using the actual yearly returns, gives an ending value that is:",
+  "options": [
+   "wrong only when dividends are paid",
+   "too high whenever the yearly returns vary",
+   "always identical to the true value",
+   "too low whenever the yearly returns vary"
+  ],
+  "answer": 1,
+  "explanation": "Since R_A ≥ R_G, (1 + R_A)^N ≥ (1 + R_G)^N = the true wealth factor. Only constant returns make the two agree.",
+  "source": "generated",
+  "ref": "L04 s10; TB 12.5"
+ },
+ {
+  "id": "q08-042",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "If no money is added or withdrawn, a holding's value after N years does not depend on the order in which the yearly returns occur.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The wealth factor is the product of the (1 + R) terms, and multiplication is commutative. Order matters only when cash flows are added or withdrawn.",
+  "source": "generated",
+  "ref": "L04 s10-11"
+ },
+ {
+  "id": "q08-043",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "$1,000 is held three years with returns of +20%, −15% and +10%. Which expression does NOT equal its ending value of $1,122.00?",
+  "options": [
+   "$1,000 × (1 + R_G)^3, with R_G the geometric average",
+   "$1,000 × 1.20 × 0.85 × 1.10",
+   "$1,000 × (1.20 × 0.85) × 1.10",
+   "$1,000 × (1 + 0.20 − 0.15 + 0.10)"
+  ],
+  "answer": 3,
+  "explanation": "Only the product of the growth factors (or the equivalent (1 + R_G)^3) gives $1,122.00. Adding the returns gives $1,150.00. The expression that groups 1.20 × 0.85 = 1.02 first is also correct, because multiplication can be grouped in any order.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-044",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A holding is worth exactly what it was two years ago although the yearly returns were +40% and −28.57%. The arithmetic average is 5.71%. Which figure describes what happened to your wealth?",
+  "options": [
+   "The geometric average of 0%",
+   "The 40% return in the first year",
+   "The arithmetic average of 5.71%",
+   "The −28.57% return in the second year"
+  ],
+  "answer": 0,
+  "explanation": "1.40 × 0.7143 = 1.00, so R_G = 0%. The arithmetic average would suggest wealth grew each year on average, which it did not.",
+  "source": "generated",
+  "ref": "TB 12.5"
+ },
+ {
+  "id": "q08-045",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps for finding the geometric average return from yearly returns in order.",
+  "options": [
+   "Add 1 to each return; multiply them; raise the product to 1/N; subtract 1",
+   "Add 1 to each return; add them; divide by N; subtract 1",
+   "Multiply the returns; add 1; raise the product to 1/N; subtract 1",
+   "Add the returns; divide by N; add 1; raise to 1/N"
+  ],
+  "answer": 0,
+  "explanation": "Convert to growth factors (decimals), multiply, take the Nth root, then subtract 1. Adding and dividing by N is the arithmetic average.",
+  "source": "generated",
+  "ref": "TB 12.5; FS p1"
+ },
+ {
+  "id": "q08-046",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A firm's liquidation value is the amount:",
+  "options": [
+   "from selling its assets and paying off its creditors",
+   "to purchase a firm after it files for bankruptcy",
+   "equal to the book value of equity",
+   "to repurchase all shares of common stock",
+   "none of the above"
+  ],
+  "answer": 0,
+  "explanation": "Liquidation value is what is left for the owners if the firm's assets are sold off and the creditors are paid first. Book value of equity is an accounting figure (assets minus liabilities at historical cost) and generally differs from it; the price to buy a bankrupt firm and the cost of repurchasing all shares are different things altogether.",
+  "source": "official",
+  "ref": "PRAC q2"
+ },
+ {
+  "id": "q08-047",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Book value of equity is:",
+  "options": [
+   "the cash left after assets are sold and creditors are paid",
+   "share price multiplied by shares outstanding",
+   "total assets minus total liabilities as recorded on the balance sheet",
+   "the present value of all expected future dividends"
+  ],
+  "answer": 2,
+  "explanation": "Book value is an accounting number built from historical costs. Price × shares is market capitalisation, the cash left after a sale is liquidation value, and the PV of dividends is an intrinsic (DDM) value.",
+  "source": "generated",
+  "ref": "L04 s13"
+ },
+ {
+  "id": "q08-048",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Sigma Tools has 4 million shares trading at $22.00. The figure 4,000,000 × $22.00 = $88 million is Sigma's:",
+  "options": [
+   "enterprise value",
+   "book value of equity",
+   "liquidation value of equity",
+   "market value of equity"
+  ],
+  "answer": 3,
+  "explanation": "Share price times shares outstanding is market capitalisation, the market value of equity. Enterprise value would add debt and subtract cash.",
+  "source": "generated",
+  "ref": "L04 s13-14"
+ },
+ {
+  "id": "q08-049",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement best separates book value from market value?",
+  "options": [
+   "Book value counts intangible assets such as brands at market worth; market value ignores them.",
+   "Book value records past costs from the accounts; market value is what investors pay for expected future cash flows.",
+   "Book value of equity is always larger than market value for a profitable, growing firm.",
+   "Book value is what investors would pay today; market value is taken from the balance sheet."
+  ],
+  "answer": 1,
+  "explanation": "Balance sheets mostly show historical cost; market prices look forward. That is why market value can be far above book value for a firm with growth opportunities and valuable intangibles.",
+  "source": "generated",
+  "ref": "L04 s13; REV p3"
+ },
+ {
+  "id": "q08-050",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a reason a firm's market value of equity might exceed its book value?",
+  "options": [
+   "Assets are carried at depreciated historical cost.",
+   "Valuable intangible assets such as a brand are not recorded at market worth.",
+   "The firm is expected to earn less than its cost of equity on its book equity.",
+   "Investors expect profitable growth opportunities."
+  ],
+  "answer": 2,
+  "explanation": "P/B above 1 reflects growth opportunities, intangibles and historical-cost accounting. Expected returns below the cost of equity push the market value toward or below book value.",
+  "source": "generated",
+  "ref": "L04 s13"
+ },
+ {
+  "id": "q08-051",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can a healthy operating firm's market value be far above its liquidation value?",
+  "options": [
+   "Market value prices the future cash flows of the assets working together; liquidation sells them piece by piece.",
+   "Because liquidation value always equals book value, which is itself far below market value.",
+   "Because liquidation value ignores the firm's debts, which market value already subtracts.",
+   "Because market value ignores the firm's assets and counts only its annual sales."
+  ],
+  "answer": 0,
+  "explanation": "A going concern keeps earning from its assets, customers and know-how. In a liquidation, only what the assets fetch on sale remains after creditors are repaid.",
+  "source": "generated",
+  "ref": "L04 s13"
+ },
+ {
+  "id": "q08-052",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A listed firm trades at a price-to-book ratio of 0.8. What might this indicate?",
+  "options": [
+   "The firm is certain to go bankrupt, because market value below book means insolvency.",
+   "The firm's dividend yield is 0.8%, which is lower than its required return.",
+   "Investors value the firm at 80% of its annual sales, which is a low price/sales ratio.",
+   "Investors expect it to earn less than its cost of equity on book equity, or book assets are overstated."
+  ],
+  "answer": 3,
+  "explanation": "P/B below 1 means the market values equity below its accounting value. It is a warning sign about expected returns or asset values, not a guarantee of failure.",
+  "source": "generated",
+  "ref": "L04 s14; REV p3"
+ },
+ {
+  "id": "q08-053",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Market capitalisation equals the share price multiplied by the number of shares outstanding.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "It is the market value of all of a firm's equity: price per share × shares outstanding.",
+  "source": "generated",
+  "ref": "L04 s14"
+ },
+ {
+  "id": "q08-054",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Print Ltd. owes its creditors $13.9 million. Its books show assets of $21.0 million, but in a liquidation the assets would fetch only $18.4 million. What is the liquidation value of its equity?",
+  "options": [
+   "$32.3 million",
+   "$4.5 million",
+   "$18.4 million",
+   "$7.1 million"
+  ],
+  "answer": 1,
+  "explanation": "Liquidation value = sale proceeds of the assets − amounts owed to creditors = 18.4 − 13.9 = $4.5 million. The $7.1 million is book equity (it uses book assets), $18.4 million forgets to pay the creditors, and $32.3 million adds the debt.",
+  "source": "generated",
+  "ref": "PRAC q2; L04 s13"
+ },
+ {
+  "id": "q08-055",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cedar Foods has a market capitalisation of $214 million, total assets of $300 million and book equity of $122 million. What is its price-to-book (P/B) ratio?",
+  "options": [
+   "0.57",
+   "2.46",
+   "1.75",
+   "0.71"
+  ],
+  "answer": 2,
+  "explanation": "P/B = market value of equity ÷ book value of equity = 214/122 = 1.75. The inverted ratio is 0.57, dividing by assets gives 0.71, and assets over book equity (2.46) is a leverage measure, not P/B.",
+  "source": "generated",
+  "ref": "L04 s14"
+ },
+ {
+  "id": "q08-056",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The amount left for the owners after a firm's assets are sold and its creditors are paid is its _____ value.",
+  "options": [
+   "book",
+   "liquidation",
+   "market",
+   "par"
+  ],
+  "answer": 1,
+  "explanation": "That is the definition of liquidation value. Book value comes from the balance sheet and market value from share prices.",
+  "source": "generated",
+  "ref": "PRAC q2"
+ },
+ {
+  "id": "q08-057",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A bank wants to estimate how much it could recover from a borrower that defaults and has its assets sold. Which value is most relevant?",
+  "options": [
+   "Book value of equity",
+   "Forward P/E",
+   "Market capitalisation",
+   "Liquidation value"
+  ],
+  "answer": 3,
+  "explanation": "Recoveries depend on what the assets would fetch in a sale and on the ranking of creditors, which is liquidation value.",
+  "source": "generated",
+  "ref": "L04 s13; REV p3"
+ },
+ {
+  "id": "q08-058",
+  "concept": "c08-book-market-liquidation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which pair of ratios is typical for a healthy, profitable listed firm?",
+  "options": [
+   "P/E around 17 and P/B around 2",
+   "P/E around 0.5 and P/B around 25",
+   "P/E around 150 and P/B around 0.05",
+   "P/E around −8 and P/B around 12"
+  ],
+  "answer": 0,
+  "explanation": "The review guide asks for 'typical' P/E and P/B values: mature profitable firms typically trade at P/Es in the teens or 20s and at P/Bs of roughly 1 to 3 (the sample quote has 18.8 and 1.72). The other pairs are extremes.",
+  "source": "generated",
+  "ref": "REV p3; PRAC q9"
+ },
+ {
+  "id": "q08-059",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "The following market trading information is available about a particular stock: XYZ Limited, last $60.34 (down $0.83, 1.38%); Bid $60.31; Ask $60.35; Day Range 60.14 - 60.49; Volume 1300; Year Range 57.27 - 63.24; Div Yield 2.768%; Forward Div Yield 2.642%; Market Cap $6397100; Price/Sales 1.88; Price/Earnings 18.798; Consensus Forward P/E 17.943; Price/Book 1.722. (a) How many shares are outstanding? Answer in shares.",
+  "answer": 106018,
+  "unit": "shares",
+  "tolerance": {
+   "abs": 20
+  },
+  "check": "6397100/60.34",
+  "steps": [
+   {
+    "label": "Shares outstanding = market cap ÷ price",
+    "value": 106018,
+    "check": "6397100/60.34",
+    "unit": "shares",
+    "tolerance": {
+     "abs": 1
+    }
+   }
+  ],
+  "solution": [
+   "Market cap = price × shares outstanding",
+   "Shares = 6,397,100 ÷ 60.34 = 106,017.6 ≈ 106,018 shares",
+   "(Dividing by the ask of $60.35 gives 106,000, within the accepted range, because the screen's market cap appears to have been built on that price.)"
+  ],
+  "keystrokes": [
+   "6397100 ÷ 60.34 = 106,017.6"
+  ],
+  "errors": [
+   {
+    "id": "bid-for-last",
+    "label": "Divided by the bid $60.31",
+    "value": 106070,
+    "check": "6397100/60.31",
+    "explain": "Market cap uses the last traded price, not the bid."
+   },
+   {
+    "id": "units",
+    "label": "Read the market cap as thousands of dollars",
+    "value": 106017567,
+    "check": "6397100*1000/60.34",
+    "explain": "The screen prints market cap in dollars; scaling it to thousands overstates the shares a thousand-fold."
+   }
+  ],
+  "explanation": "Shares outstanding = market cap ÷ price per share (about 106,000). Use the last price, not the bid or ask.",
+  "source": "official",
+  "ref": "PRAC q9a"
+ },
+ {
+  "id": "q08-060",
+  "concept": "c08-quote-screen",
+  "also": [
+   "c08-implied-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "The following market trading information is available about a particular stock: XYZ Limited, last $60.34 (down $0.83, 1.38%); Bid $60.31; Ask $60.35; Day Range 60.14 - 60.49; Volume 1300; Year Range 57.27 - 63.24; Div Yield 2.768%; Forward Div Yield 2.642%; Market Cap $6397100; Price/Sales 1.88; Price/Earnings 18.798; Consensus Forward P/E 17.943; Price/Book 1.722. (b) What rate of growth is expected this year? Answer in % per annum.",
+  "answer": 4.77,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(18.798/17.943-1)*100",
+  "steps": [
+   {
+    "label": "Trailing EPS0 = price ÷ trailing P/E",
+    "value": 3.2099,
+    "check": "60.34/18.798",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Forward EPS1 = price ÷ forward P/E",
+    "value": 3.3629,
+    "check": "60.34/17.943",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Growth = EPS1/EPS0 − 1",
+    "value": 4.7651,
+    "check": "(18.798/17.943-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Trailing EPS0 = 60.34/18.798 = 3.2099",
+   "Forward EPS1 = 60.34/17.943 = 3.3629",
+   "Growth = EPS1/EPS0 − 1 = (trailing P/E ÷ forward P/E) − 1 = 18.798/17.943 − 1 = 4.7651% ≈ 4.77% per annum"
+  ],
+  "keystrokes": [
+   "18.798 ÷ 17.943 = 1.04765",
+   "− 1 = 0.04765 → 4.77%"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Divided forward by trailing",
+    "value": -4.55,
+    "check": "(17.943/18.798-1)*100",
+    "explain": "Inverting the ratio reverses the sign: a lower forward P/E means earnings are expected to RISE."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1",
+    "value": 104.77,
+    "check": "18.798/17.943*100",
+    "explain": "1.0477 is the growth factor, not the rate."
+   },
+   {
+    "id": "price-change-as-growth",
+    "label": "Used the day's price change of 1.38%",
+    "value": 1.38,
+    "check": "1.38",
+    "explain": "The day's price move says nothing about expected earnings growth."
+   }
+  ],
+  "explanation": "Same price, different earnings: price/EPS0 = 18.798 and price/EPS1 = 17.943, so EPS1/EPS0 = 18.798/17.943.",
+  "source": "official",
+  "ref": "PRAC q9b; L04 s30"
+ },
+ {
+  "id": "q08-061",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A quote shows: last price $27.30; market cap $163,800,000; trailing P/E 14.0. What was the company's net income over the last year? Answer in $.",
+  "answer": 11700000,
+  "unit": "$",
+  "tolerance": {
+   "abs": 1,
+   "rel": 0.0005
+  },
+  "check": "27.30/14.0*163800000/27.30",
+  "steps": [
+   {
+    "label": "Shares outstanding = market cap ÷ price",
+    "value": 6000000,
+    "check": "163800000/27.30",
+    "unit": "shares",
+    "tolerance": {
+     "abs": 1
+    }
+   },
+   {
+    "label": "Trailing EPS = price ÷ P/E",
+    "value": 1.95,
+    "check": "27.30/14.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Net income = EPS × shares",
+    "value": 11700000,
+    "check": "27.30/14.0*163800000/27.30",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Shares = 163,800,000 ÷ 27.30 = 6,000,000",
+   "EPS = price ÷ trailing P/E = 27.30 ÷ 14.0 = $1.95",
+   "Net income = EPS × shares = 1.95 × 6,000,000 = $11,700,000"
+  ],
+  "keystrokes": [
+   "27.30 ÷ 14 = 1.95",
+   "163,800,000 ÷ 27.30 = 6,000,000",
+   "1.95 × 6,000,000 = 11,700,000"
+  ],
+  "errors": [
+   {
+    "id": "shares-as-ni",
+    "label": "Stopped at the number of shares",
+    "value": 6000000,
+    "check": "163800000/27.30",
+    "explain": "6,000,000 is the share count; net income is EPS times that count."
+   },
+   {
+    "id": "p-times-pe",
+    "label": "Multiplied price by P/E for EPS",
+    "value": 2293200000,
+    "check": "27.30*14.0*163800000/27.30",
+    "explain": "EPS = price ÷ (P/E), not price × P/E."
+   }
+  ],
+  "explanation": "Chain: shares = market cap ÷ price; EPS = price ÷ P/E; net income = EPS × shares (which equals market cap ÷ P/E).",
+  "source": "generated",
+  "ref": "SM 8-22; PRAC q9"
+ },
+ {
+  "id": "q08-062",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A quote shows a last price of $30.00, a trailing dividend yield of 3.2% and a forward dividend yield of 3.4%. What growth in the dividend per share is expected this year? Answer in % per annum.",
+  "answer": 6.25,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(0.034/0.032-1)*100",
+  "steps": [
+   {
+    "label": "Trailing dividend D0 = yield × price",
+    "value": 0.96,
+    "check": "0.032*30.0",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Forward dividend D1 = yield × price",
+    "value": 1.02,
+    "check": "0.034*30.0",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Dividend growth D1/D0 − 1",
+    "value": 6.25,
+    "check": "(0.034/0.032-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "D0 = 3.2% × 30.00 = $0.96",
+   "D1 = 3.4% × 30.00 = $1.02",
+   "Growth = D1/D0 − 1 = 1.02/0.96 − 1 = 6.25%"
+  ],
+  "keystrokes": [
+   "0.034 ÷ 0.032 = 1.0625",
+   "− 1 = 6.25%"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Divided trailing by forward",
+    "value": -5.88,
+    "check": "(0.032/0.034-1)*100",
+    "explain": "Forward over trailing: D1/D0, not D0/D1."
+   },
+   {
+    "id": "subtract-yields",
+    "label": "Subtracted the yields",
+    "value": 0.2,
+    "check": "(0.034-0.032)*100",
+    "explain": "0.20 percentage points is the change in the yield, not the growth in the dividend (6.25%)."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1",
+    "value": 106.25,
+    "check": "0.034/0.032*100",
+    "explain": "1.0625 is the growth factor."
+   }
+  ],
+  "explanation": "With the same price in both yields, D1/D0 = forward yield / trailing yield.",
+  "source": "generated",
+  "ref": "L04 s14; PRAC q9"
+ },
+ {
+  "id": "q08-063",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock screen lists a trailing P/E of 21.5 and a consensus forward P/E of 19.3. By what percentage are earnings per share expected to grow this year? Answer in % per annum.",
+  "answer": 11.4,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(21.5/19.3-1)*100",
+  "steps": [
+   {
+    "label": "EPS1/EPS0 = trailing P/E ÷ forward P/E",
+    "value": 1.11399,
+    "check": "21.5/19.3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Expected growth",
+    "value": 11.399,
+    "check": "(21.5/19.3-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Same price P in both ratios: EPS0 = P/21.5 and EPS1 = P/19.3",
+   "EPS1/EPS0 = 21.5/19.3 = 1.11399",
+   "Growth = 1.11399 − 1 = 11.40% per annum"
+  ],
+  "keystrokes": [
+   "21.5 ÷ 19.3 = 1.11399",
+   "− 1 = 11.40%"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Divided forward by trailing",
+    "value": -10.23,
+    "check": "(19.3/21.5-1)*100",
+    "explain": "That gives −10.23%: it treats a falling P/E as falling earnings, when it means rising earnings."
+   },
+   {
+    "id": "subtract-yields",
+    "label": "Subtracted the P/Es",
+    "value": 2.2,
+    "check": "21.5-19.3",
+    "explain": "A difference of P/E multiples is not a growth rate."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1",
+    "value": 111.4,
+    "check": "21.5/19.3*100",
+    "explain": "1.114 is the growth factor."
+   }
+  ],
+  "explanation": "Forward P/E is lower than trailing P/E exactly when expected EPS is higher than last year's EPS.",
+  "source": "generated",
+  "ref": "PRAC q9b; L04 s30"
+ },
+ {
+  "id": "q08-064",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A quote shows: last $36.00, bid $35.96, ask $36.04 and a market capitalisation of $243,000,000. How many shares are outstanding?",
+  "options": [
+   "6,750,000",
+   "8,748,000,000",
+   "6,757,508",
+   "6,742,508"
+  ],
+  "answer": 0,
+  "explanation": "Shares = market cap ÷ last price = 243,000,000 ÷ 36.00 = 6,750,000. Using the bid (6,757,508) or the ask (6,742,508) is the classic quote-screen slip, and multiplying instead of dividing gives a nonsense total.",
+  "source": "generated",
+  "ref": "PRAC q9"
+ },
+ {
+  "id": "q08-065",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A screen shows a last price of $48.30, a trailing P/E of 21.0 and a consensus forward P/E of 18.5. What were the company's trailing earnings per share?",
+  "options": [
+   "$1,014.30",
+   "$0.43",
+   "$2.61",
+   "$2.30"
+  ],
+  "answer": 3,
+  "explanation": "Trailing EPS = price ÷ trailing P/E = 48.30 ÷ 21.0 = $2.30. Using the forward P/E gives next year's expected EPS ($2.61), multiplying gives $1,014.30, and inverting gives $0.43.",
+  "source": "generated",
+  "ref": "PRAC q9; SM 8-22"
+ },
+ {
+  "id": "q08-066",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A screen shows a last price of $48.30, a trailing P/E of 21.0 and a consensus forward P/E of 18.5. What are the analysts' forecast earnings per share for the coming year?",
+  "options": [
+   "$2.30",
+   "$2.44",
+   "$2.61",
+   "$893.55"
+  ],
+  "answer": 2,
+  "explanation": "Forward EPS = price ÷ forward P/E = 48.30 ÷ 18.5 = $2.61. Dividing by the trailing P/E gives last year's EPS ($2.30), which is the trailing-forward mix-up, and multiplying by the P/E gives $893.55.",
+  "source": "generated",
+  "ref": "PRAC q9; L04 s14"
+ },
+ {
+  "id": "q08-067",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "On a quote screen, 'Price/Earnings' (the trailing P/E) is the price divided by:",
+  "options": [
+   "analysts' forecast earnings per share for next year",
+   "earnings per share over the last twelve months",
+   "book equity per share",
+   "dividends per share paid last year"
+  ],
+  "answer": 1,
+  "explanation": "Trailing P/E uses past earnings; the consensus forward P/E uses forecast earnings. The dividend yield uses dividends, and price/book uses book equity.",
+  "source": "generated",
+  "ref": "L04 s14-15"
+ },
+ {
+  "id": "q08-068",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A quote screen shows a last price, a bid and an ask. Which statement is correct?",
+  "options": [
+   "The bid is the price a dealer sells at, and the ask is the price a dealer buys at.",
+   "The last price is the latest trade, and the ask is never below the bid.",
+   "The last price is always the average of the bid and the ask at that moment.",
+   "Market capitalisation is calculated from the ask price rather than the last price."
+  ],
+  "answer": 1,
+  "explanation": "Bid < ask is the dealer's spread. A dealer buys at the bid and sells at the ask. Market cap and the ratios on the screen use the last price.",
+  "source": "generated",
+  "ref": "TB 8.3; PRAC q9"
+ },
+ {
+  "id": "q08-069",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "From a quote's last price, market capitalisation and trailing P/E alone you can find all of the following EXCEPT:",
+  "options": [
+   "the number of shares outstanding",
+   "trailing earnings per share",
+   "the company's trailing net income",
+   "next year's dividend per share"
+  ],
+  "answer": 3,
+  "explanation": "Shares = market cap ÷ price, EPS = price ÷ P/E, and net income = EPS × shares. A dividend needs a dividend yield (or payout ratio), which these three items do not give.",
+  "source": "generated",
+  "ref": "PRAC q9"
+ },
+ {
+  "id": "q08-070",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is a growing company's consensus forward P/E normally lower than its trailing P/E?",
+  "options": [
+   "Because forward P/E ignores the price and is based only on forecast earnings.",
+   "Because the trailing P/E includes dividends in its numerator and the forward P/E does not.",
+   "The price is the same, but forecast earnings exceed last year's, so the denominator is larger.",
+   "Because analysts always discount their forecasts back to today at the cost of equity."
+  ],
+  "answer": 2,
+  "explanation": "Both ratios share today's price. Forward P/E = P/EPS1 and trailing P/E = P/EPS0, so EPS1 > EPS0 gives a lower forward multiple.",
+  "source": "generated",
+  "ref": "L04 s14, s30"
+ },
+ {
+  "id": "q08-071",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A screen shows a trailing P/E of 24.0 and a consensus forward P/E of 25.5. What does this imply?",
+  "options": [
+   "Earnings are expected to fall about 5.9% this year.",
+   "Earnings are expected to be unchanged.",
+   "The stock is overvalued by 1.5 P/E points.",
+   "Earnings are expected to grow about 6.3% this year."
+  ],
+  "answer": 0,
+  "explanation": "EPS1/EPS0 = trailing P/E ÷ forward P/E = 24.0/25.5 = 0.941, so expected EPS is 5.9% lower. A forward multiple above the trailing one signals falling earnings.",
+  "source": "generated",
+  "ref": "PRAC q9b"
+ },
+ {
+  "id": "q08-072",
+  "concept": "c08-quote-screen",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "On a quote screen, the bid price is normally higher than the ask price, because buyers compete to pay more.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "A dealer buys at the bid and sells at the ask, and the spread (ask minus bid) is the dealer's profit, so the ask is at or above the bid.",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-073",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Shareholders of a corporation can replace its senior managers by electing different directors; lenders cannot. Which difference between equity and debt is this?",
+  "options": [
+   "Voting rights",
+   "Predictability of income",
+   "Risk level",
+   "Taxation of interest"
+  ],
+  "answer": 0,
+  "explanation": "Equity holders vote for the board, which hires and fires management. Debt holders normally have no vote while the firm pays them.",
+  "source": "generated",
+  "ref": "L04 s3; TB 8.2"
+ },
+ {
+  "id": "q08-074",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts interest on debt with dividends on equity?",
+  "options": [
+   "Both are discretionary payments, but only interest is tax-deductible to the firm.",
+   "Interest is discretionary and paid from after-tax profit; dividends are contractual and deductible.",
+   "Interest is contractual and tax-deductible to the firm; dividends are discretionary and paid from after-tax profit.",
+   "Both are contractual obligations, but only dividends are tax-deductible to the firm."
+  ],
+  "answer": 2,
+  "explanation": "Two of the professor's four differences are predictability of income and taxation of interest: interest is promised and reduces taxable income, dividends are declared by the board and are not deductible.",
+  "source": "generated",
+  "ref": "L04 s3; TB 8.2"
+ },
+ {
+  "id": "q08-075",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are differences between debt and equity EXCEPT:",
+  "options": [
+   "Shareholders normally vote; lenders do not.",
+   "Interest is tax-deductible for the firm; dividends are not.",
+   "Lenders are paid before shareholders in a liquidation.",
+   "Debt is riskier to the investor than equity."
+  ],
+  "answer": 3,
+  "explanation": "Debt is the safer claim: contractual payments and priority in liquidation. Equity is the residual and riskier claim, which is why it must offer a higher expected return.",
+  "source": "generated",
+  "ref": "L04 s3"
+ },
+ {
+  "id": "q08-076",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do shareholders require a higher expected return than lenders to the same firm?",
+  "options": [
+   "Because shareholders receive their payments sooner than lenders do.",
+   "Their claim is residual and their income uncertain, while lenders have contractual payments and priority.",
+   "Because lenders can vote for directors and shareholders cannot, so shareholders carry more risk.",
+   "Because dividends are taxed at a higher rate than interest in the hands of the firm."
+  ],
+  "answer": 1,
+  "explanation": "Higher risk requires a higher expected return. Shareholders are paid only after the creditors and only if the board declares a dividend.",
+  "source": "generated",
+  "ref": "L04 s3; TB 8.2"
+ },
+ {
+  "id": "q08-077",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "If a firm skips a dividend on its common shares, it is in default and may be forced into bankruptcy.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "An undeclared dividend is not a liability; shareholders cannot force payment. Missing an interest payment on debt is a default.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-078",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Dividends paid to shareholders reduce the corporation's taxable income.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Dividends are paid out of after-tax profit and are not a deductible expense. Interest on debt is deductible.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-079",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A firm pays $3 million of interest to its lenders and $3 million of dividends to its shareholders. Which payment reduces the firm's corporate income tax?",
+  "options": [
+   "The interest, because it is deductible",
+   "Neither",
+   "Both equally",
+   "The dividends, because they are a distribution of profit"
+  ],
+  "answer": 0,
+  "explanation": "Taxation of interest is a key difference: interest is a deductible cost of financing; dividends come out of profit that has already been taxed.",
+  "source": "generated",
+  "ref": "L04 s3"
+ },
+ {
+  "id": "q08-080",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A retiree wants the most predictable stream of cash from a company. Which claim is best suited?",
+  "options": [
+   "Its common shares, because the price always rises",
+   "Its bonds, because interest is contractual",
+   "Its common shares, because dividends are fixed by law",
+   "Either; both promise a fixed payment"
+  ],
+  "answer": 1,
+  "explanation": "Predictability of income is a debt-versus-equity difference: interest is a promise, dividends are at the board's discretion and can be cut or raised.",
+  "source": "generated",
+  "ref": "L04 s3"
+ }
+]

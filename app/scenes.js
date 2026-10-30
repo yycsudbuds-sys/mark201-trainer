@@ -330,6 +330,9 @@ const SCENES = {
   },
 };
 
+/** The painting kit, so course packs can add provinces in the same style. */
+export const KIT = { W, H, svg, rnd, lin, rad, sky, sun, ridge, pine, pines, cypress, roundTree, palm, temple, aqueduct, tower, ground, mist, motes, flame, smoke, stars };
+
 export const PROVINCE_SCENE = { 1: 'italia', 6: 'hispania', 7: 'gallia', 8: 'britannia', 9: 'germania', 10: 'graecia', 11: 'asia', 12: 'aegyptus' };
 /** A course pack adds its own province scenes here (kind -> painter(s, d, a, dAmb)). */
 export function registerScenes(map) { Object.assign(SCENES, map); }

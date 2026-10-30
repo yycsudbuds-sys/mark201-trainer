@@ -1,0 +1,64 @@
+/* Contrast overrides: WCAG AA (4.5:1 for text) in both themes. Loaded after every other sheet.
+   Measured with tools/contrast_audit.py and checked by eye; see docs/ARCHITECTURE.md §7 and §9.
+   Two surfaces matter: STONE (dark in both themes: nav, castra, orders, palisade, ladder, map pills, wager strip)
+   wants light text; PARCHMENT (question panel, feedback, scrolls, cards in the light theme) wants dark text. */
+
+/* tokens: muted/faint were below AA on parchment (light) and on stone (dark) */
+:root { --faint: #9C8F78; }
+:root[data-theme="light"] { --muted: #4E3D28; --faint: #6B5A42; }
+
+/* eyebrows: Pompeian red on stone was 2.5:1 → gold on stone, dark red on parchment */
+.eyebrow { color: var(--gold-leaf-light); }
+.panel.parchment .eyebrow, .scroll-paper .eyebrow, .feedback .eyebrow, .seal-text .eyebrow, .sheet-paper .eyebrow, .concept .eyebrow, .recall-card .eyebrow, .worked .eyebrow, .numeric-work .eyebrow, .qfigure .eyebrow { color: #5E1313; }
+:root[data-theme="light"] .eyebrow { color: #5E1313; }
+:root[data-theme="light"] .castra .eyebrow, :root[data-theme="light"] .orders .eyebrow, :root[data-theme="light"] .palisade-wrap .eyebrow, :root[data-theme="light"] .nav .eyebrow, :root[data-theme="light"] .cutscene .eyebrow, :root[data-theme="light"] .bronze-quiz .eyebrow { color: var(--gold-leaf-light); }
+
+/* light theme: page headings and intro copy sit straight over the day scene — give them a parchment plate */
+:root[data-theme="light"] .page-head { background: rgba(241, 228, 196, 0.88); border-radius: 10px; padding: 0.7rem 0.95rem; border: 1px solid rgba(59, 42, 23, 0.14); }
+:root[data-theme="light"] .page-head h1, :root[data-theme="light"] .page-head h2, :root[data-theme="light"] .page-head p { color: #2E2114; }
+
+/* stone panels (dark in both themes): secondary text must be light */
+.castra .muted, .castra .stat .k, .castra .small, .castra .tiny, .castra .eyebrow { color: #D9CDB4; }
+.orders .order-title, .orders .tiny.muted, .orders .small.muted { color: #EADBC0; }
+.palisade-wrap .page-head { background: transparent; border: 0; padding: 0; }
+.palisade-wrap .page-head h2, .palisade-wrap .page-head p { color: #EADBC0; }
+.cart-meta { color: #F6E7C8 !important; }
+.nav .nav-foot .tiny.faint, .nav .nav-foot { color: #B4A58A; }
+.bronze-quiz .tiny.muted { color: #C8BCA4; }
+.vault-side .tiny.muted { color: #D9CDB4; }
+:root[data-theme="light"] .vault-side .tiny.muted { color: #2E2114; }
+.wager .wager-bal, .wager.settled .wager-bal, .wager .wager-label { color: #EADBC0 !important; }
+
+/* parchment panels: the question stem in light mode used the dark-theme ivory; secondary text goes dark */
+:root[data-theme="light"] .runner .stem, :root[data-theme="light"] .pursuit-banner, :root[data-theme="light"] .pursuit-banner b, :root[data-theme="light"] .thumb-sub, :root[data-theme="light"] .qcard .small.muted, :root[data-theme="light"] .option.tablet .opt-text, :root[data-theme="light"] .option.tablet.draggable .opt-text { color: #2E2114; }
+.feedback-main .small.muted, .feedback-main .tiny.muted, .numeric-work .num-hint, .qcard .tiny.muted { color: #4E3D28; }
+.seal .seal-label { color: #3A2A17; }
+.feedback .xp-gain, .feedback .dn-gain.win { color: #6B5212; }
+.feedback .verdict.ok { color: #35512B; }
+.option.tablet.dim { opacity: 0.86; }
+.option.tablet.dim .opt-text { color: #3A2A17; }
+.btn.primary .kbd, .btn.ch .kbd { color: #F6E7C8; background: rgba(0, 0, 0, 0.32); border-color: rgba(0, 0, 0, 0.5); }
+
+/* reveal tables inside the dark feedback panel: dark ink on dark cells */
+:root:not([data-theme="light"]) .feedback-vis .fig th, :root:not([data-theme="light"]) .feedback-vis .fig td, :root:not([data-theme="light"]) .feedback-vis .vizcap, :root:not([data-theme="light"]) .feedback-vis figcaption { color: #EADBC0; }
+
+/* the rank ladder: 7px rungs in #8C8070 were 1:1 */
+.rung { color: #C8BCA4; font-size: 0.66rem; }
+.rung.ahead { color: #C8BCA4; }
+.rung-xp { font-size: 0.64rem; color: #D9CDB4; }
+.ladder.compact .rung { min-width: 58px; font-size: 0.64rem; letter-spacing: 0.05em; }
+.ladder.compact .rung.now { min-width: 62px; font-size: 0.66rem; }
+
+/* map labels (parchment pills) */
+.mlabel .ml-num { color: #4A3A26; }
+.mlabel.locked { opacity: 1; }
+.mlabel.locked .ml-name { color: #3E3020; }
+.mlabel.locked .ml-num { color: #4A3A26; }
+
+/* light theme small type on parchment */
+:root[data-theme="light"] .toc-item { color: #2E2114; }
+:root[data-theme="light"] .seg button { color: #3A2A17; }
+:root[data-theme="light"] .seg button.on { color: #F6E7C8; }
+:root[data-theme="light"] .stat .k { color: #4E3D28; }
+:root[data-theme="light"] .castra .stat .k { color: #D9CDB4; }
+:root[data-theme="light"] .board-name .s, :root[data-theme="light"] .li .s { color: #3A2A17; }

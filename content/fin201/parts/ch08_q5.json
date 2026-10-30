@@ -1,0 +1,1271 @@
+[
+ {
+  "id": "q08-161",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A new class of shares will pay a fixed dividend of $2.00 per year, with the first dividend exactly 4 years from today. Required return 8% per annum. What is the price today? Answer in $.",
+  "answer": 19.85,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.00/0.08/1.08^3",
+  "steps": [
+   {
+    "label": "Price at year 3: D/R",
+    "value": 25.0,
+    "check": "2.00/0.08",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price today: discount 3 years",
+    "value": 19.85,
+    "check": "2.00/0.08/1.08^3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "The perpetuity formula values the stream one period before the first payment, i.e. at year 3",
+   "P3 = 2.00/0.08 = $25.00",
+   "P0 = P3/1.08^3 = $19.85"
+  ],
+  "keystrokes": [
+   "2.00 ÷ 0.08 = 25.00",
+   "÷ 1.08 y^x 3 = 19.85"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted 4 years",
+    "value": 18.38,
+    "check": "2.00/0.08/1.08^4",
+    "explain": "The first payment is in year 4, so the perpetuity value sits at year 3."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Did not discount",
+    "value": 25.0,
+    "check": "2.00/0.08",
+    "explain": "$25.00 is the value at year 3, not today."
+   }
+  ],
+  "explanation": "Value one period before the first payment, then discount back.",
+  "source": "generated",
+  "ref": "SM 8-14, 8-21"
+ },
+ {
+  "id": "q08-162",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A company pays a fixed dividend of $4.20 per share every year. Investors require 10.5% per annum. What is the share price?",
+  "options": [
+   "$40.00",
+   "$0.44",
+   "$44.20",
+   "$3.80"
+  ],
+  "answer": 0,
+  "explanation": "P0 = D/R = 4.20/0.105 = $40.00. Dividing by 1.105 treats it as a one-year payment, multiplying by (1 + R) adds growth that is not there, and D × R is meaningless.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-163",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A share paying a fixed $4.48 per year trades at $64.00. What is its required return?",
+  "options": [
+   "6.54%",
+   "14.29%",
+   "7.00%",
+   "3.50%"
+  ],
+  "answer": 2,
+  "explanation": "R = D/P0 = 4.48/64.00 = 7.00%. 6.54% divides by price plus dividend, 14.29% is the price-to-dividend ratio (not a rate), and 3.50% halves the answer for no reason.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-164",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the constant-dividend model relate to the Gordon growth model?",
+  "options": [
+   "It applies only to bonds.",
+   "It uses D1 and the Gordon model uses D0.",
+   "It is the Gordon growth model with g = R.",
+   "It is the Gordon growth model with g = 0."
+  ],
+  "answer": 3,
+  "explanation": "Setting g = 0 in P0 = D1/(R − g) gives P0 = D/R.",
+  "source": "generated",
+  "ref": "L04 s19"
+ },
+ {
+  "id": "q08-165",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a constant-dividend stock have a zero capital gain yield, with all of R coming from the dividend yield?",
+  "options": [
+   "The price D/R never changes, so the only return is the dividend: D/P0 = R.",
+   "Because constant dividends are exempt from tax, so no capital gain arises.",
+   "Because the share price falls each year by the amount of the dividend.",
+   "Because the dividends are reinvested, so no gain shows up in the price."
+  ],
+  "answer": 0,
+  "explanation": "With g = 0 the price is constant, so R = D1/P0 + 0.",
+  "source": "generated",
+  "ref": "L04 s20"
+ },
+ {
+  "id": "q08-166",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following would NOT be valued as a constant-dividend perpetuity?",
+  "options": [
+   "A common share whose policy is a fixed annual dividend",
+   "A share promising $5 a year with no end date",
+   "A common share whose dividend grows 3% a year",
+   "A preferred share with a fixed dividend"
+  ],
+  "answer": 2,
+  "explanation": "A steady 3% growth makes it a growing perpetuity (Gordon growth). The others are level, indefinite payments.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-167",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "For a constant-dividend perpetuity, the price is expected to rise at the rate R each year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "P1 = D/R = P0 since there is no growth in the dividend; the whole return R is earned as dividend yield, with no price change.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-168",
+  "concept": "c08-constant-dividend",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A share paying a fixed $3.20 a year falls from $40 to $32. What happened to the market's required return?",
+  "options": [
+   "It cannot be determined.",
+   "It stayed at 8%.",
+   "It fell from 10% to 8%.",
+   "It rose from 8% to 10%."
+  ],
+  "answer": 3,
+  "explanation": "R = D/P0: 3.20/40 = 8% and 3.20/32 = 10%. With the dividend fixed, a lower price means a higher required return.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-169",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The Gordon growth model for a stock whose dividend grows at a constant rate g forever is:",
+  "options": [
+   "P0 = D1/(R + g)",
+   "P0 = D1/(R − g)",
+   "P0 = D0/(R − g)",
+   "P0 = D1/R × (1 + g)"
+  ],
+  "answer": 1,
+  "explanation": "The price is the next dividend over R − g, valid for g < R. D1 = D0(1 + g) when D0 was just paid.",
+  "source": "generated",
+  "ref": "L04 s19-20; FS p1"
+ },
+ {
+  "id": "q08-170",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which wording tells you that the dividend given is D0 (so it must be grown once) rather than D1?",
+  "options": [
+   "The dividend expected in one year is $2.00",
+   "The company will pay $2.00 next year",
+   "The company has just paid a dividend of $2.00",
+   "The next dividend will be $2.00"
+  ],
+  "answer": 2,
+  "explanation": "'Just paid' is today's dividend D0; D1 = D0(1 + g). The other phrases already give D1.",
+  "source": "generated",
+  "ref": "L04 s21; TB 8.1"
+ },
+ {
+  "id": "q08-171",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "In the Gordon growth model, the price at time t is:",
+  "options": [
+   "Pt = D_{t+1}/(R − g), using the next dividend",
+   "Pt = D_{t+1}/R, since the price at t has no growth",
+   "Pt = Dt/(R − g), using the dividend at date t",
+   "Pt = D1/(R − g), the same for every date t"
+  ],
+  "answer": 0,
+  "explanation": "The formula values the stream one period before the first dividend in the numerator, so P4 uses D5.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-1"
+ },
+ {
+  "id": "q08-172",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT required for the Gordon growth formula to apply?",
+  "options": [
+   "dividends grow at the same rate forever",
+   "g must be positive",
+   "the first dividend in the formula is one period away",
+   "g must be less than R"
+  ],
+  "answer": 1,
+  "explanation": "Negative growth is fine (SM 8-19). The requirement is R > g and constant growth forever.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-173",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the share price grow at the dividend growth rate g in the Gordon model?",
+  "options": [
+   "Because g is a discount rate, so each year's price is discounted up by g.",
+   "Because investors raise the required return R by g each year as the firm matures.",
+   "Because the dividend yield D1/P0 equals g, so the price must grow at the yield.",
+   "Pt = D_{t+1}/(R − g) and D_{t+1} grows at g, so each price is the last one × (1 + g)."
+  ],
+  "answer": 3,
+  "explanation": "P4 = D5/(R − g) = P0(1 + g)^4. This is why the capital gain yield equals g.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8 CTQ 7"
+ },
+ {
+  "id": "q08-174",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Using the Gordon formula with R = 8% and g = 9% gives a negative number. What does it mean?",
+  "options": [
+   "The formula does not apply: perpetual growth cannot exceed R, so re-examine the inputs.",
+   "The stock is being given away, since a negative price means investors would be paid to hold it.",
+   "The stock is worth the absolute value of the result, since a negative sign is meaningless.",
+   "The stock is worth nothing, because the negative value means no dividends will be paid."
+  ],
+  "answer": 0,
+  "explanation": "If g ≥ R the present value of the dividends is infinite. The model is only valid for g < R.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-30"
+ },
+ {
+  "id": "q08-175",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The Gordon growth model cannot be used when dividends are expected to shrink at a constant percentage rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Use a negative g (R − g then becomes R plus the rate of decline). SM 8-19 values a stock with g = −4%.",
+  "source": "generated",
+  "ref": "SM 8-19"
+ },
+ {
+  "id": "q08-176",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Prairie Gas has just paid a dividend of $1.85 per share. Dividends are expected to grow at 3.5% per annum forever, and investors require 10.5% per annum. What is the share price today? Answer in $.",
+  "answer": 27.35,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.85*1.035/(0.105-0.035)",
+  "steps": [
+   {
+    "label": "Next dividend D1 = D0(1 + g)",
+    "value": 1.9147,
+    "check": "1.85*1.035",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 27.35,
+    "check": "1.85*1.035/(0.105-0.035)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "D1 = D0(1 + g) = 1.85 × 1.035 = 1.9147",
+   "P0 = D1/(R − g) = 1.9147/(0.105 − 0.035) = 1.9147/0.070 = $27.35"
+  ],
+  "keystrokes": [
+   "1.85 × 1.035 = 1.91475",
+   "÷ (0.105 − 0.035) = 27.35"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0 instead of D1",
+    "value": 26.43,
+    "check": "1.85/(0.105-0.035)",
+    "explain": "The dividend was just paid; the model needs next year's dividend."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew the dividend twice",
+    "value": 28.31,
+    "check": "1.85*1.035^2/(0.105-0.035)",
+    "explain": "D1 is one step of growth from D0."
+   },
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R",
+    "value": 13.68,
+    "check": "1.85*1.035/(0.105+0.035)",
+    "explain": "The denominator is R minus g."
+   }
+  ],
+  "explanation": "Grow the just-paid dividend once, then divide by R − g.",
+  "source": "generated",
+  "ref": "SM 8-1; L04 s21"
+ },
+ {
+  "id": "q08-177",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Red River Bank will pay a dividend of $2.85 per share one year from now. Dividends grow at 5.2% per annum, and the required return is 10.7% per annum. What is the share price today? Answer in $.",
+  "answer": 51.82,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.85/(0.107-0.052)",
+  "steps": [
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 51.82,
+    "check": "2.85/(0.107-0.052)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "The $2.85 is already D1, so do not grow it",
+   "P0 = 2.85/(0.107 − 0.052) = 2.85/0.055 = $51.82"
+  ],
+  "keystrokes": [
+   "0.107 − 0.052 = 0.055",
+   "2.85 ÷ 0.055 = 51.82"
+  ],
+  "errors": [
+   {
+    "id": "grew-twice",
+    "label": "Grew D1 by (1 + g) again",
+    "value": 54.51,
+    "check": "2.85*1.052/(0.107-0.052)",
+    "explain": "'Next year's dividend' is D1 already."
+   },
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R",
+    "value": 17.92,
+    "check": "2.85/(0.107+0.052)",
+    "explain": "R minus g, not plus."
+   }
+  ],
+  "explanation": "When D1 is given, divide it by R − g directly.",
+  "source": "generated",
+  "ref": "SM 8-4; TB 8.1"
+ },
+ {
+  "id": "q08-178",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Maple Leaf Brewing has just paid a dividend of $2.20 per share. Dividends grow at 5% per annum and the required return is 12% per annum. What will the share price be in 4 years? Answer in $.",
+  "answer": 40.11,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.20*1.05/(0.12-0.05)*1.05^4",
+  "steps": [
+   {
+    "label": "D1 = D0(1 + g)",
+    "value": 2.31,
+    "check": "2.20*1.05",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 33.0,
+    "check": "2.20*1.05/(0.12-0.05)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price in 4 years P4 = P0(1 + g)^4",
+    "value": 40.11,
+    "check": "2.20*1.05/(0.12-0.05)*1.05^4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 2.20 × 1.05 = 2.31",
+   "P0 = D1/(R − g) = 2.31/0.07 = 33.00",
+   "P4 = P0(1 + g)^4 = 33.00 × 1.05^4 = $40.11",
+   "Check: D5 = 2.20 × 1.05^5 = 2.8078; P4 = D5/(R − g) = 2.8078/0.07 = 40.11"
+  ],
+  "keystrokes": [
+   "2.20 × 1.05 ÷ 0.07 = 33.00",
+   "× 1.05 y^x 4 = 40.11"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D4 instead of D5 for P4",
+    "value": 38.2,
+    "check": "2.20*1.05^4/(0.12-0.05)",
+    "explain": "The price at year 4 uses the dividend one period later, D5."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Gave today's price",
+    "value": 33.0,
+    "check": "2.20*1.05/(0.12-0.05)",
+    "explain": "The price grows at g, so P4 is higher than P0."
+   },
+   {
+    "id": "extra-year-of-growth",
+    "label": "Grew five years instead of four",
+    "value": 42.12,
+    "check": "2.20*1.05/(0.12-0.05)*1.05^5",
+    "explain": "Four years of price growth is (1 + g)^4."
+   }
+  ],
+  "explanation": "The price at time t grows at g: Pt = P0(1 + g)^t = D_{t+1}/(R − g).",
+  "source": "generated",
+  "ref": "SM 8-1"
+ },
+ {
+  "id": "q08-179",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A declining business has just paid a dividend of $6.80 per share. Dividends are expected to fall 3% per annum forever, and the required return is 9% per annum. What is the share price today? Answer in $.",
+  "answer": 54.97,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "6.80*(1-0.03)/(0.09+0.03)",
+  "steps": [
+   {
+    "label": "D1 = D0(1 − 0.03)",
+    "value": 6.596,
+    "check": "6.80*(1-0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g), with g = −3%",
+    "value": 54.97,
+    "check": "6.80*(1-0.03)/(0.09+0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 6.80 × (1 − 0.03) = 6.596",
+   "R − g = 0.09 − (−0.03) = 0.12",
+   "P0 = 6.596/0.12 = $54.97"
+  ],
+  "keystrokes": [
+   "6.80 × 0.97 = 6.596",
+   "÷ (0.09 + 0.03) = 54.97"
+  ],
+  "errors": [
+   {
+    "id": "g-sign",
+    "label": "Subtracted 3% from R instead of adding",
+    "value": 109.93,
+    "check": "6.80*0.97/(0.09-0.03)",
+    "explain": "g is −3%, so R − g = 0.09 + 0.03 = 0.12."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0",
+    "value": 56.67,
+    "check": "6.80/(0.09+0.03)",
+    "explain": "Use the next dividend D1 = 6.596."
+   },
+   {
+    "id": "wrong-growth-sign",
+    "label": "Grew D0 by +3%",
+    "value": 58.37,
+    "check": "6.80*1.03/(0.09+0.03)",
+    "explain": "Declining dividends shrink: D1 = 6.80 × 0.97."
+   }
+  ],
+  "explanation": "Negative growth is entered with its sign: D1 = D0(1 + g) = D0 × 0.97 and R − g = R + 0.03 (SM 8-19).",
+  "source": "generated",
+  "ref": "SM 8-19"
+ },
+ {
+  "id": "q08-180",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock sells for $48.00. Dividends grow at 4% per annum and the required return is 9.5% per annum. What dividend did the company just pay (D0)? Answer in $.",
+  "answer": 2.54,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "48.00*(0.095-0.04)/1.04",
+  "steps": [
+   {
+    "label": "Next dividend D1 = P0(R − g)",
+    "value": 2.64,
+    "check": "48.00*(0.095-0.04)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Dividend just paid D0 = D1/(1 + g)",
+    "value": 2.5385,
+    "check": "48.00*(0.095-0.04)/1.04",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P0 = D0(1 + g)/(R − g)  →  D0 = P0(R − g)/(1 + g)",
+   "D1 = 48.00 × 0.055 = 2.64",
+   "D0 = 2.64/1.04 = $2.54"
+  ],
+  "keystrokes": [
+   "48 × 0.055 = 2.64",
+   "÷ 1.04 = 2.54"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Reported D1 as D0",
+    "value": 2.64,
+    "check": "48.00*(0.095-0.04)",
+    "explain": "The Gordon numerator is D1; D0 is D1 ÷ (1 + g)."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Multiplied by (1 + g) instead of dividing",
+    "value": 2.75,
+    "check": "48.00*(0.095-0.04)*1.04",
+    "explain": "D0 is the earlier dividend, so it is smaller than D1."
+   }
+  ],
+  "explanation": "Rearrange the Gordon formula: D1 = P0(R − g), then D0 = D1/(1 + g) (SM 8-20).",
+  "source": "generated",
+  "ref": "SM 8-20"
+ },
+ {
+  "id": "q08-181",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Beacon Pipelines has just paid a dividend of $1.60 per share. Dividends will grow 6% per annum and the required return is 13% per annum. What is the share price?",
+  "options": [
+   "$22.86",
+   "$25.68",
+   "$8.93",
+   "$24.23"
+  ],
+  "answer": 3,
+  "explanation": "P0 = D0(1 + g)/(R − g) = 1.696/0.07 = $24.23. $22.86 uses D0, $25.68 grows the dividend twice, and $8.93 adds g to R.",
+  "source": "generated",
+  "ref": "SM 8-1"
+ },
+ {
+  "id": "q08-182",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "The next dividend of Granite Mutual will be $3.30 per share. Dividends grow 4.5% per annum and the required return is 12.5% per annum. What is the share price?",
+  "options": [
+   "$43.11",
+   "$19.41",
+   "$41.25",
+   "$26.40"
+  ],
+  "answer": 2,
+  "explanation": "P0 = D1/(R − g) = 3.30/0.080 = $41.25. $43.11 grows D1 again, $19.41 adds g to R, and $26.40 ignores growth altogether.",
+  "source": "generated",
+  "ref": "SM 8-4"
+ },
+ {
+  "id": "q08-183",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bluewater Utilities has just paid $2.00 per share. Dividends grow at 5% per annum and the required return is 11%. What will the share price be in 3 years?",
+  "options": [
+   "$38.59",
+   "$40.52",
+   "$42.54",
+   "$35.00"
+  ],
+  "answer": 1,
+  "explanation": "P3 = D4/(R − g) = 2.00 × 1.05^4/0.06 = $40.52 (equal to P0 × 1.05^3). $35.00 is today's price, $38.59 uses D3, and $42.54 uses D5.",
+  "source": "generated",
+  "ref": "SM 8-1"
+ },
+ {
+  "id": "q08-184",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "To find a stock's price at time 6 with the Gordon growth formula, which dividend goes in the numerator?",
+  "options": [
+   "D1",
+   "D6",
+   "D5",
+   "D7"
+  ],
+  "answer": 3,
+  "explanation": "The price at time t uses the dividend one period later, D_{t+1}.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-14"
+ },
+ {
+  "id": "q08-185",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Holding D1 and g fixed, what happens to the Gordon growth price as the required return R rises?",
+  "options": [
+   "The price falls only when g also falls.",
+   "The price falls, and falls sharply when R is close to g.",
+   "The price is unchanged.",
+   "The price rises because dividends are discounted more."
+  ],
+  "answer": 1,
+  "explanation": "P0 = D1/(R − g): a larger R widens the denominator. SM 8-9: a small change in R has a dramatic effect on the price.",
+  "source": "generated",
+  "ref": "SM 8-9"
+ },
+ {
+  "id": "q08-186",
+  "concept": "c08-gordon-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "Put the steps for a Gordon valuation with a 'just paid' dividend in order.",
+  "options": [
+   "D1 = D0(1 + g); P0 = D1/(R − g); dividend yield = D1/P0",
+   "P0 = D1/R; D1 = D0(1 + g); yield = g",
+   "yield = D1/P0; P0 = D1/(R − g); D1 = D0(1 + g)",
+   "P0 = D0/(R − g); D1 = P0(1 + g); yield = D1/P0"
+  ],
+  "answer": 0,
+  "explanation": "Grow D0 once to get D1, divide by R − g for the price, then dividend yield = D1/P0.",
+  "source": "generated",
+  "ref": "L04 s21"
+ },
+ {
+  "id": "q08-187",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Rearranging the Gordon growth model gives the required return R as:",
+  "options": [
+   "R = D0/P0 + g",
+   "R = g/P0 + D1",
+   "R = D1/P0 + g",
+   "R = D1/P0 − g"
+  ],
+  "answer": 2,
+  "explanation": "P0 = D1/(R − g) rearranges to R = D1/P0 + g. D1/P0 is the dividend yield and g is the capital gain rate.",
+  "source": "generated",
+  "ref": "L04 s20; FS p1"
+ },
+ {
+  "id": "q08-188",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A stock sells for $20, pays a next dividend of $1 and its dividends grow 10% a year. In R = 5% + 10% = 15%, the 10% is the:",
+  "options": [
+   "payout ratio, which is 1 − b",
+   "return on equity, which drives b × ROE",
+   "dividend yield, D1/P0, which is 5%",
+   "capital gains yield, equal to g in this model"
+  ],
+  "answer": 3,
+  "explanation": "In the constant growth model the price grows at g, so the capital gains yield equals the dividend growth rate.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-189",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "For most dividend-paying companies, which part of the required return is typically larger?",
+  "options": [
+   "They are always equal, since R is split in half",
+   "The capital gains yield; dividend yields are rarely over 5%",
+   "Neither; R has only one component, the dividend yield",
+   "The dividend yield, because dividends are the only cash return"
+  ],
+  "answer": 1,
+  "explanation": "SM CTQ 6: the capital gains yield is typically larger; for non-payers it is the whole return.",
+  "source": "generated",
+  "ref": "SM 8 CTQ 6"
+ },
+ {
+  "id": "q08-190",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the constant growth model is NOT correct?",
+  "options": [
+   "The dividend yield equals the dividend growth rate.",
+   "The share price grows at the same rate g as the dividends.",
+   "The required return is R = D1/P0 + g.",
+   "The capital gains yield equals the dividend growth rate g."
+  ],
+  "answer": 0,
+  "explanation": "The dividend yield D1/P0 = R − g, which is not generally equal to g. The two components together make R.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-191",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the capital gains yield equal to g in the constant growth model?",
+  "options": [
+   "Because dividends are reinvested in the stock at the rate g each year.",
+   "Because R is constant, so the price must rise at R − g.",
+   "P0 = D1/(R − g) grows with the dividend, so Pt = P0(1 + g)^t.",
+   "Because the dividend yield is zero in the constant growth model."
+  ],
+  "answer": 2,
+  "explanation": "A price proportional to a dividend growing at g also grows at g.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8 CTQ 7"
+ },
+ {
+  "id": "q08-192",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Stock W has a dividend yield of 7% and growth of 10%. Stock X has a dividend yield of 17% and no growth. Both have a required return of 17%. What does this show?",
+  "options": [
+   "W cannot exist, because its growth rate exceeds its dividend yield.",
+   "X is riskier than W because its dividend yield is higher.",
+   "The same R can come mostly from price growth (W) or entirely from income (X).",
+   "W is worth more than X at any price because its growth rate is higher."
+  ],
+  "answer": 2,
+  "explanation": "SM 8-30: high-growth stocks have an appreciable capital gains component and small current income; mature, no-growth stocks pay mostly income.",
+  "source": "generated",
+  "ref": "SM 8-30"
+ },
+ {
+  "id": "q08-193",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For a stock that pays no dividend, the required return equals its capital gains yield.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "With D1 = 0, R = 0 + g: all of the return comes from price growth.",
+  "source": "generated",
+  "ref": "SM 8 CTQ 6"
+ },
+ {
+  "id": "q08-194",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "In the constant growth model the dividend yield D1/P0 rises every year as the share price grows.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Since Pt = D_{t+1}/(R − g), the yield D_{t+1}/Pt = R − g in every year: the price and the dividend grow at the same rate g.",
+  "source": "generated",
+  "ref": "L04 s20"
+ },
+ {
+  "id": "q08-195",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Hudson Pipeline will pay a dividend of $2.04 per share next year. The shares trade at $41.50 and dividends are expected to grow 4.6% per annum. What return does the stock offer? Answer in % per annum.",
+  "answer": 9.52,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(2.04/41.50+0.046)*100",
+  "steps": [
+   {
+    "label": "Dividend yield D1/P0",
+    "value": 4.9157,
+    "check": "2.04/41.50*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Required return R = D1/P0 + g",
+    "value": 9.5157,
+    "check": "(2.04/41.50+0.046)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Dividend yield = 2.04/41.50 = 4.9157%",
+   "R = D1/P0 + g = 4.9157% + 4.6% = 9.5157% ≈ 9.52% per annum"
+  ],
+  "keystrokes": [
+   "2.04 ÷ 41.50 = 0.04916",
+   "+ 0.046 = 0.0952"
+  ],
+  "errors": [
+   {
+    "id": "omitted-growth",
+    "label": "Gave only the dividend yield",
+    "value": 4.92,
+    "check": "2.04/41.50*100",
+    "explain": "R also includes the capital gains yield g."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew D1 by (1 + g) again",
+    "value": 9.74,
+    "check": "(2.04*1.046/41.50+0.046)*100",
+    "explain": "The $2.04 is already next year's dividend."
+   },
+   {
+    "id": "g-as-r",
+    "label": "Gave only g",
+    "value": 4.6,
+    "check": "4.6",
+    "explain": "g is just the capital gains part."
+   }
+  ],
+  "explanation": "R = D1/P0 + g. Use the NEXT dividend.",
+  "source": "generated",
+  "ref": "SM 8-2"
+ },
+ {
+  "id": "q08-196",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Skyline Rail has just paid a dividend of $1.76 per share. The stock trades at $36.00 and dividends grow 5% per annum. What return does the stock offer? Answer in % per annum.",
+  "answer": 10.13,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1.76*1.05/36.00+0.05)*100",
+  "steps": [
+   {
+    "label": "Next dividend D1 = D0(1 + g)",
+    "value": 1.848,
+    "check": "1.76*1.05",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "R = D1/P0 + g",
+    "value": 10.1333,
+    "check": "(1.76*1.05/36.00+0.05)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 1.76 × 1.05 = 1.848",
+   "R = 1.848/36.00 + 0.05 = 10.1333% ≈ 10.13% per annum"
+  ],
+  "keystrokes": [
+   "1.76 × 1.05 = 1.848",
+   "÷ 36 + 0.05 = 0.10133"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0 for the yield",
+    "value": 9.89,
+    "check": "(1.76/36.00+0.05)*100",
+    "explain": "The yield is next year's dividend over today's price."
+   },
+   {
+    "id": "omitted-growth",
+    "label": "Left out g",
+    "value": 5.13,
+    "check": "1.76*1.05/36.00*100",
+    "explain": "R has two components."
+   }
+  ],
+  "explanation": "Grow the just-paid dividend to D1 before computing the yield.",
+  "source": "generated",
+  "ref": "SM 8-2; L04 s20"
+ },
+ {
+  "id": "q08-197",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock trades at $45.00 and will pay a dividend of $1.62 next year. Investors require 9.4% per annum. What constant dividend growth rate is implied? Answer in % per annum.",
+  "answer": 5.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(0.094-1.62/45.00)*100",
+  "steps": [
+   {
+    "label": "Dividend yield D1/P0",
+    "value": 3.6,
+    "check": "1.62/45.00*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Implied growth g = R − D1/P0",
+    "value": 5.8,
+    "check": "(0.094-1.62/45.00)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "R = D1/P0 + g  →  g = R − D1/P0",
+   "Dividend yield = 1.62/45.00 = 3.60%",
+   "g = 9.4% − 3.60% = 5.80% per annum"
+  ],
+  "keystrokes": [
+   "1.62 ÷ 45 = 0.036",
+   "0.094 − 0.036 = 0.058"
+  ],
+  "errors": [
+   {
+    "id": "r-plus-g",
+    "label": "Added the yield to R",
+    "value": 13.0,
+    "check": "(0.094+1.62/45.00)*100",
+    "explain": "g = R minus the yield."
+   },
+   {
+    "id": "g-as-r",
+    "label": "Used the yield as g",
+    "value": 3.6,
+    "check": "1.62/45.00*100",
+    "explain": "3.6% is the dividend yield, not the growth rate."
+   }
+  ],
+  "explanation": "The capital gains yield is what is left of R after the dividend yield.",
+  "source": "generated",
+  "ref": "SM 8-3; L04 s20"
+ },
+ {
+  "id": "q08-198",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock sells for $48.00 and has a required return of 12%. Its dividend yield equals its capital gains yield. What dividend did the company just pay (D0)? Answer in $.",
+  "answer": 2.72,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.06*48.00/1.06",
+  "steps": [
+   {
+    "label": "Dividend yield = capital gains yield = R/2",
+    "value": 6.0,
+    "check": "12/2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Next dividend D1 = yield × P0",
+    "value": 2.88,
+    "check": "0.06*48.00",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Dividend just paid D0 = D1/(1 + g)",
+    "value": 2.717,
+    "check": "0.06*48.00/1.06",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Both yields are R/2 = 6%, so g = 6%",
+   "D1 = 0.06 × 48.00 = 2.88",
+   "D1 = D0(1 + g)  →  D0 = 2.88/1.06 = $2.72"
+  ],
+  "keystrokes": [
+   "48 × 0.06 = 2.88",
+   "÷ 1.06 = 2.72"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Reported D1",
+    "value": 2.88,
+    "check": "0.06*48.00",
+    "explain": "The dividend yield uses D1, the dividend just paid is D0 = D1/(1 + g)."
+   },
+   {
+    "id": "whole-r",
+    "label": "Used the whole 12% as the dividend yield",
+    "value": 5.14,
+    "check": "0.12*48.00/1.12",
+    "explain": "The two yields share R equally here."
+   }
+  ],
+  "explanation": "Split R into two equal parts, get D1 from the yield, then take out one year of growth.",
+  "source": "generated",
+  "ref": "SM 8-6"
+ },
+ {
+  "id": "q08-199",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Investors require 10.8% per annum on a stock whose dividends grow 4.3% per annum. The next dividend is $2.99 per share. What is the share price? (Find the dividend yield R − g first.) Answer in $.",
+  "answer": 46.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.99/(0.108-0.043)",
+  "steps": [
+   {
+    "label": "Dividend yield = R − g",
+    "value": 6.5,
+    "check": "(0.108-0.043)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Share price P0 = D1/(R − g)",
+    "value": 46.0,
+    "check": "2.99/(0.108-0.043)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "R = D1/P0 + g  →  dividend yield = R − g = 10.8% − 4.3% = 6.5%",
+   "P0 = D1/yield = 2.99/0.065 = $46.00"
+  ],
+  "keystrokes": [
+   "0.108 − 0.043 = 0.065",
+   "2.99 ÷ 0.065 = 46.00"
+  ],
+  "errors": [
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R",
+    "value": 19.8,
+    "check": "2.99/(0.108+0.043)",
+    "explain": "The yield is R − g."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Divided by R alone",
+    "value": 27.69,
+    "check": "2.99/0.108",
+    "explain": "Using R as the yield forgets the capital gains part."
+   }
+  ],
+  "explanation": "Dividend yield = R − g, so price = D1 ÷ yield.",
+  "source": "generated",
+  "ref": "SM 8-5; L04 s20"
+ },
+ {
+  "id": "q08-200",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Next year's dividend is $2.46, the share price is $41.00 and dividends grow 5.5% per annum. What is the required return?",
+  "options": [
+   "11.50%",
+   "6.00%",
+   "11.83%",
+   "−0.50%"
+  ],
+  "answer": 0,
+  "explanation": "R = D1/P0 + g = 6.00% + 5.50% = 11.50%. 6.00% omits g, 11.83% grows D1 again, and 0.50% subtracts the yield from g.",
+  "source": "generated",
+  "ref": "SM 8-2"
+ }
+]

@@ -1,0 +1,883 @@
+[
+ {
+  "id": "q08-081",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Lenders to a firm earn 6% on its loans, while its shareholders expect 12% on their shares. What does the difference mainly reflect?",
+  "options": [
+   "Shareholders being paid before lenders",
+   "The higher tax paid by lenders",
+   "Lenders having voting rights",
+   "The higher risk of the residual equity claim"
+  ],
+  "answer": 3,
+  "explanation": "Lower-risk contractual claims require lower returns; the riskier residual claim requires more.",
+  "source": "generated",
+  "ref": "L04 s3"
+ },
+ {
+  "id": "q08-082",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Interest is tax-deductible to the firm, whereas dividends are paid out of _____ profit.",
+  "options": [
+   "pre-tax",
+   "operating",
+   "after-tax",
+   "gross"
+  ],
+  "answer": 2,
+  "explanation": "Dividends are a distribution of profit that has already been taxed, so they do not reduce the firm's tax.",
+  "source": "generated",
+  "ref": "L04 s3"
+ },
+ {
+  "id": "q08-083",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Common stock has no maturity date, whereas debt normally does.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "A share is a claim on the firm's cash flows indefinitely, which is why equity is valued as a perpetuity or growing perpetuity. Debt must be repaid at maturity.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-084",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which security is the residual claimant, paid only after all contractual claims are satisfied?",
+  "options": [
+   "A bond",
+   "Accounts payable to suppliers",
+   "Common stock",
+   "A bank loan"
+  ],
+  "answer": 2,
+  "explanation": "Common shareholders receive what remains after creditors and lenders are paid, which makes equity both the riskiest and the highest-return claim.",
+  "source": "generated",
+  "ref": "L04 s3; TB 8.2"
+ },
+ {
+  "id": "q08-085",
+  "concept": "c08-debt-vs-equity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which of these is one of the four differences between debt and equity listed in the lecture recap?",
+  "options": [
+   "The size of the bid-ask spread",
+   "Predictability of income (interest versus dividends)",
+   "Whether the firm has a ticker symbol",
+   "Choice between primary and secondary markets"
+  ],
+  "answer": 1,
+  "explanation": "The recap lists risk levels, voting rights, predictability of income and taxation of interest.",
+  "source": "generated",
+  "ref": "L04 s3; REV p3"
+ },
+ {
+  "id": "q08-086",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a primary market transaction, who receives the money?",
+  "options": [
+   "The company issuing the shares",
+   "The investor's broker",
+   "The stock exchange",
+   "The investor selling the shares"
+  ],
+  "answer": 0,
+  "explanation": "The primary market is where a company sells new securities to investors, so the proceeds go to the company. In the secondary market, shares change hands between investors.",
+  "source": "generated",
+  "ref": "L04 s4; L01 s38"
+ },
+ {
+  "id": "q08-087",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Maya buys 200 shares of an already-listed company from another investor through her broker. This is a:",
+  "options": [
+   "initial public offering",
+   "seasoned equity offering",
+   "primary market transaction",
+   "secondary market transaction"
+  ],
+  "answer": 3,
+  "explanation": "Existing shares trading between investors are secondary-market trades; the company receives no money. IPOs and seasoned equity offerings are primary-market sales.",
+  "source": "generated",
+  "ref": "L04 s4"
+ },
+ {
+  "id": "q08-088",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a securities dealer differ from a broker?",
+  "options": [
+   "A dealer earns a commission on each trade, while a broker earns the bid-ask spread as profit.",
+   "A broker holds an inventory and quotes the bid and ask; a dealer simply arranges trades without inventory.",
+   "A dealer holds an inventory and quotes a bid and an ask; a broker matches buyers and sellers without inventory.",
+   "A broker sets the bid and ask prices for the stock, while a dealer only matches orders at those prices."
+  ],
+  "answer": 2,
+  "explanation": "Dealers make a market and earn the bid-ask spread; brokers act as agents and earn commissions.",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-089",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which of these is a Canadian stock exchange?",
+  "options": [
+   "NASDAQ",
+   "TSX",
+   "ECN",
+   "NYSE"
+  ],
+  "answer": 1,
+  "explanation": "The TSX (Toronto Stock Exchange) is Canada's main exchange. The NYSE and NASDAQ are American, and ECNs are electronic trading networks rather than exchanges.",
+  "source": "generated",
+  "ref": "L04 s4"
+ },
+ {
+  "id": "q08-090",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock is quoted bid $60.31, ask $60.35. An investor buys 1,000 shares at the ask and immediately sells them at the bid. Ignoring commissions, how much does she lose?",
+  "options": [
+   "$40.00",
+   "$0.04",
+   "$80.00",
+   "$0.00"
+  ],
+  "answer": 0,
+  "explanation": "She pays 60.35 and receives 60.31 per share, so the round trip costs the spread 0.04 × 1,000 = $40.00. $0.04 is the per-share spread, $80.00 double counts, and $0 wrongly assumes you trade at the last price.",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-091",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The bid price is the price at which a dealer is willing to sell a security.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "The bid is the price the dealer will pay (buy at); the ask is the price at which the dealer sells.",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-092",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "A company receives no money when its shares trade between investors. Why would it still want a good secondary market?",
+  "options": [
+   "Because the company earns part of the bid-ask spread each time its shares trade between investors.",
+   "Because secondary trading cancels part of the company's outstanding debt over time.",
+   "Because secondary-market trades set the company's dividend for the following year.",
+   "Investors pay more for shares they can sell easily, so the company raises new capital on better terms."
+  ],
+  "answer": 3,
+  "explanation": "Liquidity lowers investors' required return and supports the share price, which makes later primary-market issues cheaper.",
+  "source": "generated",
+  "ref": "L01 s41; L04 s4"
+ },
+ {
+  "id": "q08-093",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a market order differ from a limit order?",
+  "options": [
+   "A limit order is always executed before any market order that arrives at the same time.",
+   "A market order can only be placed on the NYSE, while limit orders are used on NASDAQ.",
+   "A market order trades at once at the best available price; a limit order trades only at its price or better.",
+   "A market order fixes the price you will pay; a limit order fixes only the time of execution."
+  ],
+  "answer": 2,
+  "explanation": "Market orders trade at the lowest ask (buys) or highest bid (sells). Limit orders wait in the book until the price is reached.",
+  "source": "generated",
+  "ref": "L04 s4; L01 s42"
+ },
+ {
+  "id": "q08-094",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which is NOT a feature of a limit order to buy?",
+  "options": [
+   "It guarantees immediate execution",
+   "It waits in the order book at the limit price",
+   "It sets the maximum price you will pay",
+   "It may not be filled if the price never falls to the limit"
+  ],
+  "answer": 0,
+  "explanation": "Immediate execution is the feature of a market order. A limit order trades price certainty for execution uncertainty.",
+  "source": "generated",
+  "ref": "L04 s4"
+ },
+ {
+  "id": "q08-095",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which description fits NASDAQ?",
+  "options": [
+   "An exchange where only Canadian firms are listed",
+   "A computer network of dealers; several market makers compete in each active stock",
+   "A website where only individuals, not dealers, post orders",
+   "A single trading floor on which one designated person handles every stock"
+  ],
+  "answer": 1,
+  "explanation": "NASDAQ has multiple market makers per active stock and is a dealer network; the NYSE assigns each stock to one designated market maker (DMM).",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-096",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The difference between the ask and the bid price is the dealer's _____.",
+  "options": [
+   "commission",
+   "premium",
+   "dividend",
+   "spread"
+  ],
+  "answer": 3,
+  "explanation": "Dealers buy at the bid and sell at the ask; the spread is their basic source of profit.",
+  "source": "generated",
+  "ref": "TB 8.3"
+ },
+ {
+  "id": "q08-097",
+  "concept": "c08-markets-trading",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Bid $24.10, ask $24.18, last trade $24.14. You place a market order to sell 500 shares. What price per share do you receive?",
+  "options": [
+   "$24.12, the midpoint of the day's range",
+   "$24.18, the ask",
+   "$24.14, the last price",
+   "$24.10, the bid"
+  ],
+  "answer": 3,
+  "explanation": "A market sell hits the highest bid. You buy at the ask and sell at the bid, which is the cost of immediacy.",
+  "source": "generated",
+  "ref": "L01 s42; TB 8.3"
+ },
+ {
+  "id": "q08-098",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Preferred stock usually has:",
+  "options": [
+   "a tax-deductible dividend",
+   "a dividend that grows with earnings and a vote on every board election",
+   "a fixed dividend with priority over common dividends and in liquidation",
+   "a maturity date and a promised repayment of principal"
+  ],
+  "answer": 2,
+  "explanation": "Preferred is a form of equity with a stated dividend, priority over common stock, and often no vote. Its dividends are not deductible and skipping them is not a default.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-099",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A share promises a fixed $4.50 dividend every year forever. The right pricing formula is:",
+  "options": [
+   "P0 = D/R, a perpetuity",
+   "P0 = D1/(1 + R)",
+   "P0 = EPS1/R + NPVGO",
+   "P0 = D1/(R − g), a growing perpetuity"
+  ],
+  "answer": 0,
+  "explanation": "A fixed dividend means zero growth, so the stream is an ordinary perpetuity: P0 = D/R.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-8"
+ },
+ {
+  "id": "q08-100",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A preferred share pays a fixed annual dividend of $5.25. Investors require 6.2% per annum on such shares. What is the price?",
+  "options": [
+   "$0.33",
+   "$84.68",
+   "$89.93",
+   "$4.94"
+  ],
+  "answer": 1,
+  "explanation": "P0 = D/R = 5.25/0.062 = $84.68. Dividing by 1.062 treats it as a one-year payment, multiplying by (1 + R) treats the dividend as growing, and D × R is not a price at all.",
+  "source": "generated",
+  "ref": "SM 8-8; TB 8.1"
+ },
+ {
+  "id": "q08-101",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A preferred share paying a fixed $3.80 a year sells for $62.00. What return does it offer?",
+  "options": [
+   "6.13%",
+   "5.78%",
+   "16.32%",
+   "3.06%"
+  ],
+  "answer": 0,
+  "explanation": "R = D/P0 = 3.80/62.00 = 6.13%. Inverting gives 16.32 (that is price over dividend, not a rate), and adding the dividend to the price in the denominator gives 5.78%.",
+  "source": "generated",
+  "ref": "SM 8-8"
+ },
+ {
+  "id": "q08-102",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A preferred share will pay a fixed annual dividend of $2.50, with the first payment exactly 6 years from today. Investors require 5.5% per annum. What is the price today? Answer in $.",
+  "answer": 34.78,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.50/0.055/1.055^5",
+  "steps": [
+   {
+    "label": "Price at year 5, one year before the first dividend: D/R",
+    "value": 45.4545,
+    "check": "2.50/0.055",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Price today: discount 5 years",
+    "value": 34.78,
+    "check": "2.50/0.055/1.055^5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "A perpetuity formula gives the value one period BEFORE the first payment, which is year 5",
+   "P5 = D/R = 2.50/0.055 = 45.4545",
+   "P0 = P5/(1 + R)^5 = 45.4545/1.055^5 = $34.78"
+  ],
+  "keystrokes": [
+   "2.50 ÷ 0.055 = 45.4545",
+   "÷ 1.055 y^x 5 = 34.78"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted six years instead of five",
+    "value": 32.97,
+    "check": "2.50/0.055/1.055^6",
+    "explain": "The perpetuity value is at year 5, one year before the first dividend."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Did not discount the perpetuity value",
+    "value": 45.45,
+    "check": "2.50/0.055",
+    "explain": "The $45.45 is the price in year 5, not today."
+   }
+  ],
+  "explanation": "Same logic as SM 8-21: value the perpetuity one period before the first payment, then discount that value back.",
+  "source": "generated",
+  "ref": "SM 8-21; TB 8.1"
+ },
+ {
+  "id": "q08-103",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a preferred share's dividend differ from a bond's interest?",
+  "options": [
+   "Neither a preferred dividend nor bond interest is a legal obligation of the firm, so neither can default.",
+   "Both are tax-deductible to the firm, but only a missed bond payment is treated as a default by the courts.",
+   "A skipped preferred dividend is no default and is not deductible; missed bond interest is a default, and interest is deductible.",
+   "A preferred dividend is deductible, and missing it is a default just like missing bond interest would be."
+  ],
+  "answer": 2,
+  "explanation": "Preferred looks like debt but is equity for legal and tax purposes: the board can defer the dividend, and the firm cannot deduct it.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-104",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT typical of preferred stock?",
+  "options": [
+   "A fixed stated dividend rate set when the shares are issued",
+   "Priority over common stock for dividends and in liquidation",
+   "No vote in the election of directors in the normal course",
+   "Its dividend grows in line with the firm's earnings"
+  ],
+  "answer": 3,
+  "explanation": "Preferred pays a fixed stated dividend, which is why it is valued as a zero-growth perpetuity. Growth in dividends is a feature of common stock.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-105",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is a preferred share valued with P0 = D/R rather than D1/(R − g)?",
+  "options": [
+   "Because R equals g for preferred shares, which makes D1/(R − g) undefined.",
+   "Its dividend is fixed, so g = 0 and the payments form an ordinary perpetuity.",
+   "Because preferred shares carry no risk, so the growth rate is irrelevant.",
+   "Because preferred shares are repaid at maturity, so a perpetuity formula is needed."
+  ],
+  "answer": 1,
+  "explanation": "Set g = 0 in the Gordon growth formula and you get D/R.",
+  "source": "generated",
+  "ref": "SM 8-8; TB 8.1"
+ },
+ {
+  "id": "q08-106",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "If a cumulative preferred dividend is skipped, it accumulates as an arrearage that must be paid before common shareholders receive dividends.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Cumulative means unpaid dividends are carried forward; common shareholders must wait until the arrears and the current preferred dividend are paid.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-107",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Preferred dividends are tax-deductible to the corporation in the same way as interest on a bond.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Preferred stock is equity for tax purposes: dividends are paid from after-tax profit and are not deductible.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-108",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A preferred share paying a fixed $3.00 a year falls in price from $50 to $40. What does this tell you?",
+  "options": [
+   "The share has become riskless, so investors accept a lower price.",
+   "The company raised its growth rate, which is why the price fell.",
+   "The market's required return on the share rose from 6.0% to 7.5%.",
+   "The company cut the dividend, since the price of a fixed-dividend share falls only if D falls."
+  ],
+  "answer": 2,
+  "explanation": "With D fixed at $3.00, price = D/R: $3.00/$50 = 6.0% and $3.00/$40 = 7.5%. A price fall with a fixed dividend means a higher required return.",
+  "source": "generated",
+  "ref": "SM 8-8"
+ },
+ {
+  "id": "q08-109",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A '$5 preferred' share has a stated liquidating value of $100. Its dividend yield on stated value is:",
+  "options": [
+   "$500",
+   "5%",
+   "20%",
+   "0.05%"
+  ],
+  "answer": 1,
+  "explanation": "$5 per year on $100 of stated value is 5%. The quoted yield on the market price depends on what the share trades for.",
+  "source": "generated",
+  "ref": "TB 8.2"
+ },
+ {
+  "id": "q08-110",
+  "concept": "c08-preferred-stock",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Compared with common stock, preferred stock normally has:",
+  "options": [
+   "no claim on the firm's assets in a liquidation, ranking behind common holders",
+   "dividends whose size is decided by a vote of the shareholders each year",
+   "a higher expected growth rate and more voting rights than common stock",
+   "less price growth potential but a lower risk of missed dividends"
+  ],
+  "answer": 3,
+  "explanation": "Preferred holders are paid before common holders, usually without a vote, and the dividend is fixed. That makes preferred less risky but gives it little growth.",
+  "source": "generated",
+  "ref": "SM 8-5; TB 8.2"
+ },
+ {
+  "id": "q08-111",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Your stockbroker advises you to buy into a firm at $4.50 per share because its earnings are $0.33 per share and it should trade at a similar P/E ratio to similar firms. This approach involves:",
+  "options": [
+   "Comparables",
+   "Gordon growth model",
+   "DCF",
+   "NPV",
+   "Cost of capital"
+  ],
+  "answer": 0,
+  "explanation": "Valuing a firm by applying the P/E ratios of similar firms to its earnings is the comparables (multiples) approach. The Gordon growth model and DCF discount cash flows, and NPV and cost of capital are capital budgeting tools.",
+  "source": "official",
+  "ref": "PRAC q1"
+ },
+ {
+  "id": "q08-112",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In valuation by comparables using P/E, the share price is estimated as:",
+  "options": [
+   "benchmark P/E × EPS, with the EPS matching the type of P/E",
+   "EPS ÷ benchmark P/E, which converts earnings into a price",
+   "benchmark P/E ÷ EPS, because P/E is price divided by earnings",
+   "benchmark P/E × dividend per share, because investors are paid dividends"
+  ],
+  "answer": 0,
+  "explanation": "P = benchmark P/E × EPS follows from P/E = P/EPS. Dividing gives a nonsense units answer, and the dividend per share is not what the multiple is defined on.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-11"
+ },
+ {
+  "id": "q08-113",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An analyst values a profitable, dividend-free software company at 22 × its forecast earnings per share, where 22 is the average forward P/E of its peers. Which valuation approach is this?",
+  "options": [
+   "Comparables using a forward P/E",
+   "Free cash flow to equity",
+   "NPV of growth opportunities",
+   "Dividend discount model"
+  ],
+  "answer": 0,
+  "explanation": "The price comes from a peer multiple times a metric, not from discounting cash flows. Because it uses forecast EPS and a forward P/E, it is a forward comparables valuation.",
+  "source": "generated",
+  "ref": "L04 s18"
+ },
+ {
+  "id": "q08-114",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A fast-growing start-up has negative earnings and pays no dividends. Which multiple can still be used to value it by comparables?",
+  "options": [
+   "Price/earnings",
+   "Dividend yield",
+   "Earnings yield",
+   "Price/sales"
+  ],
+  "answer": 3,
+  "explanation": "Price/sales (sales per share times a benchmark P/S) works when earnings are negative. P/E and the earnings yield are meaningless on losses, and a zero dividend gives no dividend yield.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-115",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do a trailing P/E and a forward P/E differ, and how should each be used?",
+  "options": [
+   "Trailing P/E uses forecast EPS and forward uses last year's EPS; apply each to the other's EPS.",
+   "Trailing P/E uses the last twelve months' EPS, forward uses forecast EPS; apply each to its own EPS.",
+   "Trailing P/E uses dividends per share and forward uses earnings per share, so they measure different things.",
+   "They are the same ratio; the label depends only on which exchange the stock trades on."
+  ],
+  "answer": 1,
+  "explanation": "Trailing = P/EPS0, forward = P/EPS1. Applying a trailing benchmark to forecast EPS gives a price one year ahead (a target price), not today's price.",
+  "source": "generated",
+  "ref": "L04 s18; TB 8.1"
+ },
+ {
+  "id": "q08-116",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a usual source of a benchmark P/E?",
+  "options": [
+   "An industry average P/E",
+   "The average or median P/E of similar firms",
+   "The firm's own required return R",
+   "The firm's own historical average P/E"
+  ],
+  "answer": 2,
+  "explanation": "Benchmarks come from comparable firms, an industry average or the firm's own history. The required return R belongs in a DCF valuation, not in a multiple.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-117",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must a trailing benchmark P/E be applied to trailing EPS and a forward benchmark P/E to forecast EPS?",
+  "options": [
+   "Because the exam formula sheet requires the same EPS to be used in both places.",
+   "Because forecast EPS is always higher than trailing EPS, which would inflate the price.",
+   "The multiple was calculated on that earnings basis; mixing them values a different date or stream.",
+   "Because P/E ratios are published only once a year for each listed company."
+  ],
+  "answer": 2,
+  "explanation": "A benchmark of 20 on last year's EPS of $2.00 gives $40 today. The same 20 on next year's EPS of $2.50 gives $50, the expected price one year from today.",
+  "source": "generated",
+  "ref": "TB 8.1; L04 s18"
+ },
+ {
+  "id": "q08-118",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Orchard Tech trades at $12.60 with trailing EPS of $0.90, a P/E of 14. Similar firms trade at an average trailing P/E of 18. What does comparables logic suggest?",
+  "options": [
+   "Orchard's fair price equals its EPS of $0.90 because the P/E is only a descriptive multiple.",
+   "Orchard is fairly priced because P/E ratios never differ across firms in the same industry.",
+   "Orchard is overvalued because its P/E of 14 is lower than the peer average P/E of 18.",
+   "Orchard looks undervalued: 18 × $0.90 = $16.20 versus $12.60, unless peers have better growth or risk."
+  ],
+  "answer": 3,
+  "explanation": "A below-average multiple means the market values each dollar of earnings less than it does for peers. That is a buy signal only if the firm really is comparable in growth and risk.",
+  "source": "generated",
+  "ref": "PRAC q1; L04 s32"
+ },
+ {
+  "id": "q08-119",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Lakeview Foods earned $2.47 per share last year. Similar firms trade at a trailing P/E of 19. What price does comparables give for Lakeview's shares today? Answer in $.",
+  "answer": 46.93,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "19*2.47",
+  "steps": [
+   {
+    "label": "Price = benchmark P/E × EPS",
+    "value": 46.93,
+    "check": "19*2.47",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "P = benchmark P/E × EPS",
+   "P = 19 × $2.47 = $46.93"
+  ],
+  "keystrokes": [
+   "19 × 2.47 = 46.93"
+  ],
+  "errors": [
+   {
+    "id": "eps-division",
+    "label": "Divided EPS by the P/E",
+    "value": 0.13,
+    "check": "2.47/19",
+    "explain": "P/E = P/EPS, so P = P/E × EPS; dividing gives $0.13."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Treated the P/E of 19 as 19%",
+    "value": 0.47,
+    "check": "0.19*2.47",
+    "explain": "A P/E of 19 is a multiple (19 times earnings), not a percentage."
+   }
+  ],
+  "explanation": "Multiply the benchmark multiple by the matching earnings figure.",
+  "source": "generated",
+  "ref": "SM 8-11"
+ },
+ {
+  "id": "q08-120",
+  "concept": "c08-pe-comparables",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Evergreen Paper earned $3.10 per share last year. Earnings are expected to grow 7% per year, and similar firms trade at a P/E of 16. What target share price do you expect in 3 years? Answer in $.",
+  "answer": 60.76,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "16*3.10*1.07^3",
+  "steps": [
+   {
+    "label": "EPS in 3 years = EPS0(1 + g)^3",
+    "value": 3.7976,
+    "check": "3.10*1.07^3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Target price P3 = P/E × EPS3",
+    "value": 60.76,
+    "check": "16*3.10*1.07^3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "EPS_t = EPS0(1 + g)^t",
+   "EPS3 = 3.10 × 1.07^3 = 3.7976",
+   "P3 = 16 × 3.7976 = $60.76"
+  ],
+  "keystrokes": [
+   "1.07 y^x 3 × 3.10 = 3.7977",
+   "× 16 = 60.76"
+  ],
+  "errors": [
+   {
+    "id": "eps0-for-eps1",
+    "label": "Applied the P/E to last year's EPS",
+    "value": 49.6,
+    "check": "16*3.10",
+    "explain": "That is today's price on trailing EPS; the target price needs EPS three years out."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Grew EPS two years instead of three",
+    "value": 56.79,
+    "check": "16*3.10*1.07^2",
+    "explain": "Three years of growth means (1 + g)^3."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew by 7% three times per year",
+    "value": 65.02,
+    "check": "16*3.10*1.07^4",
+    "explain": "Count the years: t = 3, not 4."
+   }
+  ],
+  "explanation": "Target price in t years = benchmark P/E × EPS0(1 + g)^t.",
+  "source": "generated",
+  "ref": "SM 8-27"
+ }
+]

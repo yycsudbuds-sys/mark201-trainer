@@ -1,0 +1,1221 @@
+[
+ {
+  "id": "q10-522",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a bid-price calculation, the minimum acceptable price is the one that sets the project's NPV equal to _____.",
+  "options": [
+   "the CCA tax shield",
+   "the initial investment",
+   "zero",
+   "the profit margin"
+  ],
+  "answer": 2,
+  "explanation": "NPV = 0 means the project earns exactly the discount rate: it covers all costs and pays investors their required return. That is the lowest price the firm can charge without destroying value.",
+  "source": "generated",
+  "ref": "TB 10.6"
+ },
+ {
+  "id": "q10-523",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the bid price based on NPV = 0 differ from the price at which accounting profit is zero?",
+  "options": [
+   "The NPV price also covers the investors' required return on the capital tied up, so it is higher",
+   "The accounting price is higher because it includes depreciation",
+   "They are always identical when the tax rate is zero",
+   "The NPV price ignores the cost of equipment because it is already spent"
+  ],
+  "answer": 0,
+  "explanation": "Accounting break-even only covers expenses including depreciation; it ignores the time value of money. NPV break-even makes the PV of after-tax flows equal the investment, which requires a larger annual net revenue.",
+  "source": "generated",
+  "ref": "TB 10.6, L05C"
+ },
+ {
+  "id": "q10-524",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a step in finding a bid price?",
+  "options": [
+   "Set NPV = 0 and compute the PV of the known flows (CAPEX, NWC, salvage, CCA shield)",
+   "Divide the remaining PV by the annuity factor to get the required after-tax annual amount",
+   "Divide by (1 - T) and add the cash costs",
+   "Divide the required after-tax annuity by the number of years N"
+  ],
+  "answer": 3,
+  "explanation": "A level annual amount that has a given present value is found by dividing by the annuity factor, not by N, because the payments occur in the future. The other three steps are the standard sequence.",
+  "source": "generated",
+  "ref": "SM 10-24, A19"
+ },
+ {
+  "id": "q10-525",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must the required after-tax annual amount be divided by (1 - T) when finding the bid price?",
+  "options": [
+   "Because the tax rate applies only to the first year",
+   "Revenue minus costs is taxed, so before-tax net revenue must be larger than the after-tax amount needed",
+   "Because (1 - T) converts a nominal flow into a real flow",
+   "Because the CCA shield must be added back"
+  ],
+  "answer": 1,
+  "explanation": "The after-tax annuity equals [(P - v)Q - FC](1 - T). To recover the pre-tax figure we undo the tax by dividing by (1 - T), then add the cash costs to get total revenue.",
+  "source": "generated",
+  "ref": "SM 10-24"
+ },
+ {
+  "id": "q10-526",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Okotoks Steel bids exactly the NPV = 0 price and wins the contract. What does that imply about the project?",
+  "options": [
+   "It earns a 0% return",
+   "It creates a positive NPV equal to the CCA tax shield",
+   "It breaks even on accounting profit but not on cash flow",
+   "It earns exactly its required return: IRR = k, NPV = 0, with no value added or lost"
+  ],
+  "answer": 3,
+  "explanation": "At the break-even price the PV of the inflows equals the PV of the outflows at the required rate, so the IRR equals the required return. The firm is indifferent; to add value it would need a price above that level.",
+  "source": "generated",
+  "ref": "TB 10.6"
+ },
+ {
+  "id": "q10-527",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In the bid-price equation, after-tax net revenue = [(P - v)Q - FC](1 - T). Which item is NOT inside the bracket?",
+  "options": [
+   "Variable cost per unit v",
+   "CCA, because its tax shield is valued separately through PV_CCA",
+   "Fixed cash costs FC",
+   "Price per unit P"
+  ],
+  "answer": 1,
+  "explanation": "The bracket contains cash revenue and cash costs only. CCA is not a cash cost; its tax saving is counted once in the PV of CCA tax shield, so including it in the bracket would double count.",
+  "source": "generated",
+  "ref": "SM 10-33, 10-52"
+ },
+ {
+  "id": "q10-528",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "If the required return rises and nothing else changes, the bid price per unit rises.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "A higher k lowers the PV of salvage and tax shields and raises the annuity needed to repay the investment at that rate; the required after-tax net revenue grows and so does the price.",
+  "source": "generated",
+  "ref": "TB 10.6"
+ },
+ {
+  "id": "q10-529",
+  "concept": "c10-bid-price",
+  "also": [
+   "c10-sunk-opportunity"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "To submit a bid, a firm must put land it owns at the project's disposal, with an after-tax market value of $300,000 now and $320,000 in five years. Which cash flows go into the bid calculation?",
+  "options": [
+   "Nothing, because the firm already owns the land",
+   "-$300,000 at time 0 only",
+   "-$300,000 at time 0 and +$320,000 at year 5",
+   "The land's original purchase price"
+  ],
+  "answer": 2,
+  "explanation": "Land has an opportunity cost: the project gives up the after-tax sale proceeds today, and the land comes back at its after-tax value at the end. Both flows are in the NPV = 0 equation.",
+  "source": "generated",
+  "ref": "SM 10-43"
+ },
+ {
+  "id": "q10-530",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow Valley Plastics will bid on a 4-year contract for 25,000 units a year. Equipment costs $620,000 (CCA rate 30%, half-year rule, sold for $70,000 at year 4, pool open). NWC of $60,000 is recovered at the end. Variable cost is $18.40 a unit, fixed cash costs $150,000 a year, T = 30%, k = 14%. What is the lowest price per unit that gives NPV = 0?",
+  "options": [
+   "$28.06",
+   "$31.16",
+   "$31.44",
+   "$34.06",
+   "$36.23"
+  ],
+  "answer": 3,
+  "explanation": "Known PV = -680,000 + 110,553.59 (CCA) + 76,970.44 (salvage + NWC) = -492,475.98. After-tax annuity = 492,475.98/2.9137 = 169,020.11; pre-tax = 241,457.30; revenue = 241,457.30 + 150,000 + 18.40 x 25,000 = 851,457.30; price = $34.06.",
+  "source": "generated",
+  "ref": "SM 10-33, 10-24"
+ },
+ {
+  "id": "q10-531",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Wetaskiwin Data Services must set annual contract revenue for 3 years. Computer equipment costs $275,000 (CCA rate 45%, AII applies, worthless at the end, pool open) and $20,000 of NWC is recovered at the end. Annual cash costs are $190,000, T = 28%, k = 15%. What annual revenue gives NPV = 0?",
+  "options": [
+   "$134,029.08",
+   "$286,500.94",
+   "$292,006.19",
+   "$324,029.08",
+   "$328,611.18"
+  ],
+  "answer": 3,
+  "explanation": "Known PV = -295,000 + PV CCA (AII) 61,516.30 + NWC 13,150.32 = -220,333.37. After-tax annuity = 220,333.37/2.2832 = 96,500.94; pre-tax = 134,029.08; revenue = pre-tax net revenue + 190,000 = $324,029.08.",
+  "source": "generated",
+  "ref": "SM 10-24, 10-50"
+ },
+ {
+  "id": "q10-532",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nechako Components bids on a 5-year contract for 30,000 units a year. Equipment costs $540,000 (CCA rate 20%, half-year rule, sold for $60,000 in year 5, pool open); NWC of $45,000 is recovered at the end. Variable cost is $22.60 a unit and fixed cash costs are $210,000 a year. T = 35%, k = 12%. What is the lowest price per unit that gives NPV = 0?",
+  "answer": 35.59,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)/30000",
+  "steps": [
+   {
+    "label": "PV of CCA tax shield",
+    "value": 104349.4,
+    "check": "540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of everything except operations",
+    "value": -421070.78,
+    "check": "(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required after-tax net revenue per year",
+    "value": 116809.13,
+    "check": "((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required pre-tax net revenue = after-tax / (1 - T)",
+    "value": 179706.36,
+    "check": "((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required annual revenue = pre-tax + FC + v x Q",
+    "value": 1067706.36,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price per unit",
+    "value": 35.59,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)/30000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV CCA = 540,000 x 0.2 x 0.35/0.32 x 1.06/1.12 - 60,000 x 0.2 x 0.35/0.32 / 1.12^5 = 104,349.40",
+   "Known PV = -585,000 + 104,349.40 + 59,579.82 = -421,070.78",
+   "After-tax annuity = 421,070.78 / 3.6048 = 116,809.13",
+   "Pre-tax net revenue = 116,809.13 / 0.65 = 179,706.36",
+   "Revenue = 179,706.36 + 210,000 + 22.60 x 30,000 = 1,067,706.36",
+   "Price = 1,067,706.36 / 30,000 = $35.59 per unit"
+  ],
+  "keystrokes": [
+   "Compute the PV of the known flows, divide by 3.6048, divide by 0.65, add costs, divide by 30000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 33.49,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)+210000+22.6*30000)/30000",
+    "explain": "The annuity found is after tax. Revenue minus costs must be larger by 1/(1 - T)."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided the PV by N instead of the annuity factor",
+    "value": 33.92,
+    "check": "(-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5)/5/(1-0.35)+210000+22.6*30000)/30000",
+    "explain": "Use the annuity factor, not N."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA shield",
+    "value": 37.07,
+    "check": "((540000+45000-(60000+45000)/1.12**5)/((1-1/1.12**5)/0.12)/0.65+210000+22.6*30000)/30000",
+    "explain": "The shield lowers the net cost of the equipment and so lowers the price needed."
+   }
+  ],
+  "explanation": "NPV = 0: PV of known pieces, then the required annuity, then un-tax, add costs and divide by quantity.",
+  "source": "generated",
+  "ref": "SM 10-33, A19"
+ },
+ {
+  "id": "q10-533",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Switchgear bids on a 3-year order of 12,000 units a year. Equipment costs $350,000 (CCA rate 25%, half-year rule, sold for $40,000 at year 3, pool open); $30,000 of NWC is recovered at the end. Variable cost is $31.50 a unit, fixed cash costs $95,000 a year, T = 32%, k = 10%. Find the lowest price per unit that makes NPV = 0.",
+  "answer": 52.13,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)/(1-0.32)+95000+31.5*12000)/12000",
+  "steps": [
+   {
+    "label": "PV of CCA tax shield",
+    "value": 69494.47,
+    "check": "350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required after-tax net revenue per year",
+    "value": 103710.83,
+    "check": "((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required annual revenue",
+    "value": 625515.93,
+    "check": "(((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)/(1-0.32)+95000+31.5*12000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price per unit",
+    "value": 52.13,
+    "check": "(((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)/(1-0.32)+95000+31.5*12000)/12000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV CCA = 69,494.47; known PV = -380,000 + 69,494.47 + 52,592.04 = -257,913.49",
+   "After-tax annuity = 257,913.49 / 2.4869 = 103,710.83; pre-tax = 152,515.93",
+   "Revenue = 152,515.93 + 95,000 + 31.50 x 12,000 = 625,515.93; price = $52.13"
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 10, PV = known PV, CPT PMT"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 48.06,
+    "check": "(((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)+95000+31.5*12000)/12000",
+    "explain": "Net revenue is taxed, so divide the after-tax need by (1 - T)."
+   },
+   {
+    "id": "forgot-fixed-costs",
+    "label": "Left out the fixed cash costs",
+    "value": 44.21,
+    "check": "(((0)-(-(350000+30000+0)+(350000*0.25*0.32/(0.1+0.25)*(1+0.5*0.1)/(1+0.1)-40000*0.25*0.32/(0.1+0.25)/(1+0.1)**3)+(40000+30000+0)/(1+0.1)**3))/((1-1/(1+0.1)**3)/0.1)/(1-0.32)+31.5*12000)/12000",
+    "explain": "The price must also cover FC."
+   }
+  ],
+  "explanation": "Same five steps as always; the quantity is only used at the end.",
+  "source": "generated",
+  "ref": "SM 10-33, A19"
+ },
+ {
+  "id": "q10-534",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Fraser Valley Labels will print 50,000 packs a year for 5 years. Equipment costs $480,000 (CCA rate 30%, half-year rule, sold for $30,000 at year 5, pool open) and sits on land the firm owns, worth $300,000 after tax now and $320,000 after tax in 5 years. NWC of $40,000 is recovered at the end. Variable cost is $2.70 a pack, fixed cash costs $160,000, T = 34%, k = 12%. What is the lowest price per pack for NPV = 0?",
+  "answer": 10.04,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(((0)-(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.34)+160000+2.7*50000)/50000",
+  "steps": [
+   {
+    "label": "Time-0 outflow: equipment + land + NWC",
+    "value": -820000.0,
+    "check": "-(480000+300000+40000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of everything except operations",
+    "value": -492511.11,
+    "check": "(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required after-tax net revenue per year",
+    "value": 136627.37,
+    "check": "((0)-(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required annual revenue",
+    "value": 502011.17,
+    "check": "(((0)-(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.34)+160000+2.7*50000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price per pack",
+    "value": 10.04,
+    "check": "(((0)-(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.34)+160000+2.7*50000)/50000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Time-0 flows: -480,000 - 300,000 - 40,000 = -820,000. Year 5: 30,000 + 40,000 + 320,000 = 390,000 (PV 221,296.47)",
+   "PV CCA = 106,192.42; known PV = -820,000 + 221,296.47 + 106,192.42 = -492,511.11",
+   "After-tax annuity = 492,511.11 / 3.6048 = 136,627.37; pre-tax = 207,011.17",
+   "Revenue = 207,011.17 + 160,000 + 2.70 x 50,000 = 502,011.17; price = $10.04 per pack"
+  ],
+  "keystrokes": [
+   "Compute the known PV with land in and out, then CPT PMT with N = 5, I/Y = 12"
+  ],
+  "errors": [
+   {
+    "id": "land-excluded",
+    "label": "Left out the land's opportunity cost and return",
+    "value": 9.04,
+    "check": "(((0)-(-(480000+40000+0)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.34)+160000+2.7*50000)/50000",
+    "explain": "The land has an opportunity cost: the firm gives up its after-tax sale value now and gets it back later."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 8.63,
+    "check": "(((0)-(-(480000+40000+300000)+(480000*0.3*0.34/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-30000*0.3*0.34/(0.12+0.3)/(1+0.12)**5)+(30000+40000+320000)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)+160000+2.7*50000)/50000",
+    "explain": "Divide the after-tax requirement by (1 - T)."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA shield",
+    "value": 10.93,
+    "check": "((480000+40000+300000-(30000+40000+320000)/1.12**5)/((1-1/1.12**5)/0.12)/0.66+160000+2.7*50000)/50000",
+    "explain": "The CCA shield reduces the price needed."
+   }
+  ],
+  "explanation": "Land goes in at its after-tax opportunity value both ways; the rest of the five steps are unchanged.",
+  "source": "generated",
+  "ref": "SM 10-43"
+ },
+ {
+  "id": "q10-535",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nechako Components (equipment $540,000, CCA rate 20%, half-year rule, sold for $60,000 at year 5, pool open; NWC $45,000; 30,000 units a year; variable cost $22.60; fixed cash costs $210,000; T = 35%; k = 12%) wants its 5-year contract to add $75,000 of NPV instead of zero. What price per unit does it need?",
+  "answer": 36.66,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(((75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)/30000",
+  "steps": [
+   {
+    "label": "Required after-tax net revenue",
+    "value": 137614.86,
+    "check": "((75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required annual revenue",
+    "value": 1099715.17,
+    "check": "(((75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price per unit",
+    "value": 36.66,
+    "check": "(((75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)/30000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Set NPV = 75,000: PV of operations must equal 75,000 - known PV = 75,000 + 421,070.78 = 496,070.78",
+   "After-tax annuity = 496,070.78 / 3.6048 = 137,614.86; pre-tax = 211,715.17",
+   "Revenue = 211,715.17 + 210,000 + 678,000 = 1,099,715.17; price = $36.66"
+  ],
+  "keystrokes": [
+   "Same steps as the zero-NPV bid with 75,000 added to the PV that operations must supply"
+  ],
+  "errors": [
+   {
+    "id": "sign-cf0",
+    "label": "Subtracted the target NPV instead of adding it",
+    "value": 34.52,
+    "check": "(((-75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000+22.6*30000)/30000",
+    "explain": "A positive target NPV means operations must generate more PV, so the price rises."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 34.19,
+    "check": "(((75000)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)+210000+22.6*30000)/30000",
+    "explain": "Divide by (1 - T)."
+   }
+  ],
+  "explanation": "A required NPV simply raises the PV that the operating annuity must supply.",
+  "source": "generated",
+  "ref": "SM 10-24, TB 10.6"
+ },
+ {
+  "id": "q10-536",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nechako Components (equipment $540,000, CCA rate 20%, half-year rule, sold for $60,000 at year 5, pool open; NWC $45,000; variable cost $22.60; fixed cash costs $210,000; T = 35%; k = 12%) can sell its product at $38.50. How many units a year must it sell for NPV = 0? Answer in units, to the nearest unit.",
+  "answer": 24510.0,
+  "unit": "",
+  "tolerance": {
+   "abs": 1.0
+  },
+  "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000)/(38.5-22.6)",
+  "steps": [
+   {
+    "label": "Required pre-tax net revenue",
+    "value": 179706.3584,
+    "check": "((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Contribution per unit = P - v",
+    "value": 15.9,
+    "check": "38.5-22.6",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Break-even quantity",
+    "value": 24509.8339,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35)+210000)/(38.5-22.6)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Required after-tax net revenue = 116,809.13; pre-tax = 179,706.36",
+   "(P - v)Q - FC = pre-tax net revenue, so Q = (pre-tax + FC)/(P - v)",
+   "Q = (179,706.36 + 210,000)/15.90 = 24,510 units"
+  ],
+  "keystrokes": [
+   "Compute the pre-tax requirement, add 210000, divide by 15.9"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 20554.03,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)+210000)/(38.5-22.6)",
+    "explain": "Net revenue is taxed: divide by (1 - T) first."
+   },
+   {
+    "id": "forgot-fixed-costs",
+    "label": "Left out the fixed cash costs",
+    "value": 11302.29,
+    "check": "(((0)-(-(540000+45000+0)+(540000*0.2*0.35/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.35/(0.12+0.2)/(1+0.12)**5)+(60000+45000+0)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)/(1-0.35))/(38.5-22.6)",
+    "explain": "Fixed costs must be covered before profit."
+   }
+  ],
+  "explanation": "Same NPV = 0 requirement, solved for quantity instead of price.",
+  "source": "generated",
+  "ref": "SM 10-52"
+ },
+ {
+  "id": "q10-541",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Cascade Rail owns an old locomotive that earns nothing more. It is deciding whether to sell it at the end of year 5 or keep it and keep claiming CCA. What is the opportunity cost of selling at year 5?",
+  "options": [
+   "The present value of the CCA tax shields it gives up on the remaining UCC",
+   "The original purchase price of the locomotive",
+   "The CCA already claimed in years 1 to 5",
+   "The recapture tax that would be due on the sale"
+  ],
+  "answer": 0,
+  "explanation": "Selling ends the CCA stream. At year 5 that stream is worth UCC x d x T/(k + d). Past CCA is history, and recapture tax is already inside the after-tax sale proceeds.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-542",
+  "concept": "c10-timing-of-sale",
+  "also": [
+   "c10-sunk-opportunity"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Clean Air Industries owns land it could use for a new sensor line. Which three choices should it compare?",
+  "options": [
+   "Build the project, sell the project, or abandon the project",
+   "Sell the land now and buy equivalent land back later; keep renting it out; use it for the new project",
+   "Sell the land, keep the land idle, or give the land away",
+   "Use the land now, use the land in a year, or use the land in two years"
+  ],
+  "answer": 1,
+  "explanation": "The land has alternative uses and each is a different set of cash flows. The lecture compares the two existing uses first (sell and rebuy versus rent) and then tests the winner against the project.",
+  "source": "generated",
+  "ref": "L05B s27-31"
+ },
+ {
+  "id": "q10-543",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When comparing a sale at year N with continuing to hold the asset, the sale gives up the present value of the remaining CCA _____.",
+  "options": [
+   "recapture",
+   "terminal loss",
+   "capital gain",
+   "tax shield"
+  ],
+  "answer": 3,
+  "explanation": "Continuing to hold keeps the declining stream of CCA deductions going. Their tax saving, T x CCA, is the shield the sale gives up, valued as a declining perpetuity.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-544",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the cash flows from selling at year N differ from the cash flows from holding the asset?",
+  "options": [
+   "Selling gives the after-tax proceeds now but ends the CCA shield; holding keeps the shield and receives no proceeds now",
+   "Selling gives the CCA shield now; holding gives the proceeds",
+   "Selling is taxed; holding is not taxed",
+   "Selling and holding give the same cash flows except for timing"
+  ],
+  "answer": 0,
+  "explanation": "Selling swaps a lump of after-tax cash (POD less tax on recapture or plus the terminal-loss refund) for the loss of all later CCA shields. Holding does the opposite.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-545",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "When valuing 'sell at year 5 versus hold', which of the following should NOT enter the analysis?",
+  "options": [
+   "The after-tax proceeds from the sale",
+   "The tax effect (recapture or terminal loss) of the sale",
+   "The original purchase price of the asset",
+   "The CCA tax shields that would continue if the asset is held"
+  ],
+  "answer": 2,
+  "explanation": "The purchase price is a sunk cost. Only what changes between selling and holding matters: the proceeds, their tax effect and the lost future shields.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-546",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can a firm be better off selling an asset at year N even though the sale ends its CCA deductions?",
+  "options": [
+   "Because CCA deductions are not tax deductible after year N",
+   "Because the sale proceeds are not taxed",
+   "The after-tax cash from the sale is received now, and the shields given up are worth less than that cash because they arrive slowly and decline each year",
+   "Because UCC always exceeds the sale price"
+  ],
+  "answer": 2,
+  "explanation": "The lost shield is worth UCC x d x T/(k + d), a fraction of UCC. The sale delivers POD plus a tax effect immediately. Without other benefits from holding, selling usually wins.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-547",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A sell-versus-hold analysis at year 4 gives an NPV of +$31,005 for selling. What does this mean?",
+  "options": [
+   "Selling now is worth $31,005 more, in year-4 dollars, than keeping the asset and its CCA shield",
+   "Holding the asset adds $31,005 of value",
+   "The sale price is $31,005",
+   "The asset will produce $31,005 of profit before tax"
+  ],
+  "answer": 0,
+  "explanation": "The NPV compares the two strategies at a common date: after-tax proceeds less the PV of the shield lost. A positive value favours the sale.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-548",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Which sequence correctly compares the three choices for the land in the Clean Air example?",
+  "options": [
+   "Compare all three using each choice's accounting profit",
+   "Evaluate the project alone and ignore the land",
+   "Discount all three choices at different rates and pick the largest cash flow",
+   "Compare 'rent' with 'sell and buy back' first, then compare the better of the two with 'use for the project'"
+  ],
+  "answer": 3,
+  "explanation": "Each comparison uses incremental NPV. The rent-versus-sell step shows what the land is worth in its best alternative use, which is the opportunity cost charged to the project.",
+  "source": "generated",
+  "ref": "L05B s28-31"
+ },
+ {
+  "id": "q10-549",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 3,
+  "stem": "Other things equal, a higher discount rate makes selling the asset at year N more attractive relative to holding it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The lost shield is UCC x d x T/(k + d); a higher k reduces it, while the sale proceeds do not depend on k. The comparison tilts further towards selling.",
+  "source": "generated",
+  "ref": "L05B s26"
+ },
+ {
+  "id": "q10-550",
+  "concept": "c10-timing-of-sale",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Foothills Rail will sell its last idle crane at the end of year 5 for $24,000 and close the class. The crane cost $40,000, its UCC after year 5 CCA is $18,400, CCA rate 30%, T = 36% and k = 10%. If it keeps the crane it keeps claiming CCA on the UCC. What is the NPV, at year 5, of selling instead of holding?",
+  "options": [
+   "$15,360.00",
+   "$17,016.00",
+   "$19,032.00",
+   "$21,984.00",
+   "$26,952.00"
+  ],
+  "answer": 1,
+  "explanation": "After-tax proceeds = 24,000 - 0.36 x (24,000 - 18,400) = 21,984.00. Lost shield = 18,400 x 0.30 x 0.36/(0.10 + 0.30) = 4,968.00. NPV = 21,984.00 - 4,968.00 = $17,016.00. Ignoring the lost shield overstates the gain; adding it instead of subtracting is a sign error.",
+  "source": "generated",
+  "ref": "L05B s25-26"
+ },
+ {
+  "id": "q10-551",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "An idle machine (CCA rate 20%) has a UCC of $33,177.60 after year 4 CCA. T = 35% and k = 12%. What is the value at year 4 of the CCA tax shields the firm gives up if it sells the machine?",
+  "options": [
+   "$2,322.43",
+   "$6,480.00",
+   "$7,257.60",
+   "$20,736.00",
+   "$29,030.40"
+  ],
+  "answer": 2,
+  "explanation": "Value of the declining shield stream = UCC x d x T/(k + d) = 33,177.60 x 0.20 x 0.35/0.32 = $7,257.60 at year 4. Using k - d gives a nonsensical value; omitting T or the (k + d) divisor gives other wrong answers.",
+  "source": "generated",
+  "ref": "L05B s26, s15"
+ },
+ {
+  "id": "q10-552",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow Valley Aggregates owns an idle machine bought for $72,000 (CCA rate 20%, half-year rule). At the end of year 4, after claiming year 4 CCA, it can sell it for $41,000, closing the class, or keep it and keep claiming CCA. T = 35% and k = 12%. What is the NPV at year 4 of selling instead of holding?",
+  "answer": 31004.56,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "41000-0.35*(41000-72000*(1-0.5*0.2)*(1-0.2)**3)-72000*(1-0.5*0.2)*(1-0.2)**3*0.2*0.35/(0.12+0.2)",
+  "steps": [
+   {
+    "label": "UCC after year 4",
+    "value": 33177.6,
+    "check": "72000*(1-0.5*0.2)*(1-0.2)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax proceeds CF_AT",
+    "value": 38262.16,
+    "check": "41000-0.35*(41000-72000*(1-0.5*0.2)*(1-0.2)**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV at year 4 of the shield given up",
+    "value": 7257.6,
+    "check": "72000*(1-0.5*0.2)*(1-0.2)**3*0.2*0.35/(0.12+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of selling vs holding",
+    "value": 31004.56,
+    "check": "41000-0.35*(41000-72000*(1-0.5*0.2)*(1-0.2)**3)-72000*(1-0.5*0.2)*(1-0.2)**3*0.2*0.35/(0.12+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "UCC1 = 72,000 x 0.9 = 64,800; UCC4 = 64,800 x 0.8^3 = 33,177.60",
+   "POD 41,000 > UCC and < ACB 72,000: recapture = 7,822.40, tax = 2,737.84, CF_AT = 38,262.16",
+   "Lost shield = 33,177.60 x 0.20 x 0.35/(0.12 + 0.20) = 7,257.60",
+   "NPV = 38,262.16 - 7,257.60 = $31,004.56"
+  ],
+  "keystrokes": [
+   "Compute UCC; CF_AT = 41000 - 0.35(41000 - UCC); lost shield = UCC x 0.2 x 0.35 / 0.32; subtract"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Ignored the shield given up",
+    "value": 38262.16,
+    "check": "41000-0.35*(41000-72000*(1-0.5*0.2)*(1-0.2)**3)",
+    "explain": "Selling ends the CCA stream; its PV is the opportunity cost of selling."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole proceeds",
+    "value": 19392.4,
+    "check": "41000*(1-0.35)-72000*(1-0.5*0.2)*(1-0.2)**3*0.2*0.35/(0.12+0.2)",
+    "explain": "Tax is only on POD - UCC (recapture)."
+   },
+   {
+    "id": "k-minus-d",
+    "label": "Used k - d in the lost-shield denominator",
+    "value": 9231.76,
+    "check": "41000-0.35*(41000-72000*(1-0.5*0.2)*(1-0.2)**3)-72000*(1-0.5*0.2)*(1-0.2)**3*0.2*0.35/(0.2-0.12)",
+    "explain": "The shield declines at d, so the discount denominator is k + d."
+   }
+  ],
+  "explanation": "Net the after-tax cash from selling against the PV of the shield you would otherwise keep.",
+  "source": "generated",
+  "ref": "L05B s25-26, SM 10-11"
+ },
+ {
+  "id": "q10-553",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Pallet has an idle machine bought for $50,000 (CCA rate 30%, half-year rule, T = 30%, k = 10%). It will be sold either at the end of year 3 for $22,000 or at the end of year 4 for $17,500; either sale (after that year's CCA) closes the class and the machine earns nothing meanwhile. How much more is the present value today of selling at year 3 than selling at year 4? Count the CCA tax shields and the tax effect of the sale.",
+  "answer": 3630.05,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(22000-0.3*(22000-50000*(1-0.5*0.3)*(1-0.3)**2))/1.1**3-(0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(0.3*0.3*50000*(1-0.5*0.3)*(1-0.3)**2+17500-0.3*(17500-50000*(1-0.5*0.3)*(1-0.3)**3))/1.1**4)",
+  "steps": [
+   {
+    "label": "UCC after year 3",
+    "value": 20825.0,
+    "check": "50000*(1-0.5*0.3)*(1-0.3)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 4",
+    "value": 14577.5,
+    "check": "50000*(1-0.5*0.3)*(1-0.3)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV today if sold at year 3",
+    "value": 23482.34,
+    "check": "0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(22000-0.3*(22000-50000*(1-0.5*0.3)*(1-0.3)**2))/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV today if sold at year 4",
+    "value": 19852.3,
+    "check": "0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(0.3*0.3*50000*(1-0.5*0.3)*(1-0.3)**2+17500-0.3*(17500-50000*(1-0.5*0.3)*(1-0.3)**3))/1.1**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Advantage of selling at year 3",
+    "value": 3630.05,
+    "check": "0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(22000-0.3*(22000-50000*(1-0.5*0.3)*(1-0.3)**2))/1.1**3-(0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(0.3*0.3*50000*(1-0.5*0.3)*(1-0.3)**2+17500-0.3*(17500-50000*(1-0.5*0.3)*(1-0.3)**3))/1.1**4)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CCA: 7,500.00, 12,750.00, 8,925.00, 6,247.50; UCC3 = 20,825.00, UCC4 = 14,577.50",
+   "Sale at year 3: recapture 1,175.00, CF_AT = 21,647.50. Sale at year 4: recapture 2,922.50, CF_AT = 16,623.25",
+   "PV (year 3 sale) = shields years 1-3 + CF_AT/1.1^3 = 23,482.34",
+   "PV (year 4 sale) = shields years 1-3 + (year-4 shield 1,874.25 + CF_AT 16,623.25)/1.1^4 = 19,852.30",
+   "Difference = $3,630.05"
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 2250, C02 = 3825, C03 = 2677.5 + 21647.5, NPV I = 10 for the year-3 plan; extend to C04 for the year-4 plan"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Compared only the after-tax sale proceeds discounted",
+    "value": 4910.18,
+    "check": "(22000-0.3*(22000-50000*(1-0.5*0.3)*(1-0.3)**2))/1.1**3-(17500-0.3*(17500-50000*(1-0.5*0.3)*(1-0.3)**3))/1.1**4",
+    "explain": "Waiting a year also earns one more year of CCA shield; both plans must count all shields."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the year-4 flows by four years",
+    "value": 2366.64,
+    "check": "(0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(22000-0.3*(22000-50000*(1-0.5*0.3)*(1-0.3)**2))/1.1**3)-(0.3*0.5*0.3*50000/1.1+0.3*0.3*(50000*(1-0.5*0.3))/1.1**2+0.3*0.3*(50000*(1-0.5*0.3)*(1-0.3))/1.1**3+(0.3*0.3*50000*(1-0.5*0.3)*(1-0.3)**2+17500-0.3*(17500-50000*(1-0.5*0.3)*(1-0.3)**3))/1.1**3)",
+    "explain": "Year-4 flows are discounted four years."
+   }
+  ],
+  "explanation": "Compare the PV of the two complete plans: shields plus after-tax sale in each.",
+  "source": "generated",
+  "ref": "L05B s26, s23-25"
+ },
+ {
+  "id": "q10-554",
+  "concept": "c10-timing-of-sale",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okotoks Industrial owns land worth $2,500,000 after tax today, rented for $260,000 a year (taxed at 25%) for the next 5 years. It could instead sell the land now and buy equivalent land back in 5 years for $2,500,000 (the market is flat). The discount rate is 12%. What is the NPV of renting minus selling and buying back? A negative answer means selling is better.",
+  "answer": -378501.5,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-2500000+260000*(1-0.25)*(1-1/1.12**5)/0.12+2500000/1.12**5",
+  "steps": [
+   {
+    "label": "After-tax rent per year",
+    "value": 195000.0,
+    "check": "260000*(1-0.25)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of after-tax rent",
+    "value": 702931.36,
+    "check": "260000*(1-0.25)*(1-1/1.12**5)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the land at year 5",
+    "value": 1418567.14,
+    "check": "2500000/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of renting vs selling and rebuying",
+    "value": -378501.5,
+    "check": "-2500000+260000*(1-0.25)*(1-1/1.12**5)/0.12+2500000/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Renting means giving up the sale proceeds now (-2,500,000) and keeping the land worth 2,500,000 in year 5",
+   "PV of rent = 195,000 x 3.6048 = 702,931.36; PV of land at year 5 = 1,418,567.14",
+   "NPV = -$378,501.50; negative, so selling and buying back is better"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 12, PMT = 195000, CPT PV; FV = 2500000, CPT PV; subtract 2500000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-times-t",
+    "label": "Used the rent before tax",
+    "value": -144191.05,
+    "check": "-2500000+260000*(1-1/1.12**5)/0.12+2500000/1.12**5",
+    "explain": "Rent is income and is taxed at 25%."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the land at year 5",
+    "value": 702931.36,
+    "check": "-2500000+260000*(1-0.25)*(1-1/1.12**5)/0.12+2500000",
+    "explain": "The land is bought back in 5 years; discount it."
+   },
+   {
+    "id": "sign-cf0",
+    "label": "Reversed the sign (selling minus renting)",
+    "value": 378501.5,
+    "check": "2500000-260000*(1-0.25)*(1-1/1.12**5)/0.12-2500000/1.12**5",
+    "explain": "The question asks for rent minus sell; the sign tells which is better."
+   }
+  ],
+  "explanation": "The lecture's first comparison: renting out versus selling and buying back the land.",
+  "source": "generated",
+  "ref": "L05B s28-29"
+ },
+ {
+  "id": "q10-555",
+  "concept": "c10-timing-of-sale",
+  "also": [
+   "c10-pool-open-closed"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Dairy can sell a machine from an open pool (other assets remain) for $35,000 at the end of year 3. The sale has no immediate tax effect, but it removes the proceeds from the pool's UCC. CCA rate 20%, T = 35%, k = 10%. What is the NPV at year 3 of selling instead of holding, counting the shield lost on the amount sold?",
+  "answer": 26833.33,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "35000-35000*0.2*0.35/(0.1+0.2)",
+  "steps": [
+   {
+    "label": "PV at year 3 of the shield lost",
+    "value": 8166.67,
+    "check": "35000*0.2*0.35/(0.1+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of selling vs holding",
+    "value": 26833.33,
+    "check": "35000-35000*0.2*0.35/(0.1+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Shield lost on 35,000 = 35,000 x 0.20 x 0.35/(0.10 + 0.20) = 8,166.67",
+   "NPV = 35,000 - 8,166.67 = $26,833.33"
+  ],
+  "keystrokes": [
+   "35000 x 0.2 x 0.35 / 0.3 = 8166.67",
+   "35000 - 8166.67 = 26833.33"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Ignored the lost shield",
+    "value": 35000.0,
+    "check": "35000",
+    "explain": "Selling shrinks the pool, so the CCA on that amount is given up."
+   },
+   {
+    "id": "k-minus-d",
+    "label": "Used k - d",
+    "value": 10500.0,
+    "check": "35000-35000*0.2*0.35/(0.2-0.1)",
+    "explain": "The denominator is k + d."
+   }
+  ],
+  "explanation": "An open-pool sale is received untaxed but costs the shield on the amount sold.",
+  "source": "generated",
+  "ref": "L05B s22, s26"
+ },
+ {
+  "id": "q10-561",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fraser Rentals must choose between two vans, one lasting 3 years and one lasting 5 years. Each will be replaced by an identical van when it wears out, and both provide the same service. Which method compares them properly?",
+  "options": [
+   "Compare the NPVs of costs directly",
+   "Equivalent annual cost: convert each van's PV of costs to an annual amount over its own life",
+   "Compare the IRRs of the two vans",
+   "Compare the payback periods of the two vans"
+  ],
+  "answer": 1,
+  "explanation": "The vans have unequal lives and a continuing need, so each needs to be turned into a cost per year. EAC = PV of costs divided by the annuity factor for the van's own life.",
+  "source": "generated",
+  "ref": "TB 10.6, S6 s11-14"
+ },
+ {
+  "id": "q10-562",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The equivalent annual cost of an asset is its present value of costs divided by the _____ factor for its life.",
+  "options": [
+   "perpetuity",
+   "discount",
+   "growth",
+   "annuity"
+  ],
+  "answer": 3,
+  "explanation": "The EAC is the level annual payment with the same PV as the costs over the asset's life, so it is PV/[(1 - 1/(1 + k)^N)/k].",
+  "source": "generated",
+  "ref": "S6 s14"
+ },
+ {
+  "id": "q10-563",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Why can comparing the raw present values of costs of a 3-year machine and a 5-year machine give the wrong answer?",
+  "options": [
+   "The raw PV ignores the CCA tax shield",
+   "The shorter-lived machine delivers fewer years of service, so its smaller PV of costs buys less",
+   "Raw PVs are in different currencies",
+   "The longer-lived machine always has the lower PV of costs"
+  ],
+  "answer": 1,
+  "explanation": "Raw PVs are totals over different time spans. A 3-year machine will look cheaper even if its annual cost is higher. EAC puts them on a per-year footing.",
+  "source": "generated",
+  "ref": "TB 10.6, SM 10-27"
+ }
+]

@@ -1,0 +1,1124 @@
+[
+ {
+  "id": "q10-149",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The PV of the CCA tax shield (PVCCA) is:",
+  "options": [
+   "the present value of the CCA deductions claimed, before any tax effect",
+   "the tax payable on any recapture when the asset is sold",
+   "the present value of all future CCA × T_C, valued as a perpetuity growing at −d",
+   "the salvage value of the asset discounted back N years to today"
+  ],
+  "answer": 2,
+  "explanation": "The shields CCA_t × T_C shrink at the rate d, so the stream is a growing perpetuity with g = −d. PVCCA is the present value of the tax saved, not of the CCA itself.",
+  "source": "generated",
+  "ref": "L05B s15-17"
+ },
+ {
+  "id": "q10-150",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which expression is the base PVCCA (no first-year adjustment and no sale)?",
+  "options": [
+   "I0 × d × T_C/(k − d)",
+   "I0 × T_C/(k + d)",
+   "I0 × d × (1 − T_C)/(k + d)",
+   "I0 × d × T_C/(k + d)"
+  ],
+  "answer": 3,
+  "explanation": "Gordon growth with CCA_1 × T_C = I0 d T_C as the first flow and g = −d gives I0 d T_C/(k + d). Using k − d treats the shield as growing; omitting d drops the first-year CCA; (1 − T_C) confuses a shield with an after-tax expense.",
+  "source": "generated",
+  "ref": "L05B s15; FS p2"
+ },
+ {
+  "id": "q10-151",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which first-year factor goes into PVCCA for a new asset under the Accelerated Investment Incentive?",
+  "options": [
+   "(1.5k + 1)/(1 + k)",
+   "(1 + 0.5k)/(1 + k)",
+   "1",
+   "1.5/(1 + k)"
+  ],
+  "answer": 0,
+  "explanation": "AII front-loads the claim: 1.5 of the perpetuity starting now less 0.5 of it starting a year later gives 1.5 − 0.5/(1 + k) = (1.5k + 1)/(1 + k).",
+  "source": "generated",
+  "ref": "L05B s16-17"
+ },
+ {
+  "id": "q10-152",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "In PVCCA, the term [S_N × d × T_C/(k + d)] × 1/(1 + k)^N represents:",
+  "options": [
+   "the tax on the capital gain when the asset is sold",
+   "the shield lost because CCA stops after the sale in year N",
+   "the after-tax proceeds of the sale in year N",
+   "the CCA tax shield actually received in year N"
+  ],
+  "answer": 1,
+  "explanation": "After the sale, CCA is no longer claimed on the asset's S_N. The PV at year N of that lost stream is S_N d T_C/(k + d); discounting it N years gives its value today.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-153",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does PVCCA differ for an asset sold in year N versus an asset that is never sold within the horizon (the pool stays open)?",
+  "options": [
+   "Sold: add the lost-tail term; not sold: subtract the lost-tail term",
+   "Sold: replace k with N in the denominator; not sold: leave k unchanged",
+   "Sold: subtract the lost tail S_N d T_C/(k + d)/(1 + k)^N; not sold: no subtraction",
+   "There is no difference; the lost-tail term is always included"
+  ],
+  "answer": 2,
+  "explanation": "When the asset is sold, CCA on it stops, so that stream is removed. If nothing is sold, CCA continues forever and the base formula applies.",
+  "source": "generated",
+  "ref": "L05B s22; REV p3"
+ },
+ {
+  "id": "q10-154",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an input to the PVCCA formula?",
+  "options": [
+   "The sale price S_N",
+   "The CCA rate d",
+   "The corporate tax rate T_C",
+   "The asset's UCC at the date of sale"
+  ],
+  "answer": 3,
+  "explanation": "The salvage term uses the sale price S_N, not the UCC. UCC at sale matters for recapture and terminal loss, not for PVCCA.",
+  "source": "generated",
+  "ref": "L05B s22; S5 s21-23"
+ },
+ {
+  "id": "q10-155",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why is the denominator in PVCCA (k + d) rather than (k − d)?",
+  "options": [
+   "The shield declines at rate d, so it is a growing perpetuity with g = −d and k − (−d) = k + d",
+   "Because tax is paid at the end of each year, which adds d to the rate",
+   "Because the half-year rule shifts the discount rate up by d",
+   "Because d is added to k to reflect the added risk of the asset"
+  ],
+  "answer": 0,
+  "explanation": "Gordon growth gives PV = first flow/(k − g). The CCA shield shrinks, so g = −d, and the denominator becomes k + d.",
+  "source": "generated",
+  "ref": "L05B s15, s17"
+ },
+ {
+  "id": "q10-156",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why is the salvage term in PVCCA multiplied by 1/(1 + k)^N?",
+  "options": [
+   "The salvage proceeds arrive at year N and are taxed then",
+   "The lost shields begin after year N; their value at year N is discounted to today",
+   "The asset's UCC is reduced by a factor of (1 + k) each year after the sale",
+   "It adjusts the first-year factor for the half-year rule and AII regime"
+  ],
+  "answer": 1,
+  "explanation": "S_N d T_C/(k + d) is a value at year N (a perpetuity valued one period before its first payment). Dividing by (1 + k)^N converts it to today's dollars.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-157",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "With k = 10%, the CCA rate doubles from 10% to 20% (all else equal). What happens to the base PVCCA, I0 d T_C/(k + d)?",
+  "options": [
+   "It doubles, since d doubles",
+   "It is unchanged, because d cancels out of the ratio",
+   "It rises by one-third (0.20/0.30 versus 0.10/0.20)",
+   "It rises by 50%, because the denominator also grows"
+  ],
+  "answer": 2,
+  "explanation": "d/(k + d) goes from 0.10/0.20 = 0.5 to 0.20/0.30 = 0.667, a rise of one-third. A faster write-off brings tax savings forward, but the total undiscounted shield is the same, so the PV does not double.",
+  "source": "generated",
+  "ref": "L05B s15"
+ },
+ {
+  "id": "q10-158",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In the salvage term of PVCCA, S_N is the asset's UCC at the time of sale.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. S_N is the sale price (salvage value). The lost stream is the CCA the firm would have claimed on that amount of the pool; UCC does not appear in the formula.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-159",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "The salvage term in PVCCA is discounted by (1 + k) raised to the power _____.",
+  "options": [
+   "N − 1",
+   "N + 1",
+   "d",
+   "N, the year of sale"
+  ],
+  "answer": 3,
+  "explanation": "The value at year N of the lost shield is brought back to today with (1 + k)^N.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-160",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Granger Foods owns a line it has been depreciating for years (UCC today $50,000, d = 20%, T = 30%, k = 10%) and will keep it, so the pool stays open. Which expression gives the PV of its remaining tax shield?",
+  "options": [
+   "50,000 × 0.20 × 0.30/(0.10 + 0.20), with no first-year factor and no salvage term",
+   "50,000 × 0.20 × 0.30/(0.10 + 0.20) × (1.5 × 0.10 + 1)/(1 + 0.10)",
+   "50,000 × 0.20 × 0.30/(0.10 + 0.20) × (1 + 0.5 × 0.10)/(1 + 0.10)",
+   "50,000 × 0.20 × 0.30/(0.10 − 0.20)"
+  ],
+  "answer": 0,
+  "explanation": "An asset already depreciating has used its first-year adjustment (factor 1), and with no sale there is no lost-tail term. The first two options apply a half-year or AII factor that does not belong; the last uses k − d.",
+  "source": "generated",
+  "ref": "L05B s16"
+ },
+ {
+  "id": "q10-161",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Alder Machining buys a $100,000 mill in a 30% class under the half-year rule and expects to sell it in 5 years for $20,000. The tax rate is 25% and k = 10%. What is the PV of the CCA tax shield?",
+  "answer": 15569.27,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(100000*0.3*0.25)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1)) - (20000*0.3*0.25)/(0.1+0.3)/(1+0.1)**5",
+  "steps": [
+   {
+    "label": "Perpetuity base I0 d T/(k + d)",
+    "value": 18750.0,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Half-year factor (1 + 0.5k)/(1 + k)",
+    "value": 0.9545,
+    "check": "(1+0.5*0.1)/(1+0.1)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Salvage term S_N d T/(k + d)/(1 + k)^N",
+    "value": 2328.45,
+    "check": "(20000*0.3*0.25)/(0.1+0.3)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PVCCA",
+    "value": 15569.27,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1)) - (20000*0.3*0.25)/(0.1+0.3)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Base = 100,000 × 0.30 × 0.25/(0.10 + 0.30) = 18,750",
+   "Half-year factor = (1 + 0.05)/1.10 = 0.954545; first term = 17,897.73",
+   "Salvage term = 20,000 × 0.30 × 0.25/0.40 × 1/1.10⁵ = 3,750/1.61051 = 2,328.45",
+   "PVCCA = 17,897.73 − 2,328.45 = $15,569.27"
+  ],
+  "keystrokes": [
+   "100000 × 0.3 × 0.25 ÷ (0.1 + 0.3) = 18,750",
+   "× 1.05 ÷ 1.1 = 17,897.73",
+   "− 3750 ÷ 1.1^5 = 15,569.27"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the AII factor",
+    "value": 17273.82,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1)) - (20000*0.3*0.25)/(0.1+0.3)/(1+0.1)**5",
+    "explain": "The question states the half-year rule, so the factor is (1 + 0.5k)/(1 + k)."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage term",
+    "value": 14147.73,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1)) - (20000*0.3*0.25)/(0.1+0.3)",
+    "explain": "The lost-tail term is a value at year 5 and must be discounted 5 years."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Ignored the sale",
+    "value": 17897.73,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1))",
+    "explain": "The asset is sold in year 5, so CCA on it stops and its tail must be subtracted."
+   },
+   {
+    "id": "ucc-for-salvage",
+    "label": "Used UCC in place of the sale price",
+    "value": 15521.71,
+    "check": "(100000*0.3*0.25)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1)) - (100000*(1-0.5*0.3)*(1-0.3)**4*0.3*0.25)/(0.1+0.3)/(1+0.1)**5",
+    "explain": "The salvage term uses the sale price S_N, not the UCC."
+   }
+  ],
+  "explanation": "Perpetuity base, adjusted for the half-year rule, less the PV of the CCA stream lost after the sale.",
+  "source": "generated",
+  "ref": "L05B s16-17, s22; S5 s22-23"
+ },
+ {
+  "id": "q10-162",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm buys $250,000 of equipment in a 20% class and the Accelerated Investment Incentive applies. It will sell the equipment after 6 years for $60,000. The tax rate is 35% and k = 12%. What is the PV of the CCA tax shield?",
+  "answer": 50967.65,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(250000*0.2*0.35)/(0.12+0.2)*((1.5*0.12+1)/(1+0.12)) - (60000*0.2*0.35)/(0.12+0.2)/(1+0.12)**6",
+  "steps": [
+   {
+    "label": "First term with AII factor",
+    "value": 57617.19,
+    "check": "(250000*0.2*0.35)/(0.12+0.2)*((1.5*0.12+1)/(1+0.12))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Salvage term",
+    "value": 6649.53,
+    "check": "(60000*0.2*0.35)/(0.12+0.2)/(1+0.12)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PVCCA",
+    "value": 50967.65,
+    "check": "(250000*0.2*0.35)/(0.12+0.2)*((1.5*0.12+1)/(1+0.12)) - (60000*0.2*0.35)/(0.12+0.2)/(1+0.12)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Base = 250,000 × 0.20 × 0.35/(0.12 + 0.20) = 54,687.50",
+   "AII factor = (1.5 × 0.12 + 1)/1.12 = 1.053571; first term = 57,617.19",
+   "Salvage term = 60,000 × 0.20 × 0.35/0.32 / 1.12⁶ = 13,125/1.973823 = 6,649.53",
+   "PVCCA = 57,617.19 − 6,649.53 = $50,967.65"
+  ],
+  "keystrokes": [
+   "250000 × 0.2 × 0.35 ÷ 0.32 × 1.18 ÷ 1.12",
+   "− 60000 × 0.2 × 0.35 ÷ 0.32 ÷ 1.12^6"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year factor",
+    "value": 45108.28,
+    "check": "(250000*0.2*0.35)/(0.12+0.2)*((1+0.5*0.12)/(1+0.12)) - (60000*0.2*0.35)/(0.12+0.2)/(1+0.12)**6",
+    "explain": "The question states AII, so the factor is (1.5k + 1)/(1 + k)."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage term",
+    "value": 44492.19,
+    "check": "(250000*0.2*0.35)/(0.12+0.2)*((1.5*0.12+1)/(1+0.12)) - (60000*0.2*0.35)/(0.12+0.2)",
+    "explain": "Discount the lost tail N = 6 years."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Ignored the sale",
+    "value": 57617.19,
+    "check": "(250000*0.2*0.35)/(0.12+0.2)*((1.5*0.12+1)/(1+0.12))",
+    "explain": "The sale ends CCA on that amount, so subtract the lost tail."
+   }
+  ],
+  "explanation": "Same structure as the half-year case; only the first-year factor changes.",
+  "source": "generated",
+  "ref": "L05B s16-17, s22; S5 s21"
+ },
+ {
+  "id": "q10-163",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Granger Foods owns a packaging line it has depreciated for several years. The UCC today is $240,000 (CCA class rate 10%). The tax rate is 30%, k = 15%, and the line will not be sold: the pool stays open. What is the PV of the remaining CCA tax shield?",
+  "answer": 28800.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(240000*0.1*0.3)/(0.15+0.1)",
+  "steps": [
+   {
+    "label": "Perpetuity PV = UCC × d × T/(k + d)",
+    "value": 28800.0,
+    "check": "(240000*0.1*0.3)/(0.15+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Already depreciating: first-year factor = 1. Not sold: no salvage term.",
+   "PVCCA = 240,000 × 0.10 × 0.30/(0.15 + 0.10) = 7,200/0.25 = $28,800"
+  ],
+  "keystrokes": [
+   "240000 × 0.1 × 0.3 ÷ (0.15 + 0.1) = 28,800"
+  ],
+  "errors": [
+   {
+    "id": "k-minus-d",
+    "label": "Used k − d in the denominator",
+    "value": 144000.0,
+    "check": "(240000*0.1*0.3)/(0.15-0.1)",
+    "explain": "The shield declines at d, so the denominator is k + d."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Applied the half-year factor to an old asset",
+    "value": 26921.74,
+    "check": "(240000*0.1*0.3)/(0.15+0.1)*((1+0.5*0.15)/(1+0.15))",
+    "explain": "A continuing asset has already used its first-year adjustment; the factor is 1."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Left the tax rate out",
+    "value": 96000.0,
+    "check": "(240000*0.1)/(0.15+0.1)",
+    "explain": "The shield is CCA × T_C."
+   }
+  ],
+  "explanation": "100% regime with no sale: the plain growing-perpetuity value of the shields.",
+  "source": "generated",
+  "ref": "L05B s16; S5 s21"
+ },
+ {
+  "id": "q10-164",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Marsh Bakery buys equipment for $150,000 and pays $10,000 for delivery and installation (capitalized). The class rate is 20%, the tax rate 40%, k = 10%, and the Accelerated Investment Incentive applies. The equipment will be sold in 5 years for $24,000. What is the PV of the CCA tax shield?",
+  "answer": 40632.16,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (24000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+  "steps": [
+   {
+    "label": "Capital cost I0 = purchase + installation",
+    "value": 160000.0,
+    "check": "150000+10000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Perpetuity base I0 d T/(k + d)",
+    "value": 42666.67,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "First term with AII factor",
+    "value": 44606.06,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Salvage term",
+    "value": 3973.9,
+    "check": "(24000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PVCCA",
+    "value": 40632.16,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (24000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "I0 = 150,000 + 10,000 = 160,000 (installation is capitalized)",
+   "Base = 160,000 × 0.20 × 0.40/0.30 = 42,666.67; AII factor = 1.15/1.10 = 1.045455 → 44,606.06",
+   "Salvage term = 24,000 × 0.20 × 0.40/0.30 / 1.10⁵ = 6,400/1.61051 = 3,973.90",
+   "PVCCA = 44,606.06 − 3,973.90 = $40,632.16"
+  ],
+  "keystrokes": [
+   "160000 × 0.2 × 0.4 ÷ 0.3 × 1.15 ÷ 1.1 = 44,606.06",
+   "− 24000 × 0.2 × 0.4 ÷ 0.3 ÷ 1.1^5 = 40,632.16"
+  ],
+  "errors": [
+   {
+    "id": "missed-installation",
+    "label": "Left installation out of the capital cost",
+    "value": 37844.29,
+    "check": "(150000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (24000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "explain": "Installation is capitalized into I0 and earns CCA."
+   },
+   {
+    "id": "ucc-for-salvage",
+    "label": "Used UCC at year 5 as the salvage",
+    "value": 37010.09,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (160000*(1-1.5*0.2)*(1-0.2)**4*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "explain": "Use the sale price of $24,000."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage term",
+    "value": 38206.06,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (24000*0.2*0.4)/(0.1+0.2)",
+    "explain": "Discount the lost tail 5 years."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Ignored the sale",
+    "value": 44606.06,
+    "check": "(160000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1))",
+    "explain": "The sale stops CCA on that value."
+   }
+  ],
+  "explanation": "Capital cost includes installation; AII factor; subtract the discounted lost tail from the sale.",
+  "source": "generated",
+  "ref": "S5 s22-23; L05B s16-17, s22"
+ },
+ {
+  "id": "q10-165",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $600,000 structure is in a 4% CCA class. The tax rate is 35%, k = 11%, the half-year rule applies and the structure will not be sold (the pool stays open). What is the PV of its CCA tax shield?",
+  "options": [
+   "$58,775",
+   "$53,225",
+   "$56,000",
+   "$120,000"
+  ],
+  "answer": 1,
+  "explanation": "Base = 600,000 × 0.04 × 0.35/0.15 = 56,000; half-year factor = 1.055/1.11 = 0.9505; PVCCA = $53,225. $58,775 uses the AII factor; $56,000 ignores the half-year adjustment; $120,000 uses k − d.",
+  "source": "generated",
+  "ref": "L05B s16; SM 10-31"
+ },
+ {
+  "id": "q10-166",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $180,000 asset in a 30% class qualifies for the Accelerated Investment Incentive. It will be sold after 4 years for $20,000. The tax rate is 40% and k = 12%. What is the PV of its CCA tax shield?",
+  "options": [
+   "$48,469",
+   "$48,018",
+   "$50,552",
+   "$54,184"
+  ],
+  "answer": 2,
+  "explanation": "First term = 180,000 × 0.30 × 0.40/0.42 × 1.18/1.12 = 54,183.67; lost tail = 20,000 × 0.30 × 0.40/0.42/1.12⁴ = 3,631.53; PVCCA = $50,552. $48,469 fails to discount the tail; $48,018 uses the UCC at year 4 instead of the sale price; $54,184 ignores the sale.",
+  "source": "generated",
+  "ref": "L05B s22; S5 s21-23"
+ },
+ {
+  "id": "q10-167",
+  "concept": "c10-pvcca",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Rowan Tools owns an asset with a UCC of $90,000 today (20% class), T = 30% and k = 10%. It will sell the asset in 3 years for $15,000. What is the PV of its remaining CCA tax shield?",
+  "options": [
+   "$18,000",
+   "$16,564",
+   "$15,000",
+   "$15,746"
+  ],
+  "answer": 3,
+  "explanation": "The asset is already depreciating, so the factor is 1: 90,000 × 0.20 × 0.30/0.30 = 18,000 less the lost tail 15,000 × 0.20 × 0.30/0.30 / 1.1³ = 2,253.94 gives $15,746. $18,000 ignores the sale; $16,564 applies the AII factor to an old asset; $15,000 does not discount the tail.",
+  "source": "generated",
+  "ref": "L05B s16, s22"
+ },
+ {
+  "id": "q10-168",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When assets are bought and sold in the same CCA class in the same year, net acquisitions equal:",
+  "options": [
+   "total additions minus the lesser of original cost and sale price of each disposal",
+   "total additions plus the proceeds of the disposals, since both are cash flows",
+   "total additions minus the UCC of the disposed assets at the date of sale",
+   "total additions minus the original cost of the disposals, always"
+  ],
+  "answer": 0,
+  "explanation": "Seminar 5: Net acquisition = total acquisitions − min(original cost, selling price). The lesser-of rule prevents a sale above cost from reducing the pool by more than cost.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-169",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A firm buys a new machine and sells an old one in the same class in the same year. Which rule determines the amount to which the 0.5 or 1.5 first-year multiplier is applied?",
+  "options": [
+   "The stand-alone principle",
+   "The net acquisitions rule",
+   "The capital gains inclusion rule",
+   "The salvage-term rule"
+  ],
+  "answer": 1,
+  "explanation": "The multiplier applies to net acquisitions (a positive net amount). The sale of the old asset reduces the amount that qualifies.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-170",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "In a replacement analysis, how do the net acquisition cost and the net salvage differ?",
+  "options": [
+   "Net acquisition arises at the end of the project, while net salvage is a cost today",
+   "Net acquisition is an after-tax figure while net salvage is stated before tax",
+   "Net acquisition = new cost − old resale today (the I0 in PVCCA); net salvage = new − old salvage at the end (S_N)",
+   "They are the same number, but net salvage is measured in a later year"
+  ],
+  "answer": 2,
+  "explanation": "One is the net outlay on the pool today (I0), the other is the net amount leaving the pool at the end (S_N).",
+  "source": "generated",
+  "ref": "S6 s8, s19"
+ },
+ {
+  "id": "q10-171",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT used in the PVCCA of a replacement project?",
+  "options": [
+   "New machine cost minus old machine resale value today",
+   "Net salvage at the end of the project",
+   "The tax rate on the shield",
+   "The old machine's book value as the I0"
+  ],
+  "answer": 3,
+  "explanation": "I0 in the PVCCA is the net acquisition cost, not the book value of the old machine. The old machine's UCC is irrelevant to the replacement PVCCA.",
+  "source": "generated",
+  "ref": "S6 s8-10"
+ },
+ {
+  "id": "q10-172",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the PVCCA of a replacement use the net acquisition rather than the full cost of the new machine?",
+  "options": [
+   "Selling the old machine removes its cost from the pool, so the pool grows by the net amount",
+   "Because the old machine's CCA continues forever and must be netted out",
+   "Because the tax rate applies only to the difference in prices",
+   "Because tax law forbids any CCA claim on assets bought as replacements"
+  ],
+  "answer": 0,
+  "explanation": "Additions less the disposal proceeds is the net amount added to the pool, and that is what earns CCA.",
+  "source": "generated",
+  "ref": "S5 s26; S6 s8"
+ },
+ {
+  "id": "q10-173",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A firm's disposals in a class exceed its additions in the year, so net acquisitions are negative. How is the first-year multiplier (0.5 or 1.5) applied?",
+  "options": [
+   "The multiplier is applied to the negative amount, reducing UCC further",
+   "No adjustment: the multiplier is applied only to a positive net acquisition",
+   "The multiplier is applied to the larger of additions and disposals",
+   "The multiplier is replaced by T_C"
+  ],
+  "answer": 1,
+  "explanation": "Seminar 5: if net acquisition is greater than zero apply the 1.5 times rule to the amount; if less than zero there is no adjustment.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-174",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "In a replacement problem, the net salvage value (new salvage minus old salvage) can be negative.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. If the old machine would have been worth more at the end than the new one, as in the simple replacement example (0 − 10,000), net salvage is −$10,000.",
+  "source": "generated",
+  "ref": "S6 s19"
+ },
+ {
+  "id": "q10-175",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "In a replacement, net salvage is −$10,000 (the old machine would have sold for $10,000 in 5 years; the new machine has no salvage). What does this do to the PVCCA salvage term?",
+  "options": [
+   "The term is dropped because net salvage cannot be negative in a replacement",
+   "The term is doubled because there are two machines to account for",
+   "The term is subtracted with a negative S_N, so it adds to PVCCA; the −$10,000 is also an outflow",
+   "The term is discounted at the real rate instead of the nominal rate"
+  ],
+  "answer": 2,
+  "explanation": "PVCCA = main term − (S_N d T/(k + d))/(1 + k)^N; with S_N = −10,000 the subtraction becomes an addition. Giving up the old machine's $10,000 resale is also a cash outflow at year 5.",
+  "source": "generated",
+  "ref": "S6 s19"
+ },
+ {
+  "id": "q10-176",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When a firm buys and sells in the same class in the same year, the first-year multiplier applies to the _____ acquisitions.",
+  "options": [
+   "gross",
+   "average",
+   "total",
+   "net"
+  ],
+  "answer": 3,
+  "explanation": "Net acquisitions = additions − min(original cost, sale price) of the disposals.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-177",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Fairview Haulage buys a new truck for $340,000 and, in the same year, sells an old truck from the same CCA class for $95,000. The old truck's original cost was $210,000. What is the net acquisition amount?",
+  "answer": 245000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "340000-95000",
+  "steps": [
+   {
+    "label": "min(original cost, selling price) = min(210,000, 95,000)",
+    "value": 95000.0,
+    "check": "95000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Net acquisition = additions − min(...)",
+    "value": 245000.0,
+    "check": "340000-95000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "min(210,000, 95,000) = 95,000",
+   "Net acquisition = 340,000 − 95,000 = $245,000"
+  ],
+  "keystrokes": [
+   "340000 − 95000 = 245,000"
+  ],
+  "errors": [
+   {
+    "id": "gross-cost-for-net",
+    "label": "Used the full cost of the new truck",
+    "value": 340000.0,
+    "check": "340000",
+    "explain": "The pool grows only by the net amount after the sale."
+   },
+   {
+    "id": "cost-for-min",
+    "label": "Subtracted the old truck's original cost",
+    "value": 130000.0,
+    "check": "340000-210000",
+    "explain": "The offset is the lesser of original cost and selling price: here the price, $95,000."
+   },
+   {
+    "id": "sign-proceeds",
+    "label": "Added the proceeds",
+    "value": 435000.0,
+    "check": "340000+95000",
+    "explain": "Proceeds reduce the amount added to the pool."
+   }
+  ],
+  "explanation": "Offset the additions by the lesser of the original cost and the sale price.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-178",
+  "concept": "c10-net-acquisitions",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Hartwell Metals will buy a new machine for $210,000 and sell its old machine (same class, original cost $120,000) today for $70,000. In 4 years the new machine would be worth $25,000 and the old machine $9,000. The class rate is 30%, T = 40%, k = 12%, and the half-year rule applies to net acquisitions. What is the PV of the CCA tax shield?",
+  "answer": 34951.92,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(140000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12)) - (16000*0.3*0.4)/(0.12+0.3)/(1+0.12)**4",
+  "steps": [
+   {
+    "label": "Net acquisition cost = 210,000 − 70,000",
+    "value": 140000.0,
+    "check": "210000-70000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Net salvage = 25,000 − 9,000",
+    "value": 16000.0,
+    "check": "25000-9000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "First term with half-year factor",
+    "value": 37857.14,
+    "check": "(140000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Salvage term",
+    "value": 2905.23,
+    "check": "(16000*0.3*0.4)/(0.12+0.3)/(1+0.12)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PVCCA",
+    "value": 34951.92,
+    "check": "(140000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12)) - (16000*0.3*0.4)/(0.12+0.3)/(1+0.12)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Net acquisition = 210,000 − 70,000 = 140,000 (the sale price is below the original cost)",
+   "Net salvage = 25,000 − 9,000 = 16,000",
+   "Base = 140,000 × 0.30 × 0.40/0.42 = 40,000; half-year factor = 1.06/1.12 = 0.946429; first term = 37,857.14",
+   "Salvage term = 16,000 × 0.30 × 0.40/0.42 / 1.12⁴ = 4,571.43/1.573519 = 2,905.23",
+   "PVCCA = 37,857.14 − 2,905.23 = $34,951.92"
+  ],
+  "keystrokes": [
+   "140000 × 0.3 × 0.4 ÷ 0.42 × 1.06 ÷ 1.12 = 37,857.14",
+   "− 16000 × 0.3 × 0.4 ÷ 0.42 ÷ 1.12^4 = 34,951.92"
+  ],
+  "errors": [
+   {
+    "id": "gross-cost-for-net",
+    "label": "Used the full cost of the new machine",
+    "value": 53880.49,
+    "check": "(210000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12)) - (16000*0.3*0.4)/(0.12+0.3)/(1+0.12)**4",
+    "explain": "I0 is the net acquisition cost, not the gross price."
+   },
+   {
+    "id": "ignored-old-salvage",
+    "label": "Used the new machine's salvage only",
+    "value": 33317.73,
+    "check": "(140000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12)) - (25000*0.3*0.4)/(0.12+0.3)/(1+0.12)**4",
+    "explain": "The old machine's lost salvage nets against the new machine's: S_N = 16,000."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage term",
+    "value": 33285.71,
+    "check": "(140000*0.3*0.4)/(0.12+0.3)*((1+0.5*0.12)/(1+0.12)) - (16000*0.3*0.4)/(0.12+0.3)",
+    "explain": "The lost-tail term must be discounted 4 years."
+   }
+  ],
+  "explanation": "Replace I0 by the net acquisition cost and S_N by the net salvage in the PVCCA formula.",
+  "source": "generated",
+  "ref": "S6 s8-10, s19"
+ },
+ {
+  "id": "q10-179",
+  "concept": "c10-net-acquisitions",
+  "also": [
+   "c10-pvcca",
+   "c10-replacement-npv"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm replaces an old machine with a new one costing $180,000. The old machine, whose original cost was $120,000, sells today for $75,000; kept, it would sell for $12,000 in 5 years. The new machine would have no salvage value. The class rate is 20%, T = 40%, k = 10% and the Accelerated Investment Incentive applies to net acquisitions. What is the PV of the CCA tax shield?",
+  "answer": 31259.68,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(105000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (-12000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+  "steps": [
+   {
+    "label": "Net acquisition cost = 180,000 − 75,000",
+    "value": 105000.0,
+    "check": "180000-75000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Net salvage = 0 − 12,000",
+    "value": -12000.0,
+    "check": "0-12000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "First term with AII factor",
+    "value": 29272.73,
+    "check": "(105000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Salvage term (a negative S_N)",
+    "value": -1986.95,
+    "check": "(-12000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PVCCA",
+    "value": 31259.68,
+    "check": "(105000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (-12000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Net acquisition = 180,000 − 75,000 = 105,000",
+   "Net salvage = 0 − 12,000 = −12,000",
+   "Base = 105,000 × 0.20 × 0.40/0.30 = 28,000; AII factor = 1.15/1.10 = 1.045455; first term = 29,272.73",
+   "Salvage term = (−12,000) × 0.20 × 0.40/0.30 / 1.10⁵ = −3,200/1.61051 = −1,986.95",
+   "PVCCA = 29,272.73 − (−1,986.95) = $31,259.68"
+  ],
+  "keystrokes": [
+   "105000 × 0.2 × 0.4 ÷ 0.3 × 1.15 ÷ 1.1 = 29,272.73",
+   "+ 12000 × 0.2 × 0.4 ÷ 0.3 ÷ 1.1^5 = 31,259.68"
+  ],
+  "errors": [
+   {
+    "id": "net-salvage-sign",
+    "label": "Used +12,000 as the net salvage",
+    "value": 27285.78,
+    "check": "(105000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (12000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "explain": "New minus old is 0 − 12,000 = −12,000; subtracting a negative term adds to PVCCA."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Ignored the net salvage",
+    "value": 29272.73,
+    "check": "(105000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1))",
+    "explain": "The net salvage of −12,000 still changes the shield."
+   },
+   {
+    "id": "gross-cost-for-net",
+    "label": "Used the full cost of the new machine",
+    "value": 52168.77,
+    "check": "(180000*0.2*0.4)/(0.1+0.2)*((1.5*0.1+1)/(1+0.1)) - (-12000*0.2*0.4)/(0.1+0.2)/(1+0.1)**5",
+    "explain": "I0 is the net acquisition cost of $105,000."
+   }
+  ],
+  "explanation": "Net acquisition cost is I0 and net salvage (new minus old, here negative) is S_N; subtracting a negative salvage term adds to the PV.",
+  "source": "generated",
+  "ref": "S6 s16-19"
+ },
+ {
+  "id": "q10-180",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm buys new equipment for $400,000 and, in the same year, sells old equipment from the same class for $62,000. The old equipment originally cost $50,000. What is the net acquisition amount?",
+  "options": [
+   "$350,000",
+   "$338,000",
+   "$400,000",
+   "$450,000"
+  ],
+  "answer": 0,
+  "explanation": "The offset is the lesser of original cost ($50,000) and selling price ($62,000): net acquisition = 400,000 − 50,000 = $350,000. $338,000 uses the selling price although it exceeds cost; $400,000 ignores the sale; $450,000 adds instead of subtracting.",
+  "source": "generated",
+  "ref": "S5 s26"
+ },
+ {
+  "id": "q10-181",
+  "concept": "c10-net-acquisitions",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In a replacement analysis the new machine can be sold for $30,000 at the end of the project; if kept, the old machine would be sold then for $12,000. What net salvage value goes into the PVCCA?",
+  "options": [
+   "$42,000",
+   "$18,000",
+   "$12,000",
+   "$30,000"
+  ],
+  "answer": 1,
+  "explanation": "Net salvage = new − old = 30,000 − 12,000 = $18,000. $42,000 adds the two; $12,000 uses only the old machine's value; $30,000 ignores the old machine's lost resale.",
+  "source": "generated",
+  "ref": "S6 s8, s19"
+ },
+ {
+  "id": "q10-182",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project has sales of $500,000, cash costs of $300,000 and CCA of $50,000. The tax rate is 30%. What is the operating cash flow?",
+  "options": [
+   "$105,000",
+   "$140,000",
+   "$190,000",
+   "$200,000",
+   "None of the above"
+  ],
+  "answer": 4,
+  "explanation": "OCF = (500,000 − 300,000)(0.70) + 0.30(50,000) = 140,000 + 15,000 = $155,000, which is not listed. $105,000 is net income (CCA not added back); $140,000 omits the CCA tax shield; $190,000 adds the whole CCA instead of T × CCA; $200,000 is S − C before any tax.",
+  "source": "generated",
+  "ref": "SM 10-5; S5 s15"
+ }
+]

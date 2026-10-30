@@ -1,0 +1,1669 @@
+[
+ {
+  "id": "q12-441",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 25% and Stock B has σ = 15%, and the two are perfectly positively correlated (ρ = +1). What is the standard deviation of a portfolio with 40% in A and 60% in B (% per annum)?",
+  "answer": 19.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.4**2*25**2 + 0.6**2*15**2 + 2*1*0.4*25*0.6*15)",
+  "steps": [
+   {
+    "label": "Weighted risk of A, w_A σ_A",
+    "value": 10.0,
+    "check": "0.4*25",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weighted risk of B, w_B σ_B",
+    "value": 9.0,
+    "check": "0.6*15",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 19.0,
+    "check": "sqrt(0.4**2*25**2 + 0.6**2*15**2 + 2*1*0.4*25*0.6*15)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "With ρ = 1 the formula is a perfect square: σ_P = √(w_Aσ_A + w_Bσ_B)² = w_A σ_A + w_B σ_B",
+   "= 0.4 × 25% + 0.6 × 15% = 10% + 9% = 19.00%",
+   "Check with the full formula: √(100 + 81 + 2 × 1 × 10 × 9) = √361 = 19.00%"
+  ],
+  "keystrokes": [
+   "0.4 × 25 = 10",
+   "0.6 × 15 = 9",
+   "10 + 9 = 19.00"
+  ],
+  "errors": [
+   {
+    "id": "no-correlation",
+    "label": "Left out the correlation cross-term (treated ρ as 0)",
+    "value": 13.45,
+    "check": "sqrt(0.4**2*25**2 + 0.6**2*15**2)",
+    "explain": "The cross-term 2ρ w_A σ_A w_B σ_B carries the correlation; dropping it assumes the stocks are uncorrelated."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (361) scaled to a decimal percent",
+    "value": 3.61,
+    "check": "(0.4**2*25**2 + 0.6**2*15**2 + 2*1*0.4*25*0.6*15)/100",
+    "explain": "361 is the variance; the SD is its square root."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Added the stand-alone SDs with no weights",
+    "value": 40.0,
+    "check": "25 + 15",
+    "explain": "Each SD is multiplied by its weight; the weights sum to 1."
+   }
+  ],
+  "explanation": "ρ = +1 is the one case where risk is linear: σ_P = 0.4(25) + 0.6(15) = 19.00%. Any ρ < 1 would give less than this, which is why 19% is the upper limit for every mix of these two stocks.",
+  "source": "generated",
+  "ref": "L06 s24, s32"
+ },
+ {
+  "id": "q12-442",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stock A has σ = 30% and Stock B has σ = 20%, and the two are perfectly negatively correlated (ρ = −1). What is the standard deviation of a portfolio with 60% in A and 40% in B (% per annum)?",
+  "answer": 10.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.6**2*30**2 + 0.4**2*20**2 + 2*(-1)*0.6*30*0.4*20)",
+  "steps": [
+   {
+    "label": "Weighted risk of A, w_A σ_A",
+    "value": 18.0,
+    "check": "0.6*30",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weighted risk of B, w_B σ_B",
+    "value": 8.0,
+    "check": "0.4*20",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P = |w_Aσ_A − w_Bσ_B|",
+    "value": 10.0,
+    "check": "sqrt(0.6**2*30**2 + 0.4**2*20**2 + 2*(-1)*0.6*30*0.4*20)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "With ρ = −1 the formula is the perfect square (w_Aσ_A − w_Bσ_B)², so σ_P = |w_A σ_A − w_B σ_B|",
+   "= |0.6 × 30% − 0.4 × 20%| = |18% − 8%| = 10.00%",
+   "Check: √(324 + 64 + 2 × (−1) × 18 × 8) = √(388 − 288) = √100 = 10.00%"
+  ],
+  "keystrokes": [
+   "0.6 × 30 = 18",
+   "0.4 × 20 = 8",
+   "|18 − 8| = 10.00"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (as a decimal) instead of its square root",
+    "value": 1.0,
+    "check": "(0.6**2*30**2 + 0.4**2*20**2 + 2*(-1)*0.6*30*0.4*20)/100",
+    "explain": "σ_P is the square root of the portfolio variance; stopping at the variance gives a number in squared units."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Left out the correlation cross-term (treated ρ as 0)",
+    "value": 19.7,
+    "check": "sqrt(0.6**2*30**2 + 0.4**2*20**2)",
+    "explain": "The cross-term 2ρ w_A σ_A w_B σ_B carries the correlation; dropping it assumes the stocks are uncorrelated."
+   },
+   {
+    "id": "sign-of-rho",
+    "label": "Used ρ = +1 in the cross-term (added the two risks)",
+    "value": 26.0,
+    "check": "sqrt(0.6**2*30**2 + 0.4**2*20**2 + 2*0.6*30*0.4*20)",
+    "explain": "The cross-term is 2ρ w_A σ_A w_B σ_B with ρ = −1: it subtracts 288, it does not add it."
+   }
+  ],
+  "explanation": "At ρ = −1 the two risks offset: σ_P = |18% − 8%| = 10.00%, far below the 26.00% weighted average. Changing the weights to 40/60 would give 12% − 12% = 0, a riskless portfolio.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s32"
+ },
+ {
+  "id": "q12-443",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Of a $40,000 portfolio, $25,000 is invested in a Canadian equity fund with σ = 19.2% and the rest in Treasury bills. What is the portfolio's standard deviation (% per annum)?",
+  "answer": 12.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "25000/40000*19.2",
+  "steps": [
+   {
+    "label": "Weight in the equity fund",
+    "value": 0.625,
+    "check": "25000/40000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P = w σ_fund",
+    "value": 12.0,
+    "check": "25000/40000*19.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "T-bills have σ = 0 and ρ = 0 with the fund, so the formula reduces to σ_P = w_P σ_P",
+   "w = 25,000 / 40,000 = 0.625",
+   "σ_P = 0.625 × 19.2% = 12.00% per annum"
+  ],
+  "keystrokes": [
+   "25000 ÷ 40000 = 0.625",
+   "0.625 × 19.2 = 12.00"
+  ],
+  "errors": [
+   {
+    "id": "swapped-weights",
+    "label": "Used the T-bill weight (0.375)",
+    "value": 7.2,
+    "check": "15000/40000*19.2",
+    "explain": "The risk comes from the equity fund, so its weight (0.625) multiplies σ."
+   },
+   {
+    "id": "ignored-rf-weight",
+    "label": "Reported the fund's own SD",
+    "value": 19.2,
+    "check": "19.2",
+    "explain": "Holding part of the money in T-bills scales the risk down in proportion."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Squared the weight and σ without a square root (decimal variance)",
+    "value": 1.44,
+    "check": "(25000/40000*19.2)**2/100",
+    "explain": "σ_P = w σ already; no squaring is needed for the risk-free mix."
+   }
+  ],
+  "explanation": "With a risk-free asset the cross-term and the risk-free variance both vanish, so σ_P is simply the risky weight times the risky σ: 0.625 × 19.2% = 12.00%. This straight-line scaling is why a capital allocation line is a straight line.",
+  "source": "generated",
+  "ref": "L06 s40"
+ },
+ {
+  "id": "q12-444",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-portfolio-weights-return"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You use $40,000 of your own money and borrow $20,000 at the risk-free rate of 3% per annum, investing all $60,000 in a fund with E[R] = 9% and σ = 14%. What is the standard deviation of the return on your own $40,000 (% per annum)?",
+  "answer": 21.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "1.5*14",
+  "steps": [
+   {
+    "label": "Weight in the fund",
+    "value": 1.5,
+    "check": "60000/40000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P = w σ_fund",
+    "value": 21.0,
+    "check": "1.5*14",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Weights on your own money: w_fund = 60,000/40,000 = 1.50 and w_F = −20,000/40,000 = −0.50",
+   "σ_P = w_fund × σ_fund (the risk-free asset adds no variance) = 1.50 × 14% = 21.00%",
+   "Expected return for reference: 1.5 × 9% − 0.5 × 3% = 12.0%"
+  ],
+  "keystrokes": [
+   "60000 ÷ 40000 = 1.5",
+   "1.5 × 14 = 21.00"
+  ],
+  "errors": [
+   {
+    "id": "ignored-leverage",
+    "label": "Reported the fund's own SD",
+    "value": 14.0,
+    "check": "14",
+    "explain": "Borrowing to hold 150% of your capital in the fund multiplies the risk by 1.5."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Used the borrowing weight (0.5)",
+    "value": 7.0,
+    "check": "0.5*14",
+    "explain": "The fund weight is 1.5, not 0.5; the risk-free weight is −0.5."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Counted the loan as a positive 0.5 weight: (1.5 + 0.5) × 14",
+    "value": 28.0,
+    "check": "(1.5+0.5)*14",
+    "explain": "Borrowing is a negative weight; the weights must sum to 1 (1.5 − 0.5), and the risk-free asset adds no risk."
+   }
+  ],
+  "explanation": "Leverage scales risk linearly: σ_P = 1.5 × 14% = 21.00%. The loan has no variance (it is risk-free), so all of the risk comes from the 150% position in the fund.",
+  "source": "generated",
+  "ref": "L06 s39-40"
+ },
+ {
+  "id": "q12-445",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-portfolio-weights-return",
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You hold $30,000 of Stock A (σ = 28%) and $20,000 of Stock B (σ = 16%). The correlation between them is 0.2. What is the standard deviation of the portfolio (% per annum)?",
+  "answer": 19.14,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.6**2*28**2 + 0.4**2*16**2 + 2*0.2*0.6*28*0.4*16)",
+  "steps": [
+   {
+    "label": "Weight in A",
+    "value": 0.6,
+    "check": "30000/50000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Portfolio variance (%²)",
+    "value": 366.21,
+    "check": "0.6**2*28**2 + 0.4**2*16**2 + 2*0.2*0.6*28*0.4*16",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 19.14,
+    "check": "sqrt(0.6**2*28**2 + 0.4**2*16**2 + 2*0.2*0.6*28*0.4*16)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Weights: w_A = 30,000/50,000 = 0.60 and w_B = 0.40",
+   "Variance = 0.36 × 784 + 0.16 × 256 + 2 × 0.2 × 0.6 × 28 × 0.4 × 16 = 282.240 + 40.960 + 43.008 = 366.208",
+   "σ_P = √366.208 = 19.14% per annum"
+  ],
+  "keystrokes": [
+   "30000 ÷ 50000 = 0.6",
+   "0.36 × 784 + 0.16 × 256 + 2 × 0.2 × 0.6 × 28 × 0.4 × 16 = 366.208",
+   "2nd √x = 19.14"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (as a decimal) instead of its square root",
+    "value": 3.66,
+    "check": "(0.6**2*28**2 + 0.4**2*16**2 + 2*0.2*0.6*28*0.4*16)/100",
+    "explain": "σ_P is the square root of the portfolio variance; stopping at the variance gives a number in squared units."
+   },
+   {
+    "id": "rho-one-shortcut",
+    "label": "Used the weighted average of the two SDs (the ρ = 1 shortcut)",
+    "value": 23.2,
+    "check": "0.6*28 + 0.4*16",
+    "explain": "w_A σ_A + w_B σ_B is the answer only when ρ = 1; for ρ < 1 the portfolio SD is smaller."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Left out the correlation cross-term (treated ρ as 0)",
+    "value": 17.98,
+    "check": "sqrt(0.6**2*28**2 + 0.4**2*16**2)",
+    "explain": "The cross-term 2ρ w_A σ_A w_B σ_B carries the correlation; dropping it assumes the stocks are uncorrelated."
+   }
+  ],
+  "explanation": "Convert dollars to weights first (0.60, 0.40), then apply σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ w_A σ_A w_B σ_B) = 19.14%, below the 23.20% weighted average.",
+  "source": "generated",
+  "ref": "SM 13-1, 13-11"
+ },
+ {
+  "id": "q12-446",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-portfolio-weights-return",
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Invest 75% of your funds in Asset X (E[R] = 9%, σ = 14%) and 25% in Asset Y (E[R] = 15%, σ = 20%). The correlation between X and Y is 0.3. What is the standard deviation of the portfolio (% per annum)?",
+  "answer": 12.91,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.75**2*14**2 + 0.25**2*20**2 + 2*0.3*0.75*14*0.25*20)",
+  "steps": [
+   {
+    "label": "Portfolio expected return E[R_P]",
+    "value": 10.5,
+    "check": "0.75*9 + 0.25*15",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio variance (%²)",
+    "value": 166.75,
+    "check": "0.75**2*14**2 + 0.25**2*20**2 + 2*0.3*0.75*14*0.25*20",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 12.91,
+    "check": "sqrt(0.75**2*14**2 + 0.25**2*20**2 + 2*0.3*0.75*14*0.25*20)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R_P] = 0.75 × 9% + 0.25 × 15% = 10.50% (linear, no ρ needed)",
+   "Variance = 0.5625 × 196 + 0.0625 × 400 + 2 × 0.3 × 0.75 × 14 × 0.25 × 20 = 110.25 + 25.00 + 31.50 = 166.75",
+   "σ_P = √166.75 = 12.91% per annum"
+  ],
+  "keystrokes": [
+   "0.5625 × 196 = 110.25",
+   "0.0625 × 400 = 25",
+   "2 × 0.3 × 0.75 × 14 × 0.25 × 20 = 31.5",
+   "sum 166.75, 2nd √x = 12.91"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (as a decimal) instead of its square root",
+    "value": 1.67,
+    "check": "(0.75**2*14**2 + 0.25**2*20**2 + 2*0.3*0.75*14*0.25*20)/100",
+    "explain": "σ_P is the square root of the portfolio variance; stopping at the variance gives a number in squared units."
+   },
+   {
+    "id": "rho-one-shortcut",
+    "label": "Used the weighted average of the two SDs (the ρ = 1 shortcut)",
+    "value": 15.5,
+    "check": "0.75*14 + 0.25*20",
+    "explain": "w_A σ_A + w_B σ_B is the answer only when ρ = 1; for ρ < 1 the portfolio SD is smaller."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Left out the correlation cross-term (treated ρ as 0)",
+    "value": 11.63,
+    "check": "sqrt(0.75**2*14**2 + 0.25**2*20**2)",
+    "explain": "The cross-term 2ρ w_A σ_A w_B σ_B carries the correlation; dropping it assumes the stocks are uncorrelated."
+   }
+  ],
+  "explanation": "Return is a weighted average (10.50%) but risk is not: σ_P = 12.91% is less than the weighted average of 15.5% because ρ = 0.3 < 1. Report the pair (10.50%, 12.91%) as the portfolio's point on the risk-return diagram.",
+  "source": "generated",
+  "ref": "S7 s11-13, L06 s22-24"
+ },
+ {
+  "id": "q12-447",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-portfolio-weights-return",
+   "c12-covariance-correlation"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A portfolio is 50% Stock A and 50% Stock B. Boom (probability 0.25): A 20%, B −4%. Normal (0.50): A 8%, B 6%. Recession (0.25): A −10%, B 14%. What is the standard deviation of the portfolio's return (% per annum)?",
+  "answer": 2.35,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.25*(8-6)**2 + 0.50*(7-6)**2 + 0.25*(2-6)**2)",
+  "steps": [
+   {
+    "label": "Portfolio return in Boom",
+    "value": 8.0,
+    "check": "0.5*20+0.5*(-4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in Normal",
+    "value": 7.0,
+    "check": "0.5*8+0.5*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in Recession",
+    "value": 2.0,
+    "check": "0.5*(-10)+0.5*14",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 6.0,
+    "check": "0.25*8 + 0.50*7 + 0.25*2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio variance (%²)",
+    "value": 5.5,
+    "check": "0.25*(8-6)**2 + 0.50*(7-6)**2 + 0.25*(2-6)**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 2.35,
+    "check": "sqrt(0.25*(8-6)**2 + 0.50*(7-6)**2 + 0.25*(2-6)**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Portfolio return in each state: Boom 0.5(20) + 0.5(−4) = 8%; Normal 0.5(8) + 0.5(6) = 7%; Recession 0.5(−10) + 0.5(14) = 2%",
+   "E[R_P] = 0.25(8) + 0.50(7) + 0.25(2) = 6.00%",
+   "σ_P² = 0.25(8 − 6)² + 0.50(7 − 6)² + 0.25(2 − 6)² = 1.00 + 0.50 + 4.00 = 5.50",
+   "σ_P = √5.50 = 2.35% per annum (the formula route gives the same: σ_A = 10.71%, σ_B = 6.38%, cov = −66.75 %² = −0.006675 in decimals, ρ = −0.98)"
+  ],
+  "keystrokes": [
+   "0.5 × 20 + 0.5 × (−4) = 8; 0.5 × 8 + 0.5 × 6 = 7; 0.5 × (−10) + 0.5 × 14 = 2",
+   "0.25 × 8 + 0.5 × 7 + 0.25 × 2 = 6",
+   "0.25 × 4 + 0.5 × 1 + 0.25 × 16 = 5.5, 2nd √x = 2.35"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (5.50) instead of its square root",
+    "value": 5.5,
+    "check": "0.25*(8-6)**2 + 0.50*(7-6)**2 + 0.25*(2-6)**2",
+    "explain": "5.50 is a variance in %²; the SD is its square root."
+   },
+   {
+    "id": "rho-one-shortcut",
+    "label": "Weighted average of the two stocks' SDs (10.71% and 6.38%)",
+    "value": 8.55,
+    "check": "0.5*sqrt(0.25*(20-6.5)**2+0.5*(8-6.5)**2+0.25*(-10-6.5)**2) + 0.5*sqrt(0.25*(-4-5.5)**2+0.5*(6-5.5)**2+0.25*(14-5.5)**2)",
+    "explain": "The two stocks are almost perfectly negatively correlated (ρ ≈ −0.98), so averaging their SDs overstates the risk by a wide margin."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Gave the three states equal weight",
+    "value": 2.62,
+    "check": "sqrt(((8-17/3)**2 + (7-17/3)**2 + (2-17/3)**2)/3)",
+    "explain": "States have probabilities 0.25/0.50/0.25; equal weighting changes both the mean and the variance."
+   }
+  ],
+  "explanation": "When the data are given by state, the quickest route is to compute the portfolio's return in every state and then treat it as a single asset: E[R_P] = 6.00%, σ_P² = 5.50, σ_P = 2.35%. The formula route (σ's, cov, weights) gives the same answer; A and B hedge each other so risk falls from about 8.5% (the weighted average) to 2.35%.",
+  "source": "generated",
+  "ref": "S7 s4-6, TB 13.2, SM 13-9"
+ },
+ {
+  "id": "q12-448",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The correlation coefficient ρ_AB between the returns of stocks A and B is:",
+  "options": [
+   "cov(A,B) / σ_B², the slope of A's returns on B's returns",
+   "cov(A,B) / (σ_A σ_B), a unit-free number between −1 and +1",
+   "cov(A,B) × σ_A × σ_B, a number in squared percent",
+   "σ_A σ_B / cov(A,B), which is always above 1"
+  ],
+  "answer": 1,
+  "explanation": "ρ_AB = cov(A,B)/(σ_A σ_B) standardizes the covariance by the two standard deviations, so it has no units and lies in [−1, +1]. Dividing by one variance gives a regression slope (beta-type measure), not a correlation.",
+  "source": "generated",
+  "ref": "L06 s27, S7 s6"
+ },
+ {
+  "id": "q12-449",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which pair of stocks is most likely to have the highest correlation of returns?",
+  "options": [
+   "Two Canadian chartered banks",
+   "A Calgary oil producer and a Vancouver software company",
+   "A Canadian bank and a Japanese automaker",
+   "A gold miner and a regulated electric utility"
+  ],
+  "answer": 0,
+  "explanation": "Stocks in the same industry and the same country respond to the same news (interest rates, regulation, the Canadian economy), so their returns move together and ρ is high and positive. Different industries or different countries have lower correlations, and lower correlation means a bigger diversification benefit.",
+  "source": "generated",
+  "ref": "L06 s30"
+ },
+ {
+  "id": "q12-450",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A scatter plot puts Stock A's yearly returns on the horizontal axis and Stock B's on the vertical axis. The points sit tightly around a straight line sloping downward from left to right. The correlation is closest to:",
+  "options": [
+   "0",
+   "+0.9",
+   "−0.1",
+   "−0.9"
+  ],
+  "answer": 3,
+  "explanation": "A downward-sloping tight cloud means that when A is high B is low: strong negative correlation, near −1. A formless blob is near 0, and an upward-sloping tight line is near +1.",
+  "source": "generated",
+  "ref": "L06 s28, S7 s8-10"
+ },
+ {
+  "id": "q12-451",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts covariance and correlation?",
+  "options": [
+   "Covariance is bounded by ±1, whereas correlation is measured in squared percent",
+   "Covariance and correlation always have opposite signs for the same pair of stocks",
+   "Correlation measures the average return of two stocks, covariance measures their risk",
+   "Correlation is covariance scaled by σ_A σ_B: unit-free and bounded by ±1, unlike covariance"
+  ],
+  "answer": 3,
+  "explanation": "Both share the same sign (the sign of the co-movement). Dividing the covariance by σ_A σ_B removes the units and caps the result at ±1 so strengths are comparable across pairs; the raw covariance grows with the stocks' volatility.",
+  "source": "generated",
+  "ref": "L06 s27, S7 s6"
+ },
+ {
+  "id": "q12-452",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following could NOT be the correlation coefficient between two stocks?",
+  "options": [
+   "−0.85",
+   "+1.20",
+   "0.00",
+   "+0.62"
+  ],
+  "answer": 1,
+  "explanation": "Correlation is always between −1 and +1, so +1.20 is impossible; it signals an arithmetic or units error, for example mixing percent and decimals.",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-453",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we divide the covariance by σ_A σ_B to get the correlation?",
+  "options": [
+   "It converts the covariance from percent into dollars",
+   "It makes the covariance equal to the portfolio's expected return",
+   "It removes the units, so ρ shows only the direction and strength of co-movement",
+   "It ensures that the correlation always comes out positive"
+  ],
+  "answer": 2,
+  "explanation": "A covariance of 0.03 could be strong for two calm stocks or weak for two volatile ones. Dividing by σ_A σ_B standardizes the relationship so that +1, 0 and −1 mean the same thing for every pair.",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-454",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "A student computes cov(A,B), σ_A and σ_B from a five-year sample, but divides all three sums by N = 5 instead of N − 1 = 4. What happens to the correlation?",
+  "options": [
+   "It becomes too high by a factor of 5/4",
+   "It is unchanged, because the same factor cancels",
+   "It becomes too low by a factor of 4/5",
+   "It is no longer bounded by ±1"
+  ],
+  "answer": 1,
+  "explanation": "Each of cov, σ_A² and σ_B² is a sum divided by N or N − 1. In ρ = cov/(σ_Aσ_B) the denominators are the same factor 1/(N−1) in numerator and in √(σ_A² σ_B²), so it cancels. (Mixing N for one term and N − 1 for another would, however, bias ρ.)",
+  "source": "generated",
+  "ref": "L06 s13, s27"
+ },
+ {
+  "id": "q12-455",
+  "concept": "c12-covariance-correlation",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "The correlation between two Canadian bank stocks is estimated at 0.85. What does this imply for combining them in a portfolio?",
+  "options": [
+   "Some benefit remains because ρ < 1, but it is small since the stocks move together",
+   "There is no diversification benefit at all, since the correlation is positive",
+   "The portfolio will be riskless, because stocks that move together offset each other",
+   "The portfolio's expected return will be lower than either stock's"
+  ],
+  "answer": 0,
+  "explanation": "Any ρ below 1 gives some benefit (σ_P lower than the weighted average of the σ's), but at 0.85 the cross-term is almost at its maximum so the gain is modest. The benefit comes at no cost in expected return because E[R_P] is a weighted average.",
+  "source": "generated",
+  "ref": "L06 s30, s33"
+ },
+ {
+  "id": "q12-456",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "cov(A,B) = −0.0150. Which interpretation is correct?",
+  "options": [
+   "The two stocks are perfectly negatively correlated",
+   "The stocks are uncorrelated because the number is close to zero",
+   "One of the stocks must have a negative expected return",
+   "The returns tend to move in opposite directions; strength needs ρ = cov/(σ_A σ_B)"
+  ],
+  "answer": 3,
+  "explanation": "The sign shows direction (negative: when A is above its mean B tends to be below its mean). The size depends on the stocks' volatilities, so −0.0150 could be anything from weak to perfect negative correlation until it is converted to ρ.",
+  "source": "generated",
+  "ref": "S7 s5-6"
+ },
+ {
+  "id": "q12-457",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A student reports a correlation of 1.18 between two stocks. What is the best interpretation?",
+  "options": [
+   "The stocks are more than perfectly correlated, so diversification will increase risk",
+   "It is valid if the covariance is large enough",
+   "The value is impossible: ρ must lie in [−1, +1], so there is a units or arithmetic error to find",
+   "It indicates leveraged stocks with betas above 1"
+  ],
+  "answer": 2,
+  "explanation": "A correlation outside [−1, +1] is always a mistake: typically a wrong denominator (for example dividing by one variance, or by σ_A σ_B in different units), a unit mix of percent and decimals, or an arithmetic slip. Recheck before using the number.",
+  "source": "generated",
+  "ref": "S7 s7, L06 s27"
+ },
+ {
+  "id": "q12-458",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Every return on Stock A is doubled (a 2× leveraged version, A' = 2A) while Stock B is unchanged. What happens to cov(A',B) and to ρ(A',B) compared with cov(A,B) and ρ(A,B)?",
+  "options": [
+   "Both double",
+   "The covariance doubles; the correlation is unchanged",
+   "The covariance is unchanged; the correlation doubles",
+   "Both are unchanged"
+  ],
+  "answer": 1,
+  "explanation": "cov(2A, B) = 2 cov(A,B), but σ_(2A) = 2σ_A as well, so ρ = 2cov/(2σ_A σ_B) is unchanged. This is why correlation, not covariance, describes the pattern of co-movement independent of scale.",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-459",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Returns of two stocks over five years are given. The sample covariance is the sum of products of deviations from the means divided by:",
+  "options": [
+   "N = 5",
+   "N + 1 = 6",
+   "N − 1 = 4",
+   "The sum of the probabilities"
+  ],
+  "answer": 2,
+  "explanation": "The professor uses the sample version (÷(N − 1)) for a short history such as five years of one stock, and the population version (÷N) only when the data are the whole population. Probabilities are used instead of a divisor when returns are given by state of the economy.",
+  "source": "generated",
+  "ref": "L06 s13, s27"
+ },
+ {
+  "id": "q12-460",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Returns of two stocks are listed for three states of the economy with probabilities 0.20, 0.50 and 0.30. How is cov(A,B) computed?",
+  "options": [
+   "Σ p_i (R_A,i − E[R_A])(R_B,i − E[R_B]), with no division by N − 1",
+   "Σ (R_A,i − E[R_A])(R_B,i − E[R_B]) / (N − 1) with N = 3",
+   "Σ p_i R_A,i R_B,i, without subtracting the means",
+   "Σ p_i (R_A,i − R_B,i)², the squared difference between the two stocks' returns"
+  ],
+  "answer": 0,
+  "explanation": "With probabilities given, each state's deviation product is weighted by its probability: cov = Σ p (R_A − E_A)(R_B − E_B). Dividing by N − 1 is for historical samples; skipping the deviations gives E[R_A R_B], which is not the covariance.",
+  "source": "generated",
+  "ref": "S7 s5, FS p2"
+ },
+ {
+  "id": "q12-461",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "If cov(A,B) = 0, then the correlation between A and B is 0.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. ρ = cov/(σ_A σ_B), so a zero numerator gives ρ = 0 (as long as both σ are positive). Uncorrelated stocks have no cross-term in the portfolio variance.",
+  "source": "generated",
+  "ref": "S7 s7"
+ },
+ {
+  "id": "q12-462",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A correlation of −0.9 between two stocks indicates a stronger linear relationship than a correlation of +0.3.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Strength is the magnitude |ρ| (0.9 versus 0.3); the sign only gives the direction. −0.9 means the stocks move almost exactly opposite to each other, the best case for diversification.",
+  "source": "generated",
+  "ref": "S7 s7"
+ },
+ {
+  "id": "q12-463",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A correlation of 0.5 between A and B means that B's return is always exactly half of A's return.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. A correlation of 0.5 describes a loose tendency to move together; it says nothing about a fixed proportion. Only |ρ| = 1 means an exact linear relationship.",
+  "source": "generated",
+  "ref": "S7 s7"
+ },
+ {
+  "id": "q12-464",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Two stocks in the same industry and the same country tend to have a _____ correlation.",
+  "options": [
+   "low positive",
+   "negative",
+   "high positive",
+   "zero"
+  ],
+  "answer": 2,
+  "explanation": "Common industry and country factors drive both stocks, so their returns rise and fall together; stocks in different industries or countries have lower correlations and offer more diversification.",
+  "source": "generated",
+  "ref": "L06 s30"
+ },
+ {
+  "id": "q12-465",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 24% and Stock B has σ = 15%; cov(A,B) = 0.0180 (decimals). What is the correlation between A and B?",
+  "options": [
+   "0.02",
+   "0.31",
+   "0.50",
+   "0.80"
+  ],
+  "answer": 2,
+  "explanation": "ρ = cov/(σ_A σ_B) = 0.0180/(0.24 × 0.15) = 0.0180/0.0360 = 0.50. Dividing by σ_A² (0.31) or σ_B² (0.80) gives a beta-type slope, and reporting 0.02 simply quotes the covariance as if it were ρ.",
+  "source": "generated",
+  "ref": "S7 s6"
+ },
+ {
+  "id": "q12-466",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "In three equally likely states of the economy, Stock X returns 15%, 6% and −3%, and Stock Y returns 4%, 10% and 10%. What is cov(X,Y), with returns as decimals?",
+  "options": [
+   "−0.0054",
+   "−0.0027",
+   "−0.0018",
+   "0.0030"
+  ],
+  "answer": 2,
+  "explanation": "E[R_X] = 6%, E[R_Y] = 8%. Deviation products (decimals): 0.09 × (−0.04) = −0.0036, 0 × 0.02 = 0, (−0.09)(0.02) = −0.0018. With probability 1/3 each, cov = (−0.0036 + 0 − 0.0018)/3 = −0.0018. Dividing by N − 1 gives −0.0027, leaving the sum undivided gives −0.0054, and skipping the means (E[XY]) gives 0.0030.",
+  "source": "generated",
+  "ref": "S7 s5"
+ },
+ {
+  "id": "q12-467",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 18% and Stock B has σ = 30%; their correlation is −0.5. What is cov(A,B), with returns as decimals?",
+  "options": [
+   "−0.1200",
+   "−0.0900",
+   "−0.0270",
+   "0.0270"
+  ],
+  "answer": 2,
+  "explanation": "cov(A,B) = ρ σ_A σ_B = (−0.5)(0.18)(0.30) = −0.0270. The positive 0.0270 loses the sign, −0.0900 omits σ_B, and −0.1200 uses the average of the two σ's in place of their product.",
+  "source": "generated",
+  "ref": "L06 s27, S7 s6"
+ },
+ {
+  "id": "q12-468",
+  "concept": "c12-covariance-correlation",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Strong economy (probability 0.30): Stock A returns 18%, Stock B 6%. Moderate (0.50): A 9%, B 8%. Weak (0.20): A −6%, B 20%. What is the correlation between A and B?",
+  "answer": -0.95,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))/(sqrt((0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2))*sqrt((0.3*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.5*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.2*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20))**2)))",
+  "steps": [
+   {
+    "label": "Expected return E[R_A]",
+    "value": 8.7,
+    "check": "(0.3*0.18+0.5*0.09+0.2*(-0.06))*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return E[R_B]",
+    "value": 9.8,
+    "check": "(0.3*0.06+0.5*0.08+0.2*0.20)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Standard deviation σ_A",
+    "value": 8.32,
+    "check": "sqrt((0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2))*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Standard deviation σ_B",
+    "value": 5.17,
+    "check": "sqrt((0.3*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.5*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.2*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20))**2))*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Covariance cov(A,B), in decimals",
+    "value": -0.00409,
+    "check": "(0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Correlation ρ_AB",
+    "value": -0.95,
+    "check": "(0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))/(sqrt((0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2))*sqrt((0.3*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.5*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.2*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20))**2)))",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_A] = 0.3(18) + 0.5(9) + 0.2(−6) = 8.7%; E[R_B] = 0.3(6) + 0.5(8) + 0.2(20) = 9.8%",
+   "Deviations (A): +9.3, +0.3, −14.7; (B): −3.8, −1.8, +10.2 (in %)",
+   "σ_A² = 0.3(9.3)² + 0.5(0.3)² + 0.2(14.7)² = 69.21 → σ_A = 8.32%; σ_B² = 0.3(3.8)² + 0.5(1.8)² + 0.2(10.2)² = 26.76 → σ_B = 5.17%",
+   "cov = 0.3(9.3)(−3.8) + 0.5(0.3)(−1.8) + 0.2(−14.7)(10.2) = −40.86 %² = −0.004086",
+   "ρ = cov/(σ_A σ_B) = −40.86/(8.319 × 5.173) = −0.95"
+  ],
+  "keystrokes": [
+   "Use the statistics (2nd DATA) or compute by hand: 0.3 × 9.3 × (−3.8) = −10.602",
+   "0.5 × 0.3 × (−1.8) = −0.27",
+   "0.2 × (−14.7) × 10.2 = −29.988; sum = −40.86",
+   "√69.21 = 8.319; √26.76 = 5.173; −40.86 ÷ (8.319 × 5.173) = −0.95"
+  ],
+  "errors": [
+   {
+    "id": "ignored-probabilities",
+    "label": "Summed the deviation products without weighting by the probabilities",
+    "value": -0.97,
+    "check": "((0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))/sqrt(((0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2)*((0.06-(0.3*0.06+0.5*0.08+0.2*0.20))**2+(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))**2+(0.20-(0.3*0.06+0.5*0.08+0.2*0.20))**2))",
+    "explain": "Each state's deviation product must be multiplied by its probability; an unweighted sum treats the states as equally likely."
+   },
+   {
+    "id": "cov-as-rho",
+    "label": "Reported the covariance (in decimals) as the correlation",
+    "value": -0.0041,
+    "check": "(0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))",
+    "explain": "The covariance still carries the units of σ_A σ_B; divide by σ_A σ_B to get ρ."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Divided the covariance in %² by σ's in decimals",
+    "value": -9494.5,
+    "check": "((0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20)))*10000)/(sqrt((0.3*(0.18-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.5*(0.09-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2+0.2*(-0.06-(0.3*0.18+0.5*0.09+0.2*(-0.06)))**2))*sqrt((0.3*(0.06-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.5*(0.08-(0.3*0.06+0.5*0.08+0.2*0.20))**2+0.2*(0.20-(0.3*0.06+0.5*0.08+0.2*0.20))**2)))",
+    "explain": "Mixing percent and decimal units gives a nonsense ρ far outside [−1, 1]."
+   }
+  ],
+  "explanation": "ρ_AB = −0.95: the two stocks move almost exactly opposite across the three states, so a portfolio of both would remove most of the risk. Always compute E first, then deviations, then probability-weighted squares and products; a ρ outside [−1, 1] means a units slip.",
+  "source": "generated",
+  "ref": "S7 s4-6"
+ },
+ {
+  "id": "q12-469",
+  "concept": "c12-covariance-correlation",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In three equally likely states, Stock A returns 14%, 6% and −2%, while Stock B returns 3%, 7% and 11%. What is the correlation between A and B?",
+  "answer": -1.0,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(((0.14-0.06)*(0.03-0.07)+(0.06-0.06)*(0.07-0.07)+(-0.02-0.06)*(0.11-0.07))/3)/(sqrt(((0.14-0.06)**2+(0.06-0.06)**2+(-0.02-0.06)**2)/3)*sqrt(((0.03-0.07)**2+(0.07-0.07)**2+(0.11-0.07)**2)/3))",
+  "steps": [
+   {
+    "label": "Expected return E[R_A]",
+    "value": 6.0,
+    "check": "(0.14+0.06-0.02)/3*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Standard deviation σ_A",
+    "value": 6.53,
+    "check": "sqrt(((0.14-0.06)**2+(0.06-0.06)**2+(-0.02-0.06)**2)/3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Standard deviation σ_B",
+    "value": 3.27,
+    "check": "sqrt(((0.03-0.07)**2+(0.07-0.07)**2+(0.11-0.07)**2)/3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Covariance cov(A,B), in decimals",
+    "value": -0.00213,
+    "check": "((0.14-0.06)*(0.03-0.07)+(0.06-0.06)*(0.07-0.07)+(-0.02-0.06)*(0.11-0.07))/3",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Correlation ρ_AB",
+    "value": -1.0,
+    "check": "(((0.14-0.06)*(0.03-0.07)+(0.06-0.06)*(0.07-0.07)+(-0.02-0.06)*(0.11-0.07))/3)/(sqrt(((0.14-0.06)**2+(0.06-0.06)**2+(-0.02-0.06)**2)/3)*sqrt(((0.03-0.07)**2+(0.07-0.07)**2+(0.11-0.07)**2)/3))",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_A] = (14 + 6 − 2)/3 = 6%; E[R_B] = (3 + 7 + 11)/3 = 7%. Deviations: A = +8, 0, −8; B = −4, 0, +4",
+   "σ_A = √((64 + 0 + 64)/3) = 6.53%; σ_B = √((16 + 0 + 16)/3) = 3.27%",
+   "cov = (8 × (−4) + 0 + (−8)(4))/3 = −64/3 = −21.33 %² = −0.002133",
+   "ρ = −21.33/(6.532 × 3.266) = −1.00: B is an exact decreasing straight-line function of A (B falls 0.5 for every 1 that A rises)"
+  ],
+  "keystrokes": [
+   "Deviations: A = 8, 0, −8; B = −4, 0, 4",
+   "cov = (−32 + 0 − 32) ÷ 3 = −21.33",
+   "σ_A = 6.532, σ_B = 3.266; −21.33 ÷ 21.33 = −1.00"
+  ],
+  "errors": [
+   {
+    "id": "cov-as-rho",
+    "label": "Reported the covariance (in decimals) as the correlation",
+    "value": -0.0021,
+    "check": "((0.14-0.06)*(0.03-0.07)+(0.06-0.06)*(0.07-0.07)+(-0.02-0.06)*(0.11-0.07))/3",
+    "explain": "A covariance of −0.0021 is not a correlation; divide by σ_A σ_B."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Divided by σ_A² only (the slope of B on A)",
+    "value": -0.5,
+    "check": "(((0.14-0.06)*(0.03-0.07)+(0.06-0.06)*(0.07-0.07)+(-0.02-0.06)*(0.11-0.07))/3)/(((0.14-0.06)**2+(0.06-0.06)**2+(-0.02-0.06)**2)/3)",
+    "explain": "Dividing by one variance gives a regression slope (−0.50), not the correlation, which divides by σ_A σ_B."
+   },
+   {
+    "id": "forgot-minus-mean",
+    "label": "Used Σ p R_A R_B instead of deviation products",
+    "value": 0.97,
+    "check": "(((0.14*0.03+0.06*0.07-0.02*0.11)/3)/(sqrt(((0.14-0.06)**2+(0.06-0.06)**2+(-0.02-0.06)**2)/3)*sqrt(((0.03-0.07)**2+(0.07-0.07)**2+(0.11-0.07)**2)/3)))",
+    "explain": "Covariance is built from deviations from the means; E[R_A R_B] alone is not the covariance."
+   }
+  ],
+  "explanation": "ρ = −1.00 exactly: B is a perfect decreasing straight-line function of A. A perfectly negatively correlated pair is the strongest diversifier: the right weights make σ_P zero.",
+  "source": "generated",
+  "ref": "S7 s5-10, L06 s26"
+ },
+ {
+  "id": "q12-470",
+  "concept": "c12-covariance-correlation",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Over five years, Stock A returned 12%, −4%, 18%, 6% and 8%, and Stock B returned 5%, 9%, 1%, 7% and 3% (same years, same order). Using sample statistics (divide by N − 1), what is the correlation between A and B?",
+  "answer": -0.9,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/4)/(sqrt(((12-8)**2+(-4-8)**2+(18-8)**2+(6-8)**2+(8-8)**2)/4)*sqrt(((5-5)**2+(9-5)**2+(1-5)**2+(7-5)**2+(3-5)**2)/4))",
+  "steps": [
+   {
+    "label": "Sample covariance cov(A,B), in decimals",
+    "value": -0.0023,
+    "check": "(((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/4)/10000",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Sample standard deviation σ_A",
+    "value": 8.12,
+    "check": "sqrt(((12-8)**2+(-4-8)**2+(18-8)**2+(6-8)**2+(8-8)**2)/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Sample standard deviation σ_B",
+    "value": 3.16,
+    "check": "sqrt(((5-5)**2+(9-5)**2+(1-5)**2+(7-5)**2+(3-5)**2)/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Correlation ρ_AB",
+    "value": -0.9,
+    "check": "(((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/4)/(sqrt(((12-8)**2+(-4-8)**2+(18-8)**2+(6-8)**2+(8-8)**2)/4)*sqrt(((5-5)**2+(9-5)**2+(1-5)**2+(7-5)**2+(3-5)**2)/4))",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Means: A = 8.0%, B = 5.0%. Deviations: A = +4, −12, +10, −2, 0; B = 0, +4, −4, +2, −2",
+   "Sum of products = 0 − 48 − 40 − 4 + 0 = −92, so cov = −92/4 = −23 %² = −0.0023 in decimals",
+   "σ_A² = (16 + 144 + 100 + 4 + 0)/4 = 66 → σ_A = 8.124%; σ_B² = (0 + 16 + 16 + 4 + 4)/4 = 10 → σ_B = 3.162%",
+   "ρ = −23/(8.124 × 3.162) = −0.895, about −0.90"
+  ],
+  "keystrokes": [
+   "2nd DATA, enter X and Y pairs, 2nd STAT (LIN mode): Sx = 8.124, Sy = 3.162, r = −0.895",
+   "or by hand: −92 ÷ 4 = −23; −23 ÷ (8.124 × 3.162) = −0.895"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided the covariance by N = 5 but the standard deviations by N − 1 = 4",
+    "value": -0.72,
+    "check": "((((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/5))/(sqrt(((12-8)**2+(-4-8)**2+(18-8)**2+(6-8)**2+(8-8)**2)/4)*sqrt(((5-5)**2+(9-5)**2+(1-5)**2+(7-5)**2+(3-5)**2)/4))",
+    "explain": "All three quantities must use the same divisor; mixing N and N − 1 distorts ρ (here it shrinks it)."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Divided by σ_A² only (the slope of B on A)",
+    "value": -0.35,
+    "check": "(((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/4)/((sqrt(((12-8)**2+(-4-8)**2+(18-8)**2+(6-8)**2+(8-8)**2)/4))**2)",
+    "explain": "Dividing by one variance gives a regression slope, not the correlation."
+   },
+   {
+    "id": "cov-as-rho",
+    "label": "Reported the covariance in decimals as the correlation",
+    "value": -0.0023,
+    "check": "(((12-8)*(5-5)+(-4-8)*(9-5)+(18-8)*(1-5)+(6-8)*(7-5)+(8-8)*(3-5))/4)/10000",
+    "explain": "−0.0023 is a covariance; ρ needs the division by σ_A σ_B."
+   }
+  ],
+  "explanation": "With sample data use N − 1 throughout (and the same factor for cov, σ_A and σ_B): ρ ≈ −0.90. A strongly negative correlation means these two stocks are excellent diversifiers.",
+  "source": "generated",
+  "ref": "L06 s13, s27, SM 13-32"
+ },
+ {
+  "id": "q12-471",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over five years, Stock X returned 8%, 2%, 14%, 6% and 10%, and Stock Y returned 9%, 3%, 12%, 6% and 5% (same years, same order). Compute the sample covariance of their returns, entering returns as decimals (for example 8% = 0.08).",
+  "answer": 0.0013,
+  "unit": "",
+  "tolerance": {
+   "abs": 5e-05
+  },
+  "check": "((0.08-0.08)*(0.09-0.07)+(0.02-0.08)*(0.03-0.07)+(0.14-0.08)*(0.12-0.07)+(0.06-0.08)*(0.06-0.07)+(0.10-0.08)*(0.05-0.07))/4",
+  "steps": [
+   {
+    "label": "Mean of X",
+    "value": 8.0,
+    "check": "(0.08+0.02+0.14+0.06+0.10)/5*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Mean of Y",
+    "value": 7.0,
+    "check": "(0.09+0.03+0.12+0.06+0.05)/5*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of deviation products",
+    "value": 0.0052,
+    "check": "(0.08-0.08)*(0.09-0.07)+(0.02-0.08)*(0.03-0.07)+(0.14-0.08)*(0.12-0.07)+(0.06-0.08)*(0.06-0.07)+(0.10-0.08)*(0.05-0.07)",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Sample covariance cov(X,Y)",
+    "value": 0.0013,
+    "check": "((0.08-0.08)*(0.09-0.07)+(0.02-0.08)*(0.03-0.07)+(0.14-0.08)*(0.12-0.07)+(0.06-0.08)*(0.06-0.07)+(0.10-0.08)*(0.05-0.07))/4",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   }
+  ],
+  "solution": [
+   "Means: X = 8%, Y = 7%. Deviations (decimals): X = 0, −0.06, +0.06, −0.02, +0.02; Y = +0.02, −0.04, +0.05, −0.01, −0.02",
+   "Products: 0 + 0.0024 + 0.0030 + 0.0002 − 0.0004 = 0.0052",
+   "Sample covariance = 0.0052/(5 − 1) = 0.0013"
+  ],
+  "keystrokes": [
+   "Means: 8 and 7 (in %)",
+   "Deviation products in decimals: 0, 0.0024, 0.0030, 0.0002, −0.0004; sum = 0.0052",
+   "0.0052 ÷ 4 = 0.0013"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 5 instead of N − 1 = 4",
+    "value": 0.00104,
+    "check": "((0.08-0.08)*(0.09-0.07)+(0.02-0.08)*(0.03-0.07)+(0.14-0.08)*(0.12-0.07)+(0.06-0.08)*(0.06-0.07)+(0.10-0.08)*(0.05-0.07))/5",
+    "explain": "Five years of one stock's history is a sample: divide by N − 1."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Worked in percent units: 52 %² ÷ 4",
+    "value": 13.0,
+    "check": "((8-8)*(9-7)+(2-8)*(3-7)+(14-8)*(12-7)+(6-8)*(6-7)+(10-8)*(5-7))/4",
+    "explain": "The question asks for decimals; 13 %² equals 0.0013 in decimal form."
+   },
+   {
+    "id": "omitted-division",
+    "label": "Did not divide the sum of products",
+    "value": 0.0052,
+    "check": "(0.08-0.08)*(0.09-0.07)+(0.02-0.08)*(0.03-0.07)+(0.14-0.08)*(0.12-0.07)+(0.06-0.08)*(0.06-0.07)+(0.10-0.08)*(0.05-0.07)",
+    "explain": "A covariance is an average of the deviation products, so divide by N − 1."
+   }
+  ],
+  "explanation": "The sample covariance is Σ(R_X − mean)(R_Y − mean)/(N − 1) = 0.0052/4 = 0.0013 in decimals (13 in %² units). It is positive because the two stocks tended to be above or below their averages in the same years.",
+  "source": "generated",
+  "ref": "L06 s13, s27"
+ },
+ {
+  "id": "q12-472",
+  "concept": "c12-covariance-correlation",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Stock A has σ = 20% and Stock B has σ = 25%, and the correlation between them is 0.4. What is the covariance of their returns, as a decimal?",
+  "answer": 0.02,
+  "unit": "",
+  "tolerance": {
+   "abs": 5e-05
+  },
+  "check": "0.4*0.20*0.25",
+  "steps": [
+   {
+    "label": "Covariance cov(A,B) = ρ σ_A σ_B",
+    "value": 0.02,
+    "check": "0.4*0.20*0.25",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   }
+  ],
+  "solution": [
+   "cov(A,B) = ρ_AB σ_A σ_B = 0.4 × 0.20 × 0.25 = 0.0200 (using decimals)"
+  ],
+  "keystrokes": [
+   "0.4 × 0.2 × 0.25 = 0.02"
+  ],
+  "errors": [
+   {
+    "id": "pct-decimal-mix",
+    "label": "Multiplied the percentages directly (20 × 25 × 0.4)",
+    "value": 200.0,
+    "check": "0.4*20*25",
+    "explain": "σ must be written as decimals (0.20, 0.25); 200 is the covariance in %² units."
+   },
+   {
+    "id": "inverted-formula",
+    "label": "Divided ρ by σ_A σ_B",
+    "value": 8.0,
+    "check": "0.4/(0.20*0.25)",
+    "explain": "ρ = cov/(σ_A σ_B), so cov = ρ σ_A σ_B, not ρ ÷ (σ_A σ_B)."
+   },
+   {
+    "id": "forgot-sigma",
+    "label": "Forgot one σ: ρ × σ_A",
+    "value": 0.08,
+    "check": "0.4*0.20",
+    "explain": "The covariance needs both standard deviations."
+   }
+  ],
+  "explanation": "cov(A,B) = ρ σ_A σ_B = 0.0200. This is the quantity you can drop straight into the covariance form of the portfolio variance: 2 w_A w_B cov(A,B).",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-473",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Stock A has σ = 14% and Stock B has σ = 10%; cov(A,B) = 0.0105 (decimals). What is the correlation between A and B?",
+  "answer": 0.75,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.0105/(0.14*0.10)",
+  "steps": [
+   {
+    "label": "Product σ_A σ_B (decimals)",
+    "value": 0.014,
+    "check": "0.14*0.10",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Correlation ρ_AB",
+    "value": 0.75,
+    "check": "0.0105/(0.14*0.10)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "σ_A σ_B = 0.14 × 0.10 = 0.0140",
+   "ρ_AB = cov/(σ_A σ_B) = 0.0105/0.0140 = 0.75"
+  ],
+  "keystrokes": [
+   "0.14 × 0.10 = 0.014",
+   "0.0105 ÷ 0.014 = 0.75"
+  ],
+  "errors": [
+   {
+    "id": "cov-as-rho",
+    "label": "Reported the covariance as the correlation",
+    "value": 0.0105,
+    "check": "0.0105",
+    "explain": "The covariance is not bounded by ±1 and keeps squared-return units; divide by σ_A σ_B."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Divided by σ_A² only",
+    "value": 0.54,
+    "check": "0.0105/(0.14**2)",
+    "explain": "That is the slope of B on A (a beta-type number), not the correlation."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Divided a decimal covariance by the σ product in percent (14 × 10)",
+    "value": 7.5e-05,
+    "check": "0.0105/(14*10)",
+    "explain": "Use decimals for both cov and σ (or percent for both)."
+   }
+  ],
+  "explanation": "ρ = 0.0105/(0.14 × 0.10) = 0.75: a strong positive correlation, so the pair offers only a modest diversification benefit.",
+  "source": "generated",
+  "ref": "S7 s6, L06 s27"
+ },
+ {
+  "id": "q12-474",
+  "concept": "c12-covariance-correlation",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stock A has σ = 16%. The covariance of A and B is 0.0156 (decimals) and their correlation is 0.65. What is Stock B's standard deviation (% per annum)?",
+  "answer": 15.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.0156/(0.65*0.16)*100",
+  "steps": [
+   {
+    "label": "Product σ_A σ_B = cov/ρ",
+    "value": 0.024,
+    "check": "0.0156/0.65",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Stock B's standard deviation σ_B",
+    "value": 15.0,
+    "check": "0.0156/(0.65*0.16)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "ρ = cov/(σ_A σ_B) rearranges to σ_A σ_B = cov/ρ = 0.0156/0.65 = 0.0240",
+   "σ_B = 0.0240/σ_A = 0.0240/0.16 = 0.15 = 15.00%"
+  ],
+  "keystrokes": [
+   "0.0156 ÷ 0.65 = 0.024",
+   "0.024 ÷ 0.16 = 0.15 → 15.00%"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rho",
+    "label": "Ignored the correlation: cov ÷ σ_A",
+    "value": 9.75,
+    "check": "0.0156/0.16*100",
+    "explain": "cov = ρ σ_A σ_B, so ρ must be divided out as well."
+   },
+   {
+    "id": "inverted-formula",
+    "label": "Multiplied by ρ instead of dividing",
+    "value": 6.34,
+    "check": "0.0156*0.65/0.16*100",
+    "explain": "ρ = cov/(σ_Aσ_B), so σ_B = cov/(ρ σ_A); ρ belongs in the denominator."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Divided by ρ σ_A² (variance of A)",
+    "value": 93.75,
+    "check": "0.0156/(0.65*0.16**2)*100",
+    "explain": "σ_A σ_B is a product of two standard deviations; only one is known, so divide by the known σ_A (not its square)."
+   }
+  ],
+  "explanation": "Rearranging ρ = cov/(σ_A σ_B): σ_B = cov/(ρ σ_A) = 0.0156/(0.65 × 0.16) = 0.15, or 15.00%.",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-475",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The diversification benefit of combining two stocks is best described as:",
+  "options": [
+   "the amount by which σ_P falls below the weighted average of the stocks' σ's, available whenever ρ < 1",
+   "the higher expected return earned by holding two stocks instead of one",
+   "the complete elimination of risk once at least ten stocks are held",
+   "the risk reduction that occurs only when the stocks are negatively correlated"
+  ],
+  "answer": 0,
+  "explanation": "The benefit is the gap between w_A σ_A + w_B σ_B (the ρ = 1 risk) and the actual σ_P. It exists for every ρ below 1, not only negative ones, it costs no expected return, and it never removes systematic risk.",
+  "source": "generated",
+  "ref": "L06 s18, s33"
+ },
+ {
+  "id": "q12-476",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A 50/50 mix of two stocks with σ = 15% and σ = 19% has a portfolio standard deviation of 13.1%. The gap between 13.1% and the weighted average of 17.0% is an illustration of:",
+  "options": [
+   "a risk premium",
+   "domination",
+   "the diversification benefit",
+   "systematic risk"
+  ],
+  "answer": 2,
+  "explanation": "The weighted average (17.0%) is what the portfolio would have if the stocks were perfectly correlated; the actual 13.1% is lower because ρ < 1. That shortfall is the diversification benefit.",
+  "source": "generated",
+  "ref": "L06 s18"
+ },
+ {
+  "id": "q12-477",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "On a risk-return diagram (σ on the horizontal axis, E[R] on the vertical axis), the curve traced by all mixes of two stocks bows to the left of the straight line joining them. What does this tell you about ρ_AB?",
+  "options": [
+   "ρ_AB = 1: there is no diversification benefit",
+   "ρ_AB > 1: the portfolios are riskier than the stocks themselves",
+   "Nothing: the curve's shape depends only on the expected returns",
+   "ρ_AB < 1: the mixes are less risky than the weighted average of the two risks"
+  ],
+  "answer": 3,
+  "explanation": "The straight line is the ρ = 1 case (σ_P is the weighted average of the σ's). Any curve bowed to the left means σ_P is below that line for the same expected return, so ρ < 1. The lower the correlation, the stronger the bow.",
+  "source": "generated",
+  "ref": "L06 s32-33"
+ },
+ {
+  "id": "q12-478",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly describes the set of two-stock portfolios on a risk-return diagram (σ on the horizontal axis)?",
+  "options": [
+   "ρ = 1: a curve bowed to the left; ρ = 0: a straight line; ρ = −1: a straight line",
+   "ρ = 1: a straight line; ρ = 0: a curve bowed to the left; ρ = −1: two straight segments touching σ_P = 0",
+   "ρ = 1: two straight segments touching σ_P = 0; ρ = 0: a straight line; ρ = −1: a straight line",
+   "The shape is the same for every ρ; only the length of the curve changes"
+  ],
+  "answer": 1,
+  "explanation": "At ρ = 1 risk is linear in the weights, so the mixes lie on a straight line. At ρ = 0 the curve bows to the left. At ρ = −1 the σ_P formula is a perfect square |w_A σ_A − w_B σ_B|, giving two straight segments that touch σ_P = 0 at the hedging weights.",
+  "source": "generated",
+  "ref": "L06 s32-33, SM 13-11"
+ },
+ {
+  "id": "q12-479",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "In which of the following cases is there NO diversification benefit from mixing two stocks?",
+  "options": [
+   "ρ_AB = +0.95",
+   "ρ_AB = 0",
+   "ρ_AB = −0.30",
+   "ρ_AB = +1"
+  ],
+  "answer": 3,
+  "explanation": "A benefit exists whenever ρ < 1; it is just small when ρ is close to 1 (such as 0.95). Only perfect positive correlation makes σ_P exactly equal to the weighted average of the σ's.",
+  "source": "generated",
+  "ref": "L06 s27, s33"
+ },
+ {
+  "id": "q12-480",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-weights-return"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does diversification reduce risk without reducing expected return?",
+  "options": [
+   "Because diversified portfolios are always invested in the stock with the highest expected return",
+   "Because a lower correlation between the stocks raises the portfolio's expected return",
+   "Because E[R_P] is just a weighted average, while σ_P falls when the stocks do not move in lockstep",
+   "Because risk and return are unrelated for portfolios"
+  ],
+  "answer": 2,
+  "explanation": "Return is linear in the weights (no correlation term) while risk is not. Lower correlation lowers σ_P but leaves E[R_P] untouched, so diversification is called the only 'free lunch' in finance (risk falls with no loss of expected return).",
+  "source": "generated",
+  "ref": "L06 s19, s22-24"
+ }
+]

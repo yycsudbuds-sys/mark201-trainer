@@ -1,0 +1,1041 @@
+[
+ {
+  "id": "q10-001",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "An incremental cash flow for a project is best described as:",
+  "options": [
+   "the change in the firm's total after-tax cash flows that results directly from accepting the project",
+   "the project's accounting net income after a share of head-office costs",
+   "all after-tax cash flows the firm will receive in the years the project is running",
+   "the project's revenue less its cash expenses, before tax"
+  ],
+  "answer": 0,
+  "explanation": "Incremental cash flow is cash flow with the project minus cash flow without it, after tax. Net income mixes accruals and allocations, total firm cash flow includes flows that would happen anyway, and revenue less cost before tax ignores the tax that really leaves the firm.",
+  "source": "generated",
+  "ref": "L05B s10; S5 s14"
+ },
+ {
+  "id": "q10-002",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "To value a proposed brewery expansion, an analyst puts only the cash flows that the expansion causes on a timeline and values them as if they belonged to a separate, imaginary firm. This approach is called the:",
+  "options": [
+   "net acquisitions rule",
+   "stand-alone principle",
+   "equivalent annual cost method",
+   "capital rationing rule"
+  ],
+  "answer": 1,
+  "explanation": "The stand-alone principle says that once the incremental cash flows are identified you can treat them as the cash flows of a stand-alone firm and value that firm with NPV.",
+  "source": "generated",
+  "ref": "S5 s14; TB 10.1"
+ },
+ {
+  "id": "q10-003",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which list contains only incremental cash flows for Cascade Cycles' new e-bike line?",
+  "options": [
+   "Revenue from the new e-bike, the e-bike's share of head-office rent, cost of the extra assembly staff",
+   "Revenue from the new e-bike, the market-study fee paid last year, cost of the extra assembly staff",
+   "Revenue from the new e-bike, lost sales of the older model, cost of the extra assembly staff",
+   "Revenue from the new e-bike, interest on the loan funding the line, cost of the extra assembly staff"
+  ],
+  "answer": 2,
+  "explanation": "Lost sales of the older model are erosion, which changes the firm's cash flow. The other lists contain an allocated cost that is paid anyway, a sunk cost already paid, and a financing cost; none of these changes with the decision.",
+  "source": "generated",
+  "ref": "L05B s10-11; TB 10.2"
+ },
+ {
+  "id": "q10-004",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do a project's incremental cash flows differ from its accounting net income?",
+  "options": [
+   "Incremental flows are measured before tax, while net income is measured after tax and interest",
+   "Incremental flows exclude working capital and capital spending, while net income includes both",
+   "They are the same figure, except that incremental flows are reported at year-end",
+   "Incremental flows count only after-tax cash changes caused by the project; net income includes accruals, non-cash charges and allocations"
+  ],
+  "answer": 3,
+  "explanation": "Incremental cash flows are after tax, include CAPEX and working capital, and ignore allocations. Net income is an accrual measure that includes depreciation and allocated costs and ignores CAPEX and working capital.",
+  "source": "generated",
+  "ref": "L05B s4; TB 10.2"
+ },
+ {
+  "id": "q10-005",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an incremental cash flow of launching a new product line?",
+  "options": [
+   "An allocated share of the CEO's salary, paid whether or not the line launches",
+   "Extra inventory and receivables the new line requires",
+   "The after-tax value of an owned building that could otherwise be sold",
+   "Profit lost on an existing product that customers switch away from"
+  ],
+  "answer": 0,
+  "explanation": "An allocated cost does not change with the decision, so its incremental cost is zero. Extra inventory (working capital), the opportunity cost of the building and erosion all change the firm's cash flow.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-006",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must each incremental flow be recorded in the year the cash actually moves rather than the year it is earned in the accounts?",
+  "options": [
+   "Tax law requires every project to be reported on a cash basis",
+   "NPV discounts cash by its date, so timing changes present value",
+   "Accrual dates are always unknown for new projects",
+   "Discount rates apply only to accounting profit"
+  ],
+  "answer": 1,
+  "explanation": "The time value of money works on dates of cash, so a sale booked in year 1 but collected in year 2 must be placed in year 2 (or its receivable treated as working capital).",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-007",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Incremental cash flows are measured after tax.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Taxes are a real cash outflow, so every revenue, expense and saving is stated after tax: revenues and expenses at (1 − T), CCA at T.",
+  "source": "generated",
+  "ref": "L05B s10"
+ },
+ {
+  "id": "q10-008",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The relevant cash flows for a project are the _____ cash flows: the changes in the firm's future cash flows that are a direct consequence of taking the project.",
+  "options": [
+   "accounting",
+   "average",
+   "incremental",
+   "allocated"
+  ],
+  "answer": 2,
+  "explanation": "Incremental cash flows are the with-versus-without changes. Accounting and allocated figures are not cash changes caused by the project.",
+  "source": "generated",
+  "ref": "S5 s14"
+ },
+ {
+  "id": "q10-009",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "An analyst reports a project NPV of +$40,000. It already deducts the present value ($120,000, after tax) of head-office overhead that the firm pays in full whether or not the project goes ahead. What is the correct reading?",
+  "options": [
+   "The NPV is correct, because a project must cover its share of every firm cost",
+   "Removing the overhead gives NPV = −$80,000, so the project should be rejected",
+   "Removing the overhead changes the NPV only if the project is financed with debt",
+   "Overhead is not incremental; removing it gives NPV = +$160,000, so the project looks better"
+  ],
+  "answer": 3,
+  "explanation": "Allocated overhead that does not change with the decision is not incremental. NPV rises by the $120,000 that was wrongly charged: 40,000 + 120,000 = $160,000. The decision (accept) is unchanged but the value added is understated.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-010",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Without a proposed project a firm expects after-tax cash flows of $1,150,000 a year; with it, $1,420,000 a year. Which annual figure should be discounted in the project's NPV?",
+  "options": [
+   "$270,000, the difference between the two",
+   "$1,420,000, the cash flow with the project",
+   "$1,150,000, the cash flow without the project",
+   "$2,570,000, the two added together"
+  ],
+  "answer": 0,
+  "explanation": "Incremental cash flow is with minus without: 1,420,000 − 1,150,000 = $270,000. Only that change is caused by the project.",
+  "source": "generated",
+  "ref": "L05B s10; TB 10.1"
+ },
+ {
+  "id": "q10-011",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Mill's new oat-flour line adds $600,000 of annual sales and $280,000 of cash costs. It also cuts profit on existing products by $120,000 a year (erosion). Head-office overhead of $90,000 a year is allocated to the line but is paid whether or not it launches. The tax rate is 30%; ignore CCA. What is the line's annual incremental after-tax cash flow?",
+  "answer": 140000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(600000-280000-120000)*(1-0.3)",
+  "steps": [
+   {
+    "label": "Incremental pre-tax cash flow = 600,000 − 280,000 − 120,000",
+    "value": 200000.0,
+    "check": "600000-280000-120000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "After-tax = pre-tax × (1 − T)",
+    "value": 140000.0,
+    "check": "(600000-280000-120000)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Allocated overhead is not incremental: ignore the $90,000.",
+   "Pre-tax incremental flow = 600,000 − 280,000 − 120,000 = 200,000",
+   "After tax: 200,000 × (1 − 0.30) = $140,000"
+  ],
+  "keystrokes": [
+   "600000 − 280000 − 120000 = 200,000",
+   "× (1 − 0.30) = 140,000"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Charged the allocated overhead",
+    "value": 77000.0,
+    "check": "(600000-280000-120000-90000)*(1-0.3)",
+    "explain": "The overhead is paid either way, so it is not incremental."
+   },
+   {
+    "id": "ignored-erosion",
+    "label": "Ignored the lost profit on existing products",
+    "value": 224000.0,
+    "check": "(600000-280000)*(1-0.3)",
+    "explain": "Erosion is a real loss of cash flow caused by the project and must be subtracted."
+   },
+   {
+    "id": "pretax-not-aftertax",
+    "label": "Left the flow before tax",
+    "value": 200000.0,
+    "check": "600000-280000-120000",
+    "explain": "Every incremental flow is stated after tax: multiply by (1 − T)."
+   }
+  ],
+  "explanation": "Count the new sales, the new costs and the erosion; drop the allocated overhead; then apply (1 − T) to the net operating flow.",
+  "source": "generated",
+  "ref": "L05B s10-13; SM 10-2"
+ },
+ {
+  "id": "q10-012",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kestrel Foods will buy a $480,000 packaging line, pay $20,000 to have it delivered and installed (capitalized into its cost) and tie up $35,000 of extra working capital at t = 0. A $12,000 feasibility study was paid last quarter. The line goes into floor space the firm owns and has no other use for. What is the incremental cash flow at t = 0?",
+  "answer": -535000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "-(480000+20000+35000)",
+  "steps": [
+   {
+    "label": "Installed cost of the line",
+    "value": 500000.0,
+    "check": "480000+20000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "t = 0 incremental cash flow = −(installed cost + NWC)",
+    "value": -535000.0,
+    "check": "-(480000+20000+35000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Installed cost = 480,000 + 20,000 = 500,000 (installation is capitalized).",
+   "The $12,000 study is sunk; the unused space has no opportunity cost.",
+   "CF0 = −(500,000 + 35,000) = −$535,000"
+  ],
+  "keystrokes": [
+   "480000 + 20000 + 35000 = 535,000",
+   "+/− = −535,000"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Included the feasibility study",
+    "value": -547000.0,
+    "check": "-(480000+20000+35000+12000)",
+    "explain": "The study was paid last quarter; the decision cannot change it."
+   },
+   {
+    "id": "missed-installation",
+    "label": "Left out the installation cost",
+    "value": -515000.0,
+    "check": "-(480000+35000)",
+    "explain": "Delivery and installation are part of the capital cost of the line."
+   },
+   {
+    "id": "forgot-nwc",
+    "label": "Left out the extra working capital",
+    "value": -500000.0,
+    "check": "-(480000+20000)",
+    "explain": "Working capital tied up at t = 0 is a cash outflow counted in full."
+   }
+  ],
+  "explanation": "At t = 0 the incremental outlay is the installed cost plus the working capital; the sunk study and the free-to-use space contribute nothing.",
+  "source": "generated",
+  "ref": "L05B s10-12; SM 10-1"
+ },
+ {
+  "id": "q10-013",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A Kestrel Foods project needs equipment costing $400,000 and $30,000 of working capital at t = 0. It then yields incremental after-tax operating cash flow of $190,000 a year for 3 years (already net of erosion; a $15,000 study paid last month is excluded). The working capital is recovered at t = 3. Ignore CCA and salvage. At 12% per annum, what is the NPV?",
+  "answer": 47701.35,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "-(400000+30000)+190000*(1-1.12**-3)/0.12+30000/1.12**3",
+  "steps": [
+   {
+    "label": "CF0 = −(equipment + NWC)",
+    "value": -430000.0,
+    "check": "-(400000+30000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PV of the three operating flows",
+    "value": 456347.94,
+    "check": "190000*(1-1.12**-3)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PV of the NWC recovery at t = 3",
+    "value": 21353.41,
+    "check": "30000/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 47701.35,
+    "check": "-(400000+30000)+190000*(1-1.12**-3)/0.12+30000/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CF0 = −400,000 − 30,000 = −430,000",
+   "PV(operating) = 190,000 × [1 − 1.12^−3]/0.12 = 190,000 × 2.401831 = 456,347.94",
+   "PV(NWC recovery) = 30,000/1.12^3 = 21,353.41",
+   "NPV = −430,000 + 456,347.94 + 21,353.41 = $47,701.35"
+  ],
+  "keystrokes": [
+   "CF0 = −430,000; C01 = 190,000, F01 = 2; C02 = 220,000 (190,000 + 30,000), F02 = 1",
+   "NPV, I = 12, CPT"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Subtracted the sunk study",
+    "value": 32701.35,
+    "check": "-(400000+30000+15000)+190000*(1-1.12**-3)/0.12+30000/1.12**3",
+    "explain": "The $15,000 study is already paid and is not incremental."
+   },
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Never recovered the working capital",
+    "value": 26347.94,
+    "check": "-(400000+30000)+190000*(1-1.12**-3)/0.12",
+    "explain": "The working capital is released when the project ends, an inflow at t = 3."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 4-year annuity",
+    "value": 168449.78,
+    "check": "-(400000+30000)+190000*(1-1.12**-4)/0.12+30000/1.12**3",
+    "explain": "The operating flows last 3 years, so the annuity factor has N = 3."
+   }
+  ],
+  "explanation": "Discount the incremental flows: outlay and NWC now, a 3-year annuity of after-tax operating flow, and the NWC recovery at the end.",
+  "source": "generated",
+  "ref": "S5 s17-18; L05B s3"
+ },
+ {
+  "id": "q10-014",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cascade Cycles' new e-bike line will sell 4,000 units at $2,400. About 1,100 of those buyers would otherwise have bought the older model at $1,800. The line also lifts accessory sales by $150,000. What is the line's incremental annual revenue?",
+  "options": [
+   "$9,750,000",
+   "$7,770,000",
+   "$7,110,000",
+   "$7,620,000"
+  ],
+  "answer": 1,
+  "explanation": "Incremental revenue = new sales 9,600,000 − lost older-model sales 1,980,000 (1,100 × $1,800, the old price) + accessories 150,000 = $7,770,000. $9,750,000 ignores erosion; $7,110,000 values the lost sales at the new price; $7,620,000 ignores the accessory spill-over.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10-2"
+ },
+ {
+  "id": "q10-015",
+  "concept": "c10-incremental",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Hollis Hardware's new tool line adds $850,000 of annual sales and $410,000 of cash operating costs. Head-office overhead of $70,000 is allocated to the line but is paid in full either way. The tax rate is 35%; ignore CCA. What is the incremental annual after-tax cash flow?",
+  "options": [
+   "$240,500",
+   "$440,000",
+   "$286,000",
+   "$142,500"
+  ],
+  "answer": 2,
+  "explanation": "Incremental flow = (850,000 − 410,000)(1 − 0.35) = $286,000. $240,500 charges the allocated overhead; $440,000 is the pre-tax figure; $142,500 applies (1 − T) to revenue but not to the deductible costs.",
+  "source": "generated",
+  "ref": "L05B s13; SM 10-5"
+ },
+ {
+  "id": "q10-016",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A sunk cost is a cost that:",
+  "options": [
+   "is spent on equipment that cannot be resold",
+   "is the benefit given up by using an asset the firm already owns",
+   "is spread over the life of the project as depreciation",
+   "has already been incurred and cannot be changed by accepting or rejecting the project"
+  ],
+  "answer": 3,
+  "explanation": "A sunk cost is already paid (or committed) and will be incurred whatever the decision, so it is irrelevant. The benefit given up by using an owned asset is an opportunity cost, which is relevant.",
+  "source": "generated",
+  "ref": "L05B s11; TB 10.2"
+ },
+ {
+  "id": "q10-017",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In capital budgeting, the opportunity cost of using an asset the firm already owns is:",
+  "options": [
+   "what the asset could be sold or rented for today, after tax",
+   "what the firm originally paid for the asset",
+   "the asset's accounting book value on the balance sheet",
+   "zero, because no cash leaves the firm when an owned asset is used"
+  ],
+  "answer": 0,
+  "explanation": "The firm gives up the best alternative use of the asset, measured at today's market value after tax. The original price is sunk and the book value is an accounting number.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10 CTQ1"
+ },
+ {
+  "id": "q10-018",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Ridgeline Brewing paid a consultant $85,000 last month, non-refundable, for a market study of a proposed taproom. In the taproom's cash-flow analysis the fee is a:",
+  "options": [
+   "year-0 cash outflow of $85,000",
+   "sunk cost, counted at zero",
+   "capital expenditure eligible for CCA",
+   "financing cost excluded only for tax reasons"
+  ],
+  "answer": 1,
+  "explanation": "The fee is already paid and cannot be recovered whether or not the taproom proceeds, so it is a sunk cost and is counted at zero.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-019",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Foothills Dental owns an empty unit that it could lease for $4,000 a month. A new sterilization lab would use that unit. The rent forgone is a(n):",
+  "options": [
+   "sunk cost, counted at zero",
+   "financing cost, excluded",
+   "opportunity cost, counted after tax",
+   "allocated cost, counted at zero"
+  ],
+  "answer": 2,
+  "explanation": "By using the unit the firm gives up rent, so the after-tax rent is an incremental cost of the project even though no cash leaves the firm.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-020",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A division is charged $30,000 a year by head office for utilities and administration. The charge would be the same whether or not the division launches a new product. For the new product the charge is a(n):",
+  "options": [
+   "opportunity cost, counted after tax",
+   "financing cost, excluded because of debt",
+   "erosion, subtracted from revenue",
+   "allocated cost, counted at zero"
+  ],
+  "answer": 3,
+  "explanation": "An allocated cost is overhead that does not change with the decision, so the incremental cost is zero.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-021",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts a sunk cost with an opportunity cost?",
+  "options": [
+   "A sunk cost is already paid and excluded; an opportunity cost is a benefit given up and is included at today's value",
+   "A sunk cost is included at its historical cost; an opportunity cost is excluded because no cash is paid",
+   "Both are excluded because neither involves a cash payment to an outside party in the year",
+   "Both are included, a sunk cost at its book value and an opportunity cost at its market value today"
+  ],
+  "answer": 0,
+  "explanation": "The difference is whether the decision can still change the cash flow. Sunk costs cannot be changed; opportunity costs arise only if the project is taken.",
+  "source": "generated",
+  "ref": "L05B s11; TB 10.2"
+ },
+ {
+  "id": "q10-022",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT part of the year-0 outflow for a new plant built on land the firm already owns?",
+  "options": [
+   "The construction cost of the plant",
+   "The price paid for the land six years ago",
+   "Today's after-tax market value of the land",
+   "Site-preparation cost incurred only if the project goes ahead"
+  ],
+  "answer": 1,
+  "explanation": "The old purchase price is a sunk cost. What matters is today's value of the land, which is given up if the project uses it.",
+  "source": "generated",
+  "ref": "SM 10-1"
+ },
+ {
+  "id": "q10-023",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the price paid for land years ago irrelevant to whether the land should be used in a project?",
+  "options": [
+   "Land is never depreciated, so its original cost can never affect the firm's taxes",
+   "The historical cost of land is always lower than its market value, so it is ignored",
+   "It cannot be changed by today's decision; the cost given up is the land's sale value now",
+   "Accounting standards prohibit the use of historical cost in any forecast of cash flows"
+  ],
+  "answer": 2,
+  "explanation": "The only relevant question is what the firm gives up by using the land today, namely its current after-tax market value. The old price is sunk.",
+  "source": "generated",
+  "ref": "SM 10-1, 10-10"
+ },
+ {
+  "id": "q10-024",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A manager on a $70,000 salary (unchanged whether or not the project proceeds) will spend half her time on the project, and accounting allocates $35,000 a year to it. What should the analyst do?",
+  "options": [
+   "Include $35,000 after tax, that is at (1 − T)",
+   "Include $35,000 before tax because salaries are not deductible",
+   "Include $70,000 because her full pay is committed",
+   "Exclude the $35,000: it is an allocated cost that does not change with the decision"
+  ],
+  "answer": 3,
+  "explanation": "Her pay is the same with or without the project, so the incremental cost is zero. Allocated costs are in the 'not counted' category.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-025",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "A consulting fee already paid to study a project must be deducted from the project's NPV if the project is accepted.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The fee is sunk: it has been paid and cannot be changed by accepting or rejecting the project, so it is excluded.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-026",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "If a project uses a machine the firm already owns, the cost charged to the project is the machine's current market value (after tax), not its original price.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The opportunity cost is what the firm gives up today, which is the value it could realize now; the original price is sunk.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-027",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project is rejected with NPV = −$20,000. The calculation includes $50,000 (present value, after tax) for a study fee that was paid before the analysis began. What is the right interpretation?",
+  "options": [
+   "Excluding the sunk fee gives NPV = +$30,000, so the project should be accepted",
+   "The fee is relevant, so the rejection stands",
+   "Excluding the fee gives NPV = −$70,000, so the rejection is even clearer",
+   "NPV cannot change, because sunk costs are part of the initial investment"
+  ],
+  "answer": 0,
+  "explanation": "The study fee is sunk and must be removed: −20,000 + 50,000 = +$30,000. The wrong inclusion turned an acceptable project into a rejection.",
+  "source": "generated",
+  "ref": "L05B s11"
+ },
+ {
+  "id": "q10-028",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Marlow Aggregates is considering a gravel plant on land it bought nine years ago for $2.8 million; the land could be sold today for $3.4 million (assume the sale triggers no tax). The plant costs $12.6 million and site preparation is $0.65 million. A $0.2 million environmental assessment was paid last year. What is the relevant year-0 cash flow?",
+  "answer": -16650000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "-(3400000+12600000+650000)",
+  "steps": [
+   {
+    "label": "Opportunity cost of the land (today's value)",
+    "value": 3400000.0,
+    "check": "3400000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Year-0 cash flow = −(land + plant + site preparation)",
+    "value": -16650000.0,
+    "check": "-(3400000+12600000+650000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Land: charge today's value $3,400,000, not the $2,800,000 paid long ago.",
+   "The $200,000 assessment is sunk.",
+   "CF0 = −(3,400,000 + 12,600,000 + 650,000) = −$16,650,000"
+  ],
+  "keystrokes": [
+   "3400000 + 12600000 + 650000 = 16,650,000",
+   "+/− = −16,650,000"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Included the sunk assessment",
+    "value": -16850000.0,
+    "check": "-(3400000+12600000+650000+200000)",
+    "explain": "The assessment was paid last year and cannot be changed by the decision."
+   },
+   {
+    "id": "historic-cost-for-opportunity",
+    "label": "Charged the original land price",
+    "value": -16050000.0,
+    "check": "-(2800000+12600000+650000)",
+    "explain": "The opportunity cost is what the land is worth today, not what was paid for it."
+   },
+   {
+    "id": "land-treated-as-free",
+    "label": "Treated the owned land as free",
+    "value": -13250000.0,
+    "check": "-(12600000+650000)",
+    "explain": "Owned land is not free: the firm gives up its sale value."
+   }
+  ],
+  "explanation": "Year 0 includes the plant, the site preparation and the land at its current market value; the assessment is sunk.",
+  "source": "generated",
+  "ref": "SM 10-1"
+ },
+ {
+  "id": "q10-029",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Sterling Foods owns land bought for $1,000,000 that is now worth $1,600,000. Land is not depreciable. If it were sold, 50% of the capital gain would be taxable at 30%. A proposed warehouse would use this land. What opportunity cost belongs in the project's year-0 cash flow?",
+  "answer": 1510000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "1600000-0.5*0.3*(1600000-1000000)",
+  "steps": [
+   {
+    "label": "Capital gain = 1,600,000 − 1,000,000",
+    "value": 600000.0,
+    "check": "1600000-1000000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Tax = 0.5 × T × gain",
+    "value": 90000.0,
+    "check": "0.5*0.3*(1600000-1000000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "After-tax opportunity cost = 1,600,000 − tax",
+    "value": 1510000.0,
+    "check": "1600000-0.5*0.3*(1600000-1000000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Capital gain = 1,600,000 − 1,000,000 = 600,000",
+   "Tax on the gain = 0.5 × 0.30 × 600,000 = 90,000",
+   "After-tax value given up = 1,600,000 − 90,000 = $1,510,000"
+  ],
+  "keystrokes": [
+   "600000 × 0.5 × 0.3 = 90,000",
+   "1600000 − 90000 = 1,510,000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Used the pre-tax market value",
+    "value": 1600000.0,
+    "check": "1600000",
+    "explain": "The firm would only receive the after-tax proceeds if it sold, so that is the amount given up."
+   },
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the whole capital gain",
+    "value": 1420000.0,
+    "check": "1600000-0.3*(1600000-1000000)",
+    "explain": "Only 50% of a capital gain is taxable."
+   },
+   {
+    "id": "historic-cost-for-opportunity",
+    "label": "Used the original price",
+    "value": 1000000.0,
+    "check": "1000000",
+    "explain": "The original price is sunk; the opportunity cost is today's after-tax value."
+   }
+  ],
+  "explanation": "The opportunity cost of land is the after-tax cash the firm would get from selling it now: market value less tax on half of the gain.",
+  "source": "generated",
+  "ref": "SM 10-19; TB 10.2"
+ },
+ {
+  "id": "q10-030",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Westmount Clinic owns space it could lease for $60,000 a year (pre-tax) for the next 6 years. A project will use the space. The tax rate is 35% and the discount rate is 10%. What is the present value of the after-tax opportunity cost of the rent forgone?",
+  "answer": 169855.17,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "60000*(1-0.35)*(1-1.1**-6)/0.1",
+  "steps": [
+   {
+    "label": "After-tax rent forgone each year",
+    "value": 39000.0,
+    "check": "60000*(1-0.35)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "6-year annuity factor at 10%",
+    "value": 4.3553,
+    "check": "(1-1.1**-6)/0.1",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Present value",
+    "value": 169855.17,
+    "check": "60000*(1-0.35)*(1-1.1**-6)/0.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Rent is income, so the forgone rent after tax = 60,000 × (1 − 0.35) = 39,000 a year.",
+   "Annuity factor = [1 − 1.10^−6]/0.10 = 4.355261",
+   "PV = 39,000 × 4.355261 = $169,855.17"
+  ],
+  "keystrokes": [
+   "6 N, 10 I/Y, 39000 PMT, 0 FV, CPT PV = −169,855.17 (ignore the sign)"
+  ],
+  "errors": [
+   {
+    "id": "pretax-not-aftertax",
+    "label": "Used the pre-tax rent",
+    "value": 261315.64,
+    "check": "60000*(1-1.1**-6)/0.1",
+    "explain": "The rent forgone is taxable income, so only 65% of it is given up after tax."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity",
+    "value": 147840.68,
+    "check": "60000*(1-0.35)*(1-1.1**-5)/0.1",
+    "explain": "The space is unavailable for 6 years, so N = 6."
+   },
+   {
+    "id": "forgot-pv",
+    "label": "Added the six rents without discounting",
+    "value": 234000.0,
+    "check": "60000*(1-0.35)*6",
+    "explain": "Rents received in the future must be discounted at 10%."
+   }
+  ],
+  "explanation": "An opportunity cost can be a stream: the after-tax rent forgone each year, valued as an annuity.",
+  "source": "generated",
+  "ref": "L05B s27-29"
+ },
+ {
+  "id": "q10-031",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A new line would cost $750,000 for equipment and would use a lot the firm bought five years ago for $400,000; the lot could be sold today for $520,000 (after tax). A $45,000 design fee was paid last month. What is the relevant year-0 outlay?",
+  "options": [
+   "$1,315,000",
+   "$1,270,000",
+   "$1,150,000",
+   "$750,000"
+  ],
+  "answer": 1,
+  "explanation": "Relevant outlay = equipment 750,000 + land at today's after-tax value 520,000 = $1,270,000. $1,315,000 adds the sunk design fee; $1,150,000 charges the lot's old price; $750,000 treats the owned lot as free.",
+  "source": "generated",
+  "ref": "SM 10-1; SM 10-19"
+ },
+ {
+  "id": "q10-032",
+  "concept": "c10-sunk-opportunity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A junior analyst reports an NPV of +$25,000. It subtracts a $30,000 market study already paid and ignores that the project would use a machine the firm owns, which could be sold for $90,000 after tax. What is the corrected NPV?",
+  "options": [
+   "$55,000",
+   "$145,000",
+   "−$35,000",
+   "−$95,000"
+  ],
+  "answer": 2,
+  "explanation": "Corrected NPV = 25,000 + 30,000 (remove the sunk study) − 90,000 (charge the opportunity cost) = −$35,000, so reject. $55,000 removes only the sunk cost; $145,000 adds the opportunity cost instead of subtracting it; −$95,000 subtracts the sunk cost a second time.",
+  "source": "generated",
+  "ref": "L05B s11; TB 10.2"
+ },
+ {
+  "id": "q10-033",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In capital budgeting, erosion is:",
+  "options": [
+   "the decline in a project's equipment value due to wear and obsolescence",
+   "the loss in value of inventory and receivables as the project ages",
+   "a tax deduction for the cost of capital assets used up each year",
+   "a loss of cash flow on the firm's existing products caused by launching the new project"
+  ],
+  "answer": 3,
+  "explanation": "Erosion (also called cannibalization) is cash flow the new product takes away from the firm's existing products. Wear of equipment is depreciation, not erosion.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10 CTQ5"
+ },
+ {
+  "id": "q10-034",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A positive side effect (spillover or synergy) of a project is an incremental cash flow that:",
+  "options": [
+   "arises on the firm's other products because of the project and is added to the project",
+   "is ignored because the project itself did not directly produce the cash flow",
+   "is counted only if the firm has guaranteed it in a signed contract",
+   "is financed with debt and is therefore treated as a financing flow"
+  ],
+  "answer": 0,
+  "explanation": "Spillovers change the firm's cash flow because the project is accepted, so they belong in the analysis, after tax.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-035",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Lakeside Coffee launches a premium cold brew. Analysts estimate that 15% of its buyers would otherwise have bought Lakeside's regular iced coffee. The lost iced-coffee profit is an example of:",
+  "options": [
+   "a sunk cost",
+   "erosion",
+   "the opportunity cost of an owned asset",
+   "a financing cost"
+  ],
+  "answer": 1,
+  "explanation": "Profit lost on an existing product because of the new product is erosion and is subtracted (after tax) from the new product's cash flows.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-036",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A printer maker introduces a cheap new printer, and its sales of ink cartridges (a different product line) rise as a result. For the printer project, the extra ink profit is:",
+  "options": [
+   "erosion that should be subtracted",
+   "a sunk cost that should be ignored",
+   "a positive side effect that should be added to the project",
+   "a financing effect that is excluded from cash flows"
+  ],
+  "answer": 2,
+  "explanation": "The extra ink profit changes the firm's cash flow because the printer is launched, so it is an incremental spillover and is added after tax.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-037",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does erosion differ from an opportunity cost?",
+  "options": [
+   "Erosion is stated before tax in the analysis, while an opportunity cost is stated after tax",
+   "Erosion is a financing cost excluded from the analysis, while an opportunity cost is an operating cost",
+   "They are the same idea: both are costs that the firm has already incurred before the decision",
+   "Erosion is lost cash flow on other products; an opportunity cost is the value of an owned asset's best alternative use"
+  ],
+  "answer": 3,
+  "explanation": "Both are incremental and both are after tax, but erosion arises on other product lines while an opportunity cost arises from using an owned asset.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ }
+]

@@ -1,0 +1,1157 @@
+[
+ {
+  "id": "q08-521",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "From a quote screen, the earnings growth the market expects this year is implied by:",
+  "options": [
+   "trailing P/E divided by forward P/E, minus 1",
+   "trailing P/E minus forward P/E",
+   "forward P/E divided by trailing P/E, minus 1",
+   "the dividend yield minus the forward dividend yield"
+  ],
+  "answer": 0,
+  "explanation": "Trailing P/E = P0/EPS0 and forward P/E = P0/EPS1, so trailing ÷ forward = EPS1/EPS0 = 1 + g. Subtract 1 for the growth rate. The price cancels, so the market's expected growth is read off the two ratios.",
+  "source": "generated",
+  "ref": "PRAC q9; MAP A6"
+ },
+ {
+  "id": "q08-522",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A quote screen lists a price/earnings ratio of 21.37 and a consensus forward P/E of 19.52. Which question can be answered directly from these two numbers alone?",
+  "options": [
+   "What is the company's required return R on its shares?",
+   "How many shares does the company have outstanding?",
+   "What EPS growth does the market expect this year?",
+   "What is the company's plowback ratio this year?"
+  ],
+  "answer": 2,
+  "explanation": "The ratio 21.37/19.52 = EPS1/EPS0 gives expected EPS growth. Shares need the market capitalisation and price, R needs a dividend model, and plowback needs payout data.",
+  "source": "generated",
+  "ref": "PRAC q9; MAP A6"
+ },
+ {
+  "id": "q08-523",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A stock has trailing P/E of 18 and forward P/E of 16. Which expression gives the expected EPS growth?",
+  "options": [
+   "16/18 − 1",
+   "18 − 16",
+   "(18 − 16)/18",
+   "18/16 − 1"
+  ],
+  "answer": 3,
+  "explanation": "EPS1/EPS0 = (P0/16)/(P0/18) = 18/16, so g = 18/16 − 1 = 12.5%. Inverting the ratio gives −11.1%, the difference of the two multiples is not a growth rate, and dividing by the trailing multiple gives the wrong base (11.1%).",
+  "source": "generated",
+  "ref": "MAP A6; PRAC q9"
+ },
+ {
+  "id": "q08-524",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "You know a stock's price, its trailing P/E and its forward P/E. To find next year's expected EPS you should:",
+  "options": [
+   "divide the price by the forward P/E",
+   "divide the price by the trailing P/E",
+   "multiply the price by the forward P/E",
+   "multiply the trailing EPS by the forward P/E"
+  ],
+  "answer": 0,
+  "explanation": "Forward P/E = P0/EPS1, so EPS1 = P0/forward P/E. Dividing by the trailing P/E gives EPS0, last year's earnings (a trailing-forward mix-up).",
+  "source": "generated",
+  "ref": "PRAC q9; L04 s14"
+ },
+ {
+  "id": "q08-525",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does the growth implied by the trailing and forward P/E differ from the growth rate g in the Gordon model?",
+  "options": [
+   "It is the same thing as Gordon's g, because both measure the market's expected growth",
+   "It measures dividend growth, whereas Gordon's g measures earnings growth",
+   "It is a long-run rate, whereas Gordon's g is a one-year growth rate",
+   "It is the expected EPS growth for one year; Gordon's g is a constant dividend growth rate forever"
+  ],
+  "answer": 3,
+  "explanation": "A trailing/forward comparison only tells you EPS1/EPS0 for the next twelve months, which can be temporarily high or low. Gordon's g is a permanent rate used in P0 = D1/(R − g). They can be equal for a steady-growth firm but need not be.",
+  "source": "generated",
+  "ref": "L04 s30; MAP A6"
+ },
+ {
+  "id": "q08-526",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following can NOT be found from a quote screen's price, market capitalisation, trailing P/E and forward P/E?",
+  "options": [
+   "The number of shares outstanding",
+   "The company's required return R",
+   "Last year's EPS",
+   "Next year's expected net income"
+  ],
+  "answer": 1,
+  "explanation": "Shares = market cap/price; EPS0 = price/trailing P/E; net income next year = price × shares/forward P/E. R is a property of investors' required compensation and needs a valuation model (R = D1/P0 + g), not just multiples.",
+  "source": "generated",
+  "ref": "PRAC q9; SM 8-22"
+ },
+ {
+  "id": "q08-527",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the forward P/E lower than the trailing P/E for a company whose earnings are expected to rise?",
+  "options": [
+   "The price is the same, but the forward ratio divides it by a larger EPS",
+   "Forward earnings are discounted at a higher rate than trailing earnings",
+   "The price falls whenever earnings are forecast rather than reported as actual",
+   "Analysts deliberately forecast low earnings to make stocks look cheap"
+  ],
+  "answer": 0,
+  "explanation": "P0 is the same in both ratios. EPS1 > EPS0 makes P0/EPS1 < P0/EPS0, and the gap between them is exactly the growth factor 1 + g.",
+  "source": "generated",
+  "ref": "L04 s14, s18"
+ },
+ {
+  "id": "q08-528",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A stock has trailing P/E 12.4 and forward P/E 13.6. What does the market expect for this year's earnings?",
+  "options": [
+   "Growth of about 9.7%, because the forward P/E is higher than the trailing P/E",
+   "No change, because both P/E ratios use the same price",
+   "Growth of about 1.2%, which is the difference between the two ratios",
+   "A decline of about 8.8%, because forecast EPS is below last year's EPS"
+  ],
+  "answer": 3,
+  "explanation": "12.4/13.6 − 1 = −8.8%: the forward multiple is higher only because forecast EPS is lower than last year's. A forward P/E above the trailing P/E signals expected falling earnings.",
+  "source": "generated",
+  "ref": "MAP A6; PRAC q9"
+ },
+ {
+  "id": "q08-529",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A quote screen shows a trailing P/E of 22.4 and a consensus forward P/E of 20.0. What growth in EPS does the market expect this year?",
+  "options": [
+   "−10.71%",
+   "2.40%",
+   "12.00%",
+   "112.00%"
+  ],
+  "answer": 2,
+  "explanation": "EPS1/EPS0 = 22.4/20.0 = 1.12, so g = 12.00%. The difference of the multiples (2.40) is not a growth rate; inverting the ratio gives -10.71%; leaving out the −1 gives 112%.",
+  "source": "generated",
+  "ref": "PRAC q9; MAP A6"
+ },
+ {
+  "id": "q08-530",
+  "concept": "c08-implied-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Harbourfront Bakeries trades at $36.00 and just paid a dividend of $1.44. If R = 10% per annum, what constant dividend growth rate does the price imply?",
+  "options": [
+   "5.77%",
+   "6.00%",
+   "13.46%",
+   "14.00%"
+  ],
+  "answer": 0,
+  "explanation": "36 = 1.44(1 + g)/(0.10 − g) → 3.60 − 36g = 1.44 + 1.44g → g = (3.60 − 1.44)/(36 + 1.44) = 5.77%. The shortcut R − D0/P0 (6.00%) treats D0 as next year's dividend; adding D0 in the numerator gives 13.46%; adding the yield to R gives 14.00%.",
+  "source": "generated",
+  "ref": "L04 s20; FS p1"
+ },
+ {
+  "id": "q08-531",
+  "concept": "c08-implied-growth",
+  "also": [
+   "c08-quote-screen"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A quote screen for Laurentian Labs shows a trailing price/earnings ratio of 21.37 and a consensus forward P/E of 19.52. What rate of growth in earnings per share is expected this year? (Answer in %.)",
+  "answer": 9.48,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(21.37/19.52-1)*100",
+  "steps": [
+   {
+    "label": "EPS1/EPS0 = trailing P/E ÷ forward P/E",
+    "value": 1.0948,
+    "check": "21.37/19.52",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected growth (in %)",
+    "value": 9.4775,
+    "check": "(21.37/19.52-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Trailing P/E = P0/EPS0 and forward P/E = P0/EPS1",
+   "EPS1/EPS0 = 21.37/19.52 = 1.0948",
+   "g = 1.0948 − 1 = 9.48% this year"
+  ],
+  "keystrokes": [
+   "21.37 ÷ 19.52 = 1.0948",
+   "− 1 = 0.0948 → 9.48%"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Inverted the ratio (forward ÷ trailing − 1)",
+    "value": -8.66,
+    "check": "(19.52/21.37-1)*100",
+    "explain": "Forward EPS is the larger number, so the ratio that exceeds 1 is trailing ÷ forward."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Subtracted the two multiples",
+    "value": 1.85,
+    "check": "21.37-19.52",
+    "explain": "The multiples are ratios of the same price; the growth factor is their quotient, not their difference."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot to subtract 1",
+    "value": 109.48,
+    "check": "21.37/19.52*100",
+    "explain": "1.0948 is the growth factor 1 + g; g is the 0.0948."
+   }
+  ],
+  "explanation": "The price cancels out: trailing ÷ forward P/E = EPS1/EPS0. This is the calculation in part (b) of the sample-exam quote-screen question.",
+  "source": "generated",
+  "ref": "PRAC q9; MAP A6"
+ },
+ {
+  "id": "q08-532",
+  "concept": "c08-implied-growth",
+  "also": [
+   "c08-quote-screen"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rideau Rail trades at $45.60 with a trailing P/E of 15.2 and a forward P/E of 14.0. What EPS growth does the market expect this year? (Answer in %.)",
+  "answer": 8.57,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(45.60/14.0)/(45.60/15.2)*100-100",
+  "steps": [
+   {
+    "label": "Last year's EPS0 = price/trailing P/E",
+    "value": 3.0,
+    "check": "45.60/15.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected EPS1 = price/forward P/E",
+    "value": 3.2571,
+    "check": "45.60/14.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = EPS1/EPS0 − 1 (in %)",
+    "value": 8.5714,
+    "check": "(45.60/14.0)/(45.60/15.2)*100-100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "EPS0 = 45.60/15.2 = $3.0000",
+   "EPS1 = 45.60/14.0 = $3.2571",
+   "g = 3.2571/3.0000 − 1 = 8.57%"
+  ],
+  "keystrokes": [
+   "45.60 ÷ 15.2 = 3.00",
+   "45.60 ÷ 14.0 = 3.2571",
+   "3.2571 ÷ 3.00 − 1 = 0.0857"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-one",
+    "label": "Reported EPS1/EPS0 as a percentage",
+    "value": 108.57,
+    "check": "(45.60/14.0)/(45.60/15.2)*100",
+    "explain": "The ratio 1.0857 includes the base; growth is the extra 8.57%."
+   },
+   {
+    "id": "wrong-base",
+    "label": "Divided the increase by EPS1 instead of EPS0",
+    "value": 7.89,
+    "check": "((45.60/14.0)-(45.60/15.2))/(45.60/14.0)*100",
+    "explain": "Growth is measured on the starting EPS0."
+   },
+   {
+    "id": "trailing-forward-mix",
+    "label": "Swapped trailing and forward",
+    "value": -7.89,
+    "check": "(14.0/15.2-1)*100",
+    "explain": "Trailing P/E is the larger one for a growing firm; the ratio forward ÷ trailing gives a decline."
+   }
+  ],
+  "explanation": "Going through EPS0 and EPS1 gives the same answer as the ratio shortcut and is a good check.",
+  "source": "generated",
+  "ref": "PRAC q9; SM 8-22"
+ },
+ {
+  "id": "q08-533",
+  "concept": "c08-implied-growth",
+  "also": [
+   "c08-required-return-components"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Orchards trades at $48.00 and just paid a dividend of $1.92. If R = 9.5% per annum, what constant dividend growth rate does the market price imply? (Answer in % per annum.)",
+  "answer": 5.29,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(48*0.095-1.92)/(48+1.92)*100",
+  "steps": [
+   {
+    "label": "Price × R",
+    "value": 4.56,
+    "check": "48*0.095",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Implied growth g = (P0 R − D0)/(P0 + D0) (in %)",
+    "value": 5.2885,
+    "check": "(48*0.095-1.92)/(48+1.92)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P0 = D0(1 + g)/(R − g) → P0 R − P0 g = D0 + D0 g",
+   "g = (P0 R − D0)/(P0 + D0) = (4.56 − 1.92)/(48 + 1.92) = 2.64/49.92",
+   "g = 5.29% per annum"
+  ],
+  "keystrokes": [
+   "48 × 0.095 = 4.56",
+   "(4.56 − 1.92) ÷ (48 + 1.92) × 100 = 5.29"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used R − D0/P0",
+    "value": 5.5,
+    "check": "(0.095-1.92/48)*100",
+    "explain": "D0/P0 is not the dividend yield: the yield uses D1 = D0(1 + g)."
+   },
+   {
+    "id": "sign-error",
+    "label": "Added D0 to P0 R in the numerator",
+    "value": 12.98,
+    "check": "(48*0.095+1.92)/(48+1.92)*100",
+    "explain": "Collecting terms: P0 R − D0 = g (P0 + D0)."
+   },
+   {
+    "id": "g-as-r",
+    "label": "Added the yield to R",
+    "value": 13.5,
+    "check": "(0.095+1.92/48)*100",
+    "explain": "R = yield + g, so g = R − yield, not R + yield."
+   }
+  ],
+  "explanation": "With D0 given, the algebra needs the (P0 + D0) denominator. If D1 were given, the shortcut g = R − D1/P0 would be exact.",
+  "source": "generated",
+  "ref": "L04 s20; FS p1"
+ },
+ {
+  "id": "q08-534",
+  "concept": "c08-implied-growth",
+  "also": [
+   "c08-quote-screen"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Gatineau Glass trades at $38.40 with a market capitalisation of $2,400 million, a trailing P/E of 17.5 and a consensus forward P/E of 15.9. What net income does the market expect next year? (Answer in $ millions.)",
+  "answer": 150.94,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2400/15.9",
+  "steps": [
+   {
+    "label": "Shares outstanding (millions) = market cap/price",
+    "value": 62.5,
+    "check": "2400/38.40",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected EPS1 = price/forward P/E",
+    "value": 2.4151,
+    "check": "38.40/15.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected net income = EPS1 × shares ($ millions)",
+    "value": 150.9434,
+    "check": "2400/15.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Shares = 2,400/38.40 = 62.5 million",
+   "EPS1 = 38.40/15.9 = $2.4151",
+   "Net income next year = 2.4151 × 62.5 = $150.94 million (also market cap ÷ forward P/E)"
+  ],
+  "keystrokes": [
+   "2400 ÷ 38.40 = 62.5",
+   "38.40 ÷ 15.9 = 2.4151",
+   "2.4151 × 62.5 = 150.94"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Used the trailing P/E (this gives last year's income)",
+    "value": 137.14,
+    "check": "2400/17.5",
+    "explain": "Dividing by the trailing P/E gives last year's net income, $137.14 million."
+   },
+   {
+    "id": "units",
+    "label": "Stopped at shares outstanding",
+    "value": 62.5,
+    "check": "2400/38.40",
+    "explain": "62.5 is the number of shares in millions; net income needs EPS1 as well."
+   }
+  ],
+  "explanation": "Net income = market cap ÷ P/E. With the forward ratio you get next year's expected income; with the trailing ratio, last year's. The ratio of the two is the implied growth (10.1% here).",
+  "source": "generated",
+  "ref": "PRAC q9; SM 8-22"
+ },
+ {
+  "id": "q08-541",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Free cash flow to the firm (FCF or FCFF) is:",
+  "options": [
+   "the cash left for shareholders after interest and debt repayments have been paid",
+   "net income after tax plus depreciation, before CAPEX and working capital",
+   "the after-tax cash from operations available to lenders and shareholders, EBIT(1 − T) + D&A − CAPEX − ΔWC",
+   "operating revenue minus operating expenses, which is EBITDA"
+  ],
+  "answer": 2,
+  "explanation": "FCF is measured BEFORE any payment to capital providers, so it is built from EBIT, not from net income. The cash left for shareholders after lenders are paid is FCFE; EBITDA ignores tax, CAPEX and working capital.",
+  "source": "generated",
+  "ref": "L04 s38-40; FS p2"
+ },
+ {
+  "id": "q08-542",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which expression is the free cash flow formula on the formula sheet?",
+  "options": [
+   "NPAT + D&A − CAPEX − ΔWC",
+   "EBIT(1 − T) + D&A + CAPEX − ΔWC",
+   "EBIT(1 − T) − Interest + D&A − CAPEX − ΔWC",
+   "EBIT(1 − T) + D&A − CAPEX − ΔWC"
+  ],
+  "answer": 3,
+  "explanation": "FCF taxes EBIT as if the firm had no debt, adds back non-cash D&A, subtracts the cash spent on CAPEX and the cash tied up in working capital. NPAT-based and interest-based versions describe cash to shareholders, not to the whole firm; adding CAPEX has the wrong sign.",
+  "source": "generated",
+  "ref": "FS p2; L04 s40"
+ },
+ {
+  "id": "q08-543",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An analyst forecasts a firm's free cash flows and discounts them at the firm's overall discount rate. What does the result represent?",
+  "options": [
+   "The value of the shareholders' equity after subtracting debt",
+   "The accounting book value of the firm's total assets",
+   "The present value of next year's dividend per share",
+   "Enterprise value (EV), the value of the operations to all investors"
+  ],
+  "answer": 3,
+  "explanation": "FCF belongs to lenders and shareholders together, so its PV is EV. Equity is found afterwards: Equity = EV − Debt + Cash.",
+  "source": "generated",
+  "ref": "L04 s37-42"
+ },
+ {
+  "id": "q08-544",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A firm's FCF has just been reported at $3.4 million and is expected to grow 3.5% per year forever. R = 9.5% per annum. Which expression gives EV?",
+  "options": [
+   "EV = 3.4/(0.095 − 0.035)",
+   "EV = 3.4 × 1.035/(0.095 − 0.035)",
+   "EV = 3.4/0.095",
+   "EV = 3.4 × 1.035/(0.095 + 0.035)"
+  ],
+  "answer": 1,
+  "explanation": "Constant growing FCF is a growing perpetuity: EV = FCF1/(R − g) with FCF1 = FCF0(1 + g). Using FCF0 is the d0-for-d1 error; dividing by R alone ignores growth; adding g to R is a sign slip.",
+  "source": "generated",
+  "ref": "L04 s19, s37; MAP A8"
+ },
+ {
+  "id": "q08-545",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "How does FCF differ from net income (NPAT)?",
+  "options": [
+   "FCF is after interest, whereas NPAT is calculated before any interest expense",
+   "FCF includes only operating revenue and expenses, whereas NPAT also includes tax",
+   "They are the same figure whenever the firm pays no dividend",
+   "FCF is before interest and deducts CAPEX and ΔWC; NPAT is after interest and ignores both"
+  ],
+  "answer": 3,
+  "explanation": "NPAT is an accounting profit after interest and tax with depreciation deducted. FCF starts from EBIT(1 − T), so lenders' interest is not deducted, then converts profit to cash by adding back D&A and deducting reinvestment (CAPEX and ΔWC).",
+  "source": "generated",
+  "ref": "L04 s38-40"
+ },
+ {
+  "id": "q08-546",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following does NOT appear in the FCF formula?",
+  "options": [
+   "The tax rate T applied to EBIT",
+   "Capital expenditures (CAPEX)",
+   "Interest expense and the change in debt",
+   "The change in working capital (ΔWC)"
+  ],
+  "answer": 2,
+  "explanation": "Interest and ΔDebt are payments to and from lenders; FCF is the cash generated BEFORE those flows. They appear in FCFE (through NPAT and + ΔDebt), not in FCF.",
+  "source": "generated",
+  "ref": "L04 s40-41; MAP A8"
+ },
+ {
+  "id": "q08-547",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is FCF built from EBIT(1 − T) rather than from net income?",
+  "options": [
+   "Net income is not affected by taxes, so EBIT(1 − T) is the more accurate measure",
+   "EBIT is a cash figure while net income is a non-cash accounting figure",
+   "FCF is the cash for ALL capital providers, so it must not be reduced by interest paid to lenders",
+   "Interest is not a real expense for the firm, so it is always ignored in valuation"
+  ],
+  "answer": 2,
+  "explanation": "Lenders and shareholders are both claimants on FCF. Deducting interest first would measure only what remains for shareholders (and also needs the matching ΔDebt, which is the FCFE route).",
+  "source": "generated",
+  "ref": "L04 s38-40"
+ },
+ {
+  "id": "q08-548",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A fast-growing retailer reports negative FCF this year because CAPEX far exceeds D&A. What does this imply for its EV?",
+  "options": [
+   "EV must be negative, because the first cash flow is negative and everything is discounted",
+   "EV equals zero until the year in which FCF first turns positive for the firm",
+   "The firm should be valued with the Gordon model using this year's FCF as D0",
+   "Nothing by itself: EV is the PV of ALL future FCFs, which may be large and positive later"
+  ],
+  "answer": 3,
+  "explanation": "A growth firm reinvests heavily today and is valued on later cash flows (a non-constant growth timeline with horizon value). A negative first-year FCF cannot be run through FCF/R or FCF1/(R − g).",
+  "source": "generated",
+  "ref": "L04 s37; TB 8.1"
+ },
+ {
+  "id": "q08-549",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "True or false: if FCFs are discounted to give enterprise value, the equity value is EV − Debt + Cash.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. EV = Equity + Debt − Cash, so Equity = EV − Debt + Cash. Cash is added back because it is not part of the operations valued by FCF but belongs to shareholders (net debt = Debt − Cash).",
+  "source": "generated",
+  "ref": "L04 s42; FS p2"
+ },
+ {
+  "id": "q08-550",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A software firm has EV = $80 million, debt of $5 million and cash of $25 million. Its equity value is:",
+  "options": [
+   "$60 million, because debt and cash are both subtracted",
+   "$100 million, larger than EV because cash exceeds debt",
+   "$75 million, because debt is subtracted and cash ignored",
+   "$80 million, because equity equals EV"
+  ],
+  "answer": 1,
+  "explanation": "Equity = EV − Debt + Cash = 80 − 5 + 25 = $100 million. With net cash (cash > debt), equity exceeds EV. Subtracting cash is the sign slip of confusing equity with EV.",
+  "source": "generated",
+  "ref": "L04 s42; MAP A8"
+ },
+ {
+  "id": "q08-551",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Brewing reports (in $ thousands): revenue 3,200; operating costs excluding D&A 2,150; D&A 250; interest 90. The tax rate is 30%, CAPEX is 300 and ΔWC is 40. What is its free cash flow?",
+  "options": [
+   "$380 thousand",
+   "$407 thousand",
+   "$470 thousand",
+   "$550 thousand"
+  ],
+  "answer": 2,
+  "explanation": "EBIT = 3,200 − 2,150 − 250 = 800; EBIT(1 − T) = 560. FCF = 560 + 250 − 300 − 40 = 470. Starting from NPAT (497) gives 407; subtracting interest from EBIT(1 − T) gives 380; adding ΔWC instead of subtracting gives 550.",
+  "source": "generated",
+  "ref": "L04 s38-40; MAP A8"
+ },
+ {
+  "id": "q08-552",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm's free cash flows are worth an enterprise value of $120.0 million. It has debt of $45.0 million and cash of $8.0 million. What is the value of its equity? (in $ millions)",
+  "options": [
+   "$67.0 million",
+   "$75.0 million",
+   "$83.0 million",
+   "$157.0 million"
+  ],
+  "answer": 2,
+  "explanation": "Equity = EV − Debt + Cash = 120.0 − 45.0 + 8.0 = $83.0 million. Subtracting cash too gives $67.0 million; adding debt gives $157.0 million; ignoring cash gives $75.0 million.",
+  "source": "generated",
+  "ref": "L04 s42; FS p2"
+ },
+ {
+  "id": "q08-553",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Tamarack Solar just generated FCF of $2.5 million. FCF is expected to grow 3% per year forever and the firm's discount rate is 9% per annum. What is its enterprise value? (in $ millions)",
+  "options": [
+   "$21.46 million",
+   "$28.61 million",
+   "$41.67 million",
+   "$42.92 million"
+  ],
+  "answer": 3,
+  "explanation": "EV = FCF1/(R − g) = 2.5 × 1.03/(0.09 − 0.03) = 2.575/0.06 = $42.92 million. Using FCF0 gives $41.67 million; adding g to R gives $21.46 million; dividing by R alone gives $28.61 million.",
+  "source": "generated",
+  "ref": "L04 s19, s37"
+ },
+ {
+  "id": "q08-554",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cascade Cabinetry's year shows (in $ millions): sales 48.0; cash operating costs 33.6; D&A 4.2; interest 1.5. The tax rate is 28%, CAPEX is 5.0 and ΔWC is 0.8. FCF is expected to stay constant forever and the firm's discount rate is 9% per annum. What is its enterprise value? (Answer in $ millions.)",
+  "answer": 63.82,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((48.0-33.6-4.2)*0.72+4.2-5.0-0.8)/0.09",
+  "steps": [
+   {
+    "label": "EBITDA = sales − operating costs",
+    "value": 14.4,
+    "check": "48.0-33.6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EBIT = EBITDA − D&A",
+    "value": 10.2,
+    "check": "48.0-33.6-4.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EBIT(1 − T)",
+    "value": 7.344,
+    "check": "(48.0-33.6-4.2)*0.72",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "FCF = EBIT(1 − T) + D&A − CAPEX − ΔWC",
+    "value": 5.744,
+    "check": "(48.0-33.6-4.2)*0.72+4.2-5.0-0.8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Enterprise value = FCF/R",
+    "value": 63.8222,
+    "check": "((48.0-33.6-4.2)*0.72+4.2-5.0-0.8)/0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "EBITDA = 48.0 − 33.6 = 14.4; EBIT = 14.4 − 4.2 = 10.2",
+   "EBIT(1 − T) = 10.2 × 0.72 = 7.344",
+   "FCF = 7.344 + 4.2 − 5.0 − 0.8 = $5.744 million (interest is not deducted)",
+   "EV = 5.744/0.09 = $63.82 million"
+  ],
+  "keystrokes": [
+   "48.0 − 33.6 − 4.2 = 10.2",
+   "10.2 × 0.72 = 7.344",
+   "7.344 + 4.2 − 5.0 − 0.8 = 5.744",
+   "5.744 ÷ 0.09 = 63.82"
+  ],
+  "errors": [
+   {
+    "id": "npat-in-fcf",
+    "label": "Started from NPAT (after interest)",
+    "value": 51.82,
+    "check": "((48.0-33.6-4.2-1.5)*0.72+4.2-5.0-0.8)/0.09",
+    "explain": "NPAT is after interest; FCF starts from EBIT(1 − T) so lenders' interest is not deducted."
+   },
+   {
+    "id": "interest-in-fcf",
+    "label": "Subtracted interest from EBIT(1 − T)",
+    "value": 47.16,
+    "check": "((48.0-33.6-4.2)*0.72-1.5+4.2-5.0-0.8)/0.09",
+    "explain": "Interest is a payment to a capital provider; FCF is the cash before those payments."
+   },
+   {
+    "id": "added-capex",
+    "label": "Added CAPEX instead of subtracting",
+    "value": 174.93,
+    "check": "((48.0-33.6-4.2)*0.72+4.2+5.0-0.8)/0.09",
+    "explain": "CAPEX is cash spent on assets, so it reduces FCF."
+   }
+  ],
+  "explanation": "Income statement → EBIT → EBIT(1 − T) → FCF → EV. Interest never appears in FCF; it only matters later when debt is subtracted from EV to reach equity.",
+  "source": "generated",
+  "ref": "L04 s38-43"
+ },
+ {
+  "id": "q08-555",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Laurentian Labs has constant FCF of $7.2 million per year forever and a discount rate of 8.5% per annum. It has debt of $24.0 million, cash of $3.5 million and 5.0 million shares. What is the equity value per share? (Answer in $.)",
+  "answer": 12.84,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(7.2/0.085-24+3.5)/5",
+  "steps": [
+   {
+    "label": "Enterprise value = FCF/R ($ millions)",
+    "value": 84.7059,
+    "check": "7.2/0.085",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Equity = EV − Debt + Cash ($ millions)",
+    "value": 64.2059,
+    "check": "7.2/0.085-24+3.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Equity per share",
+    "value": 12.8412,
+    "check": "(7.2/0.085-24+3.5)/5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "EV = 7.2/0.085 = $84.7059 million",
+   "Equity = 84.7059 − 24.0 + 3.5 = $64.2059 million",
+   "Per share = 64.2059/5.0 = $12.84"
+  ],
+  "keystrokes": [
+   "7.2 ÷ 0.085 = 84.7059",
+   "84.7059 − 24.0 + 3.5 = 64.2059",
+   "64.2059 ÷ 5 = 12.84"
+  ],
+  "errors": [
+   {
+    "id": "net-debt-sign",
+    "label": "Subtracted cash as well as debt",
+    "value": 11.44,
+    "check": "(7.2/0.085-24-3.5)/5",
+    "explain": "Cash is added back: net debt = Debt − Cash."
+   },
+   {
+    "id": "net-debt-sign",
+    "label": "Divided EV by the share count",
+    "value": 16.94,
+    "check": "7.2/0.085/5",
+    "explain": "EV includes the lenders' claim; shareholders only own EV − Debt + Cash."
+   },
+   {
+    "id": "net-debt-sign",
+    "label": "Added debt and subtracted cash",
+    "value": 21.04,
+    "check": "(7.2/0.085+24-3.5)/5",
+    "explain": "That turns equity into something larger than EV; debt is a claim to subtract."
+   }
+  ],
+  "explanation": "Discounting FCF gives EV; per-share value requires moving from EV to equity and then dividing by shares.",
+  "source": "generated",
+  "ref": "L04 s42-43"
+ },
+ {
+  "id": "q08-556",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Pipelines just produced FCF of $3.4 million, expected to grow 3.5% per year forever. The firm's discount rate is 9.5% per annum. What is its enterprise value? (Answer in $ millions.)",
+  "answer": 58.65,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3.4*1.035/(0.095-0.035)",
+  "steps": [
+   {
+    "label": "Next FCF1 = FCF0(1 + g)",
+    "value": 3.519,
+    "check": "3.4*1.035",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Enterprise value = FCF1/(R − g)",
+    "value": 58.65,
+    "check": "3.4*1.035/(0.095-0.035)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "FCF1 = 3.4 × 1.035 = $3.519 million",
+   "EV = 3.519/(0.095 − 0.035) = 3.519/0.06 = $58.65 million"
+  ],
+  "keystrokes": [
+   "3.4 × 1.035 = 3.519",
+   "3.519 ÷ 0.06 = 58.65"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used FCF0 in the numerator",
+    "value": 56.67,
+    "check": "3.4/(0.095-0.035)",
+    "explain": "The growing perpetuity needs next year's FCF."
+   },
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R",
+    "value": 27.07,
+    "check": "3.4*1.035/(0.095+0.035)",
+    "explain": "The denominator is R − g."
+   },
+   {
+    "id": "forgot-g",
+    "label": "Divided by R alone",
+    "value": 37.04,
+    "check": "3.4*1.035/0.095",
+    "explain": "Growth lowers the capitalisation rate to R − g."
+   }
+  ],
+  "explanation": "FCF valuation uses exactly the same growing-perpetuity algebra as the Gordon model, with FCF in place of dividends and the firm's rate in place of the equity rate.",
+  "source": "generated",
+  "ref": "L04 s19, s37"
+ },
+ {
+  "id": "q08-557",
+  "concept": "c08-fcf-ev",
+  "also": [
+   "c08-nonconstant-timeline"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Whitecap Wind expects free cash flows of $2.0 million, $2.6 million and $3.1 million at the ends of years 1 to 3. From year 4 FCF grows 3% per year forever. The firm's discount rate is 10% per annum. What is its enterprise value today? (Answer in $ millions.)",
+  "answer": 40.57,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.0/1.1+2.6/1.1**2+(3.1+3.1*1.03/(0.10-0.03))/1.1**3",
+  "steps": [
+   {
+    "label": "First constant-growth FCF4 = FCF3 × 1.03",
+    "value": 3.193,
+    "check": "3.1*1.03",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon value at year 3: EV3 = FCF4/(R − g)",
+    "value": 45.6143,
+    "check": "3.1*1.03/(0.10-0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of FCF1 and FCF2",
+    "value": 3.9669,
+    "check": "2.0/1.1+2.6/1.1**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of FCF3 plus EV3",
+    "value": 36.5998,
+    "check": "(3.1+3.1*1.03/(0.10-0.03))/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Enterprise value today",
+    "value": 40.5667,
+    "check": "2.0/1.1+2.6/1.1**2+(3.1+3.1*1.03/(0.10-0.03))/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "FCF4 = 3.1 × 1.03 = 3.193; EV3 = 3.193/(0.10 − 0.03) = $45.6143 million",
+   "PV(FCF1, FCF2) = 2.0/1.10 + 2.6/1.10² = 1.8182 + 2.1488 = 3.9669",
+   "PV(FCF3 + EV3) = (3.1 + 45.6143)/1.10³ = 36.5998",
+   "EV0 = 3.9669 + 36.5998 = $40.57 million"
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 2.0, C02 = 2.6, C03 = 3.1 + 45.6143 = 48.7143 (F = 1)",
+   "NPV: I = 10, CPT NPV = 40.57"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used FCF3 instead of FCF4 in the horizon numerator",
+    "value": 39.57,
+    "check": "2.0/1.1+2.6/1.1**2+(3.1+3.1/(0.10-0.03))/1.1**3",
+    "explain": "The horizon value needs the first constant-growth FCF, FCF4 = FCF3(1.03)."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted FCF3 + EV3 four years",
+    "value": 37.24,
+    "check": "2.0/1.1+2.6/1.1**2+(3.1+3.1*1.03/(0.10-0.03))/1.1**4",
+    "explain": "EV3 is a year-3 value: discount three periods."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Left out FCF3",
+    "value": 38.24,
+    "check": "2.0/1.1+2.6/1.1**2+3.1*1.03/(0.10-0.03)/1.1**3",
+    "explain": "FCF3 is paid at year 3 along with EV3, which only covers year 4 onward."
+   }
+  ],
+  "explanation": "FCF valuation with a timeline is non-constant growth again: explicit flows, a horizon value at the date before constant growth begins, then discount everything.",
+  "source": "generated",
+  "ref": "L04 s37; TB 8.1"
+ },
+ {
+  "id": "q08-558",
+  "concept": "c08-fcf-ev",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Yukon Drillers earns EBIT of $12.0 million per year forever. A tax change lowers its tax rate from 30% to 26%; CAPEX equals D&A and ΔWC is zero. The firm's discount rate is 9% per annum. By how much does enterprise value rise? (Answer in $ millions.)",
+  "answer": 5.33,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "12.0*(0.30-0.26)/0.09",
+  "steps": [
+   {
+    "label": "Increase in FCF = EBIT × (T_old − T_new)",
+    "value": 0.48,
+    "check": "12.0*(0.30-0.26)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Increase in EV = ΔFCF/R",
+    "value": 5.3333,
+    "check": "12.0*(0.30-0.26)/0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "FCF before = 12.0 × 0.70 = 8.40 (CAPEX = D&A, ΔWC = 0); after = 12.0 × 0.74 = 8.88",
+   "ΔFCF = $0.48 million per year",
+   "ΔEV = 0.48/0.09 = $5.33 million"
+  ],
+  "keystrokes": [
+   "12.0 × (0.30 − 0.26) = 0.48",
+   "0.48 ÷ 0.09 = 5.33"
+  ],
+  "errors": [
+   {
+    "id": "forgot-r",
+    "label": "Reported the annual FCF increase",
+    "value": 0.48,
+    "check": "12.0*(0.30-0.26)",
+    "explain": "A perpetual increase in FCF is capitalised at R: divide by 0.09."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Used the new tax rate rather than the change",
+    "value": 34.67,
+    "check": "12.0*0.26/0.09",
+    "explain": "The change in T is 4 percentage points, not 26%."
+   },
+   {
+    "id": "level-for-change",
+    "label": "Capitalised the whole new FCF instead of the increase",
+    "value": 98.67,
+    "check": "12.0*(1-0.26)/0.09",
+    "explain": "That is the whole new FCF capitalised, not the increase."
+   }
+  ],
+  "explanation": "Because FCF = EBIT(1 − T) + D&A − CAPEX − ΔWC, a cut in T raises FCF by EBIT × ΔT each year; the value created is that annual gain capitalised at R.",
+  "source": "generated",
+  "ref": "L04 s40-43"
+ }
+]

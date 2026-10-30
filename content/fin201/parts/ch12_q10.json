@@ -1,0 +1,1369 @@
+[
+ {
+  "id": "q12-401",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the professor's notation, the weight w_k of an asset in a portfolio is:",
+  "options": [
+   "the dollar amount invested in that asset divided by the total value of the portfolio",
+   "the asset's expected return divided by the portfolio's expected return",
+   "the asset's standard deviation divided by the portfolio's standard deviation",
+   "the number of shares held in the asset divided by the number of assets in the portfolio"
+  ],
+  "answer": 0,
+  "explanation": "A weight is a share of dollars: w_k = $k / total portfolio value, so the weights always sum to 1 (100%) because all of the money is invested somewhere (cash counts as an asset). The other options divide returns, risks or share counts, none of which describe how the money is split.",
+  "source": "generated",
+  "ref": "L06 s21"
+ },
+ {
+  "id": "q12-402",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Laurel Ridge Capital holds $18,000 of Prairie Bank shares and $12,000 of Foothills Pipeline shares. Beside the two holdings the analyst writes 0.60 and 0.40. These numbers are called:",
+  "options": [
+   "portfolio weights",
+   "expected returns",
+   "correlation coefficients",
+   "betas"
+  ],
+  "answer": 0,
+  "explanation": "$18,000 / $30,000 = 0.60 and $12,000 / $30,000 = 0.40: each is the share of total portfolio value held in that stock, which is a portfolio weight. They sum to 1. Expected returns, correlations and betas are properties of the stocks, not of how much money you put in each.",
+  "source": "generated",
+  "ref": "L06 s21, TB 13.2"
+ },
+ {
+  "id": "q12-403",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which expression gives the expected return of a two-stock portfolio with weights w_A and w_B?",
+  "options": [
+   "E[R_P] = √(w_A² E[R_A]² + w_B² E[R_B]² + 2ρ_AB w_A E[R_A] w_B E[R_B])",
+   "E[R_P] = w_A E[R_A] + w_B E[R_B]",
+   "E[R_P] = w_A σ_A + w_B σ_B",
+   "E[R_P] = (E[R_A] + E[R_B]) / 2 whatever the weights"
+  ],
+  "answer": 1,
+  "explanation": "The portfolio's expected return is the dollar-weighted sum of the expected returns, E[R_P] = Σ w_k E[R_k]. The square-root expression is the shape of the σ_P formula (wrongly applied to returns), and the simple average ignores how the money is actually split.",
+  "source": "generated",
+  "ref": "L06 s22, FS p2"
+ },
+ {
+  "id": "q12-404",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Consider two statements about a two-stock portfolio. (i) E[R_P] is the weighted average of the two stocks' expected returns. (ii) σ_P is the weighted average of the two stocks' standard deviations. Which is correct?",
+  "options": [
+   "Both are always true",
+   "(ii) is always true; (i) is true only when ρ_AB = 1",
+   "Neither is ever true",
+   "(i) is always true; (ii) is true only when ρ_AB = 1"
+  ],
+  "answer": 3,
+  "explanation": "Return is linear in the weights, so (i) holds for any correlation. Risk is not linear: σ_P = w_A σ_A + w_B σ_B only in the special case ρ_AB = 1 (and when a weight is zero); for ρ_AB < 1 the portfolio σ is below the weighted average.",
+  "source": "generated",
+  "ref": "L06 s24, TB 13.2"
+ },
+ {
+  "id": "q12-405",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT true of the expected return of a long-only two-stock portfolio?",
+  "options": [
+   "It is linear in the portfolio weights",
+   "It lies between the expected returns of the two stocks",
+   "It depends on the correlation between the two stocks",
+   "It can be computed by weighting each stock's expected return by its share of the dollars invested"
+  ],
+  "answer": 2,
+  "explanation": "E[R_P] = w_A E[R_A] + w_B E[R_B] contains no correlation term: correlation affects the risk of the portfolio, not its expected return. The other three statements are all true of a weighted average with non-negative weights summing to 1.",
+  "source": "generated",
+  "ref": "L06 s19, s22"
+ },
+ {
+  "id": "q12-406",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the correlation between two stocks not appear in the formula for a portfolio's expected return?",
+  "options": [
+   "Correlation only matters for stocks listed in different countries",
+   "E[R_P] is a weighted sum of the expected returns, so it is linear",
+   "Expected returns of the two stocks are always equal",
+   "The weights are always assumed to be equal"
+  ],
+  "answer": 1,
+  "explanation": "Expectation is linear, so E[w_A R_A + w_B R_B] = w_A E[R_A] + w_B E[R_B] regardless of how R_A and R_B move together. Correlation matters for the variance, where the cross-term 2ρ w_A σ_A w_B σ_B appears.",
+  "source": "generated",
+  "ref": "L06 s19, s22"
+ },
+ {
+  "id": "q12-407",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A long-only investor mixes Stock A (E[R] = 6%) and Stock B (E[R] = 12%) and reports a portfolio expected return of 13.5%. What does this figure tell you?",
+  "options": [
+   "There is an error: a long-only mix of A and B must have an expected return between 6% and 12%",
+   "Diversification has added a bonus return of 1.5% on top of the best stock",
+   "It is plausible if the correlation between A and B is very high",
+   "It is plausible if the correlation between A and B is negative"
+  ],
+  "answer": 0,
+  "explanation": "A weighted average with non-negative weights summing to 1 cannot exceed the highest input, here 12%. Diversification lowers risk, not expected return, and correlation does not enter E[R_P] at all. The likely culprit is weights that sum to more than 1 (for example 0.25 and 1.00).",
+  "source": "generated",
+  "ref": "SM 13-CTQ5, L06 s22"
+ },
+ {
+  "id": "q12-408",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The expected return of a portfolio is the _____ average of the expected returns of its assets, using the portfolio weights.",
+  "options": [
+   "simple",
+   "weighted",
+   "geometric",
+   "variance-weighted"
+  ],
+  "answer": 1,
+  "explanation": "E[R_P] = Σ w_k E[R_k] is a weighted (arithmetic) average: bigger holdings count for more. A simple average is the special case of equal weights; a geometric average is for compounding past returns (Chapter 8), not for combining assets.",
+  "source": "generated",
+  "ref": "L06 s22"
+ },
+ {
+  "id": "q12-409",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A long-only portfolio of two stocks can have an expected return above that of either stock if the correlation between them is sufficiently negative.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. E[R_P] is a weighted average, so with non-negative weights it must lie between the two expected returns; correlation never enters it. A very negative correlation lowers the portfolio's standard deviation, not its expected return.",
+  "source": "generated",
+  "ref": "SM 13-CTQ5"
+ },
+ {
+  "id": "q12-410",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "You know the dollar holdings and the expected return of each of two stocks. Which sequence gives the portfolio's expected return?",
+  "options": [
+   "Add the two expected returns and divide by two, ignoring the dollar amounts",
+   "Multiply each dollar amount by its expected return, add, and divide by the number of stocks",
+   "Find the weights, multiply the two weights together, and apply the product to the larger expected return",
+   "Find total value; divide each holding by it to get weights; multiply each weight by its expected return; add the products"
+  ],
+  "answer": 3,
+  "explanation": "Weights come first (dollars / total), then each weight multiplies its own E[R], then the products are added. Averaging the returns while ignoring dollars is the equal-weights shortcut; dividing dollars-times-return by the number of stocks (instead of by total dollars) gives a number in dollars, not a return.",
+  "source": "generated",
+  "ref": "SM 13-2, L06 s21-22"
+ },
+ {
+  "id": "q12-411",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Trillium Fund puts 70% of its money in a Canadian bond index fund (E[R] = 4.5%) and 30% in a global equity fund (E[R] = 10.0%). What is its portfolio expected return?",
+  "options": [
+   "6.15%",
+   "7.25%",
+   "8.35%",
+   "13.15%"
+  ],
+  "answer": 0,
+  "explanation": "E[R_P] = 0.70 × 4.5% + 0.30 × 10.0% = 3.15% + 3.00% = 6.15%. The 8.35% result swaps the weights, 7.25% is the simple average (equal weights assumed) and 13.15% leaves the equity fund unweighted so the weights add to more than 1.",
+  "source": "generated",
+  "ref": "SM 13-3"
+ },
+ {
+  "id": "q12-412",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You own 400 shares of Bow Valley Utilities at $36.50 and 250 shares of Rideau Tech at $52.00. Their expected returns are 6.4% and 13.2%. What is the portfolio's expected return?",
+  "options": [
+   "9.02%",
+   "9.60%",
+   "9.80%",
+   "10.00%"
+  ],
+  "answer": 1,
+  "explanation": "Values: 400 × $36.50 = $14,600 and 250 × $52.00 = $13,000, total $27,600, so w = 0.5290 and 0.4710. E[R_P] = 0.5290 × 6.4% + 0.4710 × 13.2% = 9.60%. Using share counts (400 and 250) as the basis for weights gives 9.02%, swapping the weights 10.0%, and the simple average 9.80%.",
+  "source": "generated",
+  "ref": "SM 13-1, 13-2"
+ },
+ {
+  "id": "q12-413",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A cautious investor wants a portfolio expected return of 8% using a GIC fund (E[R] = 4%) and an equity fund (E[R] = 10%). What weight in the equity fund achieves this?",
+  "options": [
+   "33.33%",
+   "50.00%",
+   "66.67%",
+   "80.00%"
+  ],
+  "answer": 2,
+  "explanation": "Set 8 = w × 10 + (1 − w) × 4, so w = (8 − 4)/(10 − 4) = 66.67%. Dividing the target by the equity return (80%) ignores that part of the money earns 4%; 50% is the equal-weight guess; 33.33% is the weight in the GIC fund (the swapped answer).",
+  "source": "generated",
+  "ref": "SM 13-4, L06 s21-22"
+ },
+ {
+  "id": "q12-414",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "You have $100,000 to invest. You invest $40,000 in a bank term deposit that is paying interest of 4% per annum, and $60,000 in a well-diversified portfolio of stocks that you think will return 9% per annum. What is your expected return?",
+  "answer": 7.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.4*4 + 0.6*9",
+  "steps": [
+   {
+    "label": "Weight in the term deposit",
+    "value": 0.4,
+    "check": "40000/100000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Weight in the stock portfolio",
+    "value": 0.6,
+    "check": "60000/100000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 7.0,
+    "check": "0.4*4 + 0.6*9",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "w_deposit = 40,000 / 100,000 = 0.40 and w_stocks = 60,000 / 100,000 = 0.60 (they sum to 1)",
+   "E[R_P] = w_deposit × E[R_deposit] + w_stocks × E[R_stocks]",
+   "E[R_P] = 0.40 × 4% + 0.60 × 9% = 1.6% + 5.4% = 7.0% per annum"
+  ],
+  "keystrokes": [
+   "0.40 × 4 = 1.6",
+   "0.60 × 9 = 5.4",
+   "1.6 + 5.4 = 7.0"
+  ],
+  "errors": [
+   {
+    "id": "equal-weights-assumed",
+    "label": "Averaged the two returns ignoring the dollars",
+    "value": 6.5,
+    "check": "(4+9)/2",
+    "explain": "The money is split 40/60, not 50/50; the simple average is only right for equal weights."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Swapped the weights",
+    "value": 6.0,
+    "check": "0.6*4 + 0.4*9",
+    "explain": "The 60% weight belongs to the 9% stock portfolio, not the 4% deposit."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Used weights of 1 on both assets",
+    "value": 13.0,
+    "check": "4 + 9",
+    "explain": "Weights must sum to 1; adding the two returns uses weights that sum to 2."
+   }
+  ],
+  "explanation": "E[R_P] = 0.40 × 4% + 0.60 × 9% = 7.0% per annum (the keyed answer on the sample exam). The result lies between the two returns, closer to 9% because 60% of the money is in stocks. The 6.5% answer is the simple average, the tempting error.",
+  "source": "official",
+  "ref": "PRAC q8"
+ },
+ {
+  "id": "q12-415",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Heights Pension holds 2,400 units of Fund P priced at $18.75 and 1,800 units of Fund Q priced at $31.50. The expected returns are 7.8% for P and 11.4% for Q. What is the portfolio's expected return (% per annum)?",
+  "answer": 9.81,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(2400*18.75)/(2400*18.75+1800*31.5)*7.8 + (1800*31.5)/(2400*18.75+1800*31.5)*11.4",
+  "steps": [
+   {
+    "label": "Total portfolio value",
+    "value": 101700.0,
+    "check": "2400*18.75+1800*31.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in Fund P",
+    "value": 0.4425,
+    "check": "(2400*18.75)/(2400*18.75+1800*31.5)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 9.81,
+    "check": "(2400*18.75)/(2400*18.75+1800*31.5)*7.8 + (1800*31.5)/(2400*18.75+1800*31.5)*11.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Values: P = 2,400 × $18.75 = $45,000 and Q = 1,800 × $31.50 = $56,700; total = $101,700",
+   "w_P = 45,000 / 101,700 = 0.4425 and w_Q = 0.5575",
+   "E[R_P] = 0.4425 × 7.8% + 0.5575 × 11.4% = 3.4513% + 6.3558% = 9.81%"
+  ],
+  "keystrokes": [
+   "2400 × 18.75 = 45000 STO1; 1800 × 31.5 = 56700; + RCL1 = 101700",
+   "45000 ÷ 101700 = 0.4425 (w_P)",
+   "0.4425 × 7.8 + (1 − 0.4425) × 11.4 = 9.81"
+  ],
+  "errors": [
+   {
+    "id": "shares-not-dollars",
+    "label": "Weighted by unit counts instead of dollar values",
+    "value": 9.34,
+    "check": "2400/4200*7.8 + 1800/4200*11.4",
+    "explain": "Weights are shares of dollars invested, not of units held; the two funds have different prices."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Swapped the weights",
+    "value": 9.39,
+    "check": "(1800*31.5)/(2400*18.75+1800*31.5)*7.8 + (2400*18.75)/(2400*18.75+1800*31.5)*11.4",
+    "explain": "Fund Q is the larger holding, so its (higher) return gets the larger weight."
+   },
+   {
+    "id": "equal-weights-assumed",
+    "label": "Simple average of the two returns",
+    "value": 9.6,
+    "check": "(7.8+11.4)/2",
+    "explain": "The holdings are not equal in value, so a simple average misstates the portfolio return."
+   }
+  ],
+  "explanation": "Weights come from dollar values (units × price), not unit counts: w_P = 45,000/101,700 = 0.4425. E[R_P] = 0.4425 × 7.8% + 0.5575 × 11.4% = 9.81%, above the simple average of 9.6% because the higher-return fund is the larger holding.",
+  "source": "generated",
+  "ref": "SM 13-1, 13-2"
+ },
+ {
+  "id": "q12-416",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Pinecrest Savings Club allocates 25% of its money to a money-market fund (E[R] = 3.2%), 40% to Canadian equities (E[R] = 9.6%) and 35% to US equities (E[R] = 11.8%). What is the portfolio's expected return (% per annum)?",
+  "answer": 8.77,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.25*3.2 + 0.40*9.6 + 0.35*11.8",
+  "steps": [
+   {
+    "label": "Contribution of money market",
+    "value": 0.8,
+    "check": "0.25*3.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Contribution of Canadian equities",
+    "value": 3.84,
+    "check": "0.40*9.6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Contribution of US equities",
+    "value": 4.13,
+    "check": "0.35*11.8",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 8.77,
+    "check": "0.25*3.2 + 0.40*9.6 + 0.35*11.8",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Check the weights: 0.25 + 0.40 + 0.35 = 1.00",
+   "E[R_P] = Σ w_k E[R_k] = 0.25 × 3.2% + 0.40 × 9.6% + 0.35 × 11.8%",
+   "= 0.80% + 3.84% + 4.13% = 8.77% per annum"
+  ],
+  "keystrokes": [
+   "0.25 × 3.2 = 0.80",
+   "0.40 × 9.6 = 3.84",
+   "0.35 × 11.8 = 4.13",
+   "0.80 + 3.84 + 4.13 = 8.77"
+  ],
+  "errors": [
+   {
+    "id": "equal-weights-assumed",
+    "label": "Equal weights of 1/3 on each fund",
+    "value": 8.2,
+    "check": "(3.2+9.6+11.8)/3",
+    "explain": "The weights are 25/40/35, not equal."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Attached the weights in the wrong order",
+    "value": 7.91,
+    "check": "0.35*3.2 + 0.40*9.6 + 0.25*11.8",
+    "explain": "Each weight must be paired with its own fund's return; here the 35% belongs to US equities."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Used 45% instead of 35% on US equities (weights sum to 1.10)",
+    "value": 9.95,
+    "check": "0.25*3.2 + 0.40*9.6 + 0.45*11.8",
+    "explain": "Always confirm the weights sum to 1 before multiplying."
+   }
+  ],
+  "explanation": "E[R_P] = 0.25(3.2) + 0.40(9.6) + 0.35(11.8) = 8.77%. The formula extends to any number of assets: Σ w_k E[R_k] with Σ w_k = 1.",
+  "source": "generated",
+  "ref": "SM 13-3, 13-8"
+ },
+ {
+  "id": "q12-417",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You have $25,000 to invest in Stock X (E[R] = 8.2%) and Stock Y (E[R] = 12.6%) and want a portfolio expected return of 9.8%. How many dollars should you put in Stock Y?",
+  "answer": 9090.91,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(9.8-8.2)/(12.6-8.2)*25000",
+  "steps": [
+   {
+    "label": "Weight in Y",
+    "value": 0.3636,
+    "check": "(9.8-8.2)/(12.6-8.2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Dollars in Y",
+    "value": 9090.91,
+    "check": "(9.8-8.2)/(12.6-8.2)*25000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Dollars in X",
+    "value": 15909.09,
+    "check": "25000-(9.8-8.2)/(12.6-8.2)*25000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "With w_X = 1 − w_Y: 9.8 = w_Y(12.6) + (1 − w_Y)(8.2) = 8.2 + 4.4 w_Y",
+   "w_Y = (9.8 − 8.2)/(12.6 − 8.2) = 1.6/4.4 = 0.3636",
+   "Dollars in Y = 0.3636 × $25,000 = $9,090.91; dollars in X = $15,909.09"
+  ],
+  "keystrokes": [
+   "(9.8 − 8.2) ÷ (12.6 − 8.2) = 0.363636",
+   "× 25000 = 9090.91"
+  ],
+  "errors": [
+   {
+    "id": "swapped-weights",
+    "label": "Reported the dollars in X instead",
+    "value": 15909.09,
+    "check": "25000-(9.8-8.2)/(12.6-8.2)*25000",
+    "explain": "That is the amount in X; the question asks for Y."
+   },
+   {
+    "id": "target-over-asset",
+    "label": "Divided the target by Y's return",
+    "value": 19444.44,
+    "check": "9.8/12.6*25000",
+    "explain": "That treats the rest of the money as earning 0%, but X earns 8.2%."
+   },
+   {
+    "id": "denominator-not-spread",
+    "label": "Forgot the 8.2% earned on the rest: used (9.8 − 8.2)/12.6",
+    "value": 3174.6,
+    "check": "(9.8-8.2)/12.6*25000",
+    "explain": "Solving w × 12.6 + (1 − w) × 8.2 = 9.8 gives a denominator of 12.6 − 8.2, not 12.6."
+   }
+  ],
+  "explanation": "Because the weights sum to 1, w_Y = (target − E[R_X]) / (E[R_Y] − E[R_X]) = 0.3636, so $9,090.91 goes in Y and $15,909.09 in X. Check: 0.6364 × 8.2% + 0.3636 × 12.6% = 9.8%.",
+  "source": "generated",
+  "ref": "SM 13-4"
+ },
+ {
+  "id": "q12-418",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A portfolio is 60% Stock A and 40% Stock B. Boom (probability 0.30): A returns 24%, B returns 4%. Normal (0.50): A 10%, B 6%. Recession (0.20): A −12%, B 12%. What is the portfolio's expected return (% per annum)?",
+  "answer": 8.52,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.30*(0.6*24+0.4*4) + 0.50*(0.6*10+0.4*6) + 0.20*(0.6*(-12)+0.4*12)",
+  "steps": [
+   {
+    "label": "Portfolio return in Boom",
+    "value": 16.0,
+    "check": "0.6*24+0.4*4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in Normal",
+    "value": 8.4,
+    "check": "0.6*10+0.4*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in Recession",
+    "value": -2.4,
+    "check": "0.6*(-12)+0.4*12",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 8.52,
+    "check": "0.30*(0.6*24+0.4*4) + 0.50*(0.6*10+0.4*6) + 0.20*(0.6*(-12)+0.4*12)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Portfolio return in each state = 0.6 R_A + 0.4 R_B: Boom 14.4 + 1.6 = 16.0%; Normal 6.0 + 2.4 = 8.4%; Recession −7.2 + 4.8 = −2.4%",
+   "E[R_P] = Σ p R_P = 0.30(16.0) + 0.50(8.4) + 0.20(−2.4) = 4.80 + 4.20 − 0.48 = 8.52%",
+   "Check: E[R_A] = 9.8%, E[R_B] = 6.6%, so 0.6(9.8) + 0.4(6.6) = 8.52% (linearity)"
+  ],
+  "keystrokes": [
+   "0.6 × 24 + 0.4 × 4 = 16.0",
+   "0.6 × 10 + 0.4 × 6 = 8.4",
+   "0.6 × (−12) + 0.4 × 12 = −2.4",
+   "0.30 × 16 + 0.50 × 8.4 + 0.20 × (−2.4) = 8.52"
+  ],
+  "errors": [
+   {
+    "id": "ignored-probabilities",
+    "label": "Averaged the three state returns with equal weight",
+    "value": 7.33,
+    "check": "(16.0+8.4-2.4)/3",
+    "explain": "The states are not equally likely; each state's return must be multiplied by its probability."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Used 40% in A and 60% in B",
+    "value": 7.88,
+    "check": "0.30*(0.4*24+0.6*4) + 0.50*(0.4*10+0.6*6) + 0.20*(0.4*(-12)+0.6*12)",
+    "explain": "A is 60% of the money, B is 40%."
+   },
+   {
+    "id": "dropped-state",
+    "label": "Left out the recession state (probabilities add to 0.80)",
+    "value": 9.0,
+    "check": "0.30*16 + 0.50*8.4",
+    "explain": "Probabilities must sum to 1: the recession state (probability 0.20) cannot be dropped."
+   }
+  ],
+  "explanation": "Compute the portfolio return state by state, then take the probability-weighted average: 8.52%. Linearity means the same answer comes from weighting the stocks' own expected returns (9.8% and 6.6%).",
+  "source": "generated",
+  "ref": "TB 13.2, SM 13-9"
+ },
+ {
+  "id": "q12-419",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You invest your own $50,000 plus $20,000 borrowed at the risk-free rate of 3.5% per annum, all in an index fund with an expected return of 9.5%. What is the expected return on your own $50,000 (% per annum)?",
+  "answer": 11.9,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "1.4*9.5 + (-0.4)*3.5",
+  "steps": [
+   {
+    "label": "Weight in the index fund",
+    "value": 1.4,
+    "check": "70000/50000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Weight in the risk-free asset (borrowing)",
+    "value": -0.4,
+    "check": "-20000/50000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Expected return E[R_P]",
+    "value": 11.9,
+    "check": "1.4*9.5 + (-0.4)*3.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Your own money is the base: w_fund = 70,000 / 50,000 = 1.40 and w_F = −20,000 / 50,000 = −0.40 (borrowing is a negative weight); 1.40 − 0.40 = 1",
+   "E[R_P] = 1.40 × 9.5% + (−0.40) × 3.5% = 13.3% − 1.4% = 11.9% per annum"
+  ],
+  "keystrokes": [
+   "1.4 × 9.5 = 13.3",
+   "−0.4 × 3.5 = −1.4",
+   "13.3 − 1.4 = 11.9"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Ignored the borrowing cost",
+    "value": 13.3,
+    "check": "1.4*9.5",
+    "explain": "The loan costs 3.5% on 40% of your capital; it must enter with a negative weight."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Gave the loan a positive weight of +0.40",
+    "value": 14.7,
+    "check": "1.4*9.5 + 0.4*3.5",
+    "explain": "Borrowing is a negative position in the risk-free asset; weights then sum to 1.00, not 1.80."
+   },
+   {
+    "id": "ignored-leverage",
+    "label": "Reported the fund's own return",
+    "value": 9.5,
+    "check": "9.5",
+    "explain": "Borrowing magnifies the expected return on your own money: you earn 9.5% on $70,000 but pay interest on $20,000."
+   }
+  ],
+  "explanation": "With borrowing, weights are measured against your own money: 1.40 in the fund and −0.40 in the risk-free asset (still summing to 1). E[R_P] = 1.40(9.5) − 0.40(3.5) = 11.9%, higher than 9.5% because leverage adds expected return (and risk).",
+  "source": "generated",
+  "ref": "L06 s38-39, SM 13-19"
+ },
+ {
+  "id": "q12-420",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A portfolio's weights are +1.25 in an equity index fund and −0.25 in the risk-free asset. What does the negative weight mean?",
+  "options": [
+   "The investor has invested in an asset with a negative expected return",
+   "The weights are invalid because portfolio weights must lie between 0 and 1",
+   "The investor has borrowed at the risk-free rate and invested more than 100% of her own money in the fund",
+   "The investor holds fewer dollars in the fund than in the risk-free asset"
+  ],
+  "answer": 2,
+  "explanation": "Weights must sum to 1 (1.25 − 0.25 = 1) but individual weights can be negative: a negative risk-free weight is borrowing, and the borrowed money lets her hold 125% of her own money in the fund. This is the w_F < 0, w_P > 1 end of the capital allocation line.",
+  "source": "generated",
+  "ref": "L06 s39"
+ },
+ {
+  "id": "q12-421",
+  "concept": "c12-portfolio-weights-return",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You hold $30,000 of Stock A (E[R] = 5%) and $20,000 of Stock B (E[R] = 11%). What is the portfolio's expected return?",
+  "options": [
+   "8.00%",
+   "8.60%",
+   "16.00%",
+   "None of the above"
+  ],
+  "answer": 3,
+  "explanation": "w_A = 30,000/50,000 = 0.60 and w_B = 0.40, so E[R_P] = 0.60 × 5% + 0.40 × 11% = 3.0% + 4.4% = 7.40%, which is not listed. 8.00% is the simple average of 5% and 11%, 8.60% swaps the weights (0.4 × 5% + 0.6 × 11%), and 16.00% adds the returns (weights of 1 on both).",
+  "source": "generated",
+  "ref": "SM 13-2"
+ },
+ {
+  "id": "q12-422",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which expression gives the standard deviation of a two-stock portfolio in terms of the weights, the standard deviations and the correlation?",
+  "options": [
+   "σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ_AB w_A σ_A w_B σ_B)",
+   "σ_P = w_A²σ_A² + w_B²σ_B² + 2ρ_AB w_A σ_A w_B σ_B",
+   "σ_P = w_A σ_A + w_B σ_B",
+   "σ_P = √(w_A²σ_A² + w_B²σ_B²)"
+  ],
+  "answer": 0,
+  "explanation": "The formula adds the two weighted variances and the correlation cross-term, then takes the square root. Without the square root the result is a variance; w_A σ_A + w_B σ_B is right only when ρ_AB = 1; dropping the cross-term assumes ρ_AB = 0.",
+  "source": "generated",
+  "ref": "L06 s23-24, FS p2"
+ },
+ {
+  "id": "q12-423",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An analyst evaluates √(0.5² × 20² + 0.5² × 30² + 2 × 0.4 × 0.5 × 20 × 0.5 × 30) and gets 21.1 (in percent). Which quantity has she computed?",
+  "options": [
+   "The expected return of a 50/50 portfolio of the two stocks",
+   "The standard deviation of a 50/50 portfolio of the two stocks",
+   "The covariance between the two stocks",
+   "The beta of the portfolio against the market"
+  ],
+  "answer": 1,
+  "explanation": "The expression has the exact shape of σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ w_A σ_A w_B σ_B) with w = 0.5, σ = 20% and 30%, ρ = 0.4. Expected return would be a plain weighted sum, covariance has no weights, and beta needs the market's variance.",
+  "source": "generated",
+  "ref": "L06 s23"
+ },
+ {
+  "id": "q12-424",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-covariance-correlation"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A text gives the portfolio SD formula with ρ_AB in the cross-term; a case study gives cov(A,B) instead. Which statement about the two forms is correct?",
+  "options": [
+   "With a covariance you still write 2 ρ w_A σ_A w_B σ_B, putting the covariance in the ρ slot",
+   "The covariance form has no cross-term because covariance already includes the weights",
+   "They are the same formula because cov(A,B) = ρ_AB σ_A σ_B: use 2 w_A w_B cov(A,B) when the covariance is given",
+   "The covariance form applies only when ρ_AB = 0"
+  ],
+  "answer": 2,
+  "explanation": "Since cov(A,B) = ρ_AB σ_A σ_B, the cross-term 2ρ w_A σ_A w_B σ_B equals 2 w_A w_B cov(A,B). Putting a covariance (for example 0.021) where a correlation belongs is the classic cov-as-ρ error and nearly deletes the cross-term.",
+  "source": "generated",
+  "ref": "L06 s27, FS p2"
+ },
+ {
+  "id": "q12-425",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT needed to compute the standard deviation of a two-stock portfolio?",
+  "options": [
+   "The expected returns of the two stocks",
+   "The portfolio weights",
+   "The standard deviation of each stock",
+   "The correlation (or covariance) between the two stocks"
+  ],
+  "answer": 0,
+  "explanation": "σ_P depends on weights, individual risks and the correlation or covariance. Expected returns affect E[R_P] but never enter the risk formula.",
+  "source": "generated",
+  "ref": "L06 s24"
+ },
+ {
+  "id": "q12-426",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the standard deviation of a two-stock portfolio normally smaller than w_A σ_A + w_B σ_B?",
+  "options": [
+   "Because variances are added after weighting, which always makes the total smaller",
+   "Because the portfolio's expected return is a weighted average",
+   "Because the weights are squared in the formula, and squares are always smaller",
+   "Because the stocks do not move in lockstep, so one's bad outcome is partly offset by the other's"
+  ],
+  "answer": 3,
+  "explanation": "The weighted average of SDs is exactly what the formula gives at ρ = 1, where the cross-term is as large as it can be. For ρ < 1 the cross-term shrinks, so σ_P falls below the weighted average. Squared weights alone do not explain the gap: at ρ = 1 they still give the weighted average.",
+  "source": "generated",
+  "ref": "L06 s18, s24"
+ },
+ {
+  "id": "q12-427",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A 50/50 mix of Stock A (σ = 24%) and Stock B (σ = 12%) is reported to have σ_P = 18%. What does this tell you about the correlation?",
+  "options": [
+   "ρ_AB = 0, because the stocks are independent",
+   "ρ_AB = −1, because the risks offset each other",
+   "ρ_AB = +1, because 18% equals the weighted average 0.5 × 24% + 0.5 × 12%",
+   "Nothing: σ_P always equals the weighted average of the two SDs"
+  ],
+  "answer": 2,
+  "explanation": "The weighted average of the SDs is 0.5(24) + 0.5(12) = 18%. σ_P reaches that ceiling only when the returns are perfectly positively correlated, so ρ_AB = +1 and there is no diversification benefit. For ρ = 0 the SD would be 13.4% and for ρ = −1 it would be 6%.",
+  "source": "generated",
+  "ref": "L06 s24, s32"
+ },
+ {
+  "id": "q12-428",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A 40/60 mix of Stock A (σ = 30%) and Stock B (σ = 20%) has a portfolio standard deviation of exactly zero. What must be true?",
+  "options": [
+   "ρ_AB = 0, because the two stocks are independent",
+   "ρ_AB = −1, so the weighted risks 0.4 × 30% = 12% and 0.6 × 20% = 12% cancel exactly",
+   "ρ_AB = +1, because the weights add up to one",
+   "Any correlation produces this result because the weights are well chosen"
+  ],
+  "answer": 1,
+  "explanation": "With ρ = −1 the formula is a perfect square: σ_P = |w_A σ_A − w_B σ_B| = |12% − 12%| = 0. Only perfect negative correlation allows the risk to cancel completely; at ρ = 0 this mix has σ_P = 16.97%.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s32"
+ },
+ {
+  "id": "q12-429",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "The weights and standard deviations of two stocks are held fixed while the correlation between them falls from 0.6 to 0.1. What happens to σ_P?",
+  "options": [
+   "σ_P falls, because the cross-term 2ρ w_A σ_A w_B σ_B shrinks",
+   "σ_P rises, because lower correlation means more uncertainty",
+   "σ_P is unchanged, because the weights and σ's are unchanged",
+   "σ_P cannot be determined without the expected returns"
+  ],
+  "answer": 0,
+  "explanation": "ρ appears only in the cross-term, which is proportional to ρ (positive weights). Lowering ρ lowers the variance and therefore σ_P; the expected returns play no role in the risk formula.",
+  "source": "generated",
+  "ref": "L06 s24, s32"
+ },
+ {
+  "id": "q12-430",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "A portfolio of 50% in an equity fund with σ = 20% and 50% in Treasury bills has a standard deviation of 10%.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. A risk-free asset has σ_F = 0 and no correlation with anything, so the formula collapses to σ_P = w_P σ_P = 0.50 × 20% = 10%. The capital allocation line is straight for this reason.",
+  "source": "generated",
+  "ref": "L06 s40"
+ },
+ {
+  "id": "q12-431",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "The variance of a two-stock portfolio equals the weighted average w_A σ_A² + w_B σ_B² of the two stocks' variances.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The weights are squared (w_A² σ_A² + w_B² σ_B²) and a covariance cross-term 2 w_A w_B cov(A,B) is added. Risk is not linear in the weights, unlike expected return.",
+  "source": "generated",
+  "ref": "L06 s24"
+ },
+ {
+  "id": "q12-432",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "If the correlation ρ_AB between two stocks is 0, the cross-term in the formula for the portfolio variance _____.",
+  "options": [
+   "doubles",
+   "becomes negative",
+   "equals w_A w_B",
+   "disappears"
+  ],
+  "answer": 3,
+  "explanation": "The cross-term 2ρ_AB w_A σ_A w_B σ_B is proportional to ρ_AB, so it is zero when ρ_AB = 0 and σ_P = √(w_A²σ_A² + w_B²σ_B²). It is negative only when ρ_AB < 0.",
+  "source": "generated",
+  "ref": "L06 s24, SM 13-11"
+ },
+ {
+  "id": "q12-433",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which sequence correctly computes the standard deviation of a two-stock portfolio from weights, SDs and a correlation?",
+  "options": [
+   "Find the weights; compute w_A²σ_A² and w_B²σ_B²; add the cross-term 2ρ w_A σ_A w_B σ_B; sum to get the variance; take the square root",
+   "Find the weights; take the square root of each term; then add the terms together",
+   "Sum the two squared terms; take the square root; then add the cross-term",
+   "Find the weights; multiply the two SDs together; take the square root; weight the result"
+  ],
+  "answer": 0,
+  "explanation": "The square root is the last step and applies to the whole variance. Taking square roots term by term (or before adding the cross-term) breaks the formula and tends to reproduce a weighted average of SDs.",
+  "source": "generated",
+  "ref": "L06 s23-24, SM 13-11"
+ },
+ {
+  "id": "q12-434",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 20% and Stock B has σ = 30%. Their correlation is 0.3. What is the standard deviation of a portfolio with 60% in A and 40% in B?",
+  "options": [
+   "3.74%",
+   "16.97%",
+   "19.35%",
+   "24.00%"
+  ],
+  "answer": 2,
+  "explanation": "Variance terms: 0.6² × 20² = 144.0; 0.4² × 30² = 144.0; cross-term 2(0.3)(0.6)(20)(0.4)(30) = 86.4. Sum = 374.4, so σ_P = √374.4 = 19.35%. The 24.00% answer is the ρ = 1 weighted average, 16.97% omits the correlation cross-term, and 3.74% forgets the square root (a decimal variance of 0.0374).",
+  "source": "generated",
+  "ref": "SM 13-11"
+ },
+ {
+  "id": "q12-435",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-covariance-correlation"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stock A has σ = 15% and Stock B has σ = 25%; cov(A,B) = 0.0150 (returns in decimals). What is the standard deviation of an equally weighted portfolio of the two?",
+  "options": [
+   "14.58%",
+   "14.67%",
+   "16.96%",
+   "20.00%"
+  ],
+  "answer": 2,
+  "explanation": "Using the covariance form: variance = 0.5²(0.15²) + 0.5²(0.25²) + 2(0.5)(0.5)(0.0150) = 0.005625 + 0.015625 + 0.0075 = 0.028750, so σ_P = 16.96%. Putting 0.0150 in the ρ slot of the correlation formula gives 14.67%; omitting the covariance gives 14.58%; the weighted average is 20.00% (the ρ = 1 result; here ρ = 0.4).",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s27"
+ },
+ {
+  "id": "q12-436",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Two uncorrelated stocks (ρ = 0) have σ = 16% and σ = 28%. What is the standard deviation of a portfolio with 70% in the first and 30% in the second?",
+  "options": [
+   "1.96%",
+   "14.00%",
+   "19.60%",
+   "20.36%"
+  ],
+  "answer": 1,
+  "explanation": "With ρ = 0 the cross-term vanishes: variance = 0.7²(16²) + 0.3²(28²) = 125.44 + 70.56 = 196.00, so σ_P = 14.00%. The 19.60% answer is the weighted average (ρ = 1 shortcut), 20.36% forgets to square the weights, and 1.96% stops at the variance.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s32"
+ },
+ {
+  "id": "q12-437",
+  "concept": "c12-portfolio-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You hold $12,000 in the Bay Street Equity Fund (σ = 18%) and $8,000 in Treasury bills. What is the standard deviation of the whole portfolio?",
+  "options": [
+   "6.48%",
+   "7.20%",
+   "10.80%",
+   "18.00%"
+  ],
+  "answer": 2,
+  "explanation": "The T-bills are risk-free (σ = 0), so σ_P = w × σ_fund with w = 12,000/20,000 = 0.60: 0.60 × 18% = 10.80%. Using the T-bill weight (7.20%) uses the wrong weight; 18.00% ignores the T-bills; 6.48% squares the weight without squaring σ.",
+  "source": "generated",
+  "ref": "L06 s40, SM 13-19"
+ },
+ {
+  "id": "q12-438",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 22% and Stock B has σ = 34%; their correlation is 0.35. What is the standard deviation of a portfolio with 60% in A and 40% in B (% per annum)?",
+  "answer": 22.02,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.6**2*22**2 + 0.4**2*34**2 + 2*0.35*0.6*22*0.4*34)",
+  "steps": [
+   {
+    "label": "Variance of the A component, w_A²σ_A²",
+    "value": 174.24,
+    "check": "0.6**2*22**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance of the B component, w_B²σ_B²",
+    "value": 184.96,
+    "check": "0.4**2*34**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Cross-term 2ρ w_A σ_A w_B σ_B",
+    "value": 125.66,
+    "check": "2*0.35*0.6*22*0.4*34",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 22.02,
+    "check": "sqrt(0.6**2*22**2 + 0.4**2*34**2 + 2*0.35*0.6*22*0.4*34)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "w_A²σ_A² = 0.36 × 484 = 174.24; w_B²σ_B² = 0.16 × 1,156 = 184.96",
+   "Cross-term = 2 × 0.35 × 0.6 × 22 × 0.4 × 34 = 125.664",
+   "Variance = 174.24 + 184.96 + 125.664 = 484.864 (in %²)",
+   "σ_P = √484.864 = 22.02% per annum"
+  ],
+  "keystrokes": [
+   "0.6 x² × 22 x² = 174.24",
+   "0.16 × 1156 = 184.96",
+   "2 × 0.35 × 0.6 × 22 × 0.4 × 34 = 125.664",
+   "sum = 484.864, then 2nd √x = 22.02"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance (as a decimal) instead of its square root",
+    "value": 4.85,
+    "check": "(0.6**2*22**2 + 0.4**2*34**2 + 2*0.35*0.6*22*0.4*34)/100",
+    "explain": "σ_P is the square root of the portfolio variance; stopping at the variance gives a number in squared units."
+   },
+   {
+    "id": "rho-one-shortcut",
+    "label": "Used the weighted average of the two SDs (the ρ = 1 shortcut)",
+    "value": 26.8,
+    "check": "0.6*22 + 0.4*34",
+    "explain": "w_A σ_A + w_B σ_B is the answer only when ρ = 1; for ρ < 1 the portfolio SD is smaller."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Left out the correlation cross-term (treated ρ as 0)",
+    "value": 18.95,
+    "check": "sqrt(0.6**2*22**2 + 0.4**2*34**2)",
+    "explain": "The cross-term 2ρ w_A σ_A w_B σ_B carries the correlation; dropping it assumes the stocks are uncorrelated."
+   }
+  ],
+  "explanation": "σ_P = √(0.36·22² + 0.16·34² + 2·0.35·0.6·22·0.4·34) = 22.02%. This is below the 26.80% weighted average because ρ = 0.35 < 1 – the diversification benefit – and above the 18.95% you get by wrongly ignoring correlation.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s23"
+ },
+ {
+  "id": "q12-439",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-covariance-correlation"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 20% and Stock B has σ = 30%; the covariance of their returns is 0.0210 (returns in decimals). What is the standard deviation of a portfolio with 60% in A and 40% in B (% per annum)?",
+  "answer": 19.72,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.6**2*0.20**2 + 0.4**2*0.30**2 + 2*0.6*0.4*0.0210)*100",
+  "steps": [
+   {
+    "label": "Weighted variance of A, w_A²σ_A²",
+    "value": 0.0144,
+    "check": "0.6**2*0.20**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Weighted variance of B, w_B²σ_B²",
+    "value": 0.0144,
+    "check": "0.4**2*0.30**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Cross-term 2 w_A w_B cov(A,B)",
+    "value": 0.01008,
+    "check": "2*0.6*0.4*0.0210",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Portfolio variance",
+    "value": 0.03888,
+    "check": "0.6**2*0.20**2 + 0.4**2*0.30**2 + 2*0.6*0.4*0.0210",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 19.72,
+    "check": "sqrt(0.6**2*0.20**2 + 0.4**2*0.30**2 + 2*0.6*0.4*0.0210)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Use cov directly: variance = w_A²σ_A² + w_B²σ_B² + 2 w_A w_B cov(A,B)",
+   "= 0.36 × 0.04 + 0.16 × 0.09 + 2 × 0.6 × 0.4 × 0.0210 = 0.0144 + 0.0144 + 0.01008 = 0.03888",
+   "σ_P = √0.03888 = 19.72% per annum (the implied ρ is 0.0210/(0.20 × 0.30) = 0.35)"
+  ],
+  "keystrokes": [
+   "0.36 × 0.04 = 0.0144",
+   "0.16 × 0.09 = 0.0144",
+   "2 × 0.6 × 0.4 × 0.021 = 0.01008",
+   "sum = 0.03888, √x = 0.1972 → 19.72%"
+  ],
+  "errors": [
+   {
+    "id": "cov-as-rho",
+    "label": "Put the covariance in the ρ slot of the correlation formula",
+    "value": 17.15,
+    "check": "sqrt(0.6**2*0.20**2 + 0.4**2*0.30**2 + 2*0.0210*0.6*0.20*0.4*0.30)*100",
+    "explain": "Covariance already contains σ_A σ_B; the correlation formula needs ρ = cov/(σ_A σ_B) = 0.35, not 0.0210."
+   },
+   {
+    "id": "forgot-factor-2",
+    "label": "Forgot the 2 on the cross-term",
+    "value": 18.4,
+    "check": "sqrt(0.6**2*0.20**2 + 0.4**2*0.30**2 + 0.6*0.4*0.0210)*100",
+    "explain": "The cross-term appears twice (A with B and B with A), hence the 2."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Dropped the covariance term",
+    "value": 16.97,
+    "check": "sqrt(0.6**2*0.20**2 + 0.4**2*0.30**2)*100",
+    "explain": "A covariance of 0.0210 is positive and adds to the portfolio variance; leaving it out understates the risk."
+   }
+  ],
+  "explanation": "With a covariance given, use σ_P² = w_A²σ_A² + w_B²σ_B² + 2 w_A w_B cov(A,B). Work in decimals throughout (cov = 0.0210 is in decimal squared units) and convert σ_P back to percent at the end: 19.72%.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s27"
+ },
+ {
+  "id": "q12-440",
+  "concept": "c12-portfolio-sd",
+  "also": [
+   "c12-diversification-benefit"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Stock A (σ = 24%) and Stock B (σ = 18%) are uncorrelated (ρ = 0). What is the standard deviation of an equally weighted portfolio of the two (% per annum)?",
+  "answer": 15.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.5**2*24**2 + 0.5**2*18**2)",
+  "steps": [
+   {
+    "label": "Variance of the A component, w_A²σ_A²",
+    "value": 144.0,
+    "check": "0.5**2*24**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance of the B component, w_B²σ_B²",
+    "value": 81.0,
+    "check": "0.5**2*18**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 15.0,
+    "check": "sqrt(0.5**2*24**2 + 0.5**2*18**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "ρ = 0, so the cross-term is zero: σ_P² = w_A²σ_A² + w_B²σ_B²",
+   "= 0.25 × 576 + 0.25 × 324 = 144 + 81 = 225",
+   "σ_P = √225 = 15.00% per annum"
+  ],
+  "keystrokes": [
+   "0.25 × 576 = 144",
+   "0.25 × 324 = 81",
+   "144 + 81 = 225, √x = 15.00"
+  ],
+  "errors": [
+   {
+    "id": "rho-one-shortcut",
+    "label": "Used the weighted average of the SDs",
+    "value": 21.0,
+    "check": "0.5*24 + 0.5*18",
+    "explain": "That is the ρ = 1 answer; with ρ = 0 the portfolio SD is lower."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance as a percent (decimal 0.0225)",
+    "value": 2.25,
+    "check": "(0.5**2*24**2 + 0.5**2*18**2)/100",
+    "explain": "225 is the variance in %²; the SD is its square root."
+   },
+   {
+    "id": "weights-ignored",
+    "label": "Took √(σ_A² + σ_B²) without weights",
+    "value": 30.0,
+    "check": "sqrt(24**2 + 18**2)",
+    "explain": "Each variance must be multiplied by the square of its weight."
+   }
+  ],
+  "explanation": "For uncorrelated stocks σ_P = √(w_A²σ_A² + w_B²σ_B²) = √225 = 15.00%, well below the 21.00% weighted average (the ρ = 1 value).",
+  "source": "generated",
+  "ref": "SM 13-11"
+ }
+]

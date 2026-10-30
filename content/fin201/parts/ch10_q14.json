@@ -1,0 +1,1153 @@
+[
+ {
+  "id": "q10-564",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an assumption behind using EAC to compare machines?",
+  "options": [
+   "Each machine will be replaced by an identical one when it wears out",
+   "Costs and the discount rate stay the same in future replacement cycles",
+   "Each machine will be used once and never replaced",
+   "The need for the service continues indefinitely"
+  ],
+  "answer": 2,
+  "explanation": "EAC works because each option is assumed to repeat forever, so annual costs are the fair comparison. If a machine is used only once, simply compare PVs over the same service period.",
+  "source": "generated",
+  "ref": "SM 10 CTQ 3"
+ },
+ {
+  "id": "q10-565",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the PV of costs used in an EAC calculation subtract the PV of the CCA tax shield?",
+  "options": [
+   "CCA reduces the firm's taxes, which lowers the true cost of owning the machine",
+   "CCA is a cash outflow that has to be reversed",
+   "CCA is already included in the operating cost",
+   "CCA raises the discount rate"
+  ],
+  "answer": 0,
+  "explanation": "For a cost project, cash outflows are positive costs. The shield saves tax, so it is subtracted. The same is true of the discounted salvage value.",
+  "source": "generated",
+  "ref": "S6 s11-13"
+ },
+ {
+  "id": "q10-566",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Rental van X has an equivalent annual cost of $7,240 and van Y has $7,905. What does this mean?",
+  "options": [
+   "Van X costs $7,240 in total over its life",
+   "Van X is cheaper by $665 for each year of service, so it should be bought",
+   "The two are equal because EAC removes all cost differences",
+   "Van Y is cheaper because its life is shorter"
+  ],
+  "answer": 1,
+  "explanation": "EAC is a cost per year of service. The lower the EAC, the cheaper the machine to provide the same service. The EACs, not the total PVs, are compared.",
+  "source": "generated",
+  "ref": "S6 s14"
+ },
+ {
+  "id": "q10-567",
+  "concept": "c10-eac-taxes",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In PV of costs for an EAC with taxes, which pair of items reduces the cost?",
+  "options": [
+   "The after-tax operating costs and the salvage value",
+   "The purchase price and the PV of the CCA tax shield",
+   "The CCA tax shield and the after-tax operating costs",
+   "The PV of the CCA tax shield and the PV of the salvage value"
+  ],
+  "answer": 3,
+  "explanation": "PV of costs = purchase price + PV of after-tax operating costs - PV of salvage - PV of the CCA tax shield. Both salvage and the shield bring cash or tax savings back.",
+  "source": "generated",
+  "ref": "S6 s12-13"
+ },
+ {
+  "id": "q10-568",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Computing EAC for two machines with unequal lives gives the same ranking as chaining each machine's cash flows over their lowest common multiple of years.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The EAC method implicitly assumes the replacement chain repeats forever, so it picks the same machine as a replacement chain over the lowest common multiple of the lives.",
+  "source": "generated",
+  "ref": "SM 10-44"
+ },
+ {
+  "id": "q10-569",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A 3-year machine has an EAC of $30,088 and a 5-year machine has an EAC of $29,138. Both will be replaced forever. Which should the firm buy?",
+  "options": [
+   "The 5-year machine: it has the lower annual cost",
+   "The 3-year machine: its life is shorter and its PV of costs is lower",
+   "Either one: EAC is only for ranking, not for choosing",
+   "Neither: a cost can never be preferred"
+  ],
+  "answer": 0,
+  "explanation": "The firm minimizes cost per year of service. The 5-year machine saves $950 a year. The shorter life is already accounted for in its higher annual figure.",
+  "source": "generated",
+  "ref": "S6 s14"
+ },
+ {
+  "id": "q10-570",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Saskatoon Seed is choosing between press C and press D, both replaced forever. Press C costs $64,000, has pre-tax operating costs of $9,000 a year, lasts 4 years and sells for $14,000 (pool open). CCA rate 20%, half-year rule, T = 35%, k = 10%. What is press C's equivalent annual cost?",
+  "options": [
+   "$13,996.44",
+   "$15,239.54",
+   "$19,230.52",
+   "$22,380.52",
+   "$23,023.54"
+  ],
+  "answer": 2,
+  "explanation": "PV of costs = 64,000 + 9,000 x 0.65 x 3.1699 - 14,000/1.1^4 - PV CCA (12,023.37) = 60,958.16. EAC = 60,958.16/3.1699 = $19,230.52. Dividing by N, using the other press's annuity factor, ignoring the shield or leaving the operating costs untaxed each produce a different number.",
+  "source": "generated",
+  "ref": "S6 s12-14, SM 10-30"
+ },
+ {
+  "id": "q10-571",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Press D costs $98,000, has operating costs of $6,500 a year before tax, lasts 6 years and sells for $16,000 (pool open); press C (4 years) has an EAC of $19,230.52. Same CCA rate 20%, half-year rule, T = 35%, k = 10%. By how much per year is the cheaper press cheaper than the other?",
+  "options": [
+   "$631.29",
+   "$894.45",
+   "$3,577.81",
+   "$8,420.34",
+   "$26,691.33"
+  ],
+  "answer": 1,
+  "explanation": "EAC of D = 87,649.49/4.3553 = 20,124.97. Press C is cheaper by 20,124.97 - 19,230.52 = $894.45 a year. Differences of raw PVs ($26,691.33) mix different lives.",
+  "source": "generated",
+  "ref": "S6 s14, SM 10-30"
+ },
+ {
+  "id": "q10-572",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Haulage needs a loader and is comparing two models, each replaced by an identical model when it wears out. Model A costs $85,000, has operating costs of $12,000 a year before tax, lasts 3 years and sells for $25,000. CCA rate 30%, half-year rule, pool open, T = 30%, k = 11%. What is model A's equivalent annual cost, as a positive number?",
+  "answer": 30087.82,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))/((1-1/(1+0.11)**3)/0.11)",
+  "steps": [
+   {
+    "label": "After-tax operating cost per year",
+    "value": 8400.0,
+    "check": "12000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of after-tax operating costs",
+    "value": 20527.2,
+    "check": "12000*(1-0.3)*((1-1/1.11**3)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of salvage",
+    "value": 18279.78,
+    "check": "25000/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield",
+    "value": 13721.38,
+    "check": "(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of costs",
+    "value": 73526.04,
+    "check": "(85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor (11%, 3)",
+    "value": 2.4437,
+    "check": "((1-1/(1+0.11)**3)/0.11)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "EAC",
+    "value": 30087.82,
+    "check": "(85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))/((1-1/(1+0.11)**3)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of operating costs = 8,400 x 2.4437 = 20,527.20; PV of salvage = 18,279.78",
+   "PV CCA = 85,000 x 0.3 x 0.3/0.41 x 1.055/1.11 - 25,000 x 0.3 x 0.3/0.41 / 1.11^3 = 13,721.38",
+   "PV of costs = 85,000 + 20,527.20 - 18,279.78 - 13,721.38 = 73,526.04",
+   "EAC = 73,526.04 / 2.4437 = $30,087.82"
+  ],
+  "keystrokes": [
+   "PV of costs first (see steps), then N = 3, I/Y = 11, PV = -PV of costs, CPT PMT"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Divided the PV of costs by N",
+    "value": 24508.68,
+    "check": "(85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))/3",
+    "explain": "A level annual cost with the same PV must be found with the annuity factor."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 35702.78,
+    "check": "((85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))+(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))/((1-1/(1+0.11)**3)/0.11)",
+    "explain": "The CCA shield lowers the cost of owning the machine."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used the other model's 5-year annuity factor",
+    "value": 19893.96,
+    "check": "(85000+0+12000*(1-0.3)*((1-1/(1+0.11)**3)/0.11)-(25000+0)/(1+0.11)**3-(85000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-25000*0.3*0.3/(0.11+0.3)/(1+0.11)**3))/((1-1/1.11**5)/0.11)",
+    "explain": "The annuity factor uses this model's own life, N = 3."
+   }
+  ],
+  "explanation": "EAC = PV of costs (price + after-tax operating costs - salvage - CCA shield) divided by the annuity factor for its own life.",
+  "source": "generated",
+  "ref": "S6 s11-14, SM 10-28"
+ },
+ {
+  "id": "q10-573",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Haulage's other loader, model B, costs $120,000, has operating costs of $8,500 a year before tax, lasts 5 years and sells for $20,000. CCA rate 30%, half-year rule, pool open, T = 30%, k = 11%. Model A has an EAC of $30,087.82. How much less per year does the cheaper model cost than the other? Answer as a positive number.",
+  "answer": 949.91,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "30087.82-(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))/((1-1/(1+0.11)**5)/0.11)",
+  "steps": [
+   {
+    "label": "PV of costs for B",
+    "value": 107690.7,
+    "check": "(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor (11%, 5)",
+    "value": 3.6959,
+    "check": "((1-1/(1+0.11)**5)/0.11)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "EAC of B",
+    "value": 29137.91,
+    "check": "(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))/((1-1/(1+0.11)**5)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EAC of A minus EAC of B",
+    "value": 949.91,
+    "check": "30087.82-(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))/((1-1/(1+0.11)**5)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of operating costs = 5,950 x 3.6959 = 21,990.59; PV of salvage = 11,869.03; PV CCA = 22,430.86",
+   "PV of costs = 120,000 + 21,990.59 - 11,869.03 - 22,430.86 = 107,690.70",
+   "EAC of B = 107,690.70 / 3.6959 = 29,137.91",
+   "Model B is cheaper by 30,087.82 - 29,137.91 = $949.91 a year. Raw PV of costs would wrongly favour A ($73,526.04 versus $107,690.70)"
+  ],
+  "keystrokes": [
+   "PV of costs for B, then N = 5, I/Y = 11, PV = -PV, CPT PMT; subtract from A's EAC"
+  ],
+  "errors": [
+   {
+    "id": "raw-npv-unequal-lives",
+    "label": "Compared the raw PVs of costs",
+    "value": 34164.66,
+    "check": "(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))-73526.04",
+    "explain": "Raw PVs hide the fact that B serves two more years."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided each PV by its life",
+    "value": 2970.54,
+    "check": "73526.04/3-(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))/5",
+    "explain": "EAC uses the annuity factor, not N."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 3-year annuity factor for B",
+    "value": 13980.63,
+    "check": "abs(30087.82-(120000+0+8500*(1-0.3)*((1-1/(1+0.11)**5)/0.11)-(20000+0)/(1+0.11)**5-(120000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-20000*0.3*0.3/(0.11+0.3)/(1+0.11)**5))/((1-1/1.11**3)/0.11))",
+    "explain": "B lasts 5 years."
+   }
+  ],
+  "explanation": "The longer-lived model has the lower annual cost even though its total PV of costs is higher.",
+  "source": "generated",
+  "ref": "S6 s11-14, SM 10-28"
+ },
+ {
+  "id": "q10-574",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Bow River Cleaners buys a dryer for $14,000. It costs $1,100 a year to run, lasts 4 years and sells for $2,000. There are no taxes and k = 9%. What is the equivalent annual cost, as a positive number?",
+  "answer": 4984.02,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(14000+1100*((1-1/1.09**4)/0.09)-2000/1.09**4)/((1-1/1.09**4)/0.09)",
+  "steps": [
+   {
+    "label": "PV of costs",
+    "value": 16146.84,
+    "check": "14000+1100*((1-1/1.09**4)/0.09)-2000/1.09**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor (9%, 4)",
+    "value": 3.2397,
+    "check": "(1-1/1.09**4)/0.09",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "EAC",
+    "value": 4984.02,
+    "check": "(14000+1100*((1-1/1.09**4)/0.09)-2000/1.09**4)/((1-1/1.09**4)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of costs = 14,000 + 1,100 x 3.2397 - 2,000/1.09^4 = 16,146.84",
+   "EAC = 16,146.84 / 3.2397 = $4,984.02"
+  ],
+  "keystrokes": [
+   "N = 4, I/Y = 9, PMT = 1100, CPT PV; add 14000; subtract PV of 2000; then CPT PMT"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Divided by N",
+    "value": 4036.71,
+    "check": "(14000+1100*((1-1/1.09**4)/0.09)-2000/1.09**4)/4",
+    "explain": "Use the annuity factor, not N."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage",
+    "value": 4804.02,
+    "check": "(14000+1100*((1-1/1.09**4)/0.09)-2000)/((1-1/1.09**4)/0.09)",
+    "explain": "The $2,000 arrives in 4 years."
+   }
+  ],
+  "explanation": "No taxes: PV of costs over the annuity factor, with salvage reducing the cost.",
+  "source": "generated",
+  "ref": "TB 10.6"
+ },
+ {
+  "id": "q10-575",
+  "concept": "c10-eac-taxes",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kootenay Foods compares a packaging system that costs $210,000, needs $15,000 of working capital (recovered at the end), has operating costs of $31,000 a year before tax, lasts 5 years and sells for $18,000. CCA rate 20%, half-year rule, pool open, T = 40%, k = 12%, replaced forever. What is its EAC, as a positive number?",
+  "answer": 62747.22,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)",
+  "steps": [
+   {
+    "label": "PV of after-tax operating costs",
+    "value": 67048.84,
+    "check": "31000*(1-0.4)*((1-1/1.12**5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of salvage + NWC recovery",
+    "value": 18725.09,
+    "check": "(18000+15000)/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield",
+    "value": 47134.08,
+    "check": "(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of costs",
+    "value": 226189.67,
+    "check": "(210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EAC",
+    "value": 62747.22,
+    "check": "(210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))/((1-1/(1+0.12)**5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of operating costs = 18,600 x 3.6048 = 67,048.84; PV of salvage and NWC = 33,000/1.12^5 = 18,725.09",
+   "PV CCA = 47,134.08",
+   "PV of costs = 210,000 + 15,000 + 67,048.84 - 18,725.09 - 47,134.08 = 226,189.67",
+   "EAC = 226,189.67 / 3.6048 = $62,747.22"
+  ],
+  "keystrokes": [
+   "PV of costs (steps above), then N = 5, I/Y = 12, PV = -PV of costs, CPT PMT"
+  ],
+  "errors": [
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Did not recover the NWC",
+    "value": 65108.36,
+    "check": "((210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))+15000/1.12**5)/((1-1/(1+0.12)**5)/0.12)",
+    "explain": "Working capital is released at the end."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Dropped the salvage term in PV_CCA",
+    "value": 63455.56,
+    "check": "((210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))+18000*0.2*0.4/(0.12+0.2)/1.12**5)/((1-1/(1+0.12)**5)/0.12)",
+    "explain": "The machine is sold, so the shield on the salvage is lost."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided by N",
+    "value": 45237.93,
+    "check": "(210000+15000+31000*(1-0.4)*((1-1/(1+0.12)**5)/0.12)-(18000+15000)/(1+0.12)**5-(210000*0.2*0.4/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-18000*0.2*0.4/(0.12+0.2)/(1+0.12)**5))/5",
+    "explain": "Use the annuity factor."
+   }
+  ],
+  "explanation": "NWC goes in at time 0 and comes back at the end; everything else follows the same pattern.",
+  "source": "generated",
+  "ref": "SM 10-29, S6 s11-14"
+ },
+ {
+  "id": "q10-581",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Athabasca Pipe Works forecasts its project's cash flows in constant year-0 dollars, with no allowance for price increases. Which discount rate is consistent with those flows?",
+  "options": [
+   "The nominal rate",
+   "The inflation rate",
+   "The real rate",
+   "The effective annual rate"
+  ],
+  "answer": 2,
+  "explanation": "Flows in constant purchasing power are real flows and must be discounted at a real rate. Nominal flows, which include the expected price increases, use the nominal rate. Both give the same PV.",
+  "source": "generated",
+  "ref": "L02C s10, FS p1"
+ },
+ {
+  "id": "q10-582",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The relationship between the three rates is (1 + R_nominal) = (1 + R_inflation) x (1 + _____).",
+  "options": [
+   "R_effective",
+   "R_nominal",
+   "R_real",
+   "R_after-tax"
+  ],
+  "answer": 2,
+  "explanation": "The Fisher relationship compounds inflation and the real return. It is not the same as R_nominal = R_inflation + R_real, which ignores the cross term R_inflation x R_real.",
+  "source": "generated",
+  "ref": "FS p1, L02C s8"
+ },
+ {
+  "id": "q10-583",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "The word 'nominal' has two unrelated meanings in finance. Which pair of contrasts correctly states them?",
+  "options": [
+   "Nominal versus effective (compounding), and nominal versus real (inflation)",
+   "Nominal versus real (taxes), and nominal versus effective (inflation)",
+   "Nominal versus after-tax, and nominal versus pre-tax",
+   "Nominal versus risk-free, and nominal versus risky"
+  ],
+  "answer": 0,
+  "explanation": "A nominal APR can be contrasted with an effective annual rate (compounding frequency). A nominal return can also be contrasted with a real return (purchasing power). The two are unrelated.",
+  "source": "generated",
+  "ref": "L02C s9"
+ },
+ {
+  "id": "q10-584",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following combinations is NOT consistent?",
+  "options": [
+   "Nominal cash flows discounted at the nominal rate",
+   "Real cash flows discounted at the real rate",
+   "Nominal cash flows converted to real by dividing by (1 + R_inf)^i, then discounted at the real rate",
+   "Real cash flows discounted at the nominal rate"
+  ],
+  "answer": 3,
+  "explanation": "A real flow has no inflation in it, so a discount rate that includes inflation over-discounts it and understates the PV. The three consistent pairings all give the same PV.",
+  "source": "generated",
+  "ref": "L02C s10, SM 10-40"
+ },
+ {
+  "id": "q10-585",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the real rate not simply the nominal rate minus the inflation rate?",
+  "options": [
+   "Because inflation is paid out of the real rate",
+   "Because purchasing power is a ratio: (1 + R_nom)/(1 + R_inf) - 1 is slightly smaller than R_nom - R_inf",
+   "Because the real rate is always zero when the rate is nominal",
+   "Because taxes are paid on the nominal amount only"
+  ],
+  "answer": 1,
+  "explanation": "At 10% nominal and 3% inflation, $1,000 grows to $1,100 while goods rise to $1,030: purchasing power grows 1,100/1,030 = 6.7961%, not 7%. The subtraction approximation drifts further for larger rates.",
+  "source": "generated",
+  "ref": "L02C s8"
+ },
+ {
+  "id": "q10-586",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A firm computes a project's EAC with real cash flows at the real rate and gets a lower annual cost figure than with nominal cash flows at the nominal rate, although both PVs of costs are identical. Why?",
+  "options": [
+   "One of the two calculations must contain a mistake",
+   "Real cash flows are taxed less",
+   "The nominal rate is risk free and the real rate is not",
+   "The real annuity factor is larger, so the same PV spreads into smaller annual amounts; real dollars are 'today's dollars' while nominal dollars are future dollars"
+  ],
+  "answer": 3,
+  "explanation": "PVs agree because both methods are consistent, but EACs are expressed in different dollars. A real EAC is in constant dollars; a nominal EAC is a level nominal payment. Because the real rate is lower, the real annuity factor is larger, so the real EAC is smaller.",
+  "source": "generated",
+  "ref": "SM 10 App A1"
+ },
+ {
+  "id": "q10-587",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Maple Ridge Mills forecasts a project's cash flows in nominal dollars and has a 12% required return that already includes expected inflation. What should the analyst do?",
+  "options": [
+   "Subtract inflation from the cash flows and discount at 12%",
+   "Discount the nominal cash flows at 12%",
+   "Discount the nominal cash flows at the real rate only",
+   "Add inflation to 12% before discounting"
+  ],
+  "answer": 1,
+  "explanation": "The 12% includes inflation, so it matches nominal cash flows. Adjusting it again would double count the inflation effect.",
+  "source": "generated",
+  "ref": "L02C s10"
+ },
+ {
+  "id": "q10-588",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A nominal cash flow received in year i is converted to a real cash flow by dividing it by (1 + R_inflation)^i.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Dividing by cumulative inflation expresses the future dollars in today's purchasing power: CF_real,i = CF_nominal,i/(1 + R_inf)^i.",
+  "source": "generated",
+  "ref": "FS p1"
+ },
+ {
+  "id": "q10-589",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Discounting nominal cash flows at the nominal rate and real cash flows at the real rate gives the same present value.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Both methods remove inflation from the comparison consistently. The nominal rate contains the inflation premium that the nominal cash flows also contain, and the real versions contain none.",
+  "source": "generated",
+  "ref": "L02C s10, SM 10-40"
+ },
+ {
+  "id": "q10-590",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Foothills Gas expects 2.4% annual inflation and its required nominal return is 9.5% per annum. What is the real required return?",
+  "options": [
+   "6.93% per annum",
+   "7.10% per annum",
+   "11.90% per annum",
+   "12.13% per annum"
+  ],
+  "answer": 0,
+  "explanation": "(1 + R_real) = (1 + R_nom)/(1 + R_inf) = 1.095/1.024 = 1.069336, so R_real = 6.9336% per annum. Subtracting 9.5% - 2.4% = 7.10% ignores the cross term; multiplying the factors gives a nominal rate, not a real one.",
+  "source": "generated",
+  "ref": "FS p1, SM 10 App A1"
+ },
+ {
+  "id": "q10-591",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Ltd. must pay $10,000 a year in today's dollars (prices rise with 3% inflation, so the nominal payments grow at 3%) for 4 years. The nominal discount rate is 9% per annum. What is the PV of the payments?",
+  "options": [
+   "$32,397.20",
+   "$34,651.06",
+   "$34,790.17",
+   "$37,400.60",
+   "$40,000.00"
+  ],
+  "answer": 2,
+  "explanation": "Nominal flows are 10,300; 10,609; 10,927.27; 11,255.09. Discounted at 9% the PV is $34,790.17. Equivalently, discount 10,000 a year at the real rate 5.8252%. Discounting the real $10,000 at 9% ($32,397.20) mixes real flows with a nominal rate.",
+  "source": "generated",
+  "ref": "L02C s10, SM 10-40"
+ },
+ {
+  "id": "q10-592",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Nechako Timber's required return is 8.2% per annum nominal and inflation is 2.6% per annum. What is the real required return, in % per annum?",
+  "answer": 5.46,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(1.082/1.026-1)*100",
+  "steps": [
+   {
+    "label": "1 + R_real = (1 + R_nom)/(1 + R_inf)",
+    "value": 1.0546,
+    "check": "1.082/1.026",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "R_real in %",
+    "value": 5.4581,
+    "check": "(1.082/1.026-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "(1 + R_nom) = (1 + R_inf)(1 + R_real)",
+   "1 + R_real = 1.082/1.026 = 1.054581",
+   "R_real = 5.4581% per annum"
+  ],
+  "keystrokes": [
+   "1.082 / 1.026 = 1.054581",
+   "- 1 = 0.054581 -> 5.46%"
+  ],
+  "errors": [
+   {
+    "id": "arithmetic",
+    "label": "Subtracted inflation from the nominal rate",
+    "value": 5.6,
+    "check": "(0.082-0.026)*100",
+    "explain": "Real = (1 + nominal)/(1 + inflation) - 1, not nominal minus inflation."
+   },
+   {
+    "id": "nominal-real-mix",
+    "label": "Multiplied instead of dividing",
+    "value": 11.01,
+    "check": "(1.082*1.026-1)*100",
+    "explain": "Multiplying the factors gives a nominal rate from a real and inflation, not the reverse."
+   }
+  ],
+  "explanation": "Divide the nominal growth factor by the inflation factor.",
+  "source": "generated",
+  "ref": "SM 10 App A1, FS p1"
+ },
+ {
+  "id": "q10-593",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Foods wants a real return of 4.5% per annum on a project while inflation is expected to be 3.2% per annum. What nominal discount rate should it use, in % per annum?",
+  "answer": 7.84,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(1.045*1.032-1)*100",
+  "steps": [
+   {
+    "label": "1 + R_nom = (1 + R_real)(1 + R_inf)",
+    "value": 1.0784,
+    "check": "1.045*1.032",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "R_nom in %",
+    "value": 7.844,
+    "check": "(1.045*1.032-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "(1 + R_nom) = (1 + R_inf)(1 + R_real) = 1.032 x 1.045 = 1.07844",
+   "R_nom = 7.8440% per annum"
+  ],
+  "keystrokes": [
+   "1.045 x 1.032 = 1.07844 - 1 = 7.844%"
+  ],
+  "errors": [
+   {
+    "id": "arithmetic",
+    "label": "Added the two rates",
+    "value": 7.7,
+    "check": "(0.045+0.032)*100",
+    "explain": "The cross term R_real x R_inf = 0.144% is missing."
+   },
+   {
+    "id": "nominal-real-mix",
+    "label": "Divided instead of multiplying",
+    "value": 1.26,
+    "check": "(1.045/1.032-1)*100",
+    "explain": "Nominal = real compounded with inflation: multiply the factors."
+   }
+  ],
+  "explanation": "Fisher relationship, solved for the nominal rate.",
+  "source": "generated",
+  "ref": "FS p1, L02C s8"
+ },
+ {
+  "id": "q10-594",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A 4-year service contract costs the firm $10,000 a year in today's dollars; prices rise with 3% inflation, so the nominal payments rise 3% a year from $10,300. The nominal discount rate is 9% per annum. Find the present value of the payments using real cash flows and the real rate.",
+  "answer": 34790.17,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "10000*(1-1/(1.09/1.03)**4)/(1.09/1.03-1)",
+  "steps": [
+   {
+    "label": "Real discount rate in %",
+    "value": 5.8252,
+    "check": "(1.09/1.03-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Real annuity factor, 4 years",
+    "value": 3.479,
+    "check": "(1-1/(1.09/1.03)**4)/(1.09/1.03-1)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "PV of real cash flows",
+    "value": 34790.17,
+    "check": "10000*(1-1/(1.09/1.03)**4)/(1.09/1.03-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Check: PV of nominal cash flows at 9%",
+    "value": 34790.17,
+    "check": "10000*1.03/1.09+10000*1.03**2/1.09**2+10000*1.03**3/1.09**3+10000*1.03**4/1.09**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "R_real = 1.09/1.03 - 1 = 5.8252%",
+   "Real annuity factor = (1 - 1/1.058252^4)/0.058252 = 3.4790",
+   "PV = 10,000 x 3.4790 = $34,790.17",
+   "Check: nominal flows 10,300; 10,609; 10,927.27; 11,255.09 discounted at 9% = $34,790.17"
+  ],
+  "keystrokes": [
+   "Real rate 5.8252%: N = 4, I/Y = 5.8252, PMT = 10000, CPT PV",
+   "Check with CF0 = 0, C01 = 10300, C02 = 10609, C03 = 10927.27, C04 = 11255.09, I = 9, NPV"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Discounted the real flows at the nominal 9%",
+    "value": 32397.2,
+    "check": "10000*(1-1/1.09**4)/0.09",
+    "explain": "Real flows must be discounted at the real rate."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Used 9% - 3% = 6% as the real rate",
+    "value": 34651.06,
+    "check": "10000*(1-1/1.06**4)/0.06",
+    "explain": "The real rate is 1.09/1.03 - 1 = 5.8252%, slightly lower than 6%."
+   }
+  ],
+  "explanation": "Two consistent routes: real flows at the real rate, or nominal flows at the nominal rate.",
+  "source": "generated",
+  "ref": "L02C s10-11, SM 10-40"
+ },
+ {
+  "id": "q10-595",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A supply contract pays $250,000 in nominal dollars at the end of next year, then rises with inflation of 2.5% per annum forever. The nominal discount rate is 9.5% per annum. Find its present value by converting to real cash flows and discounting at the real rate.",
+  "answer": 3571428.57,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(250000/1.025)/(1.095/1.025-1)",
+  "steps": [
+   {
+    "label": "Real cash flow each year (constant)",
+    "value": 243902.44,
+    "check": "250000/1.025",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Real discount rate in %",
+    "value": 6.8293,
+    "check": "(1.095/1.025-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the real perpetuity",
+    "value": 3571428.57,
+    "check": "(250000/1.025)/(1.095/1.025-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Check: nominal growing perpetuity D1/(R - g)",
+    "value": 3571428.57,
+    "check": "250000/(0.095-0.025)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Year-1 nominal 250,000 = 250,000/1.025 = 243,902.44 in today's dollars; real flows stay constant",
+   "R_real = 1.095/1.025 - 1 = 6.8293%",
+   "PV = 243,902.44 / 0.068293 = $3,571,428.57",
+   "Check: 250,000/(0.095 - 0.025) = $3,571,428.57"
+  ],
+  "keystrokes": [
+   "243902.44 / 0.068293 = 3571428.57"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Discounted the real perpetuity at the nominal rate",
+    "value": 2567394.09,
+    "check": "(250000/1.025)/0.095",
+    "explain": "Real flows need the real rate."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Used 9.5% - 2.5% = 7% as the real rate",
+    "value": 3484320.56,
+    "check": "(250000/1.025)/(0.095-0.025)",
+    "explain": "The exact real rate is 6.8293%, not 7%."
+   }
+  ],
+  "explanation": "A growing perpetuity in nominal terms is a constant perpetuity in real terms.",
+  "source": "generated",
+  "ref": "L02C s11, SM 10-40"
+ },
+ {
+  "id": "q10-596",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A 3-year machine has a PV of costs of $9,250, found with nominal cash flows at a nominal rate of 12% per annum. Inflation is 2.5% per annum. What is its equivalent annual cost in real (today's) dollars, using the real discount rate?",
+  "answer": 3671.74,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "9250/((1-1/(1.12/1.025)**3)/(1.12/1.025-1))",
+  "steps": [
+   {
+    "label": "Real discount rate in %",
+    "value": 9.2683,
+    "check": "(1.12/1.025-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Real annuity factor, 3 years",
+    "value": 2.5192,
+    "check": "(1-1/(1.12/1.025)**3)/(1.12/1.025-1)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Real EAC",
+    "value": 3671.74,
+    "check": "9250/((1-1/(1.12/1.025)**3)/(1.12/1.025-1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "R_real = 1.12/1.025 - 1 = 9.2683%",
+   "Real annuity factor = 2.5192",
+   "Real EAC = 9,250 / 2.5192 = $3,671.74",
+   "For comparison the nominal EAC is 9,250/2.4018 = $3,851.23"
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 9.2683, PV = -9250, CPT PMT"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Used the nominal annuity factor",
+    "value": 3851.23,
+    "check": "9250/((1-1/1.12**3)/0.12)",
+    "explain": "That is the nominal EAC. A real EAC uses the real rate in the annuity factor."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Used 12% - 2.5% = 9.5% as the real rate",
+    "value": 3686.86,
+    "check": "9250/((1-1/1.095**3)/0.095)",
+    "explain": "Use (1.12/1.025) - 1."
+   }
+  ],
+  "explanation": "The PV is the same either way, but dividing by the real annuity factor gives the cost in constant dollars.",
+  "source": "generated",
+  "ref": "SM 10 App A1"
+ },
+ {
+  "id": "q10-597",
+  "concept": "c10-nominal-real",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A machine will be sold for $50,000 in nominal dollars at the end of year 5. Inflation is 2.5% per annum. What is the sale price in today's dollars (real terms)?",
+  "answer": 44192.71,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "50000/1.025**5",
+  "steps": [
+   {
+    "label": "Inflation factor over 5 years",
+    "value": 1.1314,
+    "check": "1.025**5",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Real value",
+    "value": 44192.71,
+    "check": "50000/1.025**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CF_real = CF_nominal/(1 + R_inf)^5 = 50,000/1.025^5",
+   "= 50,000/1.131408 = $44,192.71"
+  ],
+  "keystrokes": [
+   "1.025 y^x 5 = 1.131408",
+   "50000 / 1.131408 = 44192.71"
+  ],
+  "errors": [
+   {
+    "id": "arithmetic",
+    "label": "Multiplied by the inflation factor",
+    "value": 56570.41,
+    "check": "50000*1.025**5",
+    "explain": "Today's dollars are worth more per dollar: divide, don't multiply."
+   },
+   {
+    "id": "annual-periodic",
+    "label": "Used simple inflation of 12.5%",
+    "value": 44444.44,
+    "check": "50000/(1+5*0.025)",
+    "explain": "Inflation compounds: use (1 + 0.025)^5."
+   }
+  ],
+  "explanation": "Deflate a future nominal amount by the cumulative inflation.",
+  "source": "generated",
+  "ref": "FS p1, L02C s10"
+ }
+]

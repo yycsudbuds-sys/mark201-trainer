@@ -1,0 +1,750 @@
+{
+ "chapter": 9,
+ "title": "Capital budgeting: decision rules",
+ "topics": [
+  {
+   "id": "t09-1",
+   "order": 1,
+   "title": "Accounting rate of return",
+   "summary": "The first of the five decision rules compares average accounting profit with the average book value of the money tied up. It is easy to compute but uses accounting numbers, not cash flows, and ignores the time value of money. Know the formula and why it can only be a relative comparison.",
+   "concepts": [
+    "c09-arr"
+   ]
+  },
+  {
+   "id": "t09-2",
+   "order": 2,
+   "title": "Payback",
+   "summary": "Payback asks how many years it takes to get the initial investment back; discounted payback asks the same after discounting each flow. Both are quick screens that ignore everything after the recovery date. Practise the cumulative table and the fractional year.",
+   "concepts": [
+    "c09-payback",
+    "c09-discounted-payback"
+   ]
+  },
+  {
+   "id": "t09-3",
+   "order": 3,
+   "title": "Net present value",
+   "summary": "NPV = CF0 + PV is the rule that tracks shareholder wealth, so it wins whenever rules conflict. The four-step sequence organizes the analysis from cash flows to the accept/reject decision.",
+   "concepts": [
+    "c09-npv-rule",
+    "c09-npv-steps"
+   ]
+  },
+  {
+   "id": "t09-4",
+   "order": 4,
+   "title": "Internal rate of return",
+   "summary": "IRR is the discount rate that makes NPV zero, the project's own return. It matches NPV for conventional flows, but fails with several sign changes, with financing-type flows, and when ranking mutually exclusive projects. The NPV profile and crossover rate show why.",
+   "concepts": [
+    "c09-irr-rule",
+    "c09-npv-profile",
+    "c09-multiple-irr",
+    "c09-financing-flows",
+    "c09-ranking-conflict",
+    "c09-crossover",
+    "c09-mirr"
+   ]
+  },
+  {
+   "id": "t09-5",
+   "order": 5,
+   "title": "Profitability index",
+   "summary": "The PI divides the PV of the inflows by the PV of the outflows, a benefit/cost ratio. It gives the same accept/reject answer as NPV but a different ranking, because it measures profit per dollar invested.",
+   "concepts": [
+    "c09-pi",
+    "c09-pi-vs-npv"
+   ]
+  },
+  {
+   "id": "t09-6",
+   "order": 6,
+   "title": "Project relationships and rationing",
+   "summary": "Projects can be independent, dependent or mutually exclusive, and that decides how the decision rules are used. When funds run out, positive-NPV projects must be rejected (capital rationing) and the PI ranks them.",
+   "concepts": [
+    "c09-project-relationships",
+    "c09-capital-rationing"
+   ]
+  },
+  {
+   "id": "t09-7",
+   "order": 7,
+   "title": "Unequal lives",
+   "summary": "Mutually exclusive projects with different lives cannot be compared on raw NPV. Convert them with the equivalent annual value (EAV), a constant chain of replacement (CCR, NPV to infinity) or the lowest common multiple of the lives.",
+   "concepts": [
+    "c09-eav",
+    "c09-ccr-lcm"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c09-arr",
+   "topic": "t09-1",
+   "term": "Accounting rate of return (ARR / ROC)",
+   "definition": "ARR (ROC) = expected average annual profit after tax divided by average investment, where average investment = (I0 + book value at the end of the project)/2. ROE and ROA use average book equity and average assets as the denominator instead.",
+   "explain": "ARR compares accounting profit with the average book value of the capital tied up in the project. It is quick to calculate, but it uses accounting figures (which may include accruals) rather than cash flows, ignores the time value of money and averages a multi-year project into one number. It is a relative comparison against the ROC of your other projects or a target, never an absolute decision on its own.",
+   "example": "A project costs $900,000 and will have a book value of $300,000 at the end. Average profit after tax is $90,000 a year. Average investment = (900,000 + 300,000)/2 = $600,000, so ARR = 90,000/600,000 = 15.00%. Sample exam Q10(a): $215,000 / [($1.2M + $0.96M)/2] = 19.91% per annum.",
+   "contrast": "ARR is a ratio of accounting numbers (profit over book value) with no discounting; IRR is the discount rate that sets the NPV of the cash flows to zero. ARR is not payback (a time in years) and not a cash yield (profit, not cash flow, over the average rather than the initial investment). ROC, ROE and ROA differ only in the denominator.",
+   "trap": "Dividing by I0 instead of the average investment (arr-divide-i0); using cash flow instead of profit after tax (arr-cash-not-profit); comparing ARR with the discount rate R and calling it an accept decision. Cue words: \"net income\", \"residual value\", \"average\", \"state the decision\" (answer: relative only; use NPV).",
+   "mnemonic": "Average profit over average investment: two averages.",
+   "formula": "ARR = avg annual profit after tax / [(I0 + book value at end)/2]",
+   "given": false,
+   "archetypes": [
+    "A9"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-payback",
+   "topic": "t09-2",
+   "term": "Payback period",
+   "definition": "The payback period is the time, in years and part years, until the cumulative undiscounted cash flows equal the initial investment. Accept the project if its payback is shorter than a preset limit.",
+   "explain": "Cumulate the cash flows year by year, find the year in which the investment is recovered, and add the fraction of that year: amount still to recover divided by that year's cash flow. The maths is easy and quick, but payback ignores the time value of money, ignores all income after the payback date (so it is biased against long projects) and needs an arbitrary cutoff. It is a relative comparison only.",
+   "example": "Cost $120,000; cash flows $30,000, $40,000, $45,000, $50,000. Cumulative: 30,000; 70,000; 115,000. After year 3, $5,000 remains and year 4 brings $50,000: 5,000/50,000 = 0.1, so payback = 3.1 years. For level flows, payback = cost / annual flow (for example $1,370,000 / $285,000 = 4.81 years).",
+   "contrast": "Payback adds raw cash flows; discounted payback adds present values at R. A payback shorter than the life guarantees NPV > 0 only at a zero discount rate. Payback measures liquidity (time to get cash back), not value created.",
+   "trap": "Counting the whole recovery year (payback-after-recovery: 4.00 instead of 3.1); dividing the remainder by the previous year's flow; applying the cost/annual-flow shortcut to uneven flows or beyond the life (if the total inflow never reaches the cost, the project never pays back).",
+   "mnemonic": "Years before recovery + remaining over next.",
+   "formula": "Payback = k + (I0 - cumulative CF_k) / CF_(k+1);  level flows: I0 / CF",
+   "given": false,
+   "archetypes": [
+    "A9"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c09-discounted-payback",
+   "topic": "t09-2",
+   "term": "Discounted payback period",
+   "definition": "The discounted payback period is the time until the cumulative present values of the cash flows, CF_t/(1+R)^t, equal the initial investment.",
+   "explain": "It is the payback table with each flow discounted at R first, so it removes the time-value criticism. It still ignores income after the discounted payback date and still needs a cutoff. For conventional flows and R > 0 it is always longer than the ordinary payback, and if it is shorter than the project's life, the NPV is positive.",
+   "example": "Cost 100; four flows of 40; R = 10%. Ordinary payback = 2.5 years. PVs: 36.36, 33.06, 30.05, 27.32; cumulative PV after year 3 = 99.47, so 0.53 remains: 0.53/27.32 = 0.02. Discounted payback = 3.02 years (SM 9-4 style).",
+   "contrast": "Payback vs discounted payback: raw flows vs present values. Discounted payback < life implies NPV > 0; ordinary payback < life implies nothing at R > 0. Both ignore flows after the recovery date and give only a relative comparison.",
+   "trap": "Dividing the PV remainder by the undiscounted flow of the recovery year (both parts must be in PV terms); accumulating undiscounted flows by mistake; forgetting that a project can pay back in raw terms yet never in PV terms (the project then has NPV < 0).",
+   "mnemonic": "Discount first, then add up.",
+   "formula": "accumulate CF_t/(1+R)^t until = I0;  fraction = PV still to recover / PV of next flow",
+   "given": false,
+   "archetypes": [
+    "A9"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-npv-rule",
+   "topic": "t09-3",
+   "term": "Net present value (NPV) rule",
+   "definition": "NPV = CF0 + PV, where PV = CF1/(1+R) + CF2/(1+R)^2 + ... and CF0 is negative (the initial outlay), so NPV = PV of future cash flows - initial investment. Accept the project if NPV > 0.",
+   "explain": "NPV is the expected change in shareholder wealth, in today's dollars, after the time value of money. It gives an absolute accept/reject decision on each project as well as a relative comparison, and it is the rule that serves shareholders, so when another rule disagrees, NPV wins. Its one weakness is that it ignores the amount of capital tied up (the PI deals with that).",
+   "example": "CF0 = -10,000, CF1 = 4,500, CF2 = 5,200, CF3 = 3,900, R = 9%: PV = 4,128.44 + 4,376.74 + 3,011.52 = 11,516.69, so NPV = +1,516.69: accept. Sample exam Q10(b): -1,200,000 + 215,000 x 4.9676 + 960,000/1.12^8 = +$255,770.45.",
+   "contrast": "NPV is a dollar amount at the required return R; IRR is a percentage you compare with R; PI is a ratio. Excel's NPV() is really a PV() and discounts the first value by one period: add the outlay separately.",
+   "trap": "Entering CF0 with the wrong sign (sign-cf0); treating the outlay as year 1 (cf0-as-period-1); forgetting to add the residual (dropped-salvage-term) or not discounting it (salvage-not-discounted); reporting the PV of the inflows as the NPV. NPV = 0 means indifferent; negative NPV projects are sometimes forced (environmental repair).",
+   "mnemonic": "NPV = what it is worth (PV) minus what it costs (CF0).",
+   "formula": "NPV = CF0 + CF1/(1+R) + CF2/(1+R)^2 + ... + CFN/(1+R)^N",
+   "given": true,
+   "archetypes": [
+    "A10"
+   ],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "The five decision rules (plus discounted payback): rule, good points, bad points",
+    "head": [
+     "Rule",
+     "Good points",
+     "Bad points"
+    ],
+    "rows": [
+     [
+      "ARR (ROC)",
+      "Quick and easy to calculate",
+      "Accounting figures, not cash flows (may include accruals); no time value of money; single-year averages of a multi-year project; relative comparison only"
+     ],
+     [
+      "Payback",
+      "Easy maths, quick to calculate",
+      "No time value of money; ignores income after the payback period; arbitrary cutoff, relative comparison only"
+     ],
+     [
+      "Discounted payback",
+      "Brings in the time value of money",
+      "Still ignores income after the discounted payback period; still only a relative comparison"
+     ],
+     [
+      "NPV",
+      "Equals the change in shareholder wealth; uses time value of money; absolute decision and relative comparison",
+      "Does not consider the amount of capital tied up"
+     ],
+     [
+      "IRR",
+      "Uses time value of money; shows the size of the return; agrees with NPV for conventional flows",
+      "Multiple IRRs (or none) with unconventional flows; can mis-rank mutually exclusive projects"
+     ],
+     [
+      "PI (benefit/cost)",
+      "Same accept/reject as NPV; profit per dollar invested, so the right ranking under capital rationing",
+      "Can mis-rank mutually exclusive projects of different scale; two definitions (1-based and 0-based)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c09-npv-steps",
+   "topic": "t09-3",
+   "term": "The four-step NPV analysis",
+   "definition": "The professor's sequence: (1) work out the expected after-tax cash flows CF0, CF1, ...; (2) decide the discount rate and discount to today; (3) if lives are unequal, equalize them with EAV or CCR; (4) decide: independent projects, accept if NPV > 0; mutually exclusive projects, accept the highest positive NPV (the least negative if you must take one).",
+   "explain": "Steps 1 and 2 are the hard parts (forecasting incremental after-tax cash flows and choosing R). Step 3 only matters when mutually exclusive projects have different lives. Step 4 is the decision: each independent project is judged on NPV > 0, while mutually exclusive projects compete and only the best NPV survives.",
+   "example": "Projects P and Q (3-year lives, R = 10%) have NPV(P) = +$15,154.02 and NPV(Q) = +$14,522.92. Same lives, so skip step 3; both positive but mutually exclusive, so accept P (the higher NPV), even though Q has the higher IRR.",
+   "contrast": "Independent vs mutually exclusive in step 4: independent means accept all with NPV > 0; mutually exclusive means accept only the best. Step 3 (equalize lives) is different from step 2 (discount to today).",
+   "trap": "Skipping step 3 when lives differ and comparing raw NPVs; rejecting a forced project because its NPV is negative; using IRR or PI to pick between mutually exclusive projects.",
+   "mnemonic": "Flows, rate, lives, decide.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-irr-rule",
+   "topic": "t09-4",
+   "term": "Internal rate of return (IRR) rule",
+   "definition": "The IRR is the discount rate that makes NPV = 0: 0 = CF0 + CF1/(1+IRR) + ... + CFN/(1+IRR)^N. For conventional cash flows, accept if IRR > R and reject if IRR < R.",
+   "explain": "IRR is what the project returns; R is the return you need. It is the same idea as the yield to maturity on a bond. For conventional flows (CF0 negative, all later flows positive or zero) the NPV profile crosses zero once, so IRR > R means NPV > 0 and the two rules agree. It uses the time value of money and shows the size of the return, but it can have several answers when the flows change sign.",
+   "example": "Flows -1,000, +600, +600: x = 1/(1+IRR) solves 600x^2 + 600x - 1,000 = 0, so IRR = 13.07%. With R = 10%, IRR > R: accept (NPV at 10% = +41.32). With R = 15%, IRR < R: reject. Closed forms: single payment IRR = (FV/PV)^(1/N) - 1; level perpetuity IRR = CF/cost.",
+   "contrast": "IRR vs R: the project's own return vs the return required. IRR vs ARR: discount rate vs accounting ratio. IRR vs YTM: the same calculation applied to a project instead of a bond. The IRR rule is a shortcut for NPV only when flows are conventional.",
+   "trap": "Comparing the wrong way round (irr-direction: accepting when IRR < R); using the rule with unconventional or financing-type flows; computing IRR as average gain per year (no compounding); choosing the higher IRR among mutually exclusive projects.",
+   "mnemonic": "IRR above R: go. IRR below R: no.",
+   "formula": "NPV(IRR) = 0;  accept if IRR > R (conventional flows)",
+   "given": false,
+   "archetypes": [
+    "A10"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c09-npv-profile",
+   "topic": "t09-4",
+   "term": "NPV profile",
+   "definition": "An NPV profile is the graph of a project's NPV against the discount rate. Its vertical intercept (R = 0) is the sum of the undiscounted cash flows, it approaches CF0 as R grows without limit, and it crosses the horizontal axis at the IRR(s).",
+   "explain": "For conventional flows the profile slopes downward because a higher R shrinks the PV of the later inflows while the outlay at t = 0 stays put. Reading it: left of the IRR NPV is positive (accept), right of the IRR it is negative (reject). For financing-type flows it slopes upward, and unconventional flows can make it cross the axis more than once.",
+   "example": "Flows -1,000, +600, +600: NPV(0%) = +200 (the sum), NPV(10%) = +41.32, NPV(20%) = -83.33, and it crosses zero at the IRR = 13.07%. As R becomes very large, NPV tends to -1,000.",
+   "contrast": "NPV profile vs payback or cash-flow timeline (a profile has the discount rate on the horizontal axis). Conventional (downward) vs financing-type (upward) profiles. The IRR is read at the crossing; the required return is where you read your own NPV.",
+   "trap": "Thinking NPV approaches zero for very high R (it approaches CF0); forgetting that NPV at 0% is just the sum of the flows including the outlay; assuming every profile slopes downward.",
+   "mnemonic": "Left of the IRR positive, right of it negative.",
+   "formula": "NPV(R = 0) = sum of CF_t;  NPV(R -> infinity) -> CF0",
+   "given": false,
+   "archetypes": [
+    "A12"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-multiple-irr",
+   "topic": "t09-4",
+   "term": "Multiple (or no) IRRs",
+   "definition": "A project can have as many IRRs as there are sign changes in its cash flows (a rule-of-signs upper limit). With unconventional flows there may be several IRRs, or none, so the rule \"accept if IRR > R\" is not reliable and the NPV at R must decide.",
+   "explain": "Solving NPV = 0 means finding the roots of an equation, and a profile that crosses the axis several times has several roots. Unconventional flows arise from big maintenance or clean-up costs late in the life and from incremental (A minus B) streams. A calculator shows just one root, so check the NPV at R or the profile.",
+   "example": "Flows -500,000; +1,235,000; -756,000 have two IRRs, 12% and 35%. NPV is positive only between them: NPV(25%) = +4,160.00 (accept) but NPV(8%) = -4,629.63 even though both IRRs exceed 8%. The flows -500,000; +800,000; -400,000 have no real IRR at all (discriminant < 0).",
+   "contrast": "Conventional (one sign change, at most one IRR) vs unconventional (several sign changes). Multiple IRRs (several rates give NPV = 0) vs financing-type flows (one IRR but the rule reverses).",
+   "trap": "Trusting the single IRR the calculator returns; accepting because \"both IRRs exceed R\"; believing two sign changes always give exactly two IRRs. When NPV and IRR disagree, use NPV (seminar 5).",
+   "mnemonic": "Count the sign flips: that many IRRs, at most.",
+   "formula": "max number of IRRs = number of sign changes in CF0, CF1, ..., CFN",
+   "given": false,
+   "archetypes": [
+    "A12"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-financing-flows",
+   "topic": "t09-4",
+   "term": "Financing-type cash flows",
+   "definition": "Financing-type flows have a cash inflow first and outflows later (CF0 positive, later flows negative). The IRR is then a rate you pay, not earn, and the rule reverses: accept only if IRR < R.",
+   "explain": "Think of borrowing: you receive money now and repay later. The NPV profile slopes upward, so NPV rises with R. Customer prepayments before the work is done are an example. The NPV at R gives the right decision and avoids the sign confusion.",
+   "example": "Receive $200 now and pay $236 in a year: IRR = 236/200 - 1 = 18%. At R = 12% the NPV is 200 - 236/1.12 = -$10.71, so reject: the money costs 18%, more than the 12% you can earn elsewhere. Accept only if R > 18%.",
+   "contrast": "Investing-type flows (outlay first): accept if IRR > R, downward profile. Financing-type flows (inflow first): accept if IRR < R, upward profile. Both give a single IRR; unlike multiple IRRs, the problem here is the direction of the rule.",
+   "trap": "Applying the standard rule (IRR > R) and accepting a costly source of funds; reading the NPV profile slope backwards (irr-direction).",
+   "mnemonic": "Money in first means you are the borrower: low IRR wins.",
+   "formula": "financing-type: accept if IRR < R",
+   "given": false,
+   "archetypes": [
+    "A12"
+   ],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c09-ranking-conflict",
+   "topic": "t09-4",
+   "term": "Ranking conflict between NPV and IRR",
+   "definition": "For mutually exclusive projects, NPV and IRR can rank the projects differently because of scale (different outlays) or timing (different patterns of flows). The correct choice is the higher NPV at the required return R, equivalently the incremental IRR (A minus B, with A the bigger project) beating R.",
+   "explain": "Only one project can be taken, so the question is which adds more wealth, and that is the NPV. A smaller project can have a higher IRR but a lower NPV. Two ways to settle it: compute both NPVs at R, or compute the IRR of the difference in cash flows and compare it with R.",
+   "example": "P: -90,000; 36,000; 44,000; 48,000 and Q: -60,000; 29,000; 31,000; 30,000, R = 10%. NPV(P) = 15,154.02 > NPV(Q) = 14,522.92, but IRR(P) = 18.87% < IRR(Q) = 23.21%. Choose P. The incremental IRR of P - Q is 11.03% > 10%, which agrees.",
+   "contrast": "Independent projects: IRR and NPV agree for conventional flows. Mutually exclusive projects: they can disagree, and NPV is right. The crossover rate tells where the NPV ranking flips.",
+   "trap": "Picking the higher IRR (picked-higher-irr); comparing PI ranks across different scales; forgetting that the ranking can depend on R (it changes at the crossover rate).",
+   "mnemonic": "Pick the bigger wealth, not the bigger percentage.",
+   "formula": "choose max NPV at R;  or accept A over B if IRR(A - B) > R",
+   "given": false,
+   "archetypes": [
+    "A11"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-crossover",
+   "topic": "t09-4",
+   "term": "Crossover rate and incremental IRR",
+   "definition": "The crossover rate is the discount rate at which two projects have equal NPV; it is the IRR of the difference in their cash flows (A minus B, subtracting year by year including CF0). Below it the project with the higher NPV at low rates wins; above it the other wins.",
+   "explain": "Subtract the two cash-flow lists year by year; the IRR of that incremental stream is the crossover rate. It does not matter which project you subtract from which, but the ranges must be stated carefully: compare R with the crossover to see which project is better.",
+   "example": "P - Q = -30,000; 7,000; 13,000; 18,000 has IRR 11.03%, the crossover. At R = 10% (below 11.03%) P has the higher NPV (15,154.02 vs 14,522.92); at R = 15% (above) Q does (8,383.33 vs 6,135.45).",
+   "contrast": "Crossover rate (where NPVs are equal, IRR of A - B) vs each project's own IRR (where its own NPV is zero). The difference of two conventional streams can be unconventional, so check for multiple crossovers.",
+   "trap": "Mis-stating which project wins below or above the crossover; subtracting in different years; confusing the crossover with an IRR of one project; PI ranking on different scales.",
+   "mnemonic": "Equal NPV where the difference has zero NPV.",
+   "formula": "Crossover = IRR of (A - B) cash flows",
+   "given": false,
+   "archetypes": [
+    "A11"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-mirr",
+   "topic": "t09-4",
+   "term": "Modified IRR (MIRR)",
+   "definition": "The MIRR modifies the cash flows first (discounting outflows, compounding inflows at the required return, or a combination) so that only one sign change remains, then computes an IRR on the two modified flows.",
+   "explain": "MIRR was proposed to remove the multiple-IRR problem. It is controversial: there are several different MIRRs, it is not a true rate of return, and you must already know the required return, in which case the NPV answers the question directly. Low priority for the exam; know the idea.",
+   "example": "Flows -1,000; +600; +700 at R = 10%. Reinvestment approach: FV of inflows at the end = 600 x 1.10 + 700 = 1,360; MIRR = (1,360/1,000)^(1/2) - 1 = 16.62%, below the IRR of 18.88% because the 600 is reinvested at 10%, not at the IRR.",
+   "contrast": "MIRR (modified flows, one answer) vs IRR (the actual flows, possibly several answers). MIRR is not the same as the required return.",
+   "trap": "Calling the MIRR a true rate of return; forgetting that different MIRR methods give different numbers; thinking IRR assumes reinvestment at the IRR (the NPV and IRR are not affected by what is done with the cash).",
+   "mnemonic": "Modify the flows, then IRR.",
+   "formula": "MIRR = (FV of inflows at R / PV of outflows at R)^(1/N) - 1",
+   "given": false,
+   "archetypes": [],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c09-pi",
+   "topic": "t09-5",
+   "term": "Profitability index (benefit/cost ratio)",
+   "definition": "PI = PV of cash inflows / PV of cash outflows. For conventional flows PI = PV / initial outlay = 1 + NPV/outlay. Accept if PI > 1 (NPV > 0); reject if PI < 1.",
+   "explain": "The PI is bang for the buck: the present value you get for each dollar you put in. Its accept/reject decision always matches the NPV, but it ranks by profitability per dollar, which is what matters when capital is limited. A PI of 0.98 means the project is rejected; the PI is 1-based, not 0-based.",
+   "example": "Using the NPV example above: PV of inflows = 11,516.69 and outlay = 10,000, so PI = 1.1517 (= 1 + 1,516.69/10,000). PI > 1: accept. A project with PV of inflows $38,200 and outlay $40,000 has PI = 0.955: reject.",
+   "contrast": "PI (PV/outlay, 1-based) vs the alternative 0-based version NPV/outlay: adding or subtracting 1 gives the same rankings. PI vs NPV: same decision, different ranking.",
+   "trap": "Reading a PI below 1 as acceptable (PI = 0.98 is a reject); using NPV/outlay and calling it PI > 1 (pi-zero-based); using PI to choose between mutually exclusive projects of different scale.",
+   "mnemonic": "PI above one: you get back more than you put in.",
+   "formula": "PI = PV of inflows / PV of outflows = 1 + NPV / initial outlay",
+   "given": true,
+   "archetypes": [
+    "A10"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-pi-vs-npv",
+   "topic": "t09-5",
+   "term": "PI versus NPV: the same decision, different ranking",
+   "definition": "NPV and PI always give the same accept/reject decision for a single project, but they can rank projects differently: NPV ranks on the dollar change in wealth and ignores capital tied up, while PI ranks on profit per dollar of capital.",
+   "explain": "A big project can have the larger NPV and the smaller PI. For mutually exclusive projects of different scale, use the NPV (it measures wealth). Under capital rationing, use the PI (it ranks the best use of each scarce dollar).",
+   "example": "Mutually exclusive S (outlay 40,000, PV 52,000: NPV 12,000, PI 1.30) and L (outlay 150,000, PV 175,000: NPV 25,000, PI 1.17). NPV picks L; PI picks S. If both could be done with enough funds, accept both (both NPV > 0).",
+   "contrast": "Which is best: NPV (mutually exclusive, no budget limit) vs PI (independent projects under a budget limit). PI and NPV both accept at PI > 1 / NPV > 0.",
+   "trap": "Using PI to rank mutually exclusive projects that differ in scale (the SM 9-16 trap); using NPV to rank projects when funds are limited; mixing the 1-based and 0-based PI when comparing.",
+   "mnemonic": "NPV measures size; PI measures efficiency.",
+   "formula": "PI(1-based) = 1 + NPV/outlay;  PI(0-based) = NPV/outlay",
+   "given": false,
+   "archetypes": [
+    "A11"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-project-relationships",
+   "topic": "t09-6",
+   "term": "Independent, dependent and mutually exclusive projects",
+   "definition": "Independent projects can be taken in any combination without affecting each other's values; dependent projects affect each other's values (one makes the other worth more or less); mutually exclusive projects can only be taken one at a time, which includes timing and replacement decisions.",
+   "explain": "The relationship decides how the rules are used. Independent: accept each with NPV > 0. Mutually exclusive: pick the best, equalizing lives if needed. Timing decisions (when to replace, retire or close) are mutually exclusive: pick the timing with the maximum NPV.",
+   "example": "A new delivery van and a new website are independent. A new restaurant whose customers depend on a new highway exit is dependent on that exit. Machine A versus Machine B for the same job are mutually exclusive, and so are \"replace now\" versus \"replace in two years\".",
+   "contrast": "Independent (no effect on each other) vs dependent (one changes the other's cash flows) vs mutually exclusive (taking one rules out the others). Mutually exclusive projects are chosen by NPV, not by accepting everything positive.",
+   "trap": "Treating mutually exclusive projects as independent and accepting both; forgetting that timing and replacement decisions are mutually exclusive choices.",
+   "mnemonic": "Independent: all that pass. Exclusive: only the best.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c09-capital-rationing",
+   "topic": "t09-6",
+   "term": "Capital rationing",
+   "definition": "Capital rationing is rejecting positive-NPV projects because of a lack of funds (or people). When projects are independent, rank them by PI and take them in rank order until the budget is used.",
+   "explain": "Without a budget limit, every independent project with NPV > 0 is accepted. With a hard limit the firm must choose, and the best choice maximizes total NPV per dollar spent, so rank by PI. It is a soft constraint when set internally and a hard one when the capital market denies funds.",
+   "example": "Budget $400,000. B (outlay 200,000, NPV 50,000, PI 1.25), D (100,000, NPV 18,000, PI 1.18), E (100,000, NPV 14,000, PI 1.14), A (300,000, NPV 36,000, PI 1.12). Rank by PI: B, D, E use $400,000 for total NPV $82,000; A is rejected despite its positive NPV. Sample exam Q5: capital rationing = \"rejecting a positive NPV project because of a lack of funds\".",
+   "contrast": "Capital rationing (a funds constraint on independent projects, rank by PI) vs mutually exclusive choices (rank by NPV) vs simply stopping to analyse projects in bad markets (not rationing).",
+   "trap": "Ranking by NPV or by IRR when funds are limited; calling a pause in project analysis \"rationing\"; forgetting the best set of projects can leave some budget unused.",
+   "mnemonic": "Limited budget? Rank by PI.",
+   "formula": "rank by PI = PV inflows / outlay, take in order until the budget is gone",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-eav",
+   "topic": "t09-7",
+   "term": "Equivalent annual value (EAV / EAA / EAB / EAC)",
+   "definition": "The equivalent annual value converts an NPV into the level annual amount over the project's life with the same present value: EAV = NPV / annuity factor(R, N), with annuity factor = [1 - (1+R)^-N]/R. For costs it is the equivalent annual cost (EAC).",
+   "explain": "Use it to compare mutually exclusive projects with unequal lives that will be repeated: compare the annual amounts, not the raw NPVs. Higher EAV (or lower EAC) wins. The annuity factor comes from the table sheet or the formula, using each project's own life N.",
+   "example": "Two maintenance programs at R = 10%: spend $2.0M for 2 years of work, or $2.7M for 3 years. Annuity factors: 1.7355 and 2.4869. EAC = 2.0/1.7355 = $1.1524M a year versus 2.7/2.4869 = $1.0857M a year. The 3-year program is cheaper per year.",
+   "contrast": "EAV (annual amount) vs CCR (NPV to infinity) vs LCM (repeat to a common horizon): all give the same ranking. EAV = NPV / annuity factor; CCR = EAV / R.",
+   "trap": "Comparing raw NPVs of unequal-life projects (raw-npv-unequal-lives); using the wrong N in the annuity factor (wrong-n-annuity); sign confusion with costs (smaller cost wins).",
+   "mnemonic": "Spread the NPV over the years: NPV over the annuity factor.",
+   "formula": "EAV = NPV / [(1 - (1+R)^-N)/R]",
+   "given": false,
+   "archetypes": [
+    "A13"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c09-ccr-lcm",
+   "topic": "t09-7",
+   "term": "Constant chain of replacement and lowest common multiple",
+   "definition": "CCR (NPV to infinity) values the project replaced forever: CCR = NPV x (1+R)^N / ((1+R)^N - 1) = EAV/R. The lowest common multiple (LCM) method repeats each project until the lives meet, repeating the whole NPV at each replacement.",
+   "explain": "These are two other ways to put unequal lives on the same footing. The LCM horizon for lives of 2 and 3 years is 6 years: repeat the 2-year program three times and the 3-year program twice. All three methods (EAV, CCR, LCM) rank the projects identically.",
+   "example": "Programs of $2.0M for 2 years and $2.7M for 3 years at 10%: CCR = -2.0 x 1.21/0.21 = -$11.5238M versus -2.7 x 1.331/0.331 = -$10.8571M. LCM over 6 years: -$5.0189M versus -$4.7285M; scaling by 1.1^6/(1.1^6 - 1) gives the same CCRs. The two programs have equal annual cost at 26.27% per annum.",
+   "contrast": "CCR is EAV capitalized as a perpetuity (EAV / R); LCM stops at a common horizon. Do not compare raw NPVs or stop at the shorter life.",
+   "trap": "Repeating only the cost and not the whole NPV in the LCM method; applying (1+R)^N with the wrong N; comparing signs the wrong way for costs (the less negative CCR wins).",
+   "mnemonic": "Chain the project forever: EAV over R.",
+   "formula": "CCR = NPV x (1+R)^N / ((1+R)^N - 1) = EAV / R",
+   "given": false,
+   "archetypes": [
+    "A13"
+   ],
+   "weight": 2,
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a09-01",
+   "type": "order",
+   "concept": "c09-npv-steps",
+   "title": "Order the four NPV steps",
+   "prompt": "Put the professor's four-step NPV analysis in the correct order.",
+   "items": [
+    "Work out the expected after-tax cash flows CF0, CF1, CF2, ...",
+    "Decide the discount rate and discount the cash flows back to today",
+    "If projects have unequal lives, make them equivalent with EAV or CCR",
+    "Decide: accept NPV > 0 (independent) or the highest NPV (mutually exclusive)"
+   ],
+   "explanation": "You cannot discount before you have the cash flows, you cannot compare unequal lives before you have NPVs, and the accept/reject decision comes last."
+  },
+  {
+   "id": "a09-02",
+   "type": "sort",
+   "concept": "c09-npv-rule",
+   "title": "Which rule is it?",
+   "prompt": "Sort each statement under the decision rule it describes.",
+   "buckets": [
+    "ARR",
+    "Payback",
+    "NPV",
+    "IRR"
+   ],
+   "items": [
+    {
+     "text": "Divides average profit after tax by average investment",
+     "bucket": 0
+    },
+    {
+     "text": "Built from accounting figures that may include accruals",
+     "bucket": 0
+    },
+    {
+     "text": "Averages a multi-year project into a single figure",
+     "bucket": 0
+    },
+    {
+     "text": "Needs a cutoff measured in years",
+     "bucket": 1
+    },
+    {
+     "text": "Ignores all income after the recovery date",
+     "bucket": 1
+    },
+    {
+     "text": "Cumulates the raw cash flows until the cost is back",
+     "bucket": 1
+    },
+    {
+     "text": "Equals the change in shareholder wealth",
+     "bucket": 2
+    },
+    {
+     "text": "Expressed in dollars of value added today",
+     "bucket": 2
+    },
+    {
+     "text": "Does not consider the amount of capital tied up",
+     "bucket": 2
+    },
+    {
+     "text": "Same idea as the yield to maturity on a bond",
+     "bucket": 3
+    },
+    {
+     "text": "Can have several answers when the cash flows change sign",
+     "bucket": 3
+    },
+    {
+     "text": "Accept if it is greater than R (conventional flows)",
+     "bucket": 3
+    }
+   ],
+   "explanation": "ARR and payback are accounting/relative rules; NPV tracks shareholder wealth and ignores capital tied up; IRR is the project's own return and breaks down for unconventional flows."
+  },
+  {
+   "id": "a09-03",
+   "type": "match",
+   "concept": "c09-npv-rule",
+   "title": "Match the rule to its decision criterion",
+   "prompt": "Match each decision rule to the condition under which it says accept.",
+   "pairs": [
+    {
+     "left": "ARR (ROC)",
+     "right": "Compares favourably with the ROC of other projects or a target (relative only)"
+    },
+    {
+     "left": "Payback",
+     "right": "Shorter than a preset limit in years"
+    },
+    {
+     "left": "Discounted payback",
+     "right": "Present values recover the cost sooner than the preset limit"
+    },
+    {
+     "left": "NPV",
+     "right": "Greater than zero"
+    },
+    {
+     "left": "IRR",
+     "right": "Greater than R, for conventional cash flows"
+    },
+    {
+     "left": "PI",
+     "right": "Greater than 1"
+    }
+   ],
+   "explanation": "Only NPV, IRR and PI give an absolute decision against a market benchmark; ARR and the payback rules are relative comparisons against internal limits."
+  },
+  {
+   "id": "a09-04",
+   "type": "order",
+   "concept": "c09-payback",
+   "title": "Order the payback steps",
+   "prompt": "Put the steps for calculating a payback period with uneven cash flows in order.",
+   "items": [
+    "Write the cumulative cash flows year by year",
+    "Find the year in which the cumulative total first covers the initial investment",
+    "Divide the amount still unrecovered at the start of that year by that year's cash flow",
+    "Add the fraction to the number of whole years completed before that year"
+   ],
+   "explanation": "Payback = whole years before recovery + (remaining / next year's flow). Reversing the divisor to the previous year's flow is a classic slip."
+  },
+  {
+   "id": "a09-05",
+   "type": "sort",
+   "concept": "c09-pi",
+   "title": "Accept or reject?",
+   "prompt": "Sort each result into the decision it implies (conventional cash flows, firm's required return as stated).",
+   "buckets": [
+    "Accept",
+    "Reject"
+   ],
+   "items": [
+    {
+     "text": "NPV = +$3,200",
+     "bucket": 0
+    },
+    {
+     "text": "PI = 1.08",
+     "bucket": 0
+    },
+    {
+     "text": "IRR = 14% with R = 11%",
+     "bucket": 0
+    },
+    {
+     "text": "Discounted payback 3.4 years on a 5-year life",
+     "bucket": 0
+    },
+    {
+     "text": "NPV = -$450",
+     "bucket": 1
+    },
+    {
+     "text": "PI = 0.97",
+     "bucket": 1
+    },
+    {
+     "text": "IRR = 9% with R = 12%",
+     "bucket": 1
+    },
+    {
+     "text": "Payback 4.2 years against a 3-year limit",
+     "bucket": 1
+    }
+   ],
+   "explanation": "Accept on NPV > 0, PI > 1, IRR > R (conventional flows), or a discounted payback inside the life. A payback longer than the preset limit fails the payback screen."
+  },
+  {
+   "id": "a09-06",
+   "type": "match",
+   "concept": "c09-multiple-irr",
+   "title": "Cash-flow pattern and its IRR problem",
+   "prompt": "Match each cash-flow pattern to what it implies for the IRR.",
+   "pairs": [
+    {
+     "left": "-, +, +, +  (conventional)",
+     "right": "At most one IRR; IRR > R agrees with NPV > 0"
+    },
+    {
+     "left": "-, +, -  (reclamation at the end)",
+     "right": "Up to two IRRs; NPV at R decides"
+    },
+    {
+     "left": "-, +, +, -, +, +  (a maintenance year)",
+     "right": "Up to three IRRs"
+    },
+    {
+     "left": "+, -  (inflow first, outflow later)",
+     "right": "Financing type: accept only if IRR < R"
+    },
+    {
+     "left": "-500,000; +800,000; -400,000",
+     "right": "No real IRR; NPV is negative at every rate"
+    }
+   ],
+   "explanation": "The number of IRRs is limited by the sign changes; whenever the pattern is not conventional, rely on the NPV at the required return."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "f09-npv",
+   "name": "Net present value",
+   "formula": "NPV = CF0 + CF1/(1+R) + CF2/(1+R)^2 + ... + CFN/(1+R)^N",
+   "given": true,
+   "concepts": [
+    "c09-npv-rule",
+    "c09-npv-steps"
+   ],
+   "when": "Every discounted-cash-flow decision: CF0 is the (negative) outlay at t = 0 and the rest is the PV of the inflows.",
+   "trap": "CF0 is negative and is not discounted; Excel's NPV() is a PV() that discounts the first value one period."
+  },
+  {
+   "id": "f09-pi",
+   "name": "Profitability index",
+   "formula": "PI = PV of inflows / PV of outflows = 1 + NPV / outlay",
+   "given": true,
+   "concepts": [
+    "c09-pi",
+    "c09-pi-vs-npv",
+    "c09-capital-rationing"
+   ],
+   "when": "To rank independent projects under capital rationing; accept if PI > 1.",
+   "trap": "It is 1-based (PI 0.98 is a reject); NPV/outlay is the 0-based variant, and PI can mis-rank mutually exclusive projects of different scale."
+  },
+  {
+   "id": "f09-irr",
+   "name": "Internal rate of return",
+   "formula": "0 = CF0 + CF1/(1+IRR) + ... + CFN/(1+IRR)^N",
+   "given": false,
+   "concepts": [
+    "c09-irr-rule",
+    "c09-npv-profile",
+    "c09-multiple-irr",
+    "c09-financing-flows"
+   ],
+   "when": "Find the project's own return with the calculator CF worksheet; accept if IRR > R for conventional flows.",
+   "trap": "Multiple IRRs with sign changes and a reversed rule for financing-type flows; the calculator shows just one root."
+  },
+  {
+   "id": "f09-crossover",
+   "name": "Crossover rate",
+   "formula": "Crossover = IRR of the difference in cash flows (A - B)",
+   "given": false,
+   "concepts": [
+    "c09-crossover",
+    "c09-ranking-conflict"
+   ],
+   "when": "Mutually exclusive projects whose NPV ranking changes with R.",
+   "trap": "Subtract year by year including CF0; then state which project wins below and above the crossover."
+  },
+  {
+   "id": "f09-payback",
+   "name": "Payback period",
+   "formula": "Payback = years before recovery + (amount still to recover) / (next year's cash flow)",
+   "given": false,
+   "concepts": [
+    "c09-payback"
+   ],
+   "when": "A quick screen of how fast the investment is recovered; accept if shorter than a preset limit.",
+   "trap": "Do not count the whole recovery year or divide by the previous year's flow; if the total inflow is below the cost, the project never pays back."
+  },
+  {
+   "id": "f09-disc-payback",
+   "name": "Discounted payback",
+   "formula": "accumulate CF_t/(1+R)^t until the total equals I0; fraction = PV still to recover / PV of next flow",
+   "given": false,
+   "concepts": [
+    "c09-discounted-payback"
+   ],
+   "when": "The payback screen with the time value of money included.",
+   "trap": "Both the numerator and the denominator of the fraction must be present values."
+  },
+  {
+   "id": "f09-arr",
+   "name": "Accounting rate of return (ROC)",
+   "formula": "ARR = average annual profit after tax / [(I0 + book value at end)/2]",
+   "given": false,
+   "concepts": [
+    "c09-arr"
+   ],
+   "when": "Accounting screen comparing a project's return on capital with other projects.",
+   "trap": "Use profit, not cash flow, and divide by the average investment, not I0; do not compare with the discount rate."
+  },
+  {
+   "id": "f09-eav",
+   "name": "Equivalent annual value",
+   "formula": "EAV = NPV / [(1 - (1+R)^-N)/R]",
+   "given": false,
+   "concepts": [
+    "c09-eav"
+   ],
+   "when": "Compare mutually exclusive projects with unequal lives that will be replaced (EAB if benefits, EAC if costs).",
+   "trap": "Use each project's own N in the annuity factor; for costs the smaller annual cost wins."
+  },
+  {
+   "id": "f09-ccr",
+   "name": "Constant chain of replacement (NPV to infinity)",
+   "formula": "CCR = NPV x (1+R)^N / ((1+R)^N - 1) = EAV / R",
+   "given": false,
+   "concepts": [
+    "c09-ccr-lcm"
+   ],
+   "when": "Same comparison as EAV, replacing each project forever; consistent with the LCM method.",
+   "trap": "In the LCM method repeat the whole NPV at each replacement; CCR and EAV always rank the projects the same way."
+  }
+ ]
+}

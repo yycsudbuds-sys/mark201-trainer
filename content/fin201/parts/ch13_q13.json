@@ -1,0 +1,670 @@
+[
+ {
+  "id": "q13-751",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Dragon Pass Rail Terminals is evaluating a new project with a beta of 1.35. T-bills yield 3.2% per annum and the market risk premium is 5.8% per annum. Using CAPM, what return must the project earn to be acceptable (its required return)? Answer in % per annum.",
+  "answer": 11.03,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3.2+1.35*5.8",
+  "steps": [
+   {
+    "label": "Project risk premium β × MRP",
+    "value": 7.83,
+    "check": "1.35*5.8",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required return R_F + β × MRP",
+    "value": 11.03,
+    "check": "3.2+1.35*5.8",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Required return = R_F + β_project × (market risk premium)",
+   "= 3.2 + 1.35 × 5.8 = 3.2 + 7.83 = 11.03% per annum",
+   "The project must earn at least 11.03% (its cost of capital) to beat what the market offers at the same beta"
+  ],
+  "keystrokes": [
+   "1.35 × 5.8 = 7.83",
+   "+ 3.2 = 11.03"
+  ],
+  "errors": [
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 5.8% as the market return",
+    "value": 6.71,
+    "check": "3.2+1.35*(5.8-3.2)",
+    "explain": "The market risk premium is already E[R_M] − R_F; subtracting R_F again understates the hurdle."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left out the risk-free rate",
+    "value": 7.83,
+    "check": "1.35*5.8",
+    "explain": "7.83% is only the reward for systematic risk. The hurdle also includes the time value of money."
+   },
+   {
+    "id": "risk-free-only",
+    "label": "Used the risk-free rate as the hurdle",
+    "value": 3.2,
+    "check": "3.2",
+    "explain": "A risky project cannot be discounted at the T-bill rate: shareholders demand a premium for its beta."
+   }
+  ],
+  "explanation": "The SML gives the going rate for bearing risk. A project with β = 1.35 must offer at least 3.2 + 1.35 × 5.8 = 11.03%, otherwise shareholders do better investing in the market at the same systematic risk.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-752",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Keystone Logistics is considering a project that costs $480,000 and returns $128,000 at the end of each of the next 5 years. The company's overall beta is 0.90, but this project's beta is 1.40. T-bills yield 3.4% and the market risk premium is 5.5% per annum. What is the project's NPV at its CAPM required return? Answer in $.",
+  "answer": -8112.82,
+  "unit": "$",
+  "tolerance": {
+   "abs": 5
+  },
+  "check": "128000*(1-(1+0.111)**(-5))/0.111-480000",
+  "steps": [
+   {
+    "label": "Project required return R_F + β × MRP",
+    "value": 11.1,
+    "check": "3.4+1.4*5.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor, 5 years",
+    "value": 3.6866,
+    "check": "(1-(1+0.111)**(-5))/0.111",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "PV of inflows",
+    "value": 471887.18,
+    "check": "128000*(1-(1+0.111)**(-5))/0.111",
+    "unit": "$",
+    "tolerance": {
+     "abs": 5
+    }
+   },
+   {
+    "label": "NPV = PV of inflows − cost",
+    "value": -8112.82,
+    "check": "128000*(1-(1+0.111)**(-5))/0.111-480000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 5
+    }
+   }
+  ],
+  "solution": [
+   "Required return = 3.4 + 1.40 × 5.5 = 3.4 + 7.7 = 11.10% (use the project's beta, not the firm's)",
+   "Annuity factor = (1 − 1.111⁻⁵)/0.111 = 3.6866; PV of inflows = 128,000 × 3.6866 = $471,887.18",
+   "NPV = 471,887.18 − 480,000 = −$8,112.82: reject (the project's IRR of about 10.4% is below 11.10%)"
+  ],
+  "keystrokes": [
+   "CF0 = −480000, C01 = 128000, F01 = 5, NPV I = 11.1, CPT → −8,112.82",
+   "or N = 5, I/Y = 11.1, PMT = 128000, CPT PV = 471,887.18"
+  ],
+  "errors": [
+   {
+    "id": "firm-wide-beta",
+    "label": "Discounted at the firm's overall beta (0.90)",
+    "value": 26386.95,
+    "check": "128000*(1-(1+0.0835)**(-5))/0.0835-480000",
+    "explain": "Using β = 0.90 gives an 8.35% rate and a positive NPV, so the project is wrongly accepted. The discount rate must reflect the project's own, higher beta."
+   },
+   {
+    "id": "mrp-as-discount-rate",
+    "label": "Discounted at the market risk premium (5.5%)",
+    "value": 66596.41,
+    "check": "128000*(1-(1+0.055)**(-5))/0.055-480000",
+    "explain": "5.5% is only the premium; the required return adds R_F and scales the premium by β."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 5.5% as the market return",
+    "value": 54231.81,
+    "check": "128000*(1-(1+0.0634)**(-5))/0.0634-480000",
+    "explain": "That gives a rate of 3.4 + 1.40 × (5.5 − 3.4) = 6.34%, far too low."
+   }
+  ],
+  "explanation": "The discount rate comes from the SML at the project's own beta: 11.10%. At that rate the PV of the inflows ($471,887) is below the $480,000 cost, so NPV ≈ −$8,113. Using the firm's lower beta (8.35%) would give +$26,387 and accept a project that destroys value.",
+  "source": "generated",
+  "ref": "TB 13.8 / L05A"
+ },
+ {
+  "id": "q13-753",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Sundre Utilities will pay a dividend of $1.85 per share next year, and dividends are expected to grow 4% per year forever. The stock's beta is 0.90, T-bills yield 3.1% and the market risk premium is 6.2% per annum. Using CAPM for the required return, what is the share price? Answer in $.",
+  "answer": 39.53,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.85/((3.1+0.9*6.2)/100-0.04)",
+  "steps": [
+   {
+    "label": "Required return R = R_F + β × MRP",
+    "value": 8.68,
+    "check": "3.1+0.9*6.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 39.53,
+    "check": "1.85/((3.1+0.9*6.2)/100-0.04)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "R = R_F + β × MRP = 3.1 + 0.90 × 6.2 = 3.1 + 5.58 = 8.68%",
+   "P0 = D1/(R − g) = 1.85/(0.0868 − 0.04) = 1.85/0.0468 = $39.53"
+  ],
+  "keystrokes": [
+   "0.9 × 6.2 + 3.1 = 8.68",
+   "8.68 ÷ 100 − 0.04 = 0.0468",
+   "1.85 ÷ 0.0468 = 39.53"
+  ],
+  "errors": [
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R in the denominator",
+    "value": 14.59,
+    "check": "1.85/((3.1+0.9*6.2)/100+0.04)",
+    "explain": "Gordon growth divides by R − g, not R + g."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.2% as the market return",
+    "value": 97.88,
+    "check": "1.85/((3.1+0.9*(6.2-3.1))/100-0.04)",
+    "explain": "6.2% is already the premium, so the required return is 8.68%, not 5.89%."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left R_F out of the required return",
+    "value": 117.09,
+    "check": "1.85/((0.9*6.2)/100-0.04)",
+    "explain": "The required return on equity includes the risk-free rate."
+   }
+  ],
+  "explanation": "CAPM supplies the required return that investors use to discount a stock's dividends: the cost of equity is 8.68%. The Gordon growth model then values the stock at $1.85/(0.0868 − 0.04) = $39.53.",
+  "source": "generated",
+  "ref": "TB 13.8 / L04 s21"
+ },
+ {
+  "id": "q13-754",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Ridge Foods has a packaged-foods division (beta 0.70) and a new e-commerce venture (beta 1.80). T-bills yield 3.0% and the market risk premium is 6.0% per annum. What hurdle rate should the e-commerce venture's projects face? Answer in % per annum.",
+  "answer": 13.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3+1.8*6",
+  "steps": [
+   {
+    "label": "Venture risk premium β × MRP",
+    "value": 10.8,
+    "check": "1.8*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Hurdle rate R_F + β × MRP",
+    "value": 13.8,
+    "check": "3+1.8*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Use the beta of the project's own risk class: e-commerce, β = 1.80",
+   "Hurdle = 3.0 + 1.80 × 6.0 = 3.0 + 10.8 = 13.8% per annum",
+   "(Packaged foods would face 3.0 + 0.70 × 6.0 = 7.2%.)"
+  ],
+  "keystrokes": [
+   "1.8 × 6 = 10.8",
+   "+ 3 = 13.8"
+  ],
+  "errors": [
+   {
+    "id": "firm-wide-beta",
+    "label": "Used the market's own rate (β = 1.00) as a one-size-fits-all hurdle",
+    "value": 9.0,
+    "check": "3+1.0*6",
+    "explain": "A single 9.0% hurdle (the market's return) is too low for the risky venture and too high for the safe division."
+   },
+   {
+    "id": "wrong-division-beta",
+    "label": "Used the packaged-foods beta",
+    "value": 7.2,
+    "check": "3+0.7*6",
+    "explain": "The venture's projects carry e-commerce risk, so use its beta, not the other division's."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.0% as the market return",
+    "value": 8.4,
+    "check": "3+1.8*(6-3)",
+    "explain": "6.0% is already the premium."
+   }
+  ],
+  "explanation": "Required return depends on the risk of the project, not on the company that owns it. The e-commerce venture has β = 1.80, so its hurdle is 13.8%. Applying a blended 9.0% would accept risky projects that earn less than the market offers for that beta.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-755",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project is expected to earn an IRR of 10.1% per annum with conventional cash flows. T-bills yield 3.0% and the market risk premium is 6.5% per annum. Up to what project beta is it acceptable (IRR at least the SML return)? Give beta to 2 decimals.",
+  "answer": 1.09,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(10.1-3)/6.5",
+  "steps": [
+   {
+    "label": "Excess over the risk-free rate",
+    "value": 7.1,
+    "check": "10.1-3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Break-even beta = excess ÷ MRP",
+    "value": 1.09,
+    "check": "(10.1-3)/6.5",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Acceptable if IRR ≥ R_F + β × MRP, so β ≤ (IRR − R_F)/MRP",
+   "= (10.1 − 3.0)/6.5 = 7.1/6.5 = 1.092",
+   "Accept if the project's beta is below about 1.09; reject if above"
+  ],
+  "keystrokes": [
+   "10.1 − 3 = 7.1",
+   "÷ 6.5 = 1.09"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the whole IRR by the premium",
+    "value": 1.55,
+    "check": "10.1/6.5",
+    "explain": "Subtract R_F first: the hurdle is R_F + β × MRP."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Subtracted R_F from the premium",
+    "value": 2.03,
+    "check": "(10.1-3)/(6.5-3)",
+    "explain": "6.5% is already the market risk premium."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio",
+    "value": 0.92,
+    "check": "6.5/(10.1-3)",
+    "explain": "The break-even beta is the project's excess return divided by the market's."
+   }
+  ],
+  "explanation": "Setting IRR equal to the SML return gives the break-even beta, 1.09. Any project with this IRR and a lower beta plots above the SML and has a positive NPV; with a higher beta it plots below and should be rejected.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-756",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A new project has a beta of 1.15. T-bills yield 2.9% per annum and the market risk premium is 6.1% per annum. What is the project's CAPM required return?",
+  "options": [
+   "6.58%",
+   "7.02%",
+   "9.92%",
+   "9.00%"
+  ],
+  "answer": 2,
+  "explanation": "Required return = 2.9 + 1.15 × 6.1 = 2.9 + 7.015 = 9.92%. 6.58% = 2.9 + 1.15 × (6.1 − 2.9) subtracts R_F from a premium that already excludes it. 7.02% = 1.15 × 6.1 drops the risk-free rate. 9.00% = 2.9 + 6.1 forgets to scale the premium by beta.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-757",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "T-bills yield 3% and the market risk premium is 6%. Project A has beta 0.5 and IRR 8.5%; Project B has beta 1.2 and IRR 11.0%; Project C has beta 1.8 and IRR 13.0%. All have conventional cash flows. Which projects should be accepted?",
+  "options": [
+   "A and B only",
+   "B and C only",
+   "C only",
+   "A, B and C"
+  ],
+  "answer": 0,
+  "explanation": "Hurdles: A = 3 + 0.5 × 6 = 6.0% (8.5 beats it); B = 3 + 1.2 × 6 = 10.2% (11.0 beats it); C = 3 + 1.8 × 6 = 13.8% (13.0 falls short). 'B and C only' is what a single firm-wide hurdle at the market's 9% (β = 1) would give; 'C only' picks the highest IRR; 'A, B and C' compares every IRR with R_F alone.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-758",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the Chapter 13 preview of the cost of capital, the appropriate discount rate for a new project is",
+  "options": [
+   "the interest rate the firm pays on its bank loan",
+   "the risk-free rate, because shareholders can always buy T-bills",
+   "the firm's average accounting return on equity",
+   "the expected return that financial markets offer on investments with the same systematic risk"
+  ],
+  "answer": 3,
+  "explanation": "Shareholders can always invest for themselves in the market, so a project must offer at least what the market offers for the same beta: the SML return. That minimum required return is the project's cost of capital.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-759",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The return R_F + β (E[R_M] − R_F) is called what from an investor's perspective, and what from the firm's financing perspective?",
+  "options": [
+   "Cost of capital; required rate of return",
+   "Required rate of return; cost of capital",
+   "Historical return; dividend yield",
+   "Internal rate of return; payback period"
+  ],
+  "answer": 1,
+  "explanation": "The same number looks different from each side of the market: investors require it as compensation for risk, and the firm must pay (earn) it on the capital it raises (invests). All investments of similar risk should offer a similar return.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q13-760",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Comparing a project's IRR with the SML return for its beta is effectively which Chapter 9 decision rule?",
+  "options": [
+   "The payback rule with a cutoff chosen by management",
+   "The accounting rate of return rule",
+   "The IRR rule, with the SML return for the project's beta as the hurdle rate",
+   "The profitability index rule with R_F as the discount rate"
+  ],
+  "answer": 2,
+  "explanation": "Accepting a project when its expected return beats what the market offers for the same risk is the IRR criterion, now with a principled hurdle rate from the SML. Payback, ARR and a risk-free PI do not use the market's price of risk.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-761",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Cascade Energy's overall beta is 1.0, but a proposed LNG terminal is much riskier than its average business. Which discount rate is appropriate for the terminal?",
+  "options": [
+   "The SML return for the terminal's own beta, which is above the firm's average rate",
+   "The SML return for the firm's overall beta of 1.0",
+   "The risk-free rate",
+   "The firm's average return on past projects"
+  ],
+  "answer": 0,
+  "explanation": "Required return depends on the risk of the project, not on who owns it. A higher-beta project must meet a higher hurdle. Using the firm-wide rate understates the hurdle for risky projects and overstates it for safe ones.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-762",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following does NOT affect a project's CAPM required return?",
+  "options": [
+   "The risk-free rate",
+   "The market risk premium",
+   "The project's beta",
+   "The project's unique, diversifiable risk"
+  ],
+  "answer": 3,
+  "explanation": "The required return is R_F + β (E[R_M] − R_F). Diversifiable risk is not rewarded, so it does not enter the hurdle rate.",
+  "source": "generated",
+  "ref": "TB 13.7-13.8"
+ },
+ {
+  "id": "q13-763",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why must a new project beat the SML return for its beta to benefit shareholders?",
+  "options": [
+   "The firm must first cover the interest on its bank loans before shareholders are paid.",
+   "Shareholders can earn that return in the market at the same beta, so the project must offer more.",
+   "Accounting profit must exceed the risk-free rate for the project to add any value.",
+   "The SML return is guaranteed by the market, so it is the least any project can earn."
+  ],
+  "answer": 1,
+  "explanation": "The SML return is the opportunity cost of the firm's capital: what investors forgo by leaving money in the project instead of the market. Only a project that earns more than that has a positive NPV.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-764",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project with conventional cash flows has beta 1.35 and an IRR of 12.4%. The SML return for beta 1.35 is 11.03%. What does this tell you?",
+  "options": [
+   "Reject: an IRR well above the required return signals too much risk.",
+   "Accept only if the IRR exceeds the risk-free rate of 3.2%.",
+   "Accept: it plots above the SML, so its NPV is positive.",
+   "No decision is possible without the payback period."
+  ],
+  "answer": 2,
+  "explanation": "A project plotting above the SML offers more than financial markets pay for the same beta, so discounting at 11.03% gives NPV > 0. The risk is already in the hurdle rate; comparing IRR with R_F alone would accept almost anything.",
+  "source": "generated",
+  "ref": "TB 13.8a"
+ },
+ {
+  "id": "q13-765",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A division proposes a project with conventional cash flows and an IRR of 8.6%. The SML return for the project's beta is 9.3%. What is the right decision, and why?",
+  "options": [
+   "Reject: it plots below the SML, so its NPV is negative.",
+   "Accept: 8.6% is well above the risk-free rate.",
+   "Accept: any positive IRR adds value.",
+   "Reject only if the payback period is long."
+  ],
+  "answer": 0,
+  "explanation": "The project earns 0.7 points less than the market offers for its risk. Discounting at 9.3% gives NPV < 0, so it would reduce shareholder wealth.",
+  "source": "generated",
+  "ref": "TB 13.8a"
+ },
+ {
+  "id": "q13-766",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Maple Ridge Foods has a stable packaged-foods division (beta 0.7) and a new e-commerce unit (beta 1.8) but uses one firm-wide hurdle rate based on a beta of 1.0. What is the likely result?",
+  "options": [
+   "It will tend to accept good low-beta projects and reject bad high-beta ones.",
+   "It will accept and reject the same projects as using each division's own beta.",
+   "It will reject every project, because the hurdle is too high for both divisions.",
+   "It will tend to reject good low-beta projects and accept bad high-beta ones."
+  ],
+  "answer": 3,
+  "explanation": "Against a single hurdle, safe projects (whose true hurdle is lower) look worse than they are, and risky projects (whose true hurdle is higher) look better than they are. Over time the firm drifts toward risk.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-767",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which expression gives the required return for a project?",
+  "options": [
+   "R_F + β_firm × (E[R_M] − R_F)",
+   "R_F + β_project × (E[R_M] − R_F)",
+   "E[R_M], for every project",
+   "R_F + σ_project × (E[R_M] − R_F)"
+  ],
+  "answer": 1,
+  "explanation": "The project's own systematic risk goes into the formula. The firm's beta is right only for projects with the firm's average risk, E[R_M] is right only when β = 1, and σ is not the risk measure the market rewards.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-768",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The minimum required return on a new investment is called its _____.",
+  "options": [
+   "internal rate of return",
+   "profitability index",
+   "cost of capital",
+   "payback period"
+  ],
+  "answer": 2,
+  "explanation": "The cost of capital is the return the firm must earn on a project just to break even; it is the opportunity cost of the capital invested, and CAPM tells us how to estimate it from the project's beta.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-769",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lakeland Shipping is valuing a low-risk project with a beta of 0.80. T-bills yield 3.4% per annum and the market risk premium is 6.2% per annum. What discount rate should it use?",
+  "options": [
+   "8.36%",
+   "5.64%",
+   "4.96%",
+   "9.60%"
+  ],
+  "answer": 0,
+  "explanation": "Required return = 3.4 + 0.80 × 6.2 = 3.4 + 4.96 = 8.36%. 5.64% = 3.4 + 0.80 × (6.2 − 3.4) subtracts R_F from a premium that already excludes it. 4.96% = 0.80 × 6.2 drops the risk-free rate. 9.60% = 3.4 + 6.2 forgets to scale the premium by beta.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ },
+ {
+  "id": "q13-770",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "A project with a positive NPV would plot above the security market line.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Positive NPV means the project earns more than the market offers for its risk, so its expected return exceeds the SML return for its beta and it plots above the line.",
+  "source": "generated",
+  "ref": "TB 13.8a"
+ },
+ {
+  "id": "q13-771",
+  "concept": "c13-cost-of-capital-link",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A risky project should be discounted at the risk-free rate because T-bills are the cheapest source of money.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "The discount rate reflects the project's risk, not the cheapest funding available. A risky project must be discounted at R_F + β × MRP; the risk-free rate would accept almost every project.",
+  "source": "generated",
+  "ref": "TB 13.8"
+ }
+]

@@ -251,7 +251,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
   // ---- public reactions (siege)
   root.hit = () => {
     if (!siege) return root.advance(0);
-    S.hits++; const w = S.wall; const cx = w.x0 + 30 + R() * (S.LW - w.x0 - 60); const cy = w.top + 10 + R() * 70;
+    S.hits++; const w = S.wall; if (!w) return; const cx = w.x0 + 30 + R() * (S.LW - w.x0 - 60); const cy = w.top + 10 + R() * 70;
     const useBolt = S.hits % 2 === 1;
     const from = useBolt ? { x: S.ballista.x + 30, y: 152 } : { x: S.onager.x + 10, y: 150 };
     const dt = useBolt ? 0.42 : 0.9;
@@ -265,7 +265,7 @@ export function createBattle({ province = 'default', mode = 'field', needed = 0,
     if (!siege) return root.setback();
     S.red = 1; shake(4); S.testudoUntil = S.t + 1.4;
     const w = S.wall;
-    for (let i = 0; i < 14; i++) { const sx = w.x0 + 20 + R() * (S.LW - w.x0 - 40); const tx = 40 + R() * (S.front + 40); const dt = 0.8 + R() * 0.3; S.projs.push({ kind: 'arrow', x: sx, y: w.top - 10, vx: (tx - sx) / dt, vy: -(200 - (w.top - 10)) / dt - 0.5 * 600 * dt, g: 600, len: 14, t: 0, delay: R() * 0.25, onHit: (p) => dust(p.x, 200, 2, 0.6) }); }
+    if (!w) return; for (let i = 0; i < 14; i++) { const sx = w.x0 + 20 + R() * (S.LW - w.x0 - 40); const tx = 40 + R() * (S.front + 40); const dt = 0.8 + R() * 0.3; S.projs.push({ kind: 'arrow', x: sx, y: w.top - 10, vx: (tx - sx) / dt, vy: -(200 - (w.top - 10)) / dt - 0.5 * 600 * dt, g: 600, len: 14, t: 0, delay: R() * 0.25, onHit: (p) => dust(p.x, 200, 2, 0.6) }); }
     kick();
   };
   root.breach = () => {

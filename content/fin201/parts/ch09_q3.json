@@ -1,0 +1,765 @@
+[
+ {
+  "id": "q09-062",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "Which sequence matches the professor's four-step analysis using NPV?",
+  "options": [
+   "Choose the discount rate; decide accept or reject; estimate the cash flows; equalize unequal lives",
+   "Estimate the after-tax cash flows; choose the discount rate and discount to today; equalize unequal lives; decide accept or reject",
+   "Estimate the cash flows; compute the IRR; rank by IRR; decide accept or reject",
+   "Equalize unequal lives; estimate the cash flows; decide accept or reject; choose the discount rate"
+  ],
+  "answer": 1,
+  "explanation": "Step 1 is the expected after-tax cash flows CF0, CF1, ...; step 2 is the discount rate R (or K) and discounting; step 3 is to make unequal lives comparable (EAV, CCR); step 4 is the accept/reject decision.",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-063",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the four-step NPV analysis, step 3 (\"if comparing projects with unequal lives\") asks you to:",
+  "options": [
+   "make the lives equivalent, for example with EAV or a constant chain of replacement (CCR)",
+   "discount every cash flow at the IRR rather than at the required return R",
+   "drop the cash flows that occur after the shorter project has ended",
+   "choose the project with the longer life, because it earns more"
+  ],
+  "answer": 0,
+  "explanation": "NPVs of projects with different lives are not comparable as they stand, so step 3 puts them on a common basis (EAV, CCR/NPV to infinity or the lowest common multiple of the lives).",
+  "source": "generated",
+  "ref": "L05A s19, s36"
+ },
+ {
+  "id": "q09-064",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Two mutually exclusive machines at Drumheller Mining cost the same but one lasts 3 years and the other 5. The analyst first converts each NPV into an equivalent annual value before choosing. Which step of the NPV sequence is this?",
+  "options": [
+   "Step 1: estimate the after-tax cash flows",
+   "Step 2: choose the discount rate",
+   "Step 4(a): accept if NPV is positive",
+   "Step 3: equalize unequal lives"
+  ],
+  "answer": 3,
+  "explanation": "Converting NPVs to EAVs (or using a constant chain of replacement) is how step 3 puts projects with unequal lives on the same footing before the accept/reject decision in step 4.",
+  "source": "generated",
+  "ref": "L05A s19, s36"
+ },
+ {
+  "id": "q09-065",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the step-4 decision differ between independent and mutually exclusive projects?",
+  "options": [
+   "Independent: accept only the highest-NPV project; mutually exclusive: accept every project with a positive NPV",
+   "Independent: accept the highest IRR; mutually exclusive: accept the shortest payback",
+   "Independent: accept every project with NPV > 0; mutually exclusive: accept only the highest NPV (least negative if one must be taken)",
+   "There is no difference: both accept the single project with the highest NPV"
+  ],
+  "answer": 2,
+  "explanation": "Independent projects do not affect each other, so each is judged on NPV > 0 alone. Mutually exclusive projects compete: only one can be taken, so choose the largest positive NPV.",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-066",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT one of the four steps in the professor's NPV sequence?",
+  "options": [
+   "rank the projects by their accounting rate of return",
+   "work out the expected after-tax cash flows",
+   "decide the discount rate and discount the cash flows to today",
+   "decide whether to accept or reject each project"
+  ],
+  "answer": 0,
+  "explanation": "The NPV sequence uses cash flows, a discount rate, equalized lives where needed, and the NPV-based decision. Ranking by ARR belongs to a different (accounting) rule.",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-067",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is step 1, estimating the after-tax cash flows, described as \"not necessarily easy\"?",
+  "options": [
+   "the cash flows must first be converted into accounting profit before discounting",
+   "NPV is only as good as its forecasts: flows must be incremental, after tax and dated correctly",
+   "the cash flows should be measured before tax so that taxes do not distort them",
+   "the cash flows must be averaged over the life of the project before use"
+  ],
+  "answer": 1,
+  "explanation": "Forecasting incremental after-tax cash flows (and choosing R) is the hard part of NPV; the arithmetic afterwards is mechanical. Accounting profit and averaging belong to the ARR, not NPV.",
+  "source": "generated",
+  "ref": "L05A s19; SM 9-11"
+ },
+ {
+  "id": "q09-068",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A mine must choose one of three mutually exclusive plans for restoring land that it is legally required to remediate. Their NPVs are -$840,000, -$615,000 and -$1,120,000. What does the NPV sequence say?",
+  "options": [
+   "Reject all three, because every one of the NPVs is negative",
+   "Take the plan with NPV = -$1,120,000, because it spends the most money",
+   "Take all three plans, because they are independent of each other",
+   "Take the plan with NPV = -$615,000, the least negative, as one plan must be done"
+  ],
+  "answer": 3,
+  "explanation": "Step 4(b): accept the highest NPV, or the least negative if you must take one. Forced projects (such as environmental repairs) are the case where a negative NPV is accepted.",
+  "source": "generated",
+  "ref": "L05A s17, s19"
+ },
+ {
+  "id": "q09-069",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Capilano Marine has three independent projects with NPVs of +$120,000, +$45,000 and -$30,000, and enough funds for all of them. Which should it accept?",
+  "options": [
+   "Only the +$120,000 project, because it has the highest NPV",
+   "All three, because the total NPV is positive",
+   "The +$120,000 and +$45,000 projects only",
+   "None, because they cannot all have positive NPVs"
+  ],
+  "answer": 2,
+  "explanation": "For independent projects the rule is NPV > 0 for each one separately. Accept +$120,000 and +$45,000 and reject -$30,000. (With limited funds this changes: capital rationing.)",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-070",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "For two mutually exclusive projects, NPV(P) = $15,154 and NPV(Q) = $14,523 at R = 10%, while IRR(P) = 18.9% and IRR(Q) = 23.2%. What does step 4(b) tell the firm to do?",
+  "options": [
+   "Accept Q, because it has the higher IRR and so the higher return",
+   "Accept P, because mutually exclusive projects are ranked by NPV",
+   "Accept both, because both have positive NPVs at 10%",
+   "Accept neither, because the two IRRs differ from each other"
+  ],
+  "answer": 1,
+  "explanation": "Step 4(b) uses NPV for mutually exclusive projects. The higher IRR of Q reflects its smaller scale; P adds $631 more to shareholder wealth.",
+  "source": "generated",
+  "ref": "L05A s19, s34"
+ },
+ {
+  "id": "q09-071",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Mutually exclusive projects at Sherwood Park Autobody: P costs $90,000 and returns $36,000, $44,000 and $48,000 in years 1 to 3; Q costs $60,000 and returns $29,000, $31,000 and $30,000. Both have 3-year lives and R = 10% per annum. Enter the NPV of the project that should be accepted.",
+  "answer": 15154.02,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-90000+36000/(1+0.1)+44000/(1+0.1)**2+48000/(1+0.1)**3",
+  "steps": [
+   {
+    "label": "NPV of P",
+    "value": 15154.02,
+    "check": "-90000+36000/(1+0.1)+44000/(1+0.1)**2+48000/(1+0.1)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Q",
+    "value": 14522.92,
+    "check": "-60000+29000/(1+0.1)+31000/(1+0.1)**2+30000/(1+0.1)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV(P) = -90,000 + 36,000/1.10 + 44,000/1.10^2 + 48,000/1.10^3 = +$15,154.02.",
+   "NPV(Q) = -60,000 + 29,000/1.10 + 31,000/1.10^2 + 30,000/1.10^3 = +$14,522.92.",
+   "Same lives, so no equalizing is needed (step 3 skipped). Step 4(b): both positive but only one can be taken, so accept the higher NPV: P, at $15,154.02."
+  ],
+  "keystrokes": [
+   "CF0 = -90000, C01 = 36000, F01 = 1, C02 = 44000, F02 = 1, C03 = 48000, F03 = 1, NPV: I = 10, CPT -> 15,154.02",
+   "CF0 = -60000, C01 = 29000, F01 = 1, C02 = 31000, F02 = 1, C03 = 30000, F03 = 1, NPV: I = 10, CPT -> 14,522.92"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the NPV of Q (higher IRR)",
+    "value": 14522.92,
+    "check": "-60000+29000/(1+0.1)+31000/(1+0.1)**2+30000/(1+0.1)**3",
+    "explain": "Q has the higher IRR but a smaller NPV; for mutually exclusive projects choose the higher NPV."
+   },
+   {
+    "id": "sign-cf0",
+    "label": "Entered P's outlay as a positive number",
+    "value": 195154.02,
+    "check": "90000+36000/(1+0.10)+44000/(1+0.10)**2+48000/(1+0.10)**3",
+    "explain": "CF0 is an outflow: NPV = CF0 + PV with CF0 negative."
+   }
+  ],
+  "explanation": "NPV(P) > NPV(Q) > 0 at R = 10%. When projects are mutually exclusive, the highest positive NPV wins.",
+  "source": "generated",
+  "ref": "L05A s19; SM 9-17"
+ },
+ {
+  "id": "q09-072",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For independent projects, the NPV rule says to accept every project whose NPV is greater than zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Independent projects do not affect each other's values, so each is accepted if NPV > 0 (subject only to any resource constraint, which brings in capital rationing).",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-073",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "fill",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For mutually exclusive projects with equal lives, the NPV rule says to accept the project with the _____.",
+  "options": [
+   "highest IRR",
+   "shortest payback",
+   "highest ARR",
+   "highest positive NPV"
+  ],
+  "answer": 3,
+  "explanation": "Step 4(b): choose the highest positive NPV (the least negative if all are negative and one must be taken). Highest IRR, shortest payback and highest ARR are other rules that can give conflicting answers.",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-074",
+  "concept": "c09-npv-steps",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Using step 2 of the NPV sequence, a project costs $17,000 today and returns $9,000 at the end of year 1 and $12,000 at the end of year 2. The required return is 10% per annum. What is its NPV?",
+  "options": [
+   "$1,099.17",
+   "$35,099.17",
+   "$18,099.17",
+   "$999.25"
+  ],
+  "answer": 0,
+  "explanation": "NPV = -17,000 + 9,000/1.10 + 12,000/1.10^2 = -17,000 + 8,181.82 + 9,917.36 = +$1,099.17. $35,099.17 adds the outlay instead of subtracting it; $18,099.17 is the PV of the inflows only; $999.25 shifts every flow one period (outlay treated as year 1).",
+  "source": "generated",
+  "ref": "SM 9-8"
+ },
+ {
+  "id": "q09-075",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Wildrose Farms pays $250,000 today for a grain-drying operation that will be sold for a single payment of $338,000 in exactly 4 years. What is the project's IRR in % per annum?",
+  "answer": 7.83,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "((338000/250000)**(1/4)-1)*100",
+  "steps": [
+   {
+    "label": "Growth factor FV/PV",
+    "value": 1.352,
+    "check": "338000/250000",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "IRR",
+    "value": 7.83,
+    "check": "((338000/250000)**(1/4)-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "With one inflow, NPV = 0 means 250,000 = 338,000/(1 + IRR)^4.",
+   "(1 + IRR)^4 = 338,000/250,000 = 1.352, so 1 + IRR = 1.352^(1/4) = 1.07831.",
+   "IRR = 7.83% per annum. (Check: 250,000 x 1.0783^4 = 338,000.)"
+  ],
+  "keystrokes": [
+   "N = 4, PV = −250000, PMT = 0, FV = 338000, CPT I/Y = 7.83",
+   "Or: 1.352 y^x 0.25 = 1.0783 ; − 1 = 0.0783"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot to subtract 1 after the root",
+    "value": 107.83,
+    "check": "(338000/250000)**(1/4)*100",
+    "explain": "The root gives 1 + IRR (the growth factor); subtract 1 to get the rate."
+   },
+   {
+    "id": "geo-no-root",
+    "label": "Used the total gain without the root",
+    "value": 35.2,
+    "check": "(338000/250000-1)*100",
+    "explain": "35.2% is the four-year total return; the IRR is the compound annual rate, found with the 4th root."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided the total gain by 4",
+    "value": 8.8,
+    "check": "(338000/250000-1)*100/4",
+    "explain": "Dividing by N ignores compounding; use the Nth root."
+   }
+  ],
+  "explanation": "With one inflow, IRR = (inflow/outlay)^(1/N) - 1.",
+  "source": "generated",
+  "ref": "L05A s20"
+ },
+ {
+  "id": "q09-076",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cold Lake Aviation will pay $55,000 for avionics that return $33,000 at the end of year 1 and $36,500 at the end of year 2. The required return is 11% per annum. Find the IRR in % per annum (solve the quadratic) and decide.",
+  "answer": 16.81,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(2*36500/(-33000+sqrt(33000**2+4*55000*36500))-1)*100",
+  "steps": [
+   {
+    "label": "x = 1/(1+IRR)",
+    "value": 0.8561,
+    "check": "(-33000+sqrt(33000**2+4*55000*36500))/(2*36500)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "IRR",
+    "value": 16.81,
+    "check": "(2*36500/(-33000+sqrt(33000**2+4*55000*36500))-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "IRR sets NPV = 0: -55,000 + 33,000x + 36,500x^2 = 0 where x = 1/(1 + IRR).",
+   "x = [-33,000 + sqrt(33,000^2 + 4(55,000)(36,500))] / (2 x 36,500) = (-33,000 + 95,493.46)/73,000 = 0.85607.",
+   "IRR = 1/0.85607 - 1 = 0.16812 = 16.81% per annum.",
+   "Verification: NPV at 16.8122% = -55,000 + 33,000/1.168122 + 36,500/1.168122^2 = 28,250.47 + 26,749.53 - 55,000 = 0.00.",
+   "Decision: 16.81% > 11% required return, so accept (NPV at 11% = +$4,353.95, consistent)."
+  ],
+  "keystrokes": [
+   "CF: CF0 = -55000, C01 = 33000, F01 = 1, C02 = 36500, F02 = 1",
+   "IRR, CPT -> 16.81"
+  ],
+  "errors": [
+   {
+    "id": "irr-simple-average",
+    "label": "Averaged the net gain over the two years",
+    "value": 13.18,
+    "check": "((33000+36500)/55000-1)*100/2",
+    "explain": "Dividing the total net gain by the number of years ignores timing; the IRR discounts each flow."
+   },
+   {
+    "id": "avg-flow-over-cost",
+    "label": "Average annual flow divided by the outlay",
+    "value": 63.18,
+    "check": "(33000+36500)/2/55000*100",
+    "explain": "That is a cash yield on the outlay, not the discount rate that sets NPV to zero."
+   }
+  ],
+  "explanation": "For a two-year project let x = 1/(1+IRR) and solve CF0 + CF1 x + CF2 x^2 = 0. The calculator IRR key does the same by iteration.",
+  "source": "generated",
+  "ref": "SM 9-23; S5 s7-8"
+ },
+ {
+  "id": "q09-077",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Hay River Hotels pays $1,800,000 for a building that will produce net cash flow of $175,500 at the end of every year forever. The required return is 9% per annum. What is the project's IRR in % per annum?",
+  "answer": 9.75,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "175500/1800000*100",
+  "steps": [
+   {
+    "label": "IRR = CF / cost",
+    "value": 9.75,
+    "check": "175500/1800000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "For a level perpetuity PV = CF/R. NPV = 0 means the cost equals CF/IRR.",
+   "IRR = CF/cost = 175,500/1,800,000 = 0.0975 = 9.75% per annum.",
+   "9.75% > 9%, so the rule says accept."
+  ],
+  "keystrokes": [
+   "175,500 ÷ 1,800,000 = 0.0975 -> 9.75%"
+  ],
+  "errors": [
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio (a payback figure)",
+    "value": 10.26,
+    "check": "1800000/175500",
+    "explain": "1,800,000/175,500 = 10.26 is the payback in years, not a rate."
+   },
+   {
+    "id": "added-r-to-yield",
+    "label": "Added the 9% required return to the yield",
+    "value": 18.75,
+    "check": "175500/1800000*100+9",
+    "explain": "The cash yield already is the IRR for a level perpetuity; do not add the required return."
+   }
+  ],
+  "explanation": "For a level perpetuity, IRR = annual cash flow / initial outlay. It must beat R for a conventional project.",
+  "source": "generated",
+  "ref": "SM 9 CTQ 9"
+ },
+ {
+  "id": "q09-078",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kitscoty Storage pays $3,200,000 for a grain terminal expected to produce $252,000 of cash flow next year, growing at 2.5% per annum forever. What is the IRR in % per annum?",
+  "answer": 10.38,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(252000/3200000+0.025)*100",
+  "steps": [
+   {
+    "label": "Cash yield CF1 / cost",
+    "value": 7.875,
+    "check": "252000/3200000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "IRR = CF1/cost + g",
+    "value": 10.38,
+    "check": "(252000/3200000+0.025)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "For a growing perpetuity PV = CF1/(R - g). NPV = 0 means cost = CF1/(IRR - g).",
+   "IRR = CF1/cost + g = 252,000/3,200,000 + 0.025 = 0.07875 + 0.025 = 0.10375.",
+   "IRR = 10.38% per annum (10.375%). Same structure as R = D1/P0 + g for a stock."
+  ],
+  "keystrokes": [
+   "252,000 ÷ 3,200,000 = 0.07875 ; + 0.025 = 0.10375 -> 10.38%"
+  ],
+  "errors": [
+   {
+    "id": "omitted-growth",
+    "label": "Left out the growth rate g",
+    "value": 7.88,
+    "check": "252000/3200000*100",
+    "explain": "The IRR is the cash yield plus the growth rate: CF1/cost + g."
+   },
+   {
+    "id": "g-as-r",
+    "label": "Subtracted g instead of adding it",
+    "value": 5.38,
+    "check": "(252000/3200000-0.025)*100",
+    "explain": "Solve cost = CF1/(IRR - g) for IRR: IRR = CF1/cost + g."
+   }
+  ],
+  "explanation": "Growing-perpetuity IRR = CF1/cost + g, just as a stock's required return is D1/P0 + g.",
+  "source": "generated",
+  "ref": "L04 s20; SM 9-21"
+ },
+ {
+  "id": "q09-079",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project costs $38,200 now and returns $14,900, $18,300 and $20,700 at the end of years 1 to 3. The required return is 12% per annum. What is its IRR?",
+  "options": [
+   "18.26%",
+   "13.70%",
+   "47.03%",
+   "12.00%"
+  ],
+  "answer": 0,
+  "explanation": "The IRR is the rate that sets NPV to zero; the calculator CF worksheet gives 18.26% (NPV is about $0.15 at 18.26% and +$4,426.07 at 12%). 13.70% is the total net gain divided by the cost and by 3 years (no compounding); 47.03% is the average annual flow divided by the cost; 12.00% is the required return, not the project's return.",
+  "source": "generated",
+  "ref": "SM 9-7"
+ },
+ {
+  "id": "q09-080",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $96,000 project returns $31,000, $36,000, $41,000 and $27,000 at the end of years 1 to 4. The required return is 12% per annum. What is its IRR?",
+  "options": [
+   "10.16%",
+   "15.30%",
+   "35.16%",
+   "12.00%"
+  ],
+  "answer": 1,
+  "explanation": "Setting NPV to zero with the calculator worksheet gives 15.30% (NPV is about -$8 at 15.30% and +$6,719.53 at 12%, so IRR > R and the project is accepted). 10.16% averages the total net gain over four years; 35.16% divides the average flow by the cost; 12.00% is R.",
+  "source": "generated",
+  "ref": "SM 9-10"
+ },
+ {
+  "id": "q09-081",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The internal rate of return (IRR) of a project is:",
+  "options": [
+   "the required return the firm needs to earn on the project",
+   "the average annual accounting profit divided by the average investment",
+   "the discount rate that makes the NPV of the project equal to zero",
+   "the present value of the inflows divided by the present value of the outflows"
+  ],
+  "answer": 2,
+  "explanation": "IRR is the project's own return: the rate at which the PV of the future flows equals the price, i.e. NPV = 0. It is the same idea as the yield to maturity on a bond.",
+  "source": "generated",
+  "ref": "L05A s20"
+ },
+ {
+  "id": "q09-082",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Hay River Lumber tells its lender that a new kiln \"returns 14.2% on the money invested, the rate at which the present value of its cash flows exactly equals its cost.\" Which measure is that?",
+  "options": [
+   "Required return (R)",
+   "Accounting rate of return",
+   "Profitability index",
+   "IRR"
+  ],
+  "answer": 3,
+  "explanation": "The discount rate that sets the present value of the future cash flows equal to the cost is the IRR, the project's analogue of a bond's yield to maturity.",
+  "source": "generated",
+  "ref": "L05A s20"
+ },
+ {
+  "id": "q09-083",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How should you distinguish IRR from the required return R?",
+  "options": [
+   "IRR is what the project returns; R is the return the firm needs (its cost of capital)",
+   "IRR is the return the firm needs; R is what the project returns",
+   "IRR is an accounting measure; R is a cash-flow measure",
+   "They are the same number for any project that has a positive NPV"
+  ],
+  "answer": 0,
+  "explanation": "IRR comes from the project's cash flows alone; R comes from the capital market and the project's risk. The rule compares them: IRR > R is good for conventional flows.",
+  "source": "generated",
+  "ref": "L05A s25"
+ },
+ {
+  "id": "q09-084",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are good points of the IRR rule EXCEPT:",
+  "options": [
+   "it uses the time value of money",
+   "it gives a single unambiguous rate for any pattern of cash flows",
+   "it shows the size of the return",
+   "it links with the NPV concept when the cash flows are conventional"
+  ],
+  "answer": 1,
+  "explanation": "The bad point of IRR is that it may have multiple answers (or none) when the cash flows are unconventional. Good points: time value of money, shows the size of the return, agrees with NPV for conventional flows.",
+  "source": "generated",
+  "ref": "L05A s26"
+ },
+ {
+  "id": "q09-085",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does IRR > R imply NPV > 0 for conventional cash flows?",
+  "options": [
+   "the IRR is always calculated using the required return R as its discount rate",
+   "IRR and NPV are both measured in the same units, so they must agree",
+   "NPV falls as R rises and is zero at the IRR, so at any R below the IRR the NPV is positive",
+   "a conventional project always has an IRR above 100%, so its NPV is always positive"
+  ],
+  "answer": 2,
+  "explanation": "For conventional flows the NPV profile slopes downward and crosses zero once, at the IRR. Any required return to the left of that crossing gives a positive NPV.",
+  "source": "generated",
+  "ref": "L05A s21, s25"
+ },
+ {
+  "id": "q09-086",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project with conventional cash flows has an IRR of 17.18%. Firm A's required return is 12% and firm B's is 20%. What do the decision rules say?",
+  "options": [
+   "Both accept, because the IRR is the same for every firm",
+   "Firm A rejects and firm B accepts, because a higher required return is more demanding",
+   "Both reject, because 17.18% is not above 20% for firm A",
+   "Firm A accepts (NPV > 0); firm B rejects (NPV < 0)"
+  ],
+  "answer": 3,
+  "explanation": "The IRR is fixed by the cash flows; only R differs. Firm A has R < IRR, so NPV > 0; firm B has R > IRR, so NPV < 0. Reversing the comparison (accepting when IRR < R) swaps the decisions.",
+  "source": "generated",
+  "ref": "L05A s25"
+ },
+ {
+  "id": "q09-087",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which equation defines the IRR?",
+  "options": [
+   "0 = CF0 + CF1/(1+R) + CF2/(1+R)^2 + ... + CFN/(1+R)^N",
+   "IRR = (CF1 + CF2 + ... + CFN)/CF0",
+   "IRR = PV of inflows / PV of outflows - 1",
+   "0 = CF0 + CF1/(1+IRR) + CF2/(1+IRR)^2 + ... + CFN/(1+IRR)^N"
+  ],
+  "answer": 3,
+  "explanation": "IRR is the rate that makes NPV zero, and it appears inside the discount factors. Using R in the factors gives the NPV formula, not the IRR.",
+  "source": "generated",
+  "ref": "L05A s20"
+ },
+ {
+  "id": "q09-088",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The IRR of a project is the same idea as the yield to maturity (YTM) of a bond: the discount rate that makes the present value of the future cash flows equal to the observed price.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "For a bond, YTM solves price = PV of coupons and face value; for a project IRR solves cost = PV of its inflows (NPV = 0).",
+  "source": "generated",
+  "ref": "L05A s20"
+ },
+ {
+  "id": "q09-089",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "The rule \"accept if IRR > R\" is valid for any pattern of cash flows.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "It is only valid for conventional cash flows (CF0 negative, all later flows positive or zero). Unconventional flows can have several IRRs, none, or financing-type flows that reverse the rule.",
+  "source": "generated",
+  "ref": "L05A s26"
+ },
+ {
+  "id": "q09-090",
+  "concept": "c09-irr-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A project with level cash flows that last forever has a payback period of 5 years. What is its IRR?",
+  "options": [
+   "5%",
+   "25%",
+   "20%",
+   "10%"
+  ],
+  "answer": 2,
+  "explanation": "For a perpetuity cost = CF/IRR, so payback = cost/CF = 1/IRR and IRR = 1/payback = 1/5 = 20%. (For long-lived projects with roughly constant flows, the shorter the payback, the higher the IRR.)",
+  "source": "generated",
+  "ref": "SM 9 CTQ 9"
+ }
+]

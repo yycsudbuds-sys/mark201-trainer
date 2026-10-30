@@ -1,0 +1,966 @@
+[
+ {
+  "id": "q11-061",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "Before a simulation can be run, the analyst must choose a probability distribution for each uncertain input.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The computer draws each input from the distribution the analyst chooses, so those distributions (and any links between inputs) are the key assumptions of the whole method.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-062",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Pacific Rail is evaluating a terminal with eight uncertain inputs (volume, price, fuel, wages and others). The board wants the probability that the project's NPV is negative. Which technique can supply it?",
+  "options": [
+   "sensitivity analysis",
+   "scenario analysis with best, base and worst cases",
+   "simulation analysis",
+   "NPV break-even analysis on unit sales"
+  ],
+  "answer": 2,
+  "explanation": "Only simulation produces a whole distribution of NPV, from which the share of negative outcomes can be read. Sensitivity flexes one input, scenarios give three points, and break-even gives one threshold.",
+  "source": "generated",
+  "ref": "L05C s6; REV p3"
+ },
+ {
+  "id": "q11-063",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why should a realistic simulation model the relationships between inputs, such as price and quantity sold?",
+  "options": [
+   "NPV cannot be calculated at all unless the inputs are correlated with each other",
+   "correlation between inputs makes every simulated NPV come out positive",
+   "inputs are not independent, and separate draws can produce combinations that never occur together",
+   "taxes are computed from the correlation between price and quantity sold"
+  ],
+  "answer": 2,
+  "explanation": "If price and quantity tend to move together (or against each other), independent draws will generate unrealistic combinations and distort the NPV distribution. This is one reason simulation is hard to do well.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-064",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "The textbook describes simulation analysis as an extension that combines:",
+  "options": [
+   "payback analysis and discounted payback analysis, applied together",
+   "cash break-even analysis and accounting break-even analysis together",
+   "the capital asset pricing model and the capital market line",
+   "scenario analysis (many inputs change) and sensitivity analysis (many values)"
+  ],
+  "answer": 3,
+  "explanation": "Scenario analysis lets all inputs change but only to a few values; sensitivity lets one input take many values. Letting all inputs take many values at once is a crude form of simulation.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-065",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "In simulation analysis the analyst studies the _____ of the output NPV, not only its expected value.",
+  "options": [
+   "payback",
+   "distribution",
+   "break-even",
+   "tax rate"
+  ],
+  "answer": 1,
+  "explanation": "The point of simulation is the shape of the output: spread, skew and the chance of negative NPV. The baseline or expected value alone does not tell us that.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-066",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A simulation of a new project produces 5,000 NPV results, and 1,100 of them are negative. What percentage of the simulated outcomes have a negative NPV?",
+  "answer": 22.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1100/5000*100",
+  "steps": [
+   {
+    "label": "Share of trials with NPV < 0",
+    "value": 22.0,
+    "check": "1100/5000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P(NPV < 0) = negative trials ÷ total trials",
+   "= 1,100 ÷ 5,000 = 0.22 = 22%"
+  ],
+  "keystrokes": [
+   "1100 ÷ 5000 = 0.22 → 22%"
+  ],
+  "errors": [
+   {
+    "id": "complement-probability",
+    "label": "Reported the share of positive trials",
+    "value": 78.0,
+    "check": "(5000-1100)/5000*100",
+    "explain": "3,900 of the 5,000 trials are positive (78%). The question asks for the negative ones."
+   },
+   {
+    "id": "wrong-denominator",
+    "label": "Divided by the positive trials only",
+    "value": 28.21,
+    "check": "1100/(5000-1100)*100",
+    "explain": "The share of outcomes is out of all 5,000 trials, not out of the positive ones."
+   }
+  ],
+  "explanation": "The probability of a negative NPV is estimated by the share of simulated trials with NPV below zero: 1,100 out of 5,000 is 22%. This is the kind of statement simulation can make and the other what-if tools cannot.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-067",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A simulation's average NPV is $212,000, while the base-case NPV (all inputs at their expected values) is $240,000. Which explanation is possible?",
+  "options": [
+   "the output distribution can be skewed, so its average need not equal the NPV computed at the average inputs",
+   "the simulation must contain a programming error, because the two numbers must always be equal",
+   "the base case ignored taxes, which is the only possible source of a difference",
+   "the simulation automatically used a higher discount rate"
+  ],
+  "answer": 0,
+  "explanation": "The baseline or expected value may not be at the peak, and the output is probably not symmetrical, so the simulated mean can differ from the base-case NPV. A difference is not evidence of a mistake.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-068",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In one run of a simulation, what happens immediately after the computer draws a random value for every uncertain input?",
+  "options": [
+   "the probability distribution for each input is chosen",
+   "the histogram of all the NPVs is summarized",
+   "the input is solved for the value that gives NPV = 0",
+   "the NPV for that set of inputs is computed and recorded"
+  ],
+  "answer": 3,
+  "explanation": "The sequence is: choose distributions, draw all inputs, compute and record the NPV, repeat thousands of times, then summarize the distribution. Distributions are chosen before the first draw, and the summary comes after all runs.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-069",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Which is a typical weakness of simulation analysis?",
+  "options": [
+   "it can only be used once the project's NPV is already known to be positive",
+   "it needs a distribution for every input and their relationships, which are hard to estimate",
+   "it can vary only one input at a time, so it misses combinations of inputs",
+   "it ignores the time value of money when computing each trial's NPV"
+  ],
+  "answer": 1,
+  "explanation": "Simulation is limited by the quality of the assumed distributions and correlations, and by the lack of a simple decision rule. It still discounts cash flows in every run and varies all inputs at once.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-070",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "NPV break-even analysis asks:",
+  "options": [
+   "how far can an input change before NPV crosses zero and the accept decision flips",
+   "at what sales level accounting net income is exactly zero",
+   "what the NPV is when every input takes its best value",
+   "what the distribution of NPV looks like after thousands of random draws"
+  ],
+  "answer": 0,
+  "explanation": "NPV break-even finds the input level at which NPV = 0, i.e. how far an input can move before the decision to accept would change. The distractors describe accounting break-even, best-case scenario and simulation.",
+  "source": "generated",
+  "ref": "L05C s7"
+ },
+ {
+  "id": "q11-071",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "NPV break-even (the finance version) differs from accounting break-even in that:",
+  "options": [
+   "it ignores depreciation, while accounting break-even includes it",
+   "it sets NPV, not accounting profit, to zero, so it reflects the required return",
+   "its sales level is always lower than the accounting break-even sales level",
+   "it looks only at variable costs and ignores fixed costs"
+  ],
+  "answer": 1,
+  "explanation": "Accounting break-even makes net income zero and ignores the required return. NPV break-even makes NPV zero, so it needs a higher level of sales for a normal project. Leaving out depreciation describes cash break-even, not NPV break-even.",
+  "source": "generated",
+  "ref": "L05C s7; SM 11 CTQ 3"
+ },
+ {
+  "id": "q11-072",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "A project's sales are above its accounting break-even level, so it reports a profit. Why can its NPV still be negative?",
+  "options": [
+   "accounting profit already includes the cost of capital, so NPV counts it twice",
+   "accounting break-even uses fixed costs only, so it is always too low",
+   "accounting profit ignores the time value of money and the return investors require on the investment",
+   "NPV ignores depreciation entirely, which makes it lower"
+  ],
+  "answer": 2,
+  "explanation": "A profit only says that revenues cover costs and depreciation. NPV also asks whether the cash flows earn the required return after discounting. A project can be profitable on paper and still destroy shareholder value.",
+  "source": "generated",
+  "ref": "L05C s7; SM 11 CTQ 9"
+ },
+ {
+  "id": "q11-073",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "At a planning meeting the CFO of Sunrise Bakeries asks: \"By how much could our selling price fall before this project stops being worth doing?\" Answering that question is:",
+  "options": [
+   "NPV break-even analysis",
+   "scenario analysis",
+   "simulation analysis",
+   "accounting break-even analysis on sales volume"
+  ],
+  "answer": 0,
+  "explanation": "She asks how far one input can move until the accept decision changes, i.e. until NPV reaches zero. That is NPV break-even. Scenario and simulation describe ranges of outcomes, and accounting break-even is about zero profit, not zero NPV.",
+  "source": "generated",
+  "ref": "L05C s7"
+ },
+ {
+  "id": "q11-074",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's expected price is $9.40 and its NPV break-even price is $8.75, all else equal. Which interpretation is correct?",
+  "options": [
+   "price can fall about 7.4% below the forecast before NPV reaches zero, which is a comfortable cushion",
+   "the project should be rejected because the break-even price is a positive number",
+   "accounting profit is zero when the price is $8.75, so the project breaks even on paper",
+   "price can fall about 6.9% below the forecast before NPV reaches zero; a thin cushion means high forecasting risk"
+  ],
+  "answer": 3,
+  "explanation": "The cushion is (9.40 − 8.75) ÷ 9.40 = 0.65 ÷ 9.40 = 6.9% of the forecast price. Dividing by the break-even price gives 7.4%, the wrong base. NPV is still positive at $9.40, and NPV = 0 at $8.75 does not mean accounting profit is zero.",
+  "source": "generated",
+  "ref": "L05C s7; TB 11.3"
+ },
+ {
+  "id": "q11-075",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement is NOT true at the NPV break-even level of an input (all other inputs at their base values)?",
+  "options": [
+   "the NPV equals zero",
+   "for conventional cash flows the IRR equals the required return",
+   "accounting net income equals zero",
+   "the accept or reject decision is exactly on the margin"
+  ],
+  "answer": 2,
+  "explanation": "At NPV break-even, NPV = 0, IRR = R and the decision is on the margin. Net income is zero at the accounting break-even, a different and lower sales level.",
+  "source": "generated",
+  "ref": "L05C s7; SM 11-16"
+ },
+ {
+  "id": "q11-076",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "At an input's NPV break-even level, the project's IRR equals the required return (for conventional cash flows).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. NPV = 0 at a discount rate R means that R is the IRR, so the IRR equals the required return at the NPV break-even.",
+  "source": "generated",
+  "ref": "SM 11-16c"
+ },
+ {
+  "id": "q11-077",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "NPV break-even analysis changes several inputs together to find the combination that makes NPV zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. NPV break-even solves for ONE input, holding the others at their base values, so that NPV = 0. Changing several inputs together is scenario analysis.",
+  "source": "generated",
+  "ref": "L05C s7-9"
+ },
+ {
+  "id": "q11-078",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A plant costs I0. Its CCA tax shield is a level annuity of DTS for N years and its pre-tax operating income (EBITDA) is a level perpetuity. Which equation gives the break-even EBITDA?",
+  "options": [
+   "−I0 + DTS × annuity factor(R, N) + EBITDA ÷ R = 0",
+   "−I0 + (1 − T) × EBITDA ÷ R = 0",
+   "−I0 + DTS × annuity factor(R, N) + (1 − T) × EBITDA × N = 0",
+   "−I0 + DTS × annuity factor(R, N) + (1 − T) × EBITDA ÷ R = 0"
+  ],
+  "answer": 3,
+  "explanation": "The three components of NPV are the outlay, the PV of the DTS annuity and the PV of the after-tax perpetuity (1 − T)EBITDA ÷ R. Leaving out (1 − T) ignores tax, leaving out the DTS ignores the shield, and multiplying by N treats a perpetuity as N payments.",
+  "source": "generated",
+  "ref": "L05C s8-9"
+ },
+ {
+  "id": "q11-079",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "When solving for the break-even EBITDA, why do we divide the required after-tax cash flow by (1 − T)?",
+  "options": [
+   "because the tax rate must be added to the discount rate in the perpetuity",
+   "EBITDA is pre-tax, and only (1 − T) of each pre-tax dollar remains after tax",
+   "because the CCA tax shield has to be taxed a second time as income",
+   "because EBITDA is measured after interest and depreciation have been deducted"
+  ],
+  "answer": 1,
+  "explanation": "The NPV equation needs after-tax cash flow, which is (1 − T) × EBITDA. To find the pre-tax EBITDA that delivers a required after-tax amount we divide by (1 − T). Forgetting this step gives an answer that is too low.",
+  "source": "generated",
+  "ref": "L05C s9; SM 10-23"
+ },
+ {
+  "id": "q11-080",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "On a sensitivity graph of NPV against selling price, the NPV line crosses zero at a price of $8.75. That price is called the project's:",
+  "options": [
+   "accounting break-even price",
+   "cash break-even price",
+   "internal rate of return",
+   "NPV break-even price"
+  ],
+  "answer": 3,
+  "explanation": "The price at which NPV crosses zero is the NPV (financial) break-even price. Accounting break-even sets net income to zero and cash break-even sets operating cash flow to zero; neither is where NPV is zero.",
+  "source": "generated",
+  "ref": "L05C s7; TB 11.3"
+ },
+ {
+  "id": "q11-081",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Base-case EBITDA for a plant is forecast at $312,000 a year and the NPV break-even EBITDA is $274,500. What does the analysis support?",
+  "options": [
+   "accept, since EBITDA can fall about 12.0% before NPV reaches zero",
+   "accept, since EBITDA can fall about 13.7% before NPV reaches zero",
+   "reject, because the break-even EBITDA is above zero",
+   "no decision is possible without knowing the accounting break-even"
+  ],
+  "answer": 0,
+  "explanation": "The forecast is above the break-even, so NPV is positive at the base case. The cushion is (312,000 − 274,500) ÷ 312,000 = 12.0% of the forecast. Dividing by the break-even gives 13.7%, the wrong base.",
+  "source": "generated",
+  "ref": "L05C s7-9"
+ },
+ {
+  "id": "q11-082",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Glenmore Stamping will build a plant for $1,600,000. For simplicity CCA is treated as straight-line over 10 years, and the plant will then earn the same pre-tax operating income (EBITDA) every year forever. T = 30% and the discount rate is 8% per annum. What is the minimum EBITDA that gives NPV = 0?",
+  "answer": 146047.55,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1600000-0.3*1600000/10*((1-(1+0.08)**-10)/0.08))/((1-0.3)/0.08)",
+  "steps": [
+   {
+    "label": "Annual DTS = T × I0 ÷ 10",
+    "value": 48000.0,
+    "check": "0.3*1600000/10",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of the 10-year DTS annuity",
+    "value": 322083.91,
+    "check": "0.3*1600000/10*((1-(1+0.08)**-10)/0.08)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV the income must supply = I0 − PV(DTS)",
+    "value": 1277916.09,
+    "check": "1600000-0.3*1600000/10*((1-(1+0.08)**-10)/0.08)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Break-even EBITDA",
+    "value": 146047.55,
+    "check": "(1600000-0.3*1600000/10*((1-(1+0.08)**-10)/0.08))/((1-0.3)/0.08)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "DTS = 0.30 × 1,600,000 ÷ 10 = $48,000 per year for 10 years",
+   "PV(DTS) = 48,000 × annuity factor(8%, 10) = 48,000 × 6.710081 = $322,083.91",
+   "NPV = −1,600,000 + $322,083.91 + (1 − 0.30) × EBITDA ÷ 0.08 = 0, so 8.75 × EBITDA = $1,277,916.09",
+   "EBITDA = $1,277,916.09 ÷ 8.75 = $146,047.55"
+  ],
+  "keystrokes": [
+   "TVM: N = 10, I/Y = 8, PMT = −48000, CPT PV = 322,083.91",
+   "1,600,000 − 322,083.91 = 1,277,916.09",
+   "÷ (0.7 ÷ 0.08) = ÷ 8.75 → 146,047.55"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Treated the required amount as pre-tax",
+    "value": 102233.29,
+    "check": "(1600000-0.3*1600000/10*((1-(1+0.08)**-10)/0.08))*0.08",
+    "explain": "EBITDA is pre-tax. The perpetuity pays (1 − T) × EBITDA after tax, so divide by (1 − T)/R, not just by 1/R."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 182857.14,
+    "check": "1600000/((1-0.3)/0.08)",
+    "explain": "The shield is worth $322,084 of the outlay, so the income only has to supply the rest."
+   },
+   {
+    "id": "dts-as-perpetuity",
+    "label": "Valued the 10-year shield as a perpetuity",
+    "value": 114285.71,
+    "check": "(1600000-0.3*1600000/10/0.08)/((1-0.3)/0.08)",
+    "explain": "The shield lasts only 10 years; use the annuity factor, not 1/R."
+   }
+  ],
+  "explanation": "Set NPV = 0: the outlay of $1,600,000 must be repaid by the CCA tax shield (a 10-year annuity worth about $322,084) and by the after-tax perpetuity (1 − T)EBITDA ÷ R = 8.75 × EBITDA. That leaves 8.75 × EBITDA = $1,277,916, so EBITDA is at least $146,047.55.",
+  "source": "generated",
+  "ref": "L05C s8-9; SM 11-27"
+ },
+ {
+  "id": "q11-083",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Pembina Packaging will buy a sealing line for $350,000 for a 5-year project with no salvage. CCA is treated as straight-line (D = $70,000 per year), T = 30% and R = 12% per annum. Volume is 25,000 units per year, variable cost is $18.00 per unit and fixed costs are $120,000 per year. What is the minimum unit price that gives NPV = 0?",
+  "answer": 27.15,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((350000/((1-(1+0.12)**-5)/0.12)-0.3*70000)/(1-0.3)+120000)/25000+18",
+  "steps": [
+   {
+    "label": "Required OCF for NPV = 0 (I0 ÷ annuity factor)",
+    "value": 97093.41,
+    "check": "350000/((1-(1+0.12)**-5)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Required pre-tax EBITDA = (OCF − T·D) ÷ (1 − T)",
+    "value": 108704.87,
+    "check": "(350000/((1-(1+0.12)**-5)/0.12)-0.3*70000)/(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Required contribution per unit = (EBITDA + FC) ÷ Q",
+    "value": 9.15,
+    "check": "((350000/((1-(1+0.12)**-5)/0.12)-0.3*70000)/(1-0.3)+120000)/25000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Break-even price = v + contribution",
+    "value": 27.15,
+    "check": "((350000/((1-(1+0.12)**-5)/0.12)-0.3*70000)/(1-0.3)+120000)/25000+18",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (12%, 5) = 3.604776; OCF* = 350,000 ÷ 3.604776 = $97,093.41",
+   "OCF = EBITDA(1 − T) + T·D, so EBITDA = ($97,093.41 − 0.3 × 70,000) ÷ 0.7 = $108,704.87",
+   "EBITDA = (P − v)Q − FC, so P − v = ($108,704.87 + 120,000) ÷ 25,000 = $9.1482",
+   "P = 18.00 + 9.1482 = $27.15"
+  ],
+  "keystrokes": [
+   "TVM: N = 5, I/Y = 12, PV = −350000, CPT PMT = 97,093.41",
+   "(97,093.41 − 21,000) ÷ 0.7 = 108,704.87",
+   "(108,704.87 + 120,000) ÷ 25,000 + 18 = 27.15"
+  ],
+  "errors": [
+   {
+    "id": "profit-not-npv-breakeven",
+    "label": "Found the accounting break-even price (net income = 0)",
+    "value": 25.6,
+    "check": "(120000+70000)/25000+18",
+    "explain": "At that price OCF equals D = $70,000, which only repays the outlay with no return. Accounting break-even ignores the 12% required return."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Treated OCF − T·D as pre-tax EBITDA",
+    "value": 25.84,
+    "check": "(350000/((1-(1+0.12)**-5)/0.12)-0.3*70000+120000)/25000+18",
+    "explain": "OCF − T·D is an after-tax amount; divide it by (1 − T) to get the pre-tax EBITDA."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 28.35,
+    "check": "(350000/((1-(1+0.12)**-5)/0.12)/(1-0.3)+120000)/25000+18",
+    "explain": "OCF includes T·D = $21,000 from the shield, so the operations need to supply that much less."
+   }
+  ],
+  "explanation": "NPV = 0 requires a constant OCF of 350,000 ÷ 3.604776 = $97,093.41. Subtract the CCA shield (0.3 × 70,000 = 21,000) and gross up by 1 ÷ (1 − 0.3) to get EBITDA of $108,704.87. Add fixed costs, divide by 25,000 units and add the $18.00 variable cost to reach a price of about $27.15, well above the $25.60 accounting break-even price.",
+  "source": "generated",
+  "ref": "TB 11.3; SM 11-27"
+ },
+ {
+  "id": "q11-084",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Wolf Willow Vineyards will plant a new block for $750,000. The investment earns no CCA tax shield, and it should earn the same pre-tax net cash revenue every year forever. T = 28% and the discount rate is 9% per annum. What is the minimum annual pre-tax net cash revenue that makes NPV = 0?",
+  "answer": 93750.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "750000*0.09/(1-0.28)",
+  "steps": [
+   {
+    "label": "Required after-tax cash flow = R × I0",
+    "value": 67500.0,
+    "check": "750000*0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Required pre-tax amount = after-tax ÷ (1 − T)",
+    "value": 93750.0,
+    "check": "750000*0.09/(1-0.28)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "A perpetuity is worth C ÷ R, so NPV = −750,000 + (1 − T)·X ÷ R = 0",
+   "After-tax cash flow needed: C = R × I0 = 0.09 × 750,000 = $67,500",
+   "Pre-tax revenue X = 67,500 ÷ (1 − 0.28) = 67,500 ÷ 0.72 = $93,750.00"
+  ],
+  "keystrokes": [
+   "0.09 × 750000 = 67500",
+   "÷ (1 − 0.28) = 93,750.00"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Stopped at the after-tax amount",
+    "value": 67500.0,
+    "check": "750000*0.09",
+    "explain": "$67,500 is what must arrive after tax. The pre-tax figure must be larger so that 72% of it equals $67,500."
+   },
+   {
+    "id": "multiplied-not-divided",
+    "label": "Multiplied by (1 − T) instead of dividing",
+    "value": 48600.0,
+    "check": "750000*0.09*(1-0.28)",
+    "explain": "Tax takes a share of pre-tax revenue, so the pre-tax figure is the after-tax figure divided by (1 − T)."
+   }
+  ],
+  "explanation": "With no tax shield and a perpetual flow, NPV = 0 needs (1 − T)X ÷ R = I0, so X = R × I0 ÷ (1 − T) = 0.09 × 750,000 ÷ 0.72 = $93,750.00.",
+  "source": "generated",
+  "ref": "L05C s9; SM 11-23b"
+ },
+ {
+  "id": "q11-085",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Mackenzie Foods computes its project's NPV at two sales levels, with every other input at its base value: NPV = $412,000 at 80,000 units and NPV = $603,000 at 90,000 units. NPV is a straight-line function of units sold. At how many units sold does NPV equal zero?",
+  "answer": 58429.32,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "80000-412000/((603000-412000)/(90000-80000))",
+  "steps": [
+   {
+    "label": "Slope ΔNPV/ΔQ in dollars per unit",
+    "value": 19.1,
+    "check": "(603000-412000)/(90000-80000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Break-even units sold",
+    "value": 58429.32,
+    "check": "80000-412000/((603000-412000)/(90000-80000))",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Slope = (603,000 − 412,000) ÷ (90,000 − 80,000) = 191,000 ÷ 10,000 = $19.10 per unit",
+   "From 80,000 units, NPV must fall by $412,000: 412,000 ÷ 19.10 = 21,570.68 units",
+   "Break-even = 80,000 − 21,570.68 = 58,429.32 units"
+  ],
+  "keystrokes": [
+   "(603000 − 412000) ÷ 10000 = 19.1",
+   "412000 ÷ 19.1 = 21570.68",
+   "80000 − 21570.68 = 58429.32"
+  ],
+  "errors": [
+   {
+    "id": "wrong-direction",
+    "label": "Added the distance instead of subtracting",
+    "value": 101570.68,
+    "check": "80000+412000/((603000-412000)/(90000-80000))",
+    "explain": "NPV is positive at 80,000 units and rises with volume, so the zero crossing lies below 80,000 units."
+   },
+   {
+    "id": "slope-not-per-unit",
+    "label": "Used the NPV change for 10,000 units as the slope per unit",
+    "value": 79997.84,
+    "check": "80000-412000/(603000-412000)",
+    "explain": "$191,000 is the change over 10,000 units. Divide by 10,000 to get $19.10 per unit before solving."
+   }
+  ],
+  "explanation": "NPV is linear in units, so the slope is constant: $19.10 per unit. NPV is $412,000 at 80,000 units, so it reaches zero 412,000 ÷ 19.10 = 21,570.68 units lower, at about 58,429.32 units.",
+  "source": "generated",
+  "ref": "SM 11-27"
+ },
+ {
+  "id": "q11-086",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kananaskis Snow Systems buys snow-making equipment for $900,000 for a 5-year project. The CCA rate is 30% with the half-year rule, T = 30% and the discount rate is k = 10% per annum. The equipment is sold for $120,000 at the end of year 5. Pre-tax operating income (EBITDA) is the same each year and there is no net working capital. Using the formula-sheet PV of the CCA tax shield with its salvage term, find the minimum annual EBITDA that gives NPV = 0.",
+  "answer": 244562.45,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(900000-(900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5)-120000/(1+0.1)**5)/((1-0.3)*((1-(1+0.1)**-5)/0.1))",
+  "steps": [
+   {
+    "label": "PV of the CCA tax shield (with salvage term)",
+    "value": 176530.58,
+    "check": "900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of the salvage proceeds",
+    "value": 74510.56,
+    "check": "120000/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV the operations must supply",
+    "value": 648958.86,
+    "check": "900000-(900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5)-120000/(1+0.1)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Break-even EBITDA",
+    "value": 244562.45,
+    "check": "(900000-(900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5)-120000/(1+0.1)**5)/((1-0.3)*((1-(1+0.1)**-5)/0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PVCCA = [I0·d·T ÷ (k + d)] × (1 + 0.5k) ÷ (1 + k) − [S·d·T ÷ (k + d)] × 1 ÷ (1 + k)^5",
+   "= 202,500 × 0.954545 − 27,000 × 0.620921 = 193,295.45 − 16,764.87 = $176,530.58",
+   "PV(salvage) = 120,000 ÷ 1.1^5 = $74,510.56",
+   "NPV = −900,000 + $176,530.58 + $74,510.56 + (1 − 0.30) × EBITDA × 3.790787 = 0",
+   "EBITDA = $648,958.86 ÷ (0.7 × 3.790787) = $244,562.45"
+  ],
+  "keystrokes": [
+   "PVCCA: 900000 × 0.3 × 0.3 ÷ 0.4 = 202500; × 1.05 ÷ 1.1 = 193295.45",
+   "120000 × 0.3 × 0.3 ÷ 0.4 ÷ 1.1^5 = 16764.87",
+   "TVM: N = 5, I/Y = 10, PMT = −1, CPT PV = 3.790787",
+   "648,958.86 ÷ (0.7 × 3.790787) = 244,562.45"
+  ],
+  "errors": [
+   {
+    "id": "missing-half-year",
+    "label": "Used a first-year factor of 1 instead of (1 + 0.5k) ÷ (1 + k)",
+    "value": 241093.68,
+    "check": "(900000-(900000*0.3*0.3/(0.1+0.3)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5)-120000/(1+0.1)**5)/((1-0.3)*((1-(1+0.1)**-5)/0.1))",
+    "explain": "Under the half-year rule the first-year factor is (1 + 0.5k) ÷ (1 + k) = 0.9545, which lowers the PV of the shield."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Divided by the annuity factor but not by (1 − T)",
+    "value": 171193.71,
+    "check": "(900000-(900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-120000*0.3*0.3/(0.1+0.3)/(1+0.1)**5)-120000/(1+0.1)**5)/((1-(1+0.1)**-5)/0.1)",
+    "explain": "The operations supply (1 − T) × EBITDA after tax, so the annuity factor must be multiplied by (1 − T)."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Dropped the salvage term from the PVCCA formula but kept the sale proceeds",
+    "value": 238244.54,
+    "check": "(900000-(900000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1))-120000/(1+0.1)**5)/((1-0.3)*((1-(1+0.1)**-5)/0.1))",
+    "explain": "When the asset is sold the pool loses S, so the later shield falls: subtract S·d·T ÷ (k + d) × 1 ÷ (1 + k)^N."
+   }
+  ],
+  "explanation": "NPV = 0 requires the operations to cover what the shield and the salvage do not: 900,000 − 176,530.58 − 74,510.56 = $648,958.86. That is the PV of a 5-year annuity of (1 − T) × EBITDA at 10%, so EBITDA = 648,958.86 ÷ (0.7 × 3.790787) = $244,562.45.",
+  "source": "generated",
+  "ref": "L05C s8-9; SM 10-23"
+ },
+ {
+  "id": "q11-087",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cypress Hills Cabinets will buy a $420,000 machine for a 6-year project with no salvage. CCA is treated as straight-line (D = $70,000 per year), T = 30% and R = 11% per annum. Price is $40.00 per unit, volume is 30,000 units per year and fixed costs are $200,000 per year. What is the highest variable cost per unit at which NPV is still zero?",
+  "answer": 29.61,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "40-((420000/((1-(1+0.11)**-6)/0.11)-0.3*70000)/(1-0.3)+200000)/30000",
+  "steps": [
+   {
+    "label": "Required OCF for NPV = 0",
+    "value": 99278.16,
+    "check": "420000/((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Required EBITDA",
+    "value": 111825.94,
+    "check": "(420000/((1-(1+0.11)**-6)/0.11)-0.3*70000)/(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Highest variable cost per unit",
+    "value": 29.61,
+    "check": "40-((420000/((1-(1+0.11)**-6)/0.11)-0.3*70000)/(1-0.3)+200000)/30000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "OCF* = 420,000 ÷ 4.230538 = $99,278.16",
+   "EBITDA = ($99,278.16 − 0.3 × 70,000) ÷ 0.7 = $111,825.94",
+   "Contribution needed = ($111,825.94 + 200,000) ÷ 30,000 = $10.3942 per unit",
+   "v = 40.00 − 10.3942 = $29.61"
+  ],
+  "keystrokes": [
+   "TVM: N = 6, I/Y = 11, PV = −420000, CPT PMT = 99,278.16",
+   "(99,278.16 − 21,000) ÷ 0.7 = 111,825.94",
+   "(111,825.94 + 200,000) ÷ 30,000 = 10.3942",
+   "40 − 10.3942 = 29.61"
+  ],
+  "errors": [
+   {
+    "id": "profit-not-npv-breakeven",
+    "label": "Found the variable cost at which accounting profit is zero",
+    "value": 31.0,
+    "check": "40-(200000+70000)/30000",
+    "explain": "At $31.00 net income is zero, but OCF then only equals D and earns no return. The NPV break-even variable cost is lower."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Treated OCF − T·D as pre-tax EBITDA",
+    "value": 30.72,
+    "check": "40-(420000/((1-(1+0.11)**-6)/0.11)-0.3*70000+200000)/30000",
+    "explain": "Divide the after-tax amount by (1 − T) to get pre-tax EBITDA."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 28.61,
+    "check": "40-(420000/((1-(1+0.11)**-6)/0.11)/(1-0.3)+200000)/30000",
+    "explain": "OCF includes T·D = $21,000 from the shield; ignoring it demands too much from operations."
+   }
+  ],
+  "explanation": "A 6-year annuity at 11% must repay $420,000, so OCF must be at least $99,278.16. Strip out the shield (0.3 × 70,000) and gross up for tax to get EBITDA of $111,825.94. Adding fixed costs and dividing by 30,000 units gives a required contribution of $10.39 per unit, so variable cost can be at most $29.61.",
+  "source": "generated",
+  "ref": "TB 11.3; SM 11-27"
+ },
+ {
+  "id": "q11-088",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Fort Saskatchewan Plastics buys a press for $500,000 and treats CCA as straight-line over 5 years. Pre-tax operating income (EBITDA) will be the same every year forever. T = 40% and R = 10% per annum. What is the minimum EBITDA for NPV = 0?",
+  "options": [
+   "$34,836.85",
+   "$83,333.33",
+   "$16,666.67",
+   "$58,061.42"
+  ],
+  "answer": 3,
+  "explanation": "DTS = 0.4 × 500,000 ÷ 5 = 40,000 a year; PV(DTS) = 40,000 × 3.790787 = 151,631.47. Then (1 − T) ÷ R = 6, so EBITDA = (500,000 − 151,631.47) ÷ 6 = $58,061.42. Stopping before dividing by (1 − T) gives $34,836.85, ignoring the shield gives $83,333.33, and valuing the shield as a perpetuity gives $16,666.67.",
+  "source": "generated",
+  "ref": "L05C s8-9"
+ },
+ {
+  "id": "q11-089",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $600,000 production line lasts 5 years with no salvage. CCA is treated as straight-line (D = $120,000 per year), T = 30% and R = 10% per annum. Each unit earns a contribution (price minus variable cost) of $20.00 and fixed costs are $150,000 per year. What annual sales volume gives NPV = 0?",
+  "options": [
+   "16,234 units",
+   "13,500 units",
+   "13,614 units",
+   "7,500 units"
+  ],
+  "answer": 0,
+  "explanation": "OCF* = 600,000 ÷ 3.790787 = 158,278.49. EBITDA = (158,278.49 − 0.3 × 120,000) ÷ 0.7 = 174,683.55. Q = (150,000 + 174,683.55) ÷ 20 = 16,234 units. The accounting break-even is 13,500, forgetting ÷(1 − T) gives 13,614, and the cash break-even FC ÷ contribution is 7,500.",
+  "source": "generated",
+  "ref": "SM 11-24b, 11-28"
+ },
+ {
+  "id": "q11-090",
+  "concept": "c11-npv-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "An investment of $480,000 will produce the same after-tax operating cash flow in each of 4 years. The required return is 14% per annum. What is the smallest annual OCF that gives NPV = 0?",
+  "options": [
+   "$120,000.00",
+   "$164,738.30",
+   "$67,200.00",
+   "$139,816.10"
+  ],
+  "answer": 1,
+  "explanation": "OCF* = I0 ÷ annuity factor(14%, 4) = 480,000 ÷ 2.913712 = $164,738.30. Dividing by N gives $120,000 (no return), treating the flow as a perpetuity gives $67,200, and using a 5-year factor gives $139,816.10.",
+  "source": "generated",
+  "ref": "SM 11-9"
+ }
+]

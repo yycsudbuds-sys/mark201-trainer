@@ -1518,3 +1518,50 @@ td.revealed { background: rgba(201, 162, 39, 0.18) !important; }
   .cmap.radial .cmap-stone { position: static; transform: none; white-space: normal; min-width: 140px; }
   .cmap.radial .cmap-stone:hover { transform: translateY(-2px); }
 }
+
+/* ---------- typed answers (numeric / multistep) ---------- */
+.numeric-work { margin-top: 0.9rem; display: grid; gap: 0.5rem; }
+.num-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.num-unit { font-family: var(--font-display); font-weight: 700; color: var(--gold-leaf); letter-spacing: 0.04em; }
+.num-in { flex: 1 1 160px; min-width: 120px; font-size: 1.25rem; font-family: var(--font-mono); padding: 0.6rem 0.8rem; border-radius: 10px; border: 1px solid var(--line-strong); background: rgba(0, 0, 0, 0.25); color: var(--text); }
+[data-theme="light"] .num-in { background: rgba(255, 250, 240, 0.9); }
+.num-in:focus { outline: 2px solid var(--gold-leaf); outline-offset: 1px; }
+.num-in.shake { animation: shake 0.3s; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+:root[data-motion="off"] .num-in.shake { animation: none; }
+.num-hint { margin-top: -0.2rem; }
+.num-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+.num-step { padding: 0.55rem 0.7rem; border-radius: 10px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.14); display: grid; gap: 0.35rem; }
+[data-theme="light"] .num-step { background: rgba(90, 67, 48, 0.07); }
+.num-step.now { border-color: var(--gold-leaf); box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold-leaf) 40%, transparent); }
+.num-step.ok { border-color: color-mix(in srgb, var(--laurel) 60%, transparent); }
+.num-step.no { border-color: color-mix(in srgb, var(--pompeian-light) 70%, transparent); }
+.num-step.ahead { opacity: 0.55; }
+.num-step-label { font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
+.num-step-n { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--gold-leaf); color: #1A1206; font-family: var(--font-display); font-size: 0.75rem; font-weight: 800; }
+.num-step-val { font-family: var(--font-mono); font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem; }
+.num-compare { display: flex; gap: 1.2rem; flex-wrap: wrap; margin: 0.4rem 0 0.6rem; font-size: 0.95rem; }
+.num-you.no b { color: var(--pompeian-light); } .num-you.ok b { color: var(--laurel); }
+.diagnosis { display: flex; gap: 0.6rem; align-items: flex-start; padding: 0.6rem 0.8rem; border-radius: 10px; background: color-mix(in srgb, var(--pompeian) 18%, transparent); border: 1px solid color-mix(in srgb, var(--pompeian-light) 55%, transparent); margin-bottom: 0.6rem; }
+.worked { margin: 0.4rem 0 0.6rem; }
+.worked-lines { margin: 0.3rem 0 0; padding-left: 1.3rem; display: grid; gap: 0.25rem; font-family: var(--font-mono); font-size: 0.86rem; line-height: 1.45; }
+.keys, .errlib { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.3rem; font-size: 0.9rem; }
+.keys li { font-family: var(--font-mono); font-size: 0.84rem; }
+.errlib li.hit { color: var(--text); background: color-mix(in srgb, var(--pompeian) 20%, transparent); border-radius: 6px; padding: 0.2rem 0.4rem; margin-left: -0.4rem; }
+
+/* ---------- concept cards (Learn in card mode) ---------- */
+.card-slide { display: grid; gap: 0.7rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.6rem; }
+.card-grid .callout { margin: 0; }
+.formula-callout .formula-text { font-family: var(--font-mono); font-size: 1.02rem; margin-top: 0.3rem; line-height: 1.5; }
+.vault-rows { display: grid; gap: 0.5rem; }
+.vault-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.8rem; align-items: center; padding: 0.6rem 0.75rem; border-radius: 10px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.14); }
+[data-theme="light"] .vault-row { background: rgba(90, 67, 48, 0.07); }
+.vault-main { display: grid; gap: 0.25rem; min-width: 0; }
+.vault-main .formula-text { font-family: var(--font-mono); font-size: 1rem; line-height: 1.5; }
+.vault-side { display: grid; gap: 0.35rem; justify-items: end; }
+.topic-picker { display: grid; gap: 0.35rem; }
+.topic-row { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+.topic-row .chip { cursor: pointer; }
+.drill-count { gap: 0.4rem; }
+@media (max-width: 640px) { .vault-row { grid-template-columns: 1fr; } .vault-side { justify-items: start; } }

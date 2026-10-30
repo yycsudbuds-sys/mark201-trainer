@@ -1,0 +1,1188 @@
+[
+ {
+  "id": "q08-441",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In non-constant growth, \"solving backwards\" means:",
+  "options": [
+   "computing the horizon price first and then discounting it back to date 0 to get today's price",
+   "the price is given (P0 or a horizon price) and you solve the valuation equation for an unknown input such as g2 or a dividend",
+   "valuing the stock by working from the last dividend toward the first dividend",
+   "discounting the dividends at the required return in reverse order, last dividend first"
+  ],
+  "answer": 1,
+  "explanation": "In the usual direction the inputs (dividends, growth, R) give a price. Solving backwards flips this: the price is known and one input (g2, D1 or D0, the first dividend) is the unknown. The valuation equation is the same; you rearrange it.",
+  "source": "generated",
+  "ref": "S4 s9-13; SM 8-18"
+ },
+ {
+  "id": "q08-442",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which of the following questions requires solving backwards?",
+  "options": [
+   "\"What is the stock worth today if dividends grow at 7% for three years and 5% afterwards forever?\"",
+   "\"What is the dividend yield if the stock trades at $20 and the next dividend D1 is $1.10 per share?\"",
+   "\"The stock should sell for $20 in three years. What growth rate after year 3 does that imply?\"",
+   "\"By how many periods is the horizon price discounted to bring it back to date 0?\""
+  ],
+  "answer": 2,
+  "explanation": "Only the prompt that starts from the expected $20 price in three years and asks for the growth rate that price implies solves backwards: the price is known and an input (g2) is the unknown. The others run forward from inputs to a value or a ratio. Giant's \"expected constant growth rate beginning in year 4\" is the model case (S4 s9-13).",
+  "source": "generated",
+  "ref": "S4 s9-13"
+ },
+ {
+  "id": "q08-443",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "The horizon price P_T = D_T(1 + g2)/(R − g2) is known, together with D_T and R. Which expression gives g2?",
+  "options": [
+   "g2 = (P_T × R − D_T)/(P_T − D_T)",
+   "g2 = R − D_T/P_T",
+   "g2 = (P_T × R + D_T)/(P_T + D_T)",
+   "g2 = (P_T × R − D_T)/(P_T + D_T)"
+  ],
+  "answer": 3,
+  "explanation": "P_T(R − g2) = D_T(1 + g2) → P_T R − D_T = g2 (P_T + D_T). The shortcut R − D_T/P_T forgets that the next dividend is D_T(1 + g2), not D_T, so it overstates g2; the other two slip a sign when collecting the g2 terms.",
+  "source": "generated",
+  "ref": "S4 s10-11"
+ },
+ {
+  "id": "q08-444",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "The price today and all growth rates are known, but the current dividend D0 is not. The cleanest way to find D0 is to:",
+  "options": [
+   "guess D0 and keep adjusting the required return until the price matches",
+   "find the horizon price and divide it by the number of years to the first dividend",
+   "write every discounted cash flow as a multiple of D0, add the multiples, and divide P0 by that total",
+   "average the growth rates and apply the Gordon formula backwards to D1"
+  ],
+  "answer": 2,
+  "explanation": "With R and the growth rates fixed, every term of the valuation is D0 times a known factor, so P0 = D0 × (sum of factors) and D0 = P0/(sum). SM 8-18 gets a factor of 53.75 and D0 = $76/53.75 = $1.41.",
+  "source": "generated",
+  "ref": "SM 8-18; S4 s9-13"
+ },
+ {
+  "id": "q08-445",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Compare solving a non-constant growth model for D0 with solving it for the required return R. Which statement is correct?",
+  "options": [
+   "D0 appears linearly, so algebra is enough; R is in every denominator, so it needs trial and error",
+   "Both can be rearranged to a closed form in one step, since each appears once in the equation",
+   "R has a closed form, but D0 needs trial and error because it multiplies every term",
+   "Neither can be solved, because the horizon price itself depends on the unknown quantity"
+  ],
+  "answer": 0,
+  "explanation": "P0 = D0 × (known factors) is linear in D0. But R is inside (1 + R)^t and also inside R − g2 of the horizon price, so SM 8-33 finds R = 13.43% by root-finding. (Constant growth alone gives R = D1/P0 + g, which is closed form.)",
+  "source": "generated",
+  "ref": "SM 8-18; SM 8-33"
+ },
+ {
+  "id": "q08-446",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following can NOT be found by simple algebra from a non-constant growth valuation?",
+  "options": [
+   "The long-run growth rate g2 implied by a given horizon price",
+   "The dividend D0 implied by today's price and the growth rates",
+   "The required return R implied by the price (needs trial and error)",
+   "The horizon price that would give a chosen target value today"
+  ],
+  "answer": 2,
+  "explanation": "g2, D0 and the needed horizon price each appear linearly (or in a simple ratio) once the others are known. R sits in several powers of (1 + R) and in R − g2, so SM 8-33 uses a root-finder to get 13.43%.",
+  "source": "generated",
+  "ref": "SM 8-33"
+ },
+ {
+  "id": "q08-447",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why is D0 easy to solve for from today's price, even when growth rates change several times?",
+  "options": [
+   "The horizon price does not depend on D0, so only the early dividends matter",
+   "Every dividend is D0 times known growth factors, so the valuation is P0 = D0 × (a known number)",
+   "Dividends cancel out of the present-value equation when growth rates change",
+   "The required return can be set equal to the growth rate, which removes D0 from the equation"
+  ],
+  "answer": 1,
+  "explanation": "Each dividend is D0(1 + g1)(1 + g2)... and each discount factor is known, so the equation has a single unknown with a constant coefficient. That coefficient (e.g. 53.75 in SM 8-18) is the PV of the stream per $1 of D0.",
+  "source": "generated",
+  "ref": "SM 8-18"
+ },
+ {
+  "id": "q08-448",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "An analyst's target price of $20 in three years implies a long-run dividend growth rate g2 = 9.8% when R = 11%. How should you read this?",
+  "options": [
+   "The target is conservative, because g2 is comfortably less than R",
+   "The target is very optimistic: g2 is close to R, far above plausible long-run growth",
+   "The target is irrelevant, because g2 does not affect the horizon price",
+   "The implied g2 means the stock must be undervalued today, so buy it"
+  ],
+  "answer": 1,
+  "explanation": "A horizon price P_T = D_{T+1}/(R − g2) becomes extremely sensitive when g2 approaches R. An implied g2 near R signals that the target needs near-perpetual high growth. Compare with Giant (S4 s11), where g2 = 5.32% against R = 15%.",
+  "source": "generated",
+  "ref": "S4 s11-13"
+ },
+ {
+  "id": "q08-449",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Gatineau Glass just paid $1.20. Dividends grow 9% per year for 3 years, and the stock is expected to be worth $24.00 at the end of year 3 (R = 14% per annum). What constant growth rate g2 after year 3 does that price imply?",
+  "options": [
+   "7.07%",
+   "7.52%",
+   "8.05%",
+   "8.57%"
+  ],
+  "answer": 0,
+  "explanation": "D3 = 1.20 × 1.09³ = $1.5540. From 24 = D3(1 + g2)/(0.14 − g2): g2 = (24 × 0.14 − 1.5540)/(24 + 1.5540) = 7.0672%. The shortcut R − D3/P3 (7.52%) treats D3 as next year's dividend; using D0 gives 8.57%; (P − D) in the denominator gives 8.05%.",
+  "source": "generated",
+  "ref": "S4 s9-11"
+ },
+ {
+  "id": "q08-450",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Harbourfront Bakeries trades at $60 today. Its dividend will grow 20% next year, 10% the year after, and 4% per year from year 3 on. R = 9% per annum. What is next year's dividend D1?",
+  "options": [
+   "$2.37",
+   "$2.84",
+   "$3.08",
+   "$32.55"
+  ],
+  "answer": 1,
+  "explanation": "Per $1 of D0: PV = 1.2/1.09 + 1.32/1.09² + (1.32 × 1.04/0.05)/1.09² = 25.3211. D0 = 60/25.3211 = $2.3696, so D1 = 1.20 × D0 = $2.84. Reporting D0 ($2.37) answers the wrong question; dropping the horizon price gives $32.55; discounting the horizon price three years gives $3.08.",
+  "source": "generated",
+  "ref": "SM 8-18; S4 s9-13"
+ },
+ {
+  "id": "q08-451",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Whitecap Wind just paid $2.40. Dividends grow 8% per year for 3 years. Analysts expect the stock to be worth $48.00 at the end of year 3, and R = 13% per annum. What constant growth rate g2 after year 3 is implied? (Answer in % per annum.)",
+  "answer": 6.3,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(48*0.13-2.40*1.08**3)/(48+2.40*1.08**3)*100",
+  "steps": [
+   {
+    "label": "Year-3 dividend D3 = D0(1.08)^3",
+    "value": 3.0233,
+    "check": "2.40*1.08**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Implied long-run growth g2 = (P3 R − D3)/(P3 + D3) (in %)",
+    "value": 6.3044,
+    "check": "(48*0.13-2.40*1.08**3)/(48+2.40*1.08**3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D3 = 2.40 × 1.08³ = $3.0233",
+   "P3 = D4/(R − g2) = D3(1 + g2)/(R − g2) = 48",
+   "48 × (0.13 − g2) = D3 + D3 g2 → 6.24 − 3.0233 = g2 (48 + 3.0233)",
+   "g2 = 3.2167/51.0233 = 6.3044% per annum",
+   "Check: D4 = 3.2139; D4/(0.13 − 0.0630) = $48.00"
+  ],
+  "keystrokes": [
+   "2.40 × 1.08 y^x 3 = 3.0233",
+   "(48 × 0.13 − 3.0233) ÷ (48 + 3.0233) × 100 = 6.30"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Treated D3 as the next dividend (g2 = R − D3/P3)",
+    "value": 6.7,
+    "check": "(0.13-2.40*1.08**3/48)*100",
+    "explain": "The horizon price uses D4 = D3(1 + g2), which still contains the unknown g2."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D0 instead of D3",
+    "value": 7.62,
+    "check": "(48*0.13-2.40)/(48+2.40)*100",
+    "explain": "The dividend that grows into the long-run stream is D3, the last first-stage dividend."
+   },
+   {
+    "id": "sign-error",
+    "label": "Collected the g2 terms with a sign slip",
+    "value": 7.15,
+    "check": "(48*0.13-2.40*1.08**3)/(48-2.40*1.08**3)*100",
+    "explain": "48(0.13 − g2) = D3(1 + g2) gives g2 in the form (48R − D3)/(48 + D3)."
+   }
+  ],
+  "explanation": "With the horizon price given, the Gordon formula P3 = D3(1 + g2)/(R − g2) is one equation in one unknown. g2 = 6.30% is sensible against R = 13%.",
+  "source": "generated",
+  "ref": "S4 s10-11"
+ },
+ {
+  "id": "q08-452",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Rideau Rail trades at $52.00. Its dividend is expected to grow 25% next year, 15% the year after, and 5% per year from year 3 on. R = 10% per annum. What is the dividend D1 due next year? (Answer in $.)",
+  "answer": 2.38,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "52/(1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**2)*1.25",
+  "steps": [
+   {
+    "label": "Horizon price per $1 of D0: P2/D0 = 1.25 × 1.15 × 1.05/(R − g)",
+    "value": 30.1875,
+    "check": "1.25*1.15*1.05/(0.10-0.05)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of everything per $1 of D0",
+    "value": 27.2727,
+    "check": "1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**2",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Current dividend D0 = 52/factor",
+    "value": 1.9067,
+    "check": "52/(1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Next dividend D1 = 1.25 × D0",
+    "value": 2.3833,
+    "check": "52/(1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**2)*1.25",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Write each cash flow per $1 of D0: D1 = 1.25, D2 = 1.4375, D3 = 1.5094",
+   "P2 = D3/(R − g) = 1.5094/0.05 = 30.1875 (per $1 of D0)",
+   "Factor = 1.25/1.10 + 1.4375/1.10² + 30.1875/1.10² = 1.1364 + 1.1880 + 24.9483 = 27.2727",
+   "D0 = 52/27.2727 = $1.9067",
+   "D1 = 1.25 × 1.9067 = $2.38"
+  ],
+  "keystrokes": [
+   "1.25 × 1.15 × 1.05 ÷ 0.05 = 30.1875",
+   "1.25 ÷ 1.1 + 1.4375 ÷ 1.21 + 30.1875 ÷ 1.21 = 27.2727",
+   "52 ÷ 27.2727 = 1.9067 (D0); × 1.25 = 2.38"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Reported D0 instead of D1",
+    "value": 1.91,
+    "check": "52/(1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**2)",
+    "explain": "The question asks for next year's dividend D1 = 1.25 D0."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Left the horizon price out of the factor",
+    "value": 27.96,
+    "check": "52/(1.25/1.1+1.25*1.15/1.1**2)*1.25",
+    "explain": "The constant-growth tail after year 2 is by far the largest part of the factor."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted the horizon price three years",
+    "value": 2.6,
+    "check": "52/(1.25/1.1+1.25*1.15/1.1**2+1.25*1.15*1.05/(0.10-0.05)/1.1**3)*1.25",
+    "explain": "D3 is the first constant-growth dividend, so P2 is a year-2 value and is discounted twice."
+   }
+  ],
+  "explanation": "A solve-for-the-dividend problem is a forward valuation per $1 of D0 followed by a division. The horizon price carries most of the factor.",
+  "source": "generated",
+  "ref": "SM 8-18"
+ },
+ {
+  "id": "q08-453",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Yukon Drillers is expected to pay $1.10, $1.30, $1.55 and $1.80 at the ends of years 1 to 4. R = 11% per annum. What price would the stock have to reach at the end of year 4 for a buyer today to be willing to pay $55.00? (Answer in $.)",
+  "answer": 76.87,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(55-(1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4))*1.11**4",
+  "steps": [
+   {
+    "label": "PV of the four dividends",
+    "value": 4.3652,
+    "check": "1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV that the year-4 price must supply",
+    "value": 50.6348,
+    "check": "55-(1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required price P4",
+    "value": 76.8672,
+    "check": "(55-(1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4))*1.11**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV(dividends) = 1.10/1.11 + 1.30/1.11² + 1.55/1.11³ + 1.80/1.11⁴ = 4.3652",
+   "The year-4 price must supply 55.00 − 4.3652 = $50.6348 in present value",
+   "P4 = 50.6348 × 1.11⁴ = $76.87"
+  ],
+  "keystrokes": [
+   "CF0 = −55, C01 = 1.10, C02 = 1.30, C03 = 1.55, C04 = 1.80 + P4",
+   "Or: NPV of dividends at 11% = 4.3652; (55 − 4.3652) × 1.11 y^x 4 = 76.87"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Ignored the dividends (P4 = 55 × 1.11^4)",
+    "value": 83.49,
+    "check": "55*1.11**4",
+    "explain": "The four dividends already pay back about $4.37 of the price, so P4 only has to cover the remainder."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Compounded the remainder only three years",
+    "value": 69.25,
+    "check": "(55-(1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4))*1.11**3",
+    "explain": "P4 is a year-4 value: compound the needed present value four periods."
+   },
+   {
+    "id": "sign-error",
+    "label": "Added the dividends instead of subtracting",
+    "value": 90.12,
+    "check": "(55+(1.10/1.11+1.30/1.11**2+1.55/1.11**3+1.80/1.11**4))*1.11**4",
+    "explain": "The dividends reduce, not increase, what the final price must be worth."
+   }
+  ],
+  "explanation": "Solving backwards for a horizon price is the same equation as the forward valuation: P0 = PV(dividends) + P4/(1 + R)^4, rearranged for P4.",
+  "source": "generated",
+  "ref": "S4 s9-13; TB 8.1"
+ },
+ {
+  "id": "q08-454",
+  "concept": "c08-solve-backwards",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Saskatoon Seed Corp trades at $18.40. It will pay no dividend for five years; its first dividend D6 arrives at the end of year 6 and then grows 6% per year forever. R = 12% per annum. What first dividend D6 is the market price implying? (Answer in $.)",
+  "answer": 1.95,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "18.40*1.12**5*(0.12-0.06)",
+  "steps": [
+   {
+    "label": "Horizon price P5 = P0 × (1 + R)^5",
+    "value": 32.4271,
+    "check": "18.40*1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "First dividend D6 = P5 × (R − g)",
+    "value": 1.9456,
+    "check": "18.40*1.12**5*(0.12-0.06)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P0 = P5/(1 + R)^5 and P5 = D6/(R − g)",
+   "P5 = 18.40 × 1.12⁵ = 18.40 × 1.7623 = $32.4271",
+   "D6 = P5 × (R − g) = 32.4271 × 0.06 = $1.95"
+  ],
+  "keystrokes": [
+   "18.40 × 1.12 y^x 5 = 32.4271",
+   "32.4271 × (0.12 − 0.06) = 1.95"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Compounded six years instead of five",
+    "value": 2.18,
+    "check": "18.40*1.12**6*(0.12-0.06)",
+    "explain": "P5 (not P6) is one period before the first dividend, so compound P0 five periods."
+   },
+   {
+    "id": "r-plus-g",
+    "label": "Used R + g",
+    "value": 5.84,
+    "check": "18.40*1.12**5*(0.12+0.06)",
+    "explain": "The Gordon denominator is R minus g."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Skipped the compounding (D6 = P0 × (R − g))",
+    "value": 1.1,
+    "check": "18.40*(0.12-0.06)",
+    "explain": "Today's price is a present value; the dividend is paid years later, so you must compound P0 forward to year 5 first."
+   }
+  ],
+  "explanation": "Rearranging P0 = [D6/(R − g)]/(1 + R)^5 gives D6 = P0 × (1 + R)^5 × (R − g). The market is pricing in a first dividend of about $1.95.",
+  "source": "generated",
+  "ref": "SM 8-14; S4 s9-13"
+ },
+ {
+  "id": "q08-461",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The plowback ratio b is:",
+  "options": [
+   "the fraction of earnings paid out as dividends, DPS/EPS",
+   "the fraction of earnings retained and reinvested, b = (EPS − DPS)/EPS",
+   "the growth rate of book equity per share",
+   "earnings per share divided by book equity per share"
+  ],
+  "answer": 1,
+  "explanation": "Plowback (retention) is what the firm keeps: b = (EPS − DPS)/EPS = 1 − payout. The payout ratio DPS/EPS is its complement, and EPS divided by book equity per share is ROE.",
+  "source": "generated",
+  "ref": "L04 s23-26; FS p1"
+ },
+ {
+  "id": "q08-462",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In g = b × ROE as used in this course, ROE is earnings per share divided by:",
+  "options": [
+   "book equity per share at the END of the year",
+   "the average of start-of-year and end-of-year book equity",
+   "book equity per share at the START of the year",
+   "the current market price per share"
+  ],
+  "answer": 2,
+  "explanation": "Retained earnings added during the year raise equity at the end of the year, so the start-of-year base is the equity that earned this year's EPS. Dividing by end-of-year equity (or market price) understates ROE and therefore g.",
+  "source": "generated",
+  "ref": "L04 s27; PRAC q4"
+ },
+ {
+  "id": "q08-463",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A firm earns EPS of $3.00 and pays DPS of $1.20. Which pair of ratios describes it?",
+  "options": [
+   "Plowback 60%, payout 40%",
+   "Plowback 40%, payout 60%",
+   "Plowback 60%, payout 60%",
+   "Plowback 40%, payout 40%"
+  ],
+  "answer": 0,
+  "explanation": "Payout = 1.20/3.00 = 40%. Plowback is the rest: b = (3.00 − 1.20)/3.00 = 60%. The two always add to 100%; swapping them is the payout-as-plowback slip that produces g = payout × ROE.",
+  "source": "generated",
+  "ref": "L04 s26"
+ },
+ {
+  "id": "q08-464",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A mature firm with ROE = 12% raises its payout ratio from 40% to 70% and ROE does not change. Its growth rate g changes from:",
+  "options": [
+   "7.2% to 8.4%",
+   "4.8% to 8.4%",
+   "4.8% to 3.6%",
+   "7.2% to 3.6%"
+  ],
+  "answer": 3,
+  "explanation": "g = b × ROE with b = 1 − payout: 0.60 × 12% = 7.2% before, and 0.30 × 12% = 3.6% after. Paying out more retains less, so growth falls. The other pairs use the payout ratio as if it were b.",
+  "source": "generated",
+  "ref": "L04 s23-28"
+ },
+ {
+  "id": "q08-465",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement distinguishes the payout ratio from the plowback ratio correctly?",
+  "options": [
+   "Payout drives growth through g = payout × ROE; plowback is paid to shareholders",
+   "Payout = DPS/EPS goes to shareholders now; plowback b = 1 − payout drives growth through g = b × ROE",
+   "Payout and plowback are the same quantity measured on different dates",
+   "Plowback is measured on book equity, payout on the market price"
+  ],
+  "answer": 1,
+  "explanation": "The cash paid out today is the payout; what stays in the firm to earn ROE next year is b. Only b enters g = b × ROE. Using the payout ratio there is the single most common slip on this topic.",
+  "source": "generated",
+  "ref": "L04 s23-27"
+ },
+ {
+  "id": "q08-466",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT consistent with the course's growth relationship g = b × ROE?",
+  "options": [
+   "A firm that retains all earnings and earns ROE of 14% grows at 14%",
+   "A firm that pays out all earnings still grows at ROE",
+   "At a constant ROE, raising the payout ratio lowers g",
+   "Growth comes from reinvested earnings that earn ROE on equity"
+  ],
+  "answer": 1,
+  "explanation": "If b = 0 (everything paid out) then g = 0 × ROE = 0: no new equity is added, so book equity and earnings stay flat. The other statements follow directly from g = b × ROE.",
+  "source": "generated",
+  "ref": "L04 s24-27"
+ },
+ {
+  "id": "q08-467",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do young companies typically plow back more than mature companies?",
+  "options": [
+   "Young firms earn lower ROE, so they must reinvest more just to be able to pay dividends",
+   "Plowback is required by law for firms under five years old with no earnings history",
+   "Young firms have lower required returns, so they can afford to pay no dividends at all",
+   "They have many projects worth funding and need the cash, so b is near 1 and g is large"
+  ],
+  "answer": 3,
+  "explanation": "Growth stocks reinvest nearly all earnings (b near 1, large g) because their opportunities are plentiful; income stocks have b near 0 and small g (L04 s29). Reinvestment is a response to opportunities, not a legal rule.",
+  "source": "generated",
+  "ref": "L04 s29; REV p3; SM 8 CTQ 3"
+ },
+ {
+  "id": "q08-468",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A firm with R = 12% considers raising b. When will a higher plowback ratio increase the share price, holding R fixed?",
+  "options": [
+   "Always, because a higher b raises g",
+   "When ROE is below R, because retained earnings are then cheaper than new equity",
+   "Never, because dividends are the only source of value",
+   "When ROE exceeds R: the reinvested earnings then earn more than investors require"
+  ],
+  "answer": 3,
+  "explanation": "A higher b lowers D1 but raises g. If ROE > R each retained dollar is worth more than a dollar to shareholders (NPVGO rises); if ROE < R the growth destroys value, as in Johnson (S4 s18). If ROE = R, b makes no difference to price.",
+  "source": "generated",
+  "ref": "L04 s33-34; S4 s18"
+ },
+ {
+  "id": "q08-469",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm with a return on equity of 15% and a payout ratio of 40% would expect a growth rate of:",
+  "options": [
+   "9%",
+   "21%",
+   "6%",
+   "24%",
+   "None of the above"
+  ],
+  "answer": 0,
+  "explanation": "Plowback b = 1 − payout = 1 − 0.40 = 0.60, so g = b × ROE = 0.60 × 15% = 9%. The tempting 6% comes from multiplying the payout ratio by ROE (0.40 × 15%: payout-as-plowback). The 21% and 24% add 15% × payout or 15% × b onto ROE, which has no basis in g = b × ROE.",
+  "source": "official",
+  "ref": "PRAC q4"
+ },
+ {
+  "id": "q08-470",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Tamarack Solar wants its dividends to grow 7.5% per year and earns ROE = 12.5% on start-of-year equity. What plowback ratio b does it need? (Answer as a percentage.)",
+  "options": [
+   "0.94%",
+   "40.00%",
+   "55.81%",
+   "60.00%"
+  ],
+  "answer": 3,
+  "explanation": "g = b × ROE → b = g/ROE = 7.5%/12.5% = 60%. Reporting the payout ratio (40%) answers the complement; multiplying g by ROE gives 0.94%; solving the textbook sustainable-growth formula ROE·b/(1 − ROE·b) for b gives 55.81%, which is not the course formula.",
+  "source": "generated",
+  "ref": "L04 s27; FS p1"
+ },
+ {
+  "id": "q08-471",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rideau Rail earned $2.4 million after tax, paid $0.96 million in dividends, and had book equity of $16.0 million at the start of the year. What growth rate does the course's formula give?",
+  "options": [
+   "6.00%",
+   "8.26%",
+   "9.00%",
+   "15.00%"
+  ],
+  "answer": 2,
+  "explanation": "b = (2.4 − 0.96)/2.4 = 0.60 and ROE = 2.4/16.0 = 15% on start-of-year equity, so g = 0.60 × 15% = 9.00%. Using the payout ratio (0.40) gives 6.00%; dividing by end-of-year equity (16.0 + 1.44 = 17.44) gives ROE 13.76% and g = 8.26%; and reporting ROE itself (15.00%) forgets to multiply by b.",
+  "source": "generated",
+  "ref": "L04 s26-28"
+ },
+ {
+  "id": "q08-472",
+  "concept": "c08-plowback-growth",
+  "also": [
+   "c08-gordon-growth"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Sun Peaks Resorts just reported EPS of $3.50 and pays out 45% of earnings; ROE is 14% and R = 11.5% per annum. Assuming payout and ROE stay constant, what is the share price?",
+  "options": [
+   "$32.20",
+   "$41.45",
+   "$44.64",
+   "$48.08"
+  ],
+  "answer": 2,
+  "explanation": "DPS0 = 3.50 × 0.45 = $1.575, b = 0.55, g = 0.55 × 14% = 7.7%. D1 = 1.575 × 1.077 = $1.6963 and P0 = 1.6963/(0.115 − 0.077) = $44.64. Using the payout as b (g = 6.3%) gives $32.20; skipping the growth step to D1 gives $41.45; growing twice gives $48.08.",
+  "source": "generated",
+  "ref": "L04 s28; SM 8-29"
+ },
+ {
+  "id": "q08-473",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "True or false: if a firm pays out all of its earnings as dividends, then g = b × ROE gives a growth rate of zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. With full payout b = 0, so no earnings are retained, book equity does not grow and g = 0 × ROE = 0. This is the 'no-growth' case behind the value EPS1/R.",
+  "source": "generated",
+  "ref": "L04 s24-27"
+ },
+ {
+  "id": "q08-474",
+  "concept": "c08-plowback-growth",
+  "also": [
+   "c08-gordon-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cobalt Peak Software reported EPS of $4.20 and DPS of $1.68 for the year just ended; book equity per share at the start of the year was $28.00. Payout and ROE stay constant and R = 12% per annum. What is the share price today? (Answer in $.)",
+  "answer": 61.04,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.68*(1+(4.20-1.68)/4.20*4.20/28)/(0.12-(4.20-1.68)/4.20*4.20/28)",
+  "steps": [
+   {
+    "label": "Plowback b = (EPS − DPS)/EPS",
+    "value": 0.6,
+    "check": "(4.20-1.68)/4.20",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "ROE = EPS/book equity at start of year",
+    "value": 0.15,
+    "check": "4.20/28",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 9.0,
+    "check": "(4.20-1.68)/4.20*4.20/28*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Next dividend D1 = DPS(1 + g)",
+    "value": 1.8312,
+    "check": "1.68*(1+(4.20-1.68)/4.20*4.20/28)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 61.04,
+    "check": "1.68*(1+(4.20-1.68)/4.20*4.20/28)/(0.12-(4.20-1.68)/4.20*4.20/28)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = (4.20 − 1.68)/4.20 = 0.60 (payout 40%)",
+   "ROE = 4.20/28.00 = 0.15 (start-of-year equity)",
+   "g = 0.60 × 0.15 = 9%",
+   "D1 = 1.68 × 1.09 = $1.8312",
+   "P0 = 1.8312/(0.12 − 0.09) = 1.8312/0.03 = $61.04"
+  ],
+  "keystrokes": [
+   "(4.20 − 1.68) ÷ 4.20 = 0.60",
+   "4.20 ÷ 28 = 0.15; 0.60 × 0.15 = 0.09",
+   "1.68 × 1.09 = 1.8312",
+   "1.8312 ÷ (0.12 − 0.09) = 61.04"
+  ],
+  "errors": [
+   {
+    "id": "payout-as-plowback",
+    "label": "Used the payout ratio as b (g = 6%)",
+    "value": 29.68,
+    "check": "1.68*(1+0.4*0.15)/(0.12-0.4*0.15)",
+    "explain": "Plowback is the retained share, 60%, not the 40% paid out."
+   },
+   {
+    "id": "roe-end-equity",
+    "label": "Measured ROE on end-of-year equity",
+    "value": 48.59,
+    "check": "1.68*(1+0.6*4.20/(28+4.20*0.6))/(0.12-0.6*4.20/(28+4.20*0.6))",
+    "explain": "ROE uses start-of-year equity (28.00); end-of-year equity includes the earnings just retained."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Used DPS instead of D1",
+    "value": 56.0,
+    "check": "1.68/(0.12-0.09)",
+    "explain": "The Gordon numerator is next year's dividend D1 = DPS(1 + g)."
+   }
+  ],
+  "explanation": "Steps: plowback → ROE on start-of-year equity → g = b × ROE → D1 = DPS(1 + g) → Gordon. The trailing P/E is about 14.5, sensible for g = 9% and R = 12%.",
+  "source": "generated",
+  "ref": "L04 s28; PRAC q4"
+ },
+ {
+  "id": "q08-475",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Orchards earned net income of $14.7 million, paid dividends of $5.3 million, and had book equity of $98.0 million at the start of the year. Payout and ROE stay constant. What growth rate does the course's formula imply? (Answer in % per annum.)",
+  "answer": 9.59,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-5.3/14.7)*14.7/98*100",
+  "steps": [
+   {
+    "label": "Payout ratio",
+    "value": 0.3605,
+    "check": "5.3/14.7",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Plowback b = 1 − payout",
+    "value": 0.6395,
+    "check": "1-5.3/14.7",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "ROE = NI/start-of-year equity",
+    "value": 0.15,
+    "check": "14.7/98",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 9.5918,
+    "check": "(1-5.3/14.7)*14.7/98*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Payout = 5.3/14.7 = 0.3605; b = 1 − 0.3605 = 0.6395",
+   "ROE = 14.7/98.0 = 0.15",
+   "g = 0.6395 × 0.15 = 9.592% per annum"
+  ],
+  "keystrokes": [
+   "5.3 ÷ 14.7 = 0.3605",
+   "1 − 0.3605 = 0.6395",
+   "14.7 ÷ 98 = 0.15; × 0.6395 = 0.0959 → 9.59%"
+  ],
+  "errors": [
+   {
+    "id": "payout-as-plowback",
+    "label": "Used the payout ratio as b",
+    "value": 5.41,
+    "check": "5.3/14.7*14.7/98*100",
+    "explain": "b is what is retained (about 64%), not what is paid out."
+   },
+   {
+    "id": "roe-end-equity",
+    "label": "Used end-of-year equity (98 + 14.7 − 5.3)",
+    "value": 8.75,
+    "check": "(1-5.3/14.7)*14.7/(98+14.7-5.3)*100",
+    "explain": "ROE is measured on start-of-year equity."
+   },
+   {
+    "id": "roe-as-g",
+    "label": "Reported ROE itself as the growth rate",
+    "value": 15.0,
+    "check": "14.7/98*100",
+    "explain": "g = b × ROE; skipping b treats every dollar of earnings as retained."
+   }
+  ],
+  "explanation": "Net income and dividends give b, net income and starting equity give ROE; their product is the growth rate (about 9.6%). The same answer comes from EPS and DPS per share.",
+  "source": "generated",
+  "ref": "L04 s26-28; REV p3"
+ },
+ {
+  "id": "q08-476",
+  "concept": "c08-plowback-growth",
+  "also": [
+   "c08-gordon-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Gatineau Glass just reported EPS of $5.00. It pays out 35% of earnings, ROE is 14% on start-of-year equity, and R = 13% per annum. Payout and ROE stay constant. What is the share price today? (Answer in $.)",
+  "answer": 48.96,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "5.00*0.35*(1+0.65*0.14)/(0.13-0.65*0.14)",
+  "steps": [
+   {
+    "label": "Plowback b = 1 − payout",
+    "value": 0.65,
+    "check": "1-0.35",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 9.1,
+    "check": "0.65*0.14*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Next dividend D1 = EPS0 × payout × (1 + g)",
+    "value": 1.9092,
+    "check": "5.00*0.35*(1+0.65*0.14)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 48.9551,
+    "check": "5.00*0.35*(1+0.65*0.14)/(0.13-0.65*0.14)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = 1 − 0.35 = 0.65; g = 0.65 × 0.14 = 9.1%",
+   "D0 = 5.00 × 0.35 = $1.75; D1 = 1.75 × 1.091 = $1.9093",
+   "P0 = 1.9093/(0.13 − 0.091) = 1.9093/0.039 = $48.96"
+  ],
+  "keystrokes": [
+   "0.65 × 0.14 = 0.091",
+   "5.00 × 0.35 × 1.091 = 1.9093",
+   "1.9093 ÷ (0.13 − 0.091) = 48.96"
+  ],
+  "errors": [
+   {
+    "id": "eps0-for-eps1",
+    "label": "Used EPS0 × payout as D1 (no growth step)",
+    "value": 44.87,
+    "check": "5.00*0.35/(0.13-0.65*0.14)",
+    "explain": "D1 = payout × EPS1 and EPS1 = EPS0(1 + g); EPS0 is last year's number."
+   },
+   {
+    "id": "payout-as-plowback",
+    "label": "Used payout as b (g = 4.9%)",
+    "value": 22.66,
+    "check": "5.00*0.35*(1+0.35*0.14)/(0.13-0.35*0.14)",
+    "explain": "g = (1 − payout) × ROE = 0.65 × 14%."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew the dividend twice",
+    "value": 53.41,
+    "check": "5.00*0.35*(1+0.65*0.14)**2/(0.13-0.65*0.14)",
+    "explain": "Only one growth step separates D0 from D1."
+   }
+  ],
+  "explanation": "EPS0 is already earned; the dividend investors receive next year is payout × EPS1, where EPS1 = EPS0(1 + g).",
+  "source": "generated",
+  "ref": "L04 s28; SM 8-29"
+ },
+ {
+  "id": "q08-477",
+  "concept": "c08-plowback-growth",
+  "also": [
+   "c08-gordon-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow Valley Utilities reported EPS of $2.50 and DPS of $1.00. ROE is 12% on start-of-year equity, payout and ROE stay constant, and R = 10.5% per annum. What do you expect the share price to be three years from now? (Answer in $.)",
+  "answer": 40.02,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.00*1.072/(0.105-0.072)*1.072**3",
+  "steps": [
+   {
+    "label": "Plowback b = (EPS − DPS)/EPS",
+    "value": 0.6,
+    "check": "(2.50-1.00)/2.50",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 7.2,
+    "check": "(2.50-1.00)/2.50*0.12*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0 = DPS(1 + g)/(R − g)",
+    "value": 32.4848,
+    "check": "1.00*1.072/(0.105-0.072)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price in three years P3 = P0(1 + g)^3",
+    "value": 40.0189,
+    "check": "1.00*1.072/(0.105-0.072)*1.072**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = (2.50 − 1.00)/2.50 = 0.60; g = 0.60 × 0.12 = 7.2%",
+   "P0 = 1.00 × 1.072/(0.105 − 0.072) = 1.072/0.033 = $32.48",
+   "With constant growth the price grows at g: P3 = 32.4848 × 1.072³ = $40.02"
+  ],
+  "keystrokes": [
+   "0.60 × 0.12 = 0.072",
+   "1.072 ÷ 0.033 = 32.4848",
+   "1.072 y^x 3 = 1.2320; × 32.4848 = 40.02"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Stopped at today's price",
+    "value": 32.48,
+    "check": "1.00*1.072/(0.105-0.072)",
+    "explain": "The question asks for the price three years ahead; it has grown at g."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0 = 1.00 in the Gordon numerator",
+    "value": 37.33,
+    "check": "1.00/(0.105-0.072)*1.072**3",
+    "explain": "P0 needs D1 = 1.00 × 1.072."
+   },
+   {
+    "id": "g-as-r",
+    "label": "Grew the price at R (10.5%) instead of g",
+    "value": 43.83,
+    "check": "1.00*1.072/(0.105-0.072)*1.105**3",
+    "explain": "Under constant growth the price rises at g, not R (R is the total return including dividends)."
+   }
+  ],
+  "explanation": "Constant growth means price, dividend and earnings all grow at g = b × ROE. The 7.2% growth rate is what carries today's $32.48 to $40.02.",
+  "source": "generated",
+  "ref": "L04 s20; SM 8-1"
+ },
+ {
+  "id": "q08-478",
+  "concept": "c08-plowback-growth",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peace River Foods wants dividends to grow 8% per year while paying out 55% of earnings. What ROE (on start-of-year equity) does it need? (Answer in % per annum.)",
+  "answer": 17.78,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.08/(1-0.55)*100",
+  "steps": [
+   {
+    "label": "Plowback b = 1 − payout",
+    "value": 0.45,
+    "check": "1-0.55",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required ROE = g/b (in %)",
+    "value": 17.7778,
+    "check": "0.08/(1-0.55)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = 1 − 0.55 = 0.45",
+   "g = b × ROE → ROE = g/b = 0.08/0.45 = 17.78%"
+  ],
+  "keystrokes": [
+   "1 − 0.55 = 0.45",
+   "0.08 ÷ 0.45 = 0.1778"
+  ],
+  "errors": [
+   {
+    "id": "payout-as-plowback",
+    "label": "Divided g by the payout ratio",
+    "value": 14.55,
+    "check": "0.08/0.55*100",
+    "explain": "g = b × ROE with b = 0.45, so ROE = 0.08/0.45."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Multiplied g by b",
+    "value": 3.6,
+    "check": "0.08*0.45*100",
+    "explain": "To isolate ROE, divide g by b; multiplying gives a growth-like number."
+   }
+  ],
+  "explanation": "Rearranging g = b × ROE gives ROE = g/b. A high payout leaves little to reinvest, so each retained dollar must earn a lot (17.8%).",
+  "source": "generated",
+  "ref": "L04 s27"
+ }
+]

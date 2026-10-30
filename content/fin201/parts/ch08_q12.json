@@ -1,0 +1,1179 @@
+[
+ {
+  "id": "q08-481",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The forward P/E ratio is:",
+  "options": [
+   "the price divided by the earnings of the year just ended, P0/EPS0, which is the trailing ratio",
+   "forecast earnings divided by the current price, EPS1/P0, which is the earnings yield",
+   "the price expected next year divided by this year's earnings, P1/EPS0 under constant growth",
+   "the price divided by forecast earnings for the coming year, P0/EPS1 = (1 − b)/(R − g) under constant growth"
+  ],
+  "answer": 3,
+  "explanation": "Forward P/E uses next year's earnings in the denominator; with D1 = (1 − b)EPS1 and P0 = D1/(R − g) it simplifies to (1 − b)/(R − g). Using last year's earnings gives the trailing P/E, and E/P is the earnings yield.",
+  "source": "generated",
+  "ref": "L04 s14, s30"
+ },
+ {
+  "id": "q08-482",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A stock trades at $42. Analysts expect earnings of $3.00 per share over the next twelve months, and the company earned $2.80 over the last twelve months. Which ratio equals 42/3.00 = 14.0?",
+  "options": [
+   "The forward P/E",
+   "The trailing P/E",
+   "The earnings yield",
+   "The dividend yield"
+  ],
+  "answer": 0,
+  "explanation": "Price over forecast earnings is the forward P/E (42/3.00 = 14.0). The trailing P/E would use the $2.80 already earned (15.0), and the earnings yield is the inverse, E/P.",
+  "source": "generated",
+  "ref": "L04 s14, s18"
+ },
+ {
+  "id": "q08-483",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "For a company whose earnings are expected to grow, how do the trailing and forward P/E ratios compare?",
+  "options": [
+   "The forward P/E is higher, because the future is more uncertain than the past",
+   "They are equal, because both ratios use exactly the same current price",
+   "The forward P/E is lower only if the firm pays no dividend at all",
+   "The forward P/E is lower: the same price is divided by larger forecast earnings"
+  ],
+  "answer": 3,
+  "explanation": "Trailing = P0/EPS0 and forward = P0/EPS1. With EPS1 > EPS0 and the same P0, forward < trailing; their ratio is 1 + g. If earnings are expected to fall the order reverses.",
+  "source": "generated",
+  "ref": "L04 s18; PRAC q9"
+ },
+ {
+  "id": "q08-484",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Two firms have the same R and the same growth rate g. Firm X pays out 60% of earnings and Firm Y pays out 30%. Which has the higher forward P/E and why?",
+  "options": [
+   "Firm X: (1 − b) is larger, so more of each dollar of EPS1 is paid as dividends at the same g",
+   "Firm Y: it retains more, so each dollar of its earnings is worth more to shareholders",
+   "They have the same P/E, because R and g are the same for both firms",
+   "Firm Y: retaining more always raises growth, so it must be worth more per dollar"
+  ],
+  "answer": 0,
+  "explanation": "Forward P/E = (1 − b)/(R − g). With R and g equal, a higher payout (lower b) raises the numerator. Equal g with lower b means X's ROE is higher; X delivers the same growth while paying out more. (Raising b with ROE fixed would raise g, but here g is held equal.)",
+  "source": "generated",
+  "ref": "L04 s31"
+ },
+ {
+  "id": "q08-485",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a higher required return R lower the forward P/E?",
+  "options": [
+   "A higher R raises the growth rate g by the same amount, so the two cancel out in the ratio",
+   "A higher R lowers the forecast EPS1 that sits in the denominator of the P/E ratio",
+   "A higher R lowers the payout ratio, so the numerator (1 − b) falls as well",
+   "R − g rises, so each dollar of next year's dividend is worth fewer dollars of price"
+  ],
+  "answer": 3,
+  "explanation": "P/E = (1 − b)/(R − g): R only appears in the denominator. A riskier stock (higher R) is discounted more heavily, so the same earnings and growth buy a lower multiple (L04 s31, point 2).",
+  "source": "generated",
+  "ref": "L04 s31"
+ },
+ {
+  "id": "q08-486",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Other things equal, which of the following would NOT raise a firm's forward P/E?",
+  "options": [
+   "A higher expected growth rate g in dividends",
+   "A higher required return R for a riskier firm",
+   "A lower required return R for the stock",
+   "A higher payout ratio with growth g unchanged"
+  ],
+  "answer": 1,
+  "explanation": "The three professor's rules: high g, low R and high payout (with g constant) all raise (1 − b)/(R − g). A riskier stock has a higher R, which lowers the multiple.",
+  "source": "generated",
+  "ref": "L04 s31"
+ },
+ {
+  "id": "q08-487",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A stock has a forward P/E of 9 while similar firms trade near 15. Which interpretation is consistent with P/E = (1 − b)/(R − g)?",
+  "options": [
+   "The firm must have a higher payout ratio than its peers",
+   "The firm's earnings are overstated, so the multiple is mechanically too low",
+   "The market expects lower growth or requires a higher return for this firm (or it is mispriced)",
+   "The firm must have higher growth, since low P/E signals growth"
+  ],
+  "answer": 2,
+  "explanation": "A low multiple means a small (1 − b)/(R − g): either R − g is large (low g or high R) or the firm is simply undervalued relative to comparables. Low P/E is the signature of an income or risky stock, not a growth stock.",
+  "source": "generated",
+  "ref": "L04 s30-32; REV p3"
+ },
+ {
+  "id": "q08-488",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "True or false: under constant growth the forward P/E equals (1 − b)/(R − g).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. P0 = D1/(R − g) and D1 = (1 − b)EPS1, so P0/EPS1 = (1 − b)/(R − g).",
+  "source": "generated",
+  "ref": "L04 s30; FS p1"
+ },
+ {
+  "id": "q08-489",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kodiak Fibre retains 35% of earnings, earns ROE = 16%, and investors require R = 11% per annum. What is its forward P/E?",
+  "options": [
+   "5.91",
+   "12.04",
+   "18.52",
+   "58.33"
+  ],
+  "answer": 1,
+  "explanation": "g = b × ROE = 0.35 × 16% = 5.6%, so P/E = (1 − 0.35)/(0.11 − 0.056) = 0.65/0.054 = 12.04. The 1/(R − g) shortcut (18.52) forgets the dividend share (1 − b); treating 0.35 as the payout flips b and gives 58.33; ignoring g gives 5.91.",
+  "source": "generated",
+  "ref": "L04 s30"
+ },
+ {
+  "id": "q08-490",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Trillium Trucking pays out 60% of earnings, expects dividend growth of 6% per year, and R = 10% per annum. What is its forward P/E?",
+  "options": [
+   "3.75",
+   "10.00",
+   "15.00",
+   "25.00"
+  ],
+  "answer": 2,
+  "explanation": "Forward P/E = (1 − b)/(R − g) = payout/(R − g) = 0.60/0.04 = 15.00. Using b = 40% in the numerator gives 10.00; adding g to R gives 3.75; dropping the payout gives 25.00.",
+  "source": "generated",
+  "ref": "L04 s30"
+ },
+ {
+  "id": "q08-491",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Orchards pays out 45% of earnings, earns ROE = 14% on start-of-year equity, and R = 11.5% per annum. Assuming constant payout and ROE, what is its forward P/E? (Answer as a multiple, 2 decimals.)",
+  "answer": 11.84,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-0.55)/(0.115-0.55*0.14)",
+  "steps": [
+   {
+    "label": "Plowback b = 1 − payout",
+    "value": 0.55,
+    "check": "1-0.45",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 7.7,
+    "check": "0.55*0.14*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Forward P/E = (1 − b)/(R − g)",
+    "value": 11.8421,
+    "check": "(1-0.55)/(0.115-0.55*0.14)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = 1 − 0.45 = 0.55; g = 0.55 × 0.14 = 7.7%",
+   "P/E = (1 − b)/(R − g) = 0.45/(0.115 − 0.077) = 0.45/0.038 = 11.84"
+  ],
+  "keystrokes": [
+   "0.55 × 0.14 = 0.077",
+   "0.45 ÷ (0.115 − 0.077) = 11.84"
+  ],
+  "errors": [
+   {
+    "id": "payout-as-plowback",
+    "label": "Treated 45% as b",
+    "value": 10.58,
+    "check": "0.55/(0.115-0.45*0.14)",
+    "explain": "Payout is 45%, so b = 55%: g = 7.7% and the numerator is the payout 0.45."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Dropped (1 − b)",
+    "value": 26.32,
+    "check": "1/(0.115-0.55*0.14)",
+    "explain": "P/E = P0/EPS1 and P0 only capitalises the dividend share (1 − b) of EPS1."
+   },
+   {
+    "id": "forgot-g",
+    "label": "Ignored growth in the denominator",
+    "value": 3.91,
+    "check": "0.45/0.115",
+    "explain": "R − g, not R, is the capitalisation rate."
+   }
+  ],
+  "explanation": "A 45% payout and 7.7% growth against R = 11.5% give a forward multiple near 12. Because the denominator is small, the multiple is very sensitive to g and R.",
+  "source": "generated",
+  "ref": "L04 s28-31"
+ },
+ {
+  "id": "q08-492",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Grain Co-op just reported EPS of $3.85. It pays out 60% of earnings, ROE is 15%, R = 10.5% per annum, and payout and ROE stay constant. Use its forward P/E to find the share price today. (Answer in $.)",
+  "answer": 54.41,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-0.40)/(0.105-0.40*0.15)*3.85*(1+0.40*0.15)",
+  "steps": [
+   {
+    "label": "Growth g = (1 − payout) × ROE (in %)",
+    "value": 6.0,
+    "check": "0.40*0.15*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Forward P/E = (1 − b)/(R − g)",
+    "value": 13.3333,
+    "check": "(1-0.40)/(0.105-0.40*0.15)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Next year's EPS1 = EPS0(1 + g)",
+    "value": 4.081,
+    "check": "3.85*(1+0.40*0.15)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today = forward P/E × EPS1",
+    "value": 54.4133,
+    "check": "(1-0.40)/(0.105-0.40*0.15)*3.85*(1+0.40*0.15)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "b = 1 − 0.60 = 0.40; g = 0.40 × 0.15 = 6%",
+   "Forward P/E = 0.60/(0.105 − 0.06) = 0.60/0.045 = 13.3333",
+   "EPS1 = 3.85 × 1.06 = $4.0810",
+   "P0 = 13.3333 × 4.0810 = $54.41"
+  ],
+  "keystrokes": [
+   "0.40 × 0.15 = 0.06",
+   "0.60 ÷ 0.045 = 13.3333",
+   "3.85 × 1.06 = 4.0810",
+   "13.3333 × 4.0810 = 54.41"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Applied the forward P/E to EPS0",
+    "value": 51.33,
+    "check": "(1-0.40)/(0.105-0.40*0.15)*3.85",
+    "explain": "A forward multiple pairs with EPS1 = EPS0(1 + g), not with last year's EPS."
+   },
+   {
+    "id": "payout-as-plowback",
+    "label": "Used the payout ratio as b (g = 9%)",
+    "value": 111.91,
+    "check": "(1-0.60)/(0.105-0.60*0.15)*3.85*(1+0.60*0.15)",
+    "explain": "Payout is 60%, so b = 40% and g = 6%."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew EPS twice",
+    "value": 57.68,
+    "check": "(1-0.40)/(0.105-0.40*0.15)*3.85*(1+0.40*0.15)**2",
+    "explain": "One growth step from EPS0 gives EPS1."
+   }
+  ],
+  "explanation": "Forward P/E × EPS1 is the Gordon price. Mixing a forward multiple with trailing EPS understates the price by exactly the factor (1 + g).",
+  "source": "generated",
+  "ref": "L04 s30; PRAC q9"
+ },
+ {
+  "id": "q08-493",
+  "concept": "c08-forward-pe",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Laurentian Labs has a forward P/E of 16.5, pays out 60% of earnings, and its dividends are expected to grow 5.5% per year. What required return R does the market price imply? (Answer in % per annum.)",
+  "answer": 9.14,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(0.055+0.60/16.5)*100",
+  "steps": [
+   {
+    "label": "Dividend share of price, (1 − b)/PE",
+    "value": 0.0364,
+    "check": "0.60/16.5",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required return R = g + (1 − b)/PE (in %)",
+    "value": 9.1364,
+    "check": "(0.055+0.60/16.5)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P/E = (1 − b)/(R − g) → R − g = (1 − b)/PE = 0.60/16.5 = 3.6364%",
+   "R = g + 3.6364% = 5.5% + 3.6364% = 9.14% per annum"
+  ],
+  "keystrokes": [
+   "0.60 ÷ 16.5 = 0.036364",
+   "+ 0.055 = 0.091364 → 9.14%"
+  ],
+  "errors": [
+   {
+    "id": "forgot-g",
+    "label": "Forgot to add g back",
+    "value": 3.64,
+    "check": "0.60/16.5*100",
+    "explain": "R − g = 3.64% is the dividend yield D1/P0; the required return is yield plus g."
+   },
+   {
+    "id": "payout-as-plowback",
+    "label": "Used b = 40% in the numerator",
+    "value": 7.92,
+    "check": "(0.055+0.40/16.5)*100",
+    "explain": "The numerator is the payout (1 − b) = 60%."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Used the earnings yield 1/PE",
+    "value": 11.56,
+    "check": "(0.055+1/16.5)*100",
+    "explain": "1/PE capitalises all earnings; only the payout share becomes dividends."
+   }
+  ],
+  "explanation": "Solving the forward P/E equation for R is the 'R = D1/P0 + g' relation in disguise: D1/P0 = (1 − b)/PE.",
+  "source": "generated",
+  "ref": "L04 s20, s30"
+ },
+ {
+  "id": "q08-494",
+  "concept": "c08-forward-pe",
+  "also": [
+   "c08-implied-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rideau Rail has a forward P/E of 14.2 and its earnings are expected to grow 6.5% this year. What is its trailing P/E? (Answer as a multiple, 2 decimals.)",
+  "answer": 15.12,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "14.2*1.065",
+  "steps": [
+   {
+    "label": "Growth factor EPS1/EPS0 = 1 + g",
+    "value": 1.065,
+    "check": "1.065",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Trailing P/E = forward P/E × (1 + g)",
+    "value": 15.123,
+    "check": "14.2*1.065",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Trailing = P0/EPS0 and forward = P0/EPS1, so trailing/forward = EPS1/EPS0 = 1 + g",
+   "Trailing P/E = 14.2 × 1.065 = 15.12"
+  ],
+  "keystrokes": [
+   "14.2 × 1.065 = 15.12"
+  ],
+  "errors": [
+   {
+    "id": "trailing-forward-mix",
+    "label": "Divided by (1 + g)",
+    "value": 13.33,
+    "check": "14.2/1.065",
+    "explain": "Dividing gives a number smaller than the forward P/E; the trailing ratio must be the larger one for a growing firm."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Subtracted growth instead of compounding",
+    "value": 13.28,
+    "check": "14.2*(1-0.065)",
+    "explain": "The link between the two is multiplicative: EPS1 = EPS0(1 + g)."
+   }
+  ],
+  "explanation": "Same price, smaller denominator: trailing P/E exceeds forward P/E by the growth factor.",
+  "source": "generated",
+  "ref": "PRAC q9; L04 s18"
+ },
+ {
+  "id": "q08-501",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "NPVGO stands for the net present value of growth opportunities. It is:",
+  "options": [
+   "the net present value of the firm's single largest investment project",
+   "the present value of all future dividends, P0 = D1/(R − g)",
+   "the price the firm would have if it grew at the industry growth rate",
+   "the part of the price above the no-growth value: NPVGO = P0 − EPS1/R"
+  ],
+  "answer": 3,
+  "explanation": "A firm with no growth has value EPS1/R (a perpetuity of its earnings). Whatever the market pays above that is the value of the growth opportunities: NPVGO = P0 − EPS1/R, so P0 = EPS1/R + NPVGO.",
+  "source": "generated",
+  "ref": "L04 s33-34; FS p1"
+ },
+ {
+  "id": "q08-502",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which statement of the NPVGO relationship matches the formula sheet?",
+  "options": [
+   "P0 = EPS0/R + NPVGO",
+   "P0 = EPS1/R + NPVGO",
+   "P0 = EPS1 × R + NPVGO",
+   "P0 = EPS1/(R − g) − NPVGO"
+  ],
+  "answer": 1,
+  "explanation": "The no-growth value is next year's earnings capitalised at R. EPS0 is last year's number (eps0-for-eps1 error), multiplying by R inverts the perpetuity, and NPVGO is added to, not subtracted from, the no-growth value.",
+  "source": "generated",
+  "ref": "FS p1; L04 s33"
+ },
+ {
+  "id": "q08-503",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fundy Marine expects EPS1 = $5.10 and R = 9% per annum. What does 5.10/0.09 = $56.67 represent?",
+  "options": [
+   "The value of the firm's growth opportunities, NPVGO, per share",
+   "The value of the share if the firm paid out all earnings and never grew",
+   "The Gordon growth price of the share, P0 = D1/(R − g)",
+   "The share's book value per share taken from the balance sheet"
+  ],
+  "answer": 1,
+  "explanation": "EPS1/R is a perpetuity of constant earnings: the no-growth value. NPVGO is the market price minus this number.",
+  "source": "generated",
+  "ref": "L04 s33; S4 s18"
+ },
+ {
+  "id": "q08-504",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Your valuation shows that a stock's NPVGO is negative at your discount rate. Which conclusion matches the course?",
+  "options": [
+   "The stock must be overvalued, so it should be sold if held or avoided at this price",
+   "NPVGO can never be negative, so there must be an arithmetic mistake in the valuation",
+   "Either undervalued (buy) or growth is destroying value (do not buy); the sign alone does not say",
+   "The firm should raise its plowback ratio to repair the negative NPVGO"
+  ],
+  "answer": 2,
+  "explanation": "Professor Godfrey: NPVGO ought to be positive; if it is negative either the company is undervalued (you should buy it) or its growth opportunities destroy value (you should not). You must look at why the price is below EPS1/R.",
+  "source": "generated",
+  "ref": "L04 s34"
+ },
+ {
+  "id": "q08-505",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly relates a firm's growth rate to its NPVGO?",
+  "options": [
+   "Fast growth does not guarantee a positive NPVGO; growth adds value only if reinvestment earns more than R",
+   "Any positive growth rate produces a positive NPVGO, since earnings keep rising",
+   "NPVGO is positive exactly when the firm pays dividends to its shareholders",
+   "NPVGO depends on the growth rate but not on the required return R"
+  ],
+  "answer": 0,
+  "explanation": "NPVGO measures value created by reinvestment, so it depends on ROE versus R, not on growth alone. Johnson Company grows 1% yet has NPVGO = −$7.06 (S4 s18), while Harrison grows 8% after year 6 and has NPVGO = +$68.14.",
+  "source": "generated",
+  "ref": "S4 s14-19; L04 s34"
+ },
+ {
+  "id": "q08-506",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT true of the NPVGO approach?",
+  "options": [
+   "It uses last year's earnings EPS0 to value the no-growth stream",
+   "It splits price into a no-growth value and a growth component",
+   "A negative NPVGO can mean growth is destroying value",
+   "The no-growth value is EPS1/R"
+  ],
+  "answer": 0,
+  "explanation": "The first dividend of the no-growth perpetuity arrives next year, so the numerator is EPS1, the forecast. Using EPS0 shifts the perpetuity one period and is the standard error (eps0-for-eps1).",
+  "source": "generated",
+  "ref": "L04 s33-34"
+ },
+ {
+  "id": "q08-507",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the NPVGO formula use EPS1 rather than EPS0?",
+  "options": [
+   "EPS1 is always smaller than EPS0, which keeps NPVGO positive in the formula",
+   "EPS0 already includes the growth opportunities, so it would double count them",
+   "The formula sheet uses EPS1 because dividends are paid on forecast earnings only",
+   "A perpetuity is valued one period before its first payment, and next year's earnings are the first payment"
+  ],
+  "answer": 3,
+  "explanation": "EPS1/R is the PV today of earnings EPS1, EPS1, EPS1... received at dates 1, 2, 3, ... Using EPS0 would value a stream starting at date 0 and overstate the no-growth value by one year of earnings.",
+  "source": "generated",
+  "ref": "L04 s33"
+ },
+ {
+  "id": "q08-508",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "From NPVGO, P/E = 1/R + NPVGO/EPS1. A firm with R = 10% has a forward P/E of 9. What does this say?",
+  "options": [
+   "The firm has strongly positive growth opportunities",
+   "NPVGO is zero because P/E is close to 1/R",
+   "The P/E is below 1/R = 10, so NPVGO is negative",
+   "The required return must be exactly 9%"
+  ],
+  "answer": 2,
+  "explanation": "1/R = 10 is the multiple of a no-growth firm. A P/E of 9 sits below it, so NPVGO/EPS1 = 9 − 10 = −1 and NPVGO is negative. Compare Johnson (P/E 9.12 < 10) with Harrison (37.26 > 10) in Seminar 4.",
+  "source": "generated",
+  "ref": "S4 s20-21"
+ },
+ {
+  "id": "q08-509",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A firm retains most of its earnings but earns only 8% on them (ROE = 8%) while shareholders require R = 12%. What does the NPVGO framework say?",
+  "options": [
+   "NPVGO is positive, because retained earnings raise the growth rate",
+   "NPVGO is zero, because any positive ROE adds value",
+   "NPVGO is negative: shareholders would be better off if the earnings were paid out",
+   "NPVGO cannot be assessed without knowing the payout ratio"
+  ],
+  "answer": 2,
+  "explanation": "Each retained dollar earns 8% when investors could earn 12% elsewhere, so reinvestment destroys value and the price falls below EPS1/R. This is the logic of the Johnson example.",
+  "source": "generated",
+  "ref": "L04 s34; S4 s18"
+ },
+ {
+  "id": "q08-510",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A firm trades at $82.40 with EPS1 = $5.20 and R = 10%. What does it tell you that EPS1/R = $52.00?",
+  "options": [
+   "The firm is overvalued by $52.00 relative to its earnings power",
+   "The firm's book equity is $52.00 per share on the balance sheet",
+   "The market expects the firm to pay a $52.00 dividend next year",
+   "About 37% of the price pays for growth opportunities; $52.00 is the no-growth value"
+  ],
+  "answer": 3,
+  "explanation": "No-growth value $52.00 plus NPVGO $30.40 = price $82.40. Growth opportunities are 30.40/82.40 = 36.9% of the price.",
+  "source": "generated",
+  "ref": "L04 s33-34"
+ },
+ {
+  "id": "q08-511",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Chinook Chemicals trades at $61.50. It earned $3.40 last year and analysts forecast EPS of $3.60 for next year. R = 9% per annum. What is NPVGO per share?",
+  "options": [
+   "-$21.50",
+   "$21.50",
+   "$23.72",
+   "$57.90"
+  ],
+  "answer": 1,
+  "explanation": "NPVGO = P0 − EPS1/R = 61.50 − 3.60/0.09 = 61.50 − 40.00 = $21.50. Using last year's EPS ($3.40) gives $23.72; subtracting in the wrong order flips the sign (−$21.50); forgetting to divide by R gives $57.90.",
+  "source": "generated",
+  "ref": "L04 s34; FS p1"
+ },
+ {
+  "id": "q08-512",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm has R = 8%, EPS1 = $2.50 and NPVGO = $12.00 per share. Using P/E = 1/R + NPVGO/EPS1, what is its forward P/E?",
+  "options": [
+   "4.80",
+   "12.50",
+   "17.30",
+   "24.50"
+  ],
+  "answer": 2,
+  "explanation": "1/R = 12.50 and NPVGO/EPS1 = 12.00/2.50 = 4.80, so P/E = 17.30. Adding the dollar NPVGO to 1/R (24.50) mixes dollars with a multiple; using only NPVGO/EPS1 (4.80) or only 1/R (12.50) leaves out one of the two pieces. Check: P0 = 17.30 × 2.50 = $43.25 = 31.25 + 12.00.",
+  "source": "generated",
+  "ref": "S4 s20-21"
+ },
+ {
+  "id": "q08-513",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lakeshore Brewing earned $2.00 this year and expects EPS1 = $2.10. R = 7% per annum and the value of its growth opportunities is NPVGO = $9.40 per share. What is the share price?",
+  "options": [
+   "$11.50",
+   "$20.60",
+   "$37.97",
+   "$39.40"
+  ],
+  "answer": 3,
+  "explanation": "No-growth value = EPS1/R = 2.10/0.07 = $30.00; adding NPVGO gives P0 = $39.40. Using this year's EPS gives $37.97; subtracting NPVGO gives $20.60; skipping the division by R gives $11.50.",
+  "source": "generated",
+  "ref": "L04 s33; FS p1"
+ },
+ {
+  "id": "q08-514",
+  "concept": "c08-npvgo",
+  "also": [
+   "c08-gordon-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Fundy Marine just paid a dividend of $3.80, which is expected to grow 2% per year forever. R = 9% per annum and next year's EPS is forecast at $5.10. What is its NPVGO per share? (Answer in $; a negative answer is possible.)",
+  "answer": -1.3,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3.80*1.02/(0.09-0.02)-5.10/0.09",
+  "steps": [
+   {
+    "label": "Next dividend D1",
+    "value": 3.876,
+    "check": "3.80*1.02",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 55.3714,
+    "check": "3.80*1.02/(0.09-0.02)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "No-growth value EPS1/R",
+    "value": 56.6667,
+    "check": "5.10/0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPVGO = P0 − EPS1/R",
+    "value": -1.2952,
+    "check": "3.80*1.02/(0.09-0.02)-5.10/0.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 3.80 × 1.02 = $3.876; P0 = 3.876/(0.09 − 0.02) = $55.37",
+   "No-growth value = 5.10/0.09 = $56.67",
+   "NPVGO = 55.3714 − 56.6667 = −$1.30 per share",
+   "Negative: either the shares are undervalued or growth destroys value (the firm retains a lot but grows only 2%)."
+  ],
+  "keystrokes": [
+   "3.876 ÷ 0.07 = 55.3714",
+   "5.10 ÷ 0.09 = 56.6667",
+   "55.3714 − 56.6667 = −1.30"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0 in the Gordon numerator",
+    "value": -2.38,
+    "check": "3.80/(0.09-0.02)-5.10/0.09",
+    "explain": "P0 needs D1 = 3.80 × 1.02 = 3.876."
+   },
+   {
+    "id": "sign-error",
+    "label": "Subtracted in the wrong order",
+    "value": 1.3,
+    "check": "5.10/0.09-3.80*1.02/(0.09-0.02)",
+    "explain": "NPVGO is the market (model) price MINUS the no-growth value."
+   },
+   {
+    "id": "forgot-r",
+    "label": "Subtracted EPS1 without dividing by R",
+    "value": 50.27,
+    "check": "3.80*1.02/(0.09-0.02)-5.10",
+    "explain": "The no-growth value is the perpetuity EPS1/R."
+   }
+  ],
+  "explanation": "Fundy Marine pays out about 75% of EPS1 yet grows only 2%, so its retained earnings are earning little: growth destroys a little value (-$1.30). This is the Johnson pattern in Seminar 4.",
+  "source": "generated",
+  "ref": "S4 s15-18; L04 s34"
+ },
+ {
+  "id": "q08-515",
+  "concept": "c08-npvgo",
+  "also": [
+   "c08-nonconstant-timeline"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Boreal Biotech pays no dividend for six years. Its first dividend, D7 = $4.20, comes at the end of year 7 and then grows 7% per year forever. R = 11.5% per annum and EPS1 is forecast at $1.95. What is NPVGO per share? (Answer in $.)",
+  "answer": 31.62,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "4.20/(0.115-0.07)/1.115**6-1.95/0.115",
+  "steps": [
+   {
+    "label": "Horizon price P6 = D7/(R − g)",
+    "value": 93.3333,
+    "check": "4.20/(0.115-0.07)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0 = P6/(1 + R)^6",
+    "value": 48.5722,
+    "check": "4.20/(0.115-0.07)/1.115**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "No-growth value EPS1/R",
+    "value": 16.9565,
+    "check": "1.95/0.115",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPVGO = P0 − EPS1/R",
+    "value": 31.6157,
+    "check": "4.20/(0.115-0.07)/1.115**6-1.95/0.115",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P6 = D7/(R − g) = 4.20/(0.115 − 0.07) = $93.3333",
+   "P0 = 93.3333/1.115⁶ = $48.57",
+   "No-growth value = 1.95/0.115 = $16.96",
+   "NPVGO = 48.5722 − 16.9565 = $31.62: growth creates value"
+  ],
+  "keystrokes": [
+   "4.20 ÷ 0.045 = 93.3333; N = 6, I/Y = 11.5, FV = 93.3333, CPT PV = −48.5722",
+   "1.95 ÷ 0.115 = 16.9565",
+   "48.5722 − 16.9565 = 31.62"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted P6 seven years",
+    "value": 26.61,
+    "check": "4.20/(0.115-0.07)/1.115**7-1.95/0.115",
+    "explain": "P6 is a year-6 value (one period before D7)."
+   },
+   {
+    "id": "horizon-not-discounted",
+    "label": "Did not discount P6 at all",
+    "value": 76.38,
+    "check": "4.20/(0.115-0.07)-1.95/0.115",
+    "explain": "P6 must be discounted to date 0 before comparing with EPS1/R."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew D7 once more before dividing",
+    "value": 35.02,
+    "check": "4.20*1.07/(0.115-0.07)/1.115**6-1.95/0.115",
+    "explain": "D7 is already the first constant-growth dividend."
+   }
+  ],
+  "explanation": "More than two thirds of the price is growth value, typical of a young firm. NPVGO is positive, so growth creates value (Harrison pattern).",
+  "source": "generated",
+  "ref": "S4 s17-19; SM 8-14"
+ },
+ {
+  "id": "q08-516",
+  "concept": "c08-npvgo",
+  "also": [
+   "c08-plowback-growth"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Whitecap Wind expects EPS1 = $6.00. It retains 60% of earnings, earns ROE = 10% on start-of-year equity, and R = 13% per annum. Payout and ROE stay constant. What is NPVGO per share? (Answer in $; the sign matters.)",
+  "answer": -11.87,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "6*0.4/(0.13-0.6*0.10)-6/0.13",
+  "steps": [
+   {
+    "label": "Growth g = b × ROE (in %)",
+    "value": 6.0,
+    "check": "0.6*0.10*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Next dividend D1 = (1 − b) × EPS1",
+    "value": 2.4,
+    "check": "6*0.4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price P0 = D1/(R − g)",
+    "value": 34.2857,
+    "check": "6*0.4/(0.13-0.6*0.10)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "No-growth value EPS1/R",
+    "value": 46.1538,
+    "check": "6/0.13",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPVGO",
+    "value": -11.8681,
+    "check": "6*0.4/(0.13-0.6*0.10)-6/0.13",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "g = 0.60 × 10% = 6%; D1 = 0.40 × 6.00 = $2.40",
+   "P0 = 2.40/(0.13 − 0.06) = $34.29",
+   "No-growth value = 6.00/0.13 = $46.15",
+   "NPVGO = 34.2857 − 46.1538 = −$11.87: retaining at ROE 10% < R 13% destroys value"
+  ],
+  "keystrokes": [
+   "0.60 × 0.10 = 0.06",
+   "2.40 ÷ 0.07 = 34.2857",
+   "6 ÷ 0.13 = 46.1538",
+   "34.2857 − 46.1538 = −11.87"
+  ],
+  "errors": [
+   {
+    "id": "payout-as-plowback",
+    "label": "Used 40% as b (g = 4%)",
+    "value": -6.15,
+    "check": "6*0.6/(0.13-0.4*0.10)-6/0.13",
+    "explain": "The firm retains 60%, so b = 0.60 and the dividend is 40% of EPS1."
+   },
+   {
+    "id": "sign-error",
+    "label": "Subtracted in the wrong order",
+    "value": 11.87,
+    "check": "6/0.13-6*0.4/(0.13-0.6*0.10)",
+    "explain": "NPVGO = P0 − EPS1/R, which is negative here."
+   },
+   {
+    "id": "forgot-r",
+    "label": "Compared P0 with EPS1 instead of EPS1/R",
+    "value": 28.29,
+    "check": "6*0.4/(0.13-0.6*0.10)-6",
+    "explain": "The no-growth value is the perpetuity EPS1/R = 46.15, not EPS1 itself."
+   }
+  ],
+  "explanation": "ROE (10%) is below R (13%), so each reinvested dollar is worth less than a dollar to shareholders: the more the firm retains, the lower NPVGO. Paying everything out would give $46.15.",
+  "source": "generated",
+  "ref": "L04 s27-34"
+ },
+ {
+  "id": "q08-517",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cobalt Peak Software trades at $82.40 with EPS1 = $5.20 forecast and R = 10% per annum. What percentage of its price is NPVGO? (Answer in %.)",
+  "answer": 36.89,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(82.40-5.20/0.10)/82.40*100",
+  "steps": [
+   {
+    "label": "No-growth value EPS1/R",
+    "value": 52.0,
+    "check": "5.20/0.10",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPVGO = P0 − EPS1/R",
+    "value": 30.4,
+    "check": "82.40-5.20/0.10",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPVGO as % of price",
+    "value": 36.8932,
+    "check": "(82.40-5.20/0.10)/82.40*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "No-growth value = 5.20/0.10 = $52.00",
+   "NPVGO = 82.40 − 52.00 = $30.40",
+   "Share of price = 30.40/82.40 = 36.89%"
+  ],
+  "keystrokes": [
+   "5.20 ÷ 0.10 = 52.00",
+   "82.40 − 52.00 = 30.40",
+   "30.40 ÷ 82.40 = 0.3689"
+  ],
+  "errors": [
+   {
+    "id": "arithmetic",
+    "label": "Gave the no-growth share of the price",
+    "value": 63.11,
+    "check": "5.20/0.10/82.40*100",
+    "explain": "That is the complement (63.1%); the question asks for the growth share."
+   },
+   {
+    "id": "wrong-base",
+    "label": "Divided NPVGO by the no-growth value instead of the price",
+    "value": 58.46,
+    "check": "(82.40-5.20/0.10)/(5.20/0.10)*100",
+    "explain": "The share of the PRICE uses P0 in the denominator; NPVGO/(EPS1/R) compares growth with the no-growth part (58.5%)."
+   }
+  ],
+  "explanation": "Over a third of the price is growth value. The rest, $52, is what the current earnings alone are worth.",
+  "source": "generated",
+  "ref": "L04 s33-34; S4 s20"
+ },
+ {
+  "id": "q08-518",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock trades at $64.00. You estimate its growth opportunities are worth NPVGO = $14.50 per share and R = 9.5% per annum. What EPS1 does that imply? (Answer in $.)",
+  "answer": 4.7,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(64-14.5)*0.095",
+  "steps": [
+   {
+    "label": "No-growth value P0 − NPVGO",
+    "value": 49.5,
+    "check": "64-14.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "EPS1 = (P0 − NPVGO) × R",
+    "value": 4.7025,
+    "check": "(64-14.5)*0.095",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "P0 = EPS1/R + NPVGO → EPS1/R = 64.00 − 14.50 = $49.50",
+   "EPS1 = 49.50 × 0.095 = $4.70"
+  ],
+  "keystrokes": [
+   "64 − 14.5 = 49.5",
+   "49.5 × 0.095 = 4.7025"
+  ],
+  "errors": [
+   {
+    "id": "sign-error",
+    "label": "Added NPVGO instead of subtracting",
+    "value": 7.46,
+    "check": "(64+14.5)*0.095",
+    "explain": "NPVGO is part of the price, so the no-growth part is P0 − NPVGO."
+   },
+   {
+    "id": "forgot-r",
+    "label": "Stopped before multiplying by R",
+    "value": 49.5,
+    "check": "64-14.5",
+    "explain": "49.50 is the no-growth value EPS1/R, not EPS1 itself."
+   }
+  ],
+  "explanation": "Rearranging P0 = EPS1/R + NPVGO gives EPS1 = (P0 − NPVGO) × R. It is the same relationship used backwards.",
+  "source": "generated",
+  "ref": "L04 s33-34"
+ },
+ {
+  "id": "q08-519",
+  "concept": "c08-npvgo",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which of the following is a correct statement about NPVGO?",
+  "options": [
+   "NPVGO = EPS1/R − P0",
+   "NPVGO can never be negative",
+   "NPVGO uses this year's EPS0 in the no-growth value",
+   "NPVGO equals the market price of the stock",
+   "None of the above"
+  ],
+  "answer": 4,
+  "explanation": "NPVGO = P0 − EPS1/R: the order is price minus the no-growth value (not the reverse), it can be negative (Johnson, S4 s18), the no-growth value uses next year's EPS1, and NPVGO is only the growth part of the price. None of the listed statements is correct.",
+  "source": "generated",
+  "ref": "L04 s33-34; S4 s18"
+ }
+]

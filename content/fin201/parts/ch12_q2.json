@@ -1,0 +1,1398 @@
+[
+ {
+  "id": "q12-041",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the professor's notation, the expected return of an asset over states of the economy is calculated as:",
+  "options": [
+   "E[R] = (R_1 + … + R_N)/N, the simple average of the state returns",
+   "E[R] = Σ p_i (R_i − E[R])², the weighted squared deviations",
+   "E[R] = Σ R_i, the sum of the state returns",
+   "E[R] = Σ p_i R_i, the probability-weighted average of the state returns"
+  ],
+  "answer": 3,
+  "explanation": "With forecast states we multiply each state's return by its probability and add. The simple average (1/N) is the historical version, where every past year counts equally.",
+  "source": "generated",
+  "ref": "L06 s11, S7 s4"
+ },
+ {
+  "id": "q12-042",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An analyst assigns a 30% chance to a boom (stock returns 20%), 50% to normal times (8%) and 20% to a recession (−10%). She multiplies each return by its probability and adds the results. Which measure has she computed?",
+  "options": [
+   "the historical arithmetic average return",
+   "the expected return E[R]",
+   "the geometric average return",
+   "the standard deviation of returns"
+  ],
+  "answer": 1,
+  "explanation": "Probability-weighted state returns give the expected return: 0.30 × 20 + 0.50 × 8 + 0.20 × (−10) = 8.0%. A historical average would use realized past returns, each with weight 1/N.",
+  "source": "generated",
+  "ref": "L06 s11"
+ },
+ {
+  "id": "q12-043",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does an expected return computed from states differ from a historical average return?",
+  "options": [
+   "Expected return uses realized past returns; a historical average uses forecast probabilities.",
+   "Expected return divides by N − 1 while a historical average divides by N, so the first is larger.",
+   "They are the same calculation, and the names are used interchangeably in this course.",
+   "Expected return weights projected outcomes by forecast probabilities; a historical average weights each year 1/N."
+  ],
+  "answer": 3,
+  "explanation": "Projected future returns come with probabilities, so we weight by p_i. Observed past returns are all equally weighted, 1/N each. The N − 1 divisor appears only in a sample variance, never in a mean.",
+  "source": "generated",
+  "ref": "TB 13.1, L06 s11-13"
+ },
+ {
+  "id": "q12-044",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about an expected return computed from states is NOT true?",
+  "options": [
+   "It always equals the return in the most probable state.",
+   "The state probabilities must add to 1.",
+   "It can be a number that no single state actually produces.",
+   "A state with a higher probability has more influence on it."
+  ],
+  "answer": 0,
+  "explanation": "E[R] is an average over the states, so it generally lies between the lowest and highest state returns and need not match any one of them.",
+  "source": "generated",
+  "ref": "SM 13-5, TB 13.1"
+ },
+ {
+  "id": "q12-045",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we weight each state's return by its probability rather than average the state returns equally?",
+  "options": [
+   "Because states differ in likelihood, a likelier state should count for more in the average.",
+   "Because equal weights would always overstate the risk-free rate in the portfolio.",
+   "Because using probabilities makes the variance come out smaller than it otherwise would.",
+   "Because the formula sheet only allows weights that add up to 100 rather than 1."
+  ],
+  "answer": 0,
+  "explanation": "Probability weighting reflects how likely each outcome is. A 10% recession should not move the average as much as a 50% normal year.",
+  "source": "generated",
+  "ref": "TB 13.1"
+ },
+ {
+  "id": "q12-046",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "From forecast states, Alder Tech's expected return is 8.7%. The possible state returns are 22%, 9% and −12%. What does the 8.7% mean?",
+  "options": [
+   "It is the return the stock is guaranteed to earn each year if the forecast holds.",
+   "It is the return in the single most likely of the three states, the normal case.",
+   "It is the lowest return the stock can earn in a bad year, a worst-case figure.",
+   "It is the probability-weighted average outcome, not a return the stock will actually earn in any state."
+  ],
+  "answer": 3,
+  "explanation": "E[R] summarises the centre of the distribution of outcomes. It is the benchmark against which the spread (σ) is measured; it is not a promise.",
+  "source": "generated",
+  "ref": "TB 13.1"
+ },
+ {
+  "id": "q12-047",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A stock's three possible states are given probabilities 0.2, 0.5 and 0.2. Multiplying each state's return by its probability and adding the three products gives a valid expected return.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The probabilities add to 0.9, not 1, so they are incomplete or wrong. The probabilities across all states must sum to 1 before E[R] = Σ p_i R_i is valid.",
+  "source": "generated",
+  "ref": "SM 13-5"
+ },
+ {
+  "id": "q12-048",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Northgate Mining shares will return 24% if a commodity boom occurs (probability 35%) and −4% if a bust occurs (probability 65%). What is the expected return, in % per annum?",
+  "answer": 5.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.35*24+0.65*(-4)",
+  "steps": [
+   {
+    "label": "Expected return E[R] = Σ p_i R_i",
+    "value": 5.8,
+    "check": "0.35*24+0.65*(-4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.35 × 24 + 0.65 × (−4)",
+   "= 8.40 − 2.60 = 5.80% per annum"
+  ],
+  "keystrokes": [
+   "0.35 × 24 = 8.4",
+   "+ 0.65 × (−4) = −2.6",
+   "= 5.8"
+  ],
+  "errors": [
+   {
+    "id": "ignored-probabilities",
+    "label": "Took the simple average of the two returns",
+    "value": 10.0,
+    "check": "(24-4)/2",
+    "explain": "Probabilities are not 50/50, so the equal-weight average is wrong."
+   },
+   {
+    "id": "probabilities-swapped",
+    "label": "Attached each probability to the wrong state",
+    "value": 14.2,
+    "check": "0.65*24+0.35*(-4)",
+    "explain": "The 35% belongs with the boom return 24% and the 65% with the bust return −4%."
+   }
+  ],
+  "explanation": "E[R] = 0.35 × 24% + 0.65 × (−4%) = 8.4% − 2.6% = 5.8%.",
+  "source": "generated",
+  "ref": "SM 13-5"
+ },
+ {
+  "id": "q12-049",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cascade Foods has three forecast states: boom (probability 25%, return 26%), normal (55%, 11%) and recession (20%, −14%). What is its expected return, in % per annum?",
+  "answer": 9.75,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.25*26+0.55*11+0.2*(-14)",
+  "steps": [
+   {
+    "label": "Boom contribution 0.25 × 26",
+    "value": 6.5,
+    "check": "0.25*26",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Normal contribution 0.55 × 11",
+    "value": 6.05,
+    "check": "0.55*11",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Recession contribution 0.20 × (−14)",
+    "value": -2.8,
+    "check": "0.20*(-14)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return",
+    "value": 9.75,
+    "check": "0.25*26+0.55*11+0.2*(-14)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.25 × 26 + 0.55 × 11 + 0.20 × (−14)",
+   "= 6.50 + 6.05 − 2.80 = 9.75% per annum"
+  ],
+  "keystrokes": [
+   "0.25 × 26 = 6.5",
+   "0.55 × 11 = 6.05",
+   "0.20 × (−14) = −2.8",
+   "6.5 + 6.05 − 2.8 = 9.75"
+  ],
+  "errors": [
+   {
+    "id": "ignored-probabilities",
+    "label": "Took the simple average of the three returns",
+    "value": 7.67,
+    "check": "(26+11-14)/3",
+    "explain": "The states are not equally likely; weight by the probabilities 0.25, 0.55 and 0.20."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Multiplied percent probabilities by percent returns",
+    "value": 975.0,
+    "check": "25*26+55*11+20*(-14)",
+    "explain": "Mixing 25 with 26 instead of 0.25 with 26 inflates the answer by a factor of 100."
+   },
+   {
+    "id": "dropped-negative-sign",
+    "label": "Treated the recession return as positive",
+    "value": 15.35,
+    "check": "0.25*26+0.55*11+0.20*14",
+    "explain": "The recession return is −14%; keep the sign when multiplying."
+   }
+  ],
+  "explanation": "Weighted sum: 6.50 + 6.05 − 2.80 = 9.75% per annum.",
+  "source": "generated",
+  "ref": "SM 13-6, S7 s4"
+ },
+ {
+  "id": "q12-050",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Three states of the economy are equally likely. A stock would return 17% in a strong economy, 6% in a moderate one and −8% in a weak one. What is its expected return, in % per annum?",
+  "answer": 5.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(1/3)*17+(1/3)*6+(1/3)*(-8)",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 5.0,
+    "check": "(1/3)*17+(1/3)*6+(1/3)*(-8)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Each probability is 1/3",
+   "E[R] = (1/3)(17) + (1/3)(6) + (1/3)(−8) = 15/3 = 5.00% per annum"
+  ],
+  "keystrokes": [
+   "17 + 6 − 8 = 15",
+   "÷ 3 = 5"
+  ],
+  "errors": [
+   {
+    "id": "wrong-divisor",
+    "label": "Divided the sum by 2",
+    "value": 7.5,
+    "check": "(17+6-8)/2",
+    "explain": "With three equally likely states each carries weight 1/3, so divide by 3."
+   },
+   {
+    "id": "omitted-state",
+    "label": "Left out the weak state",
+    "value": 7.67,
+    "check": "(17+6)/3",
+    "explain": "Every state, including the loss state, must be in the sum."
+   }
+  ],
+  "explanation": "Equal probabilities of 1/3 make this the simple average of the three state returns: (17 + 6 − 8)/3 = 5.0%.",
+  "source": "generated",
+  "ref": "S7 s4"
+ },
+ {
+  "id": "q12-051",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peace Arch Software faces four states: boom (probability 10%, return 36%), good (40%, 15%), poor (35%, 2%) and bust (15%, −24%). What is its expected return, in % per annum?",
+  "answer": 6.7,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.10*36+0.40*15+0.35*2+0.15*(-24)",
+  "steps": [
+   {
+    "label": "Expected return = Σ p_i R_i",
+    "value": 6.7,
+    "check": "0.10*36+0.40*15+0.35*2+0.15*(-24)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.10 × 36 + 0.40 × 15 + 0.35 × 2 + 0.15 × (−24)",
+   "= 3.60 + 6.00 + 0.70 − 3.60 = 6.70% per annum"
+  ],
+  "keystrokes": [
+   "0.10 × 36 = 3.6",
+   "0.40 × 15 = 6",
+   "0.35 × 2 = 0.7",
+   "0.15 × (−24) = −3.6",
+   "sum = 6.7"
+  ],
+  "errors": [
+   {
+    "id": "ignored-probabilities",
+    "label": "Took the simple average of the four returns",
+    "value": 7.25,
+    "check": "(36+15+2-24)/4",
+    "explain": "The four states have different probabilities, so they cannot be weighted equally."
+   },
+   {
+    "id": "dropped-negative-sign",
+    "label": "Treated the bust return as positive",
+    "value": 13.9,
+    "check": "0.10*36+0.40*15+0.35*2+0.15*24",
+    "explain": "The bust return is −24%; its contribution is −3.60."
+   }
+  ],
+  "explanation": "Four weighted products add to 6.70% per annum. Check the weights first: 0.10 + 0.40 + 0.35 + 0.15 = 1.00.",
+  "source": "generated",
+  "ref": "SM 13-10"
+ },
+ {
+  "id": "q12-052",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Lakeshore Hotels has three states. Boom: probability 0.25, return 30%. Normal: probability not given, return 10%. Recession: probability 0.35, return −15%. What is the expected return, in % per annum?",
+  "answer": 6.25,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.25*30+(1-0.25-0.35)*10+0.35*(-15)",
+  "steps": [
+   {
+    "label": "Probability of normal = 1 − 0.25 − 0.35",
+    "value": 0.4,
+    "check": "1-0.25-0.35",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Expected return",
+    "value": 6.25,
+    "check": "0.25*30+(1-0.25-0.35)*10+0.35*(-15)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "The probabilities must sum to 1, so p(normal) = 1 − 0.25 − 0.35 = 0.40",
+   "E[R] = 0.25 × 30 + 0.40 × 10 + 0.35 × (−15) = 7.50 + 4.00 − 5.25 = 6.25% per annum"
+  ],
+  "keystrokes": [
+   "1 − 0.25 − 0.35 = 0.40",
+   "0.25 × 30 + 0.40 × 10 + 0.35 × (−15) = 6.25"
+  ],
+  "errors": [
+   {
+    "id": "omitted-state",
+    "label": "Left out the normal state",
+    "value": 2.25,
+    "check": "0.25*30+0.35*(-15)",
+    "explain": "The normal state has probability 0.40 and must be included."
+   },
+   {
+    "id": "missing-probability-wrong",
+    "label": "Used 1 − 0.25 = 0.75 for the normal state",
+    "value": 9.75,
+    "check": "0.25*30+(1-0.25)*10+0.35*(-15)",
+    "explain": "The remaining probability is 1 minus both other probabilities, 0.40."
+   }
+  ],
+  "explanation": "Fill in the missing probability first (1 − 0.25 − 0.35 = 0.40), then take the weighted sum: 6.25%.",
+  "source": "generated",
+  "ref": "SM 13-5, SM 13-6"
+ },
+ {
+  "id": "q12-053",
+  "concept": "c12-expected-return-states",
+  "also": [
+   "c12-portfolio-weights-return"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You hold 60% of your money in Stock A and 40% in Stock B. The economy has two states: boom (probability 0.40), where A returns 18% and B returns 6%, and bust (probability 0.60), where A returns −4% and B returns 12%. What is the portfolio's expected return, in % per annum?",
+  "answer": 6.72,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.4*(0.6*18+0.4*6)+0.6*(0.6*(-4)+0.4*12)",
+  "steps": [
+   {
+    "label": "Portfolio return in the boom",
+    "value": 13.2,
+    "check": "0.6*18+0.4*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in the bust",
+    "value": 2.4,
+    "check": "0.6*(-4)+0.4*12",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected portfolio return",
+    "value": 6.72,
+    "check": "0.4*(0.6*18+0.4*6)+0.6*(0.6*(-4)+0.4*12)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Boom: 0.6 × 18 + 0.4 × 6 = 13.2%",
+   "Bust: 0.6 × (−4) + 0.4 × 12 = 2.4%",
+   "E[R_P] = 0.40 × 13.2 + 0.60 × 2.4 = 5.28 + 1.44 = 6.72% per annum",
+   "Check: E[R_A] = 4.8%, E[R_B] = 9.6%, so 0.6 × 4.8 + 0.4 × 9.6 = 6.72%"
+  ],
+  "keystrokes": [
+   "0.6 × 18 + 0.4 × 6 = 13.2",
+   "0.6 × (−4) + 0.4 × 12 = 2.4",
+   "0.4 × 13.2 + 0.6 × 2.4 = 6.72"
+  ],
+  "errors": [
+   {
+    "id": "equal-weights",
+    "label": "Gave the two stocks equal weights",
+    "value": 7.2,
+    "check": "0.4*(0.5*18+0.5*6)+0.6*(0.5*(-4)+0.5*12)",
+    "explain": "The money is split 60/40, not 50/50."
+   },
+   {
+    "id": "weights-swapped",
+    "label": "Put 40% in A and 60% in B",
+    "value": 7.68,
+    "check": "0.4*(0.4*18+0.6*6)+0.6*(0.4*(-4)+0.6*12)",
+    "explain": "Stock A has weight 0.6 and Stock B has weight 0.4."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Averaged the two state portfolio returns equally",
+    "value": 7.8,
+    "check": "(13.2+2.4)/2",
+    "explain": "The boom has probability 0.40 and the bust 0.60; weight accordingly."
+   }
+  ],
+  "explanation": "Compute the portfolio return in each state, then weight by the state probabilities; this equals the weighted average of the stocks' expected returns because E[R] is linear.",
+  "source": "generated",
+  "ref": "SM 13-9, SM 13-10, L06 s22"
+ },
+ {
+  "id": "q12-054",
+  "concept": "c12-expected-return-states",
+  "also": [
+   "c12-risk-aversion-premium"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Maple Ridge Utilities shares return 15% with probability 40% and 5% with probability 60%. T-bills yield 3.2% per annum. What is the expected risk premium on the shares, in % per annum?",
+  "answer": 5.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.4*15+0.6*5-3.2",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 9.0,
+    "check": "0.4*15+0.6*5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Risk premium = E[R] − R_F",
+    "value": 5.8,
+    "check": "0.4*15+0.6*5-3.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.40 × 15 + 0.60 × 5 = 6.0 + 3.0 = 9.0%",
+   "Risk premium = E[R] − R_F = 9.0% − 3.2% = 5.80% per annum"
+  ],
+  "keystrokes": [
+   "0.4 × 15 + 0.6 × 5 = 9",
+   "− 3.2 = 5.8"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Reported E[R] as the premium",
+    "value": 9.0,
+    "check": "0.4*15+0.6*5",
+    "explain": "The premium is measured above the risk-free rate: subtract R_F."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Used the equal-weight average return",
+    "value": 6.8,
+    "check": "(15+5)/2-3.2",
+    "explain": "The states are 40/60, not 50/50."
+   }
+  ],
+  "explanation": "First the expected return (9.0%), then subtract the risk-free rate: 5.8% per annum.",
+  "source": "generated",
+  "ref": "SM 13-5, L06 s9"
+ },
+ {
+  "id": "q12-055",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Tamarack Energy's expected return is 7.1% per annum. Its three states are boom (probability 0.30, return 25%), normal (0.50, return 5%) and recession (0.20, return unknown). What return does the recession state imply, in % per annum?",
+  "answer": -14.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(7.1-0.30*25-0.50*5)/0.20",
+  "steps": [
+   {
+    "label": "Recession contribution 0.20 × R",
+    "value": -2.9,
+    "check": "7.1-0.30*25-0.50*5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Recession return R",
+    "value": -14.5,
+    "check": "(7.1-0.30*25-0.50*5)/0.20",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "7.1 = 0.30 × 25 + 0.50 × 5 + 0.20 × R",
+   "7.1 = 7.5 + 2.5 + 0.20 R, so 0.20 R = −2.9",
+   "R = −2.9/0.20 = −14.50%"
+  ],
+  "keystrokes": [
+   "7.1 − 7.5 − 2.5 = −2.9",
+   "÷ 0.20 = −14.5"
+  ],
+  "errors": [
+   {
+    "id": "forgot-probability",
+    "label": "Did not divide by the state's probability",
+    "value": -2.9,
+    "check": "7.1-0.30*25-0.50*5",
+    "explain": "−2.9 is the contribution 0.20 × R; divide by 0.20 to get R."
+   },
+   {
+    "id": "sign-error",
+    "label": "Lost the sign",
+    "value": 14.5,
+    "check": "-(7.1-0.30*25-0.50*5)/0.20",
+    "explain": "The recession return must be negative to pull a 10.0 weighted sum down to 7.1."
+   }
+  ],
+  "explanation": "Work backwards: the other two states contribute 10.0 percentage points, so the recession state must contribute −2.9 and, with weight 0.20, equals −14.5%.",
+  "source": "generated",
+  "ref": "SM 12-11 (backward solve), SM 13-6"
+ },
+ {
+  "id": "q12-056",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Hurley Energy's shares have three states: strong (probability 0.30, return 18%), average (0.50, 8%) and weak (0.20, −10%). What is the expected return?",
+  "options": [
+   "4.60%",
+   "5.33%",
+   "7.40%",
+   "9.40%"
+  ],
+  "answer": 2,
+  "explanation": "E[R] = 0.30 × 18 + 0.50 × 8 + 0.20 × (−10) = 5.4 + 4.0 − 2.0 = 7.40%. The simple average gives 5.33%; swapping the strong and weak probabilities gives 4.60%; leaving out the weak state gives 9.40%.",
+  "source": "generated",
+  "ref": "SM 13-6"
+ },
+ {
+  "id": "q12-057",
+  "concept": "c12-expected-return-states",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock returns 14% with probability 60% and −9% with probability 40%. What is its expected return?",
+  "options": [
+   "0.20%",
+   "2.50%",
+   "4.80%",
+   "12.00%"
+  ],
+  "answer": 2,
+  "explanation": "E[R] = 0.60 × 14 + 0.40 × (−9) = 8.4 − 3.6 = 4.80%. Swapping the probabilities gives 0.20%; the simple average gives 2.50%; dropping the negative sign gives 12.00%.",
+  "source": "generated",
+  "ref": "SM 13-5"
+ },
+ {
+  "id": "q12-058",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "For returns R_i in states with probabilities p_i, the variance of an asset's return is:",
+  "options": [
+   "σ² = Σ p_i R_i, the probability-weighted average of the returns",
+   "σ² = √(Σ p_i (R_i − E[R])²), the square root of the weighted squared deviations",
+   "σ² = Σ (R_i − E[R])² ÷ (N − 1), the sample formula for historical returns",
+   "σ² = Σ p_i (R_i − E[R])², the weighted average of squared deviations from E[R]"
+  ],
+  "answer": 3,
+  "explanation": "Variance is the weighted average of squared deviations from the expected return. Its square root is the standard deviation. With given probabilities we do not divide by N − 1.",
+  "source": "generated",
+  "ref": "L06 s12, S7 s4"
+ },
+ {
+  "id": "q12-059",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which statistic does the lecture use to measure the volatility risk of a stock's returns?",
+  "options": [
+   "the standard deviation of returns",
+   "the expected return",
+   "the risk premium",
+   "the correlation coefficient"
+  ],
+  "answer": 0,
+  "explanation": "Risk (volatility) is measured by σ, the standard deviation of returns, and it goes on the horizontal axis of the risk-return diagram. E[R] measures reward, and the correlation relates two assets.",
+  "source": "generated",
+  "ref": "L06 s12, s14"
+ },
+ {
+  "id": "q12-060",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the variance of returns differ from the standard deviation?",
+  "options": [
+   "The variance is the square root of the standard deviation, so it is always the smaller number.",
+   "The standard deviation is the square root of the variance, so it is in percent while the variance is in squared units.",
+   "The variance includes the expected return; the standard deviation does not.",
+   "The variance is used on the risk-return diagram; the standard deviation is not."
+  ],
+  "answer": 1,
+  "explanation": "σ = √σ². We report and plot σ because it is an ordinary percentage. A variance of 0.0225 corresponds to σ = 0.15, or 15%.",
+  "source": "generated",
+  "ref": "TB 12.4, TB 13.1"
+ },
+ {
+  "id": "q12-061",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT a step in computing the standard deviation of returns from states of the economy?",
+  "options": [
+   "Compute the expected return E[R] = Σ p_i R_i.",
+   "Square each state's deviation R_i − E[R].",
+   "Divide the weighted sum of squared deviations by (N − 1).",
+   "Take the square root of the variance."
+  ],
+  "answer": 2,
+  "explanation": "With forecast probabilities the weighted sum of squared deviations already is the variance; there is no N − 1 divisor. N − 1 belongs to the sample variance of historical returns.",
+  "source": "generated",
+  "ref": "SM 13-7, TB 13.1"
+ },
+ {
+  "id": "q12-062",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why do we square the deviations (R_i − E[R]) before weighting them?",
+  "options": [
+   "Weighted deviations from E[R] add to zero because they cancel; squaring makes every deviation count as spread.",
+   "Because squaring converts percentage deviations into dollar amounts that can be priced.",
+   "Because the formula sheet requires every number in a sum to be positive before adding.",
+   "Because squaring removes the effect of the probabilities so that all states count equally."
+  ],
+  "answer": 0,
+  "explanation": "Without squaring, Σ p_i (R_i − E[R]) = 0 always, so it could not measure risk. Squaring avoids the cancellation and penalises large deviations more.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-063",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Stock X and Stock Y both have an expected return of 9%. Stock X has σ = 8% and Stock Y has σ = 24%. What does this tell you?",
+  "options": [
+   "Y is the better stock because a larger σ means a larger return, as the premium is always paid.",
+   "X and Y are equally risky because their expected returns are equal, so σ must be equal as well.",
+   "X must be a risk-free asset because its σ is lower than Y's, even though σ is not zero.",
+   "Y is riskier: its returns spread much more widely around the same expected return, so X is preferred."
+  ],
+  "answer": 3,
+  "explanation": "At equal expected returns, the stock with the smaller standard deviation dominates. A larger σ means more uncertainty, not a higher expected return.",
+  "source": "generated",
+  "ref": "L06 s12, s16"
+ },
+ {
+  "id": "q12-064",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "You can play one of three fair-coin games, each with a payoff of $1.00 on average: (a) win $1 on heads and $1 on tails; (b) win $0 on heads and $2 on tails; (c) lose $100 on heads and win $102 on tails. Which statement is correct?",
+  "options": [
+   "All three are worth the same to a risk-averse player because the expected payoffs are equal.",
+   "Game (c) is worth the most to a risk-averse player because it has the largest possible payoff.",
+   "(a) is worth most to a risk-averse player: same $1 mean, but σ of $0, $1 and $101 for (a), (b) and (c).",
+   "Game (b) is worth the most to a risk-averse player because it has the lowest standard deviation."
+  ],
+  "answer": 2,
+  "explanation": "Expected payoff is $1 in all three, so the difference is risk. For (c) the deviations are ±$101, so σ = $101. A risk-averse player wants compensation for σ, so the riskless game is worth the most.",
+  "source": "generated",
+  "ref": "L06 s12"
+ },
+ {
+  "id": "q12-065",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "When state probabilities are given, the variance is the weighted sum of squared deviations divided by N − 1.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. With given probabilities σ² = Σ p_i (R_i − E[R])² and nothing else is divided. The N − 1 divisor appears only for the sample variance of historical returns.",
+  "source": "generated",
+  "ref": "SM 13-7"
+ },
+ {
+  "id": "q12-066",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Peace River Air shares have a 20% chance of returning 17% and an 80% chance of returning −2%. What is the standard deviation of the return, in % per annum?",
+  "answer": 7.6,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.2*(17-(0.2*17+0.8*(-2)))**2+0.8*((-2)-(0.2*17+0.8*(-2)))**2)",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 1.8,
+    "check": "0.2*17+0.8*(-2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 57.76,
+    "check": "0.2*(17-(0.2*17+0.8*(-2)))**2+0.8*((-2)-(0.2*17+0.8*(-2)))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 7.6,
+    "check": "sqrt(0.2*(17-(0.2*17+0.8*(-2)))**2+0.8*((-2)-(0.2*17+0.8*(-2)))**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.2 × 17 + 0.8 × (−2) = 1.80%",
+   "σ² = 0.2 × (17 − 1.8)² + 0.8 × (−2 − 1.8)² = 0.2 × 231.04 + 0.8 × 14.44 = 46.208 + 11.552 = 57.76",
+   "σ = √57.76 = 7.60%"
+  ],
+  "keystrokes": [
+   "0.2 × 17 + 0.8 × (−2) = 1.8",
+   "0.2 × 15.2² + 0.8 × (−3.8)² = 57.76",
+   "√ 57.76 = 7.6"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance as the standard deviation",
+    "value": 57.76,
+    "check": "0.2*(17-(0.2*17+0.8*(-2)))**2+0.8*((-2)-(0.2*17+0.8*(-2)))**2",
+    "explain": "57.76 is σ² (in %²); take the square root to get σ in percent."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Gave both states equal weight in the variance",
+    "value": 11.08,
+    "check": "sqrt(((17-1.8)**2+(-2-1.8)**2)/2)",
+    "explain": "The squared deviations must be weighted by 0.2 and 0.8, not 0.5 and 0.5."
+   }
+  ],
+  "explanation": "Expected return 1.8%, variance 57.76 (%²), so σ = √57.76 = 7.60%.",
+  "source": "generated",
+  "ref": "SM 13-5, SM 13-7"
+ },
+ {
+  "id": "q12-067",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Summit Rail has three forecast states: recession (probability 0.20, return −8%), normal (0.50, return 7%) and expansion (0.30, return 20%). What is the standard deviation of its return, in % per annum?",
+  "answer": 9.74,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.2*((-8)-(0.2*(-8)+0.5*7+0.3*20))**2+0.5*(7-(0.2*(-8)+0.5*7+0.3*20))**2+0.3*(20-(0.2*(-8)+0.5*7+0.3*20))**2)",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 7.9,
+    "check": "0.2*(-8)+0.5*7+0.3*20",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 94.89,
+    "check": "0.2*((-8)-(0.2*(-8)+0.5*7+0.3*20))**2+0.5*(7-(0.2*(-8)+0.5*7+0.3*20))**2+0.3*(20-(0.2*(-8)+0.5*7+0.3*20))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 9.74,
+    "check": "sqrt(0.2*((-8)-(0.2*(-8)+0.5*7+0.3*20))**2+0.5*(7-(0.2*(-8)+0.5*7+0.3*20))**2+0.3*(20-(0.2*(-8)+0.5*7+0.3*20))**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.2 × (−8) + 0.5 × 7 + 0.3 × 20 = −1.6 + 3.5 + 6.0 = 7.9%",
+   "σ² = 0.2 × (−8 − 7.9)² + 0.5 × (7 − 7.9)² + 0.3 × (20 − 7.9)² = 50.562 + 0.405 + 43.923 = 94.89",
+   "σ = √94.89 = 9.74%"
+  ],
+  "keystrokes": [
+   "Expected return: −1.6 + 3.5 + 6 = 7.9",
+   "(−15.9)² = 252.81 × 0.2 = 50.562; (−0.9)² × 0.5 = 0.405; 12.1² = 146.41 × 0.3 = 43.923",
+   "sum = 94.89; √ = 9.74"
+  ],
+  "errors": [
+   {
+    "id": "n-minus-1-with-probs",
+    "label": "Divided the weighted sum by N − 1 = 2",
+    "value": 6.89,
+    "check": "sqrt((0.2*((-8)-(0.2*(-8)+0.5*7+0.3*20))**2+0.5*(7-(0.2*(-8)+0.5*7+0.3*20))**2+0.3*(20-(0.2*(-8)+0.5*7+0.3*20))**2)/2)",
+    "explain": "Probabilities already do the averaging; there is no N − 1 divisor with states."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 94.89,
+    "check": "0.2*((-8)-(0.2*(-8)+0.5*7+0.3*20))**2+0.5*(7-(0.2*(-8)+0.5*7+0.3*20))**2+0.3*(20-(0.2*(-8)+0.5*7+0.3*20))**2",
+    "explain": "The variance 94.89 is in %²; σ is its square root."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Averaged the squared deviations equally",
+    "value": 11.55,
+    "check": "sqrt(((-8-(0.2*(-8)+0.5*7+0.3*20))**2+(7-(0.2*(-8)+0.5*7+0.3*20))**2+(20-(0.2*(-8)+0.5*7+0.3*20))**2)/3)",
+    "explain": "The states have different probabilities; each squared deviation is weighted by its own p."
+   }
+  ],
+  "explanation": "σ² = 94.89 (%²) and σ = 9.74% per annum.",
+  "source": "generated",
+  "ref": "SM 13-7, S7 s4"
+ },
+ {
+  "id": "q12-068",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kootenay Lumber's returns are 12%, 3% and −9% in three equally likely states. What is the variance of its return, as a decimal rounded to four places (for example 0.0123)?",
+  "answer": 0.0074,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.0001
+  },
+  "check": "(1/3)*(0.12-0.02)**2+(1/3)*(0.03-0.02)**2+(1/3)*(-0.09-0.02)**2",
+  "steps": [
+   {
+    "label": "Expected return (in %)",
+    "value": 2.0,
+    "check": "(12+3-9)/3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance",
+    "value": 0.0074,
+    "check": "(1/3)*(0.12-0.02)**2+(1/3)*(0.03-0.02)**2+(1/3)*(-0.09-0.02)**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = (12 + 3 − 9)/3 = 2% = 0.02",
+   "σ² = (1/3)(0.12 − 0.02)² + (1/3)(0.03 − 0.02)² + (1/3)(−0.09 − 0.02)²",
+   "= (1/3)(0.0100 + 0.0001 + 0.0121) = 0.0222/3 = 0.0074"
+  ],
+  "keystrokes": [
+   "Mean 2% = 0.02",
+   "0.10² = 0.01; 0.01² = 0.0001; (−0.11)² = 0.0121",
+   "(0.01 + 0.0001 + 0.0121) ÷ 3 = 0.0074"
+  ],
+  "errors": [
+   {
+    "id": "n-minus-1-with-probs",
+    "label": "Divided the sum of squares by N − 1 = 2",
+    "value": 0.0111,
+    "check": "(0.0100+0.0001+0.0121)/2",
+    "explain": "States with probabilities use weights 1/3 each (divide by 3), not N − 1."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Worked in percent and left it in %²",
+    "value": 74.0,
+    "check": "(100+1+121)/3",
+    "explain": "Squared percentages (74) are not the decimal variance 0.0074; convert to decimals first."
+   },
+   {
+    "id": "sigma-for-variance",
+    "label": "Reported σ in decimals instead of σ²",
+    "value": 0.086,
+    "check": "sqrt(0.0074)",
+    "explain": "0.0860 is the standard deviation (8.60%); the question asks for the variance."
+   }
+  ],
+  "explanation": "Variance 0.0074 (σ = 8.60%).",
+  "source": "generated",
+  "ref": "SM 13-7, S7 s4"
+ },
+ {
+  "id": "q12-069",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Athabasca Tech has four forecast states: boom (probability 10%, return 38%), good (45%, 14%), poor (35%, 3%) and bust (10%, −27%). What is the standard deviation of its return, in % per annum?",
+  "answer": 15.4,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.1*(38-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.45*(14-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.35*(3-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.1*((-27)-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2)",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 8.45,
+    "check": "0.1*38+0.45*14+0.35*3+0.1*(-27)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 237.25,
+    "check": "0.1*(38-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.45*(14-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.35*(3-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.1*((-27)-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 15.4,
+    "check": "sqrt(0.1*(38-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.45*(14-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.35*(3-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.1*((-27)-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.10 × 38 + 0.45 × 14 + 0.35 × 3 + 0.10 × (−27) = 8.45%",
+   "Deviations: 29.55, 5.55, −5.45, −35.45",
+   "σ² = 0.10 × 29.55² + 0.45 × 5.55² + 0.35 × 5.45² + 0.10 × 35.45² = 87.320 + 13.861 + 10.396 + 125.670 = 237.25",
+   "σ = √237.25 = 15.40%"
+  ],
+  "keystrokes": [
+   "Store E[R] = 8.45",
+   "0.1 × 29.55² = 87.32; 0.45 × 5.55² = 13.86; 0.35 × (−5.45)² = 10.40; 0.1 × (−35.45)² = 125.67",
+   "Sum = 237.25; √ = 15.40"
+  ],
+  "errors": [
+   {
+    "id": "n-minus-1-with-probs",
+    "label": "Divided the weighted sum by N − 1 = 3",
+    "value": 8.89,
+    "check": "sqrt((0.1*(38-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.45*(14-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.35*(3-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.1*((-27)-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2)/3)",
+    "explain": "With probabilities, the weights already sum to 1; no N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance",
+    "value": 237.25,
+    "check": "0.1*(38-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.45*(14-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.35*(3-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2+0.1*((-27)-(0.1*38+0.45*14+0.35*3+0.1*(-27)))**2",
+    "explain": "237.25 is the variance in %²; σ is √237.25."
+   },
+   {
+    "id": "raw-second-moment",
+    "label": "Weighted the squared returns instead of the squared deviations",
+    "value": 17.57,
+    "check": "sqrt(0.10*38**2+0.45*14**2+0.35*3**2+0.10*(-27)**2)",
+    "explain": "You must subtract E[R] before squaring; Σ p R² is not the variance."
+   }
+  ],
+  "explanation": "σ² = 237.25 (%²), so σ = 15.40% per annum.",
+  "source": "generated",
+  "ref": "SM 13-10b"
+ },
+ {
+  "id": "q12-070",
+  "concept": "c12-variance-states",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You invest 70% in Stock X and 30% in Stock Y. In an expansion (probability 0.55) X returns 16% and Y returns 4%; in a contraction (probability 0.45) X returns −6% and Y returns 18%. What is the standard deviation of the portfolio's return, in % per annum?",
+  "answer": 5.57,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.55*((0.7*16+0.3*4)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2+0.45*((0.7*(-6)+0.3*18)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2)",
+  "steps": [
+   {
+    "label": "Portfolio return in expansion",
+    "value": 12.4,
+    "check": "(0.7*16+0.3*4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio return in contraction",
+    "value": 1.2,
+    "check": "(0.7*(-6)+0.3*18)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected portfolio return",
+    "value": 7.36,
+    "check": "0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio standard deviation",
+    "value": 5.57,
+    "check": "sqrt(0.55*((0.7*16+0.3*4)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2+0.45*((0.7*(-6)+0.3*18)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Expansion: 0.7 × 16 + 0.3 × 4 = 12.4%; contraction: 0.7 × (−6) + 0.3 × 18 = 1.2%",
+   "E[R_P] = 0.55 × 12.4 + 0.45 × 1.2 = 7.36%",
+   "σ_P² = 0.55 × (12.4 − 7.36)² + 0.45 × (1.2 − 7.36)² = 31.0464",
+   "σ_P = √31.0464 = 5.57%"
+  ],
+  "keystrokes": [
+   "0.7 × 16 + 0.3 × 4 = 12.4; 0.7 × (−6) + 0.3 × 18 = 1.2",
+   "E = 0.55 × 12.4 + 0.45 × 1.2 = 7.36",
+   "0.55 × 5.04² + 0.45 × 6.16² = 31.0464; √ = 5.57"
+  ],
+  "errors": [
+   {
+    "id": "weighted-sigmas",
+    "label": "Weighted the two stocks' standard deviations by 70/30",
+    "value": 9.75,
+    "check": "0.7*sqrt(0.55*(16-(0.55*16+0.45*(-6)))**2+0.45*((-6)-(0.55*16+0.45*(-6)))**2)+0.3*sqrt(0.55*(4-(0.55*4+0.45*18))**2+0.45*(18-(0.55*4+0.45*18))**2)",
+    "explain": "Portfolio σ is not the weighted average of the individual σ's; the stocks' returns do not move together in the two states, which lowers the portfolio's risk."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the portfolio variance",
+    "value": 31.05,
+    "check": "0.55*((0.7*16+0.3*4)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2+0.45*((0.7*(-6)+0.3*18)-(0.55*(0.7*16+0.3*4)+0.45*(0.7*(-6)+0.3*18)))**2",
+    "explain": "The weighted sum of squared deviations is σ_P²; take the square root."
+   }
+  ],
+  "explanation": "Find the portfolio return in each state first, then its mean and weighted squared deviations. σ_P = 5.57% is far below the 9.75% weighted average of the individual σ's.",
+  "source": "generated",
+  "ref": "SM 13-9, SM 13-10, S7 s11"
+ },
+ {
+  "id": "q12-071",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "The variance of Okanagan Orchards' return, computed from forecast states, is 0.0196. What is the standard deviation of its return, in % per annum?",
+  "answer": 14.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.0196)*100",
+  "steps": [
+   {
+    "label": "Standard deviation = √variance (decimal)",
+    "value": 0.14,
+    "check": "sqrt(0.0196)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "As a percentage",
+    "value": 14.0,
+    "check": "sqrt(0.0196)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "σ = √σ² = √0.0196 = 0.14",
+   "σ = 14.00% per annum"
+  ],
+  "keystrokes": [
+   "0.0196 → √x = 0.14",
+   "× 100 = 14"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Treated the variance as the standard deviation",
+    "value": 1.96,
+    "check": "0.0196*100",
+    "explain": "0.0196 is the variance; σ is its square root, 0.14 or 14%."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Left σ as a decimal",
+    "value": 0.14,
+    "check": "sqrt(0.0196)",
+    "explain": "The question asks for a percentage: 0.14 is 14%."
+   }
+  ],
+  "explanation": "σ = √0.0196 = 0.14 = 14%.",
+  "source": "generated",
+  "ref": "TB 13.1"
+ },
+ {
+  "id": "q12-072",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A stock is equally likely to return 24% or −8%. What is the standard deviation of its return, in % per annum?",
+  "answer": 16.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.5*(24-8)**2+0.5*(-8-8)**2)",
+  "steps": [
+   {
+    "label": "Expected return",
+    "value": 8.0,
+    "check": "0.5*24+0.5*(-8)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 16.0,
+    "check": "sqrt(0.5*(24-8)**2+0.5*(-8-8)**2)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.5 × 24 + 0.5 × (−8) = 8%",
+   "Each outcome is 16 points from the mean: σ² = 0.5 × 16² + 0.5 × 16² = 256",
+   "σ = √256 = 16.00%"
+  ],
+  "keystrokes": [
+   "0.5 × 24 + 0.5 × (−8) = 8",
+   "0.5 × 16² + 0.5 × 16² = 256; √ = 16"
+  ],
+  "errors": [
+   {
+    "id": "no-square-root",
+    "label": "Reported the variance",
+    "value": 256.0,
+    "check": "0.5*(24-8)**2+0.5*(-8-8)**2",
+    "explain": "256 is σ² in %²; σ is 16%."
+   },
+   {
+    "id": "forgot-half",
+    "label": "Used the full gap between the two returns",
+    "value": 32.0,
+    "check": "24-(-8)",
+    "explain": "The standard deviation is the typical distance from the mean (16 points), not the whole gap (32 points)."
+   }
+  ],
+  "explanation": "With two equally likely outcomes σ is half the gap between them: (24 − (−8))/2 = 16%.",
+  "source": "generated",
+  "ref": "SM 13-5, SM 13-7"
+ },
+ {
+  "id": "q12-073",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Sterling Rail has three forecast states: strong (probability 0.25, return 20%), average (0.50, 8%) and weak (0.25, −4%). What is the standard deviation of its return?",
+  "options": [
+   "6.00%",
+   "8.49%",
+   "9.80%",
+   "72.00%"
+  ],
+  "answer": 1,
+  "explanation": "E[R] = 8%; σ² = 0.25 × 12² + 0.50 × 0² + 0.25 × (−12)² = 72 (%²), so σ = √72 = 8.49%. Dividing 72 by N − 1 = 2 gives 36, so 6.00%; weighting the deviations equally gives √96 = 9.80%; stopping at 72 reports the variance, not σ.",
+  "source": "generated",
+  "ref": "SM 13-7"
+ },
+ {
+  "id": "q12-074",
+  "concept": "c12-variance-states",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock has a 50% chance of returning 14% and a 50% chance of returning 2%. What is its variance, written as a decimal?",
+  "options": [
+   "0.0036",
+   "0.0072",
+   "0.06",
+   "36"
+  ],
+  "answer": 0,
+  "explanation": "E[R] = 8%. Each outcome is 6 points (0.06) from the mean, so σ² = 0.5 × 0.06² + 0.5 × 0.06² = 0.0036. Without the probabilities you get 0.0072; 0.06 is the standard deviation; 36 is the variance in %² (a percent-decimal mix).",
+  "source": "generated",
+  "ref": "TB 13.1"
+ }
+]

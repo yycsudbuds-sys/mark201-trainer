@@ -1,0 +1,583 @@
+[
+ {
+  "id": "q13-031",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The market portfolio M is best described as:",
+  "options": [
+   "the portfolio at the far left of the frontier, with the lowest σ of all",
+   "the tangency portfolio, where the CAL from R_F touches the frontier (highest Sharpe ratio)",
+   "the single stock with the highest expected return, at the far right of the diagram",
+   "the risk-free asset combined 50/50 with the best-performing single stock"
+  ],
+  "answer": 1,
+  "explanation": "M is the tangency portfolio: it has the steepest attainable CAL, i.e. the highest Sharpe ratio. The lowest-σ portfolio is the minimum-variance portfolio at the left end of the frontier, and the highest-return asset sits at the far right.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-032",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Starting at R_F on the vertical axis, an analyst rotates a straight line upward until it just touches the efficient frontier at a single point. The point of contact is the:",
+  "options": [
+   "minimum-variance portfolio",
+   "risk-free asset",
+   "market portfolio M",
+   "portfolio with the highest expected return"
+  ],
+  "answer": 2,
+  "explanation": "The first point the rotating line touches is the tangency point, and the line is the CML. The minimum-variance portfolio is the leftmost point of the frontier; the line from R_F does not touch it at its steepest.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-033",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do practitioners use a broad index such as the S&P 500 (SPDR trust) as a proxy for the market portfolio?",
+  "options": [
+   "An index has σ = 0, so it works as a risk-free substitute for the true M",
+   "An index has been proven to lie exactly on the efficient frontier at the point of tangency",
+   "Investors are legally barred from holding M directly, so a proxy is required",
+   "M cannot be observed in advance, and the best past portfolio need not be the best future one"
+  ],
+  "answer": 3,
+  "explanation": "It is hard enough to find the best portfolio from past data and even harder to predict where M will be, so we use a broad market index. An index is diversified but not risk-free, and nobody has proven it sits exactly at the tangency.",
+  "source": "generated",
+  "ref": "L06 s44"
+ },
+ {
+  "id": "q13-034",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly separates the market portfolio from the minimum-variance portfolio?",
+  "options": [
+   "M maximizes the Sharpe ratio; the minimum-variance portfolio minimizes σ",
+   "M minimizes σ; the minimum-variance portfolio maximizes the Sharpe ratio",
+   "Both describe the same point, the leftmost one on the efficient frontier",
+   "M is the highest-return frontier portfolio; the minimum-variance portfolio has the best Sharpe ratio"
+  ],
+  "answer": 0,
+  "explanation": "Two different criteria pick two different points: tangency (best slope from R_F) picks M, lowest σ picks the minimum-variance portfolio. By construction no frontier portfolio has a higher Sharpe ratio than M.",
+  "source": "generated",
+  "ref": "L06 s37, s43"
+ },
+ {
+  "id": "q13-035",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT true of the market portfolio M?",
+  "options": [
+   "It lies on the efficient frontier at the point where the CML touches it",
+   "Its beta is 1, so it carries the market's systematic risk",
+   "It has the lowest σ of any portfolio on the efficient frontier",
+   "It has the highest Sharpe ratio of any risky portfolio"
+  ],
+  "answer": 2,
+  "explanation": "Lowest σ describes the minimum-variance portfolio. M is the tangency portfolio: on the frontier, β_M = 1, and the highest Sharpe ratio.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-036",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Two Calgary investors, one cautious and one bold, both accept the CML theory. How will their portfolios differ?",
+  "options": [
+   "The cautious investor holds a lower-σ stock portfolio, while the bold one holds M",
+   "Both hold M; the cautious one holds more R_F (w_F > 0), the bold one less or borrows (w_F < 0)",
+   "The cautious investor holds only R_F and the bold investor holds only M itself",
+   "Each holds a different tangent portfolio, matched to the investor's own risk tolerance"
+  ],
+  "answer": 1,
+  "explanation": "Every point on the CML is a mix of M and R_F, so risk tolerance only changes the weight w_F. There is one tangent portfolio, not one per investor.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-037",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Three portfolios on the efficient frontier have Sharpe ratios of 0.52, 0.61 and 0.58. M is the tangency portfolio. What can we conclude?",
+  "options": [
+   "M's Sharpe ratio is 0.52, the lowest of the three, because M carries the least risk",
+   "M's Sharpe ratio is exactly 0.58, the middle of the three values, as the market is average",
+   "M's Sharpe ratio is at least 0.61, and the 0.61 portfolio offers the steepest CAL of the three",
+   "M's Sharpe ratio is below all three, because the index used to proxy M is imperfect"
+  ],
+  "answer": 2,
+  "explanation": "M has the highest Sharpe ratio of all risky portfolios, so its ratio is at least as high as each of these three; of the three, the 0.61 portfolio gives the steepest CAL. M is not the minimum-risk portfolio, and an imperfect index proxy does not lower M's own ratio.",
+  "source": "generated",
+  "ref": "L06 s42-43"
+ },
+ {
+  "id": "q13-038",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which sequence describes how the market portfolio is found?",
+  "options": [
+   "Plot the frontier → mark R_F → draw the steepest line from R_F that still touches the frontier → read off the tangency point as M",
+   "Mark R_F → pick the single stock with the highest expected return → draw a line from R_F to it → call that stock M",
+   "Plot the frontier → find its leftmost point (lowest σ) → draw a horizontal line across to R_F → call the point M",
+   "Mark R_F → draw the flattest line that touches the frontier → read off the contact point as M → plot the frontier afterwards"
+  ],
+  "answer": 0,
+  "explanation": "M is found by tangency: first the frontier, then R_F, then the steepest CAL that still touches an attainable portfolio. The flattest line has the lowest Sharpe ratio and the leftmost point is the minimum-variance portfolio.",
+  "source": "generated",
+  "ref": "L06 s43, REV p3"
+ },
+ {
+  "id": "q13-039",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The market portfolio is the portfolio on the efficient frontier with the lowest σ.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The lowest-σ portfolio on the frontier is the minimum-variance portfolio. The market portfolio is the tangency portfolio, with the highest Sharpe ratio.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-040",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In practice we proxy the market portfolio with a broad market _____, such as the S&P 500 (SPDR trust).",
+  "options": [
+   "index portfolio",
+   "Treasury bill",
+   "dividend stock",
+   "bond ladder"
+  ],
+  "answer": 0,
+  "explanation": "M cannot be observed in advance, so the course uses a broad market index portfolio (S&P 500, SPDR trust; in Canada the S&P/TSX Composite) as the stand-in.",
+  "source": "generated",
+  "ref": "L06 s44"
+ },
+ {
+  "id": "q13-041",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Why does the market portfolio have a beta of exactly 1?",
+  "options": [
+   "Because ρ = 1 and any perfectly correlated asset has β = 1",
+   "Because β is defined by setting the market's σ equal to 100%",
+   "Because β is measured relative to the risk-free asset, whose gross return is 1",
+   "β_M = cov(R_M, R_M)/σ_M² = σ_M²/σ_M² = 1: the market has the same risk as itself"
+  ],
+  "answer": 3,
+  "explanation": "Beta is cov(R_i, R_M)/σ_M². Put i = M and the covariance of a variable with itself is its variance, so β_M = 1. A perfectly correlated asset has β = σ_i/σ_M, which equals 1 only if its σ matches the market's.",
+  "source": "generated",
+  "ref": "L06 s51"
+ },
+ {
+  "id": "q13-042",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A Calgary advisor tells every client, cautious or bold: 'You will all hold the same low-cost broad index fund; we only change how much T-bill you hold alongside it.' Which idea underlies this advice?",
+  "options": [
+   "Every investor holds the market portfolio plus the risk-free asset and differs only in w_F",
+   "Every investor should hold the minimum-variance portfolio, whatever their risk tolerance",
+   "Diversification eliminates systematic risk, so an index fund is risk-free",
+   "Each investor should pick a different single stock whose β matches their risk tolerance"
+  ],
+  "answer": 0,
+  "explanation": "This is the CML idea: the best risky portfolio is the same for all (M, proxied by an index), and risk tolerance is expressed through the risk-free weight. An index fund still carries systematic risk.",
+  "source": "generated",
+  "ref": "L06 s43-44"
+ },
+ {
+  "id": "q13-043",
+  "concept": "c13-market-portfolio",
+  "also": [],
+  "type": "tf",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A broad index fund such as the SPDR trust is only a proxy for the market portfolio, not M itself.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The theoretical M uses expected returns and σ's we cannot observe in advance, so a broad index is used as a practical stand-in.",
+  "source": "generated",
+  "ref": "L06 s44"
+ },
+ {
+  "id": "q13-044",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Systematic risk is risk that:",
+  "options": [
+   "is unique to one company and disappears in a large portfolio",
+   "arises only from choosing poor weights for the stocks in a portfolio",
+   "affects almost all assets and cannot be removed by diversification",
+   "is borne only by investors who hold the risk-free asset"
+  ],
+  "answer": 2,
+  "explanation": "Systematic (market, non-diversifiable) risk comes from surprises that hit nearly every asset, such as GDP, inflation and interest rates. Risk unique to a company is unsystematic.",
+  "source": "generated",
+  "ref": "L06 s46-49, TB 13.4"
+ },
+ {
+  "id": "q13-045",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The Bank of Canada unexpectedly raises its policy rate by 0.75 percentage points. For a stock portfolio this surprise is:",
+  "options": [
+   "unsystematic risk, because only one institution made the decision",
+   "systematic risk, because it affects almost every firm",
+   "unsystematic risk, because only banks are affected",
+   "no risk at all, because the decision was announced publicly"
+  ],
+  "answer": 1,
+  "explanation": "Interest rates are a classic market-wide factor, so a surprise change is systematic. Announcement does not remove risk; only the expected part of news is already priced.",
+  "source": "generated",
+  "ref": "SM 13 CTQ 3, 4"
+ },
+ {
+  "id": "q13-046",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A fire shuts down the only plant of Foothills Packaging Ltd. for six months. For an investor who also owns 40 other stocks, this event is mainly:",
+  "options": [
+   "systematic risk, because the stock trades on the TSX",
+   "systematic risk, because every investor in the stock is affected",
+   "no risk at all, because the 40 other stocks are unaffected",
+   "unsystematic risk, because it is specific to one company"
+  ],
+  "answer": 3,
+  "explanation": "A single-company event is company-specific (unsystematic, diversifiable) risk: with 40 other stocks it barely moves the portfolio. It is still a risk for that one stock, so 'no risk at all' overstates it.",
+  "source": "generated",
+  "ref": "TB 13.4, SM 13 CTQ 3"
+ },
+ {
+  "id": "q13-047",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A sudden pandemic lockdown cuts sales in nearly every Canadian industry at once. Which type of risk does this represent?",
+  "options": [
+   "unsystematic risk, since it started with one virus",
+   "company-specific risk, since each firm is affected separately",
+   "systematic (market) risk, because it hits almost every firm at once",
+   "diversifiable risk, since it could be avoided by holding many stocks"
+  ],
+  "answer": 2,
+  "explanation": "The shock hits almost all assets in the same direction, so holding many stocks does not cancel it: systematic, non-diversifiable risk.",
+  "source": "generated",
+  "ref": "L06 s46-49"
+ },
+ {
+  "id": "q13-048",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 3,
+  "stem": "Which of these events is mostly SYSTEMATIC risk?",
+  "options": [
+   "The CEO of Sunrise Dairy resigns suddenly",
+   "A union strike halts one airline's flights",
+   "A data breach hits one retailer",
+   "Canadian inflation unexpectedly jumps to 8%"
+  ],
+  "answer": 3,
+  "explanation": "An inflation surprise affects wages, costs and prices across the whole economy. The other three events are unique to one company, so they are unsystematic.",
+  "source": "generated",
+  "ref": "TB 13.4, SM 13 CTQ 3"
+ },
+ {
+  "id": "q13-049",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pair gives two names for the same type of risk?",
+  "options": [
+   "Company-specific risk and diversifiable risk",
+   "Market risk and diversifiable risk",
+   "Systematic risk and company-specific risk",
+   "Unsystematic risk and non-diversifiable risk"
+  ],
+  "answer": 0,
+  "explanation": "Company-specific = unsystematic = diversifiable = idiosyncratic. Market = systematic = non-diversifiable. The wrong pairs each mix one term from each family.",
+  "source": "generated",
+  "ref": "L06 s49"
+ },
+ {
+  "id": "q13-050",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which type of risk earns a risk premium in the CAPM framework?",
+  "options": [
+   "Both types, with the premium proportional to the asset's total risk σ",
+   "Only unsystematic risk, because it is the risk investors choose to take",
+   "Only systematic risk, since unsystematic risk can be removed almost free",
+   "Neither type; the premium compensates investors only for expected inflation"
+  ],
+  "answer": 2,
+  "explanation": "The systematic risk principle: the reward for bearing risk depends only on systematic risk. Unsystematic risk is avoidable by diversifying, so the market pays nothing for it.",
+  "source": "generated",
+  "ref": "TB 13.6, L06 s50"
+ },
+ {
+  "id": "q13-051",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT another name for unsystematic risk?",
+  "options": [
+   "Idiosyncratic risk",
+   "Market risk",
+   "Diversifiable risk",
+   "Company-specific risk"
+  ],
+  "answer": 1,
+  "explanation": "Market risk is a synonym for systematic risk. Company-specific, diversifiable and idiosyncratic risk all describe the unsystematic part.",
+  "source": "generated",
+  "ref": "L06 s49, S7 s22"
+ },
+ {
+  "id": "q13-052",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does diversification fail to remove systematic risk?",
+  "options": [
+   "Because investors cannot afford enough different stocks to cover the whole market",
+   "A systematic shock moves almost all assets the same way, so it does not cancel",
+   "Diversification only works when a portfolio holds fewer than ten stocks",
+   "Systematic risk is always smaller than unsystematic risk, so it never matters"
+  ],
+  "answer": 1,
+  "explanation": "Unsystematic surprises are good for some stocks and bad for others, so they average out. A market-wide surprise moves everything together, so the portfolio σ bottoms out at about σ_M.",
+  "source": "generated",
+  "ref": "L06 s46-47, TB 13.5"
+ },
+ {
+  "id": "q13-053",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does the market pay no risk premium for unsystematic risk?",
+  "options": [
+   "It is far too small to measure reliably, so the market simply ignores it",
+   "It is already built into the risk-free rate that every investor receives",
+   "Investors can remove it almost free by diversifying, so bearing it earns nothing",
+   "It is too uncertain to price, so the market leaves it out of expected returns"
+  ],
+  "answer": 2,
+  "explanation": "Because unsystematic risk can be diversified away for free, the market does not reward risk borne unnecessarily. Only systematic risk, which cannot be removed without giving up expected return, earns a premium.",
+  "source": "generated",
+  "ref": "TB 13.6, SM 13 CTQ 1"
+ },
+ {
+  "id": "q13-054",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Moraine Holdings owns 8 Alberta energy stocks and adds 40 stocks spread across Canadian sectors. Which part of its risk falls the most?",
+  "options": [
+   "Unsystematic risk; what remains is mostly systematic, close to σ_M",
+   "Systematic risk, because more stocks mean less market exposure",
+   "Both parts fall by the same proportion as stocks are added",
+   "Neither: adding stocks changes only expected return"
+  ],
+  "answer": 0,
+  "explanation": "Spreading across sectors cancels company- and industry-specific surprises (unsystematic). The market-wide part stays, so σ_P falls toward the limit σ_M.",
+  "source": "generated",
+  "ref": "L06 s46-47"
+ },
+ {
+  "id": "q13-055",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "In the textbook's classic study of randomly chosen NYSE stocks (Table 13.7), equally weighted portfolios have an average σ of about 49% with 1 stock, 24% with 10, 20% with 100 and 19% with 1,000. What does the roughly 19% floor represent?",
+  "options": [
+   "Unsystematic risk left over because 1,000 stocks is still too few",
+   "The risk-free rate, which is the return when all risk is removed",
+   "Systematic risk: about the market's own σ, which cannot be diversified away",
+   "Estimation error from using historical data to measure σ"
+  ],
+  "answer": 2,
+  "explanation": "The drop from 49% to 19% is mostly unsystematic risk being diversified away; the benefit shrinks as stocks are added and flattens at the market's own volatility. A floor that does not fall further is systematic.",
+  "source": "generated",
+  "ref": "TB 13.5 Table 13.7, L06 s47"
+ },
+ {
+  "id": "q13-056",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Total risk can be split into systematic risk plus unsystematic risk, and diversification removes only the unsystematic part.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Total risk = systematic + unsystematic. Diversifying cancels company-specific surprises, leaving the systematic part.",
+  "source": "generated",
+  "ref": "TB 13.5, S7 s22"
+ },
+ {
+  "id": "q13-057",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "If a portfolio holds enough stocks, diversification eliminates both unsystematic and systematic risk.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Diversification eliminates only unsystematic risk. A very large portfolio still has σ close to σ_M because systematic risk affects all stocks.",
+  "source": "generated",
+  "ref": "L06 s46-47"
+ },
+ {
+  "id": "q13-058",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "As more stocks are added, the σ of a portfolio falls toward a limit of _____, the volatility of the market.",
+  "options": [
+   "R_F",
+   "zero",
+   "σ_M",
+   "the σ of the lowest-σ stock in the portfolio"
+  ],
+  "answer": 2,
+  "explanation": "The limit is σ_M, the systematic risk that cannot be diversified away. It does not reach zero, and it has nothing to do with R_F.",
+  "source": "generated",
+  "ref": "L06 s46-47"
+ },
+ {
+  "id": "q13-059",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "The textbook splits a stock's actual return into its expected return plus a systematic (market-wide) surprise and an unsystematic (company-specific) surprise. Fraser Foods is expected to return 7.0% this year. A market-wide surprise adds 2.0% and a company-specific surprise subtracts 3.5%. What is its actual return?",
+  "options": [
+   "9.00%",
+   "5.50%",
+   "12.50%",
+   "3.50%"
+  ],
+  "answer": 1,
+  "explanation": "R = E(R) + m + ε, where m is the systematic surprise and ε the unsystematic one: 7.0 + 2.0 − 3.5 = 5.50%. Ignoring the company-specific surprise gives 9.00%; adding the negative surprise as a positive gives 12.50%; ignoring the market-wide surprise gives 3.50%.",
+  "source": "generated",
+  "ref": "TB 13.4"
+ },
+ {
+  "id": "q13-060",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "The Bank of Canada raised its policy rate by exactly the 0.25 percentage points that every analyst had expected, and Canadian stock prices barely moved. Why?",
+  "options": [
+   "Interest rate changes are unsystematic, so they should not move market prices",
+   "Stock prices do not depend on interest rates, only on company earnings",
+   "Diversified portfolios are immune to systematic risk, so index prices cannot react",
+   "Only the surprise part of news moves prices; the expected part was already priced in"
+  ],
+  "answer": 3,
+  "explanation": "Risk comes from surprises, the unanticipated part of the return. An expected change has already been discounted. Interest rates are systematic, and diversified portfolios still carry systematic risk.",
+  "source": "generated",
+  "ref": "SM 13 CTQ 2, TB 13.3"
+ },
+ {
+  "id": "q13-061",
+  "concept": "c13-systematic-unsystematic",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement about variance is correct?",
+  "options": [
+   "Both a stock's and a diversified portfolio's variance measure only systematic risk",
+   "A single stock's variance measures total risk; a diversified portfolio's mostly systematic risk",
+   "Both a stock's and a diversified portfolio's variance measure only unsystematic risk",
+   "A diversified portfolio's variance reflects unsystematic risk; a stock's reflects systematic risk"
+  ],
+  "answer": 1,
+  "explanation": "The variance of an individual asset includes both parts. In a well-diversified portfolio the unsystematic parts have washed out, so what is left is essentially the systematic risk.",
+  "source": "generated",
+  "ref": "SM 13 CTQ 6, S7 s22"
+ }
+]

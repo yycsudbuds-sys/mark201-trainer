@@ -1,0 +1,635 @@
+[
+ {
+  "id": "q08-621",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "An efficient market is one in which:",
+  "options": [
+   "security prices never change, because all information is already known",
+   "every investor earns the same return on every security held",
+   "security prices reflect the relevant information, so securities are fairly priced",
+   "security prices always equal the book value per share on the balance sheet"
+  ],
+  "answer": 2,
+  "explanation": "Efficiency is about information: if the relevant information is already in the price, there is no reason to think the price is too high or too low. Prices still move, because new information arrives constantly.",
+  "source": "generated",
+  "ref": "L04 s45; TB 12.6"
+ },
+ {
+  "id": "q08-622",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Weak-form market efficiency says that current prices already reflect:",
+  "options": [
+   "all publicly released information, including financial statements",
+   "all information, including private information held by insiders",
+   "only the information in the firm's most recent earnings announcement",
+   "the past history of the stock's own prices (so charts cannot predict)"
+  ],
+  "answer": 3,
+  "explanation": "Weak form is the mildest: the information set is the stock's past price history. If it holds, 'only the current price is important' and the path that led to it is irrelevant (L04 s47).",
+  "source": "generated",
+  "ref": "L04 s46-47"
+ },
+ {
+  "id": "q08-623",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which form of market efficiency says that prices reflect all publicly released information?",
+  "options": [
+   "Weak form",
+   "Strong form",
+   "Perfect form",
+   "Semi-strong form"
+  ],
+  "answer": 3,
+  "explanation": "Semi-strong adds public information (financial statements, announcements, news) to the past price history. Strong form adds private information too.",
+  "source": "generated",
+  "ref": "L04 s46"
+ },
+ {
+  "id": "q08-624",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A technical analyst studies price charts for ten years and cannot beat a buy-and-hold strategy after costs. Which form of efficiency is this consistent with?",
+  "options": [
+   "Weak-form efficiency",
+   "Strong-form efficiency only",
+   "The market being inefficient in every form",
+   "Semi-strong efficiency only, not weak"
+  ],
+  "answer": 0,
+  "explanation": "If past prices carry no exploitable information, chart reading cannot earn abnormal profits: that is the weak-form hypothesis. Note that semi-strong efficiency implies weak form, so 'semi-strong only, not weak' is impossible.",
+  "source": "generated",
+  "ref": "L04 s47; TB 12.6"
+ },
+ {
+  "id": "q08-625",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "How do the weak and semi-strong forms of efficiency differ?",
+  "options": [
+   "Weak form covers public information and semi-strong covers private information",
+   "They cover the same information, but semi-strong also applies to bonds",
+   "Semi-strong includes weak form (past prices) plus all other public information, so it is stronger",
+   "Weak form is a stronger claim than semi-strong because it applies to all stocks"
+  ],
+  "answer": 2,
+  "explanation": "The forms are nested: weak ⊂ semi-strong ⊂ strong. The information sets are past prices; all public information; all information including private.",
+  "source": "generated",
+  "ref": "L04 s46; SM 12 CTQ 6"
+ },
+ {
+  "id": "q08-626",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "According to the course, which forms of market efficiency do we want and which do we not want?",
+  "options": [
+   "We want strong-form efficiency most; weak and semi-strong forms are undesirable",
+   "We want all three forms equally, since each prices in more information",
+   "We want weak form only; semi-strong and strong forms are undesirable",
+   "We want weak and semi-strong efficiency; strong-form efficiency is undesirable"
+  ],
+  "answer": 3,
+  "explanation": "Weak and semi-strong efficiency mean prices quickly absorb past and public information, which is good for fair trading. Strong form would mean even private information is already in prices, which could only happen through insider trading.",
+  "source": "generated",
+  "ref": "L04 s50; REV p3"
+ },
+ {
+  "id": "q08-627",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is strong-form efficiency regarded as undesirable?",
+  "options": [
+   "Strong-form efficiency makes prices far more volatile than investors want",
+   "Private information could be in prices only if insiders traded on it, which is illegal and unfair",
+   "It prevents the market from absorbing public information quickly",
+   "It requires investors to hold only index funds, removing choice"
+  ],
+  "answer": 1,
+  "explanation": "In a healthy market, insiders should not be able to profit from non-public information, so prices should NOT reflect it before it is released. Strong-form efficiency would imply that insider trading is rampant (L04 s50).",
+  "source": "generated",
+  "ref": "L04 s50"
+ },
+ {
+  "id": "q08-628",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement is NOT implied by weak-form efficiency alone?",
+  "options": [
+   "Chart patterns in past prices cannot predict future returns",
+   "Analysis of public financial statements cannot earn abnormal returns",
+   "The current price is the only price information that matters",
+   "A momentum strategy cannot earn abnormal returns"
+  ],
+  "answer": 1,
+  "explanation": "Weak form concerns past prices only. Whether financial statements are already priced is the semi-strong question, so weak form alone does not rule out profits from public statement analysis.",
+  "source": "generated",
+  "ref": "L04 s46-47; TB 12.6"
+ },
+ {
+  "id": "q08-629",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A market is semi-strong form efficient. A listed firm unexpectedly announces earnings far above forecasts at 9:00 a.m. What should happen to the share price?",
+  "options": [
+   "It jumps to the new fair level almost at once, with no tendency to drift afterwards",
+   "It rises gradually over the following eight days as investors catch up",
+   "It overshoots the fair level and then falls back over the next few days",
+   "It does not change, because earnings are already known to investors"
+  ],
+  "answer": 0,
+  "explanation": "Semi-strong efficiency means public news is priced quickly and correctly: an immediate one-step adjustment. A gradual rise is a delayed reaction and an overshoot-and-correct path is an overreaction; both are inefficient (TB Fig 12.14).",
+  "source": "generated",
+  "ref": "L04 s50; TB 12.6 Fig 12.14"
+ },
+ {
+  "id": "q08-630",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "F-Stop Camera's shares trade at $140 until the company announces a secret R&D success worth $40 per share. At the announcement the price jumps to $180 and stays there. What does this pattern show?",
+  "options": [
+   "Strong-form efficiency, because the price reached the right level after the news",
+   "The market is not even weak-form efficient, because the price changed",
+   "The market is inefficient, because efficient prices should never jump",
+   "Consistent with semi-strong efficiency, but not strong form: the private news was not in the $140 price"
+  ],
+  "answer": 3,
+  "explanation": "A single jump on announcement is the efficient response to public news. But before the announcement the price did not contain the private information (the existence of the system), so strong form does not hold. Prices SHOULD move when information arrives.",
+  "source": "generated",
+  "ref": "TB 12.6; L04 s50"
+ },
+ {
+  "id": "q08-631",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "True or false: if a market is semi-strong form efficient, it must also be weak-form efficient.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Historical prices are public information, so any market whose prices reflect all public information also reflects past prices. The forms are nested (SM 12 CTQ 6).",
+  "source": "generated",
+  "ref": "SM 12 CTQ 6; L04 s46"
+ },
+ {
+  "id": "q08-632",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "True or false: if a market is weak-form efficient, it must also be semi-strong form efficient.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Weak form only says past prices are already reflected. Prices could still be slow to react to announcements and financial statements, which would make the market weak-form efficient but not semi-strong efficient.",
+  "source": "generated",
+  "ref": "SM 12 CTQ 5-6; TB 12.6"
+ },
+ {
+  "id": "q08-633",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The past history of prices is the information set for the _____ form of market efficiency.",
+  "options": [
+   "semi-strong",
+   "strong",
+   "technical",
+   "weak"
+  ],
+  "answer": 3,
+  "explanation": "Weak form: past prices (charting). Semi-strong: all public information. Strong: all information including private.",
+  "source": "generated",
+  "ref": "L04 s46"
+ },
+ {
+  "id": "q08-634",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why are all investments in an efficient market zero-NPV investments?",
+  "options": [
+   "Efficient markets prevent firms from ever earning a profit on their investments",
+   "Competition drives the required return on every security down to zero",
+   "Efficient markets set every price equal to the book value of the asset",
+   "Prices are neither too high nor too low, so market value equals cost: investors get what they pay for"
+  ],
+  "answer": 3,
+  "explanation": "NPV = value − cost. If price equals value because all relevant information is priced, the difference is zero. Investors still earn the required return for the risk taken; they just cannot expect more.",
+  "source": "generated",
+  "ref": "TB 12.6; SM 12 CTQ 4"
+ },
+ {
+  "id": "q08-635",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "Order the forms of market efficiency from the smallest information set to the largest.",
+  "options": [
+   "Weak, then semi-strong, then strong",
+   "Semi-strong, then weak, then strong",
+   "Strong, then semi-strong, then weak",
+   "Weak, then strong, then semi-strong"
+  ],
+  "answer": 0,
+  "explanation": "Weak form covers past prices only; semi-strong adds all other public information; strong adds private information as well. Each claim contains the one before it.",
+  "source": "generated",
+  "ref": "L04 s46"
+ },
+ {
+  "id": "q08-636",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "An analyst consistently earns abnormal returns using only published financial statements, and this is widely documented. Which statement follows?",
+  "options": [
+   "The market is not weak-form efficient, so semi-strong efficiency must fail too",
+   "The market is strong-form efficient, since all information is in the price",
+   "Nothing follows, because published financial statements are private information",
+   "The market is not semi-strong efficient (so not strong either); weak form could still hold"
+  ],
+  "answer": 3,
+  "explanation": "Published statements are public information. Profiting from them contradicts semi-strong efficiency, which in turn contradicts strong form (nested). Weak form concerns only past prices and may still be true.",
+  "source": "generated",
+  "ref": "SM 12 CTQ 10b; TB 12.6"
+ },
+ {
+  "id": "q08-637",
+  "concept": "c08-efficiency-forms",
+  "also": [],
+  "type": "tf",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "True or false: if prices fluctuate from day to day, the market cannot be efficient.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Prices change because new information keeps arriving, which is what an efficient market does; an absence of price movement in a fast-changing world would suggest inefficiency (TB 12.6).",
+  "source": "generated",
+  "ref": "TB 12.6"
+ },
+ {
+  "id": "q08-641",
+  "concept": "c08-inefficiency-profit",
+  "also": [
+   "c08-efficiency-forms"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "If you decide to buy a stock because its price has continued to move upwards with momentum, then you are relying upon:",
+  "options": [
+   "Weak-form inefficiencies",
+   "Weak form efficiency",
+   "Semi-strong form efficiency",
+   "Semi-strong form inefficiencies",
+   "None of the above"
+  ],
+  "answer": 0,
+  "explanation": "Momentum means a past price trend predicts the subsequent movement. Using past prices to forecast is only profitable if prices are predictable from their own history, i.e. the market is NOT weak-form efficient: you rely on a weak-form inefficiency. Weak-form efficiency would say the trend carries no information, and semi-strong forms concern public announcements, not past price trends.",
+  "source": "official",
+  "ref": "PRAC q3"
+ },
+ {
+  "id": "q08-642",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The momentum effect is the tendency for:",
+  "options": [
+   "a stock that has risen sharply to fall back toward its starting price",
+   "all stocks to move in the same direction on the same trading day",
+   "a stock that has recently risen (fallen) to keep rising (falling), as past trends predict",
+   "stock prices to equal the discounted value of all future dividends"
+  ],
+  "answer": 2,
+  "explanation": "Momentum is a counter-example to weak-form efficiency: if the past trend predicts the next move, prices are predictable from their own history and an inefficiency exists (L04 s47).",
+  "source": "generated",
+  "ref": "L04 s47"
+ },
+ {
+  "id": "q08-643",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A fund buys stocks that rose over the past six months and sells those that fell. The fund is trying to profit from:",
+  "options": [
+   "A semi-strong inefficiency (delayed reaction to news)",
+   "Strong-form efficiency",
+   "A weak-form inefficiency (momentum)",
+   "Differences in the required return R"
+  ],
+  "answer": 2,
+  "explanation": "The trading rule uses only past prices, so the information it exploits is the price history. It makes money only if the market is not weak-form efficient.",
+  "source": "generated",
+  "ref": "L04 s47; PRAC q3"
+ },
+ {
+  "id": "q08-644",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Silver Birch Mining announces a large discovery. Its share price rises 5% on the day and then creeps up another 8% over the next eight trading days. This price path shows:",
+  "options": [
+   "An efficient reaction, because the price rose",
+   "An overreaction, because the price rose by more than the news justified",
+   "A weak-form efficiency test, because only past prices matter",
+   "A delayed reaction, a semi-strong inefficiency: the news was not fully priced at once"
+  ],
+  "answer": 3,
+  "explanation": "In a semi-strong efficient market the full adjustment happens at the announcement. A partial jump followed by drift means public information is priced slowly; buying right after the announcement would earn abnormal returns (TB Fig 12.14, broken line).",
+  "source": "generated",
+  "ref": "L04 s50; TB 12.6 Fig 12.14"
+ },
+ {
+  "id": "q08-645",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How do a delayed reaction and an overreaction to news differ, and what would you do in each case?",
+  "options": [
+   "Delayed: the price adjusts only partly, then drifts to fair value, so trade after the news. Overreaction: it overshoots, then corrects, so trade against the jump",
+   "Delayed: the price overshoots the fair value and then corrects; overreaction: the price adjusts too slowly; trade with the initial move in both cases",
+   "Both are efficient reactions to public news, so neither one can be exploited profitably by anyone trading after the announcement",
+   "Delayed: no tendency to keep moving after the news; overreaction: the price stays at its new level afterwards for good"
+  ],
+  "answer": 0,
+  "explanation": "Both are paths in an inefficient market. The delayed-reaction path (broken line in TB Fig 12.14) is below the fair price for days after good news; the overreaction path (dotted) overshoots and then falls back to the fair price.",
+  "source": "generated",
+  "ref": "TB Fig 12.14; L04 s50"
+ },
+ {
+  "id": "q08-646",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Good news pushes a stock from $140 to $220 on day 0, but analysts agree the news is worth $40 per share (fair price $180). If the market overreacts and then corrects, what trade makes money?",
+  "options": [
+   "Buy the stock after the jump and hold it until it reaches $260 per share",
+   "Do nothing, because market prices cannot be wrong even briefly",
+   "Sell (or short) after the jump, then buy back as the price falls toward $180",
+   "Buy the stock only before the announcement, then sell it on day 0"
+  ],
+  "answer": 2,
+  "explanation": "The price is $40 above fair value after the overshoot. Selling at $220 and repurchasing near $180 profits as the correction happens. This is only possible if the market is NOT semi-strong efficient.",
+  "source": "generated",
+  "ref": "TB 12.6 Fig 12.14"
+ },
+ {
+  "id": "q08-647",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do profit opportunities from an inefficiency tend to shrink once many investors discover them?",
+  "options": [
+   "Regulators ban the trading strategy once it becomes well known",
+   "The required return on the stock rises when many investors trade it",
+   "Competition: traders pushing the price toward fair value remove the opportunity",
+   "Companies change their reported earnings to remove the pattern"
+  ],
+  "answer": 2,
+  "explanation": "Efficiency is created by competition among investors looking for mispriced stocks. As more of them exploit a pattern, price pressure removes it, so only small and uncommon inefficiencies survive (TB 12.6).",
+  "source": "generated",
+  "ref": "TB 12.6; SM 12 CTQ 4"
+ },
+ {
+  "id": "q08-648",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following does NOT rely on a market inefficiency to make money?",
+  "options": [
+   "Buying recent winners because past price trends persist",
+   "Holding a diversified portfolio to earn the market's required return for its risk",
+   "Buying immediately after good public news because prices adjust slowly",
+   "Selling a stock that has overshot after an announcement, expecting it to fall back"
+  ],
+  "answer": 1,
+  "explanation": "Earning the required return for bearing risk needs no mispricing. The other three strategies profit only if prices are predictable (weak-form inefficiency) or react wrongly to public news (semi-strong inefficiency).",
+  "source": "generated",
+  "ref": "L04 s47-50; TB 12.6"
+ },
+ {
+  "id": "q08-649",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "In a semi-strong efficient market, what return should an investor expect from buying a stock just after a public announcement?",
+  "options": [
+   "An abnormal profit, because the news is good and positive for the firm",
+   "A loss, because the price has already moved before the investor could trade",
+   "A return equal to the risk-free rate regardless of the stock's risk",
+   "Only the return that compensates for the risk; the trade has zero NPV"
+  ],
+  "answer": 3,
+  "explanation": "News is already in the price by the time you can trade, so the purchase is fairly priced: NPV = 0. You still earn the required return for the risk taken, but no abnormal return.",
+  "source": "generated",
+  "ref": "TB 12.6; SM 12 CTQ 4"
+ },
+ {
+  "id": "q08-650",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "True or false: a momentum strategy can earn abnormal profits only if the market is not weak-form efficient.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Momentum uses past prices only. If the market were weak-form efficient, the price history would carry no predictive information and the strategy could not beat the market on a risk-adjusted basis.",
+  "source": "generated",
+  "ref": "L04 s47; SM 12 CTQ 5"
+ },
+ {
+  "id": "q08-651",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A market is semi-strong form efficient but not strong-form efficient. Which investor could still earn abnormal profits (ignoring the law)?",
+  "options": [
+   "One who trades on published financial statements",
+   "One who studies price charts",
+   "One who trades on private information before it is announced",
+   "One who buys immediately after a press release"
+  ],
+  "answer": 2,
+  "explanation": "Semi-strong efficiency prices past prices and all public information. Private information is not yet in prices, so trading on it can pay, which is why insider trading is prohibited (SM 12 CTQ 10c).",
+  "source": "generated",
+  "ref": "SM 12 CTQ 10; L04 s50"
+ },
+ {
+  "id": "q08-652",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why would chart reading (technical analysis) fail to beat the market if the market is weak-form efficient?",
+  "options": [
+   "Charts are too expensive to produce compared with the profits available",
+   "Technical analysts cannot read financial statements or earnings reports",
+   "The current price already reflects the whole price history, so patterns carry no information",
+   "Weak-form efficiency means prices follow a perfectly predictable pattern"
+  ],
+  "answer": 2,
+  "explanation": "In a weak-form efficient market the current price already embeds the past price history. 'Only the current price is important. The past history of how it got there is irrelevant' (L04 s47).",
+  "source": "generated",
+  "ref": "L04 s47; TB 12.6"
+ },
+ {
+  "id": "q08-653",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock trades at $140. News arrives showing it is worth $180, but on the announcement day the price rises only to $160, and over the next eight days it drifts up to $180. You buy at $160 on the announcement day and sell at $180 eight days later. Ignoring costs and the required return over eight days, what is your return on this trade? (Answer in %.)",
+  "answer": 12.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(180-160)/160*100",
+  "steps": [
+   {
+    "label": "Profit per share = sale price − purchase price",
+    "value": 20.0,
+    "check": "180-160",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Return = profit/purchase price (in %)",
+    "value": 12.5,
+    "check": "(180-160)/160*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Profit = 180 − 160 = $20 per share",
+   "Return = 20/160 = 12.5% over eight days"
+  ],
+  "keystrokes": [
+   "180 − 160 = 20; 20 ÷ 160 = 0.125"
+  ],
+  "errors": [
+   {
+    "id": "wrong-base",
+    "label": "Measured the gain against the pre-news price of $140",
+    "value": 14.29,
+    "check": "(180-160)/140*100",
+    "explain": "Your cost was $160, the price you actually paid."
+   },
+   {
+    "id": "wrong-base",
+    "label": "Measured the gain against the sale price",
+    "value": 11.11,
+    "check": "(180-160)/180*100",
+    "explain": "A return is profit divided by the amount invested at the start."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Used the full $40 revaluation as the profit",
+    "value": 25.0,
+    "check": "(180-140)/160*100",
+    "explain": "Part of the $40 jump ($20) happened before you could trade, so only $20 is available to you."
+   }
+  ],
+  "explanation": "A delayed reaction leaves a profit for those who trade right after the news; in an efficient market the price would have jumped to $180 immediately and the trade would earn nothing abnormal.",
+  "source": "generated",
+  "ref": "TB 12.6 Fig 12.14"
+ },
+ {
+  "id": "q08-654",
+  "concept": "c08-inefficiency-profit",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "After a good-news announcement a stock's price rises to $215, then falls steadily back to $180 over the next two weeks, where the fair value was estimated to be. Which conclusion is best?",
+  "options": [
+   "The market is semi-strong efficient, because the price ended at the right level",
+   "The market overreacted and then corrected: a trader could profit by selling after the jump",
+   "The market is weak-form efficient, because the price returned to fair value",
+   "The news must have been wrong, because the price fell after the announcement"
+  ],
+  "answer": 1,
+  "explanation": "An efficient market goes straight to the fair price on the news. Overshoot-and-correct means the price was wrong for days, which is an inefficiency (semi-strong); ending at the right level does not make the path efficient.",
+  "source": "generated",
+  "ref": "TB Fig 12.14; L04 s50"
+ }
+]

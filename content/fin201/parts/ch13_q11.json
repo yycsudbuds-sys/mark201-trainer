@@ -1,0 +1,884 @@
+[
+ {
+  "id": "q13-501",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bluewater Biotech is expected to return 10.6% per annum. Its beta is 1.10, T-bills yield 2.8% per annum and the market risk premium is 6.4% per annum. Alpha is the expected return minus the return the SML requires for the stock's beta. What is Bluewater's alpha, in % per annum?",
+  "answer": 0.76,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "10.6-(2.8+1.1*6.4)",
+  "steps": [
+   {
+    "label": "SML return R_F + β × MRP",
+    "value": 9.84,
+    "check": "2.8+1.1*6.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Alpha = E[R] − SML return",
+    "value": 0.76,
+    "check": "10.6-(2.8+1.1*6.4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "SML return = R_F + β × MRP = 2.8 + 1.10 × 6.4 = 2.8 + 7.04 = 9.84%",
+   "α = E[R] − SML return = 10.6 − 9.84 = +0.76% per annum",
+   "Positive alpha: the stock plots above the SML, so it is undervalued"
+  ],
+  "keystrokes": [
+   "1.1 × 6.4 = 7.04",
+   "+ 2.8 = 9.84",
+   "10.6 − 9.84 = 0.76"
+  ],
+  "errors": [
+   {
+    "id": "alpha-sign",
+    "label": "Subtracted in the wrong order (SML return − E[R])",
+    "value": -0.76,
+    "check": "(2.8+1.1*6.4)-10.6",
+    "explain": "Alpha is what the stock offers minus what the SML requires. Reversing the order turns a bargain into an apparent overpriced stock."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.4% as the market return and subtracted R_F again",
+    "value": 3.84,
+    "check": "10.6-(2.8+1.1*(6.4-2.8))",
+    "explain": "The question gives the market risk premium, already E[R_M] − R_F. Subtracting R_F a second time lowers the SML return and inflates alpha."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left R_F out of the SML return",
+    "value": 3.56,
+    "check": "10.6-1.1*6.4",
+    "explain": "The SML return is R_F plus the risk premium, not the premium alone."
+   }
+  ],
+  "explanation": "The SML says a stock with β = 1.10 should offer 9.84%. Bluewater offers 10.6%, so alpha is +0.76%. It plots above the line: undervalued, and buying pressure should push its price up until the expected return falls to 9.84%.",
+  "source": "generated",
+  "ref": "S7 s24"
+ },
+ {
+  "id": "q13-502",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lakeshore Hydro has a beta of 0.70 and is expected to return 6.4% per annum. T-bills yield 3.0% per annum and the market risk premium is 5.5% per annum. What is Lakeshore's alpha (expected return minus SML return), in % per annum?",
+  "answer": -0.45,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "6.4-(3+0.7*5.5)",
+  "steps": [
+   {
+    "label": "SML return R_F + β × MRP",
+    "value": 6.85,
+    "check": "3+0.7*5.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Alpha = E[R] − SML return",
+    "value": -0.45,
+    "check": "6.4-(3+0.7*5.5)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "SML return = 3.0 + 0.70 × 5.5 = 3.0 + 3.85 = 6.85%",
+   "α = 6.4 − 6.85 = −0.45% per annum",
+   "Negative alpha: the stock plots below the SML, so it is overvalued"
+  ],
+  "keystrokes": [
+   "0.7 × 5.5 = 3.85",
+   "+ 3 = 6.85",
+   "6.4 − 6.85 = −0.45"
+  ],
+  "errors": [
+   {
+    "id": "alpha-sign",
+    "label": "Subtracted in the wrong order",
+    "value": 0.45,
+    "check": "6.85-6.4",
+    "explain": "Alpha = expected return − SML return. The stock offers less than its β requires, so alpha is negative."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 5.5% as the market return",
+    "value": 1.65,
+    "check": "6.4-(3+0.7*(5.5-3))",
+    "explain": "5.5% is already the premium, so do not subtract R_F again."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left R_F out of the SML return",
+    "value": 2.55,
+    "check": "6.4-0.7*5.5",
+    "explain": "The SML return includes the 3.0% risk-free rate."
+   }
+  ],
+  "explanation": "A beta of 0.70 earns 6.85% on the SML, but Lakeshore offers only 6.4%. Alpha is −0.45%: below the line, overvalued. Its price should fall until the expected return rises to 6.85%.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-503",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peace River Gas has a beta of 1.30 and is expected to return 11.5% per annum. T-bills yield 3.0% per annum. What is its reward-to-risk ratio, (E[R] − R_F)/β, in % per unit of beta?",
+  "answer": 6.54,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(11.5-3)/1.3",
+  "steps": [
+   {
+    "label": "Risk premium E[R] − R_F",
+    "value": 8.5,
+    "check": "11.5-3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Reward-to-risk (premium ÷ β)",
+    "value": 6.54,
+    "check": "(11.5-3)/1.3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Reward-to-risk = (E[R] − R_F)/β",
+   "= (11.5 − 3.0)/1.30 = 8.5/1.30 = 6.54% per unit of beta"
+  ],
+  "keystrokes": [
+   "11.5 − 3 = 8.5",
+   "÷ 1.3 = 6.54"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the total return by β",
+    "value": 8.85,
+    "check": "11.5/1.3",
+    "explain": "Reward-to-risk uses the premium E[R] − R_F in the numerator, not the total return."
+   },
+   {
+    "id": "multiplied-by-beta",
+    "label": "Multiplied the premium by β",
+    "value": 11.05,
+    "check": "(11.5-3)*1.3",
+    "explain": "The ratio divides the premium by β, giving premium per unit of systematic risk."
+   },
+   {
+    "id": "forgot-divide-beta",
+    "label": "Stopped at the risk premium",
+    "value": 8.5,
+    "check": "11.5-3",
+    "explain": "8.5% is the premium for 1.30 units of beta. Divide by β to get the premium per unit."
+   }
+  ],
+  "explanation": "Peace River earns 8.5% over T-bills for 1.30 units of systematic risk, or 6.54% per unit. If the market risk premium is 6.0%, this ratio is higher than the market's, so the stock plots above the SML (undervalued).",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-504",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Chinook Brewing trades at $50.00. You expect a $1.20 dividend and a price of $53.50 in one year. Its beta is 1.20, T-bills yield 3.0% per annum and the market risk premium is 6.5% per annum. What price today would put Chinook exactly on the SML? Answer in $.",
+  "answer": 49.37,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(53.5+1.2)/(1+(3+1.2*6.5)/100)",
+  "steps": [
+   {
+    "label": "Expected return at $50.00",
+    "value": 9.4,
+    "check": "((53.5+1.2)/50-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "SML (required) return",
+    "value": 10.8,
+    "check": "3+1.2*6.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Fair price = payoff ÷ (1 + SML return)",
+    "value": 49.37,
+    "check": "(53.5+1.2)/(1+(3+1.2*6.5)/100)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Expected return at $50.00 = (53.50 + 1.20)/50 − 1 = 9.4%",
+   "SML return = 3.0 + 1.20 × 6.5 = 10.8%, so alpha = 9.4 − 10.8 = −1.4% (below the SML: overvalued)",
+   "Fair price = (53.50 + 1.20)/1.108 = 54.70/1.108 = $49.37"
+  ],
+  "keystrokes": [
+   "(53.5 + 1.2) = 54.7",
+   "3 + 1.2 × 6.5 = 10.8",
+   "54.7 ÷ 1.108 = 49.37"
+  ],
+  "errors": [
+   {
+    "id": "discounted-at-expected-return",
+    "label": "Discounted at the stock's own expected return",
+    "value": 50.0,
+    "check": "(53.5+1.2)/(1+((53.5+1.2)/50-1))",
+    "explain": "Discounting at the 9.4% the stock currently offers just reproduces today's $50.00. The fair price uses the 10.8% the SML requires."
+   },
+   {
+    "id": "mrp-as-discount-rate",
+    "label": "Discounted at the market risk premium",
+    "value": 51.36,
+    "check": "(53.5+1.2)/(1+6.5/100)",
+    "explain": "6.5% is the premium, not the required return for β = 1.20. Required return = R_F + β × MRP."
+   },
+   {
+    "id": "forgot-dividend",
+    "label": "Left the dividend out of the payoff",
+    "value": 48.29,
+    "check": "53.5/(1+(3+1.2*6.5)/100)",
+    "explain": "The payoff next year is price plus dividend, $54.70."
+   }
+  ],
+  "explanation": "At $50.00 the stock offers 9.4% but the SML requires 10.8%, so it is overvalued. The price must fall until the payoff yields 10.8%: $54.70/1.108 = $49.37. Once priced there, its alpha is zero.",
+  "source": "generated",
+  "ref": "S7 s24 / L04"
+ },
+ {
+  "id": "q13-505",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock is expected to return 10.4% per annum. T-bills yield 3.0% per annum and the market risk premium is 6.5% per annum. Up to what beta does the stock plot on or above the SML (alpha at least zero)? Give beta to 2 decimals.",
+  "answer": 1.14,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(10.4-3)/6.5",
+  "steps": [
+   {
+    "label": "Stock risk premium E[R] − R_F",
+    "value": 7.4,
+    "check": "10.4-3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Break-even beta = premium ÷ MRP",
+    "value": 1.14,
+    "check": "(10.4-3)/6.5",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Alpha = 0 when E[R] = R_F + β × MRP, so β* = (E[R] − R_F)/MRP",
+   "= (10.4 − 3.0)/6.5 = 7.4/6.5 = 1.138",
+   "Below β = 1.14 the stock plots above the SML (alpha > 0); above it, below the SML"
+  ],
+  "keystrokes": [
+   "10.4 − 3 = 7.4",
+   "÷ 6.5 = 1.14"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the total return by the premium",
+    "value": 1.6,
+    "check": "10.4/6.5",
+    "explain": "Subtract R_F from the expected return first."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Subtracted R_F from the premium",
+    "value": 2.11,
+    "check": "(10.4-3)/(6.5-3)",
+    "explain": "6.5% is already E[R_M] − R_F."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio",
+    "value": 0.88,
+    "check": "6.5/(10.4-3)",
+    "explain": "Break-even beta is the stock's premium over the market's premium."
+   }
+  ],
+  "explanation": "At β* the stock's reward-to-risk equals the market premium and its alpha is zero. Any stock offering 10.4% is a bargain if its true β is below 1.14 and overpriced if above, which is why a beta estimate matters.",
+  "source": "generated",
+  "ref": "SM 13-16 / S7 s24"
+ },
+ {
+  "id": "q13-506",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stocks A and B both lie on the SML. Stock A has beta 1.40 and expected return 10.9% per annum; Stock B has beta 0.70 and expected return 7.05% per annum. What is the slope of the SML, in % per unit of beta?",
+  "answer": 5.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(10.9-7.05)/(1.4-0.7)",
+  "steps": [
+   {
+    "label": "Rise (return gap)",
+    "value": 3.85,
+    "check": "10.9-7.05",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Slope = rise ÷ run (beta gap)",
+    "value": 5.5,
+    "check": "(10.9-7.05)/(1.4-0.7)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Slope = rise/run = (E[R_A] − E[R_B])/(β_A − β_B)",
+   "= (10.9 − 7.05)/(1.40 − 0.70) = 3.85/0.70 = 5.5% per unit of beta",
+   "Since β_M = 1 and β_F = 0, the slope is the market risk premium E[R_M] − R_F = 5.5%"
+  ],
+  "keystrokes": [
+   "10.9 − 7.05 = 3.85",
+   "1.4 − 0.7 = 0.7",
+   "3.85 ÷ 0.7 = 5.5"
+  ],
+  "errors": [
+   {
+    "id": "inverted-slope",
+    "label": "Computed run over rise",
+    "value": 0.18,
+    "check": "(1.4-0.7)/(10.9-7.05)",
+    "explain": "Expected return is on the vertical axis, so slope = return gap divided by beta gap."
+   },
+   {
+    "id": "forgot-beta-gap",
+    "label": "Forgot to divide by the beta gap",
+    "value": 3.85,
+    "check": "10.9-7.05",
+    "explain": "3.85% is the return gap for a beta gap of 0.70. Divide to get the premium per unit of beta."
+   },
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided one stock's total return by its beta",
+    "value": 7.79,
+    "check": "10.9/1.4",
+    "explain": "That ratio still contains R_F. The slope uses differences, which cancel R_F."
+   }
+  ],
+  "explanation": "Two points on a line fix its slope. The SML runs from (β = 0, R_F) to (β = 1, E[R_M]), so its slope equals the market risk premium: 5.5% per unit of beta.",
+  "source": "generated",
+  "ref": "SM 13-30 / S7 s23"
+ },
+ {
+  "id": "q13-507",
+  "concept": "c13-sml-alpha",
+  "also": [
+   "c13-portfolio-beta"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Aria holds 60% of her stock portfolio in Stock 1 (beta 1.30, expected return 11.2% per annum) and 40% in Stock 2 (beta 0.80, expected return 8.4% per annum). T-bills yield 3.0% and the market risk premium is 6.0% per annum. What is the portfolio's alpha, in % per annum?",
+  "answer": 0.48,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.6*11.2+0.4*8.4)-(3+(0.6*1.3+0.4*0.8)*6)",
+  "steps": [
+   {
+    "label": "Portfolio expected return Σ w E[R]",
+    "value": 10.08,
+    "check": "0.6*11.2+0.4*8.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio beta Σ w β",
+    "value": 1.1,
+    "check": "0.6*1.3+0.4*0.8",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "SML return for β_P",
+    "value": 9.6,
+    "check": "3+(0.6*1.3+0.4*0.8)*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Alpha = E[R_P] − SML return",
+    "value": 0.48,
+    "check": "(0.6*11.2+0.4*8.4)-(3+(0.6*1.3+0.4*0.8)*6)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_P] = 0.6 × 11.2 + 0.4 × 8.4 = 6.72 + 3.36 = 10.08%",
+   "β_P = 0.6 × 1.30 + 0.4 × 0.80 = 0.78 + 0.32 = 1.10",
+   "SML return = 3.0 + 1.10 × 6.0 = 9.6%; α_P = 10.08 − 9.6 = +0.48% per annum",
+   "Check: stock alphas are 11.2 − 10.8 = +0.4 and 8.4 − 7.8 = +0.6, so 0.6 × 0.4 + 0.4 × 0.6 = 0.48"
+  ],
+  "keystrokes": [
+   "0.6 × 11.2 + 0.4 × 8.4 = 10.08",
+   "0.6 × 1.3 + 0.4 × 0.8 = 1.10",
+   "3 + 1.10 × 6 = 9.6",
+   "10.08 − 9.6 = 0.48"
+  ],
+  "errors": [
+   {
+    "id": "alpha-sign",
+    "label": "Subtracted in the wrong order",
+    "value": -0.48,
+    "check": "(3+(0.6*1.3+0.4*0.8)*6)-(0.6*11.2+0.4*8.4)",
+    "explain": "Alpha is the portfolio's expected return minus the SML return for its beta."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.0% as the market return",
+    "value": 3.78,
+    "check": "(0.6*11.2+0.4*8.4)-(3+(0.6*1.3+0.4*0.8)*(6-3))",
+    "explain": "The 6.0% is the premium, so do not subtract R_F again."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left R_F out of the SML return",
+    "value": 3.48,
+    "check": "(0.6*11.2+0.4*8.4)-(0.6*1.3+0.4*0.8)*6",
+    "explain": "The SML return for the portfolio is R_F + β_P × MRP."
+   }
+  ],
+  "explanation": "A portfolio plots on the SML at its weighted-average beta, so its alpha is the weighted average of the stock alphas. The portfolio earns 10.08% against the 9.6% required: +0.48%.",
+  "source": "generated",
+  "ref": "SM 13-13 / S7 s19-24"
+ },
+ {
+  "id": "q13-508",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cedar Valley Foods has a beta of 0.60 and is expected to return 7.5% per annum. T-bills yield 3.0% and the market risk premium is 5.5% per annum. What is its alpha?",
+  "options": [
+   "−1.20%",
+   "+1.20%",
+   "+3.00%",
+   "+4.20%"
+  ],
+  "answer": 1,
+  "explanation": "SML return = 3.0 + 0.60 × 5.5 = 6.3%, so alpha = 7.5 − 6.3 = +1.20% (above the SML, undervalued). −1.20% reverses the subtraction (alpha-sign). +3.00% subtracts R_F from the premium first (mrp-as-market: 7.5 − 4.5). +4.20% leaves R_F out of the SML return (7.5 − 3.3).",
+  "source": "generated",
+  "ref": "S7 s24"
+ },
+ {
+  "id": "q13-509",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "T-bills yield 4% and the market is expected to return 10% per annum. Stock X has beta 1.2 and expected return 11.0%; Stock Y has beta 0.5 and expected return 7.5%; Stock Z has beta 1.0 and expected return 10.0%. Which stock is undervalued?",
+  "options": [
+   "Stock X",
+   "Stock Y",
+   "Stock Z",
+   "Stocks X and Y"
+  ],
+  "answer": 1,
+  "explanation": "SML returns: X = 4 + 1.2 × 6 = 11.2% (offers 11.0%, alpha −0.2); Y = 4 + 0.5 × 6 = 7.0% (offers 7.5%, alpha +0.5); Z = 4 + 1.0 × 6 = 10.0% (offers 10.0%, alpha 0). X has the highest raw return but also the highest beta, so it still plots below the line; Z sits on it.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-510",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Alderbrook Mills trades at $40.00. You expect a $1.00 dividend and a price of $42.60 in one year. The SML return for its beta is 8.0% per annum. What is its alpha?",
+  "options": [
+   "−1.00%",
+   "−1.50%",
+   "−5.50%",
+   "+1.00%"
+  ],
+  "answer": 3,
+  "explanation": "Expected return = (42.60 + 1.00)/40.00 − 1 = 9.0%, so alpha = 9.0 − 8.0 = +1.0%. −1.00% reverses the order. −1.50% leaves out the dividend (6.5 − 8.0). −5.50% uses only the 2.5% dividend yield (2.5 − 8.0).",
+  "source": "generated",
+  "ref": "S7 s24 / L04 s6"
+ },
+ {
+  "id": "q13-511",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the SML framework, a stock's alpha is",
+  "options": [
+   "its expected return minus the return the SML requires for its beta",
+   "its beta minus the market's beta of 1",
+   "its expected return minus the market's expected return",
+   "the slope of the SML"
+  ],
+  "answer": 0,
+  "explanation": "Alpha = E[R_i] − [R_F + β_i (E[R_M] − R_F)]: the vertical distance between the stock and the SML. It is not a beta difference, a comparison with the market's return, or the line's slope (which is the market risk premium).",
+  "source": "generated",
+  "ref": "L06 s57"
+ },
+ {
+  "id": "q13-512",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Zenith Rail has a beta of 0.90 and is expected to return 8.9% per annum. The SML return for a beta of 0.90 is 7.8%. Where does Zenith plot, and what does that mean?",
+  "options": [
+   "Above the SML: overvalued, alpha +1.1%",
+   "Below the SML: undervalued, alpha −1.1%",
+   "Above the SML: undervalued, alpha +1.1%",
+   "On the SML: fairly priced"
+  ],
+  "answer": 2,
+  "explanation": "Zenith offers 1.1 points more than the SML pays for its beta, so it plots above the line: alpha +1.1%, undervalued, and its price should rise. Above the SML never means overvalued.",
+  "source": "generated",
+  "ref": "L06 s57"
+ },
+ {
+  "id": "q13-513",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Ironwood Steel is expected to return 11.2% per annum, but the SML return for its beta is 12.0%. This stock is",
+  "options": [
+   "undervalued: it plots below the SML",
+   "overvalued: it plots below the SML with alpha −0.8%",
+   "overvalued: it plots above the SML",
+   "fairly priced, because 11.2% is far above the risk-free rate"
+  ],
+  "answer": 1,
+  "explanation": "The stock offers 0.8 points less than the SML requires for its risk, so alpha = −0.8%, it plots below the line and is overvalued; selling pressure should lower the price until the expected return rises to 12.0%.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-514",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pairing is correct?",
+  "options": [
+   "Plots above the SML = overvalued = positive alpha = price expected to fall",
+   "Plots below the SML = undervalued = negative alpha = price expected to rise",
+   "Plots below the SML = overvalued = positive alpha = price expected to fall",
+   "Plots above the SML = undervalued = positive alpha = price expected to rise"
+  ],
+  "answer": 3,
+  "explanation": "Above the SML a stock offers more than its risk requires: positive alpha, undervalued, buyers push the price up. Below the SML it offers too little: negative alpha, overvalued, price falls. The other pairings mix up the signs.",
+  "source": "generated",
+  "ref": "S7 s24"
+ },
+ {
+  "id": "q13-515",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "Which line plots expected return against beta and applies to every individual asset?",
+  "options": [
+   "The security market line",
+   "The capital market line",
+   "The capital allocation line",
+   "The efficient frontier"
+  ],
+  "answer": 0,
+  "explanation": "The SML has β on the horizontal axis and holds for any asset or portfolio. The CML and CAL put σ on the horizontal axis (CML only for efficient portfolios) and the efficient frontier plots portfolios by σ.",
+  "source": "generated",
+  "ref": "L06 s56-57"
+ },
+ {
+  "id": "q13-516",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement is NOT true of a stock that plots exactly on the SML?",
+  "options": [
+   "Its alpha is zero.",
+   "Its reward-to-risk ratio equals the market risk premium.",
+   "Its price is too low for its risk.",
+   "Its expected return equals R_F + β (E[R_M] − R_F)."
+  ],
+  "answer": 2,
+  "explanation": "A stock on the SML offers exactly what its beta requires: alpha zero, reward-to-risk equal to the market's, and expected return given by CAPM. A price that is too low would show up as a return above the line.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-517",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why must every fairly priced asset have the same reward-to-risk ratio (E[R] − R_F)/β?",
+  "options": [
+   "Because all assets have the same beta once they are held in a diversified portfolio.",
+   "If one paid more per unit of beta, buyers would bid its price up and its return down until the ratios matched.",
+   "Because the risk-free rate is the same for every asset, so the premiums per unit of beta must match.",
+   "Because unsystematic risk is the same for every asset, so only beta is left to differ."
+  ],
+  "answer": 1,
+  "explanation": "Competition removes any difference in premium per unit of systematic risk: a better ratio attracts buyers, bidding the price up and the expected return down. That equality is exactly what makes all assets lie on one straight line, the SML.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-518",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A stock is expected to return 9.0% per annum, while the SML return for its beta is 8.1%. What should happen over time?",
+  "options": [
+   "Supply pushes its price down, raising its expected return toward 8.1%.",
+   "Nothing: expected returns do not depend on today's price.",
+   "Its beta must rise until the SML return reaches 9.0%.",
+   "Demand pushes its price up, lowering its expected return toward 8.1%."
+  ],
+  "answer": 3,
+  "explanation": "Above the SML means undervalued. Buyers bid the price up; a higher price today with the same future payoffs means a lower expected return, until the stock sits on the line. Prices adjust, not betas.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-519",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Peace River Gas has a reward-to-risk ratio of 6.54% per unit of beta, while the market risk premium is 6.0%. What does this tell you?",
+  "options": [
+   "It plots above the SML: undervalued with positive alpha.",
+   "It plots below the SML: overvalued with negative alpha.",
+   "It plots on the SML: fairly priced.",
+   "Its beta must be above 1."
+  ],
+  "answer": 0,
+  "explanation": "The market's reward-to-risk ratio is the premium 6.0% (β_M = 1). A ratio above 6.0% means more reward per unit of beta than the market pays, so the stock is above the line and undervalued. The ratio says nothing directly about whether beta exceeds 1.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-520",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "The slope of the security market line equals",
+  "options": [
+   "the risk-free rate, R_F",
+   "the expected market return, E[R_M]",
+   "the market risk premium, E[R_M] − R_F",
+   "the market's beta, β_M"
+  ],
+  "answer": 2,
+  "explanation": "Rise over run between the points (β = 0, R_F) and (β = 1, E[R_M]): (E[R_M] − R_F)/(1 − 0) = the market risk premium. The intercept is R_F; the market's beta of 1 is just one of the x-values.",
+  "source": "generated",
+  "ref": "S7 s23"
+ },
+ {
+  "id": "q13-521",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "If the market risk premium rises while the risk-free rate is unchanged, the SML",
+  "options": [
+   "shifts up in parallel",
+   "gets steeper, pivoting around its intercept R_F",
+   "gets flatter",
+   "keeps its slope but its intercept falls"
+  ],
+  "answer": 1,
+  "explanation": "The slope of the SML is the market risk premium, so a larger premium makes it steeper. The intercept is R_F, which did not change, so the line pivots at R_F. A parallel shift would come from a change in R_F alone.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-522",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "The SML passes through the points (β = 0, _____) and (β = 1, E[R_M]).",
+  "options": [
+   "E[R_M]",
+   "the market risk premium",
+   "alpha",
+   "R_F"
+  ],
+  "answer": 3,
+  "explanation": "A zero-beta asset has no systematic risk and earns only the risk-free rate, so the SML starts at R_F on the vertical axis. At β = 1 the line gives the market's expected return.",
+  "source": "generated",
+  "ref": "S7 s23"
+ },
+ {
+  "id": "q13-523",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "A stock with a positive alpha is overvalued.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Positive alpha means the stock offers more than the SML requires, so it plots above the line and is undervalued. Overvalued stocks have negative alpha.",
+  "source": "generated",
+  "ref": "S7 s24"
+ },
+ {
+  "id": "q13-524",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "A stock that plots below the SML offers an expected return that is too low for its beta, so its price is expected to fall.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Below the SML means overvalued (negative alpha). Selling pressure lowers the price, which raises the expected return until the stock is back on the line.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-525",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "T-bills yield 3% and the market risk premium is 6%. Stock A (beta 1.8) is expected to return 12.0%; Stock B (beta 0.9) is expected to return 9.0%. Which is the better buy, and why?",
+  "options": [
+   "Stock B: its alpha is +0.6% versus −1.8% for A.",
+   "Stock A: it has the higher expected return.",
+   "Neither: both plot on the SML.",
+   "Stock A: its higher beta means a higher reward."
+  ],
+  "answer": 0,
+  "explanation": "SML returns: A = 3 + 1.8 × 6 = 13.8% (alpha −1.8); B = 3 + 0.9 × 6 = 8.4% (alpha +0.6). Compare each stock with the return its own beta requires, not with the other stock's raw return.",
+  "source": "generated",
+  "ref": "SM 13-21"
+ },
+ {
+  "id": "q13-526",
+  "concept": "c13-sml-alpha",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Chloe's analysis finds that a stock has a positive alpha. What should she conclude?",
+  "options": [
+   "It is overvalued and should be sold.",
+   "Nothing, because alpha only matters when beta equals 1.",
+   "It is undervalued: it plots above the SML, so its price should rise.",
+   "It must have a lower beta than the market."
+  ],
+  "answer": 2,
+  "explanation": "Positive alpha means the stock plots above the SML, offering extra return for its level of systematic risk. That is a bargain, and buyers should lift the price. Alpha matters at any beta, and says nothing alone about whether beta is below 1.",
+  "source": "generated",
+  "ref": "L06 s57-59"
+ }
+]

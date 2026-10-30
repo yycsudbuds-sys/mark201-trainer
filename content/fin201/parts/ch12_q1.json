@@ -1,0 +1,1142 @@
+[
+ {
+  "id": "q12-001",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "From an investor's point of view the expected return E[R] on an investment is the _____; from the borrowing firm's point of view the very same number is its cost of capital.",
+  "options": [
+   "realized holding period return",
+   "coupon rate printed on the bond",
+   "required rate of return",
+   "accounting return on book equity"
+  ],
+  "answer": 2,
+  "explanation": "Lenders and investors supply the capital and need E[R] as compensation for the risk they take; the borrower must pay that same rate. One rate, two views: it is the investor's required return and the firm's cost of capital. Realized returns and coupon rates are different things.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q12-002",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Investors in listed pipeline companies of similar risk currently require 6.1% per annum. Bow River Pipelines wants to raise money for a new line that has the same risk as those companies. For this financing decision, the 6.1% is Bow River's:",
+  "options": [
+   "internal rate of return on the new line",
+   "accounting return on book equity",
+   "cost of capital for projects of that risk",
+   "dividend payout ratio"
+  ],
+  "answer": 2,
+  "explanation": "The rate investors demand for a given level of risk is what the borrower must pay to attract capital, so it is the cost of capital for projects of that risk. An IRR is what a specific project earns; it would be compared with the 6.1%, not equal to it.",
+  "source": "generated",
+  "ref": "L06 s3, s45"
+ },
+ {
+  "id": "q12-003",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly separates a required return from a realized return?",
+  "options": [
+   "A required return is what was actually earned last year; a realized return is what investors hope to earn next year.",
+   "A required return is always just the risk-free rate; a realized return is the risk-free rate plus a risk premium.",
+   "They are the same number measured at different dates, so over any period the two must be equal to each other.",
+   "A required return is the forward-looking reward investors need for the risk; a realized return is what was actually earned."
+  ],
+  "answer": 3,
+  "explanation": "Required returns look forward and are tied to risk; realized returns are outcomes. A stock can realize 30% or −10% in a year while investors' required return stays near 9%.",
+  "source": "generated",
+  "ref": "L06 s45, TB 12.4"
+ },
+ {
+  "id": "q12-004",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why should two projects of similar risk be discounted at similar rates?",
+  "options": [
+   "Because projects of similar risk must always have identical cash flows in every future year.",
+   "Because investors can choose either, so each must offer a similar expected return for its risk.",
+   "Because the discount rate is fixed by contract with the firm's lenders for all projects.",
+   "Because the NPV of a project does not depend on which discount rate is used."
+  ],
+  "answer": 1,
+  "explanation": "All investments of similar risk should offer similar returns (L06 s45). If one offered more for the same risk, investors would bid its price up until the returns converged.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q12-005",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Aspen Foods considers a new snack line. Shareholders of listed snack-food companies with the same risk require 9.5% per annum. Aspen's best estimate of the new line's expected return is 8.2% per annum. What does this tell Aspen?",
+  "options": [
+   "The line is attractive because 8.2% is well above the risk-free rate, so it earns a premium.",
+   "8.2% is below the 9.5% required for this risk, so investors could do better elsewhere; reject the line.",
+   "The line is attractive because any positive expected return adds value for shareholders.",
+   "The 8.2% should replace 9.5% as the firm's cost of capital, since it is the project's own figure."
+  ],
+  "answer": 1,
+  "explanation": "A project must earn at least the return investors require for its risk. Beating the risk-free rate is not enough; the benchmark is the 9.5% cost of capital for similar-risk businesses.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q12-006",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement is NOT part of the link between investing and financing?",
+  "options": [
+   "The lender's required return is the borrower's cost of financing.",
+   "Investments of similar risk should offer similar returns.",
+   "A firm may pick any discount rate it likes for a project, whatever its risk.",
+   "E[R] is the required rate of return to the investor and the cost of capital to the firm."
+  ],
+  "answer": 2,
+  "explanation": "The cost of capital is set by what investors can earn on other investments of the same risk, not by management's preference. Choosing it freely would let a firm accept bad projects by picking a low rate.",
+  "source": "generated",
+  "ref": "L06 s3, s45"
+ },
+ {
+  "id": "q12-007",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Gate Rail has just paid an annual dividend of $1.90 per share. Dividends are expected to grow at 4% per year indefinitely and the shares sell for $38.00. Investors' required return, which is also the firm's cost of equity, is what percent per annum?",
+  "answer": 9.2,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "1.90*1.04/38.00*100+4",
+  "steps": [
+   {
+    "label": "Next dividend D1",
+    "value": 1.976,
+    "check": "1.90*1.04",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "Dividend yield D1/P0",
+    "value": 5.2,
+    "check": "1.90*1.04/38.00*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required return R = D1/P0 + g",
+    "value": 9.2,
+    "check": "1.90*1.04/38.00*100+4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "D1 = D0(1 + g) = 1.90 × 1.04 = 1.976",
+   "Dividend yield = D1/P0 = 1.976/38.00 = 5.20%",
+   "R = D1/P0 + g = 5.20% + 4% = 9.20% per annum"
+  ],
+  "keystrokes": [
+   "1.90 × 1.04 = 1.976",
+   "÷ 38 = 0.052",
+   "+ 0.04 = 0.092 (9.20%)"
+  ],
+  "errors": [
+   {
+    "id": "d0-for-d1",
+    "label": "Used D0 instead of D1",
+    "value": 9.0,
+    "check": "1.90/38.00*100+4",
+    "explain": "The dividend was just paid, so next year's dividend is D1 = D0(1 + g) = $1.976."
+   },
+   {
+    "id": "omitted-growth",
+    "label": "Left out the growth rate",
+    "value": 5.2,
+    "check": "1.90*1.04/38.00*100",
+    "explain": "Required return = dividend yield + capital gain yield; the dividend yield alone is only part of it."
+   },
+   {
+    "id": "yield-minus-g",
+    "label": "Subtracted g from the yield",
+    "value": 1.2,
+    "check": "1.90*1.04/38.00*100-4",
+    "explain": "R = D1/P0 + g. The capital gain yield (g) is added to the dividend yield, not subtracted."
+   }
+  ],
+  "explanation": "R = D1/P0 + g: the 9.20% that shareholders require is what Prairie Gate Rail must earn on equity-financed projects of this risk, i.e. its cost of equity.",
+  "source": "generated",
+  "ref": "L06 s45, SM 8-5"
+ },
+ {
+  "id": "q12-008",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Foothills Brewing's shares carry about average stock-market risk. The T-bill rate is 2.8% per annum and investors require an equity risk premium of 5.9% per annum for average market risk. What return do investors require on Foothills' shares, in % per annum?",
+  "answer": 8.7,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "2.8+5.9",
+  "steps": [
+   {
+    "label": "Required return = R_F + risk premium",
+    "value": 8.7,
+    "check": "2.8+5.9",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Required return = R_F + risk premium",
+   "= 2.8% + 5.9% = 8.70% per annum"
+  ],
+  "keystrokes": [
+   "2.8 + 5.9 = 8.7"
+  ],
+  "errors": [
+   {
+    "id": "mrp-as-market",
+    "label": "Used the premium as the whole required return",
+    "value": 5.9,
+    "check": "5.9",
+    "explain": "The premium is only the extra reward for risk; the investor also needs the risk-free return as the base."
+   },
+   {
+    "id": "forgot-premium",
+    "label": "Used only the risk-free rate",
+    "value": 2.8,
+    "check": "2.8",
+    "explain": "T-bills are risk free. A risky stock must offer the risk-free rate plus a premium."
+   }
+  ],
+  "explanation": "Required return = risk-free rate + risk premium. This build-up is the idea behind the cost of capital: base reward for waiting plus extra reward for bearing risk.",
+  "source": "generated",
+  "ref": "L06 s9, s45"
+ },
+ {
+  "id": "q12-009",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "The cost of capital is the return a company actually earned on its investments last year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The cost of capital is the forward-looking return investors require for the risk of the funds they provide. A firm's past earned return is a realized outcome and may be above or below it.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q12-010",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which expression builds the required return on a risky asset?",
+  "options": [
+   "E[R] = R_F − risk premium",
+   "E[R] = risk premium ÷ R_F",
+   "E[R] = σ × R_F",
+   "E[R] = R_F + risk premium"
+  ],
+  "answer": 3,
+  "explanation": "The required return is the risk-free return plus compensation for risk: E[R] = R_F + risk premium, so the premium is E[R] − R_F.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-011",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does a riskier borrower typically have to pay a higher interest rate than a safer one?",
+  "options": [
+   "Because the risk-free rate is higher for risky borrowers.",
+   "Because riskier borrowers always earn higher profits, which they share with lenders.",
+   "Because risk-averse lenders need compensation for the extra risk the riskier borrower carries.",
+   "Because lenders in Canada are required to charge more to firms with a higher standard deviation."
+  ],
+  "answer": 2,
+  "explanation": "Investors and lenders are risk averse, so they want compensation for higher risk. That compensation is the extra interest (risk premium) the borrower pays; the risk-free rate is the same for everyone.",
+  "source": "generated",
+  "ref": "L06 s3, s8"
+ },
+ {
+  "id": "q12-012",
+  "concept": "c12-required-return-cost-of-capital",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An investor says, \"I will not buy this stock unless it offers me at least 10% per annum for the risk I am taking.\" That 10% is the investor's:",
+  "options": [
+   "required rate of return",
+   "realized holding period return",
+   "standard deviation of returns",
+   "dividend payout ratio"
+  ],
+  "answer": 0,
+  "explanation": "The minimum expected return an investor accepts for a given risk is the required rate of return. It is the same number the firm sees as its cost of capital.",
+  "source": "generated",
+  "ref": "L06 s45"
+ },
+ {
+  "id": "q12-013",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The risk premium on an asset is:",
+  "options": [
+   "the extra expected return over R_F that compensates for risk, E[R] − R_F",
+   "the total expected return of the risky asset, including the risk-free part",
+   "the standard deviation of the asset's returns, which measures its risk",
+   "the expected return on the whole stock market portfolio"
+  ],
+  "answer": 0,
+  "explanation": "Risk premium = E[R] − R_F, also called the excess return. It measures only the reward above the risk-free rate, not the whole return and not the risk itself.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-014",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Chris will move money from a 3% GIC into a stock fund only if the fund's expected return beats 3% by enough to pay him for the extra risk. Chris is:",
+  "options": [
+   "neutral toward risk",
+   "risk seeking",
+   "risk free",
+   "risk averse"
+  ],
+  "answer": 3,
+  "explanation": "A risk-averse investor wants compensation (a premium) for taking more risk. An investor who is neutral toward risk would need no extra return; a risk-seeking investor would even accept less.",
+  "source": "generated",
+  "ref": "L06 s8"
+ },
+ {
+  "id": "q12-015",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Pat holds a speculative stock whose expected return is below the T-bill rate because she enjoys the gamble. In the professor's classification Pat is:",
+  "options": [
+   "risk averse",
+   "neutral toward risk",
+   "risk seeking",
+   "diversified"
+  ],
+  "answer": 2,
+  "explanation": "A risk-seeking investor is willing to give up expected return to take on risk, so a lower expected return is acceptable. A risk-averse investor would never accept less than the risk-free rate for more risk.",
+  "source": "generated",
+  "ref": "L06 s8"
+ },
+ {
+  "id": "q12-016",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement best separates risk aversion from risk avoidance?",
+  "options": [
+   "Risk-averse investors refuse to hold any risky asset.",
+   "Risk-averse investors require the same return for every level of risk.",
+   "Risk-averse investors prefer the asset with the higher standard deviation when expected returns are equal.",
+   "Risk-averse investors do take risk, but only when they are compensated for it."
+  ],
+  "answer": 3,
+  "explanation": "The professor's point: risk aversion does NOT mean people do not take on risk. It means they want compensation, so riskier assets must offer a risk premium.",
+  "source": "generated",
+  "ref": "L06 s8"
+ },
+ {
+  "id": "q12-017",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Government T-bills currently pay 2.6% per annum and the stock market is expected to return 9.4% per annum. What is the equity risk premium, in % per annum?",
+  "answer": 6.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "9.4-2.6",
+  "steps": [
+   {
+    "label": "Risk premium = E[R] − R_F",
+    "value": 6.8,
+    "check": "9.4-2.6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Risk premium = E[R] − R_F",
+   "= 9.4% − 2.6% = 6.80% per annum"
+  ],
+  "keystrokes": [
+   "9.4 − 2.6 = 6.8"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Reported the market return, not the excess",
+    "value": 9.4,
+    "check": "9.4",
+    "explain": "The premium is the return above the risk-free rate; subtract R_F."
+   },
+   {
+    "id": "wrong-order",
+    "label": "Subtracted in the wrong order",
+    "value": -6.8,
+    "check": "2.6-9.4",
+    "explain": "A premium for bearing risk is E[R] − R_F, so it is positive when the risky asset is expected to do better."
+   },
+   {
+    "id": "added-rf",
+    "label": "Added the risk-free rate",
+    "value": 12.0,
+    "check": "9.4+2.6",
+    "explain": "The premium is a difference, not a sum."
+   }
+  ],
+  "explanation": "Equity risk premium = 9.4% − 2.6% = 6.8% per annum: the extra reward investors expect for holding stocks instead of T-bills.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-018",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over five years Okanagan Orchards' shares returned 18%, −7%, 24%, 11% and 9%. Treasury bills averaged 3.9% per annum over the same five years. What was the stock's average historical risk premium, in % per annum?",
+  "answer": 7.1,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(18-7+24+11+9)/5-3.9",
+  "steps": [
+   {
+    "label": "Average stock return",
+    "value": 11.0,
+    "check": "(18-7+24+11+9)/5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Average risk premium = average return − average T-bill return",
+    "value": 7.1,
+    "check": "(18-7+24+11+9)/5-3.9",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Average return = (18 − 7 + 24 + 11 + 9)/5 = 55/5 = 11.00%",
+   "Average risk premium = 11.00% − 3.9% = 7.10% per annum"
+  ],
+  "keystrokes": [
+   "18 + (−7) + 24 + 11 + 9 = 55",
+   "÷ 5 = 11",
+   "− 3.9 = 7.1"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Did not subtract the T-bill average",
+    "value": 11.0,
+    "check": "(18-7+24+11+9)/5",
+    "explain": "That is the stock's average return, not its premium over the risk-free rate."
+   },
+   {
+    "id": "n-minus-1-in-mean",
+    "label": "Divided the sum by N − 1 when averaging",
+    "value": 9.85,
+    "check": "(18-7+24+11+9)/4-3.9",
+    "explain": "The mean divides by N. The N − 1 divisor belongs only in the sample variance."
+   }
+  ],
+  "explanation": "The historical premium is the average stock return minus the average T-bill return: 11.0% − 3.9% = 7.1% per annum.",
+  "source": "generated",
+  "ref": "SM 12-9, TB 12.3"
+ },
+ {
+  "id": "q12-019",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A Canadian equity fund returned 14%, −9% and 22% over three consecutive years. The one-year T-bill returned 3.0%, 3.4% and 4.1% in those same years. What was the fund's average risk premium over the three years, in % per annum?",
+  "answer": 5.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(14-9+22)/3-(3.0+3.4+4.1)/3",
+  "steps": [
+   {
+    "label": "Average fund return",
+    "value": 9.0,
+    "check": "(14-9+22)/3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Average T-bill return",
+    "value": 3.5,
+    "check": "(3.0+3.4+4.1)/3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Average risk premium",
+    "value": 5.5,
+    "check": "(14-9+22)/3-(3.0+3.4+4.1)/3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Average fund return = (14 − 9 + 22)/3 = 27/3 = 9.00%",
+   "Average T-bill return = (3.0 + 3.4 + 4.1)/3 = 10.5/3 = 3.50%",
+   "Average risk premium = 9.00% − 3.50% = 5.50% per annum (same as averaging the three yearly premiums 11.0, −12.4, 17.9)"
+  ],
+  "keystrokes": [
+   "14 + (−9) + 22 = 27; ÷ 3 = 9",
+   "3.0 + 3.4 + 4.1 = 10.5; ÷ 3 = 3.5",
+   "9 − 3.5 = 5.5"
+  ],
+  "errors": [
+   {
+    "id": "latest-tbill",
+    "label": "Subtracted only the latest T-bill return",
+    "value": 4.9,
+    "check": "(14-9+22)/3-4.1",
+    "explain": "The risk-free benchmark must be the average over the same three years, not the last year's rate."
+   },
+   {
+    "id": "forgot-minus-rf",
+    "label": "Reported the fund's average return",
+    "value": 9.0,
+    "check": "(14-9+22)/3",
+    "explain": "That ignores the risk-free return the investor could have earned."
+   }
+  ],
+  "explanation": "Average the fund returns, average the T-bill returns over the same years, then subtract: 9.00% − 3.50% = 5.50% per annum.",
+  "source": "generated",
+  "ref": "SM 12-7, 12-9"
+ },
+ {
+  "id": "q12-020",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Analysts expect the stock market to return 10.2% per annum and estimate the equity risk premium at 7.1% per annum. What risk-free rate is implied, in % per annum?",
+  "answer": 3.1,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "10.2-7.1",
+  "steps": [
+   {
+    "label": "R_F = E[R] − risk premium",
+    "value": 3.1,
+    "check": "10.2-7.1",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Risk premium = E[R] − R_F, so R_F = E[R] − risk premium",
+   "R_F = 10.2% − 7.1% = 3.10% per annum"
+  ],
+  "keystrokes": [
+   "10.2 − 7.1 = 3.1"
+  ],
+  "errors": [
+   {
+    "id": "r-plus-premium",
+    "label": "Added the premium to the market return",
+    "value": 17.3,
+    "check": "10.2+7.1",
+    "explain": "Rearranging premium = E[R] − R_F gives R_F = E[R] − premium; adding goes the wrong way."
+   },
+   {
+    "id": "premium-as-rf",
+    "label": "Reported the premium as the risk-free rate",
+    "value": 7.1,
+    "check": "7.1",
+    "explain": "The premium is the excess over R_F; it is not R_F itself."
+   }
+  ],
+  "explanation": "Rearranging risk premium = E[R] − R_F: R_F = 10.2% − 7.1% = 3.1% per annum.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-021",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock Q is expected to return 12.35% per annum and the risk-free rate is 3.15% per annum. What is Stock Q's risk premium?",
+  "options": [
+   "−9.20%",
+   "9.20%",
+   "12.32%",
+   "15.50%"
+  ],
+  "answer": 1,
+  "explanation": "Risk premium = E[R] − R_F = 12.35% − 3.15% = 9.20%. Adding the two gives 15.50%; reversing the order gives −9.20%; subtracting 0.0315 from 12.35 (a percent-decimal mix) gives 12.32%.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-022",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over 1926–2016 (U.S. data in the textbook) small-company stocks averaged 16.6% per year, large-company stocks 12.0% and Treasury bills 3.4%. What was the average risk premium on small-company stocks?",
+  "options": [
+   "4.60%",
+   "8.60%",
+   "13.20%",
+   "16.60%"
+  ],
+  "answer": 2,
+  "explanation": "Small-company premium = 16.6% − 3.4% = 13.2%. The 16.6% is the whole return; 8.6% is the large-company premium (12.0 − 3.4); 4.6% is the difference between the two stock classes (16.6 − 12.0), not a premium over T-bills.",
+  "source": "generated",
+  "ref": "TB 12.3"
+ },
+ {
+  "id": "q12-023",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do risk-averse investors demand a positive risk premium on stocks?",
+  "options": [
+   "Because they could hold the risk-free asset instead, so a risky asset must be expected to pay more.",
+   "Because stocks are guaranteed to beat T-bills in every year, so the premium is certain.",
+   "Because the government requires issuers to pay a premium over T-bills.",
+   "Because the standard deviation of stocks is always lower than that of T-bills."
+  ],
+  "answer": 0,
+  "explanation": "The risk premium is compensation: people want to be paid for taking on risk. It is an expected (average) reward, not a guarantee in any single year.",
+  "source": "generated",
+  "ref": "L06 s8-9"
+ },
+ {
+  "id": "q12-024",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Using six years of data, the average observed risk premium on large-company stocks was −1.51% per annum. Does this show that investors are not risk averse?",
+  "options": [
+   "Yes. A negative average premium proves that investors accept less than the risk-free rate for bearing risk.",
+   "Yes. A negative premium means the stock has become risk free relative to Treasury bills.",
+   "No. A premium can never be negative by definition, so the six-year data must contain an error.",
+   "No. Expected premiums are positive, but realized premiums can be negative when stock returns come in low or T-bill returns come in high."
+  ],
+  "answer": 3,
+  "explanation": "Risk aversion is about what investors require ex ante. Ex post, a short sample can easily produce a negative realized premium; this does not change the required premium going forward.",
+  "source": "generated",
+  "ref": "SM 12-7d"
+ },
+ {
+  "id": "q12-025",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT another name for the risk premium?",
+  "options": [
+   "the risk-free rate",
+   "the excess return",
+   "the equity risk premium (when the risky asset is the stock market)",
+   "the reward for bearing risk"
+  ],
+  "answer": 0,
+  "explanation": "The risk-free rate R_F is the base that is subtracted. The risk premium E[R] − R_F is also called the excess return.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-026",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "An investor who is neutral toward risk needs no compensation for it: she would accept the same expected return on a risky asset as on T-bills.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The lecture's three attitudes are averse, neutral and seeking. Being neutral toward risk means no compensation is needed for risk, so only the expected return matters, not the standard deviation.",
+  "source": "generated",
+  "ref": "L06 s8"
+ },
+ {
+  "id": "q12-027",
+  "concept": "c12-risk-aversion-premium",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The risk premium is also called the _____ return.",
+  "options": [
+   "nominal",
+   "real",
+   "excess",
+   "geometric"
+  ],
+  "answer": 2,
+  "explanation": "The professor uses 'risk premium' and 'excess return' interchangeably: the return above the risk-free rate, E[R] − R_F.",
+  "source": "generated",
+  "ref": "L06 s9"
+ },
+ {
+  "id": "q12-028",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which ordering of long-run average annual returns (highest first) matches the U.S. record from 1926 to 2016?",
+  "options": [
+   "large-company stocks, small-company stocks, Treasury bills, long-term bonds",
+   "long-term bonds, large-company stocks, small-company stocks, Treasury bills",
+   "small-company stocks, large-company stocks, long-term bonds, Treasury bills",
+   "Treasury bills, long-term bonds, large-company stocks, small-company stocks"
+  ],
+  "answer": 2,
+  "explanation": "Averages were roughly 16.6% for small stocks, 12.0% for large stocks, 6.0-6.3% for long-term bonds and 3.4% for T-bills: stocks beat bonds beat bills, and small beat large.",
+  "source": "generated",
+  "ref": "TB 12.2"
+ },
+ {
+  "id": "q12-029",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which observation best illustrates the first lesson of capital market history, that risky assets on average earn a risk premium?",
+  "options": [
+   "Large-company stocks averaged about 8.6 percentage points more per year than Treasury bills.",
+   "Treasury bills had the highest standard deviation of all asset classes.",
+   "Inflation averaged about 3.0% per year over the same 1926-2016 period.",
+   "Long-term corporate bonds outperformed small-company stocks."
+  ],
+  "answer": 0,
+  "explanation": "A positive average gap between a risky asset (large stocks, 12.0%) and the risk-free asset (T-bills, 3.4%) is the reward for bearing risk. The other options are false or unrelated to the premium.",
+  "source": "generated",
+  "ref": "TB 12.3"
+ },
+ {
+  "id": "q12-030",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the first and second lessons of capital market history differ?",
+  "options": [
+   "First: the greater the reward, the greater the risk. Second: risky assets earn a premium on average.",
+   "First: bonds beat stocks on average. Second: stocks then beat bills in the long run.",
+   "First: returns are normally distributed. Second: returns are independent of risk.",
+   "First: risky assets earn a premium on average. Second: greater potential reward comes with greater risk."
+  ],
+  "answer": 3,
+  "explanation": "The first lesson is about the average reward for bearing risk; the second links the size of that reward to the size of the risk, measured by standard deviation: small stocks (σ about 31.9%) paid most and were most volatile.",
+  "source": "generated",
+  "ref": "TB 12.3-12.4"
+ },
+ {
+  "id": "q12-031",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Over 1926-2016 (U.S. data in the textbook) small-company stocks averaged 16.6% per year against 12.0% for large-company stocks. Why doesn't everyone simply buy small-company stocks?",
+  "options": [
+   "Because small-company stocks have a negative risk premium over T-bills.",
+   "Because their returns are far more volatile: σ about 31.9% versus 19.9%.",
+   "Because small-company stocks have a lower standard deviation than T-bills.",
+   "Because large-company stocks have always outperformed them in every year."
+  ],
+  "answer": 1,
+  "explanation": "Higher average return comes with higher volatility, the second lesson of history. The extra return is the compensation for that risk.",
+  "source": "generated",
+  "ref": "TB 12.2-12.4"
+ },
+ {
+  "id": "q12-032",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In a year when Treasury bills returned 7.7% and inflation was 6.2%, what was the real return on Treasury bills, in % per annum? Use the Fisher relationship.",
+  "answer": 1.41,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(1.077/1.062-1)*100",
+  "steps": [
+   {
+    "label": "1 + R_real = (1 + R_nom)/(1 + R_inf)",
+    "value": 1.0141,
+    "check": "1.077/1.062",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Real return",
+    "value": 1.41,
+    "check": "(1.077/1.062-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "(1 + R_nom) = (1 + R_inf)(1 + R_real)",
+   "1 + R_real = 1.077/1.062 = 1.01412",
+   "R_real = 1.412% ≈ 1.41% per annum"
+  ],
+  "keystrokes": [
+   "1.077 ÷ 1.062 = 1.01412",
+   "− 1 = 0.01412 (1.41%)"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Subtracted inflation from the nominal rate",
+    "value": 1.5,
+    "check": "7.7-6.2",
+    "explain": "That shortcut ignores that inflation also erodes the return itself; the Fisher relationship divides the growth factors."
+   },
+   {
+    "id": "fisher-inverted",
+    "label": "Divided the factors upside down",
+    "value": -1.39,
+    "check": "(1.062/1.077-1)*100",
+    "explain": "Real purchasing-power growth is (1 + R_nom)/(1 + R_inf), nominal over inflation."
+   }
+  ],
+  "explanation": "Fisher: (1 + R_real) = (1 + R_nom)/(1 + R_inf) = 1.077/1.062 = 1.0141, so the real return is about 1.41%, a little less than the simple 1.5% difference.",
+  "source": "generated",
+  "ref": "SM 12-4c, SM 12-5"
+ },
+ {
+  "id": "q12-033",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A pension fund wants a real return of 4.0% per annum when inflation is expected to be 2.5% per annum. What nominal return does it need, in % per annum?",
+  "answer": 6.6,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(1.04*1.025-1)*100",
+  "steps": [
+   {
+    "label": "Growth factor (1 + R_real)(1 + R_inf)",
+    "value": 1.066,
+    "check": "1.04*1.025",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Nominal return",
+    "value": 6.6,
+    "check": "(1.04*1.025-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "(1 + R_nom) = (1 + R_inf)(1 + R_real) = 1.025 × 1.04 = 1.066",
+   "R_nom = 6.60% per annum"
+  ],
+  "keystrokes": [
+   "1.025 × 1.04 = 1.066",
+   "− 1 = 0.066 (6.60%)"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Added real return and inflation",
+    "value": 6.5,
+    "check": "4.0+2.5",
+    "explain": "Adding ignores the cross term: the extra purchasing power must itself be inflated (0.04 × 0.025 = 0.1%)."
+   },
+   {
+    "id": "fisher-inverted",
+    "label": "Divided instead of multiplying",
+    "value": 1.46,
+    "check": "(1.04/1.025-1)*100",
+    "explain": "To go from real to nominal you multiply the growth factors; dividing goes from nominal to real."
+   }
+  ],
+  "explanation": "Fisher: (1 + R_nom) = (1 + R_inf)(1 + R_real) = 1.025 × 1.04 = 1.066, so the fund needs 6.60% nominal.",
+  "source": "generated",
+  "ref": "FS p1 (Fisher), SM 12-4c"
+ },
+ {
+  "id": "q12-034",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "From 1926 to 2016 (U.S. data in the textbook) small-company stocks averaged a nominal 16.6% per year while inflation averaged 3.0% per year. What was the average real return on small-company stocks, in % per annum?",
+  "answer": 13.2,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(1.166/1.03-1)*100",
+  "steps": [
+   {
+    "label": "Real return = (1 + R_nom)/(1 + R_inf) − 1",
+    "value": 13.2,
+    "check": "(1.166/1.03-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "1 + R_real = 1.166/1.030 = 1.13204",
+   "R_real = 13.20% per annum"
+  ],
+  "keystrokes": [
+   "1.166 ÷ 1.03 = 1.13204",
+   "− 1 = 0.13204 (13.20%)"
+  ],
+  "errors": [
+   {
+    "id": "nominal-real-mix",
+    "label": "Subtracted inflation from the nominal return",
+    "value": 13.6,
+    "check": "16.6-3.0",
+    "explain": "The back-of-envelope 13.6% overstates the real return; the Fisher relationship gives 13.20%."
+   },
+   {
+    "id": "multiplied-not-divided",
+    "label": "Multiplied by the inflation factor",
+    "value": 20.1,
+    "check": "(1.166*1.03-1)*100",
+    "explain": "Real returns come from dividing by the inflation factor, not multiplying."
+   }
+  ],
+  "explanation": "Real return = 1.166/1.03 − 1 = 13.20%; the textbook's quick estimate 16.6% − 3.0% = 13.6% is only an approximation.",
+  "source": "generated",
+  "ref": "TB 12.2"
+ },
+ {
+  "id": "q12-035",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A Canadian equity fund earned a nominal 9.0% in a year when inflation was 2.4%. What was its real return?",
+  "options": [
+   "−6.60%",
+   "6.45%",
+   "6.60%",
+   "11.62%"
+  ],
+  "answer": 1,
+  "explanation": "Real return = 1.090/1.024 − 1 = 6.45%. Simple subtraction gives 6.60% (ignores compounding of inflation), multiplying the factors gives 11.62% (that is how you would go from real to nominal), and 2.4 − 9.0 = −6.60% is the wrong order.",
+  "source": "generated",
+  "ref": "SM 12-9a"
+ },
+ {
+  "id": "q12-036",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Because Treasury bills averaged 3.4% and inflation 3.0% over 1926-2016 (U.S. data in the textbook), the average real return on T-bills was only about 0.4% per year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. T-bills barely kept pace with inflation: 1.034/1.030 − 1 ≈ 0.39%. They had little default risk but still carried inflation risk.",
+  "source": "generated",
+  "ref": "TB 12.2"
+ },
+ {
+  "id": "q12-037",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "In one year large-company stocks lost 12% while T-bills gained 3%. Does this contradict the first lesson of capital market history?",
+  "options": [
+   "No. The first lesson is about long-run average premiums; in any single year a large loss is still possible.",
+   "Yes. If stocks carry a premium they must beat T-bills in every single year, without exception.",
+   "Yes. A single losing year is enough to show that stocks carry no premium at all.",
+   "No. Stocks that lose in one year are guaranteed to recover the whole loss within the next year."
+  ],
+  "answer": 0,
+  "explanation": "Risk premiums are averages. Individual years can be far below T-bills, which is precisely what volatility (standard deviation) measures.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-038",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement is NOT supported by the historical record for 1926-2016 in the textbook?",
+  "options": [
+   "Treasury bills were more volatile than small-company stocks.",
+   "Small-company stocks had the highest standard deviation of the asset classes shown.",
+   "Treasury bills earned only slightly more than inflation on average.",
+   "Large-company stocks earned a positive average premium over Treasury bills."
+  ],
+  "answer": 0,
+  "explanation": "Standard deviations: T-bills about 3.1% versus small-company stocks about 31.9%. Higher average returns came with higher volatility, not the reverse.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-039",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Treasury bills are usually called risk free. In what sense can they still be risky for an investor?",
+  "options": [
+   "Inflation can exceed their return, so purchasing power can fall even though the nominal return is positive.",
+   "They have a high probability of default because governments often fail to repay.",
+   "Their prices swing more than stock prices do because of their very long maturity.",
+   "They carry the same standard deviation as small-company stocks, about 31.9% per year."
+  ],
+  "answer": 0,
+  "explanation": "T-bills have very little default risk and, being short term, little interest rate risk. The remaining risk is inflation risk: a nominal return of 7% is a loss in purchasing power when inflation is 9%.",
+  "source": "generated",
+  "ref": "SM 12-14d"
+ },
+ {
+  "id": "q12-040",
+  "concept": "c12-history-lessons",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which equation links the nominal return, the inflation rate and the real return?",
+  "options": [
+   "R_real = R_nom − R_inf exactly",
+   "(1 + R_nom) = (1 + R_inf) + (1 + R_real)",
+   "R_nom = R_real ÷ R_inf",
+   "(1 + R_nom) = (1 + R_inf)(1 + R_real)"
+  ],
+  "answer": 3,
+  "explanation": "The Fisher relationship multiplies growth factors. R_nom − R_inf is only a close approximation when rates are small.",
+  "source": "generated",
+  "ref": "FS p1 (Fisher)"
+ }
+]

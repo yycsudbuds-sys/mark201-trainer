@@ -1,0 +1,765 @@
+[
+ {
+  "id": "q11-001",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In project analysis, forecasting risk (also called estimation risk) is best described as:",
+  "options": [
+   "the possibility of a bad decision because the projected cash flows contain errors",
+   "the variability of the project's returns relative to the market portfolio",
+   "the chance that the firm cannot raise enough capital to build the project",
+   "the risk that the arithmetic inside the NPV spreadsheet contains a typing mistake"
+  ],
+  "answer": 0,
+  "explanation": "Forecasting risk is the danger that errors in the projected cash flows lead to the wrong accept or reject decision. It is about wrong inputs, not about market-wide return variability (that is the σ and β of Chapters 12-13) and not about spreadsheet typos.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-002",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Prairie Paws Pet Foods reports an NPV of +$420,000 for a new organic dog biscuit. The forecast rests on one customer survey in which shoppers said they would \"definitely try\" the product, and the main worry is that real sales will fall far short of the survey. This worry is best called:",
+  "options": [
+   "liquidity risk",
+   "forecasting risk",
+   "interest-rate risk",
+   "the risk of an unsystematic event"
+  ],
+  "answer": 1,
+  "explanation": "The worry is that projected cash flows (sales) are wrong and a poor decision follows: forecasting risk. Liquidity and interest-rate risk are about the firm's funding and rate exposure, not about the accuracy of the sales forecast.",
+  "source": "generated",
+  "ref": "TB 11.1; SM 11 CTQ 1"
+ },
+ {
+  "id": "q11-003",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 1,
+  "stem": "Why is forecasting risk usually greatest for a brand-new product compared with replacing a worn-out machine?",
+  "options": [
+   "new products are always taxed at a higher rate, which distorts the cash flows",
+   "replacement decisions have no cash flows to forecast, so the NPV rule cannot be applied",
+   "the NPV formula is only valid for products that already exist",
+   "there is no sales history, so unit sales and prices are much harder to predict"
+  ],
+  "answer": 3,
+  "explanation": "A new product has no track record to anchor the sales and price forecasts, so the projected cash flows are likelier to be far off. A replacement still has cash flows, and the NPV formula applies to both.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 1"
+ },
+ {
+  "id": "q11-004",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a sensible response to forecasting risk?",
+  "options": [
+   "ask what specific source of value makes the NPV positive",
+   "run sensitivity and scenario analyses to see which forecasts matter most",
+   "examine how well supported the sales forecast is before relying on it",
+   "assume that competitors will not react if the project turns out to be profitable"
+  ],
+  "answer": 3,
+  "explanation": "Success attracts imitators, so assuming rivals will sit still builds optimism into the forecast and increases forecasting risk. The other three responses are exactly the defences the course recommends: find the source of value, run what-if analyses, and test the forecast.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-005",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which statement correctly separates forecasting risk from the what-if techniques of this chapter?",
+  "options": [
+   "forecasting risk is the danger of wrong inputs; sensitivity, scenario, simulation and NPV break-even measure how much damage such errors could do",
+   "forecasting risk is a technique that tells us which input to flex, and sensitivity analysis is the danger of wrong inputs",
+   "forecasting risk and scenario analysis are two names for the same thing",
+   "forecasting risk concerns cost estimates only, and the what-if techniques concern revenue estimates only"
+  ],
+  "answer": 0,
+  "explanation": "Forecasting risk is the problem (inputs that may be wrong). The what-if techniques are the tools for seeing how sensitive NPV is to those inputs. They are not synonyms and they cover revenues and costs alike.",
+  "source": "generated",
+  "ref": "TB 11.1-11.2; REV p3"
+ },
+ {
+  "id": "q11-006",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A project can show a positive NPV even though its true NPV is negative if the cash-flow forecasts were too optimistic.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. NPV is only as good as the cash flows fed into it. Over-optimistic forecasts make a project look better than it is, which is exactly what forecasting risk means.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-007",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Once the NPV is calculated with the correct formula, forecasting risk has been eliminated.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. A correct formula applied to wrong inputs still gives a wrong answer. Forecasting risk lives in the inputs, so it is managed with source-of-value questions and what-if analysis, not removed by arithmetic.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-008",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The possibility that errors in projected cash flows lead to a wrong accept or reject decision is called _____ risk.",
+  "options": [
+   "systematic",
+   "liquidity",
+   "forecasting",
+   "default"
+  ],
+  "answer": 2,
+  "explanation": "Forecasting risk (estimation risk) is the term for the danger that errors in projected cash flows cause a bad decision. Systematic risk is the market-wide part of a stock's risk (Chapter 13).",
+  "source": "generated",
+  "ref": "TB 11.1; REV p1-2"
+ },
+ {
+  "id": "q11-009",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Great Plains Coffee Kiosks calculates NPV = +$150,000 for a kiosk in a mall that already has three established rivals. The analyst cannot name any cost, product or location advantage. What is the best response?",
+  "options": [
+   "accept, because any NPV above zero creates value no matter how the forecast was reached",
+   "reject, because competition always drives the NPV of every project below zero",
+   "be suspicious: positive-NPV projects are rare when competition is stiff, so find the source of value first",
+   "raise the discount rate until the NPV falls to zero and treat the project as break-even"
+  ],
+  "answer": 2,
+  "explanation": "Where competition is stiff, a positive NPV with no articulated edge should be viewed with suspicion. The course answer is to look for the source of value, not to accept blindly or to fudge the discount rate.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-010",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A what-if analysis shows that a new product's NPV stays positive even in the worst case the team defined. Which conclusion is the most reasonable?",
+  "options": [
+   "forecasting risk looks lower for the ranges tested, but actual outcomes can fall outside the worst case",
+   "the project is risk-free, because its worst-case NPV is positive in the analysis",
+   "the base-case NPV must have been calculated incorrectly by the team",
+   "competitors can no longer affect the project's cash flows after launch"
+  ],
+  "answer": 0,
+  "explanation": "A positive worst case is reassuring only for the ranges examined. The text warns that even worst-case scenarios may not be low enough, so forecasting risk is lower, not zero.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-011",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can success itself increase forecasting risk in a competitive market?",
+  "options": [
+   "success lowers the required return, so earlier forecasts become invalid",
+   "success raises depreciation, which changes the cash flows",
+   "success raises the tax rate on the project's profits",
+   "success attracts imitators, who push volume and margins below the forecast"
+  ],
+  "answer": 3,
+  "explanation": "If the project works, rivals will copy it and drive down volume and profit. A forecast that ignores that reaction is too optimistic, which is forecasting risk.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-012",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A retailer's expansion plan assumed each new store would serve 4,000 customers a week, but the stores actually serve 2,600 and two of them close. This episode illustrates:",
+  "options": [
+   "capital rationing",
+   "forecasting risk",
+   "the multiple-IRR problem",
+   "reinvestment risk"
+  ],
+  "answer": 1,
+  "explanation": "The plan failed because projected cash flows (traffic) were much higher than reality. That is forecasting risk. Rationing is about a budget limit and multiple IRRs are about sign changes, neither of which is described.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-013",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Projects X and Y both have a base-case NPV of $200,000. X's NPV turns negative if sales are 4% below forecast. Y's NPV stays positive until sales are 35% below forecast. Which statement is correct?",
+  "options": [
+   "Y has the higher forecasting risk, because it can absorb a much larger shortfall in sales",
+   "X has the higher forecasting risk for sales; sensitivity or NPV break-even analysis exposes the difference",
+   "the two have the same forecasting risk, because their base-case NPVs are both $200,000",
+   "neither project has any forecasting risk, because both base-case NPVs are positive"
+  ],
+  "answer": 1,
+  "explanation": "A small forecasting error flips X's decision, so X is far more exposed. Equal base NPVs hide this, which is why we flex the inputs instead of reading only the base case.",
+  "source": "generated",
+  "ref": "TB 11.1-11.2; L05C s4-7"
+ },
+ {
+  "id": "q11-014",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "According to the text, the first line of defence against forecasting risk is to ask:",
+  "options": [
+   "what IRR the project earns to one decimal place",
+   "how many decimal places the sales forecast should carry",
+   "what specific source of value makes this investment have a positive NPV",
+   "whether the project can be financed entirely with debt"
+  ],
+  "answer": 2,
+  "explanation": "Before trusting a positive NPV, we should be able to point to something specific (a cost edge, a better product, a niche) that creates the value. Precision of the arithmetic or the financing mix does not address forecasting risk.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-015",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A team reports base-case NPV = +$55,000, worst-case NPV = −$310,000 and best-case NPV = +$190,000. Which reading is fairest?",
+  "options": [
+   "accept, because a positive base-case NPV is all that matters for the decision",
+   "forecasting risk is significant: the downside exceeds the base-case gain, and the likelihood of each case matters",
+   "reject, because any negative scenario NPV means the project must fail and cannot be saved",
+   "average the three NPVs equally to −$21,666.67 and reject the project"
+  ],
+  "answer": 1,
+  "explanation": "Scenario results show what can happen, not how likely it is. A base-case gain of $55,000 against a worst-case loss of $310,000 signals high forecasting risk. An equal-weight average is wrong unless the three cases are equally likely.",
+  "source": "generated",
+  "ref": "TB 11.2; SM 11-19"
+ },
+ {
+  "id": "q11-016",
+  "concept": "c11-forecasting-risk",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "In a highly competitive market positive-NPV projects are common, so a large positive NPV needs no further explanation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Positive-NPV investments are probably not common, especially under stiff competition. If we cannot name a sound economic reason for expecting an edge, a large positive NPV should be viewed with suspicion because the forecast may be too optimistic.",
+  "source": "generated",
+  "ref": "TB 11.1"
+ },
+ {
+  "id": "q11-017",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Sensitivity analysis in project evaluation means:",
+  "options": [
+   "changing several inputs together in a consistent best-case or worst-case story",
+   "changing one input at a time, holding the others at their base values, and seeing how NPV responds",
+   "letting a computer draw every input at random from a distribution",
+   "finding the input value at which accounting profit is exactly zero"
+  ],
+  "answer": 1,
+  "explanation": "Sensitivity analysis flexes ONE input while every other input stays at its base-case value. Several inputs together is scenario analysis, random draws are simulation, and a zero crossing is a break-even analysis.",
+  "source": "generated",
+  "ref": "L05C s4; SM 11-4"
+ },
+ {
+  "id": "q11-018",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A sensitivity analysis on N inputs needs 2N + 1 full DCF calculations. The \"+1\" is:",
+  "options": [
+   "the base case",
+   "the discount rate",
+   "the worst-case scenario",
+   "the summary table of results"
+  ],
+  "answer": 0,
+  "explanation": "For each of the N inputs we run one version with the input up and one with it down (2N runs), plus one baseline run with every input at its base value.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-019",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Alder Creek Hotels recomputes the NPV of a renovation four times: occupancy 5% lower, occupancy 5% higher, nightly rate 5% lower and nightly rate 5% higher. Each time every other input stays at its base value. This technique is:",
+  "options": [
+   "scenario analysis",
+   "simulation analysis",
+   "NPV break-even analysis",
+   "sensitivity analysis"
+  ],
+  "answer": 3,
+  "explanation": "One input at a time with the rest held at base values is sensitivity analysis. Scenario analysis would move occupancy and rate together, and simulation would draw them randomly.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-020",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts sensitivity analysis with scenario analysis?",
+  "options": [
+   "sensitivity analysis flexes several inputs together, while scenario analysis flexes one input at a time",
+   "sensitivity analysis flexes one input at a time (2N + 1 runs); scenario analysis flexes several together (often just three cases)",
+   "sensitivity analysis uses random draws, while scenario analysis does not",
+   "sensitivity analysis solves for the input that sets NPV to zero, while scenario analysis does not"
+  ],
+  "answer": 1,
+  "explanation": "Sensitivity = one variable over a broad range, others frozen; scenario = all variables over a limited range, moved together in a sensible way. The distractors swap the definitions or borrow from simulation and break-even.",
+  "source": "generated",
+  "ref": "L05C s4-5; SM 11 CTQ 2"
+ },
+ {
+  "id": "q11-021",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a steep ΔNPV/Δinput slope signal high forecasting risk for that input?",
+  "options": [
+   "a steep slope means the input is known with certainty, so errors cannot occur",
+   "a steep slope forces the project's IRR below zero in every scenario",
+   "a steep slope means the input affects only depreciation, not cash flow",
+   "a small error in that input produces a large change in NPV and could flip the decision"
+  ],
+  "answer": 3,
+  "explanation": "Slope measures how much NPV moves per unit of input error. The steeper it is, the more damage a given forecasting mistake does, so that input deserves the most attention.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-022",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "For the same 10% change, a project's NPV falls by $52,000 when unit sales are lower, by $18,000 when fixed costs are higher and by $96,000 when price is lower. Which conclusion follows?",
+  "options": [
+   "NPV is most sensitive to price, so the price forecast deserves the most attention",
+   "fixed costs matter most because their NPV effect is the smallest",
+   "unit sales matter most because they are the first input listed",
+   "none of the forecasts matters because the NPV effects are all different"
+  ],
+  "answer": 0,
+  "explanation": "With equal percentage changes, the largest NPV change marks the most sensitive input: price (−$96,000). The smallest effect belongs to fixed costs, which carry the least forecasting risk here.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-023",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about sensitivity analysis is NOT true?",
+  "options": [
+   "it holds all other inputs at their base-case values",
+   "it shows where forecasting errors do the most damage",
+   "it tells management whether to accept the project",
+   "for an input that enters OCF linearly, the NPV-versus-input graph is a straight line"
+  ],
+  "answer": 2,
+  "explanation": "Sensitivity analysis points to the inputs that matter but gives no accept or reject rule. The other statements are true; in particular, NPV is linear in price, quantity and unit costs.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-024",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A sensitivity analysis of a project with 5 uncertain inputs requires 11 full DCF calculations.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. 2N + 1 = 2(5) + 1 = 11: one base case plus one up-run and one down-run for each of the 5 inputs.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-025",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Because NPV is a straight-line function of unit sales, ΔNPV/ΔQ comes out the same whichever second sales level is tested.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. NPV changes by a constant amount per unit, so any second sales level gives the same slope. The solutions manual notes that the choice of 70,000 units does not matter.",
+  "source": "generated",
+  "ref": "SM 11-5, 11-17"
+ },
+ {
+  "id": "q11-026",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "An analyst finds that NPV is far more sensitive to unit sales than to fixed costs. What is the most useful next step?",
+  "options": [
+   "ignore unit sales, because they are too uncertain to forecast",
+   "drop fixed costs from the model and recompute the NPV",
+   "spend effort, such as market research, to firm up the unit-sales forecast",
+   "replace the NPV rule with the payback rule for this project"
+  ],
+  "answer": 2,
+  "explanation": "Sensitivity analysis tells us where errors do the most damage; the sensible response is to improve the forecast of the sensitive input.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-027",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In a sensitivity analysis, what comes immediately after computing the base-case NPV?",
+  "options": [
+   "change every input to its worst value together at once",
+   "draw all inputs at random thousands of times from distributions",
+   "change one input, hold the rest at base values, and recompute the NPV",
+   "solve for the input at which NPV equals zero exactly"
+  ],
+  "answer": 2,
+  "explanation": "The sequence is: base-case NPV, flex one input and recompute, form ΔNPV/Δinput, repeat for each input, compare. Moving everything together is a scenario, and random draws are simulation.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-028",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Boreal Coffee Roasters is evaluating a $360,000 roasting line for a 6-year project with no salvage. Base case: price $14.00 per bag, variable cost $8.50 per bag, 52,000 bags per year, fixed costs $140,000 per year. The CCA tax shield is treated as straight-line, so D = $60,000 per year. T = 30% and the required return is 11% per annum. Using a second price of $15.00, find the sensitivity of NPV to price, ΔNPV/ΔP, in dollars of NPV per $1 change in price.",
+  "answer": 153991.58,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((-360000+(((15-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11))-(-360000+(((14-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11)))/(15-14)",
+  "steps": [
+   {
+    "label": "Base-case OCF at $14.00",
+    "value": 120200.0,
+    "check": "(((14-8.5)*52000-140000)*(1-0.3)+0.3*60000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Base-case NPV",
+    "value": 148510.65,
+    "check": "(-360000+(((14-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "OCF at $15.00",
+    "value": 156600.0,
+    "check": "(((15-8.5)*52000-140000)*(1-0.3)+0.3*60000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV at $15.00",
+    "value": 302502.23,
+    "check": "(-360000+(((15-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "ΔNPV/ΔP",
+    "value": 153991.58,
+    "check": "((-360000+(((15-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11))-(-360000+(((14-8.5)*52000-140000)*(1-0.3)+0.3*60000)*((1-(1+0.11)**-6)/0.11)))/(15-14)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "OCF = [(P − v)Q − FC](1 − T) + T·D; at $14: [(14 − 8.5)(52,000) − 140,000](0.7) + 0.3(60,000) = 120,200.00",
+   "Annuity factor (11%, 6) = 4.230538; NPV = −360,000 + 120,200.00 × 4.230538 = $148,510.65",
+   "At $15: OCF = [(15 − 8.5)(52,000) − 140,000](0.7) + 18,000 = 156,600.00; NPV = $302,502.23",
+   "ΔNPV/ΔP = ($302,502.23 − $148,510.65) ÷ (15 − 14) = $153,991.58 per $1"
+  ],
+  "keystrokes": [
+   "TVM: N = 6, I/Y = 11, PMT = −1, CPT PV = 4.230538",
+   "CF worksheet: CF0 = −360000, C01 = 120,200, F01 = 6, I = 11, NPV CPT → 148,510.65",
+   "Change C01 = 156,600 → NPV = 302,502.23",
+   "(302,502.23 − 148,510.65) ÷ 1 = 153,991.58"
+  ],
+  "errors": [
+   {
+    "id": "pretax-sensitivity",
+    "label": "Ignored the (1 − T) factor",
+    "value": 219987.97,
+    "check": "52000*((1-(1+0.11)**-6)/0.11)",
+    "explain": "A dollar of extra price is taxed: only (1 − T) of it reaches OCF. The slope is Q(1 − T) × annuity factor, not Q × annuity factor."
+   },
+   {
+    "id": "ocf-not-npv",
+    "label": "Reported ΔOCF/ΔP and never applied the annuity factor",
+    "value": 36400.0,
+    "check": "52000*(1-0.3)",
+    "explain": "$36,400 is the change in each year's OCF. NPV moves by that amount in every one of the 6 years, so multiply by the annuity factor."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity factor",
+    "value": 134530.65,
+    "check": "52000*(1-0.3)*((1-(1+0.11)**-5)/0.11)",
+    "explain": "The project lasts 6 years, so the annuity factor must use N = 6."
+   }
+  ],
+  "explanation": "Raising price by $1 adds Q(1 − T) = 52,000 × 0.7 = $36,400 to OCF in each of the 6 years. Discounted at 11%, that is $36,400 × 4.230538 ≈ $153,991 of NPV per $1 of price. Rerunning the full DCF at two prices and dividing gives the same slope.",
+  "source": "generated",
+  "ref": "L05C s4; SM 11-4"
+ },
+ {
+  "id": "q11-029",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In the Boreal Coffee Roasters project the price is $14.00 and the variable cost is $8.50 per bag, fixed costs are $140,000 per year, the life is 6 years, T = 30% and the required return is 11% per annum. By how much does NPV fall if unit sales come in 6,000 bags below the 52,000-bag forecast?",
+  "answer": 97725.42,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "6000*(14-8.5)*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+  "steps": [
+   {
+    "label": "ΔOCF per bag sold = (P − v)(1 − T)",
+    "value": 3.85,
+    "check": "(14-8.5)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "ΔNPV per bag = ΔOCF per bag × annuity factor",
+    "value": 16.29,
+    "check": "(14-8.5)*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV drop for 6,000 fewer bags",
+    "value": 97725.42,
+    "check": "6000*(14-8.5)*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Each bag adds (P − v)(1 − T) = 5.50 × 0.70 = $3.85 of OCF per year",
+   "Over 6 years at 11%: $3.85 × 4.230538 = 16.2876 of NPV per bag",
+   "6,000 × 16.2876 = $97,725.42"
+  ],
+  "keystrokes": [
+   "TVM: N = 6, I/Y = 11, PMT = −1, CPT PV = 4.230538",
+   "5.5 × 0.7 × 4.230538 × 6000 = 97,725.42"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Ignored the tax factor (1 − T)",
+    "value": 139607.75,
+    "check": "6000*(14-8.5)*((1-(1+0.11)**-6)/0.11)",
+    "explain": "Extra contribution is taxed, so only (1 − T) of it reaches OCF."
+   },
+   {
+    "id": "ocf-not-npv",
+    "label": "Reported the one-year OCF change",
+    "value": 23100.0,
+    "check": "6000*(14-8.5)*(1-0.3)",
+    "explain": "$23,100 is only one year's OCF loss; the shortfall repeats each year for 6 years, so discount with the annuity factor."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity factor",
+    "value": 85375.22,
+    "check": "6000*(14-8.5)*(1-0.3)*((1-(1+0.11)**-5)/0.11)",
+    "explain": "Use N = 6 for a 6-year project."
+   }
+  ],
+  "explanation": "Fixed costs do not depend on volume, so each lost bag costs only the contribution margin after tax: (14 − 8.5)(1 − 0.30) = $3.85 per year. Over 6 years at 11% that is 3.85 × 4.230538 = $16.29 of NPV per bag, so 6,000 bags cost about $97,725.",
+  "source": "generated",
+  "ref": "SM 11-5, 11-27"
+ },
+ {
+  "id": "q11-030",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Boreal Coffee Roasters is evaluating a $360,000 roasting line for a 6-year project with no salvage. Base case: price $14.00 per bag, variable cost $8.50 per bag, 52,000 bags per year, fixed costs $140,000 per year. The CCA tax shield is treated as straight-line, so D = $60,000 per year. T = 30% and the required return is 11% per annum. Compare a selling price 5% below base with a variable cost 5% above base: by how much more NPV is lost under the price shock?",
+  "answer": 42347.68,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(14*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)-(8.5*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+  "steps": [
+   {
+    "label": "NPV lost from a 5% price drop ($0.70 per bag)",
+    "value": 107794.1,
+    "check": "(14*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV lost from a 5% variable-cost rise ($0.425 per bag)",
+    "value": 65446.42,
+    "check": "(8.5*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Difference in NPV lost",
+    "value": 42347.68,
+    "check": "(14*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)-(8.5*0.05)*52000*(1-0.3)*((1-(1+0.11)**-6)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Price shock: 0.05 × 14 = $0.70 per bag; ΔOCF = 0.70 × 52,000 × 0.7 = $25,480; ΔNPV = 25,480 × 4.230538 = $107,794.10",
+   "Cost shock: 0.05 × 8.5 = $0.425 per bag; ΔOCF = 0.425 × 52,000 × 0.7 = $15,470; ΔNPV = $65,446.42",
+   "Difference = $107,794.10 − $65,446.42 = $42,347.68"
+  ],
+  "keystrokes": [
+   "N = 6, I/Y = 11, PMT = −1, CPT PV = 4.230538",
+   "0.70 × 52,000 × 0.7 × 4.230538 = 107,794.10",
+   "0.425 × 52,000 × 0.7 × 4.230538 = 65,446.42",
+   "107,794.10 − 65,446.42 = 42,347.68"
+  ],
+  "errors": [
+   {
+    "id": "equal-dollar-slopes",
+    "label": "Assumed price and cost have the same NPV effect, so no difference",
+    "value": 0.0,
+    "check": "0",
+    "explain": "A $1 change in price and a $1 change in variable cost do have equal-size effects (Q(1 − T) × annuity factor), but a 5% change is $0.70 for price and only $0.425 for cost. Compare equal percentage changes."
+   },
+   {
+    "id": "pretax-sensitivity",
+    "label": "Ignored the tax factor (1 − T)",
+    "value": 60496.69,
+    "check": "((14*0.05)-(8.5*0.05))*52000*((1-(1+0.11)**-6)/0.11)",
+    "explain": "Both effects are after-tax; leaving out (1 − T) overstates the difference."
+   },
+   {
+    "id": "ocf-not-npv",
+    "label": "Used the one-year OCF difference",
+    "value": 10010.0,
+    "check": "(14*0.05-8.5*0.05)*52000*(1-0.3)",
+    "explain": "$10,010 is the annual OCF difference; NPV counts it for all 6 years, so multiply by the annuity factor."
+   }
+  ],
+  "explanation": "Equal percentage changes make the comparison fair. The price shock removes $0.70 × 52,000 × 0.7 = $25,480 of OCF a year, the cost shock only $15,470, because price is the larger base number. Discounting the $10,010 annual gap at 11% for 6 years gives about $42,348.",
+  "source": "generated",
+  "ref": "TB 11.2; SM 11-4"
+ }
+]

@@ -1,0 +1,1331 @@
+[
+ {
+  "id": "q13-062",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The beta of stock i is defined as:",
+  "options": [
+   "cov(R_i, R_M)/σ_M, the covariance per unit of market standard deviation",
+   "cov(R_i, R_M)/σ_M², the slope of the regression of stock returns on market returns",
+   "cov(R_i, R_M)/(σ_i σ_M), the correlation between stock and market",
+   "σ_i/σ_M, the ratio of the stock's volatility to the market's volatility"
+  ],
+  "answer": 1,
+  "explanation": "β_i = cov(R_i, R_M)/σ_M² = ρ_iM σ_i/σ_M. Dividing by σ_M alone is the classic slip; dividing by σ_i σ_M gives the correlation ρ; σ_i/σ_M is only part of the ρ-version.",
+  "source": "generated",
+  "ref": "L06 s53-54, S7 s14"
+ },
+ {
+  "id": "q13-063",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A regression of Cobalt Tech's monthly returns on the S&P/TSX Composite's monthly returns gives a slope of 1.6. How is the stock classified?",
+  "options": [
+   "Aggressive: β > 1, more systematic risk than the market",
+   "Defensive: 0 < β < 1, less systematic risk than the market",
+   "Market-neutral: β = 0, no systematic risk at all",
+   "Opposite to the market: β < 0, moves against it"
+  ],
+  "answer": 0,
+  "explanation": "The regression slope is β. A slope of 1.6 means the stock tends to move 1.6% for each 1% market move: more systematic risk than the market, so aggressive (typical of high tech).",
+  "source": "generated",
+  "ref": "L06 s51-54"
+ },
+ {
+  "id": "q13-064",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which asset would you expect to have a beta closest to zero?",
+  "options": [
+   "A broad S&P/TSX Composite index fund",
+   "A high-growth software stock",
+   "A 91-day Government of Canada T-bill",
+   "A leveraged fund on the S&P 500"
+  ],
+  "answer": 2,
+  "explanation": "The risk-free asset has no systematic risk, so β_F = 0. The broad index fund has β ≈ 1; growth and leveraged funds have β above 1.",
+  "source": "generated",
+  "ref": "L06 s51-52"
+ },
+ {
+  "id": "q13-065",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Aurora Aerospace's return depends on the economy. Strong (probability 0.30): Aurora 30%, S&P/TSX Composite 22%. Moderate (0.50): Aurora 8%, market 9%. Weak (0.20): Aurora −16%, market −15%. Treating the index as the market, what is Aurora's beta?",
+  "answer": 1.23,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))/(0.3*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.5*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.2*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15))**2)",
+  "steps": [
+   {
+    "label": "Expected market return E[R_M]",
+    "value": 8.1,
+    "check": "(0.3*0.22+0.5*0.09+0.2*-0.15)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Expected stock return E[R_i]",
+    "value": 9.8,
+    "check": "(0.3*0.3+0.5*0.08+0.2*-0.16)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Covariance cov(R_i, R_M)",
+    "value": 0.02026,
+    "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Market variance σ_M²",
+    "value": 0.01651,
+    "check": "(0.3*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.5*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.2*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15))**2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Beta = cov/σ_M²",
+    "value": 1.23,
+    "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))/(0.3*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.5*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.2*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15))**2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_M] = 0.30 × 22% + 0.50 × 9% + 0.20 × (−15%) = 8.1%;  E[R_i] = 0.30 × 30% + 0.50 × 8% + 0.20 × (−16%) = 9.8%",
+   "cov = 0.30 × (0.202)(0.139) + 0.50 × (−0.018)(0.009) + 0.20 × (−0.258)(−0.231) = 0.02026",
+   "σ_M² = 0.30 × (0.139)² + 0.50 × (0.009)² + 0.20 × (−0.231)² = 0.01651",
+   "β = cov/σ_M² = 0.02026/0.01651 = 1.23"
+  ],
+  "keystrokes": [
+   "Means: 0.3 × 22 + 0.5 × 9 + 0.2 × (−15) = 8.1 and 0.3 × 30 + 0.5 × 8 + 0.2 × (−16) = 9.8",
+   "Cov: sum of p × (deviation of stock) × (deviation of market) = 0.020262",
+   "Var: sum of p × (deviation of market)² = 0.016509; ÷ → 1.2273 → 1.23"
+  ],
+  "errors": [
+   {
+    "id": "beta-sigma-m",
+    "label": "Divided the covariance by σ_M instead of σ_M²",
+    "value": 0.16,
+    "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))/sqrt((0.3*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.5*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.2*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15))**2))",
+    "explain": "The denominator is the market VARIANCE σ_M². Dividing by σ_M leaves a number that is not a beta."
+   },
+   {
+    "id": "cov-as-rho",
+    "label": "Computed the correlation instead of beta",
+    "value": 0.98,
+    "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))/(sqrt((0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))**2+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))**2+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))**2))*sqrt((0.3*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.5*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))**2+0.2*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15))**2)))",
+    "explain": "Dividing the covariance by σ_i σ_M gives ρ, which cannot exceed 1. Beta divides by σ_M²."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Divided the covariance by the stock's variance",
+    "value": 0.79,
+    "check": "(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.22-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))*(0.09-(0.3*0.22+0.5*0.09+0.2*-0.15))+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))*(-0.15-(0.3*0.22+0.5*0.09+0.2*-0.15)))/(0.3*(0.3-(0.3*0.3+0.5*0.08+0.2*-0.16))**2+0.5*(0.08-(0.3*0.3+0.5*0.08+0.2*-0.16))**2+0.2*(-0.16-(0.3*0.3+0.5*0.08+0.2*-0.16))**2)",
+    "explain": "Beta measures sensitivity to the market, so the denominator is the market's variance, not the stock's."
+   }
+  ],
+  "explanation": "Beta is the covariance of the stock with the market divided by the market's variance; Aurora has 23% more systematic risk than the market.",
+  "source": "generated",
+  "ref": "S7 s5, s14, SM 13-32"
+ },
+ {
+  "id": "q13-066",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over five years, Muskoka Brewing's returns have a correlation of 0.72 with the S&P/TSX Composite. Muskoka's σ is 31% and the index's σ is 19%. What is Muskoka's beta?",
+  "answer": 1.17,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.72*31/19",
+  "steps": [
+   {
+    "label": "Volatility ratio σ_i/σ_M",
+    "value": 1.63,
+    "check": "31/19",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Beta = ρ σ_i/σ_M",
+    "value": 1.17,
+    "check": "0.72*31/19",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "σ_i/σ_M = 31/19 = 1.63",
+   "β = ρ_iM σ_i/σ_M = 0.72 × 1.63 = 1.17"
+  ],
+  "keystrokes": [
+   "31 ÷ 19 = 1.6316",
+   "× 0.72 = 1.1747 → 1.17"
+  ],
+  "errors": [
+   {
+    "id": "cov-as-rho",
+    "label": "Reported the correlation as the beta",
+    "value": 0.72,
+    "check": "0.72",
+    "explain": "Correlation is bounded by ±1 and ignores relative size. Beta multiplies ρ by σ_i/σ_M."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Inverted the volatility ratio",
+    "value": 0.44,
+    "check": "0.72*19/31",
+    "explain": "The stock's σ goes in the numerator and the market's in the denominator."
+   },
+   {
+    "id": "forgot-rho",
+    "label": "Used σ_i/σ_M without ρ",
+    "value": 1.63,
+    "check": "31/19",
+    "explain": "Beta = ρ × σ_i/σ_M; the ratio alone ignores how tightly the stock follows the market."
+   }
+  ],
+  "explanation": "β = ρ σ_i/σ_M: Muskoka swings 1.63 times as much as the market but is only 72% correlated with it, giving β = 1.17.",
+  "source": "generated",
+  "ref": "L06 s53, S7 s14"
+ },
+ {
+  "id": "q13-067",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Foods' returns have a covariance of 0.0240 with the market's returns. The market's σ is 18%. What is Kootenay's beta?",
+  "answer": 0.74,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.0240/0.18**2",
+  "steps": [
+   {
+    "label": "Market variance σ_M² (decimals)",
+    "value": 0.0324,
+    "check": "0.18**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Beta = cov/σ_M²",
+    "value": 0.74,
+    "check": "0.0240/0.18**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "σ_M² = 0.18² = 0.0324",
+   "β = cov(R_i, R_M)/σ_M² = 0.0240/0.0324 = 0.74"
+  ],
+  "keystrokes": [
+   "0.18 x² = 0.0324",
+   "0.0240 ÷ 0.0324 = 0.7407 → 0.74"
+  ],
+  "errors": [
+   {
+    "id": "beta-sigma-m",
+    "label": "Divided by σ_M instead of σ_M²",
+    "value": 0.13,
+    "check": "0.0240/0.18",
+    "explain": "Divide by the variance 0.0324, not the standard deviation 0.18."
+   },
+   {
+    "id": "inverted-beta",
+    "label": "Inverted the ratio",
+    "value": 1.35,
+    "check": "0.18**2/0.0240",
+    "explain": "The covariance goes on top: β = cov/σ_M²."
+   }
+  ],
+  "explanation": "Beta is covariance over market variance; Kootenay is a defensive stock (β < 1).",
+  "source": "generated",
+  "ref": "L06 s53, SM 13-32"
+ },
+ {
+  "id": "q13-068",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Yukon Gold Corp. is a mining stock. In four equally likely states the market returns 20%, 8%, −4% and −16%, while Yukon Gold returns −6%, 0%, 6% and 18% respectively. What is Yukon Gold's beta?",
+  "answer": -0.65,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)))/(0.25*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2)",
+  "steps": [
+   {
+    "label": "Expected market return",
+    "value": 2.0,
+    "check": "(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Expected stock return",
+    "value": 4.5,
+    "check": "(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Covariance cov(R_i, R_M)",
+    "value": -0.0117,
+    "check": "(0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)))",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Market variance σ_M²",
+    "value": 0.018,
+    "check": "(0.25*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Beta = cov/σ_M²",
+    "value": -0.65,
+    "check": "(0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)))/(0.25*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_M] = 2.0%; E[R_i] = 4.5%",
+   "Deviations: stock −10.5%, −4.5%, 1.5%, 13.5%; market 18%, 6%, −6%, −18%",
+   "cov = 0.25 × (−0.0189 − 0.0027 − 0.0009 − 0.0243) = −0.0117;  σ_M² = 0.25 × (0.0324 + 0.0036 + 0.0036 + 0.0324) = 0.0180",
+   "β = −0.0117/0.0180 = −0.65: the stock tends to move against the market"
+  ],
+  "keystrokes": [
+   "Means: ÷ 4 of each column → 2.0 and 4.5",
+   "Cov: ¼ × Σ(dev stock × dev market) = −0.0117",
+   "Var: ¼ × Σ(dev market)² = 0.0180; ÷ → −0.65"
+  ],
+  "errors": [
+   {
+    "id": "beta-sigma-m",
+    "label": "Divided the covariance by σ_M instead of σ_M²",
+    "value": -0.09,
+    "check": "(0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)))/sqrt((0.25*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2))",
+    "explain": "The denominator is the variance 0.0180, not the standard deviation 0.1342."
+   },
+   {
+    "id": "cov-as-rho",
+    "label": "Computed the correlation instead of beta",
+    "value": -0.98,
+    "check": "(0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16)))/(sqrt((0.25*(-0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))**2+0.25*(0.0-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))**2+0.25*(0.06-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))**2+0.25*(0.18-(0.25*-0.06+0.25*0.0+0.25*0.06+0.25*0.18))**2))*sqrt((0.25*(0.2-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(0.08-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.04-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2+0.25*(-0.16-(0.25*0.2+0.25*0.08+0.25*-0.04+0.25*-0.16))**2)))",
+    "explain": "Dividing by σ_i σ_M gives ρ (here −0.98). Beta divides by σ_M²."
+   }
+  ],
+  "explanation": "A negative covariance with the market gives a negative beta: the stock does well when the market does badly (a rare, diversifying profile, like gold stocks in a scare).",
+  "source": "generated",
+  "ref": "S7 s18, L06 s51-52"
+ },
+ {
+  "id": "q13-069",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A regression of 60 monthly returns gives Cobalt Tech: R_stock = 0.3% + 1.32 × R_market. If the market returns +4.0% next month, what return does the regression predict for Cobalt Tech (% per month)?",
+  "answer": 5.58,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.3+1.32*4",
+  "steps": [
+   {
+    "label": "Systematic part: β × market return",
+    "value": 5.28,
+    "check": "1.32*4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Predicted return = α + β R_M",
+    "value": 5.58,
+    "check": "0.3+1.32*4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "The slope of the regression line is β = 1.32; the intercept is α = 0.3%",
+   "Predicted R = α + β R_M = 0.3% + 1.32 × 4.0% = 0.3% + 5.28% = 5.58%"
+  ],
+  "keystrokes": [
+   "1.32 × 4 = 5.28",
+   "+ 0.3 = 5.58"
+  ],
+  "errors": [
+   {
+    "id": "dropped-intercept",
+    "label": "Left out the intercept α",
+    "value": 5.28,
+    "check": "1.32*4",
+    "explain": "The regression line is α + β R_M; the stock's own average adds 0.3%."
+   },
+   {
+    "id": "inverted-beta",
+    "label": "Divided by beta instead of multiplying",
+    "value": 3.33,
+    "check": "0.3+4/1.32",
+    "explain": "Beta is the slope: the stock moves β units per unit of market move, so multiply."
+   }
+  ],
+  "explanation": "Beta is the slope of the regression of stock returns on market returns: each 1% market move predicts a 1.32% move in the stock, plus the intercept.",
+  "source": "generated",
+  "ref": "L06 s54, S7 s14"
+ },
+ {
+  "id": "q13-070",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Glacier Mining has σ = 36% and a correlation of 0.55 with the S&P/TSX Composite, whose σ is 22%. What is Glacier's beta?",
+  "options": [
+   "0.55",
+   "0.34",
+   "0.90",
+   "1.64"
+  ],
+  "answer": 2,
+  "explanation": "β = ρ σ_i/σ_M = 0.55 × 36/22 = 0.90. Reporting ρ as beta gives 0.55; inverting the σ ratio gives 0.34; dropping ρ gives 1.64.",
+  "source": "generated",
+  "ref": "L06 s53, S7 s14"
+ },
+ {
+  "id": "q13-071",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Willow Utilities has a covariance of 0.0192 with the market. Willow's σ is 24% and the market's σ is 16%. What is Willow's beta?",
+  "options": [
+   "0.75",
+   "0.12",
+   "0.50",
+   "1.33"
+  ],
+  "answer": 0,
+  "explanation": "β = cov/σ_M² = 0.0192/0.0256 = 0.75. Dividing by σ_M gives 0.12; dividing by σ_i σ_M gives the correlation, 0.50; inverting the ratio gives 1.33.",
+  "source": "generated",
+  "ref": "L06 s53, SM 13-32"
+ },
+ {
+  "id": "q13-072",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Gold-Rush Royalty has σ = 45% and a correlation of −0.60 with the market, whose σ is 18%. What is its beta?",
+  "options": [
+   "−0.60",
+   "−0.24",
+   "1.50",
+   "−1.50"
+  ],
+  "answer": 3,
+  "explanation": "β = ρ σ_i/σ_M = −0.60 × 45/18 = −1.50. Beta is not bounded by −1: it can be below −1 when the stock's σ exceeds the market's. Reporting ρ gives −0.60; inverting the σ ratio gives −0.24; dropping the sign gives 1.50.",
+  "source": "generated",
+  "ref": "L06 s53, S7 s18"
+ },
+ {
+  "id": "q13-073",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement about beta and the correlation coefficient ρ is correct?",
+  "options": [
+   "ρ is bounded by −1 and +1, but β is not, since β also depends on σ_i/σ_M",
+   "Both are bounded by −1 and +1, since both measure co-movement with the market",
+   "β measures the strength of the linear association; ρ measures sensitivity to the market",
+   "They are always equal whenever the benchmark is the market portfolio itself"
+  ],
+  "answer": 0,
+  "explanation": "Correlation only measures how tightly two return series move together. Beta rescales by σ_i/σ_M, so a stock twice as volatile as the market with ρ = 0.8 has β = 1.6.",
+  "source": "generated",
+  "ref": "L06 s53"
+ },
+ {
+  "id": "q13-074",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Stock A has σ = 38% and β = 0.6. Stock B has σ = 21% and β = 1.4. Which statement is correct?",
+  "options": [
+   "A has more systematic risk because its σ is higher",
+   "They have equal systematic risk because both trade on the same exchange",
+   "B has both more systematic risk and more total risk",
+   "B has more systematic risk; A has more total risk"
+  ],
+  "answer": 3,
+  "explanation": "Beta measures systematic risk and σ measures total risk. A's extra volatility must be unsystematic, which a diversified investor can remove.",
+  "source": "generated",
+  "ref": "L06 s50, s58, SM 13-28"
+ },
+ {
+  "id": "q13-075",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about beta is NOT correct?",
+  "options": [
+   "The beta of any asset must lie between −1 and +1",
+   "The beta of the market portfolio is 1",
+   "The beta of a Treasury bill is 0",
+   "Beta is the slope of the regression of a stock's returns on the market's returns"
+  ],
+  "answer": 0,
+  "explanation": "Only the correlation coefficient is bounded by ±1. Beta = ρ σ_i/σ_M can be 2.5 or −1.5 if the asset is much more volatile than the market.",
+  "source": "generated",
+  "ref": "L06 s51-54"
+ },
+ {
+  "id": "q13-076",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can different information providers publish different betas for the same stock?",
+  "options": [
+   "Beta reflects each investor's own risk aversion, which providers measure differently",
+   "Providers use different formulas, some dividing by σ_M and others by σ_M²",
+   "Beta is set by each company's management, not estimated from market returns",
+   "Each picks its own market index, estimation window, return frequency and adjustments"
+  ],
+  "answer": 3,
+  "explanation": "Beta is estimated by regression from past returns, so every choice in the regression changes the answer. The formula cov/σ_M² is the same for all; beta is a property of the stock, not of the investor.",
+  "source": "generated",
+  "ref": "REV p3, TB 13.6"
+ },
+ {
+  "id": "q13-077",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A fund has a beta of 1.4. If the market is expected to fall 10% in a sell-off, what does the beta imply (all else equal)?",
+  "options": [
+   "A fall of about 7%",
+   "A fall of about 14% from the systematic component",
+   "A fall of 10%, since all diversified funds move with the market",
+   "A rise of 14%, since β > 1 means outperformance"
+  ],
+  "answer": 1,
+  "explanation": "Beta is the sensitivity to the market: expected move ≈ β × market move = 1.4 × (−10%) = −14% (plus the fund's own α and noise).",
+  "source": "generated",
+  "ref": "L06 s51, s54"
+ },
+ {
+  "id": "q13-078",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Hollis Mining has a correlation of 0.95 with the market yet a beta of only 0.40. How is this possible?",
+  "options": [
+   "It is impossible, because a stock with a correlation that high must have a beta close to 0.95",
+   "It has a very large unsystematic component that lowers its beta well below its correlation",
+   "Its σ is only about 0.42 times the market's, so it follows the market closely but swings far less",
+   "It has a large negative alpha, which pulls its beta below its correlation"
+  ],
+  "answer": 2,
+  "explanation": "Solve 0.40 = 0.95 × σ_i/σ_M, so σ_i/σ_M = 0.42. High correlation says the stock follows the market; beta also scales for size. Alpha and unsystematic risk do not enter the formula.",
+  "source": "generated",
+  "ref": "L06 s53, S7 s14"
+ },
+ {
+  "id": "q13-079",
+  "concept": "c13-beta",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Beta can be written β_i = ρ_iM × σ_i / _____.",
+  "options": [
+   "σ_M²",
+   "σ_i",
+   "E[R_M] − R_F",
+   "σ_M"
+  ],
+  "answer": 3,
+  "explanation": "β = cov/σ_M² and cov = ρ σ_i σ_M, so β = ρ σ_i σ_M/σ_M² = ρ σ_i/σ_M. The denominator is σ_M (not squared) in the ρ version.",
+  "source": "generated",
+  "ref": "L06 s53"
+ },
+ {
+  "id": "q13-080",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The beta of a portfolio is:",
+  "options": [
+   "the weighted average of the asset betas, with β = 0 for the risk-free asset",
+   "the square root of the weighted sum of the squared asset betas",
+   "the beta of the largest holding, since it dominates the portfolio",
+   "the simple, equal-weighted average of the risky assets' betas"
+  ],
+  "answer": 0,
+  "explanation": "β_P = Σ w_i β_i with the same dollar weights used for the portfolio return, risk-free asset included at β_F = 0. An equal-weighted average ignores the actual weights.",
+  "source": "generated",
+  "ref": "L06 s52, S7 s19-20, TB 13.6"
+ },
+ {
+  "id": "q13-081",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "What beta should a Government of Canada T-bill be given when you compute the beta of a portfolio that holds it?",
+  "options": [
+   "1, because it is part of the market",
+   "−1, because it offsets stocks",
+   "Its yield, expressed as a decimal",
+   "0, because it has no systematic risk"
+  ],
+  "answer": 3,
+  "explanation": "The risk-free asset has β_F = 0, but its weight must still be included so that all weights sum to 1.",
+  "source": "generated",
+  "ref": "L06 s51-52, S7 s20"
+ },
+ {
+  "id": "q13-082",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lakeshore Family Office holds $12,000 in Nordic Utilities (β = 0.85), $20,000 in Harbour Bank (β = 1.15) and $8,000 in Aurora Aerospace (β = 1.55). What is the portfolio beta?",
+  "answer": 1.14,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(12000*0.85+20000*1.15+8000*1.55)/40000",
+  "steps": [
+   {
+    "label": "Weight in Nordic Utilities",
+    "value": 30.0,
+    "check": "12000/40000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in Harbour Bank",
+    "value": 50.0,
+    "check": "20000/40000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in Aurora Aerospace",
+    "value": 20.0,
+    "check": "8000/40000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio beta",
+    "value": 1.14,
+    "check": "(12000*0.85+20000*1.15+8000*1.55)/40000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Total = $40,000, so the weights are 0.30, 0.50 and 0.20",
+   "β_P = 0.30 × 0.85 + 0.50 × 1.15 + 0.20 × 1.55 = 0.255 + 0.575 + 0.310 = 1.14"
+  ],
+  "keystrokes": [
+   "12,000 ÷ 40,000 = 0.30; 20,000 ÷ 40,000 = 0.50; 8,000 ÷ 40,000 = 0.20",
+   "0.3 × 0.85 = 0.255; 0.5 × 1.15 = 0.575; 0.2 × 1.55 = 0.31; add → 1.14"
+  ],
+  "errors": [
+   {
+    "id": "equal-weights",
+    "label": "Took the simple average of the betas",
+    "value": 1.18,
+    "check": "(0.85+1.15+1.55)/3",
+    "explain": "The portfolio is not equally weighted: the bank holds half the money."
+   },
+   {
+    "id": "weights-swapped",
+    "label": "Paired the weights with the wrong stocks",
+    "value": 1.21,
+    "check": "0.2*0.85+0.5*1.15+0.3*1.55",
+    "explain": "Each beta must be multiplied by its own stock's weight."
+   }
+  ],
+  "explanation": "Portfolio beta is the dollar-weighted average of the stock betas: 1.14, more systematic risk than the market.",
+  "source": "generated",
+  "ref": "S7 s19-20, SM 13-13, TB 13.6"
+ },
+ {
+  "id": "q13-083",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Parkland Wealth holds $22,000 in Stock A (β = 1.30), $18,000 in Stock B (β = 0.70) and $10,000 in T-bills. What is the portfolio beta?",
+  "answer": 0.82,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(22000*1.30+18000*0.70+10000*0)/50000",
+  "steps": [
+   {
+    "label": "Weight in Stock A",
+    "value": 44.0,
+    "check": "22000/50000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in Stock B",
+    "value": 36.0,
+    "check": "18000/50000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in T-bills",
+    "value": 20.0,
+    "check": "10000/50000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio beta",
+    "value": 0.82,
+    "check": "(22000*1.30+18000*0.70+10000*0)/50000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Total = $50,000: weights 0.44, 0.36 and 0.20",
+   "β_P = 0.44 × 1.30 + 0.36 × 0.70 + 0.20 × 0 = 0.572 + 0.252 + 0 = 0.82"
+  ],
+  "keystrokes": [
+   "22,000 ÷ 50,000 = 0.44; 18,000 ÷ 50,000 = 0.36; 10,000 ÷ 50,000 = 0.20",
+   "0.44 × 1.3 = 0.572; 0.36 × 0.7 = 0.252; + 0 → 0.824 → 0.82"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Dropped the T-bills and re-weighted the stocks over $40,000",
+    "value": 1.03,
+    "check": "(22000*1.30+18000*0.70)/40000",
+    "explain": "T-bills have β = 0 but still take 20% of the weights; leaving them out overstates β_P."
+   },
+   {
+    "id": "rf-beta-one",
+    "label": "Gave the T-bills a beta of 1",
+    "value": 1.02,
+    "check": "0.44*1.30+0.36*0.70+0.20*1",
+    "explain": "The risk-free asset has no systematic risk: β_F = 0."
+   }
+  ],
+  "explanation": "The T-bills dilute the portfolio's beta: β_P = 0.82, a defensive portfolio.",
+  "source": "generated",
+  "ref": "L06 s52, SM 13-19"
+ },
+ {
+  "id": "q13-084",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Corvus Capital has $120,000 and wants a portfolio with a beta of 1.20. It already holds $30,000 in Stock X (β = 0.90) and $42,000 in Stock Y (β = 1.60). Stock Z has β = 1.25, and the rest of the money goes into a risk-free asset. How many dollars go into the risk-free asset?",
+  "answer": 8160.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 1
+  },
+  "check": "(1-0.25-0.35-(1.2-0.25*0.9-0.35*1.6)/1.25)*120000",
+  "steps": [
+   {
+    "label": "Weight in X",
+    "value": 25.0,
+    "check": "30000/120000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Weight in Y",
+    "value": 35.0,
+    "check": "42000/120000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Weight in Z from β_P = 1.20",
+    "value": 33.2,
+    "check": "(1.2-0.25*0.9-0.35*1.6)/1.25*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Weight in the risk-free asset",
+    "value": 6.8,
+    "check": "(1-0.25-0.35-(1.2-0.25*0.9-0.35*1.6)/1.25)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Dollars in the risk-free asset",
+    "value": 8160.0,
+    "check": "(1-0.25-0.35-(1.2-0.25*0.9-0.35*1.6)/1.25)*120000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1
+    }
+   }
+  ],
+  "solution": [
+   "w_X = 30,000/120,000 = 0.25 and w_Y = 42,000/120,000 = 0.35",
+   "1.20 = 0.25 × 0.90 + 0.35 × 1.60 + w_Z × 1.25 + w_F × 0, so w_Z = (1.20 − 0.225 − 0.560)/1.25 = 0.332",
+   "w_F = 1 − 0.25 − 0.35 − 0.332 = 0.068, which is 0.068 × $120,000 = $8,160 (and Z gets $39,840)"
+  ],
+  "keystrokes": [
+   "0.25 × 0.9 = 0.225; 0.35 × 1.6 = 0.56",
+   "(1.2 − 0.225 − 0.56) ÷ 1.25 = 0.332",
+   "1 − 0.25 − 0.35 − 0.332 = 0.068; × 120,000 = 8,160"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Set the risk-free weight to 1 − w_Z, ignoring X and Y",
+    "value": 80160.0,
+    "check": "(1-(1.2-0.25*0.9-0.35*1.6)/1.25)*120000",
+    "explain": "The risk-free weight is what remains after X, Y and Z: 1 − w_X − w_Y − w_Z."
+   },
+   {
+    "id": "wrong-target",
+    "label": "Solved for a beta of 1.00 instead of 1.20",
+    "value": 27360.0,
+    "check": "(1-0.25-0.35-(1-0.25*0.9-0.35*1.6)/1.25)*120000",
+    "explain": "The target is β_P = 1.20, not the market's 1.00."
+   }
+  ],
+  "explanation": "Set Σ w β equal to the target with β_F = 0, solve for the unknown weight, and let the risk-free asset take the rest: it absorbs $8,160.",
+  "source": "generated",
+  "ref": "S7 s19-20, SM 13-26"
+ },
+ {
+  "id": "q13-085",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A client of Ridgeline Advisors has $60,000 and wants a portfolio with a beta of 1.8. Ridgeline may use only one stock with β = 1.2 and a risk-free asset (equal lending and borrowing rates). What weight (%) goes into the risk-free asset? A negative answer means borrowing.",
+  "answer": -50.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-1.8/1.2)*100",
+  "steps": [
+   {
+    "label": "Weight in the stock: w_S = 1.8/1.2",
+    "value": 150.0,
+    "check": "1.8/1.2*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Weight in the risk-free asset",
+    "value": -50.0,
+    "check": "(1-1.8/1.2)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Dollars borrowed",
+    "value": 30000.0,
+    "check": "(1.8/1.2-1)*60000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1
+    }
+   },
+   {
+    "label": "Dollars invested in the stock",
+    "value": 90000.0,
+    "check": "1.8/1.2*60000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1
+    }
+   }
+  ],
+  "solution": [
+   "β_P = w_S × 1.2 + w_F × 0 = 1.8, so w_S = 1.8/1.2 = 1.50",
+   "w_F = 1 − 1.50 = −0.50, i.e. −50%",
+   "She borrows 0.5 × $60,000 = $30,000 and invests $90,000 in the stock"
+  ],
+  "keystrokes": [
+   "1.8 ÷ 1.2 = 1.5 (w_S)",
+   "1 − 1.5 = −0.5 → −50%"
+  ],
+  "errors": [
+   {
+    "id": "borrowing-sign",
+    "label": "Entered the borrowing as a positive weight",
+    "value": 50.0,
+    "check": "(1.8/1.2-1)*100",
+    "explain": "A weight on the risk-free asset is negative when you borrow."
+   },
+   {
+    "id": "inverted-weight",
+    "label": "Inverted the ratio: w_S = 1.2/1.8",
+    "value": 33.33,
+    "check": "(1-1.2/1.8)*100",
+    "explain": "A target beta above the stock's beta needs w_S > 1, so divide the target by the stock's beta."
+   },
+   {
+    "id": "rf-weight-from-target",
+    "label": "Subtracted the target beta from 1",
+    "value": -80.0,
+    "check": "(1-1.8)*100",
+    "explain": "The weights come from 1 − w_S, with w_S = target ÷ stock beta, not from the beta target itself."
+   }
+  ],
+  "explanation": "To reach a beta above any single stock's beta you must borrow at R_F: w_S = 1.5 and w_F = −0.5.",
+  "source": "generated",
+  "ref": "SM 13-19d, S7 s19-20"
+ },
+ {
+  "id": "q13-086",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Delta Ridge Fund can mix Stock S (E[R] = 11.5%, β = 1.25) with T-bills yielding 3.5%. It wants the mix to have an expected return of 9.0%. What is the beta of the mix?",
+  "answer": 0.86,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(9.0-3.5)/(11.5-3.5)*1.25",
+  "steps": [
+   {
+    "label": "Weight in S: (9.0 − 3.5)/(11.5 − 3.5)",
+    "value": 68.75,
+    "check": "(9.0-3.5)/(11.5-3.5)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in T-bills",
+    "value": 31.25,
+    "check": "(1-(9.0-3.5)/(11.5-3.5))*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio beta",
+    "value": 0.86,
+    "check": "(9.0-3.5)/(11.5-3.5)*1.25",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "9.0 = w_S × 11.5 + (1 − w_S) × 3.5, so w_S = (9.0 − 3.5)/(11.5 − 3.5) = 0.6875",
+   "β_P = 0.6875 × 1.25 + 0.3125 × 0 = 0.86"
+  ],
+  "keystrokes": [
+   "(9.0 − 3.5) ÷ (11.5 − 3.5) = 0.6875",
+   "0.6875 × 1.25 = 0.8594 → 0.86"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Solved for the weight as 9.0/11.5",
+    "value": 0.98,
+    "check": "9.0/11.5*1.25",
+    "explain": "Work with premiums: w_S = (9.0 − 3.5)/(11.5 − 3.5)."
+   },
+   {
+    "id": "weights-swapped",
+    "label": "Used the T-bill weight as the weight on S",
+    "value": 0.39,
+    "check": "(1-(9.0-3.5)/(11.5-3.5))*1.25",
+    "explain": "The weight on S is 0.6875; the T-bills get the remaining 0.3125."
+   }
+  ],
+  "explanation": "Return and beta are both linear in the weights, so the target return fixes w_S and then β_P = w_S β_S.",
+  "source": "generated",
+  "ref": "SM 13-19, S7 s19"
+ },
+ {
+  "id": "q13-087",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Yardley Fund holds four equal parts (25% each): T-bills, Stock Q (β = 1.10), Stock W (β = 0.70) and Stock X. The portfolio is exactly as risky as the market. What is Stock X's beta?",
+  "answer": 2.2,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1/0.25-1.10-0.70",
+  "steps": [
+   {
+    "label": "Sum of betas needed: β_P ÷ 0.25",
+    "value": 4.0,
+    "check": "1/0.25",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Beta of Stock X",
+    "value": 2.2,
+    "check": "1/0.25-1.10-0.70",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "β_P = 1.00 = 0.25 × (0 + 1.10 + 0.70 + β_X)",
+   "0 + 1.10 + 0.70 + β_X = 4.00, so β_X = 4.00 − 1.80 = 2.20"
+  ],
+  "keystrokes": [
+   "1 ÷ 0.25 = 4",
+   "4 − 1.10 − 0.70 = 2.20"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Treated it as three equal parts, ignoring the T-bills' share",
+    "value": 1.2,
+    "check": "3-1.10-0.70",
+    "explain": "The T-bills occupy 25% of the weights with β = 0; it is a four-asset portfolio."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Ignored the 25% weights altogether",
+    "value": -0.8,
+    "check": "1-1.10-0.70",
+    "explain": "Each beta is multiplied by its 0.25 weight before the sum equals 1.00."
+   }
+  ],
+  "explanation": "As risky as the market means β_P = 1. The T-bills contribute zero beta but take a quarter of the weights, so X needs a high beta.",
+  "source": "generated",
+  "ref": "SM 13-14, S7 s19-20"
+ },
+ {
+  "id": "q13-088",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Qualico Trust holds 40% in Stock A (β = 1.10), 35% in Stock B (β = 0.60) and 25% in T-bills. What is its portfolio beta?",
+  "options": [
+   "0.87",
+   "0.57",
+   "0.65",
+   "0.90"
+  ],
+  "answer": 2,
+  "explanation": "β_P = 0.40 × 1.10 + 0.35 × 0.60 + 0.25 × 0 = 0.44 + 0.21 = 0.65. Re-weighting over the stocks alone (forgetting the T-bill weight) gives 0.87; an equal-weight average gives 0.57; giving the T-bills a beta of 1 gives 0.90.",
+  "source": "generated",
+  "ref": "S7 s19-20, TB 13.6"
+ },
+ {
+  "id": "q13-089",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Orchard Capital has $75,000 of its own money, borrows $25,000 at the risk-free rate and invests the full $100,000 in stocks whose average beta is 1.20. What is the portfolio beta?",
+  "options": [
+   "1.60",
+   "1.20",
+   "0.90",
+   "1.50"
+  ],
+  "answer": 0,
+  "explanation": "Weights are measured on its own $75,000: w_stocks = 100/75 = 1.333 and w_F = −0.333, so β_P = 1.333 × 1.20 + (−0.333) × 0 = 1.60. Ignoring the leverage gives 1.20; using own money over total invested gives 0.90; adding the loan as 25% extra gives 1.50.",
+  "source": "generated",
+  "ref": "SM 13-19d, S7 s19-20"
+ },
+ {
+  "id": "q13-090",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Brightwater Capital has a stock portfolio with β = 1.20. To cut its overall beta to 0.90 without changing the mix of its stocks, it moves part of the money into T-bills. What percentage of the portfolio goes into T-bills?",
+  "options": [
+   "33.33%",
+   "25.00%",
+   "30.00%",
+   "75.00%"
+  ],
+  "answer": 1,
+  "explanation": "β_P = w_S × 1.20 = 0.90, so w_S = 0.75 and the T-bills take 1 − 0.75 = 25.00%. Dividing the beta gap by the new beta gives 33.33%; using the raw beta gap gives 30.00%; reporting the stock weight kept gives 75.00%.",
+  "source": "generated",
+  "ref": "S7 s19-20, SM 13-19b"
+ },
+ {
+  "id": "q13-091",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts portfolio beta with portfolio σ?",
+  "options": [
+   "Both are simple weighted averages, so neither depends on correlations between assets",
+   "Portfolio beta is a weighted average of the betas; portfolio σ also depends on correlations",
+   "Portfolio σ is a simple weighted average, but portfolio beta needs correlations",
+   "Neither depends on the portfolio weights, only on the assets' own risks"
+  ],
+  "answer": 1,
+  "explanation": "β_P = Σ w β is linear, like E[R_P]. σ_P is non-linear: the two-asset formula includes 2ρ w_A σ_A w_B σ_B, so diversification can push σ_P below the weighted average of the σ's.",
+  "source": "generated",
+  "ref": "L06 s24, S7 s19"
+ },
+ {
+  "id": "q13-092",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "To compute the beta of a portfolio of three stocks and a T-bill position, you do NOT need:",
+  "options": [
+   "the correlations between the three stocks",
+   "each stock's beta",
+   "the portfolio weights, including the T-bill's",
+   "the fact that the T-bill has β = 0"
+  ],
+  "answer": 0,
+  "explanation": "Beta is linear in the weights, so each asset's beta and weight is enough. Correlations among the holdings matter only for σ_P.",
+  "source": "generated",
+  "ref": "S7 s19-20"
+ },
+ {
+  "id": "q13-093",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why can a portfolio's beta be found as a weighted average of the betas, while its σ cannot?",
+  "options": [
+   "Betas are always between 0 and 1, so they average neatly into a portfolio value",
+   "Beta ignores the risk-free asset, whereas σ_P includes it in the calculation",
+   "Beta is a covariance with the market and so linear in the weights; σ_P has cross terms",
+   "Beta is a pure number, while σ is measured in percent, so only beta can be averaged"
+  ],
+  "answer": 2,
+  "explanation": "cov(R_P, R_M) = Σ w_i cov(R_i, R_M), so β_P = Σ w_i β_i. The portfolio variance has cross terms between every pair of assets, which is why σ_P is not a weighted average.",
+  "source": "generated",
+  "ref": "L06 s24, s53"
+ },
+ {
+  "id": "q13-094",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Orchard's stocks have an average beta of 1.00, but it holds 130% in stocks and −30% in the risk-free asset (borrowed). How should its portfolio beta be interpreted?",
+  "options": [
+   "β_P = 1.00, because the borrowed money has β = 0 and changes nothing",
+   "β_P = 0.70, because borrowing 30% offsets 30% of the market risk",
+   "β_P cannot be computed because a negative weight has no beta",
+   "β_P = 1.30: borrowing makes the portfolio more aggressive than the market"
+  ],
+  "answer": 3,
+  "explanation": "β_P = 1.30 × 1.00 + (−0.30) × 0 = 1.30. The loan itself has β = 0, but it allows 130% of own capital in stocks, which scales the systematic risk up.",
+  "source": "generated",
+  "ref": "SM 13-19d, TB 13.7"
+ },
+ {
+  "id": "q13-095",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A portfolio of risky stocks held with positive weights (no risk-free asset, no borrowing) can have a beta lower than the lowest beta among its stocks.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. The portfolio beta is a weighted average of the stock betas, so it lies between the smallest and largest. Only by adding the risk-free asset (β = 0) or short positions could it go below.",
+  "source": "generated",
+  "ref": "SM 13 CTQ 7"
+ },
+ {
+  "id": "q13-096",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "In β_P = Σ w_i β_i, the risk-free asset enters with a beta of _____.",
+  "options": [
+   "0",
+   "1",
+   "−1",
+   "its yield R_F"
+  ],
+  "answer": 0,
+  "explanation": "The risk-free asset has no systematic risk, so β_F = 0. Its weight still counts in Σ w = 1.",
+  "source": "generated",
+  "ref": "L06 s52, S7 s20"
+ },
+ {
+  "id": "q13-097",
+  "concept": "c13-portfolio-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which sequence correctly builds a portfolio with a target beta from some known holdings, one unknown stock and the risk-free asset?",
+  "options": [
+   "Set w_F = 0 → solve for the unknown stock's weight → convert to dollars → check that Σ w β equals the target",
+   "Dollars to weights → Σ w β = target with β_F = 0 → solve for the unknown weight → w_F = 1 − the rest → back to dollars",
+   "Dollars to weights → set w_F = 1 − the unknown weight → solve for the unknown stock's beta → back to dollars",
+   "Solve for w_F first from E[R_P] → set β_F = 1 → average all the betas → convert weights to dollars"
+  ],
+  "answer": 1,
+  "explanation": "The unknown stock's weight comes from the beta equation, and only then does the risk-free asset take the remainder (possibly negative). Fixing w_F first or giving it β = 1 breaks the logic.",
+  "source": "generated",
+  "ref": "S7 s19-20"
+ }
+]

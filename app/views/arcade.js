@@ -50,7 +50,7 @@ function blitz(app) {
   host.appendChild(scoreEl);
   const runner = createRunner(app, {
     title: 'Blitz', subtitle: 'Fast. Short. Three lives.', mode: 'blitz', scene: 'chariot', chapters, feedback: 'immediate', hearts: 3, timer: 90, pursuit: false,
-    pickOpts: { difficultyMax: 2, shortOnly: true, excludeMastered: false }, showLearnOnWrong: false,
+    pickOpts: { difficultyMax: 2, shortOnly: true, excludeMastered: false, typesOnly: new Set(['mc', 'tf', 'fill']) }, showLearnOnWrong: false,
     onAnswer: ({ correct }) => {
       if (correct) { combo++; const mult = 1 + Math.floor(combo / 3) * 0.5; score += Math.round(100 * mult); scoreEl.children[1].textContent = String(score); scoreEl.children[2].textContent = `multiplier ×${mult.toFixed(1)}`; }
       else { combo = 0; scoreEl.children[2].textContent = 'multiplier ×1.0'; }
@@ -94,7 +94,7 @@ function duel(app) {
   host.appendChild(favourEl);
   const runner = createRunner(app, {
     title: 'Confusables Duel', subtitle: '15 rounds · 20 s each · 3 lives', mode: 'duel', scene: 'colosseum', chapters, feedback: 'immediate', hearts: 3, limit: 15, perQuestionTimer: 20, pursuit: true,
-    pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false },
+    pickOpts: { anglesOnly: new Set(['contrast', 'not']), excludeMastered: false, typesOnly: new Set(['mc', 'tf', 'fill']) },
     onAnswer: ({ correct }) => { const dt = Date.now() - lastT; lastT = Date.now(); favour = Math.max(0, Math.min(20, favour + (correct ? (dt < 8000 ? 2 : 1) : -2))); favourEl.querySelector('.favour-fill').style.width = (favour / 20 * 100) + '%'; favourEl.querySelector('.favour-txt').textContent = favour >= 14 ? 'The crowd roars' : favour >= 8 ? 'The crowd is with you' : 'The crowd murmurs'; if (correct && dt < 8000) app.sound('cries'); },
     onFinish: (sum, reason) => {
       const up = favour >= 10; setTimeout(() => app.sound('thumbs', { up }), 400);

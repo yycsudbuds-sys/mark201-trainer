@@ -1,0 +1,924 @@
+[
+ {
+  "id": "q09-001",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You are considering investing in a project which is expected to provide $215,000 net income per year for each of the next eight years, in return for an up-front investment of $1.2 million. You expect the residual value will be $0.96 million at the end. Your discount rate is 12% per annum. There is no tax. Determine each of the following and state the decision that arises from each figure: (a) accounting rate of return; (b) NPV. Enter part (a), the accounting rate of return, in % per annum.",
+  "answer": 19.91,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "215000/((1200000+960000)/2)*100",
+  "steps": [
+   {
+    "label": "Average annual profit after tax",
+    "value": 215000.0,
+    "check": "215000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Average investment (I0 + residual)/2",
+    "value": 1080000.0,
+    "check": "(1200000+960000)/2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "ARR (ROC)",
+    "value": 19.91,
+    "check": "215000/((1200000+960000)/2)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Average annual profit after tax = $215,000 (there is no tax, so net income is the profit after tax).",
+   "Average investment = (I0 + book value at the end)/2 = ($1,200,000 + $960,000)/2 = $1,080,000.",
+   "ARR = ROC = $215,000 / $1,080,000 = 0.19907 = 19.91% per annum.",
+   "Decision: ARR gives only a relative signal. Accept if 19.91% beats the firm's target or the ROC of its other projects. It is a ratio of accounting figures, so it must not be compared with the 12% discount rate. The accept/reject call for this project comes from the NPV in part (b)."
+  ],
+  "keystrokes": [
+   "1,200,000 + 960,000 = 2,160,000",
+   "2,160,000 ÷ 2 = 1,080,000",
+   "215,000 ÷ 1,080,000 = 0.19907, i.e. 19.91%"
+  ],
+  "errors": [
+   {
+    "id": "arr-divide-i0",
+    "label": "Divided by the up-front investment",
+    "value": 17.92,
+    "check": "215000/1200000*100",
+    "explain": "ARR divides by the AVERAGE investment (I0 + residual)/2, not by I0 alone."
+   },
+   {
+    "id": "arr-residual-only",
+    "label": "Divided by the residual value",
+    "value": 22.4,
+    "check": "215000/960000*100",
+    "explain": "The residual is only the closing book value; the average investment is the mean of the opening and closing book values."
+   },
+   {
+    "id": "arr-sum-not-half",
+    "label": "Forgot to halve the sum",
+    "value": 9.95,
+    "check": "215000/(1200000+960000)*100",
+    "explain": "(I0 + residual) is the sum of two book values; divide it by 2 to get the average."
+   }
+  ],
+  "explanation": "ARR = average annual profit after tax / average investment, with average investment = (I0 + residual book value)/2 = $1,080,000 here. The tempting I0 denominator ignores that the asset is written down over the project.",
+  "source": "official",
+  "ref": "PRAC q10a"
+ },
+ {
+  "id": "q09-002",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Ridge Dairy will install a $840,000 pasteurizing line, depreciated straight-line to zero over five years. Expected profits after tax are $94,000, $131,000, $157,000, $142,000 and $104,000 in years 1 to 5. What is the project's accounting rate of return (ROC) in % per annum?",
+  "answer": 29.9,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "((94000+131000+157000+142000+104000)/5)/((840000+0)/2)*100",
+  "steps": [
+   {
+    "label": "Average annual profit after tax",
+    "value": 125600.0,
+    "check": "(94000+131000+157000+142000+104000)/5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Average investment (I0 + 0)/2",
+    "value": 420000.0,
+    "check": "(840000+0)/2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "ARR (ROC)",
+    "value": 29.9,
+    "check": "((94000+131000+157000+142000+104000)/5)/((840000+0)/2)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Average profit = (94,000 + 131,000 + 157,000 + 142,000 + 104,000)/5 = 628,000/5 = $125,600.",
+   "The line is written down to zero, so average investment = (840,000 + 0)/2 = $420,000.",
+   "ARR = 125,600 / 420,000 = 0.29905 = 29.90% per annum."
+  ],
+  "keystrokes": [
+   "94,000 + 131,000 + 157,000 + 142,000 + 104,000 = 628,000",
+   "628,000 ÷ 5 = 125,600",
+   "840,000 ÷ 2 = 420,000",
+   "125,600 ÷ 420,000 = 0.29905 -> 29.90%"
+  ],
+  "errors": [
+   {
+    "id": "arr-divide-i0",
+    "label": "Divided by the full $840,000",
+    "value": 14.95,
+    "check": "125600/840000*100",
+    "explain": "With straight-line depreciation to zero the average book value is half the cost, $420,000."
+   },
+   {
+    "id": "arr-total-profit",
+    "label": "Used total profit instead of average profit",
+    "value": 149.52,
+    "check": "628000/420000*100",
+    "explain": "ARR uses the AVERAGE annual profit; the five-year total overstates the rate fivefold."
+   }
+  ],
+  "explanation": "ARR averages the profit over the life and divides by the average book value. Straight-line depreciation to zero makes the average investment half of the cost.",
+  "source": "generated",
+  "ref": "SM 9-6"
+ },
+ {
+  "id": "q09-003",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Similkameen Winery buys a $600,000 bottling line with a residual book value of $120,000 after six years (straight-line depreciation). It adds $150,000 a year to earnings before depreciation and tax. The tax rate is 30%. Find the ARR (ROC) in % per annum.",
+  "answer": 13.61,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "((150000-(600000-120000)/6)*(1-0.30))/((600000+120000)/2)*100",
+  "steps": [
+   {
+    "label": "Annual depreciation",
+    "value": 80000.0,
+    "check": "(600000-120000)/6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Annual profit after tax",
+    "value": 49000.0,
+    "check": "(150000-(600000-120000)/6)*(1-0.30)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Average investment (I0 + residual)/2",
+    "value": 360000.0,
+    "check": "(600000+120000)/2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "ARR (ROC)",
+    "value": 13.61,
+    "check": "((150000-(600000-120000)/6)*(1-0.30))/((600000+120000)/2)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Depreciation = (600,000 - 120,000)/6 = $80,000 a year.",
+   "Profit after tax = (150,000 - 80,000)(1 - 0.30) = $49,000. (ARR uses profit, not cash flow.)",
+   "Average investment = (600,000 + 120,000)/2 = $360,000.",
+   "ARR = 49,000/360,000 = 0.13611 = 13.61% per annum."
+  ],
+  "keystrokes": [
+   "(600,000 − 120,000) ÷ 6 = 80,000",
+   "(150,000 − 80,000) × 0.70 = 49,000",
+   "(600,000 + 120,000) ÷ 2 = 360,000",
+   "49,000 ÷ 360,000 = 0.13611 -> 13.61%"
+  ],
+  "errors": [
+   {
+    "id": "arr-cash-not-profit",
+    "label": "Used after-tax cash flow instead of profit",
+    "value": 35.83,
+    "check": "(49000+80000)/360000*100",
+    "explain": "Cash flow (profit + depreciation = $129,000) is not accounting profit; ARR uses profit after tax."
+   },
+   {
+    "id": "arr-divide-i0",
+    "label": "Divided by the original $600,000",
+    "value": 8.17,
+    "check": "49000/600000*100",
+    "explain": "The denominator is the average investment, $360,000."
+   },
+   {
+    "id": "arr-pretax",
+    "label": "Used profit before tax",
+    "value": 19.44,
+    "check": "70000/360000*100",
+    "explain": "The rule uses profit AFTER tax: $70,000 x (1 - 0.30) = $49,000."
+   }
+  ],
+  "explanation": "Build profit after tax first (EBIT x (1 - T)), then divide by the average of the opening and residual book values.",
+  "source": "generated",
+  "ref": "SM 9-6"
+ },
+ {
+  "id": "q09-004",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Orchards expects a new packing line to add $64,000 of profit after tax each year for five years. The line costs $500,000 and will have a book value of $100,000 at the end of year 5. What is its ARR (ROC)?",
+  "options": [
+   "21.33%",
+   "12.80%",
+   "32.00%",
+   "16.00%"
+  ],
+  "answer": 0,
+  "explanation": "Average investment = (500,000 + 100,000)/2 = $300,000, so ARR = 64,000/300,000 = 21.33%. 12.80% divides by I0 alone; 32.00% uses (I0 - residual)/2 = $200,000, which is half the depreciable amount, not the average book value; 16.00% divides by the depreciable amount $400,000.",
+  "source": "generated",
+  "ref": "SM 9-6"
+ },
+ {
+  "id": "q09-005",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $800,000 sorting system at Fraser Valley Packaging is depreciated straight-line to zero over four years. Each year revenue is $520,000, cash costs are $300,000 and the tax rate is 25%. What is the ARR (ROC)?",
+  "options": [
+   "53.75%",
+   "3.75%",
+   "26.88%",
+   "1.88%"
+  ],
+  "answer": 1,
+  "explanation": "Profit after tax = (520,000 - 300,000 - 200,000)(0.75) = $15,000. Average investment = $400,000. ARR = 15,000/400,000 = 3.75%. 53.75% divides cash flow ($215,000) instead of profit; 26.88% divides cash flow by I0; 1.88% divides profit by I0.",
+  "source": "generated",
+  "ref": "L05A s7"
+ },
+ {
+  "id": "q09-006",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The accounting rate of return on capital (ROC) of a project is:",
+  "options": [
+   "expected average annual cash flow divided by the initial investment",
+   "the discount rate at which the NPV of the project is zero",
+   "the final-year profit divided by the cost of the asset",
+   "expected average annual profit after tax divided by average investment"
+  ],
+  "answer": 3,
+  "explanation": "ROC = average annual profit after tax / average investment (capitalization). It uses accounting profit and book values, not cash flows, and is not a discount rate.",
+  "source": "generated",
+  "ref": "L05A s6"
+ },
+ {
+  "id": "q09-007",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The board of Banff Springs Spa compares a proposed sauna wing with its other spa projects by dividing the wing's expected average annual profit after tax by the average of its cost and its book value at the end of the project. Which decision rule is the board using?",
+  "options": [
+   "Internal rate of return",
+   "Profitability index",
+   "Accounting rate of return (ROC)",
+   "Payback period"
+  ],
+  "answer": 2,
+  "explanation": "Average profit after tax over the average of the opening and closing book values is the ROC form of the ARR. No cash flows are discounted, so it is not IRR or PI, and nothing is measured in years, so it is not payback.",
+  "source": "generated",
+  "ref": "L05A s6-8"
+ },
+ {
+  "id": "q09-008",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the ARR differ from the IRR?",
+  "options": [
+   "ARR discounts the cash flows at the required return; IRR leaves them undiscounted and uses book values",
+   "ARR divides average accounting profit by average book value; IRR is the discount rate that makes the NPV zero",
+   "ARR is built from cash flows and the time value of money; IRR is built from accounting profit",
+   "ARR gives an absolute accept/reject decision against R; IRR gives only a relative comparison with other projects"
+  ],
+  "answer": 1,
+  "explanation": "ARR = accounting profit / book value with no time value of money. IRR is built from cash flows and the time value of money and is compared with the required return R. The reverse statements swap the two rules.",
+  "source": "generated",
+  "ref": "L05A s6-9, s20"
+ },
+ {
+  "id": "q09-009",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "All of the following are bad points of the accounting rate of return EXCEPT:",
+  "options": [
+   "it uses accounting figures rather than cash flows",
+   "it ignores the time value of money",
+   "it is quick and easy to calculate",
+   "it uses single-year averages of a multi-year project"
+  ],
+  "answer": 2,
+  "explanation": "Quick and easy calculation is the one good point of ARR. The bad points are accounting-based inputs (possibly including accruals), no time value of money, averaging, and no mechanism for an absolute decision.",
+  "source": "generated",
+  "ref": "L05A s9"
+ },
+ {
+  "id": "q09-010",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the ARR provide no mechanism for an absolute accept/reject decision on a single project?",
+  "options": [
+   "it is expressed in dollars rather than as a rate, so it cannot be compared with R",
+   "it always equals the IRR for conventional cash flows, so it adds nothing to the IRR rule",
+   "it can only be calculated for projects with several IRRs, which makes any decision ambiguous",
+   "it is an accounting ratio with no market benchmark, so it can only be judged against other projects or a target"
+  ],
+  "answer": 3,
+  "explanation": "ARR is not a rate of return in the economic sense: book profit over book value ignores timing. Without a market benchmark such as R, the rule can only rank a project against the ROC of the firm's other projects (a relative comparison).",
+  "source": "generated",
+  "ref": "L05A s8-9"
+ },
+ {
+  "id": "q09-011",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's ROC is 19.9% and the firm's required return is 12%. An analyst says: \"19.9% beats 12%, so accept.\" What is the best response?",
+  "options": [
+   "ARR is an accounting ratio, so it cannot be tested against R; use NPV to decide whether to accept",
+   "Correct: any rate of return above the required return means a positive NPV",
+   "Correct, because ARR is calculated from the same discounted cash flows as the IRR",
+   "Incorrect: the project must be rejected because ARR ignores the residual value of the asset"
+  ],
+  "answer": 0,
+  "explanation": "ARR is built from book profit and book values, with no discounting, so a number above R proves nothing about NPV. Compare ARR with other projects' ROC and make the accept decision with NPV.",
+  "source": "generated",
+  "ref": "L05A s8-9"
+ },
+ {
+  "id": "q09-012",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In the ROC version of the ARR, \"average investment\" is:",
+  "options": [
+   "the initial investment alone",
+   "the initial investment minus the residual value",
+   "the total of all annual profits divided by the number of years",
+   "(initial investment + book value at the end of the project)/2"
+  ],
+  "answer": 3,
+  "explanation": "Average investment = (I0 + closing book value)/2: the mean of the opening and closing book values. With depreciation to zero it equals I0/2.",
+  "source": "generated",
+  "ref": "L05A s7"
+ },
+ {
+  "id": "q09-013",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "ROC, ROE and ROA are all accounting rates of return that differ only in the denominator: average capitalization, average book equity and average assets respectively.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "All three divide expected average annual profit after tax by an average book figure. ROC (average investment or capitalization) is the most common because it links to the capital put into the project.",
+  "source": "generated",
+  "ref": "L05A s6"
+ },
+ {
+  "id": "q09-014",
+  "concept": "c09-arr",
+  "also": [],
+  "type": "fill",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The most common ARR is the _____ because it links with the idea of investing capital into the project.",
+  "options": [
+   "ROE",
+   "ROA",
+   "ROC",
+   "EPS"
+  ],
+  "answer": 2,
+  "explanation": "ROC (return on capital) divides average profit after tax by average investment or capitalization; it is the version that mirrors the capital committed to the project.",
+  "source": "generated",
+  "ref": "L05A s8"
+ },
+ {
+  "id": "q09-015",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Westlock Foods will spend $135,000 on a new cold-storage unit. The unit is expected to produce cash flows of $25,000, $40,000, $45,000, $60,000 and $70,000 in years 1 to 5. What is the payback period in years?",
+  "answer": 3.42,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3+(135000-(25000+40000+45000))/60000",
+  "steps": [
+   {
+    "label": "Cumulative cash flow after year 3",
+    "value": 110000.0,
+    "check": "25000+40000+45000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Still to recover at the end of year 3",
+    "value": 25000.0,
+    "check": "135000-(25000+40000+45000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Payback period",
+    "value": 3.42,
+    "check": "3+(135000-(25000+40000+45000))/60000",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Cumulative flows: year 1 = 25,000; year 2 = 65,000; year 3 = 110,000; year 4 = 170,000.",
+   "The $135,000 is recovered during year 4. Still to recover after year 3 = 135,000 - 110,000 = $25,000.",
+   "Fraction of year 4 needed = 25,000/60,000 (year 4's cash flow) = 0.4167.",
+   "Payback = 3 + 0.4167 = 3.42 years."
+  ],
+  "keystrokes": [
+   "25,000 + 40,000 + 45,000 = 110,000",
+   "135,000 − 110,000 = 25,000",
+   "25,000 ÷ 60,000 = 0.4167",
+   "3 + 0.4167 = 3.42 years"
+  ],
+  "errors": [
+   {
+    "id": "payback-after-recovery",
+    "label": "Counted the whole recovery year",
+    "value": 4.0,
+    "check": "4",
+    "explain": "Payback is the year before recovery plus the fraction of the recovery year actually needed, not the end of the recovery year."
+   },
+   {
+    "id": "payback-wrong-flow",
+    "label": "Divided by the previous year's flow",
+    "value": 3.56,
+    "check": "3+25000/45000",
+    "explain": "The fraction is remaining ÷ the cash flow of the year in which recovery happens (year 4: $60,000)."
+   },
+   {
+    "id": "payback-avg-flow",
+    "label": "Cost divided by the average annual flow",
+    "value": 2.81,
+    "check": "135000/((25000+40000+45000+60000+70000)/5)",
+    "explain": "Cost ÷ average flow is the annuity shortcut; it only works when the flows are equal."
+   }
+  ],
+  "explanation": "Payback = whole years before recovery + (unrecovered amount ÷ next year's cash flow).",
+  "source": "generated",
+  "ref": "L05A s10-11"
+ },
+ {
+  "id": "q09-016",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Medicine Hat Machining is considering a $192,000 laser cutter that will return $71,500, $83,200 and $98,700 in years 1 to 3. The firm accepts projects that pay back within three years. Find the payback period in years (the project is then accepted or rejected against the cutoff).",
+  "answer": 2.38,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2+(192000-(71500+83200))/98700",
+  "steps": [
+   {
+    "label": "Cumulative cash flow after year 2",
+    "value": 154700.0,
+    "check": "71500+83200",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Payback period",
+    "value": 2.38,
+    "check": "2+(192000-(71500+83200))/98700",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "After year 2 the firm has recovered 71,500 + 83,200 = $154,700.",
+   "Still to recover = 192,000 - 154,700 = $37,300, which comes in year 3.",
+   "Payback = 2 + 37,300/98,700 = 2 + 0.378 = 2.38 years.",
+   "2.38 years < 3-year cutoff, so the rule says accept."
+  ],
+  "keystrokes": [
+   "71,500 + 83,200 = 154,700",
+   "192,000 − 154,700 = 37,300",
+   "37,300 ÷ 98,700 = 0.378",
+   "2 + 0.378 = 2.38 years"
+  ],
+  "errors": [
+   {
+    "id": "payback-after-recovery",
+    "label": "Counted the whole recovery year",
+    "value": 3.0,
+    "check": "3",
+    "explain": "Year 3 is only partly needed; use the fraction 37,300/98,700."
+   },
+   {
+    "id": "payback-wrong-flow",
+    "label": "Divided by the previous year's flow",
+    "value": 2.45,
+    "check": "2+37300/83200",
+    "explain": "Use the cash flow of the recovery year (year 3), not year 2."
+   },
+   {
+    "id": "payback-fraction-only",
+    "label": "Gave only the fraction of the year",
+    "value": 0.38,
+    "check": "37300/98700",
+    "explain": "Payback includes the whole years already elapsed: 2 + 0.378."
+   }
+  ],
+  "explanation": "Whole years until the cumulative flow is just short of the cost, plus remaining ÷ the next year's flow. Compare with the cutoff.",
+  "source": "generated",
+  "ref": "S5 s5-6"
+ },
+ {
+  "id": "q09-017",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A $1,370,000 water-treatment upgrade at Red Deer Utilities is expected to save $285,000 in cash every year for 8 years. What is the payback period in years?",
+  "answer": 4.81,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1370000/285000",
+  "steps": [
+   {
+    "label": "Payback = cost / annual flow",
+    "value": 4.81,
+    "check": "1370000/285000",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "The flows are an annuity, so payback = initial cost / annual cash flow.",
+   "Payback = 1,370,000 / 285,000 = 4.81 years (< 8-year life, so the project does pay back)."
+  ],
+  "keystrokes": [
+   "1,370,000 ÷ 285,000 = 4.807 -> 4.81 years"
+  ],
+  "errors": [
+   {
+    "id": "payback-after-recovery",
+    "label": "Rounded up to the whole year",
+    "value": 5.0,
+    "check": "5",
+    "explain": "Payback includes the fraction of the recovery year: 4.81, not 5."
+   },
+   {
+    "id": "payback-inverted",
+    "label": "Inverted the ratio",
+    "value": 0.21,
+    "check": "285000/1370000",
+    "explain": "Payback is cost divided by the annual flow (years), not the flow divided by the cost (that is a yield)."
+   }
+  ],
+  "explanation": "For level annual flows, payback = cost ÷ annual flow. Check that the result is less than the project's life.",
+  "source": "generated",
+  "ref": "SM 9-2"
+ },
+ {
+  "id": "q09-018",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Yellowhead Plastics pays $64,000 for a moulding press that returns $14,500, $18,200, $21,300, $24,900 and $26,000 in years 1 to 5. What is the payback period?",
+  "options": [
+   "4.00 years",
+   "3.40 years",
+   "3.47 years",
+   "0.40 years"
+  ],
+  "answer": 1,
+  "explanation": "Cumulative flows: 14,500; 32,700; 54,000; 78,900. After year 3, 64,000 - 54,000 = 10,000 remains, recovered in year 4: 10,000/24,900 = 0.40, so payback = 3.40 years. 4.00 counts the entire recovery year; 3.47 divides by the previous year's flow ($21,300); 0.40 forgets the three whole years.",
+  "source": "generated",
+  "ref": "SM 9-1"
+ },
+ {
+  "id": "q09-019",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A $48,000 irrigation system at Taber Growers will return $6,000 at the end of each year for 7 years and then be worthless. What is its payback period?",
+  "options": [
+   "The project never pays back",
+   "8.00 years",
+   "7.00 years",
+   "0.88 years"
+  ],
+  "answer": 0,
+  "explanation": "Seven flows of $6,000 total $42,000, which is less than the $48,000 cost, so the investment is never recovered. 48,000/6,000 = 8.00 is the annuity shortcut applied beyond the 7-year life, where it does not make sense; 7.00 is simply the life; 0.88 divides the total inflows by the cost (an inverted ratio).",
+  "source": "generated",
+  "ref": "SM 9-2"
+ },
+ {
+  "id": "q09-020",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Wetaskiwin Dairy sets a 3-year payback cutoff. Project A costs $60,000 and returns $23,000, $28,000 and $21,000 in years 1 to 3. Project B costs $66,000 and returns $15,000, $18,000, $26,000 and $30,000 in years 1 to 4. Which statement is correct?",
+  "options": [
+   "A pays back in 3.00 years and is accepted; B pays back in 4.00 years and is rejected",
+   "A pays back in 2.43 years and is accepted; B pays back in 3.23 years and is rejected",
+   "A pays back in 2.32 years and is accepted; B pays back in 3.27 years and is rejected",
+   "A pays back in 0.43 years and is accepted; B pays back in 0.23 years and is accepted"
+  ],
+  "answer": 1,
+  "explanation": "A: after 2 years 51,000 is recovered, 9,000 remains, and year 3 brings 21,000: 2 + 9,000/21,000 = 2.43 < 3, accept. B: after 3 years 59,000 is recovered, 7,000 remains, and year 4 brings 30,000: 3 + 7,000/30,000 = 3.23 > 3, reject. The other options count whole recovery years, divide by the previous year's flow, or report only the fraction.",
+  "source": "generated",
+  "ref": "SM 9-3"
+ },
+ {
+  "id": "q09-021",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The payback period of a project is:",
+  "options": [
+   "the length of time until the sum of its undiscounted cash flows equals the initial investment",
+   "the length of time until the sum of its discounted cash flows equals the initial investment",
+   "the number of years the project is expected to last",
+   "the discount rate that makes the NPV of the project zero"
+  ],
+  "answer": 0,
+  "explanation": "Payback adds raw cash flows year by year until the initial outlay is recovered (part years allowed). Adding discounted flows would be the discounted payback.",
+  "source": "generated",
+  "ref": "L05A s10"
+ },
+ {
+  "id": "q09-022",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Mackenzie Fitness Supply funds a new machine only if the cash it generates will repay the purchase price within three years, and it does not look at anything that happens after year 3. Which decision rule is it applying?",
+  "options": [
+   "Discounted payback",
+   "Accounting rate of return",
+   "Payback period",
+   "Net present value"
+  ],
+  "answer": 2,
+  "explanation": "Counting only whether undiscounted cash flows repay the cost within a year cutoff is the payback rule. Discounted payback would first convert each flow to its present value at R.",
+  "source": "generated",
+  "ref": "L05A s10-12"
+ },
+ {
+  "id": "q09-023",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "What is the key difference between the payback period and the discounted payback period?",
+  "options": [
+   "Payback uses accounting profit; discounted payback uses cash flow",
+   "Payback gives an absolute accept/reject decision; discounted payback is only relative",
+   "Payback counts the cash flows after the payback date; discounted payback ignores them",
+   "Payback adds up raw cash flows; discounted payback adds up cash flows after discounting each at R"
+  ],
+  "answer": 3,
+  "explanation": "Both rules are relative comparisons against a cutoff and both ignore flows after payback. Only the discounted version brings in the time value of money by using CF/(1+R)^t.",
+  "source": "generated",
+  "ref": "L05A s12-13"
+ },
+ {
+  "id": "q09-024",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT a bad point of the payback rule?",
+  "options": [
+   "the mathematics is difficult",
+   "it ignores the time value of money",
+   "it ignores income after the payback period",
+   "it gives only a relative comparison, not an absolute decision"
+  ],
+  "answer": 0,
+  "explanation": "Payback's good point is easy maths and speed. Its bad points are no time value of money, no credit for cash flows after the payback date, and no absolute decision (the cutoff is arbitrary).",
+  "source": "generated",
+  "ref": "L05A s12"
+ },
+ {
+  "id": "q09-025",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the payback rule bias a firm toward short-lived projects?",
+  "options": [
+   "it discounts distant cash flows at a high rate, so later inflows count for little",
+   "it ignores cash flows after the payback date, so long projects get no credit for later inflows",
+   "it uses profit after tax, which is highest in the early years of a project",
+   "it assumes the cash flows are reinvested at the IRR rather than at R"
+  ],
+  "answer": 1,
+  "explanation": "Payback only asks how fast the investment is recovered. Any large inflows that arrive after the cutoff are invisible, so a quickly recovered but short project can beat a longer, more valuable one.",
+  "source": "generated",
+  "ref": "TB 9.2"
+ },
+ {
+  "id": "q09-026",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "At a 2-year payback cutoff, Cedar Valley Brewing accepts Short (cost $300,000; $120,000 then $200,000) and rejects Long (cost $300,000; $110,000 a year for 4 years). At R = 15%, NPV(Short) = -$44,423 and NPV(Long) = +$14,048. What does this show?",
+  "options": [
+   "Payback and NPV always agree when the cutoff is set at two years or less",
+   "Short is better because its NPV is closer to zero than the NPV of Long",
+   "The cutoff was too long; a one-year cutoff would remove the conflict",
+   "Payback can accept a value-losing project and reject a value-adding one"
+  ],
+  "answer": 3,
+  "explanation": "A payback below the cutoff is not a guarantee of positive NPV. Short pays back in 1.9 years but its flows are worth less than the cost at 15%. Long's payback of 2.73 years fails the cutoff even though its fourth year of income creates value. Changing the cutoff cannot fix a rule that ignores TVM.",
+  "source": "generated",
+  "ref": "TB 9.2"
+ },
+ {
+  "id": "q09-027",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "When a project's cost is recovered partway through year k + 1, the fractional part of the payback period is:",
+  "options": [
+   "the amount still unrecovered at the end of year k divided by the cash flow in year k",
+   "the cash flow in year k + 1 divided by the initial investment",
+   "the amount still unrecovered at the end of year k divided by the cash flow in year k + 1",
+   "the amount still unrecovered divided by the total of all remaining cash flows"
+  ],
+  "answer": 2,
+  "explanation": "Payback = k + (remaining at end of year k)/CF(k+1). Dividing by year k's flow (the previous year) is a typical slip.",
+  "source": "generated",
+  "ref": "L05A s11"
+ },
+ {
+  "id": "q09-028",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project whose payback period is shorter than its life must have a positive NPV at any positive discount rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "A payback shorter than the life only guarantees a positive NPV at a zero discount rate. At positive rates the NPV may be positive, zero or negative depending on whether R is below, equal to, or above the IRR.",
+  "source": "generated",
+  "ref": "SM 9 CTQ 1"
+ },
+ {
+  "id": "q09-029",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "If the cumulative cash flows of a project never reach its initial investment, the project has no payback period (it never pays back).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Payback is the time to recover the outlay. If the inflows over the whole life total less than the outlay, recovery never happens, and no fraction of a year can be computed.",
+  "source": "generated",
+  "ref": "SM 9-2"
+ },
+ {
+  "id": "q09-030",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which sequence correctly describes how to compute a payback period for uneven cash flows?",
+  "options": [
+   "Discount each cash flow; cumulate the discounted flows; find the recovery year; divide by the number of years",
+   "Average the annual cash flows; divide the investment by this average; round up to the next whole year",
+   "Find the recovery year; add its cash flow to the investment; divide the total by the project life",
+   "Cumulate the cash flows; find the recovery year; divide the unrecovered amount by that year's flow; add the whole years before it"
+  ],
+  "answer": 3,
+  "explanation": "Payback uses undiscounted flows: cumulate them, locate the year of recovery, take (remaining ÷ that year's flow) as the fraction, and add the completed years before it.",
+  "source": "generated",
+  "ref": "L05A s11"
+ },
+ {
+  "id": "q09-031",
+  "concept": "c09-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Two machines each cost $90,000. Machine X returns $50,000 in year 1 and $50,000 in year 2. Machine Y returns $20,000 a year for 15 years. The firm accepts anything with payback of 3 years or less. What does payback say?",
+  "options": [
+   "Accept X (1.80 years), reject Y (4.50 years), although Y's total inflow is larger",
+   "Accept Y, because its cash flows last longer and total more than X's",
+   "Accept both, because both recover their cost eventually within their lives",
+   "Reject both, because neither pays back within a single year"
+  ],
+  "answer": 0,
+  "explanation": "X: 50,000 after year 1, 40,000 remains, 40,000/50,000 = 0.8, so 1.80 years. Y: 90,000/20,000 = 4.50 years. Payback ignores Y's 15 years of inflows, which is the bias toward short projects.",
+  "source": "generated",
+  "ref": "TB 9.2"
+ }
+]

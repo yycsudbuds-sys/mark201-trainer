@@ -1,0 +1,814 @@
+[
+ {
+  "id": "q11-520",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The option to _____ lets a firm commit more capital later, if the project is going well, to capture extra upside.",
+  "options": [
+   "abandon",
+   "delay",
+   "expand",
+   "hedge"
+  ],
+  "answer": 2,
+  "explanation": "The expansion option is the right to do more (bigger plant, extra space) once good news arrives. Abandonment limits losses and timing chooses when to act.",
+  "source": "generated",
+  "ref": "L05C s12; SM 11 CTQ 6"
+ },
+ {
+  "id": "q11-521",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Maritime Wind Energy installs the grid connection and land lease for 12 more turbines at little extra cost, and will build them only if the first phase earns well. Which real option is this?",
+  "options": [
+   "Option to abandon",
+   "Option to delay (timing)",
+   "Production flexibility",
+   "Option to expand"
+  ],
+  "answer": 3,
+  "explanation": "Preparing now so that capacity can be added later if results are good is the expansion option. It is exercised only in the good outcomes, which is why it is a right and not an obligation.",
+  "source": "generated",
+  "ref": "L05C s12"
+ },
+ {
+  "id": "q11-522",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Rocky Mountain Drilling Tools earns $128 after tax per unit sold each year. At the end of year 1 the project can be sold for $1,900,000; if kept, it runs 12 more years (years 2 to 13) at annual volume Q. The discount rate is 11%. Below what annual quantity Q is abandoning at the end of year 1 the better choice?",
+  "answer": 2286.34,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "1900000/(128*((1-(1+0.11)**-12)/0.11))",
+  "steps": [
+   {
+    "label": "Annuity factor (11%, 12 years)",
+    "value": 6.4924,
+    "check": "((1-(1+0.11)**-12)/0.11)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "PV at the end of year 1 per unit of Q: 128 × annuity factor",
+    "value": 831.02,
+    "check": "128*((1-(1+0.11)**-12)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Abandonment threshold Q* = 1,900,000 ÷ PV per unit",
+    "value": 2286.34,
+    "check": "1900000/(128*((1-(1+0.11)**-12)/0.11))",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Abandon when the PV of continuing is below the resale value: 128 × Q × annuity factor(11%, 12) < 1,900,000",
+   "Annuity factor (11%, 12 years) = 6.492356; 128 × 6.492356 = 831.02 per unit of Q",
+   "Q* = 1,900,000/831.02 = 2,286.34 units; abandon if Q < 2,286"
+  ],
+  "keystrokes": [
+   "N = 12, I/Y = 11, PMT = −128, FV = 0, CPT PV = 831.02",
+   "1900000 ÷ 831.02 = 2,286.34"
+  ],
+  "errors": [
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used 13 years in the annuity factor",
+    "value": 2199.12,
+    "check": "1900000/(128*((1-(1+0.11)**-13)/0.11))",
+    "explain": "The later flows run in years 2 to 13, which is 12 payments valued at the end of year 1."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Spread the resale value evenly instead of using an annuity factor",
+    "value": 1236.98,
+    "check": "1900000/(128*12)",
+    "explain": "That ignores the time value of money; the flows must be valued with the annuity factor."
+   },
+   {
+    "id": "no-annuity-factor",
+    "label": "Divided the resale value by one year's flow per unit",
+    "value": 14843.75,
+    "check": "1900000/128",
+    "explain": "One year of flow per unit is not the value of 12 years of flows; multiply by the annuity factor."
+   }
+  ],
+  "explanation": "Abandon when the continuation value falls below the resale value. Setting 128 × Q × AF = 1,900,000 gives the break-even volume Q* = 2,286.34; below it the project is worth more sold. Both sides are measured at the end of year 1.",
+  "source": "generated",
+  "ref": "SM 11-20"
+ },
+ {
+  "id": "q11-523",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cedar Mill Timber's project has a 0.4 probability of success (NPV +$8.5M) and a 0.6 probability of failure (NPV −$3.8M if it keeps running). If it fails, the firm can abandon and limit the NPV to −$1.6M. NPVs are present values today. What is the value of the abandonment option, in $ millions?",
+  "answer": 1.32,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.4*8.5+0.6*(-1.6)-(0.4*8.5+0.6*(-3.8))",
+  "steps": [
+   {
+    "label": "Expected NPV without the option",
+    "value": 1.12,
+    "check": "0.4*8.5+0.6*(-3.8)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected NPV with the option",
+    "value": 2.44,
+    "check": "0.4*8.5+0.6*(-1.6)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Option value = with − without",
+    "value": 1.32,
+    "check": "0.4*8.5+0.6*(-1.6)-(0.4*8.5+0.6*(-3.8))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Without the option: 0.4 × 8.5 + 0.6 × (−3.8) = 1.12",
+   "With the option: 0.4 × 8.5 + 0.6 × (−1.6) = 2.44",
+   "Option value = 2.44 − (1.12) = $1.32 million, which is 0.6 × (3.8 − 1.6)"
+  ],
+  "keystrokes": [
+   "0.4 × 8.5 − 0.6 × 3.8 = 1.12",
+   "0.4 × 8.5 − 0.6 × 1.6 = 2.44",
+   "2.44 − 1.12 = 1.32"
+  ],
+  "errors": [
+   {
+    "id": "forgot-probability",
+    "label": "Used the gain in the failure state without weighting it",
+    "value": 2.2,
+    "check": "-1.6-(-3.8)",
+    "explain": "The gain of $2.2M arises only with the failure probability of 0.6."
+   },
+   {
+    "id": "prob-swapped",
+    "label": "Weighted the gain by the success probability",
+    "value": 0.88,
+    "check": "0.4*(-1.6-(-3.8))",
+    "explain": "Abandonment helps in the failure state, whose probability is 0.6."
+   },
+   {
+    "id": "npv-for-option-value",
+    "label": "Reported the NPV with the option",
+    "value": 2.44,
+    "check": "0.4*8.5+0.6*(-1.6)",
+    "explain": "The option's value is the increase in NPV it creates (with minus without), not the total."
+   }
+  ],
+  "explanation": "The abandonment option floors the failure outcome at −$1.6M instead of −$3.8M. Its value is the probability of failure times the improvement: 0.6 × 2.2 = $1.32M. Ignoring it understates the project's NPV.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 5; SM 11-20, 11-21"
+ },
+ {
+  "id": "q11-524",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Northern Grain Terminals invests $4.2M today and receives $1.1M at the end of year 1. At that date (t = 1) the market turns out strong (probability 0.5), where continuing is worth $7.6M, or weak (probability 0.5), where continuing is worth $1.8M but the assets can be sold for $2.9M. These three values are measured at t = 1, not today, so discount them (with the $1.1M) once. The required return is 12%. What is the project's NPV today with the option to abandon, in $ millions?",
+  "answer": 1.47,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(0.5*7.6+0.5*2.9+1.1)/1.12-4.2",
+  "steps": [
+   {
+    "label": "Weak state: best of continue 1.8 and sell 2.9",
+    "value": 2.9,
+    "check": "2.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected value at year 1 of the best choices",
+    "value": 5.25,
+    "check": "0.5*7.6+0.5*2.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Add the year-1 cash flow of 1.1",
+    "value": 6.35,
+    "check": "0.5*7.6+0.5*2.9+1.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Present value today of the year-1 total",
+    "value": 5.6696,
+    "check": "(0.5*7.6+0.5*2.9+1.1)/1.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "NPV today",
+    "value": 1.4696,
+    "check": "(0.5*7.6+0.5*2.9+1.1)/1.12-4.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Decide at the year-1 nodes first: strong, continue (7.6 > 2.9); weak, sell (2.9 > 1.8)",
+   "Expected value at the end of year 1 = 0.5 × 7.6 + 0.5 × 2.9 = 5.25",
+   "Add the year-1 cash flow: 5.25 + 1.10 = 6.35",
+   "Discount one year (these amounts are at t = 1): 6.35/1.12 = 5.6696",
+   "NPV = 5.6696 − 4.2 = $1.47 million"
+  ],
+  "keystrokes": [
+   "0.5 × 7.6 + 0.5 × 2.9 = 5.25",
+   "5.25 + 1.1 = 6.35",
+   "6.35 ÷ 1.12 = 5.6696",
+   "5.6696 − 4.2 = 1.47"
+  ],
+  "errors": [
+   {
+    "id": "no-abandonment",
+    "label": "Continued in the weak state as well",
+    "value": 0.98,
+    "check": "(0.5*7.6+0.5*1.8+1.1)/1.12-4.2",
+    "explain": "The firm would sell for 2.9 rather than continue worth 1.8, so the weak state is worth 2.9."
+   },
+   {
+    "id": "no-discount-t1",
+    "label": "Forgot to discount the year-1 values",
+    "value": 2.15,
+    "check": "0.5*7.6+0.5*2.9+1.1-4.2",
+    "explain": "The 7.6, 2.9 and 1.1 are all received at t = 1, so they must be discounted one year."
+   },
+   {
+    "id": "forgot-cf1",
+    "label": "Left out the $1.1M year-1 cash flow",
+    "value": 0.49,
+    "check": "(0.5*7.6+0.5*2.9)/1.12-4.2",
+    "explain": "The year-1 cash flow is received whichever state follows and belongs in the PV."
+   }
+  ],
+  "explanation": "Take the better of continuing and selling at each year-1 node, probability-weight, add the year-1 cash flow and discount once. Here the values sit at t = 1, so unlike the pure present-value trees they must be discounted. Without abandonment NPV is $0.98M; the option adds about $0.49M.",
+  "source": "generated",
+  "ref": "SM 11-21; SM 10-46"
+ },
+ {
+  "id": "q11-525",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Sunridge Solar has a pilot array. At the end of year 1 (t = 1), success (probability 0.35) lets it expand: the expansion costs $3.0M at t = 1 and adds cash flows worth $9.4M measured at t = 1. In failure (probability 0.65) expansion would add only $1.1M for the same cost, so the firm would not expand. These are t = 1 values, so discount them once to today. The required return is 13%. What is the option to expand worth today, in $ millions?",
+  "answer": 1.98,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.35*(9.4-3.0)/1.13",
+  "steps": [
+   {
+    "label": "Net gain from expanding in success",
+    "value": 6.4,
+    "check": "9.4-3.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected gain at year 1 (failure: do not expand, 0)",
+    "value": 2.24,
+    "check": "0.35*(9.4-3.0)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value of the option today",
+    "value": 1.9823,
+    "check": "0.35*(9.4-3.0)/1.13",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Success: expand, net gain = 9.4 − 3.0 = 6.4 (at t = 1). Failure: 1.1 < 3.0, so do not expand and gain 0",
+   "Expected gain at year 1 = 0.35 × 6.4 + 0.65 × 0 = 2.24",
+   "Discount one year: 2.24/1.13 = $1.98 million"
+  ],
+  "keystrokes": [
+   "9.4 − 3.0 = 6.4",
+   "0.35 × 6.4 = 2.24",
+   "2.24 ÷ 1.13 = 1.9823"
+  ],
+  "errors": [
+   {
+    "id": "forgot-extra-cost",
+    "label": "Ignored the $3.0M cost of expanding",
+    "value": 2.91,
+    "check": "0.35*9.4/1.13",
+    "explain": "Expansion costs $3.0M, so the gain is 9.4 − 3.0, not 9.4."
+   },
+   {
+    "id": "no-discount-t1",
+    "label": "Forgot to discount the year-1 gain",
+    "value": 2.24,
+    "check": "0.35*(9.4-3.0)",
+    "explain": "The gain arises at the end of year 1; it must be discounted one year to give today's value."
+   },
+   {
+    "id": "ignored-right-not-obligation",
+    "label": "Forced expansion in the failure state too",
+    "value": 0.89,
+    "check": "(0.35*(9.4-3.0)+0.65*(1.1-3.0))/1.13",
+    "explain": "An option is a right, not an obligation: in failure the firm simply does not expand."
+   }
+  ],
+  "explanation": "The option to expand is exercised only where it adds value: value = p × (added PV − cost)/(1 + R) = 0.35 × 6.4/1.13 = $1.98M. Forcing expansion in the failure state would wrongly subtract $1.9M × 0.65.",
+  "source": "generated",
+  "ref": "SM 11-21"
+ },
+ {
+  "id": "q11-526",
+  "concept": "c11-abandonment-expansion",
+  "also": [
+   "c11-real-options"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cobalt Bay Mining's mill project has a static NPV of −$1.3M. Demand proves strong with probability 0.30, and then expansion adds a net present value of $6.9M (after its own cost, in today's dollars); otherwise the firm does not expand. What is the project's value including the option to expand, in $ millions?",
+  "answer": 0.77,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "-1.3+0.30*6.9",
+  "steps": [
+   {
+    "label": "Expected value of the expansion option",
+    "value": 2.07,
+    "check": "0.30*6.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Project value including the option",
+    "value": 0.77,
+    "check": "-1.3+0.30*6.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "The expansion is exercised only when demand is strong: option value = 0.30 × 6.9 + 0.70 × 0 = 2.07",
+   "Total = static NPV + option value = −1.30 + 2.07 = $0.77 million (already present values, so no discounting)",
+   "The project is worth taking once its option is counted"
+  ],
+  "keystrokes": [
+   "0.30 × 6.9 = 2.07",
+   "−1.30 + 2.07 = 0.77"
+  ],
+  "errors": [
+   {
+    "id": "dropped-option",
+    "label": "Ignored the option",
+    "value": -1.3,
+    "check": "-1.3",
+    "explain": "The static NPV leaves out the right to expand, so it understates the project's value."
+   },
+   {
+    "id": "forgot-probability",
+    "label": "Added the full expansion NPV",
+    "value": 5.6,
+    "check": "-1.3+6.9",
+    "explain": "Expansion happens only if demand is strong, which has probability 0.30."
+   },
+   {
+    "id": "prob-swapped",
+    "label": "Weighted by the probability of weak demand",
+    "value": 3.53,
+    "check": "-1.3+0.70*6.9",
+    "explain": "The expansion value arises in the strong state, whose probability is 0.30."
+   }
+  ],
+  "explanation": "A negative static NPV can hide a valuable option: −1.30 + 0.30 × 6.9 = +$0.77M. The decision flips from reject to accept once the option to expand is valued.",
+  "source": "generated",
+  "ref": "L05C s11; SM 11-21"
+ },
+ {
+  "id": "q11-527",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Hudson Bay Marine invests $6.0M in a vessel that earns $1.5M a year for 4 years. Its resale value is $4.0M after year 1, $4.5M after year 2, $3.0M after year 3 and $1.0M after year 4 (the end of its life). Ignore taxes; the required return is 12%. What is the highest NPV across the four possible exit dates, in $ millions?",
+  "answer": 0.12,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "-6.0+1.5/1.12**1+1.5/1.12**2+4.5/1.12**2",
+  "steps": [
+   {
+    "label": "NPV if exited at the end of year 1",
+    "value": -1.0893,
+    "check": "-6.0+1.5/1.12**1+4.0/1.12**1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "NPV if exited at the end of year 2",
+    "value": 0.1224,
+    "check": "-6.0+1.5/1.12**1+1.5/1.12**2+4.5/1.12**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "NPV if exited at the end of year 3",
+    "value": -0.2619,
+    "check": "-6.0+1.5/1.12**1+1.5/1.12**2+1.5/1.12**3+3.0/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "NPV if exited at the end of year 4",
+    "value": -0.8085,
+    "check": "-6.0+1.5/1.12**1+1.5/1.12**2+1.5/1.12**3+1.5/1.12**4+1.0/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "NPV(exit at year n) = −6.0 + Σ 1.5/1.12^t (t = 1..n) + resale_n/1.12^n",
+   "Exit year 1: −1.0893; year 2: 0.1224; year 3: −0.2619; year 4 (full life): −0.8085",
+   "The best exit date is the end of year 2, with NPV = $0.12 million; running the full life gives −0.81"
+  ],
+  "keystrokes": [
+   "CF0 = −6.0, C01 = 1.5 (F01 = 1), C02 = 6.0 (1.5 + 4.5), then NPV: I = 12, CPT",
+   "NPV = 0.1224 (exit at year 2)",
+   "Repeat with the other exit dates and compare"
+  ],
+  "errors": [
+   {
+    "id": "end-of-life-only",
+    "label": "Ran the vessel to the end of its life",
+    "value": -0.81,
+    "check": "-6.0+1.5/1.12**1+1.5/1.12**2+1.5/1.12**3+1.5/1.12**4+1.0/1.12**4",
+    "explain": "Abandonment lets the firm leave when the resale value is high relative to the remaining flows; the full life is not the best date here."
+   },
+   {
+    "id": "year-1-exit",
+    "label": "Exited after year 1",
+    "value": -1.09,
+    "check": "-6.0+1.5/1.12**1+4.0/1.12**1",
+    "explain": "Exiting after year 1 gives up a good year-2 flow and resale value; compare every exit date."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Left out the year-2 resale value",
+    "value": -3.46,
+    "check": "-6.0+1.5/1.12+1.5/1.12**2",
+    "explain": "Abandonment brings the resale value in the exit year; omitting it ignores the whole option."
+   }
+  ],
+  "explanation": "Compute the NPV for each possible exit date and take the largest. Running to the end of the life gives −$0.81M, a reject, but planning to sell after year 2 gives +$0.12M: the abandonment option turns a rejected project into an acceptable one.",
+  "source": "generated",
+  "ref": "SM 10-46; L05C s12"
+ },
+ {
+  "id": "q11-528",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Pinecrest Rentals earns $96 after tax per rental unit each year. At the end of year 1 it could sell the business for $2.4M; if kept, it runs 9 more years (years 2 to 10) at annual volume Q. The discount rate is 10%. Below what annual volume should it abandon at the end of year 1?",
+  "options": [
+   "4,069 units",
+   "2,778 units",
+   "4,341 units",
+   "25,000 units"
+  ],
+  "answer": 2,
+  "explanation": "Later flows are 9 payments, valued at the end of year 1: 96 × 5.759024 = $552.87 per unit of Q, so Q* = 2,400,000/552.87 = 4,341 units. Using 10 payments gives 4,069, dividing by 9 ignores discounting, and dividing by 96 ignores the later years altogether.",
+  "source": "generated",
+  "ref": "SM 11-20",
+  "check": "2400000/(96*((1-(1+0.1)**-9)/0.1))",
+  "option_checks": [
+   "2400000/(96*((1-(1+0.1)**-10)/0.1))",
+   "2400000/(96*9)",
+   "2400000/(96*((1-(1+0.1)**-9)/0.1))",
+   "2400000/96"
+  ],
+  "option_errors": [
+   "wrong-n-annuity",
+   "divided-by-n",
+   null,
+   "no-annuity-factor"
+  ]
+ },
+ {
+  "id": "q11-529",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "After year 1, Northern Lights Cinemas faces a decision. If it continues, the later flows are worth $7.0M (probability 0.6, strong) or $1.0M (probability 0.4, weak) at that date. If it abandons, it sells the assets for $3.0M in either state. What is the value at that date of its best policy, in $ millions?",
+  "options": [
+   "$4.6 million",
+   "$3.0 million",
+   "$7.0 million",
+   "$5.4 million"
+  ],
+  "answer": 3,
+  "explanation": "Decide state by state: continue when strong (7.0 > 3.0) and abandon when weak (3.0 > 1.0). Value = 0.6 × 7.0 + 0.4 × 3.0 = $5.4M. Averaging the continuation values first gives 4.6 and then choosing continue; always abandoning gives only 3.0, and 7.0 is just the best case.",
+  "source": "generated",
+  "ref": "SM 11-21; L05C s16",
+  "check": "0.6*7.0+0.4*3.0",
+  "option_checks": [
+   "0.6*7.0+0.4*1.0",
+   "3.0",
+   "7.0",
+   "0.6*7.0+0.4*3.0"
+  ],
+  "option_errors": [
+   "averaged-before-deciding",
+   "always-abandon",
+   "best-case-only",
+   null
+  ]
+ },
+ {
+  "id": "q11-530",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "When deciding whether to abandon a project, which figure is set against the value of continuing, and how does it differ from book value?",
+  "options": [
+   "What the assets could be sold for now, an opportunity cost that can differ from book value",
+   "The original cost less depreciation to date, because book value is what the firm paid",
+   "The initial investment, because it is the amount at risk",
+   "The latest year's accounting profit, because losses signal exit"
+  ],
+  "answer": 0,
+  "explanation": "The abandonment value is what the project could be sold for now (the $2.8M market value in the solutions manual's example). Continuing means giving that up, so it is the opportunity cost. Book value and the initial investment are history.",
+  "source": "generated",
+  "ref": "SM 11-20c; L05C s12"
+ },
+ {
+  "id": "q11-531",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the option to abandon is NOT true?",
+  "options": [
+   "It raises the project's value by limiting the loss in bad outcomes",
+   "It should be exercised whenever the project reports an accounting loss",
+   "Ignoring it tends to understate the project's NPV",
+   "It is worth exercising when continuing is worth less than the resale value"
+  ],
+  "answer": 1,
+  "explanation": "The rule is economic: abandon when the value of continuing is below the abandonment value. An accounting loss may still come with continuation value above resale value, and exercising is optional.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 5; SM 11-20"
+ },
+ {
+  "id": "q11-532",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the abandonment value act as a floor under the project's value?",
+  "options": [
+   "The resale value is guaranteed to exceed the book value",
+   "Abandoning always increases accounting profit",
+   "The firm can always take the larger of continuing and the resale value",
+   "Option premiums are refunded if the project is abandoned"
+  ],
+  "answer": 2,
+  "explanation": "Because abandonment is a right, the firm compares the two values and takes the better one. That is why the value at the node is max(continue, abandon), which can only add value relative to a fixed plan.",
+  "source": "generated",
+  "ref": "SM 11-20, 11-21"
+ },
+ {
+  "id": "q11-533",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's NPV if abandoned at the end of year 1, 2, 3 and 4 is −$0.95M, −$0.30M, −$0.52M and −$0.88M. What does this show?",
+  "options": [
+   "The firm should abandon after year 4, because the full life is always best",
+   "The project is acceptable because abandoning at year 2 beats running to year 4",
+   "The firm should abandon after year 1, because that is the earliest exit",
+   "The best exit date is the end of year 2, but even that NPV is negative, so the project should not be undertaken"
+  ],
+  "answer": 3,
+  "explanation": "Pick the exit date with the highest NPV (year 2 at −0.30), then apply the NPV rule to it: negative means reject. Being better than the full-life NPV (−0.88) does not make it positive.",
+  "source": "generated",
+  "ref": "SM 10-46"
+ },
+ {
+  "id": "q11-534",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "At the end of year 1 the value of continuing a project is $3.4M and the assets could be sold for $4.1M. What should the firm do, and what value is used at that node?",
+  "options": [
+   "Abandon, and use $4.1M",
+   "Continue, and use $3.4M",
+   "Abandon, and use $0.7M",
+   "Continue, and use $3.75M, the average of the two"
+  ],
+  "answer": 0,
+  "explanation": "At a decision node take the larger value: 4.1 > 3.4, so sell and carry $4.1M back. The gain from abandoning (0.7) is not the node value, and averaging treats the choice as random.",
+  "source": "generated",
+  "ref": "SM 11-20; L05C s16"
+ },
+ {
+  "id": "q11-535",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "At the break-even sales volume Q* for abandonment, which equality holds?",
+  "options": [
+   "Accounting profit equals zero",
+   "PV of the continuing cash flows equals the resale value",
+   "The initial investment equals the resale value",
+   "The NPV at time 0 of the whole project equals zero"
+  ],
+  "answer": 1,
+  "explanation": "Q* is where the firm is indifferent between continuing and selling: PV(continuing flows at Q*) = resale value. For example, with $128 a unit, 12 remaining years at 11% and a $1.9M resale value, solve 128 × Q × annuity factor = 1,900,000 for Q*.",
+  "source": "generated",
+  "ref": "SM 11-20"
+ },
+ {
+  "id": "q11-536",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "tf",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The option to expand is exercised only in the outcomes where expanding adds value.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "An option is a right, not an obligation, so the firm expands only where the added value exceeds the cost; in the other states it does nothing and the option contributes zero.",
+  "source": "generated",
+  "ref": "SM 11-21; L05C s10"
+ },
+ {
+  "id": "q11-537",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which expression gives the value today of an option to expand that is exercised only after success at the end of year 1?",
+  "options": [
+   "Probability of success × added PV ÷ (1 + R), ignoring the expansion cost",
+   "Expansion cost × probability of success",
+   "(Added PV − expansion cost) in the failure state ÷ (1 + R)",
+   "Probability of success × (added PV − expansion cost) ÷ (1 + R)"
+  ],
+  "answer": 3,
+  "explanation": "Value = p × (gain net of cost)/(1 + R): weight the net gain by the chance it happens and discount the year-1 amount back to today. Leaving out the cost overstates the option.",
+  "source": "generated",
+  "ref": "SM 11-21"
+ },
+ {
+  "id": "q11-538",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's abandonment threshold is Q* = 2,286 units a year. Sales are forecast at 3,100 units with a plausible range of 2,480 to 3,720. How should this be interpreted?",
+  "options": [
+   "Even the low forecast is above Q*, so abandonment is unlikely and the option adds little",
+   "The project must be abandoned, because the forecast is above the threshold",
+   "The option is very valuable, because the threshold is below the forecast",
+   "The option is worthless, because options never add value"
+  ],
+  "answer": 0,
+  "explanation": "Abandonment pays only when volume falls below Q*. If the plausible range stays above it, the option is rarely exercised and worth little, although it remains a free floor. A forecast above Q* means continuing.",
+  "source": "generated",
+  "ref": "SM 11-20"
+ },
+ {
+  "id": "q11-539",
+  "concept": "c11-abandonment-expansion",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A pilot packaging line is financed through a lease that lets the firm return the equipment after year 1 if demand disappoints. Which real option is this?",
+  "options": [
+   "Option to expand",
+   "Option to abandon",
+   "Option to delay (timing)",
+   "Production flexibility"
+  ],
+  "answer": 1,
+  "explanation": "The right to exit early and give the equipment back if the project is not performing is the abandonment option; its lease terms set the exit value.",
+  "source": "generated",
+  "ref": "L05C s12"
+ }
+]

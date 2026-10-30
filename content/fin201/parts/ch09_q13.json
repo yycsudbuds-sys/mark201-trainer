@@ -1,0 +1,898 @@
+[
+ {
+  "id": "q09-494",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Two projects are independent when:",
+  "options": [
+   "undertaking one rules out undertaking the other",
+   "the cash flows of one depend on whether the other is undertaken",
+   "undertaking one has no effect on the cash flows or value of the other",
+   "they are financed from the same source of funds"
+  ],
+  "answer": 2,
+  "explanation": "Independent projects can be evaluated one at a time: accept each one whose NPV is positive. If taking one changes the value of another they are dependent, and if taking one rules out the other they are mutually exclusive.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-495",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A landowner can build either a hotel or a condominium tower on one downtown lot, but not both. The two proposals are:",
+  "options": [
+   "mutually exclusive",
+   "independent",
+   "dependent but not mutually exclusive",
+   "a capital rationing problem"
+  ],
+  "answer": 0,
+  "explanation": "Only one of them can be undertaken, so they are mutually exclusive, and the choice is made by comparing NPVs. Using the same lot rules the other one out, which is different from merely affecting its value.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-496",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A café chain's new drive-through window would raise the sales of its existing lunch counters. The firm can still build the window without changing anything else. The relationship between the two projects is:",
+  "options": [
+   "independent",
+   "dependent",
+   "mutually exclusive",
+   "unrelated because no cash changes hands"
+  ],
+  "answer": 1,
+  "explanation": "Taking the drive-through changes the value of the lunch-counter business, so they are dependent. Both can be undertaken, which is why they are not mutually exclusive.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-497",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Laurentian Forestry can log its stand this year or wait five years for larger trees. It will log only once. The choice between those two dates is an example of a:",
+  "options": [
+   "mutually exclusive timing decision",
+   "pair of independent projects",
+   "dependent project",
+   "capital rationing decision"
+  ],
+  "answer": 0,
+  "explanation": "The lecture lists timing decisions (when to replace, retire or close) as mutually exclusive: each date is a separate project and only one can be chosen. The usual approach is to pick the date with the maximum NPV.",
+  "source": "generated",
+  "ref": "L05A s32, s35"
+ },
+ {
+  "id": "q09-498",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do dependent projects differ from mutually exclusive projects?",
+  "options": [
+   "Dependent projects can never be taken together; mutually exclusive projects always must be",
+   "Dependent projects have different discount rates; mutually exclusive projects have the same rate",
+   "With dependent projects, taking one changes the value of the other but both can be taken; with mutually exclusive projects only one can be taken",
+   "There is no difference; both terms mean the projects share a budget"
+  ],
+  "answer": 2,
+  "explanation": "Dependence is about a change in value; exclusivity is about a choice between alternatives. A project can complement another (positive dependence), substitute for it, or rule it out entirely.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-499",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of mutually exclusive projects?",
+  "options": [
+   "Replacing a delivery truck now or replacing it next year",
+   "Choosing one of three competing designs for the same warehouse",
+   "Closing a mine this year or closing it in three years",
+   "Opening a bakery in Red Deer and a bakery in Moose Jaw whose sales do not affect each other"
+  ],
+  "answer": 3,
+  "explanation": "Two stores whose cash flows do not affect each other are independent. The other three are choices among alternatives for the same job: replacement timing, design choice and closure timing.",
+  "source": "generated",
+  "ref": "L05A s32, s35"
+ },
+ {
+  "id": "q09-500",
+  "concept": "c09-project-relationships",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the NPV rule for independent projects 'accept each project with NPV > 0', while for mutually exclusive projects it is 'accept the project with the highest NPV'?",
+  "options": [
+   "Independent projects are always riskier, so they need a stricter rule",
+   "Mutually exclusive projects always have negative NPVs, so only one is kept",
+   "For independent projects the firm uses IRR instead of NPV to decide",
+   "Independent projects are judged alone; exclusive projects compete, so only the best can be taken"
+  ],
+  "answer": 3,
+  "explanation": "If projects do not interfere, every positive-NPV project adds wealth and should be taken. If they are alternatives, taking the second-best means giving up the best, so the highest NPV is the right pick.",
+  "source": "generated",
+  "ref": "L05A s19, s32"
+ },
+ {
+  "id": "q09-501",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "Three independent projects have NPVs of +$40,000, +$25,000 and −$10,000. The firm has plenty of funds. Which should it undertake?",
+  "options": [
+   "Only the +$40,000 project, since it has the highest NPV",
+   "The +$40,000 and +$25,000 projects",
+   "All three projects",
+   "None, since one NPV is negative"
+  ],
+  "answer": 1,
+  "explanation": "Independent projects are judged one at a time with no budget limit, so every positive-NPV project is accepted and the negative-NPV one is rejected.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-502",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Two mutually exclusive environmental clean-up options are legally required. Option 1 has an NPV of −$2.4 million and Option 2 has an NPV of −$1.9 million. What should the firm do?",
+  "options": [
+   "Choose Option 2: when a project is forced, take the least negative NPV",
+   "Reject both, because both NPVs are negative",
+   "Choose Option 1, because its cost is larger",
+   "Choose neither until the required return falls below the IRR"
+  ],
+  "answer": 0,
+  "explanation": "The lecture notes the NPV rule says to take the highest NPV 'or least negative if you must'. Doing nothing is not allowed here, so the cheapest option in present-value terms is best.",
+  "source": "generated",
+  "ref": "L05A s17, s19"
+ },
+ {
+  "id": "q09-503",
+  "concept": "c09-project-relationships",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The choice between keeping an old machine and replacing it with a new one is treated as a pair of mutually exclusive projects.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Only one machine will do the job, so keeping and replacing are alternatives: compare their NPVs (with equal lives, or equalised lives if they differ) and pick the better.",
+  "source": "generated",
+  "ref": "L05A s32, s35"
+ },
+ {
+  "id": "q09-504",
+  "concept": "c09-project-relationships",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Laurentian Forestry can log its stand now for net proceeds of $1,200,000, in 3 years for $1,620,000, or in 5 years for $2,050,000. The choices are mutually exclusive, and the required return is 9% per annum. What is the NPV of the best choice? (Answer in $, to the cent.)",
+  "answer": 1332359.34,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2050000/1.09**5",
+  "steps": [
+   {
+    "label": "NPV of logging in 3 years",
+    "value": 1250937.24,
+    "check": "1620000/1.09**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of logging in 5 years",
+    "value": 1332359.34,
+    "check": "2050000/1.09**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV(now) = $1,200,000.00",
+   "NPV(3 years) = 1,620,000/1.09³ = $1,250,937.24",
+   "NPV(5 years) = 2,050,000/1.09⁵ = $1,332,359.34",
+   "Timing decisions are mutually exclusive: choose the maximum NPV, which is waiting 5 years, NPV = $1,332,359.34."
+  ],
+  "keystrokes": [
+   "1.09 y^x 5 = 1.538624; 2050000 ÷ 1.538624 = 1,332,359.34",
+   "1.09 y^x 3 = 1.295029; 1620000 ÷ 1.295029 = 1,250,937.24"
+  ],
+  "errors": [
+   {
+    "id": "no-discounting",
+    "label": "Picked the largest undiscounted amount",
+    "value": 2050000.0,
+    "check": "2050000",
+    "explain": "The $2,050,000 arrives in 5 years and must be discounted before comparing with proceeds now."
+   },
+   {
+    "id": "timing-wrong-choice",
+    "label": "Chose the 3-year option",
+    "value": 1250937.24,
+    "check": "1620000/1.09**3",
+    "explain": "Both future dates beat logging now, but 5 years has the higher present value."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted the 5-year proceeds six years",
+    "value": 1222348.02,
+    "check": "2050000/1.09**6",
+    "explain": "Year-5 proceeds are discounted five periods."
+   }
+  ],
+  "explanation": "A timing choice is a set of mutually exclusive projects: convert each to a present value and take the maximum.",
+  "source": "generated",
+  "ref": "L05A s35"
+ },
+ {
+  "id": "q09-505",
+  "concept": "c09-project-relationships",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cascade Logistics can build a depot (Project A: $150,000 now, then $60,000 a year for 3 years). A tracking system (Project B: $40,000 now, then $30,000 a year for 3 years) is worth those flows only if the depot is built. At R = 10% per annum, what is the NPV of undertaking the depot and the system together? (Answer in $, to the cent.)",
+  "answer": 33816.68,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "60000*(1-1/1.1**3)/0.1-150000+30000*(1-1/1.1**3)/0.1-40000",
+  "steps": [
+   {
+    "label": "NPV of the depot (A)",
+    "value": -788.88,
+    "check": "60000*(1-1/1.1**3)/0.1-150000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of the system (B), given A is built",
+    "value": 34605.56,
+    "check": "30000*(1-1/1.1**3)/0.1-40000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of the package A + B",
+    "value": 33816.68,
+    "check": "60000*(1-1/1.1**3)/0.1-150000+30000*(1-1/1.1**3)/0.1-40000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (10%, 3) = 2.48685",
+   "NPV(A) = 60,000 × 2.486852 − 150,000 = −$788.88",
+   "NPV(B | A) = 30,000 × 2.486852 − 40,000 = $34,605.56",
+   "Package = −$788.88 + $34,605.56 = $33,816.68",
+   "B is dependent on A, so judge them as a package. A alone looks slightly negative, but the package is clearly positive: accept both."
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 10, PMT = 60000, CPT PV → 149,211.12; − 150000 = −788.88",
+   "PMT = 30000 → 74,605.56; − 40000 = 34,605.56",
+   "−788.88 + 34,605.56 = 33,816.68"
+  ],
+  "errors": [
+   {
+    "id": "depends-ignored",
+    "label": "Evaluated only the depot (rejecting it on its own)",
+    "value": -788.88,
+    "check": "60000*(1-1/1.1**3)/0.1-150000",
+    "explain": "The system adds value only because the depot exists. Dependent projects must be evaluated together."
+   },
+   {
+    "id": "depends-ignored",
+    "label": "Counted only the system",
+    "value": 34605.56,
+    "check": "30000*(1-1/1.1**3)/0.1-40000",
+    "explain": "The depot's own NPV (slightly negative) must be included in the package."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the undiscounted flows of both projects",
+    "value": 80000.0,
+    "check": "60000*3-150000+30000*3-40000",
+    "explain": "Each year's flow must be discounted at 10%."
+   }
+  ],
+  "explanation": "When the value of one project depends on another, evaluate the combination as a single project. Here the depot alone is marginally negative but is worth building because it enables the system.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-506",
+  "concept": "c09-project-relationships",
+  "also": [
+   "c09-capital-rationing"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A manufacturer has three possible uses for one vacant plant: warehouse it, lease it out, or retool it for a new product. It can pick only one. This set of projects is:",
+  "options": [
+   "mutually exclusive, so it should choose the one with the highest NPV",
+   "independent, so it should accept all those with a positive NPV",
+   "dependent, so it should evaluate them as a package",
+   "subject to capital rationing, so it should rank them by PI"
+  ],
+  "answer": 0,
+  "explanation": "Competing uses for the same asset are mutually exclusive. Capital rationing is about a shortage of funds across independent projects, not about alternatives for one asset.",
+  "source": "generated",
+  "ref": "L05A s32"
+ },
+ {
+  "id": "q09-507",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-project-relationships"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An example of capital rationing is:",
+  "options": [
+   "Rejecting a positive NPV project because of a lack of funds",
+   "Stopping analysing new projects while market conditions are adverse",
+   "Optimising the amount of cash that the company must carry",
+   "Dividing capital between several projects",
+   "None of the above"
+  ],
+  "answer": 0,
+  "explanation": "Capital rationing means passing up positive-NPV projects because funds are limited. Pausing project analysis, managing cash balances and dividing capital among projects are all ordinary financial activities, not rationing.",
+  "source": "official",
+  "ref": "PRAC q5"
+ },
+ {
+  "id": "q09-508",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Capital rationing exists when a firm:",
+  "options": [
+   "has more projects than it has managers to review",
+   "has a limit on the funds available and must pass up some positive-NPV projects",
+   "chooses to reject projects with negative NPVs",
+   "pays out most of its earnings as dividends"
+  ],
+  "answer": 1,
+  "explanation": "The defining feature is that a funds constraint, not the project's quality, forces the firm to reject positive-NPV projects. Rejecting negative-NPV projects is just the NPV rule working.",
+  "source": "generated",
+  "ref": "L05A s33; REV p3"
+ },
+ {
+  "id": "q09-509",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A firm has five independent projects, all with positive NPVs, but its board has capped this year's capital spending at $250,000, which covers only three of them. The firm is facing:",
+  "options": [
+   "capital rationing",
+   "mutually exclusive projects",
+   "unequal lives",
+   "multiple IRRs"
+  ],
+  "answer": 0,
+  "explanation": "Independent positive-NPV projects, plus a spending cap that stops the firm taking them all, is capital rationing. The projects are not alternatives for the same job, so they are not mutually exclusive.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-510",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of capital rationing?",
+  "options": [
+   "Rejecting a project because its NPV is −$20,000",
+   "Rejecting a project with an NPV of +$20,000 because the budget is used up",
+   "Delaying a profitable project because the bank will not lend more this year",
+   "Funding only the projects with the highest PIs because the budget is capped"
+  ],
+  "answer": 0,
+  "explanation": "A project with a negative NPV should be rejected whether or not funds are short; that is the NPV rule, not rationing. Rationing is about positive-NPV projects that cannot be funded.",
+  "source": "generated",
+  "ref": "PRAC q5; L05A s33"
+ },
+ {
+  "id": "q09-511",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts soft and hard capital rationing?",
+  "options": [
+   "Soft rationing applies to negative-NPV projects; hard rationing applies to positive-NPV projects",
+   "Soft rationing means funds are unlimited; hard rationing means funds are limited",
+   "Soft: an internal spending limit the firm could relax; hard: the firm cannot raise the capital at all",
+   "Soft rationing ranks projects by NPV; hard rationing ranks them by payback period"
+  ],
+  "answer": 2,
+  "explanation": "Both kinds leave positive-NPV projects unfunded. With soft rationing the company as a whole is not short of capital, so the practical advice is to maximise NPV within the allocation by ranking on PI. With hard rationing DCF analysis breaks down, because the required return itself becomes ambiguous.",
+  "source": "generated",
+  "ref": "TB 11.6; REV p3"
+ },
+ {
+  "id": "q09-512",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the profitability index the best way to rank independent projects when capital is rationed?",
+  "options": [
+   "It ignores the size of the projects, so small and large projects are treated alike",
+   "It is the only rule that does not require discounting",
+   "It measures value created per dollar of the scarce funds, so the budget is spent where it earns the most",
+   "It guarantees that the budget is spent exactly"
+  ],
+  "answer": 2,
+  "explanation": "When money is the constraint you want the most NPV per dollar spent, and PI = 1 + NPV/outlay is that quantity. Taking projects in order of PI until the money runs out is the lecture's rule. It does not guarantee an exact fit, and it does discount.",
+  "source": "generated",
+  "ref": "L05A s33; REV p3"
+ },
+ {
+  "id": "q09-513",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why should a rationed firm NOT simply fund projects in order of NPV?",
+  "options": [
+   "NPV cannot be calculated when the funds available are limited",
+   "NPV favours small projects, so too many of them get funded",
+   "Big-NPV projects can eat the budget, giving less total NPV than ranking by NPV per dollar",
+   "NPV ignores the time value of money, unlike the PI"
+  ],
+  "answer": 2,
+  "explanation": "NPV ignores the amount of capital tied up. A budget spent on one big project may produce less total NPV than the same budget spread over smaller projects with a higher PI. Example: PI-ranking gives $79,500 and NPV-ranking only $64,000 on the same $250,000 budget.",
+  "source": "generated",
+  "ref": "L05A s18, s33"
+ },
+ {
+  "id": "q09-514",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "Capital rationing is a problem for independent projects: with a funds limit, the firm takes them in rank order of PI until the money is used up.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "With independent projects and unlimited funds the firm would take all positive-NPV projects. The limit forces a ranking, and PI (present value per dollar invested) is the tool.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-515",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A firm has $250,000 to spend on independent projects. Their PIs are: A 1.38 (cost $100,000), B 1.30 ($80,000), C 1.25 ($70,000), D 1.22 ($120,000), E 1.06 ($50,000). Taking projects in order of PI until the money runs out, which are funded?",
+  "options": [
+   "A, B and C",
+   "A and D",
+   "A, B and D",
+   "A, B, C and D"
+  ],
+  "answer": 0,
+  "explanation": "In PI order the firm funds A ($100,000), then B ($80,000), then C ($70,000), which uses exactly $250,000. D (PI 1.22) is the next in line but nothing is left. 'A and D' is what ranking by NPV would give.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-516",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A firm with a $250,000 budget funds independent projects A, B and C (PIs 1.38, 1.30, 1.25; total cost $250,000) and leaves out D (cost $120,000, PI 1.22, NPV $26,000) and E (cost $50,000, PI 1.06, NPV $3,000). What does this show?",
+  "options": [
+   "D and E are bad projects and were rightly rejected",
+   "Rationing costs the firm $29,000 of NPV that it would have earned with unlimited funds",
+   "The firm made an error, because every project with a positive NPV must be funded",
+   "D and E have PIs above 1, so the budget limit does not apply to them"
+  ],
+  "answer": 1,
+  "explanation": "D and E each have a positive NPV, so with enough money the firm would take them. Leaving them out because of the budget is the cost of capital rationing: $26,000 + $3,000 = $29,000 of NPV given up.",
+  "source": "generated",
+  "ref": "L05A s33; PRAC q5"
+ },
+ {
+  "id": "q09-517",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm has $250,000 to invest in independent projects with these outlays and present values of inflows: A $100,000 / $138,000; B $80,000 / $104,000; C $70,000 / $87,500; D $120,000 / $146,000; E $50,000 / $53,000. Projects cannot be split. Ranking by PI, what is the total NPV of the projects it funds? (Answer in $.)",
+  "answer": 79500.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(138000-100000)+(104000-80000)+(87500-70000)",
+  "steps": [
+   {
+    "label": "PIs ranked: A 1.38, B 1.30, C 1.25, D 1.22, E 1.06. Outlay of A + B + C",
+    "value": 250000.0,
+    "check": "100000+80000+70000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of A + B + C",
+    "value": 79500.0,
+    "check": "(138000-100000)+(104000-80000)+(87500-70000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PI = PV/outlay: A 1.38, B 1.30, C 1.25, D 1.22, E 1.06.",
+   "Fund in PI order: A ($100,000), B ($80,000), C ($70,000) = $250,000, the whole budget.",
+   "NPVs: A = 38,000, B = 24,000, C = 17,500, total = $79,500."
+  ],
+  "keystrokes": [
+   "PI: 138000 ÷ 100000 = 1.38, 104000 ÷ 80000 = 1.30, 87500 ÷ 70000 = 1.25 ...",
+   "NPV = PV − outlay for A, B and C, then add: 79,500"
+  ],
+  "errors": [
+   {
+    "id": "ranked-by-npv",
+    "label": "Ranked by NPV (A and D)",
+    "value": 64000.0,
+    "check": "(138000-100000)+(146000-120000)",
+    "explain": "NPV ranking picks A ($38,000) and D ($26,000), using $220,000 and leaving too little for B or C."
+   },
+   {
+    "id": "ignored-budget",
+    "label": "Added the NPVs of all five projects",
+    "value": 108500.0,
+    "check": "(138000-100000)+(104000-80000)+(87500-70000)+(146000-120000)+(53000-50000)",
+    "explain": "The budget lets the firm take only $250,000 of projects; the other NPVs are not earned."
+   },
+   {
+    "id": "pv-for-npv",
+    "label": "Added the PVs of A, B and C instead of their NPVs",
+    "value": 329500.0,
+    "check": "138000+104000+87500",
+    "explain": "The PVs include the $250,000 invested; NPV is PV minus outlay."
+   }
+  ],
+  "explanation": "Rank by PI, fund in order until the budget is gone, and add the NPVs of the funded projects. PI-ranking beats NPV-ranking ($79,500 against $64,000) because it gets the most NPV per scarce dollar.",
+  "source": "generated",
+  "ref": "L05A s33; PRAC q5"
+ },
+ {
+  "id": "q09-518",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Using the same data (A $100,000 / $138,000; B $80,000 / $104,000; C $70,000 / $87,500; D $120,000 / $146,000; E $50,000 / $53,000) and a $250,000 budget with PI ranking, how much NPV does rationing cause the firm to give up compared with funding every positive-NPV project?",
+  "answer": 29000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(146000-120000)+(53000-50000)",
+  "steps": [
+   {
+    "label": "NPV of D",
+    "value": 26000.0,
+    "check": "146000-120000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of E",
+    "value": 3000.0,
+    "check": "53000-50000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV forgone",
+    "value": 29000.0,
+    "check": "(146000-120000)+(53000-50000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Projects funded: A, B, C. Projects left out: D and E.",
+   "NPV(D) = 146,000 − 120,000 = $26,000; NPV(E) = 53,000 − 50,000 = $3,000.",
+   "NPV given up = 26,000 + 3,000 = $29,000 (all five NPVs total $108,500; the funded three total $79,500)."
+  ],
+  "keystrokes": [
+   "146000 − 120000 = 26,000",
+   "53000 − 50000 = 3,000",
+   "26,000 + 3,000 = 29,000"
+  ],
+  "errors": [
+   {
+    "id": "ranked-by-npv",
+    "label": "Took the total NPV of the funded set as the amount given up",
+    "value": 79500.0,
+    "check": "(138000-100000)+(104000-80000)+(87500-70000)",
+    "explain": "That is what the firm earns, not what it forgoes."
+   },
+   {
+    "id": "pv-for-npv",
+    "label": "Used the PVs of D and E instead of their NPVs",
+    "value": 199000.0,
+    "check": "146000+53000",
+    "explain": "The forgone value is NPV, not PV; the projects would also cost $170,000."
+   },
+   {
+    "id": "left-out-project-missed",
+    "label": "Counted only the unfunded project with the highest PI (D)",
+    "value": 26000.0,
+    "check": "146000-120000",
+    "explain": "E also has a positive NPV and is left out."
+   }
+  ],
+  "explanation": "Rationing means leaving out positive-NPV projects; the cost is their combined NPV.",
+  "source": "generated",
+  "ref": "L05A s33; PRAC q5"
+ },
+ {
+  "id": "q09-519",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Cider Works has $300,000 for independent projects, each paying a level amount at the end of each of the next 4 years; R = 10% per annum. Cost / annual inflow: P $90,000 / $33,000; Q $60,000 / $23,500; R $150,000 / $51,000; S $80,000 / $30,500; T $70,000 / $24,000. Projects cannot be split. Ranking by PI, what is the total NPV of the funded projects? (Answer in $, to the cent.)",
+  "answer": 51855.06,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(23500+30500+33000+24000)*(1-1/1.1**4)/0.1-(60000+80000+90000+70000)",
+  "steps": [
+   {
+    "label": "Annuity factor (10%, 4 years)",
+    "value": 3.16987,
+    "check": "(1-1/1.1**4)/0.1",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PI of R, the project left out",
+    "value": 1.078,
+    "check": "51000*(1-1/1.1**4)/0.1/150000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total NPV of Q, S, P and T",
+    "value": 51855.06,
+    "check": "(23500+30500+33000+24000)*(1-1/1.1**4)/0.1-(60000+80000+90000+70000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (10%, 4) = 3.16987",
+   "PIs: Q = 23,500 × 3.16987/60,000 = 1.2415; S = 1.2085; P = 1.1623; T = 1.0868; R = 1.0778.",
+   "Fund in PI order: Q ($60,000), S ($80,000), P ($90,000), T ($70,000) = $300,000. R ($150,000) has a positive NPV but is left out.",
+   "NPVs: Q = 14,491.84; S = 16,680.90; P = 14,605.56; T = 6,076.77; total = $51,855.06."
+  ],
+  "keystrokes": [
+   "N = 4, I/Y = 10, PMT = 23500, CPT PV → 74,491.84; − 60000 = 14,491.84 (repeat for S, P, T)",
+   "Add the four NPVs → 51,855.06"
+  ],
+  "errors": [
+   {
+    "id": "ignored-budget",
+    "label": "Added the NPVs of all five projects",
+    "value": 63518.2,
+    "check": "(23500+30500+33000+24000+51000)*(1-1/1.1**4)/0.1-(60000+80000+90000+70000+150000)",
+    "explain": "Project R cannot be funded: adding it would need $450,000 against the $300,000 budget."
+   },
+   {
+    "id": "pv-for-npv",
+    "label": "Added the PVs of the four funded projects",
+    "value": 351855.06,
+    "check": "(23500+30500+33000+24000)*(1-1/1.1**4)/0.1",
+    "explain": "The PVs include the $300,000 invested; NPV is PV minus outlay."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 3-year annuity factor",
+    "value": -23959.43,
+    "check": "(23500+30500+33000+24000)*(1-1/1.1**3)/0.1-(60000+80000+90000+70000)",
+    "explain": "There are four annual inflows, so N = 4."
+   }
+  ],
+  "explanation": "PI ranking spends the whole $300,000 on four projects. R is a positive-NPV project (NPV $11,663.14) that rationing forces the firm to pass up.",
+  "source": "generated",
+  "ref": "L05A s33; TB 11.6"
+ },
+ {
+  "id": "q09-520",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Cider Works' project P costs $90,000 and pays $33,000 at the end of each of the next 4 years. The required return is 10% per annum. What is its PI, the figure used to rank it when funds are rationed?",
+  "options": [
+   "0.16",
+   "1.16",
+   "0.86",
+   "1.47"
+  ],
+  "answer": 1,
+  "explanation": "PV of inflows = 33,000 × 3.16987 = 104,605.56; PI = 104,605.56/90,000 = 1.162, i.e. 1.16. 0.16 is the 0-based figure, 0.86 inverts the ratio, and 1.47 forgets to discount the inflows.",
+  "source": "generated",
+  "ref": "L05A s27, s33"
+ },
+ {
+  "id": "q09-521",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A rationed firm ranks its projects by PI. Project R costs $150,000 and pays $51,000 a year for 4 years; the required return is 10% per annum. What is R's NPV, which the firm gives up if the budget does not allow it?",
+  "options": [
+   "$11,663.14",
+   "$161,663.14",
+   "$54,000.00",
+   "$1.08"
+  ],
+  "answer": 0,
+  "explanation": "NPV(R) = 51,000 × 3.16987 − 150,000 = $11,663.14. $161,663.14 is the PV of the inflows; $54,000 adds the four payments without discounting (204,000 − 150,000); and 1.08 is R's PI, not a dollar NPV.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-522",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A firm ranks independent projects by PI: A (cost $100,000, PI 1.38), B ($80,000, 1.30), C ($70,000, 1.25), D ($120,000, 1.22) and E ($50,000, 1.06). With a $250,000 budget it funds A, B and C. If the budget rises to $370,000, which project is funded in addition?",
+  "options": [
+   "D",
+   "E",
+   "None, because the PI of D is below that of C",
+   "D and E, because the extra money is enough for both"
+  ],
+  "answer": 0,
+  "explanation": "Next in PI order after C is D ($120,000), which fits exactly in the extra $120,000. E would need a further $50,000, so it is still left out. Ranking continues in PI order, not NPV order, and not by what is cheapest.",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-523",
+  "concept": "c09-capital-rationing",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps for choosing projects under capital rationing in order. (a) Fund projects from the top of the list until the budget is used up. (b) Compute each project's PI. (c) Confirm each funded project has NPV > 0. (d) Rank the projects from highest PI to lowest.",
+  "options": [
+   "d, b, a, c",
+   "b, a, d, c",
+   "b, d, a, c",
+   "a, b, c, d"
+  ],
+  "answer": 2,
+  "explanation": "Compute PI for every project, rank from highest to lowest, fund in that order until the money runs out, and check that each funded project has a positive NPV (PI > 1).",
+  "source": "generated",
+  "ref": "L05A s33"
+ },
+ {
+  "id": "q09-524",
+  "concept": "c09-capital-rationing",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Under capital rationing, which quantity should a firm maximise per dollar of capital spent?",
+  "options": [
+   "IRR, because it is a percentage return",
+   "Payback, because it recovers the money fastest",
+   "NPV per dollar invested, which is PI − 1 (so ranking by PI is the same)",
+   "Accounting profit per dollar of book assets"
+  ],
+  "answer": 2,
+  "explanation": "PI = 1 + NPV/outlay, so ranking by PI is ranking by NPV per dollar of outlay. IRR can mislead in rankings, and payback and accounting profit ignore the time value of money.",
+  "source": "generated",
+  "ref": "L05A s30, s33"
+ }
+]

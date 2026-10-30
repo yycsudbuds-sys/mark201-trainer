@@ -1,0 +1,1164 @@
+[
+ {
+  "id": "q13-401",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "If you invest in a stock which has a beta of 0.8, when the risk-free rate is 4.5% per annum and you expect the broad S&P 500 market index this year will return 10% per annum, what do you expect your stock return will be?",
+  "answer": 8.9,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "4.5+0.8*(10-4.5)",
+  "steps": [
+   {
+    "label": "Market risk premium E[R_M] − R_F",
+    "value": 5.5,
+    "check": "10-4.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Stock risk premium β × MRP",
+    "value": 4.4,
+    "check": "0.8*(10-4.5)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return R_F + β × MRP",
+    "value": 8.9,
+    "check": "4.5+0.8*(10-4.5)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R_stock] = R_F + β (E[R_M] − R_F)",
+   "= 4.5 + 0.8 × (10 − 4.5)",
+   "= 4.5 + 0.8 × 5.5 = 4.5 + 4.4 = 8.9% per annum"
+  ],
+  "keystrokes": [
+   "10 − 4.5 = 5.5",
+   "× 0.8 = 4.4",
+   "+ 4.5 = 8.9"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Multiplied β by the whole 10% market return",
+    "value": 12.5,
+    "check": "4.5+0.8*10",
+    "explain": "10% is the market's total return, not its premium. Subtract R_F first: the market risk premium is 10 − 4.5 = 5.5%."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left out the risk-free rate",
+    "value": 4.4,
+    "check": "0.8*(10-4.5)",
+    "explain": "0.8 × 5.5 = 4.4% is only the reward for bearing risk. CAPM adds the time value of money R_F back."
+   },
+   {
+    "id": "beta-times-market",
+    "label": "Applied β to the market return and dropped R_F",
+    "value": 8.0,
+    "check": "0.8*10",
+    "explain": "Two slips in one: the premium is E[R_M] − R_F, and R_F is then added to it."
+   }
+  ],
+  "explanation": "The market is expected to return 10% and T-bills pay 4.5%, so the market risk premium is 5.5%. With β = 0.8 the stock carries 80% of an average amount of systematic risk, so its premium is 4.4%. Add the risk-free rate: 8.9% per annum. The common trap is multiplying β by the 10% market return.",
+  "source": "official",
+  "ref": "PRAC q12"
+ },
+ {
+  "id": "q13-402",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Government of Canada T-bills yield 3.4% per annum and the market risk premium is 6.2% per annum. Prairie Grid Utilities has a beta of 0.55. Using CAPM, what is its expected return? Answer in % per annum.",
+  "answer": 6.81,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3.4+0.55*6.2",
+  "steps": [
+   {
+    "label": "Stock risk premium β × MRP",
+    "value": 3.41,
+    "check": "0.55*6.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Expected return R_F + premium",
+    "value": 6.81,
+    "check": "3.4+0.55*6.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = R_F + β × (market risk premium)",
+   "= 3.4 + 0.55 × 6.2",
+   "= 3.4 + 3.41 = 6.81% per annum"
+  ],
+  "keystrokes": [
+   "0.55 × 6.2 = 3.41",
+   "+ 3.4 = 6.81"
+  ],
+  "errors": [
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.2% as the market return and subtracted R_F again",
+    "value": 4.94,
+    "check": "3.4+0.55*(6.2-3.4)",
+    "explain": "The question gives the market risk premium, which already is E[R_M] − R_F. Subtracting R_F a second time understates the premium."
+   },
+   {
+    "id": "dropped-time-value",
+    "label": "Left out the risk-free rate",
+    "value": 3.41,
+    "check": "0.55*6.2",
+    "explain": "3.41% is only the reward for risk. CAPM adds the time value of money R_F back."
+   },
+   {
+    "id": "forgot-beta",
+    "label": "Added the full market risk premium without scaling by β",
+    "value": 9.6,
+    "check": "3.4+6.2",
+    "explain": "β = 0.55 means the stock carries only 55% of an average amount of systematic risk, so it earns only 55% of the premium."
+   }
+  ],
+  "explanation": "The market risk premium is given directly, so use it as is: E[R] = 3.4 + 0.55 × 6.2 = 6.81% per annum. A defensive utility (β < 1) earns less than the market.",
+  "source": "generated",
+  "ref": "SM 13-15"
+ },
+ {
+  "id": "q13-403",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Tundra Brewing is expected to return 9.1% per annum. T-bills yield 3.6% per annum and the market risk premium is 5.8% per annum. If CAPM holds, what is Tundra's beta? Give beta to 2 decimals.",
+  "answer": 0.95,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(9.1-3.6)/5.8",
+  "steps": [
+   {
+    "label": "Stock risk premium E[R] − R_F",
+    "value": 5.5,
+    "check": "9.1-3.6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Beta = stock premium ÷ MRP",
+    "value": 0.95,
+    "check": "(9.1-3.6)/5.8",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = R_F + β × MRP, so β = (E[R] − R_F)/MRP",
+   "= (9.1 − 3.6)/5.8 = 5.5/5.8 = 0.9483",
+   "β ≈ 0.95: a little less systematic risk than the market"
+  ],
+  "keystrokes": [
+   "9.1 − 3.6 = 5.5",
+   "÷ 5.8 = 0.9483"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the whole expected return by the premium",
+    "value": 1.57,
+    "check": "9.1/5.8",
+    "explain": "The stock's risk premium is E[R] − R_F = 5.5%, not 9.1%. Beta compares premiums, not total returns."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Subtracted R_F from a premium that already excludes it",
+    "value": 2.5,
+    "check": "(9.1-3.6)/(5.8-3.6)",
+    "explain": "5.8% is already E[R_M] − R_F. Subtracting 3.6% again shrinks the denominator and inflates beta."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio (MRP ÷ stock premium)",
+    "value": 1.05,
+    "check": "5.8/(9.1-3.6)",
+    "explain": "Beta = stock premium ÷ market premium. A stock earning a smaller premium than the market must have a beta below 1."
+   }
+  ],
+  "explanation": "Strip out the time value first: the stock earns a 5.5% premium while the market premium is 5.8%. Beta is the ratio of the two premiums: 5.5/5.8 = 0.95. Using the total return 9.1% in the numerator (forgot-minus-rf) inflates beta to 1.57.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-404",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Northern Lights Software has a beta of 1.25 and an expected return of 12.4% per annum. The risk-free rate is 3.9% per annum. If CAPM holds, what is the expected return on the market portfolio? Answer in % per annum.",
+  "answer": 10.7,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3.9+(12.4-3.9)/1.25",
+  "steps": [
+   {
+    "label": "Stock risk premium E[R] − R_F",
+    "value": 8.5,
+    "check": "12.4-3.9",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Market risk premium = stock premium ÷ β",
+    "value": 6.8,
+    "check": "(12.4-3.9)/1.25",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "E[R_M] = R_F + MRP",
+    "value": 10.7,
+    "check": "3.9+(12.4-3.9)/1.25",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] − R_F = β (E[R_M] − R_F)",
+   "E[R_M] − R_F = (12.4 − 3.9)/1.25 = 8.5/1.25 = 6.8",
+   "E[R_M] = 3.9 + 6.8 = 10.7% per annum"
+  ],
+  "keystrokes": [
+   "12.4 − 3.9 = 8.5",
+   "÷ 1.25 = 6.8",
+   "+ 3.9 = 10.7"
+  ],
+  "errors": [
+   {
+    "id": "mrp-as-market",
+    "label": "Reported the market risk premium as the market return",
+    "value": 6.8,
+    "check": "(12.4-3.9)/1.25",
+    "explain": "6.8% is E[R_M] − R_F. The market's expected return is that premium plus R_F."
+   },
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the whole expected return by β",
+    "value": 9.92,
+    "check": "12.4/1.25",
+    "explain": "The premium is E[R] − R_F = 8.5%, so divide 8.5, not 12.4, by β."
+   },
+   {
+    "id": "multiplied-by-beta",
+    "label": "Multiplied the stock premium by β instead of dividing",
+    "value": 14.53,
+    "check": "3.9+(12.4-3.9)*1.25",
+    "explain": "The stock premium equals β times the market premium, so the market premium is the stock premium divided by β."
+   }
+  ],
+  "explanation": "Divide the stock's 8.5% premium by its beta of 1.25 to get the market risk premium (6.8%), then add the risk-free rate: E[R_M] = 10.7%. Stopping at 6.8% answers a different question (the premium, not the market return).",
+  "source": "generated",
+  "ref": "SM 13-17"
+ },
+ {
+  "id": "q13-405",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cascade Pipelines has a beta of 1.30 and an expected return of 11.38% per annum. The market portfolio is expected to return 9.4% per annum. If CAPM holds, what is the risk-free rate? Answer in % per annum.",
+  "answer": 2.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(11.38-1.3*9.4)/(1-1.3)",
+  "steps": [
+   {
+    "label": "β × E[R_M]",
+    "value": 12.22,
+    "check": "1.3*9.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "E[R] − β × E[R_M]",
+    "value": -0.84,
+    "check": "11.38-1.3*9.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Divide by (1 − β) to get R_F",
+    "value": 2.8,
+    "check": "(11.38-1.3*9.4)/(1-1.3)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = R_F + β (E[R_M] − R_F) = R_F (1 − β) + β E[R_M]",
+   "11.38 = R_F (1 − 1.3) + 1.3 × 9.4 = −0.3 R_F + 12.22",
+   "R_F = (11.38 − 12.22)/(−0.3) = −0.84/−0.3 = 2.8% per annum"
+  ],
+  "keystrokes": [
+   "1.3 × 9.4 = 12.22",
+   "11.38 − 12.22 = −0.84",
+   "÷ (1 − 1.3) = ÷ (−0.3) = 2.8"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Forgot that R_F also sits inside the bracket",
+    "value": -0.84,
+    "check": "11.38-1.3*9.4",
+    "explain": "R_F appears twice: E[R] = R_F + β E[R_M] − β R_F. Collect both R_F terms to get R_F (1 − β) and divide by (1 − β)."
+   },
+   {
+    "id": "sign-slip",
+    "label": "Divided by (β − 1) instead of (1 − β)",
+    "value": -2.8,
+    "check": "(11.38-1.3*9.4)/(1.3-1)",
+    "explain": "R_F (1 − β) = E[R] − β E[R_M]. With β > 1, (1 − β) is negative; flipping it flips the sign of the answer."
+   },
+   {
+    "id": "wrong-divisor",
+    "label": "Divided by β instead of (1 − β)",
+    "value": -0.65,
+    "check": "(11.38-1.3*9.4)/1.3",
+    "explain": "The coefficient on R_F after collecting terms is (1 − β), not β."
+   }
+  ],
+  "explanation": "Solving for R_F is the awkward rearrangement because R_F appears twice. Expand and collect: R_F (1 − β) = E[R] − β E[R_M], so R_F = (11.38 − 12.22)/(1 − 1.3) = 2.8%. Check: 2.8 + 1.3 × (9.4 − 2.8) = 2.8 + 8.58 = 11.38.",
+  "source": "generated",
+  "ref": "SM 13-18"
+ },
+ {
+  "id": "q13-406",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Two stocks lie on the same security market line. Stock P has beta 1.20 and expected return 10.8% per annum; Stock Q has beta 0.70 and expected return 7.8% per annum. Because reward-to-risk (E[R] − R_F)/β is equal for both, what is the risk-free rate? Answer in % per annum.",
+  "answer": 3.6,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "10.8-1.2*(10.8-7.8)/(1.2-0.7)",
+  "steps": [
+   {
+    "label": "Reward-to-risk = SML slope (return gap ÷ beta gap)",
+    "value": 6.0,
+    "check": "(10.8-7.8)/(1.2-0.7)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "R_F = E[R_P] − β_P × slope",
+    "value": 3.6,
+    "check": "10.8-1.2*(10.8-7.8)/(1.2-0.7)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Equal reward-to-risk: (10.8 − R_F)/1.20 = (7.8 − R_F)/0.70",
+   "Cross-multiply: 0.70 (10.8 − R_F) = 1.20 (7.8 − R_F) → 7.56 − 0.70 R_F = 9.36 − 1.20 R_F → 0.50 R_F = 1.80 → R_F = 3.6",
+   "Shortcut: slope = (10.8 − 7.8)/(1.20 − 0.70) = 6.0, so R_F = 10.8 − 1.20 × 6.0 = 3.6% per annum"
+  ],
+  "keystrokes": [
+   "10.8 − 7.8 = 3.0",
+   "÷ (1.2 − 0.7) = 6.0",
+   "10.8 − 1.2 × 6.0 = 3.6"
+  ],
+  "errors": [
+   {
+    "id": "swapped-betas",
+    "label": "Cross-multiplied with the betas on the wrong sides",
+    "value": 15.0,
+    "check": "(1.2*10.8-0.7*7.8)/(1.2-0.7)",
+    "explain": "(E_P − R_F)/β_P = (E_Q − R_F)/β_Q gives β_Q (E_P − R_F) = β_P (E_Q − R_F). Pairing each beta with its own return flips the numerator."
+   },
+   {
+    "id": "slope-as-rf",
+    "label": "Reported the SML slope as the risk-free rate",
+    "value": 6.0,
+    "check": "(10.8-7.8)/(1.2-0.7)",
+    "explain": "6.0% is the slope (the market risk premium). The risk-free rate is the intercept at β = 0."
+   },
+   {
+    "id": "added-betas",
+    "label": "Used β_P + β_Q instead of the beta gap for the slope",
+    "value": 8.91,
+    "check": "10.8-1.2*(10.8-7.8)/(1.2+0.7)",
+    "explain": "Slope = rise over run, and the run is the difference in betas, 1.20 − 0.70."
+   }
+  ],
+  "explanation": "In equilibrium every asset earns the same premium per unit of beta, so the two stocks sit on one straight line. Its slope is (10.8 − 7.8)/(1.20 − 0.70) = 6.0, and extending the line back to β = 0 gives R_F = 3.6%. Check Q: 3.6 + 0.70 × 6.0 = 7.8.",
+  "source": "generated",
+  "ref": "SM 13-22"
+ },
+ {
+  "id": "q13-407",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Under CAPM, Stock S (beta 1.40) is expected to return 12.5% per annum and Stock T (beta 0.80) is expected to return 8.3% per annum. Both are fairly priced. What return do you expect on the market portfolio? Answer in % per annum.",
+  "answer": 9.7,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "8.3-0.8*(12.5-8.3)/(1.4-0.8)+(12.5-8.3)/(1.4-0.8)",
+  "steps": [
+   {
+    "label": "Market risk premium = SML slope",
+    "value": 7.0,
+    "check": "(12.5-8.3)/(1.4-0.8)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Risk-free rate = E[R_T] − β_T × slope",
+    "value": 2.7,
+    "check": "8.3-0.8*(12.5-8.3)/(1.4-0.8)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "E[R_M] = R_F + MRP",
+    "value": 9.7,
+    "check": "8.3-0.8*(12.5-8.3)/(1.4-0.8)+(12.5-8.3)/(1.4-0.8)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Fairly priced stocks lie on the SML, so slope = (12.5 − 8.3)/(1.40 − 0.80) = 4.2/0.6 = 7.0 = market risk premium",
+   "R_F = 8.3 − 0.80 × 7.0 = 2.7",
+   "E[R_M] = R_F + MRP = 2.7 + 7.0 = 9.7% per annum (the SML at β = 1)"
+  ],
+  "keystrokes": [
+   "12.5 − 8.3 = 4.2",
+   "÷ (1.4 − 0.8) = 7.0",
+   "8.3 − 0.8 × 7.0 = 2.7",
+   "2.7 + 7.0 = 9.7"
+  ],
+  "errors": [
+   {
+    "id": "mrp-as-market",
+    "label": "Reported the SML slope as the market return",
+    "value": 7.0,
+    "check": "(12.5-8.3)/(1.4-0.8)",
+    "explain": "The slope of the SML is the market risk premium, E[R_M] − R_F. The market return is R_F plus that slope."
+   },
+   {
+    "id": "averaged-returns",
+    "label": "Averaged the two stocks' returns",
+    "value": 10.4,
+    "check": "(12.5+8.3)/2",
+    "explain": "The average of two expected returns is the return at the average of their betas (1.10), not at the market's beta of 1.00."
+   },
+   {
+    "id": "rf-as-market",
+    "label": "Reported the risk-free rate as the market return",
+    "value": 2.7,
+    "check": "8.3-0.8*(12.5-8.3)/(1.4-0.8)",
+    "explain": "R_F is the intercept at β = 0. The market portfolio sits at β = 1."
+   }
+  ],
+  "explanation": "Two points fix the SML. Slope 7.0% is the market risk premium; the intercept is R_F = 2.7%; at β = 1 the line gives E[R_M] = 2.7 + 7.0 = 9.7%. Check S: 2.7 + 1.40 × 7.0 = 12.5.",
+  "source": "generated",
+  "ref": "SM 13-29"
+ },
+ {
+  "id": "q13-408",
+  "concept": "c13-capm",
+  "also": [
+   "c13-portfolio-beta"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Priya holds $40,000 in an S&P/TSX 60 index fund (beta 1.00), $30,000 in Coast Mountain Rail (beta 1.60) and $30,000 in T-bills. T-bills pay 3.0% per annum and the market risk premium is 6.0% per annum. Using CAPM, what is the expected return on her whole portfolio? Answer in % per annum.",
+  "answer": 8.28,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3+(0.4*1+0.3*1.6+0.3*0)*6",
+  "steps": [
+   {
+    "label": "Portfolio beta Σ w β (T-bill β = 0)",
+    "value": 0.88,
+    "check": "0.4*1+0.3*1.6+0.3*0",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "E[R_P] = R_F + β_P × MRP",
+    "value": 8.28,
+    "check": "3+(0.4*1+0.3*1.6+0.3*0)*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Weights: 40%, 30%, 30%. β_P = 0.40 × 1.00 + 0.30 × 1.60 + 0.30 × 0 = 0.88",
+   "E[R_P] = 3.0 + 0.88 × 6.0 = 3.0 + 5.28 = 8.28% per annum",
+   "Check by weights: 0.40 × 9.0 + 0.30 × 12.6 + 0.30 × 3.0 = 3.6 + 3.78 + 0.9 = 8.28"
+  ],
+  "keystrokes": [
+   "0.4 × 1 + 0.3 × 1.6 + 0.3 × 0 = 0.88",
+   "× 6 = 5.28",
+   "+ 3 = 8.28"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Ignored the T-bills when weighting betas",
+    "value": 10.54,
+    "check": "3+((40*1+30*1.6)/70)*6",
+    "explain": "T-bills are 30% of the portfolio with β = 0. Dropping them re-weights the risky assets to 100% and overstates beta."
+   },
+   {
+    "id": "equal-weight-beta",
+    "label": "Averaged the three betas with equal weights",
+    "value": 8.2,
+    "check": "3+((1+1.6+0)/3)*6",
+    "explain": "Portfolio beta uses dollar weights (40/30/30), not a simple average."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.0% as the market return",
+    "value": 5.64,
+    "check": "3+0.88*(6-3)",
+    "explain": "The question gives the market risk premium, so do not subtract R_F again."
+   }
+  ],
+  "explanation": "CAPM works for portfolios exactly as for stocks, using the portfolio beta. The T-bills count with weight 30% and β = 0, so β_P = 0.88 and E[R_P] = 3.0 + 0.88 × 6.0 = 8.28%.",
+  "source": "generated",
+  "ref": "SM 13-13"
+ },
+ {
+  "id": "q13-409",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Foothills Steel has a beta of 1.60 and an expected return of 14.0% per annum. T-bills yield 3.6% per annum. What market risk premium does CAPM imply? Answer in % per annum.",
+  "answer": 6.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(14-3.6)/1.6",
+  "steps": [
+   {
+    "label": "Stock risk premium E[R] − R_F",
+    "value": 10.4,
+    "check": "14-3.6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "MRP = stock premium ÷ β",
+    "value": 6.5,
+    "check": "(14-3.6)/1.6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] − R_F = β × MRP, so MRP = (E[R] − R_F)/β",
+   "= (14.0 − 3.6)/1.60 = 10.4/1.60 = 6.5% per annum"
+  ],
+  "keystrokes": [
+   "14 − 3.6 = 10.4",
+   "÷ 1.6 = 6.5"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the whole expected return by β",
+    "value": 8.75,
+    "check": "14/1.6",
+    "explain": "The stock's premium is 14.0 − 3.6 = 10.4%. Dividing the total return by β does not remove R_F."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Reported the market return (R_F + MRP) instead of the premium",
+    "value": 10.1,
+    "check": "3.6+(14-3.6)/1.6",
+    "explain": "6.5% is the premium. Adding R_F back gives 10.1%, which is E[R_M], a different quantity."
+   },
+   {
+    "id": "forgot-divide-beta",
+    "label": "Stopped at the stock's premium",
+    "value": 10.4,
+    "check": "14-3.6",
+    "explain": "10.4% is the premium for β = 1.60. Divide by β to get the premium for β = 1."
+   }
+  ],
+  "explanation": "The stock earns a 10.4% premium for carrying 1.60 units of market risk, so each unit of beta is paid 10.4/1.60 = 6.5%. That per-unit reward is the market risk premium (the SML slope).",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-410",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Coast Mountain Rail has a beta of 1.5. The risk-free rate is 3% per annum and the market is expected to return 9% per annum. What is Coast Mountain's CAPM expected return?",
+  "options": [
+   "16.50%",
+   "9.00%",
+   "12.00%",
+   "13.50%"
+  ],
+  "answer": 2,
+  "explanation": "Market risk premium = 9 − 3 = 6%, so E[R] = 3 + 1.5 × 6 = 12.0%. 16.5% = 3 + 1.5 × 9 multiplies β by the whole market return (forgot to subtract R_F). 9.0% = 1.5 × 6 is the premium alone with no time value. 13.5% = 1.5 × 9 uses the market return and forgets R_F as well.",
+  "source": "generated",
+  "ref": "S7 s17"
+ },
+ {
+  "id": "q13-411",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Riverbend Dairy has a beta of 0.85. The risk-free rate is 3.5% per annum and the market risk premium is 6% per annum. What is Riverbend's CAPM expected return?",
+  "options": [
+   "8.60%",
+   "5.63%",
+   "5.10%",
+   "9.50%"
+  ],
+  "answer": 0,
+  "explanation": "The 6% is the premium, so use it directly: 3.5 + 0.85 × 6 = 8.60%. 5.63% = 3.5 + 0.85 × (6 − 3.5) treats 6% as the market return and subtracts R_F again (mrp-as-market). 5.10% = 0.85 × 6 leaves out R_F. 9.50% = 3.5 + 6 forgets to scale by β.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-412",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Orchards has a beta of 0.85. The risk-free rate is 3.5% per annum and the market portfolio is expected to return 6% per annum. What is Okanagan's CAPM expected return?",
+  "options": [
+   "8.60%",
+   "5.10%",
+   "6.00%",
+   "5.63%"
+  ],
+  "answer": 3,
+  "explanation": "The 6% is the market return, not the premium, so the premium is 6 − 3.5 = 2.5% and E[R] = 3.5 + 0.85 × 2.5 = 5.625%, or 5.63%. 8.60% = 3.5 + 0.85 × 6 mistakes the market return for the premium. 5.10% = 0.85 × 6 makes that mistake and also drops R_F. 6.00% is just the market return.",
+  "source": "generated",
+  "ref": "SM 13-15"
+ },
+ {
+  "id": "q13-413",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rocky Mountain Telecom is expected to return 14.5% per annum. T-bills yield 4% per annum and the market risk premium is 6.5% per annum. If CAPM holds, what is its beta?",
+  "options": [
+   "2.23",
+   "1.62",
+   "4.20",
+   "0.62"
+  ],
+  "answer": 1,
+  "explanation": "β = (E[R] − R_F)/MRP = (14.5 − 4)/6.5 = 10.5/6.5 = 1.615, or 1.62. 2.23 = 14.5/6.5 forgets to subtract R_F. 4.20 = 10.5/(6.5 − 4) subtracts R_F from a premium that already excludes it. 0.62 = 6.5/10.5 inverts the ratio.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-414",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A pension fund wants a portfolio with an expected return of 10.5% per annum. T-bills yield 3.0% per annum and the market is expected to return 9.0% per annum. What portfolio beta does CAPM require?",
+  "options": [
+   "1.75",
+   "0.83",
+   "1.25",
+   "1.17"
+  ],
+  "answer": 2,
+  "explanation": "Required premium = 10.5 − 3.0 = 7.5%; market risk premium = 9.0 − 3.0 = 6.0%; β = 7.5/6.0 = 1.25. 1.75 = 10.5/6.0 skips subtracting R_F from the target. 0.83 = 7.5/9.0 divides by the market return instead of the premium. 1.17 = 10.5/9.0 ignores R_F in both places.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-415",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which statement best describes the capital asset pricing model (CAPM)?",
+  "options": [
+   "A stock's expected return equals the risk-free rate plus its beta times the market risk premium, so only systematic risk is rewarded.",
+   "A stock's expected return rises with its standard deviation, because investors are paid for total risk.",
+   "Every stock earns the expected return of the market portfolio, whatever its risk.",
+   "A stock's expected return equals the risk-free rate plus its standard deviation times the market risk premium."
+  ],
+  "answer": 0,
+  "explanation": "CAPM: E[R_i] = R_F + β_i (E[R_M] − R_F). Only systematic risk, measured by β, is rewarded because company-specific risk can be diversified away. The versions that use σ confuse total risk with systematic risk, and the claim that every stock earns the market return ignores risk altogether.",
+  "source": "generated",
+  "ref": "L06 s55"
+ },
+ {
+  "id": "q13-416",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "You must find the required return on one individual stock from its beta, the risk-free rate and the market's expected return. Which relationship do you use?",
+  "options": [
+   "The Sharpe ratio, (E[R_P] − R_F)/σ_P",
+   "The capital allocation line, E[R] = w E[R_P] + (1 − w) R_F",
+   "The two-asset portfolio standard deviation formula",
+   "The CAPM, E[R_i] = R_F + β_i (E[R_M] − R_F)"
+  ],
+  "answer": 3,
+  "explanation": "A required return for a single asset from its beta is the CAPM (the equation of the SML). The Sharpe ratio scores a portfolio's reward per unit of total risk, the CAL mixes a portfolio with the risk-free asset, and the portfolio formula measures risk, not required return.",
+  "source": "generated",
+  "ref": "L06 s55"
+ },
+ {
+  "id": "q13-417",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "In E[R_i] = R_F + β_i (E[R_M] − R_F), which part is the reward for merely waiting, with no risk taken?",
+  "options": [
+   "β_i (E[R_M] − R_F), the reward for risk",
+   "R_F, the time value of money",
+   "E[R_M] − R_F, the market risk premium",
+   "β_i, the amount of systematic risk"
+  ],
+  "answer": 1,
+  "explanation": "CAPM has three parts: the time value of money (R_F, the reward for waiting), the market risk premium (the reward for bearing an average amount of systematic risk) and beta (how much systematic risk this asset has).",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-418",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A tutor describes expected return as: (1) a reward for waiting, (2) the reward the market pays for an average amount of systematic risk, (3) how much systematic risk this particular stock carries. Which CAPM terms match (1), (2) and (3) in that order?",
+  "options": [
+   "R_F; β_i; E[R_M] − R_F",
+   "E[R_M]; E[R_M] − R_F; σ_i",
+   "R_F; E[R_M] − R_F; β_i",
+   "R_F; σ_i; E[R_M]"
+  ],
+  "answer": 2,
+  "explanation": "The professor's three parts are the time value of money (R_F), the market risk premium (E[R_M] − R_F) and the amount of systematic risk (β_i). Standard deviation is total risk and is not a CAPM input.",
+  "source": "generated",
+  "ref": "L06 s55"
+ },
+ {
+  "id": "q13-419",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A question states: 'the market risk premium is 6%.' For a stock with beta β and risk-free rate R_F, which CAPM expression is correct?",
+  "options": [
+   "R_F + β × 6%",
+   "R_F + β × (6% − R_F)",
+   "β × 6%",
+   "6% + β × R_F"
+  ],
+  "answer": 0,
+  "explanation": "The market risk premium is E[R_M] − R_F, so 6% replaces the whole bracket: E[R_i] = R_F + β × 6%. Writing R_F + β × (6% − R_F) subtracts R_F a second time, the mrp-as-market error.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-420",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A question states: 'the market is expected to return 6%.' For a stock with beta β and risk-free rate R_F, which CAPM expression is correct?",
+  "options": [
+   "R_F + β × 6%",
+   "β × (6% − R_F)",
+   "6% + β × R_F",
+   "R_F + β × (6% − R_F)"
+  ],
+  "answer": 3,
+  "explanation": "6% is E[R_M], the market's total expected return, so the premium is 6% − R_F and E[R_i] = R_F + β × (6% − R_F). Multiplying β by the 6% directly treats the market return as if it were the premium.",
+  "source": "generated",
+  "ref": "SM 13-17"
+ },
+ {
+  "id": "q13-421",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Rearranging E[R_i] = R_F + β_i (E[R_M] − R_F) for beta gives β_i =",
+  "options": [
+   "E[R_i] ÷ (E[R_M] − R_F)",
+   "(E[R_i] − R_F) ÷ (E[R_M] − R_F)",
+   "(E[R_M] − R_F) ÷ (E[R_i] − R_F)",
+   "E[R_i] ÷ E[R_M]"
+  ],
+  "answer": 1,
+  "explanation": "Subtract R_F from both sides, then divide by the market risk premium: β = (E[R_i] − R_F)/(E[R_M] − R_F), the ratio of the stock's premium to the market's premium. Skipping the R_F subtraction in the numerator is the forgot-minus-rf error; flipping the fraction inverts beta.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-422",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A stock's expected return, beta and the risk-free rate are known. The market risk premium that CAPM implies is",
+  "options": [
+   "E[R_i] ÷ β_i",
+   "(E[R_i] − R_F) × β_i",
+   "(E[R_i] − R_F) ÷ β_i",
+   "E[R_i] − R_F"
+  ],
+  "answer": 2,
+  "explanation": "E[R_i] − R_F = β_i × MRP, so MRP = (E[R_i] − R_F)/β_i. This is the stock's reward-to-risk ratio, which in equilibrium equals the market risk premium. Multiplying by β gives the stock's own premium instead.",
+  "source": "generated",
+  "ref": "SM 13-24"
+ },
+ {
+  "id": "q13-423",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 3,
+  "stem": "From a stock's E[R_i], β_i and the risk-free rate R_F, the market's expected return is E[R_M] =",
+  "options": [
+   "R_F + (E[R_i] − R_F) ÷ β_i",
+   "(E[R_i] − R_F) ÷ β_i",
+   "R_F + β_i (E[R_i] − R_F)",
+   "E[R_i] ÷ β_i"
+  ],
+  "answer": 0,
+  "explanation": "The market return is R_F plus the market risk premium, and the premium is the stock's premium divided by β. (E[R_i] − R_F) ÷ β_i alone stops at the premium (mrp-as-market); R_F + β_i (E[R_i] − R_F) multiplies by β instead of dividing.",
+  "source": "generated",
+  "ref": "SM 13-17"
+ },
+ {
+  "id": "q13-424",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A stock has beta 1.4. If the market risk premium rises by 1 percentage point and nothing else changes, its CAPM expected return rises by",
+  "options": [
+   "1.0 percentage point",
+   "0.4 percentage point",
+   "2.4 percentage points",
+   "1.4 percentage points"
+  ],
+  "answer": 3,
+  "explanation": "The expected return is R_F + β × MRP, so a 1-point rise in MRP adds β × 1 = 1.4 points. Only a stock with β = 1 moves one for one with the premium.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-425",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "CAPM: E[R_i] = R_F + β_i × (_____)",
+  "options": [
+   "E[R_M]",
+   "E[R_M] − R_F",
+   "E[R_M] + R_F",
+   "E[R_i] − R_F"
+  ],
+  "answer": 1,
+  "explanation": "The bracket is the market risk premium, E[R_M] − R_F: the extra return the market portfolio offers over the risk-free asset. Multiplying β by E[R_M] alone ignores the time value of money already in the market return.",
+  "source": "generated",
+  "ref": "L06 s55"
+ },
+ {
+  "id": "q13-426",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "A classmate writes E[R_stock] = R_F + (σ_stock ÷ σ_M)(E[R_M] − R_F) for one individual stock. What is wrong with it?",
+  "options": [
+   "Nothing: σ and β are interchangeable once you divide by σ_M.",
+   "The market's σ_M should be squared to σ_M² for a single stock.",
+   "It is the CML, valid only for efficient portfolios; a single stock needs β, not σ.",
+   "The risk-free rate should not appear in a single stock's formula."
+  ],
+  "answer": 2,
+  "explanation": "The CML, E[R_P] = R_F + (σ_P/σ_M)(E[R_M] − R_F), applies to efficient portfolios, whose risk is all systematic. A single stock also carries diversifiable risk inside its σ, so its required return depends on β only (CAPM/SML). This is the cml-on-single-stock error.",
+  "source": "generated",
+  "ref": "L06 s42-57"
+ },
+ {
+  "id": "q13-427",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a component of a stock's CAPM expected return?",
+  "options": [
+   "A premium for the company's own unsystematic (diversifiable) risk",
+   "The risk-free rate (time value of money)",
+   "The market risk premium",
+   "The stock's beta (amount of systematic risk)"
+  ],
+  "answer": 0,
+  "explanation": "CAPM has exactly three parts: the time value of money, the market risk premium and the amount of systematic risk. Company-specific risk can be diversified away, so the market pays nothing for it.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-428",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does CAPM pay no extra expected return for a stock's company-specific risk?",
+  "options": [
+   "It is always much smaller than market risk, so it is not worth pricing.",
+   "It cannot be measured for individual stocks, so no premium can be set.",
+   "It is already included in the risk-free rate that every investor earns.",
+   "Investors can diversify it away almost free, so nobody is paid to bear it."
+  ],
+  "answer": 3,
+  "explanation": "Unsystematic risk washes out in a diversified portfolio, so no investor needs to bear it. Only systematic risk, which diversification cannot remove, earns a premium. The size of the risk and our ability to measure it are beside the point.",
+  "source": "generated",
+  "ref": "L06 s46-50"
+ },
+ {
+  "id": "q13-429",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A mining stock has a standard deviation of 45% but a beta of 0. T-bills yield 3.5% and the market is expected to return 9.5%. What does CAPM give as the stock's expected return, and why?",
+  "options": [
+   "9.5%: every stock earns the market return.",
+   "3.5%: it has no systematic risk, so it earns only the time value of money.",
+   "Well above 9.5%: a 45% standard deviation demands a large premium.",
+   "0%: zero beta means the stock earns nothing."
+  ],
+  "answer": 1,
+  "explanation": "With β = 0, E[R] = R_F + 0 × (9.5 − 3.5) = 3.5%. The stock may be very volatile, but none of that volatility moves with the market, so a diversified investor is not paid for it.",
+  "source": "generated",
+  "ref": "L06 s51-52"
+ },
+ {
+  "id": "q13-430",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A gold stock has a beta of −0.3. T-bills yield 4.0% and the market risk premium is 6.2% per annum. What does CAPM imply?",
+  "options": [
+   "Expected return −1.86%, the negative risk premium alone.",
+   "Expected return 4.00%, since negative betas earn the risk-free rate.",
+   "Expected return 2.14%, below R_F, because the stock hedges market risk.",
+   "Nothing: CAPM cannot be used with a negative beta."
+  ],
+  "answer": 2,
+  "explanation": "E[R] = 4.0 + (−0.3)(6.2) = 4.0 − 1.86 = 2.14%. A negative beta moves against the market, so holding it hedges systematic risk and investors accept less than R_F. Quoting −1.86% forgets the time value of money.",
+  "source": "generated",
+  "ref": "L06 s51-52"
+ },
+ {
+  "id": "q13-431",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "The risk-free rate rises by 1 percentage point and the market risk premium is unchanged. According to CAPM, what happens to expected returns?",
+  "options": [
+   "Every stock's expected return rises by 1 percentage point, whatever its beta.",
+   "High-beta stocks rise by more than 1 point.",
+   "Expected returns stay the same; only the market portfolio changes.",
+   "Low-beta stocks rise by 1 point and high-beta stocks do not change."
+  ],
+  "answer": 0,
+  "explanation": "E[R_i] = R_F + β_i × MRP. If MRP is unchanged, only the R_F term moves, so every expected return shifts up by the same 1 point and the SML moves up in parallel. A stock's beta multiplies the premium, not R_F.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-432",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "The market risk premium and the expected return on the market portfolio are two names for the same number.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "The market risk premium is E[R_M] − R_F. With E[R_M] = 9.5% and R_F = 3.5%, the premium is 6.0%, a different number. Mixing the two is the most common CAPM trap.",
+  "source": "generated",
+  "ref": "SM 13-16"
+ },
+ {
+  "id": "q13-433",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "With R_F = 4% and a market risk premium of 6%, doubling a stock's beta from 0.8 to 1.6 doubles its risk premium (4.8% to 9.6%) but does not double its expected return (8.8% to 13.6%).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The premium is β × MRP, so it scales with β: 0.8 × 6 = 4.8 and 1.6 × 6 = 9.6. The expected return adds R_F = 4% to the premium, so it moves from 8.8% to 13.6%, not to 17.6%.",
+  "source": "generated",
+  "ref": "TB Ex 13.8"
+ },
+ {
+  "id": "q13-434",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "CAPM can be applied to a portfolio by using the portfolio beta, β_P = Σ w_i β_i (with β = 0 for the risk-free asset), in place of β_i.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Portfolio beta is the weighted average of the betas, and the portfolio's expected return is R_F + β_P × MRP. The risk-free asset counts in the weights with β = 0.",
+  "source": "generated",
+  "ref": "TB 13.7"
+ },
+ {
+  "id": "q13-435",
+  "concept": "c13-capm",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "To compute a stock's CAPM expected return from R_F, E[R_M] and β, which sequence of steps is correct?",
+  "options": [
+   "Multiply β by E[R_M]; then add R_F.",
+   "Add R_F to E[R_M]; then multiply by β.",
+   "Multiply E[R_M] − R_F by β; then subtract R_F.",
+   "Subtract R_F from E[R_M]; multiply the result by β; add R_F."
+  ],
+  "answer": 3,
+  "explanation": "First find the market risk premium (E[R_M] − R_F), then scale it by the amount of systematic risk (β), then add back the time value of money (R_F). Each wrong sequence mishandles R_F.",
+  "source": "generated",
+  "ref": "S7 s17"
+ }
+]

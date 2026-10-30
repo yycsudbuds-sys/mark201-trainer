@@ -1,0 +1,811 @@
+[
+ {
+  "id": "q09-401",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A firm lists four proposals with cash flows in $ thousands at years 0, 1, 2 and 3. Which proposal has financing-type cash flows?",
+  "options": [
+   "−120, +50, +50, +50",
+   "+95, −40, −40, −40",
+   "−80, +60, −25, +70",
+   "−60, 0, 0, +95"
+  ],
+  "answer": 1,
+  "explanation": "Financing-type flows start with money coming IN (a positive CF0) and are followed by money going OUT. The proposal +95, −40, −40, −40 looks like a loan or a customer prepayment. The −120, +50, +50, +50 pattern is conventional, and −80, +60, −25, +70 changes sign twice (an unconventional mid-life cost), but neither starts positive and then only pays out.",
+  "source": "generated",
+  "ref": "L05A s22"
+ },
+ {
+  "id": "q09-402",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-multiple-irr"
+  ],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the professor's terms, a project has financing-type cash flows when:",
+  "options": [
+   "CF0 is negative and the later cash flows are positive",
+   "the cash flows change sign more than twice",
+   "the cash flows include interest paid on the firm's debt",
+   "CF0 is positive (money received up front) and the later cash flows are negative"
+  ],
+  "answer": 3,
+  "explanation": "Financing-type flows reverse the usual pattern: you receive cash first and pay it back later, like borrowing. A conventional project is the other way round. Interest on the firm's own debt is a financing cost that is kept OUT of project cash flows, so it is not what makes flows 'financing-type'.",
+  "source": "generated",
+  "ref": "L05A s22"
+ },
+ {
+  "id": "q09-403",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the IRR decision rule for a financing-type project differ from the rule for a conventional project?",
+  "options": [
+   "Conventional: accept if IRR > R. Financing-type: the same rule, because IRR is always a return.",
+   "Conventional: accept if IRR < R. Financing-type: accept if IRR > R.",
+   "Conventional: accept if IRR > R. Financing-type: accept if IRR < R.",
+   "Both use IRR > R, but financing-type projects must also have a payback under two years."
+  ],
+  "answer": 2,
+  "explanation": "For a conventional project the IRR is the return you earn, so you want it above R. For a financing-type project the IRR is the rate you PAY for the money received up front, so you want it below R. Applying the conventional rule to financing-type flows is the classic wrong-direction error.",
+  "source": "generated",
+  "ref": "L05A s25-26; SM 9-22"
+ },
+ {
+  "id": "q09-404",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-profile"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the IRR rule reverse for financing-type cash flows?",
+  "options": [
+   "Financing-type flows have two IRRs, and the lower one must always be used",
+   "The later cash flows are negative, so the IRR must itself be negative",
+   "Financing-type projects are riskier, so the firm should demand a higher IRR",
+   "The IRR is the cost of the money received, and NPV rises with R as the later outflows shrink"
+  ],
+  "answer": 3,
+  "explanation": "With a positive CF0 and negative later flows, a higher discount rate makes the future outflows cheaper in present value, so NPV climbs with R (an upward-sloping NPV profile). NPV is positive when R is above the IRR, which is the same as IRR below R. The sign pattern has one change, so there is a single IRR, and it is usually positive.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-405",
+  "concept": "c09-financing-flows",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Northwind Cold Storage is paid $72,000 up front for a service contract and must spend $38,000 at the end of year 1 and $41,000 at the end of year 2. Its IRR is 6.33% per annum and the required return is 11%. What follows?",
+  "options": [
+   "Reject: the IRR of 6.33% is below the required return of 11%",
+   "Reject: the later flows are negative, so the contract cannot create value",
+   "Accept only if the IRR is above 11%, so the answer cannot be decided",
+   "Accept: the contract funds the firm at 6.33%, below the 11% it requires, and NPV is positive"
+  ],
+  "answer": 3,
+  "explanation": "The flows are financing-type, so the rule flips: accept when IRR < R. 6.33% < 11%, and the NPV at 11% is $4,489.25, which confirms it. Rejecting because 'IRR is below R' applies the conventional rule to flows it does not fit.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-406",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A project pays the firm $50,000 today and then costs $30,000 at the end of each of the next two years. The required return is 10% and the project's IRR is above 10%. The firm should accept it because the IRR exceeds the required return.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "These are financing-type flows, so an IRR above R means the money costs MORE than the firm can earn elsewhere. Check with NPV: 50,000 − 30,000 × annuity factor(10%, 2) = 50,000 − 30,000 × 1.73554 = −$2,066.12, so reject.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-407",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-profile"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are true of a project with financing-type cash flows EXCEPT:",
+  "options": [
+   "NPV falls as the required return rises",
+   "The IRR is a cost of funds rather than a return earned",
+   "The NPV profile slopes upward",
+   "The project should be accepted when IRR < R"
+  ],
+  "answer": 0,
+  "explanation": "For financing-type flows the NPV profile slopes UP, so NPV rises (not falls) as R increases. The other three statements are the standard properties: IRR is the cost of the money received, the profile slopes upward, and the accept rule is IRR < R.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-408",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-profile"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A project brings in $60,000 now and costs $35,000 at the end of each of the next two years. The NPV at 0% is −$10,000 and the IRR is 10.92%. For which required returns R should the firm accept it?",
+  "options": [
+   "Any R below 10.92%",
+   "Any R above 0%, because the NPV at 0% is the only number that matters",
+   "Any R above 10.92%",
+   "Never: the NPV at 0% is negative"
+  ],
+  "answer": 2,
+  "explanation": "Financing-type NPV starts negative at R = 0 and rises, crossing zero at the IRR of 10.92%. So NPV is positive, and the project acceptable, for every R above the IRR. Choosing 'below' reverses the rule.",
+  "source": "generated",
+  "ref": "SM 9-22; L05A s25"
+ },
+ {
+  "id": "q09-409",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Northwind Cold Storage is paid $72,000 up front and must spend $38,000 at the end of year 1 and $41,000 at the end of year 2. The required return is 11% per annum. What is the NPV? (Answer in $, to the cent.)",
+  "answer": 4489.25,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "72000-38000/1.11-41000/1.11**2",
+  "steps": [
+   {
+    "label": "PV of the year-1 cost",
+    "value": 34234.23,
+    "check": "38000/1.11",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of the year-2 cost",
+    "value": 33276.52,
+    "check": "41000/1.11**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV = CF0 − PV of costs",
+    "value": 4489.25,
+    "check": "72000-38000/1.11-41000/1.11**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "CF0 = +72,000 (money received) and the later flows are negative.",
+   "PV of year-1 cost = 38,000/1.11 = 34,234.23",
+   "PV of year-2 cost = 41,000/1.11² = 33,276.52",
+   "NPV = 72,000 − 34,234.23 − 33,276.52 = $4,489.25",
+   "NPV > 0, so accept (the IRR is below R, as the financing-type rule requires)."
+  ],
+  "keystrokes": [
+   "CF, CF0 = 72000, C01 = −38000, F01 = 1, C02 = −41000, F02 = 1",
+   "NPV, I = 11, CPT → 4,489.25"
+  ],
+  "errors": [
+   {
+    "id": "sign-cf0",
+    "label": "Treated the up-front $72,000 as an outflow",
+    "value": -139510.75,
+    "check": "-72000-38000/1.11-41000/1.11**2",
+    "explain": "The $72,000 is cash received, so CF0 is +72,000; flipping its sign makes everything negative."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Discounted CF0 one period",
+    "value": 4044.37,
+    "check": "72000/1.11-38000/1.11**2-41000/1.11**3",
+    "explain": "CF0 occurs today and is not discounted; every later flow moves out one year in this error."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the flows without discounting",
+    "value": -7000.0,
+    "check": "72000-38000-41000",
+    "explain": "At 0% the flows can be added, but the firm's required return is 11%, so each outflow must be discounted."
+   }
+  ],
+  "explanation": "Positive CF0 less the present value of the two later costs. The positive NPV says the up-front money is cheaper than the firm's 11% requirement.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-410",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A supplier offers to prepay $47,000 now in return for $52,000 of goods delivered in one year. The firm's required return is 12% per annum. First find the IRR of the deal, then its NPV. (Final answer: the NPV in $, to the cent.)",
+  "answer": 571.43,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "47000-52000/1.12",
+  "steps": [
+   {
+    "label": "IRR = 52,000/47,000 − 1 (cost of the funds)",
+    "value": 10.6383,
+    "check": "(52000/47000-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV at 12%",
+    "value": 571.43,
+    "check": "47000-52000/1.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Flows: +47,000 at t = 0, −52,000 at t = 1 (financing-type).",
+   "IRR: 47,000 = 52,000/(1 + IRR), so IRR = 52,000/47,000 − 1 = 10.6383%.",
+   "NPV = 47,000 − 52,000/1.12 = 47,000 − 46,428.57 = $571.43.",
+   "IRR (10.64%) < R (12%) and NPV > 0, so accept: the funds cost less than the firm requires."
+  ],
+  "keystrokes": [
+   "IRR: 52000 ÷ 47000 − 1 = 0.10638 → 10.6383%",
+   "NPV: 47000 − 52000 ÷ 1.12 = 571.43"
+  ],
+  "errors": [
+   {
+    "id": "sign-cf0",
+    "label": "Used −47,000 now and +52,000 later (conventional signs)",
+    "value": -571.43,
+    "check": "-47000+52000/1.12",
+    "explain": "That is the NPV of lending the money, not of receiving it."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Discounted both flows by a year",
+    "value": 510.2,
+    "check": "47000/1.12-52000/1.12**2",
+    "explain": "CF0 happens today (no discounting), and the repayment is one year away, not two."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Subtracted the repayment without discounting",
+    "value": -5000.0,
+    "check": "47000-52000",
+    "explain": "The $52,000 is paid in a year, so it must be discounted at 12% before comparing."
+   }
+  ],
+  "explanation": "A one-period financing deal has IRR = repayment/amount received − 1, here 10.64%. Because this cost is below 12%, NPV is positive and the deal is accepted.",
+  "source": "generated",
+  "ref": "SM 9-22; L05A s25"
+ },
+ {
+  "id": "q09-411",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A co-op receives $120,000 now and repays $52,000 at the end of each of the next three years. The required return is 10% per annum. What is the NPV? (Answer in $, to the cent.)",
+  "answer": -9316.3,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "120000-52000*(1-1/1.1**3)/0.1",
+  "steps": [
+   {
+    "label": "Annuity factor (10%, 3 years)",
+    "value": 2.48685,
+    "check": "(1-1/1.1**3)/0.1",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the three repayments",
+    "value": 129316.3,
+    "check": "52000*(1-1/1.1**3)/0.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV = 120,000 − PV of repayments",
+    "value": -9316.3,
+    "check": "120000-52000*(1-1/1.1**3)/0.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Financing-type flows: +120,000 now, then −52,000 for three years.",
+   "Annuity factor = (1 − 1/1.1³)/0.10 = 2.48685",
+   "PV of repayments = 52,000 × 2.48685 = 129,316.30",
+   "NPV = 120,000 − 129,316.30 = −$9,316.30",
+   "NPV < 0 (the IRR of about 14.36% is above R = 10%), so reject: the money costs too much."
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 10, PMT = −52000, FV = 0, CPT PV → 129,316.30",
+   "120000 − 129316.30 = −9,316.30"
+  ],
+  "errors": [
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 4-year annuity factor",
+    "value": -44833.0,
+    "check": "120000-52000*(1-1/1.1**4)/0.1",
+    "explain": "Three repayments need a three-year annuity factor."
+   },
+   {
+    "id": "sign-cf0",
+    "label": "Put the $120,000 as an outflow",
+    "value": -249316.3,
+    "check": "-120000-52000*(1-1/1.1**3)/0.1",
+    "explain": "The $120,000 is received, so it enters as +120,000."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the undiscounted repayments",
+    "value": -36000.0,
+    "check": "120000-52000*3",
+    "explain": "Three payments of 52,000 are 156,000 undiscounted; at 10% their present value is smaller."
+   }
+  ],
+  "explanation": "The repayments are an ordinary annuity discounted at R and subtracted from the cash received. NPV is negative, so the firm rejects the financing. The IRR (14.36%) is above R, which for financing-type flows signals reject.",
+  "source": "generated",
+  "ref": "SM 9-22; TB 9.5"
+ },
+ {
+  "id": "q09-412",
+  "concept": "c09-financing-flows",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Ridge Marinas receives a $30,000 grant now and must spend $16,000 at the end of year 1 and $17,500 at the end of year 2. At a required return of 9% per annum, what is the NPV?",
+  "options": [
+   "−$59,408.30",
+   "$542.84",
+   "−$3,500.00",
+   "$591.70"
+  ],
+  "answer": 3,
+  "explanation": "NPV = 30,000 − 16,000/1.09 − 17,500/1.09² = 30,000 − 14,678.90 − 14,729.40 = $591.70. The wrong figures come from treating the grant as a cost, discounting CF0 a year, or adding the flows undiscounted (−$3,500).",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-413",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm receives $90,000 today and pays $50,000 at the end of each of the next two years. It correctly computes the IRR of the deal and compares it with its required return. For which required returns should it accept?",
+  "options": [
+   "R above 7.32%",
+   "R below 7.32%",
+   "R above 11.11%",
+   "R below 11.11%"
+  ],
+  "answer": 0,
+  "explanation": "Solve 90,000 = 50,000/(1 + r) + 50,000/(1 + r)²: the annuity factor must be 1.8, which gives r = 7.32%. The money costs 7.32% per annum, so accept only if the firm requires more than that. 11.11% is the undiscounted gain (100,000/90,000 − 1), which ignores the timing, and 'below' flips the rule.",
+  "source": "generated",
+  "ref": "SM 9-22"
+ },
+ {
+  "id": "q09-414",
+  "concept": "c09-financing-flows",
+  "also": [
+   "c09-npv-profile"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A project has a positive CF0 followed by two negative cash flows. If the required return R rises from 6% to 12%, what happens to the NPV?",
+  "options": [
+   "It falls, as for every conventional project",
+   "It stays the same, because the cash flows do not change",
+   "It rises, because the later outflows are discounted more heavily",
+   "It falls until the IRR and then rises"
+  ],
+  "answer": 2,
+  "explanation": "NPV = CF0 + PV(later flows). With negative later flows, a higher R shrinks the present value of those costs, so NPV goes up. Northwind-type contracts show it: NPV is −$338.91 at 6% and +$5,386.48 at 12%.",
+  "source": "generated",
+  "ref": "SM 9-22; L05A s21"
+ },
+ {
+  "id": "q09-415",
+  "concept": "c09-mirr",
+  "also": [
+   "c09-multiple-irr"
+  ],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A modified internal rate of return (MIRR) is:",
+  "options": [
+   "the IRR after removing the project's largest cash flow",
+   "the IRR of cash flows that have first been modified using an external discount or reinvestment rate",
+   "the discount rate at which the project's discounted payback equals its life",
+   "the average of the project's IRRs when it has more than one"
+  ],
+  "answer": 1,
+  "explanation": "An MIRR first rewrites the cash flows (discounting some to today, compounding others to the end, or both) and then takes the IRR of the modified flows. Because the modified flows have one sign change, there is a single answer.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9 App"
+ },
+ {
+  "id": "q09-416",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "To find an MIRR, an analyst discounts every negative flow back to time 0 at the required return, compounds every positive flow forward to the end of the project at the same rate, and then computes the IRR of the two resulting flows. Which approach is this?",
+  "options": [
+   "The discounting approach",
+   "The reinvestment approach",
+   "The payback approach",
+   "The combination approach"
+  ],
+  "answer": 3,
+  "explanation": "The combination approach does both things: negative flows are discounted to time 0 and positive flows are compounded to the end. The discounting approach only moves negative flows to time 0, and the reinvestment approach only compounds everything (except CF0) to the end.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-417",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly separates the ordinary IRR from an MIRR?",
+  "options": [
+   "The MIRR depends only on the project's own cash flows, while the IRR needs a required return",
+   "Both are true internal rates because both set an NPV to zero",
+   "The IRR depends only on the project's own cash flows, while an MIRR also needs an externally supplied rate",
+   "The IRR assumes cash flows are reinvested at the required return; the MIRR does not reinvest anything"
+  ],
+  "answer": 2,
+  "explanation": "The IRR is computed from the cash flows alone. An MIRR is not truly 'internal': it uses the required return (or a reinvestment rate) to rewrite the flows first, so the result changes if that rate changes. Neither IRR nor NPV actually requires a reinvestment assumption.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-13"
+ },
+ {
+  "id": "q09-418",
+  "concept": "c09-mirr",
+  "also": [
+   "c09-multiple-irr"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does an MIRR not suffer from the multiple-IRR problem?",
+  "options": [
+   "The MIRR ignores all negative cash flows",
+   "The MIRR is always calculated at the required return, so it is never an IRR",
+   "The modified cash flows change sign only once, so only one IRR exists",
+   "The MIRR is computed on the project's NPV instead of its cash flows"
+  ],
+  "answer": 2,
+  "explanation": "Discounting the later negative flows to time 0 (or compounding everything to the end) leaves a negative start and a positive finish, so the sign pattern is conventional and only one rate solves it. The cost is that the answer now depends on the rate used to modify the flows.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-419",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cedar Creek Mining expects cash flows of −$80,000 now, +$45,000, +$52,000 and +$38,000 in years 1 to 3, and a −$30,000 reclamation cost in year 4. Use the combination approach at R = 10% per annum for both discounting and compounding. What is the MIRR? (% per annum, 2 decimals.)",
+  "answer": 13.1322,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((45000*1.1**3+52000*1.1**2+38000*1.1)/(80000+30000/1.1**4))**(1/4)*100-100",
+  "steps": [
+   {
+    "label": "Time-0 outflow: 80,000 + 30,000/1.1⁴",
+    "value": 100490.4,
+    "check": "80000+30000/1.1**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Time-4 inflow value",
+    "value": 164615.0,
+    "check": "45000*1.1**3+52000*1.1**2+38000*1.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "MIRR",
+    "value": 13.1322,
+    "check": "((45000*1.1**3+52000*1.1**2+38000*1.1)/(80000+30000/1.1**4))**(1/4)*100-100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Discount the negative flows to time 0: 80,000 + 30,000/1.1⁴ = 100,490.40.",
+   "Compound the positive flows to year 4: 45,000(1.1)³ + 52,000(1.1)² + 38,000(1.1) = 59,895 + 62,920 + 41,800 = 164,615.00.",
+   "MIRR = (164,615.00/100,490.40)^(1/4) − 1 = 1.63812^(0.25) − 1 = 13.1322%."
+  ],
+  "keystrokes": [
+   "30000 ÷ 1.1^4 = 20,490.40; + 80000 = 100,490.40",
+   "FV: 45000 × 1.331 + 52000 × 1.21 + 38000 × 1.1 = 164,615",
+   "164615 ÷ 100490.40 = 1.63812; y^x 0.25 = 1.13132; − 1 → 13.13%"
+  ],
+  "errors": [
+   {
+    "id": "mirr-method-mix",
+    "label": "Used the reinvestment approach instead",
+    "value": 13.894,
+    "check": "(((45000*1.1**3+52000*1.1**2+38000*1.1)-30000)/80000)**(1/4)*100-100",
+    "explain": "That approach leaves −$80,000 at time 0 and subtracts the −$30,000 from the year-4 value instead of discounting it, so it is a different MIRR."
+   },
+   {
+    "id": "outflow-undiscounted",
+    "label": "Added the reclamation cost to CF0 without discounting",
+    "value": 10.6036,
+    "check": "((45000*1.1**3+52000*1.1**2+38000*1.1)/110000)**(1/4)*100-100",
+    "explain": "The year-4 cost must be discounted four years at R before it joins the time-0 outflow."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Took the cube root instead of the fourth root",
+    "value": 17.8822,
+    "check": "((45000*1.1**3+52000*1.1**2+38000*1.1)/(80000+30000/1.1**4))**(1/3)*100-100",
+    "explain": "The modified flows are four years apart (time 0 to time 4), so the root is 1/4."
+   }
+  ],
+  "explanation": "Combination approach: negatives to today, positives to the end, then a two-flow IRR. It is a two-flow problem, so a root, not a trial-and-error search, finishes it.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-420",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Ridgeline Quarry has cash flows of −$90,000 now, +$40,000 in year 1, −$15,000 in year 2, +$48,000 in year 3 and +$52,000 in year 4. Using the reinvestment approach with a reinvestment rate of 8% per annum, what is the MIRR? (% per annum, 2 decimals.)",
+  "answer": 11.0216,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((40000*1.08**3-15000*1.08**2+48000*1.08+52000)/90000)**(1/4)*100-100",
+  "steps": [
+   {
+    "label": "Time-4 value of every flow after time 0",
+    "value": 136732.48,
+    "check": "40000*1.08**3-15000*1.08**2+48000*1.08+52000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "MIRR = (FV/90,000)^(1/4) − 1",
+    "value": 11.0216,
+    "check": "((40000*1.08**3-15000*1.08**2+48000*1.08+52000)/90000)**(1/4)*100-100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Reinvestment approach: compound every flow EXCEPT CF0 to the end (year 4) at 8%.",
+   "40,000(1.08)³ = 50,388.48;  −15,000(1.08)² = −17,496.00;  48,000(1.08) = 51,840.00;  +52,000.",
+   "Sum = 136,732.48.",
+   "MIRR = (136,732.48/90,000)^(1/4) − 1 = 1.51925^(0.25) − 1 = 11.0216%."
+  ],
+  "keystrokes": [
+   "40000 × 1.08^3 − 15000 × 1.08^2 + 48000 × 1.08 + 52000 = 136,732.48",
+   "136732.48 ÷ 90000 = 1.51925; y^x 0.25 = 1.11023; − 1 → 11.02%"
+  ],
+  "errors": [
+   {
+    "id": "mirr-method-mix",
+    "label": "Used the combination approach (negative flow discounted to time 0)",
+    "value": 10.6571,
+    "check": "((40000*1.08**3+48000*1.08+52000)/(90000+15000/1.08**2))**(1/4)*100-100",
+    "explain": "The reinvestment approach compounds the −$15,000 forward with everything else; it does not discount it to time 0."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used a three-year root",
+    "value": 14.959,
+    "check": "((40000*1.08**3-15000*1.08**2+48000*1.08+52000)/90000)**(1/3)*100-100",
+    "explain": "From time 0 to year 4 is four years, so the root is 1/4."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Reported the growth factor 1.1102 as 111.02%",
+    "value": 111.0216,
+    "check": "((40000*1.08**3-15000*1.08**2+48000*1.08+52000)/90000)**(1/4)*100",
+    "explain": "A rate is the growth factor minus 1."
+   }
+  ],
+  "explanation": "Reinvestment approach: carry every later flow, positive or negative, to the project's end at the reinvestment rate, then treat the result as a single investment and a single terminal value.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-421",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cedar Creek Mining (−$80,000 now; +$45,000, +$52,000, +$38,000 in years 1 to 3; −$30,000 in year 4) uses R = 10% per annum. Using the DISCOUNTING approach (only the negative flows are moved, to time 0), what is the MIRR?",
+  "options": [
+   "13.13%",
+   "13.89%",
+   "21.17%",
+   "16.80%"
+  ],
+  "answer": 3,
+  "explanation": "Discounting approach: time-0 flow = −80,000 − 30,000/1.1⁴ = −100,490.40, with +45,000, +52,000 and +38,000 left in years 1 to 3. The IRR of those flows is 16.80%. 13.13% is the combination MIRR, 13.89% the reinvestment MIRR, and 21.17% the ordinary IRR of the original flows.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-422",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Cedar Creek Mining's combination-approach MIRR is 13.13% against a required return of 10%, and its NPV at 10% is $11,943.86. What should the analyst conclude?",
+  "options": [
+   "Accept; MIRR and NPV agree, and if they ever disagreed the NPV rule would govern",
+   "Reject; the MIRR must be at least as high as the ordinary IRR of 21.17%",
+   "Accept only if the MIRR equals the required return exactly",
+   "No decision; an MIRR is the project's true internal return so it cannot be compared with R"
+  ],
+  "answer": 0,
+  "explanation": "The MIRR (13.13%) exceeds R and the NPV is positive, so both say accept. The MIRR is not a true internal return, since it depends on the rate used to modify the flows, which is why NPV is the fall-back rule. The three methods give different MIRRs for the same project.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-13"
+ },
+ {
+  "id": "q09-423",
+  "concept": "c09-mirr",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For a conventional project (a negative CF0 followed only by positive cash flows), the discounting-approach MIRR equals the ordinary IRR.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The discounting approach only moves NEGATIVE flows back to time 0. A conventional project has no negative flows after time 0, so its cash flows are left unchanged and the IRR of the 'modified' flows is the ordinary IRR. The reinvestment and combination approaches do change the flows, and give a different answer.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-424",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are common criticisms of the MIRR EXCEPT:",
+  "options": [
+   "It is not a true internal rate, because it depends on externally supplied rates",
+   "There are several ways to calculate it and no clear reason to prefer one",
+   "If the relevant discount rate is known, the NPV can be calculated directly",
+   "It cannot be calculated when the cash flows change sign more than once"
+  ],
+  "answer": 3,
+  "explanation": "The MIRR was invented to deal with cash flows that change sign more than once, because it always gives one answer. The criticisms are the other three: it is not internal, there are several competing versions, and NPV answers the same question without the extra steps.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-13"
+ },
+ {
+  "id": "q09-425",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A project costs $50,000 and returns $30,000 at the end of year 1 and $35,000 at the end of year 2. The reinvestment rate is 10% per annum. Which expression gives the reinvestment-approach MIRR?",
+  "options": [
+   "[(30,000 + 35,000 × 1.10) / 50,000]^(1/2) − 1",
+   "[(30,000 × 1.10² + 35,000 × 1.10) / 50,000]^(1/2) − 1",
+   "(30,000 + 35,000) / 50,000 − 1",
+   "[(30,000 × 1.10 + 35,000) / 50,000]^(1/2) − 1"
+  ],
+  "answer": 3,
+  "explanation": "Compound each flow after time 0 to the end of the project (year 2): the year-1 flow grows one year at 10% and the year-2 flow is already at the end. Divide by the initial outlay and take the 2nd root. Compounding the wrong flow, compounding to year 3, or skipping the root all give wrong rates.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ },
+ {
+  "id": "q09-426",
+  "concept": "c09-mirr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project costs $50,000 and returns $30,000 at the end of year 1 and $35,000 at the end of year 2. Using the reinvestment approach at 10% per annum, what is the MIRR?",
+  "options": [
+   "18.88%",
+   "16.62%",
+   "36.00%",
+   "17.05%"
+  ],
+  "answer": 1,
+  "explanation": "Value at year 2 = 30,000 × 1.10 + 35,000 = 68,000; MIRR = (68,000/50,000)^(1/2) − 1 = 16.62%. 18.88% is the ordinary IRR, 36.00% forgets the square root, and 17.05% compounds the wrong flow.",
+  "source": "generated",
+  "ref": "SM 9 App A1"
+ }
+]

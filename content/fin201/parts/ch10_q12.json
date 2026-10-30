@@ -1,0 +1,1399 @@
+[
+ {
+  "id": "q10-475",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Orchard Supply buys $390,000 of equipment (CCA rate 20%, half-year rule) that adds $130,000 a year to pre-tax operating income for 5 years. At the end of the project the equipment is not sold: it stays in a pool that holds other assets and keeps earning CCA. T = 30% and k = 10%. What is the NPV?",
+  "answer": 29416.14,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-390000+130000*(1-0.3)*(1-1/1.1**5)/0.1+390000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)",
+  "steps": [
+   {
+    "label": "After-tax operating cash flow",
+    "value": 91000.0,
+    "check": "130000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of operating cash flows",
+    "value": 344961.6,
+    "check": "130000*(1-0.3)*(1-1/1.1**5)/0.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield, no salvage term",
+    "value": 74454.55,
+    "check": "390000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 29416.14,
+    "check": "-390000+130000*(1-0.3)*(1-1/1.1**5)/0.1+390000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "After-tax operating flow = 130,000 x 0.70 = 91,000",
+   "PV = 91,000 x 3.7908 = 344,961.60",
+   "PV CCA = 390,000 x 0.2 x 0.3/0.3 x 1.05/1.10 = 74,454.55. No sale, no salvage term",
+   "NPV = -390,000 + 344,961.60 + 74,454.55 = $29,416.14"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 10, PMT = 91000, CPT PV = 344,961.60; add 74,454.55; subtract 390000"
+  ],
+  "errors": [
+   {
+    "id": "kept-salvage-term",
+    "label": "Subtracted a salvage term as if the equipment were sold for its UCC after 5 years",
+    "value": 11562.22,
+    "check": "-390000+130000*(1-0.3)*(1-1/1.1**5)/0.1+390000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-390000*(1-0.5*0.2)*(1-0.2)**4*0.2*0.3/(0.1+0.2)/1.1**5",
+    "explain": "The salvage term only applies when a sale takes the asset out of the pool; here it stays in the pool and the shield runs on."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Applied no first-year factor",
+    "value": 32961.6,
+    "check": "-390000+130000*(1-0.3)*(1-1/1.1**5)/0.1+390000*0.2*0.3/(0.1+0.2)",
+    "explain": "Year 1 CCA is limited to half the normal amount."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the AII factor instead of the half-year rule",
+    "value": 36507.05,
+    "check": "-390000+130000*(1-0.3)*(1-1/1.1**5)/0.1+390000*0.2*0.3/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)",
+    "explain": "The question specifies the half-year rule."
+   }
+  ],
+  "explanation": "If the equipment is never sold out of the pool, the whole perpetual shield counts.",
+  "source": "generated",
+  "ref": "L05B s16, S5 s26"
+ },
+ {
+  "id": "q10-476",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-half-year-aii"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Fabricators buys $850,000 of equipment (CCA rate 30%, T = 35%, k = 10%) and will keep it in the pool indefinitely. By how much does the PV of the CCA tax shield, and so the project NPV, rise if the Accelerated Investment Incentive (1.5 x d in year 1) applies instead of the half-year rule?",
+  "answer": 20284.09,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "850000*0.3*0.35/(0.1+0.3)*((1+1.5*0.1)/(1+0.1)-(1+0.5*0.1)/(1+0.1))",
+  "steps": [
+   {
+    "label": "Perpetuity term I0 d T/(k + d)",
+    "value": 223125.0,
+    "check": "850000*0.3*0.35/(0.1+0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA shield, half-year rule",
+    "value": 212982.95,
+    "check": "850000*0.3*0.35/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA shield, AII",
+    "value": 233267.05,
+    "check": "850000*0.3*0.35/(0.1+0.3)*(1+1.5*0.1)/(1+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Difference",
+    "value": 20284.09,
+    "check": "850000*0.3*0.35/(0.1+0.3)*((1+1.5*0.1)/(1+0.1)-(1+0.5*0.1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "I0 d T/(k + d) = 850,000 x 0.30 x 0.35/0.40 = 223,125",
+   "Half-year: 223,125 x 1.05/1.10 = 212,982.95; AII: 223,125 x 1.15/1.10 = 233,267.05",
+   "Difference = 223,125 x 0.10/1.10 = $20,284.09"
+  ],
+  "keystrokes": [
+   "223125 x (1.15 - 1.05) / 1.1 = 20284.09"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Compared AII with a factor of 1",
+    "value": 10142.05,
+    "check": "850000*0.3*0.35/(0.1+0.3)*((1+1.5*0.1)/(1+0.1)-1)",
+    "explain": "The comparison is against the half-year rule, whose factor is (1 + 0.5k)/(1 + k), not 1."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Left out the tax rate",
+    "value": 57954.55,
+    "check": "850000*0.3/(0.1+0.3)*0.1/(1+0.1)",
+    "explain": "The shield is CCA x T; leaving T out overstates the gain by 1/0.35."
+   }
+  ],
+  "explanation": "Only the first-year factor changes: the NPV gain is I0 d T/(k + d) x k/(1 + k).",
+  "source": "generated",
+  "ref": "L05B s8, s16"
+ },
+ {
+  "id": "q10-477",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-side-effects-financing"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "The Prairie Brew canning line (NPV $68,071.15 before this adjustment: 4 years, T = 30%, k = 12%) will also erode $28,000 a year of pre-tax contribution from the company's bottling line for the same 4 years. What is the project's NPV after allowing for the erosion?",
+  "answer": 8539.1,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "68071.15-28000*(1-0.3)*(1-1/1.12**4)/0.12",
+  "steps": [
+   {
+    "label": "After-tax erosion per year",
+    "value": 19600.0,
+    "check": "28000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of erosion",
+    "value": 59532.05,
+    "check": "28000*(1-0.3)*(1-1/1.12**4)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Adjusted NPV",
+    "value": 8539.1,
+    "check": "68071.15-28000*(1-0.3)*(1-1/1.12**4)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Lost after-tax contribution = 28,000 x 0.70 = 19,600 a year",
+   "PV = 19,600 x 3.0373 = 59,532.05",
+   "Adjusted NPV = 68,071.15 - 59,532.05 = $8,539.10"
+  ],
+  "keystrokes": [
+   "N = 4, I/Y = 12, PMT = 19600, CPT PV = 59,532.05; 68071.15 - 59532.05"
+  ],
+  "errors": [
+   {
+    "id": "ignored-erosion-tax",
+    "label": "Did not tax-effect the erosion",
+    "value": -16974.63,
+    "check": "68071.15-28000*(1-1/1.12**4)/0.12",
+    "explain": "Lost revenue also lowers taxes, so only (1 - T) of it is lost."
+   },
+   {
+    "id": "erosion-sign",
+    "label": "Added the erosion instead of subtracting it",
+    "value": 127603.2,
+    "check": "68071.15+28000*(1-0.3)*(1-1/1.12**4)/0.12",
+    "explain": "Erosion is a cost caused by the project."
+   },
+   {
+    "id": "one-year-only",
+    "label": "Treated erosion as a one-year loss",
+    "value": 48471.15,
+    "check": "68071.15-28000*0.7",
+    "explain": "The loss lasts 4 years; discount all four annual amounts."
+   }
+  ],
+  "explanation": "Erosion = after-tax lost contribution each year, discounted like any other operating flow.",
+  "source": "generated",
+  "ref": "S6 s3-5, TB 10.1"
+ },
+ {
+  "id": "q10-481",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Dunvegan Printing will buy a new press for $190,000 and sell its old press today for $45,000. What is the relevant time-0 outlay for the replacement analysis?",
+  "options": [
+   "$190,000, the full price of the new press",
+   "$235,000, the new press plus the old press",
+   "$145,000, the net acquisition cost",
+   "$45,000, the amount received for the old press"
+  ],
+  "answer": 2,
+  "explanation": "In a replacement only the differences count: the firm pays 190,000 and receives 45,000, so the net acquisition cost is 145,000. This net figure is also the amount that goes into the PV of CCA tax shield.",
+  "source": "generated",
+  "ref": "S6 s7-8, s19"
+ },
+ {
+  "id": "q10-482",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Bow River Dairy could sell its old pasteurizer for $8,000 in five years if it keeps it. If it replaces the machine today, the new unit will be worth $20,000 in five years. How is the salvage handled in the replacement NPV?",
+  "options": [
+   "Net salvage of $12,000 (20,000 - 8,000) at year 5, because the old machine's future sale is given up",
+   "Salvage of $20,000 at year 5, because the old machine is already sold",
+   "Salvage of $28,000 at year 5, the sum of both machines",
+   "No salvage, because salvage values are not incremental"
+  ],
+  "answer": 0,
+  "explanation": "Replacing now means we do not sell the old machine in year 5, so its $8,000 is forgone. The incremental salvage is the new machine's value minus the old machine's: 20,000 - 8,000 = 12,000.",
+  "source": "generated",
+  "ref": "S6 s16-19, SM 10-36"
+ },
+ {
+  "id": "q10-483",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a replacement project the net acquisition cost equals the cost of the new machine minus the _____ of the old machine today.",
+  "options": [
+   "UCC",
+   "resale value",
+   "original cost",
+   "salvage value in five years"
+  ],
+  "answer": 1,
+  "explanation": "The cash the firm gets by selling the old machine now reduces the net outlay. The old machine's UCC and original cost are accounting history; they only matter through tax, and in an open pool the sale has no immediate tax effect.",
+  "source": "generated",
+  "ref": "S6 s8"
+ },
+ {
+  "id": "q10-484",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts net acquisition cost with net salvage value in a replacement NPV?",
+  "options": [
+   "Net acquisition cost is taxed at (1 - T); net salvage is taxed at T",
+   "Net acquisition cost uses the old machine's UCC; net salvage uses its ACB",
+   "Both occur at time 0 but net salvage is discounted for the old machine's remaining life",
+   "Net acquisition cost is a time-0 flow (new cost minus old resale today); net salvage is a time-N flow (new salvage minus the old machine's salvage forgone)"
+  ],
+  "answer": 3,
+  "explanation": "Each is a difference between new and old, but they occur at different dates: the acquisition difference now and the salvage difference at the end of the horizon. Both then feed the PV of CCA tax shield formula.",
+  "source": "generated",
+  "ref": "S6 s8-10, s19"
+ },
+ {
+  "id": "q10-485",
+  "concept": "c10-replacement-npv",
+  "also": [
+   "c10-sunk-opportunity"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a relevant cash flow when deciding whether to replace an old machine?",
+  "options": [
+   "The price paid for the old machine five years ago",
+   "The resale value of the old machine today",
+   "The after-tax cost savings from the new machine",
+   "The salvage value the old machine would fetch if kept"
+  ],
+  "answer": 0,
+  "explanation": "The old machine's original price is a sunk cost; nothing the firm decides now can change it. The resale value today, the extra savings and the forgone future salvage are all caused by the replacement decision.",
+  "source": "generated",
+  "ref": "S6 s7, SM 10-1"
+ },
+ {
+  "id": "q10-486",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the old machine's future salvage subtracted from the new machine's salvage in the replacement NPV?",
+  "options": [
+   "Because old equipment is always worth less than new equipment",
+   "Because salvage is a tax expense that offsets the CCA shield",
+   "Selling the old machine now means the firm will not receive its future salvage, so that cash flow is lost",
+   "Because net salvage is always negative in a replacement"
+  ],
+  "answer": 2,
+  "explanation": "Incremental analysis compares the world with replacement to the world without. Without replacement the firm sells the old machine at N; with replacement it sells the new one. The difference S_new - S_old is the incremental cash flow.",
+  "source": "generated",
+  "ref": "S6 s18-19"
+ },
+ {
+  "id": "q10-487",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A replacement project has NPV = +$47,867 at the firm's required return. What does this mean?",
+  "options": [
+   "The new machine will earn $47,867 of accounting profit in its first year",
+   "The old machine is worth $47,867 more than the new one",
+   "Replacing the old machine now adds $47,867 of value in today's dollars compared with keeping it",
+   "The firm saves exactly $47,867 a year over the life of the new machine"
+  ],
+  "answer": 2,
+  "explanation": "Replacement NPV is the PV of the incremental flows. A positive value means the savings, salvage differences and CCA shield outweigh the net outlay, so replace.",
+  "source": "generated",
+  "ref": "S6 s19"
+ },
+ {
+  "id": "q10-488",
+  "concept": "c10-replacement-npv",
+  "also": [
+   "c10-net-acquisitions",
+   "c10-pool-open-closed"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Maple Ridge Moulding replaces a machine with UCC of $63,000 by a new one in the same CCA class. The old machine is sold for $60,000, and other assets stay in the class. What tax effect does the $3,000 shortfall have at the sale?",
+  "options": [
+   "None at the sale: the pool stays open, and the net acquisition (new cost minus $60,000) goes into the PV of CCA shield",
+   "A $3,000 terminal loss saves 3,000 x T of tax now",
+   "A $3,000 capital loss, half deductible",
+   "A $3,000 recapture, taxed at the full rate"
+  ],
+  "answer": 0,
+  "explanation": "Because the class stays open, the sale just reduces the pool's UCC by the proceeds. The seminar's treatment uses the net acquisition cost in the CCA formula and ignores any immediate recapture or terminal loss.",
+  "source": "generated",
+  "ref": "S6 s8-10, SM 10-11"
+ },
+ {
+  "id": "q10-489",
+  "concept": "c10-replacement-npv",
+  "also": [
+   "c10-pvcca",
+   "c10-net-acquisitions"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In a replacement NPV, which investment amount multiplies d x T/(k + d) in the PV of CCA tax shield?",
+  "options": [
+   "The full purchase price of the new machine",
+   "The old machine's UCC",
+   "The new machine's cost plus the old machine's resale value",
+   "The net acquisition cost: new cost minus old resale today"
+  ],
+  "answer": 3,
+  "explanation": "The sale of the old machine reduces the pool, so only the net addition to the pool generates new shields. The seminar uses 220,000 = 280,000 - 60,000 in its worked example.",
+  "source": "generated",
+  "ref": "S6 s10"
+ },
+ {
+  "id": "q10-490",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A new machine will raise annual sales by $85,000 compared with the old machine. How is this revenue treated in the replacement NPV?",
+  "options": [
+   "The full revenue of the new machine is counted, after tax",
+   "Only the increase of $85,000 is counted, after tax at (1 - T)",
+   "It is counted before tax, because replacement revenue is not taxed",
+   "It is ignored, because the old machine already produced the base revenue"
+  ],
+  "answer": 1,
+  "explanation": "Replacement is evaluated incrementally. The relevant revenue is the difference between what the firm earns with the new machine and what it would earn with the old one, and that difference is taxed like any revenue.",
+  "source": "generated",
+  "ref": "S6 s7-9"
+ },
+ {
+  "id": "q10-491",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Foothills Moulding will replace a machine. New cost $120,000; old machine sells for $40,000 now and for $6,000 in 5 years; the new one sells for $15,000 in 5 years. The new machine saves $41,000 a year before tax for 5 years. CCA rate 20%, half-year rule, pool open. T = 35%, k = 10%. What is the NPV of replacing?",
+  "options": [
+   "$14,892.34",
+   "$26,612.76",
+   "$43,127.01",
+   "$45,983.24",
+   "$51,166.81"
+  ],
+  "answer": 2,
+  "explanation": "Net acquisition = 80,000; net salvage = 9,000; after-tax savings = 26,650 a year (PV 101,024.47); PV of net salvage = 5,588.29; PV of CCA = 16,514.25. NPV = -80,000 + 101,024.47 + 5,588.29 + 16,514.25 = $43,127.01. Using gross figures, leaving out the CCA shield, or using the new machine's salvage instead of the net salvage each give one of the other values.",
+  "source": "generated",
+  "ref": "SM 10-36, S6 s16-19"
+ },
+ {
+  "id": "q10-492",
+  "concept": "c10-replacement-npv",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cascade Fabricators replaces a machine in a class with CCA rate 25%. New cost $260,000; old resale today $55,000; salvage in 4 years $20,000 (new) and $9,000 (old). AII applies, T = 40%, k = 10%. What is the present value of the CCA tax shield on the replacement?",
+  "options": [
+   "$53,762.48",
+   "$59,087.15",
+   "$61,233.77",
+   "$63,380.38",
+   "$73,759.40"
+  ],
+  "answer": 1,
+  "explanation": "Use the net acquisition 205,000 and net salvage 11,000: 205,000 x 0.25 x 0.40/0.35 x (1 + 0.15)/1.10 = 61,233.77; minus 11,000 x 0.25 x 0.40/0.35 / 1.10^4 = 2,146.61. PV = $59,087.15. Using gross figures (260,000 and 20,000), leaving out the salvage term, using the half-year rule or flipping the sign of the salvage term each gives a different value.",
+  "source": "generated",
+  "ref": "S6 s10"
+ },
+ {
+  "id": "q10-493",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nechako Sawmills will replace an old planer. The new planer costs $185,000 and sells for $22,000 in 5 years; the old planer sells for $55,000 now and $8,000 in 5 years. The new planer saves $52,000 a year before tax for 5 years. CCA rate 30%, half-year rule, pool open. T = 38%, k = 12%. What is the NPV of replacing?",
+  "answer": 25401.15,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-130000+52000*(1-0.38)*(1-1/1.12**5)/0.12+14000/1.12**5+130000*0.3*0.38/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-14000*0.3*0.38/(0.12+0.3)/1.12**5",
+  "steps": [
+   {
+    "label": "Net acquisition cost",
+    "value": 130000.0,
+    "check": "185000-55000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Net salvage value at year 5",
+    "value": 14000.0,
+    "check": "22000-8000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax savings per year",
+    "value": 32240.0,
+    "check": "52000*(1-0.38)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of savings",
+    "value": 116217.98,
+    "check": "52000*(1-0.38)*(1-1/1.12**5)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of net salvage",
+    "value": 7943.98,
+    "check": "14000/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield",
+    "value": 31239.19,
+    "check": "130000*0.3*0.38/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-14000*0.3*0.38/(0.12+0.3)/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 25401.15,
+    "check": "-130000+52000*(1-0.38)*(1-1/1.12**5)/0.12+14000/1.12**5+130000*0.3*0.38/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-14000*0.3*0.38/(0.12+0.3)/1.12**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Net acquisition = 185,000 - 55,000 = 130,000; net salvage = 22,000 - 8,000 = 14,000",
+   "After-tax savings = 52,000 x 0.62 = 32,240; PV = 32,240 x 3.6048 = 116,217.98",
+   "PV of net salvage = 14,000/1.12^5 = 7,943.98",
+   "PV CCA = 130,000 x 0.3 x 0.38/0.42 x 1.06/1.12 - 14,000 x 0.3 x 0.38/0.42 / 1.12^5 = 31,239.19",
+   "NPV = -130,000 + 116,217.98 + 7,943.98 + 31,239.19 = $25,401.15"
+  ],
+  "keystrokes": [
+   "CF0 = -130000, C01 = 32240 (F01 = 4), C02 = 46240 (32240 + 14000), I = 12, NPV CPT, then add PV of CCA"
+  ],
+  "errors": [
+   {
+    "id": "net-acquisition-ignored",
+    "label": "Used the gross cost of $185,000 and the new salvage only",
+    "value": -12162.74,
+    "check": "-185000+52000*(1-0.38)*(1-1/1.12**5)/0.12+22000/1.12**5+185000*0.3*0.38/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-22000*0.3*0.38/(0.12+0.3)/1.12**5",
+    "explain": "Replacement is incremental: use new minus old for both the outlay and the salvage."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the PV of the CCA tax shield",
+    "value": -5838.04,
+    "check": "-130000+52000*(1-0.38)*(1-1/1.12**5)/0.12+14000/1.12**5",
+    "explain": "The new equipment's CCA shield is a large part of the value."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Took the savings before tax",
+    "value": 96631.52,
+    "check": "-130000+52000*(1-1/1.12**5)/0.12+14000/1.12**5+130000*0.3*0.38/(0.12+0.3)*(1+0.5*0.12)/(1+0.12)-14000*0.3*0.38/(0.12+0.3)/1.12**5",
+    "explain": "Cost savings raise taxable income, so only (1 - T) of them is kept."
+   }
+  ],
+  "explanation": "Net acquisition, net salvage, after-tax savings, and the CCA shield on the net amounts.",
+  "source": "generated",
+  "ref": "SM 10-37, S6 s16-19"
+ },
+ {
+  "id": "q10-494",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Pallet replaces an old stacker (CCA rate 25%, half-year rule, pool open). The new stacker costs $150,000; the old sells for $40,000 now. In 3 years the new sells for $20,000 and the old would sell for $5,000. The new stacker adds sales of $70,000, $80,000 and $60,000 (no extra costs). NWC is $6,000 now, then 10% of each year's sales, all recovered in year 3. T = 40%, k = 11%. Find the NPV.",
+  "answer": 28218.39,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(-110000-6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+15000)/1.11**3+110000*0.25*0.4/(0.11+0.25)*(1+0.5*0.11)/(1+0.11)-15000*0.25*0.4/(0.11+0.25)/1.11**3",
+  "steps": [
+   {
+    "label": "Net acquisition cost",
+    "value": 110000.0,
+    "check": "150000-40000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Net salvage at year 3",
+    "value": 15000.0,
+    "check": "20000-5000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NWC cash flow at time 0",
+    "value": -6000.0,
+    "check": "-6000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total cash flow in year 1",
+    "value": 41000.0,
+    "check": "70000*0.6-1000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total cash flow in year 3",
+    "value": 59000.0,
+    "check": "60000*0.6+8000+15000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of cash flows excluding CCA",
+    "value": 2223.48,
+    "check": "(-110000-6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+15000)/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield",
+    "value": 25994.91,
+    "check": "110000*0.25*0.4/(0.11+0.25)*(1+0.5*0.11)/(1+0.11)-15000*0.25*0.4/(0.11+0.25)/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 28218.39,
+    "check": "(-110000-6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+15000)/1.11**3+110000*0.25*0.4/(0.11+0.25)*(1+0.5*0.11)/(1+0.11)-15000*0.25*0.4/(0.11+0.25)/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Net acquisition = 110,000; net salvage = 15,000; after-tax sales = 42,000, 48,000, 36,000",
+   "NWC levels: 6,000 now; 7,000; 8,000; 6,000. Flows: -6,000 (t0), -1,000 (t1), -1,000 (t2), +8,000 (t3: -(6,000 - 8,000) + 6,000 = +8,000)",
+   "Total flows: t0 = -116,000; t1 = 41,000; t2 = 47,000; t3 = 36,000 + 8,000 + 15,000 = 59,000",
+   "PV excluding CCA = 2,223.48",
+   "PV CCA = 110,000 x 0.25 x 0.4/0.36 x 1.055/1.11 - 15,000 x 0.25 x 0.4/0.36 / 1.11^3 = 25,994.91",
+   "NPV = $28,218.39"
+  ],
+  "keystrokes": [
+   "CF0 = -116000, C01 = 41000, C02 = 47000, C03 = 59000, I = 11, NPV CPT = 2223.48, then add PV of CCA 25994.91"
+  ],
+  "errors": [
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Did not recover the NWC in year 3",
+    "value": 23831.25,
+    "check": "(-110000-6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+15000)/1.11**3-6000/1.11**3+110000*0.25*0.4/(0.11+0.25)*(1+0.5*0.11)/(1+0.11)-15000*0.25*0.4/(0.11+0.25)/1.11**3",
+    "explain": "NWC tied up in the project is released at the end."
+   },
+   {
+    "id": "net-acquisition-ignored",
+    "label": "Used the full cost of $150,000 and ignored the old machine",
+    "value": 1419.37,
+    "check": "-(150000+6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+20000)/1.11**3+150000*0.25*0.4/(0.11+0.25)*(1+0.5*0.11)/(1+0.11)-20000*0.25*0.4/(0.11+0.25)/1.11**3",
+    "explain": "A replacement uses the net amounts: sell the old machine and count only the difference."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 2223.48,
+    "check": "(-110000-6000)+(70000*0.6-1000)/1.11+(80000*0.6-1000)/1.11**2+(60000*0.6+8000+15000)/1.11**3",
+    "explain": "The shield on the net acquisition is worth about $26,000 here."
+   }
+  ],
+  "explanation": "Dickerson-style layout: net acquisition, net salvage, incremental sales after tax, incremental NWC, then the PV of CCA.",
+  "source": "generated",
+  "ref": "S6 s7-10"
+ },
+ {
+  "id": "q10-495",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Wetaskiwin Grain buys a $175,000 dryer (new salvage $0 in 5 years) to replace an old dryer that sells for $60,000 now or $12,000 in 5 years. The new dryer saves $48,000 a year before tax for 5 years. CCA rate 20%, AII applies, pool open. T = 40% and k = 10%. What is the NPV of replacing?",
+  "answer": 20771.16,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-115000+48000*(1-0.4)*(1-1/1.1**5)/0.1+(-12000)/1.1**5+115000*0.2*0.4/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)-(-12000)*0.2*0.4/(0.1+0.2)/1.1**5",
+  "steps": [
+   {
+    "label": "Net acquisition cost",
+    "value": 115000.0,
+    "check": "175000-60000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Net salvage (negative)",
+    "value": -12000.0,
+    "check": "0-12000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of savings",
+    "value": 109174.66,
+    "check": "48000*(1-0.4)*(1-1/1.1**5)/0.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of net salvage",
+    "value": -7451.06,
+    "check": "(-12000)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield (the salvage term adds)",
+    "value": 34047.55,
+    "check": "115000*0.2*0.4/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)-(-12000)*0.2*0.4/(0.1+0.2)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 20771.16,
+    "check": "-115000+48000*(1-0.4)*(1-1/1.1**5)/0.1+(-12000)/1.1**5+115000*0.2*0.4/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)-(-12000)*0.2*0.4/(0.1+0.2)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Net acquisition = 115,000; net salvage = 0 - 12,000 = -12,000 (the old dryer's future sale is given up)",
+   "PV of savings = 28,800 x 3.7908 = 109,174.66; PV of net salvage = -12,000/1.1^5 = -7,451.06",
+   "PV CCA = 115,000 x 0.2 x 0.4/0.3 x 1.15/1.10 - (-12,000) x 0.2 x 0.4/0.3 / 1.1^5 = 32,060.61 + 1,986.95 = 34,047.55",
+   "NPV = -115,000 + 109,174.66 - 7,451.06 + 34,047.55 = $20,771.16"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 10, PMT = 28800, CPT PV; FV = -12000, CPT PV; add PV of CCA; subtract 115000"
+  ],
+  "errors": [
+   {
+    "id": "salvage-sign",
+    "label": "Treated the forgone old salvage as an inflow",
+    "value": 31699.37,
+    "check": "-115000+48000*(1-0.4)*(1-1/1.1**5)/0.1+12000/1.1**5+115000*0.2*0.4/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)-12000*0.2*0.4/(0.1+0.2)/1.1**5",
+    "explain": "The old dryer's future sale is lost, so net salvage is negative."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Dropped the salvage term from PV_CCA",
+    "value": 18784.21,
+    "check": "-115000+48000*(1-0.4)*(1-1/1.1**5)/0.1+(-12000)/1.1**5+115000*0.2*0.4/(0.1+0.2)*(1+1.5*0.1)/(1+0.1)",
+    "explain": "A negative net salvage still enters the CCA term; here it raises the PV of the shield."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year rule instead of AII",
+    "value": 17983.28,
+    "check": "-115000+48000*(1-0.4)*(1-1/1.1**5)/0.1+(-12000)/1.1**5+115000*0.2*0.4/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-(-12000)*0.2*0.4/(0.1+0.2)/1.1**5",
+    "explain": "The question states AII."
+   }
+  ],
+  "explanation": "Negative net salvage: the old machine's future sale is given up. It lowers the cash flow but raises the PV of the CCA shield.",
+  "source": "generated",
+  "ref": "S6 s16-19"
+ },
+ {
+  "id": "q10-496",
+  "concept": "c10-replacement-npv",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Lakeshore Cold Storage is considering a $210,000 compressor (salvage $30,000 in 5 years) to replace one that sells for $50,000 now or $10,000 in 5 years. The new unit saves $38,000 a year before tax for 5 years; CCA rate 20%, half-year rule, pool open, T = 30%, k = 10%. At $50,000 the NPV is -$18,684.88. What is the lowest resale price for the old compressor that makes replacing worthwhile (NPV = 0)?",
+  "answer": 73093.67,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(-(-210000+38000*(1-0.3)*(1-1/1.1**5)/0.1+(30000-10000)/1.1**5+210000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-(30000-10000)*0.2*0.3/(0.1+0.2)/1.1**5))/(1-0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1))",
+  "steps": [
+   {
+    "label": "Value of each extra $1 of resale: 1 minus the CCA shield per dollar",
+    "value": 0.8091,
+    "check": "1-0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "NPV if the old machine fetched $0",
+    "value": -59139.42,
+    "check": "-210000+38000*(1-0.3)*(1-1/1.1**5)/0.1+(30000-10000)/1.1**5+210000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-(30000-10000)*0.2*0.3/(0.1+0.2)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Break-even resale price",
+    "value": 73093.67,
+    "check": "(-(-210000+38000*(1-0.3)*(1-1/1.1**5)/0.1+(30000-10000)/1.1**5+210000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-(30000-10000)*0.2*0.3/(0.1+0.2)/1.1**5))/(1-0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Resale R lowers the net acquisition cost one-for-one but also shrinks the CCA shield, so NPV(R) = NPV(0) + R x (1 - 0.2 x 0.3/0.3 x 1.05/1.1)",
+   "1 - 0.190909 = 0.809091",
+   "NPV(0) = -59,139.42",
+   "R* = 59,139.42 / 0.809091 = $73,093.67",
+   "Check: base NPV at R = 50,000 is -18,684.88, matching A + 50,000 x 0.8091"
+  ],
+  "keystrokes": [
+   "Compute NPV with old resale = 0, then divide its absolute value by 1 - 0.190909"
+  ],
+  "errors": [
+   {
+    "id": "net-acquisition-ignored",
+    "label": "Ignored the effect on the CCA shield",
+    "value": 59139.42,
+    "check": "-(-210000+38000*(1-0.3)*(1-1/1.1**5)/0.1+(30000-10000)/1.1**5+210000*0.2*0.3/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-(30000-10000)*0.2*0.3/(0.1+0.2)/1.1**5)",
+    "explain": "Each dollar of resale also removes shield on that dollar, so it adds only about 81 cents of value."
+   },
+   {
+    "id": "resale-not-scaled",
+    "label": "Added the base shortfall to $50,000 without scaling",
+    "value": 68684.88,
+    "check": "50000+18684.88",
+    "explain": "The gap must be divided by 0.809 because resale value reduces the shield."
+   }
+  ],
+  "explanation": "NPV is linear in the old machine's resale price; solve it for zero.",
+  "source": "generated",
+  "ref": "SM 10-36, S6 s19"
+ },
+ {
+  "id": "q10-501",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Fraser Bakery is considering a new oven that earns no extra revenue but cuts energy and labour costs by $36,000 a year before tax. What kind of project is this?",
+  "options": [
+   "An expansion project, whose benefit is new revenue",
+   "A replacement project with no relevant tax effect",
+   "A bid-price problem, whose benefit is the contract price",
+   "A cost-cutting proposal, whose benefit is the after-tax cost saving"
+  ],
+  "answer": 3,
+  "explanation": "A cost-cutting project has no new sales. Its operating benefit is the saving in costs, which raises taxable income, so the cash flow each year is saving x (1 - T), plus the CCA shield from the new equipment.",
+  "source": "generated",
+  "ref": "TB 10.6, SM 10-21"
+ },
+ {
+  "id": "q10-502",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the after-tax cash flows of a cost-cutting project differ from those of an expansion project?",
+  "options": [
+   "Cost savings are not taxed because no cash is received",
+   "The operating benefit is saving x (1 - T) instead of (revenue - costs) x (1 - T); the CAPEX, NWC, salvage and CCA shield are treated the same way",
+   "Cost-cutting projects are discounted at a lower rate because they are safer",
+   "Cost-cutting projects have no CCA tax shield because they add no revenue"
+  ],
+  "answer": 1,
+  "explanation": "A dollar saved in costs raises pre-tax income by a dollar just like a dollar of new revenue, so it is taxed at T. The equipment still qualifies for CCA, so the shield stays.",
+  "source": "generated",
+  "ref": "TB 10.6, SM 10-21"
+ },
+ {
+  "id": "q10-503",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT part of the NPV of a cost-cutting investment?",
+  "options": [
+   "The after-tax annual saving",
+   "The extra inventory (NWC) the project requires, recovered at the end",
+   "Revenue from additional sales",
+   "The PV of the CCA tax shield on the new equipment"
+  ],
+  "answer": 2,
+  "explanation": "By definition a cost-cutting project does not change sales. Its benefits are lower costs, plus the usual items: CAPEX, NWC, salvage and the CCA shield.",
+  "source": "generated",
+  "ref": "SM 10-34"
+ },
+ {
+  "id": "q10-504",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is a $50,000 annual cost saving multiplied by (1 - T) when evaluating the project?",
+  "options": [
+   "Lower costs raise taxable income, so the firm pays tax on the saving and keeps only (1 - T) of it",
+   "Because the saving is a non-cash item that only appears on the income statement",
+   "Because cost savings are a capital expenditure",
+   "Because the tax rate on savings is always the capital gains rate"
+  ],
+  "answer": 0,
+  "explanation": "Expenses are deductible, so reducing them leaves less to deduct. The extra taxable income costs T per dollar saved, and the net benefit is saving x (1 - T).",
+  "source": "generated",
+  "ref": "L05B s13, SM 10-21"
+ },
+ {
+  "id": "q10-505",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A cost-cutting analysis finds that the required pre-tax saving for NPV = 0 is $110,211 a year, and engineers forecast savings of $95,000. What should the firm conclude?",
+  "options": [
+   "Accept: the forecast saving is large enough to cover the cost of the equipment",
+   "Reject: forecast savings are below the break-even level, so the NPV is negative",
+   "Accept: any positive saving makes the NPV positive",
+   "The project breaks even because savings are 86% of the requirement"
+  ],
+  "answer": 1,
+  "explanation": "The required saving is the level at which the NPV is exactly zero. Forecasts below it give a negative NPV; forecasts above it give a positive NPV. The 86% is irrelevant because NPV is linear in the saving, not proportional.",
+  "source": "generated",
+  "ref": "SM 10-23, 10-48"
+ },
+ {
+  "id": "q10-506",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "To find the pre-tax annual saving that makes a cost-cutting project break even, which sequence is correct?",
+  "options": [
+   "Divide the equipment cost by the number of years, then multiply by (1 - T)",
+   "Divide the equipment cost by the annuity factor, then multiply by (1 - T)",
+   "Set NPV = 0, solve for the PV of savings, divide by N, then divide by T",
+   "Set NPV = 0, solve for the PV of after-tax savings, divide by the annuity factor, then divide by (1 - T)"
+  ],
+  "answer": 3,
+  "explanation": "With CF0, salvage and the CCA shield known, the PV of the after-tax savings must make up the rest. Dividing by the annuity factor gives the after-tax annual saving; dividing by (1 - T) un-taxes it.",
+  "source": "generated",
+  "ref": "SM 10-23, A19"
+ },
+ {
+  "id": "q10-507",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In a cost-cutting NPV, the CCA tax shield is valued only on the cost of the new equipment, not on the cost savings.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The shield arises from deductions for depreciating the asset: CCA x T. Cost savings are an operating item taxed at (1 - T) and carry no shield of their own.",
+  "source": "generated",
+  "ref": "L05B s14-16"
+ },
+ {
+  "id": "q10-508",
+  "concept": "c10-cost-cutting",
+  "also": [
+   "c10-nwc"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A cost-cutting machine requires a $15,000 increase in inventory that is released when the machine is retired. How is this treated?",
+  "options": [
+   "As a $15,000 outflow at time 0 and a $15,000 inflow at the end, neither taxed",
+   "As a tax-deductible expense in year 1",
+   "As a $15,000 reduction of the CCA base",
+   "As an outflow at time 0 only, because inventory is sold during the project"
+  ],
+  "answer": 0,
+  "explanation": "NWC is counted at 100% when it is invested and again when it is recovered. It does not enter the CCA calculation, and it is not taxed.",
+  "source": "generated",
+  "ref": "SM 10-34, L05B s12"
+ },
+ {
+  "id": "q10-509",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okotoks Bottling is buying a $120,000 filler (CCA rate 20%, half-year rule) that saves $38,000 a year before tax for 4 years. It needs $8,000 more inventory, recovered at the end, and sells for $20,000 in year 4 (pool open). T = 35%, k = 9%. What is the NPV?",
+  "options": [
+   "-$9,460.71",
+   "-$3,793.30",
+   "-$2,597.48",
+   "-$373.32",
+   "$39,294.97"
+  ],
+  "answer": 1,
+  "explanation": "CF0 = -128,000. After-tax saving = 38,000 x 0.65 = 24,700 (PV 80,021.08). Year-4 salvage + NWC = 28,000 (PV 19,835.91). PV CCA = 24,349.71. NPV = -$3,793.30, so reject. Leaving savings untaxed makes the NPV look positive.",
+  "source": "generated",
+  "ref": "SM 10-34, 10-21"
+ },
+ {
+  "id": "q10-510",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Saskatoon Metalworks can buy a $250,000 machine (CCA rate 30%, half-year rule, salvage $35,000 at year 4, pool open) that cuts costs for 4 years. T = 30% and k = 12%. What annual pre-tax saving makes the NPV exactly zero?",
+  "options": [
+   "$59,861.97",
+   "$64,936.33",
+   "$83,275.31",
+   "$85,517.10",
+   "$107,122.01"
+  ],
+  "answer": 3,
+  "explanation": "Known PV to cover = 250,000 - 35,000/1.12^4 - PV CCA (45,935.15) = 181,821.72. Annuity factor (12%, 4) = 3.0373, so the after-tax saving is 59,861.97; un-taxing by 0.70 gives $85,517.10.",
+  "source": "generated",
+  "ref": "SM 10-23, 10-48"
+ },
+ {
+  "id": "q10-511",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Grain Handling can install a $310,000 sorting system (CCA rate 30%, half-year rule) that saves $95,000 a year before tax for 5 years. It needs $15,000 more inventory (recovered at the end) and sells for $40,000 in year 5; the pool stays open. T = 30%, k = 11%. What is the NPV?",
+  "answer": 12883.18,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-(310000+15000)+95000*(1-0.3)*(1-1/1.11**5)/0.11+(40000+15000)/1.11**5+310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-40000*0.3*0.3/(0.11+0.3)/1.11**5",
+  "steps": [
+   {
+    "label": "Time-0 cash flow: CAPEX + inventory",
+    "value": -325000.0,
+    "check": "-(310000+15000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax saving per year",
+    "value": 66500.0,
+    "check": "95000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of after-tax savings",
+    "value": 245777.15,
+    "check": "95000*(1-0.3)*(1-1/1.11**5)/0.11",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of salvage + inventory recovery",
+    "value": 32639.82,
+    "check": "(40000+15000)/1.11**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield",
+    "value": 59466.2,
+    "check": "310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-40000*0.3*0.3/(0.11+0.3)/1.11**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 12883.18,
+    "check": "-(310000+15000)+95000*(1-0.3)*(1-1/1.11**5)/0.11+(40000+15000)/1.11**5+310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-40000*0.3*0.3/(0.11+0.3)/1.11**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CF0 = -310,000 - 15,000 = -325,000. After-tax saving = 95,000 x 0.70 = 66,500",
+   "PV of savings = 66,500 x 3.6959 = 245,777.15",
+   "Year 5: 40,000 + 15,000 = 55,000; PV = 32,639.82",
+   "PV CCA = 310,000 x 0.3 x 0.3/0.41 x 1.055/1.11 - 40,000 x 0.3 x 0.3/0.41 / 1.11^5 = 59,466.20",
+   "NPV = -325,000 + 245,777.15 + 32,639.82 + 59,466.20 = $12,883.18"
+  ],
+  "keystrokes": [
+   "CF0 = -325000, C01 = 66500 (F01 = 4), C02 = 121500 (66500 + 55000), I = 11, NPV CPT, then add PV of CCA"
+  ],
+  "errors": [
+   {
+    "id": "forgot-times-t",
+    "label": "Used the untaxed savings",
+    "value": 118216.24,
+    "check": "-(310000+15000)+95000*(1-1/1.11**5)/0.11+(40000+15000)/1.11**5+310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-40000*0.3*0.3/(0.11+0.3)/1.11**5",
+    "explain": "Cost savings raise taxable income, so only (1 - T) is kept."
+   },
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Did not recover the inventory",
+    "value": 3981.41,
+    "check": "-(310000+15000)+95000*(1-0.3)*(1-1/1.11**5)/0.11+40000/1.11**5+310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)-40000*0.3*0.3/(0.11+0.3)/1.11**5",
+    "explain": "Inventory is released when the system is retired."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Dropped the salvage term",
+    "value": 18093.97,
+    "check": "-(310000+15000)+95000*(1-0.3)*(1-1/1.11**5)/0.11+(40000+15000)/1.11**5+310000*0.3*0.3/(0.11+0.3)*(1+0.5*0.11)/(1+0.11)",
+    "explain": "The system is sold at year 5, which removes the shield attached to the salvage value."
+   }
+  ],
+  "explanation": "No new sales: the operating benefit is the taxed saving; everything else is as in an expansion.",
+  "source": "generated",
+  "ref": "SM 10-34, 10-21, 10-16"
+ },
+ {
+  "id": "q10-512",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kootenay Packaging is considering a $380,000 packing line (CCA rate 20%, half-year rule) that sells for $50,000 at the end of year 5 (pool open). It will cut costs for 5 years; there is no working capital. T = 35% and k = 10%. What constant annual pre-tax cost saving makes the NPV zero?",
+  "answer": 110211.2,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5))/((1-1/1.1**5)/0.1)/(1-0.35)",
+  "steps": [
+   {
+    "label": "PV of CCA tax shield",
+    "value": 77392.28,
+    "check": "380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV the after-tax savings must cover = CAPEX - PV salvage - PV CCA",
+    "value": 271561.65,
+    "check": "380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor (10%, 5 years)",
+    "value": 3.7908,
+    "check": "(1-1/1.1**5)/0.1",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "Required after-tax saving",
+    "value": 71637.28,
+    "check": "(380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5))/((1-1/1.1**5)/0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Required pre-tax saving",
+    "value": 110211.2,
+    "check": "(380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5))/((1-1/1.1**5)/0.1)/(1-0.35)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV CCA = 380,000 x 0.2 x 0.35/0.3 x 1.05/1.10 - 50,000 x 0.2 x 0.35/0.3 / 1.1^5 = 77,392.28",
+   "NPV = 0: the after-tax savings annuity must be worth 380,000 - 50,000/1.1^5 - 77,392.28 = 271,561.65",
+   "After-tax saving = 271,561.65 / 3.7908 = 71,637.28",
+   "Pre-tax saving = 71,637.28 / 0.65 = $110,211.20"
+  ],
+  "keystrokes": [
+   "Compute the three known PVs, then divide by 3.7908 and by 0.65"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide by (1 - T)",
+    "value": 71637.28,
+    "check": "(380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5))/((1-1/1.1**5)/0.1)",
+    "explain": "The annuity found is after tax. The pre-tax saving is larger by 1/(1 - T)."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided by N instead of the annuity factor",
+    "value": 83557.43,
+    "check": "(380000-50000/1.1**5-(380000*0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)-50000*0.2*0.35/(0.1+0.2)/1.1**5))/5/(1-0.35)",
+    "explain": "A level annuity has to be discounted: use the annuity factor, not N."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA shield",
+    "value": 141620.26,
+    "check": "(380000-50000/1.1**5)/((1-1/1.1**5)/0.1)/(1-0.35)",
+    "explain": "The shield covers a large share of the cost, so the required saving falls a lot when it is counted."
+   }
+  ],
+  "explanation": "Break-even savings: PV of the known pieces, divide by the annuity factor, divide by (1 - T).",
+  "source": "generated",
+  "ref": "SM 10-23, 10-48, A19"
+ },
+ {
+  "id": "q10-513",
+  "concept": "c10-cost-cutting",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A cost-cutting machine saves $70,000 a year before tax for 5 years and sells for $25,000 at the end of year 5 (pool open). CCA rate 20%, half-year rule, T = 35%, k = 10%. There is no working capital. What is the most the firm should pay for the machine, i.e. the cost at which NPV = 0?",
+  "answer": 237216.34,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(70000*(1-0.35)*(1-1/1.1**5)/0.1+25000/1.1**5-25000*0.2*0.35/(0.1+0.2)/1.1**5)/(1-0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1))",
+  "steps": [
+   {
+    "label": "Benefits that do not depend on cost (savings + salvage - salvage term)",
+    "value": 184381.79,
+    "check": "70000*(1-0.35)*(1-1/1.1**5)/0.1+25000/1.1**5-25000*0.2*0.35/(0.1+0.2)/1.1**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Shield per dollar of cost: d T/(k + d) x first-year factor",
+    "value": 0.2227,
+    "check": "0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Maximum cost = benefits / (1 - shield per dollar)",
+    "value": 237216.34,
+    "check": "(70000*(1-0.35)*(1-1/1.1**5)/0.1+25000/1.1**5-25000*0.2*0.35/(0.1+0.2)/1.1**5)/(1-0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV savings = 45,500 x 3.7908 = 172,480.80; PV salvage = 15,523.03; salvage term = 3,622.04",
+   "Benefits independent of cost = 184,381.79",
+   "NPV = -I0 + 184,381.79 + I0 x 0.22273 = 0, so I0 = 184,381.79 / 0.77727 = $237,216.34"
+  ],
+  "keystrokes": [
+   "Compute the constant, then divide by 1 - 0.22273"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Ignored the CCA shield on the machine",
+    "value": 184381.79,
+    "check": "70000*(1-0.35)*(1-1/1.1**5)/0.1+25000/1.1**5-25000*0.2*0.35/(0.1+0.2)/1.1**5",
+    "explain": "Each dollar of cost generates about 22 cents of tax shield, so the machine can cost more than the other benefits."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Used savings before tax",
+    "value": 356703.71,
+    "check": "(70000*(1-1/1.1**5)/0.1+25000/1.1**5-25000*0.2*0.35/(0.1+0.2)/1.1**5)/(1-0.2*0.35/(0.1+0.2)*(1+0.5*0.1)/(1+0.1))",
+    "explain": "Savings are taxed at T."
+   }
+  ],
+  "explanation": "NPV is linear in the cost, so the break-even cost can be solved directly.",
+  "source": "generated",
+  "ref": "SM 10-24, 10-48"
+ },
+ {
+  "id": "q10-521",
+  "concept": "c10-bid-price",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Foothills Machining must submit a fixed price per unit for a five-year supply contract. It wants the lowest price that still earns its required return on the investment. What is this problem called, and what is the benchmark?",
+  "options": [
+   "A bid-price problem: choose the price that makes accounting profit equal to zero",
+   "An equivalent annual cost problem: choose the price that equals the EAC",
+   "A bid-price problem: choose the price that makes the project's NPV equal to zero",
+   "A sensitivity analysis: choose the price that is 10% above cost"
+  ],
+  "answer": 2,
+  "explanation": "At the bid price the project earns exactly the required return, so NPV = 0. Any lower price loses value (the winner's curse); any higher price risks losing the contract.",
+  "source": "generated",
+  "ref": "TB 10.6, SM 10-24"
+ }
+]

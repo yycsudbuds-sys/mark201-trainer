@@ -1,0 +1,266 @@
+[
+ {
+  "id": "q12-106",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "On the professor's risk-return diagram, what is plotted on each axis?",
+  "options": [
+   "Horizontal axis: the expected return E[R]. Vertical axis: the standard deviation σ.",
+   "Horizontal axis: the standard deviation σ (risk or volatility). Vertical axis: the expected return E[R].",
+   "Horizontal axis: beta. Vertical axis: the expected return E[R].",
+   "Horizontal axis: time. Vertical axis: the share price."
+  ],
+  "answer": 1,
+  "explanation": "σ is on the x-axis and E[R] on the y-axis. Putting beta on the x-axis gives a different graph, the security market line, which belongs to the next chapter.",
+  "source": "generated",
+  "ref": "L06 s14"
+ },
+ {
+  "id": "q12-107",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Each dot on a risk-return diagram is one stock plotted at its expected return E[R] on the vertical axis and its _____ on the horizontal axis.",
+  "options": [
+   "beta",
+   "correlation with the market",
+   "standard deviation",
+   "dividend yield"
+  ],
+  "answer": 2,
+  "explanation": "The horizontal axis measures risk as volatility of returns, i.e. the standard deviation σ.",
+  "source": "generated",
+  "ref": "L06 s14-15"
+ },
+ {
+  "id": "q12-108",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Three stocks plot at (σ, E[R]): Tamarack (14%, 8%), Birchmount (14%, 11%) and Quill (10%, 8%). Which statement is correct?",
+  "options": [
+   "Tamarack dominates both Birchmount and Quill.",
+   "Birchmount dominates Quill because it has the higher expected return.",
+   "No stock dominates any other.",
+   "Birchmount and Quill each dominate Tamarack, but neither dominates the other."
+  ],
+  "answer": 3,
+  "explanation": "Birchmount offers a higher return for the same risk (14%); Quill offers the same return for lower risk (10%). Birchmount versus Quill is a trade-off: more return but more risk, so no domination.",
+  "source": "generated",
+  "ref": "L06 s16"
+ },
+ {
+  "id": "q12-109",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does domination differ from the efficient frontier?",
+  "options": [
+   "Domination compares two points; the efficient frontier is the set of points that no other point dominates.",
+   "Domination applies only to bonds; the efficient frontier applies only to stocks.",
+   "The efficient frontier is the straight line through the risk-free asset; domination has no line.",
+   "They are the same idea described with different words, so no distinction is needed."
+  ],
+  "answer": 0,
+  "explanation": "A single stock either is or is not dominated by another. Collecting all stocks that nothing dominates gives the upper-left boundary of the cloud, the efficient frontier.",
+  "source": "generated",
+  "ref": "L06 s16-17"
+ },
+ {
+  "id": "q12-110",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the risk-return diagram is NOT correct?",
+  "options": [
+   "Each dot shows one stock's expected return and standard deviation.",
+   "A stock directly above another has the same risk but a higher expected return.",
+   "Anywhere other than the efficient frontier a point can be dominated.",
+   "A stock plotted up and to the left of another has a higher σ and a lower E[R]."
+  ],
+  "answer": 3,
+  "explanation": "Up means higher E[R] and left means lower σ, which is better on both counts: that is how one stock dominates another.",
+  "source": "generated",
+  "ref": "L06 s14-17"
+ },
+ {
+  "id": "q12-111",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can an investor ignore a stock that is not on the efficient frontier?",
+  "options": [
+   "Because another point offers more return for the same risk or less risk for the same return.",
+   "Because stocks that are off the frontier all have negative expected returns.",
+   "Because stocks that are off the frontier have no risk, so they add nothing.",
+   "Because the frontier is the only place where the risk-free asset can be found."
+  ],
+  "answer": 0,
+  "explanation": "Points not on the frontier can be beaten on return, risk or both, so a rational investor would never choose them in preference to the dominating alternative.",
+  "source": "generated",
+  "ref": "L06 s17"
+ },
+ {
+  "id": "q12-112",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Stock A plots at (σ = 10%, E[R] = 6%) and Stock B at (σ = 20%, E[R] = 12%). What does the diagram tell you?",
+  "options": [
+   "B dominates A because it has the higher expected return, which outweighs the extra risk.",
+   "Neither dominates: B has more return but more risk, so the choice depends on risk preference.",
+   "A dominates B because it has the lower standard deviation, which outweighs the lower return.",
+   "A and B must be perfectly correlated, because both lie on one straight line from the origin."
+  ],
+  "answer": 1,
+  "explanation": "Domination needs one stock to be better on return without being worse on risk (or vice versa). Here the two points trade off return against risk, so both can lie on the efficient frontier.",
+  "source": "generated",
+  "ref": "L06 s16-17"
+ },
+ {
+  "id": "q12-113",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Five stocks plot at (σ, E[R]): P (8%, 5%), Q (12%, 9%), R (12%, 7%), S (18%, 9%) and T (18%, 12%). Which stocks are NOT dominated by any other stock in the list?",
+  "options": [
+   "P, Q and T",
+   "P, Q, R and T",
+   "Q and T only",
+   "P, Q, S and T"
+  ],
+  "answer": 0,
+  "explanation": "R is dominated by Q (same σ, higher E[R]); S is dominated by Q (same E[R], lower σ). No other stock in the list has both a return at least as high and a σ at least as low as P, Q or T, so they form the upper-left boundary.",
+  "source": "generated",
+  "ref": "L06 s16-17"
+ },
+ {
+  "id": "q12-114",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A stock with a higher expected return and a lower standard deviation than another stock dominates it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. That is the definition of domination on the risk-return diagram: higher return for lower risk, or the same return for lower risk, or higher return for the same risk.",
+  "source": "generated",
+  "ref": "L06 s16"
+ },
+ {
+  "id": "q12-115",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "How are the points for individual stocks on the diagram estimated in the lecture?",
+  "options": [
+   "By computing E[R] and σ from historical returns over a period such as five years.",
+   "By reading each stock's beta from a regression of its returns on the market.",
+   "By using only the stock's closing price today, with no return history.",
+   "By assuming that every stock has the same σ as the market portfolio itself."
+  ],
+  "answer": 0,
+  "explanation": "The lecture computes E[R] and σ for each stock over the historical period (e.g. five years) and plots them, with the warning that past performance does not guarantee future returns.",
+  "source": "generated",
+  "ref": "L06 s13-14"
+ },
+ {
+  "id": "q12-116",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stocks M and N each have a 50% chance of a boom and a 50% chance of a bust. M returns 18% in the boom and 6% in the bust; N returns 30% in the boom and −6% in the bust. Which statement is correct?",
+  "options": [
+   "N dominates M because its best-case return is higher.",
+   "Both have E[R] = 12%, but σ_M = 6% and σ_N = 18%, so M dominates N.",
+   "Neither dominates: N has the higher σ, but M has the lower E[R].",
+   "M and N plot at the same point on the diagram."
+  ],
+  "answer": 1,
+  "explanation": "E[R_M] = 0.5 × 18 + 0.5 × 6 = 12%; E[R_N] = 0.5 × 30 + 0.5 × (−6) = 12%. σ_M = 6% (both outcomes 6 points from the mean) and σ_N = 18%. Same return, lower risk: M dominates N.",
+  "source": "generated",
+  "ref": "SM 13-5, SM 13-7, L06 s16"
+ },
+ {
+  "id": "q12-117",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stock V returns 20%, 10% and −5% in states with probabilities 0.30, 0.50 and 0.20. Stock W returns 14%, 9% and 4% in the same states. Which statement is correct?",
+  "options": [
+   "V dominates W because its expected return of 10.0% is greater than W's 9.5%.",
+   "W dominates V because W has the lower σ of 3.50% against V's 8.66%.",
+   "Neither dominates: V has higher E[R] (10.0% vs 9.5%) but higher σ (8.66% vs 3.50%).",
+   "V and W have the same σ of 8.66%, so only expected returns differ."
+  ],
+  "answer": 2,
+  "explanation": "E[R_V] = 6 + 5 − 1 = 10.0%; σ_V² = 0.3 × 100 + 0.5 × 0 + 0.2 × 225 = 75, σ_V = 8.66%. E[R_W] = 4.2 + 4.5 + 0.8 = 9.5%; σ_W² = 0.3 × 4.5² + 0.5 × 0.5² + 0.2 × 5.5² = 12.25, σ_W = 3.50%. V has more return and more risk, so neither dominates.",
+  "source": "generated",
+  "ref": "SM 13-6, SM 13-7"
+ },
+ {
+  "id": "q12-118",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Where are the best individual stocks on the risk-return diagram?",
+  "options": [
+   "On the upper-left boundary of the cloud of stocks, where no other stock dominates.",
+   "At the bottom of the cloud, where expected returns are lowest.",
+   "On the lower-right edge where σ is highest and E[R] is lowest.",
+   "Only on the vertical axis, at the risk-free rate with σ equal to zero."
+  ],
+  "answer": 0,
+  "explanation": "The efficient frontier (the 'red curve' in the lecture) is the set of non-dominated points. Anywhere else can be dominated.",
+  "source": "generated",
+  "ref": "L06 s17"
+ },
+ {
+  "id": "q12-119",
+  "concept": "c12-risk-return-diagram",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Where would a Treasury bill (the risk-free asset) plot on the risk-return diagram?",
+  "options": [
+   "On the horizontal axis, at the market portfolio's σ and E[R] = 0.",
+   "At the origin, where both σ and E[R] are equal to zero.",
+   "On the vertical axis, at σ = 0 and a height of R_F.",
+   "At the same point as the market portfolio, with the same σ and E[R]."
+  ],
+  "answer": 2,
+  "explanation": "The risk-free asset has return R_F with zero volatility, so its σ is 0 and its E[R] is R_F: it sits on the vertical axis.",
+  "source": "generated",
+  "ref": "L06 s38"
+ }
+]

@@ -1,0 +1,1276 @@
+[
+ {
+  "id": "q12-075",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The historical mean (expected) return of N annual returns R_1, …, R_N is:",
+  "options": [
+   "[(1 + R_1)(1 + R_2)…(1 + R_N)]^(1/N) − 1",
+   "E[R] = (R_1 + R_2 + … + R_N)/N",
+   "(R_1 + R_2 + … + R_N)/(N − 1)",
+   "the middle return after ranking the N returns from lowest to highest"
+  ],
+  "answer": 1,
+  "explanation": "The mean adds the returns and divides by N. The compound (geometric) average multiplies growth factors; N − 1 appears only in the sample variance.",
+  "source": "generated",
+  "ref": "L06 s13, FS p2"
+ },
+ {
+  "id": "q12-076",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Which of the following calls for the POPULATION standard deviation (divide by N)?",
+  "options": [
+   "Estimating one stock's future volatility from its last five annual returns",
+   "Judging a fund from ten years of returns in order to forecast its future risk",
+   "Measuring the spread of this month's returns across all nine stocks you hold, as the whole group",
+   "Using 20 randomly chosen TSX stocks to estimate the volatility of all TSX stocks"
+  ],
+  "answer": 2,
+  "explanation": "The professor's examples: population = all the stocks in your portfolio; sample = five years of your favourite stock. Whenever the data are only a sample used to estimate something larger, use N − 1.",
+  "source": "generated",
+  "ref": "L06 s13"
+ },
+ {
+  "id": "q12-077",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "You have five years of annual returns on your favourite stock and want its standard deviation. Which formula applies?",
+  "options": [
+   "the sample standard deviation, dividing by N − 1",
+   "the population standard deviation, dividing by N",
+   "the probability-weighted formula Σ p_i (R_i − E[R])²",
+   "the geometric average of the five returns"
+  ],
+  "answer": 0,
+  "explanation": "Five years are only a sample of the stock's possible returns, so use the sample formula. The probability-weighted formula is for forecast states with given probabilities.",
+  "source": "generated",
+  "ref": "L06 s13"
+ },
+ {
+  "id": "q12-078",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How do the population and sample standard deviations of the same set of returns differ?",
+  "options": [
+   "The sample version divides by N and the population version by N − 1, so the population version is larger.",
+   "They are always exactly equal once N is greater than 30, so the choice never matters.",
+   "The sample version divides by N − 1 instead of N, so it is slightly larger; use it when the data are a sample.",
+   "The population version squares the deviations, whereas the sample version uses absolute values instead."
+  ],
+  "answer": 2,
+  "explanation": "Same numerator (sum of squared deviations); different divisor. Dividing by the smaller number N − 1 gives the larger σ. The difference shrinks as N grows.",
+  "source": "generated",
+  "ref": "L06 s13, SM 12-6"
+ },
+ {
+  "id": "q12-079",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does the sample standard deviation divide by N − 1 rather than N?",
+  "options": [
+   "Because the first year of data is always discarded as a start-up observation.",
+   "Because dividing by N − 1 makes the answer come out as an exact whole-number percentage.",
+   "Because N years of prices give only N − 1 holding periods for which returns are measured.",
+   "Because the deviations around the sample's own mean are a little too small; dividing by N − 1 corrects that."
+  ],
+  "answer": 3,
+  "explanation": "Deviations measured from the sample's own mean are on average too small, so dividing by N would understate the variance. Using N − 1 adjusts for this.",
+  "source": "generated",
+  "ref": "L06 s13, TB 12.4"
+ },
+ {
+  "id": "q12-080",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about a historical standard deviation is NOT correct?",
+  "options": [
+   "Dividing by N − 1 instead of N gives a smaller standard deviation.",
+   "The deviations from the mean always sum to zero.",
+   "It is measured in the same units as the returns.",
+   "A wider spread of returns around the mean gives a larger value."
+  ],
+  "answer": 0,
+  "explanation": "Dividing by N − 1 (the smaller number) makes the variance and standard deviation larger, not smaller.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-081",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Over 1926-2016 (U.S. data in the textbook) large-company stocks had an average return of 12.0% and σ = 19.9%; Treasury bills averaged 3.4% with σ = 3.1%. What does this show?",
+  "options": [
+   "Stocks were less risky than T-bills because their average return was higher.",
+   "Stocks paid more on average but were far more volatile; T-bill returns stayed close to their average.",
+   "Treasury bills were riskier than stocks because their average return was lower.",
+   "The two asset classes had the same risk because both averages were positive."
+  ],
+  "answer": 1,
+  "explanation": "σ measures how far returns typically fall from their average. 19.9% versus 3.1% shows far greater volatility for stocks, the price of their higher average return.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-082",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "For any set of historical returns, the deviations (R_i − mean) add up to zero, which gives a quick check on your arithmetic.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Deviations around the mean always cancel to zero (the textbook's 'the sum of the deviations is equal to zero'). If yours do not, the mean is wrong.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-083",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lakeshore Hotels' annual returns over the last five years were 12%, −4%, 18%, 7% and 9%. Treat these as a sample of five years. What is the standard deviation of its annual returns, in % per annum?",
+  "answer": 8.08,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(((12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2)/4)",
+  "steps": [
+   {
+    "label": "Mean return",
+    "value": 8.4,
+    "check": "(12+(-4)+18+7+9)/5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 261.2,
+    "check": "(12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 65.3,
+    "check": "((12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2)/4",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 8.08,
+    "check": "sqrt(((12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2)/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Mean = (12 − 4 + 18 + 7 + 9)/5 = 8.40%",
+   "Deviations: 3.60, −12.40, 9.60, −1.40, 0.60",
+   "Squared deviations: 12.96, 153.76, 92.16, 1.96, 0.36; sum = 261.20",
+   "Variance = 261.20/4 = 65.3000   (sample, ÷(N − 1))",
+   "σ = √65.3000 = 8.08% per annum"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Read Sx = 8.0808"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 5 for a sample",
+    "value": 7.23,
+    "check": "sqrt(((12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2)/5)",
+    "explain": "For a sample of years the divisor is N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 65.3,
+    "check": "((12-((12+(-4)+18+7+9)/5))**2+((-4)-((12+(-4)+18+7+9)/5))**2+(18-((12+(-4)+18+7+9)/5))**2+(7-((12+(-4)+18+7+9)/5))**2+(9-((12+(-4)+18+7+9)/5))**2)/4",
+    "explain": "That is σ² in %²; take the square root to get σ in percent."
+   }
+  ],
+  "explanation": "Sample formula: divide the sum of squared deviations (261.20) by N − 1 = 4 to get 65.3000, then take the square root: 8.08%.",
+  "source": "generated",
+  "ref": "SM 12-6, L06 s13"
+ },
+ {
+  "id": "q12-084",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A trust holds exactly four stocks. Last month they returned 9%, 15%, −3% and 11%. Treat the four as the whole population of interest. What is the (population) standard deviation of these returns, in %?",
+  "answer": 6.71,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(((9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2)/4)",
+  "steps": [
+   {
+    "label": "Mean return",
+    "value": 8.0,
+    "check": "(9+15+(-3)+11)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 180.0,
+    "check": "(9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 45.0,
+    "check": "((9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2)/4",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 6.71,
+    "check": "sqrt(((9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2)/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Mean = (9 + 15 − 3 + 11)/4 = 8.00%",
+   "Deviations: 1.00, 7.00, −11.00, 3.00",
+   "Squared deviations: 1.00, 49.00, 121.00, 9.00; sum = 180.00",
+   "Variance = 180.00/4 = 45.0000   (population, ÷N)",
+   "σ = √45.0000 = 6.71% per annum"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Read σx = 6.7082"
+  ],
+  "errors": [
+   {
+    "id": "n-minus-1-for-population",
+    "label": "Divided by N − 1 = 3 for a population",
+    "value": 7.75,
+    "check": "sqrt(((9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2)/3)",
+    "explain": "When the data are the whole population the divisor is N, not N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 45.0,
+    "check": "((9-((9+15+(-3)+11)/4))**2+(15-((9+15+(-3)+11)/4))**2+((-3)-((9+15+(-3)+11)/4))**2+(11-((9+15+(-3)+11)/4))**2)/4",
+    "explain": "That is σ² in %²; take the square root to get σ in percent."
+   }
+  ],
+  "explanation": "Population formula: divide the sum of squared deviations (180.00) by N = 4 to get 45.0000, then take the square root: 6.71%.",
+  "source": "generated",
+  "ref": "L06 s13"
+ },
+ {
+  "id": "q12-085",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Whitecap Brewing's returns over six years were 21%, −8%, 14%, 3%, 17% and −5%. Treat the six years as a sample. What is the standard deviation of its annual returns, in % per annum?",
+  "answer": 12.08,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(((21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2)/5)",
+  "steps": [
+   {
+    "label": "Mean return",
+    "value": 7.0,
+    "check": "(21+(-8)+14+3+17+(-5))/6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 730.0,
+    "check": "(21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 146.0,
+    "check": "((21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2)/5",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 12.08,
+    "check": "sqrt(((21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2)/5)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Mean = (21 − 8 + 14 + 3 + 17 − 5)/6 = 7.00%",
+   "Deviations: 14.00, −15.00, 7.00, −4.00, 10.00, −12.00",
+   "Squared deviations: 196.00, 225.00, 49.00, 16.00, 100.00, 144.00; sum = 730.00",
+   "Variance = 730.00/5 = 146.0000   (sample, ÷(N − 1))",
+   "σ = √146.0000 = 12.08% per annum"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Read Sx = 12.0830"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 6 for a sample",
+    "value": 11.03,
+    "check": "sqrt(((21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2)/6)",
+    "explain": "For a sample of years the divisor is N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 146.0,
+    "check": "((21-((21+(-8)+14+3+17+(-5))/6))**2+((-8)-((21+(-8)+14+3+17+(-5))/6))**2+(14-((21+(-8)+14+3+17+(-5))/6))**2+(3-((21+(-8)+14+3+17+(-5))/6))**2+(17-((21+(-8)+14+3+17+(-5))/6))**2+((-5)-((21+(-8)+14+3+17+(-5))/6))**2)/5",
+    "explain": "That is σ² in %²; take the square root to get σ in percent."
+   }
+  ],
+  "explanation": "Sample formula: divide the sum of squared deviations (730.00) by N − 1 = 5 to get 146.0000, then take the square root: 12.08%.",
+  "source": "generated",
+  "ref": "SM 12-7, L06 s13"
+ },
+ {
+  "id": "q12-086",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Over five years a stock averaged 9.0% per annum. Four of its annual returns were 15%, −6%, 12% and 20%. Find the missing fifth return and then compute the sample standard deviation of the five returns, in % per annum.",
+  "answer": 10.2,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(((15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2)/4)",
+  "steps": [
+   {
+    "label": "Missing fifth return = 5 × 9.0 − (15 − 6 + 12 + 20)",
+    "value": 4.0,
+    "check": "5*9.0-(15-6+12+20)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Mean return",
+    "value": 9.0,
+    "check": "(15+(-6)+12+20+4)/5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 416.0,
+    "check": "(15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 104.0,
+    "check": "((15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2)/4",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 10.2,
+    "check": "sqrt(((15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2)/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Sum of five returns = 5 × 9.0 = 45, so the fifth = 45 − (15 − 6 + 12 + 20) = 45 − 41 = 4%",
+   "Mean = (15 − 6 + 12 + 20 + 4)/5 = 9.00%",
+   "Deviations: 6.00, −15.00, 3.00, 11.00, −5.00",
+   "Squared deviations: 36.00, 225.00, 9.00, 121.00, 25.00; sum = 416.00",
+   "Variance = 416.00/4 = 104.0000   (sample, ÷(N − 1))",
+   "σ = √104.0000 = 10.20% per annum"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Read Sx = 10.1980"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 5 for a sample",
+    "value": 9.12,
+    "check": "sqrt(((15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2)/5)",
+    "explain": "For a sample of years the divisor is N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 104.0,
+    "check": "((15-((15+(-6)+12+20+4)/5))**2+((-6)-((15+(-6)+12+20+4)/5))**2+(12-((15+(-6)+12+20+4)/5))**2+(20-((15+(-6)+12+20+4)/5))**2+(4-((15+(-6)+12+20+4)/5))**2)/4",
+    "explain": "That is σ² in %²; take the square root to get σ in percent."
+   },
+   {
+    "id": "omitted-year",
+    "label": "Computed σ from the four known returns only",
+    "value": 11.32,
+    "check": "sqrt(((15-((15+(-6)+12+20)/4))**2+((-6)-((15+(-6)+12+20)/4))**2+(12-((15+(-6)+12+20)/4))**2+(20-((15+(-6)+12+20)/4))**2)/3)",
+    "explain": "The fifth return (4%) must be recovered from the stated mean and included in the data."
+   }
+  ],
+  "explanation": "Sample formula: divide the sum of squared deviations (416.00) by N − 1 = 4 to get 104.0000, then take the square root: 10.20%.",
+  "source": "generated",
+  "ref": "SM 12-11"
+ },
+ {
+  "id": "q12-087",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A fund returned −2%, 6%, 10% and 4% over four years. Treat the four years as a sample. What is the sample variance of its returns, as a decimal rounded to four places (for example 0.0123)?",
+  "answer": 0.0025,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.0001
+  },
+  "check": "(((-0.02)-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.06-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.1-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.04-(((-0.02)+0.06+0.1+0.04)/4))**2)/3",
+  "steps": [
+   {
+    "label": "Mean return (in %)",
+    "value": 4.5,
+    "check": "((-2)+6+10+4)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 75.0,
+    "check": "((-2)-(((-2)+6+10+4)/4))**2+(6-(((-2)+6+10+4)/4))**2+(10-(((-2)+6+10+4)/4))**2+(4-(((-2)+6+10+4)/4))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Sample variance (decimal)",
+    "value": 0.0025,
+    "check": "(((-0.02)-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.06-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.1-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.04-(((-0.02)+0.06+0.1+0.04)/4))**2)/3",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   }
+  ],
+  "solution": [
+   "Mean = (−2 + 6 + 10 + 4)/4 = 4.5%",
+   "Deviations: −6.5, 1.5, 5.5, −0.5; squares: 42.25, 2.25, 30.25, 0.25; sum = 75",
+   "Sample variance = 75/(4 − 1) = 25 (%²) = 0.0025 as a decimal"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Sx = 5.0000 (%); Sx² = 25 (%²) = 0.0025"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 4",
+    "value": 0.001875,
+    "check": "(((-0.02)-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.06-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.1-(((-0.02)+0.06+0.1+0.04)/4))**2+(0.04-(((-0.02)+0.06+0.1+0.04)/4))**2)/4",
+    "explain": "A sample uses N − 1 = 3 as the divisor."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Left the variance in %²",
+    "value": 25.0,
+    "check": "(((-2)-(((-2)+6+10+4)/4))**2+(6-(((-2)+6+10+4)/4))**2+(10-(((-2)+6+10+4)/4))**2+(4-(((-2)+6+10+4)/4))**2)/3",
+    "explain": "25 is in squared percent; as a decimal variance it is 0.0025."
+   },
+   {
+    "id": "sigma-for-variance",
+    "label": "Reported σ as a decimal",
+    "value": 0.05,
+    "check": "sqrt(25)/100",
+    "explain": "0.05 is the standard deviation (5%), not the variance."
+   }
+  ],
+  "explanation": "Sample variance = 75/3 = 25 %² = 0.0025 (σ = 5.0%).",
+  "source": "generated",
+  "ref": "SM 12-6, L06 s13"
+ },
+ {
+  "id": "q12-088",
+  "concept": "c12-historical-sd",
+  "also": [
+   "c12-risk-aversion-premium"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock's yearly excess return over T-bills was 6%, −2%, 11% and 5% in four years. Treat the four years as a sample. What is the standard deviation of the stock's excess returns, in % per annum?",
+  "answer": 5.35,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(((6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2)/3)",
+  "steps": [
+   {
+    "label": "Mean return",
+    "value": 5.0,
+    "check": "(6+(-2)+11+5)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sum of squared deviations (in %²)",
+    "value": 86.0,
+    "check": "(6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Variance (in %²)",
+    "value": 28.67,
+    "check": "((6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2)/3",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Standard deviation",
+    "value": 5.35,
+    "check": "sqrt(((6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2)/3)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Mean = (6 − 2 + 11 + 5)/4 = 5.00%",
+   "Deviations: 1.00, −7.00, 6.00, 0.00",
+   "Squared deviations: 1.00, 49.00, 36.00, 0.00; sum = 86.00",
+   "Variance = 86.00/3 = 28.6667   (sample, ÷(N − 1))",
+   "σ = √28.6667 = 5.35% per annum"
+  ],
+  "keystrokes": [
+   "2nd [DATA]; 2nd [CLR WORK]; type each return and press ENTER ↓ ↓ (1-V mode); 2nd [STAT], then 2nd [SET] until 1-V shows; ↓ to read n, X̄ (mean), Sx (sample σ, ÷(N−1)) and σx (population σ, ÷N)",
+   "Read Sx = 5.3541"
+  ],
+  "errors": [
+   {
+    "id": "n-with-sample",
+    "label": "Divided by N = 4 for a sample",
+    "value": 4.64,
+    "check": "sqrt(((6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2)/4)",
+    "explain": "For a sample of years the divisor is N − 1."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Stopped at the variance",
+    "value": 28.67,
+    "check": "((6-((6+(-2)+11+5)/4))**2+((-2)-((6+(-2)+11+5)/4))**2+(11-((6+(-2)+11+5)/4))**2+(5-((6+(-2)+11+5)/4))**2)/3",
+    "explain": "That is σ² in %²; take the square root to get σ in percent."
+   }
+  ],
+  "explanation": "Sample formula: divide the sum of squared deviations (86.00) by N − 1 = 3 to get 28.6667, then take the square root: 5.35%.",
+  "source": "generated",
+  "ref": "SM 12-7c"
+ },
+ {
+  "id": "q12-089",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A population standard deviation of 6.4% per annum was computed from five annual returns (dividing by N). What would the sample standard deviation (dividing by N − 1) of the same five returns be, in % per annum?",
+  "answer": 7.16,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "6.4*sqrt(5/4)",
+  "steps": [
+   {
+    "label": "Sum of squared deviations = N × σ_pop²",
+    "value": 204.8,
+    "check": "5*6.4**2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Sample standard deviation",
+    "value": 7.16,
+    "check": "6.4*sqrt(5/4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Sum of squared deviations = 5 × 6.4² = 204.8",
+   "Sample variance = 204.8/4 = 51.2",
+   "Sample σ = √51.2 = 7.16%   (= 6.4 × √(5/4))"
+  ],
+  "keystrokes": [
+   "6.4 x² × 5 = 204.8",
+   "÷ 4 = 51.2",
+   "√ = 7.16"
+  ],
+  "errors": [
+   {
+    "id": "n-minus-1-for-population",
+    "label": "Scaled the wrong way, by √(4/5)",
+    "value": 5.72,
+    "check": "6.4*sqrt(4/5)",
+    "explain": "The sample σ is larger than the population σ, so multiply by √(N/(N − 1))."
+   },
+   {
+    "id": "factor-not-root",
+    "label": "Multiplied by N/(N − 1) without the square root",
+    "value": 8.0,
+    "check": "6.4*5/4",
+    "explain": "N/(N − 1) scales the variance; the standard deviation scales by its square root."
+   }
+  ],
+  "explanation": "Both formulas share the sum of squared deviations, so σ_sample = σ_pop × √(N/(N − 1)) = 6.4 × 1.118 = 7.16%.",
+  "source": "generated",
+  "ref": "L06 s13"
+ },
+ {
+  "id": "q12-090",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock's returns over the last four years were 8%, 2%, 14% and −4%. Treat the four years as a sample. What is the standard deviation of its returns?",
+  "options": [
+   "6.71%",
+   "7.75%",
+   "45.00%",
+   "60.00%"
+  ],
+  "answer": 1,
+  "explanation": "Mean 5%; squared deviations 9 + 9 + 81 + 81 = 180. Sample: 180/3 = 60, σ = √60 = 7.75%. Dividing by N = 4 gives 6.71% (population formula); 45.00 and 60.00 are variances that were never square-rooted.",
+  "source": "generated",
+  "ref": "SM 12-6"
+ },
+ {
+  "id": "q12-091",
+  "concept": "c12-historical-sd",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "The five stocks in Dana's portfolio returned 6%, 10%, 2%, 12% and 5% last month. Treat the five as the whole population. What is the (population) standard deviation of these returns?",
+  "options": [
+   "3.58%",
+   "4.00%",
+   "12.80%",
+   "16.00%"
+  ],
+  "answer": 0,
+  "explanation": "Mean 7%; squared deviations 1 + 9 + 25 + 25 + 4 = 64. Population: 64/5 = 12.8, σ = √12.8 = 3.58%. Dividing by N − 1 = 4 gives 4.00%; 12.80 and 16.00 are unrooted variances.",
+  "source": "generated",
+  "ref": "L06 s13"
+ },
+ {
+  "id": "q12-092",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A normal distribution is completely described by:",
+  "options": [
+   "its mean and its skewness",
+   "its mean and its standard deviation",
+   "its minimum and maximum",
+   "its median and its range"
+  ],
+  "answer": 1,
+  "explanation": "That is why the normal is so convenient: once you know μ and σ there is nothing else to know. All the probability ranges (68%, 95%, 99%) follow from these two numbers.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-093",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "For a normal distribution, approximately what share of outcomes lies within two standard deviations of the mean?",
+  "options": [
+   "about 68%",
+   "about 99%",
+   "about 50%",
+   "about 95%"
+  ],
+  "answer": 3,
+  "explanation": "The rule of thumb is 68% within one σ, 95% within two σ and 99% within three σ.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-094",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pair of statements about a normal distribution is correct?",
+  "options": [
+   "Within one σ lies about 68%; below the mean minus one σ lies about 32%.",
+   "Within one σ lies about 34%; below the mean minus one σ lies about 68%.",
+   "Within one σ lies about 68% of outcomes; below the mean minus one σ lies only about 16%.",
+   "Within one σ lies about 95%; below the mean minus one σ lies about 5%."
+  ],
+  "answer": 2,
+  "explanation": "About 32% lies outside ±1σ, split equally between the two tails, so about 16% lies below μ − σ.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-095",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT a property of the normal distribution?",
+  "options": [
+   "It is bell-shaped and symmetric around its mean.",
+   "It is skewed, with the mean above the median.",
+   "It is completely described by its mean and standard deviation.",
+   "About 68% of outcomes fall within one standard deviation of the mean."
+  ],
+  "answer": 1,
+  "explanation": "The normal is symmetric, so its mean and median coincide; there is no skew.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-096",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can the normal distribution be used to describe yearly stock returns?",
+  "options": [
+   "Because stock returns are exactly normal in every sample that has been observed.",
+   "Because the normal distribution guarantees that no loss ever exceeds three standard deviations.",
+   "Because historical returns are roughly mound-shaped and symmetric, and a normal is fully described by μ and σ.",
+   "Because the normal distribution removes the need to estimate σ or the mean from data."
+  ],
+  "answer": 2,
+  "explanation": "The normal is an approximation, not an exact description: actual distributions are at least roughly mound-shaped and symmetric, which is good enough for the 68/95/99 rules.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-097",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "U.S. large-company stocks averaged 12.0% with σ = 19.9% over 1926-2016. Treating returns as normal, what does the range −7.9% to 31.9% (12.0% ± 19.9%) tell an investor?",
+  "options": [
+   "About two years in three fall inside this range and about one year in three outside.",
+   "The return will fall inside this range in every single year, with no exceptions.",
+   "There is about a 95% chance that the annual return falls inside this range.",
+   "The return will be below −7.9% in about one year out of three."
+  ],
+  "answer": 0,
+  "explanation": "±1σ covers about 68% (roughly 2/3) of outcomes. About 1/3 of years fall outside, split between above 31.9% and below −7.9% (about 16% each).",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-098",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 3,
+  "stem": "The cumulative normal table lists N(z) only for positive z. For a return X below the mean, z = (X − μ)/σ = −0.75. The probability that the return is below X is:",
+  "options": [
+   "N(0.75)",
+   "N(0.75) − 1",
+   "1 − N(0.75)",
+   "1 + N(0.75)"
+  ],
+  "answer": 2,
+  "explanation": "The table sheet says N(x) = 1 − N(−x) for x < 0. N(−0.75) = 1 − N(0.75) = 1 − 0.7734 = 0.2266.",
+  "source": "generated",
+  "ref": "Table sheet p2"
+ },
+ {
+  "id": "q12-099",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Annual returns on Tundra Utilities are roughly normal with a mean of 9.0% and a standard deviation of 14.0%. What is the upper end of the range that contains about 68% of annual returns, in % per annum?",
+  "answer": 23.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "9.0+14.0",
+  "steps": [
+   {
+    "label": "Upper end = μ + 1σ",
+    "value": 23.0,
+    "check": "9.0+14.0",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "68% of outcomes lie within one standard deviation of the mean",
+   "Range = 9.0% ± 14.0% = −5.0% to 23.0%",
+   "Upper end = 23.00%"
+  ],
+  "keystrokes": [
+   "9 + 14 = 23"
+  ],
+  "errors": [
+   {
+    "id": "two-sigma-for-68",
+    "label": "Used two standard deviations",
+    "value": 37.0,
+    "check": "9.0+2*14.0",
+    "explain": "Two σ gives the 95% range; 68% is one σ."
+   },
+   {
+    "id": "sigma-only",
+    "label": "Reported σ itself, forgetting the mean",
+    "value": 14.0,
+    "check": "14.0",
+    "explain": "The range is centred on the mean: add σ to μ."
+   },
+   {
+    "id": "lower-end",
+    "label": "Gave the lower end of the range",
+    "value": -5.0,
+    "check": "9.0-14.0",
+    "explain": "The upper end is μ + σ; μ − σ is the lower end."
+   }
+  ],
+  "explanation": "68% range = μ ± 1σ = 9.0% ± 14.0%; upper end 23.0%.",
+  "source": "generated",
+  "ref": "TB 12.4, SM 12-15"
+ },
+ {
+  "id": "q12-100",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Returns on a Canadian equity fund are roughly normal with a mean of 11.4% and a standard deviation of 16.5% per year. What is the lower end of the range that contains about 95% of annual returns, in % per annum?",
+  "answer": -21.6,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "11.4-2*16.5",
+  "steps": [
+   {
+    "label": "Lower end = μ − 2σ",
+    "value": -21.6,
+    "check": "11.4-2*16.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "95% of outcomes lie within two standard deviations of the mean",
+   "Lower end = 11.4 − 2 × 16.5 = 11.4 − 33.0 = −21.60%"
+  ],
+  "keystrokes": [
+   "2 × 16.5 = 33",
+   "11.4 − 33 = −21.6"
+  ],
+  "errors": [
+   {
+    "id": "one-sigma-for-95",
+    "label": "Used one standard deviation",
+    "value": -5.1,
+    "check": "11.4-16.5",
+    "explain": "One σ gives the 68% range."
+   },
+   {
+    "id": "three-sigma-for-95",
+    "label": "Used three standard deviations",
+    "value": -38.1,
+    "check": "11.4-3*16.5",
+    "explain": "Three σ gives the 99% range."
+   },
+   {
+    "id": "forgot-mean",
+    "label": "Forgot to start from the mean",
+    "value": -33.0,
+    "check": "-2*16.5",
+    "explain": "The range is centred on the mean, 11.4%, not on zero."
+   }
+  ],
+  "explanation": "95% range = μ ± 2σ = 11.4% ± 33.0%, i.e. −21.6% to 44.4%.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-101",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Annual returns on a Calgary pipeline stock are roughly normal with a mean of 9.0% and a standard deviation of 15.0%. Using the cumulative normal table, what is the probability that the return in a given year is below 0% (a loss), in %?",
+  "answer": 27.43,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-0.7257)*100",
+  "steps": [
+   {
+    "label": "z = (X − μ)/σ",
+    "value": -0.6,
+    "check": "(0-9.0)/15.0",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "N(0.60) from the table",
+    "value": 0.7257,
+    "check": "0.7257",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "Probability of a loss = 1 − N(0.60)",
+    "value": 27.43,
+    "check": "(1-0.7257)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "z = (0 − 9.0)/15.0 = −0.60",
+   "From the table N(0.60) = 0.7257; N(−0.60) = 1 − N(0.60) = 0.2743",
+   "Probability of a loss = 27.43%"
+  ],
+  "keystrokes": [
+   "(0 − 9) ÷ 15 = −0.60",
+   "Table: N(0.60) = 0.7257",
+   "1 − 0.7257 = 0.2743 (27.43%)"
+  ],
+  "errors": [
+   {
+    "id": "forgot-complement",
+    "label": "Used N(0.60) without 1 − ",
+    "value": 72.57,
+    "check": "0.7257*100",
+    "explain": "The table gives N(0.60) = P(Z < 0.60); a loss is the lower tail at z = −0.60, which is 1 − N(0.60)."
+   },
+   {
+    "id": "one-sigma-rule",
+    "label": "Applied the 16% one-sigma tail",
+    "value": 16.0,
+    "check": "16",
+    "explain": "The 16% figure holds only at exactly one σ below the mean; a loss here is 0.6σ below."
+   }
+  ],
+  "explanation": "z = −0.60, so P(R < 0) = N(−0.60) = 1 − 0.7257 = 27.43%, about one year in four.",
+  "source": "generated",
+  "ref": "SM 12-15, Table sheet p2"
+ },
+ {
+  "id": "q12-102",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A Calgary REIT has annual returns that are roughly normal with a mean of 8.0% and a standard deviation of 12.0%. Using the cumulative normal table, what is the probability of earning more than 20% in a given year, in %?",
+  "answer": 15.87,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1-0.8413)*100",
+  "steps": [
+   {
+    "label": "z = (20 − 8.0)/12.0",
+    "value": 1.0,
+    "check": "(20-8.0)/12.0",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "N(1.00) from the table",
+    "value": 0.8413,
+    "check": "0.8413",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0001
+    }
+   },
+   {
+    "label": "P(R > 20%) = 1 − N(1.00)",
+    "value": 15.87,
+    "check": "(1-0.8413)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "z = (20 − 8)/12 = 1.00",
+   "N(1.00) = 0.8413",
+   "P(R > 20%) = 1 − 0.8413 = 15.87%"
+  ],
+  "keystrokes": [
+   "(20 − 8) ÷ 12 = 1",
+   "Table: N(1.00) = 0.8413",
+   "1 − 0.8413 = 0.1587"
+  ],
+  "errors": [
+   {
+    "id": "forgot-complement",
+    "label": "Reported N(1.00), the probability of being below",
+    "value": 84.13,
+    "check": "0.8413*100",
+    "explain": "N(z) is P(R < X). The question asks for the upper tail, so take 1 − N(z)."
+   },
+   {
+    "id": "z-with-variance",
+    "label": "Divided by σ² instead of σ in the z-score",
+    "value": 46.81,
+    "check": "(1-0.5319)*100",
+    "explain": "z = (X − μ)/σ divides by the standard deviation (12), not the variance (144)."
+   }
+  ],
+  "explanation": "z = 1.00, so the upper-tail probability is 1 − 0.8413 = 15.87%, which matches the 16% one-sigma tail.",
+  "source": "generated",
+  "ref": "SM 12-16, Table sheet p2"
+ },
+ {
+  "id": "q12-103",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Returns on a Banff tourism stock are roughly normal with a mean of 9.0% and a standard deviation of 12.0%. Using the cumulative normal table, what is the probability that the annual return falls between 0% and 24%, in %?",
+  "answer": 66.78,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(0.8944-(1-0.7734))*100",
+  "steps": [
+   {
+    "label": "z for 0%",
+    "value": -0.75,
+    "check": "(0-9.0)/12.0",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "z for 24%",
+    "value": 1.25,
+    "check": "(24-9.0)/12.0",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "P(0% < R < 24%) = N(1.25) − N(−0.75)",
+    "value": 66.78,
+    "check": "(0.8944-(1-0.7734))*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "z(0%) = (0 − 9)/12 = −0.75; z(24%) = (24 − 9)/12 = 1.25",
+   "N(1.25) = 0.8944; N(−0.75) = 1 − N(0.75) = 1 − 0.7734 = 0.2266",
+   "P = 0.8944 − 0.2266 = 66.78%"
+  ],
+  "keystrokes": [
+   "(0 − 9) ÷ 12 = −0.75; (24 − 9) ÷ 12 = 1.25",
+   "0.8944 − (1 − 0.7734) = 0.8944 − 0.2266 = 0.6678"
+  ],
+  "errors": [
+   {
+    "id": "ignored-lower-bound",
+    "label": "Reported only N(1.25)",
+    "value": 89.44,
+    "check": "0.8944*100",
+    "explain": "N(1.25) is P(R < 24%), which includes returns below 0%; subtract the lower tail."
+   },
+   {
+    "id": "lower-z-sign",
+    "label": "Subtracted N(0.75) instead of N(−0.75)",
+    "value": 12.1,
+    "check": "(0.8944-0.7734)*100",
+    "explain": "The lower bound is below the mean: N(−0.75) = 1 − N(0.75), not N(0.75)."
+   }
+  ],
+  "explanation": "P(between) = N(upper z) − N(lower z) = 0.8944 − 0.2266 = 66.78%.",
+  "source": "generated",
+  "ref": "SM 12-16, Table sheet p2"
+ },
+ {
+  "id": "q12-104",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Annual returns on a fund are roughly normal with a mean of 7.5% and a standard deviation of 11.0%. Which range contains about 95% of annual returns?",
+  "options": [
+   "−14.5% to 29.5%",
+   "−3.5% to 18.5%",
+   "−25.5% to 40.5%",
+   "−22.0% to 22.0%"
+  ],
+  "answer": 0,
+  "explanation": "95% corresponds to two standard deviations: 7.5 ± 2 × 11.0 = 7.5 ± 22.0 = −14.5% to 29.5%. −3.5% to 18.5% is ±1σ (68%), −25.5% to 40.5% is ±3σ (99%), and −22.0% to 22.0% forgets to centre on the mean.",
+  "source": "generated",
+  "ref": "TB 12.4"
+ },
+ {
+  "id": "q12-105",
+  "concept": "c12-normal-distribution",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Annual returns on a Canadian bond fund are roughly normal with a mean of 6.0% and a standard deviation of 12.0%. Using the cumulative normal table, what is the probability of a negative return in a year?",
+  "options": [
+   "16.00%",
+   "30.85%",
+   "48.40%",
+   "69.15%"
+  ],
+  "answer": 1,
+  "explanation": "z = (0 − 6.0)/12.0 = −0.50 and N(−0.50) = 1 − N(0.50) = 1 − 0.6915 = 30.85%. Using N(0.50) directly gives 69.15%; dividing by the variance (z ≈ −0.04) gives 48.40%; 16% applies only at exactly one σ below the mean.",
+  "source": "generated",
+  "ref": "SM 12-15"
+ }
+]

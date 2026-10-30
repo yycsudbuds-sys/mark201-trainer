@@ -206,3 +206,53 @@ Marketing content (`content/parts`), question ids and the engine semantics are f
 additive: every existing `mark201.state.v1.*` key must load unchanged into the per-course state, and denarii,
 owned items and equipped gear must carry into the profile. The keyboard flow (1-5 answer, Enter advances), the
 settings toggles (sound, motion, briefings, night/day) and the art bible (`app/css/tokens.css`) stay.
+
+## 9. What changed in the expansion (Phase 1 and Phase 2, 2026-10-29)
+
+Sections 1–7 describe the site as it was before the expansion; this section records how it is now.
+
+### Course packs
+- `app/courses/index.js` registers courses (`mark201`, `fin201`); `loadPack(id)` imports `app/courses/<id>/pack.js` on demand.
+- A pack carries `content` (bundled questions), `order` (campaign chapter order), `chapterMeta(num)` (icon, scene, numeral),
+  `geo` (provinces, roads, sea lanes, labels), `exam` defaults, `boss` settings, `copy`, `plan`, and optional
+  `learn: 'cards'`, `vault`, `generators`/`generate`. Packs register their own scenes, commanders and enemy lines
+  (`registerScenes`, `registerCommanders`, `registerEnemies`).
+- Every concept/topic/question/activity id is prefixed with the course id at bundle time (`tools/build.py`,
+  `tools/build_fin201.py`); the engine uses a content index (`contentIndex`) instead of parsing ids.
+- Shared modules (map, war table, scene director, cutscenes, views) read the active pack through `app.pack`,
+  `app.chapterIcon()`, `app.chapterScene()`; the data map encodes province *slots* (position in `pack.order`), so any
+  chapter numbers work.
+
+### Profiles and sync
+- `app/store.js`: one profile (username, coins, cosmetics, shared settings, course XP totals) plus one state object
+  per course, cached under `imperium.*` localStorage keys. Legacy `mark201.*` keys are untouched and claimable at the gate.
+- `app/sync.js`: PostgREST fetch to the Supabase project `imperium-study` (`app/config.js` holds the public anon key);
+  debounced push, merge-before-write (newer cloud rows are absorbed first), offline queue, status chip.
+- Merge rules (`mergeCourseState`, `mergeProfile`): higher XP and coins, union of owned items, newer per-concept mastery.
+- `app/account.js` + `app/views/login.js`: the gate (Enter / Create profile, 3–20 chars, case and spacing ignored,
+  "That name is taken"); `app/views/dash.js`: the Forum (course cards, leaderboard tabs, public profiles `#/legion/<id>`).
+
+### FIN 201 content and the numeric engine
+- Spec: `kb/FIN201_CONTENT_SPEC.md`; review: `kb/FIN201_REVIEW_SPEC.md`; validator: `tools/validate_fin201.py`
+  (`--partial` for writers); bundle: `tools/build_fin201.py`; parts in `content/fin201/parts/`, reviews in `content/fin201/review/`.
+- Question types `numeric` and `multistep` carry `answer`, `unit`, `tolerance`, `steps`, `solution`, `keystrokes`
+  and an `errors` library (classic mistakes with the number each produces). `tools/verify_fin201.py` recomputes every
+  `check` expression independently, recomputes every generator with Python solvers, and scans for out-of-scope topics.
+- `app/courses/fin201/generators.js`: 71 seeded number generators (one or more per archetype); three synthetic `gen`
+  entries per generator join the chapter pools and are materialised with a fresh seed when picked.
+- `app/views/runner.js` `renderNumeric`: typed answers with unit and tolerance, forgiving parsing, error diagnosis,
+  "break it into steps", step-by-step mode with the first wrong step highlighted, worked solution and keystrokes;
+  diagnosed errors are logged per profile (`stats.calcErrors`, shown as "Weak skills" on Progress).
+- Learn for finance: one card per concept (`lesson.js` card mode) and the Formula Vault (`#/learn/vault`).
+
+### Both courses
+- Drill filters: Unknown / Weak / All plus chapter and topic filters, remembered per course, with the match count.
+- Siege retry: after a failed boss, "Retake the breach" sieges only the missed or weak concepts (≥ 3 questions);
+  passing it takes the city.
+- Contrast: `app/css/contrast.css` overrides the sub-AA text in both themes (muted/faint tokens, eyebrows, ladder
+  rungs, map labels, light-mode question stems, seals, wager balance).
+
+### Tests
+`node tools/engine_test.mjs`, `node tools/nobleed_test.mjs`, `python tools/username_test.py`, `python tools/sync_test.py`,
+`python tools/smoke_test.py`, `python tools/checklist.py`, `python tools/verify_fin201.py`, `python tools/probe_fin201.py`,
+`python tools/contrast_audit.py`; after deploy `python tools/prod_check.py`.

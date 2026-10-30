@@ -1,0 +1,1171 @@
+[
+ {
+  "id": "q11-401",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "At the cash break-even sales level, a project's _____ is exactly zero.",
+  "options": [
+   "net income",
+   "NPV",
+   "payback period",
+   "operating cash flow"
+  ],
+  "answer": 3,
+  "explanation": "Cash break-even sets OCF = 0, so Q_C = FC/(P − v). Net income = 0 is the accounting break-even (depreciation joins the numerator) and NPV = 0 is the financial break-even.",
+  "source": "generated",
+  "ref": "TB 11.4"
+ },
+ {
+  "id": "q11-402",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Kootenay Outfitters launches a new product line. At 9,000 units a year the line just covers its fixed operating costs in cash, but nothing is left over to repay the initial outlay. Which break-even point is this?",
+  "options": [
+   "Cash break-even",
+   "Accounting break-even",
+   "Financial break-even",
+   "Payback break-even"
+  ],
+  "answer": 0,
+  "explanation": "Covering the fixed cash costs and nothing more means OCF = 0, the cash break-even Q_C = FC/(P − v). Nothing is left to recover the outlay, so the IRR is −100%. Accounting break-even would at least return the depreciation (OCF = D), and financial break-even would also earn the required return.",
+  "source": "generated",
+  "ref": "TB 11.4; SM 11 CTQ 10"
+ },
+ {
+  "id": "q11-403",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Fraser Valley Kayaks plans a paddleboard line. The price is $64.50 per board, variable cost is $38.20 per board, fixed costs are $412,000 a year and depreciation is $165,000 a year. Ignoring taxes, what is the cash break-even quantity (boards per year)?",
+  "answer": 15665.4,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "412000/(64.5-38.2)",
+  "steps": [
+   {
+    "label": "Contribution margin P − v",
+    "value": 26.3,
+    "check": "64.5-38.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Cash break-even Q_C = FC/(P − v)",
+    "value": 15665.4,
+    "check": "412000/(64.5-38.2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Contribution margin P − v = 64.50 − 38.20 = $26.30 per board",
+   "Cash break-even: OCF = 0, so Q_C = FC/(P − v) = 412,000/26.30 = 15,665.40 boards per year"
+  ],
+  "keystrokes": [
+   "64.50 − 38.20 = 26.30",
+   "412000 ÷ 26.30 = 15,665.40"
+  ],
+  "errors": [
+   {
+    "id": "d-in-cash-breakeven",
+    "label": "Added depreciation to the numerator",
+    "value": 21939.16,
+    "check": "(412000+165000)/(64.5-38.2)",
+    "explain": "That is the accounting break-even. Depreciation is not a cash cost, so it stays out of the cash break-even."
+   },
+   {
+    "id": "fc-over-price",
+    "label": "Divided fixed costs by the price",
+    "value": 6387.6,
+    "check": "412000/64.5",
+    "explain": "Each board contributes P − v = $26.30 toward fixed costs, not the whole price."
+   },
+   {
+    "id": "fc-over-v",
+    "label": "Divided fixed costs by the variable cost",
+    "value": 10785.34,
+    "check": "412000/38.2",
+    "explain": "The denominator is the contribution margin P − v, not the variable cost per unit."
+   }
+  ],
+  "explanation": "Cash break-even is the sales level where OCF = 0: Q_C = FC/(P − v). Depreciation is not a cash cost, so it plays no part (that is why the $165,000 is a distractor).",
+  "source": "generated",
+  "ref": "SM 11-1; TB 11.4"
+ },
+ {
+  "id": "q11-404",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peace River Pottery sells mugs for $46.80. Each mug costs $11.35 in labour, $7.90 in clay and glaze and $1.25 in packaging. Fixed costs are $385,000 a year and depreciation is $140,000 a year. Ignoring taxes, what is the cash break-even quantity?",
+  "options": [
+   "19,962 mugs",
+   "13,975 mugs",
+   "14,639 mugs",
+   "8,226 mugs"
+  ],
+  "answer": 2,
+  "explanation": "Total variable cost is v = 11.35 + 7.90 + 1.25 = $20.50, so P − v = $26.30 and Q_C = 385,000/26.30 = 14,639 mugs. Adding the $140,000 of depreciation gives 19,962 (the accounting break-even), and dropping packaging from v overstates the margin and understates the break-even.",
+  "source": "generated",
+  "ref": "SM 11-1",
+  "check": "385000/(46.8-(11.35+7.9+1.25))",
+  "option_checks": [
+   "(385000+140000)/(46.8-(11.35+7.9+1.25))",
+   "385000/(46.8-(11.35+7.9))",
+   "385000/(46.8-(11.35+7.9+1.25))",
+   "385000/46.8"
+  ],
+  "option_errors": [
+   "d-in-cash-breakeven",
+   "partial-variable-cost",
+   null,
+   "fc-over-price"
+  ]
+ },
+ {
+  "id": "q11-405",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Algoma Canoe sells a model for $1,240 with a variable cost of $815 per canoe. The project's cash break-even is 538 canoes a year. What annual fixed costs does that imply?",
+  "answer": 228650.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "538*(1240-815)",
+  "steps": [
+   {
+    "label": "Contribution margin P − v",
+    "value": 425.0,
+    "check": "1240-815",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Fixed costs FC = Q_C × (P − v)",
+    "value": 228650.0,
+    "check": "538*(1240-815)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Q_C = FC/(P − v) rearranges to FC = Q_C × (P − v)",
+   "P − v = 1,240 − 815 = $425.00",
+   "FC = 538 × 425.00 = $228,650.00"
+  ],
+  "keystrokes": [
+   "1240 − 815 = 425",
+   "× 538 = 228,650.00"
+  ],
+  "errors": [
+   {
+    "id": "fc-from-price",
+    "label": "Multiplied Q_C by the price",
+    "value": 667120.0,
+    "check": "538*1240",
+    "explain": "Only the contribution margin P − v covers fixed costs, so FC = Q_C × (P − v), not Q_C × P."
+   },
+   {
+    "id": "fc-from-v",
+    "label": "Multiplied Q_C by the variable cost",
+    "value": 438470.0,
+    "check": "538*815",
+    "explain": "That is total variable cost at the break-even volume, not the fixed costs."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Divided Q_C by the margin",
+    "value": 1.27,
+    "check": "538/(1240-815)",
+    "explain": "The formula is FC/(P − v) = Q_C, so FC is the product Q_C × (P − v), not the quotient."
+   }
+  ],
+  "explanation": "Rearrange Q_C = FC/(P − v) to FC = Q_C × (P − v). At the break-even volume the total contribution exactly equals fixed costs.",
+  "source": "generated",
+  "ref": "SM 11-10; SM 11-8"
+ },
+ {
+  "id": "q11-406",
+  "concept": "c11-cash-breakeven",
+  "also": [
+   "c11-accounting-breakeven"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Cider Works prices a new line at $58.00 a case with a variable cost of $33.50. Fixed costs are $310,000 a year and depreciation is $120,000 a year. The tax rate is 30%, and any tax loss on this project can be used against the firm's other income. At what quantity is OCF exactly zero?",
+  "answer": 10553.94,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(310000-0.3*120000/(1-0.3))/(58-33.5)",
+  "steps": [
+   {
+    "label": "Contribution margin P − v",
+    "value": 24.5,
+    "check": "58-33.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Grossed-up shield T·D/(1 − T)",
+    "value": 51428.57,
+    "check": "0.3*120000/(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Numerator FC + (0 − T·D)/(1 − T)",
+    "value": 258571.43,
+    "check": "310000-0.3*120000/(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Cash break-even Q_C with taxes",
+    "value": 10553.94,
+    "check": "(310000-0.3*120000/(1-0.3))/(58-33.5)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "OCF = [(P − v)Q − FC](1 − T) + T·D; set OCF = 0",
+   "Q_C = {FC + (0 − T·D)/(1 − T)}/(P − v)",
+   "T·D = 0.30 × 120,000 = 36,000; 36,000/0.70 = 51,428.57",
+   "Numerator = 310,000 − 51,428.57 = 258,571.43; P − v = 24.50",
+   "Q_C = 258,571.43/24.50 = 10,553.94 cases",
+   "Check: [(24.50 × 10,553.94) − 310,000](0.70) + 36,000 = −36,000 + 36,000 = 0"
+  ],
+  "keystrokes": [
+   "0.30 × 120000 ÷ 0.70 = 51,428.57",
+   "310000 − 51428.57 = 258,571.43",
+   "÷ 24.50 = 10,553.94"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Subtracted T·D but did not divide by (1 − T)",
+    "value": 11183.67,
+    "check": "(310000-0.3*120000)/(58-33.5)",
+    "explain": "The shield sits after tax while the numerator is pre-tax, so it must be grossed up by 1/(1 − T)."
+   },
+   {
+    "id": "taxes-ignored",
+    "label": "Ignored taxes: FC/(P − v)",
+    "value": 12653.06,
+    "check": "310000/(58-33.5)",
+    "explain": "With taxes the depreciation shield still produces cash when the pre-tax result is negative, which lowers the cash break-even."
+   },
+   {
+    "id": "shield-sign",
+    "label": "Added the grossed-up shield instead of subtracting it",
+    "value": 14752.19,
+    "check": "(310000+0.3*120000/(1-0.3))/(58-33.5)",
+    "explain": "At OCF = 0 the shield replaces some of the fixed cost burden, so it is subtracted from FC."
+   }
+  ],
+  "explanation": "With taxes, OCF = [(P − v)Q − FC](1 − T) + T·D. Setting it to zero gives Q_C = {FC − T·D/(1 − T)}/(P − v) = 10,553.94, below FC/(P − v) = 12,653.06 because the depreciation tax shield is still earned when pre-tax profit is negative.",
+  "source": "generated",
+  "ref": "SM 11-24, SM 11-28; SM 11 CTQ 3"
+ },
+ {
+  "id": "q11-407",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts cash break-even with accounting break-even?",
+  "options": [
+   "Cash break-even includes the required return on the investment; accounting break-even does not",
+   "Cash break-even leaves depreciation out of the numerator; accounting break-even includes it",
+   "Cash break-even is the higher of the two quantities for a project with positive depreciation",
+   "Cash break-even sets net income to zero; accounting break-even sets operating cash flow to zero"
+  ],
+  "answer": 1,
+  "explanation": "Q_C = FC/(P − v) covers only cash fixed costs; Q_A = (FC + D)/(P − v) also covers depreciation, so Q_A > Q_C. The required return belongs to financial break-even, and the claim that cash break-even sets net income to zero swaps the roles of net income and OCF.",
+  "source": "generated",
+  "ref": "TB 11.4; SM 11 CTQ 10"
+ },
+ {
+  "id": "q11-408",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about a project operating exactly at its cash break-even point is NOT true?",
+  "options": [
+   "Operating cash flow is zero in every year",
+   "The IRR is −100%",
+   "The payback period equals the project's life",
+   "The NPV equals minus the initial outlay"
+  ],
+  "answer": 2,
+  "explanation": "At cash break-even no cash comes back, so the project never pays back, the IRR is −100% and NPV = −I0. Payback exactly equal to the life describes the accounting break-even, where OCF = D.",
+  "source": "generated",
+  "ref": "TB 11.4 Table 11.1; SM 11-16"
+ },
+ {
+  "id": "q11-409",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the cash break-even quantity always below the accounting break-even quantity when a project has positive depreciation?",
+  "options": [
+   "Cash break-even uses the after-tax contribution margin, which is larger",
+   "Cash break-even discounts the fixed costs, which makes the numerator smaller",
+   "Cash break-even leaves out variable costs, which makes the denominator larger",
+   "Depreciation is not a cash cost, so cash break-even only has to cover the cash fixed costs"
+  ],
+  "answer": 3,
+  "explanation": "Q_A adds D to the numerator, and D is an accounting charge rather than a cash outflow. Discounting enters only the financial break-even (and raises it), and variable costs sit in the denominator of all three.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 10; TB 11.4"
+ },
+ {
+  "id": "q11-410",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Tri-City Print's new line has a cash break-even of 8,000 units a year, and management forecasts sales of 7,400 units. What does this tell management?",
+  "options": [
+   "Operating cash flow is negative, so the line needs cash just to keep running",
+   "Net income is zero, so the line earns its depreciation in cash",
+   "NPV is zero, so the line earns exactly its required return",
+   "The line pays back its outlay in exactly its useful life"
+  ],
+  "answer": 0,
+  "explanation": "Sales below Q_C mean (P − v)Q < FC, so OCF < 0. That is worse than the accounting break-even case, where OCF at least equals depreciation. Zero NPV and payback equal to life describe other break-even points.",
+  "source": "generated",
+  "ref": "TB 11.4; SM 11-16"
+ },
+ {
+  "id": "q11-411",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Lakeland Foods has spare capacity. A one-time order for 5,000 jars is offered at $2.60 a jar. Variable cost is $2.05 a jar, the $480,000 of fixed costs is paid whether or not the order is accepted, and the average cost is $3.10 a jar. What should it do?",
+  "options": [
+   "Reject: $2.60 is below the average cost of $3.10 a jar",
+   "Accept: the $0.55 contribution per jar adds $2,750 to cash flow and fixed costs are paid anyway",
+   "Reject: the order must also cover its share of the $480,000 of fixed costs",
+   "Accept only if the price exceeds $3.10, so the order shows an accounting profit"
+  ],
+  "answer": 1,
+  "explanation": "Fixed costs are effectively sunk for this choice, so only the marginal cost (v = $2.05) matters: 5,000 × (2.60 − 2.05) = $2,750 of extra cash. Average cost includes fixed costs that do not change, which is why it misleads.",
+  "source": "generated",
+  "ref": "SM 11-2; TB 11.3"
+ },
+ {
+  "id": "q11-412",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In Q_C = FC/(P − v), fixed costs rise by 20% and the contribution margin P − v also rises by 20%. What happens to the cash break-even quantity?",
+  "options": [
+   "It rises by 20%",
+   "It rises by 44%",
+   "It is unchanged",
+   "It falls by 20%"
+  ],
+  "answer": 2,
+  "explanation": "Both the numerator and the denominator are multiplied by 1.20, so Q_C = 1.20 FC/(1.20 (P − v)) is unchanged. A 20% rise in only FC would lift Q_C by 20%, and a 44% rise has no basis in the formula.",
+  "source": "generated",
+  "ref": "TB 11.4"
+ },
+ {
+  "id": "q11-413",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When taxes are ignored, a project's cash break-even quantity does not depend on its depreciation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Q_C = FC/(P − v) has no D in it. Depreciation affects the accounting break-even Q_A = (FC + D)/(P − v), not the cash break-even.",
+  "source": "generated",
+  "ref": "TB 11.4"
+ },
+ {
+  "id": "q11-414",
+  "concept": "c11-cash-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Mapleview Bikes' project has fixed costs of $1,020,000 a year and a variable cost of $310 per bike. At a price of $480 its cash break-even is 6,000 bikes. If the price is raised to $520 with costs unchanged, what is the new cash break-even?",
+  "options": [
+   "4,857 bikes",
+   "1,962 bikes",
+   "4,588 bikes",
+   "5,538 bikes"
+  ],
+  "answer": 0,
+  "explanation": "The contribution margin rises from $170 to $210, so Q_C = 1,020,000/210 = 4,857 bikes. Dividing by the whole price (1,962) ignores variable cost, cutting 6,000 by the 23.5% rise in the margin (4,588) treats Q_C as linear in the margin, and scaling 6,000 by the price ratio (5,538) treats Q_C as proportional to 1/P. Q_C = FC/(P − v) must be recomputed with the new margin.",
+  "source": "generated",
+  "ref": "SM 11-1; SM 11-7",
+  "check": "1020000/(520-310)",
+  "option_checks": [
+   "1020000/(520-310)",
+   "1020000/520",
+   "6000*(1-(520-480)/(480-310))",
+   "6000*480/520"
+  ],
+  "option_errors": [
+   null,
+   "fc-over-price",
+   "linear-percent-change",
+   "scaled-by-price"
+  ]
+ },
+ {
+  "id": "q11-420",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "At the accounting break-even sales level, a project's _____ is exactly zero.",
+  "options": [
+   "operating cash flow",
+   "NPV",
+   "net income",
+   "payback period"
+  ],
+  "answer": 2,
+  "explanation": "Accounting break-even sets net income (and so EBIT and taxes) to zero: Q_A = (FC + D)/(P − v). Operating cash flow equals depreciation at that point, not zero.",
+  "source": "generated",
+  "ref": "TB 11.3"
+ },
+ {
+  "id": "q11-421",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "At 4,600 units a year the income statement of a new line shows EBIT of zero, no taxes and net income of zero, while operating cash flow equals the annual depreciation. Which break-even point is this?",
+  "options": [
+   "Cash break-even",
+   "Financial break-even",
+   "Payback break-even",
+   "Accounting break-even"
+  ],
+  "answer": 3,
+  "explanation": "Net income = 0 defines accounting break-even. Since OCF = NI + D, OCF = D there, which is positive; at cash break-even OCF would be zero and at financial break-even NPV would be zero.",
+  "source": "generated",
+  "ref": "TB 11.3, 11.4"
+ },
+ {
+  "id": "q11-422",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Cariboo Trailers will invest $2,640,000 in equipment, depreciated straight-line to zero over 8 years. Fixed costs are $845,000 a year, the price is $31.40 per unit and variable cost is $18.65 per unit. Ignoring taxes, what is the accounting break-even quantity (units per year)?",
+  "answer": 92156.86,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(845000+2640000/8)/(31.4-18.65)",
+  "steps": [
+   {
+    "label": "Annual depreciation D = I0/N",
+    "value": 330000.0,
+    "check": "2640000/8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Contribution margin P − v",
+    "value": 12.75,
+    "check": "31.4-18.65",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Accounting break-even Q_A = (FC + D)/(P − v)",
+    "value": 92156.86,
+    "check": "(845000+2640000/8)/(31.4-18.65)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "D = 2,640,000/8 = $330,000.00 a year",
+   "P − v = 31.40 − 18.65 = $12.75",
+   "Q_A = (FC + D)/(P − v) = (845,000 + 330,000)/12.75 = 92,156.86 units a year"
+  ],
+  "keystrokes": [
+   "2640000 ÷ 8 = 330,000",
+   "845000 + 330000 = 1,175,000",
+   "÷ 12.75 = 92,156.86"
+  ],
+  "errors": [
+   {
+    "id": "forgot-d-in-accounting",
+    "label": "Left depreciation out (used FC only)",
+    "value": 66274.51,
+    "check": "845000/(31.4-18.65)",
+    "explain": "That is the cash break-even. Accounting break-even must cover depreciation too."
+   },
+   {
+    "id": "i0-for-d",
+    "label": "Added the whole investment instead of one year's depreciation",
+    "value": 273333.33,
+    "check": "(845000+2640000)/(31.4-18.65)",
+    "explain": "Only the annual charge D = I0/N belongs in the numerator."
+   },
+   {
+    "id": "fc-over-price",
+    "label": "Divided by the price instead of P − v",
+    "value": 37420.38,
+    "check": "(845000+330000)/31.4",
+    "explain": "The denominator is the contribution margin P − v, not the price."
+   }
+  ],
+  "explanation": "Accounting break-even is where net income is zero: Q_A = (FC + D)/(P − v) with D = I0/N for straight-line to zero. Taxes do not matter because taxable income is zero there.",
+  "source": "generated",
+  "ref": "SM 11-1, SM 11-5; TB 11.3"
+ },
+ {
+  "id": "q11-423",
+  "concept": "c11-accounting-breakeven",
+  "also": [
+   "c11-financial-breakeven"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Yellowhead Signage plans a project with price $27.50, variable cost $16.20 and fixed costs of $520,000 a year. It needs a $1,350,000 investment, depreciated straight-line to zero over 6 years. The required return is 10%; ignore taxes. If sales sit exactly at the accounting break-even each year, what is the NPV?",
+  "answer": -370066.34,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "-1350000+(1350000/6)*((1-(1+0.1)**-6)/0.1)",
+  "steps": [
+   {
+    "label": "Annual depreciation D",
+    "value": 225000.0,
+    "check": "1350000/6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Accounting break-even Q_A",
+    "value": 65929.2,
+    "check": "(520000+1350000/6)/(27.5-16.2)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "OCF at Q_A = (P − v)Q − FC",
+    "value": 225000.0,
+    "check": "(27.5-16.2)*((520000+1350000/6)/(27.5-16.2))-520000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "NPV = −I0 + OCF × annuity factor",
+    "value": -370066.34,
+    "check": "-1350000+(1350000/6)*((1-(1+0.1)**-6)/0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "D = 1,350,000/6 = $225,000.00",
+   "Q_A = (520,000 + 225,000)/11.30 = 65,929.20 units",
+   "OCF = NI + D = 0 + 225,000 = $225,000 every year (check: 11.30 × Q_A − 520,000 = 225,000)",
+   "Annuity factor (10%, 6 years) = 4.355261",
+   "NPV = −1,350,000 + 225,000 × 4.355261 = −$370,066.34"
+  ],
+  "keystrokes": [
+   "N = 6, I/Y = 10, PMT = −225000, FV = 0, CPT PV = 979,933.66",
+   "979,933.66 − 1,350,000 = −370,066.34"
+  ],
+  "errors": [
+   {
+    "id": "profit-not-npv-breakeven",
+    "label": "Treated zero profit as zero NPV",
+    "value": 0.0,
+    "check": "0",
+    "explain": "Accounting break-even makes net income zero, but the investment is only recovered with no return, so NPV is negative."
+   },
+   {
+    "id": "cash-for-accounting",
+    "label": "Set OCF to zero (cash break-even)",
+    "value": -1350000.0,
+    "check": "0-1350000",
+    "explain": "At accounting break-even OCF equals depreciation, not zero; the flows of $225,000 are still worth something."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity factor",
+    "value": -497072.98,
+    "check": "-1350000+(1350000/6)*((1-(1+0.1)**-5)/0.1)",
+    "explain": "The project lasts 6 years, so the annuity factor must use N = 6."
+   }
+  ],
+  "explanation": "At accounting break-even OCF = D = I0/N each year, so NPV = I0[(1/N) × annuity factor − 1]. With any positive required return that is negative: the project returns the money invested but never the time value (IRR = 0%).",
+  "source": "generated",
+  "ref": "SM 11-16a; TB 11.4"
+ },
+ {
+  "id": "q11-424",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Yukon Snowmobile Parts has a price of $212 and a variable cost of $139 per unit. Fixed costs are $1,460,000 a year. It invests $5,600,000 in equipment, depreciated straight-line to zero over 7 years, and expects operating cash flow of $1,200,000 a year. Ignoring taxes, what is the accounting break-even quantity?",
+  "options": [
+   "36,438 units",
+   "20,000 units",
+   "30,959 units",
+   "96,712 units"
+  ],
+  "answer": 2,
+  "explanation": "D = 5,600,000/7 = $800,000, so Q_A = (1,460,000 + 800,000)/73 = 30,959 units. The $1,200,000 of operating cash flow is a lure: at accounting break-even OCF equals D, not the base-case OCF. Using FC alone gives the cash break-even and using the whole investment overstates the charge.",
+  "source": "generated",
+  "ref": "SM 11-5; SM 11-1",
+  "check": "(1460000+5600000/7)/(212-139)",
+  "option_checks": [
+   "(1460000+1200000)/(212-139)",
+   "1460000/(212-139)",
+   "(1460000+5600000/7)/(212-139)",
+   "(1460000+5600000)/(212-139)"
+  ],
+  "option_errors": [
+   "ocf-in-accounting-breakeven",
+   "forgot-d-in-accounting",
+   null,
+   "i0-for-d"
+  ]
+ },
+ {
+  "id": "q11-425",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project must reach accounting break-even at 12,500 units a year. Fixed costs are $288,000, depreciation is $96,000 and variable cost is $14.80 per unit. What selling price achieves that?",
+  "options": [
+   "$30.72",
+   "$37.84",
+   "$15.92",
+   "$45.52"
+  ],
+  "answer": 3,
+  "explanation": "Solve Q_A = (FC + D)/(P − v) for P: P = (FC + D)/Q_A + v = 384,000/12,500 + 14.80 = $45.52. Leaving out v gives only the contribution margin of $30.72, omitting D lowers the price to $37.84, and subtracting v moves the wrong way.",
+  "source": "generated",
+  "ref": "SM 11-8",
+  "check": "(288000+96000)/12500+14.8",
+  "option_checks": [
+   "(288000+96000)/12500",
+   "288000/12500+14.8",
+   "(288000+96000)/12500-14.8",
+   "(288000+96000)/12500+14.8"
+  ],
+  "option_errors": [
+   "forgot-v",
+   "forgot-d-in-accounting",
+   "sign-on-v",
+   null
+  ]
+ },
+ {
+  "id": "q11-426",
+  "concept": "c11-accounting-breakeven",
+  "also": [
+   "c11-cash-breakeven"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Window Systems has a price of $410, variable cost of $268, fixed costs of $390,000 and depreciation of $150,000 a year; the tax rate is 32%. Use OCF = NI + D at the break-even, then Q = {FC + (OCF − T·D)/(1 − T)}/(P − v), to find the accounting break-even quantity.",
+  "answer": 3802.82,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(390000+(150000-0.32*150000)/(1-0.32))/(410-268)",
+  "steps": [
+   {
+    "label": "OCF at accounting break-even (NI = 0)",
+    "value": 150000.0,
+    "check": "0+150000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "(OCF − T·D)/(1 − T)",
+    "value": 150000.0,
+    "check": "(150000-0.32*150000)/(1-0.32)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Numerator FC + (OCF − T·D)/(1 − T)",
+    "value": 540000.0,
+    "check": "390000+(150000-0.32*150000)/(1-0.32)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Accounting break-even Q_A",
+    "value": 3802.82,
+    "check": "(390000+(150000-0.32*150000)/(1-0.32))/(410-268)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "NI = 0 at accounting break-even, so OCF = NI + D = $150,000",
+   "(OCF − T·D)/(1 − T) = (150,000 − 48,000)/0.68 = 150,000 (the tax rate cancels)",
+   "Numerator = 390,000 + 150,000 = 540,000; P − v = 142",
+   "Q_A = 540,000/142 = 3,802.82 units, identical to (FC + D)/(P − v)"
+  ],
+  "keystrokes": [
+   "0.32 × 150000 = 48,000",
+   "(150000 − 48000) ÷ 0.68 = 150,000",
+   "390000 + 150000 = 540,000",
+   "÷ 142 = 3,802.82"
+  ],
+  "errors": [
+   {
+    "id": "tax-grossed-up",
+    "label": "Divided the margin by (1 − T) as well",
+    "value": 5592.38,
+    "check": "540000/(142*(1-0.32))",
+    "explain": "No tax is paid at accounting break-even, so there is nothing to gross up in the denominator."
+   },
+   {
+    "id": "d-after-tax",
+    "label": "Used after-tax depreciation D(1 − T)",
+    "value": 3464.79,
+    "check": "(390000+150000*(1-0.32))/142",
+    "explain": "Depreciation is a pre-tax charge in the break-even condition; the shield was already handled by the general formula."
+   },
+   {
+    "id": "numerator-after-tax",
+    "label": "Multiplied the whole numerator by (1 − T)",
+    "value": 2585.92,
+    "check": "(390000+150000)*(1-0.32)/142",
+    "explain": "At zero profit the tax rate cancels completely, so the numerator is just FC + D."
+   }
+  ],
+  "explanation": "Because OCF = D at accounting break-even, (OCF − T·D)/(1 − T) = D(1 − T)/(1 − T) = D, so Q_A = (FC + D)/(P − v) whatever the tax rate. The tax rate is a distractor.",
+  "source": "generated",
+  "ref": "SM 11-24c"
+ },
+ {
+  "id": "q11-427",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts accounting break-even with financial break-even?",
+  "options": [
+   "Accounting break-even charges the opportunity cost of capital; financial break-even does not",
+   "Accounting break-even sets net income to zero and ignores the time value of money; financial sets NPV to zero",
+   "Accounting break-even is always higher than financial break-even, because depreciation is included",
+   "The two are equal whenever the project has no salvage value"
+  ],
+  "answer": 1,
+  "explanation": "Q_A = (FC + D)/(P − v) recovers the investment with no return, while Q_F = (FC + OCF*)/(P − v) uses the OCF* that earns the required return, so for a normal project Q_F > Q_A.",
+  "source": "generated",
+  "ref": "TB 11.4 Table 11.1"
+ },
+ {
+  "id": "q11-428",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which statement about a project operating exactly at its accounting break-even point is NOT true?",
+  "options": [
+   "Net income is zero",
+   "Taxes paid are zero",
+   "The project's NPV is zero",
+   "Operating cash flow equals depreciation"
+  ],
+  "answer": 2,
+  "explanation": "At accounting break-even EBIT, taxes and net income are zero and OCF = NI + D = D. The investment comes back with no return (IRR = 0%), so NPV is negative at any positive required return.",
+  "source": "generated",
+  "ref": "TB 11.3, 11.4"
+ },
+ {
+  "id": "q11-429",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is clearing the accounting break-even not enough to justify accepting a project?",
+  "options": [
+   "It counts depreciation as a cash outflow, which makes NPV look worse than it is",
+   "It includes interest expense, which does not belong in project cash flows",
+   "It ignores variable costs, so the quantity it gives is too low",
+   "At accounting break-even the IRR is zero, so NPV is negative at any positive required return"
+  ],
+  "answer": 3,
+  "explanation": "Accounting break-even earns only the depreciation back (OCF = D, payback equal to the life). Without a return on the money tied up, NPV = I0[(1/N) × annuity factor − 1] < 0. That is why we also need the financial break-even.",
+  "source": "generated",
+  "ref": "TB 11.3, 11.4; SM 11-16"
+ },
+ {
+  "id": "q11-430",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Muskoka Skiff Co. finds an accounting break-even of 44 skiffs a year against a sales forecast of 58. A director says, \"We clear break-even by 14 skiffs, so the project is safe.\" What is the best response?",
+  "options": [
+   "Clearing accounting break-even says nothing about NPV, so compute the financial break-even",
+   "Agree: any project forecast above accounting break-even has a positive NPV",
+   "Agree: above accounting break-even the IRR must exceed the required return",
+   "Disagree: the project must still reach its cash break-even before it is safe"
+  ],
+  "answer": 0,
+  "explanation": "Sales above Q_A keep net income positive, but the IRR only exceeds zero, not necessarily the required return. Since Q_F > Q_A, a forecast of 58 skiffs could still fall short of Q_F. Cash break-even is lower than Q_A, so clearing Q_A already clears it.",
+  "source": "generated",
+  "ref": "TB 11.4 (Wettway); SM 11 CTQ 9"
+ },
+ {
+  "id": "q11-431",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Which change would lower a project's accounting break-even quantity, all else equal?",
+  "options": [
+   "Buying more equipment that raises straight-line depreciation",
+   "A cut in annual fixed costs",
+   "A lower selling price",
+   "A higher variable cost per unit"
+  ],
+  "answer": 1,
+  "explanation": "Q_A = (FC + D)/(P − v): smaller FC shrinks the numerator, while more depreciation raises it and a lower P or higher v shrinks the contribution margin in the denominator.",
+  "source": "generated",
+  "ref": "TB 11.3"
+ },
+ {
+  "id": "q11-432",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A pricier machine adds $50,000 to annual straight-line depreciation. Fixed cash costs and the contribution margin of $12.50 per unit are unchanged. What happens to the break-even quantities?",
+  "options": [
+   "Q_A rises by 4,000 units and Q_C rises by 4,000 units",
+   "Q_A falls by 4,000 units and Q_C is unchanged",
+   "Q_A rises by 4,000 units and Q_C is unchanged",
+   "Both are unchanged, because depreciation is not a cash cost"
+  ],
+  "answer": 2,
+  "explanation": "ΔQ_A = ΔD/(P − v) = 50,000/12.50 = 4,000 units, and it is a rise because D sits in the numerator. Q_C = FC/(P − v) contains no depreciation, so it is unchanged. Depreciation does matter to Q_A even though it is not a cash cost.",
+  "source": "generated",
+  "ref": "TB 11.3, 11.4"
+ },
+ {
+  "id": "q11-433",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "For a project depreciated straight-line to zero, operating at its accounting break-even every year gives a payback period equal to the project's life and an IRR of zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "At accounting break-even OCF = D = I0/N each year, so the cash flows add up to exactly I0 over N years: payback = N and IRR = 0%.",
+  "source": "generated",
+  "ref": "TB 11.4; SM 11-16a"
+ },
+ {
+  "id": "q11-434",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Algonquin Candles sells candles at $18.50 with a variable cost of $7.25 each. Fixed costs are $196,000 a year and depreciation is $59,000 a year. Ignoring taxes, what annual sales revenue is needed to reach the accounting break-even?",
+  "answer": 419333.33,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(196000+59000)/(18.5-7.25)*18.5",
+  "steps": [
+   {
+    "label": "Contribution margin P − v",
+    "value": 11.25,
+    "check": "18.5-7.25",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Accounting break-even Q_A",
+    "value": 22666.67,
+    "check": "(196000+59000)/(18.5-7.25)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Break-even revenue P × Q_A",
+    "value": 419333.33,
+    "check": "(196000+59000)/(18.5-7.25)*18.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "P − v = 18.50 − 7.25 = $11.25",
+   "Q_A = (196,000 + 59,000)/11.25 = 22,666.67 candles",
+   "Revenue = P × Q_A = 18.50 × 22,666.67 = $419,333.33"
+  ],
+  "keystrokes": [
+   "196000 + 59000 = 255,000",
+   "÷ 11.25 = 22,666.67",
+   "× 18.50 = 419,333.33"
+  ],
+  "errors": [
+   {
+    "id": "cash-for-accounting",
+    "label": "Used the cash break-even quantity",
+    "value": 322311.11,
+    "check": "196000/(18.5-7.25)*18.5",
+    "explain": "That leaves depreciation out; the accounting break-even must cover FC + D."
+   },
+   {
+    "id": "margin-for-revenue",
+    "label": "Reported total contribution (FC + D) as revenue",
+    "value": 255000.0,
+    "check": "196000+59000",
+    "explain": "FC + D is the contribution needed, not the sales revenue; revenue is P × Q_A."
+   },
+   {
+    "id": "volume-times-v",
+    "label": "Multiplied the quantity by the variable cost",
+    "value": 164333.33,
+    "check": "(196000+59000)/(18.5-7.25)*7.25",
+    "explain": "Revenue is quantity × price, not quantity × variable cost."
+   }
+  ],
+  "explanation": "Find Q_A first, then convert to dollars with the price. At revenue of $419,333.33, variable costs are $164,333.33, fixed costs $196,000 and depreciation $59,000: EBIT = 0.",
+  "source": "generated",
+  "ref": "TB 11.3"
+ },
+ {
+  "id": "q11-435",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does the tax rate not appear in Q_A = (FC + D)/(P − v)?",
+  "options": [
+   "Taxes are paid only on cash flows, and operating cash flow is zero at that point",
+   "Net income is zero there, so no tax is paid and the rate drops out",
+   "Taxes are already included in the fixed costs FC",
+   "The depreciation tax shield exactly cancels tax on revenue at every sales level"
+  ],
+  "answer": 1,
+  "explanation": "Net income = (S − VC − FC − D)(1 − T) = 0 requires S − VC − FC − D = 0 whatever T is, so dividing by (1 − T) removes it. At that point OCF = D, not zero.",
+  "source": "generated",
+  "ref": "TB 11.3; SM 11 CTQ 3"
+ },
+ {
+  "id": "q11-436",
+  "concept": "c11-accounting-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project has an accounting break-even of 4,400 units a year, a price of $85, a variable cost of $52 and fixed costs of $90,000 a year. Its equipment is depreciated straight-line to zero over 5 years. What initial investment does this imply?",
+  "answer": 276000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "5*(4400*(85-52)-90000)",
+  "steps": [
+   {
+    "label": "Contribution margin P − v",
+    "value": 33.0,
+    "check": "85-52",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Annual depreciation D = Q_A(P − v) − FC",
+    "value": 55200.0,
+    "check": "4400*(85-52)-90000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Initial investment I0 = N × D",
+    "value": 276000.0,
+    "check": "5*(4400*(85-52)-90000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Q_A = (FC + D)/(P − v) rearranges to D = Q_A(P − v) − FC",
+   "D = 4,400 × 33 − 90,000 = 145,200 − 90,000 = $55,200.00",
+   "Straight-line over 5 years: I0 = 5 × 55,200.00 = $276,000.00"
+  ],
+  "keystrokes": [
+   "4400 × 33 = 145,200",
+   "145200 − 90000 = 55,200",
+   "× 5 = 276,000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-fc-in-solve",
+    "label": "Did not subtract fixed costs when solving for D",
+    "value": 726000.0,
+    "check": "5*(4400*(85-52))",
+    "explain": "The break-even quantity covers FC + D, so D is what is left after fixed costs."
+   },
+   {
+    "id": "forgot-times-n",
+    "label": "Reported one year's depreciation as the investment",
+    "value": 55200.0,
+    "check": "4400*(85-52)-90000",
+    "explain": "Straight-line depreciation is I0/N, so the investment is N times the annual charge."
+   }
+  ],
+  "explanation": "Work backwards: D = Q_A(P − v) − FC = $55,200, and with straight-line depreciation to zero over 5 years the investment is I0 = 5D = $276,000.",
+  "source": "generated",
+  "ref": "SM 11-10; SM 11-8"
+ }
+]

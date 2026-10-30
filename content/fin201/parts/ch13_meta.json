@@ -1,0 +1,745 @@
+{
+ "chapter": 13,
+ "title": "CML, Sharpe ratio, CAPM and the SML",
+ "topics": [
+  {
+   "id": "t13-1",
+   "order": 1,
+   "title": "Adding the risk-free asset",
+   "summary": "Once a risk-free asset exists, an investor can mix any risky portfolio with it. The mix lies on a straight capital allocation line whose slope is the Sharpe ratio, and the steepest such line, tangent to the efficient frontier, is the capital market line through the market portfolio M.",
+   "concepts": [
+    "c13-risk-free-cal",
+    "c13-sharpe-cml",
+    "c13-market-portfolio"
+   ]
+  },
+  {
+   "id": "t13-2",
+   "order": 2,
+   "title": "Systematic risk and beta",
+   "summary": "Total risk splits into a diversifiable (unsystematic) part and a non-diversifiable (systematic) part. Beta measures the systematic part as a regression slope against the market, and the beta of a portfolio is simply the weighted average of its betas, with a zero for the risk-free asset.",
+   "concepts": [
+    "c13-systematic-unsystematic",
+    "c13-beta",
+    "c13-portfolio-beta"
+   ]
+  },
+  {
+   "id": "t13-3",
+   "order": 3,
+   "title": "CAPM and the SML",
+   "summary": "Only systematic risk is rewarded: the CAPM says expected return = risk-free rate + beta × market risk premium. The security market line draws this, alpha shows which assets are under- or overpriced, and the course ends by separating σ from β, building portfolios stage by stage, and linking the required return to a project's cost of capital.",
+   "concepts": [
+    "c13-capm",
+    "c13-sml-alpha",
+    "c13-sigma-vs-beta",
+    "c13-portfolio-building",
+    "c13-cost-of-capital-link"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c13-risk-free-cal",
+   "topic": "t13-1",
+   "term": "Risk-free asset and the capital allocation line (CAL)",
+   "definition": "The risk-free asset pays a certain return R_F with σ_F = 0. Mixing it with a risky portfolio P (weights w_F + w_P = 1) gives E[R] = w_P E[R_P] + w_F R_F and σ = w_P σ_P, so every mix lies on a straight line from R_F through P: the capital allocation line (CAL).",
+   "explain": "Because σ_F = 0, the variance and correlation terms for the risk-free asset drop out of the two-asset σ formula and only w_P σ_P is left: risk rises in direct proportion to the weight in P, and return is linear in the weights, hence a straight line. Lending (w_F > 0) puts you between R_F and P; borrowing at R_F (w_F < 0, so w_P > 1) puts you beyond P. The professor assumes the lending and borrowing rates are equal.",
+   "example": "R_F = 3%, P has E[R_P] = 11% and σ_P = 20%. With w_P = 0.6 and w_F = 0.4: E[R] = 0.6 × 11 + 0.4 × 3 = 7.8% and σ = 0.6 × 20 = 12%. Borrowing half your wealth (w_P = 1.5, w_F = −0.5): E[R] = 1.5 × 11 − 0.5 × 3 = 15% and σ = 1.5 × 20 = 30%.",
+   "contrast": "CAL: one risky portfolio P plus R_F, a straight line. Efficient frontier: a curve of risky assets only. CML: the special CAL tangent to the frontier (through M). SML: a different picture (E[R] against β, not σ). Two risky assets give a curved σ_P; one risky portfolio plus R_F gives a straight line.",
+   "trap": "Forgetting the risk-free weight in E[R] (using w_P E[R_P] alone); entering borrowing as a positive weight so the weights no longer sum to 1; trying to use the full two-asset σ formula with ρ. Dollars are not weights: divide by your own wealth, so $60,000 in P on $40,000 of wealth is w_P = 1.5.",
+   "mnemonic": "σ_F = 0 wipes out the correlation: σ is just w_P × σ_P.",
+   "formula": "E[R] = w_P E[R_P] + (1 − w_P) R_F;  σ = w_P σ_P  (w_F = 1 − w_P; w_F < 0 means borrowing)",
+   "given": true,
+   "archetypes": [
+    "A29"
+   ],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "One CAL, four positions (R_F = 3%, P: E[R_P] = 11%, σ_P = 20%)",
+    "head": [
+     "w_P",
+     "w_F",
+     "E[R] (%)",
+     "σ (%)",
+     "Where on the CAL"
+    ],
+    "rows": [
+     [
+      "0.0",
+      "1.0",
+      "3.0",
+      "0.0",
+      "All in R_F (the intercept)"
+     ],
+     [
+      "0.5",
+      "0.5",
+      "7.0",
+      "10.0",
+      "Lending: between R_F and P"
+     ],
+     [
+      "1.0",
+      "0.0",
+      "11.0",
+      "20.0",
+      "All in P"
+     ],
+     [
+      "1.5",
+      "−0.5",
+      "15.0",
+      "30.0",
+      "Borrowing: beyond P"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c13-sharpe-cml",
+   "topic": "t13-1",
+   "term": "Sharpe ratio and the capital market line (CML)",
+   "definition": "Sharpe ratio = tan φ = (E[R_P] − R_F)/σ_P: the excess return (risk premium) per unit of total risk, equal to the slope of P's CAL. The best CAL is tangent to the efficient frontier at the market portfolio M and is the capital market line (CML): E[R_A] = R_F + [(E[R_M] − R_F)/σ_M] σ_A for any efficient portfolio A.",
+   "explain": "A steeper CAL dominates a flatter one: on the steeper line you can find a point with more return at the same σ. So the portfolio with the higher Sharpe ratio is better, even if its raw return is lower. Mixing a portfolio with R_F never changes its Sharpe ratio, you only slide along the same CAL. The CML turns the market's Sharpe ratio into a price list: the required E[R] of any efficient portfolio given its σ.",
+   "example": "R_F = 3%. Fund P: E[R] = 10%, σ = 14% gives Sharpe 7/14 = 0.50. Fund Q: E[R] = 12%, σ = 20% gives 9/20 = 0.45. P has the steeper CAL, so P wins despite Q's higher return. If M has E[R_M] = 9% and σ_M = 12% (slope 0.50), an efficient portfolio with σ = 18% should earn 3 + 0.50 × 18 = 12%.",
+   "contrast": "Sharpe divides by σ (total risk) and ranks whole portfolios; the SML's reward-to-risk divides by β (systematic risk) and prices individual assets. CML: E[R] against σ, efficient portfolios only. SML: E[R] against β, every asset and portfolio.",
+   "trap": "Putting β (or σ_M) in the denominator; forgetting to subtract R_F in the numerator; using the CML to price a single stock (it carries diversifiable risk, so it plots below the CML); choosing the fund with the higher return instead of the higher Sharpe ratio.",
+   "mnemonic": "Sharpe = slope = excess return per unit of σ.",
+   "formula": "Sharpe = tan φ = (E[R_P] − R_F)/σ_P;  CML: E[R_A] = R_F + [(E[R_M] − R_F)/σ_M] σ_A",
+   "given": true,
+   "archetypes": [
+    "A29"
+   ],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Three lines, three jobs",
+    "head": [
+     "Line",
+     "Axes (y against x)",
+     "Slope",
+     "Applies to"
+    ],
+    "rows": [
+     [
+      "CAL",
+      "E[R] against σ",
+      "Sharpe ratio of P: (E[R_P] − R_F)/σ_P",
+      "Mixes of one risky portfolio P with R_F"
+     ],
+     [
+      "CML",
+      "E[R] against σ",
+      "(E[R_M] − R_F)/σ_M",
+      "Efficient portfolios only (the CAL tangent at M)"
+     ],
+     [
+      "SML",
+      "E[R] against β",
+      "E[R_M] − R_F (market risk premium)",
+      "Every asset and portfolio"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c13-market-portfolio",
+   "topic": "t13-1",
+   "term": "Market portfolio and the index proxy",
+   "definition": "The market portfolio M is the risky portfolio at the point where the CAL from R_F is tangent to the efficient frontier: it has the highest Sharpe ratio of any risky portfolio, and the tangent line is the CML. In practice we proxy M with a broad index portfolio (S&P 500 / SPDR trust; the S&P/TSX Composite in Canada). By definition β_M = 1.",
+   "explain": "To find M, start at R_F and rotate a straight line upward until it just touches the frontier: the single point of contact is M. In theory every investor holds M plus R_F and chooses only the weight w_F, according to risk tolerance. M is hard to find in advance (it depends on future expected returns and σ's, and the best past portfolio need not be the best future one), so we use a broad index as a stand-in.",
+   "example": "R_F = 2%. Three frontier portfolios: P1 has E[R] = 8%, σ = 10% (Sharpe 0.60); P2 has 10%, 14% (0.571); P3 has 13%, 20% (0.55). P1 has the steepest CAL of the three, so it is the best of these candidates to mix with R_F (M's own Sharpe ratio is at least 0.60). A timid and a bold investor would both hold M; the timid one adds T-bills, the bold one borrows.",
+   "contrast": "M is the maximum-Sharpe (tangency) portfolio. It is not the minimum-variance portfolio (lowest σ, far left of the frontier) and not the highest-expected-return portfolio (far right). An index fund is a proxy for M, not M itself.",
+   "trap": "'Tangent' is not 'highest return' or 'lowest σ'. The review question 'How do we find the market portfolio?' wants: draw the CAL from R_F tangent to the efficient frontier. When asked which candidate portfolio is best to combine with R_F, compute each Sharpe ratio and pick the highest. Remember the index is only a proxy.",
+   "mnemonic": "Touch once, tangent: that touch is M.",
+   "formula": "Sharpe_M = (E[R_M] − R_F)/σ_M is the maximum of all risky portfolios;  β_M = 1",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c13-systematic-unsystematic",
+   "topic": "t13-2",
+   "term": "Systematic vs unsystematic risk",
+   "definition": "Total risk (measured by σ) = systematic risk + unsystematic risk. Systematic (market, non-diversifiable) risk affects all assets; unsystematic (company-specific, diversifiable, idiosyncratic) risk affects one asset or a small group. Diversification removes only the unsystematic part, so a well-diversified portfolio's σ falls to a limit of σ_M.",
+   "explain": "Systematic: surprises that hit almost every firm, such as GDP, inflation and interest rates. Unsystematic: a strike, lawsuit, fire, new product or CEO change at one company. In a big portfolio the good and bad company-specific surprises cancel, but a market-wide surprise moves everything the same way, so it stays. Only unexpected news is risk: news already expected is already in prices. Because unsystematic risk can be removed almost free, the market pays no premium for it (the systematic risk principle).",
+   "example": "In the textbook's classic study of randomly chosen NYSE stocks (Table 13.7), one stock has an average σ of about 49%; with 10 stocks σ falls to about 24%, with 100 to about 20% and with 1,000 to about 19%. That floor is systematic risk, roughly the σ of the market (the lecture's picture of σ_P falling to σ_M). A fire at one packaging plant is unsystematic; an unexpected Bank of Canada rate hike is systematic.",
+   "contrast": "Systematic = market = non-diversifiable. Unsystematic = company-specific = diversifiable = non-systematic = unique = idiosyncratic. Do not confuse either with total risk σ (the sum of both parts) or with β (the measure of the systematic part only).",
+   "trap": "Cue words: 'affects the whole economy / all firms' means systematic; 'a single company / small group' means unsystematic. Do not say diversification removes all risk, and do not say the market rewards total risk. Only the surprise part of news is risk, so a fully expected rate change does not move prices.",
+   "mnemonic": "System-wide = Systematic. Diversify away the Unique.",
+   "formula": "Total risk = systematic risk + unsystematic risk;  σ_P → σ_M as the number of stocks grows",
+   "given": false,
+   "archetypes": [],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "Systematic vs unsystematic risk",
+    "head": [
+     "",
+     "Systematic risk",
+     "Unsystematic risk"
+    ],
+    "rows": [
+     [
+      "Other names",
+      "Market risk; non-diversifiable (undiversifiable) risk",
+      "Company-specific; diversifiable; non-systematic; unique; idiosyncratic risk"
+     ],
+     [
+      "Typical sources",
+      "GDP, inflation, interest rates: surprises that hit almost all assets",
+      "Strike, lawsuit, fire, new product, CEO change: surprises at one asset or a small group"
+     ],
+     [
+      "Diversification",
+      "Cannot be removed; σ_P falls only to σ_M",
+      "Washes out as stocks are added"
+     ],
+     [
+      "Rewarded?",
+      "Yes, through the risk premium (measured by β)",
+      "No: it can be removed almost free"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c13-beta",
+   "topic": "t13-2",
+   "term": "Beta: a measure of systematic risk",
+   "definition": "β_i = cov(R_i, R_M)/σ_M² = ρ_iM σ_i/σ_M: the slope of the regression of the asset's returns on the market's returns, measuring systematic risk. β_M = 1 and β_F = 0. Unlike the correlation ρ, β is not limited to the range −1 to +1.",
+   "explain": "Beta says how much the stock moves, on average, for a 1% market move. In the regression R_i = α + β R_M + ε the slope is β. Divide by the market's variance σ_M², not by σ_M. Because β = ρ × (σ_i/σ_M), a stock can be highly correlated with the market and still have a small β if it swings much less than the market, or a β above 1 if it swings more. Providers publish different betas because they choose different market indexes, time windows, return frequencies and adjustments.",
+   "example": "cov(R_X, R_M) = 0.0300, σ_X = 30% and σ_M = 20%: β = 0.0300/0.20² = 0.0300/0.0400 = 0.75. Check with ρ: ρ = 0.0300/(0.30 × 0.20) = 0.50, and β = 0.50 × 30/20 = 0.75.",
+   "contrast": "β vs ρ: ρ (−1 to +1) measures how tightly two assets move together; β also scales for relative size, σ_i/σ_M. β vs σ: β is systematic risk only, σ is total risk. β vs α: slope versus intercept of the same regression.",
+   "trap": "Dividing the covariance by σ_M instead of σ_M² (the most common slip); putting σ_i in the denominator (inverting the σ ratio); reporting ρ as β; mixing percent and decimals when squaring σ_M (18% means 0.18² = 0.0324). A beta of 0 does not mean σ = 0.",
+   "mnemonic": "β = ρ × (stock σ ÷ market σ); divide by the market's VARIANCE.",
+   "formula": "β_i = cov(R_i, R_M)/σ_M² = ρ_iM σ_i/σ_M",
+   "given": false,
+   "archetypes": [
+    "A26"
+   ],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "Beta cheat table",
+    "head": [
+     "Beta",
+     "Meaning",
+     "Typical example"
+    ],
+    "rows": [
+     [
+      "β = 1",
+      "Same systematic risk as the market",
+      "Market index portfolio (SPDR trust, S&P 500)"
+     ],
+     [
+      "β = 0",
+      "No systematic risk (can still have σ)",
+      "Treasury bills (R_F); casino winnings"
+     ],
+     [
+      "0 < β < 1",
+      "Defensive: less systematic risk than the market",
+      "Hygiene products and other defensive stocks"
+     ],
+     [
+      "β > 1",
+      "Aggressive: more systematic risk than the market",
+      "High tech"
+     ],
+     [
+      "β < 0",
+      "Moves opposite to the market (rare)",
+      "Short an index; gold stocks in a fear spike"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c13-portfolio-beta",
+   "topic": "t13-2",
+   "term": "Portfolio beta and target-beta portfolios",
+   "definition": "β_P = Σ w_i β_i: the weighted average of the asset betas, with β_F = 0 for the risk-free asset and β_M = 1. The weights, including the risk-free weight, must sum to 1; a negative risk-free weight means borrowing at R_F, which pushes β_P above the beta of the risky holdings.",
+   "explain": "Unlike portfolio σ, portfolio beta needs no correlations: it is a weighted average, like portfolio return. To build a target beta, put the known holdings in, solve for the unknown stock's weight, and let the risk-free asset (β = 0) absorb the rest: w_F = 1 − all other weights. If the target beta is higher than the betas you can hold, you must borrow (w_F < 0).",
+   "example": "A $60,000 portfolio: $20,000 in a utility (β = 0.60), $30,000 in a bank (β = 1.10) and $10,000 in T-bills. Weights 1/3, 1/2 and 1/6, so β_P = 0.3333 × 0.60 + 0.5 × 1.10 + 0.1667 × 0 = 0.20 + 0.55 = 0.75. To lift the beta to 1.5 with the bank stock alone you would need w = 1.5/1.10 = 1.364 and w_F = −0.364 (borrowing).",
+   "contrast": "β_P is linear in the weights; σ_P is not (it needs ρ). A risk-free holding has β = 0 but still has a weight. A long-only stock portfolio with no risk-free asset cannot have a beta below its lowest stock beta or above its highest.",
+   "trap": "Dropping the T-bill (or the borrowing) from the weights so they no longer sum to 1; using dollars instead of weights; entering borrowing as a positive weight; giving the T-bill a beta of 1; taking the simple average of the betas.",
+   "mnemonic": "Weights × betas; the risk-free asset is a zero, not a nobody.",
+   "formula": "β_P = Σ w_i β_i  (β_F = 0, β_M = 1, Σ w_i = 1 including w_F)",
+   "given": false,
+   "archetypes": [
+    "A28"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c13-capm",
+   "topic": "t13-3",
+   "term": "Capital asset pricing model (CAPM)",
+   "definition": "CAPM: E[R_i] = R_F + β_i (E[R_M] − R_F), equivalently E[R_i] − R_F = β_i (E[R_M] − R_F): the stock's risk premium is its β times the market risk premium. Expected return = time value of money + (amount of systematic risk × price of systematic risk).",
+   "explain": "Three parts: R_F pays for waiting; E[R_M] − R_F is the market risk premium (the price of one unit of β); β is how many units you carry. Only systematic risk is priced, so σ never appears. Because E[R] is also the required return, it is the discount rate for an asset of that risk. You can rearrange for β, R_F or E[R_M].",
+   "example": "R_F = 4.5%, E[R_M] = 10%, β = 0.8 (the style of the sample exam). Market risk premium = 10 − 4.5 = 5.5%, so E[R] = 4.5 + 0.8 × 5.5 = 8.9%.",
+   "contrast": "Market return E[R_M] vs market risk premium E[R_M] − R_F (if the question gives the premium, do not subtract R_F again). CAPM vs SML: the same equation; the SML is its graph with β on the horizontal axis. CAPM vs CML: the CML uses σ and efficient portfolios only.",
+   "trap": "Writing R_F + β × E[R_M] (no subtraction of R_F); treating the market risk premium as the market return or the reverse; percent and decimal mix-ups; solving for R_F, which appears twice in the equation.",
+   "mnemonic": "Wait-pay + (risk amount × risk price).",
+   "formula": "E[R_i] = R_F + β_i (E[R_M] − R_F)",
+   "given": true,
+   "archetypes": [
+    "A27"
+   ],
+   "weight": 3,
+   "figure": {
+    "type": "list",
+    "title": "The three parts of the CAPM",
+    "items": [
+     "Time value of money: the risk-free rate R_F (the reward for waiting)",
+     "Amount of systematic risk: the asset's β",
+     "Price of systematic risk: the market risk premium E[R_M] − R_F (the reward per unit of β)"
+    ]
+   }
+  },
+  {
+   "id": "c13-sml-alpha",
+   "topic": "t13-3",
+   "term": "Security market line, alpha and mispricing",
+   "definition": "The security market line (SML) plots E[R] against β: intercept R_F, slope E[R_M] − R_F, passing through the market at β = 1. Alpha α = the E[R] an asset offers − the E[R] CAPM requires for its β. Above the SML (α > 0) means undervalued; below (α < 0) means overvalued. In equilibrium every asset has the same reward-to-risk ratio (E[R_i] − R_F)/β_i.",
+   "explain": "An asset above the SML pays more than its β justifies: investors buy, its price rises, and its expected return falls back onto the line. Below the line the reverse happens. Equal reward-to-risk lets you solve for R_F or the market risk premium from two assets: set (E[R_a] − R_F)/β_a = (E[R_b] − R_F)/β_b and cross-multiply. A positive-NPV investment plots above the SML.",
+   "example": "R_F = 3% and market risk premium 6%. A stock with β = 1.2 offering 11%: CAPM says 3 + 1.2 × 6 = 10.2%, so α = 11 − 10.2 = +0.8%, above the SML, undervalued. Reward-to-risk: (11 − 3)/1.2 = 6.67% > 6%.",
+   "contrast": "Above the SML = undervalued (cheap, price will rise), not overvalued. Alpha is a gap in return; beta is risk. SML (β axis, all assets) vs CML (σ axis, efficient portfolios).",
+   "trap": "Alpha sign reversed; saying a stock above the SML will fall in price; comparing reward-to-risk using σ instead of β; algebra slips when solving for R_F (cross-multiply, collect the R_F terms).",
+   "mnemonic": "Above the line = a bargain: price up, return falls back to the line.",
+   "formula": "α = E[R_i] − [R_F + β_i (E[R_M] − R_F)];  (E[R_i] − R_F)/β_i = E[R_M] − R_F = SML slope",
+   "given": false,
+   "archetypes": [
+    "A27"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c13-sigma-vs-beta",
+   "topic": "t13-3",
+   "term": "σ ≠ β: which risk measure to use when",
+   "definition": "σ measures total risk (systematic + unsystematic); β measures only systematic risk. The risk that earns a premium, and that matters to a well-diversified investor, is β; σ matters to someone holding a single stock and to the ranking of whole portfolios by Sharpe ratio.",
+   "explain": "The professor uses two measures of risk: σ for volatility and β for systematic risk. A stock can be very volatile yet have a low β (much of its risk is unsystematic and can be diversified away), so its expected return is low. Which stock is 'riskier' depends on who is asking: an investor with all her money in one stock cares about σ; a diversified investor cares about β.",
+   "example": "Stock A: σ = 40%, β = 0.5. Stock B: σ = 20%, β = 1.5. A has the greater total risk, so also more unsystematic risk; B has three times the systematic risk, so B has the higher risk premium and expected return under CAPM.",
+   "contrast": "σ vs β: total vs systematic. Sharpe (σ in the denominator, ranks portfolios) vs reward-to-risk (β in the denominator, prices assets). E[R]-σ diagram (CML) vs SML.",
+   "trap": "Ranking expected returns by σ; calling the high-σ stock 'riskier' for a diversified investor; plugging σ into the CAPM. 'Which has the higher expected return?' means look at β. 'Which has more total risk?' means look at σ.",
+   "mnemonic": "Alone, look at σ. In a crowd, look at β.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "σ vs β: which to use when",
+    "head": [
+     "Situation",
+     "Use",
+     "Why"
+    ],
+    "rows": [
+     [
+      "You hold one stock, or judge a stock on its own",
+      "σ",
+      "All of its risk, systematic and unsystematic, lands on you"
+     ],
+     [
+      "Ranking whole portfolios mixed with R_F (CAL, Sharpe ratio)",
+      "σ",
+      "The Sharpe ratio and the CML are built on total risk"
+     ],
+     [
+      "Adding a stock to an already well-diversified portfolio",
+      "β",
+      "Unsystematic risk washes out; only systematic risk changes your risk"
+     ],
+     [
+      "Setting a stock's required or expected return (CAPM, SML)",
+      "β",
+      "The market pays only for systematic risk"
+     ],
+     [
+      "Choosing the discount rate for a project",
+      "β",
+      "The required return depends on the project's systematic risk"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c13-portfolio-building",
+   "topic": "t13-3",
+   "term": "Building a portfolio: σ, then ρ, then β",
+   "definition": "The professor's recipe: for your first stock choose low σ; for your next few stocks choose low ρ with what you already hold (diversification benefit); when adding to an already well-diversified portfolio choose low β and positive α.",
+   "explain": "Each stage uses the risk measure that matters at that stage. With one stock all its risk is yours, so look at σ. With a few stocks the biggest gain comes from risk that cancels, so look at ρ with your existing holdings. Once the portfolio is diversified, only systematic risk is left, so only β changes your risk; a positive α adds return without extra systematic risk.",
+   "example": "Maya owns no stocks, so she starts with a low-σ utility. Next she adds a Saskatchewan potash miner and a Vancouver software firm because their ρ with the utility is low. With 30 holdings she adds a new stock only if its β is low (to hold down systematic risk) and its α is positive.",
+   "contrast": "σ is for the first stock, ρ for the next few, β (with α) for a diversified portfolio. Do not choose the first stock by low β (a low-β stock can still be very volatile), and do not use ρ with the market when ρ among your own holdings is what matters.",
+   "trap": "Using σ when the portfolio is already diversified; using ρ at stage 3; ignoring α (a low β with a negative α hurts return); saying β matters for a one-stock investor.",
+   "mnemonic": "σ, ρ, β: the stage decides the measure.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "list",
+    "title": "How to build a portfolio",
+    "items": [
+     "First stock: low σ (all of its risk is yours)",
+     "Next few stocks: low ρ with what you already hold (diversification benefit)",
+     "Additions to a well-diversified portfolio: low β and positive α (only systematic risk is left)"
+    ]
+   }
+  },
+  {
+   "id": "c13-cost-of-capital-link",
+   "topic": "t13-3",
+   "term": "Link to the cost of capital",
+   "definition": "From the investor's side E[R] is the required return; from the firm's side the same number is the cost of capital for an investment of that risk. CAPM gives it: k = R_F + β_project (E[R_M] − R_F). A project is worth doing when its expected return (the IRR, for conventional cash flows) exceeds k, i.e. when it plots above the SML (positive NPV).",
+   "explain": "All investments of similar risk should offer similar returns. A firm should discount a project at the return investors can earn elsewhere at the same β, not at the interest rate on the loan used to pay for it. On this exam the idea shows up as: compute the CAPM rate, then decide.",
+   "example": "R_F = 3.5% and market risk premium 6.2%. A project with β = 1.3 should be discounted at 3.5 + 1.3 × 6.2 = 11.56%. If its IRR is 13%, IRR > k: it plots above the SML, so accept (NPV > 0).",
+   "contrast": "Required return k (from CAPM, depends on the project's risk) vs expected return IRR (what the project promises). Project β vs the firm's overall β: use the project's own. Cost of capital vs the cost of the particular financing source.",
+   "trap": "Using the firm's average rate for a riskier project; comparing the IRR with R_F instead of the CAPM rate; thinking a positive-NPV project plots below the SML.",
+   "mnemonic": "Required return = what the SML pays for that β.",
+   "formula": "k = R_F + β_project (E[R_M] − R_F);  accept if IRR > k",
+   "given": true,
+   "archetypes": [
+    "A27"
+   ],
+   "weight": 1,
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a13-01",
+   "type": "sort",
+   "concept": "c13-systematic-unsystematic",
+   "title": "Systematic or unsystematic?",
+   "prompt": "Sort each event by the type of risk it creates for a stock investor.",
+   "buckets": [
+    "Systematic (market) risk",
+    "Unsystematic (company-specific) risk"
+   ],
+   "items": [
+    {
+     "text": "Bank of Canada surprises with a 0.75-point rate hike",
+     "bucket": 0
+    },
+    {
+     "text": "Canadian inflation comes in far above expectations",
+     "bucket": 0
+    },
+    {
+     "text": "A recession cuts consumer spending in every sector",
+     "bucket": 0
+    },
+    {
+     "text": "A global credit crunch hits all lenders and borrowers",
+     "bucket": 0
+    },
+    {
+     "text": "Ottawa unexpectedly changes the corporate tax rate for all firms",
+     "bucket": 0
+    },
+    {
+     "text": "A fire closes the only plant of one manufacturer",
+     "bucket": 1
+    },
+    {
+     "text": "The CEO of a single retailer resigns suddenly",
+     "bucket": 1
+    },
+    {
+     "text": "One airline's pilots go on strike",
+     "bucket": 1
+    },
+    {
+     "text": "A brewer's new product launch is a hit",
+     "bucket": 1
+    },
+    {
+     "text": "A pipeline company loses a lawsuit",
+     "bucket": 1
+    }
+   ],
+   "explanation": "Surprises that hit nearly every firm (rates, inflation, GDP, tax policy) are systematic and survive diversification. Surprises specific to one company or a small group wash out in a diversified portfolio, so they are unsystematic."
+  },
+  {
+   "id": "a13-02",
+   "type": "match",
+   "concept": "c13-beta",
+   "title": "Symbol and meaning",
+   "prompt": "Match each symbol with its meaning in the CML / CAPM framework.",
+   "pairs": [
+    {
+     "left": "β_i",
+     "right": "Systematic risk of asset i relative to the market (regression slope)"
+    },
+    {
+     "left": "σ_M²",
+     "right": "Market variance: the denominator of beta"
+    },
+    {
+     "left": "cov(R_i, R_M)",
+     "right": "How the asset's return moves with the market's, in squared-return units"
+    },
+    {
+     "left": "ρ_iM",
+     "right": "Correlation with the market, always between −1 and +1"
+    },
+    {
+     "left": "E[R_M] − R_F",
+     "right": "Market risk premium: the price of one unit of beta"
+    },
+    {
+     "left": "w_F < 0",
+     "right": "Borrowing at the risk-free rate"
+    },
+    {
+     "left": "tan φ",
+     "right": "Sharpe ratio: slope of the capital allocation line"
+    },
+    {
+     "left": "α",
+     "right": "Return above or below what CAPM requires for the asset's beta"
+    }
+   ],
+   "explanation": "β scales the covariance by the market variance; ρ is the bounded cousin; the market risk premium is the SML slope; tan φ is the CAL slope in the σ diagram; α is the vertical distance from the SML."
+  },
+  {
+   "id": "a13-03",
+   "type": "order",
+   "concept": "c13-capm",
+   "title": "The three parts of the CAPM",
+   "prompt": "Put the three parts of E[R_i] = R_F + β_i (E[R_M] − R_F) in the order they appear in the formula.",
+   "items": [
+    "Time value of money: the risk-free rate R_F",
+    "Amount of systematic risk: the asset's β",
+    "Price of systematic risk: the market risk premium E[R_M] − R_F"
+   ],
+   "explanation": "Expected return = constant (R_F) + systematic risk (β) × constant (market risk premium). Only the middle term is asset-specific."
+  },
+  {
+   "id": "a13-04",
+   "type": "sort",
+   "concept": "c13-beta",
+   "title": "Beta cheat sort",
+   "prompt": "Sort each asset or portfolio by its beta.",
+   "buckets": [
+    "β = 0",
+    "0 < β < 1 (defensive)",
+    "β = 1 (market)",
+    "β > 1 (aggressive)"
+   ],
+   "items": [
+    {
+     "text": "A 91-day Government of Canada T-bill",
+     "bucket": 0
+    },
+    {
+     "text": "Casino winnings, unrelated to the stock market",
+     "bucket": 0
+    },
+    {
+     "text": "A maker of hygiene products",
+     "bucket": 1
+    },
+    {
+     "text": "A portfolio with 50% in an index fund and 50% in T-bills",
+     "bucket": 1
+    },
+    {
+     "text": "An index fund tracking the S&P/TSX Composite",
+     "bucket": 2
+    },
+    {
+     "text": "The SPDR trust on the S&P 500",
+     "bucket": 2
+    },
+    {
+     "text": "A high-growth software company",
+     "bucket": 3
+    },
+    {
+     "text": "A portfolio of 150% in the index, borrowed at R_F",
+     "bucket": 3
+    },
+    {
+     "text": "A high-tech start-up with volatile earnings",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Index portfolios are the market (β = 1); T-bills and unrelated cash flows have β = 0; defensive stocks sit between 0 and 1; high tech and leverage push beta above 1. Mixing the index with T-bills scales beta by the weight in the index."
+  },
+  {
+   "id": "a13-05",
+   "type": "order",
+   "concept": "c13-portfolio-beta",
+   "title": "Build a target-beta portfolio",
+   "prompt": "Put the steps for building a portfolio with a target beta in order.",
+   "items": [
+    "Convert each known dollar holding into a weight (dollars ÷ total portfolio value)",
+    "Write β_P = Σ w β with β_F = 0 and set it equal to the target beta",
+    "Solve that equation for the unknown stock's weight",
+    "Set the risk-free weight equal to 1 minus all the other weights (negative means borrowing)",
+    "Convert the weights back into dollars and check that Σ w = 1 and β_P equals the target"
+   ],
+   "explanation": "The unknown stock's weight comes from the beta equation; only then does the risk-free asset take whatever weight remains, which may be negative."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "f13-cal-mix",
+   "name": "Mix of a risky portfolio and the risk-free asset (CAL)",
+   "formula": "E[R] = w_P E[R_P] + (1 − w_P) R_F;  σ = w_P σ_P",
+   "given": true,
+   "concepts": [
+    "c13-risk-free-cal"
+   ],
+   "when": "Any combination of one risky portfolio P with the risk-free asset; w_P > 1 means borrowing at R_F.",
+   "trap": "Forgetting the (1 − w_P) R_F term, or letting the weights sum to more than 1 when borrowing."
+  },
+  {
+   "id": "f13-sharpe",
+   "name": "Sharpe ratio",
+   "formula": "Sharpe = tan φ = (E[R_P] − R_F)/σ_P",
+   "given": true,
+   "concepts": [
+    "c13-sharpe-cml",
+    "c13-market-portfolio"
+   ],
+   "when": "Compare portfolios or CALs; the best CAL (highest Sharpe ratio) is tangent to the frontier at M.",
+   "trap": "Uses σ, not β, in the denominator, and the excess return over R_F in the numerator."
+  },
+  {
+   "id": "f13-cml",
+   "name": "Capital market line",
+   "formula": "E[R_A] = R_F + [(E[R_M] − R_F)/σ_M] σ_A",
+   "given": false,
+   "concepts": [
+    "c13-sharpe-cml",
+    "c13-market-portfolio"
+   ],
+   "when": "Required return of an efficient portfolio with total risk σ_A, or the σ needed for a target return.",
+   "trap": "Applies to efficient portfolios only, never to a single stock."
+  },
+  {
+   "id": "f13-beta-cov",
+   "name": "Beta from covariance",
+   "formula": "β_i = cov(R_i, R_M)/σ_M²",
+   "given": false,
+   "concepts": [
+    "c13-beta"
+   ],
+   "when": "Beta from a state table (cov = Σ p (R_i − E[R_i])(R_M − E[R_M])) or from a stated covariance.",
+   "trap": "The denominator is the market VARIANCE, not σ_M."
+  },
+  {
+   "id": "f13-beta-rho",
+   "name": "Beta from correlation",
+   "formula": "β_i = ρ_iM σ_i/σ_M",
+   "given": false,
+   "concepts": [
+    "c13-beta"
+   ],
+   "when": "Beta from the correlation and the two standard deviations.",
+   "trap": "σ_i on top, σ_M below; β is not bounded by ±1 like ρ."
+  },
+  {
+   "id": "f13-regression",
+   "name": "Market-model regression",
+   "formula": "R_i = α + β_i R_M + ε",
+   "given": false,
+   "concepts": [
+    "c13-beta"
+   ],
+   "when": "Interpret beta as the slope when stock returns are regressed on market returns.",
+   "trap": "Beta is the slope, alpha the intercept; both come from the same line."
+  },
+  {
+   "id": "f13-portfolio-beta",
+   "name": "Portfolio beta",
+   "formula": "β_P = Σ w_i β_i  (β_F = 0, β_M = 1, Σ w_i = 1)",
+   "given": false,
+   "concepts": [
+    "c13-portfolio-beta"
+   ],
+   "when": "Beta of any portfolio, including a risk-free weight; solve for an unknown weight to hit a target beta.",
+   "trap": "Weights must include the risk-free (possibly negative) weight and add up to 1."
+  },
+  {
+   "id": "f13-capm",
+   "name": "CAPM / SML",
+   "formula": "E[R_i] = R_F + β_i (E[R_M] − R_F)",
+   "given": true,
+   "concepts": [
+    "c13-capm",
+    "c13-sml-alpha"
+   ],
+   "when": "Expected or required return of any asset from its beta; also the equation of the SML.",
+   "trap": "Subtract R_F from the market return first (or use the stated market risk premium directly)."
+  },
+  {
+   "id": "f13-capm-solve",
+   "name": "CAPM rearranged for beta and the market return",
+   "formula": "β_i = (E[R_i] − R_F)/(E[R_M] − R_F);  E[R_M] = R_F + (E[R_i] − R_F)/β_i",
+   "given": false,
+   "concepts": [
+    "c13-capm"
+   ],
+   "when": "Back out the beta or the market return when the other inputs are given.",
+   "trap": "A stated market risk premium is not E[R_M]; add R_F back to get the market return."
+  },
+  {
+   "id": "f13-reward-to-risk",
+   "name": "Reward-to-risk ratio and SML slope",
+   "formula": "(E[R_i] − R_F)/β_i = E[R_M] − R_F  (all assets)",
+   "given": false,
+   "concepts": [
+    "c13-sml-alpha"
+   ],
+   "when": "Test whether an asset is on the SML; set two assets equal to solve for R_F or the market risk premium.",
+   "trap": "A higher ratio than the market's means above the SML (undervalued)."
+  },
+  {
+   "id": "f13-alpha",
+   "name": "Alpha",
+   "formula": "α = E[R_i] − [R_F + β_i (E[R_M] − R_F)]",
+   "given": false,
+   "concepts": [
+    "c13-sml-alpha"
+   ],
+   "when": "Mispricing: α > 0 plots above the SML (undervalued, price rises); α < 0 plots below it (overvalued).",
+   "trap": "Offered return minus required return, in that order."
+  },
+  {
+   "id": "f13-total-risk",
+   "name": "Total risk decomposition",
+   "formula": "Total risk = systematic risk + unsystematic risk;  σ_P → σ_M as N grows",
+   "given": false,
+   "concepts": [
+    "c13-systematic-unsystematic"
+   ],
+   "when": "Explain what diversification removes and what remains.",
+   "trap": "Diversification removes only the unsystematic part."
+  },
+  {
+   "id": "f13-project-rate",
+   "name": "Project required return from CAPM",
+   "formula": "k = R_F + β_project (E[R_M] − R_F);  accept if IRR > k",
+   "given": true,
+   "concepts": [
+    "c13-cost-of-capital-link",
+    "c13-capm"
+   ],
+   "when": "Discount rate for a project of a given systematic risk, then compare with the project's IRR.",
+   "trap": "Use the project's own beta, not the firm's overall beta."
+  }
+ ]
+}

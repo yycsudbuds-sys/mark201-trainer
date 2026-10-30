@@ -14,7 +14,7 @@ export function render(app, params) {
   const chNum = parseInt(chStr, 10);
   const ch = app.index.chapter.get(chNum);
   if (!ch) return h('div', { class: 'card' }, 'Unknown chapter. ', h('a', { href: '#/campaign' }, 'Back to the map'));
-  if (topicId === 'boss') return boss(app, ch);
+  if (topicId === 'boss') return boss(app, ch, action === 'retry');
   if (!topicId) return island(app, ch);
   const t = ch.topics.find(x => x.id === topicId || x.id === `${app.course}-${topicId}`);
   if (!t) return h('div', { class: 'card' }, 'Unknown level. ', h('a', { href: `#/campaign/${chNum}` }, 'Back to the island'));
@@ -184,22 +184,29 @@ function nextTopicLink(app, ch, t) {
   return h('a', { class: 'btn ghost', href: `#/campaign/${ch.chapter}/boss` }, 'Chapter boss ', icon('arrow', { size: 14, tone: 'mono' }));
 }
 
-function boss(app, ch) {
-  const n = app.pack.boss.n; const pass = app.pack.boss.pass; const pct = Math.round(pass * 100);
-  const questions = buildExam(app.content, app.state, { n, chapters: new Set([ch.chapter]) });
+function boss(app, ch, retry = false) {
+  const full = app.pack.boss.n; const pass = app.pack.boss.pass; const pct = Math.round(pass * 100);
+  const rec0 = app.state.campaign.bosses[ch.chapter] || {};
+  // The breach: after a failed siege, retake only the ground you lost (missed concepts plus anything below Solid), at least 3 questions.
+  const weakSet = retry ? new Set([...(rec0.lastMisses || []), ...ch.concepts.filter(c => masteryLevel(app.state.concepts[c.id]) < 3 || app.state.concepts[c.id]?.pursuit).map(c => c.id)]) : null;
+  const n = retry ? Math.max(3, Math.min(full, weakSet.size * 2)) : full;
+  const questions = retry && weakSet.size ? buildExam(app.content, app.state, { n, chapters: new Set([ch.chapter]), concepts: weakSet }) : buildExam(app.content, app.state, { n: full, chapters: new Set([ch.chapter]) });
+  const isRetry = !!(retry && weakSet && weakSet.size > 0); const qn = questions.length;
   const host = h('div', { style: { '--ch': ch.color } });
   let runner = null;
   warBriefing(app, { kind: 'boss', chapter: ch, cta: 'Begin the siege' }).then(() => { if (host.dead) return; runner = buildBoss(); host.appendChild(runner); });
   host.cleanup = () => { host.dead = true; runner && runner.cleanup && runner.cleanup(); };
   return host;
   function buildBoss() { return createRunner(app, {
-    title: `Chapter ${ch.chapter} boss`, subtitle: `${ch.title}. ${n} questions from the whole chapter, ${pct}% to clear it (the siege of ${app.pack.geo.prov[ch.chapter]?.capital || 'the capital'}).`, mode: 'boss', questions, feedback: 'immediate', limit: n, pursuit: false, hearts: null, province: app.chapterScene(ch.chapter), siege: { needed: Math.ceil(n * pass) },
+    title: isRetry ? `Chapter ${ch.chapter} boss · the breach` : `Chapter ${ch.chapter} boss`, subtitle: isRetry ? `${ch.title}. Only the ground you lost: ${qn} questions on ${weakSet.size} concept${weakSet.size === 1 ? '' : 's'}, ${pct}% retakes the city.` : `${ch.title}. ${qn} questions from the whole chapter, ${pct}% to clear it (the siege of ${app.pack.geo.prov[ch.chapter]?.capital || 'the capital'}).`, mode: 'boss', questions, feedback: 'immediate', limit: qn, pursuit: false, hearts: null, province: app.chapterScene(ch.chapter), siege: { needed: Math.ceil(qn * pass) },
     onFinish: (sum, reason) => {
       const score = sum.answered ? sum.correct / sum.answered : 0;
-      const complete = sum.answered >= n;
+      const complete = sum.answered >= qn;
       const rec = app.state.campaign.bosses[ch.chapter] || (app.state.campaign.bosses[ch.chapter] = {});
-      if (complete) rec.best = Math.max(rec.best || 0, score);
+      if (complete && !isRetry) rec.best = Math.max(rec.best || 0, score);
       const won = complete && score >= pass;
+      if (complete && !won) rec.lastMisses = [...new Set(sum.log.filter(l => !l.correct).map(l => l.cid))];
+      if (won) delete rec.lastMisses;
       const first = won && !rec.cleared;
       if (won && !rec.cleared) { rec.cleared = Date.now(); app.grantXp(300, 'province conquered'); addDenarii(50, 'conquest'); }
       else if (won) { app.grantXp(100, 'the city holds for Rome'); }
@@ -207,17 +214,18 @@ function boss(app, ch) {
       const show = () => {
         if (host.dead) return;
         host.innerHTML = '';
-        if (won) { app.confetti({ count: first ? 220 : 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); host.appendChild(h('div', { class: 'claim crown', style: { '--ch': ch.color } }, h('div', { class: 'claim-crown' }, icon('aquila', { size: 48, tone: 'gold' })), h('div', { class: 'claim-text' }, h('div', { class: 'eyebrow' }, 'Chapter boss cleared'), h('h2', null, `Chapter ${ch.chapter} conquered`), h('p', { class: 'small muted' }, `${sum.correct}/${n}. ${ch.title} is yours.`)))); }
+        if (won) { app.confetti({ count: first ? 220 : 120, colors: ['#8B1E1E', '#C9A227', '#E3C76A', '#EADBC0'] }); host.appendChild(h('div', { class: 'claim crown', style: { '--ch': ch.color } }, h('div', { class: 'claim-crown' }, icon('aquila', { size: 48, tone: 'gold' })), h('div', { class: 'claim-text' }, h('div', { class: 'eyebrow' }, isRetry ? 'The breach is taken' : 'Chapter boss cleared'), h('h2', null, `Chapter ${ch.chapter} conquered`), h('p', { class: 'small muted' }, `${sum.correct}/${qn}. ${ch.title} is yours.`)))); }
         host.appendChild(resultCard(app, won ? 'Chapter boss cleared' : complete ? 'Not yet · the walls held' : 'Boss attempt stopped', sum,
           h('div', { class: 'stack mt' },
-            won ? null : complete ? h('p', null, `You need ${pct}% (${Math.ceil(n * pass)}/${n}) to clear the chapter boss. Drill the misses below, then try again.`) : h('p', { class: 'muted' }, 'Finish every question to record the attempt.'),
+            won ? null : complete ? h('p', null, `You need ${pct}% (${Math.ceil(qn * pass)}/${qn}) to clear the chapter boss. Retake the breach: a shorter siege on just the concepts you missed or hold weakly. Passing it takes the city.`) : h('p', { class: 'muted' }, 'Finish every question to record the attempt.'),
             h('div', { class: 'row wrap', style: { justifyContent: 'center' } },
-              h('a', { class: 'btn primary', href: won ? '#/campaign' : `#/campaign/${ch.chapter}/boss` }, won ? 'Back to the campaign map' : 'Try the boss again'),
+              won ? h('a', { class: 'btn primary', href: '#/campaign' }, 'Back to the campaign map') : complete ? h('a', { class: 'btn primary', href: `#/campaign/${ch.chapter}/boss/retry` }, icon('siegetower', { size: 16, tone: 'mono' }), ' Retake the breach') : h('a', { class: 'btn primary', href: `#/campaign/${ch.chapter}/boss` }, 'Try the boss again'),
+              !won && complete ? h('a', { class: 'btn ghost', href: `#/campaign/${ch.chapter}/boss` }, 'Full siege again') : null,
               sum.log.some(l => !l.correct) ? h('a', { class: 'btn', href: `#/drill/concepts/${[...new Set(sum.log.filter(l => !l.correct).map(l => l.cid))].join(',')}` }, icon('target', { size: 16, tone: 'gold' }), 'Drill my misses') : null,
               h('a', { class: 'btn ghost', href: `#/campaign/${ch.chapter}` }, 'Back to the chapter')))));
         host.appendChild(h('div', { class: 'mt' }, h('h3', { class: 'mb' }, 'Review the misses'), missesList(app, sum.log)));
       };
-      if (won) { setTimeout(() => { if (!host.dead) triumph(app, { chapter: ch, score: sum.correct, n, first }).then(show); }, 1400); host.innerHTML = ''; host.appendChild(h('div', { class: 'panel stone center result' }, h('div', { class: 'eyebrow' }, 'The gate is breached'), h('p', { class: 'muted' }, 'The legion storms the city…'))); }
+      if (won) { setTimeout(() => { if (!host.dead) triumph(app, { chapter: ch, score: sum.correct, n: qn, first }).then(show); }, 1400); host.innerHTML = ''; host.appendChild(h('div', { class: 'panel stone center result' }, h('div', { class: 'eyebrow' }, 'The gate is breached'), h('p', { class: 'muted' }, 'The legion storms the city…'))); }
       else show();
     },
   }); }

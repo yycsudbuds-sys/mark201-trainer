@@ -1,0 +1,1092 @@
+[
+ {
+  "id": "q09-427",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-project-relationships"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Two mutually exclusive projects have IRRs of 24% and 21%. At the firm's required return of 10% the 21% project has the higher NPV. This disagreement between the IRR and NPV rankings is called:",
+  "options": [
+   "the multiple-IRR problem",
+   "a ranking conflict between IRR and NPV",
+   "capital rationing",
+   "a financing-type cash-flow problem"
+  ],
+  "answer": 1,
+  "explanation": "When IRR and NPV rank mutually exclusive projects differently, the firm faces a ranking conflict. It is caused by differences in scale or timing, not by unconventional cash flows (multiple IRRs), by a lack of funds (rationing), or by the sign pattern.",
+  "source": "generated",
+  "ref": "TB 9.5; L05A s34"
+ },
+ {
+  "id": "q09-428",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is NPV, not IRR, used to make the final choice between mutually exclusive projects?",
+  "options": [
+   "IRR cannot be calculated when projects are mutually exclusive",
+   "NPV measures the change in shareholder wealth in dollars, so the highest NPV adds the most value",
+   "NPV is a percentage, so it can be compared across projects of different sizes",
+   "IRR is based on accounting profit while NPV is based on cash flows"
+  ],
+  "answer": 1,
+  "explanation": "The financial manager's aim is to maximise shareholder wealth, and NPV is that change in wealth. IRR is a rate that ignores how many dollars are invested. Both IRR and NPV use cash flows, and NPV is a dollar amount, not a percentage.",
+  "source": "generated",
+  "ref": "L05A s18-19; REV p3"
+ },
+ {
+  "id": "q09-429",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pair identifies the two ways in which the IRR and NPV rankings of mutually exclusive projects can conflict?",
+  "options": [
+   "The scale of the investment and the timing of the cash flows",
+   "The tax rate and the rate of inflation",
+   "The number of IRRs and the sign of CF0",
+   "The riskiness and the liquidity of the projects"
+  ],
+  "answer": 0,
+  "explanation": "A bigger project can have a lower IRR yet a bigger NPV (scale), and a project with later cash flows can have a lower IRR yet a bigger NPV at low discount rates (timing). The number of IRRs is a different issue (unconventional flows).",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-12, 9-16"
+ },
+ {
+  "id": "q09-430",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Hartwell Foods must choose one of two mutually exclusive lines at R = 10%. Line S costs $35,000 and has an IRR of 28.57% and an NPV of $5,909.09. Line L costs $150,000 and has an IRR of 20.00% and an NPV of $13,636.36. What is the source of the conflict and the correct choice?",
+  "options": [
+   "Scale: choose Line S, which has the higher IRR",
+   "Scale: choose Line L, which has the higher NPV",
+   "Timing: choose Line S, which pays back sooner",
+   "No conflict: accept both lines because both NPVs are positive"
+  ],
+  "answer": 1,
+  "explanation": "Line L is more than four times as large, so its lower percentage return still earns more dollars. That is a scale conflict, and NPV settles it. Taking both is impossible because the lines are mutually exclusive, and choosing S by IRR is the mistake of picking the higher IRR.",
+  "source": "generated",
+  "ref": "SM 9-16; L05A s34"
+ },
+ {
+  "id": "q09-431",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "For two mutually exclusive projects at R = 10%, Project A has an IRR of 28.03% and an NPV of $13,388.43, while Project B has an IRR of 22.98% and an NPV of $15,522.16. Which project should the firm take?",
+  "options": [
+   "Project B, because it has the higher NPV",
+   "Project A, because it has the higher IRR",
+   "Both, because both have positive NPVs",
+   "Neither, because the two rules disagree"
+  ],
+  "answer": 0,
+  "explanation": "When the rules conflict for mutually exclusive projects, the NPV rule decides, because NPV measures the dollars added to shareholder wealth. Project B adds more even though its IRR is lower.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-432",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a reason why the IRR and NPV rules can rank mutually exclusive projects differently?",
+  "options": [
+   "The projects differ in the scale of the investment",
+   "The projects' cash flows arrive at different times",
+   "NPV uses cash flows while IRR uses accounting profit",
+   "IRR is a percentage that ignores how many dollars are invested"
+  ],
+  "answer": 2,
+  "explanation": "Both NPV and IRR are built from the same cash flows, so the basis of the numbers is not the cause. Conflicts come from scale (IRR ignores dollars invested) and from timing (the NPV ranking changes with the discount rate, the IRR does not).",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-433",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For independent projects with conventional cash flows, the NPV rule and the IRR rule always give the same accept or reject decision for each project.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "For conventional flows NPV is positive exactly when IRR exceeds R, so accept/reject decisions match. Disagreements arise only when projects are mutually exclusive and must be RANKED.",
+  "source": "generated",
+  "ref": "L05A s25-26"
+ },
+ {
+  "id": "q09-434",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-crossover"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Two mutually exclusive projects, E and L, have IRRs of 20.50% and 17.72%. Their NPV profiles cross at 13.24%. At R = 10% the NPV of L is higher. If the firm's required return rises to 15%, what happens to the conflict?",
+  "options": [
+   "It disappears: above the crossover rate E has both the higher IRR and the higher NPV",
+   "It gets worse, because L always has the higher NPV",
+   "It stays, because the IRR ranking and the NPV ranking never agree for these projects",
+   "It disappears because both projects now have negative NPVs"
+  ],
+  "answer": 0,
+  "explanation": "Above the crossover rate (13.24%) the profile of E lies above that of L, so E wins on NPV as well as IRR and the two rules agree. At 15% both NPVs are still positive, because both IRRs exceed 15%.",
+  "source": "generated",
+  "ref": "TB 9.5; L05A s34"
+ },
+ {
+  "id": "q09-435",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-npv-steps"
+  ],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put these steps for choosing between two mutually exclusive projects in the right order. (a) Pick the project with the highest positive NPV. (b) Discount each project's cash flows at R to get its NPV. (c) Forecast each project's after-tax cash flows. (d) Decide on the required return R.",
+  "options": [
+   "d, c, a, b",
+   "b, c, d, a",
+   "c, d, b, a",
+   "c, b, d, a"
+  ],
+  "answer": 2,
+  "explanation": "The NPV sequence from the lecture is: cash flows, then the discount rate, then discount (equalising lives if needed), then decide. The IRR is not needed to make the final choice.",
+  "source": "generated",
+  "ref": "L05A s19"
+ },
+ {
+  "id": "q09-436",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-crossover"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the choice between the IRR rule and the NPV rule only matter for two mutually exclusive projects when R is BELOW the crossover rate?",
+  "options": [
+   "Below the crossover both projects have negative NPVs, so neither rule applies",
+   "Below the crossover each project's IRR changes sign, so the IRRs are unreliable",
+   "Below it the lower-IRR project has the higher NPV; above it the two rankings agree",
+   "Above the crossover the projects become independent, so both can be taken"
+  ],
+  "answer": 2,
+  "explanation": "At the crossover rate the two NPVs are equal. Below it the lower-IRR project (bigger or later flows) is ahead on NPV; above it the higher-IRR project is ahead on both measures. The rules therefore disagree only below the crossover.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-437",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Compare a project with cash flows concentrated in year 1 with a project of equal cost whose cash flows come mostly in year 5. When the required return rises, what happens to their NPVs?",
+  "options": [
+   "The earlier-payoff project's NPV falls faster, because it is discounted first",
+   "The later-payoff project's NPV falls faster, so its NPV profile is steeper",
+   "Both NPVs fall at the same speed because they have the same cost",
+   "Both NPVs rise, because a higher R means a higher required return"
+  ],
+  "answer": 1,
+  "explanation": "Cash flows far in the future are discounted by (1 + R)^t, so a higher t makes the present value more sensitive to R. That is why back-loaded projects win at low R and lose at high R, which creates the timing conflict.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-438",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "The firm must pick exactly one of three mutually exclusive projects, each with a positive NPV at its required return. P1: IRR 31%, NPV $4.1 million. P2: IRR 22%, NPV $9.8 million. P3: IRR 16%, NPV $7.4 million. Which should it take?",
+  "options": [
+   "P1, which has the highest IRR",
+   "P3, which has the lowest IRR and so the most room to grow",
+   "All three, since each NPV is positive",
+   "P2, which has the highest NPV"
+  ],
+  "answer": 3,
+  "explanation": "With more than two mutually exclusive projects, compute the NPV of each and choose the highest (the lecture's rule). The highest IRR (P1) is the trap of picking the highest IRR; the three cannot all be undertaken because only one can be chosen.",
+  "source": "generated",
+  "ref": "L05A s34"
+ },
+ {
+  "id": "q09-439",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Fraser Valley Berry Co. can take only one upgrade. Plan E costs $60,000 and returns $39,000, $31,000 and $11,000 in years 1 to 3 (IRR 20.50%). Plan L costs $60,000 and returns $5,000, $28,000 and $58,000 (IRR 17.72%). At R = 10% per annum, by how many dollars does the NPV of the plan the firm should choose exceed the NPV of the other plan?",
+  "answer": 1923.37,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-60000+5000/1.1+28000/1.1**2+58000/1.1**3-(-60000+39000/1.1+31000/1.1**2+11000/1.1**3)",
+  "steps": [
+   {
+    "label": "NPV of Plan E at 10%",
+    "value": 9338.84,
+    "check": "-60000+39000/1.1+31000/1.1**2+11000/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Plan L at 10%",
+    "value": 11262.21,
+    "check": "-60000+5000/1.1+28000/1.1**2+58000/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV(L) − NPV(E)",
+    "value": 1923.37,
+    "check": "-60000+5000/1.1+28000/1.1**2+58000/1.1**3-(-60000+39000/1.1+31000/1.1**2+11000/1.1**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV of E = −60,000 + 39,000/1.1 + 31,000/1.1² + 11,000/1.1³ = $9,338.84",
+   "NPV of L = −60,000 + 5,000/1.1 + 28,000/1.1² + 58,000/1.1³ = $11,262.21",
+   "L has the higher NPV although E has the higher IRR. Advantage of L = $11,262.21 − $9,338.84 = $1,923.37."
+  ],
+  "keystrokes": [
+   "E: CF0 = −60000, C01 = 39000, C02 = 31000, C03 = 11000, NPV, I = 10, CPT → 9,338.84",
+   "L: CF0 = −60000, C01 = 5000, C02 = 28000, C03 = 58000, NPV, I = 10, CPT → 11,262.21"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the NPV of the higher-IRR plan (E) as the answer",
+    "value": 9338.84,
+    "check": "-60000+39000/1.1+31000/1.1**2+11000/1.1**3",
+    "explain": "E has the higher IRR, but the question asks for the NPV advantage of the plan with the higher NPV."
+   },
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Subtracted NPV(L) from NPV(E)",
+    "value": -1923.37,
+    "check": "-60000+39000/1.1+31000/1.1**2+11000/1.1**3-(-60000+5000/1.1+28000/1.1**2+58000/1.1**3)",
+    "explain": "The advantage of the better plan is positive; reversing the subtraction gives a negative number."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Compared undiscounted net gains (31,000 vs 21,000)",
+    "value": 10000.0,
+    "check": "(5000+28000+58000-60000)-(39000+31000+11000-60000)",
+    "explain": "Net gains ignore timing; the later cash flows of L must be discounted before comparing."
+   }
+  ],
+  "explanation": "At R = 10% (below the 13.24% crossover) L has the higher NPV even though E has the higher IRR. The IRR rule would have cost shareholders the difference.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-12"
+ },
+ {
+  "id": "q09-440",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Hartwell Foods must choose one of two mutually exclusive lines at R = 10% per annum. Line S costs $35,000 and returns $45,000 in one year (IRR 28.57%). Line L costs $150,000 and returns $180,000 in one year (IRR 20.00%). How much shareholder wealth is lost, in NPV terms, if the firm chooses by IRR instead of by NPV?",
+  "answer": 7727.27,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(180000/1.1-150000)-(45000/1.1-35000)",
+  "steps": [
+   {
+    "label": "NPV of Line S",
+    "value": 5909.09,
+    "check": "45000/1.1-35000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Line L",
+    "value": 13636.36,
+    "check": "180000/1.1-150000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV lost by choosing S",
+    "value": 7727.27,
+    "check": "(180000/1.1-150000)-(45000/1.1-35000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV of S = 45,000/1.1 − 35,000 = $5,909.09",
+   "NPV of L = 180,000/1.1 − 150,000 = $13,636.36",
+   "Choosing S by IRR gives up 13,636.36 − 5,909.09 = $7,727.27 of NPV."
+  ],
+  "keystrokes": [
+   "S: 45000 ÷ 1.1 = 40,909.09; − 35000 = 5,909.09",
+   "L: 180000 ÷ 1.1 = 163,636.36; − 150000 = 13,636.36",
+   "13,636.36 − 5,909.09 = 7,727.27"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the NPV of Line S (the IRR choice)",
+    "value": 5909.09,
+    "check": "45000/1.1-35000",
+    "explain": "That is what the IRR rule delivers, not what it gives up."
+   },
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Subtracted NPV(L) from NPV(S)",
+    "value": -7727.27,
+    "check": "(45000/1.1-35000)-(180000/1.1-150000)",
+    "explain": "The loss is how much more NPV L has, a positive number."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Compared undiscounted gains (30,000 − 10,000)",
+    "value": 20000.0,
+    "check": "(180000-150000)-(45000-35000)",
+    "explain": "The gains arrive in a year and must be discounted at 10% before comparing."
+   }
+  ],
+  "explanation": "This is a scale conflict: L is four times the size, so its lower percentage return earns more dollars. The NPV rule picks L.",
+  "source": "generated",
+  "ref": "SM 9-16; TB 9.5"
+ },
+ {
+  "id": "q09-441",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-crossover"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Wind Farms Ltd. has two mutually exclusive turbine projects at R = 7% per annum. Project S costs $30,000 and returns $14,000 at the end of each of the next 3 years (IRR 18.91%). Project L costs $110,000 and returns $46,000 at the end of each of the next 3 years (IRR 12.26%). What is the NPV of the project that maximises shareholder wealth?",
+  "answer": 10718.54,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "46000*(1-1/1.07**3)/0.07-110000",
+  "steps": [
+   {
+    "label": "Annuity factor (7%, 3 years)",
+    "value": 2.62432,
+    "check": "(1-1/1.07**3)/0.07",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of Project S",
+    "value": 6740.42,
+    "check": "14000*(1-1/1.07**3)/0.07-30000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Project L",
+    "value": 10718.54,
+    "check": "46000*(1-1/1.07**3)/0.07-110000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor = (1 − 1/1.07³)/0.07 = 2.62432",
+   "NPV of S = 14,000 × 2.624316 − 30,000 = $6,740.42",
+   "NPV of L = 46,000 × 2.624316 − 110,000 = $10,718.54",
+   "Project L has the higher NPV (despite the lower IRR), so it is the choice and its NPV is the answer."
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 7, PMT = 14000, CPT PV → 36,740.42; − 30000 = 6,740.42",
+   "N = 3, I/Y = 7, PMT = 46000, CPT PV → 120,718.54; − 110000 = 10,718.54"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the NPV of Project S (higher IRR)",
+    "value": 6740.42,
+    "check": "14000*(1-1/1.07**3)/0.07-30000",
+    "explain": "S has the higher IRR, but the shareholders gain more from L."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 4-year annuity factor for L",
+    "value": 45811.72,
+    "check": "46000*(1-1/1.07**4)/0.07-110000",
+    "explain": "Three years of cash flows need an annuity factor with N = 3."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the flows without discounting",
+    "value": 28000.0,
+    "check": "46000*3-110000",
+    "explain": "The three payments must be discounted at 7%; 3 × 46,000 − 110,000 ignores the time value of money."
+   }
+  ],
+  "explanation": "Here R = 7% is below the crossover rate (9.70%), so the larger project L wins on NPV even though S has the higher IRR.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-13"
+ },
+ {
+  "id": "q09-442",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "At R = 8% per annum, mutually exclusive Project A (−$50,000; +$38,000, +$25,000, +$8,000) has an IRR of 25.84%, and Project B (−$50,000; +$9,000, +$18,000, +$53,000) has an IRR of 20.65%. What is the NPV of the project the firm should undertake?",
+  "options": [
+   "$15,838.54",
+   "$12,969.31",
+   "$2,869.23",
+   "$14,665.32"
+  ],
+  "answer": 0,
+  "explanation": "NPV(B) = −50,000 + 9,000/1.08 + 18,000/1.08² + 53,000/1.08³ = $15,838.54; NPV(A) = $12,969.31. B is chosen by NPV, even though A has the higher IRR. $2,869.23 is only the NPV advantage, and $14,665.32 comes from treating CF0 as a period-1 flow.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-12"
+ },
+ {
+  "id": "q09-443",
+  "concept": "c09-ranking-conflict",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm picks Line S (cost $35,000, one-year payoff $45,000) over Line L (cost $150,000, one-year payoff $180,000) because S has the higher IRR. If R = 10% per annum, how much NPV does the firm give up?",
+  "options": [
+   "$13,636.36",
+   "$5,909.09",
+   "$7,727.27",
+   "$20,000.00"
+  ],
+  "answer": 2,
+  "explanation": "NPV(L) − NPV(S) = 13,636.36 − 5,909.09 = $7,727.27. $13,636.36 is NPV(L) alone, $5,909.09 is the NPV of the project actually taken, and $20,000 compares undiscounted gains (30,000 − 10,000).",
+  "source": "generated",
+  "ref": "SM 9-16"
+ },
+ {
+  "id": "q09-444",
+  "concept": "c09-ranking-conflict",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "If two mutually exclusive projects have IRRs of 24% and 21%, choosing the 24% project always maximises shareholder wealth.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "IRR ignores scale and timing. The 21% project can have the higher NPV (when R is below the crossover rate, or when it is much larger), and NPV is the measure of shareholder wealth.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-445",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The crossover rate is the discount rate at which the _____ of two projects are equal.",
+  "options": [
+   "IRRs",
+   "NPVs",
+   "profitability indexes",
+   "payback periods"
+  ],
+  "answer": 1,
+  "explanation": "At the crossover rate the two NPV profiles intersect, so both projects have the same NPV. IRRs are where each profile cuts the horizontal axis, which is a different point.",
+  "source": "generated",
+  "ref": "TB 9.5; L05A s34"
+ },
+ {
+  "id": "q09-446",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "How is the crossover rate between Project A and Project B found?",
+  "options": [
+   "It is the simple average of the two projects' IRRs",
+   "It is the IRR of the larger project, which has the larger flows",
+   "It is the IRR of the year-by-year differences in their cash flows (A − B)",
+   "It is the discount rate at which each project's NPV equals zero"
+  ],
+  "answer": 2,
+  "explanation": "Subtract one project's cash flows from the other's in every period, including CF0, and find the IRR of the differences. The NPV of that difference is NPV(A) − NPV(B), which is zero exactly when the two NPVs are equal.",
+  "source": "generated",
+  "ref": "SM 9-12; L05A s34"
+ },
+ {
+  "id": "q09-447",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Prairie Wind Farms Ltd. compares Project S (−$30,000; +$14,000 in each of years 1 to 3) with Project L (−$110,000; +$46,000 in each of years 1 to 3). Which cash-flow list is used to find their crossover rate?",
+  "options": [
+   "L + S: −$140,000, +$60,000, +$60,000, +$60,000",
+   "L − S in years 1 to 3 only: +$32,000, +$32,000, +$32,000",
+   "L ÷ S: 3.67, 3.29, 3.29, 3.29",
+   "L − S: −$80,000, +$32,000, +$32,000, +$32,000"
+  ],
+  "answer": 3,
+  "explanation": "Subtract the projects' flows period by period, and keep the difference in CF0 (−110,000 − (−30,000) = −80,000). Leaving CF0 out or adding the flows are the classic setup mistakes. The IRR of L − S is 9.70% (see the NPV check: −80,000 + 32,000 × annuity factor(9.701026%, 3) = $0.00).",
+  "source": "generated",
+  "ref": "SM 9-12, 9-13"
+ },
+ {
+  "id": "q09-448",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the crossover rate of two projects differ from the IRR of one of them?",
+  "options": [
+   "An IRR sets one project's NPV to zero; the crossover sets the gap between two NPVs to zero",
+   "The IRR needs a required return to compute, but the crossover rate does not",
+   "The crossover rate is always larger than both projects' own IRRs",
+   "They are the same number whenever the projects are mutually exclusive"
+  ],
+  "answer": 0,
+  "explanation": "IRR is where one NPV profile hits the horizontal axis. The crossover rate is where two profiles meet each other, which may happen at a positive NPV. For conventional projects with a ranking conflict, the crossover is typically below both IRRs.",
+  "source": "generated",
+  "ref": "SM 9-12; TB 9.5"
+ },
+ {
+  "id": "q09-449",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "Subtracting Project B's cash flows from Project A's, rather than A's from B's, gives a different crossover rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Reversing the subtraction multiplies every difference by −1, which flips the sign of the NPV of the difference but not the discount rate at which it is zero. The textbook solution says it is irrelevant which project is subtracted from the other.",
+  "source": "generated",
+  "ref": "SM 9-13"
+ },
+ {
+  "id": "q09-450",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the IRR of the difference in cash flows equal to the discount rate at which two projects have equal NPVs?",
+  "options": [
+   "NPV(A) − NPV(B) equals the NPV of the difference flows, which is zero at the IRR of those flows",
+   "NPV is linear in the discount rate, so the profiles must meet at the average of the IRRs",
+   "The IRR of any project always equals the rate where its NPV is the same as another project's",
+   "Subtracting the flows removes the time value of money"
+  ],
+  "answer": 0,
+  "explanation": "NPV is additive: NPV(A) − NPV(B) = NPV(A − B). Setting that to zero means finding the IRR of the difference. NPV is not linear in R, so the average of the IRRs has no special meaning.",
+  "source": "generated",
+  "ref": "L05A s34"
+ },
+ {
+  "id": "q09-451",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "The NPV profiles of E and L cross at 13.24%. E has the higher IRR (20.50% against 17.72%). The firm's required return is 9%. Which project should it choose, and why?",
+  "options": [
+   "E, because 9% is below the 13.24% crossover rate and E has the higher IRR",
+   "L, because 9% is below the 13.24% crossover rate and L has the higher NPV there",
+   "E, because 9% is below both IRRs",
+   "L, because its IRR is lower and lower IRRs are safer"
+  ],
+  "answer": 1,
+  "explanation": "Below the crossover rate, the project with the later cash flows (L) has the higher NPV. Above it, E would win. IRR size does not decide the ranking. At 9%, NPV(L) − NPV(E) = $2,574.92.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-452",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Fraser Valley Berry Co.'s Plan E costs $60,000 and returns $39,000, $31,000 and $11,000 in years 1 to 3. Plan L costs $60,000 and returns $5,000, $28,000 and $58,000. The crossover rate is 13.24%. At R = 12% per annum, which is below the crossover, how many dollars larger is the NPV of the better plan than the NPV of the other plan?",
+  "answer": 704.95,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-60000+5000/1.12+28000/1.12**2+58000/1.12**3-(-60000+39000/1.12+31000/1.12**2+11000/1.12**3)",
+  "steps": [
+   {
+    "label": "NPV of Plan E at 12%",
+    "value": 7364.02,
+    "check": "-60000+39000/1.12+31000/1.12**2+11000/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Plan L at 12%",
+    "value": 8068.97,
+    "check": "-60000+5000/1.12+28000/1.12**2+58000/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV(L) − NPV(E)",
+    "value": 704.95,
+    "check": "-60000+5000/1.12+28000/1.12**2+58000/1.12**3-(-60000+39000/1.12+31000/1.12**2+11000/1.12**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV of E at 12% = $7,364.02",
+   "NPV of L at 12% = $8,068.97",
+   "12% is below the 13.24% crossover, so L has the higher NPV by $8,068.97 − $7,364.02 = $704.95.",
+   "(As R climbs to 13.24% this gap shrinks to $0; above it E leads.)"
+  ],
+  "keystrokes": [
+   "E: CF0 = −60000, C01 = 39000, C02 = 31000, C03 = 11000, NPV, I = 12, CPT → 7,364.02",
+   "L: CF0 = −60000, C01 = 5000, C02 = 28000, C03 = 58000, NPV, I = 12, CPT → 8,068.97"
+  ],
+  "errors": [
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Subtracted NPV(L) from NPV(E)",
+    "value": -704.95,
+    "check": "-60000+39000/1.12+31000/1.12**2+11000/1.12**3-(-60000+5000/1.12+28000/1.12**2+58000/1.12**3)",
+    "explain": "The better plan's advantage is a positive amount."
+   },
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the NPV of E, the higher-IRR plan",
+    "value": 7364.02,
+    "check": "-60000+39000/1.12+31000/1.12**2+11000/1.12**3",
+    "explain": "The question asks for the gap between the two NPVs, not the NPV of the higher-IRR plan."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Compared undiscounted net gains (31,000 vs 21,000)",
+    "value": 10000.0,
+    "check": "(5000+28000+58000-60000)-(39000+31000+11000-60000)",
+    "explain": "Net gains ignore timing; the later flows of L must be discounted at 12% before comparing."
+   }
+  ],
+  "explanation": "The gap between the two NPVs is positive below the crossover and shrinks to zero at it, which is the same as saying NPV(L − E) rises to zero as R moves up to the crossover.",
+  "source": "generated",
+  "ref": "TB 9.5; SM 9-13"
+ },
+ {
+  "id": "q09-453",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Hartwell Foods compares two mutually exclusive lines. Line S costs $35,000 and returns $45,000 in one year. Line L costs $150,000 and returns $180,000 in one year. Find the cash flows of the incremental project (L − S) and then the crossover rate. (Final answer: crossover rate, % per annum.)",
+  "answer": 17.3913,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(135000/115000-1)*100",
+  "steps": [
+   {
+    "label": "Incremental CF0 (L − S)",
+    "value": -115000.0,
+    "check": "35000-150000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Incremental CF1 (L − S)",
+    "value": 135000.0,
+    "check": "180000-45000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Crossover rate",
+    "value": 17.3913,
+    "check": "(135000/115000-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Incremental flows (L − S): CF0 = −150,000 − (−35,000) = −115,000; CF1 = 180,000 − 45,000 = +135,000.",
+   "One-period project, so IRR = 135,000/115,000 − 1 = 17.3913%.",
+   "Check: NPV of the difference at 17.391304% = −115,000 + 135,000/1.17391304 = $0.00 (to the cent).",
+   "Below 17.39% the larger line L has the higher NPV; above it the smaller line S does."
+  ],
+  "keystrokes": [
+   "135000 ÷ 115000 = 1.173913 → − 1 = 0.173913 → 17.39%",
+   "(or CF0 = −115000, C01 = 135000, IRR CPT → 17.39)"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-irr",
+    "label": "Reported the IRR of Line S (28.57%)",
+    "value": 28.5714,
+    "check": "(45000/35000-1)*100",
+    "explain": "That is S's own IRR, not the rate where the two NPVs are equal."
+   },
+   {
+    "id": "crossover-avg-irr",
+    "label": "Averaged the two IRRs (28.57% and 20.00%)",
+    "value": 24.2857,
+    "check": "((45000/35000-1)+(180000/150000-1))/2*100",
+    "explain": "NPV profiles do not cross at the average of the IRRs; the crossover is the IRR of the difference."
+   },
+   {
+    "id": "crossover-added",
+    "label": "Added the flows (L + S) instead of subtracting",
+    "value": 21.6216,
+    "check": "((180000+45000)/(150000+35000)-1)*100",
+    "explain": "Adding the flows gives the IRR of a combined project, not of the incremental one."
+   }
+  ],
+  "explanation": "The crossover rate is the IRR of the incremental flows. For a one-year pair of projects it reduces to incremental payoff over incremental outlay, minus one.",
+  "source": "generated",
+  "ref": "SM 9-12, 9-13; L05A s34"
+ },
+ {
+  "id": "q09-454",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Cider Works compares mutually exclusive Project A (−$50,000; +$38,000, +$25,000, +$8,000) with Project B (−$50,000; +$9,000, +$18,000, +$53,000). The incremental flows A − B are 0, +$29,000, +$7,000 and −$45,000 in years 0 to 3. What is the NPV of A − B at R = 11% per annum?",
+  "answer": -1096.13,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "29000/1.11+7000/1.11**2-45000/1.11**3",
+  "steps": [
+   {
+    "label": "PV of the year-1 difference",
+    "value": 26126.13,
+    "check": "29000/1.11",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of the year-2 difference",
+    "value": 5681.36,
+    "check": "7000/1.11**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of the year-3 difference",
+    "value": -32903.61,
+    "check": "-45000/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of (A − B) at 11%",
+    "value": -1096.13,
+    "check": "29000/1.11+7000/1.11**2-45000/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PV year 1 = 29,000/1.11 = 26,126.13",
+   "PV year 2 = 7,000/1.11² = 5,681.36",
+   "PV year 3 = −45,000/1.11³ = −32,903.61",
+   "NPV(A − B) = 0 + 26,126.13 + 5,681.36 − 32,903.61 = −$1,096.13 (unrounded arithmetic)",
+   "A negative NPV for A − B means NPV(A) < NPV(B): at 11% (below the 13.08% crossover) B is the better project."
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 29000, C02 = 7000, C03 = −45000, NPV, I = 11, CPT → −1,096.13"
+  ],
+  "errors": [
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Computed B − A instead of A − B",
+    "value": 1096.13,
+    "check": "-(29000/1.11+7000/1.11**2-45000/1.11**3)",
+    "explain": "The question asks for A − B; reversing it flips the sign (although the decision is the same)."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Treated the year-0 difference as a period-1 flow",
+    "value": -987.5,
+    "check": "(29000/1.11+7000/1.11**2-45000/1.11**3)/1.11",
+    "explain": "The first difference is at time 0 (here it is zero); every flow was pushed out a year in this error."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the differences without discounting",
+    "value": -9000.0,
+    "check": "0+29000+7000-45000",
+    "explain": "At R = 11% each difference must be discounted before adding."
+   }
+  ],
+  "explanation": "NPV of the difference equals NPV(A) − NPV(B). Its sign tells you which project is better at that rate, and it crosses zero at the crossover rate.",
+  "source": "generated",
+  "ref": "SM 9-12; L05A s34"
+ },
+ {
+  "id": "q09-455",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Fraser Valley Berry Co. compares Plan E (−$60,000; +$39,000, +$31,000, +$11,000) with Plan L (−$60,000; +$5,000, +$28,000, +$58,000). The IRRs are 20.50% for E and 17.72% for L. What is the crossover rate?",
+  "options": [
+   "20.50%",
+   "17.72%",
+   "13.24%",
+   "19.11%"
+  ],
+  "answer": 2,
+  "explanation": "The incremental flows E − L are 0, +34,000, +3,000, −47,000, and their IRR is 13.2445%. Check: NPV of the difference at 13.244485% = $0.0000, i.e. zero to the cent. 20.50% and 17.72% are the projects' own IRRs, and 19.11% is the average of the two IRRs, which has no special meaning.",
+  "source": "generated",
+  "ref": "SM 9-12"
+ },
+ {
+  "id": "q09-456",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Cider Works compares mutually exclusive Project A (−$50,000; +$38,000, +$25,000, +$8,000) with Project B (−$50,000; +$9,000, +$18,000, +$53,000). The IRRs are 25.84% for A and 20.65% for B. What is the crossover rate?",
+  "options": [
+   "22.63%",
+   "13.08%",
+   "23.25%",
+   "25.84%"
+  ],
+  "answer": 1,
+  "explanation": "The incremental flows A − B are 0, +29,000, +7,000, −45,000, and their IRR is 13.0825%. Check: NPV of the difference at 13.082548% = $0.0001, i.e. zero to the cent. The wrong answers are the IRR of A + B (22.63%, adding instead of subtracting), the average of the IRRs (23.25%), and A's own IRR (25.84%).",
+  "source": "generated",
+  "ref": "SM 9-12"
+ },
+ {
+  "id": "q09-457",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Wind Farms Ltd. compares Project S (−$30,000; +$14,000 in years 1 to 3; IRR 18.91%) with Project L (−$110,000; +$46,000 in years 1 to 3; IRR 12.26%). What is the crossover rate?",
+  "options": [
+   "15.58%",
+   "13.70%",
+   "12.26%",
+   "9.70%"
+  ],
+  "answer": 3,
+  "explanation": "The incremental flows L − S are −80,000, +32,000, +32,000, +32,000, an annuity whose IRR is 9.7010% (annuity factor 2.5). Check: NPV of the difference at 9.701026% = −$0.0004, i.e. zero to the cent. 15.58% is the average of the IRRs, 13.70% the IRR of L + S, and 12.26% L's own IRR.",
+  "source": "generated",
+  "ref": "SM 9-12"
+ },
+ {
+  "id": "q09-458",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Two conventional projects have NPV profiles that cross once at a positive rate. Project X has the higher NPV at low discount rates, and Project Y has the higher NPV at high discount rates. Which statement about their IRRs and cash-flow timing is typical?",
+  "options": [
+   "X has the lower IRR and its cash flows come later or are larger overall",
+   "X has the higher IRR and its cash flows come sooner",
+   "X and Y must have the same IRR",
+   "X has the lower IRR because its cash flows are smaller overall"
+  ],
+  "answer": 0,
+  "explanation": "Back-loaded or larger cash flows make a steeper NPV profile: the project is worth more at low R but loses value faster as R rises, so it ends up with the lower IRR. The project that wins at high R has the flatter profile and the higher IRR.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-459",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following statements about the crossover rate is NOT correct?",
+  "options": [
+   "It is the IRR of the difference between the two projects' cash flows",
+   "It equals the average of the two projects' IRRs",
+   "At that discount rate the two projects have the same NPV",
+   "Below it and above it, the ranking of the two projects by NPV is reversed"
+  ],
+  "answer": 1,
+  "explanation": "The crossover has to be found from the incremental cash flows; there is no shortcut through the two IRRs. The other three statements describe it correctly (for profiles that cross once).",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-460",
+  "concept": "c09-crossover",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "The NPVs of two mutually exclusive projects (F and G) are computed at several rates. At 10%: F $9,339, G $11,262. At 12%: F $7,364, G $8,069. At 14%: F $5,489, G $5,079. At 16%: F $3,706, G $2,277. Between which two rates does the crossover lie?",
+  "options": [
+   "Between 10% and 12%",
+   "Between 12% and 14%",
+   "Between 14% and 16%",
+   "Below 10%, because G leads at 10%"
+  ],
+  "answer": 1,
+  "explanation": "The crossover is where the NPV gap changes sign. G is ahead at 10% and 12% (gaps +1,923 and +705) and F is ahead at 14% (gap −409), so the sign change, and therefore the crossover, lies between 12% and 14% (the exact rate is 13.24%).",
+  "source": "generated",
+  "ref": "TB 9.5"
+ },
+ {
+  "id": "q09-461",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "For mutually exclusive Projects S and L, the IRR of the incremental flows (L − S) is 9.70%. Project L is larger. The firm's required return is 8%. What should the firm do?",
+  "options": [
+   "Take S: the incremental IRR is below the IRRs of both projects",
+   "Take S: its own IRR is higher than the incremental IRR",
+   "Take both, because the incremental IRR is positive",
+   "Take L: the incremental IRR of 9.70% exceeds the required return of 8%"
+  ],
+  "answer": 3,
+  "explanation": "The incremental project L − S earns 9.70% on the extra money invested in L. If that exceeds R, the extra investment is worthwhile and L is better; if R were above 9.70%, S would be better. Comparing the incremental IRR with the individual IRRs is not the test.",
+  "source": "generated",
+  "ref": "L05A s34"
+ },
+ {
+  "id": "q09-462",
+  "concept": "c09-crossover",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Project X costs $50,000 and returns $30,000 in each of years 1 and 2. Project Y also costs $50,000 and returns $25,000 in each of years 1 and 2. The firm must pick one. What can be said about a crossover rate?",
+  "options": [
+   "There is none at a positive rate: X beats Y at every discount rate",
+   "The crossover is at the IRR of X because X has the larger flows",
+   "The crossover is the average of the two IRRs",
+   "The crossover is at 0% because the outlays are equal"
+  ],
+  "answer": 0,
+  "explanation": "The incremental flows X − Y are 0, +5,000, +5,000: all non-negative, so they have no IRR. X dominates Y: it is better in every year and NPV(X) > NPV(Y) at every R, so there is no ranking conflict.",
+  "source": "generated",
+  "ref": "TB 9.5"
+ }
+]

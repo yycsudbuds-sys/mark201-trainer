@@ -1,0 +1,1268 @@
+[
+ {
+  "id": "q10-401",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [
+   "c10-pool-open-closed"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Foothills Machining sells the last lathe in its Class 8 pool for $9,000. The lathe's UCC at the time of sale is $14,000 and it originally cost $30,000. How does the tax system treat the $5,000 shortfall of proceeds below UCC?",
+  "options": [
+   "Recapture of CCA, taxed at the full corporate rate",
+   "A terminal loss, fully deductible against other income",
+   "A capital loss, only half of which is deductible",
+   "A capital gain, only half of which is taxable"
+  ],
+  "answer": 1,
+  "explanation": "Proceeds ($9,000) are below UCC ($14,000) and the class closes, so the $5,000 difference is a terminal loss. It is deducted in full at T, which creates a tax refund. Depreciable property gets no capital loss treatment, which is why the half-deduction option fails.",
+  "source": "generated",
+  "ref": "L05B s19-21"
+ },
+ {
+  "id": "q10-402",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Bow River Marine sells its only dredge for $41,000. The dredge cost $60,000 and its UCC is $23,000. Which description of the tax result is correct?",
+  "options": [
+   "A capital gain of $18,000, only half of which is taxable",
+   "A terminal loss of $19,000 (ACB less POD)",
+   "No tax effect, because the proceeds are below the original cost",
+   "Recapture of CCA of $18,000, taxed at the full rate"
+  ],
+  "answer": 3,
+  "explanation": "POD ($41,000) lies between UCC ($23,000) and ACB ($60,000), so the whole excess over UCC is recapture: 41,000 - 23,000 = $18,000, taxed at the full rate. A capital gain needs POD above ACB; the Australian-style 'gain over book value' rule is not the Canadian one.",
+  "source": "generated",
+  "ref": "L05B s19-20"
+ },
+ {
+  "id": "q10-403",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The part of the proceeds that lies between UCC and ACB is taxed at the full corporate rate as _____.",
+  "options": [
+   "recapture of CCA",
+   "a capital gain",
+   "a terminal loss",
+   "a CCA tax shield"
+  ],
+  "answer": 0,
+  "explanation": "Proceeds above UCC (up to the original cost, ACB) simply take back CCA that was claimed too generously, so it is recapture and is fully taxed. Only proceeds above ACB are a capital gain, and only half of that gain is taxed.",
+  "source": "generated",
+  "ref": "L05B s19"
+ },
+ {
+  "id": "q10-404",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [
+   "c10-pool-open-closed"
+  ],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "A terminal loss can arise only when the sale of the asset leaves no assets in its CCA class.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "While other assets remain in the class the pool stays open: the proceeds just reduce UCC and CCA carries on, so there is no immediate recapture or terminal loss. Only when the last asset is sold does the class close and the difference between POD and UCC hit the tax return.",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-405",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts recapture of CCA with a terminal loss on the sale of the last asset in a class?",
+  "options": [
+   "Recapture happens when POD is below UCC and adds tax; a terminal loss happens when POD is above UCC and saves tax",
+   "Recapture is taxed at half the corporate rate; a terminal loss is deducted at the full rate",
+   "Recapture happens when POD is above UCC and adds tax; a terminal loss happens when POD is below UCC and saves tax",
+   "Recapture happens when POD is above ACB; a terminal loss happens when POD is below ACB"
+  ],
+  "answer": 2,
+  "explanation": "Both are measured against UCC. POD above UCC (to a maximum of ACB) means too much CCA was claimed and the excess is recaptured and taxed at T. POD below UCC means too little was claimed and the shortfall is a terminal loss that reduces tax by T times the loss. ACB only matters for the capital gain.",
+  "source": "generated",
+  "ref": "L05B s19"
+ },
+ {
+  "id": "q10-406",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about a terminal loss is NOT correct?",
+  "options": [
+   "It is the amount by which UCC exceeds POD when the class closes",
+   "The tax saving equals T times the terminal loss",
+   "Only 50% of the terminal loss can be deducted",
+   "The after-tax cash from the sale is larger than the proceeds of disposition"
+  ],
+  "answer": 2,
+  "explanation": "The 50% inclusion rate applies to capital gains, not to CCA recapture or a terminal loss; a terminal loss is deducted in full. The other three statements are all true: CF_AT = POD + T(UCC - POD) exceeds POD.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-407",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the tax system collect tax on recapture even though the firm sold the asset for less than it originally paid?",
+  "options": [
+   "UCC fell below the sale price, so the CCA deductions already claimed turned out to be larger than the real loss in value",
+   "Sale proceeds are always taxed in full whenever a depreciable asset is sold",
+   "Recapture replaces the capital gains tax that would otherwise apply to the sale price",
+   "The firm must repay the CCA tax shield with interest, whatever the sale price"
+  ],
+  "answer": 0,
+  "explanation": "CCA is a prepayment of the deduction for the expected loss of value. If the asset sells for more than UCC, the firm over-deducted by POD - UCC, and recapture claws that back at the full rate T. Selling below cost does not change this: recapture is measured against UCC, not against cost.",
+  "source": "generated",
+  "ref": "L05B s19-20"
+ },
+ {
+  "id": "q10-408",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [
+   "c10-capital-gain-cfat"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "In a disposal, a student finds that min(ACB, POD) - UCC = -$6,000, with T = 30%. What does this tell the firm?",
+  "options": [
+   "There is recapture of $6,000, costing $1,800 of tax",
+   "There is a capital gain of $6,000, of which $3,000 is taxable",
+   "The sale has no tax effect because the bracket is negative",
+   "There is a terminal loss of $6,000, giving a $1,800 tax refund on top of the sale proceeds"
+  ],
+  "answer": 3,
+  "explanation": "A negative bracket means POD is below UCC, i.e. a terminal loss. In CF_AT = POD - T(-6,000) the minus sign turns into a refund: the firm collects POD plus $1,800.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-409",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [
+   "c10-capital-gain-cfat"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In CF_AT = POD - T[min(ACB, POD) - UCC] - 0.5T max(POD - ACB, 0), why is ACB capped inside the first bracket?",
+  "options": [
+   "Because a sale price above ACB is never taxed",
+   "Recapture cannot exceed the CCA actually claimed (ACB - UCC); proceeds above ACB are a capital gain taxed separately",
+   "Because ACB is the value of the asset at which the pool closes",
+   "Because the half-year rule limits recapture to 50% of ACB"
+  ],
+  "answer": 1,
+  "explanation": "Total CCA claimed is ACB - UCC, so the most that can be recaptured is that amount. Any proceeds above ACB are a true capital gain, picked up by the last term at the 50% inclusion rate.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-410",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "Prairie Pallet Co. sells its last wrapping machine for exactly its UCC. What are the tax consequences of the disposal?",
+  "options": [
+   "A terminal loss equal to the proceeds",
+   "Recapture equal to the original cost",
+   "A capital gain equal to the proceeds less the original cost",
+   "None: there is no recapture and no terminal loss, so after-tax cash equals the proceeds"
+  ],
+  "answer": 3,
+  "explanation": "Recapture and terminal loss both equal the gap between POD and UCC. With POD = UCC the gap is zero, so CF_AT = POD.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-411",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [
+   "c10-capital-gain-cfat"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Fruit Packers closes its Class 8 pool by selling the last packing line for $62,000. The line cost $130,000 and its UCC is $84,500. The tax rate is 30%. What is the after-tax cash flow from the sale?",
+  "options": [
+   "$43,400.00",
+   "$55,250.00",
+   "$62,000.00",
+   "$68,750.00",
+   "$82,400.00"
+  ],
+  "answer": 3,
+  "explanation": "Terminal loss = UCC - POD = 84,500 - 62,000 = 22,500, so the refund is 0.30 x 22,500 = 6,750 and CF_AT = 62,000 + 6,750 = $68,750. Subtracting the refund gives $55,250 (sign error); taxing the whole POD gives $43,400; and using POD - ACB as the base gives $82,400.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-412",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Ridge Printing closes a CCA class by selling its last press for $19,500. The press cost $26,000 and has a UCC of $7,200. The tax rate is 35%. What is the after-tax cash flow from the sale?",
+  "options": [
+   "$12,675.00",
+   "$12,920.00",
+   "$15,195.00",
+   "$19,500.00",
+   "$21,775.00"
+  ],
+  "answer": 2,
+  "explanation": "Recapture = POD - UCC = 19,500 - 7,200 = 12,300 (POD is below ACB, so there is no capital gain). Tax = 0.35 x 12,300 = 4,305 and CF_AT = 19,500 - 4,305 = $15,195. Taxing the whole $19,500 gives $12,675, and using ACB - UCC as the base gives $12,920.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-413",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Lakeshore Dairy bought a bottling line for $50,000, claimed CCA on it for years, and then sold it as the last asset in its class for $20,000. The tax rate is 40%. Counting every CCA tax shield and the tax effect of the sale, how much tax did the line save in total?",
+  "options": [
+   "$8,000.00",
+   "$12,000.00",
+   "$20,000.00",
+   "$28,000.00",
+   "$30,000.00"
+  ],
+  "answer": 1,
+  "explanation": "Whatever the CCA schedule, the lifetime deductions equal cost less proceeds once recapture or terminal loss settles the account: total tax saved = T x (cost - proceeds) = 0.40 x 30,000 = $12,000. Using T x cost ($20,000) ignores the sale; using T x POD ($8,000) measures the wrong thing.",
+  "source": "generated",
+  "ref": "L05B s25"
+ },
+ {
+  "id": "q10-414",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cascade Tooling bought a $85,000 machine (CCA rate 30%, half-year rule applies in year 1). It sells the machine, its last asset in the class, for $31,000 at the end of year 3, after claiming year 3 CCA. The tax rate is 40%. What after-tax cash flow does the sale produce?",
+  "answer": 32761.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "31000+0.4*(85000*(1-0.5*0.3)*(1-0.3)**2-31000)",
+  "steps": [
+   {
+    "label": "UCC after year 1 CCA",
+    "value": 72250.0,
+    "check": "85000*(1-0.5*0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 2 CCA",
+    "value": 50575.0,
+    "check": "85000*(1-0.5*0.3)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 3 CCA",
+    "value": 35402.5,
+    "check": "85000*(1-0.5*0.3)*(1-0.3)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Terminal loss = UCC - POD",
+    "value": 4402.5,
+    "check": "85000*(1-0.5*0.3)*(1-0.3)**2-31000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax refund = T x terminal loss",
+    "value": 1761.0,
+    "check": "0.4*(85000*(1-0.5*0.3)*(1-0.3)**2-31000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax cash flow CF_AT",
+    "value": 32761.0,
+    "check": "31000+0.4*(85000*(1-0.5*0.3)*(1-0.3)**2-31000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Year 1 CCA = 0.5 x 0.30 x 85,000 = 12,750, so UCC1 = 72,250",
+   "UCC2 = 72,250 x 0.70 = 50,575; UCC3 = 50,575 x 0.70 = 35,402.50",
+   "POD = 31,000 < UCC = 35,402.50, so terminal loss = 4,402.50",
+   "Refund = 0.40 x 4,402.50 = 1,761.00",
+   "CF_AT = 31,000 + 1,761 = $32,761.00"
+  ],
+  "keystrokes": [
+   "85000 x (1 - 0.15) = 72250",
+   "x 0.7 = 50575",
+   "x 0.7 = 35402.5",
+   "- 31000 = 4402.5",
+   "x 0.4 = 1761",
+   "+ 31000 = 32761"
+  ],
+  "errors": [
+   {
+    "id": "terminal-loss-sign",
+    "label": "Subtracted the refund",
+    "value": 29239.0,
+    "check": "31000-0.4*(85000*(1-0.5*0.3)*(1-0.3)**2-31000)",
+    "explain": "A terminal loss saves tax: the refund is added to the proceeds, not subtracted."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole sale price",
+    "value": 18600.0,
+    "check": "31000*(1-0.4)",
+    "explain": "Tax applies to the gap between POD and UCC, not to the whole proceeds."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Ignored the half-year rule in year 1",
+    "value": 30262.0,
+    "check": "31000-0.4*(31000-85000*(1-0.3)**3)",
+    "explain": "Year 1 CCA is only half the normal amount, so UCC is higher than 85,000 x 0.7^3; without it the sale looks like a small recapture instead of a loss."
+   }
+  ],
+  "explanation": "Build the UCC from the half-year schedule, compare it with the proceeds, and add the refund because POD is below UCC.",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s7, s21"
+ },
+ {
+  "id": "q10-415",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Niagara Glassworks buys a $120,000 furnace (CCA rate 20%) under the Accelerated Investment Incentive (1.5 x d in year 1). It sells the furnace, the last asset in the class, for $90,000 at the end of year 2 after claiming year 2 CCA. T = 38%. Find the after-tax cash flow from the sale.",
+  "answer": 81336.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "90000-0.38*(90000-120000*(1-1.5*0.2)*(1-0.2))",
+  "steps": [
+   {
+    "label": "UCC after year 1",
+    "value": 84000.0,
+    "check": "120000*(1-1.5*0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 2",
+    "value": 67200.0,
+    "check": "120000*(1-1.5*0.2)*(1-0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Recapture = POD - UCC",
+    "value": 22800.0,
+    "check": "90000-120000*(1-1.5*0.2)*(1-0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on recapture",
+    "value": 8664.0,
+    "check": "0.38*(90000-120000*(1-1.5*0.2)*(1-0.2))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax cash flow",
+    "value": 81336.0,
+    "check": "90000-0.38*(90000-120000*(1-1.5*0.2)*(1-0.2))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Year 1 CCA = 1.5 x 0.20 x 120,000 = 36,000, so UCC1 = 84,000",
+   "UCC2 = 84,000 x 0.80 = 67,200",
+   "POD 90,000 is above UCC 67,200 but below ACB 120,000: recapture = 22,800, no capital gain",
+   "Tax = 0.38 x 22,800 = 8,664",
+   "CF_AT = 90,000 - 8,664 = $81,336.00"
+  ],
+  "keystrokes": [
+   "120000 x (1 - 0.3) = 84000",
+   "x 0.8 = 67200",
+   "90000 - 67200 = 22800",
+   "x 0.38 = 8664",
+   "90000 - 8664 = 81336"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year rule instead of AII",
+    "value": 88632.0,
+    "check": "90000-0.38*(90000-120000*0.9*0.8)",
+    "explain": "Under AII the first-year CCA is 1.5 x d x I0, not 0.5 x d x I0; the wrong factor leaves UCC too high."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Used POD - ACB as the base",
+    "value": 101400.0,
+    "check": "90000-0.38*(90000-120000)",
+    "explain": "The recapture base is POD - UCC (capped at ACB - UCC); POD - ACB is the capital-gain test and here it is negative."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole sale price",
+    "value": 55800.0,
+    "check": "90000*(1-0.38)",
+    "explain": "Only the excess over UCC is taxed, not the whole proceeds."
+   }
+  ],
+  "explanation": "UCC after two AII years is 67,200, below the $90,000 price, so the sale creates $22,800 of recapture (and no capital gain because POD is below ACB).",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s8, s21"
+ },
+ {
+  "id": "q10-416",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Red Deer Crane Services sells a crane for $143,000. The crane's original cost was $410,000 and its undepreciated capital cost is $96,420. It is the last asset in its class and T = 28%. What is the after-tax cash flow from the sale?",
+  "answer": 129957.6,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "143000-0.28*(143000-96420)",
+  "steps": [
+   {
+    "label": "Recapture = POD - UCC",
+    "value": 46580.0,
+    "check": "143000-96420",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on recapture",
+    "value": 13042.4,
+    "check": "0.28*(143000-96420)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CF_AT",
+    "value": 129957.6,
+    "check": "143000-0.28*(143000-96420)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "POD 143,000 is above UCC 96,420 and below ACB 410,000: recapture = 46,580",
+   "Tax = 0.28 x 46,580 = 13,042.40",
+   "CF_AT = 143,000 - 13,042.40 = $129,957.60"
+  ],
+  "keystrokes": [
+   "143000 - 96420 = 46580",
+   "x 0.28 = 13042.4",
+   "143000 - 13042.4 = 129957.6"
+  ],
+  "errors": [
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole sale price",
+    "value": 102960.0,
+    "check": "143000*(1-0.28)",
+    "explain": "Tax is only on POD - UCC."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Used POD - ACB as the base",
+    "value": 217760.0,
+    "check": "143000-0.28*(143000-410000)",
+    "explain": "POD - ACB is negative here; it is not the recapture amount."
+   },
+   {
+    "id": "ignored-sale-tax",
+    "label": "Ignored the recapture tax",
+    "value": 143000.0,
+    "check": "143000",
+    "explain": "The sale price is above UCC, so CCA is clawed back at the full rate."
+   }
+  ],
+  "explanation": "One case only: POD between UCC and ACB means recapture of POD - UCC at the full rate and nothing else.",
+  "source": "generated",
+  "ref": "PRAC q11c, L05B s21"
+ },
+ {
+  "id": "q10-417",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Fraser Valley Packaging buys a $40,000 machine (CCA rate 25%, half-year rule) and sells it for $12,000 at the end of year 3 after claiming year 3 CCA; the class then closes. T = 40%. Find the total tax saved: the three CCA tax shields plus the tax effect of the sale.",
+  "answer": 11200.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.4*(0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25))+0.4*(40000*(1-0.5*0.25)*(1-0.25)**2-12000)",
+  "steps": [
+   {
+    "label": "CCA years 1 to 3 in total",
+    "value": 20312.5,
+    "check": "0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 3",
+    "value": 19687.5,
+    "check": "40000*(1-0.5*0.25)*(1-0.25)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax shields from CCA",
+    "value": 8125.0,
+    "check": "0.4*(0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Terminal-loss refund",
+    "value": 3075.0,
+    "check": "0.4*(40000*(1-0.5*0.25)*(1-0.25)**2-12000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total tax saved",
+    "value": 11200.0,
+    "check": "0.4*(0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25))+0.4*(40000*(1-0.5*0.25)*(1-0.25)**2-12000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CCA1 = 0.5 x 0.25 x 40,000 = 5,000 (UCC1 = 35,000); CCA2 = 8,750 (UCC2 = 26,250); CCA3 = 6,562.50 (UCC3 = 19,687.50)",
+   "Tax shields = 0.40 x (5,000 + 8,750 + 6,562.50) = 8,125.00",
+   "Terminal loss = 19,687.50 - 12,000 = 7,687.50; refund = 0.40 x 7,687.50 = 3,075.00",
+   "Total = 8,125 + 3,075 = $11,200.00",
+   "Cross-check: T x (cost - proceeds) = 0.40 x (40,000 - 12,000) = 11,200"
+  ],
+  "keystrokes": [
+   "Shields: 0.4 x 20312.5 = 8125",
+   "Refund: 0.4 x (19687.5 - 12000) = 3075",
+   "Total = 11200",
+   "Check: 0.4 x 28000 = 11200"
+  ],
+  "errors": [
+   {
+    "id": "forgot-terminal-loss",
+    "label": "Counted only the three CCA shields",
+    "value": 8125.0,
+    "check": "0.4*(0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25))",
+    "explain": "The sale closes the class and produces a refund on the terminal loss; that refund is part of the total tax saved."
+   },
+   {
+    "id": "terminal-loss-sign",
+    "label": "Subtracted the refund",
+    "value": 5050.0,
+    "check": "0.4*(0.5*0.25*40000+0.25*(40000-0.5*0.25*40000)+0.25*(40000-0.5*0.25*40000)*(1-0.25))-0.4*(40000*(1-0.5*0.25)*(1-0.25)**2-12000)",
+    "explain": "A terminal loss reduces taxes, so it adds to the tax saved."
+   },
+   {
+    "id": "ignored-sale-proceeds",
+    "label": "Applied T to the full cost",
+    "value": 16000.0,
+    "check": "0.4*40000",
+    "explain": "The asset is sold for $12,000, so only cost less proceeds is ever deducted: T x (40,000 - 12,000)."
+   }
+  ],
+  "explanation": "The cross-check T x (cost - proceeds) is a quick way to catch errors in a long schedule.",
+  "source": "generated",
+  "ref": "L05B s25"
+ },
+ {
+  "id": "q10-418",
+  "concept": "c10-recapture-terminal-loss",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Athabasca Freight buys a $64,000 trailer (CCA rate 20%, half-year rule). It plans to sell it for $21,000 at the end of year 4, after claiming year 4 CCA, closing the class. T = 30% and the discount rate is 9% per annum. What is the present value today of the after-tax cash flow from the sale?",
+  "answer": 16681.54,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(21000+0.3*(64000*(1-0.5*0.2)*(1-0.2)**3-21000))/1.09**4",
+  "steps": [
+   {
+    "label": "UCC after year 4",
+    "value": 29491.2,
+    "check": "64000*(1-0.5*0.2)*(1-0.2)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Terminal loss",
+    "value": 8491.2,
+    "check": "64000*(1-0.5*0.2)*(1-0.2)**3-21000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax cash flow in year 4",
+    "value": 23547.36,
+    "check": "21000+0.3*(64000*(1-0.5*0.2)*(1-0.2)**3-21000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Present value at 9%",
+    "value": 16681.54,
+    "check": "(21000+0.3*(64000*(1-0.5*0.2)*(1-0.2)**3-21000))/1.09**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "UCC1 = 64,000 x 0.90 = 57,600; then x 0.80 three times: UCC4 = 29,491.20",
+   "POD 21,000 < UCC: terminal loss = 8,491.20, refund = 0.30 x 8,491.20 = 2,547.36",
+   "CF_AT in year 4 = 21,000 + 2,547.36 = 23,547.36",
+   "PV = 23,547.36 / 1.09^4 = $16,681.54"
+  ],
+  "keystrokes": [
+   "64000 x 0.9 = 57600",
+   "x 0.8 x 0.8 x 0.8 = 29491.2",
+   "29491.2 - 21000 = 8491.2",
+   "x 0.3 + 21000 = 23547.36",
+   "N = 4, I/Y = 9, FV = 23547.36, CPT PV"
+  ],
+  "errors": [
+   {
+    "id": "salvage-not-discounted",
+    "label": "Left the year-4 cash flow undiscounted",
+    "value": 23547.36,
+    "check": "21000+0.3*(64000*(1-0.5*0.2)*(1-0.2)**3-21000)",
+    "explain": "The sale happens at the end of year 4; bring it back four years at 9%."
+   },
+   {
+    "id": "terminal-loss-sign",
+    "label": "Subtracted the refund before discounting",
+    "value": 13072.32,
+    "check": "(21000-0.3*(64000*(1-0.5*0.2)*(1-0.2)**3-21000))/1.09**4",
+    "explain": "UCC is above POD, so the refund is added."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Skipped the half-year rule",
+    "value": 15985.13,
+    "check": "(21000+0.3*(64000*(1-0.2)**4-21000))/1.09**4",
+    "explain": "Without the half-year rule UCC after four years is too low (26,214.40) and the refund too small."
+   }
+  ],
+  "explanation": "A terminal loss on a future sale: compute UCC from the schedule, add the refund to the price, then discount.",
+  "source": "generated",
+  "ref": "L05B s21-22, SM 10-11"
+ },
+ {
+  "id": "q10-421",
+  "concept": "c10-capital-gain-cfat",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Prairie Barge Ltd. sells its last barge in the class for $520,000. The barge cost $400,000 and its UCC is $150,000. What taxable items does the sale create?",
+  "options": [
+   "Recapture of CCA of $370,000 and no capital gain",
+   "Recapture of CCA of $250,000 and a capital gain of $120,000, of which half is taxable",
+   "A capital gain of $370,000, of which half is taxable",
+   "Recapture of CCA of $250,000 only, because the rest is a return of cost"
+  ],
+  "answer": 1,
+  "explanation": "ACB ($400,000) minus UCC ($150,000) = $250,000 is recapture of all the CCA claimed. The $120,000 above ACB is a real gain, and only 50% of it is added to income. Putting the whole excess over UCC into recapture ignores the ACB cap.",
+  "source": "generated",
+  "ref": "L05B s19-21"
+ },
+ {
+  "id": "q10-422",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Three sales each close their CCA class. (i) POD $55,000, UCC $62,000, ACB $90,000. (ii) POD $80,000, UCC $30,000, ACB $90,000. (iii) POD $120,000, UCC $30,000, ACB $90,000. Which sale creates a capital gain?",
+  "options": [
+   "Only (ii)",
+   "(ii) and (iii)",
+   "Only (iii)",
+   "(i) and (iii)"
+  ],
+  "answer": 2,
+  "explanation": "A capital gain requires POD above ACB. Sale (i) has a terminal loss, (ii) has recapture of $50,000 and no gain, and only (iii) exceeds its ACB, giving $30,000 of capital gain plus $60,000 of recapture.",
+  "source": "generated",
+  "ref": "L05B s19"
+ },
+ {
+  "id": "q10-423",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "On the sale of depreciable property above its original cost, only 50% of the capital gain is included in taxable income.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The course formula carries 0.5 x T x max(POD - ACB, 0): half of the capital gain is taxed at T, so the effective rate on the gain is T/2. The recapture part, by contrast, is taxed in full.",
+  "source": "generated",
+  "ref": "L05B s21, FS p2"
+ },
+ {
+  "id": "q10-424",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The capital gain on the sale of a depreciable asset is the proceeds of disposition minus the _____.",
+  "options": [
+   "ACB (original cost plus acquisition expenses)",
+   "UCC",
+   "salvage value",
+   "present value of the CCA shield"
+  ],
+  "answer": 0,
+  "explanation": "Capital gain = POD - ACB, and only when this is positive. Gaps between UCC and ACB are recapture, not gain. Note that the Australian rule in the lecture measures gain against book value instead; for Canada the benchmark is ACB.",
+  "source": "generated",
+  "ref": "L05B s19-20"
+ },
+ {
+  "id": "q10-425",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "At a 30% tax rate, how is $1 of recapture of CCA taxed compared with $1 of capital gain on the same sale?",
+  "options": [
+   "Recapture costs 15 cents of tax; the capital gain costs 30 cents",
+   "Recapture costs 30 cents of tax; the capital gain costs 15 cents",
+   "Both cost 30 cents of tax",
+   "Both cost 15 cents because only half of any sale gain is taxable"
+  ],
+  "answer": 1,
+  "explanation": "Recapture takes back CCA that was deducted at the full rate, so it is taxed in full: T x $1. A capital gain is only 50% included: 0.5 x T x $1. The inclusion rate never applies to recapture.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-426",
+  "concept": "c10-capital-gain-cfat",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "A firm closes a CCA class and sells its last asset for more than its original cost. Which item is NOT part of the after-tax cash flow in that case?",
+  "options": [
+   "The proceeds of disposition",
+   "Tax at the full rate on ACB minus UCC",
+   "Tax at half the rate on the proceeds above ACB",
+   "A terminal-loss refund"
+  ],
+  "answer": 3,
+  "explanation": "With POD above ACB, the cash flow is POD - T(ACB - UCC) - 0.5T(POD - ACB). A terminal loss needs POD below UCC, which cannot be true when POD exceeds ACB.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-427",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the extra tax on proceeds above ACB lower per dollar than the tax on the recapture below it?",
+  "options": [
+   "Only half of a capital gain is added to taxable income, while recapture reverses deductions that were claimed in full",
+   "Capital gains are taxed in a separate lower tax bracket for corporations",
+   "Proceeds above ACB are not income because the asset has already been paid for",
+   "Recapture is taxed twice: once as income and once when the cash is distributed"
+  ],
+  "answer": 0,
+  "explanation": "CCA deductions saved tax at the full rate T, so recapture reverses them at T. A gain above cost is a capital gain and the tax system includes only 50% of it, an effective rate of T/2.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-428",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In CF_AT = POD - T[min(ACB, POD) - UCC] - 0.5T max(POD - ACB, 0), what is the value of the last term when POD is below ACB?",
+  "options": [
+   "Negative, giving a tax refund on the shortfall below ACB",
+   "0.5T x (ACB - POD), a capital loss deduction",
+   "Zero, because max(POD - ACB, 0) = 0",
+   "T x (POD - UCC), because the bracket switches to UCC"
+  ],
+  "answer": 2,
+  "explanation": "max(POD - ACB, 0) is zero for any sale at or below ACB, so no capital gain is taxed. Below ACB the only tax effect is the first bracket, which is recapture if POD > UCC or a terminal loss if POD < UCC.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-429",
+  "concept": "c10-capital-gain-cfat",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Okotoks Stone Works sells its only quarry loader for $92,500. The loader cost $75,000 and has a UCC of $21,300. Which tax items must be computed?",
+  "options": [
+   "Recapture of $71,200 and no capital gain",
+   "A capital gain of $71,200 only",
+   "Recapture of $53,700 and a capital gain of $17,500",
+   "Recapture of $17,500 and a capital gain of $53,700"
+  ],
+  "answer": 2,
+  "explanation": "Recapture = ACB - UCC = 75,000 - 21,300 = $53,700 because POD is above ACB. Capital gain = POD - ACB = 92,500 - 75,000 = $17,500, of which half is taxed. The recapture is not POD - UCC once POD exceeds ACB.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-430",
+  "concept": "c10-capital-gain-cfat",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Barge Ltd. sells its last barge for $520,000 (cost $400,000, UCC $150,000, tax rate 30%). What is the after-tax cash flow from the sale?",
+  "options": [
+   "$364,000.00",
+   "$391,000.00",
+   "$409,000.00",
+   "$427,000.00",
+   "$502,000.00"
+  ],
+  "answer": 3,
+  "explanation": "Recapture = 400,000 - 150,000 = 250,000 (tax 75,000); capital gain = 520,000 - 400,000 = 120,000, half taxed (tax 18,000). CF_AT = 520,000 - 75,000 - 18,000 = $427,000. Taxing the gain in full gives $409,000; taxing the whole price gives $364,000; counting POD - UCC as recapture and also taxing the gain double counts ($391,000); skipping recapture gives $502,000.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-431",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okotoks Stone Works closes its class by selling a loader for $92,500 (cost $75,000, UCC $21,300, tax rate 35%). What is the after-tax cash flow from the sale?",
+  "options": [
+   "$60,125.00",
+   "$64,517.50",
+   "$67,580.00",
+   "$70,642.50",
+   "$89,437.50"
+  ],
+  "answer": 3,
+  "explanation": "Recapture 53,700 x 0.35 = 18,795; capital gain 17,500 x 0.5 x 0.35 = 3,062.50. CF_AT = 92,500 - 18,795 - 3,062.50 = $70,642.50. Taxing the gain at the full rate gives $67,580; taxing the whole sale price gives $60,125; double counting gives $64,517.50.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-432",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Coastal Tug and Barge has sold its last asset in the class for more than ACB. T = 30%. If the sale price rises by another $10,000, still above ACB, by how much does the after-tax cash flow rise?",
+  "options": [
+   "$1,500.00",
+   "$3,000.00",
+   "$7,000.00",
+   "$8,500.00",
+   "$10,000.00"
+  ],
+  "answer": 3,
+  "explanation": "Each extra dollar above ACB is a capital gain, taxed at 0.5T = 15%. After-tax cash rises by 10,000 x (1 - 0.15) = $8,500. Using the full rate gives $7,000 (the forgotten half-gain error); ignoring tax gives $10,000; $1,500 is only the tax on the extra gain, not the cash that is kept.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-433",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Barge Ltd. sells its last barge, which cost $400,000 and has a UCC of $150,000, for $520,000. The tax rate is 30%. Calculate the after-tax cash flow from the sale.",
+  "answer": 427000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "520000-0.3*(400000-150000)-0.5*0.3*(520000-400000)",
+  "steps": [
+   {
+    "label": "Recapture = ACB - UCC",
+    "value": 250000.0,
+    "check": "400000-150000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Capital gain = POD - ACB",
+    "value": 120000.0,
+    "check": "520000-400000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on recapture",
+    "value": 75000.0,
+    "check": "0.3*(400000-150000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on capital gain",
+    "value": 18000.0,
+    "check": "0.5*0.3*(520000-400000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CF_AT",
+    "value": 427000.0,
+    "check": "520000-0.3*(400000-150000)-0.5*0.3*(520000-400000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Since POD 520,000 > ACB 400,000: recapture = ACB - UCC = 250,000 and capital gain = 120,000",
+   "Tax on recapture = 0.30 x 250,000 = 75,000",
+   "Tax on gain = 0.5 x 0.30 x 120,000 = 18,000",
+   "CF_AT = 520,000 - 75,000 - 18,000 = $427,000.00"
+  ],
+  "keystrokes": [
+   "400000 - 150000 = 250000",
+   "x 0.3 = 75000",
+   "520000 - 400000 = 120000",
+   "x 0.15 = 18000",
+   "520000 - 75000 - 18000 = 427000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the gain at the full rate",
+    "value": 409000.0,
+    "check": "520000-0.3*(400000-150000)-0.3*(520000-400000)",
+    "explain": "Only 50% of the capital gain is taxed."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole sale price",
+    "value": 364000.0,
+    "check": "520000*(1-0.3)",
+    "explain": "Tax is not charged on the whole proceeds."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Used POD - UCC as recapture and also taxed the gain",
+    "value": 391000.0,
+    "check": "520000-0.3*(520000-150000)-0.5*0.3*(520000-400000)",
+    "explain": "Recapture stops at ACB; the part above ACB is the capital gain, not more recapture."
+   }
+  ],
+  "explanation": "Three pieces: the proceeds, a full-rate tax on ACB - UCC, and a half-rate tax on POD - ACB.",
+  "source": "generated",
+  "ref": "L05B s21, FS p2"
+ },
+ {
+  "id": "q10-434",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okotoks Stone Works closes its CCA class by selling its only loader for $92,500. The loader cost $75,000 and has a UCC of $21,300. The tax rate is 35%. Find the after-tax cash flow from the sale.",
+  "answer": 70642.5,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "92500-0.35*(75000-21300)-0.5*0.35*(92500-75000)",
+  "steps": [
+   {
+    "label": "Tax on recapture",
+    "value": 18795.0,
+    "check": "0.35*(75000-21300)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on capital gain",
+    "value": 3062.5,
+    "check": "0.5*0.35*(92500-75000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CF_AT",
+    "value": 70642.5,
+    "check": "92500-0.35*(75000-21300)-0.5*0.35*(92500-75000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "POD 92,500 > ACB 75,000, so recapture = 75,000 - 21,300 = 53,700 and capital gain = 17,500",
+   "Tax = 0.35 x 53,700 + 0.5 x 0.35 x 17,500 = 18,795.00 + 3,062.50 = 21,857.50",
+   "CF_AT = 92,500 - 21,857.50 = $70,642.50"
+  ],
+  "keystrokes": [
+   "75000 - 21300 = 53700",
+   "x 0.35 = 18795",
+   "(92500 - 75000) x 0.175 = 3062.5",
+   "92500 - 18795 - 3062.5 = 70642.5"
+  ],
+  "errors": [
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the gain at the full rate",
+    "value": 67580.0,
+    "check": "92500-0.35*(75000-21300)-0.35*(92500-75000)",
+    "explain": "A capital gain is only 50% taxable."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Recapture measured to POD, then the gain taxed again",
+    "value": 64517.5,
+    "check": "92500-0.35*(92500-21300)-0.5*0.35*(92500-75000)",
+    "explain": "Recapture is capped at ACB - UCC."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole sale price",
+    "value": 60125.0,
+    "check": "92500*(1-0.35)",
+    "explain": "Only recapture and the half-taxed gain are taxed."
+   }
+  ],
+  "explanation": "Same three-part formula as before, with smaller numbers: the sale price exceeds ACB so both taxes apply.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-435",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kootenay Rail Services buys a $200,000 locomotive (CCA rate 30%, Accelerated Investment Incentive: 1.5 x d in year 1). Strong demand lets it sell the locomotive, the last asset in the class, for $230,000 at the end of year 2, after claiming year 2 CCA. T = 40%. What is the after-tax cash flow from the sale?",
+  "answer": 174800.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "230000-0.4*(200000-200000*(1-1.5*0.3)*(1-0.3))-0.5*0.4*(230000-200000)",
+  "steps": [
+   {
+    "label": "UCC after year 1",
+    "value": 110000.0,
+    "check": "200000*(1-1.5*0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "UCC after year 2",
+    "value": 77000.0,
+    "check": "200000*(1-1.5*0.3)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Recapture = ACB - UCC",
+    "value": 123000.0,
+    "check": "200000-200000*(1-1.5*0.3)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Capital gain = POD - ACB",
+    "value": 30000.0,
+    "check": "230000-200000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CF_AT",
+    "value": 174800.0,
+    "check": "230000-0.4*(200000-200000*(1-1.5*0.3)*(1-0.3))-0.5*0.4*(230000-200000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CCA1 = 1.5 x 0.30 x 200,000 = 90,000, UCC1 = 110,000; UCC2 = 110,000 x 0.70 = 77,000",
+   "POD 230,000 > ACB 200,000: recapture = 200,000 - 77,000 = 123,000; capital gain = 30,000",
+   "Tax = 0.40 x 123,000 + 0.5 x 0.40 x 30,000 = 49,200 + 6,000 = 55,200",
+   "CF_AT = 230,000 - 55,200 = $174,800.00"
+  ],
+  "keystrokes": [
+   "200000 x (1 - 0.45) = 110000",
+   "x 0.7 = 77000",
+   "200000 - 77000 = 123000",
+   "x 0.4 = 49200",
+   "30000 x 0.2 = 6000",
+   "230000 - 49200 - 6000 = 174800"
+  ],
+  "errors": [
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the gain at the full rate",
+    "value": 168800.0,
+    "check": "230000-0.4*123000-0.4*30000",
+    "explain": "Only half of the capital gain is taxed."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year rule instead of AII",
+    "value": 191600.0,
+    "check": "230000-0.4*(200000-200000*(1-0.5*0.3)*(1-0.3))-0.5*0.4*(230000-200000)",
+    "explain": "The question specifies AII, so year 1 CCA is 1.5 x d x I0."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Taxed POD - UCC as recapture",
+    "value": 162800.0,
+    "check": "230000-0.4*(230000-77000)-0.5*0.4*30000",
+    "explain": "Recapture is limited to ACB - UCC; the remainder is the capital gain."
+   }
+  ],
+  "explanation": "Combine the schedule (AII) with the three-part disposal formula.",
+  "source": "generated",
+  "ref": "L05B s8, s21"
+ }
+]

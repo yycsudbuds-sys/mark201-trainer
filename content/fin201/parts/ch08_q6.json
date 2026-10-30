@@ -1,0 +1,518 @@
+[
+ {
+  "id": "q08-201",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock trades at $32.00, will pay $1.28 next year, and its dividends grow 7% per annum. What return does it offer?",
+  "options": [
+   "3.00%",
+   "11.00%",
+   "4.00%",
+   "7.00%"
+  ],
+  "answer": 1,
+  "explanation": "R = 4.00% + 7.00% = 11.00%. The yield alone (4.00%) or the growth alone (7.00%) is only one part, and 3.00% subtracts them.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-202",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A stock's required return is 9% and its dividend yield is 1.5%. If the constant growth model holds, expected dividend growth is:",
+  "options": [
+   "10.5%",
+   "9%",
+   "1.5%",
+   "7.5%"
+  ],
+  "answer": 3,
+  "explanation": "g = R − dividend yield = 9% − 1.5% = 7.5%.",
+  "source": "generated",
+  "ref": "L04 s20"
+ },
+ {
+  "id": "q08-203",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "R = D1/P0 + _____.",
+  "options": [
+   "b",
+   "D0",
+   "ROE",
+   "g"
+  ],
+  "answer": 3,
+  "explanation": "The second component is the capital gains yield, which equals the dividend growth rate g.",
+  "source": "generated",
+  "ref": "FS p1"
+ },
+ {
+  "id": "q08-204",
+  "concept": "c08-required-return-components",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which sentence about R = D1/P0 + g is correct?",
+  "options": [
+   "D1/P0 uses next year's dividend over today's price.",
+   "D1/P0 uses today's dividend over next year's price.",
+   "g is the dividend yield.",
+   "R is the holding period return."
+  ],
+  "answer": 0,
+  "explanation": "The dividend yield D1/P0 is next year's dividend over today's price; D0 appears only when it must first be grown to D1.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-205",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The growing annuity formula PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N] values:",
+  "options": [
+   "a dividend growing at g forever, with the first dividend D1",
+   "N dividends, the first D1, each growing at g, then stopping",
+   "a constant dividend D received for N years and then stopped",
+   "the share price expected N years from today, discounted at R"
+  ],
+  "answer": 1,
+  "explanation": "The bracket removes the value of the Gordon stream beyond year N.",
+  "source": "generated",
+  "ref": "L04 s19; FS p1"
+ },
+ {
+  "id": "q08-206",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A quarry company will pay dividends that grow 6% each year for exactly 10 years and then liquidate. Which formula values the shares?",
+  "options": [
+   "NPVGO",
+   "The constant-dividend perpetuity",
+   "The growing annuity formula",
+   "The Gordon growth model"
+  ],
+  "answer": 2,
+  "explanation": "Growing cash flows for a finite number of years are a growing annuity.",
+  "source": "generated",
+  "ref": "L04 s19"
+ },
+ {
+  "id": "q08-207",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the growing annuity relate to the Gordon growth model as N becomes very large with g < R?",
+  "options": [
+   "The growing annuity approaches zero, since the dividends are finite.",
+   "They are unrelated; one is for dividends, the other for bonds.",
+   "The bracket approaches 1, so it approaches D1/(R − g).",
+   "The growing annuity approaches D1/R, the no-growth perpetuity."
+  ],
+  "answer": 2,
+  "explanation": "((1 + g)/(1 + R))^N → 0 when g < R, leaving D1/(R − g).",
+  "source": "generated",
+  "ref": "S4 s8"
+ },
+ {
+  "id": "q08-208",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the growing annuity formula is NOT correct?",
+  "options": [
+   "The first cash flow in the formula is D1.",
+   "It only works when g is less than R.",
+   "The bracket is below 1 when g is less than R.",
+   "N is the number of dividends."
+  ],
+  "answer": 1,
+  "explanation": "The formula works for g > R too (the ratio is above 1 and R − g is negative, so the product is positive). Only the perpetual Gordon model requires g < R.",
+  "source": "generated",
+  "ref": "SM 8-17, 8-23"
+ },
+ {
+  "id": "q08-209",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the term [1 − ((1 + g)/(1 + R))^N] reduce the Gordon value D1/(R − g)?",
+  "options": [
+   "It removes the effect of dividend growth from the value.",
+   "It adds the cost of borrowing needed to fund the dividends.",
+   "It converts a yearly growth rate into a monthly growth rate.",
+   "It subtracts the present value of the dividends after year N."
+  ],
+  "answer": 3,
+  "explanation": "Gordon values dividends forever; the growing annuity keeps only the first N.",
+  "source": "generated",
+  "ref": "S4 s8"
+ },
+ {
+  "id": "q08-210",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm will pay dividends for 8 more years: $1.80 one year from now, then growing 4% per annum, and nothing after year 8. Required return 10% per annum. What is the present value of these dividends? Answer in $.",
+  "answer": 10.85,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.80/(0.10-0.04)*(1-(1.04/1.10)^8)",
+  "steps": [
+   {
+    "label": "Ratio (1 + g)/(1 + R)",
+    "value": 0.94545,
+    "check": "1.04/1.10",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Bracket 1 − ratio^8",
+    "value": 0.36155,
+    "check": "1-(1.04/1.10)^8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "PV of the growing annuity",
+    "value": 10.85,
+    "check": "1.80/(0.10-0.04)*(1-(1.04/1.10)^8)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N]",
+   "D1/(R − g) = 1.80/0.06 = 30.00",
+   "((1.04)/(1.10))^8 = 0.63845, so the bracket = 0.36155",
+   "PV = 30.00 × 0.36155 = $10.85"
+  ],
+  "keystrokes": [
+   "1.04 ÷ 1.10 = 0.94545",
+   "y^x 8 = 0.63841",
+   "1 − 0.63841 = 0.36159",
+   "× 30 = 10.85"
+  ],
+  "errors": [
+   {
+    "id": "gordon-for-annuity",
+    "label": "Used the perpetuity D1/(R − g)",
+    "value": 30.0,
+    "check": "1.80/(0.10-0.04)",
+    "explain": "That values dividends forever; this firm stops after year 8."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used N = 7",
+    "value": 9.74,
+    "check": "1.80/(0.10-0.04)*(1-(1.04/1.10)^7)",
+    "explain": "There are 8 dividends, so N = 8."
+   },
+   {
+    "id": "g-over-r",
+    "label": "Used g/R inside the bracket",
+    "value": 29.98,
+    "check": "1.80/(0.10-0.04)*(1-(0.04/0.10)^8)",
+    "explain": "The ratio is (1 + g)/(1 + R), not g/R."
+   }
+  ],
+  "explanation": "Growing annuity: D1/(R − g) × [1 − ((1 + g)/(1 + R))^N].",
+  "source": "generated",
+  "ref": "FS p1; S4 s8"
+ },
+ {
+  "id": "q08-211",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Dividends of a growth company are expected to be $2.00 next year and then grow 15% per annum for 6 years in total, with nothing after year 6. Required return 10% per annum. What is the present value of these dividends? Answer in $.",
+  "answer": 12.23,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.00/(0.10-0.15)*(1-(1.15/1.10)^6)",
+  "steps": [
+   {
+    "label": "D1/(R − g) with g > R",
+    "value": -40.0,
+    "check": "2.00/(0.10-0.15)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Bracket 1 − ratio^6",
+    "value": -0.30566,
+    "check": "1-(1.15/1.10)^6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "PV of the growing annuity",
+    "value": 12.23,
+    "check": "2.00/(0.10-0.15)*(1-(1.15/1.10)^6)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Here g (15%) exceeds R (10%), which is fine for a finite annuity",
+   "D1/(R − g) = 2.00/(−0.05) = −40.00",
+   "(1.15/1.10)^6 = 1.30566, so the bracket = −0.30566 (negative)",
+   "PV = −40.00 × (−0.30566) = $12.23"
+  ],
+  "keystrokes": [
+   "1.15 ÷ 1.10 = 1.04545",
+   "y^x 6 = 1.30570",
+   "1 − 1.30570 = −0.30570",
+   "× (2 ÷ (0.10 − 0.15)) = 12.23"
+  ],
+  "errors": [
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used N = 5",
+    "value": 9.96,
+    "check": "2.00/(0.10-0.15)*(1-(1.15/1.10)^5)",
+    "explain": "The stream has 6 dividends."
+   },
+   {
+    "id": "sign-flip",
+    "label": "Dropped the negative sign of R − g",
+    "value": -12.23,
+    "check": "2.00/0.05*(1-(1.15/1.10)^6)",
+    "explain": "Both factors are negative, so the product is positive."
+   }
+  ],
+  "explanation": "With g > R both D1/(R − g) and the bracket are negative; the PV is positive (TB Example 8.5, SM 8-23).",
+  "source": "generated",
+  "ref": "SM 8-23; TB 8.1"
+ },
+ {
+  "id": "q08-212",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project will pay three dividends: $2.00 next year, growing 10% per annum, for years 1 to 3 only. Required return 12% per annum. Use the growing annuity formula to find the present value. Answer in $.",
+  "answer": 5.26,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.00/(0.12-0.10)*(1-(1.10/1.12)^3)",
+  "steps": [
+   {
+    "label": "D1/(R − g)",
+    "value": 100.0,
+    "check": "2.00/(0.12-0.10)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Bracket 1 − ratio^3",
+    "value": 0.05262,
+    "check": "1-(1.10/1.12)^3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "PV",
+    "value": 5.26,
+    "check": "2.00/(0.12-0.10)*(1-(1.10/1.12)^3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "PV = D1/(R − g) × [1 − ((1 + g)/(1 + R))^N]",
+   "D1/(R − g) = 2.00/0.02 = 100.00",
+   "Bracket = 1 − (1.10/1.12)^3 = 0.052620",
+   "PV = 100 × 0.052620 = $5.26",
+   "Check by summing: 2.00/1.12 + 2.20/1.12² + 2.42/1.12³ = $5.26"
+  ],
+  "keystrokes": [
+   "1.10 ÷ 1.12 = 0.982143",
+   "y^x 3 = 0.947428",
+   "1 − 0.947428 = 0.052572",
+   "× 100 = 5.26"
+  ],
+  "errors": [
+   {
+    "id": "gordon-for-annuity",
+    "label": "Used the perpetuity",
+    "value": 100.0,
+    "check": "2.00/(0.12-0.10)",
+    "explain": "Three dividends are worth far less than a perpetuity."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used N = 4",
+    "value": 6.95,
+    "check": "2.00/(0.12-0.10)*(1-(1.10/1.12)^4)",
+    "explain": "There are three dividends."
+   }
+  ],
+  "explanation": "The formula must equal the sum of the discounted dividends; summing is a good check.",
+  "source": "generated",
+  "ref": "S4 s8"
+ },
+ {
+  "id": "q08-213",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm will pay dividends for 5 years: $1.50 next year, growing 8% per annum, then nothing. Required return 12% per annum. What is the present value of the dividends?",
+  "options": [
+   "$6.23",
+   "$32.56",
+   "$37.50",
+   "$5.08"
+  ],
+  "answer": 0,
+  "explanation": "PV = 1.50/0.04 × [1 − (1.08/1.12)^5] = 37.50 × 0.1663 = $6.23. $37.50 is the perpetuity, $5.08 uses N = 4, and $32.56 uses the ratio g/R instead of (1 + g)/(1 + R).",
+  "source": "generated",
+  "ref": "FS p1"
+ },
+ {
+  "id": "q08-214",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Dividends start at $3.00 next year and grow 20% per annum for 4 years only. Required return 10% per annum. What is the present value?",
+  "options": [
+   "$8.95",
+   "$12.49",
+   "−$30.00",
+   "−$12.49"
+  ],
+  "answer": 1,
+  "explanation": "With g > R, D1/(R − g) = −30.00 and the bracket is 1 − 1.4163 = −0.4163, so PV = $12.49. Dropping the sign of D1/(R − g) gives −$12.49, and N = 3 gives $8.95.",
+  "source": "generated",
+  "ref": "SM 8-23"
+ },
+ {
+  "id": "q08-215",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The growing annuity formula can only be used when the growth rate g is less than the required return R.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Because the stream is finite, the present value is finite even when g > R (both factors are negative and the product is positive). Only the Gordon perpetuity needs g < R.",
+  "source": "generated",
+  "ref": "SM 8-17"
+ },
+ {
+  "id": "q08-216",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps for a growing annuity valuation in order.",
+  "options": [
+   "Raise g to the power N; subtract R; divide by D1; multiply by 1 + g",
+   "Compute D1/(R − g); add (1 + g)/(1 + R); raise the sum to N; divide by N",
+   "Multiply by D1/(R − g); identify D1; subtract from 1; form the ratio (1 + g)/(1 + R)",
+   "Identify D1, g, R, N; form (1 + g)/(1 + R) and raise it to N; take 1 minus it; multiply by D1/(R − g)"
+  ],
+  "answer": 3,
+  "explanation": "Identify the inputs, form the ratio, raise to N, take 1 minus, then scale by D1/(R − g).",
+  "source": "generated",
+  "ref": "S4 s8"
+ },
+ {
+  "id": "q08-217",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A firm's finite growing annuity of dividends is worth $6.23 per share, while the Gordon growth value of the same dividends continuing forever is $37.50. What does the $31.27 difference represent?",
+  "options": [
+   "The dividend yield of the share in the last year of the annuity.",
+   "The financing cost of paying the dividends in the first N years.",
+   "The present value of the dividends after the final year.",
+   "The present value of the growth rate g over the N years."
+  ],
+  "answer": 2,
+  "explanation": "The growing annuity keeps only the first N dividends; Gordon counts the infinite stream. The bracket term [1 − ((1 + g)/(1 + R))^N] strips out the tail.",
+  "source": "generated",
+  "ref": "S4 s8"
+ },
+ {
+  "id": "q08-218",
+  "concept": "c08-growing-annuity",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In the growing annuity formula, the term raised to the power N is:",
+  "options": [
+   "(1 + g)/(1 + R)",
+   "g/R",
+   "(R − g)/(1 + R)",
+   "(1 + R)/(1 + g)"
+  ],
+  "answer": 0,
+  "explanation": "Each dividend grows by (1 + g) and is discounted by (1 + R), so the net factor per year is (1 + g)/(1 + R); raising it to N captures the first N years' worth.",
+  "source": "generated",
+  "ref": "FS p1"
+ }
+]

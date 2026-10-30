@@ -2,10 +2,10 @@
 // adaptive question selection, XP. Pure functions over plain state so it is testable in Node.
 
 export const MASTERY_LABELS = ['New', 'Seen', 'Learning', 'Solid', 'Mastered'];
-export const ANGLES = ['define', 'identify', 'apply', 'contrast', 'not', 'why', 'calc', 'order'];
+export const ANGLES = ['define', 'identify', 'apply', 'contrast', 'not', 'why', 'calc', 'order', 'interpret', 'formula'];
 export const ANGLE_LABELS = {
   define: 'Definition', identify: 'Spot it in a scenario', apply: 'Apply it', contrast: 'Tell it apart',
-  not: 'Exception', why: 'Why / when', calc: 'Calculate', order: 'Sequence',
+  not: 'Exception', why: 'Why / when', calc: 'Calculate', order: 'Sequence', interpret: 'Interpret the result', formula: 'Formula drill',
 };
 export const BOX_INTERVALS_MIN = [0, 10, 60, 240, 720, 2160];
 export const SESSION_GAP_MIN = 45;
@@ -92,6 +92,7 @@ export function xpForAnswer(q, correct, combo) {
   if (!correct) return 0;
   let xp = 10 * (q.difficulty || 1);
   if (q.angle === 'contrast' || q.angle === 'apply' || q.angle === 'calc') xp += 5;
+  if (q.type === 'numeric' || q.type === 'multistep' || q.type === 'gen') xp += 5; // typed answers are harder than picking one of five
   xp += 2 * Math.min(combo, 10);
   return xp;
 }
@@ -210,6 +211,7 @@ export function pickNext(content, state, opts) {
       const cs = state.concepts[c.id];
       const level = masteryLevel(cs);
       if (opts.mode === 'weak' && level >= 3 && !(cs && cs.pursuit)) continue;
+      if (opts.mode === 'unknown' && cs && cs.a && cs.a.length) continue; // never attempted only
       if (opts.excludeMastered && level >= 4 && !(cs && cs.due <= now)) continue;
       let score = 0;
       score += (4 - level) * 1.0;
@@ -227,6 +229,9 @@ export function pickNext(content, state, opts) {
         if (ago <= 2) score -= 6; else if (ago <= 5) score -= 2.5; else if (ago <= 9) score -= 1;
       }
       if (lastChapter !== null && ch.chapter === lastChapter && opts.interleave !== false) score -= 0.7;
+      // exam weight (finance packs tag concepts 1-3) and logged calculation errors pull a concept forward
+      if (c.weight) score += (c.weight - 2) * 0.35;
+      if (state.stats && state.stats.calcErrorConcepts) { for (const by of Object.values(state.stats.calcErrorConcepts)) if (by[c.id]) { score += 0.8; break; } }
       score += jitter(rng, 0.9);
       candidates.push({ cid: c.id, score, level, cs });
     }
@@ -285,6 +290,7 @@ export function pickQuestionForConcept(content, state, cid, opts) {
   const recentQids = opts.recentQids || new Set();
   let pool = questionsForConcept(content, cid);
   if (opts.anglesOnly) pool = pool.filter(q => opts.anglesOnly.has(q.angle));
+  if (opts.typesOnly) pool = pool.filter(q => opts.typesOnly.has(q.type));
   if (opts.difficultyMax) pool = pool.filter(q => q.difficulty <= opts.difficultyMax);
   if (opts.shortOnly) pool = pool.filter(q => q.stem.split(/\s+/).length <= 45 && q.type !== 'fill');
   if (opts.excludeQids) pool = pool.filter(q => !opts.excludeQids.has(q.id));
@@ -304,6 +310,7 @@ export function pickQuestionForConcept(content, state, cid, opts) {
     if (!summary.anglesHard.has(q.angle)) s += 2; // a new angle for this concept
     if (opts.preferNewAngle && cs && cs.pursuit && cs.pursuit.angles.includes(q.angle)) s -= 1.5;
     if (targetDiff.includes(q.difficulty)) s += 1;
+    if ((q.type === 'numeric' || q.type === 'multistep' || q.type === 'gen') && level >= 1) s += 1.2; // once the idea is seen, make them compute it
     if (q.source === 'official') s += 0.4;
     s += jitter(rng, 0.8);
     return { q, s };
@@ -313,23 +320,24 @@ export function pickQuestionForConcept(content, state, cid, opts) {
 }
 
 /** Build an exam: n questions spread across chapters, favouring difficulty 2-3 and unseen items. */
-export function buildExam(content, state, { n, chapters, rng, now }) {
+export function buildExam(content, state, { n, chapters, concepts, rng, now }) {
   rng = rng || Math.random;
   now = now || Date.now();
-  const chs = content.chapters.filter(c => !chapters || chapters.has(c.chapter));
-  const totalConcepts = chs.reduce((s, c) => s + c.concepts.length, 0);
+  const chs = content.chapters.filter(c => !chapters || chapters.has(c.chapter)).filter(c => !concepts || c.concepts.some(k => concepts.has(k.id)));
+  const conceptsIn = c => concepts ? c.concepts.filter(k => concepts.has(k.id)).length : c.concepts.length;
+  const totalConcepts = chs.reduce((s, c) => s + conceptsIn(c), 0);
   const picks = [];
   const used = new Set();
   const usedConcepts = new Map();
   // allocate per chapter proportional to concepts
   let allocated = 0;
   const alloc = chs.map((c, i) => {
-    const k = i === chs.length - 1 ? n - allocated : Math.round(n * c.concepts.length / totalConcepts);
+    const k = i === chs.length - 1 ? n - allocated : Math.round(n * conceptsIn(c) / totalConcepts);
     allocated += k;
     return { ch: c, k };
   });
   for (const { ch, k } of alloc) {
-    const pool = ch.questions.map(q => {
+    const pool = ch.questions.filter(q => !concepts || concepts.has(q.concept)).map(q => {
       const qs = state.questions[q.id];
       let s = 0;
       if (!qs) s += 2.5; else if (qs.lastCorrect && now - qs.lastCorrect < 12 * 3600000) s -= 1.5;
@@ -356,6 +364,7 @@ export function buildExam(content, state, { n, chapters, rng, now }) {
 /** Shuffle options while tracking the correct index. Returns {options, answer, map}. */
 export function shuffleOptions(q, rng) {
   rng = rng || Math.random;
+  if (!Array.isArray(q.options) || !q.options.length) return { options: [], answer: -1, map: [] }; // typed-answer questions
   if (q.type === 'tf') return { options: q.options.slice(), answer: q.answer, map: q.options.map((_, i) => i) };
   const idx = q.options.map((_, i) => i);
   // keep "all/none of the above" last if present

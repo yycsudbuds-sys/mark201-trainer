@@ -1,0 +1,247 @@
+[
+ {
+  "id": "q08-661",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Noise trading is trading:",
+  "options": [
+   "based on private information about the firm's future earnings and dividends",
+   "driven by reasons unrelated to information about value, such as a health expense or a tax bill",
+   "carried out only by professional market makers who quote bid and ask prices",
+   "that follows chart patterns in the stock's past prices to forecast moves"
+  ],
+  "answer": 1,
+  "explanation": "Noise traders buy or sell for personal or liquidity reasons (health, taxes, bills due), not because they have analysed value. Their trades can push prices away from fair value for a while (L04 s51).",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-662",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The disposition effect is the tendency of investors to:",
+  "options": [
+   "buy stocks only after they have fallen",
+   "sell all stocks at the end of the tax year",
+   "sell winning stocks too early and hold losing stocks too long",
+   "hold diversified portfolios regardless of price"
+  ],
+  "answer": 2,
+  "explanation": "The disposition effect is a behavioural bias: realising gains feels good and realising losses feels bad, so investors sell winners and keep losers regardless of the stocks' future prospects.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-663",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Early in April a retiree sells a block of shares she still likes in order to pay her income tax bill. This is an example of:",
+  "options": [
+   "Noise trading",
+   "The disposition effect",
+   "Overconfidence",
+   "Momentum investing"
+  ],
+  "answer": 0,
+  "explanation": "She is selling for a personal cash need (taxes due), not because she thinks the stock is overpriced. That is noise trading. The disposition effect would require selling because of gain/loss on the position.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-664",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "An investor sells a stock that has doubled to 'lock in the gain' but keeps a stock that has lost 40%, saying 'I will sell when it gets back to what I paid.' This behaviour is:",
+  "options": [
+   "Noise trading",
+   "The disposition effect",
+   "Sentiment",
+   "Weak-form efficiency"
+  ],
+  "answer": 1,
+  "explanation": "Selling the winner and holding the loser, anchored on the purchase price, is the textbook disposition effect.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-665",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A day trader believes she can out-guess the market and trades several hundred times a month, even though her results are no better than the index. Which behavioural factor does this illustrate?",
+  "options": [
+   "The disposition effect",
+   "Noise trading for tax reasons",
+   "Semi-strong efficiency",
+   "Overconfidence"
+  ],
+  "answer": 3,
+  "explanation": "Overconfidence leads investors to overestimate their ability and trade too much. The excess trading costs money and adds noise to prices.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-666",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "After a long bull market, a wave of optimism lifts the prices of many tech stocks well beyond what their earnings forecasts justify. This is best described as:",
+  "options": [
+   "The disposition effect",
+   "Liquidity noise from tax selling",
+   "Sentiment among investors",
+   "Strong-form efficiency"
+  ],
+  "answer": 2,
+  "explanation": "Sentiment is a shared mood (optimism or pessimism) that moves prices independently of fundamentals. It is one of the behavioural reasons prices may deviate from fair value.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-667",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do noise trading and behavioural biases differ as reasons why prices may deviate from fair value?",
+  "options": [
+   "Noise comes from personal or liquidity needs; behavioural biases are systematic psychological errors",
+   "Noise trading is illegal, whereas behavioural biases are legal, and only the first can move prices",
+   "Noise trading affects only bonds, whereas behavioural biases affect only stocks and no other securities",
+   "They are the same thing described with different names, so the distinction has no content"
+  ],
+  "answer": 0,
+  "explanation": "The slide groups them as two sources of mispricing: Noise (selling for personal reasons such as health, selling when bills like tax are due) and Behaviour (disposition effect, overconfidence, sentiment).",
+  "source": "generated",
+  "ref": "L04 s51; REV p2"
+ },
+ {
+  "id": "q08-668",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can noise trading move a stock's price away from its fair value?",
+  "options": [
+   "Noise traders always possess valuable private information about the firm",
+   "Noise trading changes the firm's future dividends and therefore its true value",
+   "The pressure has nothing to do with value, so it can push the price until others step in",
+   "Noise trading forces the firm to reissue its shares at lower prices"
+  ],
+  "answer": 2,
+  "explanation": "Fair value comes from expected cash flows. A forced seller shifts supply without changing those cash flows, which temporarily lowers the price below value until buyers who notice the discount arrive.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-669",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT one of the reasons for price deviations listed in the course?",
+  "options": [
+   "Selling for personal reasons such as health",
+   "Firms paying dividends at fixed dates every year",
+   "Selling when bills such as tax are due",
+   "Overconfidence and sentiment among investors"
+  ],
+  "answer": 1,
+  "explanation": "The slide lists noise (personal and tax-driven selling) and behaviour (disposition effect, overconfidence, sentiment). A regular dividend calendar is not a source of mispricing.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-670",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Many investors sell losing stocks in late December to realise tax losses, pushing some prices below value with no news about the firms. What could a disciplined investor do?",
+  "options": [
+   "Buy at the depressed price, expecting the discount to vanish when the selling ends",
+   "Sell the same stocks short to ride the decline caused by tax-loss selling",
+   "Avoid the stocks, because in an efficient market prices are always right",
+   "Wait for the next dividend payment before deciding whether to buy"
+  ],
+  "answer": 0,
+  "explanation": "If price pressure comes from non-informational selling, the discount should reverse once it ends. Capturing it requires patience and capital, which is why such deviations can persist.",
+  "source": "generated",
+  "ref": "L04 s51; TB 12.6"
+ },
+ {
+  "id": "q08-671",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A stock falls 12% on heavy volume in the last week of December with no company news, then recovers most of the loss in January. Which explanation is most consistent with the course?",
+  "options": [
+   "The market learned bad private information in December and good news in January",
+   "The market is strong-form efficient, so price changes without news are impossible",
+   "Tax-related noise selling pushed the price below fair value, and it recovered when the pressure ended",
+   "The dividend was cut in December and restored in January, moving the price"
+  ],
+  "answer": 2,
+  "explanation": "A sharp fall with no news that reverses is the signature of non-informational selling (here, tax selling). An information-driven move would not reverse on its own.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-672",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "True or false: selling a stock to pay for a medical bill, rather than because of a view about its value, is an example of noise trading.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The seller is motivated by a personal cash need (health), which is unrelated to information about the firm; the course lists 'selling for personal reasons such as health' as noise.",
+  "source": "generated",
+  "ref": "L04 s51"
+ },
+ {
+  "id": "q08-673",
+  "concept": "c08-noise-behaviour",
+  "also": [],
+  "type": "fill",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Investors who hold on to losing stocks while selling their winners are showing the _____ effect.",
+  "options": [
+   "momentum",
+   "disposition",
+   "efficiency",
+   "dividend"
+  ],
+  "answer": 1,
+  "explanation": "The disposition effect is the habit of selling winners and holding losers.",
+  "source": "generated",
+  "ref": "L04 s51"
+ }
+]

@@ -1,0 +1,957 @@
+[
+ {
+  "id": "q13-601",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which pair of statements correctly describes the two risk measures we use?",
+  "options": [
+   "σ measures systematic risk; β measures total risk.",
+   "σ measures company-specific risk; β measures market risk.",
+   "Both measure systematic risk, in different units.",
+   "σ measures total risk; β measures systematic (market) risk only."
+  ],
+  "answer": 3,
+  "explanation": "Standard deviation captures all the variability of a stock's return: systematic plus unsystematic. Beta captures only the part that moves with the market, which diversification cannot remove.",
+  "source": "generated",
+  "ref": "L06 s50"
+ },
+ {
+  "id": "q13-602",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which risk measure feeds into the CAPM when we compute a stock's expected return?",
+  "options": [
+   "σ, the total risk",
+   "β, the amount of systematic risk",
+   "ρ, the correlation with the market",
+   "The variance of the stock's returns"
+  ],
+  "answer": 1,
+  "explanation": "CAPM prices only systematic risk, so beta is the input: E[R] = R_F + β (E[R_M] − R_F). Standard deviation and variance include diversifiable risk, and correlation alone ignores how volatile the stock is relative to the market.",
+  "source": "generated",
+  "ref": "L06 s58"
+ },
+ {
+  "id": "q13-603",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Quebec Gold Corp. has σ = 52% and β = 0.2. Metro Grocer has σ = 18% and β = 1.1. Which stock is riskier for a well-diversified investor, and why?",
+  "options": [
+   "Metro Grocer: it has the higher β, so it contributes more systematic risk.",
+   "Quebec Gold: it has the higher σ, so it contributes more risk.",
+   "They are equally risky because both are single stocks.",
+   "Quebec Gold: a low β means the stock is hard to diversify."
+  ],
+  "answer": 0,
+  "explanation": "A diversified investor has already removed company-specific risk, so what matters is how much each stock adds to the portfolio's market risk: β. Quebec Gold's large σ is mostly diversifiable; Metro Grocer's β of 1.1 means more systematic risk and a higher required return.",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-604",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does σ differ from β as a measure of a stock's risk?",
+  "options": [
+   "β includes the diversifiable part of the risk; σ captures only the part that cannot be diversified away.",
+   "σ is used for stocks and β for bonds.",
+   "σ includes the diversifiable part of the risk; β captures only the part that cannot be diversified away.",
+   "β is bounded between −1 and 1 like ρ, but σ is not."
+  ],
+  "answer": 2,
+  "explanation": "Total risk (σ) = systematic risk + unsystematic risk. Beta isolates the systematic part by measuring sensitivity to the market. Beta is not bounded between −1 and 1 (that is ρ), and both measures apply to any asset.",
+  "source": "generated",
+  "ref": "L06 s50"
+ },
+ {
+  "id": "q13-605",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following statements is NOT true?",
+  "options": [
+   "A stock with β = 0 can still be volatile.",
+   "A stock's σ includes risk that diversification can remove.",
+   "Total risk is made up of systematic risk plus unsystematic risk.",
+   "A stock with a higher σ must have a higher CAPM expected return."
+  ],
+  "answer": 3,
+  "explanation": "CAPM ties expected return to β, not σ. A high-σ stock with a low β can have a low expected return, because most of its risk is diversifiable. The other three statements are true.",
+  "source": "generated",
+  "ref": "L06 s58"
+ },
+ {
+  "id": "q13-606",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does CAPM use β rather than σ to set a stock's expected return?",
+  "options": [
+   "β is much easier to estimate from market data than σ is.",
+   "Diversified investors have removed company-specific risk, so only systematic risk is rewarded.",
+   "σ is always smaller than β, so it would understate the reward for risk.",
+   "σ can only be defined for portfolios, not for single stocks."
+  ],
+  "answer": 1,
+  "explanation": "Investors can diversify away the unsystematic part of σ for free, so the market does not pay for it. What remains is systematic risk, measured by β. Ease of computation and the relative size of σ and β are irrelevant.",
+  "source": "generated",
+  "ref": "L06 s58-59"
+ },
+ {
+  "id": "q13-607",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A lawsuit specific to Prairie Lumber doubles the stock's standard deviation but leaves its beta unchanged. What happens to its CAPM required return?",
+  "options": [
+   "It is unchanged: the extra risk is diversifiable and unpriced.",
+   "It doubles.",
+   "It rises, but by less than double.",
+   "It falls, because the stock became less correlated with the market."
+  ],
+  "answer": 0,
+  "explanation": "CAPM required return depends on β only. A company-specific event changes unsystematic risk, which diversified investors do not need to bear, so the required return stays where it was (the stock's price may still fall on the bad news).",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-608",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "T-bills yield 3% and the market risk premium is 6%. Rank these stocks by CAPM expected return, highest first: Wolf Creek Energy (σ 40%, β 0.9), Muskeg Rail (σ 25%, β 1.4), Foothills Dairy (σ 12%, β 0.5).",
+  "options": [
+   "Wolf Creek Energy, Muskeg Rail, Foothills Dairy",
+   "Foothills Dairy, Muskeg Rail, Wolf Creek Energy",
+   "Muskeg Rail, Wolf Creek Energy, Foothills Dairy",
+   "Muskeg Rail, Foothills Dairy, Wolf Creek Energy"
+  ],
+  "answer": 2,
+  "explanation": "CAPM returns: Muskeg = 3 + 1.4 × 6 = 11.4%; Wolf Creek = 3 + 0.9 × 6 = 8.4%; Foothills = 3 + 0.5 × 6 = 6.0%. Ranking by σ (Wolf, Muskeg, Foothills) puts them in the wrong order because σ is not what the market rewards.",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-609",
+  "concept": "c13-sigma-vs-beta",
+  "also": [
+   "c13-beta",
+   "c13-capm"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Athabasca Mining has a standard deviation of 38% per annum and a correlation of 0.35 with the market portfolio, whose standard deviation is 16%. T-bills yield 3.5% per annum and the market risk premium is 6.0% per annum. What is Athabasca's CAPM expected return? Answer in % per annum.",
+  "answer": 8.49,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "3.5+(0.35*38/16)*6",
+  "steps": [
+   {
+    "label": "Beta = ρ σ_i / σ_M",
+    "value": 0.83,
+    "check": "0.35*38/16",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "E[R] = R_F + β × MRP",
+    "value": 8.49,
+    "check": "3.5+(0.35*38/16)*6",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "β = ρ σ_i/σ_M = 0.35 × 38/16 = 0.8313",
+   "E[R] = R_F + β × MRP = 3.5 + 0.8313 × 6.0 = 3.5 + 4.9875",
+   "= 8.49% per annum (about 8.48% with β rounded to 0.83)"
+  ],
+  "keystrokes": [
+   "0.35 × 38 ÷ 16 = 0.8313",
+   "× 6 = 4.9875",
+   "+ 3.5 = 8.4875"
+  ],
+  "errors": [
+   {
+    "id": "rho-for-beta",
+    "label": "Used the correlation as the beta",
+    "value": 5.6,
+    "check": "3.5+0.35*6",
+    "explain": "ρ is bounded between −1 and 1 and ignores how volatile the stock is relative to the market. Beta = ρ × σ_i/σ_M."
+   },
+   {
+    "id": "sigma-for-beta",
+    "label": "Used σ_i/σ_M as the beta",
+    "value": 17.75,
+    "check": "3.5+(38/16)*6",
+    "explain": "Dividing σ's gives the ratio of total risks, not systematic risk. Multiply by ρ to keep only the part that moves with the market."
+   },
+   {
+    "id": "beta-sigma-i",
+    "label": "Inverted the σ ratio (ρ σ_M/σ_i)",
+    "value": 4.38,
+    "check": "3.5+(0.35*16/38)*6",
+    "explain": "Beta scales by the stock's σ over the market's σ, not the reverse."
+   }
+  ],
+  "explanation": "Athabasca is far more volatile than the market (38% vs 16%) but only 0.35 correlated with it, so its beta is 0.35 × 38/16 = 0.83: less systematic risk than the market. CAPM then gives a modest 8.49%, well below what its σ alone might suggest.",
+  "source": "generated",
+  "ref": "S7 s14 / L06 s53"
+ },
+ {
+  "id": "q13-610",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "T-bills yield 3.2% per annum and the market risk premium is 6.4% per annum. Yukon Royalties has σ = 42% and β = 0.60. Metro Grocer has σ = 24% and β = 1.30. By how many percentage points is Metro Grocer's CAPM required return above Yukon Royalties'?",
+  "answer": 4.48,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(3.2+1.3*6.4)-(3.2+0.6*6.4)",
+  "steps": [
+   {
+    "label": "Yukon required return",
+    "value": 7.04,
+    "check": "3.2+0.6*6.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Metro required return",
+    "value": 11.52,
+    "check": "3.2+1.3*6.4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Difference (Metro − Yukon)",
+    "value": 4.48,
+    "check": "(3.2+1.3*6.4)-(3.2+0.6*6.4)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Yukon: 3.2 + 0.60 × 6.4 = 3.2 + 3.84 = 7.04%",
+   "Metro: 3.2 + 1.30 × 6.4 = 3.2 + 8.32 = 11.52%",
+   "Difference = 11.52 − 7.04 = 4.48 percentage points (equivalently (1.30 − 0.60) × 6.4)"
+  ],
+  "keystrokes": [
+   "0.6 × 6.4 + 3.2 = 7.04",
+   "1.3 × 6.4 + 3.2 = 11.52",
+   "11.52 − 7.04 = 4.48"
+  ],
+  "errors": [
+   {
+    "id": "sign-slip",
+    "label": "Subtracted in the wrong order",
+    "value": -4.48,
+    "check": "(3.2+0.6*6.4)-(3.2+1.3*6.4)",
+    "explain": "Metro has the higher beta, so its required return is the higher one."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Treated 6.4% as the market return",
+    "value": 2.24,
+    "check": "(1.3-0.6)*(6.4-3.2)",
+    "explain": "6.4% is already the premium; do not subtract R_F again."
+   },
+   {
+    "id": "sigma-for-beta",
+    "label": "Plugged each σ (as a decimal) into CAPM in place of β",
+    "value": -1.15,
+    "check": "(24-42)/100*6.4",
+    "explain": "Yukon's larger σ is mostly company-specific risk. CAPM pays for β, and Metro's β is higher."
+   }
+  ],
+  "explanation": "The lower-σ stock earns the higher required return because it carries more systematic risk: the gap is simply the beta difference times the premium, 0.70 × 6.4 = 4.48 points. Total risk (σ) plays no role.",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-611",
+  "concept": "c13-sigma-vs-beta",
+  "also": [
+   "c13-capm"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Frontier Mining earns 50% in a boom (probability 0.25), 10% in a normal economy (0.50) and −30% in a recession (0.25). T-bills yield 3.5% and the market risk premium is 6.0% per annum. If CAPM holds, what beta is consistent with Frontier's expected return? Give beta to 2 decimals.",
+  "answer": 1.08,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.25*50+0.5*10+0.25*(-30)-3.5)/6",
+  "steps": [
+   {
+    "label": "Expected return Σ p R",
+    "value": 10.0,
+    "check": "0.25*50+0.5*10+0.25*(-30)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Stock risk premium E[R] − R_F",
+    "value": 6.5,
+    "check": "0.25*50+0.5*10+0.25*(-30)-3.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Beta = premium ÷ MRP",
+    "value": 1.08,
+    "check": "(0.25*50+0.5*10+0.25*(-30)-3.5)/6",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "E[R] = 0.25 × 50 + 0.50 × 10 + 0.25 × (−30) = 12.5 + 5 − 7.5 = 10.0%",
+   "Premium = 10.0 − 3.5 = 6.5%",
+   "β = 6.5/6.0 = 1.083, so about 1.08"
+  ],
+  "keystrokes": [
+   "0.25 × 50 + 0.5 × 10 + 0.25 × (−30) = 10",
+   "− 3.5 = 6.5",
+   "÷ 6 = 1.08"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Divided the total expected return by the premium",
+    "value": 1.67,
+    "check": "10/6",
+    "explain": "Beta compares premiums: subtract R_F from the expected return first."
+   },
+   {
+    "id": "mrp-as-market",
+    "label": "Subtracted R_F from the market risk premium",
+    "value": 2.6,
+    "check": "(10-3.5)/(6-3.5)",
+    "explain": "6.0% is already E[R_M] − R_F."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio",
+    "value": 0.92,
+    "check": "6/(10-3.5)",
+    "explain": "Beta = stock premium ÷ market premium."
+   }
+  ],
+  "explanation": "Frontier's σ is huge (about 28%), but CAPM only needs its expected return: 10.0% implies a 6.5% premium, so β = 6.5/6.0 = 1.08. Most of its volatility must therefore be company-specific.",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-612",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Steady Rail has σ = 7.07% and expected return 12.0%; Frontier Mining has σ = 28.28% and expected return 10.0%. T-bills yield 3.5% and the market risk premium is 6.0%. Assume CAPM holds. For a well-diversified investor, which stock is riskier?",
+  "options": [
+   "Frontier Mining: its σ is four times larger.",
+   "Frontier Mining: its lower expected return signals higher risk.",
+   "They are equally risky because both exceed the risk-free rate.",
+   "Steady Rail: its implied β is 1.42 versus 1.08."
+  ],
+  "answer": 3,
+  "explanation": "Implied betas: Steady Rail (12.0 − 3.5)/6.0 = 1.42; Frontier Mining (10.0 − 3.5)/6.0 = 1.08. Frontier has more total and more unsystematic risk, but the diversifiable part is not rewarded, so Steady Rail is the riskier stock to hold in a diversified portfolio and earns the higher return.",
+  "source": "generated",
+  "ref": "SM 13-28"
+ },
+ {
+  "id": "q13-613",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "A stock has σ = 12% while the market's σ_M is 16%. Why can its beta not exceed 1?",
+  "options": [
+   "Because beta can never exceed 1 for any stock.",
+   "β = ρ σ_i/σ_M and ρ ≤ 1, so β ≤ 12/16 = 0.75.",
+   "Because β = σ_i/σ_M exactly, which is 0.75.",
+   "Because a stock with a lower σ than the market has a negative correlation with it."
+  ],
+  "answer": 1,
+  "explanation": "β = ρσ_i/σ_M. With ρ at most 1, β is at most σ_i/σ_M = 0.75 here (reached only if ρ = 1). Beta is not capped at 1 in general: a stock with σ_i = 40% and ρ = 0.8 has β = 2.0. The ratio of σ's is the ceiling, not the value.",
+  "source": "generated",
+  "ref": "L06 s53"
+ },
+ {
+  "id": "q13-614",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A stock with a beta of 0 must have a standard deviation of 0.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "Beta measures only systematic risk. A stock unrelated to the market (casino winnings in the lecture's example) has β = 0 but can still be very volatile; only the risk-free asset has both σ = 0 and β = 0.",
+  "source": "generated",
+  "ref": "L06 s51-52"
+ },
+ {
+  "id": "q13-615",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A stock's total risk, measured by its standard deviation, is made up of systematic risk plus unsystematic risk.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Total risk = systematic (market, non-diversifiable) + unsystematic (company-specific, diversifiable). Diversification removes only the second part.",
+  "source": "generated",
+  "ref": "S7 s22"
+ },
+ {
+  "id": "q13-616",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "If the correlation ρ and the market's σ_M stay the same, doubling a stock's own σ_i changes its beta β = ρ σ_i/σ_M by",
+  "options": [
+   "doubling it",
+   "leaving it unchanged",
+   "halving it",
+   "quadrupling it"
+  ],
+  "answer": 0,
+  "explanation": "Beta is proportional to σ_i when ρ and σ_M are fixed, so doubling σ_i doubles β. Note that in practice a rise in σ_i from company-specific news would not change β, because ρ would fall by the same factor.",
+  "source": "generated",
+  "ref": "L06 s53"
+ },
+ {
+  "id": "q13-617",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "T-bills yield 3.0% and the market risk premium is 6.0%. Stock A: expected return 9.5%, σ 15%, β 1.2. Stock B: expected return 9.5%, σ 30%, β 0.7. Which is the better addition to a well-diversified portfolio?",
+  "options": [
+   "Stock A: its lower σ makes it safer.",
+   "Neither: both offer the same expected return.",
+   "Stock B: its alpha is +2.3% (A's is −0.7%), despite the higher σ.",
+   "Stock A: its higher β means a higher reward."
+  ],
+  "answer": 2,
+  "explanation": "SML returns: A = 3 + 1.2 × 6 = 10.2% (alpha −0.7); B = 3 + 0.7 × 6 = 7.2% (alpha +2.3). With the same expected return, the lower-β stock earns the bigger alpha. B's high σ is largely diversifiable.",
+  "source": "generated",
+  "ref": "L06 s58-59"
+ },
+ {
+  "id": "q13-618",
+  "concept": "c13-sigma-vs-beta",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How does beta differ from the correlation coefficient ρ with the market?",
+  "options": [
+   "β is bounded between −1 and 1; ρ is not.",
+   "They are the same number measured in different units.",
+   "ρ measures systematic risk; β measures total risk.",
+   "ρ is bounded between −1 and 1; β is not, because it also scales by σ_i/σ_M."
+  ],
+  "answer": 3,
+  "explanation": "β = ρσ_i/σ_M: correlation times the stock's volatility relative to the market. A volatile stock with a high ρ can have β = 2 or more, whereas ρ can never leave [−1, 1].",
+  "source": "generated",
+  "ref": "L06 s53"
+ },
+ {
+  "id": "q13-701",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which sequence summarizes the professor's guide to building a portfolio?",
+  "options": [
+   "First stock: low β. Next few stocks: high ρ. Adding to a diversified portfolio: low σ and negative α.",
+   "First stock: low σ. Next few stocks: low ρ. Adding to a diversified portfolio: low β and positive α.",
+   "First stock: high α. Next few stocks: low β. Adding to a diversified portfolio: low ρ.",
+   "Always pick the lowest σ at every stage."
+  ],
+  "answer": 1,
+  "explanation": "Each stage uses the risk measure that is still relevant. One stock: all risk is yours, so low σ. A few stocks: low correlation with what you hold diversifies fastest. Many stocks: only systematic risk remains, so look at β and reward it with positive α.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-702",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Marcus is buying the first stock he will ever own. Which feature should he favour?",
+  "options": [
+   "Low σ",
+   "Low β",
+   "Low ρ",
+   "Positive α"
+  ],
+  "answer": 0,
+  "explanation": "With a single stock, none of its risk is diversified away, so total risk (σ) is what he bears. Correlation needs a second stock to be defined, and β and α matter later once only systematic risk is left.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-703",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Marcus owns Calgary Oilfield Services and now chooses his second to fourth stocks. Which feature should he favour?",
+  "options": [
+   "High σ",
+   "High β",
+   "Low ρ with the stocks he already owns",
+   "Low β only"
+  ],
+  "answer": 2,
+  "explanation": "While the portfolio is small, diversifiable risk remains, and it falls fastest when new stocks move differently from existing holdings: low correlation. This is the diversification benefit whenever ρ < 1.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-704",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Marcus now owns 40 stocks. Which features should he look for in a new addition?",
+  "options": [
+   "Low σ and low ρ",
+   "High β and positive α",
+   "Low β and negative α",
+   "Low β and positive α"
+  ],
+  "answer": 3,
+  "explanation": "A well-diversified portfolio's remaining risk is about σ_M, so a new stock matters through its β. Among low-β candidates, positive alpha means it pays more than the SML requires.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-705",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the roles of ρ and β differ when building a portfolio?",
+  "options": [
+   "β matters for the first few stocks and ρ for the later ones.",
+   "ρ with your holdings matters while diversifiable risk remains; β matters once you are diversified.",
+   "ρ and β always give the same ranking of candidate stocks.",
+   "ρ is used for the risk-free asset and β for the risky stocks."
+  ],
+  "answer": 1,
+  "explanation": "Early on, the question is how a stock co-moves with the stocks you already hold (ρ). Later, those stocks already span the market, so the question is how it co-moves with the market itself (β).",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-706",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which rule is NOT part of the professor's guide to building a portfolio?",
+  "options": [
+   "Add the highest-σ stock to a well-diversified portfolio because it offers the most return.",
+   "For the first stock, look for low σ.",
+   "For the next few stocks, look for low ρ.",
+   "For a diversified portfolio, look for low β and positive α."
+  ],
+  "answer": 0,
+  "explanation": "Return is not driven by total risk, and a well-diversified portfolio is indifferent to a stock's σ except through β. The other three are the guide's three stages.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-707",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does ρ matter less once a portfolio holds many stocks?",
+  "options": [
+   "Because correlations between stocks become zero in large portfolios.",
+   "Because σ keeps rising as more stocks are added.",
+   "The diversifiable risk is already gone, so a new stock matters mainly through its β.",
+   "Because β has no meaning for small portfolios."
+  ],
+  "answer": 2,
+  "explanation": "As stocks are added, portfolio σ falls toward the market's σ_M and stops falling. The marginal stock cannot remove more risk by having a low ρ with the holdings, since the holdings already behave like the market.",
+  "source": "generated",
+  "ref": "L06 s46-48"
+ },
+ {
+  "id": "q13-708",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why look for a positive α when adding to a well-diversified portfolio?",
+  "options": [
+   "It lowers the portfolio's standard deviation below σ_M.",
+   "It guarantees a profit on the stock over the holding period.",
+   "It raises the number of stocks, which always adds diversification.",
+   "It pays more than the SML requires for the systematic risk it adds."
+  ],
+  "answer": 3,
+  "explanation": "Alpha is the gap between a stock's expected return and its SML return. Once diversification is exhausted, the way to improve the risk-reward trade-off is to add undervalued stocks. Alpha is not a risk reducer and is only an expectation, not a guarantee.",
+  "source": "generated",
+  "ref": "L06 s57-59"
+ },
+ {
+  "id": "q13-709",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A well-diversified investor wants one more stock. T-bills yield 3.0% and the market risk premium is 6.0%. Candidate P: β 0.55, expected return 7.4%. Candidate Q: β 0.45, expected return 5.4%. Candidate R: β 1.20, expected return 10.6%. Which should she choose?",
+  "options": [
+   "Q: it has the lowest β.",
+   "P: low β and the largest positive alpha (+1.1%)",
+   "R: it has the highest expected return.",
+   "R: it has the largest alpha."
+  ],
+  "answer": 1,
+  "explanation": "SML returns: P = 3 + 0.55 × 6 = 6.3% (alpha +1.1); Q = 3 + 0.45 × 6 = 5.7% (alpha −0.3); R = 3 + 1.2 × 6 = 10.2% (alpha +0.4). P has low β and the largest positive alpha. Q has the lowest β but negative alpha; R's alpha is smaller and its β is higher.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-710",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Maya owns Calgary Oilfield Services (σ 30%). For her second stock she compares three candidates, each with σ = 30%: Edmonton Grocer (ρ with Calgary Oilfield 0.15), Alberta Bank (ρ 0.78) and Rocky Mountain Pipeline (ρ 0.85). Which should she pick for diversification?",
+  "options": [
+   "Edmonton Grocer",
+   "Alberta Bank",
+   "Rocky Mountain Pipeline",
+   "Any of them, because the σ's are equal"
+  ],
+  "answer": 0,
+  "explanation": "With equal σ's, the lowest correlation with her existing holding gives the biggest drop in portfolio σ. A high-ρ stock such as the pipeline moves with her oil-services holding and adds little diversification.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-711",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Maya holds Stock A (σ = 30%) and will put half her money in a second stock with σ = 30%. Candidate Low has a correlation of 0.20 with A; candidate High has a correlation of 0.85. By how many percentage points is the two-stock portfolio's σ lower with Low than with High?",
+  "answer": 5.62,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.85*0.5*0.3*0.5*0.3)*100-sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.2*0.5*0.3*0.5*0.3)*100",
+  "steps": [
+   {
+    "label": "σ_P with ρ = 0.20",
+    "value": 23.24,
+    "check": "sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.2*0.5*0.3*0.5*0.3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "σ_P with ρ = 0.85",
+    "value": 28.85,
+    "check": "sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.85*0.5*0.3*0.5*0.3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Difference (High − Low)",
+    "value": 5.62,
+    "check": "sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.85*0.5*0.3*0.5*0.3)*100-sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.2*0.5*0.3*0.5*0.3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ w_A σ_A w_B σ_B)",
+   "ρ = 0.20: √(0.0225 + 0.0225 + 2 × 0.2 × 0.0225) = √0.054 = 23.24%",
+   "ρ = 0.85: √(0.0225 + 0.0225 + 2 × 0.85 × 0.0225) = √0.08325 = 28.85%; difference ≈ 5.6 points (5.62 from unrounded σ's, 5.61 from the rounded ones)"
+  ],
+  "keystrokes": [
+   "ρ = 0.2: √0.054 = 0.2324",
+   "ρ = 0.85: √0.08325 = 0.2885",
+   "28.85 − 23.24 ≈ 5.6"
+  ],
+  "errors": [
+   {
+    "id": "rho-one-shortcut",
+    "label": "Averaged the σ's and ignored ρ",
+    "value": 0.0,
+    "check": "30-30",
+    "explain": "Weighted-average σ (30% for both) only holds when ρ = 1. For ρ < 1 the portfolio σ is lower, and lower still when ρ is lower."
+   },
+   {
+    "id": "sign-slip",
+    "label": "Subtracted in the wrong order",
+    "value": -5.62,
+    "check": "sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.2*0.5*0.3*0.5*0.3)*100-sqrt(0.5**2*0.3**2+0.5**2*0.3**2+2*0.85*0.5*0.3*0.5*0.3)*100",
+    "explain": "The question asks how much lower the low-correlation portfolio's σ is, so take High minus Low."
+   }
+  ],
+  "explanation": "Choosing the stock with ρ = 0.20 instead of 0.85 cuts the two-stock portfolio's σ from 28.85% to 23.24%, about 5.6 points. This is why the second to fourth stocks should have low ρ with what you already hold.",
+  "source": "generated",
+  "ref": "L06 s59 / S7 s11"
+ },
+ {
+  "id": "q13-712",
+  "concept": "c13-portfolio-building",
+  "also": [
+   "c13-portfolio-beta"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Dev's portfolio of Canadian stocks is worth $240,000 and has a beta of 0.95. He adds $60,000 of new cash in a utility stock with a beta of 0.40. What is the new portfolio beta? Give beta to 2 decimals.",
+  "answer": 0.84,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(240000*0.95+60000*0.4)/300000",
+  "steps": [
+   {
+    "label": "Weight on the old portfolio",
+    "value": 0.8,
+    "check": "240000/300000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "New portfolio beta Σ w β",
+    "value": 0.84,
+    "check": "(240000*0.95+60000*0.4)/300000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Weights: 240,000/300,000 = 0.80 and 60,000/300,000 = 0.20",
+   "β_new = 0.80 × 0.95 + 0.20 × 0.40 = 0.76 + 0.08 = 0.84"
+  ],
+  "keystrokes": [
+   "0.8 × 0.95 = 0.76",
+   "0.2 × 0.4 = 0.08",
+   "0.76 + 0.08 = 0.84"
+  ],
+  "errors": [
+   {
+    "id": "simple-average-beta",
+    "label": "Averaged the two betas ignoring dollar weights",
+    "value": 0.68,
+    "check": "(0.95+0.4)/2",
+    "explain": "The old portfolio is four times the size of the new position, so it gets four times the weight."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Added the betas",
+    "value": 1.35,
+    "check": "0.95+0.4",
+    "explain": "Betas are weighted by portfolio weights that sum to 1, not added."
+   }
+  ],
+  "explanation": "Adding a low-beta stock to a diversified portfolio lowers its systematic risk in proportion to its weight: 80% × 0.95 + 20% × 0.40 = 0.84.",
+  "source": "generated",
+  "ref": "S7 s19-20 / SM 13-13"
+ },
+ {
+  "id": "q13-713",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Portfolio σ is 38% with one stock, 27% with two, 21% with five, 17.5% with 20 and 16.2% with 60 stocks, while the market's σ_M is 16%. What does this tell an investor about choosing the 61st stock?",
+  "options": [
+   "Keep choosing the lowest-σ stock, since σ is still falling quickly.",
+   "Keep choosing the lowest-ρ stock, since each one cuts σ sharply.",
+   "Little diversifiable risk is left, so the choice should be driven by β and α rather than σ or ρ.",
+   "Stop investing: further stocks will raise σ."
+  ],
+  "answer": 2,
+  "explanation": "σ_P falls toward σ_M and then flattens: the portfolio is already as diversified as the market allows. What is left is systematic risk, so the guide is low β and positive α.",
+  "source": "generated",
+  "ref": "L06 s46-48"
+ },
+ {
+  "id": "q13-714",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "For the very first stock in a portfolio, low beta is the best guide.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "A single stock leaves all its risk undiversified, so total risk (σ) is what the investor bears. Beta becomes the right guide only after the portfolio is already diversified.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-715",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Once a portfolio is well diversified, a stock with a negative alpha should still be added if it has the lowest σ available.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "σ no longer matters much because the portfolio's remaining risk is systematic. A negative alpha means the stock is overvalued, offering less than the SML pays for its β, so it hurts the risk-reward trade-off.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-716",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "Put the selection criteria in the order the guide uses them as a portfolio grows.",
+  "options": [
+   "Low β; then low σ; then low ρ",
+   "Low ρ; then low σ; then positive α",
+   "Positive α; then low β; then low σ",
+   "Low σ; then low ρ; then low β with positive α"
+  ],
+  "answer": 3,
+  "explanation": "Start with a single low-σ stock, add a few low-ρ stocks to diversify, and once diversified (σ_P ≈ σ_M) pick low-β, positive-α stocks.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-717",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "To add to an already well-diversified portfolio, look for stocks with low _____ and positive alpha.",
+  "options": [
+   "σ",
+   "β",
+   "ρ",
+   "dividend yield"
+  ],
+  "answer": 1,
+  "explanation": "Once the portfolio holds the market's risk, a stock's contribution to systematic risk (β) is what counts, and positive α means it pays more than the SML requires for that β.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q13-718",
+  "concept": "c13-portfolio-building",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A well-diversified investor looks at Fraser Valley Berries: σ = 45%, β = 0.4, α = +1.5%. What is the best verdict?",
+  "options": [
+   "A good addition: low β and positive α; most of its high σ is diversifiable.",
+   "Reject it: a σ of 45% is too risky.",
+   "Reject it: a β below 1 means it earns less than the risk-free rate.",
+   "Neutral: only ρ matters at this stage."
+  ],
+  "answer": 0,
+  "explanation": "For a diversified portfolio, σ is largely irrelevant; the stock adds little systematic risk (β = 0.4) and offers more than the SML pays (α > 0). A β below 1 still earns more than R_F as long as the market risk premium is positive.",
+  "source": "generated",
+  "ref": "L06 s58-59"
+ }
+]

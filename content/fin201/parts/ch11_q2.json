@@ -1,0 +1,917 @@
+[
+ {
+  "id": "q11-031",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A project team will run a sensitivity analysis on 8 uncertain inputs: one baseline run plus one \"up\" and one \"down\" run for every input. How many full DCF calculations are needed?",
+  "answer": 17.0,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "2*8+1",
+  "steps": [
+   {
+    "label": "Number of runs = 2N + 1",
+    "value": 17.0,
+    "check": "2*8+1",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Runs = 2N + 1 with N = 8",
+   "= 2(8) + 1 = 17"
+  ],
+  "keystrokes": [
+   "2 × 8 + 1 = 17"
+  ],
+  "errors": [
+   {
+    "id": "forgot-base-case",
+    "label": "Left out the baseline run",
+    "value": 16.0,
+    "check": "2*8",
+    "explain": "Eight up-runs and eight down-runs give 16, but the base case is also a full DCF calculation."
+   },
+   {
+    "id": "one-direction-only",
+    "label": "Ran only one direction per input",
+    "value": 9.0,
+    "check": "8+1",
+    "explain": "Each input is flexed both up and down, so there are 2N flexed runs, not N."
+   },
+   {
+    "id": "runs-equal-n",
+    "label": "Counted one run per input",
+    "value": 8.0,
+    "check": "8",
+    "explain": "N counts the inputs, not the runs."
+   }
+  ],
+  "explanation": "Each of the 8 inputs gets an up-run and a down-run (16 runs), and there is one baseline: 2N + 1 = 17.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-032",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "In the Boreal Coffee Roasters project (52,000 bags per year, T = 30%) the variable cost per bag rises by $1.00 and nothing else changes. By how much does each year's operating cash flow change? Enter a negative number for a decrease.",
+  "answer": -36400.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-1*52000*(1-0.3)",
+  "steps": [
+   {
+    "label": "ΔOCF = −Δv × Q × (1 − T)",
+    "value": -36400.0,
+    "check": "-1*52000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Extra variable cost = $1.00 × 52,000 = $52,000 per year (pre-tax)",
+   "After tax: −52,000 × (1 − 0.30) = −$36,400 per year"
+  ],
+  "keystrokes": [
+   "−1 × 52000 × (1 − 0.3) = −36,400"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Ignored the tax saving on the extra cost",
+    "value": -52000.0,
+    "check": "-1*52000",
+    "explain": "The extra cost is deductible, so only (1 − T) of it reduces cash flow."
+   },
+   {
+    "id": "sign-error",
+    "label": "Reported an increase",
+    "value": 36400.0,
+    "check": "1*52000*(1-0.3)",
+    "explain": "A higher variable cost lowers OCF, so the change is negative."
+   }
+  ],
+  "explanation": "A $1 rise in variable cost lowers pre-tax profit by $52,000; the tax shield recovers 30%, so OCF falls by $36,400 each year. Multiply by the annuity factor (4.230538) if you want the effect on NPV.",
+  "source": "generated",
+  "ref": "SM 11-5c"
+ },
+ {
+  "id": "q11-033",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Boreal Coffee Roasters' base-case NPV is $148,510.65 (annual OCF $120,200; 6 years; R = 11%; T = 30%). Fixed costs are re-forecast to be $15,000 per year higher, with everything else unchanged. What is the new NPV?",
+  "options": [
+   "$85,052.58",
+   "$138,010.65",
+   "$104,090.00",
+   "$192,931.30"
+  ],
+  "answer": 2,
+  "explanation": "After-tax, the extra $15,000 costs 15,000 × 0.7 = $10,500 a year. Over 6 years at 11% that is 10,500 × 4.230538 = $44,420.65, so NPV = $148,510.65 − $44,420.65 = $104,090.00. Skipping (1 − T) understates the new NPV, skipping the annuity factor treats one year's loss as the total, and a plus sign treats a cost as a gain.",
+  "source": "generated",
+  "ref": "SM 11-19b"
+ },
+ {
+  "id": "q11-034",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A model of Calgary Aero Parts gives NPV = $210,000 when 10,000 units are sold and NPV = $273,000 when 11,500 units are sold, with every other input at its base value. What is the sensitivity ΔNPV/ΔQ?",
+  "options": [
+   "$42.00 per unit",
+   "$0.02 per unit",
+   "$5.48 per unit",
+   "$23.74 per unit"
+  ],
+  "answer": 0,
+  "explanation": "Slope = (273,000 − 210,000) ÷ (11,500 − 10,000) = 63,000 ÷ 1,500 = $42 per unit. Inverting the ratio gives $0.02, dividing the NPV change by the new quantity gives $5.48, and dividing the new NPV by the new quantity gives $23.74; none of these is a change in NPV per change in quantity.",
+  "source": "generated",
+  "ref": "SM 11-4"
+ },
+ {
+  "id": "q11-035",
+  "concept": "c11-sensitivity",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A sensitivity analysis will flex 9 uncertain inputs up and down around a base case. How many full DCF calculations does it need?",
+  "options": [
+   "18",
+   "10",
+   "9",
+   "19"
+  ],
+  "answer": 3,
+  "explanation": "2N + 1 = 2(9) + 1 = 19. Eighteen forgets the base-case run, 10 counts only one direction per input, and 9 counts inputs instead of runs.",
+  "source": "generated",
+  "ref": "L05C s4"
+ },
+ {
+  "id": "q11-036",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Scenario analysis in project evaluation means:",
+  "options": [
+   "changing one input at a time while all the others stay at their base values",
+   "drawing every input at random thousands of times from a distribution",
+   "solving for the single input value at which NPV equals zero",
+   "changing several inputs together in a sensible, consistent way to build base, best and worst cases"
+  ],
+  "answer": 3,
+  "explanation": "Scenario analysis moves several inputs at once to create sensible cases (for example sales up 10% and costs up 8%), usually a base, a best and a worst case. One at a time is sensitivity, random draws are simulation, and a zero crossing is NPV break-even.",
+  "source": "generated",
+  "ref": "L05C s5; SM 11 CTQ 2"
+ },
+ {
+  "id": "q11-037",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Northern Lights Cinemas builds three cases for a new multiplex. In the best case attendance and ticket price are 12% above forecast while staffing and concession costs are 8% below. The worst case is the mirror image, and the third case is the forecast itself. This technique is:",
+  "options": [
+   "scenario analysis",
+   "sensitivity analysis",
+   "simulation analysis",
+   "NPV break-even analysis"
+  ],
+  "answer": 0,
+  "explanation": "Several inputs move together in a consistent story, giving best, base and worst cases: scenario analysis. Sensitivity would move attendance alone, then price alone.",
+  "source": "generated",
+  "ref": "L05C s5"
+ },
+ {
+  "id": "q11-038",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts scenario analysis with simulation?",
+  "options": [
+   "scenario analysis draws its inputs at random, while simulation uses three hand-picked cases",
+   "scenario analysis changes only one input, while simulation changes all of them at once",
+   "scenario analysis gives a distribution of NPV, while simulation gives only three NPV values",
+   "scenario analysis uses a few hand-picked consistent cases; simulation draws all inputs at random thousands of times"
+  ],
+  "answer": 3,
+  "explanation": "A scenario analysis has a handful of named cases (typically base, best and worst), so it produces only a handful of NPVs. Simulation randomizes all inputs from distributions and produces an entire distribution.",
+  "source": "generated",
+  "ref": "L05C s5-6; TB 11.2"
+ },
+ {
+  "id": "q11-039",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "In a scenario analysis, why is the change in OCF not proportional to the change in sales?",
+  "options": [
+   "the discount rate rises whenever sales rise, which lowers the NPV",
+   "fixed costs do not move with volume, so cost per unit falls as units rise",
+   "depreciation is zero whenever the level of sales changes",
+   "variable costs are ignored in scenario analysis calculations"
+  ],
+  "answer": 1,
+  "explanation": "The lecture's reason: we have fixed and variable costs, and the fixed costs are spread over the number of units produced. So a 10% change in sales changes OCF by more than 10% when fixed costs are significant.",
+  "source": "generated",
+  "ref": "L05C s5"
+ },
+ {
+  "id": "q11-040",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following would NOT belong in the worst-case scenario of a typical project?",
+  "options": [
+   "fixed costs lower than the base case",
+   "unit sales lower than the base case",
+   "selling price lower than the base case",
+   "variable cost per unit higher than the base case"
+  ],
+  "answer": 0,
+  "explanation": "In the worst case sales and price fall while costs (variable and fixed) rise. Lower fixed costs would be favourable, so they belong in the best case.",
+  "source": "generated",
+  "ref": "SM 11-3"
+ },
+ {
+  "id": "q11-041",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A scenario analysis gives NPV = +$1.8M in the best case, +$0.4M in the base case and −$1.2M in the worst case. What can we conclude?",
+  "options": [
+   "accept, because the best-case gain is bigger than the worst-case loss in dollars",
+   "the project could gain or lose a lot; scenarios show what can happen, not how likely each case is",
+   "reject, because the worst-case NPV is negative and so the project fails",
+   "the expected NPV is the simple average of the three, about +$0.33M, so accept"
+  ],
+  "answer": 1,
+  "explanation": "Scenario analysis tells us what can happen and helps gauge the potential for disaster, but it does not by itself tell us whether to take the project. To go further we need probabilities for the cases; an equal-weight average assumes they are equally likely.",
+  "source": "generated",
+  "ref": "TB 11.2; SM 11-26"
+ },
+ {
+  "id": "q11-042",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why not keep adding scenarios until every possibility is covered?",
+  "options": [
+   "each extra scenario changes the discount rate used for the others",
+   "accounting rules limit scenario analysis to three cases per project",
+   "more cases only show more possibilities and give no decision rule (paralysis of analysis)",
+   "extra scenarios always lower the base-case NPV when added"
+  ],
+  "answer": 2,
+  "explanation": "No matter how many scenarios we run, all we learn are possibilities, some good and some bad. Beyond a handful of sensible cases the extra work adds little guidance.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ },
+ {
+  "id": "q11-043",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a best-case scenario, price and quantity are raised while variable costs and fixed costs are lowered.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. A best case moves every input in its favourable direction: revenues up, costs down. The worst case is the reverse.",
+  "source": "generated",
+  "ref": "SM 11-3, 11-6"
+ },
+ {
+  "id": "q11-044",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "If every input in a scenario moves 10% in the favourable direction, NPV rises by exactly 10%.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Scenario results are not linear. Fixed costs do not scale with volume and the investment outlay does not change, so a 10% favourable move in each input changes OCF and NPV by very different percentages (in the textbook example the best-case NPV is several times the base case).",
+  "source": "generated",
+  "ref": "L05C s5; SM 11-6"
+ },
+ {
+  "id": "q11-045",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "The base-case NPV of a project is positive and its worst-case NPV is negative. What extra information lets management compute an expected NPV across the three scenarios?",
+  "options": [
+   "the probability of each scenario",
+   "the IRR of each scenario",
+   "the payback period of the base case",
+   "the sensitivity of NPV to each input"
+  ],
+  "answer": 0,
+  "explanation": "Expected NPV = Σ p × NPV, so each case needs a probability, and the probabilities must sum to 1. IRRs, payback and sensitivities do not weight the cases.",
+  "source": "generated",
+  "ref": "SM 11-26"
+ },
+ {
+  "id": "q11-046",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "With probabilities p_best, p_base and p_worst (summing to 1), the expected NPV across scenarios is:",
+  "options": [
+   "(NPV_best + NPV_base + NPV_worst) ÷ 3 for any probabilities",
+   "p_best × NPV_best + p_base × NPV_base + p_worst × NPV_worst",
+   "NPV_base × (1 + the average percentage change of the inputs)",
+   "NPV_best − NPV_worst"
+  ],
+  "answer": 1,
+  "explanation": "Expected value is the probability-weighted sum of the scenario NPVs. A simple average is correct only if the three cases are equally likely, and the other two options are not expected values at all.",
+  "source": "generated",
+  "ref": "SM 11-26"
+ },
+ {
+  "id": "q11-047",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okotoks Trailer Works plans a new trailer line costing $900,000 over 4 years, with no salvage, and treats CCA as straight-line (D = $225,000 per year). T = 30% and the required return is 12% per annum. Base case: price $2,400 and variable cost $1,350 per trailer, 1,200 trailers per year, fixed costs $620,000 per year. In the worst-case scenario, price and quantity are each 10% below base, and variable and fixed costs are each 10% above base. What is the worst-case NPV?",
+  "answer": -595050.13,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-900000+(((2160-1485)*1080-682000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+  "steps": [
+   {
+    "label": "Worst-case contribution per trailer (P − v)",
+    "value": 675.0,
+    "check": "2400*0.9-1350*1.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Worst-case EBITDA = (P − v)Q − FC",
+    "value": 47000.0,
+    "check": "(2400*0.9-1350*1.1)*1200*0.9-620000*1.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Worst-case OCF",
+    "value": 100400.0,
+    "check": "(((2160-1485)*1080-682000)*(1-0.3)+0.3*225000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Worst-case NPV",
+    "value": -595050.13,
+    "check": "-900000+(((2160-1485)*1080-682000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Worst inputs: P = 2,400 × 0.9 = 2,160; v = 1,350 × 1.1 = 1,485; Q = 1,200 × 0.9 = 1,080; FC = 620,000 × 1.1 = 682,000",
+   "Contribution = 2,160 − 1,485 = $675; EBITDA = 675 × 1,080 − 682,000 = $47,000",
+   "OCF = 47,000 × 0.7 + 0.3 × 225,000 = 100,400.00",
+   "NPV = −900,000 + 100,400.00 × 3.037349 = −$595,050.13"
+  ],
+  "keystrokes": [
+   "TVM: N = 4, I/Y = 12, PMT = −1, CPT PV = 3.037349",
+   "CF worksheet: CF0 = −900000, C01 = 100,400, F01 = 4, I = 12, NPV CPT → -595,050.13"
+  ],
+  "errors": [
+   {
+    "id": "scenario-direction",
+    "label": "Lowered variable cost in the worst case",
+    "value": 24933.62,
+    "check": "-900000+(((2160-1215)*1080-682000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+    "explain": "In the worst case every cost moves UP. Cutting variable cost by 10% is a favourable move."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield T·D",
+    "value": -800071.21,
+    "check": "-900000+((2160-1485)*1080-682000)*(1-0.3)*((1-(1+0.12)**-4)/0.12)",
+    "explain": "OCF = (S − C)(1 − T) + T·D. Dropping T·D = $67,500 a year overstates the loss."
+   },
+   {
+    "id": "assumed-linear",
+    "label": "Scaled the base OCF down by 10%",
+    "value": 509178.23,
+    "check": "-900000+515500*0.9*((1-(1+0.12)**-4)/0.12)",
+    "explain": "The scenario changes four inputs and fixed costs do not scale, so OCF does not simply fall 10%; it collapses to $100,400."
+   }
+  ],
+  "explanation": "The worst case changes all four inputs the unfavourable way. Because fixed costs rise while contribution shrinks, EBITDA drops from $640,000 to $47,000 and OCF to $100,400, producing a large negative NPV of about −$595,050. The change is far from a 10% move.",
+  "source": "generated",
+  "ref": "SM 11-6, 11-19a"
+ },
+ {
+  "id": "q11-048",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Elbow River Brewing is considering a $420,000 canning line for a 5-year project with no salvage. CCA is treated as straight-line (D = $84,000 per year), T = 25% and the required return is 9% per annum. Base case: price $31.00 and variable cost $19.00 per case, 60,000 cases per year, fixed costs $310,000. In the best-case scenario quantity is 20% above base, price 5% above, variable cost 5% below and fixed costs 10% below. What is the best-case NPV?",
+  "answer": 1893370.09,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-420000+(((32.55-18.05)*72000-279000)*(1-0.25)+0.25*84000)*((1-(1+0.09)**-5)/0.09)",
+  "steps": [
+   {
+    "label": "Best-case price",
+    "value": 32.55,
+    "check": "31*1.05",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Best-case variable cost",
+    "value": 18.05,
+    "check": "19*0.95",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Best-case EBITDA = (P − v)Q − FC",
+    "value": 765000.0,
+    "check": "(31*1.05-19*0.95)*60000*1.2-310000*0.9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Best-case OCF",
+    "value": 594750.0,
+    "check": "(((32.55-18.05)*72000-279000)*(1-0.25)+0.25*84000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Best-case NPV",
+    "value": 1893370.09,
+    "check": "-420000+(((32.55-18.05)*72000-279000)*(1-0.25)+0.25*84000)*((1-(1+0.09)**-5)/0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Best inputs: P = 32.55; v = 18.05; Q = 72,000; FC = 279,000",
+   "EBITDA = (32.55 − 18.05)(72,000) − 279,000 = 1,044,000 − 279,000 = $765,000",
+   "OCF = 765,000 × 0.75 + 0.25 × 84,000 = 594,750.00",
+   "Annuity factor (9%, 5) = 3.889651; NPV = −420,000 + 594,750.00 × 3.889651 = $1,893,370.09"
+  ],
+  "keystrokes": [
+   "TVM: N = 5, I/Y = 9, PMT = −1, CPT PV = 3.889651",
+   "CF worksheet: CF0 = −420000, C01 = 594,750, F01 = 5, I = 9, NPV CPT → 1,893,370.09"
+  ],
+  "errors": [
+   {
+    "id": "scenario-direction",
+    "label": "Raised variable cost 5% in the best case",
+    "value": 1494291.87,
+    "check": "-420000+(((32.55-19.95)*72000-279000)*(1-0.25)+0.25*84000)*((1-(1+0.09)**-5)/0.09)",
+    "explain": "In the best case costs move DOWN. Variable cost 5% above base is an unfavourable move."
+   },
+   {
+    "id": "scenario-direction",
+    "label": "Raised fixed costs 10% in the best case",
+    "value": 1712501.31,
+    "check": "-420000+(((32.55-18.05)*72000-341000)*(1-0.25)+0.25*84000)*((1-(1+0.09)**-5)/0.09)",
+    "explain": "In the best case fixed costs fall by 10%, to $279,000, not rise to $341,000."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 1811687.41,
+    "check": "-420000+(((32.55-18.05)*72000-279000)*(1-0.25))*((1-(1+0.09)**-5)/0.09)",
+    "explain": "OCF includes T·D = 0.25 × 84,000 = $21,000 a year from the tax shield."
+   }
+  ],
+  "explanation": "Best case means revenues up (price and quantity) and costs down (variable and fixed). EBITDA climbs from $410,000 in the base case to $765,000, OCF to $594,750, and NPV to about $1.89 million, much more than a 10% to 20% change.",
+  "source": "generated",
+  "ref": "SM 11-6, 11-19a"
+ },
+ {
+  "id": "q11-049",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lac Ste. Anne Outfitters values a project in three scenarios: best case NPV = $1,350,000 (probability 20%), base case NPV = $410,000 (probability 50%) and worst case NPV = −$690,000 (probability 30%). What is the project's expected NPV?",
+  "answer": 268000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.2*1350000+0.5*410000+0.3*(-690000)",
+  "steps": [
+   {
+    "label": "Best-case contribution = 0.20 × 1,350,000",
+    "value": 270000.0,
+    "check": "0.2*1350000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Base-case contribution = 0.50 × 410,000",
+    "value": 205000.0,
+    "check": "0.5*410000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Worst-case contribution = 0.30 × (−690,000)",
+    "value": -207000.0,
+    "check": "0.3*(-690000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Expected NPV",
+    "value": 268000.0,
+    "check": "0.2*1350000+0.5*410000+0.3*(-690000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "E[NPV] = Σ p × NPV",
+   "= 0.20(1,350,000) + 0.50(410,000) + 0.30(−690,000)",
+   "= 270,000 + 205,000 − 207,000 = $268,000.00"
+  ],
+  "keystrokes": [
+   "0.2 × 1350000 = 270000; + 0.5 × 410000 = 475000; + 0.3 × (−690000) → 268000"
+  ],
+  "errors": [
+   {
+    "id": "averaged-equal-weights",
+    "label": "Used a simple average of the three NPVs",
+    "value": 356666.67,
+    "check": "(1350000+410000-690000)/3",
+    "explain": "A simple average treats the three cases as equally likely; the probabilities here are 20%, 50% and 30%."
+   },
+   {
+    "id": "sign-error",
+    "label": "Added the worst-case loss instead of subtracting it",
+    "value": 682000.0,
+    "check": "0.2*1350000+0.5*410000+0.3*690000",
+    "explain": "The worst-case NPV is negative, so its weighted contribution is −$207,000."
+   },
+   {
+    "id": "ignored-probabilities",
+    "label": "Reported the base-case NPV only",
+    "value": 410000.0,
+    "check": "410000",
+    "explain": "Expected NPV weights all three scenarios by their probabilities."
+   }
+  ],
+  "explanation": "Expected NPV is the probability-weighted sum of the scenario NPVs: 0.2(1,350,000) + 0.5(410,000) + 0.3(−690,000) = $268,000. The positive expected value does not remove the 30% chance of a $690,000 loss.",
+  "source": "generated",
+  "ref": "SM 11-26"
+ },
+ {
+  "id": "q11-050",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okotoks Trailer Works plans a new trailer line costing $900,000 over 4 years, with no salvage, and treats CCA as straight-line (D = $225,000 per year). T = 30% and the required return is 12% per annum. Base case: price $2,400 and variable cost $1,350 per trailer, 1,200 trailers per year, fixed costs $620,000 per year. Optimistic scenario: sales 20% above forecast and, with extra supervisors, fixed costs 5% higher; price and variable cost per trailer unchanged. What is the scenario NPV?",
+  "answer": 1135631.53,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-900000+(((2400-1350)*1440-651000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+  "steps": [
+   {
+    "label": "Scenario EBITDA = (P − v)Q − FC",
+    "value": 861000.0,
+    "check": "(2400-1350)*1200*1.2-620000*1.05",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Scenario OCF",
+    "value": 670200.0,
+    "check": "(((2400-1350)*1440-651000)*(1-0.3)+0.3*225000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Scenario NPV",
+    "value": 1135631.53,
+    "check": "-900000+(((2400-1350)*1440-651000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Q = 1,200 × 1.2 = 1,440; FC = 620,000 × 1.05 = 651,000",
+   "EBITDA = (2,400 − 1,350)(1,440) − 651,000 = 1,512,000 − 651,000 = $861,000",
+   "OCF = 861,000 × 0.7 + 67,500 = 670,200.00",
+   "NPV = −900,000 + 670,200.00 × 3.037349 = $1,135,631.53",
+   "OCF rises 30.01% and NPV rises 70.6% for a 20% rise in sales: not linear."
+  ],
+  "keystrokes": [
+   "CF worksheet: CF0 = −900000, C01 = 670200, F01 = 4, I = 12, NPV CPT → 1,135,631.53"
+  ],
+  "errors": [
+   {
+    "id": "assumed-linear",
+    "label": "Scaled the base NPV up by 20%",
+    "value": 798904.31,
+    "check": "665753.5881859129*1.2",
+    "explain": "Sales up 20% does not mean NPV up 20%. Fixed costs are spread over more units and the outlay is unchanged, so NPV rises far more (about 70.6%)."
+   },
+   {
+    "id": "ignored-fixed-cost-change",
+    "label": "Forgot the 5% rise in fixed costs",
+    "value": 1201542.01,
+    "check": "-900000+(((2400-1350)*1440-620000)*(1-0.3)+0.3*225000)*((1-(1+0.12)**-4)/0.12)",
+    "explain": "The scenario changes two inputs together: volume and fixed costs."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": 930610.45,
+    "check": "-900000+(((2400-1350)*1440-651000)*(1-0.3))*((1-(1+0.12)**-4)/0.12)",
+    "explain": "OCF = (S − C)(1 − T) + T·D; the shield is $67,500 a year."
+   }
+  ],
+  "explanation": "A scenario changes several inputs together. Here volume +20% and fixed costs +5% lift EBITDA from $640,000 to $861,000 (+34.5%), OCF by about 30%, and NPV by about 70.6% because the $900,000 outlay does not change. This is why scenario results are not linear.",
+  "source": "generated",
+  "ref": "L05C s5; TB 11.2"
+ },
+ {
+  "id": "q11-051",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project's base case is: price $50, variable cost $30 per unit, 10,000 units, fixed costs $100,000, CCA $40,000 a year and T = 40%. In the best-case scenario price and quantity are each 10% higher and variable and fixed costs are each 10% lower. What is the best-case annual OCF?",
+  "options": [
+   "$107,200.00",
+   "$146,800.00",
+   "$134,800.00",
+   "$130,800.00"
+  ],
+  "answer": 1,
+  "explanation": "Best case inputs: P = 55, v = 27, Q = 11,000, FC = 90,000. EBITDA = (55 − 27)(11,000) − 90,000 = 218,000; OCF = 218,000 × 0.6 + 0.4 × 40,000 = $146,800. Raising variable cost (107,200) or fixed cost (134,800) in the best case moves a cost the wrong way, and dropping the tax shield gives $130,800.",
+  "source": "generated",
+  "ref": "SM 11-6"
+ },
+ {
+  "id": "q11-052",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project's NPV is estimated at $820,000 in the best case (probability 25%), $300,000 in the base case (45%) and −$560,000 in the worst case (30%). What is the expected NPV?",
+  "options": [
+   "$186,666.67",
+   "$300,000.00",
+   "$172,000.00",
+   "$241,000.00"
+  ],
+  "answer": 2,
+  "explanation": "E[NPV] = 0.25(820,000) + 0.45(300,000) + 0.30(−560,000) = 205,000 + 135,000 − 168,000 = $172,000. The equal-weight average is $186,666.67, the base case alone is $300,000, and attaching the probabilities to the wrong scenarios gives $241,000.",
+  "source": "generated",
+  "ref": "SM 11-26"
+ },
+ {
+  "id": "q11-053",
+  "concept": "c11-scenario",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A project has 6 uncertain inputs. How many full DCF calculations are needed for a sensitivity analysis, and how many for a scenario analysis with a base, a best and a worst case?",
+  "options": [
+   "13 for sensitivity and 3 for scenario",
+   "12 for sensitivity and 2 for scenario",
+   "7 for sensitivity and 3 for scenario",
+   "13 for sensitivity and 6 for scenario"
+  ],
+  "answer": 0,
+  "explanation": "Sensitivity needs 2N + 1 = 13 runs; a scenario analysis needs one run per case, so 3 no matter how many inputs there are. Twelve forgets the base case, 7 is N + 1, and 6 confuses the number of inputs with the number of cases.",
+  "source": "generated",
+  "ref": "L05C s4-5"
+ },
+ {
+  "id": "q11-054",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Simulation analysis in capital budgeting is best described as:",
+  "options": [
+   "changing one input at a time and recomputing NPV, for 2N + 1 runs in total",
+   "building a best, a base and a worst case by moving several inputs together",
+   "a computer drawing all uncertain inputs at random many times and studying the distribution of NPV",
+   "solving for the single input value that sets NPV equal to zero"
+  ],
+  "answer": 2,
+  "explanation": "Simulation randomizes all inputs according to chosen distributions, repeats thousands of times, and then looks at the distribution of the output. The three distractors describe sensitivity analysis, scenario analysis and NPV break-even analysis.",
+  "source": "generated",
+  "ref": "L05C s6; TB 11.2"
+ },
+ {
+  "id": "q11-055",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Cedar Mills fits a triangular distribution to each of six uncertain inputs, has a spreadsheet draw a value for all six at once, computes the NPV, and repeats this 10,000 times. The analyst then plots a histogram of the 10,000 NPVs. This technique is:",
+  "options": [
+   "sensitivity analysis",
+   "scenario analysis",
+   "NPV break-even analysis",
+   "simulation analysis"
+  ],
+  "answer": 3,
+  "explanation": "Random draws from distributions for all inputs, repeated thousands of times, with a histogram of the NPV output, is simulation. Sensitivity moves one input at a time and scenario uses a few hand-picked consistent cases.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-056",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does simulation analysis differ from scenario analysis?",
+  "options": [
+   "scenario analysis changes one input at a time, while simulation changes several together",
+   "scenario analysis tries a few hand-picked combinations; simulation draws all inputs at random and gives a distribution of NPV",
+   "simulation produces a single accept or reject threshold, while scenario analysis produces a distribution",
+   "the two are identical and differ only in the software used"
+  ],
+  "answer": 1,
+  "explanation": "A scenario analysis uses a handful of sensible, consistent cases (base, best, worst). Simulation randomizes every input from a distribution many times and yields the whole output distribution.",
+  "source": "generated",
+  "ref": "L05C s5-6; TB 11.2"
+ },
+ {
+  "id": "q11-057",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we study the whole distribution of simulated NPVs rather than only the average?",
+  "options": [
+   "the average of simulated NPVs is always wrong and must be replaced",
+   "only the single highest NPV matters for the accept decision",
+   "the distribution is always a normal curve centred on the base-case NPV",
+   "the shape shows how likely losses are and how skewed the outcomes are, which the average alone hides"
+  ],
+  "answer": 3,
+  "explanation": "The professor stresses that the shape is important, not just the baseline: two projects with the same mean can have very different chances of NPV below zero. The output is usually not symmetrical and its peak need not sit at the base case.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-058",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A simulation of 8,000 trials gives a mean NPV of +$310,000, but 35% of the trials have a negative NPV. Which reading is best?",
+  "options": [
+   "the mean is positive, but over a third of outcomes destroy value, so the downside matters, not only the mean",
+   "any negative trial proves the project must be rejected, whatever the mean is",
+   "the true NPV of the project is -35%, because 35% of trials are negative",
+   "the simulation shows that the base-case forecast was wrong and must be redone"
+  ],
+  "answer": 0,
+  "explanation": "Simulation describes the range and likelihood of outcomes. A positive mean with a 35% chance of NPV below zero means substantial downside risk; it does not by itself prove rejection, and 35% is a probability of loss, not an NPV.",
+  "source": "generated",
+  "ref": "L05C s6; TB 11.2"
+ },
+ {
+  "id": "q11-059",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the output distribution of a simulation is NOT necessarily true?",
+  "options": [
+   "it is symmetrical, with its peak at the base-case NPV",
+   "its shape matters, not just its mean",
+   "it may be skewed to one side",
+   "it is built from many random draws of the inputs"
+  ],
+  "answer": 0,
+  "explanation": "The lecture warns that the output distribution will probably not be symmetrical and that the baseline or expected value may not be at the peak. The other three statements are true.",
+  "source": "generated",
+  "ref": "L05C s6"
+ },
+ {
+  "id": "q11-060",
+  "concept": "c11-simulation",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Simulation analysis gives a simple decision rule that tells us whether to accept the project.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Simulation describes the range and likelihood of NPV outcomes, but no simple rule tells us what to do with them. Judgement about the downside is still needed.",
+  "source": "generated",
+  "ref": "TB 11.2"
+ }
+]

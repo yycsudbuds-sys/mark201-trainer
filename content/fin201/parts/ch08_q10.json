@@ -1,0 +1,1464 @@
+[
+ {
+  "id": "q08-401",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In a non-constant growth valuation, the horizon price P_T is:",
+  "options": [
+   "the present value today of the dividends paid during the supernormal phase",
+   "the last supernormal dividend D_T divided by (R − g2)",
+   "the value at date T of every dividend from date T+1 onward, found as D_{T+1}/(R − g2)",
+   "today's price P0 compounded forward T years at the required return R"
+  ],
+  "answer": 2,
+  "explanation": "P_T = D_{T+1}/(R − g2) is a value at date T that stands in for the whole infinite stream after T. It is a future dollar amount, so it still has to be discounted T periods. The tempting slip is putting D_T in the numerator: the Gordon formula always needs the NEXT dividend, one period after the date being valued.",
+  "source": "generated",
+  "ref": "L04 s19-20; TB 8.1"
+ },
+ {
+  "id": "q08-402",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Boreal Biotech pays no dividends for five years. Its first dividend, $0.80, arrives at the end of year 6 and then grows 5% per year forever. Using P = D/(R − g), the Gordon formula with that $0.80 in the numerator values the stock at which date?",
+  "options": [
+   "Year 5",
+   "Year 6",
+   "Year 0",
+   "Year 7"
+  ],
+  "answer": 0,
+  "explanation": "The Gordon formula gives the value one period BEFORE the first dividend in its numerator. The first dividend is D6, so the formula values the stock at the end of year 5 (P5 = D6/(R − g)). Reading it as a year-6 price is the classic horizon-off-by-one error that also leads to discounting one period too many.",
+  "source": "generated",
+  "ref": "S4 s6-13; TB 8.1 Fig 8.1"
+ },
+ {
+  "id": "q08-403",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Foothills Robotics is expected to pay $1.10, $1.90 and $2.60 at the ends of years 1, 2 and 3. From year 4 on the dividend grows 3% per year forever. Which list contains exactly the cash flows to discount back to date 0?",
+  "options": [
+   "D1, D2, D3 and the horizon price P3 = D4/(R − g)",
+   "D1, D2, D3, D4 and the horizon price P3 = D4/(R − g)",
+   "D1, D2, D3 and the horizon price P4 = D5/(R − g)",
+   "D1, D2 and the horizon price P2 = D3/(R − g)"
+  ],
+  "answer": 0,
+  "explanation": "Constant growth starts with D4, so the horizon price is P3 = D4/(R − g) and it already contains D4 and every later dividend. Adding D4 separately double-counts it. Moving the horizon to P4 or P2 puts the formula one period away from the first constant-growth dividend.",
+  "source": "generated",
+  "ref": "TB 8.1; S4 s6-13"
+ },
+ {
+  "id": "q08-404",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Nova Cedar Mills pays no dividend for three years. Its first dividend, D4 = $0.90, is followed by growth of 7% per year forever, and R = 12% per annum. What is the correct first computation?",
+  "options": [
+   "P4 = D4/(R − g) = $18.00, a value at the end of year 4",
+   "P3 = D4(1 + g)/(R − g) = $19.26, a value at the end of year 3",
+   "P0 = D4/(R − g) = $18.00, because the formula gives today's price",
+   "P3 = D4/(R − g) = 0.90/(0.12 − 0.07) = $18.00, a value at the end of year 3"
+  ],
+  "answer": 3,
+  "explanation": "D4 is already the first constant-growth dividend, so it goes straight into the numerator: 0.90/0.05 = $18.00, valued one period earlier, at year 3. Multiplying by (1 + g) again ($19.26) grows the dividend twice; labelling the result P4 or P0 puts the date in the wrong place.",
+  "source": "generated",
+  "ref": "SM 8-14; TB 8.1"
+ },
+ {
+  "id": "q08-405",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does valuing a non-constant-growth stock differ from applying the Gordon model at date 0?",
+  "options": [
+   "Non-constant growth ignores the irregular early dividends and values only the horizon price at date T",
+   "Non-constant growth uses a different required return for every year of the early irregular phase",
+   "Non-constant growth uses the supernormal rate g1 in the horizon-price formula, where Gordon uses g2",
+   "Gordon values the whole stream at date 0 from D1; non-constant growth applies the formula at date T and discounts back"
+  ],
+  "answer": 3,
+  "explanation": "Gordon needs one constant g from the very first dividend. When growth changes, the formula only works from the date constant growth begins, so we value the stock there (P_T), then pull P_T and the earlier dividends back with (1 + R)^t. The horizon price uses g2, the long-run rate, never g1.",
+  "source": "generated",
+  "ref": "L04 s19-20; S4 s5"
+ },
+ {
+  "id": "q08-406",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT part of the standard non-constant growth procedure?",
+  "options": [
+   "Listing the explicit dividends through date T on a timeline of the cash flows",
+   "Growing D_T by the supernormal rate g1 to obtain D_{T+1} for the horizon price",
+   "Finding the date of the first dividend that grows at the constant rate",
+   "Discounting the horizon price back T periods to date 0 along with the dividends"
+  ],
+  "answer": 1,
+  "explanation": "D_{T+1} is the first dividend of the constant-growth phase, so it is D_T grown at g2, not g1 (horizon-wrong-g). The other three statements are the real steps: timeline, locate the first constant-growth dividend, discount P_T together with the early dividends.",
+  "source": "generated",
+  "ref": "S4 s9-13; TB 8.1"
+ },
+ {
+  "id": "q08-407",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can the first-phase growth rate g1 exceed the required return R, while the long-run rate g2 cannot?",
+  "options": [
+   "Investors apply a lower discount rate to the dividends of the first phase than to later dividends",
+   "g1 is a growth rate of earnings per share, while g2 is a growth rate of dividends per share",
+   "The Gordon formula only requires g2 to be positive; it does not need to be smaller than R",
+   "The first phase has finitely many dividends, so its value is finite; the infinite phase needs g2 < R for P = D/(R − g2)"
+  ],
+  "answer": 3,
+  "explanation": "A finite stream of fast-growing dividends always has a finite value, even when g1 > R. An infinite stream growing at g2 ≥ R would have an infinite or negative value from the formula, which is why the long-run rate must stay below R (SM 8-30 stock Y).",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-30"
+ },
+ {
+  "id": "q08-408",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps of a non-constant growth valuation in the correct order.",
+  "options": [
+   "Timeline and dividends → D_{T+1} → P_T = D_{T+1}/(R − g2) → discount everything to date 0 and add",
+   "Discount the explicit dividends → P_T = D_{T+1}/(R − g2) → find D_{T+1} → add the discounted amounts",
+   "P_T = D_{T+1}/(R − g2) → timeline and explicit dividends → discount to date 0 → find D_{T+1}",
+   "First constant-growth dividend D_{T+1} → discount to date 0 → P_T = D_{T+1}/(R − g2) → timeline"
+  ],
+  "answer": 0,
+  "explanation": "You cannot compute P_T until you know which dividend starts constant growth and when it is paid, and you cannot add anything until every piece is a date-0 value. So: timeline, D_{T+1}, horizon price, discount and sum.",
+  "source": "generated",
+  "ref": "S4 s9-13; MAP A3"
+ },
+ {
+  "id": "q08-409",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "True or false: if the first constant-growth dividend is D6, the horizon price is P5 = D6/(R − g2).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The Gordon formula values the stock one period before the dividend in its numerator, so D6 gives P5. Then P5 is discounted five periods (not six).",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-14"
+ },
+ {
+  "id": "q08-410",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A student values a stock whose dividend growth is 18% for five years and 4% thereafter, with R = 12%. Her horizon-price step returns a NEGATIVE number. The most likely cause is that she:",
+  "options": [
+   "discounted the horizon price one period too many before adding it to the dividends",
+   "used the first-phase rate g1 = 18% in R − g, which gives 12% − 18% = −6%",
+   "forgot to add the dividends of the first phase to the discounted horizon price",
+   "put D5 instead of D6 in the numerator of the Gordon formula"
+  ],
+  "answer": 1,
+  "explanation": "A negative price from the Gordon formula means R − g < 0, so a growth rate above R was used. The horizon price must use g2 = 4%. The other slips change the size of the answer but cannot flip its sign.",
+  "source": "generated",
+  "ref": "SM 8-30; TB 8.1"
+ },
+ {
+  "id": "q08-411",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Cobalt Peak Software will pay its first dividend, $2.40, at the end of year 7. Dividends then grow 6% per year forever and R = 13% per annum. What is the price today?",
+  "options": [
+   "$14.57",
+   "$16.47",
+   "$17.46",
+   "$18.61"
+  ],
+  "answer": 1,
+  "explanation": "The first dividend is D7, so P6 = 2.40/(0.13 − 0.06) = $34.2857. Discount six years: 34.2857/1.13^6 = $16.47. Discounting seven years ($14.57) treats P6 as a year-7 value; growing D7 once more ($17.46) double-counts a growth step; discounting five years ($18.61) places the horizon too early.",
+  "source": "generated",
+  "ref": "SM 8-14; S4 s6-13"
+ },
+ {
+  "id": "q08-412",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Tamarack Solar will pay $1.20, $1.80 and $2.40 at the ends of years 1, 2 and 3. From year 4 the dividend grows 4% per year forever (D4 = D3 × 1.04). R = 11% per annum. What is the price today?",
+  "options": [
+   "$26.07",
+   "$27.79",
+   "$29.37",
+   "$30.37"
+  ],
+  "answer": 3,
+  "explanation": "D4 = 2.40 × 1.04 = 2.496, so P3 = 2.496/0.07 = $35.6571. P0 = 1.20/1.11 + 1.80/1.11² + 2.40/1.11³ + 35.6571/1.11³ = 1.0811 + 1.4609 + 1.7549 + 26.0722 = $30.37. Dropping the three dividends gives $26.07; using D3 instead of D4 in the horizon price gives $29.37; discounting P3 four years gives $27.79.",
+  "source": "generated",
+  "ref": "TB 8.1 Fig 8.1; S4 s6-13"
+ },
+ {
+  "id": "q08-413",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Trillium Trucking just paid a dividend of $1.60. Dividends will grow 25% next year, 18% the year after, 12% in year 3, and 4% per year from year 4 onward. R = 11% per annum. What is the price today?",
+  "options": [
+   "$31.52",
+   "$33.26",
+   "$34.36",
+   "$36.57"
+  ],
+  "answer": 2,
+  "explanation": "D1 = 2.0000, D2 = 2.3600, D3 = 2.6432; D4 = D3 × 1.04 = 2.7489 grows at the LONG-RUN 4%, so P3 = 2.7489/0.07 = $39.27. P0 = 1.8018 + 1.9154 + 1.9327 + 28.7142 = $34.36. Growing D4 at 12% (the year-3 rate) inflates the price to $36.57; using D3 in the numerator gives $33.26; discounting P3 four years gives $31.52.",
+  "source": "generated",
+  "ref": "SM 8-32; S4 s9-13"
+ },
+ {
+  "id": "q08-414",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Peace River Foods pays no dividend for the next eight years. Its first dividend, D9 = $4.75, is paid at the end of year 9 and then grows 5.5% per year forever. R = 12.5% per annum. What is the price today? (Answer in $.)",
+  "answer": 26.45,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "4.75/(0.125-0.055)/1.125**8",
+  "steps": [
+   {
+    "label": "Horizon price P8 = D9/(R − g)",
+    "value": 67.8571,
+    "check": "4.75/(0.125-0.055)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0 = P8/(1 + R)^8",
+    "value": 26.4469,
+    "check": "4.75/(0.125-0.055)/1.125**8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "No dividends in years 1-8, first dividend D9 = $4.75 at the end of year 9, so the horizon is year 8.",
+   "P8 = D9/(R − g) = 4.75/(0.125 − 0.055) = 4.75/0.07 = $67.8571",
+   "P0 = P8/(1 + R)^8 = 67.8571/1.125^8 = 67.8571/2.5658 = $26.45"
+  ],
+  "keystrokes": [
+   "4.75 ÷ (0.125 − 0.055) = 67.8571 (this is P8)",
+   "TVM: N = 8, I/Y = 12.5, PMT = 0, FV = 67.8571, CPT PV = −26.45"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted P8 for nine years",
+    "value": 23.51,
+    "check": "4.75/(0.125-0.055)/1.125**9",
+    "explain": "P8 is a year-8 value (one period before D9), so it is discounted eight periods, not nine."
+   },
+   {
+    "id": "grew-twice",
+    "label": "Grew D9 once more before dividing",
+    "value": 27.9,
+    "check": "4.75*1.055/(0.125-0.055)/1.125**8",
+    "explain": "D9 is already the first constant-growth dividend; multiplying by (1 + g) double-counts a growth step."
+   },
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R in the denominator",
+    "value": 10.28,
+    "check": "4.75/(0.125+0.055)/1.125**8",
+    "explain": "The denominator is R minus g."
+   }
+  ],
+  "explanation": "No dividends before year 9, so the Gordon formula applied to D9 gives the year-8 value, which is then discounted eight periods. Discounting nine periods is the classic horizon-off-by-one error.",
+  "source": "generated",
+  "ref": "SM 8-14; TB 8.1"
+ },
+ {
+  "id": "q08-415",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Kayaks will pay $0.60, $1.10 and $1.55 at the ends of years 1, 2 and 3. From year 4 the dividend grows 6% per year forever. R = 10.5% per annum. What is the price today? (Answer in $.)",
+  "answer": 29.65,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.60/1.105+1.10/1.105**2+1.55/1.105**3+1.55*1.06/(0.105-0.06)/1.105**3",
+  "steps": [
+   {
+    "label": "First constant-growth dividend D4 = D3 × 1.06",
+    "value": 1.643,
+    "check": "1.55*1.06",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P3 = D4/(R − g)",
+    "value": 36.5111,
+    "check": "1.55*1.06/(0.105-0.06)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of D1, D2, D3",
+    "value": 2.5927,
+    "check": "0.60/1.105+1.10/1.105**2+1.55/1.105**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 27.0606,
+    "check": "1.55*1.06/(0.105-0.06)/1.105**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 29.6533,
+    "check": "0.60/1.105+1.10/1.105**2+1.55/1.105**3+1.55*1.06/(0.105-0.06)/1.105**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Constant growth starts with D4, so the horizon is year 3.",
+   "D4 = 1.55 × 1.06 = $1.6430; P3 = 1.6430/(0.105 − 0.06) = $36.5111",
+   "PV(D1..D3) = 0.60/1.105 + 1.10/1.105² + 1.55/1.105³ = 0.5430 + 0.9009 + 1.1488 = $2.5927",
+   "PV(P3) = 36.5111/1.105³ = $27.0606",
+   "P0 = 2.5927 + 27.0606 = $29.65"
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 0.60, C02 = 1.10, C03 = 1.55 + 36.5111 = 38.0611 (each F = 1)",
+   "NPV: I = 10.5, CPT NPV = 29.65"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Left out the year-1 dividend",
+    "value": 29.11,
+    "check": "1.10/1.105**2+1.55/1.105**3+1.55*1.06/(0.105-0.06)/1.105**3",
+    "explain": "Every dividend before the horizon is a separate cash flow; the horizon price does not include D1-D3."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D3 in the horizon numerator",
+    "value": 28.12,
+    "check": "0.60/1.105+1.10/1.105**2+1.55/1.105**3+1.55/(0.105-0.06)/1.105**3",
+    "explain": "The horizon price needs the first constant-growth dividend D4 = D3(1.06), not D3."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted P3 four years",
+    "value": 27.08,
+    "check": "0.60/1.105+1.10/1.105**2+1.55/1.105**3+1.55*1.06/(0.105-0.06)/1.105**4",
+    "explain": "P3 is a year-3 value, so it is discounted three periods."
+   }
+  ],
+  "explanation": "Value the stock at year 3 with D4 in the numerator, discount that price and the three early dividends back, and add. The horizon price is by far the largest piece (about 91% of the total).",
+  "source": "generated",
+  "ref": "TB 8.1 Example; S4 s6-13"
+ },
+ {
+  "id": "q08-416",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nova Cedar Mills pays nothing in years 1 and 2, then $0.90 at the end of year 3 and $1.40 at the end of year 4. From year 5 the dividend grows 5% per year forever. R = 12% per annum. What is the price today? (Answer in $.)",
+  "answer": 14.88,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.90/1.12**3+(1.40+1.40*1.05/(0.12-0.05))/1.12**4",
+  "steps": [
+   {
+    "label": "First constant-growth dividend D5 = D4 × 1.05",
+    "value": 1.47,
+    "check": "1.40*1.05",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P4 = D5/(R − g)",
+    "value": 21.0,
+    "check": "1.40*1.05/(0.12-0.05)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the year-3 dividend",
+    "value": 0.6406,
+    "check": "0.90/1.12**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the year-4 dividend plus P4",
+    "value": 14.2356,
+    "check": "(1.40+1.40*1.05/(0.12-0.05))/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 14.8762,
+    "check": "0.90/1.12**3+(1.40+1.40*1.05/(0.12-0.05))/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Constant growth begins with D5, so the horizon is year 4 and both D3 and D4 are explicit.",
+   "D5 = 1.40 × 1.05 = $1.4700; P4 = 1.4700/(0.12 − 0.05) = $21.00",
+   "PV(D3) = 0.90/1.12³ = $0.6406",
+   "PV(D4 + P4) = (1.40 + 21.00)/1.12⁴ = 22.40/1.5735 = $14.2356",
+   "P0 = 0.6406 + 14.2356 = $14.88"
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 0, C02 = 0, C03 = 0.90, C04 = 1.40 + 21.00 = 22.40 (each F = 1)",
+   "NPV: I = 12, CPT NPV = 14.88"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D4 instead of D5 in the horizon numerator",
+    "value": 14.24,
+    "check": "0.90/1.12**3+1.40/1.12**4+1.40/(0.12-0.05)/1.12**4",
+    "explain": "D4 is the last irregular dividend, not the first constant-growth dividend; the numerator for P4 must be D5 = D4 × 1.05."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Dropped the year-4 dividend",
+    "value": 13.99,
+    "check": "0.90/1.12**3+1.40*1.05/(0.12-0.05)/1.12**4",
+    "explain": "D4 is an explicit dividend; P4 values only the dividends from year 5 onward."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted both year-4 amounts five years",
+    "value": 13.35,
+    "check": "0.90/1.12**3+(1.40+1.40*1.05/(0.12-0.05))/1.12**5",
+    "explain": "The year-4 dividend and P4 are both year-4 values: discount four periods."
+   }
+  ],
+  "explanation": "Zeros in the early years are still part of the timeline. The key step is spotting that constant growth starts with D5, which puts the horizon at year 4 (the last irregular dividend D4 is paid with it).",
+  "source": "generated",
+  "ref": "S4 s9-13; TB 8.1"
+ },
+ {
+  "id": "q08-417",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow Valley Utilities will pay $0.85, $1.25 and $1.70 at the ends of years 1, 2 and 3. From year 4 the dividend grows 3.5% per year forever. R = 9.5% per annum. What price do you expect the stock to trade at at the end of year 2, just after that year's dividend is paid? (Answer in $.)",
+  "answer": 28.33,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1.70+1.70*1.035/(0.095-0.035))/1.095",
+  "steps": [
+   {
+    "label": "First constant-growth dividend D4 = D3 × 1.035",
+    "value": 1.7595,
+    "check": "1.70*1.035",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P3 = D4/(R − g)",
+    "value": 29.325,
+    "check": "1.70*1.035/(0.095-0.035)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price at year 2: P2 = (D3 + P3)/(1 + R)",
+    "value": 28.3333,
+    "check": "(1.70+1.70*1.035/(0.095-0.035))/1.095",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D4 = 1.70 × 1.035 = $1.7595; P3 = 1.7595/(0.095 − 0.035) = $29.3250",
+   "At year 2 the only remaining cash flows are D3 and P3, one period away:",
+   "P2 = (D3 + P3)/(1 + R) = (1.70 + 29.3250)/1.095 = 31.0250/1.095 = $28.33"
+  ],
+  "keystrokes": [
+   "1.70 × 1.035 ÷ 0.06 = 29.3250 (P3)",
+   "(1.70 + 29.3250) ÷ 1.095 = 28.33"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Left out D3 and discounted only P3",
+    "value": 26.78,
+    "check": "1.70*1.035/(0.095-0.035)/1.095",
+    "explain": "The holder at year 2 still receives D3 at year 3, so D3 belongs with P3."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted P3 two years",
+    "value": 24.46,
+    "check": "1.70*1.035/(0.095-0.035)/1.095**2",
+    "explain": "From year 2 the horizon is only one period away, so P3 is discounted ONE period, not two."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Added D2 to the year-2 price",
+    "value": 29.47,
+    "check": "(1.25+1.70+1.70*1.035/(0.095-0.035))/1.095",
+    "explain": "D2 is paid at year 2; the ex-dividend price after payment excludes it, and D3 and P3 are discounted one period."
+   }
+  ],
+  "explanation": "A price at any date is the PV, at that date, of everything still to come. At year 2 that is D3 plus P3 discounted a single period.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-1"
+ },
+ {
+  "id": "q08-418",
+  "concept": "c08-nonconstant-timeline",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Lakeshore Brewing will pay $0.95 and $1.40 at the ends of years 1 and 2. From year 3 the dividend grows 5% per year forever. R = 10% per annum. What percentage of today's price comes from the horizon price? (Answer in %.)",
+  "answer": 92.32,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(1.40*1.05/(0.10-0.05)/1.10**2)/(0.95/1.10+1.40/1.10**2+1.40*1.05/(0.10-0.05)/1.10**2)*100",
+  "steps": [
+   {
+    "label": "First constant-growth dividend D3 = D2 × 1.05",
+    "value": 1.47,
+    "check": "1.40*1.05",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P2 = D3/(R − g)",
+    "value": 29.4,
+    "check": "1.40*1.05/(0.10-0.05)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 24.2975,
+    "check": "1.40*1.05/(0.10-0.05)/1.10**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 26.3182,
+    "check": "0.95/1.10+1.40/1.10**2+1.40*1.05/(0.10-0.05)/1.10**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Share of P0 from the horizon price (%)",
+    "value": 92.32,
+    "check": "(1.40*1.05/(0.10-0.05)/1.10**2)/(0.95/1.10+1.40/1.10**2+1.40*1.05/(0.10-0.05)/1.10**2)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D3 = 1.40 × 1.05 = $1.4700; P2 = 1.4700/(0.10 − 0.05) = $29.40",
+   "PV(P2) = 29.40/1.10² = $24.2975",
+   "PV(D1, D2) = 0.95/1.10 + 1.40/1.10² = 0.8636 + 1.1570 = $2.0207",
+   "P0 = 2.0207 + 24.2975 = $26.32",
+   "Share from the horizon = 24.2975/26.3182 = 92.32%"
+  ],
+  "keystrokes": [
+   "1.40 × 1.05 ÷ 0.05 = 29.40; ÷ 1.10 ÷ 1.10 = 24.2975",
+   "Divide by P0 = 26.3182 and × 100 = 92.32"
+  ],
+  "errors": [
+   {
+    "id": "horizon-not-discounted",
+    "label": "Used the undiscounted horizon price P2",
+    "value": 111.71,
+    "check": "1.40*1.05/(0.10-0.05)/(0.95/1.10+1.40/1.10**2+1.40*1.05/(0.10-0.05)/1.10**2)*100",
+    "explain": "P2 is a year-2 value; it must be discounted to date 0 before comparing it with today's price."
+   },
+   {
+    "id": "arithmetic",
+    "label": "Gave the share of the early dividends instead",
+    "value": 7.68,
+    "check": "(0.95/1.10+1.40/1.10**2)/(0.95/1.10+1.40/1.10**2+1.40*1.05/(0.10-0.05)/1.10**2)*100",
+    "explain": "That is the complement: the share of P0 that comes from the early dividends (about 8%)."
+   }
+  ],
+  "explanation": "Most of the price of a growth stock sits in the horizon price. Here 92% of today's value is the discounted P2, so small errors in g2 or R matter far more than errors in the early dividends.",
+  "source": "generated",
+  "ref": "TB 8.1; S4 s6-13"
+ },
+ {
+  "id": "q08-421",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the two-stage dividend formula P0 = D1/(R − g1) × [1 − ((1 + g1)/(1 + R))^N] + P_N/(1 + R)^N, the first term is:",
+  "options": [
+   "the present value of the horizon price P_N",
+   "the present value of the N dividends that grow at g1 (a growing annuity)",
+   "the price at date N, just after the last supernormal dividend",
+   "the present value of a perpetuity growing at g1 forever"
+  ],
+  "answer": 1,
+  "explanation": "The bracketed first term is the growing-annuity formula: it values only the N dividends D1 through D_N that grow at g1. Everything after year N is captured by the second term, the discounted horizon price P_N.",
+  "source": "generated",
+  "ref": "FS p1; TB 8.1; L04 s19"
+ },
+ {
+  "id": "q08-422",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which situation should be valued with the two-stage formula rather than the plain Gordon model?",
+  "options": [
+   "Dividends grow 3% per year from now on, forever",
+   "The dividend stays at $2.00 per share every year, forever",
+   "The firm pays no dividend and is valued from a peer's P/E ratio",
+   "Dividends grow 18% per year for 6 years and then 4% per year forever"
+  ],
+  "answer": 3,
+  "explanation": "Two-stage growth means one growth rate g1 for a fixed number of years, then a lower constant g2 forever. Constant growth is Gordon, a flat dividend is a perpetuity, and a P/E valuation is a comparables method.",
+  "source": "generated",
+  "ref": "TB 8.1; L04 s19-20"
+ },
+ {
+  "id": "q08-423",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "In the two-stage formula, which growth rate appears in the denominator of the horizon price P_N, and which dividend is in its numerator?",
+  "options": [
+   "g1, the first-stage rate, with D_N = D0(1 + g1)^N",
+   "g2, the long-run rate, with D_N = D0(1 + g1)^N",
+   "g1, the first-stage rate, with D_{N+1} = D0(1 + g1)^N(1 + g2)",
+   "g2, the long-run rate, with D_{N+1} = D0(1 + g1)^N(1 + g2)"
+  ],
+  "answer": 3,
+  "explanation": "P_N values the dividends from N+1 onward, which grow at g2 forever, so it uses R − g2 and the first dividend of that stream, D_{N+1}. D_{N+1} is D_N (grown N times at g1) grown ONE more step at g2.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-17"
+ },
+ {
+  "id": "q08-424",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A start-up's dividend growth is expected to be 30% per year for 5 years and then 5% forever, with R = 12%. Because g1 = 30% is above R, the analyst says the two-stage formula cannot be used. What is the right response?",
+  "options": [
+   "She is right: the model fails whenever any growth rate in the forecast is above the required return R",
+   "The formula still works: only g2 must be below R, and the two negative factors multiply to a positive value",
+   "Replace g1 with R so that the denominator R − g1 is positive and the formula can then be used",
+   "Use the Gordon model with g = 30% for the whole stream, since the growth rate is above R"
+  ],
+  "answer": 1,
+  "explanation": "Only the infinite stage needs g < R. For the first stage D1/(R − g1) and [1 − ((1 + g1)/(1 + R))^N] are both negative when g1 > R, and their product is positive (SM 8-23 uses g1 = 28% with R = 13%).",
+  "source": "generated",
+  "ref": "SM 8-23; TB 8.1"
+ },
+ {
+  "id": "q08-425",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the two-stage formula relate to the timeline method (list every dividend, add the discounted horizon price)?",
+  "options": [
+   "The formula is an approximation that is usually a few dollars too high",
+   "The timeline method values only the dividends, the formula also adds the horizon price",
+   "They give the same value; the formula bundles the first N discounted dividends into one growing-annuity term",
+   "They differ because the formula discounts at g1 while the timeline discounts at R"
+  ],
+  "answer": 2,
+  "explanation": "Both methods discount the same cash flows at R: N growing dividends and the horizon price P_N. The growing-annuity term simply sums the discounted dividends in one step, which is quicker for long first stages (8 or 11 years in SM 8-23 and 8-24).",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-17"
+ },
+ {
+  "id": "q08-426",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT an input to the two-stage dividend formula?",
+  "options": [
+   "The number of years N of first-stage growth",
+   "The long-run growth rate g2",
+   "The market price P0, which is the output of the model",
+   "The current dividend D0 (or D1)"
+  ],
+  "answer": 2,
+  "explanation": "The formula needs D0 (or D1), g1, N, g2 and R, and produces the value P0. The market price is what you compare that value with afterwards; it is not an input.",
+  "source": "generated",
+  "ref": "TB 8.1; FS p1"
+ },
+ {
+  "id": "q08-427",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the two-stage formula need the second term P_N/(1 + R)^N in addition to the growing-annuity term?",
+  "options": [
+   "The annuity term already contains all the dividends but ignores the time value of money",
+   "The second term converts the first-stage growth rate g1 into the long-run rate g2",
+   "The second term adjusts the first-stage dividends for the extra risk of fast growth",
+   "The annuity covers only N dividends; the tail from year N+1 on is worth P_N at date N and must be discounted back"
+  ],
+  "answer": 3,
+  "explanation": "The growing-annuity formula covers exactly N dividends. The infinite tail after year N is valued by Gordon at date N (P_N), and a date-N value is brought to date 0 with (1 + R)^N.",
+  "source": "generated",
+  "ref": "TB 8.1"
+ },
+ {
+  "id": "q08-428",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "True or false: in the two-stage model with D0 just paid, the horizon price is P_N = D0(1 + g1)^N(1 + g2)/(R − g2).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. D_N = D0(1 + g1)^N, and the first long-run dividend is D_{N+1} = D_N(1 + g2). The Gordon formula then values it at date N with R − g2 in the denominator.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-17"
+ },
+ {
+  "id": "q08-429",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In a two-stage valuation with g1 = 20% above g2 = 4% (R and D0 unchanged), what happens to P0 if the high-growth period N is lengthened from 5 to 8 years?",
+  "options": [
+   "P0 falls, because the horizon price is discounted over three more years and g1 is above R",
+   "P0 is unchanged, because the horizon price depends only on g2 and R, not on N",
+   "P0 rises: there are more years of 20% growth, and the long-run phase starts from a larger dividend",
+   "P0 rises, but only through the growing-annuity term; the horizon term is unaffected"
+  ],
+  "answer": 2,
+  "explanation": "A longer first stage means D_{N+1} is much larger and the 20% growth lasts longer; the extra discounting is outweighed by the extra growth (when g1 > g2). The change shows up in both terms, not only in the annuity term.",
+  "source": "generated",
+  "ref": "TB 8.1; L04 s19"
+ },
+ {
+  "id": "q08-430",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A two-stage valuation using your inputs gives $48.00 per share, while the stock trades at $55.00. What is the most direct reading?",
+  "options": [
+   "The stock is undervalued at your inputs, so you should buy it at the $55.00 price",
+   "The model is invalid, because a correct DCF value must always equal the market price",
+   "The market price must be wrong, because a DCF value is always the true price of the stock",
+   "At your inputs the stock looks overvalued: the market assumes more growth or a lower R than you do"
+  ],
+  "answer": 3,
+  "explanation": "A DCF value below the quote means that the price embeds more optimistic growth or a lower discount rate than your inputs. It does not prove the market wrong, but at your assumptions you would not pay $55.",
+  "source": "generated",
+  "ref": "L04 s34; TB 8.1"
+ },
+ {
+  "id": "q08-431",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Orchards just paid a dividend of $2.20. Dividends will grow 22% per year for 4 years and 5% per year thereafter. R = 12% per annum. What is the price today?",
+  "options": [
+   "$46.46",
+   "$55.20",
+   "$57.41",
+   "$84.05"
+  ],
+  "answer": 2,
+  "explanation": "Annuity term = 2.684/(0.12 − 0.22) × [1 − (1.22/1.12)^4] = $10.9476. D5 = 2.20 × 1.22^4 × 1.05 = $5.1174, P4 = D5/0.07 = $73.1060, PV = $46.4602. P0 = $57.41. Using D4 in the horizon numerator gives $55.20; leaving P4 undiscounted gives $84.05; dropping the annuity term gives only $46.46.",
+  "source": "generated",
+  "ref": "SM 8-17; TB 8.1"
+ },
+ {
+  "id": "q08-432",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Ridge Foods just paid $1.80. Dividends will grow 9% per year for 6 years and 3% per year forever after that. R = 11% per annum. What is the price today?",
+  "options": [
+   "$28.86",
+   "$29.65",
+   "$30.08",
+   "$30.92"
+  ],
+  "answer": 3,
+  "explanation": "Annuity term = D1/(R − g1)[1 − (1.09/1.11)^6] with D1 = 1.962: $10.1390. D7 = 1.80 × 1.09^6 × 1.03 = $3.1093; P6 = D7/(0.11 − 0.03) = $38.8668; PV = $20.7798. P0 = $30.92. Starting the annuity from D0 gives $30.08; running the annuity formula with g2 gives $29.65; discounting P6 seven years gives $28.86.",
+  "source": "generated",
+  "ref": "SM 8-24; TB 8.1"
+ },
+ {
+  "id": "q08-433",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Tundra Telecom just paid $0.95. Dividends will grow 35% per year for 3 years and 6% per year forever after that. R = 13% per annum. What is the price today?",
+  "options": [
+   "$20.42",
+   "$27.25",
+   "$27.73",
+   "$28.64"
+  ],
+  "answer": 3,
+  "explanation": "With g1 = 35% > R both R − g1 = −0.22 and the bracket are negative: annuity term = +$4.1108. D4 = 0.95 × 1.35³ × 1.06 = $2.4776; P3 = D4/0.07 = $35.3943; PV = $24.5300. P0 = $28.64. Flipping the sign of the annuity term gives $20.42; using g2 in the annuity gives $27.73; putting D3 in the horizon numerator gives $27.25.",
+  "source": "generated",
+  "ref": "SM 8-23; TB 8.1"
+ },
+ {
+  "id": "q08-434",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Okanagan Orchards just paid a dividend of $1.15. Dividends will grow 26% per year for the next 6 years and 4.5% per year thereafter, forever. R = 12% per annum. Use the two-stage formula to find the price today. (Answer in $.)",
+  "answer": 43.12,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.15*(1+0.26)/(0.12-0.26)*(1-((1+0.26)/(1+0.12))**6)+1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)/(1+0.12)**6",
+  "steps": [
+   {
+    "label": "Next dividend D1 = D0(1 + g1)",
+    "value": 1.449,
+    "check": "1.15*(1+0.26)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growing-annuity term (first 6 dividends)",
+    "value": 10.6324,
+    "check": "1.15*(1+0.26)/(0.12-0.26)*(1-((1+0.26)/(1+0.12))**6)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "First long-run dividend D7 = D0(1 + g1)^6(1 + g2)",
+    "value": 4.8088,
+    "check": "1.15*(1+0.26)**6*(1+0.045)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P6 = D7/(R − g2)",
+    "value": 64.1174,
+    "check": "1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 32.4839,
+    "check": "1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)/(1+0.12)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 43.1163,
+    "check": "1.15*(1+0.26)/(0.12-0.26)*(1-((1+0.26)/(1+0.12))**6)+1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)/(1+0.12)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 1.15 × 1.26 = $1.4490",
+   "Annuity term = D1/(R − g1) × [1 − ((1 + g1)/(1 + R))^6] = 1.4490/(0.12 − 0.26) × [1 − (1.26/1.12)^6] = (−10.3500) × (−1.0273) = $10.6324",
+   "D7 = 1.15 × 1.26^6 × 1.045 = $4.8088; P6 = D7/(0.12 − 0.045) = $64.1174",
+   "PV(P6) = P6/1.12^6 = $32.4839",
+   "P0 = 10.6324 + 32.4839 = $43.12"
+  ],
+  "keystrokes": [
+   "D1: 1.15 × 1.26 = 1.4490",
+   "Bracket: (1.26 ÷ 1.12) y^x 6 = 2.0273; 1 − 2.0273 = −1.0273",
+   "Annuity = 1.4490 ÷ (0.12 − 0.26) × (−1.0273) = 10.6324",
+   "P6: 1.15 × 1.26 y^x 6 × 1.045 ÷ 0.075 = 64.1174; PV: N = 6, I/Y = 12, FV = 64.1174, CPT PV = −32.4839",
+   "Add: 10.6324 + 32.4839 = 43.12"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D6 instead of D7 in the horizon price",
+    "value": 41.72,
+    "check": "1.15*(1+0.26)/(0.12-0.26)*(1-((1+0.26)/(1+0.12))**6)+1.15*1.26**6/(0.12-0.045)/1.12**6",
+    "explain": "The horizon price needs the first long-run dividend D_{N+1} = D6 × 1.045, not D6."
+   },
+   {
+    "id": "horizon-not-discounted",
+    "label": "Added P6 without discounting it",
+    "value": 74.75,
+    "check": "1.15*(1+0.26)/(0.12-0.26)*(1-((1+0.26)/(1+0.12))**6)+1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)",
+    "explain": "P6 is a year-6 value; divide by (1 + R)^6 before adding it to a present-value term."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Started the annuity from D0 instead of D1",
+    "value": 40.92,
+    "check": "1.15/(0.12-0.26)*(1-(1.26/1.12)**6)+1.15*(1+0.26)**6*(1+0.045)/(0.12-0.045)/(1+0.12)**6",
+    "explain": "The growing-annuity formula takes the NEXT dividend D1 = D0(1 + g1)."
+   }
+  ],
+  "explanation": "A two-stage value is a growing annuity for the high-growth years plus the discounted horizon price. With g1 above R the annuity pieces are negative but their product is positive. The horizon price supplies about three quarters of the value.",
+  "source": "generated",
+  "ref": "SM 8-23; TB Ex 8.5"
+ },
+ {
+  "id": "q08-435",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Maple Ridge Foods just paid $1.80 per share. Dividends are expected to grow 9% per year for 6 years and then 3% per year forever. R = 11% per annum. What is the price today? (Answer in $.)",
+  "answer": 30.92,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.8*(1+0.09)/(0.11-0.09)*(1-((1+0.09)/(1+0.11))**6)+1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/(1+0.11)**6",
+  "steps": [
+   {
+    "label": "Next dividend D1",
+    "value": 1.962,
+    "check": "1.8*(1+0.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growing-annuity term",
+    "value": 10.139,
+    "check": "1.8*(1+0.09)/(0.11-0.09)*(1-((1+0.09)/(1+0.11))**6)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P6 = D7/(R − g2)",
+    "value": 38.8668,
+    "check": "1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 20.7798,
+    "check": "1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/(1+0.11)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 30.9188,
+    "check": "1.8*(1+0.09)/(0.11-0.09)*(1-((1+0.09)/(1+0.11))**6)+1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/(1+0.11)**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 1.80 × 1.09 = $1.9620",
+   "Annuity term = 1.9620/(0.11 − 0.09) × [1 − (1.09/1.11)^6] = 98.10 × 0.10335 = $10.1390",
+   "D7 = 1.80 × 1.09^6 × 1.03 = $3.1093; P6 = D7/(0.11 − 0.03) = $38.8668",
+   "PV(P6) = 38.8668/1.11^6 = $20.7798",
+   "P0 = 10.1390 + 20.7798 = $30.92"
+  ],
+  "keystrokes": [
+   "1.80 × 1.09 = 1.9620",
+   "(1.09 ÷ 1.11) y^x 6 = 0.8966; 1 − 0.8966 = 0.1034 (the calculator keeps full precision)",
+   "1.9620 ÷ 0.02 × bracket = 10.1390",
+   "1.80 × 1.09 y^x 6 × 1.03 ÷ 0.08 = 38.8668; N = 6, I/Y = 11, FV = 38.8668, CPT PV = −20.7798",
+   "10.1390 + 20.7798 = 30.92"
+  ],
+  "errors": [
+   {
+    "id": "horizon-wrong-g",
+    "label": "Used g2 in the growing-annuity term",
+    "value": 29.65,
+    "check": "1.8*(1+0.09)/(0.11-0.03)*(1-((1.03)/(1.11))**6)+1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/(1+0.11)**6",
+    "explain": "The first-stage dividends grow at g1; g2 belongs only in the horizon price."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Started the annuity from D0",
+    "value": 30.08,
+    "check": "1.80/(0.11-0.09)*(1-((1.09)/(1.11))**6)+1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/(1+0.11)**6",
+    "explain": "The annuity formula needs D1 = D0(1 + g1) = 1.962."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Discounted P6 for seven years",
+    "value": 28.86,
+    "check": "1.8*(1+0.09)/(0.11-0.09)*(1-((1+0.09)/(1+0.11))**6)+1.8*(1+0.09)**6*(1+0.03)/(0.11-0.03)/1.11**7",
+    "explain": "P6 is a year-6 value, so it is discounted six periods."
+   }
+  ],
+  "explanation": "When g1 < R the pieces are all positive and the first stage contributes about a third of the value. The two methods (timeline or formula) must agree; the formula is just quicker.",
+  "source": "generated",
+  "ref": "SM 8-24; TB 8.1"
+ },
+ {
+  "id": "q08-436",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Foothills Robotics just paid $0.85. Dividends will grow 21% per year for 9 years and then 4% per year forever. R = 11% per annum. What is the price today? (Answer in $.)",
+  "answer": 39.52,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.85*(1+0.21)/(0.11-0.21)*(1-((1+0.21)/(1+0.11))**9)+0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)/(1+0.11)**9",
+  "steps": [
+   {
+    "label": "Next dividend D1",
+    "value": 1.0285,
+    "check": "0.85*(1+0.21)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growing-annuity term (9 dividends)",
+    "value": 12.0695,
+    "check": "0.85*(1+0.21)/(0.11-0.21)*(1-((1+0.21)/(1+0.11))**9)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "First long-run dividend D10",
+    "value": 4.915,
+    "check": "0.85*(1+0.21)**9*(1+0.04)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P9",
+    "value": 70.2138,
+    "check": "0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 27.4483,
+    "check": "0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)/(1+0.11)**9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 39.5179,
+    "check": "0.85*(1+0.21)/(0.11-0.21)*(1-((1+0.21)/(1+0.11))**9)+0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)/(1+0.11)**9",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 0.85 × 1.21 = $1.0285",
+   "Annuity term = 1.0285/(0.11 − 0.21) × [1 − (1.21/1.11)^9] = (−10.285) × (−1.1735) = $12.0695",
+   "D10 = 0.85 × 1.21^9 × 1.04 = $4.9150; P9 = D10/(0.11 − 0.04) = $70.2138",
+   "PV(P9) = 70.2138/1.11^9 = $27.4483",
+   "P0 = 12.0695 + 27.4483 = $39.52"
+  ],
+  "keystrokes": [
+   "D1 = 0.85 × 1.21 = 1.0285",
+   "Annuity: 1.0285 ÷ (0.11 − 0.21) × (1 − (1.21 ÷ 1.11) y^x 9) = 12.0695",
+   "P9: 0.85 × 1.21 y^x 9 × 1.04 ÷ 0.07 = 70.2138",
+   "N = 9, I/Y = 11, FV = 70.2138, CPT PV = −27.4483",
+   "12.0695 + 27.4483 = 39.52"
+  ],
+  "errors": [
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D9 in the horizon numerator",
+    "value": 38.46,
+    "check": "0.85*(1+0.21)/(0.11-0.21)*(1-((1+0.21)/(1+0.11))**9)+0.85*1.21**9/(0.11-0.04)/1.11**9",
+    "explain": "P9 values the dividends from D10 on; the numerator must be D10 = D9(1.04)."
+   },
+   {
+    "id": "horizon-not-discounted",
+    "label": "Added P9 undiscounted",
+    "value": 82.28,
+    "check": "0.85*(1+0.21)/(0.11-0.21)*(1-((1+0.21)/(1+0.11))**9)+0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)",
+    "explain": "Discount P9 nine periods before adding it."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used only 8 years in the annuity term",
+    "value": 37.67,
+    "check": "0.85*1.21/(0.11-0.21)*(1-(1.21/1.11)**8)+0.85*(1+0.21)**9*(1+0.04)/(0.11-0.04)/(1+0.11)**9",
+    "explain": "The exponent N counts the dividends in the high-growth stage (9 here), and must match the discounting of P9."
+   }
+  ],
+  "explanation": "Nine years at 21% grow the dividend more than fivefold, so by year 9 the long-run dividend is large. The horizon piece is again the larger share of value, but the long first stage adds about $12.",
+  "source": "generated",
+  "ref": "SM 8-24; TB 8.1"
+ },
+ {
+  "id": "q08-437",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Chinook Chemicals just paid $0.60. Dividends will grow 32% per year for 5 years and 6% per year forever after that. R = 12% per annum. What is the price today? (Answer in $.)",
+  "answer": 29.15,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.6*(1+0.32)/(0.12-0.32)*(1-((1+0.32)/(1+0.12))**5)+0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)/(1+0.12)**5",
+  "steps": [
+   {
+    "label": "Next dividend D1",
+    "value": 0.792,
+    "check": "0.6*(1+0.32)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Growing-annuity term (watch the signs)",
+    "value": 5.0448,
+    "check": "0.6*(1+0.32)/(0.12-0.32)*(1-((1+0.32)/(1+0.12))**5)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon price P5 = D6/(R − g2)",
+    "value": 42.4791,
+    "check": "0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the horizon price",
+    "value": 24.1038,
+    "check": "0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)/(1+0.12)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Price today P0",
+    "value": 29.1486,
+    "check": "0.6*(1+0.32)/(0.12-0.32)*(1-((1+0.32)/(1+0.12))**5)+0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)/(1+0.12)**5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "D1 = 0.60 × 1.32 = $0.7920",
+   "R − g1 = 0.12 − 0.32 = −0.20; bracket = 1 − (1.32/1.12)^5 = 1 − 2.2739 = −1.2739; annuity term = 0.7920/(−0.20) × (−1.2739) = $5.0448",
+   "D6 = 0.60 × 1.32^5 × 1.06 = $2.5487; P5 = D6/(0.12 − 0.06) = $42.4791",
+   "PV(P5) = 42.4791/1.12^5 = $24.1038",
+   "P0 = 5.0448 + 24.1038 = $29.15"
+  ],
+  "keystrokes": [
+   "0.60 × 1.32 = 0.7920",
+   "(1.32 ÷ 1.12) y^x 5 = 2.2739 → bracket = −1.2739",
+   "0.7920 ÷ (0.12 − 0.32) × (−1.2739) = 5.0448",
+   "0.60 × 1.32 y^x 5 × 1.06 ÷ 0.06 = 42.4791; N = 5, I/Y = 12, FV = 42.4791, CPT PV = −24.1038",
+   "5.0448 + 24.1038 = 29.15"
+  ],
+  "errors": [
+   {
+    "id": "sign-error",
+    "label": "Flipped the sign of the annuity term",
+    "value": 19.06,
+    "check": "-(0.6*(1+0.32)/(0.12-0.32)*(1-((1+0.32)/(1+0.12))**5))+0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)/(1+0.12)**5",
+    "explain": "A negative R − g1 times a negative bracket is positive: the first-stage dividends add value."
+   },
+   {
+    "id": "horizon-wrong-g",
+    "label": "Used g1 in the horizon price (P5 = D6/(R − g1))",
+    "value": -2.19,
+    "check": "0.6*(1+0.32)/(0.12-0.32)*(1-((1+0.32)/(1+0.12))**5)+(0.60*1.32**5*1.06)/(0.12-0.32)/1.12**5",
+    "explain": "The long-run rate g2 = 6% belongs in the horizon price; g1 = 32% exceeds R and gives a negative price."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used 4 years in the annuity bracket but discounted P5 five years",
+    "value": 27.78,
+    "check": "0.60*1.32/(0.12-0.32)*(1-(1.32/1.12)**4)+0.6*(1+0.32)**5*(1+0.06)/(0.12-0.06)/(1+0.12)**5",
+    "explain": "The number of high-growth dividends N must be the same in the bracket and in the horizon date."
+   }
+  ],
+  "explanation": "Even with g1 far above R, the first-stage dividends are finite and add value (about $5). Only the infinite stage must have g2 < R.",
+  "source": "generated",
+  "ref": "SM 8-23; SM 8-30"
+ },
+ {
+  "id": "q08-438",
+  "concept": "c08-two-stage",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Laurentian Labs just paid total dividends of $6.4 million. Total dividends will grow 24% per year for 4 years and 5% per year forever after that. R = 13% per annum and there are 10 million shares. What is the value per share today? (Answer in $ per share.)",
+  "answer": 15.43,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)/(1+0.13)**4)/10",
+  "steps": [
+   {
+    "label": "Annuity term, total ($ millions)",
+    "value": 32.4667,
+    "check": "6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total horizon dividend D5 ($ millions)",
+    "value": 15.8875,
+    "check": "6.4*(1+0.24)**4*(1+0.05)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Horizon value P4 ($ millions)",
+    "value": 198.594,
+    "check": "6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of horizon value ($ millions)",
+    "value": 121.8014,
+    "check": "6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)/(1+0.13)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Total equity value ($ millions)",
+    "value": 154.268,
+    "check": "6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)/(1+0.13)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Value per share",
+    "value": 15.4268,
+    "check": "(6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)/(1+0.13)**4)/10",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Annuity term = 7.936/(0.13 − 0.24) × [1 − (1.24/1.13)^4] = $32.4667 million",
+   "D5 = 6.4 × 1.24^4 × 1.05 = $15.8875 million; P4 = D5/(0.13 − 0.05) = $198.5940 million",
+   "PV(P4) = 198.5940/1.13^4 = $121.8014 million",
+   "Equity = 32.4667 + 121.8014 = $154.2680 million; per share = 154.2680/10 = $15.43"
+  ],
+  "keystrokes": [
+   "Work in $ millions, then divide by 10 million shares at the end",
+   "6.4 × 1.24 = 7.936; annuity as before; P4: 6.4 × 1.24 y^x 4 × 1.05 ÷ 0.08 = 198.6; discount four years"
+  ],
+  "errors": [
+   {
+    "id": "units",
+    "label": "Forgot to divide by shares (answered in $ millions)",
+    "value": 154.27,
+    "check": "6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05)/(1+0.13)**4",
+    "explain": "The model values the whole equity; divide by the number of shares to get a price per share."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used D4 instead of D5 in the horizon numerator",
+    "value": 14.85,
+    "check": "(6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*1.24**4/(0.13-0.05)/1.13**4)/10",
+    "explain": "The horizon value needs the first long-run dividend D5 = D4 × 1.05."
+   },
+   {
+    "id": "horizon-not-discounted",
+    "label": "Did not discount the horizon value",
+    "value": 23.11,
+    "check": "(6.4*(1+0.24)/(0.13-0.24)*(1-((1+0.24)/(1+0.13))**4)+6.4*(1+0.24)**4*(1+0.05)/(0.13-0.05))/10",
+    "explain": "P4 is a year-4 amount: discount it four periods."
+   }
+  ],
+  "explanation": "The same two-stage machinery works on total dividends; convert to per-share only at the end (or divide D0 by shares at the start).",
+  "source": "generated",
+  "ref": "TB Ex 8.4; SM 8-17"
+ }
+]

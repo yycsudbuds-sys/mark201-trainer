@@ -22,9 +22,11 @@ export const SLIDES_PER_CONCEPT = 6;
 export function createLesson(app, cids, opts = {}) {
   const chapter = opts.chapter;
   const slides = [];
+  const cards = opts.cards || (app.pack && (app.pack.learn === 'cards' || app.pack.learn === 'rich') ? (app.pack.learn || 'cards') : false);
   for (const cid of cids) {
     const entry = app.conceptOf(cid); if (!entry) continue;
     const c = entry.concept;
+    if (cards) { slides.push({ cid, kind: 'card', c }); if (opts.quickCheck !== false) slides.push({ cid, kind: 'check', c }); continue; }
     slides.push({ cid, kind: 'hook', c });
     slides.push({ cid, kind: 'recall', c });
     slides.push({ cid, kind: 'explain', c });
@@ -32,7 +34,7 @@ export function createLesson(app, cids, opts = {}) {
     slides.push({ cid, kind: 'confuse', c });
     if (opts.quickCheck !== false) slides.push({ cid, kind: 'check', c });
   }
-  const PER = opts.quickCheck !== false ? 6 : 5;
+  const PER = cards ? (opts.quickCheck !== false ? 2 : 1) : (opts.quickCheck !== false ? 6 : 5);
   let idx = Math.max(0, Math.min(slides.length - 1, opts.startAt || 0));
   const el = h('div', { class: 'lesson', style: { '--ch': chapter?.color || 'var(--accent)' } });
   const top = h('div', { class: 'lesson-top' });
@@ -59,6 +61,22 @@ export function createLesson(app, cids, opts = {}) {
     const c = s.c; const cs = app.state.concepts[c.id];
     const head = h('div', { class: 'slide-head' }, h('span', { class: 'glyph' }, glyphFor(c)), h('div', null, h('div', { class: 'eyebrow' }, `Ch ${chapter?.chapter ?? ''} · ${kindLabel(s.kind)}`), h('h2', { class: 'slide-title' }, c.term)));
     revealNext = null;
+    if (s.kind === 'card') {
+      // Finance: everything a student needs on one card: definition, formula (given or memorised), one worked
+      // example, what it is confused with, the exam trap, the mnemonic, plus the status and a drill link.
+      const fig = c.figure && c.figure.type === 'table' && c.figure.rows?.length ? revealTable(c.figure, { color: chapter?.color }) : c.figure && c.figure.type === 'list' && c.figure.items?.length ? stepFlow(c.figure.items, { color: chapter?.color, title: c.figure.title }) : null;
+      return h('div', { class: 'slide card-slide' }, head,
+        h('p', { class: 'slide-def' }, c.definition),
+        c.formula ? h('div', { class: 'callout formula-callout' }, h('span', { class: 'callout-ico' }, icon('tablet', { size: 20, tone: 'gold' })), h('div', null, h('div', { class: 'row wrap' }, h('b', null, 'Formula'), h('span', { class: 'chip ' + (c.given ? 'good' : 'warn') }, c.given ? 'On the exam sheet' : 'Memorise')), h('div', { class: 'formula-text' }, c.formula))) : null,
+        h('div', { class: 'card-grid' },
+          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('scroll', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'In plain English'), h('div', null, c.explain))),
+          h('div', { class: 'callout example' }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'Worked example'), h('div', null, c.example))),
+          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('swords', { size: 18, tone: 'gold' })), h('div', null, h('b', null, "Don't confuse it with"), h('div', null, c.contrast))),
+          h('div', { class: 'callout trap' }, h('span', { class: 'callout-ico' }, icon('shieldcrack', { size: 18, tone: 'crimson' })), h('div', null, h('b', null, 'Exam trap'), h('div', null, c.trap)))),
+        c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, c.mnemonic))) : null,
+        fig || (cards === 'rich' ? safeVisual(c) : null),
+        h('div', { class: 'row wrap mt-sm' }, h('span', { class: 'tiny muted' }, cs ? `Your status: ${MASTERY_LABELS[masteryLevel(cs)]}${masteryLevel(cs) < 4 && cs.a?.length ? ' · to master: ' + masteryGaps(cs).slice(0, 2).join(', ') : ''}` : 'New to you.'), h('a', { class: 'btn sm ghost', href: `#/drill/concepts/${c.id}` }, icon('gladius', { size: 13, tone: 'gold' }), 'Drill this concept')));
+    }
     if (s.kind === 'hook') {
       const vig = safeVignette(chapter?.chapter);
       return h('div', { class: 'slide hook' }, head,
@@ -116,8 +134,9 @@ export function createLesson(app, cids, opts = {}) {
     }
     if (s.kind === 'check') {
       checkDone = false;
-      const q = pickQuestionForConcept(app.content, app.state, c.id, { difficultyMax: 2, anglesOnly: new Set(['define', 'identify', 'contrast', 'why']), now: Date.now() })
-        || pickQuestionForConcept(app.content, app.state, c.id, { now: Date.now() });
+      const MC = new Set(['mc', 'tf', 'fill']);
+      const q = pickQuestionForConcept(app.content, app.state, c.id, { difficultyMax: 2, anglesOnly: new Set(['define', 'identify', 'contrast', 'why', 'interpret', 'formula']), typesOnly: MC, now: Date.now() })
+        || pickQuestionForConcept(app.content, app.state, c.id, { typesOnly: MC, now: Date.now() });
       if (!q) { checkDone = true; return h('div', { class: 'slide' }, head, h('p', null, 'No quick-check question available.')); }
       checkEl = miniQuestion(app, q, () => { checkDone = true; drawFoot(); });
       return h('div', { class: 'slide' }, head, h('p', { class: 'small muted' }, 'Quick check. One question, counts toward mastery.'), checkEl);
@@ -127,7 +146,7 @@ export function createLesson(app, cids, opts = {}) {
   function safeVisual(c) { try { return visualFor(c, chapter); } catch { return null; } }
   function safeVignette(n) { try { return n ? vignetteFor(n) : null; } catch { return null; } }
 
-  function kindLabel(k) { return { hook: 'Definition', recall: 'Recall it', explain: 'In plain English', visual: 'See it', confuse: 'Tell it apart', check: 'Quick check' }[k] || ''; }
+  function kindLabel(k) { return { card: 'Concept card', hook: 'Definition', recall: 'Recall it', explain: 'In plain English', visual: 'See it', confuse: 'Tell it apart', check: 'Quick check' }[k] || ''; }
 
   function drawFoot() {
     clear(foot);

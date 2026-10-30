@@ -1,0 +1,1110 @@
+[
+ {
+  "id": "q12-481",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why can adding a riskier stock (higher σ) to a portfolio lower the portfolio's standard deviation?",
+  "options": [
+   "Because it cannot: adding a stock with a higher σ always raises σ_P",
+   "Because a low correlation lets its swings offset the rest of the portfolio's",
+   "Because a riskier stock always has a higher expected return that offsets the risk",
+   "Because the weights of the original stock increase"
+  ],
+  "answer": 1,
+  "explanation": "For a small weight w in the new stock, the variance changes by roughly 2w times (ρ σ_new σ_old − σ_old²) plus an O(w²) term, so the change is negative when ρ < σ_old/σ_new. With σ_old = 10%, σ_new = 20% and ρ = 0.2 this holds, and σ_P falls.",
+  "source": "generated",
+  "ref": "L06 s35, SM 13-7"
+ },
+ {
+  "id": "q12-482",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "You hold a portfolio and want to add one more stock. Candidates X and Y have the same expected return and the same σ. The correlation of X with your portfolio is 0.9 and of Y is 0.1. Which should you add, and why?",
+  "options": [
+   "X, because a higher correlation means the stock behaves like what you know",
+   "Y, because its lower correlation gives a bigger fall in σ_P at the same expected return",
+   "Either, because stocks with equal E[R] and σ are interchangeable",
+   "X, because a stock that moves with the portfolio lowers its volatility"
+  ],
+  "answer": 1,
+  "explanation": "At equal E[R] and σ, the better partner is the one with the lower ρ: its cross-term is smaller, so σ_P is lower. The professor's rule is 'for your next few stocks you want low ρ'.",
+  "source": "generated",
+  "ref": "L06 s59"
+ },
+ {
+  "id": "q12-483",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Weights and standard deviations of two stocks are fixed, and the correlation between them rises from 0.2 to 0.8. What happens to the diversification benefit (weighted-average σ minus σ_P)?",
+  "options": [
+   "It shrinks, because σ_P rises towards the unchanged weighted average",
+   "It grows, because a higher correlation means more co-movement",
+   "It is unchanged, because the weights and σ's are fixed",
+   "It becomes negative"
+  ],
+  "answer": 0,
+  "explanation": "The weighted average of the σ's does not depend on ρ. σ_P increases with ρ, so the gap between them narrows; it reaches zero at ρ = 1. It never becomes negative for ρ ≤ 1.",
+  "source": "generated",
+  "ref": "L06 s24, s33"
+ },
+ {
+  "id": "q12-484",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "With many stocks to choose from, the efficient frontier lies to the left of every individual stock on the risk-return diagram. What does this tell you?",
+  "options": [
+   "Combinations achieve a lower σ for the same expected return than any single stock can",
+   "Individual stocks carry no risk of their own",
+   "The frontier is where expected returns are highest, whatever the risk",
+   "All stocks on the frontier are perfectly correlated with each other"
+  ],
+  "answer": 0,
+  "explanation": "Individual stocks sit to the right of (or on) the frontier, so each is dominated by some combination: the same E[R] with lower σ. That is the diversification benefit seen across a universe of stocks.",
+  "source": "generated",
+  "ref": "L06 s37"
+ },
+ {
+  "id": "q12-485",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "On the two-stock curve (σ_P on the horizontal axis, E[R_P] on the vertical axis) with ρ_AB low enough for the curve to bend back, a point on the lower branch below the minimum-variance portfolio is:",
+  "options": [
+   "efficient, because it has the highest weight in the riskier stock",
+   "the minimum-variance portfolio",
+   "the market portfolio",
+   "inefficient, because another mix has the same σ_P and a higher E[R_P]"
+  ],
+  "answer": 3,
+  "explanation": "Points on the lower branch are dominated: moving up the curve to the other mix with the same σ_P raises E[R_P] at no extra risk. The lecture's point is that 'some weights are not efficient'.",
+  "source": "generated",
+  "ref": "L06 s35"
+ },
+ {
+  "id": "q12-486",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "A two-stock portfolio can have a standard deviation lower than that of either stock held alone.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. If ρ is low enough, mixing the stocks produces a minimum-variance portfolio whose σ_P is below both σ_A and σ_B (for example, ρ = −0.5 with equal σ's gives σ_P = 0.5 σ). It cannot happen at ρ = 1.",
+  "source": "generated",
+  "ref": "SM 13-CTQ7, L06 s33"
+ },
+ {
+  "id": "q12-487",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "Diversification only reduces risk when the correlation between the stocks is negative.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Any ρ below +1 produces a diversification benefit (σ_P less than the weighted average of the σ's); negative correlation just makes it larger. At ρ = 0 and even at ρ = 0.5 risk still falls.",
+  "source": "generated",
+  "ref": "L06 s27"
+ },
+ {
+  "id": "q12-488",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A two-stock portfolio gets a diversification benefit whenever the correlation between the stocks is _____ one.",
+  "options": [
+   "less than",
+   "equal to",
+   "greater than",
+   "exactly zero or below"
+  ],
+  "answer": 0,
+  "explanation": "σ_P equals the weighted average of the σ's only when ρ = 1, and it is lower for every ρ < 1. The benefit does not require ρ ≤ 0.",
+  "source": "generated",
+  "ref": "L06 s27, s33"
+ },
+ {
+  "id": "q12-489",
+  "concept": "c12-diversification-benefit",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Two stocks, fixed 50/50 weights and fixed σ's, are combined under different correlations. Which ordering of σ_P, from largest to smallest, is correct?",
+  "options": [
+   "ρ = −0.6 > ρ = 0 > ρ = +0.3 > ρ = +1",
+   "ρ = 0 > ρ = +0.3 > ρ = +1 > ρ = −0.6",
+   "ρ = +1 > ρ = +0.3 > ρ = 0 > ρ = −0.6",
+   "All equal, because the weights and σ's are the same"
+  ],
+  "answer": 2,
+  "explanation": "σ_P rises with ρ because only the cross-term 2ρ w_A σ_A w_B σ_B changes. The largest value is at ρ = +1, then 0.3, 0, and the smallest at −0.6.",
+  "source": "generated",
+  "ref": "L06 s32-33, SM 13-11"
+ },
+ {
+  "id": "q12-490",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A 50/50 portfolio combines Stock A (σ = 20%) and Stock B (σ = 30%) with a correlation of 0.25. By how many percentage points is the portfolio's standard deviation below the weighted average of the two standard deviations?",
+  "options": [
+   "5.00 pp",
+   "6.97 pp",
+   "20.00 pp",
+   "25.00 pp"
+  ],
+  "answer": 0,
+  "explanation": "Weighted average = 0.5(20) + 0.5(30) = 25%. σ_P = √(100 + 225 + 75) = √400 = 20%. Benefit = 25 − 20 = 5.00 percentage points. 20.00 is σ_P itself, 25.00 is the weighted average, and 6.97 uses ρ = 0 instead of 0.25.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s18"
+ },
+ {
+  "id": "q12-491",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A portfolio holds 60% of Stock A (σ = 28%) and 40% of Stock B (σ = 18%) with a correlation of 0.3. What percentage of the weighted-average risk is removed by diversification?",
+  "options": [
+   "3.83%",
+   "15.98%",
+   "19.01%",
+   "84.02%"
+  ],
+  "answer": 1,
+  "explanation": "Weighted average = 0.6(28) + 0.4(18) = 24.0%. σ_P = √(282.24 + 51.84 + 72.576) = √406.656 = 20.17%. Risk removed = (24.0 − 20.17)/24.0 = 15.98%. The alternatives give the share remaining (84.02%), the reduction in percentage points (3.83) and the reduction relative to σ_P (19.01%).",
+  "source": "generated",
+  "ref": "L06 s18, SM 13-11"
+ },
+ {
+  "id": "q12-492",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Stock C has σ = 26% and Stock D has σ = 14%; their correlation is 0.1. A portfolio holds 45% in C and 55% in D. How many percentage points below the weighted average of the two standard deviations is the portfolio's standard deviation?",
+  "answer": 4.76,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(0.45*26+0.55*14) - sqrt(0.45**2*26**2 + 0.55**2*14**2 + 2*0.1*0.45*26*0.55*14)",
+  "steps": [
+   {
+    "label": "Weighted average of the SDs",
+    "value": 19.4,
+    "check": "0.45*26+0.55*14",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Portfolio SD σ_P",
+    "value": 14.64,
+    "check": "sqrt(0.45**2*26**2 + 0.55**2*14**2 + 2*0.1*0.45*26*0.55*14)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Diversification benefit (percentage points)",
+    "value": 4.76,
+    "check": "(0.45*26+0.55*14) - sqrt(0.45**2*26**2 + 0.55**2*14**2 + 2*0.1*0.45*26*0.55*14)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Weighted average = 0.45 × 26% + 0.55 × 14% = 19.4%",
+   "σ_P = √(0.2025 × 676 + 0.3025 × 196 + 2 × 0.1 × 0.45 × 26 × 0.55 × 14) = √(136.89 + 59.29 + 18.018) = √214.198 = 14.64%",
+   "Benefit = 19.4% − 14.64% = 4.76 percentage points"
+  ],
+  "keystrokes": [
+   "0.45 × 26 + 0.55 × 14 = 19.4",
+   "0.2025 × 676 + 0.3025 × 196 + 2 × 0.1 × 0.45 × 26 × 0.55 × 14 = 214.198, 2nd √x = 14.636",
+   "19.4 − 14.636 = 4.76"
+  ],
+  "errors": [
+   {
+    "id": "reported-sigma",
+    "label": "Reported σ_P itself instead of the gap",
+    "value": 14.64,
+    "check": "sqrt(0.45**2*26**2 + 0.55**2*14**2 + 2*0.1*0.45*26*0.55*14)",
+    "explain": "The question asks for the reduction relative to the weighted average, not the level of σ_P."
+   },
+   {
+    "id": "reported-average",
+    "label": "Reported the weighted average",
+    "value": 19.4,
+    "check": "0.45*26+0.55*14",
+    "explain": "That is the risk at ρ = 1; the benefit is how far σ_P falls below it."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Computed σ_P with ρ = 0 and took the gap",
+    "value": 5.39,
+    "check": "(0.45*26+0.55*14) - sqrt(0.45**2*26**2+0.55**2*14**2)",
+    "explain": "ρ = 0.1, not 0, so the cross-term must be included; ignoring it overstates the benefit."
+   }
+  ],
+  "explanation": "Diversification benefit = (w_C σ_C + w_D σ_D) − σ_P = 19.40% − 14.64% = 4.76 percentage points. The low ρ = 0.1 makes it large; at ρ = 1 it would be zero.",
+  "source": "generated",
+  "ref": "L06 s18, SM 13-11"
+ },
+ {
+  "id": "q12-493",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Two stocks each have σ = 24% and are held 50/50. By how many percentage points does the portfolio's standard deviation fall if the correlation between them drops from +0.5 to −0.5?",
+  "answer": 8.78,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*0.5*0.5*24*0.5*24) - sqrt(0.5**2*24**2+0.5**2*24**2+2*(-0.5)*0.5*24*0.5*24)",
+  "steps": [
+   {
+    "label": "σ_P when ρ = +0.5",
+    "value": 20.78,
+    "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*0.5*0.5*24*0.5*24)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "σ_P when ρ = −0.5",
+    "value": 12.0,
+    "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*(-0.5)*0.5*24*0.5*24)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Fall in σ_P (percentage points)",
+    "value": 8.78,
+    "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*0.5*0.5*24*0.5*24) - sqrt(0.5**2*24**2+0.5**2*24**2+2*(-0.5)*0.5*24*0.5*24)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "ρ = +0.5: σ_P = √(0.25 × 576 + 0.25 × 576 + 2 × 0.5 × 0.5 × 24 × 0.5 × 24) = √(144 + 144 + 144) = √432 = 20.78%",
+   "ρ = −0.5: σ_P = √(144 + 144 − 144) = √144 = 12.00%",
+   "Fall = 20.78% − 12.00% = 8.78 percentage points"
+  ],
+  "keystrokes": [
+   "√432 = 20.785",
+   "√144 = 12.00",
+   "20.785 − 12.00 = 8.78"
+  ],
+  "errors": [
+   {
+    "id": "sign-of-rho",
+    "label": "Compared with ρ = 0 instead of −0.5",
+    "value": 3.81,
+    "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*0.5*0.5*24*0.5*24) - sqrt(0.5**2*24**2+0.5**2*24**2)",
+    "explain": "The question asks about ρ = −0.5, where the cross-term is negative (−72), not zero."
+   },
+   {
+    "id": "reported-sigma",
+    "label": "Reported σ_P at ρ = −0.5",
+    "value": 12.0,
+    "check": "sqrt(0.5**2*24**2+0.5**2*24**2+2*(-0.5)*0.5*24*0.5*24)",
+    "explain": "That is the level of risk at ρ = −0.5, not the fall from the ρ = +0.5 level."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Subtracted the variances (432 − 144) and scaled",
+    "value": 2.88,
+    "check": "(432-144)/100",
+    "explain": "Take the square root of each variance before subtracting."
+   }
+  ],
+  "explanation": "Moving ρ from +0.5 to −0.5 lowers σ_P from 20.78% to 12.00%, a fall of 8.78 percentage points. Each step down in ρ shrinks the cross-term (+144, 0, −144) and with it σ_P.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s32"
+ },
+ {
+  "id": "q12-494",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You hold only Stock A (σ = 10%, E[R] = 6%). You move 20% of your money into the riskier Stock B (σ = 20%, E[R] = 11%). The correlation between A and B is 0.2. What is the new portfolio's standard deviation (% per annum)?",
+  "answer": 9.63,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "sqrt(0.8**2*10**2+0.2**2*20**2+2*0.2*0.8*10*0.2*20)",
+  "steps": [
+   {
+    "label": "Portfolio variance (%²)",
+    "value": 92.8,
+    "check": "0.8**2*10**2+0.2**2*20**2+2*0.2*0.8*10*0.2*20",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "New portfolio SD σ_P",
+    "value": 9.63,
+    "check": "sqrt(0.8**2*10**2+0.2**2*20**2+2*0.2*0.8*10*0.2*20)",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Change in risk versus holding A alone (percentage points)",
+    "value": -0.37,
+    "check": "sqrt(0.8**2*10**2+0.2**2*20**2+2*0.2*0.8*10*0.2*20)-10",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Variance = 0.64 × 100 + 0.04 × 400 + 2 × 0.2 × 0.8 × 10 × 0.2 × 20 = 64 + 16 + 12.8 = 92.8",
+   "σ_P = √92.8 = 9.63%, which is 0.37 percentage points below A's own 10%",
+   "Expected return rises too: 0.8 × 6% + 0.2 × 11% = 7.0% > 6.0%"
+  ],
+  "keystrokes": [
+   "0.64 × 100 = 64; 0.04 × 400 = 16",
+   "2 × 0.2 × 0.8 × 10 × 0.2 × 20 = 12.8",
+   "64 + 16 + 12.8 = 92.8; 2nd √x = 9.63"
+  ],
+  "errors": [
+   {
+    "id": "rho-one-shortcut",
+    "label": "Weighted average of the SDs (12.0%)",
+    "value": 12.0,
+    "check": "0.8*10+0.2*20",
+    "explain": "That is the ρ = 1 answer and would wrongly suggest that adding a riskier stock raises risk."
+   },
+   {
+    "id": "no-correlation",
+    "label": "Dropped the cross-term (ρ = 0)",
+    "value": 8.94,
+    "check": "sqrt(0.8**2*10**2+0.2**2*20**2)",
+    "explain": "ρ = 0.2 adds 12.8 to the variance; ignoring it gives 8.94%, too low."
+   },
+   {
+    "id": "swapped-weights",
+    "label": "Used 20% in A and 80% in B",
+    "value": 16.52,
+    "check": "sqrt(0.2**2*10**2+0.8**2*20**2+2*0.2*0.2*10*0.8*20)",
+    "explain": "The 80% weight belongs to Stock A (the stock you already hold)."
+   }
+  ],
+  "explanation": "Even though B is twice as risky as A, a 20% slice lowers σ_P from 10.00% to 9.63% (and raises E[R_P] from 6% to 7%), because ρ = 0.2 is below σ_A/σ_B = 0.5. This is why holding only the lower-risk stock is inefficient.",
+  "source": "generated",
+  "ref": "L06 s35, SM 13-11"
+ },
+ {
+  "id": "q12-495",
+  "concept": "c12-diversification-benefit",
+  "also": [
+   "c12-portfolio-sd"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stock A (σ = 24%) and Stock B (σ = 16%) are perfectly negatively correlated (ρ = −1). What percentage of the portfolio should be in Stock A for the portfolio to have zero standard deviation?",
+  "answer": 40.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "16/(24+16)*100",
+  "steps": [
+   {
+    "label": "Sum of the two SDs, σ_A + σ_B",
+    "value": 40.0,
+    "check": "24+16",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in A for σ_P = 0 (in %)",
+    "value": 40.0,
+    "check": "16/(24+16)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "With ρ = −1: σ_P = |w_A σ_A − w_B σ_B|, which is 0 when w_A σ_A = w_B σ_B",
+   "24 w_A = 16 (1 − w_A), so w_A = 16/(24 + 16) = 0.40",
+   "Check: 0.40 × 24 = 9.6 and 0.60 × 16 = 9.6, so σ_P = 0"
+  ],
+  "keystrokes": [
+   "16 ÷ (24 + 16) = 0.40",
+   "× 100 = 40.00%"
+  ],
+  "errors": [
+   {
+    "id": "swapped-weights",
+    "label": "Gave the weight to the other stock",
+    "value": 60.0,
+    "check": "24/(24+16)*100",
+    "explain": "The riskier stock needs the smaller weight so that the two weighted risks are equal."
+   },
+   {
+    "id": "equal-weights-assumed",
+    "label": "Used equal weights",
+    "value": 50.0,
+    "check": "50",
+    "explain": "Equal dollars give 0.5 × 24 = 12 against 0.5 × 16 = 8, which does not cancel."
+   },
+   {
+    "id": "ratio-not-share",
+    "label": "Used the ratio of the SDs",
+    "value": 66.67,
+    "check": "16/24*100",
+    "explain": "The weights must sum to 1, so w_A = σ_B/(σ_A + σ_B), not σ_B/σ_A."
+   }
+  ],
+  "explanation": "At ρ = −1 the risks cancel completely when w_A σ_A = w_B σ_B, giving w_A = σ_B/(σ_A + σ_B) = 40% (and 60% in B). This is the extreme diversification benefit: a riskless portfolio built from two risky stocks.",
+  "source": "generated",
+  "ref": "SM 13-11, L06 s32"
+ },
+ {
+  "id": "q12-496",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "When the number of securities in a portfolio is increased, what typically happens to the standard deviation of the portfolio returns?",
+  "options": [
+   "It decreases at an increasing rate",
+   "It increases at an increasing rate",
+   "It is unchanged",
+   "It decreases but at a decreasing rate",
+   "It increases but at a decreasing rate"
+  ],
+  "answer": 3,
+  "explanation": "Adding securities averages out company-specific (diversifiable) risk, so the portfolio standard deviation falls; but each extra security removes less than the one before, and the fall levels off at the systematic (market) level σ_M. So σ_P decreases at a decreasing rate, not at an increasing rate and not all the way to zero.",
+  "source": "official",
+  "ref": "PRAC q7"
+ },
+ {
+  "id": "q12-497",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Systematic risk is best defined as:",
+  "options": [
+   "risk from economy-wide factors that diversification cannot remove",
+   "risk particular to one company or industry that disappears in a large portfolio",
+   "the standard deviation of a single stock's returns",
+   "the risk of holding fewer than ten securities"
+  ],
+  "answer": 0,
+  "explanation": "Systematic (market, non-diversifiable) risk comes from economy-wide factors such as interest rates, inflation and GDP growth. Company-specific risk is the diversifiable part. Total σ of a stock includes both.",
+  "source": "generated",
+  "ref": "L06 s46, s49"
+ },
+ {
+  "id": "q12-498",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Equally weighted portfolios of randomly chosen Canadian stocks have an average standard deviation of 44% with 1 stock, 24% with 10, 20% with 100 and 19% with 1,000. The 19% or so that remains however many stocks are added is:",
+  "options": [
+   "unsystematic (company-specific) risk",
+   "systematic (market) risk",
+   "diversifiable risk",
+   "the risk-free rate"
+  ],
+  "answer": 1,
+  "explanation": "Diversification strips out company-specific risk, so the floor that remains is the market's own volatility σ_M: non-diversifiable, systematic risk.",
+  "source": "generated",
+  "ref": "L06 s46-47, TB 13.5"
+ },
+ {
+  "id": "q12-499",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which of the following is a source of systematic risk?",
+  "options": [
+   "A strike shuts down one company's only plant",
+   "A mining firm's chief executive resigns unexpectedly",
+   "The Bank of Canada unexpectedly raises its policy interest rate",
+   "A single restaurant chain recalls a contaminated product"
+  ],
+  "answer": 2,
+  "explanation": "A policy-rate change affects the discount rates, borrowing costs and profits of almost every firm, so it cannot be diversified away. The other three events hit one firm only and tend to wash out in a diversified portfolio.",
+  "source": "generated",
+  "ref": "SM 13-CTQ3, L06 s49"
+ },
+ {
+  "id": "q12-500",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which pairing of risk terms is correct?",
+  "options": [
+   "Company-specific = non-diversifiable = systematic; market = diversifiable = non-systematic",
+   "Diversifiable = systematic; non-diversifiable = unsystematic",
+   "Company-specific = diversifiable = non-systematic; market = non-diversifiable = systematic",
+   "All of these terms are different names for total risk"
+  ],
+  "answer": 2,
+  "explanation": "The professor's terminology: company-specific = diversifiable = non-systematic; market = non-diversifiable (undiversifiable) = systematic. Total risk = systematic + unsystematic.",
+  "source": "generated",
+  "ref": "L06 s49"
+ },
+ {
+  "id": "q12-501",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 1,
+  "stem": "Which of the following is NOT another name for systematic risk?",
+  "options": [
+   "Market risk",
+   "Non-diversifiable risk",
+   "Undiversifiable risk",
+   "Company-specific risk"
+  ],
+  "answer": 3,
+  "explanation": "Systematic risk is also called market risk, non-diversifiable and undiversifiable risk. Company-specific risk is its opposite: the diversifiable, non-systematic part.",
+  "source": "generated",
+  "ref": "L06 s49"
+ },
+ {
+  "id": "q12-502",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can't holding more and more stocks eliminate systematic risk?",
+  "options": [
+   "Because large portfolios have higher expected returns than small ones",
+   "Because systematic factors move almost all stocks the same way at once, so nothing offsets",
+   "Because systematic risk only affects the stocks that are not in the portfolio",
+   "Because adding stocks makes the correlation between them rise to zero"
+  ],
+  "answer": 1,
+  "explanation": "Company-specific events offset because good news at one firm is unrelated to bad news at another. Economy-wide events (rates, recession) move nearly all firms together, so no number of stocks cancels them: σ_P levels off at the market volatility σ_M.",
+  "source": "generated",
+  "ref": "L06 s46, TB 13.5"
+ },
+ {
+  "id": "q12-503",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the portfolio standard deviation fall at a decreasing rate as the number of stocks grows?",
+  "options": [
+   "Because each added stock removes less of the specific risk that is left",
+   "Because later stocks have lower expected returns",
+   "Because each added stock has a larger weight than the previous one",
+   "Because the standard deviation falls at a constant rate until it reaches zero"
+  ],
+  "answer": 0,
+  "explanation": "The second stock removes a large share of the diversifiable risk; by the tenth or thirtieth most of it is already gone, so extra stocks help little. What remains is the market volatility floor. In the textbook data, 10 stocks capture most of the benefit and 30 almost all of it.",
+  "source": "generated",
+  "ref": "L06 s46-47, TB 13.5"
+ },
+ {
+  "id": "q12-504",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Average standard deviations of equally weighted portfolios: 1 stock 44%, 2 stocks 33%, 5 stocks 27%, 10 stocks 24%, 30 stocks 21%, 100 stocks 20%. What does this pattern show?",
+  "options": [
+   "Most of the reduction comes from the first few stocks; about 20% remains",
+   "Risk falls by about the same amount each time one more stock is added",
+   "Beyond 30 stocks the portfolio's risk starts to rise again",
+   "With 100 stocks all of the risk has been eliminated"
+  ],
+  "answer": 0,
+  "explanation": "The drops shrink: 11 points from 1 to 2 stocks, but about 1 point from 30 to 100. The floor near 20% is the systematic risk that no number of stocks removes.",
+  "source": "generated",
+  "ref": "TB 13.5, L06 s47"
+ },
+ {
+  "id": "q12-505",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "For a portfolio of randomly chosen stocks, as the number of stocks N becomes very large the standard deviation of the portfolio approaches:",
+  "options": [
+   "zero",
+   "the average standard deviation of the individual stocks",
+   "σ_M, the volatility of the market (the systematic level)",
+   "the risk-free rate"
+  ],
+  "answer": 2,
+  "explanation": "Unsystematic risk washes out, leaving the systematic component: σ_P tends to σ_M, not to zero and not to the average stock's σ.",
+  "source": "generated",
+  "ref": "L06 s46-47"
+ },
+ {
+  "id": "q12-506",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "By holding enough stocks, an investor can reduce the standard deviation of the portfolio's return to zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Diversification removes only the company-specific part; the market-wide (systematic) risk remains, so σ_P bottoms out near the market volatility σ_M (about 19-20% in the textbook data).",
+  "source": "generated",
+  "ref": "TB 13.5, L06 s46"
+ },
+ {
+  "id": "q12-507",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "In a well-diversified portfolio, essentially all of the remaining risk is systematic.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. A well-diversified portfolio has almost no unsystematic risk left, so its total risk is essentially systematic; this is why β, not σ, becomes the relevant risk measure for an added stock in such a portfolio.",
+  "source": "generated",
+  "ref": "TB 13.5, L06 s50"
+ },
+ {
+  "id": "q12-508",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "An investor holds all her savings in one Calgary oil producer. Which step reduces her total risk the most without necessarily lowering her expected return?",
+  "options": [
+   "Buying a second Alberta oil producer with the same σ",
+   "Moving all of the money into the stock with the highest σ",
+   "Waiting for the oil price to rise before diversifying",
+   "Spreading the money over many stocks in different industries and countries"
+  ],
+  "answer": 3,
+  "explanation": "Low-correlation holdings reduce company- and industry-specific risk. A second oil producer is highly correlated with the first, so it adds little; this follows the professor's rule: after the first stock, look for low ρ.",
+  "source": "generated",
+  "ref": "L06 s59, s30"
+ },
+ {
+  "id": "q12-509",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "As more stocks are added, the portfolio standard deviation falls at a _____ rate towards the systematic level.",
+  "options": [
+   "increasing",
+   "decreasing",
+   "constant",
+   "negative"
+  ],
+  "answer": 1,
+  "explanation": "The fall is steep at first, then flattens: each additional stock removes less risk than the one before.",
+  "source": "generated",
+  "ref": "L06 s47, PRAC q7"
+ },
+ {
+  "id": "q12-510",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which ordering of typical standard deviations, from largest to smallest, is correct for equally weighted portfolios of randomly chosen stocks?",
+  "options": [
+   "One stock > 5 stocks > 30 stocks > broad market index",
+   "Broad market index > 30 stocks > 5 stocks > one stock",
+   "30 stocks > 5 stocks > one stock > broad market index",
+   "All are about equal because diversification cannot reduce σ"
+  ],
+  "answer": 0,
+  "explanation": "σ falls as stocks are added and bottoms out at the market's volatility (the broad index is the limiting, fully diversified portfolio). A single stock carries all of its company-specific risk and has the largest σ.",
+  "source": "generated",
+  "ref": "L06 s47, TB 13.5"
+ },
+ {
+  "id": "q12-511",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "With two stocks at ρ = −1 the portfolio risk can be driven to zero, yet no large portfolio of real stocks reaches zero. Why?",
+  "options": [
+   "Real stocks all have the same expected return",
+   "Large portfolios always have weights larger than 1",
+   "The formula σ_P = w σ stops applying beyond two stocks",
+   "Real stocks share economy-wide factors, so a systematic floor remains"
+  ],
+  "answer": 3,
+  "explanation": "ρ = −1 is an extreme two-stock case that real stocks never reach: nearly all stocks rise and fall with the market, so their correlations are positive on average. The economy-wide (systematic) part of their risk does not cancel, and σ_P levels off near the market's volatility σ_M.",
+  "source": "generated",
+  "ref": "L06 s32, s46"
+ },
+ {
+  "id": "q12-512",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A portfolio of 25 randomly chosen TSX stocks has σ = 20.3%, while the broad TSX index has σ = 18.9%. What does the 1.4-point gap suggest?",
+  "options": [
+   "The 25-stock portfolio must already lie on the efficient frontier",
+   "Adding another 25 stocks would roughly halve the portfolio's σ",
+   "Little more risk can be removed: what remains of the 25-stock risk is mostly systematic",
+   "The index must contain more unsystematic risk than the portfolio"
+  ],
+  "answer": 2,
+  "explanation": "The portfolio is already within 1.4 points of the market's own volatility, so the only risk left to remove is the small unsystematic slice. Doubling the number of stocks would shave off at most a fraction of that 1.4 points.",
+  "source": "generated",
+  "ref": "TB 13.5, L06 s47"
+ },
+ {
+  "id": "q12-513",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A single randomly chosen stock has a standard deviation of 48.0%, while an equally weighted portfolio of 10 such stocks has a standard deviation of 26.4%. What percentage of the single stock's standard deviation is removed by holding the 10-stock portfolio?",
+  "options": [
+   "26.40",
+   "45.00",
+   "55.00",
+   "181.82"
+  ],
+  "answer": 1,
+  "explanation": "Reduction = (48.0 − 26.4)/48.0 = 21.6/48.0 = 45.00%. The 55.00% option is the share that remains, 26.40 is the level of σ_P rather than a reduction, and 181.82% inverts the ratio.",
+  "source": "generated",
+  "ref": "TB 13.5"
+ },
+ {
+  "id": "q12-515",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Typical standard deviations of equally weighted portfolios of Canadian large caps are 40.0% for one stock, 22.0% for ten stocks, 18.4% for forty stocks, and 16.0% for the whole market. What percentage of the maximum possible risk reduction (from one stock down to the market level) is achieved by holding ten stocks?",
+  "answer": 75.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(40-22)/(40-16)*100",
+  "steps": [
+   {
+    "label": "Maximum possible reduction (one stock to market)",
+    "value": 24.0,
+    "check": "40-16",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Reduction achieved by ten stocks",
+    "value": 18.0,
+    "check": "40-22",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Share of the possible reduction achieved",
+    "value": 75.0,
+    "check": "(40-22)/(40-16)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Total reduction available = 40.0 − 16.0 = 24.0 percentage points",
+   "Reduction with ten stocks = 40.0 − 22.0 = 18.0 points",
+   "Share achieved = 18.0/24.0 = 75.00%"
+  ],
+  "keystrokes": [
+   "40 − 16 = 24",
+   "40 − 22 = 18",
+   "18 ÷ 24 × 100 = 75.00"
+  ],
+  "errors": [
+   {
+    "id": "share-of-single",
+    "label": "Divided by the single stock's σ instead of the reducible amount",
+    "value": 45.0,
+    "check": "(40-22)/40*100",
+    "explain": "The market floor (16%) cannot be diversified away, so the benchmark is the 24-point reducible part, not all 40 points."
+   },
+   {
+    "id": "remaining-share",
+    "label": "Gave the share still to be removed",
+    "value": 25.0,
+    "check": "(22-16)/(40-16)*100",
+    "explain": "That is the remaining part (25%); the question asks what has been achieved."
+   },
+   {
+    "id": "level-not-share",
+    "label": "Divided the portfolio's σ by the single stock's σ",
+    "value": 55.0,
+    "check": "22/40*100",
+    "explain": "That is the ratio of risks (55%), not the share of the reducible risk achieved."
+   }
+  ],
+  "explanation": "Ten stocks remove 18 of the 24 points that diversification can ever remove: 75%. This is the textbook's point that 'by the time we have 10 securities, most of the effect is already realized'. The last 6 points need dozens more stocks.",
+  "source": "generated",
+  "ref": "TB 13.5, L06 s47"
+ },
+ {
+  "id": "q12-516",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A portfolio's standard deviation is 49.0% with 1 stock, 37.0% with 2, 30.0% with 4 and 25.2% with 8. How many times larger is the reduction from adding the second stock than the average reduction per added stock when going from 4 to 8 stocks?",
+  "answer": 10.0,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "(49-37)/((30-25.2)/4)",
+  "steps": [
+   {
+    "label": "Reduction from adding the 2nd stock (points)",
+    "value": 12.0,
+    "check": "49-37",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Average reduction per stock from 4 to 8 (points)",
+    "value": 1.2,
+    "check": "(30-25.2)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Ratio",
+    "value": 10.0,
+    "check": "(49-37)/((30-25.2)/4)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Adding the 2nd stock: 49.0 − 37.0 = 12.0 points for one stock",
+   "From 4 to 8 stocks: (30.0 − 25.2)/4 = 1.2 points per added stock",
+   "Ratio = 12.0/1.2 = 10.00"
+  ],
+  "keystrokes": [
+   "49 − 37 = 12",
+   "(30 − 25.2) ÷ 4 = 1.2",
+   "12 ÷ 1.2 = 10.00"
+  ],
+  "errors": [
+   {
+    "id": "total-not-per-stock",
+    "label": "Used the whole 4-to-8 reduction (4.8) instead of the per-stock average",
+    "value": 2.5,
+    "check": "(49-37)/(30-25.2)",
+    "explain": "Four stocks were added between 4 and 8, so divide the 4.8-point fall by 4."
+   },
+   {
+    "id": "inverted-ratio",
+    "label": "Inverted the ratio",
+    "value": 0.1,
+    "check": "((30-25.2)/4)/(49-37)",
+    "explain": "The question asks how many times larger the early gain is, not the reverse."
+   },
+   {
+    "id": "wrong-interval",
+    "label": "Used the 2-to-4 average (3.5) as the comparison",
+    "value": 3.43,
+    "check": "(49-37)/((37-30)/2)",
+    "explain": "The comparison interval is 4 to 8 stocks."
+   }
+  ],
+  "explanation": "The second stock cuts σ by 12 points, but each of the stocks added between 4 and 8 cuts it by only 1.2 on average: ten times less. That is 'a decreasing rate' in numbers.",
+  "source": "generated",
+  "ref": "PRAC q7, TB 13.5"
+ },
+ {
+  "id": "q12-518",
+  "concept": "c12-diversification-limit",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In the textbook's data, a randomly chosen single stock has an average σ of 49.24%, a 30-stock portfolio 20.87%, and a 1,000-stock portfolio 19.21%. What percentage of the total diversification achieved by 1,000 stocks is already achieved by 30 stocks?",
+  "answer": 94.47,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(49.24-20.87)/(49.24-19.21)*100",
+  "steps": [
+   {
+    "label": "Total reduction with 1,000 stocks",
+    "value": 30.03,
+    "check": "49.24-19.21",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Reduction with 30 stocks",
+    "value": 28.37,
+    "check": "49.24-20.87",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Share achieved by 30 stocks",
+    "value": 94.47,
+    "check": "(49.24-20.87)/(49.24-19.21)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Total reduction (1 stock → 1,000 stocks) = 49.24 − 19.21 = 30.03 points",
+   "Reduction by 30 stocks = 49.24 − 20.87 = 28.37 points",
+   "Share = 28.37/30.03 = 94.47%"
+  ],
+  "keystrokes": [
+   "49.24 − 19.21 = 30.03",
+   "49.24 − 20.87 = 28.37",
+   "28.37 ÷ 30.03 × 100 = 94.47"
+  ],
+  "errors": [
+   {
+    "id": "share-of-single",
+    "label": "Divided the 30-stock reduction by the single stock's σ",
+    "value": 57.62,
+    "check": "(49.24-20.87)/49.24*100",
+    "explain": "That ignores that 19.21 points of σ can never be diversified away."
+   },
+   {
+    "id": "level-not-share",
+    "label": "Divided the 30-stock σ by the single-stock σ",
+    "value": 42.38,
+    "check": "20.87/49.24*100",
+    "explain": "That is the ratio of risk levels (42%), not the share of the reduction achieved."
+   },
+   {
+    "id": "wrong-base",
+    "label": "Compared the 30-stock σ with the 1,000-stock σ",
+    "value": 92.05,
+    "check": "19.21/20.87*100",
+    "explain": "That gives 92%, the ratio of the two floors, not the share of the diversification achieved."
+   }
+  ],
+  "explanation": "Thirty stocks already deliver 94.47% of everything diversification can do; the other 970 stocks add the last 5.53%. This is the 'decreasing rate' and 'limit at σ_M' pattern: 'by the time we get to 30 or so, there is little remaining benefit' (Ross).",
+  "source": "generated",
+  "ref": "TB 13.5 (Table 13.7), L06 s47"
+ }
+]

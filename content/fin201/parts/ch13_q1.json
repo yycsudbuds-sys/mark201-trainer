@@ -1,0 +1,957 @@
+[
+ {
+  "id": "q13-001",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In the capital allocation line framework, which description fits the risk-free asset?",
+  "options": [
+   "A certain return R_F with σ = 0, so it adds no variance or covariance term",
+   "A certain return R_F, but with a beta of 1 because it is part of the market",
+   "An asset whose expected return is zero and whose σ is also zero",
+   "An asset paying R_F with a small σ that diversification can remove"
+  ],
+  "answer": 0,
+  "explanation": "The risk-free asset pays R_F for certain, so σ_F = 0. That is why the w_F², σ_F and correlation terms vanish from the portfolio σ formula. Its beta is 0, not 1, and R_F itself is positive, not zero.",
+  "source": "generated",
+  "ref": "L06 s38"
+ },
+ {
+  "id": "q13-002",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Cypress Credit Union keeps one diversified equity fund P (not claimed to be the tangent portfolio) and only changes how much of its money sits in 90-day Government of Canada T-bills. The straight line of all the E[R] and σ combinations it can reach is called the:",
+  "options": [
+   "capital market line (CML)",
+   "capital allocation line (CAL)",
+   "security market line (SML)",
+   "efficient frontier of risky assets"
+  ],
+  "answer": 1,
+  "explanation": "Mixing one risky portfolio with the risk-free asset traces a straight capital allocation line. It would be the CML only if P were the tangent portfolio M. The SML plots E[R] against β, and the frontier is a curve of risky assets only.",
+  "source": "generated",
+  "ref": "L06 s39"
+ },
+ {
+  "id": "q13-003",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Tamarack Capital puts 70% of its money in a risky portfolio P (E[R_P] = 9.5%, σ_P = 16.0%) and 30% in T-bills yielding 2.5%. What is the expected return of the combined portfolio?",
+  "options": [
+   "6.65%",
+   "8.40%",
+   "6.00%",
+   "7.40%"
+  ],
+  "answer": 3,
+  "explanation": "E[R] = w_P E[R_P] + w_F R_F = 0.70 × 9.5 + 0.30 × 2.5 = 6.65 + 0.75 = 7.40%. Dropping the risk-free term gives 6.65%; using 0.70 for both weights (they then add to 1.4) gives 8.40%; a simple average ignores the 70/30 split and gives 6.00%.",
+  "source": "generated",
+  "ref": "L06 s39"
+ },
+ {
+  "id": "q13-004",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Prairie Endowment has $2,000,000. It places $1,400,000 in a diversified equity portfolio P (E[R_P] = 10.5%, σ_P = 18.0%) and the rest in T-bills paying 3.2%. Find both weights and the σ of the combined portfolio, then give its expected return (% per annum).",
+  "answer": 8.31,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.7*10.5+0.3*3.2",
+  "steps": [
+   {
+    "label": "Weight in P (w_P)",
+    "value": 70.0,
+    "check": "1400000/2000000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Weight in T-bills (w_F)",
+    "value": 30.0,
+    "check": "600000/2000000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "σ of the mix = w_P σ_P",
+    "value": 12.6,
+    "check": "0.7*18",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Expected return of the mix",
+    "value": 8.31,
+    "check": "0.7*10.5+0.3*3.2",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "w_P = 1,400,000/2,000,000 = 0.70 and w_F = 1 − 0.70 = 0.30",
+   "σ = w_P σ_P = 0.70 × 18.0% = 12.6% (σ_F = 0, so no correlation term)",
+   "E[R] = w_P E[R_P] + w_F R_F = 0.70 × 10.5% + 0.30 × 3.2% = 7.35% + 0.96% = 8.31%"
+  ],
+  "keystrokes": [
+   "1,400,000 ÷ 2,000,000 = 0.70 (w_P); 1 − 0.70 = 0.30 (w_F)",
+   "0.70 × 18 = 12.6 (σ)",
+   "0.70 × 10.5 = 7.35; 0.30 × 3.2 = 0.96; add → 8.31"
+  ],
+  "errors": [
+   {
+    "id": "forgot-rf-weight",
+    "label": "Left out the T-bill term",
+    "value": 7.35,
+    "check": "0.7*10.5",
+    "explain": "The risk-free asset still earns R_F on its 30% weight: add w_F R_F."
+   },
+   {
+    "id": "equal-weights",
+    "label": "Averaged the two returns",
+    "value": 6.85,
+    "check": "(10.5+3.2)/2",
+    "explain": "The weights come from the dollars (70/30), not 50/50."
+   },
+   {
+    "id": "weights-not-one",
+    "label": "Used dollars in millions as weights",
+    "value": 16.62,
+    "check": "1.4*10.5+0.6*3.2",
+    "explain": "1.4 and 0.6 add to 2.0. Divide each amount by total wealth to get weights that sum to 1."
+   }
+  ],
+  "explanation": "Weights come from dollars over total wealth; σ = w_P σ_P because σ_F = 0; E[R] is the weighted average of E[R_P] and R_F.",
+  "source": "generated",
+  "ref": "L06 s39-40"
+ },
+ {
+  "id": "q13-005",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Hanna has $40,000 of her own money. She borrows another $20,000 at the T-bill rate of 3.0% (borrowing and lending rates are equal) and invests all $60,000 in portfolio P with E[R_P] = 10.0% and σ_P = 15.0%. What is the σ of her position (% per annum)?",
+  "answer": 22.5,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.5*15",
+  "steps": [
+   {
+    "label": "Weight in P (w_P)",
+    "value": 150.0,
+    "check": "60000/40000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Weight in the risk-free asset (w_F)",
+    "value": -50.0,
+    "check": "(40000-60000)/40000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Expected return on her own money",
+    "value": 13.5,
+    "check": "1.5*10+(-0.5)*3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "σ of her position = w_P σ_P",
+    "value": 22.5,
+    "check": "1.5*15",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "w_P = 60,000/40,000 = 1.50 and w_F = 1 − 1.50 = −0.50 (borrowing)",
+   "E[R] = 1.5 × 10.0% + (−0.5) × 3.0% = 15.0% − 1.5% = 13.5%",
+   "σ = w_P σ_P = 1.50 × 15.0% = 22.5% (beyond P on the same CAL)"
+  ],
+  "keystrokes": [
+   "60,000 ÷ 40,000 = 1.5 (w_P)",
+   "1 − 1.5 = −0.5 (w_F)",
+   "1.5 × 15 = 22.5"
+  ],
+  "errors": [
+   {
+    "id": "ignored-borrowing",
+    "label": "Used σ_P without scaling for leverage",
+    "value": 15.0,
+    "check": "15",
+    "explain": "Investing 150% of her wealth in P scales σ by 1.5: σ = w_P σ_P."
+   },
+   {
+    "id": "weights-swapped",
+    "label": "Used the risk-free weight as the weight on P",
+    "value": 7.5,
+    "check": "0.5*15",
+    "explain": "The weight on P is 1.50 (60,000/40,000), not 0.50."
+   }
+  ],
+  "explanation": "Leverage multiplies P's risk: with w_P = 1.5 the position sits 50% further out on the CAL, so σ = 1.5 × 15% = 22.5%.",
+  "source": "generated",
+  "ref": "L06 s39-40, SM 13-19"
+ },
+ {
+  "id": "q13-006",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rocky View Pension can mix a risky portfolio P (E[R_P] = 11.5%, σ_P = 20.0%) with T-bills at 2.5%. The board wants the overall σ to be 14.0%. What expected return (% per annum) does the mix earn?",
+  "answer": 8.8,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "0.7*11.5+0.3*2.5",
+  "steps": [
+   {
+    "label": "Weight in P: w_P = σ_target/σ_P",
+    "value": 70.0,
+    "check": "14/20*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Weight in T-bills",
+    "value": 30.0,
+    "check": "(1-14/20)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Expected return of the mix",
+    "value": 8.8,
+    "check": "0.7*11.5+0.3*2.5",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Because σ = w_P σ_P, w_P = 14.0/20.0 = 0.70 and w_F = 0.30",
+   "E[R] = 0.70 × 11.5% + 0.30 × 2.5% = 8.05% + 0.75% = 8.80%"
+  ],
+  "keystrokes": [
+   "14 ÷ 20 = 0.70 (w_P); 1 − 0.70 = 0.30",
+   "0.70 × 11.5 = 8.05; 0.30 × 2.5 = 0.75; add → 8.80"
+  ],
+  "errors": [
+   {
+    "id": "inverted-weight",
+    "label": "Inverted the weight: w_P = σ_P/σ_target",
+    "value": 15.36,
+    "check": "20/14*11.5+(1-20/14)*2.5",
+    "explain": "A target σ below σ_P means w_P < 1; the weight is σ_target/σ_P, not the reverse."
+   },
+   {
+    "id": "forgot-rf-weight",
+    "label": "Left out the T-bill term",
+    "value": 8.05,
+    "check": "0.7*11.5",
+    "explain": "Add w_F R_F = 0.30 × 2.5% for the T-bill portion."
+   }
+  ],
+  "explanation": "On a CAL σ is proportional to w_P, so w_P = σ_target/σ_P. The return follows from the weighted average.",
+  "source": "generated",
+  "ref": "L06 s40, SM 13-19"
+ },
+ {
+  "id": "q13-007",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is a capital allocation line (P mixed with the risk-free asset) a straight line?",
+  "options": [
+   "Because R_F and P are perfectly positively correlated, so the usual two-asset curve collapses to a line",
+   "Because investors can lend at R_F but cannot borrow at it, so the line simply stops at portfolio P",
+   "Because the efficient frontier of risky assets is itself nearly straight near the point of tangency with the line",
+   "Because σ_F = 0, the σ formula collapses to σ = w_P σ_P, so σ and E[R] both move in proportion to w_P"
+  ],
+  "answer": 3,
+  "explanation": "The two-asset σ formula has w_F²σ_F², and a correlation term times σ_F. With σ_F = 0 only w_P²σ_P² is left, so σ = w_P σ_P. Correlation is irrelevant because it multiplies zero; it is not that R_F is 'perfectly correlated' with P.",
+  "source": "generated",
+  "ref": "L06 s40"
+ },
+ {
+  "id": "q13-008",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts a capital allocation line with the efficient frontier of risky stocks?",
+  "options": [
+   "The CAL is a straight line using R_F; the frontier is a curve of risky assets only",
+   "Both are straight lines, but the CAL is steeper because it includes R_F",
+   "The frontier contains the risk-free asset, while the CAL contains only stocks",
+   "The CAL is curved because of correlation, while the frontier is straight because of diversification"
+  ],
+  "answer": 0,
+  "explanation": "R_F has σ = 0, so mixing it with P gives a straight line. Mixing risky stocks gives a curve whose bend depends on correlation. The risk-free asset belongs to the CAL, not to the frontier of stocks.",
+  "source": "generated",
+  "ref": "L06 s37-39"
+ },
+ {
+  "id": "q13-009",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "A CAL built from a risky portfolio P and the risk-free asset has all of the following properties EXCEPT:",
+  "options": [
+   "it passes through the point σ = 0, E[R] = R_F",
+   "its slope is the beta of P",
+   "points beyond P require borrowing at R_F (w_F < 0)",
+   "σ at any point equals w_P σ_P"
+  ],
+  "answer": 1,
+  "explanation": "The slope of the CAL is the Sharpe ratio (E[R_P] − R_F)/σ_P = tan φ, not a beta. The other three statements are true: the intercept is R_F, w_F < 0 means borrowing, and σ = w_P σ_P.",
+  "source": "generated",
+  "ref": "L06 s39-42"
+ },
+ {
+  "id": "q13-010",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Zainab likes portfolio P but wants a higher expected return than P offers, using only P and the risk-free asset (lending and borrowing rates equal). What should she do?",
+  "options": [
+   "Lend more at R_F so that w_F rises above its current value",
+   "Switch to a single stock with a higher β but the same σ as P",
+   "Borrow at R_F and put more than 100% of her money in P (w_F < 0)",
+   "Hold P alone, since no mix of P and R_F can beat P itself"
+  ],
+  "answer": 2,
+  "explanation": "Points beyond P on its CAL have w_P > 1, which means borrowing at R_F. E[R] rises because the borrowed money earns E[R_P] − R_F > 0 on top of her own, though σ rises too. Lending moves her toward R_F, lowering return.",
+  "source": "generated",
+  "ref": "L06 s39"
+ },
+ {
+  "id": "q13-011",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "An investor holds w_F = −0.40 in the risk-free asset and w_P = 1.40 in portfolio P. Which interpretation is correct?",
+  "options": [
+   "She borrowed 40% of her wealth at R_F and holds 140% in P, so σ = 1.40 σ_P",
+   "She short-sold P and lent the proceeds at R_F, so her σ is 0.40 σ_P",
+   "She lent 40% of her wealth at R_F and holds 60% in P, so her σ is 0.60 σ_P",
+   "She holds 140% in P, which is possible only if R_F is higher than E[R_P]"
+  ],
+  "answer": 0,
+  "explanation": "A negative risk-free weight is borrowing. The weights still sum to 1 (1.40 − 0.40), and σ = w_P σ_P = 1.40 σ_P. Lending would be a positive w_F.",
+  "source": "generated",
+  "ref": "L06 s39, SM 13-19"
+ },
+ {
+  "id": "q13-012",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Because the risk-free asset has σ_F = 0, the standard deviation of any mix of P and R_F simplifies to σ = _____.",
+  "options": [
+   "w_P² σ_P²",
+   "w_P σ_P",
+   "w_P σ_P + w_F R_F",
+   "(w_P + w_F) σ_P"
+  ],
+  "answer": 1,
+  "explanation": "In σ = √(w_F²σ_F² + w_P²σ_P² + 2ρ w_F σ_F w_P σ_P) the F terms are zero, leaving √(w_P²σ_P²) = w_P σ_P. The squared version is a variance; (w_P + w_F) σ_P would equal σ_P because the weights sum to 1.",
+  "source": "generated",
+  "ref": "L06 s40"
+ },
+ {
+  "id": "q13-013",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Sofia has $50,000. She borrows $30,000 at the risk-free rate of 3.0% and invests the full $80,000 in portfolio P (E[R_P] = 10.4%, σ_P = 17.0%). What is the expected return on her own $50,000?",
+  "options": [
+   "16.64%",
+   "14.84%",
+   "18.44%",
+   "10.40%"
+  ],
+  "answer": 1,
+  "explanation": "w_P = 80/50 = 1.6 and w_F = −0.6, so E[R] = 1.6 × 10.4% − 0.6 × 3.0% = 16.64% − 1.80% = 14.84%. Ignoring the interest on the loan gives 16.64%; entering the borrowing as +0.6 (weights then add to 2.2) gives 18.44%; treating her as if she held P alone gives 10.40%.",
+  "source": "generated",
+  "ref": "SM 13-19, L06 s39"
+ },
+ {
+  "id": "q13-014",
+  "concept": "c13-risk-free-cal",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "If lending and borrowing rates are equal, the CAL continues as the same straight line beyond portfolio P.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Beyond P the weight on the risk-free asset is negative (borrowing at R_F), and σ = w_P σ_P and E[R] stay linear in w_P. In reality the borrowing rate is higher, which would bend the line, but the professor assumes equal rates.",
+  "source": "generated",
+  "ref": "L06 s38-39"
+ },
+ {
+  "id": "q13-015",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The Sharpe ratio of a portfolio P is:",
+  "options": [
+   "E[R_P]/σ_P, the raw return per unit of total risk",
+   "(E[R_P] − R_F)/β_P, the excess return per unit of systematic risk",
+   "(E[R_P] − R_F)/σ_P, the excess return per unit of total risk",
+   "(E[R_P] − R_F)/σ_P², the excess return per unit of variance"
+  ],
+  "answer": 2,
+  "explanation": "Sharpe = tan φ = (E[R_P] − R_F)/σ_P: a risk premium divided by σ. Leaving out R_F gives a ratio that is not the CAL slope; dividing by β is the SML's reward-to-risk; dividing by variance mixes units.",
+  "source": "generated",
+  "ref": "L06 s42, FS"
+ },
+ {
+  "id": "q13-016",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "On a diagram with σ on the horizontal axis and E[R] on the vertical axis, the slope of the straight line from R_F to portfolio P (tan φ) is called the:",
+  "options": [
+   "Sharpe ratio of P",
+   "beta of P",
+   "market risk premium",
+   "correlation between P and the market"
+  ],
+  "answer": 0,
+  "explanation": "The rise (E[R_P] − R_F) over the run σ_P is the Sharpe ratio. A beta would be the slope on a diagram with β on the horizontal axis (the SML).",
+  "source": "generated",
+  "ref": "L06 s42"
+ },
+ {
+  "id": "q13-017",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Evergreen Growth Fund has an expected return of 10.4% per annum and σ = 15.2%; its beta is 1.25. Three-month T-bills yield 3.1%. What is the fund's Sharpe ratio?",
+  "answer": 0.48,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(10.4-3.1)/15.2",
+  "steps": [
+   {
+    "label": "Excess return E[R_P] − R_F",
+    "value": 7.3,
+    "check": "10.4-3.1",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Sharpe ratio",
+    "value": 0.48,
+    "check": "(10.4-3.1)/15.2",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Excess return = 10.4% − 3.1% = 7.3%",
+   "Sharpe = (E[R_P] − R_F)/σ_P = 7.3/15.2 = 0.48"
+  ],
+  "keystrokes": [
+   "10.4 − 3.1 = 7.3",
+   "÷ 15.2 = 0.4803 → 0.48"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Did not subtract R_F",
+    "value": 0.68,
+    "check": "10.4/15.2",
+    "explain": "The numerator is the excess return over the risk-free rate."
+   },
+   {
+    "id": "sharpe-with-beta",
+    "label": "Divided by beta instead of σ",
+    "value": 5.84,
+    "check": "(10.4-3.1)/1.25",
+    "explain": "Sharpe uses total risk σ. Dividing by β gives the SML's reward-to-risk ratio, a different measure."
+   },
+   {
+    "id": "no-square-root",
+    "label": "Divided by the variance",
+    "value": 3.16,
+    "check": "0.073/0.152**2",
+    "explain": "The Sharpe ratio divides the excess return by σ, not by the variance σ²."
+   }
+  ],
+  "explanation": "Sharpe ratio = excess return per unit of σ: (10.4 − 3.1)/15.2 = 0.48. The beta of 1.25 is not needed; dividing by it gives the SML's reward-to-risk ratio (5.84), not a Sharpe ratio.",
+  "source": "generated",
+  "ref": "L06 s42"
+ },
+ {
+  "id": "q13-018",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "T-bills yield 2.5%. Fund X has E[R] = 12.5% and σ = 21.0%. Fund Y has E[R] = 9.6% and σ = 12.0%. Either fund can be mixed with T-bills. What is the Sharpe ratio of the fund whose CAL is better?",
+  "answer": 0.59,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(9.6-2.5)/12",
+  "steps": [
+   {
+    "label": "Sharpe ratio of X",
+    "value": 0.48,
+    "check": "(12.5-2.5)/21",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Sharpe ratio of Y (the steeper CAL)",
+    "value": 0.59,
+    "check": "(9.6-2.5)/12",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Sharpe X = (12.5 − 2.5)/21.0 = 10.0/21.0 = 0.476",
+   "Sharpe Y = (9.6 − 2.5)/12.0 = 7.1/12.0 = 0.592",
+   "Y has the higher Sharpe ratio, so its CAL is steeper: 0.59"
+  ],
+  "keystrokes": [
+   "(12.5 − 2.5) ÷ 21 = 0.4762",
+   "(9.6 − 2.5) ÷ 12 = 0.5917 → 0.59 (the larger)"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-return",
+    "label": "Reported the Sharpe ratio of the higher-return fund",
+    "value": 0.48,
+    "check": "(12.5-2.5)/21",
+    "explain": "The better CAL belongs to the fund with the higher Sharpe ratio, not the higher raw return."
+   },
+   {
+    "id": "forgot-minus-rf",
+    "label": "Did not subtract R_F for Y",
+    "value": 0.8,
+    "check": "9.6/12",
+    "explain": "Subtract R_F: (9.6 − 2.5)/12, not 9.6/12."
+   }
+  ],
+  "explanation": "A steeper CAL dominates a flatter one, so rank by Sharpe ratio. Y earns less than X but more excess return per unit of σ.",
+  "source": "generated",
+  "ref": "L06 s41-42"
+ },
+ {
+  "id": "q13-019",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "T-bills yield 2.6%. The market portfolio has E[R_M] = 9.8% and σ_M = 16.0%. According to the capital market line, what expected return (% per annum) should an efficient portfolio with σ = 21.0% offer?",
+  "answer": 12.05,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.02
+  },
+  "check": "2.6+(9.8-2.6)/16*21",
+  "steps": [
+   {
+    "label": "Slope of the CML = Sharpe ratio of M",
+    "value": 0.45,
+    "check": "(9.8-2.6)/16",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Risk premium of the efficient portfolio",
+    "value": 9.45,
+    "check": "(9.8-2.6)/16*21",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   },
+   {
+    "label": "Expected return E[R_A]",
+    "value": 12.05,
+    "check": "2.6+(9.8-2.6)/16*21",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.02
+    }
+   }
+  ],
+  "solution": [
+   "Slope = (E[R_M] − R_F)/σ_M = (9.8 − 2.6)/16.0 = 0.45",
+   "Risk premium = 0.45 × 21.0% = 9.45%",
+   "E[R_A] = R_F + 9.45% = 2.6% + 9.45% = 12.05%"
+  ],
+  "keystrokes": [
+   "9.8 − 2.6 = 7.2; ÷ 16 = 0.45",
+   "0.45 × 21 = 9.45",
+   "+ 2.6 = 12.05"
+  ],
+  "errors": [
+   {
+    "id": "forgot-add-rf",
+    "label": "Stopped at the risk premium",
+    "value": 9.45,
+    "check": "(9.8-2.6)/16*21",
+    "explain": "The CML gives the excess return; add R_F back to get E[R_A]."
+   },
+   {
+    "id": "forgot-minus-rf",
+    "label": "Scaled the market return, not its premium",
+    "value": 12.86,
+    "check": "21/16*9.8",
+    "explain": "Scale the premium: (σ_A/σ_M)(E[R_M] − R_F), then add R_F."
+   }
+  ],
+  "explanation": "CML: E[R_A] = R_F + [(E[R_M] − R_F)/σ_M] σ_A. It applies to efficient portfolios only.",
+  "source": "generated",
+  "ref": "L06 s43, SM 13 App A1"
+ },
+ {
+  "id": "q13-020",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Wetaskiwin Pension Plan can mix T-bills (R_F = 3.0%) with the market portfolio (E[R_M] = 10.0%, σ_M = 16.0%). It wants an expected return of 8.5% per annum. Using the CML, what σ (% per annum) will the plan bear?",
+  "answer": 12.57,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(8.5-3)/((10-3)/16)",
+  "steps": [
+   {
+    "label": "Target risk premium E[R] − R_F",
+    "value": 5.5,
+    "check": "8.5-3",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Weight in M = target premium ÷ market premium",
+    "value": 78.57,
+    "check": "(8.5-3)/(10-3)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Required σ = w_M × σ_M",
+    "value": 12.57,
+    "check": "(8.5-3)/(10-3)*16",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "CML: E[R] = R_F + [(E[R_M] − R_F)/σ_M] σ, so σ = σ_M × (E[R] − R_F)/(E[R_M] − R_F)",
+   "Target premium = 8.5% − 3.0% = 5.5%; market premium = 10.0% − 3.0% = 7.0%",
+   "w_M = 5.5/7.0 = 0.7857, so σ = 0.7857 × 16.0% = 12.57% (equivalently 5.5 ÷ CML slope 0.4375)"
+  ],
+  "keystrokes": [
+   "8.5 − 3 = 5.5; ÷ (10 − 3) = 0.785714",
+   "× 16 = 12.5714 → 12.57"
+  ],
+  "errors": [
+   {
+    "id": "forgot-minus-rf",
+    "label": "Scaled the raw returns",
+    "value": 13.6,
+    "check": "8.5/10*16",
+    "explain": "Work with premiums: (8.5 − 3.0)/(10.0 − 3.0) of σ_M."
+   },
+   {
+    "id": "slope-inverted",
+    "label": "Multiplied by the slope instead of dividing",
+    "value": 2.41,
+    "check": "(8.5-3)*((10-3)/16)",
+    "explain": "σ = premium ÷ slope. Multiplying gives a number with the wrong units."
+   }
+  ],
+  "explanation": "On the CML the premium is the slope times σ, so σ = premium ÷ slope. The plan holds 78.6% M and 21.4% T-bills.",
+  "source": "generated",
+  "ref": "L06 s43, SM 13-31"
+ },
+ {
+  "id": "q13-021",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly distinguishes the capital market line (CML) from the security market line (SML)?",
+  "options": [
+   "The CML plots E[R] against β for all assets; the SML plots E[R] against σ for efficient portfolios only",
+   "The CML plots E[R] against σ for efficient portfolios only; the SML plots E[R] against β for every asset",
+   "Both plot E[R] against σ, but the SML starts at R_F while the CML starts at the origin",
+   "The CML has slope E[R_M] − R_F, while the SML has slope (E[R_M] − R_F)/σ_M"
+  ],
+  "answer": 1,
+  "explanation": "CML: horizontal axis σ, slope = Sharpe ratio of M = (E[R_M] − R_F)/σ_M, efficient portfolios only. SML: horizontal axis β, slope = market risk premium E[R_M] − R_F, all assets. Giving the CML the slope E[R_M] − R_F and the SML the slope (E[R_M] − R_F)/σ_M swaps the two.",
+  "source": "generated",
+  "ref": "L06 s43, s56"
+ },
+ {
+  "id": "q13-022",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "R_F = 3%. The market portfolio has E[R_M] = 10% and σ_M = 14%. A balanced fund has E[R] = 7% and σ = 12%. What follows?",
+  "options": [
+   "It lies on the CML, because its 7% return exceeds R_F and its σ is below the market's σ",
+   "It beats the market portfolio, because its σ of 12% is lower than the market's 14%",
+   "Its Sharpe ratio is 0.33 against the market's 0.50, so it plots below the CML (M plus T-bills earns 9% at σ = 12%)",
+   "It is undervalued, because it plots below the CML and so offers a high return for its risk"
+  ],
+  "answer": 2,
+  "explanation": "Sharpe_fund = (7 − 3)/12 = 0.33; Sharpe_M = (10 − 3)/14 = 0.50. At σ = 12% the CML gives 3 + 0.50 × 12 = 9%, so the fund is dominated. Below the CML means inefficient, not 'undervalued': that vocabulary belongs to the SML.",
+  "source": "generated",
+  "ref": "L06 s41-43"
+ },
+ {
+  "id": "q13-023",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the Sharpe ratio is NOT correct?",
+  "options": [
+   "It equals the slope (tan φ) of the CAL through the portfolio",
+   "Its denominator is the portfolio's standard deviation",
+   "The portfolio with the highest Sharpe ratio has the best CAL",
+   "It measures the excess return earned per unit of beta"
+  ],
+  "answer": 3,
+  "explanation": "Excess return per unit of β is the SML's reward-to-risk ratio. The Sharpe ratio divides the excess return by σ, equals tan φ, and ranks CALs: steeper is better.",
+  "source": "generated",
+  "ref": "L06 s42"
+ },
+ {
+  "id": "q13-024",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the best CAL the one tangent to the efficient frontier?",
+  "options": [
+   "It touches the frontier at the lowest-σ portfolio, so it carries the least risk of any CAL",
+   "It has the steepest slope (highest Sharpe ratio) of any line from R_F that still touches an attainable portfolio",
+   "It is the only CAL that is a straight line, because it meets the frontier at just a single point",
+   "It has the highest intercept on the vertical axis, so it pays the most when σ = 0"
+  ],
+  "answer": 1,
+  "explanation": "Every CAL starts at R_F, so the intercept is the same. A steeper line gives more return for each unit of σ; any line steeper than the tangent one misses all attainable portfolios. Tangency is about the highest slope, not the lowest σ.",
+  "source": "generated",
+  "ref": "L06 s43"
+ },
+ {
+  "id": "q13-025",
+  "concept": "c13-sharpe-cml",
+  "also": [
+   "c13-capm",
+   "c13-sigma-vs-beta"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "R_F = 3%, E[R_M] = 9% and σ_M = 15%. Stock Q has σ_Q = 30% and β_Q = 0.8. An analyst plugs σ_Q into the CML and gets 15%. What is Stock Q's required (expected) return under the right model?",
+  "options": [
+   "7.80%",
+   "15.00%",
+   "4.80%",
+   "10.20%"
+  ],
+  "answer": 0,
+  "explanation": "A single stock carries diversifiable risk, so the CML (efficient portfolios only) does not apply; its reward depends on β through the CAPM: 3% + 0.8 × (9% − 3%) = 7.80%. The CML gives 15.00%; forgetting to add R_F gives 4.80%; using β × E[R_M] instead of β × MRP gives 10.20%.",
+  "source": "generated",
+  "ref": "L06 s43, s55, SM 13-28"
+ },
+ {
+  "id": "q13-026",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "The CML gives the expected return of an efficient portfolio A as E[R_A] = R_F + _____ × σ_A.",
+  "options": [
+   "(E[R_M] − R_F)/σ_M",
+   "(E[R_M] − R_F)/σ_M²",
+   "E[R_M]/σ_M",
+   "(E[R_M] − R_F) × β_A"
+  ],
+  "answer": 0,
+  "explanation": "The CML slope is the Sharpe ratio of the market portfolio, (E[R_M] − R_F)/σ_M. Dividing by σ_M² mixes units; omitting R_F uses the raw market return instead of its premium; multiplying by β_A turns it into the SML.",
+  "source": "generated",
+  "ref": "L06 s43, SM 13 App A1"
+ },
+ {
+  "id": "q13-027",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Banff Balanced Fund has E[R] = 8.6% and σ = 11.0%; its beta is 0.90. The market portfolio has σ_M = 14.0% and T-bills yield 2.0%. What is the fund's Sharpe ratio?",
+  "options": [
+   "0.78",
+   "7.33",
+   "0.60",
+   "0.47"
+  ],
+  "answer": 2,
+  "explanation": "Sharpe = (E[R_P] − R_F)/σ_P = (8.6 − 2.0)/11.0 = 0.60. Skipping R_F gives 0.78; dividing by β gives 7.33 (that is a reward-to-risk ratio, not a Sharpe ratio); dividing by the market's σ gives 0.47.",
+  "source": "generated",
+  "ref": "L06 s42"
+ },
+ {
+  "id": "q13-028",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "R_F = 3%. Portfolio P has E[R_P] = 11% and σ_P = 20%. An investor puts 60% in P and 40% in T-bills. What is the Sharpe ratio of her mixed position?",
+  "options": [
+   "0.65",
+   "0.24",
+   "0.67",
+   "0.40"
+  ],
+  "answer": 3,
+  "explanation": "The mix has E[R] = 0.6 × 11 + 0.4 × 3 = 7.8% and σ = 0.6 × 20 = 12%, so Sharpe = (7.8 − 3)/12 = 0.40, the same as P's own (11 − 3)/20 = 0.40: mixing with R_F slides you along the same CAL. Skipping R_F gives 0.65; using P's σ gives 0.24; mixing P's premium with the mix's σ gives 0.67.",
+  "source": "generated",
+  "ref": "L06 s41-42"
+ },
+ {
+  "id": "q13-029",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "R_F rises from 2% to 3% while E[R_P] and σ_P stay the same. What happens to the Sharpe ratio of P?",
+  "options": [
+   "It rises, because R_F is part of the numerator",
+   "It is unchanged, because σ_P is unchanged",
+   "It falls only if β_P is greater than 1",
+   "It falls, because the numerator E[R_P] − R_F shrinks"
+  ],
+  "answer": 3,
+  "explanation": "Sharpe = (E[R_P] − R_F)/σ_P. A higher R_F reduces the excess return while σ_P stays put, so the ratio falls (the CAL starts higher but is flatter). β plays no part in the Sharpe ratio.",
+  "source": "generated",
+  "ref": "L06 s42"
+ },
+ {
+  "id": "q13-030",
+  "concept": "c13-sharpe-cml",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The market portfolio has the highest Sharpe ratio of all risky portfolios on the efficient frontier.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. M is where the CAL from R_F is tangent to the frontier, which is the steepest attainable line, so its Sharpe ratio is the maximum.",
+  "source": "generated",
+  "ref": "L06 s43"
+ }
+]

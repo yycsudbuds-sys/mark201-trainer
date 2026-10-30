@@ -1,0 +1,1015 @@
+[
+ {
+  "id": "q09-463",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The profitability index (PI) is the present value of a project's cash _____ divided by the present value of its cash outflows.",
+  "options": [
+   "profits",
+   "inflows",
+   "tax shields",
+   "dividends"
+  ],
+  "answer": 1,
+  "explanation": "PI = PV of cash inflows / PV of cash outflows. It is also called the benefit/cost ratio, and for a conventional project the outflow is the initial investment.",
+  "source": "generated",
+  "ref": "L05A s27"
+ },
+ {
+  "id": "q09-464",
+  "concept": "c09-pi",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which expression is the professor's profitability index (the usual, 1-based definition)?",
+  "options": [
+   "NPV ÷ initial outlay (value added per dollar)",
+   "Initial outlay ÷ PV of cash inflows (cost per dollar of benefit)",
+   "NPV ÷ PV of cash inflows (value added per dollar of benefit)",
+   "PV of cash inflows ÷ PV of cash outflows"
+  ],
+  "answer": 3,
+  "explanation": "The lecture defines PI = PV of inflows / PV of outflows and shows PI = 1 + NPV/initial outlay. NPV/outlay is the 0-based alternative, which ranks projects the same way but equals PI − 1 (easily mixed up with the accept cut-off of 1).",
+  "source": "generated",
+  "ref": "L05A s27-31; FS p2"
+ },
+ {
+  "id": "q09-465",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A manager says Project Z 'returns $1.18 of present value for every dollar we invest in it'. Which decision measure is she quoting?",
+  "options": [
+   "The internal rate of return",
+   "The net present value",
+   "The accounting rate of return",
+   "The profitability index (benefit/cost ratio)"
+  ],
+  "answer": 3,
+  "explanation": "PI is the 'bang for the buck': present value of benefits per dollar of cost, 1.18 here, meaning NPV is about 18% of the outlay. IRR is a percentage rate, NPV is a dollar amount, and ARR uses accounting profit.",
+  "source": "generated",
+  "ref": "L05A s27-30; TB 9.6"
+ },
+ {
+  "id": "q09-466",
+  "concept": "c09-pi",
+  "also": [
+   "c09-npv-rule"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project has a profitability index of 0.96 at the firm's required return. What does this say?",
+  "options": [
+   "It returns 96% per year, so it should be accepted if the required return is below 96%",
+   "NPV is positive because the PI is positive",
+   "Each dollar invested returns only 96 cents of present value, so NPV is negative and the project should be rejected",
+   "The project breaks even in present-value terms and the firm is indifferent"
+  ],
+  "answer": 2,
+  "explanation": "PI < 1 means PV of inflows is less than PV of outflows, so NPV < 0 and the project destroys value. A PI of 0.96 is not a rate of return, and a PI is always positive even when NPV is negative. Indifference occurs at PI = 1.",
+  "source": "generated",
+  "ref": "L05A s29"
+ },
+ {
+  "id": "q09-467",
+  "concept": "c09-pi",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "At a required return of 9% per annum a conventional project has a profitability index of exactly 1.00. What are its NPV and IRR?",
+  "options": [
+   "NPV = $0 and IRR = 0%",
+   "NPV = $0 and IRR = 9%",
+   "NPV = 1 and IRR = 9%",
+   "NPV is negative and IRR is above 9%"
+  ],
+  "answer": 1,
+  "explanation": "PI = 1 means PV of inflows equals the outlay, so NPV = 0. NPV is zero exactly when the discount rate equals the IRR, so the IRR is 9%.",
+  "source": "generated",
+  "ref": "L05A s28-29"
+ },
+ {
+  "id": "q09-468",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project has an initial outlay of $120,000 and the present value of its later cash inflows is $132,000. What are its profitability index and NPV?",
+  "options": [
+   "PI = 0.10 and NPV = $12,000",
+   "PI = 0.91 and NPV = $12,000",
+   "PI = 1.10 and NPV = $132,000",
+   "PI = 1.10 and NPV = $12,000"
+  ],
+  "answer": 3,
+  "explanation": "PI = PV of inflows / outlay = 132,000/120,000 = 1.10, and NPV = 132,000 − 120,000 = $12,000. 0.10 is the 0-based figure (NPV/outlay), 0.91 inverts the ratio (120/132), and $132,000 is the PV of inflows, not the NPV.",
+  "source": "generated",
+  "ref": "L05A s28-29; SM 9-15"
+ },
+ {
+  "id": "q09-469",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the 1-based PI (PV inflows ÷ PV outflows) and the 0-based version (NPV ÷ initial outlay) compare?",
+  "options": [
+   "The 0-based figure is the 1-based figure minus 1; they rank projects identically but have different accept cut-offs (1 and 0)",
+   "They give the same numbers, because both are called the profitability index",
+   "The 0-based figure is always larger, so it accepts more projects",
+   "They rank projects differently, so a firm must pick one definition and stay with it"
+  ],
+  "answer": 0,
+  "explanation": "The lecture warns there are two definitions and that adding or subtracting one gives the same rankings. The trap is comparing a 0-based figure with the cut-off of 1: a 0-based 0.12 is a good project, not a reject.",
+  "source": "generated",
+  "ref": "L05A s31"
+ },
+ {
+  "id": "q09-470",
+  "concept": "c09-pi",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the PI rule always give the same accept or reject decision as the NPV rule for a conventional project?",
+  "options": [
+   "Because PI uses the project's IRR as its discount rate, so the two rules always agree",
+   "PI > 1 exactly when PV of inflows exceeds the outlay, which is exactly when NPV > 0",
+   "Because PI is simply the NPV expressed as a percentage of the PV of inflows",
+   "Because both rules ignore the size of the project"
+  ],
+  "answer": 1,
+  "explanation": "NPV = PV of inflows − outlay, and PI = PV of inflows / outlay. NPV is positive when the PV exceeds the outlay, and PI is above 1 under exactly the same condition. They differ only in how they RANK projects.",
+  "source": "generated",
+  "ref": "L05A s29"
+ },
+ {
+  "id": "q09-471",
+  "concept": "c09-pi",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A conventional project (a single outlay at time 0, inflows afterwards) with a profitability index of 1.15 has an NPV equal to 15% of its initial outlay.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "PI = 1 + NPV/outlay, so NPV = outlay × (PI − 1) = 0.15 × outlay. For example, an outlay of $60,000 gives an NPV of $9,000.",
+  "source": "generated",
+  "ref": "L05A s28"
+ },
+ {
+  "id": "q09-472",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT true of the profitability index?",
+  "options": [
+   "It is also called the benefit/cost ratio",
+   "A value above 1 means the project has a positive NPV (conventional flows)",
+   "It measures the value created per dollar invested",
+   "It is expressed in dollars, so it shows how much wealth the project creates"
+  ],
+  "answer": 3,
+  "explanation": "PI is a ratio, so it says nothing about the dollar size of the NPV. That is why it can rank mutually exclusive projects badly. The other statements are standard.",
+  "source": "generated",
+  "ref": "L05A s30; TB 9.6"
+ },
+ {
+  "id": "q09-473",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Kootenay Brewing's project costs $26,000 and returns $11,500, $12,400 and $9,800 in years 1 to 3. Its PI is 1.16 at a required return of 6%, 1.04 at 12% and 0.99 at 15%. At which of these required returns should the firm accept it?",
+  "options": [
+   "At 15% only",
+   "At all three rates",
+   "At 6% only, because it has the highest PI there",
+   "At 6% and 12% only"
+  ],
+  "answer": 3,
+  "explanation": "Accept when PI > 1. The PI falls as R rises and crosses 1 at the IRR (14.57%), so the project is acceptable at 6% and 12% but not at 15%. Accepting at 6% only treats the highest PI as the only acceptable one.",
+  "source": "generated",
+  "ref": "L05A s29"
+ },
+ {
+  "id": "q09-474",
+  "concept": "c09-pi",
+  "also": [
+   "c09-npv-steps"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Brewing's project costs $26,000 now and returns $11,500, $12,400 and $9,800 at the end of years 1, 2 and 3. The required return is 9% per annum. What is the profitability index? (Two decimals.)",
+  "answer": 1.1,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(11500/1.09+12400/1.09**2+9800/1.09**3)/26000",
+  "steps": [
+   {
+    "label": "PV of the three inflows",
+    "value": 28554.69,
+    "check": "11500/1.09+12400/1.09**2+9800/1.09**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PI = PV of inflows ÷ 26,000",
+    "value": 1.098,
+    "check": "(11500/1.09+12400/1.09**2+9800/1.09**3)/26000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of inflows = 11,500/1.09 + 12,400/1.09² + 9,800/1.09³ = 10,550.46 + 10,436.83 + 7,567.40 = 28,554.69",
+   "PI = 28,554.69/26,000 = 1.098, i.e. 1.10",
+   "PI > 1 (NPV = +$2,554.69), so accept."
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 11500, C02 = 12400, C03 = 9800, NPV, I = 9, CPT → 28,554.69",
+   "÷ 26000 = 1.0983"
+  ],
+  "errors": [
+   {
+    "id": "pi-zero-based",
+    "label": "Reported the 0-based index NPV ÷ outlay",
+    "value": 0.1,
+    "check": "(11500/1.09+12400/1.09**2+9800/1.09**3)/26000-1",
+    "explain": "That is PI − 1. The usual PI divides the PV of inflows by the outlay and is compared with 1."
+   },
+   {
+    "id": "pi-inverted",
+    "label": "Divided the outlay by the PV of inflows",
+    "value": 0.91,
+    "check": "26000/(11500/1.09+12400/1.09**2+9800/1.09**3)",
+    "explain": "PI puts the benefits on top: PV of inflows over outlay."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Used undiscounted inflows",
+    "value": 1.3,
+    "check": "(11500+12400+9800)/26000",
+    "explain": "The inflows are in years 1 to 3 and must be discounted at 9% first."
+   }
+  ],
+  "explanation": "PI is PV of inflows divided by the outlay. Enter the inflows with CF0 = 0 so that the calculator's NPV is a pure present value, then divide.",
+  "source": "generated",
+  "ref": "SM 9-15; L05A s27"
+ },
+ {
+  "id": "q09-475",
+  "concept": "c09-pi",
+  "also": [
+   "c09-npv-steps"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Muskoka Marine plans a boatyard. It spends $80,000 now and a further $35,000 at the end of year 1. Cash inflows of $60,000, $65,000 and $70,000 follow at the end of years 2, 3 and 4. The required return is 10% per annum. Using PI = PV of inflows ÷ PV of outflows, what is the PI? (Two decimals.)",
+  "answer": 1.31,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(60000/1.1**2+65000/1.1**3+70000/1.1**4)/(80000+35000/1.1)",
+  "steps": [
+   {
+    "label": "PV of inflows",
+    "value": 146233.18,
+    "check": "60000/1.1**2+65000/1.1**3+70000/1.1**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of outflows",
+    "value": 111818.18,
+    "check": "80000+35000/1.1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PI",
+    "value": 1.308,
+    "check": "(60000/1.1**2+65000/1.1**3+70000/1.1**4)/(80000+35000/1.1)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of inflows = 60,000/1.1² + 65,000/1.1³ + 70,000/1.1⁴ = 49,586.78 + 48,835.46 + 47,810.94 = 146,233.18",
+   "PV of outflows = 80,000 + 35,000/1.1 = 80,000 + 31,818.18 = 111,818.18",
+   "PI = 146,233.18 / 111,818.18 = 1.308, i.e. 1.31",
+   "PI > 1 and NPV = $34,415.00 > 0, so accept."
+  ],
+  "keystrokes": [
+   "Inflows: CF0 = 0, C01 = 0, C02 = 60000, C03 = 65000, C04 = 70000, NPV, I = 10, CPT → 146,233.18",
+   "Outflows: 80000 + 35000 ÷ 1.1 = 111,818.18",
+   "146233.18 ÷ 111818.18 = 1.3078"
+  ],
+  "errors": [
+   {
+    "id": "pi-later-outflow-ignored",
+    "label": "Counted only the $80,000 initial outlay as the outflow",
+    "value": 1.83,
+    "check": "(60000/1.1**2+65000/1.1**3+70000/1.1**4)/80000",
+    "explain": "The year-1 spending is also a cost; the PV of ALL outflows goes in the denominator."
+   },
+   {
+    "id": "pi-netted",
+    "label": "Subtracted the PV of the year-1 spending from the inflows",
+    "value": 1.43,
+    "check": "((60000/1.1**2+65000/1.1**3+70000/1.1**4)-35000/1.1)/80000",
+    "explain": "Netting the later cost against the inflows changes the ratio. The lecture definition keeps inflows on top and ALL outflows below."
+   },
+   {
+    "id": "pi-zero-based",
+    "label": "Reported PI − 1",
+    "value": 0.31,
+    "check": "(60000/1.1**2+65000/1.1**3+70000/1.1**4)/(80000+35000/1.1)-1",
+    "explain": "That is the 0-based figure, NPV ÷ PV of outflows."
+   }
+  ],
+  "explanation": "With a second outlay after time 0, the denominator is the PV of all outflows. Discount the year-1 cost one period; the inflows start in year 2 and are discounted two to four periods.",
+  "source": "generated",
+  "ref": "L05A s27; TB 9.6"
+ },
+ {
+  "id": "q09-476",
+  "concept": "c09-pi",
+  "also": [
+   "c09-pi-vs-npv"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project has an initial outlay of $84,000 and an NPV of $17,640 at the firm's required return. What is its profitability index? (Two decimals.)",
+  "answer": 1.21,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1+17640/84000",
+  "steps": [
+   {
+    "label": "NPV ÷ outlay",
+    "value": 0.21,
+    "check": "17640/84000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PI = 1 + NPV ÷ outlay",
+    "value": 1.21,
+    "check": "1+17640/84000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PI = PV of inflows / outlay = (outlay + NPV)/outlay = 1 + NPV/outlay",
+   "NPV/outlay = 17,640/84,000 = 0.21",
+   "PI = 1 + 0.21 = 1.21"
+  ],
+  "keystrokes": [
+   "17640 ÷ 84000 = 0.21; + 1 = 1.21"
+  ],
+  "errors": [
+   {
+    "id": "pi-zero-based",
+    "label": "Reported NPV ÷ outlay (0.21)",
+    "value": 0.21,
+    "check": "17640/84000",
+    "explain": "That is the 0-based index. Add 1 to get the usual PI."
+   },
+   {
+    "id": "pi-npv-over-pv",
+    "label": "Divided the NPV by the PV of inflows",
+    "value": 0.17,
+    "check": "17640/(84000+17640)",
+    "explain": "PV of inflows is outlay + NPV = $101,640, and PI puts it on top of the outlay, not under the NPV."
+   },
+   {
+    "id": "pi-inverted",
+    "label": "Divided the outlay by the PV of inflows",
+    "value": 0.83,
+    "check": "84000/(84000+17640)",
+    "explain": "The ratio is the other way round: benefits over costs."
+   }
+  ],
+  "explanation": "Since NPV = PV of inflows − outlay, PV of inflows = outlay + NPV and PI = 1 + NPV/outlay.",
+  "source": "generated",
+  "ref": "L05A s28; SM 9-15"
+ },
+ {
+  "id": "q09-477",
+  "concept": "c09-pi",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Cider Works is considering a project that costs $28,000 and returns $9,000, $10,500, $8,200 and $6,000 at the end of years 1 to 4. The required return is 16% per annum. What is the profitability index? (Two decimals.)",
+  "answer": 0.86,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(9000/1.16+10500/1.16**2+8200/1.16**3+6000/1.16**4)/28000",
+  "steps": [
+   {
+    "label": "PV of the four inflows",
+    "value": 24128.97,
+    "check": "9000/1.16+10500/1.16**2+8200/1.16**3+6000/1.16**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PI",
+    "value": 0.862,
+    "check": "(9000/1.16+10500/1.16**2+8200/1.16**3+6000/1.16**4)/28000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "PV of inflows = 9,000/1.16 + 10,500/1.16² + 8,200/1.16³ + 6,000/1.16⁴ = 24,128.97",
+   "PI = 24,128.97/28,000 = 0.862, i.e. 0.86",
+   "PI < 1 (NPV = −$3,871.03), so reject."
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 9000, C02 = 10500, C03 = 8200, C04 = 6000, NPV, I = 16, CPT → 24,128.97",
+   "÷ 28000 = 0.8617"
+  ],
+  "errors": [
+   {
+    "id": "pi-zero-based",
+    "label": "Reported the 0-based index PI − 1",
+    "value": -0.14,
+    "check": "(9000/1.16+10500/1.16**2+8200/1.16**3+6000/1.16**4)/28000-1",
+    "explain": "That is negative here, and the cut-off for the usual PI is 1."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Used undiscounted inflows",
+    "value": 1.2,
+    "check": "(9000+10500+8200+6000)/28000",
+    "explain": "Undiscounted inflows give 1.20 and wrongly suggest acceptance; at 16% the discounted PI is below 1."
+   },
+   {
+    "id": "dropped-final-flow",
+    "label": "Dropped the year-4 inflow (three-year horizon)",
+    "value": 0.74,
+    "check": "(9000/1.16+10500/1.16**2+8200/1.16**3)/28000",
+    "explain": "All four inflows count."
+   }
+  ],
+  "explanation": "A PI below 1 at the required return means a negative NPV. The project's IRR (about 8.4%) is below 16%, so the two rules agree.",
+  "source": "generated",
+  "ref": "SM 9-15; L05A s29"
+ },
+ {
+  "id": "q09-478",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okanagan Cider Works can buy a bottler for $45,000. It will return $19,500 at the end of each of the next 3 years, and the required return is 8% per annum. What is the profitability index?",
+  "options": [
+   "0.12",
+   "0.90",
+   "1.30",
+   "1.12"
+  ],
+  "answer": 3,
+  "explanation": "PV of inflows = 19,500 × annuity factor(8%, 3) = 19,500 × 2.57710 = 50,253.39; PI = 50,253.39/45,000 = 1.117, i.e. 1.12. 0.12 is the 0-based figure, 0.90 inverts the ratio, and 1.30 divides the undiscounted $58,500 by the outlay.",
+  "source": "generated",
+  "ref": "SM 9-16"
+ },
+ {
+  "id": "q09-479",
+  "concept": "c09-pi",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kootenay Brewing spends $60,000 now and a further $24,000 at the end of year 2. It receives $30,000 at the end of year 1 and $45,000 at the end of each of years 3 and 4. At R = 12% per annum, using PI = PV of inflows ÷ PV of outflows, what is the PI?",
+  "options": [
+   "1.46",
+   "1.14",
+   "1.10",
+   "0.10"
+  ],
+  "answer": 2,
+  "explanation": "PV of inflows = 87,414.14; PV of outflows = 60,000 + 24,000/1.12² = 79,132.65; PI = 1.105, i.e. 1.10. 1.46 ignores the year-2 spending, 1.14 nets that spending against the inflows, and 0.10 is the 0-based figure.",
+  "source": "generated",
+  "ref": "L05A s27"
+ },
+ {
+  "id": "q09-480",
+  "concept": "c09-pi",
+  "also": [
+   "c09-irr-rule"
+  ],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "For a conventional project, what happens to the PI as the required return R rises, and what is the PI when R equals the IRR?",
+  "options": [
+   "PI rises as R rises, and it equals 0 when R equals the IRR",
+   "PI is unaffected by R, and it equals the IRR when R equals the IRR",
+   "PI falls as R rises, and it equals 1 when R equals the IRR",
+   "PI falls as R rises, and it equals 0 when R equals the IRR"
+  ],
+  "answer": 2,
+  "explanation": "A higher R shrinks the PV of the inflows, so PI falls. At R = IRR the PV of inflows equals the outlay, so NPV = 0 and PI = 1 (a 0-based version would show 0, which is where the wrong options come from).",
+  "source": "generated",
+  "ref": "L05A s28-29"
+ },
+ {
+  "id": "q09-481",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Two mutually exclusive projects: X has a PI of 1.34 and an NPV of $6,100; Y has a PI of 1.21 and an NPV of $13,100. Which rule picks which project?",
+  "options": [
+   "PI picks Y and NPV picks X",
+   "PI picks X and NPV picks Y",
+   "Both rules pick X",
+   "Both rules pick Y"
+  ],
+  "answer": 1,
+  "explanation": "PI ranks by value per dollar invested (X is higher), NPV ranks by total wealth created (Y is higher). Same accept/reject decision, different ranking, so for mutually exclusive projects the NPV rule decides.",
+  "source": "generated",
+  "ref": "L05A s30; SM 9-16"
+ },
+ {
+  "id": "q09-482",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement about the NPV and PI rules is correct?",
+  "options": [
+   "They always agree on both the decision and the ranking",
+   "They agree on accept or reject but can rank projects differently",
+   "They can disagree on whether to accept, but never on the ranking",
+   "They disagree on accept or reject, and agree on ranking"
+  ],
+  "answer": 1,
+  "explanation": "PI > 1 exactly when NPV > 0, so decisions on a single project match. Ranking is different: NPV measures dollars, PI measures dollars per dollar invested.",
+  "source": "generated",
+  "ref": "L05A s29-30"
+ },
+ {
+  "id": "q09-483",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why can the PI rule choose the wrong project when two projects are mutually exclusive?",
+  "options": [
+   "PI ignores the time value of money, so later flows are overvalued",
+   "PI uses accounting profit rather than cash flows, like the ARR",
+   "PI always favours the larger project, whatever its NPV",
+   "PI is a ratio that ignores scale: a small project can have a high PI but a small NPV"
+  ],
+  "answer": 3,
+  "explanation": "PI divides by the capital invested, so it favours efficient small projects. The wealth the shareholders get is in dollars of NPV, which depends on scale too. PI does discount cash flows, and it can favour either size, though usually the small one.",
+  "source": "generated",
+  "ref": "TB 9.6; SM 9-16"
+ },
+ {
+  "id": "q09-484",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Project S costs $8 million and has a present value of $20 million (PI 2.50, NPV $12 million). Project L costs $400 million and has a present value of $520 million (PI 1.30, NPV $120 million). They are mutually exclusive. What should the firm do?",
+  "options": [
+   "Take S: its PI is nearly twice as large",
+   "Take L: it adds ten times as much wealth, even though its PI is lower",
+   "Take both, because both PIs exceed 1",
+   "Take S: a high PI means a low risk of losing money"
+  ],
+  "answer": 1,
+  "explanation": "For mutually exclusive projects the highest NPV adds the most value. L's PI is lower because it is large, but its NPV is $120 million against $12 million. The ratio ignores scale.",
+  "source": "generated",
+  "ref": "TB 9.6"
+ },
+ {
+  "id": "q09-485",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following statements about PI and NPV is NOT correct?",
+  "options": [
+   "PI and NPV can rank mutually exclusive projects differently",
+   "NPV = outlay × (PI − 1) for a conventional project",
+   "A single conventional project can have a PI above 1 and a negative NPV",
+   "PI is most useful for ranking independent projects when funds are limited"
+  ],
+  "answer": 2,
+  "explanation": "PI > 1 means PV of inflows > outlay, which is the same as NPV > 0, so the two cannot disagree on a single conventional project. The other three statements are standard.",
+  "source": "generated",
+  "ref": "L05A s29-30"
+ },
+ {
+  "id": "q09-486",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "For two mutually exclusive projects of very different size, the NPV rule is more reliable than the PI rule.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "NPV measures the change in shareholder wealth in dollars. PI measures wealth per dollar invested and can rank the smaller project first even though it adds less value in total.",
+  "source": "generated",
+  "ref": "TB 9.6"
+ },
+ {
+  "id": "q09-487",
+  "concept": "c09-pi-vs-npv",
+  "also": [
+   "c09-capital-rationing"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A company has a fixed capital budget this year and a list of independent projects, each with a positive NPV. Which ranking rule does the professor recommend for choosing among them?",
+  "options": [
+   "Highest NPV first, until the money runs out",
+   "Highest IRR first, until the money runs out",
+   "Shortest payback first, until the money runs out",
+   "Highest profitability index first, until the money runs out"
+  ],
+  "answer": 3,
+  "explanation": "With a binding budget the goal is the most NPV per scarce dollar, which is what PI measures. Ranking by raw NPV would favour large projects that use up the budget.",
+  "source": "generated",
+  "ref": "L05A s33; REV p3"
+ },
+ {
+  "id": "q09-488",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Two mutually exclusive projects have the SAME initial outlay. What can be said about their PI and NPV rankings?",
+  "options": [
+   "They can still disagree, because PI ignores risk",
+   "The higher PI has the lower NPV, because of the ratio",
+   "They agree only if the lives are equal",
+   "They must agree, because NPV = outlay × (PI − 1) and the outlay is the same"
+  ],
+  "answer": 3,
+  "explanation": "With equal outlays, NPV is a constant times (PI − 1), so a higher PI means a higher NPV. Disagreements arise only when the outlays (the scale) differ.",
+  "source": "generated",
+  "ref": "L05A s28-30"
+ },
+ {
+  "id": "q09-489",
+  "concept": "c09-pi-vs-npv",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Muskoka Marine has two mutually exclusive projects at R = 9% per annum. Project X costs $18,000 and returns $8,500 at the end of each of the next 3 years. Project Y costs $70,000 and returns $32,000 at the end of each of the next 3 years. Compute each PI and decide. (Final answer: the NPV of the project the firm should choose.)",
+  "answer": 11001.43,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "32000*(1-1/1.09**3)/0.09-70000",
+  "steps": [
+   {
+    "label": "Annuity factor (9%, 3 years)",
+    "value": 2.53129,
+    "check": "(1-1/1.09**3)/0.09",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PI of Project X",
+    "value": 1.195,
+    "check": "8500*(1-1/1.09**3)/0.09/18000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PI of Project Y",
+    "value": 1.157,
+    "check": "32000*(1-1/1.09**3)/0.09/70000",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV of the NPV-preferred project (Y)",
+    "value": 11001.43,
+    "check": "32000*(1-1/1.09**3)/0.09-70000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor (9%, 3) = 2.53129",
+   "PI of X = 8,500 × 2.53129/18,000 = 1.195; NPV of X = $3,516.00",
+   "PI of Y = 32,000 × 2.53129/70,000 = 1.157; NPV of Y = $11,001.43",
+   "PI prefers X (1.195 > 1.157) but NPV prefers Y ($11,001.43 > $3,516.00). The projects are mutually exclusive, so the NPV rule decides: choose Y, NPV = $11,001.43."
+  ],
+  "keystrokes": [
+   "N = 3, I/Y = 9, PMT = 32000, CPT PV → 81,001.43; − 70000 = 11,001.43"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-pi",
+    "label": "Reported the NPV of Project X (the higher-PI project)",
+    "value": 3516.0,
+    "check": "8500*(1-1/1.09**3)/0.09-18000",
+    "explain": "X has the higher PI, but Y creates more wealth and the projects are mutually exclusive."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 4-year annuity factor for Y",
+    "value": 33671.04,
+    "check": "32000*(1-1/1.09**4)/0.09-70000",
+    "explain": "There are three payments, so N = 3."
+   },
+   {
+    "id": "no-discounting",
+    "label": "Added the undiscounted inflows",
+    "value": 26000.0,
+    "check": "32000*3-70000",
+    "explain": "The three inflows must be discounted at 9%."
+   }
+  ],
+  "explanation": "Both PIs exceed 1, so both projects are acceptable on their own; the question is which one to take. The NPV rule picks the larger-scale project Y.",
+  "source": "generated",
+  "ref": "SM 9-16; L05A s30"
+ },
+ {
+  "id": "q09-490",
+  "concept": "c09-pi-vs-npv",
+  "also": [
+   "c09-ranking-conflict"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Using the same two mutually exclusive projects (X: cost $18,000, $8,500 a year for 3 years; Y: cost $70,000, $32,000 a year for 3 years; R = 9% per annum), how many dollars of NPV does the firm give up by choosing the project with the higher PI instead of the one with the higher NPV?",
+  "answer": 7485.42,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(32000*(1-1/1.09**3)/0.09-70000)-(8500*(1-1/1.09**3)/0.09-18000)",
+  "steps": [
+   {
+    "label": "NPV of Project X",
+    "value": 3516.0,
+    "check": "8500*(1-1/1.09**3)/0.09-18000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Project Y",
+    "value": 11001.43,
+    "check": "32000*(1-1/1.09**3)/0.09-70000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV given up",
+    "value": 7485.42,
+    "check": "(32000*(1-1/1.09**3)/0.09-70000)-(8500*(1-1/1.09**3)/0.09-18000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV of X = 8,500 × 2.531295 − 18,000 = $3,516.00",
+   "NPV of Y = 32,000 × 2.531295 − 70,000 = $11,001.43",
+   "Choosing X (higher PI) gives up $11,001.43 − $3,516.00 = $7,485.42."
+  ],
+  "keystrokes": [
+   "X: PMT = 8500, N = 3, I/Y = 9, CPT PV → 21,516.00; − 18000 = 3,516.00",
+   "Y: 81,001.43 − 70000 = 11,001.43",
+   "11,001.43 − 3,516.00 = 7,485.42"
+  ],
+  "errors": [
+   {
+    "id": "picked-higher-pi",
+    "label": "Reported the NPV of the higher-PI project",
+    "value": 3516.0,
+    "check": "8500*(1-1/1.09**3)/0.09-18000",
+    "explain": "That is what the PI choice delivers, not what it gives up."
+   },
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Subtracted NPV(Y) from NPV(X)",
+    "value": -7485.42,
+    "check": "(8500*(1-1/1.09**3)/0.09-18000)-(32000*(1-1/1.09**3)/0.09-70000)",
+    "explain": "The amount given up is positive: the better NPV minus the NPV actually earned."
+   },
+   {
+    "id": "pv-for-npv",
+    "label": "Used the PV of inflows instead of NPV for each project",
+    "value": 59485.42,
+    "check": "32000*(1-1/1.09**3)/0.09-8500*(1-1/1.09**3)/0.09",
+    "explain": "The PV of inflows does not subtract the cost; the outlays differ by $52,000, which is why this figure is far too high."
+   }
+  ],
+  "explanation": "The ratio ranking sacrifices wealth whenever the projects have different scales.",
+  "source": "generated",
+  "ref": "SM 9-16"
+ },
+ {
+  "id": "q09-491",
+  "concept": "c09-pi-vs-npv",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Two mutually exclusive projects: Small costs $25,000 and has a PI of 1.60. Large costs $120,000 and has a PI of 1.30. By how many dollars does the NPV of the Large project exceed the NPV of the Small project?",
+  "answer": 21000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "120000*(1.30-1)-25000*(1.60-1)",
+  "steps": [
+   {
+    "label": "NPV of Small = outlay × (PI − 1)",
+    "value": 15000.0,
+    "check": "25000*(1.60-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV of Large = outlay × (PI − 1)",
+    "value": 36000.0,
+    "check": "120000*(1.30-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV(Large) − NPV(Small)",
+    "value": 21000.0,
+    "check": "120000*(1.30-1)-25000*(1.60-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "NPV = outlay × (PI − 1) for a conventional project.",
+   "Small: 25,000 × 0.60 = $15,000. Large: 120,000 × 0.30 = $36,000.",
+   "Large exceeds Small by 36,000 − 15,000 = $21,000, even though PI ranks Small first."
+  ],
+  "keystrokes": [
+   "25000 × 0.60 = 15,000",
+   "120000 × 0.30 = 36,000",
+   "36,000 − 15,000 = 21,000"
+  ],
+  "errors": [
+   {
+    "id": "pv-for-npv",
+    "label": "Used PI × outlay (the PV of inflows) instead of NPV",
+    "value": 116000.0,
+    "check": "120000*1.30-25000*1.60",
+    "explain": "PI × outlay is the PV of inflows ($156,000 and $40,000), not the NPV. NPV subtracts the outlay."
+   },
+   {
+    "id": "subtracted-wrong-order",
+    "label": "Subtracted NPV(Large) from NPV(Small)",
+    "value": -21000.0,
+    "check": "25000*(1.60-1)-120000*(1.30-1)",
+    "explain": "The question asks how much LARGER the Large NPV is."
+   }
+  ],
+  "explanation": "Turning a PI back into an NPV needs the outlay: NPV = outlay × (PI − 1). A lower PI on a much larger outlay can still mean far more value.",
+  "source": "generated",
+  "ref": "L05A s28-30"
+ },
+ {
+  "id": "q09-492",
+  "concept": "c09-pi-vs-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Two mutually exclusive projects have these outlays and present values of inflows: Project X, outlay $400,000, PV $520,000; Project Y, outlay $8,000, PV $20,000. What is the NPV of the project the firm should choose?",
+  "options": [
+   "$12,000",
+   "$108,000",
+   "$520,000",
+   "$120,000"
+  ],
+  "answer": 3,
+  "explanation": "NPV(X) = 520,000 − 400,000 = $120,000 and NPV(Y) = 20,000 − 8,000 = $12,000. Y has the higher PI (2.50 against 1.30), but X has the higher NPV and the rule for mutually exclusive projects is NPV. $12,000 is Y's NPV, $108,000 is the gap between the two NPVs, and $520,000 is a PV, not an NPV.",
+  "source": "generated",
+  "ref": "TB 9.6"
+ },
+ {
+  "id": "q09-493",
+  "concept": "c09-pi-vs-npv",
+  "also": [
+   "c09-pi"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project has an initial outlay of $400,000 and the present value of its inflows is $520,000. What are its PI and its NPV as a fraction of the outlay?",
+  "options": [
+   "PI = 0.30; NPV is 0.30 of the outlay",
+   "PI = 0.77; NPV is 0.23 of the outlay",
+   "PI = 1.30; NPV is 0.30 of the outlay",
+   "PI = 1.30; NPV is 1.30 of the outlay"
+  ],
+  "answer": 2,
+  "explanation": "PI = 520,000/400,000 = 1.30 and NPV = 120,000 = 0.30 × outlay. 0.30 as a PI is the 0-based figure, 0.77 inverts the ratio and 0.23 divides the NPV by the PV of inflows.",
+  "source": "generated",
+  "ref": "L05A s28"
+ }
+]

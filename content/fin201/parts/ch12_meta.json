@@ -1,0 +1,693 @@
+{
+ "chapter": 12,
+ "title": "Risk, return and diversification",
+ "topics": [
+  {
+   "id": "t12-1",
+   "order": 1,
+   "title": "Risk and reward",
+   "summary": "Investors who lend or buy shares want to be paid for waiting and for taking risk, and that payment is exactly what a firm must pay to raise capital. This topic links the investor's required return to the firm's cost of capital, explains risk aversion and the risk premium, and summarises what a century of market history says about risk and reward.",
+   "concepts": [
+    "c12-required-return-cost-of-capital",
+    "c12-risk-aversion-premium",
+    "c12-history-lessons"
+   ]
+  },
+  {
+   "id": "t12-2",
+   "order": 2,
+   "title": "Measuring return and risk",
+   "summary": "Return is measured by the expected (mean) return and risk by the standard deviation. You compute both from states of the economy with probabilities, or from a history of returns using the population or sample formula, then use the normal distribution to turn them into ranges and probabilities and plot each stock on a risk-return diagram.",
+   "concepts": [
+    "c12-expected-return-states",
+    "c12-variance-states",
+    "c12-historical-sd",
+    "c12-normal-distribution",
+    "c12-risk-return-diagram"
+   ]
+  },
+  {
+   "id": "t12-3",
+   "order": 3,
+   "title": "Two-stock portfolios",
+   "summary": "A portfolio's expected return is a simple weighted average, but its risk is not: it depends on how the two stocks move together, measured by correlation. Whenever the correlation is below 1 the portfolio is less risky than the weighted average of the two risks, and adding more and more stocks reduces risk toward the limit set by the market itself.",
+   "concepts": [
+    "c12-portfolio-weights-return",
+    "c12-portfolio-sd",
+    "c12-covariance-correlation",
+    "c12-diversification-benefit",
+    "c12-diversification-limit"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c12-required-return-cost-of-capital",
+   "topic": "t12-1",
+   "term": "Required return and cost of capital",
+   "definition": "The expected return E[R] that investors need for bearing a given amount of risk. From the investor's (lender's) side it is the required rate of return; from the firm's (borrower's) side the same number is the cost of capital.",
+   "explain": "Money flows from investors to firms, and the interest rate or return in between is both the reward of one side and the cost of the other. Investments of similar risk should offer similar returns, so a project is judged against the return investors require for projects of its own risk. This is why the whole chapter is about measuring risk and the reward it earns.",
+   "example": "Investors in comparable pipeline bonds require 6.1% per annum. Bow River Pipelines must offer about 6.1% to raise money for a line of the same risk, so 6.1% is its cost of capital: a line expected to earn only 5.4% should be rejected. For shares, R = D1/P0 + g: D1 = $1.976, P0 = $38.00, g = 4% gives R = 5.2% + 4% = 9.2%.",
+   "contrast": "Required return is forward-looking and tied to risk; a realized return is what actually happened and can be far above or below it. Cost of capital is what investors demand, not the accounting interest a firm paid last year or a project's own IRR (which is compared with it).",
+   "trap": "Do not treat the risk-free rate (or a project's own return) as the discount rate: the benchmark is the return required for the project's risk. Watch for 'similar risk', 'cost of capital' and 'required return' as cue words: they all point to the same number seen from two sides.",
+   "mnemonic": "One rate, two views: the lender's reward is the borrower's cost.",
+   "formula": "E[R] = R_F + risk premium; R = D1/P0 + g",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c12-risk-aversion-premium",
+   "topic": "t12-1",
+   "term": "Risk aversion and the risk premium",
+   "definition": "People are risk averse when they want compensation for taking on higher risk; the risk premium (excess return) is that compensation, E[R] − R_F, the expected return above the risk-free rate.",
+   "explain": "Risk aversion does not mean people refuse risk; it means they take risk only when paid for it. The premium is measured against the risk-free asset (T-bills): for a stock the equity risk premium is the expected stock return minus the T-bill rate. Historically it is estimated as the average stock return minus the average T-bill return over the same years.",
+   "example": "T-bills pay 2% and the stock market is expected to return 8%, so the equity risk premium is 8% − 2% = 6%. Historically, a stock that averaged 11.0% while T-bills averaged 3.9% earned a premium of 11.0% − 3.9% = 7.1% per annum.",
+   "contrast": "Risk averse: needs compensation for higher risk. Neutral toward risk: needs none, only E[R] matters. Risk seeking: will accept less expected return to take risk. 'Risk averse' is not 'risk avoiding'. Risk premium is not the stock's total return.",
+   "trap": "Subtract the risk-free rate from the expected return (not the other way round, not the latest T-bill rate if the question gives a series: use the average over the same years). Ex ante premiums are positive; realized premiums over a short sample can be negative.",
+   "mnemonic": "Premium = pay for risk = E[R] − R_F.",
+   "formula": "risk premium = excess return = E[R] − R_F",
+   "given": false,
+   "archetypes": [
+    "A24"
+   ],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "Attitudes to risk (L06 s8): averse, neutral, seeking",
+    "head": [
+     "Investor type",
+     "What they need to take on more risk"
+    ],
+    "rows": [
+     [
+      "Risk averse",
+      "Compensation (a risk premium) for higher risk"
+     ],
+     [
+      "Neutral toward risk",
+      "No compensation: only the expected return matters"
+     ],
+     [
+      "Risk seeking",
+      "Would accept a lower expected return to take on risk (the lecture: wants compensation for lower risk)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-history-lessons",
+   "topic": "t12-1",
+   "term": "Lessons from capital market history",
+   "definition": "Over 1926-2016 (U.S. data in the text) small-company stocks beat large-company stocks, which beat long-term bonds, which beat T-bills. Lesson 1: risky assets on average earn a risk premium. Lesson 2: the greater the potential reward, the greater the risk (standard deviation). Real returns come from the Fisher relationship.",
+   "explain": "Higher average returns went hand in hand with higher volatility: small stocks paid most and swung most. The averages hide big year-to-year swings, so a risk premium is not a guarantee in any single year. Nominal returns must be converted to real returns with (1 + R_nom) = (1 + R_inf)(1 + R_real), not by simple subtraction.",
+   "example": "Large-company stocks averaged 12.0% (σ 19.9%) and T-bills 3.4% (σ 3.1%), a premium of 8.6%. With inflation averaging 3.0%, the real T-bill return was 1.034/1.030 − 1 ≈ 0.4% per year, and the real return on small stocks was 1.166/1.03 − 1 = 13.2%.",
+   "contrast": "Lesson 1 (a positive average premium for risk) versus Lesson 2 (more reward comes with more risk). Nominal versus real return: the nominal return includes inflation. T-bills are nearly free of default risk but not of inflation risk.",
+   "trap": "Subtracting inflation from the nominal rate is only an approximation; the exam rewards the Fisher division (1 + R_nom)/(1 + R_inf) − 1. One bad year does not contradict the premium: premiums are long-run averages.",
+   "mnemonic": "Stocks > bonds > bills; small > large; more reward, more risk.",
+   "formula": "(1 + R_nom) = (1 + R_inf)(1 + R_real)",
+   "given": true,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "U.S. history 1926-2016 (Ross 12e, Tables 12.2-12.3, Figure 12.10)",
+    "head": [
+     "Investment",
+     "Average return",
+     "Risk premium",
+     "Standard deviation"
+    ],
+    "rows": [
+     [
+      "Small-company stocks",
+      "16.6%",
+      "13.2%",
+      "31.9%"
+     ],
+     [
+      "Large-company stocks",
+      "12.0%",
+      "8.6%",
+      "19.9%"
+     ],
+     [
+      "Long-term corporate bonds",
+      "6.3%",
+      "2.9%",
+      "8.4%"
+     ],
+     [
+      "Long-term government bonds",
+      "6.0%",
+      "2.6%",
+      "9.9%"
+     ],
+     [
+      "Treasury bills",
+      "3.4%",
+      "0.0%",
+      "3.1%"
+     ],
+     [
+      "Inflation",
+      "3.0%",
+      "-",
+      "4.1%"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-expected-return-states",
+   "topic": "t12-2",
+   "term": "Expected return from states of the economy",
+   "definition": "E[R] = Σ p_i R_i: the probability-weighted average of an asset's returns R_i across the states i, where the probabilities p_i add to 1. For a portfolio, find the portfolio return in each state first, or use E[R_P] = Σ w_k E[R_k].",
+   "explain": "When we forecast returns for scenarios such as boom, normal and recession, we weight each scenario by how likely it is. The result is an average, not a promise: it may not equal any single state's return. Equal probabilities reduce it to the simple average, which is also what a historical mean does.",
+   "example": "Boom (0.30): 22%; normal (0.50): 9%; recession (0.20): −12%. E[R] = 0.30 × 22 + 0.50 × 9 + 0.20 × (−12) = 6.6 + 4.5 − 2.4 = 8.7%.",
+   "contrast": "Forecast states use probabilities p_i; a historical mean uses weights 1/N. E[R] (reward) is not σ (risk). The expected return is not the most likely return.",
+   "trap": "Probabilities must add to 1 (find a missing one as 1 minus the others). Keep the sign of negative returns. Do not use the simple average when the probabilities differ, and do not divide by N − 1 (no N − 1 with probabilities).",
+   "mnemonic": "Weight by likelihood, then add.",
+   "formula": "E[R] = Σ p_i R_i",
+   "given": false,
+   "archetypes": [
+    "A23"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-variance-states",
+   "topic": "t12-2",
+   "term": "Variance and standard deviation from states",
+   "definition": "σ² = Σ p_i (R_i − E[R])², the probability-weighted average of squared deviations from the expected return; σ = √σ² is the standard deviation, the measure of total (volatility) risk, in the same units as returns.",
+   "explain": "Standard deviation tells us how widely outcomes are spread around the expected return. Compute E[R] first, then the deviation in each state, square it, weight by the probability, add, and take the square root. The risk-free asset has σ = 0 because its return is the same in every state.",
+   "example": "Using 0.30/0.50/0.20 with returns 22%, 9%, −12% and E[R] = 8.7%: deviations 13.3, 0.3, −20.7. σ² = 0.30 × 13.3² + 0.50 × 0.3² + 0.20 × (−20.7)² = 53.067 + 0.045 + 85.698 = 138.81 (%²), so σ = √138.81 = 11.78%.",
+   "contrast": "Variance σ² is in squared units (0.0139); standard deviation σ is its square root (11.78%) and is what we plot. With forecast probabilities there is no N − 1; N − 1 belongs to the sample variance of historical returns.",
+   "trap": "Do not stop at the variance, do not divide by N − 1, do not square the returns instead of the deviations, and keep units consistent (decimals with decimals, or percents throughout). For a portfolio compute the portfolio's return in each state first; never average the stocks' σ's.",
+   "mnemonic": "Deviate, square, weight, add, root.",
+   "formula": "σ² = Σ p_i (R_i − E[R])²; σ = √σ²",
+   "given": false,
+   "archetypes": [
+    "A23"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-historical-sd",
+   "topic": "t12-2",
+   "term": "Historical mean and standard deviation (population vs sample)",
+   "definition": "For N past returns, E[R] = μ = (R_1 + … + R_N)/N. The population standard deviation divides the sum of squared deviations by N; the sample standard deviation divides by N − 1. Use population when the data are the entire group (all stocks in your portfolio), sample when they are a sample (five years of your favourite stock).",
+   "explain": "With history every observation counts equally, so no probabilities appear. The sample formula divides by N − 1 because the deviations are measured from the sample's own mean, which would otherwise understate the spread. The sum of the deviations from the mean is always zero, a handy check.",
+   "example": "A stock returned 12%, −4%, 18%, 7%, 9% over five years (a sample). Mean = 8.4%; squared deviations sum to 261.2; variance = 261.2/4 = 65.3; σ = 8.08%. Treated as a population, 261.2/5 = 52.24 and σ = 7.23%.",
+   "contrast": "Population (÷N) versus sample (÷(N − 1)): the sample σ is slightly larger. Historical (equal weights, ÷N or N − 1) versus states with probabilities (weights p_i, no N − 1). Standard deviation (percent) versus variance (percent squared).",
+   "trap": "The question says which one applies ('a sample of five years', 'all nine stocks'): follow it. Using N for a sample or N − 1 for a population are the two classic errors. Report σ in percent, not the variance, and use the average of the T-bill series (not the last year) for historical premiums.",
+   "mnemonic": "Sample is N minus one; the whole group is N.",
+   "formula": "μ = (1/N)ΣR_i; σ_pop = √[(1/N)Σ(R_i − μ)²]; σ_sample = √[(1/(N−1))Σ(R_i − μ)²]",
+   "given": true,
+   "archetypes": [
+    "A24"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-normal-distribution",
+   "topic": "t12-2",
+   "term": "Normal distribution and the 68/95/99 rule",
+   "definition": "A symmetric bell-shaped distribution completely described by its mean μ and standard deviation σ. About 68% of outcomes fall within μ ± 1σ, about 95% within μ ± 2σ and about 99% within μ ± 3σ. Probabilities for other cut-offs come from z = (X − μ)/σ and the cumulative normal table N(z), with N(−z) = 1 − N(z).",
+   "explain": "Annual returns are roughly mound-shaped and symmetric, so we use the normal as an approximation. Two numbers (μ and σ) are enough to give ranges ('two years in three') and the probability of a loss. The table sheet gives N(z) for positive z only; for negative z subtract from 1.",
+   "example": "U.S. large-company stocks (1926-2016): μ = 12.0%, σ = 19.9%, so about 68% of years are between −7.9% and 31.9%. For μ = 9.0%, σ = 15.0%, P(loss) = N(−0.60) = 1 − 0.7257 = 27.43%.",
+   "contrast": "Within ±1σ (68%) is not the same as below μ − σ (about 16%, half of the 32% outside). The normal is an approximation to actual returns, not an exact description.",
+   "trap": "Pick the right multiple (1, 2 or 3 σ) for 68/95/99; centre the range on the mean; for lower-tail probabilities use 1 − N(|z|); for 'between' use N(z_upper) − N(z_lower). Divide by σ, not σ².",
+   "mnemonic": "68-95-99 for 1-2-3 sigmas.",
+   "formula": "z = (X − μ)/σ; P(R < X) = N(z); N(−z) = 1 − N(z)",
+   "given": false,
+   "archetypes": [
+    "A24"
+   ],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Normal ranges (example: U.S. large-company stocks 1926-2016, μ = 12.0%, σ = 19.9%)",
+    "head": [
+     "Range",
+     "Share of outcomes inside",
+     "Example"
+    ],
+    "rows": [
+     [
+      "μ ± 1σ",
+      "about 68% (roughly 2/3)",
+      "−7.9% to 31.9%"
+     ],
+     [
+      "μ ± 2σ",
+      "about 95%",
+      "−27.8% to 51.8%"
+     ],
+     [
+      "μ ± 3σ",
+      "about 99%",
+      "−47.7% to 71.7%"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c12-risk-return-diagram",
+   "topic": "t12-2",
+   "term": "Risk-return diagram, domination and the efficient frontier",
+   "definition": "A graph with σ (risk, volatility) on the horizontal axis and E[R] (return) on the vertical axis, where each dot is one stock. A stock dominates another if it has a higher E[R] for the same σ, a lower σ for the same E[R], or both. The efficient frontier is the set of points that nothing dominates, along the upper-left boundary.",
+   "explain": "To answer 'how do we measure risk and return of a stock', compute E[R] and σ from past returns (for example the last five years) and plot the dot. Up and to the left is better. Stocks off the frontier can be beaten, so only the frontier matters; which frontier stock an investor chooses depends on risk preference. The risk-free asset sits on the vertical axis at R_F.",
+   "example": "Tamarack (σ 14%, E 8%), Birchmount (14%, 11%), Quill (10%, 8%): Birchmount and Quill each dominate Tamarack; neither dominates the other because Birchmount offers more return but more risk.",
+   "contrast": "Domination compares two points; the efficient frontier is the set of undominated points. The risk-return diagram has σ on the x-axis; the security market line (next chapter) has β on the x-axis.",
+   "trap": "Do not confuse the axes; higher E[R] with higher σ is a trade-off, not domination. Equal E[R] with lower σ is domination. Past performance does not guarantee future returns.",
+   "mnemonic": "Up and left wins.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-portfolio-weights-return",
+   "topic": "t12-3",
+   "term": "Portfolio weights and expected portfolio return",
+   "definition": "The weight of asset k is w_k = dollars in k ÷ total dollars invested, so Σ w_k = 1 (a borrowed amount makes a weight negative). The expected return of the portfolio is the weighted average E[R_P] = Σ w_k E[R_k], which is linear.",
+   "explain": "Weights come from dollar values, and the portfolio return is just the weighted average of the assets' expected returns, so it always lies between the lowest and highest asset returns. A risk-free asset is part of the portfolio with its own weight and return R_F.",
+   "example": "$30,000 in a 3% term deposit and $70,000 in an equity fund expected to return 9%: w = 0.30 and 0.70, E[R_P] = 0.30 × 3 + 0.70 × 9 = 0.9 + 6.3 = 7.2%.",
+   "contrast": "Expected return is linear in the weights; the portfolio standard deviation is not. Weights are proportions of the whole portfolio, not dollar amounts or returns.",
+   "trap": "Weights must add to 1 and use market (dollar) values; include the risk-free asset; do not average the returns equally unless the weights are equal. Check that the answer lies between the asset returns.",
+   "mnemonic": "Return is a weighted average; weights sum to one.",
+   "formula": "w_k = $k/Σ$; Σ w_k = 1; E[R_P] = Σ w_k E[R_k]",
+   "given": true,
+   "archetypes": [
+    "A25"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-portfolio-sd",
+   "topic": "t12-3",
+   "term": "Standard deviation of a two-stock portfolio",
+   "definition": "σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ_AB w_A σ_A w_B σ_B), where ρ_AB is the correlation of the two stocks' returns. With a risk-free asset (σ = 0, ρ = 0) it reduces to σ = w_P σ_P.",
+   "explain": "Portfolio risk is not a weighted average of the two risks: it includes a cross term that depends on how the stocks move together. Compute the two stand-alone terms, add the cross term, and take the square root. The correlation matrix view shows the same three terms.",
+   "example": "60% in A (σ = 20%) and 40% in B (σ = 10%), ρ = 0.3: terms 12² = 144 and 4² = 16, cross term 2 × 0.3 × 12 × 4 = 28.8; σ_P² = 188.8 and σ_P = 13.74%, below the weighted average 0.6 × 20 + 0.4 × 10 = 16%.",
+   "contrast": "σ_P versus the weighted average of the σ's (equal only if ρ = 1). Covariance (cov = ρσ_Aσ_B) versus correlation ρ: use the version of the formula that matches what is given.",
+   "trap": "Do not forget the square root, do not drop the cross term, do not use cov where ρ is required (or vice versa), and keep σ in decimals or percents consistently. If ρ = 1 you may use the weighted average; for ρ < 1 you may not.",
+   "mnemonic": "Two squares plus a cross term, then root.",
+   "formula": "σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ_AB w_A σ_A w_B σ_B)",
+   "given": true,
+   "archetypes": [
+    "A25"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c12-covariance-correlation",
+   "topic": "t12-3",
+   "term": "Covariance and correlation",
+   "definition": "cov(A,B) = Σ p_i (R_A,i − E[R_A])(R_B,i − E[R_B]) measures how returns move together; the correlation ρ_AB = cov(A,B)/(σ_A σ_B) is the scaled version, always between −1 and +1. (For historical data the covariance divides by N, or N − 1 for a sample.)",
+   "explain": "ρ = +1 means the stocks move in perfect lockstep, 0 means no linear relationship (uncorrelated), −1 means perfect opposite movement. Stocks in the same industry or country tend to have high positive ρ; different industries and countries have lower ρ. The correlation is a property of the pair, like E[R] and σ are of each stock.",
+   "example": "Three states (0.25, 0.50, 0.25): A returns 18%, 8%, −2% (E = 8, σ = 7.07); B returns 14%, 7%, 6% (E = 8.5, σ = 3.20). cov = 0.25 × 10 × 5.5 + 0.5 × 0 × (−1.5) + 0.25 × (−10) × (−2.5) = 20 (%²) = 0.0020; ρ = 20/(7.07 × 3.20) = 0.88.",
+   "contrast": "Covariance has units (%²) and no fixed bounds; correlation is unit-free and bounded by ±1. Correlation is not beta (beta divides by the market variance and is not bounded).",
+   "trap": "A correlation outside −1 to +1 signals a units mix or an arithmetic slip. Divide cov by σ_Aσ_B, not by one σ or by a variance. In the portfolio formula use ρ with the σ's, or cov alone, but never cov in the ρ slot.",
+   "mnemonic": "Correlation is covariance with the units taken out.",
+   "formula": "cov(A,B) = Σ p_i (R_A,i − E[R_A])(R_B,i − E[R_B]); ρ_AB = cov(A,B)/(σ_A σ_B)",
+   "given": false,
+   "archetypes": [
+    "A26"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c12-diversification-benefit",
+   "topic": "t12-3",
+   "term": "Diversification benefit",
+   "definition": "Whenever ρ_AB < 1, a portfolio of A and B has σ_P below the weighted average of σ_A and σ_B (w_Aσ_A + w_Bσ_B): the diversification benefit. The lower the correlation, the larger the benefit.",
+   "explain": "Because stocks do not move in perfect lockstep, their ups and downs partly cancel, so risk falls while expected return stays the weighted average. As the weight moves from all B to all A, the portfolio traces a curve whose bend depends on ρ. Some weights are inefficient (holding only B when adding some A lowers risk). With many stocks the efficient frontier lies to the left of all individual stocks.",
+   "example": "Two stocks with σ = 24% each, 50/50, ρ = 0.25: σ_P² = 2 × (0.5 × 24)² + 2 × 0.25 × 12 × 12 = 288 + 72 = 360, so σ_P = 18.97%, well below the weighted average 24%.",
+   "contrast": "Diversification benefit (risk falls for the same weighted return) versus expected return (linear, no benefit). ρ = 1 gives no benefit; ρ = −1 can remove all risk.",
+   "trap": "The weighted-average shortcut σ_P = w_Aσ_A + w_Bσ_B is valid only for ρ = 1. 'Do not put all your eggs in one basket' needs ρ < 1: adding a stock perfectly correlated with the rest does not help.",
+   "mnemonic": "Benefit whenever ρ < 1.",
+   "formula": "σ_P < w_Aσ_A + w_Bσ_B whenever ρ_AB < 1 (equal when ρ_AB = 1)",
+   "given": false,
+   "archetypes": [],
+   "weight": 3,
+   "figure": {
+    "type": "list",
+    "title": "Shape of the feasible set (E[R_P] against σ_P) for ρ = 1, 0, −1",
+    "items": [
+     "ρ = +1: a straight line from A to B; no diversification benefit, σ_P = w_Aσ_A + w_Bσ_B.",
+     "ρ = 0: a curve bowed to the left of the straight line; some mixes have σ_P below both stocks' σ's.",
+     "ρ = −1: two straight segments that touch the vertical axis (σ_P = 0) at w_A = σ_B/(σ_A + σ_B); σ_P = |w_Aσ_A − w_Bσ_B|.",
+     "Between the lowest-risk mix and the lower-σ stock the curve is inefficient: the same σ is available with a higher E[R]."
+    ]
+   }
+  },
+  {
+   "id": "c12-diversification-limit",
+   "topic": "t12-3",
+   "term": "Limit of diversification: systematic risk",
+   "definition": "As more stocks are added, portfolio σ falls at a decreasing rate and levels off at σ_M, the volatility of the market. Company-specific (diversifiable, non-systematic) risk can be diversified away; market (non-diversifiable, systematic) risk cannot.",
+   "explain": "The first few stocks remove most of the specific risk; later ones help less and less, and a very large portfolio ends up behaving like the market. This is why a well-diversified investor is rewarded only for market risk, which leads to beta and the CAPM in the next chapter.",
+   "example": "Illustrative numbers: a one-stock portfolio with σ = 45% falls to about 30% with five stocks and about 25% with fifteen, levelling off near the market's σ_M of 20%: the first stocks cut risk most, and the remaining 20% (σ_M) cannot be removed.",
+   "contrast": "Diversifiable (company-specific, non-systematic) versus non-diversifiable (market, systematic) risk. Volatility σ measures total risk; β measures only the systematic part.",
+   "trap": "The answer to 'what happens to σ as N grows' is: it decreases, but at a decreasing rate, and never below σ_M. 'Decreases at an increasing rate' and 'eliminates all risk' are wrong.",
+   "mnemonic": "Falls, but flattens out at the market.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 3,
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a12-01",
+   "type": "sort",
+   "concept": "c12-risk-aversion-premium",
+   "title": "Risk averse, neutral or seeking?",
+   "prompt": "Sort each statement into the investor type it describes.",
+   "buckets": [
+    "Risk averse",
+    "Neutral toward risk",
+    "Risk seeking"
+   ],
+   "items": [
+    {
+     "text": "Wants a higher expected return before taking on a more volatile investment",
+     "bucket": 0
+    },
+    {
+     "text": "Demands an extra 4 points of expected return to hold a much more volatile bond",
+     "bucket": 0
+    },
+    {
+     "text": "Holds a risky fund only if it is expected to pay a premium over T-bills",
+     "bucket": 0
+    },
+    {
+     "text": "Would pay $50 for a coin flip that pays $0 or $100 with equal chance",
+     "bucket": 1
+    },
+    {
+     "text": "Needs no premium over T-bills to hold a volatile stock",
+     "bucket": 1
+    },
+    {
+     "text": "Cares only about the expected return, not the standard deviation",
+     "bucket": 1
+    },
+    {
+     "text": "Accepts a lower expected return than T-bills because she enjoys the gamble",
+     "bucket": 2
+    },
+    {
+     "text": "Pays $55 for a coin flip that pays $0 or $100 with equal chance",
+     "bucket": 2
+    },
+    {
+     "text": "Buys a lottery ticket whose price is above its expected payoff",
+     "bucket": 2
+    }
+   ],
+   "explanation": "Risk averse: wants compensation for higher risk. Neutral toward risk: needs no compensation, so only E[R] matters. Risk seeking: will accept less expected return to take on risk. Risk aversion does not mean refusing risk; it means requiring a premium."
+  },
+  {
+   "id": "a12-02",
+   "type": "order",
+   "concept": "c12-variance-states",
+   "title": "Order the steps: σ from states",
+   "prompt": "Put the steps for finding the standard deviation of a return from states of the economy in the correct order.",
+   "items": [
+    "List each state's probability and return and check the probabilities add to 1",
+    "Compute the expected return E[R] = Σ p_i R_i",
+    "Subtract E[R] from each state's return to get the deviations",
+    "Square each deviation and multiply by the state's probability",
+    "Add the weighted squared deviations to get the variance σ²",
+    "Take the square root to get σ in percent"
+   ],
+   "explanation": "E[R] must come first because every deviation is measured from it. The weighted squared deviations add up to the variance (no N − 1 with probabilities), and the square root turns it into the standard deviation in the units of returns."
+  },
+  {
+   "id": "a12-03",
+   "type": "sort",
+   "concept": "c12-historical-sd",
+   "title": "Population or sample?",
+   "prompt": "Decide which standard deviation formula each situation calls for.",
+   "buckets": [
+    "Population σ (divide by N)",
+    "Sample σ (divide by N − 1)"
+   ],
+   "items": [
+    {
+     "text": "All 12 stocks you hold today, treated as the whole group",
+     "bucket": 0
+    },
+    {
+     "text": "The four stocks in a trust, measuring the spread among them",
+     "bucket": 0
+    },
+    {
+     "text": "Last month's return on each of the nine holdings in your portfolio",
+     "bucket": 0
+    },
+    {
+     "text": "A question that says 'treat the five returns as the entire population'",
+     "bucket": 0
+    },
+    {
+     "text": "Five years of returns on your favourite stock",
+     "bucket": 1
+    },
+    {
+     "text": "Ten years of a mutual fund's returns used to judge its volatility",
+     "bucket": 1
+    },
+    {
+     "text": "A random sample of 30 TSX stocks used to estimate the whole market",
+     "bucket": 1
+    },
+    {
+     "text": "A question that says 'a sample of six years of returns'",
+     "bucket": 1
+    }
+   ],
+   "explanation": "Use N when the data are the entire group of interest; use N − 1 when the data are only a sample used to estimate something larger. The sample σ is slightly larger for the same numbers."
+  },
+  {
+   "id": "a12-04",
+   "type": "match",
+   "concept": "c12-expected-return-states",
+   "title": "Symbol and meaning",
+   "prompt": "Match each symbol with its meaning.",
+   "pairs": [
+    {
+     "left": "E[R]",
+     "right": "Expected (mean) return"
+    },
+    {
+     "left": "R_F",
+     "right": "Risk-free rate, the return on T-bills"
+    },
+    {
+     "left": "E[R] − R_F",
+     "right": "Risk premium, also called the excess return"
+    },
+    {
+     "left": "σ",
+     "right": "Standard deviation of returns: volatility risk"
+    },
+    {
+     "left": "σ²",
+     "right": "Variance of returns, in squared units"
+    },
+    {
+     "left": "p_i",
+     "right": "Probability of state i; all the p_i add to 1"
+    },
+    {
+     "left": "w_k",
+     "right": "Portfolio weight: dollars in asset k ÷ total dollars"
+    },
+    {
+     "left": "ρ_AB",
+     "right": "Correlation of A's and B's returns, between −1 and +1"
+    }
+   ],
+   "explanation": "Know every symbol on the formula sheet and in the lecture: E[R] and R_F give the premium, σ and σ² measure risk, p_i weights states, w_k weights assets and ρ_AB measures how two stocks move together."
+  },
+  {
+   "id": "a12-05",
+   "type": "order",
+   "concept": "c12-portfolio-sd",
+   "title": "Order the steps: two-stock σ_P",
+   "prompt": "Put the steps for the standard deviation of a two-stock portfolio in the correct order.",
+   "items": [
+    "Convert the dollar amounts into weights w_A and w_B (they add to 1)",
+    "Compute the stand-alone terms w_A²σ_A² and w_B²σ_B²",
+    "Compute the cross term 2ρ_AB w_A σ_A w_B σ_B",
+    "Add the three terms to get the portfolio variance σ_P²",
+    "Take the square root to get σ_P",
+    "Compare σ_P with w_Aσ_A + w_Bσ_B to see the diversification benefit"
+   ],
+   "explanation": "Weights come first, then two squares and a cross term; their sum is the variance, whose square root is σ_P. If ρ < 1, σ_P is less than the weighted average of the σ's; that gap is the diversification benefit."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "f12-required-return",
+   "name": "Required return build-up",
+   "formula": "E[R] = R_F + risk premium (investor's required return = firm's cost of capital)",
+   "given": false,
+   "concepts": [
+    "c12-required-return-cost-of-capital",
+    "c12-risk-aversion-premium"
+   ],
+   "when": "Building the return investors need for a given risk, or reading a cost of capital as the investor's E[R].",
+   "trap": "The premium is the extra over R_F, so R_F must be added back."
+  },
+  {
+   "id": "f12-risk-premium",
+   "name": "Risk premium (excess return)",
+   "formula": "risk premium = E[R] − R_F",
+   "given": false,
+   "concepts": [
+    "c12-risk-aversion-premium"
+   ],
+   "when": "Any 'risk premium', 'excess return' or 'equity risk premium' question.",
+   "trap": "Subtract the average T-bill return over the same years, not the latest rate."
+  },
+  {
+   "id": "f12-fisher",
+   "name": "Fisher relationship (real vs nominal)",
+   "formula": "(1 + R_nom) = (1 + R_inf)(1 + R_real)",
+   "given": true,
+   "concepts": [
+    "c12-history-lessons"
+   ],
+   "when": "Converting nominal historical returns to real ones, or the reverse.",
+   "trap": "R_nom − R_inf is only an approximation; divide the growth factors."
+  },
+  {
+   "id": "f12-expected-states",
+   "name": "Expected return from states",
+   "formula": "E[R] = Σ p_i R_i",
+   "given": false,
+   "concepts": [
+    "c12-expected-return-states"
+   ],
+   "when": "Returns are forecast for states of the economy with probabilities.",
+   "trap": "Probabilities must add to 1; do not use the equal-weight average unless the states are equally likely."
+  },
+  {
+   "id": "f12-variance-states",
+   "name": "Variance and standard deviation from states",
+   "formula": "σ² = Σ p_i (R_i − E[R])²; σ = √σ²",
+   "given": false,
+   "concepts": [
+    "c12-variance-states"
+   ],
+   "when": "States with probabilities; for a portfolio use the portfolio's return in each state.",
+   "trap": "No N − 1 with probabilities; finish with the square root."
+  },
+  {
+   "id": "f12-historical",
+   "name": "Historical mean and standard deviation",
+   "formula": "μ = (1/N)ΣR_i; σ_pop = √[(1/N)Σ(R_i − μ)²]; σ_sample = √[(1/(N−1))Σ(R_i − μ)²]",
+   "given": true,
+   "concepts": [
+    "c12-historical-sd",
+    "c12-expected-return-states"
+   ],
+   "when": "A list of past returns: population when the data are the whole group, sample when they are a sample.",
+   "trap": "N versus N − 1 depends on what the question says the data are."
+  },
+  {
+   "id": "f12-normal-range",
+   "name": "Normal ranges 68/95/99",
+   "formula": "μ ± 1σ ≈ 68%; μ ± 2σ ≈ 95%; μ ± 3σ ≈ 99%",
+   "given": false,
+   "concepts": [
+    "c12-normal-distribution"
+   ],
+   "when": "Ranges of returns for roughly normal returns.",
+   "trap": "Centre on the mean and use the right multiple of σ."
+  },
+  {
+   "id": "f12-z-score",
+   "name": "z-score and cumulative normal",
+   "formula": "z = (X − μ)/σ; P(R < X) = N(z); N(−z) = 1 − N(z)",
+   "given": false,
+   "concepts": [
+    "c12-normal-distribution"
+   ],
+   "when": "Probability of a loss or of exceeding a target, using the cumulative normal table on the table sheet.",
+   "trap": "Divide by σ (not σ²); for negative z use 1 − N(|z|); for 'between' subtract the two N's."
+  },
+  {
+   "id": "f12-weights",
+   "name": "Portfolio weights",
+   "formula": "w_k = $k ÷ Σ$; Σ w_k = 1",
+   "given": false,
+   "concepts": [
+    "c12-portfolio-weights-return"
+   ],
+   "when": "Turning dollar amounts into weights (including the risk-free asset).",
+   "trap": "Weights add to 1 and can be negative when borrowing."
+  },
+  {
+   "id": "f12-portfolio-return",
+   "name": "Expected portfolio return",
+   "formula": "E[R_P] = Σ w_k E[R_k]",
+   "given": true,
+   "concepts": [
+    "c12-portfolio-weights-return"
+   ],
+   "when": "Any portfolio of any number of assets.",
+   "trap": "It is linear in the weights; the result lies between the asset returns."
+  },
+  {
+   "id": "f12-portfolio-sd",
+   "name": "Two-stock portfolio standard deviation",
+   "formula": "σ_P = √(w_A²σ_A² + w_B²σ_B² + 2ρ_AB w_A σ_A w_B σ_B)",
+   "given": true,
+   "concepts": [
+    "c12-portfolio-sd",
+    "c12-diversification-benefit"
+   ],
+   "when": "Risk of a portfolio of two risky assets; with a risk-free asset σ_P = w_P σ_P.",
+   "trap": "Do not forget the square root or the cross term, and do not put cov in the ρ slot."
+  },
+  {
+   "id": "f12-cov-corr",
+   "name": "Covariance and correlation",
+   "formula": "cov(A,B) = Σ p_i (R_A,i − E[R_A])(R_B,i − E[R_B]); ρ_AB = cov(A,B)/(σ_A σ_B)",
+   "given": false,
+   "concepts": [
+    "c12-covariance-correlation"
+   ],
+   "when": "Measuring how two assets move together from states or data.",
+   "trap": "ρ must lie between −1 and +1; divide by σ_Aσ_B, not by σ_M²."
+  },
+  {
+   "id": "f12-diversification",
+   "name": "Diversification benefit condition",
+   "formula": "σ_P < w_Aσ_A + w_Bσ_B whenever ρ_AB < 1; equal when ρ_AB = 1",
+   "given": false,
+   "concepts": [
+    "c12-diversification-benefit",
+    "c12-diversification-limit"
+   ],
+   "when": "Deciding whether combining two stocks lowers risk.",
+   "trap": "The weighted-average shortcut is valid only for ρ = 1."
+  }
+ ]
+}

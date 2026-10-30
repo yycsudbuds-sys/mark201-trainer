@@ -53,6 +53,7 @@ export function render(app) {
         h('span', { class: 'mono small muted', style: { width: '190px' } }, icon('laurel', { size: 14, tone: 'gold' }), `${m.dist[4]} `, icon('check', { size: 14, tone: 'mono' }), `${m.dist[3]} ${m.dist[2]} · ${m.pursuits ? m.pursuits + ' ' : ''}`, m.pursuits ? icon('target', { size: 14, tone: 'mono' }) : null, `${m.pursuits ? ' · ' : ''}${Math.round(m.score * 100)}%`),
         h('a', { class: 'btn sm ghost', href: `#/drill/chapter/${ch.chapter}` }, 'Drill')))),
       h('p', { class: 'tiny muted mt-sm' }, icon('laurel', { size: 14, tone: 'gold' }), ' mastered · ', icon('check', { size: 14, tone: 'mono' }), ' solid · learning · ', icon('target', { size: 14, tone: 'mono' }), ' open pursuits')),
+    weakSkills(app),
     h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'Cursus honorum'), rankLadder(app)),
     h('div', null, h('div', { class: 'page-head' }, h('h2', null, 'Your legion')), legionGround(app)),
     h('div', { class: 'grid two' },
@@ -76,4 +77,16 @@ function stackedBar(dist, color) {
   const seg = (n, bg, op) => h('div', { style: { width: (n / total * 100) + '%', background: bg, opacity: op, height: '100%' } });
   return h('div', { class: 'bar', style: { height: '12px', display: 'flex' } },
     seg(dist[4], color, 1), seg(dist[3], color, 0.65), seg(dist[2], color, 0.35), seg(dist[1], 'var(--surface-3)', 1));
+}
+
+
+/** Weak skills: the calculation errors the trainer has diagnosed on typed answers, most frequent first. */
+function weakSkills(app) {
+  const st = app.state; const errs = Object.entries(st.stats.calcErrors || {}).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  if (!errs.length) return null;
+  const labels = st.stats.calcErrorLabels || {}; const byC = st.stats.calcErrorConcepts || {};
+  return h('div', { class: 'card' }, h('h2', { class: 'mb' }, 'Weak skills'), h('p', { class: 'small muted' }, 'Classic calculation errors the trainer recognised in your typed answers. Drill the concepts where each one bit you.'),
+    h('div', { class: 'list' }, errs.map(([id, n]) => { const cids = Object.entries(byC[id] || {}).sort((a, b) => b[1] - a[1]).map(([cid]) => cid).filter(cid => app.conceptOf(cid)); return h('div', { class: 'li' },
+      h('span', { class: 'chip bad' }, `×${n}`), h('div', { class: 'grow' }, h('div', { class: 't' }, labels[id] || id.replace(/-/g, ' ')), h('div', { class: 's' }, cids.slice(0, 3).map(cid => app.conceptOf(cid).concept.term).join(' · ') || id)),
+      cids.length ? h('a', { class: 'btn sm', href: `#/drill/concepts/${cids.slice(0, 4).join(',')}` }, 'Drill') : null); })));
 }

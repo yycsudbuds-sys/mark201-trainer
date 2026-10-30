@@ -1,0 +1,910 @@
+[
+ {
+  "id": "q10-038",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT included in a project's incremental cash flows?",
+  "options": [
+   "Interest paid on the bank loan raised for the project",
+   "Profit lost on an existing product that the project displaces",
+   "Extra profit on a complementary product caused by the project",
+   "Working capital the project requires"
+  ],
+  "answer": 0,
+  "explanation": "Financing costs such as interest, dividends and principal repaid are never part of project cash flows. The other three change the firm's operating cash flow.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10-18"
+ },
+ {
+  "id": "q10-039",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why are interest payments left out of a project's cash flows?",
+  "options": [
+   "Interest is not tax deductible, so it would only distort the after-tax flows",
+   "Financing is analyzed separately; the discount rate already charges for debt and equity, so interest would double count",
+   "Interest is a sunk cost that the firm pays whatever it decides about the project",
+   "Interest is always so small relative to operating cash flow that it can be ignored"
+  ],
+  "answer": 1,
+  "explanation": "The project's cash flows are discounted at a rate that already reflects the cost of funds. Subtracting interest as well would charge for financing twice.",
+  "source": "generated",
+  "ref": "SM 10-18; TB 10.2"
+ },
+ {
+  "id": "q10-040",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Zenith Bikes expects a rival to launch an equivalent e-bike next year whether or not Zenith does, so Zenith's older model will lose those sales anyway. How should the lost sales be treated in the e-bike analysis?",
+  "options": [
+   "Deduct them in full, because any decline in existing sales counts",
+   "Deduct half of them, because the loss is partly caused by the project",
+   "Ignore them: erosion is relevant only when the sales would not otherwise be lost",
+   "Add them as a sunk cost"
+  ],
+  "answer": 2,
+  "explanation": "With or without the e-bike, the older model loses those sales, so the project does not change the firm's cash flow there. Erosion is relevant only if the sales would not be lost anyway.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10 CTQ5-7"
+ },
+ {
+  "id": "q10-041",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Interest on the loan used to fund a project is deducted when computing the project's incremental cash flows.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Interest is a financing cost: it is part of the cash flow to creditors, not of the cash flow from the project's assets. The discount rate accounts for it.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10-18"
+ },
+ {
+  "id": "q10-042",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's NPV is +$12,000 when financing is left to the discount rate. An analyst who also subtracts the loan's after-tax interest from the cash flows reports −$30,000. Which interpretation is right?",
+  "options": [
+   "The −$30,000 is more conservative because it deducts interest, and is therefore correct",
+   "Both are correct; the sign depends on how the lender structures the loan",
+   "Only the −$30,000 captures the tax shield on interest, so it is the better figure",
+   "The −$30,000 double counts the cost of debt; the +$12,000 figure is the correct one"
+  ],
+  "answer": 3,
+  "explanation": "The discount rate already charges for the cost of capital, so removing interest from the cash flows and discounting gives the right NPV. Subtracting interest as well counts the cost of funds twice.",
+  "source": "generated",
+  "ref": "SM 10-18"
+ },
+ {
+  "id": "q10-043",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A negative impact on the cash flows of an existing product from introducing a new product is called _____.",
+  "options": [
+   "erosion",
+   "synergy",
+   "depreciation",
+   "recapture"
+  ],
+  "answer": 0,
+  "explanation": "Erosion is the effect of a new product on the cash flows of the firm's existing products.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-044",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "A project should always deduct the profit it takes from existing products, even if a competitor would have taken those sales anyway.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Erosion is relevant only when the sales would not otherwise be lost; if they would be lost anyway, the project does not change the cash flow.",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-045",
+  "concept": "c10-side-effects-financing",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Sunridge's new snack takes sales from an existing snack, costing $85,000 a year of pre-tax profit. The tax rate is 30%. What is the annual after-tax cash-flow effect of this erosion?",
+  "options": [
+   "−$85,000",
+   "−$59,500",
+   "−$25,500",
+   "$59,500"
+  ],
+  "answer": 1,
+  "explanation": "Lost profit is a pre-tax loss, so the after-tax effect is −85,000(1 − 0.30) = −$59,500. −$85,000 leaves it before tax; −$25,500 multiplies by T instead of (1 − T); $59,500 has the wrong sign (erosion lowers cash flow).",
+  "source": "generated",
+  "ref": "TB 10.2"
+ },
+ {
+  "id": "q10-046",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which pairing of cash-flow type and tax multiplier is correct?",
+  "options": [
+   "Revenues and expenses: both multiplied by T",
+   "Cash expenses and revenues: counted in full (× 1)",
+   "Capital expenditure and the change in NWC: counted in full (× 1)",
+   "CCA and sunk costs: multiplied by (1 − T)"
+  ],
+  "answer": 2,
+  "explanation": "CAPEX and NWC are cash moved through the balance sheet, counted at 100%. Revenues and cash expenses are × (1 − T) and CCA is × T.",
+  "source": "generated",
+  "ref": "L05B s10-14"
+ },
+ {
+  "id": "q10-047",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Which cash flows are multiplied by (1 − T) to find their after-tax effect?",
+  "options": [
+   "Sunk costs and allocated costs",
+   "CAPEX and changes in NWC",
+   "CCA only",
+   "Revenues and cash expenses"
+  ],
+  "answer": 3,
+  "explanation": "Each $1 of revenue attracts $T of tax, leaving (1 − T); each $1 of deductible expense saves $T of tax, so it costs (1 − T).",
+  "source": "generated",
+  "ref": "L05B s13"
+ },
+ {
+  "id": "q10-048",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A $20,000 delivery truck bought for a project falls into which category of cash flow?",
+  "options": [
+   "Counted in full (× 1): capital expenditure",
+   "× (1 − T): an expense",
+   "× T: a tax shield",
+   "× 0: a sunk cost"
+  ],
+  "answer": 0,
+  "explanation": "The purchase price is cash paid out of after-tax funds with no immediate tax effect, so it is counted at 100%. The tax relief arrives later as CCA.",
+  "source": "generated",
+  "ref": "L05B s12"
+ },
+ {
+  "id": "q10-049",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "The tax cash flows from selling a depreciated machine (recapture, terminal loss or capital gain) belong to which category?",
+  "options": [
+   "Revenue-type flows, multiplied by (1 − T)",
+   "Other tax flows, handled by the CF_AT formula",
+   "Tax shields, like CCA, multiplied by T",
+   "Capital expenditure, counted in full (× 1)"
+  ],
+  "answer": 1,
+  "explanation": "The fifth category is salvage with tax effects. It does not reduce to a simple multiplier; the sheet formula CF_AT = POD − T[min(ACB, POD) − UCC] − 0.5T max(POD − ACB, 0) is used.",
+  "source": "generated",
+  "ref": "L05B s10, s18"
+ },
+ {
+  "id": "q10-050",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Why is a $10,000 increase in cash expenses multiplied by (1 − T) while $10,000 of CCA is multiplied by T?",
+  "options": [
+   "Expenses are subject to tax, but CCA is exempt from tax, so the multiplier reverses",
+   "CCA is usually much smaller than cash expenses, so it is scaled down by T",
+   "The expense is cash paid, partly offset by tax saved; CCA involves no cash, so only the tax saved counts",
+   "Both are multiplied by T, but CCA is reported on a separate line of the income statement"
+  ],
+  "answer": 2,
+  "explanation": "A cash expense of $1 costs $1 but saves $T of tax, net (1 − T). CCA costs nothing in cash but still saves $T of tax, net T.",
+  "source": "generated",
+  "ref": "L05B s13-14"
+ },
+ {
+  "id": "q10-051",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of these items is NOT counted at 100% (× 1) in the analysis?",
+  "options": [
+   "Capital expenditure",
+   "An increase in net working capital",
+   "Recovery of net working capital at the end",
+   "Revenue"
+  ],
+  "answer": 3,
+  "explanation": "Revenue is taxed, so it is × (1 − T). CAPEX, ΔNWC and the NWC recovery are counted in full.",
+  "source": "generated",
+  "ref": "L05B s12-13"
+ },
+ {
+  "id": "q10-052",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is capital expenditure counted at 100% rather than at (1 − T)?",
+  "options": [
+   "It is cash paid from already-taxed funds with no immediate tax effect; tax relief comes later through CCA",
+   "Capital assets are exempt from tax, so no multiplier applies to their cost",
+   "CAPEX is a sunk cost, since the money is committed once the project is approved",
+   "The tax saving is received immediately as a full deduction in the year of purchase"
+  ],
+  "answer": 0,
+  "explanation": "The purchase price itself is not an expense, so it does not reduce tax when it is paid. It reduces tax gradually through CCA.",
+  "source": "generated",
+  "ref": "L05B s12"
+ },
+ {
+  "id": "q10-053",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "At T = 30%, which ordering shows the after-tax value of $1 of each item from smallest to largest?",
+  "options": [
+   "Sunk cost ($0) < revenue ($0.70) < CCA ($0.30) < CAPEX ($1.00)",
+   "Sunk cost ($0) < CCA ($0.30) < revenue ($0.70) < CAPEX ($1.00)",
+   "CCA ($0.30) < sunk cost ($0) < CAPEX ($1.00) < revenue ($0.70)",
+   "Sunk cost ($0) < CAPEX ($1.00) < CCA ($0.30) < revenue ($0.70)"
+  ],
+  "answer": 1,
+  "explanation": "Multipliers: sunk × 0, CCA × T = 0.30, revenue × (1 − T) = 0.70, CAPEX × 1.",
+  "source": "generated",
+  "ref": "L05B s10-14"
+ },
+ {
+  "id": "q10-054",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A dollar of additional revenue adds $(1 − T) to after-tax cash flow.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. The firm pays $T of tax on each extra dollar of revenue and keeps $(1 − T).",
+  "source": "generated",
+  "ref": "L05B s13"
+ },
+ {
+  "id": "q10-055",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "CCA is a cash flow that is multiplied by (1 − T).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. CCA is a non-cash deduction; its cash effect is the tax it saves, so it is multiplied by T.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-056",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Revenues and cash expenses are multiplied by _____ to get their after-tax effect.",
+  "options": [
+   "T",
+   "(1 + T)",
+   "(1 − T)",
+   "1"
+  ],
+  "answer": 2,
+  "explanation": "Each dollar of revenue or deductible expense changes tax by T, leaving (1 − T) of the pre-tax amount.",
+  "source": "generated",
+  "ref": "L05B s13"
+ },
+ {
+  "id": "q10-057",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "With T = 30%, what is the cash effect of $1 of CCA?",
+  "options": [
+   "+$0.70: a tax saving",
+   "−$0.30: a tax payment",
+   "$0: CCA is non-cash",
+   "+$0.30: a tax saving"
+  ],
+  "answer": 3,
+  "explanation": "CCA reduces taxable income by $1, which saves $0.30 of tax. It is a non-cash deduction but not a zero-cash item.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-058",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "For each of the following, determine the after-tax cash flow, assuming the tax rate is 30%: (a) an increase in sales revenue of $100,000.",
+  "answer": 70000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "100000*(1-0.3)",
+  "steps": [
+   {
+    "label": "After-tax revenue = 100,000 × (1 − T)",
+    "value": 70000.0,
+    "check": "100000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Revenue is category (c): multiply by (1 − T).",
+   "100,000 × (1 − 0.30) = $70,000"
+  ],
+  "keystrokes": [
+   "100000 × (1 − 0.3) = 70,000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-after-tax",
+    "label": "Left the revenue before tax",
+    "value": 100000.0,
+    "check": "100000",
+    "explain": "Extra revenue is taxed; only (1 − T) of it is kept."
+   },
+   {
+    "id": "wrong-multiplier",
+    "label": "Multiplied by T instead of (1 − T)",
+    "value": 30000.0,
+    "check": "100000*0.3",
+    "explain": "T is the tax paid; the after-tax amount is (1 − T)."
+   }
+  ],
+  "explanation": "Revenue is multiplied by (1 − T): $100,000 × 0.70 = $70,000.",
+  "source": "official",
+  "ref": "PRAC q11a"
+ },
+ {
+  "id": "q10-059",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "For each of the following, determine the after-tax cash flow, assuming the tax rate is 30%: (b) $150,000 spent last year on advertising the benefits of this project.",
+  "answer": 0.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "150000*0",
+  "steps": [
+   {
+    "label": "Sunk cost counted at zero",
+    "value": 0.0,
+    "check": "150000*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "The advertising was spent last year and cannot be changed by the decision: it is a sunk cost.",
+   "Sunk costs are multiplied by 0: after-tax cash flow = $0"
+  ],
+  "keystrokes": [
+   "Enter 0: the cost is sunk"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Treated the advertising as a cost after tax",
+    "value": -105000.0,
+    "check": "-150000*(1-0.3)",
+    "explain": "A sunk cost is not incremental, whatever its tax treatment."
+   },
+   {
+    "id": "counted-sunk-pretax",
+    "label": "Treated the advertising as a pre-tax outflow",
+    "value": -150000.0,
+    "check": "-150000",
+    "explain": "The money was spent last year; it is not changed by the decision."
+   }
+  ],
+  "explanation": "Sunk costs belong to category (a) and count at zero.",
+  "source": "official",
+  "ref": "PRAC q11b"
+ },
+ {
+  "id": "q10-060",
+  "concept": "c10-five-categories",
+  "also": [
+   "c10-capital-gain-cfat",
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "For each of the following, determine the after-tax cash flow, assuming the tax rate is 30%: (c) selling an asset for $197,000 which you had bought for $590,000 and had depreciated for tax purposes to an undeducted capital cost of $155,566.41.",
+  "answer": 184569.92,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "197000-0.3*(197000-155566.41)-0.5*0.3*0",
+  "steps": [
+   {
+    "label": "Recapture = min(ACB, POD) − UCC = 197,000 − 155,566.41",
+    "value": 41433.59,
+    "check": "197000-155566.41",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Capital gain = max(POD − ACB, 0) = max(197,000 − 590,000, 0)",
+    "value": 0.0,
+    "check": "0*197000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "CF_AT = POD − T × recapture − 0.5 × T × gain",
+    "value": 184569.92,
+    "check": "197000-0.3*(197000-155566.41)-0.5*0.3*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "POD = 197,000; ACB = 590,000; UCC = 155,566.41; T = 0.30",
+   "min(ACB, POD) = 197,000, so recapture = 197,000 − 155,566.41 = 41,433.59",
+   "POD is below ACB, so there is no capital gain: max(197,000 − 590,000, 0) = 0",
+   "CF_AT = 197,000 − 0.30(41,433.59) − 0.5(0.30)(0) = 197,000 − 12,430.08 = $184,569.92"
+  ],
+  "keystrokes": [
+   "197000 − 155566.41 = 41,433.59",
+   "× 0.3 = 12,430.08",
+   "197000 − 12430.08 = 184,569.92"
+  ],
+  "errors": [
+   {
+    "id": "recapture-full-pod",
+    "label": "Taxed the whole proceeds",
+    "value": 137900.0,
+    "check": "197000*(1-0.3)",
+    "explain": "Only the excess over UCC is recaptured, not the whole sale price."
+   },
+   {
+    "id": "acb-not-min",
+    "label": "Used ACB instead of min(ACB, POD) in the recapture",
+    "value": 66669.92,
+    "check": "197000-0.3*(590000-155566.41)",
+    "explain": "The sale price is below cost, so recapture cannot exceed POD − UCC."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Used POD − ACB as the tax base",
+    "value": 314900.0,
+    "check": "197000-0.3*(197000-590000)",
+    "explain": "POD − ACB is negative here, which wrongly creates a tax refund."
+   },
+   {
+    "id": "forgot-untax",
+    "label": "Ignored tax on the sale",
+    "value": 197000.0,
+    "check": "197000",
+    "explain": "The recapture of CCA is taxable income and must be taxed."
+   }
+  ],
+  "explanation": "The asset sold below its cost, so there is no capital gain; the only tax is on the recapture of CCA (POD − UCC).",
+  "source": "official",
+  "ref": "PRAC q11c; L05B s21"
+ },
+ {
+  "id": "q10-061",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "This year, Mid-Prairie Dairy's cheese project has revenue of $420,000, labour of $150,000, materials of $95,000 and CCA of $28,000. It also buys $200,000 of equipment and adds $18,000 to working capital this year, and a $25,000 study was paid earlier. The tax rate is 30%. What is the project's net after-tax cash flow for this year?",
+  "answer": -87100.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(420000-150000-95000)*(1-0.3)+0.3*28000-200000-18000",
+  "steps": [
+   {
+    "label": "Revenue less cash expenses, after tax (× (1 − T))",
+    "value": 122500.0,
+    "check": "(420000-150000-95000)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA tax shield (× T)",
+    "value": 8400.0,
+    "check": "0.3*28000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "CAPEX and ΔNWC (× 1)",
+    "value": -218000.0,
+    "check": "-(200000+18000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Net after-tax cash flow",
+    "value": -87100.0,
+    "check": "(420000-150000-95000)*(1-0.3)+0.3*28000-200000-18000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "Operating: (420,000 − 150,000 − 95,000)(1 − 0.30) = 175,000 × 0.70 = 122,500",
+   "CCA shield: 0.30 × 28,000 = 8,400",
+   "CAPEX and NWC counted in full: −200,000 − 18,000 = −218,000",
+   "The earlier study is sunk: 0",
+   "Net = 122,500 + 8,400 − 218,000 = −$87,100"
+  ],
+  "keystrokes": [
+   "175000 × 0.7 = 122,500",
+   "+ 0.3 × 28000 = 130,900",
+   "− 218000 = −87,100"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Deducted the sunk study",
+    "value": -104600.0,
+    "check": "(420000-150000-95000-25000)*(1-0.3)+0.3*28000-200000-18000",
+    "explain": "A study paid earlier is sunk and counts at zero."
+   },
+   {
+    "id": "taxed-capex",
+    "label": "Multiplied CAPEX by (1 − T)",
+    "value": -27100.0,
+    "check": "(420000-150000-95000)*(1-0.3)+0.3*28000-200000*(1-0.3)-18000",
+    "explain": "Capital expenditure is counted in full; its tax relief comes through CCA."
+   },
+   {
+    "id": "taxed-nwc",
+    "label": "Multiplied the NWC change by (1 − T)",
+    "value": -81700.0,
+    "check": "(420000-150000-95000)*(1-0.3)+0.3*28000-200000-18000*(1-0.3)",
+    "explain": "Changes in working capital are counted in full."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": -95500.0,
+    "check": "(420000-150000-95000)*(1-0.3)-200000-18000",
+    "explain": "CCA saves T × 28,000 of tax even though it is non-cash."
+   }
+  ],
+  "explanation": "Run each item through its category: expenses and revenue at (1 − T), CCA at T, CAPEX and NWC at 1, the sunk study at 0.",
+  "source": "generated",
+  "ref": "L05B s10-14; S5 s15-17"
+ },
+ {
+  "id": "q10-062",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project raises annual cash expenses by $64,000. The tax rate is 35%. What is the after-tax cash-flow effect each year?",
+  "options": [
+   "−$41,600",
+   "−$64,000",
+   "−$22,400",
+   "$41,600"
+  ],
+  "answer": 0,
+  "explanation": "A deductible expense costs (1 − T) of its amount: −64,000(1 − 0.35) = −$41,600. −$64,000 ignores the tax saving; −$22,400 multiplies by T instead of (1 − T); $41,600 has the wrong sign.",
+  "source": "generated",
+  "ref": "L05B s13"
+ },
+ {
+  "id": "q10-063",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In a year the firm claims $36,000 of CCA on a project asset. The tax rate is 30%. What is the cash effect of the CCA that year?",
+  "options": [
+   "$36,000",
+   "$10,800",
+   "$25,200",
+   "$0"
+  ],
+  "answer": 1,
+  "explanation": "CCA is non-cash, but it saves T × CCA of tax: 0.30 × 36,000 = $10,800. $36,000 counts the CCA itself as a cash inflow; $25,200 multiplies by (1 − T); $0 treats non-cash as no effect at all.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-064",
+  "concept": "c10-five-categories",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Gordon Gears' project has year-1 revenue of $200,000 and cash costs of $120,000. A $25,000 study was paid last year. The tax rate is 30%; ignore CCA and capital spending. What is the year-1 after-tax operating cash flow?",
+  "options": [
+   "$38,500",
+   "$80,000",
+   "$56,000",
+   "$20,000"
+  ],
+  "answer": 2,
+  "explanation": "Operating flow = (200,000 − 120,000)(1 − 0.30) = $56,000. $38,500 subtracts the sunk study; $80,000 is before tax; $20,000 taxes the revenue but not the deductible costs.",
+  "source": "generated",
+  "ref": "L05B s13"
+ },
+ {
+  "id": "q10-065",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Operating cash flow (OCF) for a project year is:",
+  "options": [
+   "net income minus depreciation",
+   "EBIT − taxes − capital expenditure",
+   "revenue minus total expenses including CCA",
+   "EBIT + depreciation (CCA) − taxes"
+  ],
+  "answer": 3,
+  "explanation": "OCF = EBIT + D − Tax: start from EBIT, add back the non-cash CCA and subtract the tax actually paid. Net income minus depreciation moves the wrong way; capital expenditure belongs to free cash flow, not OCF.",
+  "source": "generated",
+  "ref": "S5 s15; TB 10.5"
+ },
+ {
+  "id": "q10-066",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which expression equals OCF, where S is sales, C is cash costs, D is CCA and T is the tax rate?",
+  "options": [
+   "(S − C)(1 − T) + T × D",
+   "(S − C)(1 − T) + (1 − T) × D",
+   "(S − C)(1 − T) − T × D",
+   "(S − C − D)(1 − T)"
+  ],
+  "answer": 0,
+  "explanation": "After-tax operating profit is (S − C)(1 − T), and CCA adds a tax shield of T × D. The last option is net income, which omits the add-back of D.",
+  "source": "generated",
+  "ref": "S5 s15; SM 10-5"
+ },
+ {
+  "id": "q10-067",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An analyst computes OCF as net income plus CCA. This is the:",
+  "options": [
+   "top-down approach",
+   "bottom-up approach",
+   "tax-shield approach",
+   "free-cash-flow approach"
+  ],
+  "answer": 1,
+  "explanation": "Bottom-up starts from net income and adds back depreciation. Top-down is S − C − Tax; the tax-shield approach is (S − C)(1 − T) + T × D.",
+  "source": "generated",
+  "ref": "SM 10-5"
+ },
+ {
+  "id": "q10-068",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An analyst writes OCF = (S − C)(1 − T) + T × D. This is called the:",
+  "options": [
+   "bottom-up approach",
+   "top-down approach",
+   "tax-shield approach",
+   "stand-alone approach"
+  ],
+  "answer": 2,
+  "explanation": "The T × D term is the depreciation (CCA) tax shield, so this form is the tax-shield approach. All four forms give the same OCF.",
+  "source": "generated",
+  "ref": "S5 s15; SM 10-5"
+ },
+ {
+  "id": "q10-069",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a project's OCF differ from its free cash flow in the same year?",
+  "options": [
+   "FCF is OCF with the tax shield removed",
+   "FCF is OCF with interest added back",
+   "FCF includes CCA but OCF does not",
+   "FCF is OCF less CAPEX and the increase in NWC"
+  ],
+  "answer": 3,
+  "explanation": "OCF is the cash generated by operations. Free cash flow also subtracts the cash invested in assets (CAPEX) and in working capital: FCF = OCF − CAPEX − ΔNWC.",
+  "source": "generated",
+  "ref": "L05B s5; S5 s15"
+ },
+ {
+  "id": "q10-070",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following does NOT enter a project's operating cash flow?",
+  "options": [
+   "Interest paid on the project's financing",
+   "Sales revenue",
+   "Cash operating expenses",
+   "Income tax on EBIT"
+  ],
+  "answer": 0,
+  "explanation": "Interest is a financing cost and never appears in project cash flows. Revenue, cash expenses and the tax on EBIT are all part of OCF.",
+  "source": "generated",
+  "ref": "TB 10.5; SM 10-18"
+ },
+ {
+  "id": "q10-071",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is depreciation (CCA) added back when OCF is computed from EBIT?",
+  "options": [
+   "It is a tax payment that must be reversed to find cash",
+   "It is non-cash: it reduced EBIT but no cash left the firm",
+   "It is financed with debt, so its cash cost is already counted",
+   "It measures the fall in the asset's market value"
+  ],
+  "answer": 1,
+  "explanation": "CCA is subtracted to find taxable income, so EBIT is understated relative to cash. Adding it back recovers the cash, and the lower tax it caused is already in the Tax term.",
+  "source": "generated",
+  "ref": "S5 s15; SM 10-4"
+ },
+ {
+  "id": "q10-072",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Holding sales, costs and the tax rate (30%) fixed, CCA rises by $10,000. What happens to OCF?",
+  "options": [
+   "It rises by $10,000",
+   "It falls by $7,000",
+   "It rises by $3,000, because taxes fall by that amount",
+   "It is unchanged, because CCA is non-cash"
+  ],
+  "answer": 2,
+  "explanation": "In OCF = (S − C)(1 − T) + T × D, only the T × D term changes: 0.30 × 10,000 = $3,000. The extra CCA is non-cash but lowers the tax bill.",
+  "source": "generated",
+  "ref": "SM 10-4"
+ },
+ {
+  "id": "q10-073",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Interest expense is subtracted when computing a project's operating cash flow.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Interest is a financing cost; it is excluded from project OCF and the discount rate carries the cost of capital.",
+  "source": "generated",
+  "ref": "TB 10.5"
+ },
+ {
+  "id": "q10-074",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Starting from the same sales, costs, CCA and tax rate, the bottom-up form (NI + D) and the tax-shield form can give different OCF values.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. All the forms are algebraically identical: NI + D = (S − C − D)(1 − T) + D = (S − C)(1 − T) + T × D.",
+  "source": "generated",
+  "ref": "SM 10-5"
+ }
+]

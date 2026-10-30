@@ -73,9 +73,11 @@ with sync_playwright() as p:
     b = p.chromium.launch(args=["--disable-gpu"])
     ctx = b.new_context(viewport={"width": 1280, "height": 2600})
     pg = ctx.new_page()
-    pg.goto(BASE + "#/home", wait_until="load"); pg.wait_for_timeout(400)
-    if pg.locator("input[type=text]").count():
-        pg.fill("input[type=text]", "Audit"); pg.keyboard.press("Enter"); pg.wait_for_selector(".castra, .hq, .dash, .dashboard", timeout=15000)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from testlib import gate_create, cleanup, test_name
+    NAME = test_name("audit")
+    gate_create(pg, BASE, NAME); pg.wait_for_timeout(400)
+    pg.goto(BASE + "#/home", wait_until="load"); pg.wait_for_selector(".castra, .hq", timeout=15000)
     pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.state.settings.motion = false; a.store.flush(); a.applySettings(); }")
     results = []
     for theme in ["dark", "light"]:
@@ -95,12 +97,30 @@ with sync_playwright() as p:
             except Exception: pass
         audit_page(pg, f"{theme}_feedback_seals", results)
         # a lesson slide with a table
-        pg.goto(BASE + "#/learn/8/c08-plc-stages", wait_until="load"); pg.wait_for_timeout(500)
+        pg.goto(BASE + "#/learn/8/mark201-c08-plc-stages", wait_until="load"); pg.wait_for_timeout(500)
         for _ in range(3): pg.keyboard.press("ArrowRight"); pg.wait_for_timeout(250)
         audit_page(pg, f"{theme}_lesson_visual", results)
+        pg.goto(BASE + "#/dash", wait_until="load"); pg.wait_for_timeout(700); audit_page(pg, f"{theme}_forum", results)
+        pg.evaluate("window.__app.openCourse('fin201', '#/home')"); pg.wait_for_timeout(1500)
+        pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.state.settings.motion = false; a.store.flush(); a.applySettings(); }")
+        pg.goto(BASE + "#/learn/vault", wait_until="load"); pg.wait_for_timeout(500); audit_page(pg, f"{theme}_fin_vault", results)
+        first = pg.evaluate("window.__app.content.chapters[0].chapter")
+        pg.goto(BASE + f"#/learn/{first}", wait_until="load"); pg.wait_for_timeout(500); audit_page(pg, f"{theme}_fin_card", results)
+        pg.goto(BASE + "#/drill", wait_until="load"); pg.wait_for_timeout(300); audit_page(pg, f"{theme}_fin_drill_cfg", results)
+        pg.click("text=March out"); pg.wait_for_selector(".qcard, .intro-note", timeout=15000)
+        for _ in range(12):
+            if pg.locator(".num-in").count(): break
+            if pg.locator("text=Got it, quiz me").count(): pg.locator("text=Got it, quiz me").first.click(); pg.wait_for_timeout(150); continue
+            pg.keyboard.press("1"); pg.wait_for_timeout(120); pg.keyboard.press("Enter"); pg.wait_for_timeout(200)
+        audit_page(pg, f"{theme}_fin_numeric", results)
+        if pg.locator(".num-in").count():
+            pg.fill(".num-in", "1"); pg.keyboard.press("Enter"); pg.wait_for_timeout(300); audit_page(pg, f"{theme}_fin_numeric_feedback", results)
+        pg.evaluate("window.__app.openCourse('mark201', '#/home')"); pg.wait_for_timeout(1200)
+        pg.evaluate("() => { const a = window.__app; a.state.settings.briefings = false; a.state.settings.motion = false; a.store.flush(); a.applySettings(); }")
     b.close()
 fails = [r for r in results if not r["ok"]]
 with open(os.path.join(OUT, "report.json"), "w", encoding="utf-8") as fh: json.dump(results, fh, indent=1)
+print("cleanup:", cleanup(NAME))
 print(f"{len(results)} text elements checked, {len(fails)} below AA")
 by = {}
 for f in fails: by.setdefault(f["page"], []).append(f)

@@ -1,0 +1,741 @@
+{
+ "chapter": 11,
+ "title": "Project analysis and real options",
+ "topics": [
+  {
+   "id": "t11-1",
+   "order": 1,
+   "title": "Forecasting risk and what-if analysis",
+   "summary": "Every NPV rests on forecasts, and forecasts can be wrong. This topic gives you four tools for seeing how much a forecasting error could hurt: sensitivity analysis (one input at a time), scenario analysis (several inputs together), simulation (random inputs, look at the whole output distribution) and NPV break-even (how far an input can move before NPV hits zero).",
+   "concepts": [
+    "c11-forecasting-risk",
+    "c11-sensitivity",
+    "c11-scenario",
+    "c11-simulation",
+    "c11-npv-breakeven"
+   ]
+  },
+  {
+   "id": "t11-2",
+   "order": 2,
+   "title": "Break-even points and operating leverage",
+   "summary": "Break-even asks how many units we must sell. Cash break-even covers cash costs, accounting break-even also covers depreciation, and financial break-even also earns the required return (NPV = 0), so they always come in that order. Operating leverage then shows how strongly operating cash flow reacts to a change in sales volume.",
+   "concepts": [
+    "c11-cash-breakeven",
+    "c11-accounting-breakeven",
+    "c11-financial-breakeven",
+    "c11-dol"
+   ]
+  },
+  {
+   "id": "t11-3",
+   "order": 3,
+   "title": "Real options",
+   "summary": "A real option is the right, but not the obligation, to expand, abandon, wait or change production later, once we know more. Flexibility has value, so ignoring it understates NPV. Decision trees, working from right to left with probabilities and NPVs that are already discounted, put a number on that value.",
+   "concepts": [
+    "c11-real-options",
+    "c11-decision-trees",
+    "c11-abandonment-expansion"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "c11-forecasting-risk",
+   "topic": "t11-1",
+   "term": "Forecasting risk (estimation risk)",
+   "definition": "The risk that we make a bad investment decision because the projected cash flows are wrong, for example accepting a project that only looks like positive NPV because the forecasts were too optimistic.",
+   "explain": "Every NPV rests on forecasts of sales, price, costs and project life, and each forecast can be wrong. The danger is greatest for a new product with no history. The first line of defence is to ask what specific source of value makes the NPV positive; the what-if tools of this chapter then show how much damage an error would do.",
+   "example": "Prairie Paws Pet Foods computes NPV = +$420,000 for a new dog biscuit from a survey-based sales forecast. If real sales come in far below the survey the true NPV is negative, even though the arithmetic was perfect: the forecast, not the formula, was wrong.",
+   "contrast": "Forecasting risk is the danger (inputs that may be wrong); sensitivity, scenario, simulation and NPV break-even are the tools that measure it. It is not the market risk (σ, β) of Chapters 12-13 and not a spreadsheet typo.",
+   "trap": "A positive NPV does not prove value creation. Positive-NPV projects are rare in competitive markets, so a large NPV with no stated source of value is a warning sign. Cue words: new product, optimistic forecast, rivals will respond.",
+   "mnemonic": "Garbage in, garbage out: NPV is only as good as the forecast.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c11-sensitivity",
+   "topic": "t11-1",
+   "term": "Sensitivity analysis",
+   "definition": "Change one input at a time, hold every other input at its base-case value, recompute the NPV and measure ΔNPV/Δinput. With N inputs this takes 2N + 1 full DCF runs: one base case plus one up-run and one down-run per input.",
+   "explain": "It shows which single forecast NPV is most sensitive to, so we know where forecasting errors do the most damage. A steep ΔNPV/Δinput means a small error moves NPV a lot. NPV is a straight line in price, quantity and unit costs, so the slope is the same whichever second value you test. It points to the problem but gives no accept or reject rule.",
+   "example": "Boreal Coffee Roasters: line costs $360,000, 6 years, P = $14.00, v = $8.50, Q = 52,000, FC = $140,000, D = $60,000, T = 30%, R = 11%. OCF = [(14 − 8.5)(52,000) − 140,000](0.7) + 0.3(60,000) = $120,200.00 and NPV = $148,510.65. At P = $15 OCF = $156,600.00 and NPV = $302,502.23, so ΔNPV/ΔP = $153,991.58 per $1.",
+   "contrast": "Sensitivity flexes ONE input over a broad range (2N + 1 runs); scenario flexes SEVERAL inputs together (3 runs for base, best, worst); simulation draws all inputs at random; NPV break-even solves for the input value where NPV = 0.",
+   "trap": "ΔNPV needs the annuity factor (multiply the ΔOCF by it); price, quantity and cost changes are taxed, so use (1 − T), but the CCA shield T·D does not change. Compare inputs on the same percentage change, because a per-unit slope depends on the units.",
+   "mnemonic": "One at a time: 2N + 1.",
+   "formula": "ΔNPV/Δx = (NPV_new − NPV_base)/(x_new − x_base); number of runs = 2N + 1",
+   "given": false,
+   "archetypes": [
+    "A20"
+   ],
+   "weight": 3,
+   "figure": {
+    "type": "table",
+    "title": "The four what-if tools side by side",
+    "head": [
+     "Tool",
+     "What changes",
+     "Runs",
+     "What you learn",
+     "Limit"
+    ],
+    "rows": [
+     [
+      "Sensitivity",
+      "one input at a time, others at base",
+      "2N + 1",
+      "which input NPV reacts to most (ΔNPV/Δinput)",
+      "no decision rule; inputs do not really move alone"
+     ],
+     [
+      "Scenario",
+      "several inputs together (base, best, worst)",
+      "3, one per case",
+      "NPV in sensible cases and the size of the downside; not linear",
+      "few points; no probabilities unless added"
+     ],
+     [
+      "Simulation",
+      "all inputs at random from distributions",
+      "thousands",
+      "the whole NPV distribution (spread, skew, chance of NPV < 0)",
+      "needs distributions; no simple decision rule"
+     ],
+     [
+      "NPV break-even",
+      "one input, solved for NPV = 0",
+      "one equation",
+      "how far the input can move before the decision flips",
+      "one input only; says nothing about likelihood"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-scenario",
+   "topic": "t11-1",
+   "term": "Scenario analysis",
+   "definition": "Change several inputs together, in a sensible and consistent way, to build a few cases (typically base, best and worst) and compute the NPV of each. The results are not linear in the input changes because fixed costs do not scale with volume.",
+   "explain": "Best case: price and quantity up, variable and fixed costs down. Worst case: the reverse. It shows what can happen and how bad the downside is, but not how likely each case is: to get an expected NPV you must add probabilities (E[NPV] = Σ p × NPV). More and more scenarios only add possibilities, not a decision rule.",
+   "example": "Okotoks Trailer Works (outlay $900,000, 4 years, D = $225,000, T = 30%, R = 12%): base P = $2,400, v = $1,350, Q = 1,200, FC = $620,000 gives NPV = $665,753.59. Worst case (P and Q −10%, v and FC +10%): OCF = $100,400.00, NPV = −$595,050.13. Best case (P and Q +10%, v and FC −10%): NPV = $2,117,910.31.",
+   "contrast": "Scenario = a few hand-picked consistent combinations; sensitivity = one input at a time; simulation = thousands of random combinations. Scenarios give a handful of NPVs, simulation gives a distribution.",
+   "trap": "Best case means EVERY input moves the favourable way, so costs go DOWN; moving a cost the wrong way is the classic slip. A 10% favourable move in every input does not change NPV by 10%. Probabilities must sum to 1 before you weight the NPVs.",
+   "mnemonic": "Best = revenues up, costs down. Worst = the reverse.",
+   "formula": "E[NPV] = Σ p_s × NPV_s (Σ p_s = 1); OCF = [(P − v)Q − FC](1 − T) + T·D",
+   "given": false,
+   "archetypes": [
+    "A20"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c11-simulation",
+   "topic": "t11-1",
+   "term": "Simulation analysis",
+   "definition": "Let a computer draw every uncertain input at random from a chosen probability distribution, compute the NPV for each draw, repeat thousands of times and study the distribution of NPV (mean, spread, chance of NPV < 0), not only its expected value.",
+   "explain": "It combines scenario analysis (all inputs change) with sensitivity analysis (each input takes many values). The shape of the output matters: it will probably not be symmetrical and the baseline or expected value may not sit at the peak. It needs a distribution for every input and a view on how inputs move together, and it gives no simple decision rule.",
+   "example": "A rail terminal has eight uncertain inputs. The analyst assigns a distribution to each, runs 10,000 trials and finds a mean NPV of +$310,000 but a negative NPV in 35% of the trials. The mean alone would have hidden that chance of loss.",
+   "contrast": "Simulation is not scenario analysis (a few hand-picked cases) and not sensitivity analysis (one input at a time). Unlike NPV break-even it does not solve for a threshold: it describes the whole range of outcomes.",
+   "trap": "Do not answer \"the average NPV\" when the question asks about risk: the answer is the distribution. The simulated mean need not equal the base-case NPV. Independent draws can create unrealistic combinations if the inputs are related.",
+   "mnemonic": "Random in, whole distribution out.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c11-npv-breakeven",
+   "topic": "t11-1",
+   "term": "NPV break-even analysis",
+   "definition": "The level of one input (price, quantity, EBITDA, variable cost) at which NPV = 0, all other inputs at base: how far the input can change before the decision to accept would change. It is the finance break-even, not the accounting (profit = 0) break-even.",
+   "explain": "Write NPV = 0, replace the unknown input by a symbol and solve. Use an annuity factor for finite flows, a perpetuity for flows that never end, and include the CCA tax shield. Because EBITDA is pre-tax, the after-tax amount needed must be divided by (1 − T). At the break-even level IRR = R.",
+   "example": "Lecture plant: cost $1,000,000, CCA straight-line over 8 years (simplified), income forever, R = 10%, T = 30%. DTS = 0.3 × 1,000,000 ÷ 8 = $37,500 a year, PV = 37,500 × 5.334926 = $200,059.73. NPV = −1,000,000 + 200,059.73 + (0.7 ÷ 0.10) × EBITDA = 0, so EBITDA = $114,277.18.",
+   "contrast": "Sensitivity, scenario and simulation show how NPV moves; break-even asks where it hits zero. NPV (financial) break-even is higher than accounting break-even, because accounting profit ignores the required return.",
+   "trap": "Gross the answer up for tax (÷(1 − T)), divide by an annuity factor and not by N, keep the CCA shield in the equation, and use a perpetuity when the income is perpetual. Giving the accounting (profit) break-even is wrong.",
+   "mnemonic": "Set NPV = 0, solve for the one thing.",
+   "formula": "NPV = 0 ⇒ EBITDA* = [I0 − PV(DTS)] ÷ [(1 − T) × annuity factor (or 1/R for a perpetuity)]",
+   "given": false,
+   "archetypes": [
+    "A20"
+   ],
+   "weight": 3,
+   "figure": null
+  },
+  {
+   "id": "c11-cash-breakeven",
+   "topic": "t11-2",
+   "term": "Cash break-even",
+   "definition": "The sales quantity at which operating cash flow is zero: Q_C = FC/(P − v). Depreciation is non-cash, so it is not part of the cash break-even.",
+   "explain": "Each unit contributes P − v toward fixed cash costs. Below Q_C the project does not even cover its cash costs. At Q_C, OCF = 0, so the investment is never recovered: NPV = −I0, IRR = −100% and there is no payback. It is the lowest of the three break-evens.",
+   "example": "P = $24, v = $15, FC = $90,000: contribution = $9 per unit, so Q_C = 90,000 ÷ 9 = 10,000 units.",
+   "contrast": "Cash break-even leaves out depreciation; accounting break-even adds it (Q_A = (FC + D)/(P − v)); financial break-even adds the required return. Order: Q_C < Q_A < Q_F.",
+   "trap": "Do not add D to the cash break-even. The simple formula ignores tax; with taxes, setting OCF = 0 in Q = {FC + (OCF − T·D)/(1 − T)}/(P − v) can give a slightly lower figure because the CCA shield helps when income is negative.",
+   "mnemonic": "Cash first: cover the cash costs.",
+   "formula": "Q_C = FC/(P − v)",
+   "given": false,
+   "archetypes": [
+    "A21"
+   ],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c11-accounting-breakeven",
+   "topic": "t11-2",
+   "term": "Accounting break-even",
+   "definition": "The sales quantity at which net income is zero: Q_A = (FC + D)/(P − v). At Q_A, OCF = D and no tax is paid, so the tax rate drops out of the formula.",
+   "explain": "Each unit must cover variable cost, fixed cost and depreciation. Because profit is zero there, tax is zero, and Q_A is the same with or without taxes. At Q_A the project just recovers its investment over its life: IRR = 0%, payback = N years and NPV = I0[(1/N) × annuity factor − 1], which is negative.",
+   "example": "Same project, with a $225,000 outlay depreciated over 5 years (D = $45,000): Q_A = (90,000 + 45,000) ÷ 9 = 15,000 units. At R = 10% the NPV at Q_A is 225,000 × (3.790787 ÷ 5 − 1) = −$54,414.60.",
+   "contrast": "Accounting break-even makes profit zero (NI = 0); NPV or financial break-even makes NPV zero. Accounting is higher than cash (it adds D) and lower than financial (it ignores the required return).",
+   "trap": "Forgetting D in the numerator, grossing up for tax (not needed at Q_A), or treating Q_A as the point where the project creates value. At Q_A, OCF = D, so (FC + OCF)/(P − v) gives the same number.",
+   "mnemonic": "Accounting = cash + depreciation.",
+   "formula": "Q_A = (FC + D)/(P − v)",
+   "given": false,
+   "archetypes": [
+    "A21"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c11-financial-breakeven",
+   "topic": "t11-2",
+   "term": "Financial break-even",
+   "definition": "The sales quantity at which NPV = 0: Q_F = (FC + OCF*)/(P − v), where OCF* = I0 ÷ annuity factor(R, N) is the constant OCF that just repays the investment at the required return. With taxes, Q_F = {FC + (OCF* − T·D)/(1 − T)}/(P − v). At Q_F, IRR = R.",
+   "explain": "It is the break-even that matters to shareholders: a project can clear the cash and accounting break-evens and still sit below Q_F and lose value. First find OCF* from the annuity factor, then convert it to the quantity that produces it.",
+   "example": "Same project (I0 = $225,000, 5 years, R = 10%, FC = $90,000, P − v = $9): OCF* = 225,000 ÷ 3.790787 = $59,354.43. Ignoring tax Q_F = (90,000 + 59,354.43) ÷ 9 = 16,594.94 units. With T = 30% and D = $45,000: Q_F = {90,000 + (59,354.43 − 13,500) ÷ 0.7} ÷ 9 = 17,278.48 units.",
+   "contrast": "Q_C < Q_A < Q_F. OCF* uses the annuity factor (time value of money), whereas I0/N is the depreciation and leads back to the accounting break-even.",
+   "trap": "Using I0/N instead of the annuity factor; forgetting the T·D and ÷(1 − T) steps when taxes are present; assuming that a project above the accounting break-even must have positive NPV.",
+   "mnemonic": "Cash < Accounting < Financial.",
+   "formula": "OCF* = I0 ÷ annuity factor(R, N); Q_F = (FC + OCF*)/(P − v); with taxes Q = {FC + (OCF* − T·D)/(1 − T)}/(P − v)",
+   "given": false,
+   "archetypes": [
+    "A21"
+   ],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Cash vs accounting vs financial break-even",
+    "head": [
+     "Break-even",
+     "Formula",
+     "OCF at that level",
+     "NPV",
+     "IRR",
+     "Payback"
+    ],
+    "rows": [
+     [
+      "Cash",
+      "Q_C = FC/(P − v)",
+      "0",
+      "negative: −I0 (the whole outlay is lost)",
+      "−100%",
+      "never (cash flow is zero)"
+     ],
+     [
+      "Accounting",
+      "Q_A = (FC + D)/(P − v)",
+      "D (net income = 0)",
+      "negative: I0[(1/N) × annuity factor − 1]",
+      "0%",
+      "N years (the project's life)"
+     ],
+     [
+      "Financial",
+      "Q_F = (FC + OCF*)/(P − v), OCF* = I0 ÷ annuity factor",
+      "OCF* (the level that repays I0 at R)",
+      "zero",
+      "R (the required return)",
+      "less than N years"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-dol",
+   "topic": "t11-2",
+   "term": "Degree of operating leverage (DOL)",
+   "definition": "DOL = 1 + FC/OCF = %ΔOCF ÷ %ΔQ: the percentage change in operating cash flow for a 1% change in quantity sold. At the accounting break-even, OCF = D, so DOL = 1 + FC/D.",
+   "explain": "The more of the cost base is fixed, the more OCF swings when sales move, so high fixed costs mean high operating leverage and high forecasting risk. DOL is not constant: it falls as quantity rises (OCF grows) and rises as quantity falls.",
+   "example": "Ignoring tax with P − v = $9 and FC = $90,000: at Q = 20,000 OCF = 90,000, so DOL = 1 + 90,000 ÷ 90,000 = 2.0, and a 10% rise in Q (to 22,000) raises OCF by 20% (to 108,000). At Q_A = 15,000, OCF = D = 45,000 and DOL = 1 + 90,000 ÷ 45,000 = 3.0.",
+   "contrast": "DOL is a ratio of percentage changes, evaluated at one quantity; do not mix it up with the break-even quantities. Fixed costs are FC, without D, in the formula.",
+   "trap": "Putting FC + D in the numerator, using the wrong OCF (it must be the OCF at the current quantity), or applying the old DOL after quantity has changed. The solutions manual derives a tax-adjusted form, but the course formula is the simple one.",
+   "mnemonic": "More fixed cost per dollar of OCF, more leverage.",
+   "formula": "DOL = 1 + FC/OCF; %ΔOCF = DOL × %ΔQ; DOL at Q_A = 1 + FC/D",
+   "given": false,
+   "archetypes": [
+    "A21"
+   ],
+   "weight": 1,
+   "figure": null
+  },
+  {
+   "id": "c11-real-options",
+   "topic": "t11-3",
+   "term": "Real option",
+   "definition": "An option is the right, but not the obligation, to do something in the future, decided later with information not available today. A financial option is a right to buy or sell a financial asset; a real option is a right to undertake a business initiative (expand, abandon, wait, change production). We usually pay a premium up front for it.",
+   "explain": "We assume that when the decision time arrives we will make the best financial choice with the information then available. Because the right can be dropped when it is not worth using, an option never has negative value, so an NPV that ignores flexibility understates a project. Option pricing formulas are not examined here.",
+   "example": "Building the freeway bridges longer than needed costs extra now (the premium) but keeps the right to widen the road cheaply later if traffic is heavy. Car insurance is the lecture's everyday example of a put option.",
+   "contrast": "Option (right, free to walk away) vs obligation or forward (must act). Real option (business activity) vs financial option (security). Expansion, abandonment, timing and production flexibility are different kinds of real option.",
+   "trap": "Don't treat the project as a now-or-never choice when the firm can adapt later. The premium is paid up front and must be compared with the value of the option. Match the example to the type: bigger machine or extra space = expansion; early exit = abandonment.",
+   "mnemonic": "EATP: Expansion, Abandonment, Timing, Production flexibility.",
+   "formula": "",
+   "given": false,
+   "archetypes": [],
+   "weight": 2,
+   "figure": {
+    "type": "table",
+    "title": "Main types of real option",
+    "head": [
+     "Type",
+     "Idea",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Expansion",
+      "pay now for the right to grow later",
+      "buy a larger machine or extra space; build longer bridges so the freeway can be widened"
+     ],
+     [
+      "Abandonment",
+      "exit early if the project performs badly",
+      "shut down and sell the assets"
+     ],
+     [
+      "Timing",
+      "choose the best moment to act",
+      "pick the best time to replace a machine"
+     ],
+     [
+      "Production flexibility",
+      "change the rate or type of production",
+      "switch output as the market changes"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c11-decision-trees",
+   "topic": "t11-3",
+   "term": "Decision trees",
+   "definition": "A diagram of today's choices, uncertain events with their probabilities and later decisions. Roll it back from right to left: at a decision node keep the best branch, at a chance node take the probability-weighted average E = Σ p × NPV, and at today's node compare the expected values including up-front costs.",
+   "explain": "If the amounts on the tree are already NPVs (present values), no further discounting is needed. Choose at each later decision node before averaging at the earlier chance node, because we will pick the best action when we get there.",
+   "example": "Freeway bridges (lecture numbers in $M, all already NPVs; busy road 80%, quiet 20%). Short bridges cost 120. If the road is busy, widening means knocking them down (20), building long bridges (160) and widening the surface (40) = 220, worse than the 150 cost to society of not widening, so we do not widen: 120 + 150 = 270; if quiet, 120. Expected cost = 0.8 × 270 + 0.2 × 120 = 240. Long bridges cost 160: if busy, widen for 40 (better than 150), total 200; if quiet, 160. Expected cost = 0.8 × 200 + 0.2 × 160 = 192. Build long bridges (192 < 240): the 40 premium saves 150 − 40 = 110 in the busy state, worth 0.8 × 110 = 88.",
+   "contrast": "Decision node (we choose, take the best branch) vs chance node (nature chooses, take the weighted average). A tree with NPVs on it is not discounted again.",
+   "trap": "Averaging before deciding at a later node, forgetting to include the extra up-front cost of the flexible choice, discounting amounts that are already present values, or mixing costs (lower is better) with benefits (higher is better).",
+   "mnemonic": "Roll back: decide at squares, average at circles.",
+   "formula": "E = Σ p_i × NPV_i (chance node); value of a decision node = best branch",
+   "given": false,
+   "archetypes": [
+    "A22"
+   ],
+   "weight": 2,
+   "figure": null
+  },
+  {
+   "id": "c11-abandonment-expansion",
+   "topic": "t11-3",
+   "term": "Abandonment and expansion options",
+   "definition": "The abandonment option is the right to shut down or sell a project's assets if it does badly: abandon when the abandonment (salvage or resale) value exceeds the PV of continuing. The expansion option is the right to scale up if it does well; its value is the probability of that outcome times the PV of the extra gain, discounted to today.",
+   "explain": "Abandonment limits the losses, so ignoring it underestimates NPV. The abandonment value is also the opportunity cost of continuing. Expansion adds value only in the good state, so weight it by the probability of that state and discount it back.",
+   "example": "A project's year-1 value is $9.0M if demand is high (50%) and only $1.5M if low (50%), but the assets can be sold for $2.4M. With the option: 0.5 × 9.0 + 0.5 × 2.4 = $5.70M; without: 0.5 × 9.0 + 0.5 × 1.5 = $5.25M. The option is worth $0.45M at year 1, or 0.45 ÷ 1.12 = $0.40M today at R = 12%.",
+   "contrast": "Abandonment helps in the bad state (floor on value); expansion helps in the good state (upside). Both are real options, and both raise NPV above the static value.",
+   "trap": "Compare the abandonment value with the PV of continuing at that date; do not average before deciding. Subtract the extra up-front cost of buying the flexibility, and discount an option value that arises in a later year.",
+   "mnemonic": "Abandon when continuing is worth less than selling.",
+   "formula": "Abandon if salvage > PV(continuing); option value = value with option − value without option; expansion value = p × gain ÷ (1 + R)",
+   "given": false,
+   "archetypes": [
+    "A22"
+   ],
+   "weight": 2,
+   "figure": null
+  }
+ ],
+ "activities": [
+  {
+   "id": "a11-01",
+   "type": "order",
+   "concept": "c11-sensitivity",
+   "title": "Order the steps of a sensitivity analysis",
+   "prompt": "Put the steps of a sensitivity analysis in the correct order.",
+   "items": [
+    "Compute the base-case NPV with every input at its expected value",
+    "Choose one input and change it, holding all other inputs at base values",
+    "Recompute the full DCF (OCF, then NPV) with the new input value",
+    "Form ΔNPV/Δinput = (NPV_new − NPV_base)/(input_new − input_base)",
+    "Repeat for every input and compare which slope is steepest"
+   ],
+   "explanation": "Sensitivity analysis flexes one input at a time around the base case. The slope ΔNPV/Δinput is computed for each input in turn, and the steepest slope marks the forecast whose error does the most damage. With N inputs this is 2N + 1 runs."
+  },
+  {
+   "id": "a11-02",
+   "type": "sort",
+   "concept": "c11-scenario",
+   "title": "Sort the what-if techniques",
+   "prompt": "Drag each description to the technique it describes.",
+   "buckets": [
+    "Sensitivity analysis",
+    "Scenario analysis",
+    "Simulation analysis",
+    "NPV break-even"
+   ],
+   "items": [
+    {
+     "text": "Changes only the unit price and recomputes NPV",
+     "bucket": 0
+    },
+    {
+     "text": "Needs 2N + 1 full DCF runs for N inputs",
+     "bucket": 0
+    },
+    {
+     "text": "Gives ΔNPV/Δinput for each input in turn",
+     "bucket": 0
+    },
+    {
+     "text": "Best, base and worst cases",
+     "bucket": 1
+    },
+    {
+     "text": "Sales up 10% and costs up 8% together as one sensible story",
+     "bucket": 1
+    },
+    {
+     "text": "Results are not linear because fixed costs do not scale with volume",
+     "bucket": 1
+    },
+    {
+     "text": "Draws every input at random from a chosen distribution",
+     "bucket": 2
+    },
+    {
+     "text": "Repeats thousands of times and studies the shape of the NPV output",
+     "bucket": 2
+    },
+    {
+     "text": "The expected value may not sit at the peak of the output distribution",
+     "bucket": 2
+    },
+    {
+     "text": "Solves NPV = 0 for one input",
+     "bucket": 3
+    },
+    {
+     "text": "Answers how far the price can fall before we would reject the project",
+     "bucket": 3
+    },
+    {
+     "text": "The finance counterpart of the accounting (profit) break-even",
+     "bucket": 3
+    }
+   ],
+   "explanation": "Sensitivity = one input at a time. Scenario = several inputs together in a consistent story. Simulation = random draws and the whole output distribution. NPV break-even = solve for the input that makes NPV zero."
+  },
+  {
+   "id": "a11-03",
+   "type": "match",
+   "concept": "c11-real-options",
+   "title": "Match the real option to its example",
+   "prompt": "Match each kind of real option with the example that illustrates it.",
+   "pairs": [
+    {
+     "left": "Expansion option",
+     "right": "Building longer bridges now so the freeway can be widened cheaply later"
+    },
+    {
+     "left": "Abandonment option",
+     "right": "Shutting down a poor project early and selling its assets"
+    },
+    {
+     "left": "Timing option",
+     "right": "Choosing the best moment to replace a machine"
+    },
+    {
+     "left": "Production flexibility",
+     "right": "Changing the rate or type of output as the market changes"
+    },
+    {
+     "left": "Option premium",
+     "right": "The amount paid up front for the right, like the premium on a car insurance policy"
+    },
+    {
+     "left": "Real option",
+     "right": "A right to undertake a business initiative in the future"
+    }
+   ],
+   "explanation": "The lecture's four main types are expansion, abandonment, timing and production flexibility. The premium is paid up front for the right, and a real option concerns a business activity rather than a security."
+  },
+  {
+   "id": "a11-04",
+   "type": "match",
+   "concept": "c11-financial-breakeven",
+   "title": "Match the break-even to its formula",
+   "prompt": "Match each term with its formula or meaning.",
+   "pairs": [
+    {
+     "left": "Cash break-even (OCF = 0)",
+     "right": "Q_C = FC/(P − v)"
+    },
+    {
+     "left": "Accounting break-even (net income = 0)",
+     "right": "Q_A = (FC + D)/(P − v)"
+    },
+    {
+     "left": "Financial break-even (NPV = 0)",
+     "right": "Q_F = (FC + OCF*)/(P − v)"
+    },
+    {
+     "left": "OCF*",
+     "right": "I0 ÷ annuity factor(R, N)"
+    },
+    {
+     "left": "Degree of operating leverage",
+     "right": "DOL = 1 + FC/OCF"
+    }
+   ],
+   "explanation": "Each break-even adds one layer: cash costs, then depreciation, then the required return. OCF* is the level of operating cash flow that repays the outlay at the required return, and DOL measures how strongly OCF reacts to a change in quantity."
+  },
+  {
+   "id": "a11-05",
+   "type": "order",
+   "concept": "c11-decision-trees",
+   "title": "Roll back a decision tree",
+   "prompt": "Put the steps for solving a decision tree in the correct order.",
+   "items": [
+    "Lay out today's choices, the uncertain events with their probabilities and the later decisions",
+    "Write the NPV (already discounted) at the end of every branch",
+    "Start at the far right and, at each later decision node, keep the better branch",
+    "At each chance node take the probability-weighted average of the values to its right",
+    "At today's decision node compare the expected values, including the up-front costs, and choose"
+   ],
+   "explanation": "A tree is solved from right to left. We decide at the later nodes first (we will pick the best action when we get there) and only then average over the uncertain events. Averaging before deciding is the classic error."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "f11-ocf",
+   "name": "Operating cash flow (tax shield form)",
+   "formula": "OCF = [(P − v)Q − FC](1 − T) + T·D",
+   "given": false,
+   "concepts": [
+    "c11-sensitivity",
+    "c11-scenario",
+    "c11-npv-breakeven"
+   ],
+   "when": "Recompute the yearly cash flow each time an input in a what-if analysis changes.",
+   "trap": "The CCA shield T·D does not change when price, quantity or costs change; interest never appears."
+  },
+  {
+   "id": "f11-sens-slope",
+   "name": "Sensitivity of NPV to an input",
+   "formula": "ΔNPV/Δx = (NPV_new − NPV_base)/(x_new − x_base)",
+   "given": false,
+   "concepts": [
+    "c11-sensitivity"
+   ],
+   "when": "Measure how much NPV moves per unit change in one input, all others at base.",
+   "trap": "Use NPV, not OCF (multiply a ΔOCF by the annuity factor), and compare inputs on equal percentage changes."
+  },
+  {
+   "id": "f11-sens-runs",
+   "name": "Runs in a sensitivity analysis",
+   "formula": "number of DCF runs = 2N + 1",
+   "given": false,
+   "concepts": [
+    "c11-sensitivity",
+    "c11-scenario"
+   ],
+   "when": "Count the work for N uncertain inputs (base + up + down for each).",
+   "trap": "A scenario analysis needs only one run per case (3 for base, best, worst), however many inputs there are."
+  },
+  {
+   "id": "f11-expected-npv",
+   "name": "Expected NPV across scenarios",
+   "formula": "E[NPV] = Σ p_s × NPV_s",
+   "given": false,
+   "concepts": [
+    "c11-scenario",
+    "c11-decision-trees"
+   ],
+   "when": "Weight scenario or branch NPVs by their probabilities.",
+   "trap": "Probabilities must sum to 1; a simple average is only right for equally likely cases."
+  },
+  {
+   "id": "f11-annuity",
+   "name": "Annuity factor",
+   "formula": "AF(R, N) = [1 − (1 + R)^−N] ÷ R",
+   "given": true,
+   "concepts": [
+    "c11-npv-breakeven",
+    "c11-financial-breakeven"
+   ],
+   "when": "Value a level cash flow for N years, e.g. the DTS or the required OCF*.",
+   "trap": "Use the project's N (not N − 1) and the same period for R."
+  },
+  {
+   "id": "f11-perpetuity",
+   "name": "Perpetuity",
+   "formula": "PV = C ÷ R",
+   "given": true,
+   "concepts": [
+    "c11-npv-breakeven"
+   ],
+   "when": "Value income that continues forever.",
+   "trap": "After-tax income is (1 − T) × EBITDA; the perpetuity is not a growing one unless told."
+  },
+  {
+   "id": "f11-npv-be",
+   "name": "NPV break-even (plant with DTS annuity and perpetual income)",
+   "formula": "−I0 + DTS × AF(R, N) + (1 − T) × EBITDA ÷ R = 0, so EBITDA* = [I0 − DTS × AF(R, N)] × R ÷ (1 − T)",
+   "given": false,
+   "concepts": [
+    "c11-npv-breakeven"
+   ],
+   "when": "Find the pre-tax income that makes NPV exactly zero.",
+   "trap": "Divide by (1 − T) to get pre-tax, and use the annuity factor for the shield, not 1/R."
+  },
+  {
+   "id": "f11-pvcca",
+   "name": "PV of the CCA tax shield",
+   "formula": "PV_CCA = (I0 d T_C)/(k + d) × {1, (1 + 0.5k)/(1 + k), (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d) × 1/(1 + k)^N",
+   "given": true,
+   "concepts": [
+    "c11-npv-breakeven"
+   ],
+   "when": "Put the whole tax shield into one PV inside a break-even equation.",
+   "trap": "Choose the right first-year factor (half-year rule: (1 + 0.5k)/(1 + k)) and discount the salvage term N years."
+  },
+  {
+   "id": "f11-qc",
+   "name": "Cash break-even quantity",
+   "formula": "Q_C = FC/(P − v)",
+   "given": false,
+   "concepts": [
+    "c11-cash-breakeven"
+   ],
+   "when": "Sales level at which operating cash flow is zero.",
+   "trap": "Depreciation is not included."
+  },
+  {
+   "id": "f11-qa",
+   "name": "Accounting break-even quantity",
+   "formula": "Q_A = (FC + D)/(P − v)",
+   "given": false,
+   "concepts": [
+    "c11-accounting-breakeven"
+   ],
+   "when": "Sales level at which net income is zero.",
+   "trap": "Tax drops out because profit is zero; at Q_A, OCF = D."
+  },
+  {
+   "id": "f11-ocfstar",
+   "name": "Financial break-even OCF",
+   "formula": "OCF* = I0 ÷ AF(R, N)",
+   "given": false,
+   "concepts": [
+    "c11-financial-breakeven"
+   ],
+   "when": "Constant OCF that gives NPV = 0.",
+   "trap": "I0/N is just the depreciation and leads back to the accounting break-even."
+  },
+  {
+   "id": "f11-qf",
+   "name": "Financial break-even quantity",
+   "formula": "Q_F = (FC + OCF*)/(P − v)",
+   "given": false,
+   "concepts": [
+    "c11-financial-breakeven"
+   ],
+   "when": "Sales level at which NPV = 0 (no taxes).",
+   "trap": "Order: Q_C < Q_A < Q_F."
+  },
+  {
+   "id": "f11-qf-tax",
+   "name": "Break-even quantity with taxes",
+   "formula": "Q = {FC + (OCF − T·D)/(1 − T)}/(P − v)",
+   "given": false,
+   "concepts": [
+    "c11-financial-breakeven",
+    "c11-cash-breakeven"
+   ],
+   "when": "Quantity that produces a given OCF when the firm pays tax (OCF = OCF* for financial break-even).",
+   "trap": "Convert the OCF target to a pre-tax amount: subtract T·D first, then divide by (1 − T)."
+  },
+  {
+   "id": "f11-npv-qa",
+   "name": "NPV at the accounting break-even",
+   "formula": "NPV = I0 × [(1/N) × AF(R, N) − 1]",
+   "given": false,
+   "concepts": [
+    "c11-accounting-breakeven",
+    "c11-financial-breakeven"
+   ],
+   "when": "Show that the accounting break-even loses value (IRR 0%, payback N years).",
+   "trap": "NPV is negative whenever R > 0."
+  },
+  {
+   "id": "f11-dol",
+   "name": "Degree of operating leverage",
+   "formula": "DOL = 1 + FC/OCF",
+   "given": false,
+   "concepts": [
+    "c11-dol"
+   ],
+   "when": "Measure how much OCF moves per 1% change in quantity.",
+   "trap": "Use FC without D; DOL changes with Q."
+  },
+  {
+   "id": "f11-dol-pct",
+   "name": "OCF response to a change in quantity",
+   "formula": "%ΔOCF = DOL × %ΔQ",
+   "given": false,
+   "concepts": [
+    "c11-dol"
+   ],
+   "when": "Forecast the new OCF from a percentage change in sales.",
+   "trap": "Compute the new DOL from the new OCF, not the old one."
+  },
+  {
+   "id": "f11-dol-qa",
+   "name": "DOL at the accounting break-even",
+   "formula": "DOL = 1 + FC/D",
+   "given": false,
+   "concepts": [
+    "c11-dol",
+    "c11-accounting-breakeven"
+   ],
+   "when": "Leverage at the point where net income is zero (OCF = D).",
+   "trap": "Only valid at Q_A."
+  },
+  {
+   "id": "f11-abandon",
+   "name": "Abandonment rule and option value",
+   "formula": "Abandon if salvage > PV(continuing); option value = value with option − value without option",
+   "given": false,
+   "concepts": [
+    "c11-abandonment-expansion",
+    "c11-real-options"
+   ],
+   "when": "Decide whether to shut a project down and value the flexibility.",
+   "trap": "Compare at the decision date and discount the option value back to today."
+  },
+  {
+   "id": "f11-expansion",
+   "name": "Value of an expansion option",
+   "formula": "value = p(success) × gain ÷ (1 + R)",
+   "given": false,
+   "concepts": [
+    "c11-abandonment-expansion"
+   ],
+   "when": "Value the right to expand when the good state has probability p.",
+   "trap": "The gain arises only in the good state and lies in a later year, so discount it."
+  }
+ ]
+}

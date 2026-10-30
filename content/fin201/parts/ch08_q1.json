@@ -1,0 +1,1331 @@
+[
+ {
+  "id": "q08-001",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which expression gives the holding period return r_E on a share bought at P0, when the share pays D1 and is worth P1 at the end of the period?",
+  "options": [
+   "(P1 + D1)/P1 − 1",
+   "(P1 + D1)/P0",
+   "(P1 − P0)/P0",
+   "(P1 + D1)/P0 − 1"
+  ],
+  "answer": 3,
+  "explanation": "r_E = (P1 + D1)/P0 − 1: everything you receive at the end (price plus dividend) over what you paid at the start, minus 1. Dividing by P1 measures return per dollar at the end, and dropping the −1 gives the growth factor, not the return. (P1 − P0)/P0 is only the capital gain yield: it leaves out the dividend.",
+  "source": "generated",
+  "ref": "L04 s6-7"
+ },
+ {
+  "id": "q08-002",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Maple Ridge Foods stock was bought at $52.00, paid a $1.30 dividend over the year and was sold at $55.00. The figure ($55.00 − $52.00)/$52.00 = 5.77% is the:",
+  "options": [
+   "required return R",
+   "capital gain yield",
+   "total holding period return",
+   "dividend yield"
+  ],
+  "answer": 1,
+  "explanation": "The price change over the price paid, (P1 − P0)/P0, is the capital gain yield. The dividend yield is D1/P0 = 1.30/52.00 = 2.50%, and the total holding period return is their sum, 8.27%.",
+  "source": "generated",
+  "ref": "L04 s7"
+ },
+ {
+  "id": "q08-003",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "In r_E = (P1 + D1)/P0 − 1, the dividend yield is D1 divided by _____.",
+  "options": [
+   "P0, the price paid at the start",
+   "D0, last year's dividend",
+   "EPS1, next year's earnings",
+   "P1, the price at the end"
+  ],
+  "answer": 0,
+  "explanation": "A return is per dollar invested, and the dollars invested are the price paid at the start, P0. So dividend yield = D1/P0 and capital gain yield = (P1 − P0)/P0 share the same denominator, which is why they add to r_E.",
+  "source": "generated",
+  "ref": "L04 s7; FS p1"
+ },
+ {
+  "id": "q08-004",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts a stock's holding period return with its required return R?",
+  "options": [
+   "The HPR counts only the dividends received in the period; R counts only the change in the share price over the period.",
+   "The HPR must be measured over exactly one year; R can be measured over any period the investor chooses.",
+   "The HPR is what a holder actually earns from price change and dividends over a period; R is the rate investors demand for the stock's risk.",
+   "The HPR is the discount rate used in the Gordon growth model; R is the return a holder actually realised over the period."
+  ],
+  "answer": 2,
+  "explanation": "r_E is computed from observed (or forecast) prices and dividends; R is the opportunity cost of capital that goes in the denominator of valuation formulas. The slides stress that a holding period need not be a year, so a claim that the HPR must be annual is wrong.",
+  "source": "generated",
+  "ref": "L04 s6; TB 8.1"
+ },
+ {
+  "id": "q08-005",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are part of a stock's holding period return EXCEPT:",
+  "options": [
+   "the P/E ratio at the end of the period",
+   "the dividend yield D1/P0",
+   "the dividends received during the period",
+   "the capital gain yield (P1 − P0)/P0"
+  ],
+  "answer": 0,
+  "explanation": "r_E = capital gain yield + dividend yield. The P/E ratio is a valuation multiple that may help forecast P1, but it is not a component of the return itself.",
+  "source": "generated",
+  "ref": "L04 s7"
+ },
+ {
+  "id": "q08-006",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the dividend yield in a holding period return measured as D1/P0 rather than D1/P1?",
+  "options": [
+   "Because P1 is uncertain, so analysts avoid using it in return calculations altogether.",
+   "Because tax rules require the beginning price to be used when reporting dividend income.",
+   "A return is per dollar invested, and the dollars invested are the price paid at the start, P0.",
+   "Because dividends are normally paid at the very start of the holding period, before the price moves."
+  ],
+  "answer": 2,
+  "explanation": "The return on any investment is gain divided by the amount put in. The investor put in P0, so both the dividend and the price change are scaled by P0. Dividing by P1 would measure return per dollar of ending value, which no one invested.",
+  "source": "generated",
+  "ref": "L04 s6-7; TB 12.1"
+ },
+ {
+  "id": "q08-007",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A stock's holding period return for the year was −3.5% and its dividend yield was 2.0%. What does this tell you about the price?",
+  "options": [
+   "The capital gain yield was −1.5%, so the price fell only slightly and the dividend nearly covered it.",
+   "The capital gain yield was −3.5%, and the dividend was not paid during the year.",
+   "The price was unchanged, and the dividend was cut to zero during the year.",
+   "The capital gain yield was −5.5%: the price fell by more than the dividend made up."
+  ],
+  "answer": 3,
+  "explanation": "r_E = capital gain yield + dividend yield, so capital gain yield = −3.5% − 2.0% = −5.5%. Adding the two (−3.5% + 2.0% = −1.5%) applies the identity backwards.",
+  "source": "generated",
+  "ref": "SM 12-3"
+ },
+ {
+  "id": "q08-008",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "A share whose price is the same at the end of the year as at the start, and which paid a dividend during the year, has a holding period return of zero.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "With P1 = P0 the capital gain yield is zero, but r_E still equals the dividend yield D1/P0, which is positive. Only a share with no price change AND no dividend has a zero return.",
+  "source": "generated",
+  "ref": "L04 s7"
+ },
+ {
+  "id": "q08-009",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A share can have a negative holding period return in a year in which it pays a dividend.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "If the price falls by more than the dividend yield, the capital loss outweighs the dividend. SM 12-3 shows −8.29% with a 1.84% dividend yield.",
+  "source": "generated",
+  "ref": "SM 12-3"
+ },
+ {
+  "id": "q08-010",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "North Peace Pipelines shares were bought at $38.40. One year later they trade at $41.15 after the company paid $1.76 per share in dividends during the year. What was the holding period return for the year? Answer in % for the period.",
+  "answer": 11.74,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((41.15+1.76)/38.4-1)*100",
+  "steps": [
+   {
+    "label": "Capital gain yield (P1 − P0)/P0",
+    "value": 7.1615,
+    "check": "(41.15-38.4)/38.4*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Dividend yield D1/P0",
+    "value": 4.5833,
+    "check": "1.76/38.4*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Holding period return r_E",
+    "value": 11.7448,
+    "check": "((41.15+1.76)/38.4-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Capital gain yield = (P1 − P0)/P0 = (41.15 − 38.40)/38.40 = 7.1615%",
+   "Dividend yield = D1/P0 = 1.76/38.40 = 4.5833%",
+   "r_E = (P1 + D1)/P0 − 1 = (41.15 + 1.76)/38.40 − 1 = 11.7448% ≈ 11.74%"
+  ],
+  "keystrokes": [
+   "(41.15 + 1.76) ÷ 38.40 − 1 = 0.117448",
+   "× 100 = 11.74%"
+  ],
+  "errors": [
+   {
+    "id": "div-by-p1",
+    "label": "Divided by the ending price P1",
+    "value": 10.96,
+    "check": "((41.15-38.4+1.76)/41.15)*100",
+    "explain": "The return is per dollar invested at the start, so the denominator is P0, not P1."
+   },
+   {
+    "id": "omitted-dividend",
+    "label": "Left out the dividend",
+    "value": 7.16,
+    "check": "(41.15-38.4)/38.4*100",
+    "explain": "That is only the capital gain yield; the holder also received the dividend."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1",
+    "value": 111.74,
+    "check": "(41.15+1.76)/38.4*100",
+    "explain": "(P1 + D1)/P0 is the growth factor 1.1174; the return subtracts the dollar you started with."
+   }
+  ],
+  "explanation": "Holding period return = capital gain yield + dividend yield, both over P0. Dividing by P1 is the most common slip.",
+  "source": "generated",
+  "ref": "SM 12-1; L04 s7"
+ },
+ {
+  "id": "q08-011",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Nova Grid Utilities shares cost $64.00. A year later the price is $58.20 after a $2.10 dividend was paid during the year. What was the holding period return? Answer in % (a loss is negative).",
+  "answer": -5.78,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((58.2+2.1)/64.0-1)*100",
+  "steps": [
+   {
+    "label": "Capital gain yield",
+    "value": -9.0625,
+    "check": "(58.2-64.0)/64.0*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Dividend yield",
+    "value": 3.2812,
+    "check": "2.1/64.0*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Holding period return",
+    "value": -5.7812,
+    "check": "((58.2+2.1)/64.0-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Capital gain yield = (58.20 − 64.00)/64.00 = −9.0625%",
+   "Dividend yield = 2.10/64.00 = 3.2812%",
+   "r_E = −9.0625% + 3.2812% = −5.7812% ≈ −5.78%"
+  ],
+  "keystrokes": [
+   "(58.20 + 2.10) ÷ 64.00 − 1 = -0.057812"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Ignored the dividend",
+    "value": -9.06,
+    "check": "(58.2-64.0)/64.0*100",
+    "explain": "The dividend cushions the loss: the holder gets 3.28% back in cash."
+   },
+   {
+    "id": "dividend-sign",
+    "label": "Subtracted the dividend",
+    "value": -12.34,
+    "check": "((58.2-2.1)/64.0-1)*100",
+    "explain": "A dividend received adds to the return; it is not a cost."
+   },
+   {
+    "id": "div-by-p1",
+    "label": "Divided by P1",
+    "value": -6.36,
+    "check": "((58.2-64.0+2.1)/58.2)*100",
+    "explain": "Return is per dollar invested at the start: divide by P0."
+   }
+  ],
+  "explanation": "A loss year is still total return = capital gain yield + dividend yield; the dividend reduces the loss from −9.06% to −5.78%.",
+  "source": "generated",
+  "ref": "SM 12-3"
+ },
+ {
+  "id": "q08-012",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Granite Telecom trades at $30.00 and is expected to pay a $1.50 dividend over the next year. You want a holding period return of 12% for the year. What price P1 must the share reach at the end of the year? Answer in $.",
+  "answer": 32.1,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "30.0*(1+0.12)-1.5",
+  "steps": [
+   {
+    "label": "Total value needed at year end P0(1 + r)",
+    "value": 33.6,
+    "check": "30.0*(1+0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Required price P1 = P0(1 + r) − D1",
+    "value": 32.1,
+    "check": "30.0*(1+0.12)-1.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "r_E = (P1 + D1)/P0 − 1  →  P1 = P0(1 + r_E) − D1",
+   "P1 = 30.00(1 + 0.12) − 1.50 = 33.60 − 1.50 = 32.10"
+  ],
+  "keystrokes": [
+   "30.00 × 1.12 = 33.60",
+   "− 1.50 = 32.10"
+  ],
+  "errors": [
+   {
+    "id": "omitted-dividend",
+    "label": "Ignored the dividend",
+    "value": 33.6,
+    "check": "30.0*(1+0.12)",
+    "explain": "The dividend supplies part of the 12%, so the price needs to rise less."
+   },
+   {
+    "id": "dividend-sign",
+    "label": "Added the dividend",
+    "value": 35.1,
+    "check": "30.0*(1+0.12)+1.5",
+    "explain": "Total value needed = P1 + D1, so P1 = total − D1, not total + D1."
+   }
+  ],
+  "explanation": "Rearrange r_E = (P1 + D1)/P0 − 1 for P1. The required total of $33.60 is made up of the dividend and the price.",
+  "source": "generated",
+  "ref": "SM 12-1; L04 s7"
+ },
+ {
+  "id": "q08-013",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A dividend fund share was bought at $20.00. Six months later it paid a $0.35 dividend and was worth $20.90. If it earns the same six-month holding period return every half-year, what effective annual return does that imply? Answer in % per annum.",
+  "answer": 12.89,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(((20.9+0.35)/20.0)^2-1)*100",
+  "steps": [
+   {
+    "label": "Six-month holding period return",
+    "value": 6.25,
+    "check": "((20.9+0.35)/20.0-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Effective annual return (1 + r)^2 − 1",
+    "value": 12.8906,
+    "check": "(((20.9+0.35)/20.0)^2-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Six-month r_E = (20.90 + 0.35)/20.00 − 1 = 6.2500%",
+   "The period need not be a year; compound it: (1 + 0.062500)^2 − 1 = 12.8906% per annum"
+  ],
+  "keystrokes": [
+   "(20.90 + 0.35) ÷ 20.00 = 1.0625",
+   "x² = ",
+   "− 1 = 0.128906"
+  ],
+  "errors": [
+   {
+    "id": "annual-periodic",
+    "label": "Doubled the half-year return",
+    "value": 12.5,
+    "check": "((20.9+0.35)/20.0-1)*200",
+    "explain": "Two half-year returns compound; doubling ignores the return earned on the first half's gain."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Forgot the −1 after squaring",
+    "value": 112.89,
+    "check": "(((20.9+0.35)/20.0)^2)*100",
+    "explain": "Squaring gives the wealth factor 1.1289; subtract 1 to get the return."
+   }
+  ],
+  "explanation": "The slides note a holding period need not be a year. Compound the period return to convert to an annual effective rate.",
+  "source": "generated",
+  "ref": "L04 s6"
+ },
+ {
+  "id": "q08-014",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Foothills Brewing shares were bought at $27.50. A year later the price is $29.00 after a $0.90 dividend. What is the holding period return?",
+  "options": [
+   "8.28%",
+   "8.73%",
+   "108.73%",
+   "5.45%"
+  ],
+  "answer": 1,
+  "explanation": "r_E = (29.00 + 0.90)/27.50 − 1 = 8.73%. The 8.28% distractor divides by the ending price P1 (div-by-p1), 5.45% leaves out the dividend, and 108.73% forgets to subtract 1.",
+  "source": "generated",
+  "ref": "SM 12-1"
+ },
+ {
+  "id": "q08-015",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock costs $45.00 today. Next year's dividend is expected to be $1.62 and the price is expected to reach $47.40. What is the dividend yield part of the holding period return?",
+  "options": [
+   "3.60%",
+   "5.33%",
+   "8.93%",
+   "3.42%"
+  ],
+  "answer": 0,
+  "explanation": "Dividend yield = D1/P0 = 1.62/45.00 = 3.60%. Using P1 (3.42%) is the wrong denominator; 5.33% is the capital gain yield and 8.93% is the total return.",
+  "source": "generated",
+  "ref": "SM 12-2"
+ },
+ {
+  "id": "q08-016",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "Stock A has a dividend yield of 4.0% and a capital gain yield of 1.0%. Stock B has a dividend yield of 0.5% and a capital gain yield of 4.5%. Which statement is correct?",
+  "options": [
+   "B has the higher holding period return because its capital gain yield is larger than A's.",
+   "They cannot be compared unless the P/E ratios of the two stocks are known first.",
+   "A has the higher holding period return because dividends are more certain than price gains.",
+   "Both have a 5.0% holding period return; A pays it mostly as income, B mostly as price growth."
+  ],
+  "answer": 3,
+  "explanation": "Total return = capital gain yield + dividend yield, and both equal 5.0%. The split matters for who prefers the stock (income versus growth), not for the size of the return.",
+  "source": "generated",
+  "ref": "TB 8.1; SM 8-30"
+ },
+ {
+  "id": "q08-017",
+  "concept": "c08-hpr",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Put the steps for a one-period holding period return in the correct order.",
+  "options": [
+   "Add D1 to P0; divide by P1; subtract 1",
+   "Subtract 1 from P1; add D1; divide by P0",
+   "Add D1 to P1; divide by P0; subtract 1",
+   "Divide P1 by P0; add D1; subtract 1"
+  ],
+  "answer": 2,
+  "explanation": "r_E = (P1 + D1)/P0 − 1: first total what you receive (P1 + D1), then express it per dollar paid (÷ P0), then take away the original dollar (−1). Adding D1 after dividing leaves D1 unscaled.",
+  "source": "generated",
+  "ref": "L04 s7"
+ },
+ {
+  "id": "q08-018",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The geometric average return R_G = [(1 + R1)(1 + R2)…(1 + R_N)]^(1/N) − 1 measures:",
+  "options": [
+   "the sum of the capital gain yield and the dividend yield in the final year",
+   "the constant yearly return that compounds the start value into the end value",
+   "the return in a typical single year, found by averaging the yearly returns",
+   "the best yearly return the investment earned in any single year of the period"
+  ],
+  "answer": 1,
+  "explanation": "R_G is the average compound return per year, so (1 + R_G)^N × PV equals the actual ending value. The return in a typical year is the arithmetic average.",
+  "source": "generated",
+  "ref": "L04 s10; FS p1"
+ },
+ {
+  "id": "q08-019",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A fund advertises: 'Over the last five years our clients' money compounded at X% a year.' Which average return is X?",
+  "options": [
+   "The geometric average",
+   "The average dividend yield",
+   "The last year's holding period return",
+   "The arithmetic average"
+  ],
+  "answer": 0,
+  "explanation": "'Compounded at X% a year' is the constant yearly rate that reproduces the actual growth of wealth: the geometric average. The arithmetic average answers 'what was the return in an average year'.",
+  "source": "generated",
+  "ref": "TB 12.5; L04 s10"
+ },
+ {
+  "id": "q08-020",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement distinguishes the arithmetic and geometric average returns correctly?",
+  "options": [
+   "Arithmetic includes dividends; geometric uses only price changes.",
+   "Arithmetic answers 'what was the average compound return per year'; geometric answers 'what was the return in an average year'.",
+   "Arithmetic is used for past growth of wealth; geometric is used to forecast next year.",
+   "Arithmetic answers 'what was the return in an average year'; geometric answers 'what was the average compound return per year'."
+  ],
+  "answer": 3,
+  "explanation": "Arithmetic is the simple mean of the returns and suits forecasting a typical year; geometric reflects compounding and is the 'truth' about what happened to wealth. The slides summarise it as R_A ≥ R_G.",
+  "source": "generated",
+  "ref": "TB 12.5; L04 s10"
+ },
+ {
+  "id": "q08-021",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of these statements about R_A and R_G is NOT true?",
+  "options": [
+   "R_A is greater than or equal to R_G.",
+   "R_G reflects the compounding of returns.",
+   "R_G exceeds R_A whenever the yearly returns vary.",
+   "R_A = R_G only when every yearly return is identical."
+  ],
+  "answer": 2,
+  "explanation": "R_A ≥ R_G always, with equality only when all returns are equal. The wrong claim reverses the inequality.",
+  "source": "generated",
+  "ref": "L04 s10"
+ },
+ {
+  "id": "q08-022",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the geometric average below the arithmetic average when yearly returns vary?",
+  "options": [
+   "Because the geometric average ignores dividends and so understates the return earned.",
+   "Compounding: a loss costs more than an equal gain adds, as −50% then +50% leaves 75 per 100.",
+   "Because the arithmetic average counts the first year's return twice in its calculation.",
+   "Because taking the Nth root always lowers the answer relative to the simple mean."
+  ],
+  "answer": 1,
+  "explanation": "Compounding is multiplicative: 1.5 × 0.5 = 0.75 although the simple average of +50% and −50% is 0%. The more the returns vary, the bigger the gap (R_G ≈ R_A − σ²/2).",
+  "source": "generated",
+  "ref": "TB 12.5; L04 s10"
+ },
+ {
+  "id": "q08-023",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A stock falls 50% in year 1 and rises 100% in year 2. Its arithmetic average return is 25% per year but its geometric average return is 0%.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "R_A = (−50% + 100%)/2 = 25%. The wealth factor is 0.5 × 2.0 = 1.0, so R_G = 1.0^(1/2) − 1 = 0%. You end where you started.",
+  "source": "generated",
+  "ref": "TB 12.5"
+ },
+ {
+  "id": "q08-024",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "tf",
+  "angle": "contrast",
+  "difficulty": 1,
+  "stem": "The geometric average return of a series of yearly returns can be larger than its arithmetic average return.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "R_G ≤ R_A for any series, with equality only when the returns are all the same.",
+  "source": "generated",
+  "ref": "L04 s10"
+ },
+ {
+  "id": "q08-025",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A Calgary stock earned annual returns of 12%, −7%, 18% and 4% over four years. What was the geometric average return per year? Answer in % per annum.",
+  "answer": 6.33,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((1.12*0.93*1.18*1.04)^(1/4)-1)*100",
+  "steps": [
+   {
+    "label": "Arithmetic average (for comparison)",
+    "value": 6.75,
+    "check": "(12-7+18+4)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Product of (1 + R)",
+    "value": 1.27825,
+    "check": "1.12*0.93*1.18*1.04",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Geometric average R_G",
+    "value": 6.3296,
+    "check": "((1.12*0.93*1.18*1.04)^(1/4)-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "Convert each return to a growth factor: 1.12, 0.93, 1.18, 1.04",
+   "Product = 1.12 × 0.93 × 1.18 × 1.04 = 1.27825",
+   "R_G = 1.27825^(1/4) − 1 = 6.3296% ≈ 6.33% per annum",
+   "(Arithmetic average = 6.75%, which is higher, as expected.)"
+  ],
+  "keystrokes": [
+   "1.12 × 0.93 × 1.18 × 1.04 = 1.27825",
+   "y^x 0.25 (or 4 then 1/x then y^x)",
+   "= 1.06330; − 1 = 0.063296"
+  ],
+  "errors": [
+   {
+    "id": "arith-for-geo",
+    "label": "Averaged the four returns",
+    "value": 6.75,
+    "check": "(12-7+18+4)/4",
+    "explain": "That is the arithmetic average, the return in an average year, not the compound return."
+   },
+   {
+    "id": "geo-no-root",
+    "label": "Multiplied but skipped the root",
+    "value": 27.83,
+    "check": "(1.12*0.93*1.18*1.04-1)*100",
+    "explain": "27.83% is the total four-year return; the Nth root converts it to a per-year rate."
+   },
+   {
+    "id": "forgot-minus-one",
+    "label": "Took the root but forgot the −1",
+    "value": 106.33,
+    "check": "(1.12*0.93*1.18*1.04)^(1/4)*100",
+    "explain": "The root gives the yearly growth factor 1.0627; subtract 1 for the rate."
+   }
+  ],
+  "explanation": "R_G = [Π(1 + R)]^(1/N) − 1. Convert percentages to decimals before multiplying.",
+  "source": "generated",
+  "ref": "SM 12-12; FS p1"
+ },
+ {
+  "id": "q08-026",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Bow Valley Lumber shares cost $18.40 today. Over the next three years the year-end prices are $21.10, $19.60 and $23.50, and the dividends paid in those years are $0.55, $0.60 and $0.65. What is the geometric average return per year? Answer in % per annum.",
+  "answer": 11.55,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((21.65/18.40)*(20.20/21.10)*(24.15/19.60))^(1/3)*100-100",
+  "steps": [
+   {
+    "label": "Year 1 return",
+    "value": 17.663,
+    "check": "((21.10+0.55)/18.40-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Year 2 return",
+    "value": -4.2654,
+    "check": "((19.60+0.60)/21.10-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Year 3 return",
+    "value": 23.2143,
+    "check": "((23.50+0.65)/19.60-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Geometric average R_G",
+    "value": 11.5467,
+    "check": "((21.65/18.40)*(20.20/21.10)*(24.15/19.60))^(1/3)*100-100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "r1 = (21.10 + 0.55)/18.40 − 1 = 17.6630%",
+   "r2 = (19.60 + 0.60)/21.10 − 1 = −4.2654%",
+   "r3 = (23.50 + 0.65)/19.60 − 1 = 23.2143%",
+   "R_G = [(1 + r1)(1 + r2)(1 + r3)]^(1/3) − 1 = 1.38794^(1/3) − 1 = 11.5467% ≈ 11.55% per annum",
+   "(R_A = 12.20%.)"
+  ],
+  "keystrokes": [
+   "Find each year's r_E first, using the PREVIOUS year-end price as the denominator",
+   "Product of the three factors = 1.38794",
+   "y^x (1 ÷ 3) − 1 = 0.115467"
+  ],
+  "errors": [
+   {
+    "id": "arith-for-geo",
+    "label": "Averaged the three returns",
+    "value": 12.2,
+    "check": "((21.65/18.40-1)+(20.20/21.10-1)+(24.15/19.60-1))/3*100",
+    "explain": "The arithmetic average overstates compound growth."
+   },
+   {
+    "id": "div-by-p1",
+    "label": "Divided each year's gain by the ending price",
+    "value": 10.06,
+    "check": "((21.10-18.40+0.55)/21.10+(19.60-21.10+0.60)/19.60+(23.50-19.60+0.65)/23.50)/3*100",
+    "explain": "Each yearly return is scaled by the price at the START of that year."
+   },
+   {
+    "id": "geo-no-root",
+    "label": "Skipped the root",
+    "value": 38.79,
+    "check": "((21.65/18.40)*(20.20/21.10)*(24.15/19.60)-1)*100",
+    "explain": "That is the three-year total return, not the per-year rate."
+   }
+  ],
+  "explanation": "Build each yearly return from prices and dividends, then compound. Using the arithmetic mean would overstate how fast wealth grew.",
+  "source": "generated",
+  "ref": "SM 12-13"
+ },
+ {
+  "id": "q08-027",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A stock's last four annual returns were +25%, −10%, +14% and +3%. If your best estimate of next year's return is the return in a typical year, what do you forecast? Answer in % per annum.",
+  "answer": 8.0,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(25-10+14+3)/4",
+  "steps": [
+   {
+    "label": "Arithmetic average r_A",
+    "value": 8.0,
+    "check": "(25-10+14+3)/4",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "The return in an average (typical) year is the arithmetic average:",
+   "r_A = (25 − 10 + 14 + 3)/4 = 8.00% per annum",
+   "(R_G = 7.21% describes compound growth of past wealth, not a typical-year forecast.)"
+  ],
+  "keystrokes": [
+   "25 − 10 + 14 + 3 = 32; ÷ 4 = 8.00"
+  ],
+  "errors": [
+   {
+    "id": "geo-for-arith",
+    "label": "Used the geometric average",
+    "value": 7.21,
+    "check": "(1.25*0.9*1.14*1.03)^(1/4)*100-100",
+    "explain": "R_G answers 'what compound rate did wealth earn'; for a typical year's return use the arithmetic average."
+   },
+   {
+    "id": "divided-by-n",
+    "label": "Divided by N−1 = 3",
+    "value": 10.67,
+    "check": "(25-10+14+3)/3",
+    "explain": "An average of four returns divides by 4."
+   }
+  ],
+  "explanation": "Forecasting the return of a typical future year uses r_A; reporting past compound growth uses R_G.",
+  "source": "generated",
+  "ref": "L04 s10; TB 12.5"
+ },
+ {
+  "id": "q08-028",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock earned +10%, −5% and +6% in three consecutive years. What is its geometric average return per year?",
+  "options": [
+   "3.67%",
+   "10.77%",
+   "103.47%",
+   "3.47%"
+  ],
+  "answer": 3,
+  "explanation": "R_G = (1.10 × 0.95 × 1.06)^(1/3) − 1 = 1.1077^(1/3) − 1 = 3.47%. The 3.67% distractor is the arithmetic average, 10.77% skips the root, and 103.47% forgets the −1.",
+  "source": "generated",
+  "ref": "SM 12-12"
+ },
+ {
+  "id": "q08-029",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A stock rose 30% one year and fell 30% the next. What is its geometric average return per year?",
+  "options": [
+   "−9.00%",
+   "0.00%",
+   "−4.61%",
+   "95.39%"
+  ],
+  "answer": 2,
+  "explanation": "The wealth factor is 1.30 × 0.70 = 0.91, so R_G = 0.91^(1/2) − 1 = −4.61% per year. 0.00% is the arithmetic average; −9.00% is the two-year total with no root; 95.39% forgets the −1.",
+  "source": "generated",
+  "ref": "SM 12-12"
+ },
+ {
+  "id": "q08-030",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Over six years a stock's arithmetic average return was 9.83% and its geometric average return was 8.10%. What does the 1.73-point gap tell you?",
+  "options": [
+   "Dividends were left out of the geometric average but included in the arithmetic one.",
+   "The yearly returns varied; the more they vary, the further R_G falls below R_A.",
+   "The arithmetic average was miscalculated, since it must equal the geometric average.",
+   "The investor paid fees that reduced the compound return but not the average return."
+  ],
+  "answer": 1,
+  "explanation": "R_G ≈ R_A − σ²/2, so the gap measures the volatility drag of the series. With constant returns the two would be identical.",
+  "source": "generated",
+  "ref": "SM 12-12"
+ },
+ {
+  "id": "q08-031",
+  "concept": "c08-arith-vs-geo",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "You want (i) your best guess of next year's return for a typical year and (ii) a measure of how fast your past wealth actually grew. Which averages do you use?",
+  "options": [
+   "(i) arithmetic, (ii) geometric",
+   "(i) arithmetic, (ii) arithmetic",
+   "(i) geometric, (ii) arithmetic",
+   "(i) geometric, (ii) geometric"
+  ],
+  "answer": 0,
+  "explanation": "A typical-year estimate is the arithmetic mean (R_A); the compound growth of wealth already earned is the geometric mean (R_G).",
+  "source": "generated",
+  "ref": "TB 12.5"
+ },
+ {
+  "id": "q08-032",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A holding of PV earns R1, R2, …, R_N in successive years. Its value after N years is:",
+  "options": [
+   "PV + R1 + R2 + … + R_N",
+   "PV(1 + r_A)^N, using the arithmetic average",
+   "PV(1 + R1 + R2 + … + R_N)",
+   "PV(1 + R1)(1 + R2)…(1 + R_N)"
+  ],
+  "answer": 3,
+  "explanation": "Each year's return applies to the previous year's ending value, so the growth factors multiply. Adding the returns ignores compounding, and compounding the arithmetic average overstates the value whenever returns vary.",
+  "source": "generated",
+  "ref": "L04 s10-11"
+ },
+ {
+  "id": "q08-033",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "An investor's $10,000 grew to $13,310 over three years. She computes (13,310/10,000)^(1/3) − 1 = 10%. This 10% is the:",
+  "options": [
+   "geometric (compound) average return per year",
+   "dividend yield",
+   "holding period return for the last year",
+   "arithmetic average return"
+  ],
+  "answer": 0,
+  "explanation": "Solving FV = PV(1 + R_G)^N for R_G gives R_G = (FV/PV)^(1/N) − 1. It is the constant yearly return that reproduces the actual growth.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-034",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You invested $2,500 in Cascade Telecom. Over three years its returns were +14%, −9% and +6%, with no money added or withdrawn. What is your holding worth after three years? Answer in $.",
+  "answer": 2749.11,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2500*1.14*0.91*1.06",
+  "steps": [
+   {
+    "label": "Value after year 1",
+    "value": 2850.0,
+    "check": "2500*1.14",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value after year 2",
+    "value": 2593.5,
+    "check": "2500*1.14*0.91",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value after year 3",
+    "value": 2749.11,
+    "check": "2500*1.14*0.91*1.06",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "FV = PV(1 + R1)(1 + R2)(1 + R3)",
+   "Year 1: 2,500 × 1.14 = 2,850.00",
+   "Year 2: 2,850.00 × 0.91 = 2,593.50",
+   "Year 3: 2,593.50 × 1.06 = $2,749.11"
+  ],
+  "keystrokes": [
+   "2500 × 1.14 × 0.91 × 1.06 = 2,749.11"
+  ],
+  "errors": [
+   {
+    "id": "no-compounding",
+    "label": "Added the three returns",
+    "value": 2775.0,
+    "check": "2500*(1+0.14-0.09+0.06)",
+    "explain": "Adding returns ignores that each year's return applies to a changed base."
+   },
+   {
+    "id": "arith-for-geo",
+    "label": "Compounded the arithmetic average",
+    "value": 2785.21,
+    "check": "2500*(1+(0.14-0.09+0.06)/3)^3",
+    "explain": "Compounding R_A overstates the value whenever returns vary."
+   },
+   {
+    "id": "minus-sign",
+    "label": "Used 1.09 instead of 0.91 for the −9% year",
+    "value": 3292.89,
+    "check": "2500*1.14*1.09*1.06",
+    "explain": "A −9% return is the factor 0.91, not 1.09."
+   }
+  ],
+  "explanation": "Multiply the growth factors (1 + R) in sequence; the order does not matter but the signs and decimals do.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-035",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Rocky Mountain Rail shares bought for $8,000 are worth $10,350 four years later, with no dividends. What constant compound return per year does this represent? Answer in % per annum.",
+  "answer": 6.65,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "((10350/8000)^(1/4)-1)*100",
+  "steps": [
+   {
+    "label": "Growth factor FV/PV",
+    "value": 1.29375,
+    "check": "10350/8000",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "R_G = (FV/PV)^(1/N) − 1",
+    "value": 6.6504,
+    "check": "((10350/8000)^(1/4)-1)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.005
+    }
+   }
+  ],
+  "solution": [
+   "FV = PV(1 + R_G)^N  →  R_G = (FV/PV)^(1/N) − 1",
+   "R_G = (10,350/8,000)^(1/4) − 1 = 1.29375^0.25 − 1 = 6.6504% ≈ 6.65% per annum"
+  ],
+  "keystrokes": [
+   "10350 ÷ 8000 = 1.29375",
+   "y^x 0.25 =",
+   "− 1 = 0.066504"
+  ],
+  "errors": [
+   {
+    "id": "arith-for-geo",
+    "label": "Total gain divided by N",
+    "value": 7.34,
+    "check": "(10350/8000-1)/4*100",
+    "explain": "Dividing the total gain by 4 ignores compounding; it overstates the yearly rate."
+   },
+   {
+    "id": "geo-no-root",
+    "label": "Skipped the root",
+    "value": 29.37,
+    "check": "(10350/8000-1)*100",
+    "explain": "29.38% is the four-year total return."
+   },
+   {
+    "id": "horizon-off-by-one",
+    "label": "Used N = 3 instead of 4",
+    "value": 8.96,
+    "check": "((10350/8000)^(1/3)-1)*100",
+    "explain": "Four years of growth means a 1/4 power, not 1/3."
+   }
+  ],
+  "explanation": "Solve FV = PV(1 + R_G)^N for R_G with the correct number of years.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-036",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A Calgary fund returned +18%, then −12%, then +9% over three years and is now worth $26,000. How much was originally invested? Answer in $.",
+  "answer": 22971.12,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "26000/(1.18*0.88*1.09)",
+  "steps": [
+   {
+    "label": "Three-year growth factor",
+    "value": 1.13186,
+    "check": "1.18*0.88*1.09",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Original investment = FV ÷ factor",
+    "value": 22971.12,
+    "check": "26000/(1.18*0.88*1.09)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "FV = PV × (1 + R1)(1 + R2)(1 + R3)  →  PV = FV ÷ [(1.18)(0.88)(1.09)]",
+   "Factor = 1.13186",
+   "PV = 26,000 ÷ 1.13186 = $22,971.12"
+  ],
+  "keystrokes": [
+   "1.18 × 0.88 × 1.09 = 1.13190",
+   "26000 ÷ 1.1319 ="
+  ],
+  "errors": [
+   {
+    "id": "no-compounding",
+    "label": "Divided by the sum of returns",
+    "value": 22608.7,
+    "check": "26000/(1+0.18-0.12+0.09)",
+    "explain": "Returns compound; dividing by 1 + sum of returns is wrong."
+   },
+   {
+    "id": "minus-sign",
+    "label": "Used 1.12 for −12%",
+    "value": 18048.74,
+    "check": "26000/(1.18*1.12*1.09)",
+    "explain": "A −12% return has factor 0.88."
+   }
+  ],
+  "explanation": "Work backwards by dividing the ending value by the product of the growth factors.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-037",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "An investor puts $5,000 into a volatile stock whose yearly returns are +40%, −25%, +20% and −10%. What is the holding worth after four years? Answer in $.",
+  "answer": 5670.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "5000*1.40*0.75*1.20*0.90",
+  "steps": [
+   {
+    "label": "Four-year wealth factor",
+    "value": 1.134,
+    "check": "1.40*0.75*1.20*0.90",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.005
+    }
+   },
+   {
+    "label": "Ending value",
+    "value": 5670.0,
+    "check": "5000*1.40*0.75*1.20*0.90",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Wealth factor = 1.40 × 0.75 × 1.20 × 0.90 = 1.13400",
+   "FV = 5,000 × 1.134 = $5,670.00",
+   "(Compounding the arithmetic average 6.25% would claim $6,372.15, which is wrong.)"
+  ],
+  "keystrokes": [
+   "5000 × 1.4 × 0.75 × 1.2 × 0.9 = 5,670.00"
+  ],
+  "errors": [
+   {
+    "id": "arith-for-geo",
+    "label": "Compounded the arithmetic average 6.25%",
+    "value": 6372.15,
+    "check": "5000*(1+(0.40-0.25+0.20-0.10)/4)^4",
+    "explain": "R_A applied for 4 years overstates the true ending value."
+   },
+   {
+    "id": "no-compounding",
+    "label": "Added the four returns",
+    "value": 6250.0,
+    "check": "5000*(1+0.40-0.25+0.20-0.10)",
+    "explain": "Adding returns gives 1.25 instead of the compound factor 1.134."
+   }
+  ],
+  "explanation": "Ending value = PV × product of growth factors. Volatile returns make the arithmetic shortcuts mislead.",
+  "source": "generated",
+  "ref": "L04 s10-11"
+ },
+ {
+  "id": "q08-038",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "You invest $4,000 in a stock that returns +25%, −20% and +10% in three successive years. What is the investment worth at the end of year 3?",
+  "options": [
+   "$4,600.00",
+   "$6,600.00",
+   "$4,400.00",
+   "$4,630.50"
+  ],
+  "answer": 2,
+  "explanation": "Value = 4,000 × 1.25 × 0.80 × 1.10 = $4,400.00. Adding the returns gives $4,600.00, compounding the arithmetic average 5% gives $4,630.50, and using 1.20 for the −20% year gives $6,600.00.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-039",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "An investor's $10,000 grew to $13,310 in three years with no deposits. What compound return per year is that?",
+  "options": [
+   "33.10%",
+   "10.00%",
+   "11.03%",
+   "15.37%"
+  ],
+  "answer": 1,
+  "explanation": "R_G = (13,310/10,000)^(1/3) − 1 = 10.00%. Dividing the 33.1% total gain by 3 gives 11.03%, using no root gives 33.10%, and using a 1/2 power (N − 1) gives 15.37%.",
+  "source": "generated",
+  "ref": "L04 s11"
+ },
+ {
+  "id": "q08-040",
+  "concept": "c08-compound-value",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we multiply (1 + R) factors rather than add yearly returns to find the value of a holding?",
+  "options": [
+   "Because percentage returns can only be added when the investment is held for under a year.",
+   "Because adding returns would double count the dividends included in each year's return.",
+   "Each year's return is earned on the previous year's ending value, so gains and losses compound.",
+   "Because returns are quoted per annum, so they must be multiplied rather than added."
+  ],
+  "answer": 2,
+  "explanation": "Wealth after year t becomes the base for year t + 1. That is why 1.20 × 0.85 × 1.10 = 1.122, not 1.15.",
+  "source": "generated",
+  "ref": "L04 s10-11"
+ }
+]

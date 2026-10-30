@@ -1,0 +1,1373 @@
+[
+ {
+  "id": "q10-436",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A mining contractor will close its CCA class by selling its last rig, which cost $240,000 and has a UCC of $110,000, for a price above cost. T = 30%. What sale price leaves exactly $300,000 after tax?",
+  "answer": 356470.59,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(300000+0.3*(240000-110000)-0.5*0.3*240000)/(1-0.5*0.3)",
+  "steps": [
+   {
+    "label": "Tax on recapture (fixed)",
+    "value": 39000.0,
+    "check": "0.3*(240000-110000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Equation: 0.85 x POD - 3,000 = 300,000, so POD = 303,000 / 0.85",
+    "value": 356470.59,
+    "check": "(300000+0.3*(240000-110000)-0.5*0.3*240000)/(1-0.5*0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CF_AT = POD - 0.30(240,000 - 110,000) - 0.15(POD - 240,000) = POD - 39,000 - 0.15 POD + 36,000",
+   "CF_AT = 0.85 POD - 3,000 = 300,000",
+   "POD = 303,000 / 0.85 = $356,470.59",
+   "Check: POD > ACB (240,000), as assumed"
+  ],
+  "keystrokes": [
+   "Each extra dollar of price above ACB nets 0.85",
+   "(300000 + 3000) / 0.85 = 356470.59"
+  ],
+  "errors": [
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed every extra dollar at the full rate",
+    "value": 381428.57,
+    "check": "(300000+0.3*(240000-110000)-0.3*240000)/(1-0.3)",
+    "explain": "The gain is half-taxed, so each dollar above ACB is worth 85 cents, not 70."
+   },
+   {
+    "id": "ignored-sale-tax",
+    "label": "Left out the recapture tax",
+    "value": 310588.24,
+    "check": "(300000-0.5*0.3*240000)/(1-0.5*0.3)",
+    "explain": "The CCA recapture tax is a fixed cost of selling above UCC."
+   }
+  ],
+  "explanation": "Because the gain is half-taxed, every dollar of price above ACB nets 85 cents after the fixed recapture tax.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-437",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Wetaskiwin Grain Systems plans to sell its last silo-loading rig at the end of year 4 for $185,000, closing the class. The rig cost $150,000 and its UCC at that time will be $58,000. T = 35% and the discount rate is 10% per annum. What is the present value today of the after-tax sale proceeds?",
+  "answer": 100181.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(185000-0.35*(150000-58000)-0.5*0.35*(185000-150000))/1.1**4",
+  "steps": [
+   {
+    "label": "Tax on recapture",
+    "value": 32200.0,
+    "check": "0.35*(150000-58000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax on capital gain",
+    "value": 6125.0,
+    "check": "0.5*0.35*(185000-150000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "CF_AT in year 4",
+    "value": 146675.0,
+    "check": "185000-0.35*(150000-58000)-0.5*0.35*(185000-150000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Present value at 10%",
+    "value": 100181.0,
+    "check": "(185000-0.35*(150000-58000)-0.5*0.35*(185000-150000))/1.1**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Recapture = 150,000 - 58,000 = 92,000, tax = 32,200; gain = 35,000, tax = 0.5 x 0.35 x 35,000 = 6,125",
+   "CF_AT = 185,000 - 32,200 - 6,125 = 146,675",
+   "PV = 146,675 / 1.10^4 = $100,181.00"
+  ],
+  "keystrokes": [
+   "185000 - 32200 - 6125 = 146675",
+   "N = 4, I/Y = 10, FV = 146675, CPT PV"
+  ],
+  "errors": [
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the year-4 cash flow",
+    "value": 146675.0,
+    "check": "185000-0.35*(150000-58000)-0.5*0.35*(185000-150000)",
+    "explain": "The sale occurs in four years; discount it."
+   },
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the gain at the full rate",
+    "value": 95997.54,
+    "check": "(185000-0.35*(150000-58000)-0.35*(185000-150000))/1.1**4",
+    "explain": "Only half of the capital gain is taxed."
+   }
+  ],
+  "explanation": "Compute the year-4 after-tax cash flow with the three-part formula and discount it four years.",
+  "source": "generated",
+  "ref": "L05B s21-22"
+ },
+ {
+  "id": "q10-438",
+  "concept": "c10-capital-gain-cfat",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "In the sale of Prairie Barge Ltd.'s last barge (POD $520,000, ACB $400,000, UCC $150,000, T = 30%), the firm pays recapture tax and capital gains tax. What percentage of the $520,000 sale price goes to tax? Answer in % to two decimals.",
+  "answer": 17.88,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "(0.3*(400000-150000)+0.5*0.3*(520000-400000))/520000*100",
+  "steps": [
+   {
+    "label": "Total tax",
+    "value": 93000.0,
+    "check": "0.3*(400000-150000)+0.5*0.3*(520000-400000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Tax as % of POD",
+    "value": 17.8846,
+    "check": "(0.3*(400000-150000)+0.5*0.3*(520000-400000))/520000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Tax on recapture = 0.30 x 250,000 = 75,000; tax on gain = 0.15 x 120,000 = 18,000",
+   "Total tax = 93,000",
+   "93,000 / 520,000 = 17.88%"
+  ],
+  "keystrokes": [
+   "93000 / 520000 = 0.1788 -> 17.88%"
+  ],
+  "errors": [
+   {
+    "id": "forgot-half-gain",
+    "label": "Taxed the gain at the full rate",
+    "value": 21.35,
+    "check": "(0.3*(400000-150000)+0.3*(520000-400000))/520000*100",
+    "explain": "The gain portion carries only half the rate."
+   },
+   {
+    "id": "recapture-full-pod",
+    "label": "Used the full tax rate on the whole price",
+    "value": 30.0,
+    "check": "0.3*100",
+    "explain": "Tax applies only to recapture and the gain, and the gain is half-taxed."
+   }
+  ],
+  "explanation": "The effective rate is below 30% because 120,000 of the 520,000 is taxed at only 15%.",
+  "source": "generated",
+  "ref": "L05B s21"
+ },
+ {
+  "id": "q10-441",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Prairie Haulage owns 14 trailers in the same CCA class and sells one of them for less than its share of UCC. The other 13 trailers stay in service. What is the status of the pool?",
+  "options": [
+   "The pool stays open: there is no immediate recapture or terminal loss",
+   "The pool closes: the loss is a terminal loss deducted this year",
+   "The pool closes: the sale price is recapture",
+   "The pool is frozen: no CCA can be claimed until the trailer is replaced"
+  ],
+  "answer": 0,
+  "explanation": "As long as other assets remain in the class, the pool remains open. The sale proceeds just reduce the pool's UCC and CCA keeps being claimed on what is left, so there is no immediate recapture or terminal loss (SM 10-11).",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-442",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-recapture-terminal-loss",
+   "c10-capital-gain-cfat"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Cascade Marine sells the only vessel it has ever owned in its CCA class and has no plans to buy another. Which treatment applies to the sale?",
+  "options": [
+   "The pool stays open, so the proceeds simply reduce UCC and nothing is taxed",
+   "The pool stays open, but only half of any recapture is taxed",
+   "The pool closes, but the tax effect is spread over the following years by continued CCA",
+   "The pool closes, so the full CF_AT formula applies: recapture, terminal loss or capital gain are taxed now"
+  ],
+  "answer": 3,
+  "explanation": "With no assets left in the class, no CCA can be claimed in later years, so the gap between POD and UCC has to be settled immediately as recapture, terminal loss or capital gain.",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s21"
+ },
+ {
+  "id": "q10-443",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "When a sale leaves other assets in the CCA class, the pool is said to remain _____ and the proceeds only reduce its UCC.",
+  "options": [
+   "closed",
+   "open",
+   "terminated",
+   "capitalized"
+  ],
+  "answer": 1,
+  "explanation": "An open pool keeps generating CCA. The sale shrinks the UCC base, so the tax effect arrives gradually through lower future CCA instead of through an immediate recapture or terminal-loss entry.",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-444",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "A machine is sold for less than its UCC. How does the tax outcome differ between an open pool and a closed pool?",
+  "options": [
+   "Open pool: a terminal loss is deducted at once. Closed pool: no immediate effect",
+   "Open pool: a capital loss, half deductible. Closed pool: a terminal loss, fully deductible",
+   "There is no difference; both give a terminal loss, but the open pool defers the refund one year",
+   "Open pool: no immediate effect, lower UCC carries forward. Closed pool: a terminal loss is deducted at once"
+  ],
+  "answer": 3,
+  "explanation": "A terminal loss only exists when the class closes. In an open pool the shortfall stays inside the pool's UCC and is deducted gradually as CCA on the remaining balance.",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-445",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a consequence of selling the last asset in a CCA class?",
+  "options": [
+   "No further CCA tax shields are available from that class",
+   "CCA continues to be claimed each year on the remaining UCC",
+   "The difference between POD and UCC is settled as recapture or terminal loss",
+   "The after-tax salvage uses the CF_AT formula"
+  ],
+  "answer": 1,
+  "explanation": "Once the class is empty there is no UCC left and no further CCA. Recapture or terminal loss settles the account immediately, and the CF_AT formula gives the cash result.",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s21"
+ },
+ {
+  "id": "q10-446",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does selling one asset out of a larger pool not create a terminal loss, even if the price is below the asset's cost?",
+  "options": [
+   "Because a terminal loss only exists when the sale price is below ACB",
+   "Because assets sold below cost are treated as capital losses",
+   "The pool's remaining UCC stays in the pool and keeps being written off through future CCA",
+   "Because the Canada Revenue Agency does not allow any tax effect on the sale of used equipment"
+  ],
+  "answer": 2,
+  "explanation": "CCA is calculated on the whole pool balance. The sale price just reduces that balance, and the part of the original cost that was not recovered is still depreciated in later years. Only an empty pool needs an immediate settlement.",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-447",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "For an asset sold at time N from an open pool, a student computes S_N x d x T / (k + d) x 1/(1 + k)^N. What does the result represent?",
+  "options": [
+   "The present value of the CCA tax shield the firm gives up because the sale proceeds reduce the pool",
+   "The after-tax value of the proceeds",
+   "The present value of the tax paid on recapture at the sale",
+   "The present value of the capital gains tax at the sale"
+  ],
+  "answer": 0,
+  "explanation": "This is the salvage term of the PV of CCA tax shield. Selling at S_N removes S_N from the UCC base, so the CCA shields that would have come from it forever after year N are lost; the term values that lost stream at time 0.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-448",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-net-acquisitions"
+  ],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Prairie Parcel replaces a sorting machine and buys the new machine for the same CCA class in the same year as it sells the old one. How should the sale of the old machine be treated?",
+  "options": [
+   "As a sale that closes the class and triggers a terminal loss",
+   "As a sale from an open pool, with no immediate recapture or terminal loss",
+   "As a capital transaction taxed at half the corporate rate",
+   "As a sale whose proceeds are ignored for tax purposes"
+  ],
+  "answer": 1,
+  "explanation": "The new machine goes into the same class, so the class is not emptied. The old machine's proceeds are netted against the purchase (the net acquisitions idea) and the pool carries on.",
+  "source": "generated",
+  "ref": "S5 s26, SM 10-11"
+ },
+ {
+  "id": "q10-449",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "In the PV of CCA tax shield formula, the salvage term exists because the sale reduces the pool's UCC; if the asset were kept in the pool and never sold, the term would be dropped.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The first term values CCA on the whole cost forever. The second term removes the shields attached to the salvage value when the asset leaves the pool. With no sale there is nothing to remove, so the first term stands alone.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-450",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Which comparison of the course's two treatments of the sale proceeds is correct?",
+  "options": [
+   "Closed pool: proceeds received untaxed and the tax effect arrives as lost future CCA. Open pool: tax effect at the sale via CF_AT",
+   "Both: proceeds received untaxed, and the salvage term is used only for assets that are not sold",
+   "Closed pool: the salvage term is added to the shield. Open pool: the salvage term is subtracted",
+   "Closed pool: tax effect at the sale via CF_AT and no further CCA. Open pool: proceeds received untaxed and the tax effect arrives as lost future CCA via the salvage term"
+  ],
+  "answer": 3,
+  "explanation": "The two are alternative ways to account for the same fact. Emptying the pool settles everything now (CF_AT); keeping it open pushes the settlement into future CCA, which the PV formula captures by subtracting the shield on S_N.",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s22"
+ },
+ {
+  "id": "q10-451",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-recapture-terminal-loss"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Plastics sells the last press in its CCA class for $24,000. The press cost $52,000 and its UCC is $31,000. The tax rate is 30%. What is the after-tax cash flow from the sale?",
+  "options": [
+   "$16,800.00",
+   "$21,700.00",
+   "$21,900.00",
+   "$24,000.00",
+   "$26,100.00"
+  ],
+  "answer": 4,
+  "explanation": "The class closes, so the terminal loss UCC - POD = 7,000 saves 0.30 x 7,000 = 2,100 of tax: CF_AT = 24,000 + 2,100 = $26,100. $24,000 is the answer only if the pool stayed open; $21,900 subtracts the refund; $21,700 taxes the UCC instead of using the terminal loss; $16,800 taxes the whole price.",
+  "source": "generated",
+  "ref": "SM 10-11, L05B s21"
+ },
+ {
+  "id": "q10-452",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Fraser Cold Storage sells equipment from an open pool (CCA rate 10%) for $60,000 at the end of year 5. T = 35% and the discount rate is 14% per annum. The sale triggers no immediate tax. What is the present value of the CCA tax shield that the firm gives up?",
+  "options": [
+   "$3,986.38",
+   "$4,544.48",
+   "$8,750.00",
+   "$12,984.22",
+   "$27,266.85"
+  ],
+  "answer": 1,
+  "explanation": "Lost shield = S_N d T / (k + d) x 1/(1+k)^N = 60,000 x 0.10 x 0.35 / 0.24 / 1.14^5 = 8,750 / 1.92541 = $4,544.48. Not discounting gives $8,750; k - d in the denominator gives a hugely inflated value; leaving out T overstates it by 1/0.35.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-453",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kootenay Hydraulics sells a machine for $48,000. Its UCC is $66,500 and its ACB was $120,000. T = 32%. How much more after-tax cash does the firm receive if the sale closes the CCA class than if other assets stay in the class (and the sale triggers no immediate tax)?",
+  "answer": 5920.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.32*(66500-48000)",
+  "steps": [
+   {
+    "label": "After-tax cash if the pool stays open",
+    "value": 48000.0,
+    "check": "48000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax cash if the pool closes",
+    "value": 53920.0,
+    "check": "48000+0.32*(66500-48000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Difference = T x terminal loss",
+    "value": 5920.0,
+    "check": "0.32*(66500-48000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Open pool: no tax effect at the sale, so cash = POD = 48,000",
+   "Closed pool: terminal loss = 66,500 - 48,000 = 18,500; refund = 0.32 x 18,500 = 5,920",
+   "Closed-pool cash = 48,000 + 5,920 = 53,920.00; difference = $5,920.00"
+  ],
+  "keystrokes": [
+   "66500 - 48000 = 18500",
+   "x 0.32 = 5920"
+  ],
+  "errors": [
+   {
+    "id": "terminal-loss-sign",
+    "label": "Subtracted instead of adding the refund",
+    "value": -5920.0,
+    "check": "-0.32*(66500-48000)",
+    "explain": "A terminal loss produces a refund: the closed-pool cash flow is higher, not lower."
+   },
+   {
+    "id": "pod-minus-acb",
+    "label": "Used ACB - POD as the loss",
+    "value": 23040.0,
+    "check": "0.32*(120000-48000)",
+    "explain": "The terminal loss is measured against UCC, not ACB."
+   },
+   {
+    "id": "ignored-sale-tax",
+    "label": "Used the full tax rate on UCC",
+    "value": 21280.0,
+    "check": "0.32*66500",
+    "explain": "Only the gap between UCC and POD is deductible."
+   }
+  ],
+  "explanation": "The difference is purely the immediate terminal-loss refund; in an open pool the same shortfall is claimed slowly as CCA.",
+  "source": "generated",
+  "ref": "SM 10-11"
+ },
+ {
+  "id": "q10-454",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Nechako Lumber sells a mill component from an open pool (CCA rate 20%) for $45,000 at the end of year 6. The sale triggers no immediate tax. T = 38% and the discount rate is 12% per annum. What is the present value today of the CCA tax shield given up?",
+  "answer": 5414.62,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "45000*0.2*0.38/(0.12+0.2)/1.12**6",
+  "steps": [
+   {
+    "label": "Perpetuity of lost shields at year 6: S d T / (k + d)",
+    "value": 10687.5,
+    "check": "45000*0.2*0.38/(0.12+0.2)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Discount factor 1/(1.12)^6",
+    "value": 0.5066,
+    "check": "1/1.12**6",
+    "unit": "",
+    "tolerance": {
+     "abs": 5e-05
+    }
+   },
+   {
+    "label": "Present value today",
+    "value": 5414.62,
+    "check": "45000*0.2*0.38/(0.12+0.2)/1.12**6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Lost shield stream starts with 0.20 x 45,000 x 0.38 = 3,420 in year 7 and falls 20% a year",
+   "Value at year 6 = 3,420 / (0.12 + 0.20) = 10,687.50",
+   "PV today = 10,687.50 / 1.12^6 = $5,414.62"
+  ],
+  "keystrokes": [
+   "45000 x 0.2 x 0.38 / 0.32 = 10687.5",
+   "/ 1.12^6 = 5414.62"
+  ],
+  "errors": [
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount for six years",
+    "value": 10687.5,
+    "check": "45000*0.2*0.38/(0.12+0.2)",
+    "explain": "The lost shield stream starts at year 6; bring it back to today."
+   },
+   {
+    "id": "k-minus-d",
+    "label": "Used k - d in the denominator",
+    "value": 21658.48,
+    "check": "45000*0.2*0.38/(0.2-0.12)/1.12**6",
+    "explain": "The CCA shield declines at d, so the denominator is k + d."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Left out the tax rate",
+    "value": 14249.0,
+    "check": "45000*0.2/(0.12+0.2)/1.12**6",
+    "explain": "A CCA deduction saves T dollars per dollar claimed, so T belongs in the numerator."
+   }
+  ],
+  "explanation": "Open-pool sale: the proceeds shrink the UCC base, so the future shields on that amount are lost; value them as a declining perpetuity.",
+  "source": "generated",
+  "ref": "L05B s22"
+ },
+ {
+  "id": "q10-455",
+  "concept": "c10-pool-open-closed",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cascade Tooling buys a $60,000 machine (CCA rate 30%, half-year rule). It sells the machine for $20,000 at the end of year 3 after claiming year 3 CCA. The sale empties the class. T = 30% and k = 10% per annum. Find the present value today of all the tax effects: the three CCA tax shields plus the terminal-loss refund.",
+  "answer": 9786.63,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.3*0.5*0.3*60000/1.1+0.3*0.3*(60000-0.5*0.3*60000)/1.1**2+0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)/1.1**3+0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)/1.1**3",
+  "steps": [
+   {
+    "label": "DTS year 1",
+    "value": 2700.0,
+    "check": "0.3*0.5*0.3*60000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "DTS year 2",
+    "value": 4590.0,
+    "check": "0.3*0.3*(60000-0.5*0.3*60000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "DTS year 3",
+    "value": 3213.0,
+    "check": "0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the three tax shields",
+    "value": 8661.91,
+    "check": "0.3*0.5*0.3*60000/1.1+0.3*0.3*(60000-0.5*0.3*60000)/1.1**2+0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Terminal-loss refund in year 3",
+    "value": 1497.0,
+    "check": "0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of all tax effects",
+    "value": 9786.63,
+    "check": "0.3*0.5*0.3*60000/1.1+0.3*0.3*(60000-0.5*0.3*60000)/1.1**2+0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)/1.1**3+0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "CCA1 = 9,000 (UCC1 = 51,000); CCA2 = 15,300 (UCC2 = 35,700); CCA3 = 10,710 (UCC3 = 24,990)",
+   "Tax shields: 2,700; 4,590; 3,213",
+   "PV of shields = 2,700/1.1 + 4,590/1.1^2 + 3,213/1.1^3 = 8,661.91",
+   "Terminal loss = 24,990 - 20,000 = 4,990; refund = 0.30 x 4,990 = 1,497.00",
+   "PV of refund = 1,497 / 1.1^3 = 1,124.72; total = $9,786.63"
+  ],
+  "keystrokes": [
+   "CF0 = 0, C01 = 2700, C02 = 4590, C03 = 3213 + 1497 = 4710, I = 10, CPT NPV"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Counted only the terminal-loss refund",
+    "value": 1124.72,
+    "check": "0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)/1.1**3",
+    "explain": "The three years of CCA shields are part of the tax effect and must be added."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the refund",
+    "value": 10158.91,
+    "check": "0.3*0.5*0.3*60000/1.1+0.3*0.3*(60000-0.5*0.3*60000)/1.1**2+0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)/1.1**3+0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)",
+    "explain": "The refund arrives at the end of year 3."
+   },
+   {
+    "id": "terminal-loss-sign",
+    "label": "Subtracted the refund",
+    "value": 7537.19,
+    "check": "0.3*0.5*0.3*60000/1.1+0.3*0.3*(60000-0.5*0.3*60000)/1.1**2+0.3*0.3*(60000-0.5*0.3*60000)*(1-0.3)/1.1**3-0.3*(60000*(1-0.5*0.3)*(1-0.3)**2-20000)/1.1**3",
+    "explain": "A terminal loss saves tax; its refund adds to the shields."
+   }
+  ],
+  "explanation": "Closed pool, explicit method: claim CCA each year, then settle the remaining UCC against the price in year 3.",
+  "source": "generated",
+  "ref": "L05B s23-25, SM 10-11"
+ },
+ {
+  "id": "q10-456",
+  "concept": "c10-pool-open-closed",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Use the Cascade Tooling machine from the previous question ($60,000 cost, CCA rate 30%, half-year rule, sold for $20,000 at the end of year 3, T = 30%, k = 10%). The PV of all tax effects if the class closes is $9,786.63. If instead the class stays open, the PV of the tax effects is the PV of CCA tax shield formula with the salvage term. How much larger is the closed-pool value?",
+  "answer": 281.18,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "9786.63-(60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-20000*0.3*0.3/(0.1+0.3)/1.1**3)",
+  "steps": [
+   {
+    "label": "Perpetual shield with half-year factor",
+    "value": 12886.36,
+    "check": "60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Salvage term",
+    "value": 3380.92,
+    "check": "20000*0.3*0.3/(0.1+0.3)/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield, pool open",
+    "value": 9505.45,
+    "check": "60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-20000*0.3*0.3/(0.1+0.3)/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Closed minus open",
+    "value": 281.18,
+    "check": "9786.63-(60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-20000*0.3*0.3/(0.1+0.3)/1.1**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "First term: 60,000 x 0.30 x 0.30 / 0.40 = 13,500; x (1 + 0.05)/1.10 = 12,886.36",
+   "Salvage term: 20,000 x 0.30 x 0.30 / 0.40 / 1.10^3 = 3,380.92",
+   "Open-pool PV = 12,886.36 - 3,380.92 = 9,505.45",
+   "Closed - open = 9,786.63 - 9,505.45 = $281.18"
+  ],
+  "keystrokes": [
+   "13500 x 1.05 / 1.1 = 12886.36",
+   "- 4500 / 1.331 = 9505.45"
+  ],
+  "errors": [
+   {
+    "id": "dropped-salvage-term",
+    "label": "Compared with the formula without the salvage term",
+    "value": -3099.74,
+    "check": "9786.63-60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)",
+    "explain": "The asset is sold at year 3, so the salvage term must be subtracted in the open-pool formula."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Did not discount the salvage term",
+    "value": 1400.26,
+    "check": "9786.63-(60000*0.3*0.3/(0.1+0.3)*(1+0.5*0.1)/(1+0.1)-20000*0.3*0.3/(0.1+0.3))",
+    "explain": "The salvage term is discounted three years."
+   }
+  ],
+  "explanation": "The closed pool collects the terminal-loss refund immediately, while the open pool takes the same deduction slowly, so the closed pool is worth slightly more in present value.",
+  "source": "generated",
+  "ref": "L05B s22-25, SM 10-11"
+ },
+ {
+  "id": "q10-461",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-sunk-opportunity"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Foothills Implements will build a new plant on land it bought years ago for $90,000 and that could be sold today for $150,000 after tax. Which amount belongs in the year-0 cash flow of the expansion project?",
+  "options": [
+   "$150,000, the after-tax value of the land if it were sold today",
+   "$90,000, the price originally paid for the land",
+   "$0, because the firm already owns the land",
+   "$60,000, the gain on the land since it was bought"
+  ],
+  "answer": 0,
+  "explanation": "The relevant cost of using land is what the firm gives up by not selling it: its current after-tax market value, which is an opportunity cost. The original price is sunk, and owning the land does not make it free.",
+  "source": "generated",
+  "ref": "L05B s10-11, S6 s2-4"
+ },
+ {
+  "id": "q10-462",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-side-effects-financing"
+  ],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A new line of lightweight balers will cost the firm $40,000 of contribution margin a year on its existing heavyweight line. How does this erosion enter the expansion project's cash flows?",
+  "options": [
+   "It is ignored because the heavyweight line is a separate product",
+   "As a one-time cost at time 0 of $40,000",
+   "As a lost after-tax cash flow, $40,000 x (1 - T) every year, subtracted from the project",
+   "As a gain, because the lost sales are replaced by new sales"
+  ],
+  "answer": 2,
+  "explanation": "Erosion is an incremental effect caused by taking the project, so it belongs in the project's cash flows. Lost revenue is taxed like revenue, so it reduces cash flow by 40,000 x (1 - T) in each year it lasts.",
+  "source": "generated",
+  "ref": "S6 s3-5, TB 10.1"
+ },
+ {
+  "id": "q10-463",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "In an expansion project, the net working capital invested at time 0 is recovered at the _____ of the project.",
+  "options": [
+   "start",
+   "midpoint",
+   "end",
+   "end of year 1"
+  ],
+  "answer": 2,
+  "explanation": "NWC is tied up while the project operates and is released when the project ends, so the recovery appears as a positive cash flow in the last year. It is not taxed because it is a return of capital already counted at 100%.",
+  "source": "generated",
+  "ref": "L05B s12, S6 s5"
+ },
+ {
+  "id": "q10-464",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-replacement-npv"
+  ],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the cash flows of an expansion project differ from those of a replacement project?",
+  "options": [
+   "An expansion uses the project's own flows; a replacement uses the differences between the new and the old equipment (net acquisition cost, net salvage, incremental savings)",
+   "An expansion is taxed at the full rate; a replacement is taxed at half the rate",
+   "An expansion ignores CCA; a replacement includes CCA",
+   "An expansion is discounted at the cost of capital; a replacement is discounted at the cost of the old machine"
+  ],
+  "answer": 0,
+  "explanation": "Both use the same NPV machinery, but a replacement is evaluated incrementally: sell the old, buy the new, and count only what changes. An expansion adds a stand-alone set of flows.",
+  "source": "generated",
+  "ref": "S6 s2-10"
+ },
+ {
+  "id": "q10-465",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-sunk-opportunity"
+  ],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following should NOT be included in the cash flows of an expansion project?",
+  "options": [
+   "The after-tax value of land the project will use",
+   "The initial investment in working capital",
+   "The after-tax revenue lost on an existing product",
+   "The $25,000 feasibility study that has already been paid"
+  ],
+  "answer": 3,
+  "explanation": "The feasibility study is a sunk cost: it has been spent whether or not the project goes ahead, so its incremental cash flow is zero. The land, working capital and erosion are all caused by the decision to go ahead.",
+  "source": "generated",
+  "ref": "L05B s10-11, S6 s4"
+ },
+ {
+  "id": "q10-466",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the NPV of an expansion add the PV of the CCA tax shield as a separate item rather than including CCA in the annual operating cash flow?",
+  "options": [
+   "CCA is a cash outflow that must be discounted at a higher rate",
+   "CCA is not a cash flow; its only value is the tax it saves, which the PV formula captures once for the whole declining-balance schedule",
+   "CCA is already included in revenue, so it would be double counted",
+   "Because CCA is the only item taxed at the rate T rather than (1 - T)"
+  ],
+  "answer": 1,
+  "explanation": "The operating cash flow (S - C)(1 - T) deliberately leaves CCA out. The shield T x CCA is a separate stream of declining flows, valued by the formula I0 d T/(k + d) x first-year factor, less the salvage term. Counting CCA in both places would double count.",
+  "source": "generated",
+  "ref": "L05B s15-17, S6 s6"
+ },
+ {
+  "id": "q10-467",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "An expansion project has an NPV of -$31,400 at the firm's 12% cost of capital. What does this result say?",
+  "options": [
+   "The project earns exactly 12% and the firm should be indifferent",
+   "The project loses $31,400 of accounting profit in year 1",
+   "The project should be accepted because its cash flows are positive after year 0",
+   "The project earns less than 12% and destroys value; reject it unless there are strategic benefits not in the cash flows"
+  ],
+  "answer": 3,
+  "explanation": "NPV is the value added in today's dollars, after paying investors their required return. A negative NPV means the PV of inflows is less than the PV of outflows, so the IRR is below 12%.",
+  "source": "generated",
+  "ref": "S6 s6, L05A"
+ },
+ {
+  "id": "q10-468",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "Which items make up the time-0 cash flow of an expansion NPV?",
+  "options": [
+   "Capital expenditure, sunk feasibility costs, and interest on the financing",
+   "Capital expenditure, initial net working capital, and the opportunity cost of any assets the project uses",
+   "Capital expenditure and the first year's CCA tax shield",
+   "Capital expenditure and the expected salvage value"
+  ],
+  "answer": 1,
+  "explanation": "CF0 = -CAPEX - NWC0 - opportunity cost. Sunk costs and financing costs are not incremental, the CCA shield is a later-year item and salvage arrives at the end.",
+  "source": "generated",
+  "ref": "S6 s4-5"
+ },
+ {
+  "id": "q10-469",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-pvcca",
+   "c10-pool-open-closed"
+  ],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "If an expansion project's equipment is not sold at the end and stays in a pool that holds other assets, the PV of the CCA tax shield has no salvage term.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "The salvage term removes the shields lost when the proceeds of a sale reduce the pool. With no sale there is no reduction, so only the first term, I0 d T/(k + d) x first-year factor, remains.",
+  "source": "generated",
+  "ref": "L05B s16, s22"
+ },
+ {
+  "id": "q10-470",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Red Deer Welding will add a $150,000 line (CCA rate 30%, half-year rule). It earns $80,000 a year before tax for 3 years, needs $10,000 of working capital recovered at the end, and will be sold for $30,000 in year 3 (the pool stays open). A $5,000 feasibility study was already paid. T = 30%, k = 10%. What is the NPV?",
+  "options": [
+   "$28,947.69",
+   "$31,460.84",
+   "$36,460.84",
+   "$37,994.93",
+   "$41,532.21"
+  ],
+  "answer": 2,
+  "explanation": "CF0 = -160,000; after-tax operating flow = 80,000 x 0.70 = 56,000 for 3 years (PV 139,263.71); year-3 salvage plus NWC = 40,000 (PV 30,052.59); PV of CCA shield with salvage term = 27,144.53. NPV = $36,460.84. Counting the sunk study lowers it by $5,000; forgetting the NWC recovery, dropping the salvage term or omitting the half-year factor each give a different wrong value.",
+  "source": "generated",
+  "ref": "SM 10-8, S6 s5-6"
+ },
+ {
+  "id": "q10-471",
+  "concept": "c10-expansion-npv",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Saskatoon Seed Co. buys $300,000 of equipment (CCA rate 20%, half-year rule) for an expansion and sells it for $60,000 at the end of year 5; the pool stays open. T = 40% and k = 12%. What is the present value of the CCA tax shield?",
+  "options": [
+   "$55,982.14",
+   "$62,470.74",
+   "$66,488.60",
+   "$70,506.45",
+   "$70,982.14"
+  ],
+  "answer": 1,
+  "explanation": "First term: 300,000 x 0.20 x 0.40/(0.12 + 0.20) = 75,000, times (1 + 0.06)/1.12 = 70,982.14. Salvage term: 60,000 x 0.20 x 0.40/0.32 / 1.12^5 = 8,511.40. PV = $62,470.74. Using the AII factor, no first-year factor, an undiscounted salvage term or no salvage term each gives one of the other values.",
+  "source": "generated",
+  "ref": "L05B s16, s22, SM 10-8"
+ },
+ {
+  "id": "q10-472",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Brew Co. will build a canning line costing $480,000 (CCA rate 20%, half-year rule). It adds $520,000 of revenue and $310,000 of cash costs a year for 4 years, needs $40,000 of working capital up front (recovered at the end), and will be sold for $60,000 at the end of year 4; the CCA pool stays open. A $25,000 market study was already paid. T = 30% and the discount rate is 12%. What is the NPV?",
+  "answer": 68071.15,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-(480000+40000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+(60000+40000)/1.12**4+480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+  "steps": [
+   {
+    "label": "Time-0 cash flow: CAPEX + NWC",
+    "value": -520000.0,
+    "check": "-(480000+40000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax operating cash flow per year",
+    "value": 147000.0,
+    "check": "(520000-310000)*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "Annuity factor, 12%, 4 years",
+    "value": 3.0373,
+    "check": "(1-1/1.12**4)/0.12",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.0005
+    }
+   },
+   {
+    "label": "PV of operating cash flows",
+    "value": 446490.35,
+    "check": "(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of salvage + NWC recovery",
+    "value": 63551.81,
+    "check": "(60000+40000)/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield (with salvage term)",
+    "value": 78028.99,
+    "check": "480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 68071.15,
+    "check": "-(480000+40000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+(60000+40000)/1.12**4+480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Sunk market study = 0. CF0 = -480,000 - 40,000 = -520,000",
+   "Annual after-tax operating flow = (520,000 - 310,000)(1 - 0.30) = 147,000",
+   "PV = 147,000 x [(1 - 1/1.12^4)/0.12] = 147,000 x 3.0373 = 446,490.35",
+   "Year 4: salvage 60,000 + NWC 40,000 = 100,000; PV = 63,551.81",
+   "PV of CCA = 480,000 x 0.2 x 0.3/0.32 x 1.06/1.12 - 60,000 x 0.2 x 0.3/0.32 / 1.12^4 = 85,178.57 - 7,149.58 = 78,028.99",
+   "NPV = -520,000 + 446,490.35 + 63,551.81 + 78,028.99 = $68,071.15"
+  ],
+  "keystrokes": [
+   "CF0 = -520000, C01 = 147000 (F01 = 3), C02 = 247000 (147000 + 100000), I = 12, NPV CPT",
+   "then add PV of CCA = 78028.99 (computed separately)"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Included the sunk market study",
+    "value": 43071.15,
+    "check": "-(480000+40000+25000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+(60000+40000)/1.12**4+480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+    "explain": "The market study is already paid; it is the same with or without the project."
+   },
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Forgot to recover NWC at the end",
+    "value": 42650.43,
+    "check": "-(480000+40000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+60000/1.12**4+480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+    "explain": "Working capital comes back when the project ends; leaving it out charges the project for $40,000 forever."
+   },
+   {
+    "id": "dropped-salvage-term",
+    "label": "Dropped the salvage term from PV_CCA",
+    "value": 75220.73,
+    "check": "-(480000+40000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+(60000+40000)/1.12**4+480000*0.2*0.3/(0.12+0.2)*(1+0.5*0.12)/(1+0.12)",
+    "explain": "Equipment is sold at year 4, so the shields on the salvage value are lost and must be subtracted."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Applied no first-year factor",
+    "value": 72892.58,
+    "check": "-(480000+40000)+(520000-310000)*(1-0.3)*(1-1/1.12**4)/0.12+(60000+40000)/1.12**4+480000*0.2*0.3/(0.12+0.2)-60000*0.2*0.3/(0.12+0.2)/1.12**4",
+    "explain": "In year 1 only half the usual CCA may be claimed; the factor (1 + 0.5k)/(1 + k) captures that."
+   }
+  ],
+  "explanation": "Assemble CF0, the annual after-tax operating flow, terminal flows and the CCA shield, then add.",
+  "source": "generated",
+  "ref": "SM 10-8, S6 s5-6"
+ },
+ {
+  "id": "q10-473",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Foothills Implements will build a baler plant on land it owns (worth $150,000 after tax now and in 4 years). Equipment costs $700,000 (CCA rate 20%, AII applies) and sells for $120,000 at the end of year 4; the pool stays open. Sales are $560,000 a year, costs $240,000, and the plant erodes $40,000 of existing sales a year. NWC is $40,000 at time 0, then 10% of sales, recovered at the end. A $12,000 study is sunk. T = 35%, k = 11%. Find the NPV.",
+  "answer": 23024.06,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-(700000+150000+40000)+(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000+150000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+  "steps": [
+   {
+    "label": "Time-0 cash flow: equipment + land + NWC",
+    "value": -890000.0,
+    "check": "-(700000+150000+40000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "After-tax operating flow per year",
+    "value": 182000.0,
+    "check": "(560000-40000-240000)*(1-0.35)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NWC cash flow in year 1",
+    "value": -16000.0,
+    "check": "-(0.1*560000-40000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of operating flows, years 1-4",
+    "value": 564645.12,
+    "check": "(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of the year-1 NWC flow",
+    "value": -14414.41,
+    "check": "-(0.1*560000-40000)/1.11",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of salvage + NWC recovery + land at year 4",
+    "value": 214746.3,
+    "check": "(120000+0.1*560000+150000)/1.11**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield (AII, with salvage term)",
+    "value": 148047.06,
+    "check": "700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 23024.06,
+    "check": "-(700000+150000+40000)+(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000+150000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "Sunk study = 0. Land enters at its after-tax value, -150,000 now and +150,000 back in year 4",
+   "CF0 = -700,000 - 150,000 - 40,000 = -890,000",
+   "Operating flow = (560,000 - 40,000 - 240,000)(1 - 0.35) = 182,000 a year",
+   "NWC level = 10% x 560,000 = 56,000, so year 1 investment = 56,000 - 40,000 = 16,000; NWC recovered at year 4 = 56,000",
+   "PVs: operating 564,645.12; year-1 NWC -14,414.41; year-4 (120,000 + 56,000 + 150,000) 214,746.30",
+   "PV CCA (AII) = 700,000 x 0.2 x 0.35/0.31 x (1 + 0.165)/1.11 - 120,000 x 0.2 x 0.35/0.31 / 1.11^4 = 148,047.06",
+   "NPV = -890,000 + 564,645.12 - 14,414.41 + 214,746.30 + 148,047.06 = $23,024.06"
+  ],
+  "keystrokes": [
+   "CF0 = -890000, C01 = 166000 (182000 - 16000), C02 = 182000, C03 = 182000, C04 = 508000, I = 11, NPV CPT",
+   "add PV of CCA computed separately"
+  ],
+  "errors": [
+   {
+    "id": "counted-sunk",
+    "label": "Included the sunk study",
+    "value": 11024.06,
+    "check": "-(700000+150000+40000+12000)+(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000+150000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "explain": "The $12,000 study is already paid and has no incremental effect."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year factor although AII applies",
+    "value": 7360.0,
+    "check": "-(700000+150000+40000)+(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000+150000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+0.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "explain": "The question says AII, so the first-year factor is (1 + 1.5k)/(1 + k)."
+   },
+   {
+    "id": "ignored-erosion",
+    "label": "Ignored the lost sales on the existing line",
+    "value": 103687.64,
+    "check": "-(700000+150000+40000)+(560000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000+150000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "explain": "Erosion is a real incremental cost: the lost after-tax cash flow reduces the project's value."
+   },
+   {
+    "id": "land-excluded",
+    "label": "Left out the land opportunity cost and its return",
+    "value": 74214.41,
+    "check": "-(700000+40000)+(560000-40000-240000)*(1-0.35)*(1-1/1.11**4)/0.11-(0.1*560000-40000)/1.11+(120000+0.1*560000)/1.11**4+700000*0.2*0.35/(0.11+0.2)*(1+1.5*0.11)/(1+0.11)-120000*0.2*0.35/(0.11+0.2)/1.11**4",
+    "explain": "Land the firm already owns still has an opportunity cost: the after-tax proceeds it gives up."
+   }
+  ],
+  "explanation": "Everything the project causes is included: land, erosion, NWC and the shield; nothing already spent is.",
+  "source": "generated",
+  "ref": "S6 s2-6, SM 10-16"
+ },
+ {
+  "id": "q10-474",
+  "concept": "c10-expansion-npv",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Okotoks Sheet Metal plans a $640,000 expansion (CCA rate 30%, half-year rule) that adds $215,000 a year to pre-tax operating income for 5 years. The equipment will be worthless at the end and there is no working capital. T = 32% and the discount rate is 13%. What is the NPV?",
+  "answer": 8883.96,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-640000+215000*(1-0.32)*(1-1/1.13**5)/0.13+640000*0.3*0.32/(0.13+0.3)*(1+0.5*0.13)/(1+0.13)",
+  "steps": [
+   {
+    "label": "After-tax operating cash flow",
+    "value": 146200.0,
+    "check": "215000*(1-0.32)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of operating cash flows",
+    "value": 514219.21,
+    "check": "215000*(1-0.32)*(1-1/1.13**5)/0.13",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "PV of CCA tax shield (no salvage term)",
+    "value": 134664.75,
+    "check": "640000*0.3*0.32/(0.13+0.3)*(1+0.5*0.13)/(1+0.13)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   },
+   {
+    "label": "NPV",
+    "value": 8883.96,
+    "check": "-640000+215000*(1-0.32)*(1-1/1.13**5)/0.13+640000*0.3*0.32/(0.13+0.3)*(1+0.5*0.13)/(1+0.13)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01
+    }
+   }
+  ],
+  "solution": [
+   "After-tax operating flow = 215,000 x 0.68 = 146,200",
+   "PV = 146,200 x 3.5172 = 514,219.21",
+   "PV CCA = 640,000 x 0.30 x 0.32/0.43 x 1.065/1.13 = 134,664.75 (the equipment is scrapped, so no salvage term)",
+   "NPV = -640,000 + 514,219.21 + 134,664.75 = $8,883.96"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 13, PMT = 146200, CPT PV; add PV of CCA; subtract 640000"
+  ],
+  "errors": [
+   {
+    "id": "missing-cca-shield",
+    "label": "Left out the CCA tax shield",
+    "value": -125780.79,
+    "check": "-640000+215000*(1-0.32)*(1-1/1.13**5)/0.13",
+    "explain": "The shield on $640,000 of equipment is worth far more than the NPV margin."
+   },
+   {
+    "id": "k-minus-d",
+    "label": "Used k - d in the CCA denominator",
+    "value": 214841.8,
+    "check": "-640000+215000*(1-0.32)*(1-1/1.13**5)/0.13+640000*0.3*0.32/(0.3-0.13)*(1+0.5*0.13)/(1+0.13)",
+    "explain": "CCA declines at rate d, so the denominator is k + d."
+   },
+   {
+    "id": "taxed-capex",
+    "label": "Reduced the capital cost by (1 - T)",
+    "value": 213683.96,
+    "check": "-640000*(1-0.32)+215000*(1-0.32)*(1-1/1.13**5)/0.13+640000*0.3*0.32/(0.13+0.3)*(1+0.5*0.13)/(1+0.13)",
+    "explain": "Capital expenditure is counted at 100%; its tax benefit comes only through CCA."
+   }
+  ],
+  "explanation": "No salvage and no NWC: the NPV is CF0 plus the operating annuity plus the CCA shield.",
+  "source": "generated",
+  "ref": "SM 10-7, S6 s6"
+ }
+]

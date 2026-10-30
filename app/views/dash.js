@@ -58,7 +58,7 @@ function courseCard(app, c) {
     const examIso = (st && st.settings && st.settings.examDate) || pack.exam.date;
     const days = examIso ? Math.ceil((new Date(examIso).getTime() - Date.now()) / 86400000) : null;
     const lastDay = st ? Object.entries(st.days || {}).filter(([, v]) => v.answered > 0).map(([k]) => k).sort().pop() : null;
-    const na = st ? nextAction(app, { content, state: st, pack }) : { title: 'Start the campaign', desc: `Open ${c.title} and read the first lesson.`, href: '#/home', cta: 'Begin' };
+    const na = st ? nextAction(app, { content, state: st, pack }) : { title: `Start with Chapter ${pack.order[0]}`, desc: `Read the first lesson cards, then pass the checkpoint quiz.`, href: `#/campaign/${pack.order[0]}`, cta: 'Begin' };
     card.append(head,
       h('div', { class: 'course-stats' },
         ring(r.score, { size: 84, stroke: 9, color: r.score >= 0.85 ? 'var(--good)' : 'var(--gold-leaf)', label: h('div', { class: 'center' }, h('div', { class: 'big' }, fmtPct(r.score)), h('div', { class: 'tiny muted' }, 'ready')) }),

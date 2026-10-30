@@ -1,0 +1,1228 @@
+[
+ {
+  "id": "q11-480",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A real option is the right, but not the _____, to undertake a business initiative in the future.",
+  "options": [
+   "premium",
+   "probability",
+   "obligation",
+   "discount"
+  ],
+  "answer": 2,
+  "explanation": "An option is a right, not an obligation: the holder decides in the future, using information not yet available, whether to act. If action were compulsory it would be a commitment, not an option.",
+  "source": "generated",
+  "ref": "L05C s10"
+ },
+ {
+  "id": "q11-481",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Which statement defines an option?",
+  "options": [
+   "A binding contract to carry out a business activity on a fixed future date",
+   "A forecast of project cash flows under best, base and worst cases",
+   "A probability-weighted average of the NPVs of several projects",
+   "A right, but not an obligation, to do something in the future"
+  ],
+  "answer": 3,
+  "explanation": "The lecture defines an option as a right (but not an obligation) to act later, once more is known. A binding contract is a commitment, a three-case forecast is scenario analysis and a probability-weighted average is an expected value.",
+  "source": "generated",
+  "ref": "L05C s10"
+ },
+ {
+  "id": "q11-482",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Atlantic Bakery builds its new plant with extra foundations and utility connections so that it can add a second production line later if demand proves strong. Which type of real option is this?",
+  "options": [
+   "Expansion",
+   "Abandonment",
+   "Timing",
+   "Production flexibility"
+  ],
+  "answer": 0,
+  "explanation": "Paying a little more now so that output can be increased later is the expansion option (the lecture's bigger machine or extra space). Abandonment is the right to exit early, and timing is the right to choose when to act.",
+  "source": "generated",
+  "ref": "L05C s12"
+ },
+ {
+  "id": "q11-483",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A start-up trucking firm negotiates a clause that lets it resell its rigs at an agreed price after year 2 if its routes prove unprofitable. Which type of real option does the clause create?",
+  "options": [
+   "Expansion",
+   "Abandonment",
+   "Timing",
+   "Production flexibility"
+  ],
+  "answer": 1,
+  "explanation": "The right to exit a project early if it is not performing is the abandonment option, and the agreed resale price puts a floor under its value. Nothing in the clause adds capacity (expansion) or changes when the firm acts (timing).",
+  "source": "generated",
+  "ref": "L05C s12"
+ },
+ {
+  "id": "q11-484",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A brewery can launch a canned seltzer this spring, or wait a year to see whether a rival's launch succeeds and then decide. What type of real option is the right to wait?",
+  "options": [
+   "Expansion",
+   "Abandonment",
+   "Timing",
+   "Production flexibility"
+  ],
+  "answer": 2,
+  "explanation": "Choosing the best time to act, after more information arrives, is the timing option (the lecture's example is the best time to replace a machine). Waiting does not add capacity or end an existing project.",
+  "source": "generated",
+  "ref": "L05C s12"
+ },
+ {
+  "id": "q11-485",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A Saskatchewan fertilizer plant is built so that it can switch its output between two product grades as relative prices change. What type of real option is this?",
+  "options": [
+   "Expansion",
+   "Abandonment",
+   "Timing",
+   "Production flexibility"
+  ],
+  "answer": 3,
+  "explanation": "Being able to change the rate or type of production according to the market is production flexibility. The plant stays in operation, so this is neither abandonment nor expansion.",
+  "source": "generated",
+  "ref": "L05C s12"
+ },
+ {
+  "id": "q11-486",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts a financial option with a real option?",
+  "options": [
+   "A financial option is a right to buy or sell an asset; a real option is a right to undertake a business activity",
+   "A financial option carries an obligation to exercise; a real option does not",
+   "A financial option has a premium; a real option is always free",
+   "A real option must be exercised on a fixed date; a financial option may lapse"
+  ],
+  "answer": 0,
+  "explanation": "Both are rights without obligations and both usually cost something up front (the premium). They differ in what the right is about: a financial asset, or a business initiative.",
+  "source": "generated",
+  "ref": "L05C s10"
+ },
+ {
+  "id": "q11-487",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How do the option to expand and the option to abandon differ in the way they add value?",
+  "options": [
+   "Expansion limits the loss when things go badly; abandonment captures more upside",
+   "Expansion captures more upside when things go well; abandonment limits the loss when they go badly",
+   "Both lower the project's risk by cutting off its upside",
+   "Expansion is a financial option while abandonment is a real option"
+  ],
+  "answer": 1,
+  "explanation": "Expansion is a call-like right to do more if the news is good; abandonment is a put-like right to sell the assets if the news is bad. Both are real options and neither cuts off the upside.",
+  "source": "generated",
+  "ref": "L05C s12; SM 11 CTQ 5, 6"
+ },
+ {
+  "id": "q11-488",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a real option?",
+  "options": [
+   "The right to enlarge a plant later if demand turns out strong",
+   "The right to sell a project's assets early if it performs badly",
+   "A best, base and worst-case table of NPVs for different sales forecasts",
+   "The right to postpone a launch until more is known"
+  ],
+  "answer": 2,
+  "explanation": "A scenario table changes inputs together to show the range of NPVs; it gives the firm no right to do anything. The other three are the expansion, abandonment and timing options.",
+  "source": "generated",
+  "ref": "L05C s5, s12"
+ },
+ {
+  "id": "q11-489",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why does ignoring real options tend to understate a project's NPV rather than overstate it?",
+  "options": [
+   "Options raise the discount rate, which lowers the NPV of a fixed plan",
+   "Option premiums are tax deductible, so ignoring them lowers cash flows",
+   "A fixed-plan DCF gives too much weight to the best case",
+   "An option is used only when it pays, so it can only add value, and a fixed-plan DCF leaves it out"
+  ],
+  "answer": 3,
+  "explanation": "Because the firm uses an option only when it pays, it cannot make the project worse and often makes it better. A static DCF assumes the plan is fixed and values none of that flexibility (SM: ignoring the option to abandon underestimates NPV).",
+  "source": "generated",
+  "ref": "SM 11 CTQ 5; L05C s11"
+ },
+ {
+  "id": "q11-490",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we usually pay a premium up front to hold an option?",
+  "options": [
+   "The right without the obligation is valuable, because the holder uses it only when it pays",
+   "The premium is the NPV the project is expected to earn",
+   "The premium compensates the seller for the holder's obligation to exercise",
+   "The premium is the resale value of the assets if the option is exercised"
+  ],
+  "answer": 0,
+  "explanation": "Car insurance is the lecture's example. The point is that the right is worth money, so the person who grants it must be compensated. The challenge is to value the option, that is, to find a fair premium for the risk.",
+  "source": "generated",
+  "ref": "L05C s11"
+ },
+ {
+  "id": "q11-491",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project's static NPV is −$0.8 million. Analysts value its option to expand at $1.3 million. How should the result be interpreted?",
+  "options": [
+   "The project is worth −$0.8 million and should be rejected, because the option cannot be counted",
+   "The project including its option is worth $0.5 million, so it is worth undertaking",
+   "The project is worth $2.1 million, found by subtracting the static NPV from the option value",
+   "The project is worth $1.3 million, because the option replaces the static NPV"
+  ],
+  "answer": 1,
+  "explanation": "The option adds to the static value: −0.8 + 1.3 = +$0.5 million. Dropping the option leaves the NPV too low, and the option does not replace the static NPV or enter with the wrong sign.",
+  "source": "generated",
+  "ref": "L05C s11; SM 11 CTQ 5"
+ },
+ {
+  "id": "q11-492",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A highway authority can build bridges sized for two lanes, or pay more now for longer bridges that make a later widening to three lanes cheap. How should the extra up-front cost of the longer bridges be viewed?",
+  "options": [
+   "As a sunk cost that should be ignored",
+   "As a financing cost that should be excluded from the project",
+   "As the premium paid for a real option to expand the road later",
+   "As a side effect on the existing bridges"
+  ],
+  "answer": 2,
+  "explanation": "Paying more now to keep the right to expand cheaply later is exactly the purchase of an expansion option (the lecture's freeway bridges). It is a new, avoidable cost, not a sunk or financing item.",
+  "source": "generated",
+  "ref": "L05C s13-14"
+ },
+ {
+  "id": "q11-493",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "When we value a real option, what do we assume about the future decision date?",
+  "options": [
+   "That the firm will follow the original plan whatever it learns",
+   "That the firm will exercise the option in every state of the world",
+   "That the firm will choose the branch with the highest probability",
+   "That the firm will make the best financial decision given the information available then"
+  ],
+  "answer": 3,
+  "explanation": "An option is valued by assuming the firm uses the right only when it is worth using. That is what lets us decide at each later node first and then work backwards (decision trees).",
+  "source": "generated",
+  "ref": "L05C s11"
+ },
+ {
+  "id": "q11-494",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "How is the value of a real option measured?",
+  "options": [
+   "Project value with the flexibility minus value without it",
+   "The premium the firm pays up front to obtain it",
+   "The best-case NPV minus the worst-case NPV",
+   "The probability of exercise times the base-case NPV"
+  ],
+  "answer": 0,
+  "explanation": "A real option's value is what the flexibility adds: NPV with the option minus NPV without. The premium is its price, which should not exceed that value. The best-minus-worst gap is a range, not an option value.",
+  "source": "generated",
+  "ref": "L05C s11, s16; SM 11-21"
+ },
+ {
+  "id": "q11-495",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "In the freeway bridges example, in which order do the events occur?",
+  "options": [
+   "Learn whether the road is busy or quiet, then choose the bridges, then decide whether to widen",
+   "Choose short or long bridges, then learn whether the road is busy or quiet, then decide whether to widen",
+   "Decide whether to widen, then choose the bridges, then learn whether the road is busy or quiet",
+   "Choose the bridges, then decide whether to widen, then learn whether the road is busy or quiet"
+  ],
+  "answer": 1,
+  "explanation": "Today's decision is the bridges, the unknown arrives next (busy or quiet, with probabilities), and the future decision (widen or not) comes last, once the information is known. That timeline is why we solve the tree from the last decision backwards.",
+  "source": "generated",
+  "ref": "L05C s14"
+ },
+ {
+  "id": "q11-496",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A real option obliges the firm to carry out the business activity if conditions turn favourable.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "An option is a right, not an obligation. The firm decides later, using the then-available information, whether to exercise.",
+  "source": "generated",
+  "ref": "L05C s10"
+ },
+ {
+  "id": "q11-497",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 2,
+  "stem": "Standard NPV analysis based on expected cash flows tends to ignore the value of managerial options.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "A fixed-plan DCF values the expected flows of one plan and puts no value on the right to expand, abandon, wait or switch later. That is why options are analysed separately, for example with decision trees.",
+  "source": "generated",
+  "ref": "TB 11.7; SM 11 CTQ 5"
+ },
+ {
+  "id": "q11-498",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "Muskoka Cycles can subcontract its frame production now or build an in-house plant. Subcontracting has a slightly lower NPV, but if sales boom the firm can start producing in-house later. Why might it still choose to subcontract?",
+  "options": [
+   "Lower operating leverage plus an option to move production in-house later, which NPV omits",
+   "Real options never add value, so the lower NPV is a mistake",
+   "Subcontracting has no fixed costs, so it can never lose money",
+   "Choosing the plan with the lower NPV maximizes shareholder wealth"
+  ],
+  "answer": 0,
+  "explanation": "The text notes that it is much easier to increase operating leverage later (buy equipment) than to reduce it. The lower DOL and the option to expand are worth something that the static NPV omits, though the choice should rest on a value comparison.",
+  "source": "generated",
+  "ref": "TB 11.5; L05C s12"
+ },
+ {
+  "id": "q11-499",
+  "concept": "c11-real-options",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "The lecture describes a car insurance policy as a put option. In that example, what is the option's premium?",
+  "options": [
+   "The deductible",
+   "The price paid for the policy",
+   "The payout after a claim",
+   "The value of the car"
+  ],
+  "answer": 1,
+  "explanation": "The premium is what we pay up front for the right. Here it is the cost of the policy; the payout is what the right is worth if it is used.",
+  "source": "generated",
+  "ref": "L05C s11"
+ },
+ {
+  "id": "q11-500",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "To solve a decision tree we start at the _____ decision node and work back to today.",
+  "options": [
+   "earliest",
+   "most likely",
+   "latest",
+   "cheapest"
+  ],
+  "answer": 2,
+  "explanation": "The later decision determines the value that flows back to the earlier node, so we decide at the latest node first and then probability-weight on the way back.",
+  "source": "generated",
+  "ref": "L05C s16"
+ },
+ {
+  "id": "q11-501",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "In a decision-tree diagram, \"the road will be busy with probability 80% and quiet with probability 20%\" is shown at which kind of node?",
+  "options": [
+   "A decision node, valued by taking the best branch",
+   "A terminal node, valued by discounting its payoff",
+   "A decision node, valued by averaging its branches",
+   "A chance node, valued by probability-weighting its branches"
+  ],
+  "answer": 3,
+  "explanation": "Nature, not the firm, chooses between busy and quiet, so the node carries probabilities and is valued as Σp × V. A decision node is where the firm chooses and takes the best branch, never an average.",
+  "source": "generated",
+  "ref": "L05C s14, s16"
+ },
+ {
+  "id": "q11-502",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prairie Cold Storage must choose between a compact warehouse ($9.5M) and an expandable one ($12.8M). Demand will be high (probability 0.65) or low (0.35). If high, the compact building needs a $7.2M add-on and the expandable one only $2.6M; leaving high demand unserved costs $10.8M in lost margin. If low, nothing more is spent. All amounts are present values. What is the expected total cost today of the cheaper design, in $ millions?",
+  "answer": 14.18,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "9.5+0.65*7.2",
+  "steps": [
+   {
+    "label": "Compact, high-demand node: cheaper of add-on $7.2M or lost margin $10.8M",
+    "value": 7.2,
+    "check": "7.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expandable, high-demand node: cheaper of add-on $2.6M or lost margin $10.8M",
+    "value": 2.6,
+    "check": "2.6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected total cost, compact = 9.5 + 0.65 × 7.2",
+    "value": 14.18,
+    "check": "9.5+0.65*7.2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected total cost, expandable = 12.8 + 0.65 × 2.6",
+    "value": 14.49,
+    "check": "12.8+0.65*2.6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Decide at the latest node first: if demand is high, add on (7.2 < 10.8 for compact; 2.6 < 10.8 for expandable); if low, spend nothing",
+   "Compact: 9.5 + 0.65 × 7.2 + 0.35 × 0 = $14.18M",
+   "Expandable: 12.8 + 0.65 × 2.6 + 0.35 × 0 = $14.49M",
+   "The lower expected cost is the compact design: $14.18 million (the amounts are already present values, so no further discounting)"
+  ],
+  "keystrokes": [
+   "0.65 × 7.2 = 4.68",
+   "+ 9.5 = 14.18",
+   "0.65 × 2.6 = 1.69",
+   "+ 12.8 = 14.49"
+  ],
+  "errors": [
+   {
+    "id": "averaged-before-deciding",
+    "label": "Averaged add-on and lost-margin costs before choosing",
+    "value": 15.35,
+    "check": "9.5+0.65*((7.2+10.8)/2)",
+    "explain": "At the high-demand node the firm picks the cheaper branch; averaging $7.2M and $10.8M pretends it might leave demand unserved."
+   },
+   {
+    "id": "prob-swapped",
+    "label": "Used 0.35 as the chance of the add-on",
+    "value": 12.02,
+    "check": "9.5+0.35*7.2",
+    "explain": "The add-on happens when demand is high, which has probability 0.65."
+   },
+   {
+    "id": "picked-dearer-design",
+    "label": "Reported the expandable design's cost",
+    "value": 14.49,
+    "check": "12.8+0.65*2.6",
+    "explain": "The question asks for the cheaper design; the compact building costs less in expectation."
+   }
+  ],
+  "explanation": "Solve backwards: at each high-demand node choose the cheaper branch, then probability-weight. Compact costs $14.18M against $14.49M for expandable, so compact is cheaper by $0.31M in expected terms.",
+  "source": "generated",
+  "ref": "L05C s13-16 (freeway bridges)"
+ },
+ {
+  "id": "q11-503",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bayview Brewing can run a $1.8M pilot of a new line. If demand proves strong (probability 0.35), a national rollout has an NPV of +$9.6M; if weak (0.65), rollout would have an NPV of −$4.2M, so the firm would decline it. Rollout NPVs are present values before the pilot cost and already reflect Bayview's 10% required return. What is the expected NPV of running the pilot, in $ millions?",
+  "answer": 1.56,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.35*9.6+0.65*0-1.8",
+  "steps": [
+   {
+    "label": "Weak-demand decision node: decline rollout",
+    "value": 0.0,
+    "check": "0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected value of the rollout opportunity",
+    "value": 3.36,
+    "check": "0.35*9.6+0.65*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value of the pilot today",
+    "value": 1.56,
+    "check": "0.35*9.6+0.65*0-1.8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Decide first at the weak-demand node: declining (0) beats rolling out (−4.2)",
+   "Chance node: 0.35 × 9.6 + 0.65 × 0 = 3.36",
+   "Pilot value = 3.36 − 1.8 = $1.56 million; the NPVs are already present values, so no more discounting"
+  ],
+  "keystrokes": [
+   "0.35 × 9.6 = 3.36",
+   "+ 0.65 × 0 = 3.36",
+   "− 1.8 = 1.56"
+  ],
+  "errors": [
+   {
+    "id": "averaged-before-deciding",
+    "label": "Rolled out in the weak state too",
+    "value": -1.17,
+    "check": "0.35*9.6+0.65*(-4.2)-1.8",
+    "explain": "The firm would decline the rollout when demand is weak, so that branch is worth 0, not −4.2."
+   },
+   {
+    "id": "discounted-twice",
+    "label": "Discounted the NPVs again at 10%",
+    "value": 1.25,
+    "check": "(0.35*9.6)/1.1-1.8",
+    "explain": "The branch values are already present values; discounting again counts the time value twice."
+   },
+   {
+    "id": "forgot-extra-cost",
+    "label": "Left out the $1.8M pilot cost",
+    "value": 3.36,
+    "check": "0.35*9.6",
+    "explain": "The pilot is the up-front price of the rollout option and must be subtracted."
+   }
+  ],
+  "explanation": "Choose at the latest node first (decline when weak), then probability-weight the branches and subtract the pilot cost. The positive $1.56M shows the pilot's option to roll out is worth more than its cost.",
+  "source": "generated",
+  "ref": "L05C s16; SM 11-21"
+ },
+ {
+  "id": "q11-504",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cedar Foods can test-market a new line for $1.0M. With probability 0.5 the test passes; the firm then chooses between a regional launch (NPV $3.2M for sure) and a national launch (probability 0.6 of $9.0M, probability 0.4 of −$2.0M). If the test fails, it stops. All NPVs are present values before the test cost. What is the test-market worth today, in $ millions?",
+  "answer": 1.3,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "-1.0+0.5*(0.6*9.0+0.4*(-2.0))+0.5*0",
+  "steps": [
+   {
+    "label": "Expected value of the national launch",
+    "value": 4.6,
+    "check": "0.6*9.0+0.4*(-2.0)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Decision node after a pass: larger of regional 3.2 and national",
+    "value": 4.6,
+    "check": "0.6*9.0+0.4*(-2.0)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected value of the test outcomes",
+    "value": 2.3,
+    "check": "0.5*(0.6*9.0+0.4*(-2.0))+0.5*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value of the test-market today",
+    "value": 1.3,
+    "check": "-1.0+0.5*(0.6*9.0+0.4*(-2.0))+0.5*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "National launch: 0.6 × 9.0 + 0.4 × (−2.0) = 4.6",
+   "Decision after a pass: national (4.6) beats regional (3.2), so carry back 4.6",
+   "Chance node at the test: 0.5 × 4.6 + 0.5 × 0 = 2.3",
+   "Value today = −1.0 + 2.3 = $1.30 million"
+  ],
+  "keystrokes": [
+   "0.6 × 9.0 + 0.4 × (−2.0) = 4.6",
+   "0.5 × 4.6 = 2.3",
+   "2.3 − 1.0 = 1.30"
+  ],
+  "errors": [
+   {
+    "id": "picked-safe-branch",
+    "label": "Took the sure regional launch",
+    "value": 0.6,
+    "check": "-1.0+0.5*3.2",
+    "explain": "The national launch has the higher expected value (4.6 versus 3.2); at a decision node the firm takes the larger value."
+   },
+   {
+    "id": "averaged-before-deciding",
+    "label": "Averaged the two launch options",
+    "value": 0.95,
+    "check": "-1.0+0.5*((3.2+(0.6*9.0+0.4*(-2.0)))/2)",
+    "explain": "A decision node takes the best branch; averaging 3.2 and 4.6 treats the choice as random."
+   },
+   {
+    "id": "forgot-extra-cost",
+    "label": "Ignored the $1.0M test cost",
+    "value": 2.3,
+    "check": "0.5*(0.6*9.0+0.4*(-2.0))",
+    "explain": "The test cost is paid today whatever the outcome."
+   }
+  ],
+  "explanation": "Work from the right: the national chance node (4.6) feeds the decision node, which picks the better of 4.6 and 3.2; only then probability-weight the test outcome and subtract the cost.",
+  "source": "generated",
+  "ref": "L05C s16; SM 11-21"
+ },
+ {
+  "id": "q11-505",
+  "concept": "c11-decision-trees",
+  "also": [
+   "c11-real-options"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Gulf Islands Resorts can invest now (NPV +$3.0M) or wait a year for demand to become clear. If demand is good (probability 0.6), investing then has a present-value NPV of $6.5M; if poor (0.4), it would be −$2.5M, so the firm would not invest. These are present values at a 10% required return. How much more is waiting worth than investing now, in $ millions?",
+  "answer": 0.9,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "0.6*6.5+0.4*0-3.0",
+  "steps": [
+   {
+    "label": "Poor-demand decision node: do not invest",
+    "value": 0.0,
+    "check": "0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Value of waiting = 0.6 × 6.5 + 0.4 × 0",
+    "value": 3.9,
+    "check": "0.6*6.5+0.4*0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Waiting minus investing now",
+    "value": 0.9,
+    "check": "0.6*6.5+0.4*0-3.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Decide at the poor-demand node first: not investing (0) beats −2.5",
+   "Value of waiting = 0.6 × 6.5 + 0.4 × 0 = 3.9",
+   "Extra value of waiting = 3.9 − 3.0 = $0.90 million (no discounting: the values are present values)"
+  ],
+  "keystrokes": [
+   "0.6 × 6.5 = 3.9",
+   "3.9 − 3.0 = 0.90"
+  ],
+  "errors": [
+   {
+    "id": "averaged-before-deciding",
+    "label": "Invested in the poor state too",
+    "value": -0.1,
+    "check": "0.6*6.5+0.4*(-2.5)-3.0",
+    "explain": "If demand is poor the firm will not invest, so that branch is 0; including −2.5 makes waiting look worse than investing now."
+   },
+   {
+    "id": "discounted-twice",
+    "label": "Discounted the waiting value again",
+    "value": 0.55,
+    "check": "(0.6*6.5)/1.1-3.0",
+    "explain": "The NPVs are already present values, so no further discounting is needed."
+   },
+   {
+    "id": "forgot-alternative",
+    "label": "Reported the value of waiting without subtracting NPV now",
+    "value": 3.9,
+    "check": "0.6*6.5",
+    "explain": "The question asks how much more waiting is worth than investing now: subtract the $3.0M."
+   }
+  ],
+  "explanation": "Waiting lets the firm avoid the poor-demand loss, so it is worth $3.9M against $3.0M now. The $0.90M difference is the value of the timing option.",
+  "source": "generated",
+  "ref": "L05C s12, s16"
+ },
+ {
+  "id": "q11-506",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Wolf Creek's overpass can be built narrow ($85M) or wide ($110M). Traffic will be heavy (probability 0.7) or light (0.3). If heavy, the narrow overpass needs a $30M rebuild and the wide one a $12M widening; doing nothing would cost society $90M. If light, nothing more is spent. All amounts are present values. What is the expected total cost of the cheaper design?",
+  "options": [
+   "$106.0 million",
+   "$118.4 million",
+   "$127.0 million",
+   "$115.0 million"
+  ],
+  "answer": 0,
+  "explanation": "At the heavy-traffic node the cheaper action is the rebuild ($30M, not $90M). Narrow: 85 + 0.7 × 30 = $106.0M; wide: 110 + 0.7 × 12 = $118.4M. Averaging $30M with $90M, or adding the rebuild with certainty, gives wrong totals.",
+  "source": "generated",
+  "ref": "L05C s13-16",
+  "check": "85+0.7*30",
+  "option_checks": [
+   "85+0.7*30",
+   "110+0.7*12",
+   "85+0.7*((30+90)/2)",
+   "85+30"
+  ],
+  "option_errors": [
+   null,
+   "picked-dearer-design",
+   "averaged-before-deciding",
+   "forgot-probability"
+  ]
+ },
+ {
+  "id": "q11-507",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Kodiak Energy pays $5.0M for a drilling lease. With probability 0.4 it finds oil worth $14.0M; with probability 0.6 the well is dry, and the firm then either sells the lease for $1.5M or spends $3.0M on a deeper well (probability 0.2 of $9.0M, 0.8 of nothing). All amounts are present values. What is the lease's expected NPV today?",
+  "options": [
+   "$0.69 million",
+   "$1.50 million",
+   "−$0.12 million",
+   "$0.60 million"
+  ],
+  "answer": 1,
+  "explanation": "At the dry-hole node the deeper well is worth 0.2 × 9.0 − 3.0 = −$1.2M, so the firm sells the lease for $1.5M. Then NPV = −5.0 + 0.4 × 14.0 + 0.6 × 1.5 = $1.50M. Averaging the two choices, or drilling deeper, gives wrong answers; ignoring the dry branch drops the lease sale.",
+  "source": "generated",
+  "ref": "L05C s16; SM 11-21",
+  "check": "-5.0+0.4*14.0+0.6*1.5",
+  "option_checks": [
+   "-5.0+0.4*14.0+0.6*((1.5+(0.2*9.0-3.0))/2)",
+   "-5.0+0.4*14.0+0.6*1.5",
+   "-5.0+0.4*14.0+0.6*(0.2*9.0-3.0)",
+   "-5.0+0.4*14.0"
+  ],
+  "option_errors": [
+   "averaged-before-deciding",
+   null,
+   "picked-wrong-branch",
+   "omitted-branch"
+  ]
+ },
+ {
+  "id": "q11-508",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A compact warehouse costs $9.5M and an expandable one $12.8M. If demand turns out high (probability p), the compact building needs a $7.2M add-on and the expandable one $2.6M; if demand is low, neither needs one. Amounts are present values. At what probability of high demand are the two designs equally costly? Answer in %.",
+  "answer": 71.74,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(12.8-9.5)/(7.2-2.6)*100",
+  "steps": [
+   {
+    "label": "Extra up-front cost of the expandable design",
+    "value": 3.3,
+    "check": "12.8-9.5",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Add-on saving if demand is high",
+    "value": 4.6,
+    "check": "7.2-2.6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Break-even probability p* = premium ÷ saving",
+    "value": 71.74,
+    "check": "(12.8-9.5)/(7.2-2.6)*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Compact: 9.5 + 7.2p; expandable: 12.8 + 2.6p; set them equal",
+   "12.8 − 9.5 = (7.2 − 2.6)p, so p = 3.3/4.6",
+   "p* = 71.74%: above it the expandable design is cheaper, below it the compact one"
+  ],
+  "keystrokes": [
+   "12.8 − 9.5 = 3.3",
+   "7.2 − 2.6 = 4.6",
+   "3.3 ÷ 4.6 × 100 = 71.74"
+  ],
+  "errors": [
+   {
+    "id": "inverted-ratio",
+    "label": "Divided the saving by the premium",
+    "value": 139.39,
+    "check": "(7.2-2.6)/(12.8-9.5)*100",
+    "explain": "The premium is paid for sure and the saving arrives with probability p, so p = premium/saving. This answer exceeds 100%."
+   },
+   {
+    "id": "forgot-expandable-addon",
+    "label": "Ignored the $2.6M add-on on the expandable design",
+    "value": 45.83,
+    "check": "(12.8-9.5)/7.2*100",
+    "explain": "The saving is the difference between the two add-ons, 7.2 − 2.6 = 4.6."
+   },
+   {
+    "id": "complement-probability",
+    "label": "Reported the probability of low demand",
+    "value": 28.26,
+    "check": "100-(12.8-9.5)/(7.2-2.6)*100",
+    "explain": "p is the probability of high demand, which is when the add-on is needed."
+   }
+  ],
+  "explanation": "The extra $3.3M is a premium paid for sure; the saving of $4.6M arrives only with probability p. The designs tie where p × 4.6 = 3.3, so the expandable (option) design pays only if high demand is more than about 72% likely.",
+  "source": "generated",
+  "ref": "L05C s13-16"
+ },
+ {
+  "id": "q11-509",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does a decision tree differ from scenario analysis?",
+  "options": [
+   "A decision tree changes several inputs together; scenario analysis models the firm's later choices",
+   "A decision tree uses random draws from distributions; scenario analysis uses probabilities",
+   "A decision tree ignores probabilities; scenario analysis requires them",
+   "A decision tree models the firm's later choices after uncertainty resolves; scenario analysis just changes inputs together"
+  ],
+  "answer": 3,
+  "explanation": "Scenario analysis shows the NPV under best, base and worst combinations but assumes the firm sticks to its plan. A decision tree assigns probabilities and lets the firm respond at later decision nodes, which is where option value comes from.",
+  "source": "generated",
+  "ref": "L05C s5, s14-16"
+ },
+ {
+  "id": "q11-510",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT part of solving a decision tree?",
+  "options": [
+   "Averaging the outcomes of a later decision node before choosing between its branches",
+   "Choosing the best branch at the latest decision node first",
+   "Probability-weighting the branch values at each chance node",
+   "Comparing the values of today's alternatives and picking the best"
+  ],
+  "answer": 0,
+  "explanation": "At a decision node the firm picks the best branch; only chance nodes are averaged. Averaging first would assume the firm chooses at random, the classic averaging-before-deciding error.",
+  "source": "generated",
+  "ref": "L05C s11, s16"
+ },
+ {
+  "id": "q11-511",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we start at the latest decision node and work back toward today?",
+  "options": [
+   "Later cash flows are larger, so they should be valued first",
+   "The best later choice sets the value carried back to the earlier node",
+   "Probabilities are only known at the end of the tree",
+   "Discounting must always start from the final year"
+  ],
+  "answer": 1,
+  "explanation": "What we do today depends on what we expect to do after the uncertainty resolves. So we value the last decisions first, using the best action at each, and carry those values back through the chance nodes.",
+  "source": "generated",
+  "ref": "L05C s11, s16"
+ },
+ {
+  "id": "q11-512",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "In the professor's decision-tree examples, why do we not discount the branch values again?",
+  "options": [
+   "Decision trees ignore the time value of money entirely",
+   "The branch probabilities already include the discount rate",
+   "They are already present values, so discounting again would double-count",
+   "Only cash flows beyond year 5 are ever discounted"
+  ],
+  "answer": 2,
+  "explanation": "The slide states that the amounts are all NPVs, already discounted, which makes the tree easier. If the values were undiscounted future cash flows we would need DCF first, but we never discount a present value twice.",
+  "source": "generated",
+  "ref": "L05C s15-16"
+ },
+ {
+  "id": "q11-513",
+  "concept": "c11-decision-trees",
+  "also": [
+   "c11-real-options"
+  ],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "In a warehouse tree (compact $9.5M, expandable $12.8M; high demand with probability 0.65; add-on $7.2M versus $2.6M) the expected costs are $14.18M and $14.49M. What does this say about the expandable design's extra $3.3M?",
+  "options": [
+   "The premium is worth paying because the add-on is cheaper if demand is high",
+   "The premium is a sunk cost and should be ignored",
+   "The expandable design wins because its worst-case cost is lower",
+   "It buys expected savings of only 0.65 × $4.6M = $2.99M, so it is not worth paying"
+  ],
+  "answer": 3,
+  "explanation": "The comparison is on expected cost. The expandable design has the lower cost when demand is high (15.4 versus 16.7), but that happens only 65% of the time and saves $4.6M, so the expected saving of $2.99M falls short of the $3.3M premium.",
+  "source": "generated",
+  "ref": "L05C s13-16"
+ },
+ {
+  "id": "q11-514",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "At the post-pass decision node of a tree, a regional launch is worth $3.2M and a national launch has an expected value of $4.6M. What value is carried back to the node before it?",
+  "options": [
+   "$4.6M, the larger of the two",
+   "$3.9M, the average of the two",
+   "$3.2M, the safer choice",
+   "$7.8M, the sum of the two"
+  ],
+  "answer": 0,
+  "explanation": "A decision node takes the best branch, so the value carried back is the maximum, $4.6M. Averaging treats the choice as random, the safer option ignores the higher expected value, and the sum has no meaning.",
+  "source": "generated",
+  "ref": "L05C s16"
+ },
+ {
+  "id": "q11-515",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 2,
+  "stem": "Which sequence lists the steps for solving a decision tree in the right order?",
+  "options": [
+   "Write end-of-branch values, probability-weight every chance node, take the best branch at the latest decision node, compare today's alternatives",
+   "Write end-of-branch values, take the best branch at the latest decision node, probability-weight the chance nodes, compare today's alternatives",
+   "Take the best branch at the earliest decision node, write end-of-branch values, probability-weight the chance nodes, compare today's alternatives",
+   "Compare today's alternatives, write end-of-branch values, take the best branch at the latest decision node, probability-weight the chance nodes"
+  ],
+  "answer": 1,
+  "explanation": "Start with the values at the ends, resolve the latest decision by taking the best branch, carry that value back through the chance nodes, and only then compare today's alternatives. Averaging before deciding is the standard error.",
+  "source": "generated",
+  "ref": "L05C s16"
+ },
+ {
+  "id": "q11-516",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A planner lists today's choice (short or long bridges), the unknown future (a busy or quiet road, with probabilities) and a later decision (whether to widen). Which analysis tool is this?",
+  "options": [
+   "Sensitivity analysis",
+   "Simulation analysis",
+   "Decision tree",
+   "NPV break-even analysis"
+  ],
+  "answer": 2,
+  "explanation": "A decision tree combines a choice today, an uncertain future with probabilities and a future decision. Sensitivity changes one input at a time, simulation draws random inputs, and NPV break-even solves for the input that makes NPV zero.",
+  "source": "generated",
+  "ref": "L05C s14"
+ },
+ {
+  "id": "q11-517",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A chance node has three branches worth $8.0M (probability 0.2), $3.0M (probability 0.5) and −$2.0M (probability 0.3). What is the expected value at the node?",
+  "options": [
+   "$3.0 million",
+   "$3.1 million",
+   "$9.0 million",
+   "$2.5 million"
+  ],
+  "answer": 3,
+  "explanation": "Expected value = Σ p × V = 1.6 + 1.5 − 0.6 = $2.5M. The simple average (3.0) ignores the probabilities, dropping the loss branch gives 3.1, and summing the values gives 9.0.",
+  "source": "generated",
+  "ref": "L05C s16",
+  "check": "0.2*8+0.5*3+0.3*(-2)",
+  "option_checks": [
+   "(8+3-2)/3",
+   "0.2*8+0.5*3",
+   "8+3-2",
+   "0.2*8+0.5*3+0.3*(-2)"
+  ],
+  "option_errors": [
+   "forgot-probability",
+   "omitted-branch",
+   "summed-branches",
+   null
+  ]
+ },
+ {
+  "id": "q11-518",
+  "concept": "c11-decision-trees",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The probabilities on the branches leaving a chance node must add to 1.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "A chance node covers every possible outcome, so its probabilities sum to 1 (for example 80% busy and 20% quiet). A decision node has no probabilities.",
+  "source": "generated",
+  "ref": "L05C s16"
+ },
+ {
+  "id": "q11-519",
+  "concept": "c11-decision-trees",
+  "also": [
+   "c11-abandonment-expansion"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Timber Ridge Homes buys land for $2.0M. Rezoning is approved (probability 0.5), partly approved (0.3) or denied (0.2). Approved: build (PV $6.0M) or resell (PV $3.0M). Partly approved: build $2.2M or resell $2.6M. Denied: build −$1.1M or resell $0.4M. Values are present values before the land cost. What is the expected NPV of buying the land, in $ millions?",
+  "answer": 1.86,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "-2.0+0.5*6.0+0.3*2.6+0.2*0.4",
+  "steps": [
+   {
+    "label": "Approved node: best of build 6.0 and resell 3.0",
+    "value": 6.0,
+    "check": "6.0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Partly approved node: best of build 2.2 and resell 2.6",
+    "value": 2.6,
+    "check": "2.6",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Denied node: best of build −1.1 and resell 0.4",
+    "value": 0.4,
+    "check": "0.4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected value before the land cost",
+    "value": 3.86,
+    "check": "0.5*6.0+0.3*2.6+0.2*0.4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Expected NPV of buying the land",
+    "value": 1.86,
+    "check": "-2.0+0.5*6.0+0.3*2.6+0.2*0.4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Decide at each later node first: build (6.0) when approved, resell (2.6) when partly approved, resell (0.4) when denied",
+   "Chance node: 0.5 × 6.0 + 0.3 × 2.6 + 0.2 × 0.4 = 3.0 + 0.78 + 0.08 = 3.86",
+   "NPV today = 3.86 − 2.0 = $1.86 million"
+  ],
+  "keystrokes": [
+   "0.5 × 6.0 = 3.0",
+   "0.3 × 2.6 = 0.78",
+   "0.2 × 0.4 = 0.08",
+   "3.86 − 2.0 = 1.86"
+  ],
+  "errors": [
+   {
+    "id": "always-build",
+    "label": "Built in every outcome",
+    "value": 1.44,
+    "check": "-2.0+0.5*6.0+0.3*2.2+0.2*(-1.1)",
+    "explain": "At each later node the firm picks the better action; building when partly approved or denied is worse than reselling."
+   },
+   {
+    "id": "always-resell",
+    "label": "Resold in every outcome",
+    "value": 0.36,
+    "check": "-2.0+0.5*3.0+0.3*2.6+0.2*0.4",
+    "explain": "When approved, building (6.0) beats reselling (3.0)."
+   },
+   {
+    "id": "forgot-extra-cost",
+    "label": "Left out the $2.0M land price",
+    "value": 3.86,
+    "check": "0.5*6.0+0.3*2.6+0.2*0.4",
+    "explain": "The land price is paid today and must be subtracted."
+   }
+  ],
+  "explanation": "Choose the best action at each rezoning outcome (build, resell, resell), probability-weight those values to 3.86 and subtract the land price. The flexibility to resell is what lifts the value above the always-build figure of $1.44M.",
+  "source": "generated",
+  "ref": "L05C s16"
+ }
+]

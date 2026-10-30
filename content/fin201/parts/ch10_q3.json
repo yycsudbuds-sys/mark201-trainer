@@ -1,0 +1,1134 @@
+[
+ {
+  "id": "q10-075",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "OCF = (S − C)(1 − T) + T × _____ , where the missing term is the CCA claimed.",
+  "options": [
+   "I0",
+   "ΔNWC",
+   "interest",
+   "D"
+  ],
+  "answer": 3,
+  "explanation": "The tax shield on CCA is T × D, where D is the CCA (depreciation) claimed in the year.",
+  "source": "generated",
+  "ref": "S5 s15"
+ },
+ {
+  "id": "q10-076",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A problem gives EBIT, the CCA claimed and the tax paid for the year. Which formula gives OCF directly?",
+  "options": [
+   "OCF = EBIT + D − Tax",
+   "OCF = EBIT(1 − T) − D",
+   "OCF = EBIT − Tax − D",
+   "OCF = (S − C)(1 − T) − D"
+  ],
+  "answer": 0,
+  "explanation": "Add back the non-cash CCA to EBIT and subtract the tax paid: OCF = EBIT + D − Tax. The other options subtract D, which is wrong because CCA is non-cash.",
+  "source": "generated",
+  "ref": "S5 s15"
+ },
+ {
+  "id": "q10-077",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 3,
+  "stem": "Sales, cash costs and CCA are fixed, and EBIT is positive. If the corporate tax rate rises, what happens to OCF?",
+  "options": [
+   "It rises, because the larger CCA shield outweighs everything else",
+   "It falls: the lost after-tax operating profit exceeds the larger CCA shield",
+   "It is unchanged, because the tax rate only affects accounting profit",
+   "It rises, because costs become cheaper after tax at the higher rate"
+  ],
+  "answer": 1,
+  "explanation": "OCF = (S − C)(1 − T) + T × D, so dOCF/dT = −(S − C) + D = −EBIT. With positive EBIT, a higher T lowers OCF even though the shield is larger.",
+  "source": "generated",
+  "ref": "S5 s15"
+ },
+ {
+  "id": "q10-078",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A project's EBIT is $120,000, the CCA claimed is $45,000 and the tax paid is $36,000. What is the operating cash flow?",
+  "answer": 129000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "120000+45000-36000",
+  "steps": [
+   {
+    "label": "OCF = EBIT + D − Tax",
+    "value": 129000.0,
+    "check": "120000+45000-36000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "OCF = EBIT + D − Tax",
+   "OCF = 120,000 + 45,000 − 36,000 = $129,000"
+  ],
+  "keystrokes": [
+   "120000 + 45000 − 36000 = 129,000"
+  ],
+  "errors": [
+   {
+    "id": "ocf-as-net-income",
+    "label": "Did not add CCA back",
+    "value": 84000.0,
+    "check": "120000-36000",
+    "explain": "That is net income; CCA is non-cash and must be added back."
+   },
+   {
+    "id": "tax-added",
+    "label": "Added the tax instead of subtracting it",
+    "value": 201000.0,
+    "check": "120000+45000+36000",
+    "explain": "Tax paid is a cash outflow and is subtracted."
+   }
+  ],
+  "explanation": "Start from EBIT, add the non-cash CCA and subtract the cash tax paid.",
+  "source": "generated",
+  "ref": "S5 s15; SM 10-4"
+ },
+ {
+  "id": "q10-079",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm expects sales of $812,000, cash costs of $455,000 and CCA of $96,000. The tax rate is 32%. What is the operating cash flow?",
+  "answer": 273480.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "812000-455000-0.32*(812000-455000-96000)",
+  "steps": [
+   {
+    "label": "EBIT = S − C − D",
+    "value": 261000.0,
+    "check": "812000-455000-96000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Tax = T × EBIT",
+    "value": 83520.0,
+    "check": "0.32*(812000-455000-96000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "OCF = S − C − Tax",
+    "value": 273480.0,
+    "check": "812000-455000-0.32*(812000-455000-96000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "EBIT = 812,000 − 455,000 − 96,000 = 261,000",
+   "Tax = 0.32 × 261,000 = 83,520",
+   "OCF = EBIT + D − Tax = 261,000 + 96,000 − 83,520 = $273,480",
+   "Check: (357,000)(0.68) + 0.32(96,000) = 242,760 + 30,720 = 273,480"
+  ],
+  "keystrokes": [
+   "812000 − 455000 = 357,000",
+   "− 0.32 × 261000 = 273,480"
+  ],
+  "errors": [
+   {
+    "id": "ocf-as-net-income",
+    "label": "Stopped at net income",
+    "value": 177480.0,
+    "check": "(812000-455000-96000)*(1-0.32)",
+    "explain": "Net income is after the non-cash CCA; add CCA back to get OCF."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Taxed S − C and ignored the CCA shield",
+    "value": 242760.0,
+    "check": "(812000-455000)*(1-0.32)",
+    "explain": "CCA lowers tax by T × D; leaving it out understates OCF."
+   },
+   {
+    "id": "pretax-not-aftertax",
+    "label": "Left out tax",
+    "value": 357000.0,
+    "check": "812000-455000",
+    "explain": "OCF is after tax; subtract the tax paid."
+   }
+  ],
+  "explanation": "Any of the equivalent OCF forms gives $273,480; the top-down version is S − C − Tax.",
+  "source": "generated",
+  "ref": "SM 10-5; S5 s15"
+ },
+ {
+  "id": "q10-080",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "An asset costs $500,000 and is in a 20% CCA class; the half-year rule applies. In year 2 the project's sales less cash costs are $190,000 and the tax rate is 30%. What is the year-2 operating cash flow?",
+  "answer": 160000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "190000*(1-0.3)+0.3*(0.2*500000*(1-0.5*0.2))",
+  "steps": [
+   {
+    "label": "CCA in year 1 = 0.5 × 0.20 × 500,000",
+    "value": 50000.0,
+    "check": "0.5*0.2*500000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA in year 2 = d × UCC_1",
+    "value": 90000.0,
+    "check": "0.2*(500000-0.5*0.2*500000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "After-tax operating profit",
+    "value": 133000.0,
+    "check": "190000*(1-0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "OCF_2 = (S − C)(1 − T) + T × CCA_2",
+    "value": 160000.0,
+    "check": "190000*(1-0.3)+0.3*(0.2*500000*(1-0.5*0.2))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 0.5 × 0.20 × 500,000 = 50,000; UCC_1 = 450,000",
+   "CCA_2 = 0.20 × 450,000 = 90,000",
+   "(S − C)(1 − T) = 190,000 × 0.70 = 133,000",
+   "T × CCA_2 = 0.30 × 90,000 = 27,000",
+   "OCF_2 = 133,000 + 27,000 = $160,000"
+  ],
+  "keystrokes": [
+   "190000 × 0.7 = 133,000",
+   "+ 0.3 × 90000 = 160,000"
+  ],
+  "errors": [
+   {
+    "id": "wrong-year-cca",
+    "label": "Used year-1 CCA",
+    "value": 148000.0,
+    "check": "190000*(1-0.3)+0.3*(0.5*0.2*500000)",
+    "explain": "Year 2 uses d × UCC_1, not the year-1 amount."
+   },
+   {
+    "id": "straight-line-cca",
+    "label": "Used d × I0 for year 2",
+    "value": 163000.0,
+    "check": "190000*(1-0.3)+0.3*(0.2*500000)",
+    "explain": "Declining balance applies d to the UCC, not to the original cost."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Added the whole CCA",
+    "value": 223000.0,
+    "check": "190000*(1-0.3)+(0.2*500000*(1-0.5*0.2))",
+    "explain": "The CCA is worth only T × CCA after tax."
+   }
+  ],
+  "explanation": "Find year-2 CCA from the UCC schedule, then add its tax shield to the after-tax operating profit.",
+  "source": "generated",
+  "ref": "S5 s15, s19-20; SM 10-13"
+ },
+ {
+  "id": "q10-081",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project will sell 40,000 units at $6.50. Variable cost is $3.90 per unit and fixed cash costs are $28,000. CCA is $52,000 and the tax rate is 34%. What is the operating cash flow?",
+  "answer": 67840.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "(40000*6.5-40000*3.9-28000)-0.34*(40000*6.5-40000*3.9-28000-52000)",
+  "steps": [
+   {
+    "label": "Sales less cash costs, S − C",
+    "value": 76000.0,
+    "check": "40000*6.5-40000*3.9-28000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "EBIT = S − C − D",
+    "value": 24000.0,
+    "check": "40000*6.5-40000*3.9-28000-52000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Tax = T × EBIT",
+    "value": 8160.0,
+    "check": "0.34*(40000*6.5-40000*3.9-28000-52000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "OCF = S − C − Tax",
+    "value": 67840.0,
+    "check": "(40000*6.5-40000*3.9-28000)-0.34*(40000*6.5-40000*3.9-28000-52000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "S = 40,000 × 6.50 = 260,000; C = 40,000 × 3.90 + 28,000 = 184,000; S − C = 76,000",
+   "EBIT = 76,000 − 52,000 = 24,000; Tax = 0.34 × 24,000 = 8,160",
+   "OCF (top-down) = 76,000 − 8,160 = $67,840",
+   "Check: 76,000(0.66) + 0.34(52,000) = 50,160 + 17,680 = 67,840"
+  ],
+  "keystrokes": [
+   "260000 − 156000 − 28000 = 76,000",
+   "− 0.34 × 24000 = 67,840"
+  ],
+  "errors": [
+   {
+    "id": "ebit-as-ocf",
+    "label": "Reported EBIT as the cash flow",
+    "value": 24000.0,
+    "check": "40000*6.5-40000*3.9-28000-52000",
+    "explain": "EBIT is after the non-cash CCA; OCF adds CCA back and subtracts tax."
+   },
+   {
+    "id": "ocf-as-net-income",
+    "label": "Net income without adding CCA back",
+    "value": 15840.0,
+    "check": "(40000*6.5-40000*3.9-28000-52000)*(1-0.34)",
+    "explain": "Net income is not cash flow; add the CCA back."
+   },
+   {
+    "id": "missing-cca-shield",
+    "label": "Ignored the CCA tax shield",
+    "value": 50160.0,
+    "check": "(40000*6.5-40000*3.9-28000)*(1-0.34)",
+    "explain": "Taxing S − C instead of EBIT overlooks the shield T × D."
+   }
+  ],
+  "explanation": "Top-down: S − C − Tax with tax charged on EBIT (after CCA).",
+  "source": "generated",
+  "ref": "S5 s16-17; SM 10-26"
+ },
+ {
+  "id": "q10-082",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project has sales of $640,000, cash costs of $360,000 and CCA of $75,000. The tax rate is 28%. Using the tax-shield approach, what is OCF?",
+  "options": [
+   "$201,600",
+   "$276,600",
+   "$222,600",
+   "$147,600"
+  ],
+  "answer": 2,
+  "explanation": "OCF = (640,000 − 360,000)(0.72) + 0.28(75,000) = 201,600 + 21,000 = $222,600. $201,600 leaves out the CCA shield; $276,600 adds the whole CCA instead of T × CCA; $147,600 is net income, which does not add CCA back.",
+  "source": "generated",
+  "ref": "SM 10-5; S5 s15"
+ },
+ {
+  "id": "q10-083",
+  "concept": "c10-ocf",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Last year the tax rate was 30%; this year it is 40%. Sales less cash costs are $200,000 and CCA is $50,000. What is this year's OCF?",
+  "options": [
+   "$155,000",
+   "$120,000",
+   "$150,000",
+   "$140,000"
+  ],
+  "answer": 3,
+  "explanation": "OCF = 200,000(0.60) + 0.40(50,000) = 120,000 + 20,000 = $140,000. $155,000 still uses last year's 30% rate; $120,000 omits the CCA shield; $150,000 multiplies the CCA by (1 − T) instead of T.",
+  "source": "generated",
+  "ref": "SM 10-5, 10-13"
+ },
+ {
+  "id": "q10-084",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "There will be a positive change in net working capital in a year when:",
+  "options": [
+   "Accounts payable increase",
+   "Salaries increase",
+   "Corporate tax increases",
+   "Inventory increases",
+   "Capital expenditure increases"
+  ],
+  "answer": 3,
+  "explanation": "Net working capital = cash + inventory + receivables − payables. An increase in inventory raises current assets and so raises NWC, a positive change and a cash outflow. Payables increasing lowers NWC; salaries, tax and capital expenditure are not working-capital accounts.",
+  "source": "official",
+  "ref": "PRAC q6"
+ },
+ {
+  "id": "q10-085",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Net working capital is:",
+  "options": [
+   "cash + inventory + receivables − payables",
+   "cash + inventory + receivables + payables",
+   "fixed assets − long-term debt",
+   "receivables + payables − inventory"
+  ],
+  "answer": 0,
+  "explanation": "WC = Cash + Inventory + Receivables − Payables, equal to current assets minus current liabilities. Payables are subtracted because suppliers finance part of the investment.",
+  "source": "generated",
+  "ref": "L05B s12; FS p2"
+ },
+ {
+  "id": "q10-086",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Dunmore Toys must carry extra inventory and give customers 60 days to pay for a new product. These requirements will cause:",
+  "options": [
+   "a negative change in NWC and a cash inflow",
+   "a positive change in NWC and a cash outflow at launch",
+   "a tax deduction in year 1",
+   "an increase in CCA"
+  ],
+  "answer": 1,
+  "explanation": "More inventory and receivables raise current assets, so NWC increases. A positive change in NWC uses cash and is counted in full.",
+  "source": "generated",
+  "ref": "TB 10.4; L05B s12"
+ },
+ {
+  "id": "q10-087",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A project's suppliers agree to longer payment terms, so payables rise. In that year the effect on net working capital and cash flow is:",
+  "options": [
+   "NWC rises, a cash outflow",
+   "NWC is unchanged because payables are not working capital",
+   "NWC falls, a cash inflow",
+   "NWC rises, a cash inflow"
+  ],
+  "answer": 2,
+  "explanation": "Payables are subtracted in NWC. When they rise, NWC falls (a negative change), so cash is released for the project.",
+  "source": "generated",
+  "ref": "L05B s12"
+ },
+ {
+  "id": "q10-088",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "How is the change in NWC treated differently from capital expenditure?",
+  "options": [
+   "NWC is taxed at (1 − T) as an expense, but CAPEX is counted in full",
+   "NWC earns CCA over the project's life but CAPEX earns none",
+   "NWC is treated as a sunk cost once invested, but CAPEX is not sunk",
+   "Both are counted in full, but NWC is recovered at the end while CAPEX earns CCA shields"
+  ],
+  "answer": 3,
+  "explanation": "Both are cash invested out of after-tax funds. CAPEX is recovered slowly through CCA (and salvage); NWC is recovered in full when inventory is sold, receivables collected and payables paid.",
+  "source": "generated",
+  "ref": "L05B s12; SM 10 CTQ2"
+ },
+ {
+  "id": "q10-089",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT an example of a positive change in NWC?",
+  "options": [
+   "Accounts payable rise as suppliers extend credit",
+   "Inventory rises as the project stocks up",
+   "Receivables rise as customers are given credit",
+   "The project's cash balance rises as cash is held back"
+  ],
+  "answer": 0,
+  "explanation": "A rise in payables lowers NWC. Rising inventory, receivables or cash all increase current assets and so increase NWC.",
+  "source": "generated",
+  "ref": "REV p3; PRAC q6"
+ },
+ {
+  "id": "q10-090",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is NWC invested at the start of a project assumed to be recovered at the end?",
+  "options": [
+   "NWC earns CCA over the project's life and is written off at the end",
+   "Inventory is sold, receivables collected and payables paid, releasing the cash tied up",
+   "Tax law refunds the tax paid on NWC when the project's assets are sold",
+   "NWC becomes salvage value that is taxed as a capital gain at the end"
+  ],
+  "answer": 1,
+  "explanation": "NWC behaves like a loan to the project: it is supplied at the start and returned at the end as the working-capital accounts unwind.",
+  "source": "generated",
+  "ref": "TB 10.2; SM 10 CTQ2"
+ },
+ {
+  "id": "q10-091",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the change in NWC not multiplied by (1 − T)?",
+  "options": [
+   "Working capital is exempt from income tax by law, so no adjustment is needed",
+   "It is recovered at the end, so the tax effects cancel out over the project",
+   "It is cash moved in and out of balance-sheet accounts, not a revenue or expense, so no tax effect",
+   "NWC is an allocated cost, and allocated costs are exempt from the (1 − T) rule"
+  ],
+  "answer": 2,
+  "explanation": "Building inventory or granting credit is not deductible when it happens, so the NWC investment is counted at 100%.",
+  "source": "generated",
+  "ref": "L05B s12"
+ },
+ {
+  "id": "q10-092",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "A positive change in net working capital is a cash outflow in that year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. NWC rising means more cash tied up in inventory and receivables, so project cash flow = −ΔNWC is negative.",
+  "source": "generated",
+  "ref": "L05B s12; S6 s5"
+ },
+ {
+  "id": "q10-093",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "At the end of a project the net working capital that was invested is _____.",
+  "options": [
+   "depreciated for tax",
+   "expensed immediately",
+   "taxed as a capital gain",
+   "recovered as a cash inflow"
+  ],
+  "answer": 3,
+  "explanation": "Working capital is released when the project ends and counts as a cash inflow in the final year.",
+  "source": "generated",
+  "ref": "S6 s5; TB 10.3"
+ },
+ {
+  "id": "q10-094",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project's NWC is 12% of sales. Sales fall in year 4 from $800,000 to $700,000. How does this show up in the year-4 cash flow?",
+  "options": [
+   "As a $12,000 cash inflow, because NWC falls",
+   "As a $12,000 cash outflow",
+   "As an $84,000 cash inflow",
+   "It has no effect until the final year"
+  ],
+  "answer": 0,
+  "explanation": "NWC falls by 12% × 100,000 = $12,000, a negative change in NWC and so a cash inflow of $12,000 in year 4.",
+  "source": "generated",
+  "ref": "S6 s5; SM 10-35"
+ },
+ {
+  "id": "q10-095",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A firm offers longer credit terms to win a project's customers, so its receivables rise. All else equal, what happens to the project's NPV?",
+  "options": [
+   "NPV rises, because sales rise",
+   "NPV falls: a larger NWC is invested earlier than it is recovered",
+   "NPV is unchanged, because NWC is fully recovered",
+   "NPV falls, because receivables are taxed"
+  ],
+  "answer": 1,
+  "explanation": "Extra NWC is paid out early and returned later, so its present value cost is positive even though the amount is fully recovered.",
+  "source": "generated",
+  "ref": "TB 10.4"
+ },
+ {
+  "id": "q10-096",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "tf",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "The NWC recovered at the end of a project is a taxable capital gain.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. Recovery is the release of cash that was invested; it is an inflow counted in full with no tax.",
+  "source": "generated",
+  "ref": "L05B s12"
+ },
+ {
+  "id": "q10-097",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Dunmore Toys' project needs net working capital of $20,000 at t = 0, $25,000 at t = 1 and $22,000 at t = 2; at t = 3 all NWC is released. The tax rate is 30% and the discount rate is 10%. What is the present value of the cash flows from NWC?",
+  "answer": -5537.19,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-20000-(25000-20000)/1.1+(25000-22000)/1.1**2+22000/1.1**3",
+  "steps": [
+   {
+    "label": "Cash flow at t = 1 = −(25,000 − 20,000)",
+    "value": -5000.0,
+    "check": "-(25000-20000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Cash flow at t = 2 = −(22,000 − 25,000)",
+    "value": 3000.0,
+    "check": "-(22000-25000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Cash flow at t = 3 (recovery)",
+    "value": 22000.0,
+    "check": "22000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PV of the NWC flows",
+    "value": -5537.19,
+    "check": "-20000-(25000-20000)/1.1+(25000-22000)/1.1**2+22000/1.1**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "t = 0: −20,000 (NWC invested)",
+   "t = 1: −(25,000 − 20,000) = −5,000",
+   "t = 2: −(22,000 − 25,000) = +3,000",
+   "t = 3: +22,000 (recovery)",
+   "PV = −20,000 − 5,000/1.1 + 3,000/1.1² + 22,000/1.1³ = −$5,537.19"
+  ],
+  "keystrokes": [
+   "CF0 = −20000; C01 = −5000; C02 = 3000; C03 = 22000",
+   "NPV, I = 10, CPT = −5,537.19"
+  ],
+  "errors": [
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Left out the recovery at t = 3",
+    "value": -22066.12,
+    "check": "-20000-(25000-20000)/1.1+(25000-22000)/1.1**2",
+    "explain": "NWC comes back at the end of the project."
+   },
+   {
+    "id": "nwc-sign-reversed",
+    "label": "Treated increases as inflows",
+    "value": 5537.19,
+    "check": "20000+(25000-20000)/1.1-(25000-22000)/1.1**2-22000/1.1**3",
+    "explain": "A positive change in NWC is an outflow."
+   },
+   {
+    "id": "taxed-nwc",
+    "label": "Multiplied by (1 − T)",
+    "value": -3876.03,
+    "check": "(-20000-(25000-20000)/1.1+(25000-22000)/1.1**2+22000/1.1**3)*(1-0.3)",
+    "explain": "NWC is counted in full; no tax adjustment."
+   }
+  ],
+  "explanation": "The cash flow in each year is minus the change in NWC, and the final balance is released at the end.",
+  "source": "generated",
+  "ref": "S6 s5; SM 10-12"
+ },
+ {
+  "id": "q10-098",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over a year a project's receivables fall by $9,200, inventory rises by $14,500 and payables rise by $4,100 (cash balances are unchanged). What is the cash-flow effect of the change in net working capital?",
+  "answer": -1200.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-((-9200+14500)-4100)",
+  "steps": [
+   {
+    "label": "Change in current assets = −9,200 + 14,500",
+    "value": 5300.0,
+    "check": "-9200+14500",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Change in current liabilities (payables)",
+    "value": 4100.0,
+    "check": "4100",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Cash flow = −ΔNWC",
+    "value": -1200.0,
+    "check": "-((-9200+14500)-4100)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "ΔCA = −9,200 + 14,500 = +5,300",
+   "ΔCL = +4,100",
+   "ΔNWC = 5,300 − 4,100 = +1,200",
+   "Cash flow = −ΔNWC = −$1,200 (an outflow)"
+  ],
+  "keystrokes": [
+   "−9200 + 14500 − 4100 = 1,200",
+   "+/− = −1,200"
+  ],
+  "errors": [
+   {
+    "id": "payables-sign-error",
+    "label": "Added the payables",
+    "value": -9400.0,
+    "check": "-(-9200+14500+4100)",
+    "explain": "Payables are subtracted in NWC."
+   },
+   {
+    "id": "receivables-sign",
+    "label": "Treated the fall in receivables as an increase",
+    "value": -19600.0,
+    "check": "-(9200+14500-4100)",
+    "explain": "Receivables fell, which lowers current assets."
+   },
+   {
+    "id": "nwc-sign-reversed",
+    "label": "Reported the change as an inflow",
+    "value": 1200.0,
+    "check": "(-9200+14500)-4100",
+    "explain": "A positive change in NWC is an outflow."
+   }
+  ],
+  "explanation": "ΔNWC = Δcurrent assets − Δcurrent liabilities = +1,200, so cash falls by $1,200.",
+  "source": "generated",
+  "ref": "SM 10-12"
+ },
+ {
+  "id": "q10-099",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project's sales are forecast at $400,000, $460,000, $520,000 and $500,000 in years 1 to 4. Net working capital held at the end of each year, including t = 0, equals 15% of the following year's sales, and all NWC is recovered at t = 4. The tax rate is 35% and the discount rate is 12%. What is the present value of the NWC cash flows?",
+  "answer": -25411.26,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "-0.15*400000-0.15*(460000-400000)/1.12-0.15*(520000-460000)/1.12**2-0.15*(500000-520000)/1.12**3+0.15*500000/1.12**4",
+  "steps": [
+   {
+    "label": "NWC invested at t = 0 (15% of year-1 sales)",
+    "value": 60000.0,
+    "check": "0.15*400000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Cash flow at t = 3 = −(75,000 − 78,000)",
+    "value": 3000.0,
+    "check": "-0.15*(500000-520000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Recovery at t = 4 = NWC_3",
+    "value": 75000.0,
+    "check": "0.15*500000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PV of the NWC flows at 12%",
+    "value": -25411.26,
+    "check": "-0.15*400000-0.15*(460000-400000)/1.12-0.15*(520000-460000)/1.12**2-0.15*(500000-520000)/1.12**3+0.15*500000/1.12**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "NWC_0 = 15% × 400,000 = 60,000; NWC_1 = 15% × 460,000 = 69,000; NWC_2 = 15% × 520,000 = 78,000; NWC_3 = 15% × 500,000 = 75,000",
+   "Cash flows: t0 −60,000; t1 −9,000; t2 −9,000; t3 +3,000; t4 +75,000 (recovery)",
+   "PV = −60,000 − 9,000/1.12 − 9,000/1.12² + 3,000/1.12³ + 75,000/1.12⁴ = −$25,411.26"
+  ],
+  "keystrokes": [
+   "CF0 = −60000; C01 = −9000; C02 = −9000; C03 = 3000; C04 = 75000",
+   "NPV, I = 12, CPT"
+  ],
+  "errors": [
+   {
+    "id": "forgot-nwc-recovery",
+    "label": "Left out the t = 4 recovery",
+    "value": -73075.12,
+    "check": "-0.15*400000-0.15*(460000-400000)/1.12-0.15*(520000-460000)/1.12**2-0.15*(500000-520000)/1.12**3",
+    "explain": "NWC is recovered when the project ends."
+   },
+   {
+    "id": "taxed-nwc",
+    "label": "Multiplied the NWC flows by (1 − T)",
+    "value": -16517.32,
+    "check": "(-0.15*400000-0.15*(460000-400000)/1.12-0.15*(520000-460000)/1.12**2-0.15*(500000-520000)/1.12**3+0.15*500000/1.12**4)*(1-0.35)",
+    "explain": "NWC flows are counted in full."
+   },
+   {
+    "id": "nwc0-omitted",
+    "label": "Ignored the initial NWC at t = 0",
+    "value": 34588.74,
+    "check": "-0.15*(460000-400000)/1.12-0.15*(520000-460000)/1.12**2-0.15*(500000-520000)/1.12**3+0.15*500000/1.12**4",
+    "explain": "The up-front NWC is the largest outflow."
+   }
+  ],
+  "explanation": "Build the NWC balance for each date, take minus the change as the cash flow, and discount including the final recovery.",
+  "source": "generated",
+  "ref": "SM 10-35; S6 s2-5"
+ },
+ {
+  "id": "q10-100",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Over a year a project's cash balance rises by $2,000, receivables by $6,000, inventory by $9,000 and payables by $11,000. What is the cash-flow effect of the change in NWC?",
+  "options": [
+   "−$28,000",
+   "$6,000",
+   "−$6,000",
+   "−$4,000"
+  ],
+  "answer": 2,
+  "explanation": "ΔNWC = 2,000 + 6,000 + 9,000 − 11,000 = +6,000, so the cash flow is −$6,000. −$28,000 adds the payables; $6,000 has the sign reversed; −$4,000 leaves out the cash balance.",
+  "source": "generated",
+  "ref": "PRAC q6; SM 10-12"
+ },
+ {
+  "id": "q10-101",
+  "concept": "c10-nwc",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project invests $30,000 of NWC at t = 0 and a further $4,000 at the end of each of years 1, 2 and 3. All NWC is recovered at the end of year 4, and the tax rate is 35%. How much NWC is recovered?",
+  "options": [
+   "$30,000",
+   "$27,300",
+   "$46,000",
+   "$42,000"
+  ],
+  "answer": 3,
+  "explanation": "Recovery = initial 30,000 + three additions of 4,000 = $42,000. $30,000 recovers only the initial amount; $27,300 taxes the recovery; $46,000 counts a fourth addition that was never made.",
+  "source": "generated",
+  "ref": "SM 10-34"
+ },
+ {
+  "id": "q10-102",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Under declining-balance CCA, the CCA in any year after the first equals:",
+  "options": [
+   "d × the UCC at the end of the previous year",
+   "d × the original capital cost",
+   "d × (UCC − salvage value)",
+   "(capital cost − salvage value) ÷ N"
+  ],
+  "answer": 0,
+  "explanation": "CCA_t = d × UCC_(t−1) for t ≥ 2. Applying d to the original cost is straight-line thinking, and the last option is the straight-line formula for accounting depreciation.",
+  "source": "generated",
+  "ref": "L05B s7-8; S5 s20"
+ },
+ {
+  "id": "q10-103",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Undepreciated capital cost (UCC) is:",
+  "options": [
+   "the asset's current market value",
+   "the capital cost less the CCA claimed so far",
+   "the capital cost less the accounting depreciation",
+   "the expected salvage value of the asset"
+  ],
+  "answer": 1,
+  "explanation": "UCC is the tax book value: cost less CCA claimed. It generally differs from market value and from accounting book value, and it is the starting point for the next year's CCA.",
+  "source": "generated",
+  "ref": "L05B s19-20; REV p1"
+ },
+ {
+  "id": "q10-104",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A firm claims 25% of the opening balance of an asset class each year, and the balance never reaches zero. This describes:",
+  "options": [
+   "straight-line depreciation",
+   "the net acquisitions rule",
+   "declining-balance CCA",
+   "the capital gains inclusion rate"
+  ],
+  "answer": 2,
+  "explanation": "Claiming a fixed percentage of what is left leaves a balance forever: the hallmark of declining-balance CCA. Straight-line depreciation writes the cost off in equal amounts to zero.",
+  "source": "generated",
+  "ref": "L05B s6-8; S5 s25"
+ },
+ {
+  "id": "q10-105",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does CCA differ from accounting depreciation in a capital-budgeting analysis?",
+  "options": [
+   "Accounting depreciation determines cash taxes, while CCA only affects the income reported to shareholders",
+   "CCA is a cash outflow each year, while accounting depreciation is a non-cash charge",
+   "They are identical because Canadian tax law requires straight-line depreciation for all assets",
+   "CCA follows the tax schedule and determines cash taxes; accounting depreciation matters only through tax"
+  ],
+  "answer": 3,
+  "explanation": "Cash taxes are computed using CCA, the depreciation allowed for tax. Accounting depreciation is not the tax deduction, so it is irrelevant to the cash flows.",
+  "source": "generated",
+  "ref": "L05B s6; S5 s19"
+ },
+ {
+  "id": "q10-106",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about declining-balance CCA is NOT correct?",
+  "options": [
+   "CCA is the same dollar amount every year",
+   "UCC is reduced by each year's CCA",
+   "CCA falls each year because it is a percentage of a shrinking UCC",
+   "The first year may use a multiplier such as 0.5 or 1.5"
+  ],
+  "answer": 0,
+  "explanation": "Declining balance means the dollar CCA falls each year. A constant dollar amount describes straight-line depreciation.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-107",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why do we track UCC rather than just the original cost?",
+  "options": [
+   "UCC equals the market resale value of the asset, so it is needed to price a sale",
+   "CCA after year 1 is a percentage of the balance, and UCC at sale sets recapture or terminal loss",
+   "UCC is the asset's cost adjusted for inflation each year using the CPI",
+   "UCC is the cumulative amount of tax paid on the asset to date"
+  ],
+  "answer": 1,
+  "explanation": "CCA after year 1 is d × UCC, so the balance must be rolled forward. At disposal the UCC is also compared with the proceeds.",
+  "source": "generated",
+  "ref": "L05B s19-21"
+ },
+ {
+  "id": "q10-108",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "CCA is a non-cash expense that reduces taxable income.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. No cash leaves the firm when CCA is claimed, but it is deducted in computing taxable income and so saves tax.",
+  "source": "generated",
+  "ref": "S5 s19"
+ },
+ {
+  "id": "q10-109",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "With d = 20%, CCA in year 2 is 20% of the original capital cost.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "False. After year 1 the CCA is 20% of the UCC, which is smaller than the original cost, so year-2 CCA is less than 20% of cost.",
+  "source": "generated",
+  "ref": "S5 s20"
+ },
+ {
+  "id": "q10-110",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Under declining balance, CCA falls each year because it is a fixed percentage of the shrinking _____.",
+  "options": [
+   "salvage value",
+   "sales",
+   "UCC",
+   "tax rate"
+  ],
+  "answer": 2,
+  "explanation": "CCA_t = d × UCC_(t−1), and the UCC shrinks by each year's CCA.",
+  "source": "generated",
+  "ref": "S5 s20"
+ },
+ {
+  "id": "q10-111",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "With d = 30% and the half-year rule, year-1 CCA is 15% of cost and year-2 CCA is 25.5% of cost. What does this show?",
+  "options": [
+   "The class rate itself rises to 25.5% once the first year has passed",
+   "CCA switches to straight-line once the first year has passed",
+   "The rule increases the total CCA that can ever be claimed on the asset",
+   "The half-year rule defers part of year 1's claim, so year-2 CCA is larger"
+  ],
+  "answer": 3,
+  "explanation": "Year 1: 0.5 × 0.30 = 15% of cost. Year 2: 0.30 × (1 − 0.15) = 25.5% of cost. Half of year 1's claim is simply postponed; the rate d is unchanged and the total claimable is still the full cost.",
+  "source": "generated",
+  "ref": "L05B s7"
+ }
+]

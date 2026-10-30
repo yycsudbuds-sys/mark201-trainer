@@ -1,0 +1,1282 @@
+[
+ {
+  "id": "q10-112",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Under the half-year rule, for any CCA rate d between 0 and 1, in which year is the CCA claim largest?",
+  "options": [
+   "Year 2",
+   "Year 1",
+   "Year 3",
+   "It depends on whether the asset is sold"
+  ],
+  "answer": 0,
+  "explanation": "CCA_1 = 0.5 d I0 and CCA_2 = d(1 − 0.5d) I0, which is larger because 1 − 0.5d > 0.5. After year 2 the claims fall by the factor (1 − d) each year. (Under AII, year 1 is the largest.)",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-113",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "For a continuing asset (t ≥ 2), UCC at the end of year t in terms of UCC at the end of year t − 1 is:",
+  "options": [
+   "UCC_t = UCC_(t−1) − d × I0",
+   "UCC_t = UCC_(t−1) × (1 − d)",
+   "UCC_t = UCC_(t−1)/(1 + d)",
+   "UCC_t = UCC_(t−1) × (1 − d)^t"
+  ],
+  "answer": 1,
+  "explanation": "UCC_t = UCC_(t−1) − CCA_t = UCC_(t−1) − d × UCC_(t−1) = UCC_(t−1)(1 − d). Subtracting d × I0 is the straight-line mistake.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-114",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Beacon Printing buys a $250,000 press in a 30% declining-balance class and the half-year rule applies. What is the UCC at the end of year 3?",
+  "answer": 104125.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "250000*(1-0.5*0.3)*(1-0.3)**2",
+  "steps": [
+   {
+    "label": "CCA_1 = 0.5 × 0.30 × 250,000",
+    "value": 37500.0,
+    "check": "0.5*0.3*250000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "UCC_1",
+    "value": 212500.0,
+    "check": "250000*(1-0.5*0.3)*(1-0.3)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_2 = 0.30 × UCC_1",
+    "value": 63750.0,
+    "check": "0.3*250000*(1-0.5*0.3)*(1-0.3)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "UCC_2",
+    "value": 148750.0,
+    "check": "250000*(1-0.5*0.3)*(1-0.3)**1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_3 = 0.30 × UCC_2",
+    "value": 44625.0,
+    "check": "0.3*250000*(1-0.5*0.3)*(1-0.3)**1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "UCC_3",
+    "value": 104125.0,
+    "check": "250000*(1-0.5*0.3)*(1-0.3)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 0.5 × 0.30 × 250,000 = 37,500; UCC_1 = 212,500",
+   "CCA_2 = 0.30 × 212,500 = 63,750; UCC_2 = 148,750",
+   "CCA_3 = 0.30 × 148,750 = 44,625; UCC_3 = $104,125",
+   "Check: 250,000(1 − 0.15)(1 − 0.30)² = 104,125"
+  ],
+  "keystrokes": [
+   "250000 × (1 − 0.15) × 0.7 × 0.7 = 104,125"
+  ],
+  "errors": [
+   {
+    "id": "half-year-every-year",
+    "label": "Applied the half-year rate every year",
+    "value": 153531.25,
+    "check": "250000*(1-0.5*0.3)**3",
+    "explain": "The multiplier applies in year 1 only; later years use the full d."
+   },
+   {
+    "id": "straight-line-cca",
+    "label": "Took d × original cost in years 2 and 3",
+    "value": 62500.0,
+    "check": "250000-0.5*0.3*250000-2*0.3*250000",
+    "explain": "CCA after year 1 is d × UCC, not d × cost."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Ignored the half-year rule",
+    "value": 85750.0,
+    "check": "250000*(1-0.3)**3",
+    "explain": "Year 1 CCA is 0.5 × d × I0 under the half-year rule."
+   }
+  ],
+  "explanation": "Roll the schedule forward year by year: CCA is a percentage of the opening UCC after the first-year adjustment.",
+  "source": "generated",
+  "ref": "L05B s7; SM 10-11, 10-14"
+ },
+ {
+  "id": "q10-115",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Pinecrest Logistics buys a $125,000 vehicle in a 20% declining-balance class and the Accelerated Investment Incentive (1.5 × in year 1) applies. What is the CCA in year 4?",
+  "answer": 11200.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "0.2*125000*(1-1.5*0.2)*(1-0.2)**2",
+  "steps": [
+   {
+    "label": "CCA_1 = 1.5 × 0.20 × 125,000",
+    "value": 37500.0,
+    "check": "1.5*0.2*125000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "UCC_1",
+    "value": 87500.0,
+    "check": "125000*(1-1.5*0.2)*(1-0.2)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "UCC_3",
+    "value": 56000.0,
+    "check": "125000*(1-1.5*0.2)*(1-0.2)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_4 = 0.20 × UCC_3",
+    "value": 11200.0,
+    "check": "0.2*125000*(1-1.5*0.2)*(1-0.2)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 1.5 × 0.20 × 125,000 = 37,500; UCC_1 = 87,500",
+   "CCA_2 = 17,500; UCC_2 = 70,000",
+   "CCA_3 = 14,000; UCC_3 = 56,000",
+   "CCA_4 = 0.20 × 56,000 = $11,200"
+  ],
+  "keystrokes": [
+   "125000 × 0.7 × 0.8 × 0.8 × 0.2 = 11,200"
+  ],
+  "errors": [
+   {
+    "id": "missing-aii",
+    "label": "Used no first-year multiplier",
+    "value": 12800.0,
+    "check": "0.2*125000*(1-1*0.2)*(1-0.2)**2",
+    "explain": "The question states the 1.5 incentive, so year-1 CCA is 1.5 × d × I0."
+   },
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year multiplier",
+    "value": 14400.0,
+    "check": "0.2*125000*(1-0.5*0.2)*(1-0.2)**2",
+    "explain": "The question states AII, so m = 1.5, not 0.5."
+   },
+   {
+    "id": "straight-line-cca",
+    "label": "Used d × original cost",
+    "value": 25000.0,
+    "check": "0.2*125000",
+    "explain": "CCA in year 4 is d × the UCC at the end of year 3."
+   }
+  ],
+  "explanation": "UCC after year 3 is 125,000 × (1 − 0.30) × 0.8² = 56,000; CCA in year 4 is 20% of that.",
+  "source": "generated",
+  "ref": "S5 s20; L05B s8"
+ },
+ {
+  "id": "q10-116",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Verity Foods buys $92,000 of equipment in a 25% declining-balance class, with the half-year rule. How much total CCA is claimed over the first three years?",
+  "answer": 46718.75,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "92000-92000*(1-0.5*0.25)*(1-0.25)**2",
+  "steps": [
+   {
+    "label": "CCA_1",
+    "value": 11500.0,
+    "check": "0.5*0.25*92000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_2",
+    "value": 20125.0,
+    "check": "0.25*92000*(1-0.5*0.25)*(1-0.25)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_3",
+    "value": 15093.75,
+    "check": "0.25*92000*(1-0.5*0.25)*(1-0.25)**1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Cumulative CCA = I0 − UCC_3",
+    "value": 46718.75,
+    "check": "92000-92000*(1-0.5*0.25)*(1-0.25)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 0.5 × 0.25 × 92,000 = 11,500; UCC_1 = 80,500",
+   "CCA_2 = 0.25 × 80,500 = 20,125; UCC_2 = 60,375",
+   "CCA_3 = 0.25 × 60,375 = 15,093.75; UCC_3 = 45,281.25",
+   "Total = 11,500 + 20,125 + 15,093.75 = $46,718.75 (= 92,000 − 45,281.25)"
+  ],
+  "keystrokes": [
+   "92000 − 92000 × 0.875 × 0.75 × 0.75 = 46,718.75"
+  ],
+  "errors": [
+   {
+    "id": "straight-line-cca",
+    "label": "Used d × cost in years 2 and 3",
+    "value": 57500.0,
+    "check": "0.5*0.25*92000+2*0.25*92000",
+    "explain": "After year 1, CCA is d × UCC, which is smaller than d × cost."
+   },
+   {
+    "id": "half-year-every-year",
+    "label": "Applied the half-year rate every year",
+    "value": 30367.19,
+    "check": "92000-92000*(1-0.5*0.25)**3",
+    "explain": "The half-year adjustment is made in year 1 only."
+   },
+   {
+    "id": "missing-half-year",
+    "label": "Ignored the half-year rule",
+    "value": 53187.5,
+    "check": "92000-92000*(1-0.25)**3",
+    "explain": "Year-1 CCA is half of d × I0."
+   }
+  ],
+  "explanation": "Cumulative CCA after n years is the original cost less the UCC at the end of year n.",
+  "source": "generated",
+  "ref": "L05B s7-8; SM 10-13"
+ },
+ {
+  "id": "q10-117",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A $200,000 asset is in a 40% declining-balance class, and the half-year rule applies. What is the CCA in year 2?",
+  "options": [
+   "$80,000",
+   "$32,000",
+   "$64,000",
+   "$48,000"
+  ],
+  "answer": 2,
+  "explanation": "CCA_1 = 0.5 × 0.40 × 200,000 = 40,000; UCC_1 = 160,000; CCA_2 = 0.40 × 160,000 = $64,000. $80,000 applies d to the original cost; $32,000 halves the rate again; $48,000 ignores the half-year rule in year 1.",
+  "source": "generated",
+  "ref": "L05B s7; SM 10-13"
+ },
+ {
+  "id": "q10-118",
+  "concept": "c10-cca-schedule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $150,000 asset is in a 20% class and the Accelerated Investment Incentive applies (1.5 × in year 1). What is the UCC at the end of year 2?",
+  "options": [
+   "$96,000",
+   "$75,000",
+   "$108,000",
+   "$84,000"
+  ],
+  "answer": 3,
+  "explanation": "CCA_1 = 1.5 × 0.20 × 150,000 = 45,000; UCC_1 = 105,000; CCA_2 = 21,000; UCC_2 = $84,000. $96,000 leaves out the 1.5 multiplier; $75,000 takes d × cost in year 2; $108,000 uses the half-year multiplier.",
+  "source": "generated",
+  "ref": "S5 s20; L05B s8"
+ },
+ {
+  "id": "q10-119",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Under the half-year rule, the first-year CCA on a new asset costing I0 in a class with rate d is:",
+  "options": [
+   "0.5 × d × I0",
+   "d × I0",
+   "1.5 × d × I0",
+   "0.5 × I0"
+  ],
+  "answer": 0,
+  "explanation": "The half-year rule halves the first-year allowance: m = 0.5. A full-rate claim is d × I0, and 1.5 × d × I0 is the Accelerated Investment Incentive.",
+  "source": "generated",
+  "ref": "L05B s7"
+ },
+ {
+  "id": "q10-120",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The Accelerated Investment Incentive (AII) lets a firm claim in the first year:",
+  "options": [
+   "d × I0",
+   "1.5 × d × I0",
+   "0.5 × d × I0",
+   "1.5 × I0"
+  ],
+  "answer": 1,
+  "explanation": "AII raises the first-year multiplier to m = 1.5, after which CCA is the usual d × UCC. The multiplier applies to d × I0, not to I0 itself.",
+  "source": "generated",
+  "ref": "L05B s8; S5 s20"
+ },
+ {
+  "id": "q10-121",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A problem states that the first-year multiplier for a new asset is 1.5. Which rule is in use?",
+  "options": [
+   "The half-year rule",
+   "The net acquisitions rule",
+   "Accelerated Investment Incentive (AII)",
+   "A 100% first-year allowance"
+  ],
+  "answer": 2,
+  "explanation": "A multiplier of 1.5 is the Accelerated Investment Incentive; 0.5 is the half-year rule and 1.0 is a full-rate first-year claim.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-122",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "Gradient Labs bought a machine three years ago and has been claiming CCA on it since. For the PV of its remaining tax shield, the first-year factor is:",
+  "options": [
+   "(1 + 0.5k)/(1 + k), the half-year factor",
+   "(1.5k + 1)/(1 + k), the AII factor",
+   "0.5, because the asset is half depreciated",
+   "1: the first-year adjustment was already used"
+  ],
+  "answer": 3,
+  "explanation": "For something already owned and depreciating, the first-year adjustment is history. From now on it is the regular 100%: PV = (UCC × d × T)/(k + d).",
+  "source": "generated",
+  "ref": "L05B s16"
+ },
+ {
+  "id": "q10-123",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement compares the two first-year regimes correctly?",
+  "options": [
+   "AII claims more CCA in year 1, so its PV of the tax shield is larger",
+   "The half-year rule claims more CCA in year 1, so its PV is larger",
+   "The two give the same PV because total CCA is the same",
+   "AII applies the multiplier to every year of the asset's life"
+  ],
+  "answer": 0,
+  "explanation": "m = 1.5 front-loads the deductions compared with m = 0.5. Earlier tax savings are worth more in present value terms.",
+  "source": "generated",
+  "ref": "L05B s16-17"
+ },
+ {
+  "id": "q10-124",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the first-year multiplier is NOT correct?",
+  "options": [
+   "It is 0.5 under the half-year rule",
+   "It is applied to the opening UCC in every year of the asset's life",
+   "It is 1.5 under the Accelerated Investment Incentive",
+   "It changes the first-year CCA but not the rate d"
+  ],
+  "answer": 1,
+  "explanation": "The multiplier applies in year 1 only. From year 2, CCA is d × opening UCC.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-125",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the multiplier m applied only in the first year?",
+  "options": [
+   "Tax law drops the class rate d once the first year is over",
+   "The multiplier is replaced by the tax rate in later years",
+   "It adjusts only the first claim; from year 2, CCA is d times the opening UCC",
+   "The asset is assumed to be sold at the end of its first year"
+  ],
+  "answer": 2,
+  "explanation": "UCC rolls forward after the adjusted first-year claim, so later claims use the plain rate d.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-126",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 1,
+  "stem": "The professor expects you to apply the first-year multiplier the question states (0.5, 1.5 or 1.0) rather than assume a single fixed rule.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Tax rules change, and the multiplier is a parameter m in CCA_1 = m × d × I0. When nothing is stated, the half-year rule applies.",
+  "source": "generated",
+  "ref": "L05B s7-8"
+ },
+ {
+  "id": "q10-127",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "Under the half-year rule, the first-year CCA is _____ the normal declining-balance amount d × I0.",
+  "options": [
+   "one and a half times",
+   "double",
+   "equal to",
+   "half of"
+  ],
+  "answer": 3,
+  "explanation": "m = 0.5 halves the first-year claim; m = 1.5 multiplies it by one and a half.",
+  "source": "generated",
+  "ref": "L05B s7"
+ },
+ {
+  "id": "q10-128",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "At k = 10%, the first-year PVCCA factors are 0.9545 (half-year), 1.0000 (100%) and 1.0455 (AII). What does this ordering show?",
+  "options": [
+   "A faster first-year claim brings savings forward, so PV rises from half-year to 100% to AII",
+   "The half-year rule gives the largest total CCA over the asset's life",
+   "The factors differ because the tax rate is different under each regime",
+   "The factors rank the three regimes by the risk of the asset's cash flows"
+  ],
+  "answer": 0,
+  "explanation": "(1 + 0.5k)/(1 + k) < 1 < (1.5k + 1)/(1 + k). Earlier deductions are worth more, so the PV is highest under AII.",
+  "source": "generated",
+  "ref": "L05B s16-17"
+ },
+ {
+  "id": "q10-129",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Pinecrest Logistics buys a $300,000 truck in a 30% class, and the question states that the Accelerated Investment Incentive applies. What is the first-year CCA?",
+  "answer": 135000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "1.5*0.3*300000",
+  "steps": [
+   {
+    "label": "CCA_1 = 1.5 × d × I0",
+    "value": 135000.0,
+    "check": "1.5*0.3*300000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = m × d × I0 with m = 1.5",
+   "CCA_1 = 1.5 × 0.30 × 300,000 = $135,000"
+  ],
+  "keystrokes": [
+   "1.5 × 0.3 × 300000 = 135,000"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year multiplier",
+    "value": 45000.0,
+    "check": "0.5*0.3*300000",
+    "explain": "The question states AII, so m = 1.5."
+   },
+   {
+    "id": "missing-aii",
+    "label": "Used no multiplier",
+    "value": 90000.0,
+    "check": "0.3*300000",
+    "explain": "AII multiplies the normal first-year claim by 1.5."
+   },
+   {
+    "id": "forgot-d",
+    "label": "Multiplied the cost by 1.5 only",
+    "value": 450000.0,
+    "check": "1.5*300000",
+    "explain": "The claim is on d × I0, not on I0."
+   }
+  ],
+  "explanation": "First-year CCA = m × d × I0 with m = 1.5 under AII.",
+  "source": "generated",
+  "ref": "S5 s20"
+ },
+ {
+  "id": "q10-130",
+  "concept": "c10-half-year-aii",
+  "also": [
+   "c10-dts"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A firm buys $120,000 of equipment in a 30% class and its tax rate is 25%. By how much does the first-year tax shield under the Accelerated Investment Incentive exceed the first-year tax shield under the half-year rule?",
+  "answer": 9000.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "1.5*0.3*120000*0.25-0.5*0.3*120000*0.25",
+  "steps": [
+   {
+    "label": "AII first-year CCA",
+    "value": 54000.0,
+    "check": "1.5*0.3*120000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Half-year first-year CCA",
+    "value": 18000.0,
+    "check": "0.5*0.3*120000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Difference in DTS = ΔCCA × T",
+    "value": 9000.0,
+    "check": "(1.5*0.3*120000-0.5*0.3*120000)*0.25",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "AII: CCA_1 = 1.5 × 0.30 × 120,000 = 54,000; DTS = 13,500",
+   "Half-year: CCA_1 = 18,000; DTS = 4,500",
+   "Difference = 13,500 − 4,500 = $9,000"
+  ],
+  "keystrokes": [
+   "54000 − 18000 = 36,000",
+   "× 0.25 = 9,000"
+  ],
+  "errors": [
+   {
+    "id": "forgot-times-t",
+    "label": "Reported the difference in CCA",
+    "value": 36000.0,
+    "check": "1.5*0.3*120000-0.5*0.3*120000",
+    "explain": "The shield is the CCA multiplied by T."
+   },
+   {
+    "id": "wrong-multiplier",
+    "label": "Multiplied by (1 − T)",
+    "value": 27000.0,
+    "check": "(1.5*0.3*120000-0.5*0.3*120000)*(1-0.25)",
+    "explain": "The CCA tax shield is CCA × T."
+   }
+  ],
+  "explanation": "The difference in first-year CCA is (1.5 − 0.5) × d × I0 = 36,000; the tax saved on it is 25%.",
+  "source": "generated",
+  "ref": "L05B s7-8, s14"
+ },
+ {
+  "id": "q10-131",
+  "concept": "c10-half-year-aii",
+  "also": [
+   "c10-pvcca"
+  ],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "An asset costs $200,000 (no sale planned), d = 30%, T = 35% and k = 10%. How much larger is the PV of its CCA tax shield under the Accelerated Investment Incentive than under the half-year rule?",
+  "answer": 4772.73,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(200000*0.3*0.35)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1)) - (200000*0.3*0.35)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1))",
+  "steps": [
+   {
+    "label": "Perpetuity base I0 d T/(k + d)",
+    "value": 52500.0,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PVCCA under the half-year rule",
+    "value": 50113.64,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PVCCA under AII",
+    "value": 54886.36,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Difference",
+    "value": 4772.73,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1)) - (200000*0.3*0.35)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1))",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Base = 200,000 × 0.30 × 0.35/(0.10 + 0.30) = 52,500",
+   "Half-year factor = (1 + 0.05)/1.10 = 0.954545 → PVCCA = 50,113.64",
+   "AII factor = (0.15 + 1)/1.10 = 1.045455 → PVCCA = 54,886.36",
+   "Difference = 54,886.36 − 50,113.64 = $4,772.73"
+  ],
+  "keystrokes": [
+   "200000 × 0.3 × 0.35 ÷ 0.4 = 52,500",
+   "× (1.15 ÷ 1.1 − 1.05 ÷ 1.1) = 4,772.73"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Compared AII with the 100% case",
+    "value": 2386.36,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1)) - (200000*0.3*0.35)/(0.1+0.3)",
+    "explain": "The comparison asked for is AII versus the half-year rule."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Left the tax rate out of the base",
+    "value": 13636.36,
+    "check": "(200000*0.3)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1))-(200000*0.3)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1))",
+    "explain": "Each PVCCA includes the factor T."
+   },
+   {
+    "id": "sign-reversed",
+    "label": "Subtracted in the wrong order",
+    "value": -4772.73,
+    "check": "(200000*0.3*0.35)/(0.1+0.3)*((1+0.5*0.1)/(1+0.1)) - (200000*0.3*0.35)/(0.1+0.3)*((1.5*0.1+1)/(1+0.1))",
+    "explain": "AII has the larger PV, so the difference is positive."
+   }
+  ],
+  "explanation": "Only the first-year factor differs: (1.5k + 1)/(1 + k) versus (1 + 0.5k)/(1 + k), applied to the same perpetuity base.",
+  "source": "generated",
+  "ref": "L05B s16-17; S5 s21-23"
+ },
+ {
+  "id": "q10-132",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "An $84,000 asset is in a 30% class and the half-year rule applies. What is the first-year CCA?",
+  "options": [
+   "$25,200",
+   "$12,600",
+   "$37,800",
+   "$6,300"
+  ],
+  "answer": 1,
+  "explanation": "CCA_1 = 0.5 × 0.30 × 84,000 = $12,600. $25,200 claims the full rate; $37,800 uses the AII multiplier of 1.5; $6,300 halves the half-year rule a second time.",
+  "source": "generated",
+  "ref": "L05B s7"
+ },
+ {
+  "id": "q10-133",
+  "concept": "c10-half-year-aii",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "At k = 10%, what first-year factor goes into the PV of the CCA tax shield for a new asset under the Accelerated Investment Incentive?",
+  "options": [
+   "0.9545",
+   "1.3636",
+   "1.0455",
+   "1.1500"
+  ],
+  "answer": 2,
+  "explanation": "The AII factor is (1.5k + 1)/(1 + k) = 1.15/1.10 = 1.0455. 0.9545 is the half-year factor; 1.3636 puts 1.5 over (1 + k) without the k term; 1.1500 forgets to divide by (1 + k).",
+  "source": "generated",
+  "ref": "L05B s16; FS p2"
+ },
+ {
+  "id": "q10-134",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The CCA tax shield (DTS) in a year is:",
+  "options": [
+   "CCA × (1 − T_C)",
+   "the CCA itself, because it is a cash inflow",
+   "UCC × T_C",
+   "CCA × T_C, the tax saved because CCA is deductible"
+  ],
+  "answer": 3,
+  "explanation": "DTS_t = CCA_t × T_C. CCA is non-cash; its cash effect is the tax it saves.",
+  "source": "generated",
+  "ref": "L05B s14-15; S5 s20"
+ },
+ {
+  "id": "q10-135",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the CCA tax shield called a 'tax shield'?",
+  "options": [
+   "It shields part of the firm's income from tax, cutting the bill by T × CCA, if other income exists",
+   "It protects the asset's value from recapture by CRA at the time of sale",
+   "It shields the firm's cash flows from the effects of inflation",
+   "It is a refund paid by the government to the firm regardless of its income"
+  ],
+  "answer": 0,
+  "explanation": "The deduction shields income from tax. The saving assumes the firm has enough other income against which to claim it.",
+  "source": "generated",
+  "ref": "REV p3; L05B s14"
+ },
+ {
+  "id": "q10-136",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 2,
+  "stem": "A new press lets Delta Plastics deduct $30,000 of CCA this year. At a 30% tax rate its tax bill falls by $9,000. The $9,000 is the:",
+  "options": [
+   "recapture of CCA",
+   "CCA tax shield (DTS)",
+   "after-tax salvage value",
+   "operating cash flow"
+  ],
+  "answer": 1,
+  "explanation": "DTS = CCA × T = 30,000 × 0.30 = $9,000, the cash tax saved by the non-cash deduction.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-137",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the DTS differ from the CCA itself?",
+  "options": [
+   "The DTS is the CCA after tax, that is CCA × (1 − T), a cash inflow",
+   "CCA is the tax saved by the deduction; the DTS is the reduction in UCC",
+   "CCA is a deduction from income; the DTS is the cash tax it saves (CCA × T)",
+   "They are the same amount, reported in different years for tax and accounting"
+  ],
+  "answer": 2,
+  "explanation": "A deduction of CCA reduces taxable income by CCA and reduces tax by T × CCA. Only the saving is a cash flow.",
+  "source": "generated",
+  "ref": "L05B s14-15"
+ },
+ {
+  "id": "q10-138",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about the CCA tax shield is NOT correct?",
+  "options": [
+   "It rises when the tax rate rises",
+   "It falls from year to year under declining balance",
+   "It is realized only if the firm has enough taxable income",
+   "It is a cash outflow because depreciation is a cost"
+  ],
+  "answer": 3,
+  "explanation": "CCA is non-cash, and its tax shield is a reduction in taxes paid, a cash saving, not an outflow.",
+  "source": "generated",
+  "ref": "SM 10 CTQ4; L05B s14"
+ },
+ {
+  "id": "q10-139",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "A project's CCA deduction can only be used against taxable income. If the firm has no other taxable income and cannot carry losses forward, what happens to the CCA tax shield?",
+  "options": [
+   "It cannot be used, so the saving is lost or deferred",
+   "It is still received in full as a refund",
+   "It is received at (1 − T)",
+   "It is added to UCC"
+  ],
+  "answer": 0,
+  "explanation": "The textbook shield assumes the firm has enough other income (the professor says 'assuming you have enough other income'). Without it there is nothing to shield.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-140",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "A higher corporate tax rate increases the value of the CCA tax shield.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. DTS = CCA × T_C, so each dollar of CCA saves more tax at a higher rate.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-141",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "For a $7,500 asset the DTS is $1,282.50 in year 1 and $470.25 in year 2 (T = 38%). Why does it shrink?",
+  "options": [
+   "The tax rate falls each year as the firm's income falls",
+   "CCA is declining balance, so each year's CCA, and its tax saving, is smaller",
+   "The firm's taxable income falls each year as the asset ages",
+   "The discount rate rises each year, so later savings are worth less"
+  ],
+  "answer": 1,
+  "explanation": "CCA_1 = 3,375 and CCA_2 = 1,237.50 under the lecture's AII example; DTS = CCA × 0.38 declines in proportion.",
+  "source": "generated",
+  "ref": "L05B s24"
+ },
+ {
+  "id": "q10-142",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "fill",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "DTS_t = CCA_t × _____.",
+  "options": [
+   "(1 − T_C)",
+   "d",
+   "T_C",
+   "k"
+  ],
+  "answer": 2,
+  "explanation": "The tax shield multiplies CCA by the corporate tax rate T_C.",
+  "source": "generated",
+  "ref": "L05B s15"
+ },
+ {
+  "id": "q10-143",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "If the tax rate rises from 30% to 40% with CCA unchanged, the DTS:",
+  "options": [
+   "rises by 10 percentage points of CCA",
+   "is unchanged",
+   "falls",
+   "rises by one-third (× 40/30)"
+  ],
+  "answer": 3,
+  "explanation": "DTS = CCA × T, so it is proportional to T: 0.40/0.30 = 1.333, a one-third increase.",
+  "source": "generated",
+  "ref": "L05B s14"
+ },
+ {
+  "id": "q10-144",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "A firm buys $180,000 of equipment in a 20% class (half-year rule) and its tax rate is 40%. What is the CCA tax shield in year 2?",
+  "answer": 12960.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "0.2*180000*(1-0.5*0.2)*(1-0.2)**0*0.4",
+  "steps": [
+   {
+    "label": "CCA_1",
+    "value": 18000.0,
+    "check": "0.5*0.2*180000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_2 = 0.20 × UCC_1",
+    "value": 32400.0,
+    "check": "0.2*180000*(1-0.5*0.2)*(1-0.2)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "DTS_2 = CCA_2 × T",
+    "value": 12960.0,
+    "check": "0.2*180000*(1-0.5*0.2)*(1-0.2)**0*0.4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 0.5 × 0.20 × 180,000 = 18,000; UCC_1 = 162,000",
+   "CCA_2 = 0.20 × 162,000 = 32,400",
+   "DTS_2 = 32,400 × 0.40 = $12,960"
+  ],
+  "keystrokes": [
+   "0.2 × 162000 = 32,400",
+   "× 0.4 = 12,960"
+  ],
+  "errors": [
+   {
+    "id": "forgot-times-t",
+    "label": "Reported the CCA, not the saving",
+    "value": 32400.0,
+    "check": "0.2*180000*(1-0.5*0.2)*(1-0.2)**0",
+    "explain": "The cash effect is T × CCA."
+   },
+   {
+    "id": "wrong-year-cca",
+    "label": "Used year-1 CCA",
+    "value": 7200.0,
+    "check": "0.5*0.2*180000*0.4",
+    "explain": "Year 2 uses d × UCC_1."
+   },
+   {
+    "id": "wrong-multiplier",
+    "label": "Multiplied by (1 − T)",
+    "value": 19440.0,
+    "check": "0.2*180000*(1-0.5*0.2)*(1-0.2)**0*(1-0.4)",
+    "explain": "CCA is multiplied by T, not (1 − T)."
+   }
+  ],
+  "explanation": "Find year-2 CCA from the schedule, then multiply by the tax rate.",
+  "source": "generated",
+  "ref": "L05B s7, s14"
+ },
+ {
+  "id": "q10-145",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A firm buys $60,000 of equipment in a 30% class under the Accelerated Investment Incentive. The tax rate is 35%. What is the total CCA tax shield over years 1 to 3?",
+  "answer": 15340.5,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.5
+  },
+  "check": "0.35*(1.5*0.3*60000+0.3*60000*(1-1.5*0.3)*(1-0.3)**0+0.3*60000*(1-1.5*0.3)*(1-0.3)**1)",
+  "steps": [
+   {
+    "label": "CCA_1",
+    "value": 27000.0,
+    "check": "1.5*0.3*60000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "CCA_2",
+    "value": 9900.0,
+    "check": "0.3*60000*(1-1.5*0.3)*(1-0.3)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "CCA_3",
+    "value": 6930.0,
+    "check": "0.3*60000*(1-1.5*0.3)*(1-0.3)**1",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "DTS_1 + DTS_2 + DTS_3",
+    "value": 15340.5,
+    "check": "0.35*(1.5*0.3*60000+0.3*60000*(1-1.5*0.3)*(1-0.3)**0+0.3*60000*(1-1.5*0.3)*(1-0.3)**1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 1.5 × 0.30 × 60,000 = 27,000; UCC_1 = 33,000",
+   "CCA_2 = 0.30 × 33,000 = 9,900; UCC_2 = 23,100",
+   "CCA_3 = 0.30 × 23,100 = 6,930",
+   "DTS = 0.35 × (27,000 + 9,900 + 6,930) = 0.35 × 43,830 = $15,340.50"
+  ],
+  "keystrokes": [
+   "27000 + 9900 + 6930 = 43,830",
+   "× 0.35 = 15,340.50"
+  ],
+  "errors": [
+   {
+    "id": "wrong-first-year-factor",
+    "label": "Used the half-year multiplier",
+    "value": 12253.5,
+    "check": "0.35*(0.5*0.3*60000+0.3*60000*(1-0.5*0.3)*(1-0.3)**0+0.3*60000*(1-0.5*0.3)*(1-0.3)**1)",
+    "explain": "The question states AII, so m = 1.5."
+   },
+   {
+    "id": "straight-line-cca",
+    "label": "Used d × cost after year 1",
+    "value": 22050.0,
+    "check": "0.35*(1.5*0.3*60000+2*0.3*60000)",
+    "explain": "CCA after year 1 is d × UCC."
+   },
+   {
+    "id": "forgot-times-t",
+    "label": "Added up the CCA, not the savings",
+    "value": 43830.0,
+    "check": "1.5*0.3*60000+0.3*60000*(1-1.5*0.3)*(1-0.3)**0+0.3*60000*(1-1.5*0.3)*(1-0.3)**1",
+    "explain": "The shield is T × CCA."
+   }
+  ],
+  "explanation": "Compute the three CCA amounts, add them and multiply by T (or multiply each year and add).",
+  "source": "generated",
+  "ref": "L05B s7-8, s14"
+ },
+ {
+  "id": "q10-146",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $100,000 asset is in a 25% class with the half-year rule. The tax rate is 30% and the discount rate is 10%. What is the present value of the CCA tax shields in years 1 and 2 only?",
+  "answer": 8832.64,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "0.3*0.5*0.25*100000/1.1+0.3*0.25*100000*(1-0.5*0.25)*(1-0.25)**0/1.1**2",
+  "steps": [
+   {
+    "label": "DTS_1",
+    "value": 3750.0,
+    "check": "0.3*0.5*0.25*100000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "DTS_2",
+    "value": 6562.5,
+    "check": "0.3*0.25*100000*(1-0.5*0.25)*(1-0.25)**0",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV = DTS_1/1.10 + DTS_2/1.10²",
+    "value": 8832.64,
+    "check": "0.3*0.5*0.25*100000/1.1+0.3*0.25*100000*(1-0.5*0.25)*(1-0.25)**0/1.1**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "CCA_1 = 0.5 × 0.25 × 100,000 = 12,500; DTS_1 = 3,750",
+   "UCC_1 = 87,500; CCA_2 = 21,875; DTS_2 = 6,562.50",
+   "PV = 3,750/1.10 + 6,562.50/1.21 = 3,409.09 + 5,423.55 = $8,832.64"
+  ],
+  "keystrokes": [
+   "CF0 = 0; C01 = 3750; C02 = 6562.5; NPV, I = 10, CPT = 8,832.64"
+  ],
+  "errors": [
+   {
+    "id": "forgot-times-t",
+    "label": "Discounted the CCA, not the shield",
+    "value": 29442.15,
+    "check": "0.5*0.25*100000/1.1+0.25*100000*(1-0.5*0.25)*(1-0.25)**0/1.1**2",
+    "explain": "Discount the tax savings (CCA × T), not the CCA."
+   },
+   {
+    "id": "not-discounted",
+    "label": "Added the shields without discounting",
+    "value": 10312.5,
+    "check": "0.3*0.5*0.25*100000+0.3*0.25*100000*(1-0.5*0.25)*(1-0.25)**0",
+    "explain": "Savings in years 1 and 2 must be discounted."
+   },
+   {
+    "id": "discounted-wrong-year",
+    "label": "Discounted both shields one year",
+    "value": 9375.0,
+    "check": "(0.3*0.5*0.25*100000+0.3*0.25*100000*(1-0.5*0.25)*(1-0.25)**0)/1.1",
+    "explain": "The year-2 saving is discounted two years."
+   }
+  ],
+  "explanation": "DTS_t = CCA_t × T, and each is discounted at (1 + k)^t.",
+  "source": "generated",
+  "ref": "L05B s15-17; S5 s21"
+ },
+ {
+  "id": "q10-147",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A $96,000 asset is in a 20% class and the Accelerated Investment Incentive applies. The tax rate is 28%. What is the first-year CCA tax shield?",
+  "options": [
+   "$8,064",
+   "$2,688",
+   "$5,376",
+   "$28,800"
+  ],
+  "answer": 0,
+  "explanation": "DTS_1 = 1.5 × 0.20 × 96,000 × 0.28 = $8,064. $2,688 uses the half-year rule; $5,376 uses no multiplier; $28,800 is the CCA itself, not the tax saved.",
+  "source": "generated",
+  "ref": "S5 s20; L05B s14"
+ },
+ {
+  "id": "q10-148",
+  "concept": "c10-dts",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "An asset's UCC at the start of year 3 is $48,000. It is in a 25% class and the tax rate is 40%. What is the year-3 CCA tax shield?",
+  "options": [
+   "$12,000",
+   "$4,800",
+   "$7,200",
+   "$19,200"
+  ],
+  "answer": 1,
+  "explanation": "CCA_3 = 0.25 × 48,000 = 12,000; DTS_3 = 12,000 × 0.40 = $4,800. $12,000 is the CCA itself; $7,200 multiplies by (1 − T); $19,200 applies T to the UCC instead of to the CCA.",
+  "source": "generated",
+  "ref": "L05B s7, s14"
+ }
+]

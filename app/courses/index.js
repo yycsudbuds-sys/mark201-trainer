@@ -3,7 +3,7 @@
 // the course id, so nothing can bleed between courses.
 export const COURSES = [
   { id: 'mark201', title: 'MARK 201', name: 'Imperium Marketing', sub: 'Midterm · Chapters 1, 6–12', ready: true, color: '#C9A227', load: () => import('./mark201/pack.js') },
-  { id: 'fin201', title: 'FIN 201', name: 'Imperium Finance', sub: 'Midterm 2 · Chapters 8–13', ready: false, color: '#4FA3A5', load: () => import('./fin201/pack.js') },
+  { id: 'fin201', title: 'FIN 201', name: 'Imperium Finance', sub: 'Midterm 2 · Chapters 8–13', ready: true, color: '#4FA3A5', load: () => import('./fin201/pack.js') },
 ];
 export const COURSE_IDS = COURSES.map(c => c.id);
 export function courseMeta(id) { return COURSES.find(c => c.id === id) || null; }

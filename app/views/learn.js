@@ -8,6 +8,7 @@ import { icon } from '../icons.js';
 export function render(app, params) {
   const [chStr, cid] = params;
   if (!chStr) return list(app);
+  if (chStr === 'vault') return vault(app);
   const ch = app.index.chapter.get(parseInt(chStr, 10));
   if (!ch) return h('div', { class: 'card' }, 'Unknown chapter. ', h('a', { href: '#/learn' }, 'Back'));
   if (cid === 'sheet') return sheet(app, ch);
@@ -16,7 +17,8 @@ export function render(app, params) {
 
 function list(app) {
   return h('div', null,
-    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Learn'), h('p', null, 'Lessons, one idea at a time: definition, plain English, a diagram you can poke, what it is confused with, then a quick check. Rereading alone is weak, so every scroll tests you as you go.'))),
+    h('div', { class: 'page-head' }, h('div', null, h('h1', null, 'Learn'), h('p', null, app.pack && app.pack.learn === 'cards' ? 'One short card per concept: definition, formula, a worked example, what it is confused with and the exam trap, then a quick check. The Formula Vault mirrors the exam sheet.' : 'Lessons, one idea at a time: definition, plain English, a diagram you can poke, what it is confused with, then a quick check. Rereading alone is weak, so every scroll tests you as you go.')),
+      app.pack && app.pack.vault ? h('a', { class: 'btn primary', href: '#/learn/vault' }, icon('tablet', { size: 16, tone: 'mono' }), 'Formula Vault') : null),
     h('div', { class: 'stack' }, app.content.chapters.map(ch => {
       const read = ch.concepts.filter(c => app.state.concepts[c.id]?.seen).length;
       const m = chapterMastery(app.content, app.state, ch.chapter);
@@ -38,14 +40,10 @@ function deck(app, ch, startCid) {
     h('div', { class: 'learn-toc' }, ch.topics.map(t => h('div', null, h('div', { class: 'tiny muted', style: { margin: '0.6rem 0 0.2rem' } }, t.title), t.concepts.map(cid => h('a', { class: 'toc-item' + (cid === startCid ? ' on' : ''), href: `#/learn/${ch.chapter}/${cid}` }, h('span', { class: `mdot m${masteryLevel(app.state.concepts[cid])}` }), app.conceptOf(cid).concept.term))))));
   // start index: 5 slides per concept at most; compute by rebuilding lesson with startAt from concept index
   let startAt = 0;
+  const per = app.pack && app.pack.learn === 'cards' ? 1 : 5; // slides per concept when quick checks are off
   if (startCid) {
     const i = cids.indexOf(startCid);
-    if (i > 0) {
-      // slides per concept vary (visual slide optional) so count precisely
-      let count = 0;
-      for (let k = 0; k < i; k++) count += 5;
-      startAt = count;
-    }
+    if (i > 0) startAt = i * per;
   }
   const lesson = createLesson(app, cids, { chapter: ch, title: `Lesson · ${ch.title}`, quickCheck: false, startAt, exitHref: '#/learn', completeLabel: 'Drill this chapter', onComplete: () => app.navigate(`#/drill/chapter/${ch.chapter}`) });
   host.append(side, h('div', { class: 'learn-main' }, lesson));
@@ -83,7 +81,38 @@ function sheet(app, ch) {
         h('div', { class: 'scroll-roller bottom', 'aria-hidden': 'true' }))));
   return page;
 }
-const ROMANS = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+const ROMANS = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII'];
+
+/** The Formula Vault: every formula of the course, grouped by chapter, marked Given (on the exam sheet) or Memorise,
+ *  with when-to-use and the trap, and a quick drill of the concepts behind it. */
+function vault(app) {
+  const chapters = app.content.chapters.filter(ch => (ch.formulas || []).length);
+  let filter = 'all';
+  const list = h('div', { class: 'stack vault-list' });
+  const draw = () => {
+    list.innerHTML = '';
+    for (const ch of chapters) {
+      const rows = (ch.formulas || []).filter(f => filter === 'all' || (filter === 'given' ? f.given : !f.given));
+      if (!rows.length) continue;
+      list.appendChild(h('div', { class: 'card stack', style: { '--ch': ch.color } },
+        h('div', { class: 'row between wrap' }, h('div', { class: 'row' }, icon(app.chapterIcon(ch.chapter), { size: 22, tone: 'gold' }), h('h3', null, `Chapter ${ch.chapter} · ${ch.short || ch.title}`)), h('a', { class: 'btn sm ghost', href: `#/learn/${ch.chapter}` }, 'Cards')),
+        h('div', { class: 'vault-rows' }, rows.map(f => {
+          const mastered = f.concepts.length ? f.concepts.filter(cid => masteryLevel(app.state.concepts[cid]) >= 3).length : 0;
+          return h('div', { class: 'vault-row' },
+            h('div', { class: 'vault-main' }, h('div', { class: 'row wrap' }, h('b', null, f.name), h('span', { class: 'chip ' + (f.given ? 'good' : 'warn') }, f.given ? 'Given on the sheet' : 'Memorise')), h('div', { class: 'formula-text' }, f.formula), h('div', { class: 'small muted' }, h('b', null, 'Use when: '), f.when), h('div', { class: 'small muted' }, h('b', null, 'Trap: '), f.trap)),
+            h('div', { class: 'vault-side' }, f.concepts.length ? h('div', { class: 'tiny muted' }, `${mastered}/${f.concepts.length} concepts solid`) : null, f.concepts.length ? h('a', { class: 'btn sm', href: `#/drill/concepts/${f.concepts.join(',')}` }, icon('gladius', { size: 13, tone: 'gold' }), ' Quick drill') : null));
+        }))));
+    }
+    if (!list.children.length) list.appendChild(h('div', { class: 'empty' }, 'No formulas in this view yet.'));
+  };
+  const seg = h('div', { class: 'seg' }, [['all', 'All'], ['given', 'Given on the sheet'], ['memo', 'Must memorise']].map(([k, label]) => h('button', { class: k === filter ? 'on' : '', type: 'button', onClick: e => { filter = k; seg.querySelectorAll('button').forEach(b => b.classList.remove('on')); e.currentTarget.classList.add('on'); draw(); } }, label)));
+  draw();
+  const total = chapters.reduce((s, ch) => s + ch.formulas.length, 0); const given = chapters.reduce((s, ch) => s + ch.formulas.filter(f => f.given).length, 0);
+  return h('div', { class: 'stack vault', style: { gap: '1.2rem' } },
+    h('a', { class: 'back', href: '#/learn' }, icon('arrow', { size: 14, tone: 'mono', cls: 'flip' }), ' Learn'),
+    h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'Formula Vault'), h('h1', null, 'Every formula, sorted by whether you get it on the sheet'), h('p', null, `${given} of ${total} formulas are printed on the exam sheet; the rest you carry in. Each one links to a quick drill of the concepts that use it.`)), seg),
+    list);
+}
 /** A must-memorize table as an engraved bronze tablet with a quiz mode: hide one column, reveal cells on tap. */
 function bronzeTablet(app, fig, figureNode) {
   const wrap = h('div', { class: 'sheet-figure bronze' }, figureNode);

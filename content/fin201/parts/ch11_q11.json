@@ -1,0 +1,1207 @@
+[
+ {
+  "id": "q11-440",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "At the financial break-even sales level, a project's _____ is exactly zero.",
+  "options": [
+   "net income",
+   "operating cash flow",
+   "NPV",
+   "payback period"
+  ],
+  "answer": 2,
+  "explanation": "Financial break-even is the sales level that makes NPV = 0, so the project earns exactly its required return. Net income = 0 is the accounting break-even and OCF = 0 is the cash break-even.",
+  "source": "generated",
+  "ref": "TB 11.4"
+ },
+ {
+  "id": "q11-441",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Sault Boatworks finds that at 3,200 boats a year its project's IRR equals the 12% required return and its discounted payback equals the six-year life. Which break-even point has it found?",
+  "options": [
+   "Accounting break-even",
+   "Cash break-even",
+   "Payback break-even",
+   "Financial break-even"
+  ],
+  "answer": 3,
+  "explanation": "IRR = R, NPV = 0 and discounted payback equal to the life all describe the financial break-even. Accounting break-even would give IRR = 0% and payback equal to the life, and cash break-even gives IRR = −100%.",
+  "source": "generated",
+  "ref": "TB 11.4 Table 11.1; SM 11-16c"
+ },
+ {
+  "id": "q11-442",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Yoho Gear is evaluating a $412,000 project with a 5-year life. Fixed costs are $96,000 a year, the price is $37.80 and variable cost is $24.30 per unit. The required return is 11% and depreciation is straight-line to zero. Ignoring taxes, what is the financial break-even quantity (units per year)?",
+  "answer": 15368.52,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(96000+412000/((1-(1+0.11)**-5)/0.11))/(37.8-24.3)",
+  "steps": [
+   {
+    "label": "Annuity factor (11%, 5 years)",
+    "value": 3.6959,
+    "check": "((1-(1+0.11)**-5)/0.11)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Required OCF* = I0 ÷ annuity factor",
+    "value": 111474.97,
+    "check": "412000/((1-(1+0.11)**-5)/0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Financial break-even Q_F = (FC + OCF*)/(P − v)",
+    "value": 15368.52,
+    "check": "(96000+412000/((1-(1+0.11)**-5)/0.11))/(37.8-24.3)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "NPV = 0 means I0 = OCF* × annuity factor, so OCF* = I0 ÷ [(1 − 1.11^−5)/0.11]",
+   "Annuity factor = 3.695897; OCF* = 412,000/3.695897 = $111,474.97",
+   "P − v = 37.80 − 24.30 = 13.50",
+   "Q_F = (FC + OCF*)/(P − v) = (96,000 + 111,474.97)/13.50 = 15,368.52 units"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 11, PV = −412000, FV = 0, CPT PMT = 111,474.97 (this is OCF*)",
+   "(96000 + 111,474.97) ÷ 13.50 = 15,368.52"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Used I0/N as the required OCF",
+    "value": 13214.81,
+    "check": "(96000+412000/5)/(37.8-24.3)",
+    "explain": "I0/N is the depreciation, so that is the accounting break-even. OCF* must also earn the required return: divide by the annuity factor."
+   },
+   {
+    "id": "pv-as-ocf",
+    "label": "Used the whole investment as one year's OCF",
+    "value": 37629.63,
+    "check": "(96000+412000)/(37.8-24.3)",
+    "explain": "The investment is the PV of the OCF annuity, not one year's OCF; divide by the annuity factor."
+   },
+   {
+    "id": "cash-for-financial",
+    "label": "Left OCF* out (cash break-even)",
+    "value": 7111.11,
+    "check": "96000/(37.8-24.3)",
+    "explain": "That sets OCF = 0. Financial break-even needs OCF* large enough to give NPV = 0."
+   }
+  ],
+  "explanation": "Financial break-even: find OCF* that makes the PV of the annuity equal I0, then Q_F = (FC + OCF*)/(P − v). The order cash (7,111) < accounting (13,215) < financial (15,369) holds.",
+  "source": "generated",
+  "ref": "SM 11-9; TB 11.4"
+ },
+ {
+  "id": "q11-443",
+  "concept": "c11-financial-breakeven",
+  "also": [
+   "c11-cash-breakeven"
+  ],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cranbrook Cabinets has a price of $240 and a variable cost of $162 per unit, with fixed costs of $410,000 a year. A $1,500,000 investment is depreciated straight-line to zero over its 5-year life. The tax rate is 35% and the required return is 14%. What is the financial break-even quantity (units per year)?",
+  "answer": 11803.26,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(410000+(1500000/((1-(1+0.14)**-5)/0.14)-0.35*300000)/(1-0.35))/(240-162)",
+  "steps": [
+   {
+    "label": "Annuity factor (14%, 5 years)",
+    "value": 3.4331,
+    "check": "((1-(1+0.14)**-5)/0.14)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Required OCF* = I0 ÷ annuity factor",
+    "value": 436925.32,
+    "check": "1500000/((1-(1+0.14)**-5)/0.14)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "(OCF* − T·D)/(1 − T)",
+    "value": 510654.34,
+    "check": "(1500000/((1-(1+0.14)**-5)/0.14)-0.35*300000)/(1-0.35)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Financial break-even Q_F with taxes",
+    "value": 11803.26,
+    "check": "(410000+(1500000/((1-(1+0.14)**-5)/0.14)-0.35*300000)/(1-0.35))/(240-162)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "D = 1,500,000/5 = 300,000; T·D = 0.35 × 300,000 = 105,000",
+   "OCF* = I0 ÷ annuity factor = 1,500,000/3.433081 = $436,925.32",
+   "(OCF* − T·D)/(1 − T) = (436,925.32 − 105,000)/0.65 = 510,654.34",
+   "Q_F = {FC + (OCF* − T·D)/(1 − T)}/(P − v) = (920,654.34)/78 = 11,803.26 units",
+   "Check: [(78 × 11,803.26) − 410,000](0.65) + 105,000 = 436,925.32 = OCF*"
+  ],
+  "keystrokes": [
+   "N = 5, I/Y = 14, PV = −1500000, FV = 0, CPT PMT = 436,925.32",
+   "(436,925.32 − 105000) ÷ 0.65 + 410000 = 920,654.34",
+   "÷ 78 = 11,803.26"
+  ],
+  "errors": [
+   {
+    "id": "forgot-untax",
+    "label": "Did not divide (OCF* − T·D) by (1 − T)",
+    "value": 9511.86,
+    "check": "(410000+1500000/((1-(1+0.14)**-5)/0.14)-0.35*300000)/(240-162)",
+    "explain": "OCF* is after tax but FC and the margin are pre-tax, so the after-tax gap OCF* − T·D must be grossed up by 1/(1 − T)."
+   },
+   {
+    "id": "taxes-ignored",
+    "label": "Ignored taxes: (FC + OCF*)/(P − v)",
+    "value": 10858.02,
+    "check": "(410000+1500000/((1-(1+0.14)**-5)/0.14))/(240-162)",
+    "explain": "With a 35% tax rate the firm must earn extra pre-tax income to pay tax, so the no-tax formula understates the break-even."
+   },
+   {
+    "id": "shield-sign",
+    "label": "Added T·D instead of subtracting it",
+    "value": 15945.27,
+    "check": "(410000+(1500000/((1-(1+0.14)**-5)/0.14)+0.35*300000)/(1-0.35))/(240-162)",
+    "explain": "The depreciation tax shield supplies part of OCF*, so it reduces what the operations must produce."
+   }
+  ],
+  "explanation": "With taxes the OCF identity is OCF = [(P − v)Q − FC](1 − T) + T·D. Solving for Q at OCF = OCF* gives Q_F = {FC + (OCF* − T·D)/(1 − T)}/(P − v). Forgetting the ÷(1 − T) understates Q_F by about 2,300 units.",
+  "source": "generated",
+  "ref": "SM 11-24; TB 11.4"
+ },
+ {
+  "id": "q11-444",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project has fixed costs of $240,000 a year, a variable cost of $31 per unit and a 4-year life with straight-line depreciation to zero. Its cash break-even is 9,600 units and its accounting break-even is 13,000 units. The required return is 13%; ignore taxes. What is the financial break-even quantity (units)?",
+  "answer": 14172.24,
+  "unit": "",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "(240000+(4*(13000*(240000/9600)-240000))/((1-(1+0.13)**-4)/0.13))/(240000/9600)",
+  "steps": [
+   {
+    "label": "Contribution margin P − v = FC/Q_C",
+    "value": 25.0,
+    "check": "240000/9600",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Annual depreciation D = Q_A(P − v) − FC",
+    "value": 85000.0,
+    "check": "13000*(240000/9600)-240000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Investment I0 = 4 × D",
+    "value": 340000.0,
+    "check": "4*(13000*(240000/9600)-240000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Required OCF* = I0 ÷ annuity factor (13%, 4 years)",
+    "value": 114306.03,
+    "check": "(4*(13000*(240000/9600)-240000))/((1-(1+0.13)**-4)/0.13)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "Financial break-even Q_F",
+    "value": 14172.24,
+    "check": "(240000+(4*(13000*(240000/9600)-240000))/((1-(1+0.13)**-4)/0.13))/(240000/9600)",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "Q_C = FC/(P − v) gives P − v = 240,000/9,600 = $25 (so P = $56)",
+   "Q_A = (FC + D)/(P − v) gives D = 13,000 × 25 − 240,000 = $85,000",
+   "Straight-line over 4 years: I0 = 4 × 85,000 = $340,000",
+   "OCF* = 340,000/2.974471 = $114,306.03",
+   "Q_F = (240,000 + 114,306.03)/25 = 14,172.24 units"
+  ],
+  "keystrokes": [
+   "240000 ÷ 9600 = 25",
+   "13000 × 25 − 240000 = 85,000",
+   "× 4 = 340,000",
+   "N = 4, I/Y = 13, PV = −340000, FV = 0, CPT PMT = 114,306.03",
+   "(240000 + 114,306.03) ÷ 25 = 14,172.24"
+  ],
+  "errors": [
+   {
+    "id": "divided-by-n",
+    "label": "Used I0/N as the required OCF",
+    "value": 13000.0,
+    "check": "(240000+340000/4)/25",
+    "explain": "I0/N = D, which just reproduces the accounting break-even (13,000). OCF* needs the annuity factor."
+   },
+   {
+    "id": "forgot-times-n",
+    "label": "Took one year's D as the investment",
+    "value": 10743.06,
+    "check": "(240000+85000/((1-(1+0.13)**-4)/0.13))/25",
+    "explain": "Straight-line depreciation is I0/N, so I0 = 4D = $340,000."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 5-year annuity factor",
+    "value": 13466.68,
+    "check": "(240000+340000/((1-(1+0.13)**-5)/0.13))/25",
+    "explain": "The project lasts 4 years, so the annuity factor must use N = 4."
+   }
+  ],
+  "explanation": "Work backwards through Q_C and Q_A to P − v, D and I0, then find OCF* from the annuity factor. The three answers 9,600 < 13,000 < 14,172 confirm the order cash < accounting < financial.",
+  "source": "generated",
+  "ref": "SM 11-10; TB 11.4"
+ },
+ {
+  "id": "q11-445",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Thompson Valley Distillery has a price of $92 and a variable cost of $57 per case, with fixed costs of $310,000 a year. A $1,900,000 investment is depreciated straight-line to zero over 8 years. The required return is 9% and taxes are ignored. What is the financial break-even quantity?",
+  "options": [
+   "15,643 cases",
+   "8,857 cases",
+   "19,643 cases",
+   "18,665 cases"
+  ],
+  "answer": 3,
+  "explanation": "The annuity factor (9%, 8 years) is 5.5348, so OCF* = 1,900,000/5.534819 = $343,281 and Q_F = (310,000 + 343,282)/35 = 18,665 cases. Using I0/N = $237,500 gives the accounting break-even (15,643), and using no OCF* gives the cash break-even (8,857).",
+  "source": "generated",
+  "ref": "SM 11-9; TB 11.4",
+  "check": "(310000+1900000/((1-(1+0.09)**-8)/0.09))/(92-57)",
+  "option_checks": [
+   "(310000+1900000/8)/(92-57)",
+   "310000/(92-57)",
+   "(310000+1900000/((1-(1+0.09)**-7)/0.09))/(92-57)",
+   "(310000+1900000/((1-(1+0.09)**-8)/0.09))/(92-57)"
+  ],
+  "option_errors": [
+   "divided-by-n",
+   "cash-for-financial",
+   "wrong-n-annuity",
+   null
+  ]
+ },
+ {
+  "id": "q11-446",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bruce Peninsula Canoes earns a contribution margin of $11.50 per canoe and has fixed costs of $150,000 a year. A $780,000 investment is depreciated straight-line to zero over 6 years, the required return is 15% and taxes are ignored. What is the financial break-even quantity?",
+  "options": [
+   "269,730 canoes",
+   "24,348 canoes",
+   "13,043 canoes",
+   "None of the above"
+  ],
+  "answer": 3,
+  "explanation": "OCF* = 780,000/3.784483 = $206,105 and Q_F = (150,000 + 206,105)/11.50 = 30,966 canoes, which none of the listed figures equals. Multiplying by the annuity factor, using I0/N (the accounting figure, 24,348) and ignoring OCF* (the cash figure, 13,043) are the classic slips.",
+  "source": "generated",
+  "ref": "SM 11-9; TB 11.4",
+  "check": "(150000+780000/((1-(1+0.15)**-6)/0.15))/11.5",
+  "option_checks": [
+   "(150000+780000*((1-(1+0.15)**-6)/0.15))/11.5",
+   "(150000+780000/6)/11.5",
+   "150000/11.5",
+   null
+  ],
+  "option_errors": [
+   "multiplied-by-af",
+   "divided-by-n",
+   "cash-for-financial",
+   null
+  ]
+ },
+ {
+  "id": "q11-447",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "How does the financial break-even quantity compare with the cash break-even quantity?",
+  "options": [
+   "Financial break-even is lower, because discounting shrinks the cash flows",
+   "Financial break-even is higher, because OCF must also repay I0 at the required return",
+   "The two are equal, because both set operating cash flow to its break-even level",
+   "Financial break-even is lower, because it ignores fixed costs"
+  ],
+  "answer": 1,
+  "explanation": "Q_C = FC/(P − v) needs OCF = 0, while Q_F = (FC + OCF*)/(P − v) needs OCF* > 0 to give NPV = 0. Discounting raises the OCF required; it does not shrink it.",
+  "source": "generated",
+  "ref": "TB 11.4; SM 11 CTQ 3"
+ },
+ {
+  "id": "q11-448",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which statement about a project operating exactly at its financial break-even point is NOT true?",
+  "options": [
+   "Its NPV is zero",
+   "Its IRR equals the required return",
+   "Its ordinary payback exceeds its life",
+   "Its discounted payback equals its life"
+  ],
+  "answer": 2,
+  "explanation": "At financial break-even the PV of the OCFs just equals I0, so NPV = 0, IRR = R and discounted payback = life. Undiscounted flows add up to more than I0, so ordinary payback is shorter than the life, not longer.",
+  "source": "generated",
+  "ref": "TB 11.4 Table 11.1; SM 11-16c"
+ },
+ {
+  "id": "q11-449",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why is the financial break-even the most important of the three for shareholders?",
+  "options": [
+   "It is the lowest of the three, so a project is most likely to pass it",
+   "It ignores the time value of money, which keeps the analysis simple",
+   "It is unaffected by forecasting risk in the sales volume",
+   "A project can clear the other two break-evens yet still have a negative NPV"
+  ],
+  "answer": 3,
+  "explanation": "Only Q_F = (FC + OCF*)/(P − v) ties the sales level to NPV = 0. Forecast sales above Q_C and Q_A but below Q_F still destroy value. Q_F is the highest of the three, not the lowest.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 9"
+ },
+ {
+  "id": "q11-450",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "Selkirk Vineyards has a financial break-even of 3,010 bottles a year against a sales forecast of 3,100. What does this tell management?",
+  "options": [
+   "The NPV is positive only if sales hold within about 3% of the forecast, so forecasting risk is high",
+   "The project is safe, because the forecast is above the break-even level",
+   "The NPV is exactly zero, because the break-even is so close to the forecast",
+   "The project pays back in exactly its life, so the IRR is zero"
+  ],
+  "answer": 0,
+  "explanation": "Margin of safety = (3,100 − 3,010)/3,100 ≈ 2.9%. NPV is positive at the forecast, but a small miss in volume wipes it out. This is the point the text makes about the Wettway sailboat project.",
+  "source": "generated",
+  "ref": "TB 11.4 (Wettway)"
+ },
+ {
+  "id": "q11-451",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "order",
+  "difficulty": 1,
+  "stem": "For a project with an initial outlay, positive depreciation and a positive required return, which ordering of the three break-even quantities is always correct?",
+  "options": [
+   "Cash < financial < accounting",
+   "Cash < accounting < financial",
+   "Accounting < cash < financial",
+   "Financial < accounting < cash"
+  ],
+  "answer": 1,
+  "explanation": "Q_C = FC/(P − v), Q_A adds D, and Q_F adds OCF*, which is larger than D because OCF* must repay I0 with interest. So Q_C < Q_A < Q_F.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 10"
+ },
+ {
+  "id": "q11-452",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A project's price, costs, depreciation and investment stay the same but its required return rises. What happens to the three break-even quantities?",
+  "options": [
+   "All three rise",
+   "Q_C, Q_A and Q_F are all unchanged",
+   "Q_C and Q_A are unchanged and Q_F rises",
+   "Q_F falls, because the annuity factor falls"
+  ],
+  "answer": 2,
+  "explanation": "The required return enters only through OCF* = I0 ÷ annuity factor. A higher rate lowers the annuity factor, so OCF* and Q_F rise. The annuity factor falling does not lower Q_F, since it is in the denominator of OCF*.",
+  "source": "generated",
+  "ref": "TB 11.4"
+ },
+ {
+  "id": "q11-453",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Pacific Rim Tiles' project has Q_C = 7,100, Q_A = 13,200 and Q_F = 15,400 units a year, and sales are forecast at 14,500 units. What follows?",
+  "options": [
+   "Accept: forecast sales exceed the accounting break-even, so the project earns a profit and a positive NPV",
+   "Accept: operating cash flow is positive, which is all that matters",
+   "Reject: the forecast is below the accounting break-even",
+   "It clears Q_C and Q_A but not Q_F, so NPV is negative: reject unless other value is found"
+  ],
+  "answer": 3,
+  "explanation": "Only the financial break-even is tied to NPV. Forecast 14,500 < Q_F = 15,400 means OCF is below OCF*, so NPV < 0 even though accounting profit and OCF are positive.",
+  "source": "generated",
+  "ref": "SM 11 CTQ 9; TB 11.4"
+ },
+ {
+  "id": "q11-454",
+  "concept": "c11-financial-breakeven",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "At the financial break-even quantity, a project's IRR equals its required return.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "Financial break-even is NPV = 0, and the IRR is the discount rate that makes NPV zero, so IRR = R at that sales level.",
+  "source": "generated",
+  "ref": "TB 11.4 Table 11.1"
+ },
+ {
+  "id": "q11-460",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "fill",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The degree of operating leverage is DOL = 1 + _____ ÷ OCF.",
+  "options": [
+   "fixed costs plus depreciation",
+   "variable costs",
+   "fixed costs",
+   "depreciation"
+  ],
+  "answer": 2,
+  "explanation": "DOL = 1 + FC/OCF. A common slip is to put depreciation into the numerator as well; D is already inside OCF and is not part of the leverage ratio.",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-461",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "A project's operating cash flow rises 14% when the quantity sold rises 5%. What does the ratio 14%/5% = 2.8 measure?",
+  "options": [
+   "The profitability index",
+   "The internal rate of return",
+   "The contribution margin",
+   "The degree of operating leverage"
+  ],
+  "answer": 3,
+  "explanation": "DOL is defined by %ΔOCF = DOL × %ΔQ, so the ratio %ΔOCF/%ΔQ is the project's degree of operating leverage (2.8 here).",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-462",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 1,
+  "stem": "Bow Valley Signs expects fixed costs of $215,000 and operating cash flow of $96,400 at its forecast volume. Depreciation is $48,000 a year. Ignoring taxes, what is the project's degree of operating leverage?",
+  "answer": 3.23,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1+215000/96400",
+  "steps": [
+   {
+    "label": "Fixed costs ÷ OCF",
+    "value": 2.2303,
+    "check": "215000/96400",
+    "unit": "",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "DOL = 1 + FC/OCF",
+    "value": 3.2303,
+    "check": "1+215000/96400",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "FC/OCF = 215,000/96,400 = 2.2303",
+   "DOL = 1 + 2.2303 = 3.2303, about 3.23"
+  ],
+  "keystrokes": [
+   "215000 ÷ 96400 = 2.2303",
+   "+ 1 = 3.2303"
+  ],
+  "errors": [
+   {
+    "id": "fc-plus-d-dol",
+    "label": "Added depreciation to fixed costs",
+    "value": 3.73,
+    "check": "1+(215000+48000)/96400",
+    "explain": "Depreciation is not part of the leverage ratio; the numerator is FC alone."
+   },
+   {
+    "id": "forgot-one-in-dol",
+    "label": "Dropped the 1",
+    "value": 2.23,
+    "check": "215000/96400",
+    "explain": "DOL = 1 + FC/OCF. With zero fixed costs DOL is 1, not 0."
+   },
+   {
+    "id": "inverted-dol",
+    "label": "Inverted the ratio",
+    "value": 1.45,
+    "check": "1+96400/215000",
+    "explain": "The ratio is fixed costs divided by OCF, not OCF divided by fixed costs."
+   }
+  ],
+  "explanation": "DOL = 1 + FC/OCF = 1 + 215,000/96,400 = 3.23: each 1% change in quantity moves OCF by 3.23%. The $48,000 of depreciation is a distractor.",
+  "source": "generated",
+  "ref": "SM 11-13; TB 11.5"
+ },
+ {
+  "id": "q11-463",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A project has a degree of operating leverage of 2.65 at 18,000 units a year. Volume rises to 19,500 units. By what percentage does operating cash flow rise?",
+  "answer": 22.08,
+  "unit": "%",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "2.65*(19500-18000)/18000*100",
+  "steps": [
+   {
+    "label": "Percentage change in quantity",
+    "value": 8.3333,
+    "check": "(19500-18000)/18000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "%ΔOCF = DOL × %ΔQ",
+    "value": 22.0833,
+    "check": "2.65*(19500-18000)/18000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "%ΔQ = (19,500 − 18,000)/18,000 = 8.3333%",
+   "%ΔOCF = DOL × %ΔQ = 2.65 × 8.3333% = 22.08%"
+  ],
+  "keystrokes": [
+   "19500 − 18000 = 1500",
+   "÷ 18000 = 0.083333",
+   "× 2.65 = 0.2208 → 22.08%"
+  ],
+  "errors": [
+   {
+    "id": "dol-minus-one",
+    "label": "Used DOL − 1 as the multiplier",
+    "value": 13.75,
+    "check": "1.65*(19500-18000)/18000*100",
+    "explain": "The multiplier is DOL itself: %ΔOCF = DOL × %ΔQ."
+   },
+   {
+    "id": "divided-instead-of-times",
+    "label": "Divided %ΔQ by DOL",
+    "value": 3.14,
+    "check": "(19500-18000)/18000*100/2.65",
+    "explain": "Leverage magnifies: OCF changes by DOL times the percentage change in quantity."
+   },
+   {
+    "id": "pct-decimal-mix",
+    "label": "Gave the answer as a decimal instead of a percent",
+    "value": 0.22,
+    "check": "2.65*(19500-18000)/18000",
+    "explain": "The answer box is in %, so 0.2208 must be written as 22.08."
+   }
+  ],
+  "explanation": "%ΔOCF = DOL × %ΔQ = 2.65 × 8.33% = 22.08%. Because OCF is linear in Q, this relationship is exact for any size of change, though DOL itself then falls.",
+  "source": "generated",
+  "ref": "SM 11-11; TB 11.5"
+ },
+ {
+  "id": "q11-464",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Prince George Tire has a degree of operating leverage of 3.40 at 48,000 tires a year, and fixed costs of $210,000. Ignoring taxes, volume falls to 43,000 tires. What is the new degree of operating leverage?",
+  "answer": 4.72,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1+210000/(210000/(3.4-1)*(1+3.4*(43000-48000)/48000))",
+  "steps": [
+   {
+    "label": "Current OCF = FC/(DOL − 1)",
+    "value": 87500.0,
+    "check": "210000/(3.4-1)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "%ΔQ",
+    "value": -10.4167,
+    "check": "(43000-48000)/48000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "%ΔOCF = DOL × %ΔQ",
+    "value": -35.4167,
+    "check": "3.4*(43000-48000)/48000*100",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "New OCF",
+    "value": 56510.42,
+    "check": "210000/(3.4-1)*(1+3.4*(43000-48000)/48000)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "New DOL = 1 + FC/new OCF",
+    "value": 4.7161,
+    "check": "1+210000/(210000/(3.4-1)*(1+3.4*(43000-48000)/48000))",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "DOL = 1 + FC/OCF, so OCF = FC/(DOL − 1) = 210,000/2.40 = $87,500",
+   "%ΔQ = (43,000 − 48,000)/48,000 = −10.4167%",
+   "%ΔOCF = 3.40 × (−10.4167%) = −35.4167%",
+   "New OCF = 87,500 × (1 − 0.3542) = $56,510.42",
+   "New DOL = 1 + 210,000/56,510.42 = 4.7161, about 4.72"
+  ],
+  "keystrokes": [
+   "210000 ÷ (3.40 − 1) = 87,500",
+   "(43000 − 48000) ÷ 48000 = −0.104167",
+   "× 3.40 = −0.354167",
+   "87500 × (1 − 0.354167) = 56,510.42",
+   "210000 ÷ 56,510.42 + 1 = 4.7161"
+  ],
+  "errors": [
+   {
+    "id": "forgot-dol-changes",
+    "label": "Kept the old DOL of 3.40",
+    "value": 3.4,
+    "check": "3.4",
+    "explain": "DOL depends on the current OCF; when volume falls, OCF falls and FC/OCF rises, so DOL rises."
+   },
+   {
+    "id": "ocf-proportional",
+    "label": "Cut OCF in proportion to volume",
+    "value": 3.68,
+    "check": "1+210000/(210000/(3.4-1)*43000/48000)",
+    "explain": "OCF falls by DOL × %ΔQ (35.4%), not by %ΔQ (10.4%), because fixed costs do not fall."
+   },
+   {
+    "id": "sign-error",
+    "label": "Raised OCF instead of cutting it",
+    "value": 2.77,
+    "check": "1+210000/(210000/(3.4-1)*(1-3.4*(43000-48000)/48000))",
+    "explain": "Volume fell, so %ΔQ is negative and OCF falls."
+   }
+  ],
+  "explanation": "Back out OCF from the DOL, apply %ΔOCF = DOL × %ΔQ, then recompute DOL on the lower OCF. Operating leverage rises as volume falls, so the project becomes more fragile.",
+  "source": "generated",
+  "ref": "SM 11-12; TB 11.5"
+ },
+ {
+  "id": "q11-465",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Thunder Bay Cabinets sells 12,000 units a year at $150 with a variable cost of $90. Fixed costs are $480,000 and depreciation is $75,000 a year. Ignoring taxes, what is its degree of operating leverage?",
+  "options": [
+   "3.31",
+   "3.91",
+   "2.00",
+   "3.00"
+  ],
+  "answer": 3,
+  "explanation": "Without taxes OCF = (P − v)Q − FC = 60 × 12,000 − 480,000 = $240,000, so DOL = 1 + 480,000/240,000 = 3.00. Adding D to FC gives 3.31, using EBIT (after the $75,000 depreciation) as if it were OCF gives 3.91, and dropping the 1 gives 2.00.",
+  "source": "generated",
+  "ref": "SM 11-13, SM 11-18",
+  "check": "1+480000/((150-90)*12000-480000)",
+  "option_checks": [
+   "1+(480000+75000)/((150-90)*12000-480000)",
+   "1+480000/((150-90)*12000-480000-75000)",
+   "480000/((150-90)*12000-480000)",
+   "1+480000/((150-90)*12000-480000)"
+  ],
+  "option_errors": [
+   "fc-plus-d-dol",
+   "ebit-for-ocf",
+   "forgot-one-in-dol",
+   null
+  ]
+ },
+ {
+  "id": "q11-466",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Muskoka Spa Covers earns operating cash flow of $150,000 at 20,000 units a year and has fixed costs of $330,000. If volume falls 10% (ignoring taxes), what is the new operating cash flow?",
+  "options": [
+   "$102,000",
+   "$135,000",
+   "$117,000",
+   "$198,000"
+  ],
+  "answer": 0,
+  "explanation": "DOL = 1 + 330,000/150,000 = 3.2, so %ΔOCF = 3.2 × (−10%) = −32% and new OCF = 150,000 × 0.68 = $102,000. Cutting OCF only 10% ignores the fixed costs, which do not fall with volume.",
+  "source": "generated",
+  "ref": "SM 11-11, SM 11-14",
+  "check": "150000*(1-(1+330000/150000)*0.10)",
+  "option_checks": [
+   "150000*(1-(1+330000/150000)*0.10)",
+   "150000*(1-0.10)",
+   "150000*(1-(330000/150000)*0.10)",
+   "150000*(1+(1+330000/150000)*0.10)"
+  ],
+  "option_errors": [
+   null,
+   "ocf-moves-with-q",
+   "forgot-one-in-dol",
+   "sign-error"
+  ]
+ },
+ {
+  "id": "q11-467",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Kelowna Kitchenware has fixed costs of $648,000 a year and a $1,120,000 investment depreciated straight-line to zero over 7 years. Ignoring taxes, what is the degree of operating leverage when it sells exactly the accounting break-even quantity?",
+  "answer": 5.05,
+  "unit": "x",
+  "tolerance": {
+   "abs": 0.01
+  },
+  "check": "1+648000/(1120000/7)",
+  "steps": [
+   {
+    "label": "Annual depreciation D = I0/N",
+    "value": 160000.0,
+    "check": "1120000/7",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "OCF at accounting break-even = D",
+    "value": 160000.0,
+    "check": "1120000/7",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "DOL = 1 + FC/D",
+    "value": 5.05,
+    "check": "1+648000/(1120000/7)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "D = 1,120,000/7 = $160,000.00",
+   "At accounting break-even NI = 0, so OCF = NI + D = D = $160,000",
+   "DOL = 1 + FC/OCF = 1 + 648,000/160,000 = 5.05"
+  ],
+  "keystrokes": [
+   "1120000 ÷ 7 = 160,000",
+   "648000 ÷ 160000 = 4.05",
+   "+ 1 = 5.05"
+  ],
+  "errors": [
+   {
+    "id": "fc-plus-d-dol",
+    "label": "Added depreciation to fixed costs",
+    "value": 6.05,
+    "check": "1+(648000+160000)/(1120000/7)",
+    "explain": "The numerator is FC alone; D appears only as the OCF in the denominator at this special point."
+   },
+   {
+    "id": "forgot-one-in-dol",
+    "label": "Dropped the 1",
+    "value": 4.05,
+    "check": "648000/(1120000/7)",
+    "explain": "DOL = 1 + FC/OCF."
+   },
+   {
+    "id": "i0-for-d",
+    "label": "Used the whole investment as OCF",
+    "value": 1.58,
+    "check": "1+648000/1120000",
+    "explain": "OCF equals one year's depreciation (I0/N), not the whole investment."
+   }
+  ],
+  "explanation": "At accounting break-even OCF = D, so DOL = 1 + FC/D = 5.05. A 1% rise in volume above break-even lifts OCF by 5.05%: leverage is highest near break-even.",
+  "source": "generated",
+  "ref": "SM 11-5a; TB 11.5"
+ },
+ {
+  "id": "q11-468",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 3,
+  "stem": "Two plans for the same product both earn operating cash flow of $400,000 at forecast volume. Plan X (in-house production) has fixed costs of $600,000 a year; Plan Y (subcontracting) has fixed costs of $120,000. Which statement is correct?",
+  "options": [
+   "Plan Y has the higher DOL, because its fixed costs are lower",
+   "The DOLs are equal, because both plans earn the same OCF",
+   "Plan X has DOL 2.5 against 1.3 for Plan Y, so its OCF is more exposed",
+   "Plan X has the lower DOL, because it earns more per unit sold"
+  ],
+  "answer": 2,
+  "explanation": "DOL_X = 1 + 600/400 = 2.5 and DOL_Y = 1 + 120/400 = 1.3. Equal OCF does not mean equal leverage: DOL depends on FC/OCF, so the plan with the heavier fixed costs has more forecasting risk.",
+  "source": "generated",
+  "ref": "TB 11.5 (Wettway subcontracting)"
+ },
+ {
+  "id": "q11-469",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT a consequence of a high degree of operating leverage?",
+  "options": [
+   "Small percentage changes in volume cause large percentage changes in operating cash flow",
+   "Errors in the sales forecast are magnified in the cash flow forecast",
+   "Break-even quantities tend to be higher",
+   "Operating cash flow becomes more stable when sales volume fluctuates"
+  ],
+  "answer": 3,
+  "explanation": "High fixed costs magnify volume swings in OCF (%ΔOCF = DOL × %ΔQ), raise forecasting risk and push the break-even points up. Stability of OCF is the opposite of what leverage does.",
+  "source": "generated",
+  "ref": "TB 11.5; SM 11 CTQ 7"
+ },
+ {
+  "id": "q11-470",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does a project's degree of operating leverage fall as the quantity sold rises?",
+  "options": [
+   "OCF grows with volume while fixed costs stay put, so FC/OCF shrinks",
+   "Variable costs per unit fall as volume grows",
+   "The contribution margin per unit shrinks as volume grows",
+   "Depreciation per unit falls, which lowers the numerator"
+  ],
+  "answer": 0,
+  "explanation": "DOL = 1 + FC/OCF. OCF = (P − v)Q − FC rises with Q, while FC is constant, so FC/OCF and DOL decline (the text's sailboat: DOL 2.0 at 50 boats, 1.5 at 75).",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-471",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project's degree of operating leverage is 4.5 at its forecast volume. What does this mean?",
+  "options": [
+   "Each 1% change in units sold changes operating cash flow by 0.45%",
+   "Each 1% change in units sold changes operating cash flow by 4.5%",
+   "Operating cash flow is 4.5 times the fixed costs",
+   "The project breaks even at 4.5 times the forecast volume"
+  ],
+  "answer": 1,
+  "explanation": "%ΔOCF = DOL × %ΔQ = 4.5 × 10% = 45%. Since DOL = 1 + FC/OCF, FC/OCF = 3.5, so fixed costs are 3.5 times OCF, not the other way round.",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-472",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "Muskoka Cycles can make frames in-house (DOL 1.85 at forecast volume) or subcontract them (DOL 1.25). The two plans have similar NPVs, and management fears its sales forecast is too optimistic. Which plan is better?",
+  "options": [
+   "In-house: the higher DOL protects OCF if volume falls short",
+   "Subcontract: a lower DOL guarantees a higher NPV",
+   "Subcontract: the lower DOL means a volume forecasting error is magnified less in OCF",
+   "Either: once NPVs are equal, operating leverage does not affect forecasting risk"
+  ],
+  "answer": 2,
+  "explanation": "With NPVs level, the plan with lower operating leverage is less exposed to forecasting error: a 10% volume miss cuts OCF by about 12.5% rather than 18.5%. Low DOL lowers risk; it does not raise NPV.",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-473",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 1,
+  "stem": "What is the degree of operating leverage of a project with zero fixed costs?",
+  "options": [
+   "0.00",
+   "2.00",
+   "It is undefined",
+   "1.00"
+  ],
+  "answer": 3,
+  "explanation": "DOL = 1 + FC/OCF = 1 + 0 = 1: percentage changes in quantity pass one for one into OCF, so there is no magnification.",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-474",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "tf",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "A project's degree of operating leverage stays the same whatever quantity is sold.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "DOL = 1 + FC/OCF depends on the current OCF. As Q rises, OCF rises and DOL falls (the text's sailboat: 2.0 at 50 boats, 1.5 at 75). The relationship %ΔOCF = DOL × %ΔQ holds from the starting point.",
+  "source": "generated",
+  "ref": "TB 11.5"
+ },
+ {
+  "id": "q11-475",
+  "concept": "c11-dol",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Selkirk Boats sells 5,000 boats a year at $1,450 with a variable cost of $892 per boat. Fixed costs are $2,050,000 and depreciation is $310,000 a year. Ignore taxes. Using the DOL, what is operating cash flow if volume rises 8%?",
+  "answer": 963200.0,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05,
+   "rel": 0.0002
+  },
+  "check": "((1450-892)*5000-2050000)*(1+(1+2050000/((1450-892)*5000-2050000))*0.08)",
+  "steps": [
+   {
+    "label": "Current OCF = (P − v)Q − FC",
+    "value": 740000.0,
+    "check": "(1450-892)*5000-2050000",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "DOL = 1 + FC/OCF",
+    "value": 3.7703,
+    "check": "1+2050000/((1450-892)*5000-2050000)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "%ΔOCF = DOL × 8%",
+    "value": 30.1622,
+    "check": "(1+2050000/((1450-892)*5000-2050000))*8",
+    "unit": "%",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   },
+   {
+    "label": "New OCF",
+    "value": 963200.0,
+    "check": "((1450-892)*5000-2050000)*(1+(1+2050000/((1450-892)*5000-2050000))*0.08)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.01,
+     "rel": 0.0005
+    }
+   }
+  ],
+  "solution": [
+   "OCF = (1,450 − 892) × 5,000 − 2,050,000 = 2,790,000 − 2,050,000 = $740,000",
+   "DOL = 1 + 2,050,000/740,000 = 3.7703",
+   "%ΔOCF = 3.7703 × 8% = 30.1622%",
+   "New OCF = 740,000 × (1 + 0.30162) = $963,200.00",
+   "Check: (558 × 5,400) − 2,050,000 = 963,200"
+  ],
+  "keystrokes": [
+   "558 × 5000 − 2050000 = 740,000",
+   "1 + 2050000 ÷ 740000 = 3.7703",
+   "× 8 = 30.16%",
+   "740000 × 1.3016 = 963,200.00"
+  ],
+  "errors": [
+   {
+    "id": "ocf-moves-with-q",
+    "label": "Raised OCF by only 8%",
+    "value": 799200.0,
+    "check": "((1450-892)*5000-2050000)*1.08",
+    "explain": "Fixed costs do not rise with volume, so OCF rises by DOL × 8%, not 8%."
+   },
+   {
+    "id": "forgot-one-in-dol",
+    "label": "Dropped the 1 from the DOL",
+    "value": 904000.0,
+    "check": "((1450-892)*5000-2050000)*(1+(2050000/((1450-892)*5000-2050000))*0.08)",
+    "explain": "DOL = 1 + FC/OCF; the 1 is the part of the swing that is not leverage."
+   },
+   {
+    "id": "fc-plus-d-dol",
+    "label": "Added depreciation to fixed costs in the DOL",
+    "value": 988000.0,
+    "check": "((1450-892)*5000-2050000)*(1+(1+(2050000+310000)/((1450-892)*5000-2050000))*0.08)",
+    "explain": "Depreciation is not part of FC in the leverage ratio."
+   }
+  ],
+  "explanation": "OCF = (P − v)Q − FC = $740,000, DOL = 3.77, so +8% volume raises OCF by about 30.2% to $963,200. The direct check (558 × 5,400 − 2,050,000) gives the same result, confirming DOL is exact for OCF.",
+  "source": "generated",
+  "ref": "SM 11-13, SM 11-14; TB 11.5"
+ }
+]

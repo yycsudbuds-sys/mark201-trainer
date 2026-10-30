@@ -1,0 +1,995 @@
+[
+ {
+  "id": "q09-032",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Stony Plain Packaging pays $64,000 for a labelling line that will return $22,000, $26,500, $24,800, $23,000 and $21,500 in years 1 to 5. The required return is 13% per annum. What is the discounted payback period in years?",
+  "answer": 3.47,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3+(64000-(22000/1.13+26500/1.13**2+24800/1.13**3))/(23000/1.13**4)",
+  "steps": [
+   {
+    "label": "PV of years 1-3 flows (cumulative)",
+    "value": 57410.06,
+    "check": "22000/1.13+26500/1.13**2+24800/1.13**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Still to recover after year 3 (in PV terms)",
+    "value": 6589.94,
+    "check": "64000-(22000/1.13+26500/1.13**2+24800/1.13**3)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "PV of the year-4 cash flow",
+    "value": 14106.33,
+    "check": "23000/1.13**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Discounted payback period",
+    "value": 3.47,
+    "check": "3+(64000-(22000/1.13+26500/1.13**2+24800/1.13**3))/(23000/1.13**4)",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PV of year 1 = 22,000/1.13 = 19,469.03; year 2 = 26,500/1.13^2 = 20,753.39; year 3 = 24,800/1.13^3 = 17,187.64.",
+   "Cumulative PV after year 3 = 57,410.06, so 64,000 - 57,410.06 = 6,589.94 is still to recover.",
+   "PV of year 4's flow = 23,000/1.13^4 = 14,106.33.",
+   "Discounted payback = 3 + 6,589.94/14,106.33 = 3 + 0.467 = 3.47 years."
+  ],
+  "keystrokes": [
+   "Discount each flow: 22,000 ÷ 1.13 = 19,469.03 ; 26,500 ÷ 1.13^2 = 20,753.39 ; 24,800 ÷ 1.13^3 = 17,187.64 (compute 1.13 y^x 3 = 1.442897 first, then divide)",
+   "Cumulate: 57,410.06 ; 64,000 − 57,410.06 = 6,589.94",
+   "23,000 ÷ 1.13^4 = 14,106.33 ; 6,589.94 ÷ 14,106.33 = 0.467",
+   "3 + 0.467 = 3.47 years"
+  ],
+  "errors": [
+   {
+    "id": "forgot-discount",
+    "label": "Used undiscounted cash flows (ordinary payback)",
+    "value": 2.63,
+    "check": "2+(64000-(22000+26500))/24800",
+    "explain": "That is the ordinary payback of 2.63 years. Discounted payback first converts each flow to its present value."
+   },
+   {
+    "id": "payback-after-recovery",
+    "label": "Counted the whole recovery year",
+    "value": 4.0,
+    "check": "4",
+    "explain": "Add only the fraction of year 4 that is needed."
+   },
+   {
+    "id": "payback-undiscounted-flow",
+    "label": "Divided the discounted remainder by the undiscounted year-4 flow",
+    "value": 3.29,
+    "check": "3+(64000-(22000/1.13+26500/1.13**2+24800/1.13**3))/23000",
+    "explain": "Both parts must be in present-value terms: use the PV of the year-4 flow, $14,106.33."
+   }
+  ],
+  "explanation": "Discount every flow at R, accumulate the PVs, and find where they reach the cost; the fraction is (PV still to recover) ÷ (PV of the next year's flow).",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-033",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "numeric",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Lacombe Brewing invests $41,000 in a bottling upgrade with cash flows of $12,800, $14,900, $17,400 and $19,100 in years 1 to 4. Its required return is 11% per annum and it accepts projects with a discounted payback of 3.5 years or less. Find the discounted payback in years.",
+  "answer": 3.37,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "3+(41000-(12800/1.11+14900/1.11**2+17400/1.11**3))/(19100/1.11**4)",
+  "steps": [
+   {
+    "label": "Cumulative PV after year 3",
+    "value": 36347.44,
+    "check": "12800/1.11+14900/1.11**2+17400/1.11**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "Discounted payback period",
+    "value": 3.37,
+    "check": "3+(41000-(12800/1.11+14900/1.11**2+17400/1.11**3))/(19100/1.11**4)",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PVs: 12,800/1.11 = 11,531.53; 14,900/1.11^2 = 12,093.17; 17,400/1.11^3 = 12,722.73; cumulative = 36,347.44.",
+   "Still to recover = 41,000 - 36,347.44 = 4,652.56. PV of year 4's flow = 19,100/1.11^4 = 12,581.76.",
+   "Discounted payback = 3 + 4,652.56/12,581.76 = 3.37 years.",
+   "3.37 < 3.5 years, so the rule says accept (the ordinary payback is 2.76 years)."
+  ],
+  "keystrokes": [
+   "12,800 ÷ 1.11 = 11,531.53 ; 14,900 ÷ 1.11^2 = 12,093.17 ; 17,400 ÷ 1.11^3 = 12,722.73",
+   "Sum = 36,347.44 ; 41,000 − 36,347.44 = 4,652.56",
+   "19,100 ÷ 1.11^4 = 12,581.76 ; 4,652.56 ÷ 12,581.76 = 0.370",
+   "3 + 0.370 = 3.37 years"
+  ],
+  "errors": [
+   {
+    "id": "forgot-discount",
+    "label": "Used undiscounted flows",
+    "value": 2.76,
+    "check": "2+(41000-(12800+14900))/17400",
+    "explain": "That gives the ordinary payback, 2.76 years, which ignores the time value of money."
+   },
+   {
+    "id": "payback-undiscounted-flow",
+    "label": "Divided the PV remainder by the undiscounted year-4 flow",
+    "value": 3.24,
+    "check": "3+(41000-(12800/1.11+14900/1.11**2+17400/1.11**3))/19100",
+    "explain": "The denominator must be the PV of the year-4 flow, $12,581.76, not $19,100."
+   }
+  ],
+  "explanation": "Discounted payback is always at least the ordinary payback for conventional flows and R > 0. Here it is 3.37 vs 2.76 years.",
+  "source": "generated",
+  "ref": "SM 9-4"
+ },
+ {
+  "id": "q09-034",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A $9,600 phone-system project at Spruce Grove Insurance returns $3,400, $3,900, $4,300 and $4,000 in years 1 to 4. The required return is 12% per annum. By how many years does the discounted payback exceed the ordinary payback?",
+  "answer": 0.62,
+  "unit": "years",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "(3+(9600-(3400/1.12+3900/1.12**2+4300/1.12**3))/(4000/1.12**4))-(2+(9600-(3400+3900))/4300)",
+  "steps": [
+   {
+    "label": "Ordinary payback",
+    "value": 2.53,
+    "check": "(2+(9600-(3400+3900))/4300)",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Discounted payback",
+    "value": 3.16,
+    "check": "(3+(9600-(3400/1.12+3900/1.12**2+4300/1.12**3))/(4000/1.12**4))",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "Difference",
+    "value": 0.62,
+    "check": "(3+(9600-(3400/1.12+3900/1.12**2+4300/1.12**3))/(4000/1.12**4))-(2+(9600-(3400+3900))/4300)",
+    "unit": "years",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Ordinary payback: after two years 3,400 + 3,900 = 7,300; 2,300 remains; 2,300/4,300 = 0.535, so 2.53 years.",
+   "Discounted PVs: year 1 = 3,035.71; year 2 = 3,109.06; year 3 = 3,060.66; year 4 = 2,542.07.",
+   "Cumulative PV after year 3 = 9,205.43, which is still short of 9,600 by 394.57. Recovery occurs in year 4: 394.57/2,542.07 = 0.155.",
+   "Discounted payback = 3.16 years. Difference = 3.155 - 2.535 = 0.62 years."
+  ],
+  "keystrokes": [
+   "Ordinary: 9,600 − 7,300 = 2,300 ; 2,300 ÷ 4,300 = 0.535 -> 2.53 years",
+   "Discounted: 3,035.71 + 3,109.06 + 3,060.66 = 9,205.43 ; 9,600 − 9,205.43 = 394.57",
+   "394.57 ÷ 2,542.07 = 0.155 -> 3.16 years",
+   "3.155 − 2.535 = 0.62 years"
+  ],
+  "errors": [
+   {
+    "id": "payback-after-recovery",
+    "label": "Took the discounted recovery year as a whole year (4.00)",
+    "value": 1.47,
+    "check": "4-(2+(9600-(3400+3900))/4300)",
+    "explain": "Discounted payback of 3.16 years includes only the fraction of year 4 that is needed."
+   },
+   {
+    "id": "wrong-quantity",
+    "label": "Gave the discounted payback itself, not the difference",
+    "value": 3.16,
+    "check": "(3+(9600-(3400/1.12+3900/1.12**2+4300/1.12**3))/(4000/1.12**4))",
+    "explain": "The question asks for the excess of the discounted payback over the ordinary payback."
+   }
+  ],
+  "explanation": "Discounting shrinks later flows, so the cost is recovered later: discounted payback > ordinary payback for conventional flows and R > 0.",
+  "source": "generated",
+  "ref": "SM 9 CTQ 4"
+ },
+ {
+  "id": "q09-035",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A $30,000 CNC upgrade returns $11,000, $12,500, $14,000 and $9,000 in years 1 to 4. The required return is 8% per annum. What is the discounted payback period?",
+  "options": [
+   "2.46 years",
+   "2.82 years",
+   "3.00 years",
+   "2.65 years"
+  ],
+  "answer": 1,
+  "explanation": "PVs: 10,185.19; 10,716.74; 11,113.65. After 2 years 20,901.93 is recovered and 9,098.07 remains: 2 + 9,098.07/11,113.65 = 2.82 years. 2.46 uses undiscounted flows (ordinary payback); 3.00 counts the whole recovery year; 2.65 divides the PV remainder by the undiscounted year-3 flow ($14,000).",
+  "source": "generated",
+  "ref": "SM 9-4"
+ },
+ {
+  "id": "q09-036",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "A project costs $9,000 and returns $2,000 at the end of each of the next 6 years. The required return is 18% per annum. What is the discounted payback period?",
+  "options": [
+   "4.50 years",
+   "6.00 years",
+   "It never pays back within the 6 years",
+   "10.03 years"
+  ],
+  "answer": 2,
+  "explanation": "The PV of six $2,000 flows at 18% is 2,000 x 3.4976 = $6,995, which is less than $9,000, so the cost is never recovered in PV terms. 4.50 years is the ordinary payback; 6.00 is just the life; 10.03 solves the annuity equation as if the flows continued beyond year 6.",
+  "source": "generated",
+  "ref": "SM 9-5"
+ },
+ {
+  "id": "q09-037",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The discounted payback period is the length of time until:",
+  "options": [
+   "the sum of the undiscounted cash flows equals the initial investment",
+   "the NPV of the project first becomes zero at the IRR",
+   "the sum of the present values of the cash flows equals the initial investment",
+   "accounting profit equals the book value of the asset"
+  ],
+  "answer": 2,
+  "explanation": "Discounted payback uses CF/(1+R)^t for each year, so it measures the time to recover the investment in economic (present-value) terms.",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-038",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Athabasca Tech asks how long it takes for the PV of a server upgrade's cash flows, discounted at the firm's 10% required return, to repay the purchase price, and accepts projects that do this within four years. Which rule is this?",
+  "options": [
+   "Discounted payback",
+   "Payback period",
+   "Profitability index",
+   "Accounting rate of return"
+  ],
+  "answer": 0,
+  "explanation": "Discounting each flow at R and then looking for the recovery year is the discounted payback. Without discounting it would be the ordinary payback.",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-039",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "For a conventional project and a positive discount rate, how does the discounted payback compare with the ordinary payback?",
+  "options": [
+   "It is shorter, because discounting adds interest to each cash flow",
+   "It is longer, because discounting makes each future cash flow worth less",
+   "It is the same, because both use the same cash flows",
+   "It can be longer or shorter depending on the project life"
+  ],
+  "answer": 1,
+  "explanation": "Each discounted flow is smaller than the raw flow, so more time is needed to recover the same cost. At R = 0 the two are equal. Discounted payback is therefore never shorter for conventional flows.",
+  "source": "generated",
+  "ref": "SM 9 CTQ 4c"
+ },
+ {
+  "id": "q09-040",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "Which of the following is NOT true of the discounted payback rule?",
+  "options": [
+   "it takes into account the time value of money",
+   "it gives only a relative comparison, not an absolute decision",
+   "it ignores income beyond the discounted payback period",
+   "it takes into account the cash flows that occur after the discounted payback period"
+  ],
+  "answer": 3,
+  "explanation": "Discounted payback fixes the time-value criticism but still ignores every cash flow after the recovery date and still needs a cutoff. Only the claim that it counts the cash flows after the discounted payback date is false.",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-041",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 3,
+  "stem": "Why is the following statement true: \"If a project's discounted payback is shorter than its life, its NPV must be positive\"?",
+  "options": [
+   "discounted payback is calculated at the IRR rather than at the required return R",
+   "the ordinary payback is always shorter than the discounted payback, so NPV is positive",
+   "once the PV of the inflows has covered the cost inside the life, later discounted inflows only add to it",
+   "the discounted payback rule ignores the cost of the project and counts only the inflows"
+  ],
+  "answer": 2,
+  "explanation": "Discounted payback uses the same R as the NPV. If the discounted flows have repaid the cost within the life, the sum of all discounted flows exceeds the cost, which is NPV > 0. (Ordinary payback gives no such guarantee.)",
+  "source": "generated",
+  "ref": "SM 9 CTQ 1-2"
+ },
+ {
+  "id": "q09-042",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 3,
+  "stem": "A project with conventional cash flows has a 5-year life, a discounted payback of 4.2 years at the firm's 14% required return and an ordinary payback of 3.1 years. What can be concluded?",
+  "options": [
+   "The NPV is negative because the discounted payback is longer than the ordinary payback",
+   "The NPV is positive at 14% and the IRR exceeds 14%",
+   "Nothing, because payback rules give no information about NPV",
+   "The IRR is less than 14% because the discounted payback exceeds 4 years"
+  ],
+  "answer": 1,
+  "explanation": "A discounted payback shorter than the life (4.2 < 5) means the PV of the inflows exceeds the cost, so NPV > 0 at 14%, and a positive NPV means the IRR is higher than 14%. The longer discounted payback is expected for any positive R.",
+  "source": "generated",
+  "ref": "SM 9 CTQ 2"
+ },
+ {
+  "id": "q09-043",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "To find a discounted payback you accumulate which quantity year by year until it equals the initial investment?",
+  "options": [
+   "CF_t",
+   "CF_t × (1 + R)^t",
+   "CF_t/(1 + IRR)^t",
+   "CF_t/(1 + R)^t"
+  ],
+  "answer": 3,
+  "explanation": "Each flow is brought back to time 0 at the required return R: CF_t/(1+R)^t. Using raw CF_t is the ordinary payback; compounding forward or using the IRR would not give a present value at R.",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-044",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "If the discount rate is 0%, a project's discounted payback period equals its ordinary payback period.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "At R = 0 each discount factor is 1, so the PV of every flow equals the flow itself and the two payback periods coincide.",
+  "source": "generated",
+  "ref": "SM 9-5"
+ },
+ {
+  "id": "q09-045",
+  "concept": "c09-discounted-payback",
+  "also": [],
+  "type": "tf",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The discounted payback rule gives an absolute accept/reject decision without a cutoff period.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "It still compares the discounted payback with a pre-set limit, so it is only a relative comparison (and ignores cash flows after the recovery date).",
+  "source": "generated",
+  "ref": "L05A s13"
+ },
+ {
+  "id": "q09-046",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "You are considering investing in a project which is expected to provide $215,000 net income per year for each of the next eight years, in return for an up-front investment of $1.2 million. You expect the residual value will be $0.96 million at the end. Your discount rate is 12% per annum. There is no tax. Determine each of the following and state the decision that arises from each figure: (a) accounting rate of return; (b) NPV. For part (b) treat the $215,000 per year as the annual after-tax cash flow and the $0.96 million residual as cash received at the end of year 8. Enter part (b), the NPV, in $.",
+  "answer": 255770.45,
+  "unit": "$",
+  "tolerance": {
+   "abs": 1.0
+  },
+  "check": "-1200000+215000*((1-(1+0.12)**-8)/0.12)+960000/(1+0.12)**8",
+  "steps": [
+   {
+    "label": "Annuity factor (12%, 8 years)",
+    "value": 4.9676,
+    "check": "((1-(1+0.12)**-8)/0.12)",
+    "unit": "x",
+    "tolerance": {
+     "abs": 0.001
+    }
+   },
+   {
+    "label": "PV of the eight $215,000 flows",
+    "value": 1068042.55,
+    "check": "215000*((1-(1+0.12)**-8)/0.12)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1.0
+    }
+   },
+   {
+    "label": "PV of the $960,000 residual",
+    "value": 387727.9,
+    "check": "960000/(1+0.12)**8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1.0
+    }
+   },
+   {
+    "label": "NPV = CF0 + PV",
+    "value": 255770.45,
+    "check": "-1200000+215000*((1-(1+0.12)**-8)/0.12)+960000/(1+0.12)**8",
+    "unit": "$",
+    "tolerance": {
+     "abs": 1.0
+    }
+   }
+  ],
+  "solution": [
+   "Annuity factor = [1 - 1.12^-8]/0.12 = 4.96764.",
+   "PV of the eight annual flows = 215,000 x 4.967640 = $1,068,042.55.",
+   "PV of the residual = 960,000/1.12^8 = 960,000/2.475963 = $387,727.90.",
+   "NPV = -1,200,000 + 1,068,042.55 + 387,727.90 = +$255,770.45.",
+   "Decision: NPV > 0, so accept. The project is expected to add about $255,770 to shareholder wealth."
+  ],
+  "keystrokes": [
+   "CF: CF0 = -1200000, C01 = 215000, F01 = 7, C02 = 1175000 (215000 + 960000), F02 = 1",
+   "NPV: I = 12, ↓ CPT -> 255,770.45",
+   "Or: N = 8, I/Y = 12, PMT = 215000, FV = 960000, CPT PV = 1,455,770.45; minus 1,200,000 = 255,770.45"
+  ],
+  "errors": [
+   {
+    "id": "dropped-salvage-term",
+    "label": "Ignored the residual value",
+    "value": -131957.45,
+    "check": "-1200000+215000*((1-(1+0.12)**-8)/0.12)",
+    "explain": "The $960,000 residual is a cash inflow at the end of year 8 and must be discounted and added."
+   },
+   {
+    "id": "salvage-not-discounted",
+    "label": "Added the residual without discounting",
+    "value": 828042.55,
+    "check": "-1200000+215000*((1-(1+0.12)**-8)/0.12)+960000",
+    "explain": "The residual arrives in year 8, so it is worth 960,000/1.12^8 today."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Discounted the up-front investment one year",
+    "value": 384341.88,
+    "check": "-1200000/(1+0.12)+215000*((1-(1+0.12)**-8)/0.12)+960000/(1+0.12)**8",
+    "explain": "The investment occurs today (t = 0) and is not discounted."
+   },
+   {
+    "id": "wrong-n-annuity",
+    "label": "Used a 7-year annuity factor",
+    "value": 168935.55,
+    "check": "-1200000+215000*((1-(1+0.12)**-7)/0.12)+960000/(1+0.12)**8",
+    "explain": "Eight annual flows need the 8-year annuity factor."
+   },
+   {
+    "id": "depreciation-added-back",
+    "label": "Added back $30,000 straight-line depreciation to the flows",
+    "value": 404799.64,
+    "check": "-1200000+245000*((1-(1+0.12)**-8)/0.12)+960000/(1+0.12)**8",
+    "explain": "The question states the $215,000 is the annual cash flow, so no depreciation is added."
+   }
+  ],
+  "explanation": "NPV = CF0 + PV of the inflows (annuity plus the discounted residual). NPV > 0, so the project is accepted.",
+  "source": "official",
+  "ref": "PRAC q10b"
+ },
+ {
+  "id": "q09-047",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Beaumont Freight can buy a refrigerated trailer for $148,000. It is expected to generate cash flows of $52,400, $61,900 and $78,300 in years 1 to 3. The required return is 11% per annum. What is the NPV, and should the firm accept?",
+  "answer": 6698.92,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-148000+52400/(1+0.11)+61900/(1+0.11)**2+78300/(1+0.11)**3",
+  "steps": [
+   {
+    "label": "PV of year 1 flow",
+    "value": 47207.21,
+    "check": "52400/(1+0.11)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of year 2 flow",
+    "value": 50239.43,
+    "check": "61900/(1+0.11)**2",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "PV of year 3 flow",
+    "value": 57252.29,
+    "check": "78300/(1+0.11)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV = CF0 + PV",
+    "value": 6698.92,
+    "check": "-148000+52400/(1+0.11)+61900/(1+0.11)**2+78300/(1+0.11)**3",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "PV1 = 52,400/1.11 = 47,207.21; PV2 = 61,900/1.11^2 = 50,239.43; PV3 = 78,300/1.11^3 = 57,252.29.",
+   "PV of the inflows = 154,698.92.",
+   "NPV = CF0 + PV = -148,000 + 154,698.92 = +$6,698.92. NPV > 0, so accept."
+  ],
+  "keystrokes": [
+   "CF0 = -148000, C01 = 52400, F01 = 1, C02 = 61900, F02 = 1, C03 = 78300, F03 = 1, then NPV: I = 11, ↓ CPT -> 6,698.92"
+  ],
+  "errors": [
+   {
+    "id": "sign-cf0",
+    "label": "Entered the outlay as a positive number",
+    "value": 302698.92,
+    "check": "148000+52400/(1+0.11)+61900/(1+0.11)**2+78300/(1+0.11)**3",
+    "explain": "CF0 is an outflow, so it carries a minus sign: NPV = CF0 + PV with CF0 negative."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Treated the outlay as year 1 (spreadsheet NPV() on the whole list)",
+    "value": 6035.06,
+    "check": "(-148000+52400/(1+0.11)+61900/(1+0.11)**2+78300/(1+0.11)**3)/(1+0.11)",
+    "explain": "The initial outlay is at t = 0; every later flow is at its own year number. Shifting everything one period divides the NPV by 1.11."
+   },
+   {
+    "id": "omitted-cf0",
+    "label": "Reported only the PV of the inflows",
+    "value": 154698.92,
+    "check": "52400/(1+0.11)+61900/(1+0.11)**2+78300/(1+0.11)**3",
+    "explain": "The PV of the inflows is not the NPV until you add the (negative) initial outlay."
+   }
+  ],
+  "explanation": "NPV = CF0 + sum of CF_t/(1+R)^t. A positive NPV means the project adds value at the 11% required return.",
+  "source": "generated",
+  "ref": "SM 9-8"
+ },
+ {
+  "id": "q09-048",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Cochrane Ridge Outfitters is evaluating a $420,000 store renovation with cash flows of $120,000, $135,000, $150,000 and $165,000 in years 1 to 4. Find the NPV at a required return of 9% per annum and at 16% per annum. Enter the NPV at 16%.",
+  "answer": -28998.05,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-420000+120000/(1+0.16)+135000/(1+0.16)**2+150000/(1+0.16)**3+165000/(1+0.16)**4",
+  "steps": [
+   {
+    "label": "NPV at 9%",
+    "value": 36436.22,
+    "check": "-420000+120000/(1+0.09)+135000/(1+0.09)**2+150000/(1+0.09)**3+165000/(1+0.09)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   },
+   {
+    "label": "NPV at 16%",
+    "value": -28998.05,
+    "check": "-420000+120000/(1+0.16)+135000/(1+0.16)**2+150000/(1+0.16)**3+165000/(1+0.16)**4",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.5
+    }
+   }
+  ],
+  "solution": [
+   "At 9%: NPV = -420,000 + 120,000/1.09 + 135,000/1.09^2 + 150,000/1.09^3 + 165,000/1.09^4 = +$36,436.22 -> accept.",
+   "At 16%: NPV = -420,000 + 120,000/1.16 + 135,000/1.16^2 + 150,000/1.16^3 + 165,000/1.16^4 = -$28,998.05 -> reject.",
+   "Same cash flows, different required returns: the decision flips because NPV falls as R rises."
+  ],
+  "keystrokes": [
+   "CF0 = -420000, C01 = 120000, F01 = 1, C02 = 135000, F02 = 1, C03 = 150000, F03 = 1, C04 = 165000, F04 = 1, then NPV: I = 9, CPT -> 36,436.22 ; I = 16, CPT -> -28,998.05"
+  ],
+  "errors": [
+   {
+    "id": "sign-cf0",
+    "label": "Used +420,000 for the outlay",
+    "value": 811001.95,
+    "check": "420000+120000/(1+0.16)+135000/(1+0.16)**2+150000/(1+0.16)**3+165000/(1+0.16)**4",
+    "explain": "The outlay is a negative cash flow at t = 0."
+   },
+   {
+    "id": "wrong-rate",
+    "label": "Used the 9% answer",
+    "value": 36436.22,
+    "check": "-420000+120000/(1+0.09)+135000/(1+0.09)**2+150000/(1+0.09)**3+165000/(1+0.09)**4",
+    "explain": "The question asks for the NPV at 16%; at 9% the NPV is positive."
+   },
+   {
+    "id": "cf0-as-period-1",
+    "label": "Treated the outlay as year 1",
+    "value": -24998.32,
+    "check": "(-420000+120000/(1+0.16)+135000/(1+0.16)**2+150000/(1+0.16)**3+165000/(1+0.16)**4)/(1+0.16)",
+    "explain": "Put the outlay at t = 0, with the first inflow at t = 1."
+   }
+  ],
+  "explanation": "Higher required returns shrink the PV of inflows, so NPV falls and a project can change from accept to reject without any change in its cash flows.",
+  "source": "generated",
+  "ref": "SM 9-8"
+ },
+ {
+  "id": "q09-049",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "multistep",
+  "angle": "calc",
+  "difficulty": 3,
+  "stem": "Camrose Wind Co. can build a turbine for $2,400,000. It is expected to generate $150,000 of cash flow next year, growing at 3% per annum forever. The required return is 9.5% per annum. What is the project's NPV?",
+  "answer": -92307.69,
+  "unit": "$",
+  "tolerance": {
+   "abs": 0.05
+  },
+  "check": "-2400000+150000/(0.095-0.03)",
+  "steps": [
+   {
+    "label": "PV of the growing perpetuity D1/(R - g)",
+    "value": 2307692.31,
+    "check": "150000/(0.095-0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   },
+   {
+    "label": "NPV",
+    "value": -92307.69,
+    "check": "-2400000+150000/(0.095-0.03)",
+    "unit": "$",
+    "tolerance": {
+     "abs": 0.05
+    }
+   }
+  ],
+  "solution": [
+   "Inflows are a growing perpetuity: PV = CF1/(R - g) = 150,000/(0.095 - 0.03) = $2,307,692.31.",
+   "NPV = -2,400,000 + 2,307,692.31 = -$92,307.69.",
+   "NPV < 0, so reject."
+  ],
+  "keystrokes": [
+   "150,000 ÷ (0.095 − 0.03) = 2,307,692.31",
+   "2,307,692.31 − 2,400,000 = −92,307.69"
+  ],
+  "errors": [
+   {
+    "id": "r-plus-g",
+    "label": "Added g to R in the denominator",
+    "value": -1200000.0,
+    "check": "-2400000+150000/(0.095+0.03)",
+    "explain": "The growing-perpetuity denominator is R - g."
+   },
+   {
+    "id": "omitted-cf0",
+    "label": "Reported the PV of the inflows only",
+    "value": 2307692.31,
+    "check": "150000/(0.095-0.03)",
+    "explain": "Subtract the $2,400,000 outlay: NPV = CF0 + PV."
+   },
+   {
+    "id": "d0-for-d1",
+    "label": "Grew the first flow once more",
+    "value": -23076.92,
+    "check": "-2400000+150000*1.03/(0.095-0.03)",
+    "explain": "The $150,000 is next year's flow (CF1), so it is not grown again."
+   }
+  ],
+  "explanation": "NPV = CF0 + CF1/(R - g) for a growing perpetuity; the same R - g logic as Gordon growth.",
+  "source": "generated",
+  "ref": "SM 9-21"
+ },
+ {
+  "id": "q09-050",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "Bow Valley Logistics is considering a project with cash flows of -$260,000 now, then $90,000, $110,000 and $120,000 at the end of years 1 to 3. The required return is 12% per annum. What is the NPV?",
+  "options": [
+   "-$6,537.90",
+   "$513,462.10",
+   "$253,462.10",
+   "-$5,837.41"
+  ],
+  "answer": 0,
+  "explanation": "NPV = -260,000 + 90,000/1.12 + 110,000/1.12^2 + 120,000/1.12^3 = -$6,537.90, so reject. $513,462.10 adds the outlay as a positive number; $253,462.10 is just the PV of the inflows (CF0 left out); -$5,837.41 is the spreadsheet NPV() applied to the whole list (every flow shifted one period).",
+  "source": "generated",
+  "ref": "SM 9-8"
+ },
+ {
+  "id": "q09-051",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "calc",
+  "difficulty": 2,
+  "stem": "A $52,000 machine at Lloydminster Oilfield Services returns $14,000 at the end of each of the next 5 years. The required return is 10% per annum. What is the NPV?",
+  "options": [
+   "$53,071.01",
+   "$105,071.01",
+   "$8,973.65",
+   "$973.65",
+   "None of the above"
+  ],
+  "answer": 4,
+  "explanation": "PV of the annuity = 14,000 × 3.790787 = $53,071.01, so NPV = 53,071.01 − 52,000 = $1,071.01, which is not listed: none of the above. $53,071.01 forgets to subtract the outlay; $105,071.01 adds the outlay; $8,973.65 uses a 6-year annuity factor; $973.65 treats the outlay as a year-1 flow (the whole NPV divided by 1.10).",
+  "source": "generated",
+  "ref": "SM 9-9"
+ },
+ {
+  "id": "q09-052",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "define",
+  "difficulty": 1,
+  "stem": "The net present value of a project is:",
+  "options": [
+   "the discount rate at which the present value of the future cash flows equals the initial investment",
+   "the average annual accounting profit divided by the average investment",
+   "the present value of its future cash flows minus the initial investment (NPV = CF0 + PV, with CF0 negative)",
+   "the present value of the cash inflows divided by the present value of the cash outflows"
+  ],
+  "answer": 2,
+  "explanation": "NPV = CF0 + PV with CF0 negative, so NPV = PV - initial investment. The rate that makes PV equal the cost is the IRR, average profit over average investment is the ARR, and PV of inflows over PV of outflows is the PI.",
+  "source": "generated",
+  "ref": "L05A s15-16"
+ },
+ {
+  "id": "q09-053",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "identify",
+  "difficulty": 1,
+  "stem": "Camrose Fuels' CFO tells the board: \"After discounting every expected cash flow at our 10% required return and subtracting the cost, this plant is expected to add $85,000 to the wealth of our shareholders.\" Which figure is she quoting?",
+  "options": [
+   "Net present value",
+   "Internal rate of return",
+   "Profitability index",
+   "Discounted payback period"
+  ],
+  "answer": 0,
+  "explanation": "A dollar amount equal to the change in shareholder wealth after allowing for the time value of money is the NPV. IRR and PI are not dollar amounts, and discounted payback is measured in years.",
+  "source": "generated",
+  "ref": "L05A s18"
+ },
+ {
+  "id": "q09-054",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "contrast",
+  "difficulty": 2,
+  "stem": "Which statement correctly contrasts NPV with IRR?",
+  "options": [
+   "NPV is a percentage that must be compared with the required return; IRR is a dollar change in wealth",
+   "NPV is a dollar change in wealth measured at the required return; IRR is a percentage that must be compared with the required return",
+   "NPV ignores the time value of money; IRR includes it",
+   "NPV and IRR are always interchangeable, even for mutually exclusive projects"
+  ],
+  "answer": 1,
+  "explanation": "NPV answers \"how many dollars of wealth does this add?\" IRR answers \"what rate does it earn?\". Both use the time value of money, but they can disagree on rankings and with unconventional flows.",
+  "source": "generated",
+  "ref": "L05A s15-26"
+ },
+ {
+  "id": "q09-055",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "not",
+  "difficulty": 2,
+  "stem": "All of the following are good points of the NPV rule EXCEPT:",
+  "options": [
+   "it is the change in shareholder wealth",
+   "it uses the time value of money",
+   "it tells you how much value is created per dollar of capital tied up",
+   "it gives an absolute decision on each project as well as a relative comparison"
+  ],
+  "answer": 2,
+  "explanation": "NPV does NOT consider the amount of capital tied up in the project; that is its bad point (the PI deals with it). Its good points are the link to shareholder wealth, the time value of money and an absolute decision.",
+  "source": "generated",
+  "ref": "L05A s18"
+ },
+ {
+  "id": "q09-056",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "why",
+  "difficulty": 2,
+  "stem": "Why does the NPV rule ensure the firm is doing the right thing for its shareholders?",
+  "options": [
+   "NPV is the change in shareholder wealth, so NPV > 0 projects maximize the owners' value",
+   "NPV always selects the project with the highest percentage return on capital",
+   "NPV ignores uncertain future cash flows, which makes it the safest rule to use",
+   "NPV is the only rule that can be applied without forecasting any cash flows"
+  ],
+  "answer": 0,
+  "explanation": "The financial manager's aim is to maximize shareholder wealth. Because NPV is exactly the expected change in that wealth (after the time value of money), it is the rule aligned with the goal.",
+  "source": "generated",
+  "ref": "L05A s3, s18"
+ },
+ {
+  "id": "q09-057",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "interpret",
+  "difficulty": 2,
+  "stem": "A project has an NPV of +$12,000 at the firm's required return of 10%. What does that mean?",
+  "options": [
+   "The project earns an accounting profit of $12,000 in each year of its life",
+   "After earning the 10% required return, the project adds $12,000 to shareholder wealth in today's dollars",
+   "The project recovers its cost from $12,000 of discounted cash flow each year",
+   "The project's IRR is 12%, which is above the 10% required return"
+  ],
+  "answer": 1,
+  "explanation": "Positive NPV = value created beyond the required return, expressed in present-value dollars. It is not an annual profit, and NPV alone does not give the IRR.",
+  "source": "generated",
+  "ref": "L05A s17-18"
+ },
+ {
+  "id": "q09-058",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "formula",
+  "difficulty": 2,
+  "stem": "Which expression gives the NPV of a project with CF0 = -100, CF1 = 60 and CF2 = 70 at discount rate R?",
+  "options": [
+   "-100/(1+R) + 60/(1+R)^2 + 70/(1+R)^3",
+   "100 + 60/(1+R) + 70/(1+R)^2",
+   "60/(1+R) + 70/(1+R)^2",
+   "-100 + 60/(1+R) + 70/(1+R)^2"
+  ],
+  "answer": 3,
+  "explanation": "CF0 occurs today so it is not discounted; CF1 is discounted once and CF2 twice. Dividing the -100 by (1+R) as well shifts everything one period (the spreadsheet NPV() trap); leaving the -100 out omits CF0; writing +100 flips its sign.",
+  "source": "generated",
+  "ref": "L05A s15; FS p2"
+ },
+ {
+  "id": "q09-059",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "tf",
+  "angle": "interpret",
+  "difficulty": 1,
+  "stem": "If a project's NPV is exactly zero, accepting it earns the firm exactly its required return and leaves shareholder wealth unchanged.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "NPV = 0 means the PV of inflows equals the cost; the project earns just the required return, so it neither adds nor destroys value.",
+  "source": "generated",
+  "ref": "L05A s17"
+ },
+ {
+  "id": "q09-060",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "tf",
+  "angle": "apply",
+  "difficulty": 2,
+  "stem": "A project with a negative NPV should never be undertaken under any circumstances.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explanation": "A negative NPV is bad and the project is normally rejected, but firms are sometimes forced to carry out costly projects (for example restoring the environment after mining) where the least-negative NPV choice is taken.",
+  "source": "generated",
+  "ref": "L05A s17"
+ },
+ {
+  "id": "q09-061",
+  "concept": "c09-npv-rule",
+  "also": [],
+  "type": "mc",
+  "angle": "apply",
+  "difficulty": 3,
+  "stem": "An analyst types =NPV(12%, B2:B5) in a spreadsheet, where B2 holds the initial outlay of -$165,000 and B3:B5 hold the three annual inflows. What does the cell return?",
+  "options": [
+   "The correct NPV, because the function includes the outlay at time 0 in B2",
+   "The PV of the three inflows only, because B2 is ignored as a label",
+   "A PV that treats the outlay as arriving in one year, so it equals the true NPV divided by 1.12",
+   "The IRR of the project, because the first value in the range is negative"
+  ],
+  "answer": 2,
+  "explanation": "Excel's NPV() is really a PV(): it discounts the first value in the range by one period. The correct NPV is B2 + NPV(12%, B3:B5), with the outlay entered separately at t = 0.",
+  "source": "generated",
+  "ref": "FS p2; TB 9.1"
+ }
+]
