@@ -189,7 +189,7 @@ def _(g):
     first, a, b, pv = pvcca(g["I0"], g["d"] / 100, g["T"] / 100, g["k"] / 100, mult=g["regime"], S=g["S"], N=g["N"])
     return pv, [g["I0"] * g["d"] / 100 * g["T"] / 100 / (g["k"] / 100 + g["d"] / 100), first, b, pv]
 @solver("pool_open")
-def _(g): _f, _a, _b, pv = pvcca(g["I0"], g["d"] / 100, g["T"] / 100, g["k"] / 100, mult=0.5); return pv, [pv]
+def _(g): _f, a, b, pv = pvcca(g["I0"], g["d"] / 100, g["T"] / 100, g["k"] / 100, mult=0.5, S=g["S"], N=g["N"]); return pv, [a, b, pv]
 @solver("cfat")
 def _(g): recap, gain, cf = cfat(g["POD"], g["ACB"], g["UCC"], g["T"] / 100); return cf, [recap, gain, cf]
 @solver("recapture")
@@ -343,7 +343,7 @@ def static_content():
 
 # Derivatives pricing, bonds for their own sake, capital structure, raising capital and the US tax system are out of
 # scope. Words like "hedge", "swap" or "put option" can appear legitimately in real-options prose, so the list is narrow.
-SCOPE_TERMS = [r"black[- ]scholes", r"strike price", r"MACRS", r"convexity", r"modified duration", r"WACC", r"chapter 2[45]", r"binomial", r"futures contract", r"forward contract", r"capital structure", r"M&M", r"Modigliani", r"IPO", r"underwrit", r"bond price"]
+SCOPE_TERMS = [r"black[- ]scholes", r"strike price", r"\bMACRS\b", r"\bconvexity\b", r"modified duration", r"\bWACC\b", r"chapter 2[45]\b", r"binomial", r"futures contract", r"forward contract", r"capital structure", r"\bM&M\b", r"Modigliani", r"\bIPO\b", r"underwrit", r"bond price"]
 def scope():
     files = sorted(glob.glob(os.path.join(ROOT, "content", "fin201", "parts", "*.json")))
     hits = 0

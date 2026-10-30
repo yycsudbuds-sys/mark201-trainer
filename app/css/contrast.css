@@ -62,3 +62,11 @@
 :root[data-theme="light"] .stat .k { color: #4E3D28; }
 :root[data-theme="light"] .castra .stat .k { color: #D9CDB4; }
 :root[data-theme="light"] .board-name .s, :root[data-theme="light"] .li .s { color: #3A2A17; }
+
+/* second audit pass */
+.runner .qcard .feedback-main .small.muted, .runner .qcard .feedback-main .small.muted b, .feedback-main .worked .tiny.muted { color: #4E3D28 !important; }
+.feedback .verdict.ok { color: #2E4A26; }
+.feedback .xp-gain, .feedback .dn-gain.win { color: #5A4410; }
+.mlabel.locked .ml-num, .mlabel .ml-num { color: #2E2114; }
+:root[data-theme="light"] .field label, :root[data-theme="light"] .xpbar .mono.small.muted, :root[data-theme="light"] .vault-main .small.muted, :root[data-theme="light"] .lesson-top .small.muted { color: #3A2A17; }
+.seal .seal-label { color: #2E2114; }

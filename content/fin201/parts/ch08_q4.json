@@ -81,7 +81,7 @@
     "label": "Average of the four yearly P/E ratios",
     "value": 18.0522,
     "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4",
-    "unit": "$",
+    "unit": "x",
     "tolerance": {
      "abs": 0.005
     }
@@ -156,7 +156,7 @@
     "label": "Price today = 18 × EPS0",
     "value": 57.6,
     "check": "18*3.20",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -165,7 +165,7 @@
     "label": "Target price in one year = 18 × EPS1",
     "value": 61.344,
     "check": "18*3.20*1.065",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -395,7 +395,7 @@
    "Because EBITDA is always larger than net income, so the ratio is more stable."
   ],
   "answer": 2,
-  "explanation": "Interest changes net income and the equity value but not EBITDA or EV, so EV/EBITDA is capital-structure neutral.",
+  "explanation": "Interest changes net income and the equity value but not EBITDA or EV, so EV/EBITDA is not distorted by how the firm is financed.",
   "source": "generated",
   "ref": "L04 s18"
  },
@@ -498,7 +498,7 @@
     "label": "Enterprise value ($ million)",
     "value": 527.0,
     "check": "412+150-35",
-    "unit": "x",
+    "unit": "$",
     "tolerance": {
      "abs": 0.05
     }
@@ -928,10 +928,10 @@
   "difficulty": 2,
   "stem": "You value a fast-growing biotech firm using the average P/E of mature utilities. What is the likely problem?",
   "options": [
-   "There is no problem; P/E ratios are universal.",
+   "There is no problem, because P/E ratios are the same in every industry.",
    "The utilities' multiple overstates growth, so the biotech is overvalued.",
    "The utilities' multiple reflects low growth, so it would probably undervalue the biotech.",
-   "Utilities never have earnings."
+   "Utilities have no earnings, so their P/E ratios cannot be calculated."
   ],
   "answer": 2,
   "explanation": "Comparables only work when growth, ROE and risk are similar. A high-growth firm deserves a higher multiple than a mature one.",
@@ -967,9 +967,9 @@
   "stem": "How does comparables valuation differ from DCF valuation?",
   "options": [
    "Comparables use only dividends, while DCF uses only earnings per share.",
-   "Comparables value a stock relative to similar firms' prices; DCF discounts the firm's own forecast cash flows.",
+   "Comparables price a stock off similar firms' multiples; DCF discounts its own forecast cash flows.",
    "Comparables discount forecast cash flows at R; DCF applies multiples to earnings.",
-   "They are two names for the same method; only the labels differ."
+   "They are two names for the same method, so only the labels differ between them."
   ],
   "answer": 1,
   "explanation": "Relative valuation (multiples) versus intrinsic valuation (DDM, FCF, FCFE).",
@@ -1102,7 +1102,7 @@
    {
     "id": "inverted-ratio",
     "label": "Divided price by dividend",
-    "value": 13.12,
+    "value": 13.13,
     "check": "31.50/2.40",
     "explain": "13.13 is the price-to-dividend multiple, not a rate."
    },

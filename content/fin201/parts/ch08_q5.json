@@ -51,7 +51,7 @@
     "explain": "The first payment is in year 4, so the perpetuity value sits at year 3."
    },
    {
-    "id": "omitted-dividend",
+    "id": "not-discounted",
     "label": "Did not discount",
     "value": 25.0,
     "check": "2.00/0.08",
@@ -93,10 +93,10 @@
    "6.54%",
    "14.29%",
    "7.00%",
-   "3.50%"
+   "7.53%"
   ],
   "answer": 2,
-  "explanation": "R = D/P0 = 4.48/64.00 = 7.00%. 6.54% divides by price plus dividend, 14.29% is the price-to-dividend ratio (not a rate), and 3.50% halves the answer for no reason.",
+  "explanation": "R = D/P0 = 4.48/64.00 = 7.00%. 6.54% divides by price plus dividend, 7.53% divides by price minus dividend, and 14.29% is the price-to-dividend ratio (not a rate).",
   "source": "generated",
   "ref": "TB 8.1"
  },
@@ -508,7 +508,7 @@
     "explain": "The price at year 4 uses the dividend one period later, D5."
    },
    {
-    "id": "omitted-dividend",
+    "id": "no-price-growth",
     "label": "Gave today's price",
     "value": 33.0,
     "check": "2.20*1.05/(0.12-0.05)",
@@ -1009,7 +1009,7 @@
     "label": "Next dividend D1 = D0(1 + g)",
     "value": 1.848,
     "check": "1.76*1.05",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -1134,7 +1134,7 @@
     "label": "Dividend yield = capital gains yield = R/2",
     "value": 6.0,
     "check": "12/2",
-    "unit": "$",
+    "unit": "%",
     "tolerance": {
      "abs": 0.005
     }
@@ -1238,7 +1238,7 @@
     "explain": "The yield is R − g."
    },
    {
-    "id": "d0-for-d1",
+    "id": "omitted-growth",
     "label": "Divided by R alone",
     "value": 27.69,
     "check": "2.99/0.108",
@@ -1264,7 +1264,7 @@
    "−0.50%"
   ],
   "answer": 0,
-  "explanation": "R = D1/P0 + g = 6.00% + 5.50% = 11.50%. 6.00% omits g, 11.83% grows D1 again, and 0.50% subtracts the yield from g.",
+  "explanation": "R = D1/P0 + g = 6.00% + 5.50% = 11.50%. 6.00% omits g, 11.83% grows D1 again, and −0.50% subtracts the yield from g.",
   "source": "generated",
   "ref": "SM 8-2"
  }

@@ -16,7 +16,7 @@
    "A capital gain, only half of which is taxable"
   ],
   "answer": 1,
-  "explanation": "Proceeds ($9,000) are below UCC ($14,000) and the class closes, so the $5,000 difference is a terminal loss. It is deducted in full at T, which creates a tax refund. Depreciable property gets no capital loss treatment, which is why the half-deduction option fails.",
+  "explanation": "Proceeds ($9,000) are below UCC ($14,000) and the class closes, so the $5,000 difference is a terminal loss. It is deducted in full at T, which creates a tax refund. Depreciable property gets no capital loss treatment, so 'a capital loss, half deductible' does not apply.",
   "source": "generated",
   "ref": "L05B s19-21"
  },
@@ -166,10 +166,10 @@
   "difficulty": 2,
   "stem": "In CF_AT = POD - T[min(ACB, POD) - UCC] - 0.5T max(POD - ACB, 0), why is ACB capped inside the first bracket?",
   "options": [
-   "Because a sale price above ACB is never taxed",
-   "Recapture cannot exceed the CCA actually claimed (ACB - UCC); proceeds above ACB are a capital gain taxed separately",
-   "Because ACB is the value of the asset at which the pool closes",
-   "Because the half-year rule limits recapture to 50% of ACB"
+   "A sale price above ACB is never taxed",
+   "Recapture cannot exceed the CCA claimed (ACB − UCC); the rest is a capital gain",
+   "ACB is the value of the asset at which the pool closes",
+   "The half-year rule limits recapture to 50% of ACB"
   ],
   "answer": 1,
   "explanation": "Total CCA claimed is ACB - UCC, so the most that can be recaptured is that amount. Any proceeds above ACB are a true capital gain, picked up by the last term at the 50% inclusion rate.",
@@ -188,7 +188,7 @@
    "A terminal loss equal to the proceeds",
    "Recapture equal to the original cost",
    "A capital gain equal to the proceeds less the original cost",
-   "None: there is no recapture and no terminal loss, so after-tax cash equals the proceeds"
+   "None: no recapture or terminal loss, so CF_AT equals the proceeds"
   ],
   "answer": 3,
   "explanation": "Recapture and terminal loss both equal the gap between POD and UCC. With POD = UCC the gap is zero, so CF_AT = POD.",
@@ -810,8 +810,8 @@
   "difficulty": 1,
   "stem": "The capital gain on the sale of a depreciable asset is the proceeds of disposition minus the _____.",
   "options": [
-   "ACB (original cost plus acquisition expenses)",
-   "UCC",
+   "ACB (adjusted cost base)",
+   "UCC (undepreciated capital cost)",
    "salvage value",
    "present value of the CCA shield"
   ],
@@ -928,16 +928,16 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Prairie Barge Ltd. sells its last barge for $520,000 (cost $400,000, UCC $150,000, tax rate 30%). What is the after-tax cash flow from the sale?",
+  "stem": "Haida Ferries Ltd. sells its last ferry for $610,000 (cost $480,000, UCC $205,000, tax rate 28%). What is the after-tax cash flow from the sale?",
   "options": [
-   "$364,000.00",
-   "$391,000.00",
-   "$409,000.00",
-   "$427,000.00",
-   "$502,000.00"
+   "$439,200.00",
+   "$478,400.00",
+   "$496,600.00",
+   "$514,800.00",
+   "$591,800.00"
   ],
   "answer": 3,
-  "explanation": "Recapture = 400,000 - 150,000 = 250,000 (tax 75,000); capital gain = 520,000 - 400,000 = 120,000, half taxed (tax 18,000). CF_AT = 520,000 - 75,000 - 18,000 = $427,000. Taxing the gain in full gives $409,000; taxing the whole price gives $364,000; counting POD - UCC as recapture and also taxing the gain double counts ($391,000); skipping recapture gives $502,000.",
+  "explanation": "Recapture = 480,000 - 205,000 = 275,000 (tax 77,000); capital gain = 610,000 - 480,000 = 130,000, half taxed (tax 18,200). CF_AT = 610,000 - 77,000 - 18,200 = $514,800. Taxing the gain in full gives $496,600; taxing the whole price gives $439,200; counting POD - UCC as recapture and also taxing the gain double counts ($478,400); skipping recapture gives $591,800.",
   "source": "generated",
   "ref": "L05B s21"
  },
@@ -948,16 +948,16 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Okotoks Stone Works closes its class by selling a loader for $92,500 (cost $75,000, UCC $21,300, tax rate 35%). What is the after-tax cash flow from the sale?",
+  "stem": "Kamloops Quarry Co. closes its class by selling a crusher for $118,000 (cost $96,000, UCC $37,400, tax rate 32%). What is the after-tax cash flow from the sale?",
   "options": [
-   "$60,125.00",
-   "$64,517.50",
-   "$67,580.00",
-   "$70,642.50",
-   "$89,437.50"
+   "$80,240.00",
+   "$88,688.00",
+   "$92,208.00",
+   "$95,728.00",
+   "$114,480.00"
   ],
   "answer": 3,
-  "explanation": "Recapture 53,700 x 0.35 = 18,795; capital gain 17,500 x 0.5 x 0.35 = 3,062.50. CF_AT = 92,500 - 18,795 - 3,062.50 = $70,642.50. Taxing the gain at the full rate gives $67,580; taxing the whole sale price gives $60,125; double counting gives $64,517.50.",
+  "explanation": "Recapture 58,600 x 0.32 = 18,752; capital gain 22,000 x 0.5 x 0.32 = 3,520. CF_AT = 118,000 - 18,752 - 3,520 = $95,728. Taxing the gain at the full rate gives $92,208; taxing the whole sale price gives $80,240; measuring recapture up to POD and also taxing the gain gives $88,688; skipping recapture gives $114,480.",
   "source": "generated",
   "ref": "L05B s21"
  },

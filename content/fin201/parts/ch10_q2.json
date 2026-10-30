@@ -194,7 +194,7 @@
   "difficulty": 2,
   "stem": "A $20,000 delivery truck bought for a project falls into which category of cash flow?",
   "options": [
-   "Counted in full (× 1): capital expenditure",
+   "× 1: capital expenditure",
    "× (1 − T): an expense",
    "× T: a tax shield",
    "× 0: a sunk cost"
@@ -755,7 +755,7 @@
    "(S − C − D)(1 − T)"
   ],
   "answer": 0,
-  "explanation": "After-tax operating profit is (S − C)(1 − T), and CCA adds a tax shield of T × D. The last option is net income, which omits the add-back of D.",
+  "explanation": "After-tax operating profit is (S − C)(1 − T), and CCA adds a tax shield of T × D. (S − C − D)(1 − T) is net income, which omits the add-back of D; (1 − T) × D or − T × D misstates the shield.",
   "source": "generated",
   "ref": "S5 s15; SM 10-5"
  },
@@ -826,9 +826,9 @@
   "stem": "Which of the following does NOT enter a project's operating cash flow?",
   "options": [
    "Interest paid on the project's financing",
-   "Sales revenue",
-   "Cash operating expenses",
-   "Income tax on EBIT"
+   "Sales revenue from the project's output",
+   "Cash operating expenses of running it",
+   "Income tax on the project's EBIT"
   ],
   "answer": 0,
   "explanation": "Interest is a financing cost and never appears in project cash flows. Revenue, cash expenses and the tax on EBIT are all part of OCF.",
@@ -863,8 +863,8 @@
   "difficulty": 3,
   "stem": "Holding sales, costs and the tax rate (30%) fixed, CCA rises by $10,000. What happens to OCF?",
   "options": [
-   "It rises by $10,000",
-   "It falls by $7,000",
+   "It rises by $10,000, the full increase in CCA",
+   "It falls by $7,000, the after-tax cost of the CCA",
    "It rises by $3,000, because taxes fall by that amount",
    "It is unchanged, because CCA is non-cash"
   ],

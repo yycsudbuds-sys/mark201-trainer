@@ -82,7 +82,7 @@
   "type": "mc",
   "angle": "contrast",
   "difficulty": 3,
-  "stem": "How does PVCCA differ for an asset sold in year N versus an asset that is never sold within the horizon (the pool stays open)?",
+  "stem": "How does PVCCA differ for an asset sold in year N versus an asset that is kept and never sold (its CCA continues indefinitely)?",
   "options": [
    "Sold: add the lost-tail term; not sold: subtract the lost-tail term",
    "Sold: replace k with N in the denominator; not sold: leave k unchanged",
@@ -103,8 +103,8 @@
   "difficulty": 2,
   "stem": "Which of the following is NOT an input to the PVCCA formula?",
   "options": [
-   "The sale price S_N",
-   "The CCA rate d",
+   "The sale price S_N in year N",
+   "The CCA rate d of the class",
    "The corporate tax rate T_C",
    "The asset's UCC at the date of sale"
   ],
@@ -199,7 +199,7 @@
    "N − 1",
    "N + 1",
    "d",
-   "N, the year of sale"
+   "N"
   ],
   "answer": 3,
   "explanation": "The value at year N of the lost shield is brought back to today with (1 + k)^N.",
@@ -213,7 +213,7 @@
   "type": "mc",
   "angle": "apply",
   "difficulty": 3,
-  "stem": "Granger Foods owns a line it has been depreciating for years (UCC today $50,000, d = 20%, T = 30%, k = 10%) and will keep it, so the pool stays open. Which expression gives the PV of its remaining tax shield?",
+  "stem": "Granger Foods owns a line it has been depreciating for years (UCC today $50,000, d = 20%, T = 30%, k = 10%) and will keep it and never sell it. Which expression gives the PV of its remaining tax shield?",
   "options": [
    "50,000 × 0.20 × 0.30/(0.10 + 0.20), with no first-year factor and no salvage term",
    "50,000 × 0.20 × 0.30/(0.10 + 0.20) × (1.5 × 0.10 + 1)/(1 + 0.10)",
@@ -221,7 +221,7 @@
    "50,000 × 0.20 × 0.30/(0.10 − 0.20)"
   ],
   "answer": 0,
-  "explanation": "An asset already depreciating has used its first-year adjustment (factor 1), and with no sale there is no lost-tail term. The first two options apply a half-year or AII factor that does not belong; the last uses k − d.",
+  "explanation": "An asset already depreciating has used its first-year adjustment (factor 1), and with no sale there is no lost-tail term. Applying the AII or half-year factor wrongly treats the line as new, and k − d treats a shrinking shield as a growing one.",
   "source": "generated",
   "ref": "L05B s16"
  },
@@ -232,7 +232,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "Alder Machining buys a $100,000 mill in a 30% class under the half-year rule and expects to sell it in 5 years for $20,000. The tax rate is 25% and k = 10%. What is the PV of the CCA tax shield?",
+  "stem": "Alder Machining buys a $100,000 mill in a 30% class under the half-year rule and expects to sell it in 5 years for $20,000; other assets remain in the class, so the pool stays open. The tax rate is 25% and k = 10%. What is the PV of the CCA tax shield?",
   "answer": 15569.27,
   "unit": "$",
   "tolerance": {
@@ -329,7 +329,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "A firm buys $250,000 of equipment in a 20% class and the Accelerated Investment Incentive applies. It will sell the equipment after 6 years for $60,000. The tax rate is 35% and k = 12%. What is the PV of the CCA tax shield?",
+  "stem": "A firm buys $250,000 of equipment in a 20% class and the Accelerated Investment Incentive applies. It will sell the equipment after 6 years for $60,000; other assets remain in the class. The tax rate is 35% and k = 12%. What is the PV of the CCA tax shield?",
   "answer": 50967.65,
   "unit": "$",
   "tolerance": {
@@ -409,7 +409,7 @@
   "type": "numeric",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Granger Foods owns a packaging line it has depreciated for several years. The UCC today is $240,000 (CCA class rate 10%). The tax rate is 30%, k = 15%, and the line will not be sold: the pool stays open. What is the PV of the remaining CCA tax shield?",
+  "stem": "Granger Foods owns a packaging line it has depreciated for several years. The UCC today is $240,000 (CCA class rate 10%). The tax rate is 30%, k = 15%, and the line will never be sold (it stays in its class). What is the PV of the remaining CCA tax shield?",
   "answer": 28800.0,
   "unit": "$",
   "tolerance": {
@@ -468,7 +468,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "Marsh Bakery buys equipment for $150,000 and pays $10,000 for delivery and installation (capitalized). The class rate is 20%, the tax rate 40%, k = 10%, and the Accelerated Investment Incentive applies. The equipment will be sold in 5 years for $24,000. What is the PV of the CCA tax shield?",
+  "stem": "Marsh Bakery buys equipment for $150,000 and pays $10,000 for delivery and installation (capitalized). The class rate is 20%, the tax rate 40%, k = 10%, and the Accelerated Investment Incentive applies. The equipment will be sold in 5 years for $24,000; other assets remain in the class. What is the PV of the CCA tax shield?",
   "answer": 40632.16,
   "unit": "$",
   "tolerance": {
@@ -573,7 +573,7 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "A $600,000 structure is in a 4% CCA class. The tax rate is 35%, k = 11%, the half-year rule applies and the structure will not be sold (the pool stays open). What is the PV of its CCA tax shield?",
+  "stem": "A $600,000 structure is in a 4% CCA class. The tax rate is 35%, k = 11%, the half-year rule applies and the structure will never be sold. What is the PV of its CCA tax shield?",
   "options": [
    "$58,775",
    "$53,225",
@@ -592,7 +592,7 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "A $180,000 asset in a 30% class qualifies for the Accelerated Investment Incentive. It will be sold after 4 years for $20,000. The tax rate is 40% and k = 12%. What is the PV of its CCA tax shield?",
+  "stem": "A $180,000 asset in a 30% class qualifies for the Accelerated Investment Incentive. It will be sold after 4 years for $20,000, and other assets stay in the class. The tax rate is 40% and k = 12%. What is the PV of its CCA tax shield?",
   "options": [
    "$48,469",
    "$48,018",
@@ -611,7 +611,7 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "Rowan Tools owns an asset with a UCC of $90,000 today (20% class), T = 30% and k = 10%. It will sell the asset in 3 years for $15,000. What is the PV of its remaining CCA tax shield?",
+  "stem": "Rowan Tools owns an asset with a UCC of $90,000 today (20% class), T = 30% and k = 10%. It will sell the asset in 3 years for $15,000; other assets stay in the class. What is the PV of its remaining CCA tax shield?",
   "options": [
    "$18,000",
    "$16,564",
@@ -869,7 +869,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "Hartwell Metals will buy a new machine for $210,000 and sell its old machine (same class, original cost $120,000) today for $70,000. In 4 years the new machine would be worth $25,000 and the old machine $9,000. The class rate is 30%, T = 40%, k = 12%, and the half-year rule applies to net acquisitions. What is the PV of the CCA tax shield?",
+  "stem": "Hartwell Metals will buy a new machine for $210,000 and sell its old machine (same class, original cost $120,000) today for $70,000. The new machine will be sold in 4 years for $25,000; kept, the old machine would have sold then for $9,000. Other assets remain in the class. The class rate is 30%, T = 40%, k = 12%, and the half-year rule applies to net acquisitions. What is the PV of the CCA tax shield?",
   "answer": 34951.92,
   "unit": "$",
   "tolerance": {
@@ -971,7 +971,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "A firm replaces an old machine with a new one costing $180,000. The old machine, whose original cost was $120,000, sells today for $75,000; kept, it would sell for $12,000 in 5 years. The new machine would have no salvage value. The class rate is 20%, T = 40%, k = 10% and the Accelerated Investment Incentive applies to net acquisitions. What is the PV of the CCA tax shield?",
+  "stem": "A firm replaces an old machine with a new one costing $180,000 in the same CCA class, which stays open. The old machine, whose original cost was $120,000, sells today for $75,000; kept, it would sell for $12,000 in 5 years. The new machine would have no salvage value. The class rate is 20%, T = 40%, k = 10% and the Accelerated Investment Incentive applies to net acquisitions. What is the PV of the CCA tax shield?",
   "answer": 31259.68,
   "unit": "$",
   "tolerance": {

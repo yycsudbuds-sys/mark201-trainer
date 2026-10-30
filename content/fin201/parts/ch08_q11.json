@@ -490,7 +490,7 @@
     "explain": "The Gordon denominator is R minus g."
    },
    {
-    "id": "omitted-dividend",
+    "id": "not-compounded",
     "label": "Skipped the compounding (D6 = P0 × (R − g))",
     "value": 1.1,
     "check": "18.40*(0.12-0.06)",
@@ -1098,7 +1098,7 @@
   ],
   "errors": [
    {
-    "id": "omitted-dividend",
+    "id": "no-price-growth",
     "label": "Stopped at today's price",
     "value": 32.48,
     "check": "1.00*1.072/(0.105-0.072)",
@@ -1174,7 +1174,7 @@
     "explain": "g = b × ROE with b = 0.45, so ROE = 0.08/0.45."
    },
    {
-    "id": "pct-decimal-mix",
+    "id": "arithmetic",
     "label": "Multiplied g by b",
     "value": 3.6,
     "check": "0.08*0.45*100",

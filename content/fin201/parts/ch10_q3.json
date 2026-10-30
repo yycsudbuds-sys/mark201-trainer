@@ -455,8 +455,8 @@
   "options": [
    "a negative change in NWC and a cash inflow",
    "a positive change in NWC and a cash outflow at launch",
-   "a tax deduction in year 1",
-   "an increase in CCA"
+   "a tax deduction for the extra inventory in year 1",
+   "an increase in the CCA claimed on the product"
   ],
   "answer": 1,
   "explanation": "More inventory and receivables raise current assets, so NWC increases. A positive change in NWC uses cash and is counted in full.",
@@ -960,7 +960,7 @@
    "(capital cost − salvage value) ÷ N"
   ],
   "answer": 0,
-  "explanation": "CCA_t = d × UCC_(t−1) for t ≥ 2. Applying d to the original cost is straight-line thinking, and the last option is the straight-line formula for accounting depreciation.",
+  "explanation": "CCA_t = d × UCC_(t−1) for t ≥ 2. Applying d to the original cost is straight-line thinking, and (capital cost − salvage) ÷ N is the straight-line formula for accounting depreciation.",
   "source": "generated",
   "ref": "L05B s7-8; S5 s20"
  },
@@ -1014,7 +1014,7 @@
    "Accounting depreciation determines cash taxes, while CCA only affects the income reported to shareholders",
    "CCA is a cash outflow each year, while accounting depreciation is a non-cash charge",
    "They are identical because Canadian tax law requires straight-line depreciation for all assets",
-   "CCA follows the tax schedule and determines cash taxes; accounting depreciation matters only through tax"
+   "CCA follows the tax schedule and determines cash taxes; accounting depreciation does not change the cash flows"
   ],
   "answer": 3,
   "explanation": "Cash taxes are computed using CCA, the depreciation allowed for tax. Accounting depreciation is not the tax deduction, so it is irrelevant to the cash flows.",
@@ -1032,7 +1032,7 @@
   "options": [
    "CCA is the same dollar amount every year",
    "UCC is reduced by each year's CCA",
-   "CCA falls each year because it is a percentage of a shrinking UCC",
+   "After year 1, CCA falls each year because it is a percentage of a shrinking UCC",
    "The first year may use a multiplier such as 0.5 or 1.5"
   ],
   "answer": 0,
@@ -1100,7 +1100,7 @@
   "type": "fill",
   "angle": "define",
   "difficulty": 1,
-  "stem": "Under declining balance, CCA falls each year because it is a fixed percentage of the shrinking _____.",
+  "stem": "After year 1, declining-balance CCA falls each year because it is a fixed percentage of the shrinking _____.",
   "options": [
    "salvage value",
    "sales",

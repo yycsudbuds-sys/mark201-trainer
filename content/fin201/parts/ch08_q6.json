@@ -189,7 +189,7 @@
     "label": "Ratio (1 + g)/(1 + R)",
     "value": 0.94545,
     "check": "1.04/1.10",
-    "unit": "$",
+    "unit": "",
     "tolerance": {
      "abs": 0.005
     }
@@ -198,7 +198,7 @@
     "label": "Bracket 1 − ratio^8",
     "value": 0.36155,
     "check": "1-(1.04/1.10)^8",
-    "unit": "$",
+    "unit": "",
     "tolerance": {
      "abs": 0.005
     }
@@ -221,8 +221,8 @@
   ],
   "keystrokes": [
    "1.04 ÷ 1.10 = 0.94545",
-   "y^x 8 = 0.63841",
-   "1 − 0.63841 = 0.36159",
+   "y^x 8 = 0.63845",
+   "1 − 0.63845 = 0.36155",
    "× 30 = 10.85"
   ],
   "errors": [
@@ -280,7 +280,7 @@
     "label": "Bracket 1 − ratio^6",
     "value": -0.30566,
     "check": "1-(1.15/1.10)^6",
-    "unit": "$",
+    "unit": "",
     "tolerance": {
      "abs": 0.005
     }
@@ -303,8 +303,8 @@
   ],
   "keystrokes": [
    "1.15 ÷ 1.10 = 1.04545",
-   "y^x 6 = 1.30570",
-   "1 − 1.30570 = −0.30570",
+   "y^x 6 = 1.30566",
+   "1 − 1.30566 = −0.30566",
    "× (2 ÷ (0.10 − 0.15)) = 12.23"
   ],
   "errors": [
@@ -334,7 +334,7 @@
   "type": "numeric",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "A project will pay three dividends: $2.00 next year, growing 10% per annum, for years 1 to 3 only. Required return 12% per annum. Use the growing annuity formula to find the present value. Answer in $.",
+  "stem": "A firm being wound down will pay three dividends: $2.00 next year, growing 10% per annum, for years 1 to 3 only. Required return 12% per annum. Use the growing annuity formula to find the present value. Answer in $.",
   "answer": 5.26,
   "unit": "$",
   "tolerance": {
@@ -355,7 +355,7 @@
     "label": "Bracket 1 − ratio^3",
     "value": 0.05262,
     "check": "1-(1.10/1.12)^3",
-    "unit": "$",
+    "unit": "",
     "tolerance": {
      "abs": 0.005
     }
@@ -379,8 +379,8 @@
   ],
   "keystrokes": [
    "1.10 ÷ 1.12 = 0.982143",
-   "y^x 3 = 0.947428",
-   "1 − 0.947428 = 0.052572",
+   "y^x 3 = 0.947380",
+   "1 − 0.947380 = 0.052620",
    "× 100 = 5.26"
   ],
   "errors": [
@@ -437,7 +437,7 @@
    "−$12.49"
   ],
   "answer": 1,
-  "explanation": "With g > R, D1/(R − g) = −30.00 and the bracket is 1 − 1.4163 = −0.4163, so PV = $12.49. Dropping the sign of D1/(R − g) gives −$12.49, and N = 3 gives $8.95.",
+  "explanation": "With g > R, D1/(R − g) = −30.00 and the bracket is 1 − 1.4163 = −0.4163, so PV = $12.49. Dropping the sign of D1/(R − g) gives −$12.49, stopping at D1/(R − g) gives −$30.00, and N = 3 gives $8.95.",
   "source": "generated",
   "ref": "SM 8-23"
  },

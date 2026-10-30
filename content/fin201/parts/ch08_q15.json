@@ -185,7 +185,7 @@
    "Consistent with semi-strong efficiency, but not strong form: the private news was not in the $140 price"
   ],
   "answer": 3,
-  "explanation": "A single jump on announcement is the efficient response to public news. But before the announcement the price did not contain the private information (the existence of the system), so strong form does not hold. Prices SHOULD move when information arrives.",
+  "explanation": "A single jump on announcement is the efficient response to public news. But before the announcement the price did not contain the private information (the R&D success), so strong form does not hold. Prices SHOULD move when information arrives.",
   "source": "generated",
   "ref": "TB 12.6; L04 s50"
  },

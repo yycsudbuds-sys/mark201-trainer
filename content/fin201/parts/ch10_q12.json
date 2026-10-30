@@ -315,10 +315,10 @@
   "difficulty": 2,
   "stem": "Which statement correctly contrasts net acquisition cost with net salvage value in a replacement NPV?",
   "options": [
-   "Net acquisition cost is taxed at (1 - T); net salvage is taxed at T",
+   "Net acquisition cost is taxed at (1 − T); net salvage is taxed at T",
    "Net acquisition cost uses the old machine's UCC; net salvage uses its ACB",
    "Both occur at time 0 but net salvage is discounted for the old machine's remaining life",
-   "Net acquisition cost is a time-0 flow (new cost minus old resale today); net salvage is a time-N flow (new salvage minus the old machine's salvage forgone)"
+   "Net acquisition is a time-0 flow (new cost − old resale now); net salvage is a time-N flow (new − old salvage)"
   ],
   "answer": 3,
   "explanation": "Each is a difference between new and old, but they occur at different dates: the acquisition difference now and the salvage difference at the end of the horizon. Both then feed the PV of CCA tax shield formula.",
@@ -355,10 +355,10 @@
   "difficulty": 2,
   "stem": "Why is the old machine's future salvage subtracted from the new machine's salvage in the replacement NPV?",
   "options": [
-   "Because old equipment is always worth less than new equipment",
-   "Because salvage is a tax expense that offsets the CCA shield",
-   "Selling the old machine now means the firm will not receive its future salvage, so that cash flow is lost",
-   "Because net salvage is always negative in a replacement"
+   "Old equipment is always worth less than new equipment",
+   "Salvage is a tax expense that offsets the CCA shield",
+   "Selling the old machine now gives up its future salvage",
+   "Net salvage is always negative in a replacement"
   ],
   "answer": 2,
   "explanation": "Incremental analysis compares the world with replacement to the world without. Without replacement the firm sells the old machine at N; with replacement it sells the new one. The difference S_new - S_old is the incremental cash flow.",
@@ -396,10 +396,10 @@
   "difficulty": 2,
   "stem": "Maple Ridge Moulding replaces a machine with UCC of $63,000 by a new one in the same CCA class. The old machine is sold for $60,000, and other assets stay in the class. What tax effect does the $3,000 shortfall have at the sale?",
   "options": [
-   "None at the sale: the pool stays open, and the net acquisition (new cost minus $60,000) goes into the PV of CCA shield",
-   "A $3,000 terminal loss saves 3,000 x T of tax now",
-   "A $3,000 capital loss, half deductible",
-   "A $3,000 recapture, taxed at the full rate"
+   "None at the sale: the pool stays open and the net acquisition enters PVCCA",
+   "A $3,000 terminal loss, which saves 3,000 × T of tax right now",
+   "A $3,000 capital loss, only half of which is deductible",
+   "A $3,000 recapture of CCA, taxed at the full corporate rate"
   ],
   "answer": 0,
   "explanation": "Because the class stays open, the sale just reduces the pool's UCC by the proceeds. The seminar's treatment uses the net acquisition cost in the CCA formula and ignores any immediate recapture or terminal loss.",
@@ -463,7 +463,7 @@
    "$51,166.81"
   ],
   "answer": 2,
-  "explanation": "Net acquisition = 80,000; net salvage = 9,000; after-tax savings = 26,650 a year (PV 101,024.47); PV of net salvage = 5,588.29; PV of CCA = 16,514.25. NPV = -80,000 + 101,024.47 + 5,588.29 + 16,514.25 = $43,127.01. Using gross figures, leaving out the CCA shield, or using the new machine's salvage instead of the net salvage each give one of the other values.",
+  "explanation": "Net acquisition = 80,000; net salvage = 9,000; after-tax savings = 26,650 a year (PV 101,024.47); PV of net salvage = 5,588.29; PV of CCA = 16,514.25. NPV = -80,000 + 101,024.47 + 5,588.29 + 16,514.25 = $43,127.01. $14,892.34 ignores the old machine everywhere (gross cost and salvage); $51,166.81 computes the CCA shield on the gross $120,000 and $15,000; $45,983.24 uses the new machine's $15,000 salvage instead of the $9,000 net salvage; $26,612.76 leaves out the CCA shield.",
   "source": "generated",
   "ref": "SM 10-36, S6 s16-19"
  },
@@ -476,7 +476,7 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Cascade Fabricators replaces a machine in a class with CCA rate 25%. New cost $260,000; old resale today $55,000; salvage in 4 years $20,000 (new) and $9,000 (old). AII applies, T = 40%, k = 10%. What is the present value of the CCA tax shield on the replacement?",
+  "stem": "Cascade Fabricators replaces a machine in a class with CCA rate 25%. New cost $260,000; old resale today $55,000; salvage in 4 years $20,000 (new) and $9,000 (old). AII applies, pool open, T = 40%, k = 10%. What is the present value of the CCA tax shield on the replacement?",
   "options": [
    "$53,762.48",
    "$59,087.15",
@@ -939,7 +939,7 @@
   "stem": "How do the after-tax cash flows of a cost-cutting project differ from those of an expansion project?",
   "options": [
    "Cost savings are not taxed because no cash is received",
-   "The operating benefit is saving x (1 - T) instead of (revenue - costs) x (1 - T); the CAPEX, NWC, salvage and CCA shield are treated the same way",
+   "The benefit is saving × (1 − T) instead of (revenue − costs)(1 − T); the rest is the same",
    "Cost-cutting projects are discounted at a lower rate because they are safer",
    "Cost-cutting projects have no CCA tax shield because they add no revenue"
   ],

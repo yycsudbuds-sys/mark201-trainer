@@ -554,12 +554,12 @@
   "type": "mc",
   "angle": "apply",
   "difficulty": 2,
-  "stem": "A firm's FCF has just been reported at $3.4 million and is expected to grow 3.5% per year forever. R = 9.5% per annum. Which expression gives EV?",
+  "stem": "A firm's FCF has just been reported at $5.2 million and is expected to grow 2.5% per year forever. R = 8.5% per annum. Which expression gives EV?",
   "options": [
-   "EV = 3.4/(0.095 − 0.035)",
-   "EV = 3.4 × 1.035/(0.095 − 0.035)",
-   "EV = 3.4/0.095",
-   "EV = 3.4 × 1.035/(0.095 + 0.035)"
+   "EV = 5.2/(0.085 − 0.025)",
+   "EV = 5.2 × 1.025/(0.085 − 0.025)",
+   "EV = 5.2/0.085",
+   "EV = 5.2 × 1.025/(0.085 + 0.025)"
   ],
   "answer": 1,
   "explanation": "Constant growing FCF is a growing perpetuity: EV = FCF1/(R − g) with FCF1 = FCF0(1 + g). Using FCF0 is the d0-for-d1 error; dividing by R alone ignores growth; adding g to R is a sign slip.",
@@ -897,7 +897,7 @@
     "explain": "Cash is added back: net debt = Debt − Cash."
    },
    {
-    "id": "net-debt-sign",
+    "id": "ev-as-equity",
     "label": "Divided EV by the share count",
     "value": 16.94,
     "check": "7.2/0.085/5",

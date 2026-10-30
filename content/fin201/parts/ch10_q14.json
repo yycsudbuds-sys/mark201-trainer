@@ -27,10 +27,10 @@
   "difficulty": 2,
   "stem": "Why does the PV of costs used in an EAC calculation subtract the PV of the CCA tax shield?",
   "options": [
-   "CCA reduces the firm's taxes, which lowers the true cost of owning the machine",
+   "CCA cuts taxes, which lowers the cost of owning the machine",
    "CCA is a cash outflow that has to be reversed",
    "CCA is already included in the operating cost",
-   "CCA raises the discount rate"
+   "CCA raises the discount rate applied to the costs"
   ],
   "answer": 0,
   "explanation": "For a cost project, cash outflows are positive costs. The shield saves tax, so it is subtracted. The same is true of the discounted salvage value.",
@@ -144,12 +144,12 @@
   "options": [
    "$631.29",
    "$894.45",
-   "$3,577.81",
+   "$1,629.27",
    "$8,420.34",
    "$26,691.33"
   ],
   "answer": 1,
-  "explanation": "EAC of D = 87,649.49/4.3553 = 20,124.97. Press C is cheaper by 20,124.97 - 19,230.52 = $894.45 a year. Differences of raw PVs ($26,691.33) mix different lives.",
+  "explanation": "EAC of D = 87,649.49/4.3553 = 20,124.97. Press C is cheaper by 20,124.97 - 19,230.52 = $894.45 a year. Differences of raw PVs ($26,691.33) mix different lives; $8,420.34 uses press C's 4-year annuity factor for D; $631.29 divides each PV by N; $1,629.27 leaves out both CCA shields.",
   "source": "generated",
   "ref": "S6 s14, SM 10-30"
  },
@@ -568,17 +568,17 @@
   "type": "mc",
   "angle": "contrast",
   "difficulty": 2,
-  "stem": "The word 'nominal' has two unrelated meanings in finance. Which pair of contrasts correctly states them?",
+  "stem": "How does a real cash flow differ from a nominal cash flow?",
   "options": [
-   "Nominal versus effective (compounding), and nominal versus real (inflation)",
-   "Nominal versus real (taxes), and nominal versus effective (inflation)",
-   "Nominal versus after-tax, and nominal versus pre-tax",
-   "Nominal versus risk-free, and nominal versus risky"
+   "A real cash flow is stated in today's purchasing power; a nominal cash flow includes expected inflation",
+   "A real cash flow is after tax; a nominal cash flow is before tax",
+   "A real cash flow is certain; a nominal cash flow is only an expected value",
+   "A real cash flow is discounted at the nominal rate; a nominal cash flow at the real rate"
   ],
   "answer": 0,
-  "explanation": "A nominal APR can be contrasted with an effective annual rate (compounding frequency). A nominal return can also be contrasted with a real return (purchasing power). The two are unrelated.",
+  "explanation": "Nominal flows are in the dollars of the year they arrive, so they include inflation; real flows are in constant (today's) dollars: CF_real,i = CF_nominal,i/(1 + R_inf)^i. Each is paired with its own rate (nominal with nominal, real with real); tax and risk are separate issues.",
   "source": "generated",
-  "ref": "L02C s9"
+  "ref": "FS p1; SM 10 App A1"
  },
  {
   "id": "q10-584",
@@ -608,10 +608,10 @@
   "difficulty": 2,
   "stem": "Why is the real rate not simply the nominal rate minus the inflation rate?",
   "options": [
-   "Because inflation is paid out of the real rate",
-   "Because purchasing power is a ratio: (1 + R_nom)/(1 + R_inf) - 1 is slightly smaller than R_nom - R_inf",
-   "Because the real rate is always zero when the rate is nominal",
-   "Because taxes are paid on the nominal amount only"
+   "Inflation is paid out of the real rate, not the nominal rate",
+   "Purchasing power is a ratio: (1 + R_nom)/(1 + R_inf) − 1 is a bit below R_nom − R_inf",
+   "The real rate is always zero when a rate is stated in nominal terms",
+   "Taxes are paid on the nominal amount only, not on the real amount"
   ],
   "answer": 1,
   "explanation": "At 10% nominal and 3% inflation, $1,000 grows to $1,100 while goods rise to $1,030: purchasing power grows 1,100/1,030 = 6.7961%, not 7%. The subtraction approximation drifts further for larger rates.",
@@ -628,9 +628,9 @@
   "stem": "A firm computes a project's EAC with real cash flows at the real rate and gets a lower annual cost figure than with nominal cash flows at the nominal rate, although both PVs of costs are identical. Why?",
   "options": [
    "One of the two calculations must contain a mistake",
-   "Real cash flows are taxed less",
+   "Real cash flows are taxed at a lower rate than nominal ones",
    "The nominal rate is risk free and the real rate is not",
-   "The real annuity factor is larger, so the same PV spreads into smaller annual amounts; real dollars are 'today's dollars' while nominal dollars are future dollars"
+   "The real rate is lower, so its annuity factor is larger and the annual figure smaller"
   ],
   "answer": 3,
   "explanation": "PVs agree because both methods are consistent, but EACs are expressed in different dollars. A real EAC is in constant dollars; a nominal EAC is a level nominal payment. Because the real rate is lower, the real annuity factor is larger, so the real EAC is smaller.",
@@ -716,16 +716,16 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Bow Valley Ltd. must pay $10,000 a year in today's dollars (prices rise with 3% inflation, so the nominal payments grow at 3%) for 4 years. The nominal discount rate is 9% per annum. What is the PV of the payments?",
+  "stem": "Bow Valley Ltd. must pay $12,000 a year in today's dollars (prices rise with 2% inflation, so the nominal payments grow at 2%) for 5 years, the first payment in one year. The nominal discount rate is 8% per annum. What is the PV of the payments?",
   "options": [
-   "$32,397.20",
-   "$34,651.06",
-   "$34,790.17",
-   "$37,400.60",
-   "$40,000.00"
+   "$47,912.52",
+   "$50,548.37",
+   "$50,710.56",
+   "$53,713.92",
+   "$60,000.00"
   ],
   "answer": 2,
-  "explanation": "Nominal flows are 10,300; 10,609; 10,927.27; 11,255.09. Discounted at 9% the PV is $34,790.17. Equivalently, discount 10,000 a year at the real rate 5.8252%. Discounting the real $10,000 at 9% ($32,397.20) mixes real flows with a nominal rate.",
+  "explanation": "Real rate = 1.08/1.02 - 1 = 5.8824%; PV = 12,000 x [1 - 1.058824^-5]/0.058824 = $50,710.56, the same as discounting the nominal flows 12,240, 12,484.80, ... at 8%. $47,912.52 discounts the real $12,000 at the nominal 8%; $50,548.37 uses 8% - 2% = 6% as the real rate; $53,713.92 discounts the nominal flows at the real rate; $60,000 ignores discounting.",
   "source": "generated",
   "ref": "L02C s10, SM 10-40"
  },

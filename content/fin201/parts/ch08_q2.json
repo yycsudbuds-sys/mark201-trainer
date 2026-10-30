@@ -326,17 +326,17 @@
   "type": "mc",
   "angle": "identify",
   "difficulty": 2,
-  "stem": "Which pair of ratios is typical for a healthy, profitable listed firm?",
+  "stem": "The sample exam's quote screen lists 'Price/Book 1.722' for XYZ Limited. Which comparison does this figure make?",
   "options": [
-   "P/E around 17 and P/B around 2",
-   "P/E around 0.5 and P/B around 25",
-   "P/E around 150 and P/B around 0.05",
-   "P/E around −8 and P/B around 12"
+   "Market value of equity is about 1.7 times the book value of equity on the balance sheet",
+   "Book value of equity is about 1.7 times the market value of the shares outstanding",
+   "The share price is about 1.7 times the earnings per share of the last twelve months",
+   "Liquidation value is about 1.7 times the book value of the firm's total assets"
   ],
   "answer": 0,
-  "explanation": "The review guide asks for 'typical' P/E and P/B values: mature profitable firms typically trade at P/Es in the teens or 20s and at P/Bs of roughly 1 to 3 (the sample quote has 18.8 and 1.72). The other pairs are extremes.",
+  "explanation": "Price/Book (market-to-book, L04 s14) divides the market value of equity (price × shares) by the book value of equity, so investors value XYZ's equity at about 1.7 times its accounting value. Book over market is the inverted ratio, price over EPS is the P/E (18.798 on the same screen), and liquidation value never appears on a quote screen.",
   "source": "generated",
-  "ref": "REV p3; PRAC q9"
+  "ref": "L04 s14; PRAC q9; REV p3"
  },
  {
   "id": "q08-059",
@@ -359,7 +359,7 @@
     "check": "6397100/60.34",
     "unit": "shares",
     "tolerance": {
-     "abs": 1
+     "abs": 20
     }
    }
   ],
@@ -387,7 +387,7 @@
     "explain": "The screen prints market cap in dollars; scaling it to thousands overstates the shares a thousand-fold."
    }
   ],
-  "explanation": "Shares outstanding = market cap ÷ price per share (about 106,000). Use the last price, not the bid or ask.",
+  "explanation": "Shares outstanding = market cap ÷ last price = 6,397,100 ÷ 60.34 = 106,017.6 ≈ 106,018 shares. Dividing by the ask ($60.35) gives exactly 106,000, which suggests the screen's market cap was built on that price, so 106,000 is also accepted; the method to show is market cap ÷ last price. Dividing by the bid (106,070) is the classic quote-screen slip.",
   "source": "official",
   "ref": "PRAC q9a"
  },
@@ -412,7 +412,7 @@
     "label": "Trailing EPS0 = price ÷ trailing P/E",
     "value": 3.2099,
     "check": "60.34/18.798",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -421,7 +421,7 @@
     "label": "Forward EPS1 = price ÷ forward P/E",
     "value": 3.3629,
     "check": "60.34/17.943",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -468,7 +468,7 @@
     "explain": "The day's price move says nothing about expected earnings growth."
    }
   ],
-  "explanation": "Same price, different earnings: price/EPS0 = 18.798 and price/EPS1 = 17.943, so EPS1/EPS0 = 18.798/17.943.",
+  "explanation": "Same price, different earnings: price/EPS0 = 18.798 and price/EPS1 = 17.943, so EPS1/EPS0 = 18.798/17.943. Work from the two P/E ratios: on this screen the dividend yields (2.768% trailing, 2.642% forward) do not reproduce the expected earnings growth.",
   "source": "official",
   "ref": "PRAC q9b; L04 s30"
  },
@@ -566,7 +566,7 @@
     "label": "Trailing dividend D0 = yield × price",
     "value": 0.96,
     "check": "0.032*30.0",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -575,7 +575,7 @@
     "label": "Forward dividend D1 = yield × price",
     "value": 1.02,
     "check": "0.034*30.0",
-    "unit": "%",
+    "unit": "$",
     "tolerance": {
      "abs": 0.005
     }
@@ -645,7 +645,7 @@
     "label": "EPS1/EPS0 = trailing P/E ÷ forward P/E",
     "value": 1.11399,
     "check": "21.5/19.3",
-    "unit": "%",
+    "unit": "x",
     "tolerance": {
      "abs": 0.005
     }
@@ -741,15 +741,15 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "A screen shows a last price of $48.30, a trailing P/E of 21.0 and a consensus forward P/E of 18.5. What are the analysts' forecast earnings per share for the coming year?",
+  "stem": "A screen shows a last price of $52.70, a trailing P/E of 23.5 and a consensus forward P/E of 19.8. What are the analysts' forecast earnings per share for the coming year?",
   "options": [
-   "$2.30",
-   "$2.44",
-   "$2.61",
-   "$893.55"
+   "$2.24",
+   "$0.38",
+   "$2.66",
+   "$1,043.46"
   ],
   "answer": 2,
-  "explanation": "Forward EPS = price ÷ forward P/E = 48.30 ÷ 18.5 = $2.61. Dividing by the trailing P/E gives last year's EPS ($2.30), which is the trailing-forward mix-up, and multiplying by the P/E gives $893.55.",
+  "explanation": "Forward EPS = price ÷ forward P/E = 52.70 ÷ 19.8 = $2.66. Dividing by the trailing P/E gives last year's EPS ($2.24), which is the trailing-forward mix-up; inverting the ratio gives $0.38; multiplying by the P/E gives $1,043.46.",
   "source": "generated",
   "ref": "PRAC q9; L04 s14"
  },

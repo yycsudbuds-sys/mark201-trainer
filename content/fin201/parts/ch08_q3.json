@@ -126,7 +126,7 @@
    "secondary market transaction"
   ],
   "answer": 3,
-  "explanation": "Existing shares trading between investors are secondary-market trades; the company receives no money. IPOs and seasoned equity offerings are primary-market sales.",
+  "explanation": "Existing shares trading between investors are secondary-market trades; the company receives no money. Initial public offerings and later share issues are primary-market sales.",
   "source": "generated",
   "ref": "L04 s4"
  },
@@ -306,7 +306,7 @@
   "type": "mc",
   "angle": "apply",
   "difficulty": 2,
-  "stem": "Bid $24.10, ask $24.18, last trade $24.14. You place a market order to sell 500 shares. What price per share do you receive?",
+  "stem": "Bid $24.10, ask $24.18, last trade $24.14, day range $24.02 to $24.22. You place a market order to sell 500 shares. What price per share do you receive?",
   "options": [
    "$24.12, the midpoint of the day's range",
    "$24.18, the ask",
@@ -387,10 +387,10 @@
    "6.13%",
    "5.78%",
    "16.32%",
-   "3.06%"
+   "6.53%"
   ],
   "answer": 0,
-  "explanation": "R = D/P0 = 3.80/62.00 = 6.13%. Inverting gives 16.32 (that is price over dividend, not a rate), and adding the dividend to the price in the denominator gives 5.78%.",
+  "explanation": "R = D/P0 = 3.80/62.00 = 6.13%. Inverting gives 16.32 (that is price over dividend, not a rate), adding the dividend to the price in the denominator gives 5.78%, and subtracting it gives 6.53%.",
   "source": "generated",
   "ref": "SM 8-8"
  },
@@ -446,7 +446,7 @@
     "explain": "The perpetuity value is at year 5, one year before the first dividend."
    },
    {
-    "id": "omitted-dividend",
+    "id": "not-discounted",
     "label": "Did not discount the perpetuity value",
     "value": 45.45,
     "check": "2.50/0.055",
@@ -850,7 +850,7 @@
    "P3 = 16 × 3.7976 = $60.76"
   ],
   "keystrokes": [
-   "1.07 y^x 3 × 3.10 = 3.7977",
+   "1.07 y^x 3 × 3.10 = 3.7976",
    "× 16 = 60.76"
   ],
   "errors": [
@@ -870,7 +870,7 @@
    },
    {
     "id": "grew-twice",
-    "label": "Grew by 7% three times per year",
+    "label": "Grew EPS four years instead of three",
     "value": 65.02,
     "check": "16*3.10*1.07^4",
     "explain": "Count the years: t = 3, not 4."

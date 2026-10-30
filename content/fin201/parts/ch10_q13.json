@@ -65,10 +65,10 @@
   "difficulty": 2,
   "stem": "Why must the required after-tax annual amount be divided by (1 - T) when finding the bid price?",
   "options": [
-   "Because the tax rate applies only to the first year",
-   "Revenue minus costs is taxed, so before-tax net revenue must be larger than the after-tax amount needed",
-   "Because (1 - T) converts a nominal flow into a real flow",
-   "Because the CCA shield must be added back"
+   "The tax rate applies only to the first year",
+   "Net revenue is taxed, so the pre-tax amount must exceed the after-tax need",
+   "(1 − T) converts a nominal flow into a real flow",
+   "The CCA shield must be added back first"
   ],
   "answer": 1,
   "explanation": "The after-tax annuity equals [(P - v)Q - FC](1 - T). To recover the pre-tax figure we undo the tax by dividing by (1 - T), then add the cash costs to get total revenue.",
@@ -84,10 +84,10 @@
   "difficulty": 2,
   "stem": "Okotoks Steel bids exactly the NPV = 0 price and wins the contract. What does that imply about the project?",
   "options": [
-   "It earns a 0% return",
+   "It earns a 0% return, since its NPV is zero",
    "It creates a positive NPV equal to the CCA tax shield",
    "It breaks even on accounting profit but not on cash flow",
-   "It earns exactly its required return: IRR = k, NPV = 0, with no value added or lost"
+   "It earns exactly its required return (IRR = k): no value is added or lost"
   ],
   "answer": 3,
   "explanation": "At the break-even price the PV of the inflows equals the PV of the outflows at the required rate, so the IRR equals the required return. The firm is indifferent; to add value it would need a price above that level.",
@@ -103,10 +103,10 @@
   "difficulty": 2,
   "stem": "In the bid-price equation, after-tax net revenue = [(P - v)Q - FC](1 - T). Which item is NOT inside the bracket?",
   "options": [
-   "Variable cost per unit v",
-   "CCA, because its tax shield is valued separately through PV_CCA",
-   "Fixed cash costs FC",
-   "Price per unit P"
+   "Variable cost per unit v (a cash cost)",
+   "CCA (a non-cash deduction)",
+   "Fixed cash costs FC (a cash cost)",
+   "Price per unit P (cash revenue)"
   ],
   "answer": 1,
   "explanation": "The bracket contains cash revenue and cash costs only. CCA is not a cash cost; its tax saving is counted once in the PV of CCA tax shield, so including it in the bracket would double count.",
@@ -625,7 +625,7 @@
   "type": "mc",
   "angle": "identify",
   "difficulty": 2,
-  "stem": "Cascade Rail owns an old locomotive that earns nothing more. It is deciding whether to sell it at the end of year 5 or keep it and keep claiming CCA. What is the opportunity cost of selling at year 5?",
+  "stem": "Cascade Rail owns an old locomotive, the last asset in its CCA class, that earns nothing more. It is deciding whether to sell it at the end of year 5 or keep it and keep claiming CCA. What is the opportunity cost of selling at year 5?",
   "options": [
    "The present value of the CCA tax shields it gives up on the remaining UCC",
    "The original purchase price of the locomotive",
@@ -686,9 +686,9 @@
   "difficulty": 2,
   "stem": "How do the cash flows from selling at year N differ from the cash flows from holding the asset?",
   "options": [
-   "Selling gives the after-tax proceeds now but ends the CCA shield; holding keeps the shield and receives no proceeds now",
+   "Selling brings after-tax cash now but ends the CCA shield; holding keeps the shield",
    "Selling gives the CCA shield now; holding gives the proceeds",
-   "Selling is taxed; holding is not taxed",
+   "Selling is taxed; holding is not taxed at all",
    "Selling and holding give the same cash flows except for timing"
   ],
   "answer": 0,
@@ -724,10 +724,10 @@
   "difficulty": 2,
   "stem": "Why can a firm be better off selling an asset at year N even though the sale ends its CCA deductions?",
   "options": [
-   "Because CCA deductions are not tax deductible after year N",
-   "Because the sale proceeds are not taxed",
-   "The after-tax cash from the sale is received now, and the shields given up are worth less than that cash because they arrive slowly and decline each year",
-   "Because UCC always exceeds the sale price"
+   "CCA deductions are no longer tax deductible after year N",
+   "The sale proceeds are never taxed when an asset is sold",
+   "Cash from the sale arrives now; the lost shields arrive slowly and shrink",
+   "UCC always exceeds the sale price, creating a tax refund"
   ],
   "answer": 2,
   "explanation": "The lost shield is worth UCC x d x T/(k + d), a fraction of UCC. The sale delivers POD plus a tax effect immediately. Without other benefits from holding, selling usually wins.",
@@ -743,9 +743,9 @@
   "difficulty": 3,
   "stem": "A sell-versus-hold analysis at year 4 gives an NPV of +$31,005 for selling. What does this mean?",
   "options": [
-   "Selling now is worth $31,005 more, in year-4 dollars, than keeping the asset and its CCA shield",
+   "Selling beats holding by $31,005 in year-4 dollars",
    "Holding the asset adds $31,005 of value",
-   "The sale price is $31,005",
+   "The asset's sale price at year 4 is $31,005",
    "The asset will produce $31,005 of profit before tax"
   ],
   "answer": 0,
@@ -765,7 +765,7 @@
    "Compare all three using each choice's accounting profit",
    "Evaluate the project alone and ignore the land",
    "Discount all three choices at different rates and pick the largest cash flow",
-   "Compare 'rent' with 'sell and buy back' first, then compare the better of the two with 'use for the project'"
+   "Compare 'rent' with 'sell and buy back', then the winner with 'use for the project'"
   ],
   "answer": 3,
   "explanation": "Each comparison uses incremental NPV. The rent-versus-sell step shows what the land is worth in its best alternative use, which is the opportunity cost charged to the project.",
@@ -818,7 +818,7 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "An idle machine (CCA rate 20%) has a UCC of $33,177.60 after year 4 CCA. T = 35% and k = 12%. What is the value at year 4 of the CCA tax shields the firm gives up if it sells the machine?",
+  "stem": "An idle machine (CCA rate 20%) has a UCC of $33,177.60 after year 4 CCA. T = 35% and k = 12%. What is the value at year 4 of the CCA tax shields the firm gives up if it sells the machine, closing the class?",
   "options": [
    "$2,322.43",
    "$6,480.00",
@@ -1171,7 +1171,7 @@
   "stem": "Fraser Rentals must choose between two vans, one lasting 3 years and one lasting 5 years. Each will be replaced by an identical van when it wears out, and both provide the same service. Which method compares them properly?",
   "options": [
    "Compare the NPVs of costs directly",
-   "Equivalent annual cost: convert each van's PV of costs to an annual amount over its own life",
+   "Equivalent annual cost over each van's own life",
    "Compare the IRRs of the two vans",
    "Compare the payback periods of the two vans"
   ],
@@ -1209,8 +1209,8 @@
   "stem": "Why can comparing the raw present values of costs of a 3-year machine and a 5-year machine give the wrong answer?",
   "options": [
    "The raw PV ignores the CCA tax shield",
-   "The shorter-lived machine delivers fewer years of service, so its smaller PV of costs buys less",
-   "Raw PVs are in different currencies",
+   "The shorter-lived machine's smaller PV buys fewer years of service",
+   "Raw PVs are stated in different currencies",
    "The longer-lived machine always has the lower PV of costs"
   ],
   "answer": 1,

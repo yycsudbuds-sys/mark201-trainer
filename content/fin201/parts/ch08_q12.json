@@ -194,18 +194,18 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Okanagan Orchards pays out 45% of earnings, earns ROE = 14% on start-of-year equity, and R = 11.5% per annum. Assuming constant payout and ROE, what is its forward P/E? (Answer as a multiple, 2 decimals.)",
-  "answer": 11.84,
+  "stem": "Okanagan Orchards pays out 35% of earnings, earns ROE = 12% on start-of-year equity, and R = 10.5% per annum. Assuming constant payout and ROE, what is its forward P/E? (Answer as a multiple, 2 decimals.)",
+  "answer": 12.96,
   "unit": "x",
   "tolerance": {
    "abs": 0.05
   },
-  "check": "(1-0.55)/(0.115-0.55*0.14)",
+  "check": "(1-0.65)/(0.105-0.65*0.12)",
   "steps": [
    {
     "label": "Plowback b = 1 − payout",
-    "value": 0.55,
-    "check": "1-0.45",
+    "value": 0.65,
+    "check": "1-0.35",
     "unit": "",
     "tolerance": {
      "abs": 0.01
@@ -213,8 +213,8 @@
    },
    {
     "label": "Growth g = b × ROE (in %)",
-    "value": 7.7,
-    "check": "0.55*0.14*100",
+    "value": 7.8,
+    "check": "0.65*0.12*100",
     "unit": "%",
     "tolerance": {
      "abs": 0.01
@@ -222,8 +222,8 @@
    },
    {
     "label": "Forward P/E = (1 − b)/(R − g)",
-    "value": 11.8421,
-    "check": "(1-0.55)/(0.115-0.55*0.14)",
+    "value": 12.963,
+    "check": "(1-0.65)/(0.105-0.65*0.12)",
     "unit": "x",
     "tolerance": {
      "abs": 0.01
@@ -231,37 +231,37 @@
    }
   ],
   "solution": [
-   "b = 1 − 0.45 = 0.55; g = 0.55 × 0.14 = 7.7%",
-   "P/E = (1 − b)/(R − g) = 0.45/(0.115 − 0.077) = 0.45/0.038 = 11.84"
+   "b = 1 − 0.35 = 0.65; g = 0.65 × 0.12 = 7.8%",
+   "P/E = (1 − b)/(R − g) = 0.35/(0.105 − 0.078) = 0.35/0.027 = 12.96"
   ],
   "keystrokes": [
-   "0.55 × 0.14 = 0.077",
-   "0.45 ÷ (0.115 − 0.077) = 11.84"
+   "0.65 × 0.12 = 0.078",
+   "0.35 ÷ (0.105 − 0.078) = 12.96"
   ],
   "errors": [
    {
     "id": "payout-as-plowback",
-    "label": "Treated 45% as b",
-    "value": 10.58,
-    "check": "0.55/(0.115-0.45*0.14)",
-    "explain": "Payout is 45%, so b = 55%: g = 7.7% and the numerator is the payout 0.45."
+    "label": "Treated 35% as b",
+    "value": 10.32,
+    "check": "0.65/(0.105-0.35*0.12)",
+    "explain": "Payout is 35%, so b = 65%: g = 7.8% and the numerator is the payout 0.35."
    },
    {
-    "id": "omitted-dividend",
+    "id": "forgot-payout",
     "label": "Dropped (1 − b)",
-    "value": 26.32,
-    "check": "1/(0.115-0.55*0.14)",
+    "value": 37.04,
+    "check": "1/(0.105-0.65*0.12)",
     "explain": "P/E = P0/EPS1 and P0 only capitalises the dividend share (1 − b) of EPS1."
    },
    {
     "id": "forgot-g",
     "label": "Ignored growth in the denominator",
-    "value": 3.91,
-    "check": "0.45/0.115",
+    "value": 3.33,
+    "check": "0.35/0.105",
     "explain": "R − g, not R, is the capitalisation rate."
    }
   ],
-  "explanation": "A 45% payout and 7.7% growth against R = 11.5% give a forward multiple near 12. Because the denominator is small, the multiple is very sensitive to g and R.",
+  "explanation": "A 35% payout and 7.8% growth against R = 10.5% give a forward multiple near 13. Because the denominator R − g is small, the multiple is very sensitive to g and R.",
   "source": "generated",
   "ref": "L04 s28-31"
  },
@@ -414,7 +414,7 @@
     "explain": "The numerator is the payout (1 − b) = 60%."
    },
    {
-    "id": "omitted-dividend",
+    "id": "forgot-payout",
     "label": "Used the earnings yield 1/PE",
     "value": 11.56,
     "check": "(0.055+1/16.5)*100",
@@ -666,15 +666,15 @@
   "type": "mc",
   "angle": "interpret",
   "difficulty": 2,
-  "stem": "A firm trades at $82.40 with EPS1 = $5.20 and R = 10%. What does it tell you that EPS1/R = $52.00?",
+  "stem": "A firm trades at $74.80 with EPS1 = $4.40 and R = 10%. What does it tell you that EPS1/R = $44.00?",
   "options": [
-   "The firm is overvalued by $52.00 relative to its earnings power",
-   "The firm's book equity is $52.00 per share on the balance sheet",
-   "The market expects the firm to pay a $52.00 dividend next year",
-   "About 37% of the price pays for growth opportunities; $52.00 is the no-growth value"
+   "The firm is overvalued by $44.00 relative to its earnings power",
+   "The firm's book equity is $44.00 per share on the balance sheet",
+   "The market expects the firm to pay a $44.00 dividend next year",
+   "About 41% of the price pays for growth opportunities; $44.00 is the no-growth value"
   ],
   "answer": 3,
-  "explanation": "No-growth value $52.00 plus NPVGO $30.40 = price $82.40. Growth opportunities are 30.40/82.40 = 36.9% of the price.",
+  "explanation": "No-growth value $44.00 plus NPVGO $30.80 = price $74.80. Growth opportunities are 30.80/74.80 = 41.2% of the price.",
   "source": "generated",
   "ref": "L04 s33-34"
  },
@@ -793,7 +793,7 @@
    "D1 = 3.80 × 1.02 = $3.876; P0 = 3.876/(0.09 − 0.02) = $55.37",
    "No-growth value = 5.10/0.09 = $56.67",
    "NPVGO = 55.3714 − 56.6667 = −$1.30 per share",
-   "Negative: either the shares are undervalued or growth destroys value (the firm retains a lot but grows only 2%)."
+   "Negative: either the shares are undervalued or growth destroys value (the firm retains about a quarter of EPS1 yet grows only 2%)."
   ],
   "keystrokes": [
    "3.876 ÷ 0.07 = 55.3714",
@@ -915,7 +915,7 @@
     "explain": "D7 is already the first constant-growth dividend."
    }
   ],
-  "explanation": "More than two thirds of the price is growth value, typical of a young firm. NPVGO is positive, so growth creates value (Harrison pattern).",
+  "explanation": "Almost two thirds of the price (65%) is growth value, typical of a young firm. NPVGO is positive, so growth creates value (Harrison pattern).",
   "source": "generated",
   "ref": "S4 s17-19; SM 8-14"
  },

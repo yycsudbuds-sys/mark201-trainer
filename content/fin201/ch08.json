@@ -156,7 +156,7 @@
    "topic": "t08-2",
    "term": "Book, market and liquidation value",
    "definition": "Book value of equity is assets minus liabilities at historical cost on the balance sheet. Market value of equity (market capitalisation) is the share price times the shares outstanding. Liquidation value is the amount left for the owners if the assets are sold and the creditors are paid first.",
-   "explain": "Book value looks backwards at accounting costs, market value looks forwards at expected cash flows, and liquidation value is the fire-sale floor. A healthy firm usually has a price-to-book above 1 (growth opportunities, intangibles, historical-cost accounting); as a rough guide P/E is in the teens to 20s and P/B in the 1 to 3 range, and P/B below 1 signals expected returns below the cost of equity.",
+   "explain": "Book value looks backwards at accounting costs, market value looks forwards at expected cash flows, and liquidation value is the fire-sale floor. Price-to-book compares the first two: a firm with growth opportunities and valuable intangibles can trade well above book (P/B above 1), while a P/B below 1 is a warning that the market expects poor returns on book equity or that book values are overstated. The review guide asks for typical P/E and P/B values: read them off a quote screen, such as the sample screen's P/E of 18.798 and P/B of 1.722.",
    "example": "Sigma Tools: assets $90M, liabilities $55M, so book equity is $35M. With 4 million shares at $22.00 the market value is $88M, P/B = 88/35 = 2.51. If a sale would fetch $62M for the assets, liquidation value of equity = 62 − 55 = $7M.",
    "contrast": "Book value is not liquidation value, and liquidation value is not 'the price to buy a bankrupt firm'. Sample question 2 asks for the definition: the amount from selling the assets and paying off the creditors.",
    "trap": "Choosing 'equal to the book value of equity' or 'the price to buy a firm after bankruptcy' for liquidation value; inverting P/B; forgetting that creditors are paid before shareholders.",
@@ -198,7 +198,7 @@
    "term": "Reading a quote screen",
    "definition": "A quote screen shows the last price and change, bid and ask, day and year ranges, volume, dividend yield, forward dividend yield, market cap, price/sales, trailing P/E, consensus forward P/E and P/B. Missing figures follow: shares = market cap ÷ P; EPS = P ÷ (P/E); net income = EPS × shares; DPS = yield × P; expected growth = trailing P/E ÷ forward P/E − 1.",
    "explain": "Every ratio on the screen shares the same price, so ratios can be turned back into per-share quantities. The exam gives a screen and asks for derived numbers (sample question 9). Trailing means last twelve months, forward means analysts' forecast for the coming year.",
-   "example": "Sample screen: last $60.34, market cap $6,397,100, P/E 18.798, forward P/E 17.943. Shares = 6,397,100/60.34 = 106,018. Expected growth = 18.798/17.943 − 1 = 4.77% per annum.",
+   "example": "Sample screen: last $60.34, market cap $6,397,100, P/E 18.798, forward P/E 17.943. Shares = 6,397,100/60.34 = 106,018 (dividing by the ask, $60.35, gives exactly 106,000, so the screen's market cap seems to use that price; both answers are accepted). Expected growth = 18.798/17.943 − 1 = 4.77% per annum.",
    "contrast": "Last price (most recent trade) versus bid (what buyers offer) versus ask (what sellers want); trailing versus forward P/E; dividend yield (D0/P) versus forward dividend yield (D1/P).",
    "trap": "Using the bid or ask in place of the last price; dividing forward by trailing P/E (sign reverses); reading market cap in thousands of dollars; mixing trailing and forward figures; forgetting the −1 on the ratio.",
    "mnemonic": "Same price, different earnings.",
@@ -260,7 +260,7 @@
    "id": "c08-markets-trading",
    "topic": "t08-2",
    "term": "Markets and trading",
-   "definition": "In the primary market a firm sells new securities (IPO or seasoned equity offering) and receives the money; in the secondary market investors trade existing securities and the firm receives nothing. Trading uses exchanges and platforms (NYSE, NASDAQ, TSX, ECNs), brokers who arrange trades and dealers who hold inventory and quote a bid and an ask.",
+   "definition": "In the primary market a firm sells new securities (an initial public offering or a later share issue) and receives the money; in the secondary market investors trade existing securities and the firm receives nothing. Trading uses exchanges and platforms (NYSE, NASDAQ, TSX, ECNs), brokers who arrange trades and dealers who hold inventory and quote a bid and an ask.",
    "explain": "A dealer buys at the bid and sells at the ask; the spread is its profit, and an investor buys at the ask and sells at the bid. A market order trades at once at the best price available; a limit order trades only at its stated price or better. A liquid secondary market makes shares more attractive in the primary market.",
    "example": "Bid $60.31, ask $60.35: buying 1,000 shares at the ask and selling at the bid loses (60.35 − 60.31) × 1,000 = $40.00 of spread.",
    "contrast": "Broker (agent, earns a commission, no inventory) versus dealer (principal, earns the spread, holds inventory); primary versus secondary; NYSE (one designated market maker per stock) versus NASDAQ (competing dealers); market versus limit order.",
@@ -525,7 +525,7 @@
    "topic": "t08-6",
    "term": "Growth implied by trailing and forward multiples",
    "definition": "Because trailing and forward P/E share the same price, EPS1/EPS0 = trailing P/E ÷ forward P/E, so the expected growth in earnings is (trailing P/E ÷ forward P/E) − 1.",
-   "explain": "A forward P/E lower than the trailing P/E means earnings are expected to rise; higher means they are expected to fall. The same trick works for dividends with the trailing and forward dividend yields (D1/D0 = forward yield ÷ trailing yield).",
+   "explain": "A forward P/E lower than the trailing P/E means earnings are expected to rise; higher means they are expected to fall. The same trick works for dividends with the trailing and forward dividend yields (D1/D0 = forward yield ÷ trailing yield). For sample question 9(b) use the two P/E ratios: that screen's dividend yields do not give the same figure.",
    "example": "Sample question 9(b): 18.798/17.943 − 1 = 4.77% expected growth this year. Own example: trailing 21.5, forward 19.3 → 21.5/19.3 − 1 = 11.40%.",
    "contrast": "Growth in EPS (from P/E ratios) versus growth in the price (not the same); trailing versus forward.",
    "trap": "Dividing forward by trailing (sign reversed); forgetting the −1; using the day's price change as growth; subtracting the P/Es.",
@@ -1830,7 +1830,7 @@
      "label": "Product of (1 + R)",
      "value": 1.27825,
      "check": "1.12*0.93*1.18*1.04",
-     "unit": "%",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -1876,7 +1876,7 @@
      "label": "Took the root but forgot the −1",
      "value": 106.33,
      "check": "(1.12*0.93*1.18*1.04)^(1/4)*100",
-     "explain": "The root gives the yearly growth factor 1.0627; subtract 1 for the rate."
+     "explain": "The root gives the yearly growth factor 1.0633; subtract 1 for the rate."
     }
    ],
    "explanation": "R_G = [Π(1 + R)]^(1/N) − 1. Convert percentages to decimals before multiplying.",
@@ -2132,9 +2132,9 @@
    "stem": "An investor's $10,000 grew to $13,310 over three years. She computes (13,310/10,000)^(1/3) − 1 = 10%. This 10% is the:",
    "options": [
     "geometric (compound) average return per year",
-    "dividend yield",
+    "dividend yield earned over the three years",
     "holding period return for the last year",
-    "arithmetic average return"
+    "arithmetic average return per year"
    ],
    "answer": 0,
    "explanation": "Solving FV = PV(1 + R_G)^N for R_G gives R_G = (FV/PV)^(1/N) − 1. It is the constant yearly return that reproduces the actual growth.",
@@ -2242,7 +2242,7 @@
      "label": "Growth factor FV/PV",
      "value": 1.29375,
      "check": "10350/8000",
-     "unit": "%",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -2277,7 +2277,7 @@
     {
      "id": "geo-no-root",
      "label": "Skipped the root",
-     "value": 29.37,
+     "value": 29.38,
      "check": "(10350/8000-1)*100",
      "explain": "29.38% is the four-year total return."
     },
@@ -2312,7 +2312,7 @@
      "label": "Three-year growth factor",
      "value": 1.13186,
      "check": "1.18*0.88*1.09",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -2334,8 +2334,8 @@
     "PV = 26,000 ÷ 1.13186 = $22,971.12"
    ],
    "keystrokes": [
-    "1.18 × 0.88 × 1.09 = 1.13190",
-    "26000 ÷ 1.1319 ="
+    "1.18 × 0.88 × 1.09 = 1.131856",
+    "26000 ÷ 1.131856 = 22,971.12"
    ],
    "errors": [
     {
@@ -2376,7 +2376,7 @@
      "label": "Four-year wealth factor",
      "value": 1.134,
      "check": "1.40*0.75*1.20*0.90",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -2804,17 +2804,17 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "Which pair of ratios is typical for a healthy, profitable listed firm?",
+   "stem": "The sample exam's quote screen lists 'Price/Book 1.722' for XYZ Limited. Which comparison does this figure make?",
    "options": [
-    "P/E around 17 and P/B around 2",
-    "P/E around 0.5 and P/B around 25",
-    "P/E around 150 and P/B around 0.05",
-    "P/E around −8 and P/B around 12"
+    "Market value of equity is about 1.7 times the book value of equity on the balance sheet",
+    "Book value of equity is about 1.7 times the market value of the shares outstanding",
+    "The share price is about 1.7 times the earnings per share of the last twelve months",
+    "Liquidation value is about 1.7 times the book value of the firm's total assets"
    ],
    "answer": 0,
-   "explanation": "The review guide asks for 'typical' P/E and P/B values: mature profitable firms typically trade at P/Es in the teens or 20s and at P/Bs of roughly 1 to 3 (the sample quote has 18.8 and 1.72). The other pairs are extremes.",
+   "explanation": "Price/Book (market-to-book, L04 s14) divides the market value of equity (price × shares) by the book value of equity, so investors value XYZ's equity at about 1.7 times its accounting value. Book over market is the inverted ratio, price over EPS is the P/E (18.798 on the same screen), and liquidation value never appears on a quote screen.",
    "source": "generated",
-   "ref": "REV p3; PRAC q9"
+   "ref": "L04 s14; PRAC q9; REV p3"
   },
   {
    "id": "q08-059",
@@ -2837,7 +2837,7 @@
      "check": "6397100/60.34",
      "unit": "shares",
      "tolerance": {
-      "abs": 1
+      "abs": 20
      }
     }
    ],
@@ -2865,7 +2865,7 @@
      "explain": "The screen prints market cap in dollars; scaling it to thousands overstates the shares a thousand-fold."
     }
    ],
-   "explanation": "Shares outstanding = market cap ÷ price per share (about 106,000). Use the last price, not the bid or ask.",
+   "explanation": "Shares outstanding = market cap ÷ last price = 6,397,100 ÷ 60.34 = 106,017.6 ≈ 106,018 shares. Dividing by the ask ($60.35) gives exactly 106,000, which suggests the screen's market cap was built on that price, so 106,000 is also accepted; the method to show is market cap ÷ last price. Dividing by the bid (106,070) is the classic quote-screen slip.",
    "source": "official",
    "ref": "PRAC q9a"
   },
@@ -2890,7 +2890,7 @@
      "label": "Trailing EPS0 = price ÷ trailing P/E",
      "value": 3.2099,
      "check": "60.34/18.798",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -2899,7 +2899,7 @@
      "label": "Forward EPS1 = price ÷ forward P/E",
      "value": 3.3629,
      "check": "60.34/17.943",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -2946,7 +2946,7 @@
      "explain": "The day's price move says nothing about expected earnings growth."
     }
    ],
-   "explanation": "Same price, different earnings: price/EPS0 = 18.798 and price/EPS1 = 17.943, so EPS1/EPS0 = 18.798/17.943.",
+   "explanation": "Same price, different earnings: price/EPS0 = 18.798 and price/EPS1 = 17.943, so EPS1/EPS0 = 18.798/17.943. Work from the two P/E ratios: on this screen the dividend yields (2.768% trailing, 2.642% forward) do not reproduce the expected earnings growth.",
    "source": "official",
    "ref": "PRAC q9b; L04 s30"
   },
@@ -3044,7 +3044,7 @@
      "label": "Trailing dividend D0 = yield × price",
      "value": 0.96,
      "check": "0.032*30.0",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -3053,7 +3053,7 @@
      "label": "Forward dividend D1 = yield × price",
      "value": 1.02,
      "check": "0.034*30.0",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -3123,7 +3123,7 @@
      "label": "EPS1/EPS0 = trailing P/E ÷ forward P/E",
      "value": 1.11399,
      "check": "21.5/19.3",
-     "unit": "%",
+     "unit": "x",
      "tolerance": {
       "abs": 0.005
      }
@@ -3219,15 +3219,15 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "A screen shows a last price of $48.30, a trailing P/E of 21.0 and a consensus forward P/E of 18.5. What are the analysts' forecast earnings per share for the coming year?",
+   "stem": "A screen shows a last price of $52.70, a trailing P/E of 23.5 and a consensus forward P/E of 19.8. What are the analysts' forecast earnings per share for the coming year?",
    "options": [
-    "$2.30",
-    "$2.44",
-    "$2.61",
-    "$893.55"
+    "$2.24",
+    "$0.38",
+    "$2.66",
+    "$1,043.46"
    ],
    "answer": 2,
-   "explanation": "Forward EPS = price ÷ forward P/E = 48.30 ÷ 18.5 = $2.61. Dividing by the trailing P/E gives last year's EPS ($2.30), which is the trailing-forward mix-up, and multiplying by the P/E gives $893.55.",
+   "explanation": "Forward EPS = price ÷ forward P/E = 52.70 ÷ 19.8 = $2.66. Dividing by the trailing P/E gives last year's EPS ($2.24), which is the trailing-forward mix-up; inverting the ratio gives $0.38; multiplying by the P/E gives $1,043.46.",
    "source": "generated",
    "ref": "PRAC q9; L04 s14"
   },
@@ -3618,7 +3618,7 @@
     "secondary market transaction"
    ],
    "answer": 3,
-   "explanation": "Existing shares trading between investors are secondary-market trades; the company receives no money. IPOs and seasoned equity offerings are primary-market sales.",
+   "explanation": "Existing shares trading between investors are secondary-market trades; the company receives no money. Initial public offerings and later share issues are primary-market sales.",
    "source": "generated",
    "ref": "L04 s4"
   },
@@ -3798,7 +3798,7 @@
    "type": "mc",
    "angle": "apply",
    "difficulty": 2,
-   "stem": "Bid $24.10, ask $24.18, last trade $24.14. You place a market order to sell 500 shares. What price per share do you receive?",
+   "stem": "Bid $24.10, ask $24.18, last trade $24.14, day range $24.02 to $24.22. You place a market order to sell 500 shares. What price per share do you receive?",
    "options": [
     "$24.12, the midpoint of the day's range",
     "$24.18, the ask",
@@ -3879,10 +3879,10 @@
     "6.13%",
     "5.78%",
     "16.32%",
-    "3.06%"
+    "6.53%"
    ],
    "answer": 0,
-   "explanation": "R = D/P0 = 3.80/62.00 = 6.13%. Inverting gives 16.32 (that is price over dividend, not a rate), and adding the dividend to the price in the denominator gives 5.78%.",
+   "explanation": "R = D/P0 = 3.80/62.00 = 6.13%. Inverting gives 16.32 (that is price over dividend, not a rate), adding the dividend to the price in the denominator gives 5.78%, and subtracting it gives 6.53%.",
    "source": "generated",
    "ref": "SM 8-8"
   },
@@ -3938,7 +3938,7 @@
      "explain": "The perpetuity value is at year 5, one year before the first dividend."
     },
     {
-     "id": "omitted-dividend",
+     "id": "not-discounted",
      "label": "Did not discount the perpetuity value",
      "value": 45.45,
      "check": "2.50/0.055",
@@ -4342,7 +4342,7 @@
     "P3 = 16 × 3.7976 = $60.76"
    ],
    "keystrokes": [
-    "1.07 y^x 3 × 3.10 = 3.7977",
+    "1.07 y^x 3 × 3.10 = 3.7976",
     "× 16 = 60.76"
    ],
    "errors": [
@@ -4362,7 +4362,7 @@
     },
     {
      "id": "grew-twice",
-     "label": "Grew by 7% three times per year",
+     "label": "Grew EPS four years instead of three",
      "value": 65.02,
      "check": "16*3.10*1.07^4",
      "explain": "Count the years: t = 3, not 4."
@@ -4454,7 +4454,7 @@
      "label": "Average of the four yearly P/E ratios",
      "value": 18.0522,
      "check": "(36.40/2.00+41.30/2.20+45.15/2.45+43.70/2.60)/4",
-     "unit": "$",
+     "unit": "x",
      "tolerance": {
       "abs": 0.005
      }
@@ -4529,7 +4529,7 @@
      "label": "Price today = 18 × EPS0",
      "value": 57.6,
      "check": "18*3.20",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -4538,7 +4538,7 @@
      "label": "Target price in one year = 18 × EPS1",
      "value": 61.344,
      "check": "18*3.20*1.065",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -4768,7 +4768,7 @@
     "Because EBITDA is always larger than net income, so the ratio is more stable."
    ],
    "answer": 2,
-   "explanation": "Interest changes net income and the equity value but not EBITDA or EV, so EV/EBITDA is capital-structure neutral.",
+   "explanation": "Interest changes net income and the equity value but not EBITDA or EV, so EV/EBITDA is not distorted by how the firm is financed.",
    "source": "generated",
    "ref": "L04 s18"
   },
@@ -4871,7 +4871,7 @@
      "label": "Enterprise value ($ million)",
      "value": 527.0,
      "check": "412+150-35",
-     "unit": "x",
+     "unit": "$",
      "tolerance": {
       "abs": 0.05
      }
@@ -5301,10 +5301,10 @@
    "difficulty": 2,
    "stem": "You value a fast-growing biotech firm using the average P/E of mature utilities. What is the likely problem?",
    "options": [
-    "There is no problem; P/E ratios are universal.",
+    "There is no problem, because P/E ratios are the same in every industry.",
     "The utilities' multiple overstates growth, so the biotech is overvalued.",
     "The utilities' multiple reflects low growth, so it would probably undervalue the biotech.",
-    "Utilities never have earnings."
+    "Utilities have no earnings, so their P/E ratios cannot be calculated."
    ],
    "answer": 2,
    "explanation": "Comparables only work when growth, ROE and risk are similar. A high-growth firm deserves a higher multiple than a mature one.",
@@ -5340,9 +5340,9 @@
    "stem": "How does comparables valuation differ from DCF valuation?",
    "options": [
     "Comparables use only dividends, while DCF uses only earnings per share.",
-    "Comparables value a stock relative to similar firms' prices; DCF discounts the firm's own forecast cash flows.",
+    "Comparables price a stock off similar firms' multiples; DCF discounts its own forecast cash flows.",
     "Comparables discount forecast cash flows at R; DCF applies multiples to earnings.",
-    "They are two names for the same method; only the labels differ."
+    "They are two names for the same method, so only the labels differ between them."
    ],
    "answer": 1,
    "explanation": "Relative valuation (multiples) versus intrinsic valuation (DDM, FCF, FCFE).",
@@ -5475,7 +5475,7 @@
     {
      "id": "inverted-ratio",
      "label": "Divided price by dividend",
-     "value": 13.12,
+     "value": 13.13,
      "check": "31.50/2.40",
      "explain": "13.13 is the price-to-dividend multiple, not a rate."
     },
@@ -5604,7 +5604,7 @@
      "explain": "The first payment is in year 4, so the perpetuity value sits at year 3."
     },
     {
-     "id": "omitted-dividend",
+     "id": "not-discounted",
      "label": "Did not discount",
      "value": 25.0,
      "check": "2.00/0.08",
@@ -5646,10 +5646,10 @@
     "6.54%",
     "14.29%",
     "7.00%",
-    "3.50%"
+    "7.53%"
    ],
    "answer": 2,
-   "explanation": "R = D/P0 = 4.48/64.00 = 7.00%. 6.54% divides by price plus dividend, 14.29% is the price-to-dividend ratio (not a rate), and 3.50% halves the answer for no reason.",
+   "explanation": "R = D/P0 = 4.48/64.00 = 7.00%. 6.54% divides by price plus dividend, 7.53% divides by price minus dividend, and 14.29% is the price-to-dividend ratio (not a rate).",
    "source": "generated",
    "ref": "TB 8.1"
   },
@@ -6061,7 +6061,7 @@
      "explain": "The price at year 4 uses the dividend one period later, D5."
     },
     {
-     "id": "omitted-dividend",
+     "id": "no-price-growth",
      "label": "Gave today's price",
      "value": 33.0,
      "check": "2.20*1.05/(0.12-0.05)",
@@ -6562,7 +6562,7 @@
      "label": "Next dividend D1 = D0(1 + g)",
      "value": 1.848,
      "check": "1.76*1.05",
-     "unit": "%",
+     "unit": "$",
      "tolerance": {
       "abs": 0.005
      }
@@ -6687,7 +6687,7 @@
      "label": "Dividend yield = capital gains yield = R/2",
      "value": 6.0,
      "check": "12/2",
-     "unit": "$",
+     "unit": "%",
      "tolerance": {
       "abs": 0.005
      }
@@ -6791,7 +6791,7 @@
      "explain": "The yield is R − g."
     },
     {
-     "id": "d0-for-d1",
+     "id": "omitted-growth",
      "label": "Divided by R alone",
      "value": 27.69,
      "check": "2.99/0.108",
@@ -6817,7 +6817,7 @@
     "−0.50%"
    ],
    "answer": 0,
-   "explanation": "R = D1/P0 + g = 6.00% + 5.50% = 11.50%. 6.00% omits g, 11.83% grows D1 again, and 0.50% subtracts the yield from g.",
+   "explanation": "R = D1/P0 + g = 6.00% + 5.50% = 11.50%. 6.00% omits g, 11.83% grows D1 again, and −0.50% subtracts the yield from g.",
    "source": "generated",
    "ref": "SM 8-2"
   },
@@ -7011,7 +7011,7 @@
      "label": "Ratio (1 + g)/(1 + R)",
      "value": 0.94545,
      "check": "1.04/1.10",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -7020,7 +7020,7 @@
      "label": "Bracket 1 − ratio^8",
      "value": 0.36155,
      "check": "1-(1.04/1.10)^8",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -7043,8 +7043,8 @@
    ],
    "keystrokes": [
     "1.04 ÷ 1.10 = 0.94545",
-    "y^x 8 = 0.63841",
-    "1 − 0.63841 = 0.36159",
+    "y^x 8 = 0.63845",
+    "1 − 0.63845 = 0.36155",
     "× 30 = 10.85"
    ],
    "errors": [
@@ -7102,7 +7102,7 @@
      "label": "Bracket 1 − ratio^6",
      "value": -0.30566,
      "check": "1-(1.15/1.10)^6",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -7125,8 +7125,8 @@
    ],
    "keystrokes": [
     "1.15 ÷ 1.10 = 1.04545",
-    "y^x 6 = 1.30570",
-    "1 − 1.30570 = −0.30570",
+    "y^x 6 = 1.30566",
+    "1 − 1.30566 = −0.30566",
     "× (2 ÷ (0.10 − 0.15)) = 12.23"
    ],
    "errors": [
@@ -7156,7 +7156,7 @@
    "type": "numeric",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "A project will pay three dividends: $2.00 next year, growing 10% per annum, for years 1 to 3 only. Required return 12% per annum. Use the growing annuity formula to find the present value. Answer in $.",
+   "stem": "A firm being wound down will pay three dividends: $2.00 next year, growing 10% per annum, for years 1 to 3 only. Required return 12% per annum. Use the growing annuity formula to find the present value. Answer in $.",
    "answer": 5.26,
    "unit": "$",
    "tolerance": {
@@ -7177,7 +7177,7 @@
      "label": "Bracket 1 − ratio^3",
      "value": 0.05262,
      "check": "1-(1.10/1.12)^3",
-     "unit": "$",
+     "unit": "",
      "tolerance": {
       "abs": 0.005
      }
@@ -7201,8 +7201,8 @@
    ],
    "keystrokes": [
     "1.10 ÷ 1.12 = 0.982143",
-    "y^x 3 = 0.947428",
-    "1 − 0.947428 = 0.052572",
+    "y^x 3 = 0.947380",
+    "1 − 0.947380 = 0.052620",
     "× 100 = 5.26"
    ],
    "errors": [
@@ -7259,7 +7259,7 @@
     "−$12.49"
    ],
    "answer": 1,
-   "explanation": "With g > R, D1/(R − g) = −30.00 and the bracket is 1 − 1.4163 = −0.4163, so PV = $12.49. Dropping the sign of D1/(R − g) gives −$12.49, and N = 3 gives $8.95.",
+   "explanation": "With g > R, D1/(R − g) = −30.00 and the bracket is 1 − 1.4163 = −0.4163, so PV = $12.49. Dropping the sign of D1/(R − g) gives −$12.49, stopping at D1/(R − g) gives −$30.00, and N = 3 gives $8.95.",
    "source": "generated",
    "ref": "SM 8-23"
   },
@@ -7918,11 +7918,11 @@
      "explain": "From year 2 the horizon is only one period away, so P3 is discounted ONE period, not two."
     },
     {
-     "id": "horizon-off-by-one",
-     "label": "Added D2 to the year-2 price",
-     "value": 29.47,
-     "check": "(1.25+1.70+1.70*1.035/(0.095-0.035))/1.095",
-     "explain": "D2 is paid at year 2; the ex-dividend price after payment excludes it, and D3 and P3 are discounted one period."
+     "id": "cum-dividend-price",
+     "label": "Added D2 to the year-2 price (cum-dividend)",
+     "value": 29.58,
+     "check": "1.25+(1.70+1.70*1.035/(0.095-0.035))/1.095",
+     "explain": "D2 is paid at year 2; the price just after payment excludes it, so only D3 and P3 (discounted one period) remain."
     }
    ],
    "explanation": "A price at any date is the PV, at that date, of everything still to come. At year 2 that is D3 plus P3 discounted a single period.",
@@ -8126,8 +8126,8 @@
    "stem": "Which of the following is NOT an input to the two-stage dividend formula?",
    "options": [
     "The number of years N of first-stage growth",
-    "The long-run growth rate g2",
-    "The market price P0, which is the output of the model",
+    "The long-run growth rate g2 after year N",
+    "The market price P0 (the model's output)",
     "The current dividend D0 (or D1)"
    ],
    "answer": 2,
@@ -8235,15 +8235,15 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Maple Ridge Foods just paid $1.80. Dividends will grow 9% per year for 6 years and 3% per year forever after that. R = 11% per annum. What is the price today?",
+   "stem": "Selkirk Seafoods just paid $2.10. Dividends will grow 10% per year for 5 years and 3.5% per year forever after that. R = 11.5% per annum. What is the price today?",
    "options": [
-    "$28.86",
-    "$29.65",
-    "$30.08",
-    "$30.92"
+    "$32.85",
+    "$34.36",
+    "$34.56",
+    "$35.47"
    ],
    "answer": 3,
-   "explanation": "Annuity term = D1/(R − g1)[1 − (1.09/1.11)^6] with D1 = 1.962: $10.1390. D7 = 1.80 × 1.09^6 × 1.03 = $3.1093; P6 = D7/(0.11 − 0.03) = $38.8668; PV = $20.7798. P0 = $30.92. Starting the annuity from D0 gives $30.08; running the annuity formula with g2 gives $29.65; discounting P6 seven years gives $28.86.",
+   "explanation": "Annuity term = D1/(R − g1)[1 − (1.10/1.115)^5] with D1 = 2.31: $10.0838. D6 = 2.10 × 1.10^5 × 1.035 = $3.5004; P5 = D6/(0.115 − 0.035) = $43.7555; PV = 43.7555/1.115^5 = $25.3898. P0 = $35.47. Starting the annuity from D0 gives $34.56; running the annuity formula with g2 gives $34.36; discounting P5 six years gives $32.85.",
    "source": "generated",
    "ref": "SM 8-24; TB 8.1"
   },
@@ -9290,7 +9290,7 @@
      "explain": "The Gordon denominator is R minus g."
     },
     {
-     "id": "omitted-dividend",
+     "id": "not-compounded",
      "label": "Skipped the compounding (D6 = P0 × (R − g))",
      "value": 1.1,
      "check": "18.40*(0.12-0.06)",
@@ -9898,7 +9898,7 @@
    ],
    "errors": [
     {
-     "id": "omitted-dividend",
+     "id": "no-price-growth",
      "label": "Stopped at today's price",
      "value": 32.48,
      "check": "1.00*1.072/(0.105-0.072)",
@@ -9974,7 +9974,7 @@
      "explain": "g = b × ROE with b = 0.45, so ROE = 0.08/0.45."
     },
     {
-     "id": "pct-decimal-mix",
+     "id": "arithmetic",
      "label": "Multiplied g by b",
      "value": 3.6,
      "check": "0.08*0.45*100",
@@ -10180,18 +10180,18 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Okanagan Orchards pays out 45% of earnings, earns ROE = 14% on start-of-year equity, and R = 11.5% per annum. Assuming constant payout and ROE, what is its forward P/E? (Answer as a multiple, 2 decimals.)",
-   "answer": 11.84,
+   "stem": "Okanagan Orchards pays out 35% of earnings, earns ROE = 12% on start-of-year equity, and R = 10.5% per annum. Assuming constant payout and ROE, what is its forward P/E? (Answer as a multiple, 2 decimals.)",
+   "answer": 12.96,
    "unit": "x",
    "tolerance": {
     "abs": 0.05
    },
-   "check": "(1-0.55)/(0.115-0.55*0.14)",
+   "check": "(1-0.65)/(0.105-0.65*0.12)",
    "steps": [
     {
      "label": "Plowback b = 1 − payout",
-     "value": 0.55,
-     "check": "1-0.45",
+     "value": 0.65,
+     "check": "1-0.35",
      "unit": "",
      "tolerance": {
       "abs": 0.01
@@ -10199,8 +10199,8 @@
     },
     {
      "label": "Growth g = b × ROE (in %)",
-     "value": 7.7,
-     "check": "0.55*0.14*100",
+     "value": 7.8,
+     "check": "0.65*0.12*100",
      "unit": "%",
      "tolerance": {
       "abs": 0.01
@@ -10208,8 +10208,8 @@
     },
     {
      "label": "Forward P/E = (1 − b)/(R − g)",
-     "value": 11.8421,
-     "check": "(1-0.55)/(0.115-0.55*0.14)",
+     "value": 12.963,
+     "check": "(1-0.65)/(0.105-0.65*0.12)",
      "unit": "x",
      "tolerance": {
       "abs": 0.01
@@ -10217,37 +10217,37 @@
     }
    ],
    "solution": [
-    "b = 1 − 0.45 = 0.55; g = 0.55 × 0.14 = 7.7%",
-    "P/E = (1 − b)/(R − g) = 0.45/(0.115 − 0.077) = 0.45/0.038 = 11.84"
+    "b = 1 − 0.35 = 0.65; g = 0.65 × 0.12 = 7.8%",
+    "P/E = (1 − b)/(R − g) = 0.35/(0.105 − 0.078) = 0.35/0.027 = 12.96"
    ],
    "keystrokes": [
-    "0.55 × 0.14 = 0.077",
-    "0.45 ÷ (0.115 − 0.077) = 11.84"
+    "0.65 × 0.12 = 0.078",
+    "0.35 ÷ (0.105 − 0.078) = 12.96"
    ],
    "errors": [
     {
      "id": "payout-as-plowback",
-     "label": "Treated 45% as b",
-     "value": 10.58,
-     "check": "0.55/(0.115-0.45*0.14)",
-     "explain": "Payout is 45%, so b = 55%: g = 7.7% and the numerator is the payout 0.45."
+     "label": "Treated 35% as b",
+     "value": 10.32,
+     "check": "0.65/(0.105-0.35*0.12)",
+     "explain": "Payout is 35%, so b = 65%: g = 7.8% and the numerator is the payout 0.35."
     },
     {
-     "id": "omitted-dividend",
+     "id": "forgot-payout",
      "label": "Dropped (1 − b)",
-     "value": 26.32,
-     "check": "1/(0.115-0.55*0.14)",
+     "value": 37.04,
+     "check": "1/(0.105-0.65*0.12)",
      "explain": "P/E = P0/EPS1 and P0 only capitalises the dividend share (1 − b) of EPS1."
     },
     {
      "id": "forgot-g",
      "label": "Ignored growth in the denominator",
-     "value": 3.91,
-     "check": "0.45/0.115",
+     "value": 3.33,
+     "check": "0.35/0.105",
      "explain": "R − g, not R, is the capitalisation rate."
     }
    ],
-   "explanation": "A 45% payout and 7.7% growth against R = 11.5% give a forward multiple near 12. Because the denominator is small, the multiple is very sensitive to g and R.",
+   "explanation": "A 35% payout and 7.8% growth against R = 10.5% give a forward multiple near 13. Because the denominator R − g is small, the multiple is very sensitive to g and R.",
    "source": "generated",
    "ref": "L04 s28-31"
   },
@@ -10400,7 +10400,7 @@
      "explain": "The numerator is the payout (1 − b) = 60%."
     },
     {
-     "id": "omitted-dividend",
+     "id": "forgot-payout",
      "label": "Used the earnings yield 1/PE",
      "value": 11.56,
      "check": "(0.055+1/16.5)*100",
@@ -10652,15 +10652,15 @@
    "type": "mc",
    "angle": "interpret",
    "difficulty": 2,
-   "stem": "A firm trades at $82.40 with EPS1 = $5.20 and R = 10%. What does it tell you that EPS1/R = $52.00?",
+   "stem": "A firm trades at $74.80 with EPS1 = $4.40 and R = 10%. What does it tell you that EPS1/R = $44.00?",
    "options": [
-    "The firm is overvalued by $52.00 relative to its earnings power",
-    "The firm's book equity is $52.00 per share on the balance sheet",
-    "The market expects the firm to pay a $52.00 dividend next year",
-    "About 37% of the price pays for growth opportunities; $52.00 is the no-growth value"
+    "The firm is overvalued by $44.00 relative to its earnings power",
+    "The firm's book equity is $44.00 per share on the balance sheet",
+    "The market expects the firm to pay a $44.00 dividend next year",
+    "About 41% of the price pays for growth opportunities; $44.00 is the no-growth value"
    ],
    "answer": 3,
-   "explanation": "No-growth value $52.00 plus NPVGO $30.40 = price $82.40. Growth opportunities are 30.40/82.40 = 36.9% of the price.",
+   "explanation": "No-growth value $44.00 plus NPVGO $30.80 = price $74.80. Growth opportunities are 30.80/74.80 = 41.2% of the price.",
    "source": "generated",
    "ref": "L04 s33-34"
   },
@@ -10779,7 +10779,7 @@
     "D1 = 3.80 × 1.02 = $3.876; P0 = 3.876/(0.09 − 0.02) = $55.37",
     "No-growth value = 5.10/0.09 = $56.67",
     "NPVGO = 55.3714 − 56.6667 = −$1.30 per share",
-    "Negative: either the shares are undervalued or growth destroys value (the firm retains a lot but grows only 2%)."
+    "Negative: either the shares are undervalued or growth destroys value (the firm retains about a quarter of EPS1 yet grows only 2%)."
    ],
    "keystrokes": [
     "3.876 ÷ 0.07 = 55.3714",
@@ -10901,7 +10901,7 @@
      "explain": "D7 is already the first constant-growth dividend."
     }
    ],
-   "explanation": "More than two thirds of the price is growth value, typical of a young firm. NPVGO is positive, so growth creates value (Harrison pattern).",
+   "explanation": "Almost two thirds of the price (65%) is growth value, typical of a young firm. NPVGO is positive, so growth creates value (Harrison pattern).",
    "source": "generated",
    "ref": "S4 s17-19; SM 8-14"
   },
@@ -11717,12 +11717,12 @@
    "type": "mc",
    "angle": "apply",
    "difficulty": 2,
-   "stem": "A firm's FCF has just been reported at $3.4 million and is expected to grow 3.5% per year forever. R = 9.5% per annum. Which expression gives EV?",
+   "stem": "A firm's FCF has just been reported at $5.2 million and is expected to grow 2.5% per year forever. R = 8.5% per annum. Which expression gives EV?",
    "options": [
-    "EV = 3.4/(0.095 − 0.035)",
-    "EV = 3.4 × 1.035/(0.095 − 0.035)",
-    "EV = 3.4/0.095",
-    "EV = 3.4 × 1.035/(0.095 + 0.035)"
+    "EV = 5.2/(0.085 − 0.025)",
+    "EV = 5.2 × 1.025/(0.085 − 0.025)",
+    "EV = 5.2/0.085",
+    "EV = 5.2 × 1.025/(0.085 + 0.025)"
    ],
    "answer": 1,
    "explanation": "Constant growing FCF is a growing perpetuity: EV = FCF1/(R − g) with FCF1 = FCF0(1 + g). Using FCF0 is the d0-for-d1 error; dividing by R alone ignores growth; adding g to R is a sign slip.",
@@ -12060,7 +12060,7 @@
      "explain": "Cash is added back: net debt = Debt − Cash."
     },
     {
-     "id": "net-debt-sign",
+     "id": "ev-as-equity",
      "label": "Divided EV by the share count",
      "value": 16.94,
      "check": "7.2/0.085/5",
@@ -13439,7 +13439,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "A buyer wants the value of a target's operations regardless of how the target is currently financed, because it will replace the capital structure after the takeover. Which approach fits best?",
+   "stem": "A buyer wants the value of a target's operations regardless of how the target is currently financed, because it will refinance the target with its own mix of debt and equity after the takeover. Which approach fits best?",
    "options": [
     "FCFE discounted at the cost of equity using current borrowing",
     "The DDM using the target's current dividend and growth rate",
@@ -13787,7 +13787,7 @@
     "Consistent with semi-strong efficiency, but not strong form: the private news was not in the $140 price"
    ],
    "answer": 3,
-   "explanation": "A single jump on announcement is the efficient response to public news. But before the announcement the price did not contain the private information (the existence of the system), so strong form does not hold. Prices SHOULD move when information arrives.",
+   "explanation": "A single jump on announcement is the efficient response to public news. But before the announcement the price did not contain the private information (the R&D success), so strong form does not hold. Prices SHOULD move when information arrives.",
    "source": "generated",
    "ref": "TB 12.6; L04 s50"
   },

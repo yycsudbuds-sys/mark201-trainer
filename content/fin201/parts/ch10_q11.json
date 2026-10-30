@@ -336,8 +336,8 @@
   "difficulty": 3,
   "stem": "For an asset sold at time N from an open pool, a student computes S_N x d x T / (k + d) x 1/(1 + k)^N. What does the result represent?",
   "options": [
-   "The present value of the CCA tax shield the firm gives up because the sale proceeds reduce the pool",
-   "The after-tax value of the proceeds",
+   "The PV of the CCA tax shield lost because the proceeds leave the pool",
+   "The after-tax value of the sale proceeds",
    "The present value of the tax paid on recapture at the sale",
    "The present value of the capital gains tax at the sale"
   ],
@@ -723,7 +723,7 @@
   "type": "multistep",
   "angle": "calc",
   "difficulty": 3,
-  "stem": "Use the Cascade Tooling machine from the previous question ($60,000 cost, CCA rate 30%, half-year rule, sold for $20,000 at the end of year 3, T = 30%, k = 10%). The PV of all tax effects if the class closes is $9,786.63. If instead the class stays open, the PV of the tax effects is the PV of CCA tax shield formula with the salvage term. How much larger is the closed-pool value?",
+  "stem": "Take Cascade Tooling's machine ($60,000 cost, CCA rate 30%, half-year rule, sold for $20,000 at the end of year 3, T = 30%, k = 10%). The PV of all tax effects if the class closes is $9,786.63. If instead the class stays open, the PV of the tax effects is the PV of CCA tax shield formula with the salvage term. How much larger is the closed-pool value?",
   "answer": 281.18,
   "unit": "$",
   "tolerance": {
@@ -870,7 +870,7 @@
   "difficulty": 2,
   "stem": "How do the cash flows of an expansion project differ from those of a replacement project?",
   "options": [
-   "An expansion uses the project's own flows; a replacement uses the differences between the new and the old equipment (net acquisition cost, net salvage, incremental savings)",
+   "An expansion uses its own flows; a replacement uses new-minus-old differences (net acquisition, net salvage, savings)",
    "An expansion is taxed at the full rate; a replacement is taxed at half the rate",
    "An expansion ignores CCA; a replacement includes CCA",
    "An expansion is discounted at the cost of capital; a replacement is discounted at the cost of the old machine"
@@ -913,9 +913,9 @@
   "stem": "Why does the NPV of an expansion add the PV of the CCA tax shield as a separate item rather than including CCA in the annual operating cash flow?",
   "options": [
    "CCA is a cash outflow that must be discounted at a higher rate",
-   "CCA is not a cash flow; its only value is the tax it saves, which the PV formula captures once for the whole declining-balance schedule",
+   "CCA is not cash; its only value is the tax it saves, which the PV formula values once",
    "CCA is already included in revenue, so it would be double counted",
-   "Because CCA is the only item taxed at the rate T rather than (1 - T)"
+   "CCA is the only item taxed at the rate T rather than (1 − T)"
   ],
   "answer": 1,
   "explanation": "The operating cash flow (S - C)(1 - T) deliberately leaves CCA out. The shield T x CCA is a separate stream of declining flows, valued by the formula I0 d T/(k + d) x first-year factor, less the salvage term. Counting CCA in both places would double count.",
@@ -934,7 +934,7 @@
    "The project earns exactly 12% and the firm should be indifferent",
    "The project loses $31,400 of accounting profit in year 1",
    "The project should be accepted because its cash flows are positive after year 0",
-   "The project earns less than 12% and destroys value; reject it unless there are strategic benefits not in the cash flows"
+   "The project earns less than 12% and destroys $31,400 of value, so reject it"
   ],
   "answer": 3,
   "explanation": "NPV is the value added in today's dollars, after paying investors their required return. A negative NPV means the PV of inflows is less than the PV of outflows, so the IRR is below 12%.",
@@ -951,7 +951,7 @@
   "stem": "Which items make up the time-0 cash flow of an expansion NPV?",
   "options": [
    "Capital expenditure, sunk feasibility costs, and interest on the financing",
-   "Capital expenditure, initial net working capital, and the opportunity cost of any assets the project uses",
+   "Capital expenditure, initial NWC, and the opportunity cost of assets the project uses",
    "Capital expenditure and the first year's CCA tax shield",
    "Capital expenditure and the expected salvage value"
   ],

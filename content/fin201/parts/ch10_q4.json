@@ -893,7 +893,7 @@
   "stem": "Which statement about the CCA tax shield is NOT correct?",
   "options": [
    "It rises when the tax rate rises",
-   "It falls from year to year under declining balance",
+   "From year 2 on, it falls each year as UCC declines",
    "It is realized only if the firm has enough taxable income",
    "It is a cash outflow because depreciation is a cost"
   ],
@@ -911,10 +911,10 @@
   "difficulty": 3,
   "stem": "A project's CCA deduction can only be used against taxable income. If the firm has no other taxable income and cannot carry losses forward, what happens to the CCA tax shield?",
   "options": [
-   "It cannot be used, so the saving is lost or deferred",
+   "It cannot be used, so the saving is lost",
    "It is still received in full as a refund",
-   "It is received at (1 − T)",
-   "It is added to UCC"
+   "It is received at (1 − T) instead of T",
+   "It is added back to the asset's UCC"
   ],
   "answer": 0,
   "explanation": "The textbook shield assumes the firm has enough other income (the professor says 'assuming you have enough other income'). Without it there is nothing to shield.",
@@ -985,13 +985,13 @@
   "difficulty": 2,
   "stem": "If the tax rate rises from 30% to 40% with CCA unchanged, the DTS:",
   "options": [
-   "rises by 10 percentage points of CCA",
-   "is unchanged",
-   "falls",
+   "rises by 10% (× 1.10)",
+   "is unchanged, since CCA is unchanged",
+   "falls, because more tax is paid",
    "rises by one-third (× 40/30)"
   ],
   "answer": 3,
-  "explanation": "DTS = CCA × T, so it is proportional to T: 0.40/0.30 = 1.333, a one-third increase.",
+  "explanation": "DTS = CCA × T, so it is proportional to T: 0.40/0.30 = 1.333, a one-third increase. A 10-point rise in T is not a 10% rise in the shield.",
   "source": "generated",
   "ref": "L05B s14"
  },

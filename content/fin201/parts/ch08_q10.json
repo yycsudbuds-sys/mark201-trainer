@@ -580,11 +580,11 @@
     "explain": "From year 2 the horizon is only one period away, so P3 is discounted ONE period, not two."
    },
    {
-    "id": "horizon-off-by-one",
-    "label": "Added D2 to the year-2 price",
-    "value": 29.47,
-    "check": "(1.25+1.70+1.70*1.035/(0.095-0.035))/1.095",
-    "explain": "D2 is paid at year 2; the ex-dividend price after payment excludes it, and D3 and P3 are discounted one period."
+    "id": "cum-dividend-price",
+    "label": "Added D2 to the year-2 price (cum-dividend)",
+    "value": 29.58,
+    "check": "1.25+(1.70+1.70*1.035/(0.095-0.035))/1.095",
+    "explain": "D2 is paid at year 2; the price just after payment excludes it, so only D3 and P3 (discounted one period) remain."
    }
   ],
   "explanation": "A price at any date is the PV, at that date, of everything still to come. At year 2 that is D3 plus P3 discounted a single period.",
@@ -788,8 +788,8 @@
   "stem": "Which of the following is NOT an input to the two-stage dividend formula?",
   "options": [
    "The number of years N of first-stage growth",
-   "The long-run growth rate g2",
-   "The market price P0, which is the output of the model",
+   "The long-run growth rate g2 after year N",
+   "The market price P0 (the model's output)",
    "The current dividend D0 (or D1)"
   ],
   "answer": 2,
@@ -897,15 +897,15 @@
   "type": "mc",
   "angle": "calc",
   "difficulty": 2,
-  "stem": "Maple Ridge Foods just paid $1.80. Dividends will grow 9% per year for 6 years and 3% per year forever after that. R = 11% per annum. What is the price today?",
+  "stem": "Selkirk Seafoods just paid $2.10. Dividends will grow 10% per year for 5 years and 3.5% per year forever after that. R = 11.5% per annum. What is the price today?",
   "options": [
-   "$28.86",
-   "$29.65",
-   "$30.08",
-   "$30.92"
+   "$32.85",
+   "$34.36",
+   "$34.56",
+   "$35.47"
   ],
   "answer": 3,
-  "explanation": "Annuity term = D1/(R − g1)[1 − (1.09/1.11)^6] with D1 = 1.962: $10.1390. D7 = 1.80 × 1.09^6 × 1.03 = $3.1093; P6 = D7/(0.11 − 0.03) = $38.8668; PV = $20.7798. P0 = $30.92. Starting the annuity from D0 gives $30.08; running the annuity formula with g2 gives $29.65; discounting P6 seven years gives $28.86.",
+  "explanation": "Annuity term = D1/(R − g1)[1 − (1.10/1.115)^5] with D1 = 2.31: $10.0838. D6 = 2.10 × 1.10^5 × 1.035 = $3.5004; P5 = D6/(0.115 − 0.035) = $43.7555; PV = 43.7555/1.115^5 = $25.3898. P0 = $35.47. Starting the annuity from D0 gives $34.56; running the annuity formula with g2 gives $34.36; discounting P5 six years gives $32.85.",
   "source": "generated",
   "ref": "SM 8-24; TB 8.1"
  },

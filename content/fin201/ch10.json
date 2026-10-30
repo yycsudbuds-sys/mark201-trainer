@@ -49,7 +49,7 @@
    "id": "t10-5",
    "order": 5,
    "title": "Disposal of assets",
-   "summary": "When a depreciated asset is sold, the proceeds are compared with UCC and the original cost (ACB). The excess up to ACB is recaptured CCA taxed at the full rate, any amount above ACB is a capital gain taxed on half, and a shortfall below UCC is a terminal loss that saves tax.",
+   "summary": "When a depreciated asset is sold and its class closes, the proceeds are compared with UCC and the original cost (ACB). The excess up to ACB is recaptured CCA taxed at the full rate, any amount above ACB is a capital gain taxed on half, and a shortfall below UCC is a terminal loss that saves tax. If other assets remain in the class, the sale is not taxed at once.",
    "concepts": [
     "c10-recapture-terminal-loss",
     "c10-capital-gain-cfat",
@@ -355,7 +355,7 @@
    "topic": "t10-4",
    "term": "CCA tax shield (DTS)",
    "definition": "The depreciation tax shield in year t is DTS_t = CCA_t × T_C, the tax saved because CCA is deductible. It is called a shield because it shields income from tax, reducing the tax bill, provided the firm has enough other taxable income.",
-   "explain": "CCA is not paid in cash, so its only cash effect is the tax it saves: T cents per dollar of CCA. Because CCA declines with UCC, the DTS shrinks every year. The size of the shield rises with the tax rate and with how quickly CCA is claimed.",
+   "explain": "CCA is not paid in cash, so its only cash effect is the tax it saves: T cents per dollar of CCA. Because CCA declines with UCC, the DTS shrinks every year after the first-year adjustment (under the half-year rule year 2 is the largest). The size of the shield rises with the tax rate and with how quickly CCA is claimed.",
    "example": "I0 = $180,000, d = 20%, half-year rule, T = 40%. CCA_1 = 18,000; UCC_1 = 162,000; CCA_2 = 0.20 × 162,000 = 32,400; DTS_2 = 32,400 × 0.40 = $12,960.",
    "contrast": "DTS versus CCA: CCA is a deduction measured in dollars of income, the DTS is the cash tax it saves (CCA × T). A cash expense is multiplied by (1 − T) because cash is paid; CCA by T because nothing is paid.",
    "trap": "Forgetting to multiply CCA by T; using (1 − T); reusing year-1 CCA in later years; assuming a shield exists even though the firm has no other taxable income.",
@@ -372,11 +372,11 @@
    "id": "c10-pvcca",
    "topic": "t10-4",
    "term": "PV of the CCA tax shield (PVCCA)",
-   "definition": "PV_CCA = (I0 d T_C)/(k + d) × {1, (1 + 0.5k)/(1 + k), (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d) × 1/(1 + k)^N. The first factor is chosen by the regime (100%, half-year, AII); the last term is used only if the asset is sold in year N for S_N.",
-   "explain": "The shield CCA × T_C shrinks at rate d each year, so it is a growing perpetuity with g = −d: PV = first shield/(k − g) = CCA_1 T_C/(k + d). The half-year and AII factors adjust for the first year's different claim. If the asset is sold in year N, CCA on it stops, so subtract the PV of the tail lost: S_N d T_C/(k + d) discounted N years. This is the PV of CCA only; the disposal tax is separate.",
+   "definition": "PV_CCA = (I0 d T_C)/(k + d) × {1, (1 + 0.5k)/(1 + k), (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d) × 1/(1 + k)^N. The first factor is chosen by the regime (100%, half-year, AII); the last term is subtracted whenever the asset is sold in year N for S_N, whether or not its class stays open, and is dropped only when the asset is not sold (or S_N = 0).",
+   "explain": "The shield CCA × T_C shrinks at rate d each year, so it is a growing perpetuity with g = −d: PV = first shield/(k − g) = CCA_1 T_C/(k + d). The half-year and AII factors adjust for the first year's different claim. If the asset is sold in year N, CCA on it stops, so subtract the PV of the tail lost: S_N d T_C/(k + d) discounted N years. This is just the PV of the CCA expected: the proceeds S_N are a separate cash flow (received untaxed when the class stays open), and any capital gain above ACB is taxed separately.",
    "example": "Seminar 5: I0 = $110,000 (equipment plus installation), d = 20%, T = 40%, k = 10%, AII, sold in 6 years for $17,000. PVCCA = 30,666.67 − 2,558.95 = $28,107.72.",
-   "contrast": "k + d versus k − d: the shield declines, so it is d added to k. S_N versus UCC_N in the last term: use the sale price S_N. Sold versus kept: omit the last term when the asset is not sold and the pool stays open.",
-   "trap": "Using k − d; wrong first-year factor; salvage term not discounted; UCC instead of S_N; dropping the term when the asset is sold or keeping it when the pool stays open. Also never discount PVCCA again: it is already a present value.",
+   "contrast": "k + d versus k − d: the shield declines, so it is d added to k. S_N versus UCC_N in the last term: use the sale price S_N. Sold versus kept: subtract the last term whenever the asset is sold, even if other assets remain in the class; omit it only when the asset is never sold (or has no salvage value).",
+   "trap": "Using k − d; wrong first-year factor; salvage term not discounted; UCC instead of S_N; dropping the term because 'the pool stays open' (the sale still takes S_N out of the pool) or keeping it when the asset is never sold. Also never discount PVCCA again: it is already a present value.",
    "mnemonic": "Shield over (k plus d), minus the tail after the sale.",
    "formula": "PV_CCA = (I0 d T_C)/(k + d) × {1 | (1 + 0.5k)/(1 + k) | (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d)/(1 + k)^N",
    "given": true,
@@ -422,7 +422,7 @@
    "weight": 3,
    "figure": {
     "type": "table",
-    "title": "Disposal cases: POD versus UCC versus ACB (tax rate T)",
+    "title": "Disposal cases when the class closes: POD versus UCC versus ACB (tax rate T)",
     "head": [
      "Case",
      "Condition",
@@ -479,13 +479,13 @@
    "id": "c10-pool-open-closed",
    "topic": "t10-5",
    "term": "Pool stays open versus pool closes",
-   "definition": "If other assets remain in the CCA class (the pool stays open), selling an asset triggers no recapture or terminal loss: the proceeds simply reduce UCC and CCA continues on the smaller pool. If the sale leaves the class empty (the pool closes), the remaining UCC is compared with POD and the CF_AT formula applies immediately.",
-   "explain": "Tax law pools assets by class, so the sale of one asset only matters on its own when it is the last one. With an open pool the effect shows up through the lost future CCA on the sale price (the salvage term in PVCCA). With a closed pool the whole difference between UCC and POD is taxed or deducted now.",
-   "example": "A $20,000 machine in a class that still holds other assets is sold for $4,000: the firm receives $4,000 and UCC of the pool falls by $4,000. If it were the last asset in the class and UCC were $9,000, a terminal loss of $5,000 would save T × 5,000 in tax.",
-   "contrast": "Open pool (no immediate tax on the sale, shield continues on a smaller base) versus closed pool (immediate recapture or terminal loss, CCA stops).",
-   "trap": "Applying recapture or terminal loss to an asset whose class stays open; ignoring the terminal loss when the class closes; forgetting which case the question describes (look for 'no assets left in the class').",
+   "definition": "If other assets remain in the CCA class (the pool stays open), selling an asset generally triggers no recapture or terminal loss: the proceeds are received untaxed (apart from any capital gain above ACB), the pool's UCC falls by the proceeds (capped at cost) and CCA continues on the smaller pool. If the sale leaves the class empty (the pool closes), CCA stops and the gap between UCC and POD is settled at once with the CF_AT formula (recapture, terminal loss or capital gain).",
+   "explain": "Either way the sold asset's CCA stream ends, so the PVCCA formula subtracts the salvage term whenever the asset is sold for S_N (Seminar 6 tractor and Dickerson, SM 10-8 and 10-36); the term is dropped only when the asset is not sold. With an open pool, the formula plus the untaxed proceeds is exact. With a closed pool, the exact route runs the CCA schedule to the sale and applies CF_AT; its PV differs slightly from the formula value because the formula spreads the UCC − POD gap over future CCA instead of settling it at once. Settle the gap only once: never add a CF_AT recapture or terminal-loss tax on top of the formula's salvage term.",
+   "example": "A $20,000 machine is sold for $4,000 from a class that still holds other assets: the firm receives $4,000 untaxed, the pool's UCC falls by $4,000 and the PVCCA formula subtracts the shield on $4,000. If it were the last asset in the class with UCC $9,000, the $5,000 terminal loss would save tax at once: at T = 30%, CF_AT = 4,000 + 0.30 × 5,000 = $5,500.",
+   "contrast": "Open pool (proceeds untaxed, CCA continues on a smaller base, salvage term subtracted in PVCCA) versus closed pool (immediate recapture, terminal loss or capital gain via CF_AT; CCA stops). Sold versus not sold decides the salvage term; open versus closed decides whether the sale is taxed at once.",
+   "trap": "Dropping the salvage term because 'the pool stays open' (the sale still removes S_N from the pool); applying recapture or terminal loss to an asset whose class stays open; ignoring the terminal loss when the class closes; adding a CF_AT tax on top of the formula's salvage term (double counting). Look for 'last asset', 'no assets left in the class' or 'other assets remain'.",
    "mnemonic": "Last one out turns off the lights.",
-   "formula": "Open: CF = POD, UCC falls by POD. Closed: CF_AT formula",
+   "formula": "Open: CF = POD (untaxed), UCC falls by POD, PVCCA subtracts S_N d T/(k + d)/(1 + k)^N. Closed: CF_AT = POD − T[min(ACB, POD) − UCC] − 0.5T max(POD − ACB, 0)",
    "given": false,
    "archetypes": [
     "A15"
@@ -497,11 +497,11 @@
    "id": "c10-expansion-npv",
    "topic": "t10-6",
    "term": "Expansion project NPV",
-   "definition": "NPV of an expansion = CF0 + PV of after-tax operating flows + PV of NWC and salvage flows + PV_CCA, where CF0 = −(CAPEX + initial NWC + opportunity costs), operating flows are (S − C)(1 − T) including erosion, and PV_CCA is added (not discounted again).",
-   "explain": "Follow the order: (1) incremental cash flows (drop sunk costs, add land and erosion); (2) after-tax revenue less costs each year; (3) CAPEX and NWC at t = 0, changes in NWC after, recovery at the end; (4) salvage; (5) discount at k; (6) add PVCCA with the right first-year factor and the salvage term; (7) accept if NPV > 0.",
-   "example": "Seminar 6 tractor plant: CAPEX $170M, land $10M, NWC $3M then 5% of sales, sales $100M less $10M erosion, costs $45M, T = 35%, d = 10%, k = 12%, salvage $100M at year 10, AII. NPV = 14.29 + 28.49 − 5.12 = $37.66M, so take the project.",
+   "definition": "NPV of an expansion = CF0 + PV of after-tax operating flows + PV of NWC and salvage flows + PV_CCA, where CF0 = −(CAPEX + initial NWC + opportunity costs), operating flows are (S − C)(1 − T) including erosion, and PV_CCA is added (not discounted again). If the equipment is sold for S_N, add S_N at year N (received untaxed when the class stays open) and subtract the salvage term inside PV_CCA; drop the term only if it is not sold.",
+   "explain": "Follow the order: (1) incremental cash flows (drop sunk costs, add land and erosion); (2) after-tax revenue less costs each year; (3) CAPEX and NWC at t = 0, changes in NWC after, recovery at the end; (4) salvage proceeds if the equipment is sold; (5) discount at k; (6) add PVCCA with the right first-year factor and the salvage term; (7) accept if NPV > 0.",
+   "example": "Seminar 6 tractor plant: CAPEX $170M, land $10M, NWC $3M then 5% of sales, sales $100M less $10M erosion, costs $45M, T = 35%, d = 10%, k = 12%, sold for $100M at year 10 (received untaxed; salvage term subtracted), AII. NPV = 14.29 + 28.49 − 5.12 = $37.66M, so take the project.",
    "contrast": "Expansion versus replacement: an expansion adds a new asset and has no old asset to sell, so there is no net-acquisition adjustment. The PVCCA is added once, undiscounted again.",
-   "trap": "Counting the sunk feasibility study; forgetting the land opportunity cost; recovering NWC twice; discounting PVCCA again; using interest. Also check the erosion: the lost $10M of sales reduces after-tax income.",
+   "trap": "Counting the sunk feasibility study; forgetting the land opportunity cost; recovering NWC twice; discounting PVCCA again; using interest. Dropping the salvage term because 'the pool stays open'. Also check the erosion: the lost $10M of sales reduces after-tax income.",
    "mnemonic": "Flows, NWC, salvage, then shield.",
    "formula": "NPV = CF0 + PV(after-tax flows, NWC, salvage) + PV_CCA",
    "given": false,
@@ -515,7 +515,7 @@
    "id": "c10-replacement-npv",
    "topic": "t10-6",
    "term": "Replacement project NPV",
-   "definition": "A replacement NPV uses incremental flows: the net acquisition cost (new cost − old resale today) at t = 0, the incremental savings or sales after tax, the change in NWC, the net salvage (new − old) at the end, and PV_CCA computed on the net acquisition cost and net salvage.",
+   "definition": "A replacement NPV uses incremental flows: the net acquisition cost (new cost − old resale today) at t = 0, the incremental savings or sales after tax, the change in NWC, the net salvage (new − old) at the end, and PV_CCA computed on the net acquisition cost and net salvage. Both machines are in the same class, which stays open, so the old machine's sale has no immediate tax; the net salvage is received untaxed and its salvage term is subtracted in PV_CCA (a negative net salvage makes it an addition).",
    "explain": "Selling the old machine today means we do not get its future salvage, so the old machine's end-of-life value is an opportunity cost netted against the new machine's salvage. Everything is a difference between the 'replace' and 'keep' worlds.",
    "example": "Dickerson (Seminar 6): net acquisition $220,000, extra sales $85,000 to $70,000, NWC 10% of sales, T = 40%, k = 11%, d = 25%, AII, net salvage $8,000. NPV = −$2,075, so do not replace. Simple replacement: −85,000 + savings + net salvage −10,000 + PVCCA gives NPV = $47,867.15, so replace.",
    "contrast": "Replacement versus expansion: a replacement has an old asset whose resale and salvage change the numbers (net acquisition, net salvage). Replacement versus cost cutting: savings are the revenue-like benefit of the new machine.",
@@ -535,9 +535,9 @@
    "term": "Cost-cutting proposals and required savings",
    "definition": "A cost-cutting proposal has no sales: the benefit is the after-tax saving, (saving)(1 − T) per year. The required pre-tax saving sets NPV = 0: required after-tax annual saving = (outlay − PV_CCA − PV of other flows) / annuity factor, then pre-tax saving = that / (1 − T).",
    "explain": "Treat a cost saving like revenue: it is taxed, so only (1 − T) of it reaches the firm. To find the break-even saving, collect every known present value, back out the annuity that makes NPV zero, and then un-tax it.",
-   "example": "Equipment $500,000, d = 20%, T = 35%, k = 10%, 5 years, half-year rule, no salvage. PVCCA = $111,363.64; required after-tax saving = (500,000 − PVCCA)/3.790787 = $102,521.29; required pre-tax saving = 102,521.29/0.65 = $157,725.07.",
+   "example": "Equipment $500,000, d = 20%, T = 35%, k = 10%, 5 years, half-year rule, scrapped at the end with no salvage (so no salvage term). PVCCA = $111,363.64; required after-tax saving = (500,000 − PVCCA)/3.790787 = $102,521.29; required pre-tax saving = 102,521.29/0.65 = $157,725.07.",
    "contrast": "Cost cutting versus expansion: no revenue, so the whole benefit is the tax-adjusted saving. Required saving (NPV = 0 solve) versus NPV of a given saving.",
-   "trap": "Forgetting to divide by (1 − T); dividing by N instead of the annuity factor; forgetting the CCA shield or the salvage; multiplying the pre-tax saving by T.",
+   "trap": "Forgetting to divide by (1 − T); dividing by N instead of the annuity factor; forgetting the CCA shield, the salvage, or the salvage term when the machine is sold; multiplying the pre-tax saving by T.",
    "mnemonic": "Back out the annuity, then un-tax.",
    "formula": "Required pre-tax saving = [(outlay − PV_CCA − other PVs) / annuity factor] / (1 − T)",
    "given": false,
@@ -569,13 +569,13 @@
    "id": "c10-timing-of-sale",
    "topic": "t10-6",
    "term": "Timing of sale and the opportunity cost of the lost shield",
-   "definition": "To decide whether to sell an asset now or keep it, compute the NPV at the decision date of selling: the after-tax proceeds CF_AT minus the present value (at that date) of the CCA tax shields we would have kept, d × UCC × T/(k + d).",
+   "definition": "To decide whether to sell an asset now or keep it, compute the NPV at the decision date of selling. When the sale closes the class: the after-tax proceeds CF_AT minus the present value (at that date) of the CCA tax shields we would have kept, d × UCC × T/(k + d). When other assets remain, the proceeds are untaxed and the shield lost is the one on the amount sold, POD × d × T/(k + d).",
    "explain": "Selling stops the CCA tax shield, so the lost shield is an opportunity cost of the sale. Value the remaining shield as a growing perpetuity declining at d from the date of sale, subtract it from the after-tax cash we receive, and sell only if the result is positive.",
-   "example": "Lecture example: sell the $7,500 asset in year 5 for $3,000 (T = 38%, k = 10%, d = 30%). CF_AT = $2,397.65; the lost shield at year 5 has PV = 0.38 × 0.30 × 1,414.875/(0.10 + 0.30) = $403.24; NPV at t = 5 is $1,994.41, so selling is better.",
+   "example": "Lecture example: sell the $7,500 asset in year 5 for $3,000 (T = 38%, k = 10%, d = 30%). CF_AT = $2,397.65; the lost shield at year 5 has PV = 0.38 × 0.30 × 1,414.875/(0.10 + 0.30) = $403.24; NPV at t = 5 is $1,994.41, so selling is better. (The slide prints $403.27, a typo: 2,397.65 − 403.24 = 1,994.41, the slide's own NPV.)",
    "contrast": "Selling versus holding: the same asset, two worlds. Compare the after-tax cash received with the PV of the lost future tax shields (and any future salvage).",
-   "trap": "Ignoring the lost shield; using the original cost instead of UCC at the sale date; forgetting the disposal tax.",
+   "trap": "Ignoring the lost shield; using the original cost instead of UCC at the sale date (closed class) or UCC instead of POD (open pool); forgetting the disposal tax.",
    "mnemonic": "Sale cash minus lost shield.",
-   "formula": "NPV_N(sell) = CF_AT − d × UCC_N × T/(k + d)",
+   "formula": "Closed class: NPV_N(sell) = CF_AT − d × UCC_N × T/(k + d); open pool: NPV_N(sell) = POD − d × POD × T/(k + d)",
    "given": false,
    "archetypes": [
     "A18"
@@ -587,9 +587,9 @@
    "id": "c10-eac-taxes",
    "topic": "t10-7",
    "term": "Equivalent annual cost with taxes",
-   "definition": "EAC = (PV of costs, after tax, including PV_CCA and salvage) / annuity factor(k, N). With unequal lives and replacement, the project with the lower EAC (equivalently, the higher EAV) is preferred.",
+   "definition": "EAC = (PV of costs, after tax, including PV_CCA and salvage) / annuity factor(k, N). An asset sold at the end of its life adds its salvage as an inflow and its PVCCA subtracts the salvage term. With unequal lives and replacement, the project with the lower EAC (equivalently, the higher EAV) is preferred.",
    "explain": "Compute each option's total PV of costs: initial outlay, after-tax operating costs, salvage, and the PVCCA benefit. Divide by the annuity factor for its own life to get an annual cost. Pick the lowest annual cost.",
-   "example": "Seminar 6 cars: Civil PV of costs −$17,663.79 over 4 years gives EAC −$5,815; Chevalier −$15,547 over 3 years gives EAC −$6,473. Choose the Civil.",
+   "example": "Seminar 6 cars (each sold at the end of its life, so both PVCCAs subtract the salvage term): Civil PV of costs −$17,663.79 over 4 years gives EAC −$5,815; Chevalier −$15,547 over 3 years gives EAC −$6,473. Choose the Civil.",
    "contrast": "EAC versus raw NPV: comparing PVs with unequal lives is wrong. EAC versus CCR (NPV to infinity): same ranking, different scale.",
    "trap": "Comparing PVs of different lives; using the wrong annuity factor N; leaving the tax shield out; wrong sign (costs are negative).",
    "mnemonic": "Annualize before comparing.",
@@ -944,7 +944,7 @@
     "c10-pool-open-closed"
    ],
    "when": "Lump the whole stream of tax savings into one present value.",
-   "trap": "k + d not k − d; choose the first-year factor; S_N is the sale price and the term is discounted N years; omit it if nothing is sold."
+   "trap": "k + d not k − d; choose the first-year factor; S_N is the sale price and the term is discounted N years; subtract it whenever the asset is sold, even if the pool stays open; omit it only if nothing is sold."
   },
   {
    "id": "f10-pvcca-base",
@@ -1009,7 +1009,7 @@
   {
    "id": "f10-timing",
    "name": "Value at the sale date of the lost shield",
-   "formula": "NPV_N(sell) = CF_AT − d × UCC_N × T/(k + d)",
+   "formula": "Closed class: NPV_N(sell) = CF_AT − d × UCC_N × T/(k + d); open pool: POD − d × POD × T/(k + d)",
    "given": false,
    "concepts": [
     "c10-timing-of-sale"
@@ -2286,7 +2286,7 @@
    "difficulty": 2,
    "stem": "A $20,000 delivery truck bought for a project falls into which category of cash flow?",
    "options": [
-    "Counted in full (× 1): capital expenditure",
+    "× 1: capital expenditure",
     "× (1 − T): an expense",
     "× T: a tax shield",
     "× 0: a sunk cost"
@@ -2847,7 +2847,7 @@
     "(S − C − D)(1 − T)"
    ],
    "answer": 0,
-   "explanation": "After-tax operating profit is (S − C)(1 − T), and CCA adds a tax shield of T × D. The last option is net income, which omits the add-back of D.",
+   "explanation": "After-tax operating profit is (S − C)(1 − T), and CCA adds a tax shield of T × D. (S − C − D)(1 − T) is net income, which omits the add-back of D; (1 − T) × D or − T × D misstates the shield.",
    "source": "generated",
    "ref": "S5 s15; SM 10-5"
   },
@@ -2918,9 +2918,9 @@
    "stem": "Which of the following does NOT enter a project's operating cash flow?",
    "options": [
     "Interest paid on the project's financing",
-    "Sales revenue",
-    "Cash operating expenses",
-    "Income tax on EBIT"
+    "Sales revenue from the project's output",
+    "Cash operating expenses of running it",
+    "Income tax on the project's EBIT"
    ],
    "answer": 0,
    "explanation": "Interest is a financing cost and never appears in project cash flows. Revenue, cash expenses and the tax on EBIT are all part of OCF.",
@@ -2955,8 +2955,8 @@
    "difficulty": 3,
    "stem": "Holding sales, costs and the tax rate (30%) fixed, CCA rises by $10,000. What happens to OCF?",
    "options": [
-    "It rises by $10,000",
-    "It falls by $7,000",
+    "It rises by $10,000, the full increase in CCA",
+    "It falls by $7,000, the after-tax cost of the CCA",
     "It rises by $3,000, because taxes fall by that amount",
     "It is unchanged, because CCA is non-cash"
    ],
@@ -3455,8 +3455,8 @@
    "options": [
     "a negative change in NWC and a cash inflow",
     "a positive change in NWC and a cash outflow at launch",
-    "a tax deduction in year 1",
-    "an increase in CCA"
+    "a tax deduction for the extra inventory in year 1",
+    "an increase in the CCA claimed on the product"
    ],
    "answer": 1,
    "explanation": "More inventory and receivables raise current assets, so NWC increases. A positive change in NWC uses cash and is counted in full.",
@@ -3960,7 +3960,7 @@
     "(capital cost − salvage value) ÷ N"
    ],
    "answer": 0,
-   "explanation": "CCA_t = d × UCC_(t−1) for t ≥ 2. Applying d to the original cost is straight-line thinking, and the last option is the straight-line formula for accounting depreciation.",
+   "explanation": "CCA_t = d × UCC_(t−1) for t ≥ 2. Applying d to the original cost is straight-line thinking, and (capital cost − salvage) ÷ N is the straight-line formula for accounting depreciation.",
    "source": "generated",
    "ref": "L05B s7-8; S5 s20"
   },
@@ -4014,7 +4014,7 @@
     "Accounting depreciation determines cash taxes, while CCA only affects the income reported to shareholders",
     "CCA is a cash outflow each year, while accounting depreciation is a non-cash charge",
     "They are identical because Canadian tax law requires straight-line depreciation for all assets",
-    "CCA follows the tax schedule and determines cash taxes; accounting depreciation matters only through tax"
+    "CCA follows the tax schedule and determines cash taxes; accounting depreciation does not change the cash flows"
    ],
    "answer": 3,
    "explanation": "Cash taxes are computed using CCA, the depreciation allowed for tax. Accounting depreciation is not the tax deduction, so it is irrelevant to the cash flows.",
@@ -4032,7 +4032,7 @@
    "options": [
     "CCA is the same dollar amount every year",
     "UCC is reduced by each year's CCA",
-    "CCA falls each year because it is a percentage of a shrinking UCC",
+    "After year 1, CCA falls each year because it is a percentage of a shrinking UCC",
     "The first year may use a multiplier such as 0.5 or 1.5"
    ],
    "answer": 0,
@@ -4100,7 +4100,7 @@
    "type": "fill",
    "angle": "define",
    "difficulty": 1,
-   "stem": "Under declining balance, CCA falls each year because it is a fixed percentage of the shrinking _____.",
+   "stem": "After year 1, declining-balance CCA falls each year because it is a fixed percentage of the shrinking _____.",
    "options": [
     "salvage value",
     "sales",
@@ -5025,7 +5025,7 @@
    "stem": "Which statement about the CCA tax shield is NOT correct?",
    "options": [
     "It rises when the tax rate rises",
-    "It falls from year to year under declining balance",
+    "From year 2 on, it falls each year as UCC declines",
     "It is realized only if the firm has enough taxable income",
     "It is a cash outflow because depreciation is a cost"
    ],
@@ -5043,10 +5043,10 @@
    "difficulty": 3,
    "stem": "A project's CCA deduction can only be used against taxable income. If the firm has no other taxable income and cannot carry losses forward, what happens to the CCA tax shield?",
    "options": [
-    "It cannot be used, so the saving is lost or deferred",
+    "It cannot be used, so the saving is lost",
     "It is still received in full as a refund",
-    "It is received at (1 − T)",
-    "It is added to UCC"
+    "It is received at (1 − T) instead of T",
+    "It is added back to the asset's UCC"
    ],
    "answer": 0,
    "explanation": "The textbook shield assumes the firm has enough other income (the professor says 'assuming you have enough other income'). Without it there is nothing to shield.",
@@ -5117,13 +5117,13 @@
    "difficulty": 2,
    "stem": "If the tax rate rises from 30% to 40% with CCA unchanged, the DTS:",
    "options": [
-    "rises by 10 percentage points of CCA",
-    "is unchanged",
-    "falls",
+    "rises by 10% (× 1.10)",
+    "is unchanged, since CCA is unchanged",
+    "falls, because more tax is paid",
     "rises by one-third (× 40/30)"
    ],
    "answer": 3,
-   "explanation": "DTS = CCA × T, so it is proportional to T: 0.40/0.30 = 1.333, a one-third increase.",
+   "explanation": "DTS = CCA × T, so it is proportional to T: 0.40/0.30 = 1.333, a one-third increase. A 10-point rise in T is not a 10% rise in the shield.",
    "source": "generated",
    "ref": "L05B s14"
   },
@@ -5494,7 +5494,7 @@
    "type": "mc",
    "angle": "contrast",
    "difficulty": 3,
-   "stem": "How does PVCCA differ for an asset sold in year N versus an asset that is never sold within the horizon (the pool stays open)?",
+   "stem": "How does PVCCA differ for an asset sold in year N versus an asset that is kept and never sold (its CCA continues indefinitely)?",
    "options": [
     "Sold: add the lost-tail term; not sold: subtract the lost-tail term",
     "Sold: replace k with N in the denominator; not sold: leave k unchanged",
@@ -5515,8 +5515,8 @@
    "difficulty": 2,
    "stem": "Which of the following is NOT an input to the PVCCA formula?",
    "options": [
-    "The sale price S_N",
-    "The CCA rate d",
+    "The sale price S_N in year N",
+    "The CCA rate d of the class",
     "The corporate tax rate T_C",
     "The asset's UCC at the date of sale"
    ],
@@ -5611,7 +5611,7 @@
     "N − 1",
     "N + 1",
     "d",
-    "N, the year of sale"
+    "N"
    ],
    "answer": 3,
    "explanation": "The value at year N of the lost shield is brought back to today with (1 + k)^N.",
@@ -5625,7 +5625,7 @@
    "type": "mc",
    "angle": "apply",
    "difficulty": 3,
-   "stem": "Granger Foods owns a line it has been depreciating for years (UCC today $50,000, d = 20%, T = 30%, k = 10%) and will keep it, so the pool stays open. Which expression gives the PV of its remaining tax shield?",
+   "stem": "Granger Foods owns a line it has been depreciating for years (UCC today $50,000, d = 20%, T = 30%, k = 10%) and will keep it and never sell it. Which expression gives the PV of its remaining tax shield?",
    "options": [
     "50,000 × 0.20 × 0.30/(0.10 + 0.20), with no first-year factor and no salvage term",
     "50,000 × 0.20 × 0.30/(0.10 + 0.20) × (1.5 × 0.10 + 1)/(1 + 0.10)",
@@ -5633,7 +5633,7 @@
     "50,000 × 0.20 × 0.30/(0.10 − 0.20)"
    ],
    "answer": 0,
-   "explanation": "An asset already depreciating has used its first-year adjustment (factor 1), and with no sale there is no lost-tail term. The first two options apply a half-year or AII factor that does not belong; the last uses k − d.",
+   "explanation": "An asset already depreciating has used its first-year adjustment (factor 1), and with no sale there is no lost-tail term. Applying the AII or half-year factor wrongly treats the line as new, and k − d treats a shrinking shield as a growing one.",
    "source": "generated",
    "ref": "L05B s16"
   },
@@ -5644,7 +5644,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "Alder Machining buys a $100,000 mill in a 30% class under the half-year rule and expects to sell it in 5 years for $20,000. The tax rate is 25% and k = 10%. What is the PV of the CCA tax shield?",
+   "stem": "Alder Machining buys a $100,000 mill in a 30% class under the half-year rule and expects to sell it in 5 years for $20,000; other assets remain in the class, so the pool stays open. The tax rate is 25% and k = 10%. What is the PV of the CCA tax shield?",
    "answer": 15569.27,
    "unit": "$",
    "tolerance": {
@@ -5741,7 +5741,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "A firm buys $250,000 of equipment in a 20% class and the Accelerated Investment Incentive applies. It will sell the equipment after 6 years for $60,000. The tax rate is 35% and k = 12%. What is the PV of the CCA tax shield?",
+   "stem": "A firm buys $250,000 of equipment in a 20% class and the Accelerated Investment Incentive applies. It will sell the equipment after 6 years for $60,000; other assets remain in the class. The tax rate is 35% and k = 12%. What is the PV of the CCA tax shield?",
    "answer": 50967.65,
    "unit": "$",
    "tolerance": {
@@ -5821,7 +5821,7 @@
    "type": "numeric",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Granger Foods owns a packaging line it has depreciated for several years. The UCC today is $240,000 (CCA class rate 10%). The tax rate is 30%, k = 15%, and the line will not be sold: the pool stays open. What is the PV of the remaining CCA tax shield?",
+   "stem": "Granger Foods owns a packaging line it has depreciated for several years. The UCC today is $240,000 (CCA class rate 10%). The tax rate is 30%, k = 15%, and the line will never be sold (it stays in its class). What is the PV of the remaining CCA tax shield?",
    "answer": 28800.0,
    "unit": "$",
    "tolerance": {
@@ -5880,7 +5880,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "Marsh Bakery buys equipment for $150,000 and pays $10,000 for delivery and installation (capitalized). The class rate is 20%, the tax rate 40%, k = 10%, and the Accelerated Investment Incentive applies. The equipment will be sold in 5 years for $24,000. What is the PV of the CCA tax shield?",
+   "stem": "Marsh Bakery buys equipment for $150,000 and pays $10,000 for delivery and installation (capitalized). The class rate is 20%, the tax rate 40%, k = 10%, and the Accelerated Investment Incentive applies. The equipment will be sold in 5 years for $24,000; other assets remain in the class. What is the PV of the CCA tax shield?",
    "answer": 40632.16,
    "unit": "$",
    "tolerance": {
@@ -5985,7 +5985,7 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "A $600,000 structure is in a 4% CCA class. The tax rate is 35%, k = 11%, the half-year rule applies and the structure will not be sold (the pool stays open). What is the PV of its CCA tax shield?",
+   "stem": "A $600,000 structure is in a 4% CCA class. The tax rate is 35%, k = 11%, the half-year rule applies and the structure will never be sold. What is the PV of its CCA tax shield?",
    "options": [
     "$58,775",
     "$53,225",
@@ -6004,7 +6004,7 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "A $180,000 asset in a 30% class qualifies for the Accelerated Investment Incentive. It will be sold after 4 years for $20,000. The tax rate is 40% and k = 12%. What is the PV of its CCA tax shield?",
+   "stem": "A $180,000 asset in a 30% class qualifies for the Accelerated Investment Incentive. It will be sold after 4 years for $20,000, and other assets stay in the class. The tax rate is 40% and k = 12%. What is the PV of its CCA tax shield?",
    "options": [
     "$48,469",
     "$48,018",
@@ -6023,7 +6023,7 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "Rowan Tools owns an asset with a UCC of $90,000 today (20% class), T = 30% and k = 10%. It will sell the asset in 3 years for $15,000. What is the PV of its remaining CCA tax shield?",
+   "stem": "Rowan Tools owns an asset with a UCC of $90,000 today (20% class), T = 30% and k = 10%. It will sell the asset in 3 years for $15,000; other assets stay in the class. What is the PV of its remaining CCA tax shield?",
    "options": [
     "$18,000",
     "$16,564",
@@ -6281,7 +6281,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "Hartwell Metals will buy a new machine for $210,000 and sell its old machine (same class, original cost $120,000) today for $70,000. In 4 years the new machine would be worth $25,000 and the old machine $9,000. The class rate is 30%, T = 40%, k = 12%, and the half-year rule applies to net acquisitions. What is the PV of the CCA tax shield?",
+   "stem": "Hartwell Metals will buy a new machine for $210,000 and sell its old machine (same class, original cost $120,000) today for $70,000. The new machine will be sold in 4 years for $25,000; kept, the old machine would have sold then for $9,000. Other assets remain in the class. The class rate is 30%, T = 40%, k = 12%, and the half-year rule applies to net acquisitions. What is the PV of the CCA tax shield?",
    "answer": 34951.92,
    "unit": "$",
    "tolerance": {
@@ -6383,7 +6383,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "A firm replaces an old machine with a new one costing $180,000. The old machine, whose original cost was $120,000, sells today for $75,000; kept, it would sell for $12,000 in 5 years. The new machine would have no salvage value. The class rate is 20%, T = 40%, k = 10% and the Accelerated Investment Incentive applies to net acquisitions. What is the PV of the CCA tax shield?",
+   "stem": "A firm replaces an old machine with a new one costing $180,000 in the same CCA class, which stays open. The old machine, whose original cost was $120,000, sells today for $75,000; kept, it would sell for $12,000 in 5 years. The new machine would have no salvage value. The class rate is 20%, T = 40%, k = 10% and the Accelerated Investment Incentive applies to net acquisitions. What is the PV of the CCA tax shield?",
    "answer": 31259.68,
    "unit": "$",
    "tolerance": {
@@ -6550,7 +6550,7 @@
     "A capital gain, only half of which is taxable"
    ],
    "answer": 1,
-   "explanation": "Proceeds ($9,000) are below UCC ($14,000) and the class closes, so the $5,000 difference is a terminal loss. It is deducted in full at T, which creates a tax refund. Depreciable property gets no capital loss treatment, which is why the half-deduction option fails.",
+   "explanation": "Proceeds ($9,000) are below UCC ($14,000) and the class closes, so the $5,000 difference is a terminal loss. It is deducted in full at T, which creates a tax refund. Depreciable property gets no capital loss treatment, so 'a capital loss, half deductible' does not apply.",
    "source": "generated",
    "ref": "L05B s19-21"
   },
@@ -6700,10 +6700,10 @@
    "difficulty": 2,
    "stem": "In CF_AT = POD - T[min(ACB, POD) - UCC] - 0.5T max(POD - ACB, 0), why is ACB capped inside the first bracket?",
    "options": [
-    "Because a sale price above ACB is never taxed",
-    "Recapture cannot exceed the CCA actually claimed (ACB - UCC); proceeds above ACB are a capital gain taxed separately",
-    "Because ACB is the value of the asset at which the pool closes",
-    "Because the half-year rule limits recapture to 50% of ACB"
+    "A sale price above ACB is never taxed",
+    "Recapture cannot exceed the CCA claimed (ACB − UCC); the rest is a capital gain",
+    "ACB is the value of the asset at which the pool closes",
+    "The half-year rule limits recapture to 50% of ACB"
    ],
    "answer": 1,
    "explanation": "Total CCA claimed is ACB - UCC, so the most that can be recaptured is that amount. Any proceeds above ACB are a true capital gain, picked up by the last term at the 50% inclusion rate.",
@@ -6722,7 +6722,7 @@
     "A terminal loss equal to the proceeds",
     "Recapture equal to the original cost",
     "A capital gain equal to the proceeds less the original cost",
-    "None: there is no recapture and no terminal loss, so after-tax cash equals the proceeds"
+    "None: no recapture or terminal loss, so CF_AT equals the proceeds"
    ],
    "answer": 3,
    "explanation": "Recapture and terminal loss both equal the gap between POD and UCC. With POD = UCC the gap is zero, so CF_AT = POD.",
@@ -7344,8 +7344,8 @@
    "difficulty": 1,
    "stem": "The capital gain on the sale of a depreciable asset is the proceeds of disposition minus the _____.",
    "options": [
-    "ACB (original cost plus acquisition expenses)",
-    "UCC",
+    "ACB (adjusted cost base)",
+    "UCC (undepreciated capital cost)",
     "salvage value",
     "present value of the CCA shield"
    ],
@@ -7462,16 +7462,16 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Prairie Barge Ltd. sells its last barge for $520,000 (cost $400,000, UCC $150,000, tax rate 30%). What is the after-tax cash flow from the sale?",
+   "stem": "Haida Ferries Ltd. sells its last ferry for $610,000 (cost $480,000, UCC $205,000, tax rate 28%). What is the after-tax cash flow from the sale?",
    "options": [
-    "$364,000.00",
-    "$391,000.00",
-    "$409,000.00",
-    "$427,000.00",
-    "$502,000.00"
+    "$439,200.00",
+    "$478,400.00",
+    "$496,600.00",
+    "$514,800.00",
+    "$591,800.00"
    ],
    "answer": 3,
-   "explanation": "Recapture = 400,000 - 150,000 = 250,000 (tax 75,000); capital gain = 520,000 - 400,000 = 120,000, half taxed (tax 18,000). CF_AT = 520,000 - 75,000 - 18,000 = $427,000. Taxing the gain in full gives $409,000; taxing the whole price gives $364,000; counting POD - UCC as recapture and also taxing the gain double counts ($391,000); skipping recapture gives $502,000.",
+   "explanation": "Recapture = 480,000 - 205,000 = 275,000 (tax 77,000); capital gain = 610,000 - 480,000 = 130,000, half taxed (tax 18,200). CF_AT = 610,000 - 77,000 - 18,200 = $514,800. Taxing the gain in full gives $496,600; taxing the whole price gives $439,200; counting POD - UCC as recapture and also taxing the gain double counts ($478,400); skipping recapture gives $591,800.",
    "source": "generated",
    "ref": "L05B s21"
   },
@@ -7482,16 +7482,16 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Okotoks Stone Works closes its class by selling a loader for $92,500 (cost $75,000, UCC $21,300, tax rate 35%). What is the after-tax cash flow from the sale?",
+   "stem": "Kamloops Quarry Co. closes its class by selling a crusher for $118,000 (cost $96,000, UCC $37,400, tax rate 32%). What is the after-tax cash flow from the sale?",
    "options": [
-    "$60,125.00",
-    "$64,517.50",
-    "$67,580.00",
-    "$70,642.50",
-    "$89,437.50"
+    "$80,240.00",
+    "$88,688.00",
+    "$92,208.00",
+    "$95,728.00",
+    "$114,480.00"
    ],
    "answer": 3,
-   "explanation": "Recapture 53,700 x 0.35 = 18,795; capital gain 17,500 x 0.5 x 0.35 = 3,062.50. CF_AT = 92,500 - 18,795 - 3,062.50 = $70,642.50. Taxing the gain at the full rate gives $67,580; taxing the whole sale price gives $60,125; double counting gives $64,517.50.",
+   "explanation": "Recapture 58,600 x 0.32 = 18,752; capital gain 22,000 x 0.5 x 0.32 = 3,520. CF_AT = 118,000 - 18,752 - 3,520 = $95,728. Taxing the gain at the full rate gives $92,208; taxing the whole sale price gives $80,240; measuring recapture up to POD and also taxing the gain gives $88,688; skipping recapture gives $114,480.",
    "source": "generated",
    "ref": "L05B s21"
   },
@@ -8136,8 +8136,8 @@
    "difficulty": 3,
    "stem": "For an asset sold at time N from an open pool, a student computes S_N x d x T / (k + d) x 1/(1 + k)^N. What does the result represent?",
    "options": [
-    "The present value of the CCA tax shield the firm gives up because the sale proceeds reduce the pool",
-    "The after-tax value of the proceeds",
+    "The PV of the CCA tax shield lost because the proceeds leave the pool",
+    "The after-tax value of the sale proceeds",
     "The present value of the tax paid on recapture at the sale",
     "The present value of the capital gains tax at the sale"
    ],
@@ -8523,7 +8523,7 @@
    "type": "multistep",
    "angle": "calc",
    "difficulty": 3,
-   "stem": "Use the Cascade Tooling machine from the previous question ($60,000 cost, CCA rate 30%, half-year rule, sold for $20,000 at the end of year 3, T = 30%, k = 10%). The PV of all tax effects if the class closes is $9,786.63. If instead the class stays open, the PV of the tax effects is the PV of CCA tax shield formula with the salvage term. How much larger is the closed-pool value?",
+   "stem": "Take Cascade Tooling's machine ($60,000 cost, CCA rate 30%, half-year rule, sold for $20,000 at the end of year 3, T = 30%, k = 10%). The PV of all tax effects if the class closes is $9,786.63. If instead the class stays open, the PV of the tax effects is the PV of CCA tax shield formula with the salvage term. How much larger is the closed-pool value?",
    "answer": 281.18,
    "unit": "$",
    "tolerance": {
@@ -8670,7 +8670,7 @@
    "difficulty": 2,
    "stem": "How do the cash flows of an expansion project differ from those of a replacement project?",
    "options": [
-    "An expansion uses the project's own flows; a replacement uses the differences between the new and the old equipment (net acquisition cost, net salvage, incremental savings)",
+    "An expansion uses its own flows; a replacement uses new-minus-old differences (net acquisition, net salvage, savings)",
     "An expansion is taxed at the full rate; a replacement is taxed at half the rate",
     "An expansion ignores CCA; a replacement includes CCA",
     "An expansion is discounted at the cost of capital; a replacement is discounted at the cost of the old machine"
@@ -8713,9 +8713,9 @@
    "stem": "Why does the NPV of an expansion add the PV of the CCA tax shield as a separate item rather than including CCA in the annual operating cash flow?",
    "options": [
     "CCA is a cash outflow that must be discounted at a higher rate",
-    "CCA is not a cash flow; its only value is the tax it saves, which the PV formula captures once for the whole declining-balance schedule",
+    "CCA is not cash; its only value is the tax it saves, which the PV formula values once",
     "CCA is already included in revenue, so it would be double counted",
-    "Because CCA is the only item taxed at the rate T rather than (1 - T)"
+    "CCA is the only item taxed at the rate T rather than (1 − T)"
    ],
    "answer": 1,
    "explanation": "The operating cash flow (S - C)(1 - T) deliberately leaves CCA out. The shield T x CCA is a separate stream of declining flows, valued by the formula I0 d T/(k + d) x first-year factor, less the salvage term. Counting CCA in both places would double count.",
@@ -8734,7 +8734,7 @@
     "The project earns exactly 12% and the firm should be indifferent",
     "The project loses $31,400 of accounting profit in year 1",
     "The project should be accepted because its cash flows are positive after year 0",
-    "The project earns less than 12% and destroys value; reject it unless there are strategic benefits not in the cash flows"
+    "The project earns less than 12% and destroys $31,400 of value, so reject it"
    ],
    "answer": 3,
    "explanation": "NPV is the value added in today's dollars, after paying investors their required return. A negative NPV means the PV of inflows is less than the PV of outflows, so the IRR is below 12%.",
@@ -8751,7 +8751,7 @@
    "stem": "Which items make up the time-0 cash flow of an expansion NPV?",
    "options": [
     "Capital expenditure, sunk feasibility costs, and interest on the financing",
-    "Capital expenditure, initial net working capital, and the opportunity cost of any assets the project uses",
+    "Capital expenditure, initial NWC, and the opportunity cost of assets the project uses",
     "Capital expenditure and the first year's CCA tax shield",
     "Capital expenditure and the expected salvage value"
    ],
@@ -9486,10 +9486,10 @@
    "difficulty": 2,
    "stem": "Which statement correctly contrasts net acquisition cost with net salvage value in a replacement NPV?",
    "options": [
-    "Net acquisition cost is taxed at (1 - T); net salvage is taxed at T",
+    "Net acquisition cost is taxed at (1 − T); net salvage is taxed at T",
     "Net acquisition cost uses the old machine's UCC; net salvage uses its ACB",
     "Both occur at time 0 but net salvage is discounted for the old machine's remaining life",
-    "Net acquisition cost is a time-0 flow (new cost minus old resale today); net salvage is a time-N flow (new salvage minus the old machine's salvage forgone)"
+    "Net acquisition is a time-0 flow (new cost − old resale now); net salvage is a time-N flow (new − old salvage)"
    ],
    "answer": 3,
    "explanation": "Each is a difference between new and old, but they occur at different dates: the acquisition difference now and the salvage difference at the end of the horizon. Both then feed the PV of CCA tax shield formula.",
@@ -9526,10 +9526,10 @@
    "difficulty": 2,
    "stem": "Why is the old machine's future salvage subtracted from the new machine's salvage in the replacement NPV?",
    "options": [
-    "Because old equipment is always worth less than new equipment",
-    "Because salvage is a tax expense that offsets the CCA shield",
-    "Selling the old machine now means the firm will not receive its future salvage, so that cash flow is lost",
-    "Because net salvage is always negative in a replacement"
+    "Old equipment is always worth less than new equipment",
+    "Salvage is a tax expense that offsets the CCA shield",
+    "Selling the old machine now gives up its future salvage",
+    "Net salvage is always negative in a replacement"
    ],
    "answer": 2,
    "explanation": "Incremental analysis compares the world with replacement to the world without. Without replacement the firm sells the old machine at N; with replacement it sells the new one. The difference S_new - S_old is the incremental cash flow.",
@@ -9567,10 +9567,10 @@
    "difficulty": 2,
    "stem": "Maple Ridge Moulding replaces a machine with UCC of $63,000 by a new one in the same CCA class. The old machine is sold for $60,000, and other assets stay in the class. What tax effect does the $3,000 shortfall have at the sale?",
    "options": [
-    "None at the sale: the pool stays open, and the net acquisition (new cost minus $60,000) goes into the PV of CCA shield",
-    "A $3,000 terminal loss saves 3,000 x T of tax now",
-    "A $3,000 capital loss, half deductible",
-    "A $3,000 recapture, taxed at the full rate"
+    "None at the sale: the pool stays open and the net acquisition enters PVCCA",
+    "A $3,000 terminal loss, which saves 3,000 × T of tax right now",
+    "A $3,000 capital loss, only half of which is deductible",
+    "A $3,000 recapture of CCA, taxed at the full corporate rate"
    ],
    "answer": 0,
    "explanation": "Because the class stays open, the sale just reduces the pool's UCC by the proceeds. The seminar's treatment uses the net acquisition cost in the CCA formula and ignores any immediate recapture or terminal loss.",
@@ -9634,7 +9634,7 @@
     "$51,166.81"
    ],
    "answer": 2,
-   "explanation": "Net acquisition = 80,000; net salvage = 9,000; after-tax savings = 26,650 a year (PV 101,024.47); PV of net salvage = 5,588.29; PV of CCA = 16,514.25. NPV = -80,000 + 101,024.47 + 5,588.29 + 16,514.25 = $43,127.01. Using gross figures, leaving out the CCA shield, or using the new machine's salvage instead of the net salvage each give one of the other values.",
+   "explanation": "Net acquisition = 80,000; net salvage = 9,000; after-tax savings = 26,650 a year (PV 101,024.47); PV of net salvage = 5,588.29; PV of CCA = 16,514.25. NPV = -80,000 + 101,024.47 + 5,588.29 + 16,514.25 = $43,127.01. $14,892.34 ignores the old machine everywhere (gross cost and salvage); $51,166.81 computes the CCA shield on the gross $120,000 and $15,000; $45,983.24 uses the new machine's $15,000 salvage instead of the $9,000 net salvage; $26,612.76 leaves out the CCA shield.",
    "source": "generated",
    "ref": "SM 10-36, S6 s16-19"
   },
@@ -9647,7 +9647,7 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Cascade Fabricators replaces a machine in a class with CCA rate 25%. New cost $260,000; old resale today $55,000; salvage in 4 years $20,000 (new) and $9,000 (old). AII applies, T = 40%, k = 10%. What is the present value of the CCA tax shield on the replacement?",
+   "stem": "Cascade Fabricators replaces a machine in a class with CCA rate 25%. New cost $260,000; old resale today $55,000; salvage in 4 years $20,000 (new) and $9,000 (old). AII applies, pool open, T = 40%, k = 10%. What is the present value of the CCA tax shield on the replacement?",
    "options": [
     "$53,762.48",
     "$59,087.15",
@@ -10110,7 +10110,7 @@
    "stem": "How do the after-tax cash flows of a cost-cutting project differ from those of an expansion project?",
    "options": [
     "Cost savings are not taxed because no cash is received",
-    "The operating benefit is saving x (1 - T) instead of (revenue - costs) x (1 - T); the CAPEX, NWC, salvage and CCA shield are treated the same way",
+    "The benefit is saving × (1 − T) instead of (revenue − costs)(1 − T); the rest is the same",
     "Cost-cutting projects are discounted at a lower rate because they are safer",
     "Cost-cutting projects have no CCA tax shield because they add no revenue"
    ],
@@ -10633,10 +10633,10 @@
    "difficulty": 2,
    "stem": "Why must the required after-tax annual amount be divided by (1 - T) when finding the bid price?",
    "options": [
-    "Because the tax rate applies only to the first year",
-    "Revenue minus costs is taxed, so before-tax net revenue must be larger than the after-tax amount needed",
-    "Because (1 - T) converts a nominal flow into a real flow",
-    "Because the CCA shield must be added back"
+    "The tax rate applies only to the first year",
+    "Net revenue is taxed, so the pre-tax amount must exceed the after-tax need",
+    "(1 − T) converts a nominal flow into a real flow",
+    "The CCA shield must be added back first"
    ],
    "answer": 1,
    "explanation": "The after-tax annuity equals [(P - v)Q - FC](1 - T). To recover the pre-tax figure we undo the tax by dividing by (1 - T), then add the cash costs to get total revenue.",
@@ -10652,10 +10652,10 @@
    "difficulty": 2,
    "stem": "Okotoks Steel bids exactly the NPV = 0 price and wins the contract. What does that imply about the project?",
    "options": [
-    "It earns a 0% return",
+    "It earns a 0% return, since its NPV is zero",
     "It creates a positive NPV equal to the CCA tax shield",
     "It breaks even on accounting profit but not on cash flow",
-    "It earns exactly its required return: IRR = k, NPV = 0, with no value added or lost"
+    "It earns exactly its required return (IRR = k): no value is added or lost"
    ],
    "answer": 3,
    "explanation": "At the break-even price the PV of the inflows equals the PV of the outflows at the required rate, so the IRR equals the required return. The firm is indifferent; to add value it would need a price above that level.",
@@ -10671,10 +10671,10 @@
    "difficulty": 2,
    "stem": "In the bid-price equation, after-tax net revenue = [(P - v)Q - FC](1 - T). Which item is NOT inside the bracket?",
    "options": [
-    "Variable cost per unit v",
-    "CCA, because its tax shield is valued separately through PV_CCA",
-    "Fixed cash costs FC",
-    "Price per unit P"
+    "Variable cost per unit v (a cash cost)",
+    "CCA (a non-cash deduction)",
+    "Fixed cash costs FC (a cash cost)",
+    "Price per unit P (cash revenue)"
    ],
    "answer": 1,
    "explanation": "The bracket contains cash revenue and cash costs only. CCA is not a cash cost; its tax saving is counted once in the PV of CCA tax shield, so including it in the bracket would double count.",
@@ -11193,7 +11193,7 @@
    "type": "mc",
    "angle": "identify",
    "difficulty": 2,
-   "stem": "Cascade Rail owns an old locomotive that earns nothing more. It is deciding whether to sell it at the end of year 5 or keep it and keep claiming CCA. What is the opportunity cost of selling at year 5?",
+   "stem": "Cascade Rail owns an old locomotive, the last asset in its CCA class, that earns nothing more. It is deciding whether to sell it at the end of year 5 or keep it and keep claiming CCA. What is the opportunity cost of selling at year 5?",
    "options": [
     "The present value of the CCA tax shields it gives up on the remaining UCC",
     "The original purchase price of the locomotive",
@@ -11254,9 +11254,9 @@
    "difficulty": 2,
    "stem": "How do the cash flows from selling at year N differ from the cash flows from holding the asset?",
    "options": [
-    "Selling gives the after-tax proceeds now but ends the CCA shield; holding keeps the shield and receives no proceeds now",
+    "Selling brings after-tax cash now but ends the CCA shield; holding keeps the shield",
     "Selling gives the CCA shield now; holding gives the proceeds",
-    "Selling is taxed; holding is not taxed",
+    "Selling is taxed; holding is not taxed at all",
     "Selling and holding give the same cash flows except for timing"
    ],
    "answer": 0,
@@ -11292,10 +11292,10 @@
    "difficulty": 2,
    "stem": "Why can a firm be better off selling an asset at year N even though the sale ends its CCA deductions?",
    "options": [
-    "Because CCA deductions are not tax deductible after year N",
-    "Because the sale proceeds are not taxed",
-    "The after-tax cash from the sale is received now, and the shields given up are worth less than that cash because they arrive slowly and decline each year",
-    "Because UCC always exceeds the sale price"
+    "CCA deductions are no longer tax deductible after year N",
+    "The sale proceeds are never taxed when an asset is sold",
+    "Cash from the sale arrives now; the lost shields arrive slowly and shrink",
+    "UCC always exceeds the sale price, creating a tax refund"
    ],
    "answer": 2,
    "explanation": "The lost shield is worth UCC x d x T/(k + d), a fraction of UCC. The sale delivers POD plus a tax effect immediately. Without other benefits from holding, selling usually wins.",
@@ -11311,9 +11311,9 @@
    "difficulty": 3,
    "stem": "A sell-versus-hold analysis at year 4 gives an NPV of +$31,005 for selling. What does this mean?",
    "options": [
-    "Selling now is worth $31,005 more, in year-4 dollars, than keeping the asset and its CCA shield",
+    "Selling beats holding by $31,005 in year-4 dollars",
     "Holding the asset adds $31,005 of value",
-    "The sale price is $31,005",
+    "The asset's sale price at year 4 is $31,005",
     "The asset will produce $31,005 of profit before tax"
    ],
    "answer": 0,
@@ -11333,7 +11333,7 @@
     "Compare all three using each choice's accounting profit",
     "Evaluate the project alone and ignore the land",
     "Discount all three choices at different rates and pick the largest cash flow",
-    "Compare 'rent' with 'sell and buy back' first, then compare the better of the two with 'use for the project'"
+    "Compare 'rent' with 'sell and buy back', then the winner with 'use for the project'"
    ],
    "answer": 3,
    "explanation": "Each comparison uses incremental NPV. The rent-versus-sell step shows what the land is worth in its best alternative use, which is the opportunity cost charged to the project.",
@@ -11386,7 +11386,7 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "An idle machine (CCA rate 20%) has a UCC of $33,177.60 after year 4 CCA. T = 35% and k = 12%. What is the value at year 4 of the CCA tax shields the firm gives up if it sells the machine?",
+   "stem": "An idle machine (CCA rate 20%) has a UCC of $33,177.60 after year 4 CCA. T = 35% and k = 12%. What is the value at year 4 of the CCA tax shields the firm gives up if it sells the machine, closing the class?",
    "options": [
     "$2,322.43",
     "$6,480.00",
@@ -11739,7 +11739,7 @@
    "stem": "Fraser Rentals must choose between two vans, one lasting 3 years and one lasting 5 years. Each will be replaced by an identical van when it wears out, and both provide the same service. Which method compares them properly?",
    "options": [
     "Compare the NPVs of costs directly",
-    "Equivalent annual cost: convert each van's PV of costs to an annual amount over its own life",
+    "Equivalent annual cost over each van's own life",
     "Compare the IRRs of the two vans",
     "Compare the payback periods of the two vans"
    ],
@@ -11777,8 +11777,8 @@
    "stem": "Why can comparing the raw present values of costs of a 3-year machine and a 5-year machine give the wrong answer?",
    "options": [
     "The raw PV ignores the CCA tax shield",
-    "The shorter-lived machine delivers fewer years of service, so its smaller PV of costs buys less",
-    "Raw PVs are in different currencies",
+    "The shorter-lived machine's smaller PV buys fewer years of service",
+    "Raw PVs are stated in different currencies",
     "The longer-lived machine always has the lower PV of costs"
    ],
    "answer": 1,
@@ -11814,10 +11814,10 @@
    "difficulty": 2,
    "stem": "Why does the PV of costs used in an EAC calculation subtract the PV of the CCA tax shield?",
    "options": [
-    "CCA reduces the firm's taxes, which lowers the true cost of owning the machine",
+    "CCA cuts taxes, which lowers the cost of owning the machine",
     "CCA is a cash outflow that has to be reversed",
     "CCA is already included in the operating cost",
-    "CCA raises the discount rate"
+    "CCA raises the discount rate applied to the costs"
    ],
    "answer": 0,
    "explanation": "For a cost project, cash outflows are positive costs. The shield saves tax, so it is subtracted. The same is true of the discounted salvage value.",
@@ -11931,12 +11931,12 @@
    "options": [
     "$631.29",
     "$894.45",
-    "$3,577.81",
+    "$1,629.27",
     "$8,420.34",
     "$26,691.33"
    ],
    "answer": 1,
-   "explanation": "EAC of D = 87,649.49/4.3553 = 20,124.97. Press C is cheaper by 20,124.97 - 19,230.52 = $894.45 a year. Differences of raw PVs ($26,691.33) mix different lives.",
+   "explanation": "EAC of D = 87,649.49/4.3553 = 20,124.97. Press C is cheaper by 20,124.97 - 19,230.52 = $894.45 a year. Differences of raw PVs ($26,691.33) mix different lives; $8,420.34 uses press C's 4-year annuity factor for D; $631.29 divides each PV by N; $1,629.27 leaves out both CCA shields.",
    "source": "generated",
    "ref": "S6 s14, SM 10-30"
   },
@@ -12355,17 +12355,17 @@
    "type": "mc",
    "angle": "contrast",
    "difficulty": 2,
-   "stem": "The word 'nominal' has two unrelated meanings in finance. Which pair of contrasts correctly states them?",
+   "stem": "How does a real cash flow differ from a nominal cash flow?",
    "options": [
-    "Nominal versus effective (compounding), and nominal versus real (inflation)",
-    "Nominal versus real (taxes), and nominal versus effective (inflation)",
-    "Nominal versus after-tax, and nominal versus pre-tax",
-    "Nominal versus risk-free, and nominal versus risky"
+    "A real cash flow is stated in today's purchasing power; a nominal cash flow includes expected inflation",
+    "A real cash flow is after tax; a nominal cash flow is before tax",
+    "A real cash flow is certain; a nominal cash flow is only an expected value",
+    "A real cash flow is discounted at the nominal rate; a nominal cash flow at the real rate"
    ],
    "answer": 0,
-   "explanation": "A nominal APR can be contrasted with an effective annual rate (compounding frequency). A nominal return can also be contrasted with a real return (purchasing power). The two are unrelated.",
+   "explanation": "Nominal flows are in the dollars of the year they arrive, so they include inflation; real flows are in constant (today's) dollars: CF_real,i = CF_nominal,i/(1 + R_inf)^i. Each is paired with its own rate (nominal with nominal, real with real); tax and risk are separate issues.",
    "source": "generated",
-   "ref": "L02C s9"
+   "ref": "FS p1; SM 10 App A1"
   },
   {
    "id": "q10-584",
@@ -12395,10 +12395,10 @@
    "difficulty": 2,
    "stem": "Why is the real rate not simply the nominal rate minus the inflation rate?",
    "options": [
-    "Because inflation is paid out of the real rate",
-    "Because purchasing power is a ratio: (1 + R_nom)/(1 + R_inf) - 1 is slightly smaller than R_nom - R_inf",
-    "Because the real rate is always zero when the rate is nominal",
-    "Because taxes are paid on the nominal amount only"
+    "Inflation is paid out of the real rate, not the nominal rate",
+    "Purchasing power is a ratio: (1 + R_nom)/(1 + R_inf) − 1 is a bit below R_nom − R_inf",
+    "The real rate is always zero when a rate is stated in nominal terms",
+    "Taxes are paid on the nominal amount only, not on the real amount"
    ],
    "answer": 1,
    "explanation": "At 10% nominal and 3% inflation, $1,000 grows to $1,100 while goods rise to $1,030: purchasing power grows 1,100/1,030 = 6.7961%, not 7%. The subtraction approximation drifts further for larger rates.",
@@ -12415,9 +12415,9 @@
    "stem": "A firm computes a project's EAC with real cash flows at the real rate and gets a lower annual cost figure than with nominal cash flows at the nominal rate, although both PVs of costs are identical. Why?",
    "options": [
     "One of the two calculations must contain a mistake",
-    "Real cash flows are taxed less",
+    "Real cash flows are taxed at a lower rate than nominal ones",
     "The nominal rate is risk free and the real rate is not",
-    "The real annuity factor is larger, so the same PV spreads into smaller annual amounts; real dollars are 'today's dollars' while nominal dollars are future dollars"
+    "The real rate is lower, so its annuity factor is larger and the annual figure smaller"
    ],
    "answer": 3,
    "explanation": "PVs agree because both methods are consistent, but EACs are expressed in different dollars. A real EAC is in constant dollars; a nominal EAC is a level nominal payment. Because the real rate is lower, the real annuity factor is larger, so the real EAC is smaller.",
@@ -12503,16 +12503,16 @@
    "type": "mc",
    "angle": "calc",
    "difficulty": 2,
-   "stem": "Bow Valley Ltd. must pay $10,000 a year in today's dollars (prices rise with 3% inflation, so the nominal payments grow at 3%) for 4 years. The nominal discount rate is 9% per annum. What is the PV of the payments?",
+   "stem": "Bow Valley Ltd. must pay $12,000 a year in today's dollars (prices rise with 2% inflation, so the nominal payments grow at 2%) for 5 years, the first payment in one year. The nominal discount rate is 8% per annum. What is the PV of the payments?",
    "options": [
-    "$32,397.20",
-    "$34,651.06",
-    "$34,790.17",
-    "$37,400.60",
-    "$40,000.00"
+    "$47,912.52",
+    "$50,548.37",
+    "$50,710.56",
+    "$53,713.92",
+    "$60,000.00"
    ],
    "answer": 2,
-   "explanation": "Nominal flows are 10,300; 10,609; 10,927.27; 11,255.09. Discounted at 9% the PV is $34,790.17. Equivalently, discount 10,000 a year at the real rate 5.8252%. Discounting the real $10,000 at 9% ($32,397.20) mixes real flows with a nominal rate.",
+   "explanation": "Real rate = 1.08/1.02 - 1 = 5.8824%; PV = 12,000 x [1 - 1.058824^-5]/0.058824 = $50,710.56, the same as discounting the nominal flows 12,240, 12,484.80, ... at 8%. $47,912.52 discounts the real $12,000 at the nominal 8%; $50,548.37 uses 8% - 2% = 6% as the real rate; $53,713.92 discounts the nominal flows at the real rate; $60,000 ignores discounting.",
    "source": "generated",
    "ref": "L02C s10, SM 10-40"
   },
