@@ -320,23 +320,36 @@ export function pickQuestionForConcept(content, state, cid, opts) {
 }
 
 /** Build an exam: n questions spread across chapters, favouring difficulty 2-3 and unseen items. */
-export function buildExam(content, state, { n, chapters, concepts, rng, now }) {
+export function buildExam(content, state, { n, chapters, concepts, rng, now, format }) {
+  // format (optional, from the course pack's exam.format): { weights: { chapter: share }, mc, numeric } makes the
+  // paper look like the real one: chapters drawn by their exam weight and typed-answer questions in the same
+  // proportion as the real numeric boxes (FIN 201: 13 MC + 6 numeric). Without it: proportional to concepts, any type.
   rng = rng || Math.random;
   now = now || Date.now();
   const chs = content.chapters.filter(c => !chapters || chapters.has(c.chapter)).filter(c => !concepts || c.concepts.some(k => concepts.has(k.id)));
   const conceptsIn = c => concepts ? c.concepts.filter(k => concepts.has(k.id)).length : c.concepts.length;
   const totalConcepts = chs.reduce((s, c) => s + conceptsIn(c), 0);
+  const weights = format && format.weights && chs.some(c => format.weights[c.chapter] > 0) ? format.weights : null;
+  const totalWeight = weights ? chs.reduce((s, c) => s + (weights[c.chapter] || 0), 0) : 0;
+  const share = c => weights ? (weights[c.chapter] || 0) / totalWeight : conceptsIn(c) / totalConcepts;
+  const isNumeric = q => q.type === 'numeric' || q.type === 'multistep';
+  const numericRatio = format && format.numeric > 0 && format.mc >= 0 ? format.numeric / (format.numeric + format.mc) : null;
   const picks = [];
   const used = new Set();
   const usedConcepts = new Map();
-  // allocate per chapter proportional to concepts
+  // allocate per chapter (by exam weight when the pack gives one, else proportional to concepts)
   let allocated = 0;
   const alloc = chs.map((c, i) => {
-    const k = i === chs.length - 1 ? n - allocated : Math.round(n * conceptsIn(c) / totalConcepts);
+    const k = i === chs.length - 1 ? n - allocated : Math.round(n * share(c));
     allocated += k;
     return { ch: c, k };
   });
+  // typed-answer quota: the real paper's share of numeric boxes, spread over the chapters that have such questions
+  let numericLeft = numericRatio === null ? -1 : Math.round(n * numericRatio);
   for (const { ch, k } of alloc) {
+    const hasNumeric = ch.questions.some(q => isNumeric(q) && (!concepts || concepts.has(q.concept)));
+    const wantNumeric = numericLeft < 0 ? -1 : hasNumeric ? Math.min(k, Math.round(k * numericRatio), numericLeft) : 0;
+    let tookNumeric = 0;
     const pool = ch.questions.filter(q => !concepts || concepts.has(q.concept)).map(q => {
       const qs = state.questions[q.id];
       let s = 0;
@@ -348,13 +361,22 @@ export function buildExam(content, state, { n, chapters, concepts, rng, now }) {
       return { q, s };
     }).sort((a, b) => b.s - a.s);
     let taken = 0;
-    for (const { q } of pool) {
-      if (taken >= k) break;
-      if (used.has(q.id)) continue;
-      const cnt = usedConcepts.get(q.concept) || 0;
-      if (cnt >= 2 && pool.length > k * 2) continue; // spread across concepts
-      used.add(q.id); usedConcepts.set(q.concept, cnt + 1); picks.push(q); taken++;
-    }
+    const take = (pred, limit) => {
+      for (const { q } of pool) {
+        if (taken >= k || taken >= limit) break;
+        if (used.has(q.id) || !pred(q)) continue;
+        const cnt = usedConcepts.get(q.concept) || 0;
+        if (cnt >= 2 && pool.length > k * 2) continue; // spread across concepts
+        used.add(q.id); usedConcepts.set(q.concept, cnt + 1); picks.push(q); taken++;
+        if (isNumeric(q)) tookNumeric++;
+      }
+    };
+    if (wantNumeric >= 0) {
+      take(isNumeric, wantNumeric);                       // the chapter's numeric boxes first
+      take(q => !isNumeric(q), k);                         // then multiple choice up to the allocation
+      take(() => true, k);                                 // top up with anything if a pool ran dry
+      numericLeft = Math.max(0, numericLeft - tookNumeric);
+    } else take(() => true, k);
   }
   // shuffle
   for (let i = picks.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [picks[i], picks[j]] = [picks[j], picks[i]]; }

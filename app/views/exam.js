@@ -42,7 +42,7 @@ function config(app) {
 function run(app, cfg) {
   const chapters = new Set(cfg.chapterList || app.content.chapters.map(c => c.chapter));
   const n = cfg.n || app.pack.exam.defaultN;
-  const questions = buildExam(app.content, app.state, { n, chapters });
+  const questions = buildExam(app.content, app.state, { n, chapters, format: app.pack.exam.format });
   if (questions.length < n) app.toast(`Only ${questions.length} questions available for this selection`, 'info');
   const host = h('div');
   let runner = null;

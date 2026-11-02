@@ -14,6 +14,8 @@ python tools/build.py
 echo "== node tests"
 node tools/engine_test.mjs > /dev/null && echo "engine_test ok"
 node tools/nobleed_test.mjs | tail -1
+node tools/math_check.mjs 2>/dev/null | head -1
+node tools/exam_format_test.mjs | tail -1
 echo "== independent solver"
 python tools/verify_fin201.py 8 | tail -1
 if [ "${1:-}" = "--quick" ]; then echo "quick pipeline passed"; exit 0; fi
