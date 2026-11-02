@@ -11,6 +11,8 @@ A Roman-conquest-themed, adaptive exam trainer with two course campaigns: **MARK
 - **FIN 201 Midterm 2**: 104 concepts, ~1,700 questions of which ~380 are typed-answer (numeric and step-by-step) plus 71 seeded number generators, one card per concept, a Formula Vault (given vs memorise), six provinces of the eastern campaign (Illyricum to Syria). Typed answers accept $, commas and %, are graded within a stated tolerance, diagnose classic mistakes from an error library, can be broken into steps, and show the professor's worked solution and TI BA II Plus keystrokes. Diagnosed errors become "Weak skills" on the Progress page.
 - Both courses: drill filters (Unknown / Weak / All, chapters, topics), siege retry on missed concepts only, cloud profiles.
 - Content pipeline and verification: `kb/FIN201_CONTENT_SPEC.md`, `tools/validate_fin201.py`, `tools/verify_fin201.py` (independent solver recomputes every answer and generator), `docs/FIN201_MT2_COURSE_MAP.md`.
+- Formulas are written in keyboard notation in the content and typeset like the exam formula sheet by `app/math.js` + vendored KaTeX (`app/vendor/katex`): real fractions, subscripts, exponents, Σ and √ on concept cards, the Formula Vault, stems, options, worked solutions and feedback. `node tools/math_check.mjs` pushes every content string through KaTeX and writes `tools/math_proof.html`. Edit `content/fin201/parts/chNN_meta.json`, then `python tools/validate_fin201.py NN` (it regenerates `chNN.json`), `python tools/build_fin201.py`, `python tools/build.py`.
+- The Midterm Simulation follows the pack's `exam.format`: chapters by exam weight and the real share of typed-answer questions (`node tools/exam_format_test.mjs`).
 
 ## What it does
 
