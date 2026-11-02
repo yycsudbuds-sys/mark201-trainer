@@ -6,6 +6,7 @@ import { chapterPicker } from './common.js';
 import { createRunner, resultCard, missesList } from './runner.js';
 import { conceptCard, masteryChip, figureEl } from './concept.js';
 import { icon } from '../icons.js';
+import { mathText } from '../math.js';
 import { setCosmetic } from '../cosmetic.js';
 import { dayKeyOf } from '../legion.js';
 
@@ -148,7 +149,7 @@ function activity(app, aid) {
     app.store.save();
     body.appendChild(h('div', { class: 'explain' },
       h('div', { class: 'verdict ' + (perfect ? 'ok' : 'no') }, icon(perfect ? 'laurel' : 'shieldcrack', { size: 20, tone: perfect ? 'laurel' : 'crimson' }), perfect ? `Perfect${res.xp ? ` · +${res.xp} XP` : ''}` : `${Math.round(fraction * 100)}% — not yet`),
-      h('p', null, act.explanation),
+      h('p', null, mathText(act.explanation)),
       detailEl || null,
       h('div', { class: 'row wrap mt' }, h('a', { class: 'btn primary', href: `#/arcade/build/${aid}` }, perfect ? 'Do it again' : 'Try again'), h('a', { class: 'btn ghost', href: '#/arcade/build' }, 'All activities'),
         nextActivity(app, ch, act))));
@@ -358,7 +359,7 @@ function flash(app) {
       return;
     }
     const { c, ch } = deck[idx];
-    const front = cfg.side === 'def' ? h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · which term?`), h('p', { class: 'def', style: { fontSize: '1.15rem' } }, c.definition)) : h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · define it`), h('div', { class: 'term' }, c.term));
+    const front = cfg.side === 'def' ? h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · which term?`), h('p', { class: 'def', style: { fontSize: '1.15rem' } }, mathText(c.definition))) : h('div', null, h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · define it`), h('div', { class: 'term' }, c.term));
     const card = h('div', { class: 'flash', style: { '--ch': ch.color } }, h('div', { class: 'flash-inner' },
       h('div', { class: 'flash-face', onClick: () => { app.sound('unroll'); card.classList.add('flipped'); } }, front, h('p', { class: 'tiny muted' }, 'Tap or press Space to flip')),
       h('div', { class: 'flash-face back', onClick: () => card.classList.remove('flipped') }, conceptCard(app, c.id, { compact: true, showMastery: true }))));

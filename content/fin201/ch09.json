@@ -124,7 +124,7 @@
    "contrast": "Payback vs discounted payback: raw flows vs present values. Discounted payback < life implies NPV > 0; ordinary payback < life implies nothing at R > 0. Both ignore flows after the recovery date and give only a relative comparison.",
    "trap": "Dividing the PV remainder by the undiscounted flow of the recovery year (both parts must be in PV terms); accumulating undiscounted flows by mistake; forgetting that a project can pay back in raw terms yet never in PV terms (the project then has NPV < 0).",
    "mnemonic": "Discount first, then add up.",
-   "formula": "accumulate CF_t/(1+R)^t until = I0;  fraction = PV still to recover / PV of next flow",
+   "formula": "PV(CF_t) = CF_t/(1 + R)^t; accumulate the PVs until the total reaches I0; fraction = (PV still to recover)/(PV of the next flow)",
    "given": false,
    "archetypes": [
     "A9"
@@ -392,7 +392,7 @@
    "contrast": "Capital rationing (a funds constraint on independent projects, rank by PI) vs mutually exclusive choices (rank by NPV) vs simply stopping to analyse projects in bad markets (not rationing).",
    "trap": "Ranking by NPV or by IRR when funds are limited; calling a pause in project analysis \"rationing\"; forgetting the best set of projects can leave some budget unused.",
    "mnemonic": "Limited budget? Rank by PI.",
-   "formula": "rank by PI = PV inflows / outlay, take in order until the budget is gone",
+   "formula": "rank by PI = (PV of inflows)/outlay; take projects in order until the budget is gone",
    "given": false,
    "archetypes": [],
    "weight": 2,
@@ -426,7 +426,7 @@
    "contrast": "CCR is EAV capitalized as a perpetuity (EAV / R); LCM stops at a common horizon. Do not compare raw NPVs or stop at the shorter life.",
    "trap": "Repeating only the cost and not the whole NPV in the LCM method; applying (1+R)^N with the wrong N; comparing signs the wrong way for costs (the less negative CCR wins).",
    "mnemonic": "Chain the project forever: EAV over R.",
-   "formula": "CCR = NPV x (1+R)^N / ((1+R)^N - 1) = EAV / R",
+   "formula": "CCR = NPV × (1 + R)^N / ((1 + R)^N − 1) = EAV / R",
    "given": false,
    "archetypes": [
     "A13"
@@ -705,7 +705,7 @@
   {
    "id": "f09-disc-payback",
    "name": "Discounted payback",
-   "formula": "accumulate CF_t/(1+R)^t until the total equals I0; fraction = PV still to recover / PV of next flow",
+   "formula": "PV(CF_t) = CF_t/(1 + R)^t; accumulate the PVs until the total reaches I0; fraction = (PV still to recover)/(PV of the next flow)",
    "given": false,
    "concepts": [
     "c09-discounted-payback"
@@ -738,7 +738,7 @@
   {
    "id": "f09-ccr",
    "name": "Constant chain of replacement (NPV to infinity)",
-   "formula": "CCR = NPV x (1+R)^N / ((1+R)^N - 1) = EAV / R",
+   "formula": "CCR = NPV × (1 + R)^N / ((1 + R)^N − 1) = EAV / R",
    "given": false,
    "concepts": [
     "c09-ccr-lcm"

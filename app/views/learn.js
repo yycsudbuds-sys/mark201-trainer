@@ -4,6 +4,7 @@ import { masteryLevel, chapterMastery } from '../engine.js';
 import { figureEl } from './concept.js';
 import { createLesson } from './lesson.js';
 import { icon } from '../icons.js';
+import { mathText, formulaBlock } from '../math.js';
 
 export function render(app, params) {
   const [chStr, cid] = params;
@@ -74,7 +75,7 @@ function sheet(app, ch) {
               const c = app.conceptOf(cid).concept;
               return h('div', { class: 'sheet-term' },
                 h('dt', null, h('span', { class: `mdot m${masteryLevel(app.state.concepts[cid])}` }), h('a', { href: `#/learn/${ch.chapter}/${cid}` }, c.term)),
-                h('dd', null, c.definition, c.mnemonic ? h('span', { class: 'sheet-mn' }, icon('tablet', { size: 13, tone: 'bronze' }), c.mnemonic) : null));
+                h('dd', null, mathText(c.definition), c.mnemonic ? h('span', { class: 'sheet-mn' }, icon('tablet', { size: 13, tone: 'bronze' }), mathText(c.mnemonic)) : null));
             })),
             t.concepts.map(cid => { const fig = app.conceptOf(cid).concept.figure; const f = figureEl(fig); return f ? bronzeTablet(app, fig, f) : null; }));
         })),
@@ -99,7 +100,7 @@ function vault(app) {
         h('div', { class: 'vault-rows' }, rows.map(f => {
           const mastered = f.concepts.length ? f.concepts.filter(cid => masteryLevel(app.state.concepts[cid]) >= 3).length : 0;
           return h('div', { class: 'vault-row' },
-            h('div', { class: 'vault-main' }, h('div', { class: 'row wrap' }, h('b', null, f.name), h('span', { class: 'chip ' + (f.given ? 'good' : 'warn') }, f.given ? 'Given on the sheet' : 'Memorise')), h('div', { class: 'formula-text' }, f.formula), h('div', { class: 'small muted' }, h('b', null, 'Use when: '), f.when), h('div', { class: 'small muted' }, h('b', null, 'Trap: '), f.trap)),
+            h('div', { class: 'vault-main' }, h('div', { class: 'row wrap' }, h('b', null, f.name), h('span', { class: 'chip ' + (f.given ? 'good' : 'warn') }, f.given ? 'Given on the sheet' : 'Memorise')), formulaBlock(f.formula, 'formula-text'), h('div', { class: 'small muted' }, h('b', null, 'Use when: '), mathText(f.when)), h('div', { class: 'small muted' }, h('b', null, 'Trap: '), mathText(f.trap))),
             h('div', { class: 'vault-side' }, f.concepts.length ? h('div', { class: 'tiny muted' }, `${mastered}/${f.concepts.length} concepts solid`) : null, f.concepts.length ? h('a', { class: 'btn sm', href: `#/drill/concepts/${f.concepts.join(',')}` }, icon('gladius', { size: 13, tone: 'gold' }), ' Quick drill') : null));
         }))));
     }

@@ -1,6 +1,7 @@
 // Midterm simulator: timed, deferred feedback, exam-weighted; full debrief.
 import { h, fmtTime, timeAgo } from '../ui.js';
 import { icon } from '../icons.js';
+import { mathText } from '../math.js';
 import { buildExam } from '../engine.js';
 import { chapterPicker } from './common.js';
 import { createRunner } from './runner.js';
@@ -88,10 +89,10 @@ function result(app, rec) {
       const q = app.questionOf(l.qid)?.question; if (!q) continue; const c = app.conceptOf(q.concept);
       list.appendChild(h('div', { class: 'review-item ' + (l.correct ? 'right' : 'wrong') },
         h('div', { class: 'row wrap small' }, h('span', { class: 'chip ch', style: { '--ch': c.chapter.color } }, `Ch ${c.chapter.chapter}`), h('b', null, c.concept.term), h('span', { class: 'muted' }, l.correct ? icon('check', { size: 14, tone: 'laurel' }) : icon('cross', { size: 14, tone: 'crimson' }))),
-        h('p', null, q.stem),
+        h('p', null, mathText(q.stem)),
         !l.correct ? h('div', { class: 'opt chosen' }, l.chosen === null ? '(no answer)' : `You chose: ${l.chosen}`) : null,
         h('div', { class: 'opt correct' }, `Answer: ${l.answer}`),
-        h('p', { class: 'small muted' }, q.explanation)));
+        h('p', { class: 'small muted' }, mathText(q.explanation))));
     }
   };
   drawList();

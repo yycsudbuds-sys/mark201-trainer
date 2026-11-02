@@ -8,6 +8,7 @@ import { conceptCard, figureEl } from './concept.js';
 import { visualFor } from '../visuals.js';
 import { attachBattle } from '../battle.js';
 import { richText, icon } from '../icons.js';
+import { mathText } from '../math.js';
 import { getCosmetic, getDenarii, addDenarii } from '../cosmetic.js';
 import { vignetteFor } from '../vignettes.js';
 
@@ -311,7 +312,7 @@ export function createRunner(app, cfg) {
       const list = h('ol', { class: 'num-steps' });
       steps.forEach((st, i) => {
         const li = h('li', { class: 'num-step' + (i < stepIdx ? (stepResults[i] ? ' ok' : ' no') : i === stepIdx ? ' now' : ' ahead') });
-        li.append(h('div', { class: 'num-step-label' }, h('span', { class: 'num-step-n' }, String(i + 1)), st.label, st.unit ? h('span', { class: 'tiny muted' }, ` (${unitLabel(st.unit)})`) : null));
+        li.append(h('div', { class: 'num-step-label' }, h('span', { class: 'num-step-n' }, String(i + 1)), mathText(st.label), st.unit ? h('span', { class: 'tiny muted' }, ` (${unitLabel(st.unit)})`) : null));
         if (i < stepIdx) li.append(h('div', { class: 'num-step-val' }, stepResults[i] ? icon('check', { size: 14, tone: 'laurel' }) : icon('cross', { size: 14, tone: 'crimson' }), ` ${fmtNum(st.value, st.unit || '')}${stepResults[i] ? '' : ` (you entered ${fmtNum(stepResults.typed[i], st.unit || '')})`}`));
         if (i === stepIdx) { const b = box(st.unit || '', st.tolerance, raw => submitStep(raw, remedial), 'this step'); li.append(b.row, b.hint); }
         list.appendChild(li);
@@ -437,7 +438,7 @@ function feedbackPanel(app, q, entry, correct, res, dn = 0, wager = 0) {
   const open = new Set(correct ? [] : ['trap', 'confuse']);
   const draw = () => {
     clear(body);
-    for (const [key, label, text, ico] of seals) if (open.has(key)) body.appendChild(h('div', { class: 'seal-text', dataset: { key } }, h('div', { class: 'eyebrow' }, icon(ico, { size: 14, tone: 'crimson' }), label), h('p', null, text)));
+    for (const [key, label, text, ico] of seals) if (open.has(key)) body.appendChild(h('div', { class: 'seal-text', dataset: { key } }, h('div', { class: 'eyebrow' }, icon(ico, { size: 14, tone: 'crimson' }), label), h('p', null, mathText(text))));
     sealRow.querySelectorAll('.seal').forEach(b => b.classList.toggle('broken', open.has(b.dataset.key)));
   };
   for (const [key, label, , ico] of seals) sealRow.appendChild(h('button', { class: 'seal', type: 'button', dataset: { key }, 'aria-expanded': String(open.has(key)), onClick: e => { const on = open.has(key); if (on) open.delete(key); else { open.add(key); app.sound('seal'); } e.currentTarget.setAttribute('aria-expanded', String(!on)); draw(); } }, h('span', { class: 'seal-wax' }, icon(ico, { size: 16, tone: 'parchment' })), h('span', { class: 'seal-label' }, label)));
@@ -446,7 +447,7 @@ function feedbackPanel(app, q, entry, correct, res, dn = 0, wager = 0) {
     h('div', { class: 'feedback-grid' + (vis ? ' with-vis' : '') },
       h('div', { class: 'feedback-main' },
         h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 22, tone: correct ? 'laurel' : 'crimson' }), correct ? 'The line holds' : 'The line breaks', res && res.xp ? h('span', { class: 'xp-gain' }, icon('coin', { size: 16, tone: 'gold' }), `+${res.xp} XP`) : null, dn ? h('span', { class: 'dn-gain ' + (dn > 0 ? 'win' : 'loss') }, `${dn > 0 ? '+' : ''}${dn} denari${Math.abs(dn) === 1 ? 'us' : 'i'}${wager ? ' · wager' : ''}`) : null),
-        h('p', { class: 'explanation' }, q.explanation),
+        h('p', { class: 'explanation' }, mathText(q.explanation)),
         h('p', { class: 'small muted' }, 'Stronghold: ', h('b', null, c.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
         seals.length ? sealRow : null, body),
       vis ? h('div', { class: 'feedback-vis' }, vis) : null));
@@ -492,9 +493,9 @@ function numericFeedback(app, q, entry, correct, res, { typed, diag, dn = 0, ste
   const c = entry.concept;
   const seals = [
     ['keys', 'Calculator keystrokes', (q.keystrokes || []).length ? h('ul', { class: 'keys' }, q.keystrokes.map(k => h('li', null, k))) : null, 'tablet'],
-    ['errors', 'Classic mistakes', (q.errors || []).length ? h('ul', { class: 'errlib' }, q.errors.map(e => h('li', { class: diag && diag.id === e.id ? 'hit' : '' }, h('b', null, e.label), ` → ${fmtNum(e.value, q.unit)}. `, e.explain))) : null, 'shieldcrack'],
-    ['trap', 'Exam trap', c.trap ? h('p', null, c.trap) : null, 'swords'],
-    ['confuse', "Don't confuse it with", c.contrast ? h('p', null, c.contrast) : null, 'amphora'],
+    ['errors', 'Classic mistakes', (q.errors || []).length ? h('ul', { class: 'errlib' }, q.errors.map(e => h('li', { class: diag && diag.id === e.id ? 'hit' : '' }, h('b', null, mathText(e.label)), ` → ${fmtNum(e.value, q.unit)}. `, mathText(e.explain)))) : null, 'shieldcrack'],
+    ['trap', 'Exam trap', c.trap ? h('p', null, mathText(c.trap)) : null, 'swords'],
+    ['confuse', "Don't confuse it with", c.contrast ? h('p', null, mathText(c.contrast)) : null, 'amphora'],
   ].filter(x => x[2]);
   const open = new Set(correct ? [] : ['errors']);
   const body = h('div', { class: 'seal-body' }); const sealRow = h('div', { class: 'seals' });
@@ -506,8 +507,8 @@ function numericFeedback(app, q, entry, correct, res, { typed, diag, dn = 0, ste
     h('div', { class: 'feedback-main' },
       h('div', { class: 'verdict ' + (correct ? 'ok' : 'no') }, icon(correct ? 'laurel' : 'shieldcrack', { size: 22, tone: correct ? 'laurel' : 'crimson' }), verdictText, res && res.xp ? h('span', { class: 'xp-gain' }, icon('coin', { size: 16, tone: 'gold' }), `+${res.xp} XP`) : null, dn ? h('span', { class: 'dn-gain win' }, `+${dn} denari${dn === 1 ? 'us' : 'i'}`) : null),
       h('div', { class: 'num-compare' }, h('span', { class: 'num-you' + (correct ? ' ok' : ' no') }, 'You: ', h('b', null, fmtNum(typed, q.unit))), h('span', { class: 'num-right' }, 'Answer: ', h('b', null, fmtNum(q.answer, q.unit)), h('span', { class: 'tiny muted' }, ` (${tolText(q.tolerance, q.unit)})`))),
-      diag ? h('div', { class: 'diagnosis' }, icon('target', { size: 16, tone: 'crimson' }), h('div', null, h('b', null, diag.label), h('div', { class: 'small' }, diag.explain))) : null,
-      h('div', { class: 'worked' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), 'Worked solution'), h('ol', { class: 'worked-lines' }, (q.solution || [q.explanation]).map(line => h('li', null, line)))),
+      diag ? h('div', { class: 'diagnosis' }, icon('target', { size: 16, tone: 'crimson' }), h('div', null, h('b', null, mathText(diag.label)), h('div', { class: 'small' }, mathText(diag.explain)))) : null,
+      h('div', { class: 'worked' }, h('div', { class: 'eyebrow' }, icon('scroll', { size: 14, tone: 'gold' }), 'Worked solution'), h('ol', { class: 'worked-lines' }, (q.solution || [q.explanation]).map(line => h('li', null, mathText(line))))),
       h('p', { class: 'small muted' }, 'Stronghold: ', h('b', null, c.term), ' · now ', MASTERY_LABELS[masteryLevel(app.state.concepts[q.concept])]),
       seals.length ? sealRow : null, body));
 }
@@ -560,9 +561,9 @@ export function missesList(app, log) {
     const q = app.questionOf(l.qid).question; const c = app.conceptOf(l.cid);
     return h('div', { class: 'review-item wrong' },
       h('div', { class: 'row wrap small' }, h('span', { class: 'chip ch', style: { '--ch': c.chapter.color } }, `Ch ${c.chapter.chapter}`), h('b', null, c.concept.term)),
-      h('p', { class: 'small' }, q.stem),
-      h('div', { class: 'opt chosen' }, l.chosen === null ? '(no answer)' : `You chose: ${l.chosen}`),
-      h('div', { class: 'opt correct' }, `Answer: ${l.answer}`),
-      h('p', { class: 'small muted' }, q.explanation));
+      h('p', { class: 'small' }, mathText(q.stem)),
+      h('div', { class: 'opt chosen' }, l.chosen === null ? '(no answer)' : ['You chose: ', mathText(l.chosen)]),
+      h('div', { class: 'opt correct' }, 'Answer: ', mathText(l.answer)),
+      h('p', { class: 'small muted' }, mathText(q.explanation)));
   }));
 }

@@ -1,6 +1,7 @@
 // Imperium icon set: one hand-drawn inline SVG family. Same 1.6 stroke, bronze fill, light from top-left.
 // icon(name, { size, cls, tone }) -> <span class="ico"> containing an SVG. richText() renders stems with blanks.
 import { h } from './ui.js';
+import { mathText } from './math.js';
 
 // Paths are drawn on a 24x24 grid. "f" = filled shapes (bronze), "s" = stroked lines, "hl" = highlight (light edge).
 const ICONS = {
@@ -71,13 +72,14 @@ export const CHAPTER_ICON = { 1: 'temple', 6: 'target', 7: 'amphora', 8: 'pilum'
  * ("good deed" is not a product) and distracted during exam practice.
  */
 export function richText(text, { blanks = true } = {}) {
+  // Formulas inside the text ("D1/(R − g)") are typeset like the exam formula sheet; see app/math.js.
   const frag = document.createDocumentFragment();
   const str = String(text || '');
-  if (!blanks) { frag.appendChild(document.createTextNode(str)); return frag; }
+  if (!blanks) { frag.appendChild(mathText(str)); return frag; }
   for (const p of str.split(/(_{3,})/)) {
     if (!p) continue;
     if (/^_{3,}$/.test(p)) frag.appendChild(h('span', { class: 'blank', 'aria-label': 'blank' }));
-    else frag.appendChild(document.createTextNode(p));
+    else frag.appendChild(mathText(p));
   }
   return frag;
 }

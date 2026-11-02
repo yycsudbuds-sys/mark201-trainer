@@ -1,6 +1,7 @@
 // Concept card component (the "reading" unit) and small mastery widgets.
 import { h } from '../ui.js';
 import { icon } from '../icons.js';
+import { mathText } from '../math.js';
 import { masteryLevel, MASTERY_LABELS, masteryGaps, conceptSummary, ANGLE_LABELS } from '../engine.js';
 
 export function masteryChip(app, cid) {
@@ -37,11 +38,11 @@ export function conceptCard(app, cid, opts = {}) {
     opts.showMastery !== false ? h('div', { class: 'mstate' }, masteryChip(app, cid)) : null,
     h('div', { class: 'eyebrow' }, `Ch ${ch.chapter} · ${ch.short}`),
     h('h3', null, c.term),
-    h('p', { class: 'def' }, c.definition),
-    opts.compact ? null : h('div', { class: 'sec' }, h('b', null, 'In plain English'), c.explain),
-    h('div', { class: 'sec' }, h('b', null, 'Example'), c.example),
-    h('div', { class: 'sec contrast' }, h('b', null, "Don't confuse it with"), c.contrast),
-    h('div', { class: 'sec trap' }, h('b', null, 'Exam trap'), c.trap),
+    h('p', { class: 'def' }, mathText(c.definition)),
+    opts.compact ? null : h('div', { class: 'sec' }, h('b', null, 'In plain English'), mathText(c.explain)),
+    h('div', { class: 'sec' }, h('b', null, 'Example'), mathText(c.example)),
+    h('div', { class: 'sec contrast' }, h('b', null, "Don't confuse it with"), mathText(c.contrast)),
+    h('div', { class: 'sec trap' }, h('b', null, 'Exam trap'), mathText(c.trap)),
     c.mnemonic ? h('div', { class: 'sec mnemonic' }, icon('tablet', { size: 18, tone: 'gold' }), ' ', c.mnemonic) : null,
     opts.compact ? null : figureEl(c.figure),
     opts.showAngles && cs ? anglesStrip(cs) : null,

@@ -158,7 +158,7 @@
    "contrast": "Sensitivity, scenario and simulation show how NPV moves; break-even asks where it hits zero. NPV (financial) break-even is higher than accounting break-even, because accounting profit ignores the required return.",
    "trap": "Gross the answer up for tax (÷(1 − T)), divide by an annuity factor and not by N, keep the CCA shield in the equation, and use a perpetuity when the income is perpetual. Giving the accounting (profit) break-even is wrong.",
    "mnemonic": "Set NPV = 0, solve for the one thing.",
-   "formula": "NPV = 0 ⇒ EBITDA* = [I0 − PV(DTS)] ÷ [(1 − T) × annuity factor (or 1/R for a perpetuity)]",
+   "formula": "NPV = 0 ⇒ EBITDA* = [I0 − PV(DTS)] ÷ [(1 − T) × annuity factor]  (perpetuity: 1/R, not the annuity factor)",
    "given": false,
    "archetypes": [
     "A20"

@@ -1565,3 +1565,20 @@ td.revealed { background: rgba(201, 162, 39, 0.18) !important; }
 .topic-row .chip { cursor: pointer; }
 .drill-count { gap: 0.4rem; }
 @media (max-width: 640px) { .vault-row { grid-template-columns: 1fr; } .vault-side { justify-items: start; } }
+
+/* ---- typeset formulas (KaTeX, app/math.js): fractions, subscripts and exponents as on the exam formula sheet */
+.katex { font-size: 1.06em; }
+.math { white-space: normal; } /* KaTeX may break a long run at an operator; the boxes below shrink instead of clipping */
+.callout > div { min-width: 0; flex: 1 1 auto; }
+.card-grid > .callout, .feedback-main, .seal-text { min-width: 0; }
+.learn-layout > *, .learn-main, .lesson, .lesson-stage, .slide, .card-slide > *, .formula-callout, .vault-main, .vault-row, .sheet-term dd { min-width: 0; } /* a wide formula scrolls inside its box instead of widening the page */
+.worked-lines { font-family: var(--font-body); font-size: 1rem; line-height: 1.7; text-transform: none; font-variant: normal; letter-spacing: 0; }
+.formula-lines { display: flex; flex-wrap: wrap; gap: 0.35rem 1.8rem; align-items: baseline; margin-top: 0.35rem; }
+.formula-lines .formula-line { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 0.15rem 0; white-space: nowrap; }
+.formula-lines .formula-line .katex { font-size: 1.2em; }
+.formula-lines .formula-line.plain { font-family: var(--font-mono); font-size: 0.95rem; }
+.formula-callout .formula-text, .vault-main .formula-text { font-family: inherit; }
+.worked-lines .katex { font-size: 1.12em; }
+.worked-lines li { line-height: 1.7; }
+.stem .katex, .option .katex, .num-step-label .katex { font-size: 1.02em; }
+.explanation .katex, .seal-text .katex, .errlib .katex { font-size: 1.04em; }

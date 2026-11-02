@@ -313,7 +313,7 @@
    "contrast": "Half-year (m = 0.5) versus AII (m = 1.5): AII front-loads CCA and gives the higher PV. An asset the firm already owns has already used its first-year adjustment, so its factor is 1.",
    "trap": "Applying m every year, picking the wrong factor in PVCCA (0.5 versus 1.5 regime), or applying m to a continuing asset. Check whether the asset is new this year or already depreciating.",
    "mnemonic": "Half: 0.5. Incentive: 1.5. Old asset: 1.",
-   "formula": "m = 0.5 (half-year), 1.5 (AII), 1.0; factors (1 + 0.5k)/(1 + k), (1.5k + 1)/(1 + k), 1",
+   "formula": "m = 0.5 (half-year), 1.5 (AII), 1.0; first-year factors: (1 + 0.5k)/(1 + k), (1.5k + 1)/(1 + k), 1",
    "given": false,
    "archetypes": [
     "A16"
@@ -378,7 +378,7 @@
    "contrast": "k + d versus k − d: the shield declines, so it is d added to k. S_N versus UCC_N in the last term: use the sale price S_N. Sold versus kept: subtract the last term whenever the asset is sold, even if other assets remain in the class; omit it only when the asset is never sold (or has no salvage value).",
    "trap": "Using k − d; wrong first-year factor; salvage term not discounted; UCC instead of S_N; dropping the term because 'the pool stays open' (the sale still takes S_N out of the pool) or keeping it when the asset is never sold. Also never discount PVCCA again: it is already a present value.",
    "mnemonic": "Shield over (k plus d), minus the tail after the sale.",
-   "formula": "PV_CCA = (I0 d T_C)/(k + d) × {1 | (1 + 0.5k)/(1 + k) | (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d)/(1 + k)^N",
+   "formula": "PV_CCA = (I0 d T_C)/(k + d) × {1 | (1 + 0.5k)/(1 + k) | (1.5k + 1)/(1 + k)} − (S_N d T_C)/(k + d) × 1/(1 + k)^N",
    "given": true,
    "archetypes": [
     "A17"
@@ -485,7 +485,7 @@
    "contrast": "Open pool (proceeds untaxed, CCA continues on a smaller base, salvage term subtracted in PVCCA) versus closed pool (immediate recapture, terminal loss or capital gain via CF_AT; CCA stops). Sold versus not sold decides the salvage term; open versus closed decides whether the sale is taxed at once.",
    "trap": "Dropping the salvage term because 'the pool stays open' (the sale still removes S_N from the pool); applying recapture or terminal loss to an asset whose class stays open; ignoring the terminal loss when the class closes; adding a CF_AT tax on top of the formula's salvage term (double counting). Look for 'last asset', 'no assets left in the class' or 'other assets remain'.",
    "mnemonic": "Last one out turns off the lights.",
-   "formula": "Open: CF = POD (untaxed), UCC falls by POD, PVCCA subtracts S_N d T/(k + d)/(1 + k)^N. Closed: CF_AT = POD − T[min(ACB, POD) − UCC] − 0.5T max(POD − ACB, 0)",
+   "formula": "Open pool: CF = POD (untaxed); UCC falls by POD; PV_CCA = (I0 d T_C)/(k + d) × factor − (S_N d T_C)/(k + d) × 1/(1 + k)^N; Closed class: CF_AT = POD − T[min(ACB, POD) − UCC] − 0.5T max(POD − ACB, 0)",
    "given": false,
    "archetypes": [
     "A15"

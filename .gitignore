@@ -9,3 +9,5 @@ __pycache__/
 Thumbs.db
 # FIN 201 course material extracts (copyrighted) stay local
 kb/fin201/
+
+tools/math_proof.html

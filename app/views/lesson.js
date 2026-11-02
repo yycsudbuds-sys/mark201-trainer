@@ -7,6 +7,7 @@ import { markSeen, masteryLevel, MASTERY_LABELS, shuffleOptions, pickQuestionFor
 import { visualFor, hasTableToo, revealTable, stepFlow, glyphFor, svg } from '../visuals.js';
 import { conceptCard } from './concept.js';
 import { richText, icon } from '../icons.js';
+import { mathText, formulaBlock } from '../math.js';
 import { vignetteFor } from '../vignettes.js';
 
 function sentences(text) {
@@ -66,14 +67,14 @@ export function createLesson(app, cids, opts = {}) {
       // example, what it is confused with, the exam trap, the mnemonic, plus the status and a drill link.
       const fig = c.figure && c.figure.type === 'table' && c.figure.rows?.length ? revealTable(c.figure, { color: chapter?.color }) : c.figure && c.figure.type === 'list' && c.figure.items?.length ? stepFlow(c.figure.items, { color: chapter?.color, title: c.figure.title }) : null;
       return h('div', { class: 'slide card-slide' }, head,
-        h('p', { class: 'slide-def' }, c.definition),
-        c.formula ? h('div', { class: 'callout formula-callout' }, h('span', { class: 'callout-ico' }, icon('tablet', { size: 20, tone: 'gold' })), h('div', null, h('div', { class: 'row wrap' }, h('b', null, 'Formula'), h('span', { class: 'chip ' + (c.given ? 'good' : 'warn') }, c.given ? 'On the exam sheet' : 'Memorise')), h('div', { class: 'formula-text' }, c.formula))) : null,
+        h('p', { class: 'slide-def' }, mathText(c.definition)),
+        c.formula ? h('div', { class: 'callout formula-callout' }, h('span', { class: 'callout-ico' }, icon('tablet', { size: 20, tone: 'gold' })), h('div', null, h('div', { class: 'row wrap' }, h('b', null, 'Formula'), h('span', { class: 'chip ' + (c.given ? 'good' : 'warn') }, c.given ? 'On the exam sheet' : 'Memorise')), formulaBlock(c.formula, 'formula-text'))) : null,
         h('div', { class: 'card-grid' },
-          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('scroll', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'In plain English'), h('div', null, c.explain))),
-          h('div', { class: 'callout example' }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'Worked example'), h('div', null, c.example))),
-          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('swords', { size: 18, tone: 'gold' })), h('div', null, h('b', null, "Don't confuse it with"), h('div', null, c.contrast))),
-          h('div', { class: 'callout trap' }, h('span', { class: 'callout-ico' }, icon('shieldcrack', { size: 18, tone: 'crimson' })), h('div', null, h('b', null, 'Exam trap'), h('div', null, c.trap)))),
-        c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, c.mnemonic))) : null,
+          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('scroll', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'In plain English'), h('div', null, mathText(c.explain)))),
+          h('div', { class: 'callout example' }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 18, tone: 'gold' })), h('div', null, h('b', null, 'Worked example'), h('div', null, mathText(c.example)))),
+          h('div', { class: 'callout' }, h('span', { class: 'callout-ico' }, icon('swords', { size: 18, tone: 'gold' })), h('div', null, h('b', null, "Don't confuse it with"), h('div', null, mathText(c.contrast)))),
+          h('div', { class: 'callout trap' }, h('span', { class: 'callout-ico' }, icon('shieldcrack', { size: 18, tone: 'crimson' })), h('div', null, h('b', null, 'Exam trap'), h('div', null, mathText(c.trap))))),
+        c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, mathText(c.mnemonic)))) : null,
         fig || (cards === 'rich' ? safeVisual(c) : null),
         h('div', { class: 'row wrap mt-sm' }, h('span', { class: 'tiny muted' }, cs ? `Your status: ${MASTERY_LABELS[masteryLevel(cs)]}${masteryLevel(cs) < 4 && cs.a?.length ? ' · to master: ' + masteryGaps(cs).slice(0, 2).join(', ') : ''}` : 'New to you.'), h('a', { class: 'btn sm ghost', href: `#/drill/concepts/${c.id}` }, icon('gladius', { size: 13, tone: 'gold' }), 'Drill this concept')));
     }
@@ -81,8 +82,8 @@ export function createLesson(app, cids, opts = {}) {
       const vig = safeVignette(chapter?.chapter);
       return h('div', { class: 'slide hook' }, head,
         h('div', { class: 'hook-row' + (vig ? '' : ' no-art') },
-          h('div', null, h('p', { class: 'slide-def' }, c.definition),
-            c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, c.mnemonic))) : null),
+          h('div', null, h('p', { class: 'slide-def' }, mathText(c.definition)),
+            c.mnemonic ? h('div', { class: 'callout seal-callout' }, h('span', { class: 'callout-ico wax' }, icon('tablet', { size: 18, tone: 'parchment' })), h('div', null, h('b', { class: 'seal-title' }, 'Mnemonic'), h('div', null, mathText(c.mnemonic)))) : null),
           vig ? h('div', { class: 'hook-art', 'aria-hidden': 'true' }, vig) : null),
         h('div', { class: 'tiny muted mt' }, cs ? `Your status: ${MASTERY_LABELS[masteryLevel(cs)]}${masteryLevel(cs) < 4 && cs.a?.length ? ' · to master: ' + masteryGaps(cs).slice(0, 2).join(', ') : ''}` : 'New to you.'));
     }
@@ -91,7 +92,7 @@ export function createLesson(app, cids, opts = {}) {
       const marks = h('div', { class: 'row wrap recall-marks' }, h('span', { class: 'small muted' }, 'Did you have it?'),
         h('button', { class: 'btn sm', type: 'button', onClick: () => { marks.replaceChildren(h('span', { class: 'chip good' }, icon('laurel', { size: 12, tone: 'laurel' }), 'Nailed it')); app.sound('correct'); } }, 'Yes'),
         h('button', { class: 'btn sm ghost', type: 'button', onClick: () => { marks.replaceChildren(h('span', { class: 'chip warn' }, 'Read it twice, then watch for the quick check')); app.sound('knock'); } }, 'Not yet'));
-      const ans = h('div', { class: 'recall-answer' }, h('p', { class: 'slide-def' }, c.definition), marks);
+      const ans = h('div', { class: 'recall-answer' }, h('p', { class: 'slide-def' }, mathText(c.definition)), marks);
       const btn = h('button', { class: 'btn primary big recall-btn', type: 'button', onClick: () => { if (!btn.isConnected) return; btn.replaceWith(ans); app.sound('unroll'); revealNext = null; } }, icon('eye', { size: 16, tone: 'mono' }), ' Reveal the definition ', h('span', { class: 'kbd' }, 'Space'));
       revealNext = () => btn.click();
       return h('div', { class: 'slide recall' }, head,
@@ -100,7 +101,7 @@ export function createLesson(app, cids, opts = {}) {
     if (s.kind === 'explain') {
       const lines = sentences(c.explain); let shown = 1;
       const lineEls = lines.map((l, i) => h('p', { class: 'line' + (i === 0 ? ' shown' : '') }, l));
-      const ex = h('div', { class: 'callout example hidden-line' }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 20, tone: 'gold' })), h('div', null, h('b', null, 'Example'), h('div', null, c.example)));
+      const ex = h('div', { class: 'callout example hidden-line' }, h('span', { class: 'callout-ico' }, icon('amphora', { size: 20, tone: 'gold' })), h('div', null, h('b', null, 'Example'), h('div', null, mathText(c.example))));
       const more = h('button', { class: 'btn sm reveal-line', type: 'button', onClick: () => step() });
       const label = () => { if (shown < lines.length) more.replaceChildren(`Next line ${shown + 1} / ${lines.length} `, h('span', { class: 'kbd' }, 'Space')); else more.replaceChildren('Show the example ', h('span', { class: 'kbd' }, 'Space')); };
       const step = () => {
@@ -123,12 +124,12 @@ export function createLesson(app, cids, opts = {}) {
       const ref = qs.find(q => q.source === 'official') || qs.find(q => q.angle === 'not' || q.angle === 'contrast') || qs[0];
       return h('div', { class: 'slide' }, head,
         h('div', { class: 'versus' },
-          h('div', { class: 'vs-side' }, h('div', { class: 'eyebrow' }, 'Don\'t confuse it with'), h('p', null, c.contrast)),
+          h('div', { class: 'vs-side' }, h('div', { class: 'eyebrow' }, 'Don\'t confuse it with'), h('p', null, mathText(c.contrast))),
           h('div', { class: 'vs-badge' }, 'vs'),
-          h('div', { class: 'vs-side trap' }, h('div', { class: 'eyebrow' }, 'Exam trap · the wrong answers it tempts you with'), h('p', null, c.trap))),
+          h('div', { class: 'vs-side trap' }, h('div', { class: 'eyebrow' }, 'Exam trap · the wrong answers it tempts you with'), h('p', null, mathText(c.trap)))),
         ref ? h('div', { class: 'trap-ref' },
           h('div', { class: 'eyebrow' }, icon('tablet', { size: 14, tone: 'crimson' }), ref.source === 'official' ? 'The practice-exam question this trap comes from' : 'A question that sets this trap'),
-          h('p', { class: 'trap-stem' }, ref.stem),
+          h('p', { class: 'trap-stem' }, mathText(ref.stem)),
           h('ol', { class: 'trap-opts' }, ref.options.map((o, i) => h('li', { class: i === ref.answer ? 'right' : '' }, o, i === ref.answer ? icon('laurel', { size: 14, tone: 'laurel' }) : null))),
           h('p', { class: 'small muted' }, 'The laurel marks the right answer. The others are the phrases the trap warns about. You will meet this question again in the quiz.')) : null);
     }
